@@ -1,0 +1,12 @@
+# Environment and local config
+.env
+.env.*
+.venv/
+.python-version
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Project-specific local artifacts
+week1/day1/
+week1/day2/uv.lock
