@@ -6,5 +6,20 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
+<<<<<<< HEAD and local env files
+.venv/
+.env
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/tual environments
 .venv
+=======
+# Virtual environments and local env files
+.venv/
+.env
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+>>>>>>> main
