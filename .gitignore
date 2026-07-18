@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Local env files
+.env
+.env.local
+
+# Editor directories
+.vscode/
+.idea/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Pytest cache
+.pytest_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Lockfiles
+# keep lockfiles under version control if you use them; uncomment to ignore
+# Pipenv
+#Pipfile.lock
+# Poetry
+#poetry.lock
+# universal virtualenv lock
+#uv.lock
+
+# Node modules (if any)
+node_modules/
+
+# Ignore IDE project files
+*.sublime-workspace
+*.sublime-project
