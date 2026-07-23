@@ -1,6 +1,6 @@
 # AI Engineer
 
-A collection of AI Engineering projects, experiments, and learning resources built while exploring modern Artificial Intelligence, Machine Learning, Large Language Models (LLMs), AI Agents, and related technologies.
+This project is part of my AI Engineering learning journey, where I document my daily progress 
 
 ## 🚀 Features
 
@@ -18,19 +18,6 @@ A collection of AI Engineering projects, experiments, and learning resources bui
 - LangChain
 - Machine Learning Libraries
 
-## 📂 Repository Structure
-
-```
-AI_Engineer/
-├── Projects/
-├── Notes/
-├── Experiments/
-├── Resources/
-└── README.md
-```
-
-> The folder structure may change as new projects and resources are added.
-
 ## 📖 Purpose
 
 This repository serves as a personal learning hub for AI Engineering where I document concepts, build projects, and experiment with modern AI technologies.
@@ -47,4 +34,3 @@ If you find this repository useful, consider giving it a **Star ⭐**.
 
 **Bhavanish Mantri**
 
-GitHub: https://github.com/Bhavanish-Mantri
