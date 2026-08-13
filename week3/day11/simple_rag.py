@@ -15,7 +15,6 @@ model = "llama-3.3-70b-versatile"
 
 # Step 1 : Knowledge Base
 knowledge_base ={
-"who" : "Bhavanish Mantri is a student of Amity University.",
 "age": "Bhavanish Mantri is 22 years old",
 "interests": "Bhavanish Mantri is interested in AI and Machine Learning."
 }
@@ -56,6 +55,6 @@ def ask_llm(question):
 
 # question = " Do you know Amity University"  #LLM knows this from its training data
 
-question = " what is the interests of Bhavanish Mantri"
+question = " what is the interests of Bhavanish Mantri"    # LLM will only answer this on basis of given input (CONTEXT)
 
 print(ask_llm(question))
