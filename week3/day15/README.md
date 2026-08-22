@@ -1,4 +1,4 @@
-# Day 15: Qdrant Filters and HNSW
+# Day 15 - Qdrant Filters and HNSW
 
 Day 15 focuses on two important concepts used in Qdrant-based Retrieval-Augmented Generation (RAG) systems:
 
@@ -65,7 +65,7 @@ Vector 4
 Vector N
 ```
 
-The lecture explains HNSW using a navigation example: rather than checking every shop between two cities, first move toward the correct city, then the correct area, and finally perform a smaller local search.
+HNSW using a navigation example: rather than checking every shop between two cities, first move toward the correct city, then the correct area, and finally perform a smaller local search.
 
 The same intuition applies to vector search: move toward the region where the nearest vectors are likely to exist instead of searching the entire vector space.
 
@@ -249,7 +249,7 @@ Top Relevant Results
       ↓
 Retrieved Context
       ↓
-LLM
+     LLM
       ↓
 Final Answer
 ```
@@ -261,7 +261,7 @@ The filter determines which points can be considered, while vector similarity de
 Suppose the knowledge base contains:
 
 **Document 1**
-- **Text:** Employees receive 24 days of leave.
+- **Text:** Employees receive 30 days of leave.
 - **Category:** vacation
 - **is_active:** true
 
@@ -271,7 +271,7 @@ Suppose the knowledge base contains:
 - **is_active:** true
 
 **Document 3**
-- **Text:** Employees previously received 30 days of leave.
+- **Text:** Employees previously received 24 days of leave.
 - **Category:** vacation
 - **is_active:** false
 
@@ -354,7 +354,7 @@ It can also contain information from multiple companies:
 ```text
 Company
 ├── Google
-├── Akamai
+├── Tesla
 └── Microsoft
 ```
 
@@ -363,7 +363,7 @@ A query can therefore use metadata to narrow down the search.
 For example:
 
 ```text
-company = "Akamai"
+company = "Microsoft"
 AND
 category = "leave"
 AND
