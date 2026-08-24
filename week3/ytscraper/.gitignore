@@ -17,3 +17,6 @@ langtest/
 
 # Exclude SETUP.md as requested by the user
 SETUP.md
+
+# Exclude RAGPLAN.md
+RAGPLAN.md
