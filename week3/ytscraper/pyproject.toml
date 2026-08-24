@@ -1,0 +1,40 @@
+[project]
+name = "ytscraper"
+version = "0.1.0"
+description = "Timestamp-level RAG over a YouTube DSA lecture playlist"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "yt-dlp>=2026.1.26",
+    "faster-whisper>=1.2.0",
+    "sentence-transformers>=6.0.0",
+    "qdrant-client>=1.19.0",
+    "groq>=1.6.0",
+    "python-dotenv>=1.2.3",
+    "typer>=0.21.0",
+    "rich>=14.4.0",
+    "fastapi>=0.141.1",
+    "uvicorn>=0.52.1",
+    "pydantic>=2.13.4",
+    "google-genai>=2.19.0",
+]
+
+[project.optional-dependencies]
+# ctranslate2 needs the CUDA runtime libs on Windows. Install with:
+#   uv sync --extra cuda
+# If your GPU is too new for the shipped ctranslate2 build, transcribe.py
+# falls back to CPU int8 automatically.
+cuda = [
+    "nvidia-cublas-cu12",
+    "nvidia-cudnn-cu12>=9",
+]
+
+[project.scripts]
+ytrag = "ytrag.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ytrag"]
