@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lecture Search — Padho with Pratyush</title>
+<meta name="description" content="Ask any DSA question and jump to the exact second it was explained." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127891;</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg:        #0b0d10;
+    --bg-soft:   #12151a;
+    --panel:     #161a20;
+    --panel-2:   #1c2129;
+    --border:    #262c36;
+    --border-lit:#333b47;
+    --text:      #e8edf3;
+    --text-dim:  #9aa4b2;
+    --text-faint:#68717f;
+    --accent:    #ff6b35;
+    --accent-dim:#ff6b3522;
+    --green:     #3fb950;
+    --amber:     #d9a441;
+    --radius:    12px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Inter, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- header ---------- */
+  header {
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, #14181e 0%, var(--bg) 100%);
+  }
+  .header-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 26px 24px 30px;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+  .brand::before {
+    content: "";
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(26px, 4vw, 36px);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+  }
+  h1 em { font-style: normal; color: var(--accent); }
+  .tagline {
+    margin: 10px 0 0;
+    color: var(--text-dim);
+    font-size: 15px;
+    max-width: 620px;
+  }
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 26px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--text-faint);
+  }
+  .stats b { color: var(--text); font-weight: 700; font-variant-numeric: tabular-nums; }
+
+  /* ---------- layout ---------- */
+  main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 26px 24px 80px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 30px;
+    align-items: start;
+  }
+  @media (max-width: 940px) {
+    main { grid-template-columns: 1fr; gap: 22px; }
+    .player-col { order: -1; }
+  }
+
+  /* ---------- search ---------- */
+  .search {
+    display: flex;
+    gap: 10px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 6px 6px 6px 16px;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .search:focus-within {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-dim);
+  }
+  .search svg { flex: none; align-self: center; color: var(--text-faint); }
+  input[type=text] {
+    flex: 1;
+    min-width: 0;
+    padding: 11px 0;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+  }
+  input[type=text]:focus { outline: none; }
+  input[type=text]::placeholder { color: var(--text-faint); }
+  button.ask {
+    flex: none;
+    padding: 11px 22px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    font: inherit;
+    font-weight: 650;
+    cursor: pointer;
+    transition: filter .15s, opacity .15s;
+  }
+  button.ask:hover:not(:disabled) { filter: brightness(1.1); }
+  button.ask:disabled { opacity: .55; cursor: default; }
+
+  /* ---------- example chips ---------- */
+  .examples { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .chip {
+    border: 1px solid var(--border);
+    background: var(--bg-soft);
+    color: var(--text-dim);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--text); background: var(--panel-2); }
+
+  /* ---------- answer ---------- */
+  .label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 30px 0 10px;
+  }
+  .answer {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--green);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    white-space: pre-wrap;
+    font-size: 15.5px;
+  }
+  .answer.refused {
+    border-left-color: var(--amber);
+    background: linear-gradient(90deg, #d9a4410d, var(--panel) 60%);
+  }
+  .answer.idle { border-left-color: var(--border); color: var(--text-dim); }
+  .refusal-note {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-faint);
+    white-space: normal;
+  }
+
+  .cite {
+    display: inline-block;
+    background: var(--accent-dim);
+    color: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0 6px;
+    font-size: 12.5px;
+    font-weight: 700;
+    cursor: pointer;
+    vertical-align: 1px;
+    transition: all .12s;
+  }
+  .cite:hover { background: var(--accent); color: #fff; }
+
+  /* ---------- sources ---------- */
+  .source {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 100%;
+    text-align: left;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    color: var(--text);
+    font: inherit;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .source:hover { border-color: var(--accent); background: var(--panel-2); transform: translateX(2px); }
+  .source.active { border-color: var(--accent); background: var(--panel-2); }
+  .source .n {
+    flex: none;
+    width: 24px; height: 24px;
+    display: grid; place-items: center;
+    background: var(--accent-dim);
+    color: var(--accent);
+    border-radius: 6px;
+    font-size: 12px; font-weight: 700;
+  }
+  .source .title {
+    flex: 1; min-width: 0;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    font-size: 14px;
+  }
+  .source .at {
+    flex: none;
+    font-variant-numeric: tabular-nums;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 3px 9px;
+    font-size: 12.5px;
+    color: var(--text-dim);
+  }
+  .source .play { flex: none; color: var(--accent); font-size: 12px; }
+
+  /* ---------- player ---------- */
+  .player-col { position: sticky; top: 24px; }
+  #playerWrap {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  #playerBox { aspect-ratio: 16/9; background: #000; }
+  #playerBox iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .placeholder {
+    height: 100%;
+    display: grid; place-items: center; align-content: center; gap: 10px;
+    padding: 26px; text-align: center;
+    color: var(--text-faint); font-size: 14px;
+  }
+  .placeholder .big { font-size: 30px; opacity: .35; }
+  #nowPlaying {
+    padding: 12px 15px;
+    font-size: 13px;
+    color: var(--text-dim);
+    border-top: 1px solid var(--border);
+    display: flex; align-items: center; gap: 9px;
+  }
+  #nowPlaying .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--text-faint); flex: none; }
+  #nowPlaying.live .dot { background: var(--green); box-shadow: 0 0 8px var(--green); }
+
+  /* ---------- loading shimmer ---------- */
+  .shimmer { position: relative; overflow: hidden; }
+  .shimmer::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(90deg, transparent, #ffffff0a, transparent);
+    animation: sweep 1.3s infinite;
+  }
+  @keyframes sweep { to { transform: translateX(100%); } }
+  .skel { height: 13px; border-radius: 5px; background: var(--panel-2); margin-bottom: 10px; }
+  .skel:last-child { width: 62%; margin-bottom: 0; }
+
+  .empty-state {
+    background: var(--panel);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    padding: 24px 20px;
+    color: var(--text-faint);
+    text-align: center;
+  }
+  .result {
+    display: grid;
+    grid-template-columns: 26px 1fr auto;
+    gap: 4px 13px;
+    width: 100%;
+    text-align: left;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 13px 15px;
+    margin-bottom: 9px;
+    color: var(--text);
+    font: inherit;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .result:hover { border-color: var(--accent); background: var(--panel-2); transform: translateX(2px); }
+  .result.active { border-color: var(--accent); background: var(--panel-2); }
+  .result .n {
+    grid-row: 1;
+    width: 26px; height: 26px;
+    display: grid; place-items: center;
+    background: var(--accent-dim); color: var(--accent);
+    border-radius: 7px; font-size: 12px; font-weight: 700;
+  }
+  .result .title {
+    grid-row: 1;
+    font-size: 14.5px; font-weight: 550;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .result .at {
+    grid-row: 1;
+    font-variant-numeric: tabular-nums;
+    background: var(--accent); color: #fff;
+    border-radius: 6px; padding: 3px 10px;
+    font-size: 12.5px; font-weight: 650;
+  }
+  .result .preview {
+    grid-column: 2 / 4; grid-row: 2;
+    color: var(--text-faint); font-size: 13px; line-height: 1.5;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .weak-note {
+    background: #d9a4410f;
+    border: 1px solid #d9a44133;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    color: var(--amber);
+    font-size: 13.5px;
+  }
+  button.explain {
+    display: inline-flex; align-items: center; gap: 8px;
+    margin-top: 6px;
+    padding: 10px 18px;
+    border: 1px solid var(--border-lit);
+    border-radius: 9px;
+    background: var(--panel);
+    color: var(--text-dim);
+    font: inherit; font-size: 14px;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  button.explain:hover:not(:disabled) { border-color: var(--accent); color: var(--text); }
+  button.explain:disabled { opacity: .55; cursor: default; }
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 22px 24px 34px;
+    text-align: center;
+    color: var(--text-faint);
+    font-size: 13px;
+  }
+  footer a { color: var(--text-dim); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">Padho with Pratyush</div>
+    <h1>Find the exact second I explained <em>anything</em>.</h1>
+    <p class="tagline">
+      Ask any DSA doubt in Hinglish or English. You get an answer built only from what
+      was actually said in the lectures — and links that jump straight to that moment.
+    </p>
+    <div class="stats">
+      <span><b id="statLectures">—</b> lectures</span>
+      <span><b id="statHours">—</b> hours indexed</span>
+      <span><b id="statChunks">—</b> searchable moments</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <form id="askForm">
+      <div class="search">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>
+        </svg>
+        <input id="q" type="text" maxlength="500" autocomplete="off" autofocus
+               placeholder="memoization aur tabulation ka difference kahan explain kiya hai?" />
+        <button class="ask" id="askBtn" type="submit">Ask</button>
+      </div>
+    </form>
+
+    <div class="examples" id="examples"></div>
+
+    <div class="label" id="resultsLabel">Where this was explained</div>
+    <div id="results" class="empty-state">
+      Ask a question and the exact moments appear here. Click any one to play it.
+    </div>
+
+    <div id="explainWrap" hidden>
+      <button class="explain" id="explainBtn" type="button">
+        <span>✨</span> Summarise these in one paragraph
+      </button>
+      <div id="answer" hidden></div>
+    </div>
+  </section>
+
+  <section class="player-col">
+    <div id="playerWrap">
+      <div id="playerBox">
+        <div class="placeholder">
+          <div class="big">▶</div>
+          <div>Click any timestamp and the lecture starts playing here,<br>at that exact second.</div>
+        </div>
+      </div>
+      <div id="nowPlaying"><span class="dot"></span><span id="nowText">No lecture loaded</span></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Answers come only from the lectures. If a topic wasn't covered, it says so rather than guessing.
+</footer>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+const EXAMPLES = [
+  "memoization aur tabulation ka difference",
+  "sliding window kab use kare",
+  "number of islands kaise solve kare",
+  "dijkstra kaise kaam karta hai",
+  "aggressive cows problem",
+  "recursion ka template",
+];
+
+const $ = (id) => document.getElementById(id);
+const form = $("askForm"), input = $("q"), askBtn = $("askBtn");
+const resultsEl = $("results");
+const nowText = $("nowText"), nowPlaying = $("nowPlaying");
+
+// ---------- stats ----------
+fetch("/meta").then(r => r.json()).then(m => {
+  $("statLectures").textContent = m.lectures;
+  $("statHours").textContent = m.hours;
+}).catch(() => {});
+fetch("/stats").then(r => r.json()).then(s => {
+  $("statChunks").textContent = (s.chunks || 0).toLocaleString();
+}).catch(() => {});
+
+// ---------- example chips ----------
+EXAMPLES.forEach(text => {
+  const b = document.createElement("button");
+  b.className = "chip"; b.type = "button"; b.textContent = text;
+  b.onclick = () => { input.value = text; form.requestSubmit(); };
+  $("examples").appendChild(b);
+});
+
+// ---------- YouTube player ----------
+let player = null;          // created lazily, on the first jump
+let apiReady = false;       // the IFrame API script has loaded
+let apiBlocked = false;     // ...or an extension stopped it arriving
+let pending = null;         // a jump requested before either was true
+let currentVideo = null;
+
+// The API calls this global itself once it has loaded.
+function onYouTubeIframeAPIReady() {
+  apiReady = true;
+  if (pending) { const p = pending; pending = null; jump(p.v, p.s, p.t, p.el); }
+}
+
+// Ad and privacy blockers commonly block youtube.com/iframe_api outright. If
+// it has not arrived after a few seconds, say so instead of silently queuing
+// clicks that will never fire.
+setTimeout(() => {
+  if (!apiReady) {
+    apiBlocked = true;
+    nowText.textContent = "YouTube player blocked — timestamps still open on YouTube.";
+    if (pending) { const p = pending; pending = null; openOnYouTube(p.v, p.s); }
+  }
+}, 6000);
+
+function openOnYouTube(videoId, seconds) {
+  window.open(`https://www.youtube.com/watch?v=${videoId}&t=${Math.floor(seconds)}s`, "_blank", "noopener");
+}
+
+function jump(videoId, seconds, title, el) {
+  // Queue until the API script is in. It loads from youtube.com, so on a slow
+  // connection the first click can easily beat it.
+  if (apiBlocked) { openOnYouTube(videoId, seconds); return; }
+  if (!apiReady) { pending = { v: videoId, s: seconds, t: title, el }; return; }
+
+  if (!player) {
+    // Create the player WITH the video. Constructing an empty YT.Player builds
+    // an iframe pointing at an invalid embed URL, and every later
+    // loadVideoById on it fails silently.
+    player = new YT.Player("playerBox", {
+      videoId: videoId,
+      playerVars: { rel: 0, modestbranding: 1, playsinline: 1, start: Math.floor(seconds), autoplay: 1 },
+      events: {
+        onReady: (e) => e.target.playVideo(),
+        onError: (e) => showPlayerError(videoId, seconds, e.data),
+      },
+    });
+    currentVideo = videoId;
+  } else if (currentVideo === videoId) {
+    player.seekTo(seconds, true);       // same lecture: instant in-page seek
+    player.playVideo();
+  } else {
+    player.loadVideoById({ videoId: videoId, startSeconds: seconds });
+    currentVideo = videoId;
+  }
+
+  nowText.textContent = `${title} — ${fmt(seconds)}`;
+  nowPlaying.classList.add("live");
+  document.querySelectorAll(".result.active").forEach(n => n.classList.remove("active"));
+  if (el) el.classList.add("active");
+  if (window.innerWidth <= 940) {
+    document.getElementById("playerWrap").scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+}
+
+// Embedding can be blocked per-video, and extensions block the iframe outright.
+// Either way, give the viewer a working link rather than a dead black box.
+function showPlayerError(videoId, seconds, code) {
+  const url = `https://www.youtube.com/watch?v=${videoId}&t=${Math.floor(seconds)}s`;
+  nowText.innerHTML = `Can't play here (error ${code}). `
+    + `<a href="${url}" target="_blank" rel="noopener" style="color:var(--accent)">Open on YouTube ↗</a>`;
+  nowPlaying.classList.remove("live");
+}
+
+function fmt(t) {
+  t = Math.max(0, Math.floor(t));
+  const h = Math.floor(t / 3600), m = Math.floor((t % 3600) / 60), s = t % 60;
+  const mm = String(m).padStart(2, "0"), ss = String(s).padStart(2, "0");
+  return h ? `${h}:${mm}:${ss}` : `${mm}:${ss}`;
+}
+
+// ---------- search (no LLM: instant, free, unlimited) ----------
+let lastQuery = "";
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const question = input.value.trim();
+  if (!question) return;
+  lastQuery = question;
+
+  askBtn.disabled = true; askBtn.textContent = "…";
+  $("explainWrap").hidden = true;
+  $("answer").hidden = true;
+  resultsEl.className = "shimmer";
+  resultsEl.innerHTML = '<div class="skel" style="height:58px"></div>'
+                      + '<div class="skel" style="height:58px"></div>'
+                      + '<div class="skel" style="height:58px"></div>';
+
+  try {
+    const res = await fetch("/search", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question })
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.detail || `Something went wrong (${res.status})`);
+    renderResults(data);
+  } catch (err) {
+    resultsEl.className = "empty-state";
+    resultsEl.textContent = String(err.message || err);
+  } finally {
+    askBtn.disabled = false; askBtn.textContent = "Ask";
+  }
+});
+
+function renderResults(data) {
+  const results = data.results || [];
+  resultsEl.className = "";
+  resultsEl.innerHTML = "";
+
+  if (!results.length) {
+    resultsEl.className = "empty-state";
+    resultsEl.textContent = "Nothing in the lectures matches this. It probably isn't covered in the DSA series.";
+    return;
+  }
+
+  // Weak top match: show the results anyway, but say so. A ranked list the
+  // student can dismiss at a glance beats a confident wrong sentence.
+  if (!data.confident) {
+    const note = document.createElement("div");
+    note.className = "weak-note";
+    note.textContent = "No strong match — these are the closest moments, but this topic may not be covered directly.";
+    resultsEl.appendChild(note);
+  }
+
+  results.forEach((r, i) => {
+    const b = document.createElement("button");
+    b.className = "result"; b.type = "button";
+    b.innerHTML = `<span class="n">${i + 1}</span><span class="title"></span>`
+                + `<span class="at">${r.timestamp}</span><span class="preview"></span>`;
+    b.querySelector(".title").textContent = r.title;
+    b.querySelector(".preview").textContent = r.preview;
+    b.onclick = () => jump(r.video_id, r.start_sec, r.title, b);
+    resultsEl.appendChild(b);
+  });
+
+  // Autoplay the best match so the page does something immediately.
+  jump(results[0].video_id, results[0].start_sec, results[0].title, resultsEl.querySelector(".result"));
+
+  $("explainWrap").hidden = false;
+  $("explainBtn").disabled = false;
+  $("explainBtn").innerHTML = "<span>✨</span> Summarise these in one paragraph";
+}
+
+// ---------- optional AI summary ----------
+$("explainBtn").addEventListener("click", async () => {
+  const btn = $("explainBtn"), answerEl = $("answer");
+  btn.disabled = true; btn.innerHTML = "<span>✨</span> Writing…";
+  answerEl.hidden = false;
+  answerEl.className = "answer idle shimmer";
+  answerEl.innerHTML = '<div class="skel"></div><div class="skel"></div><div class="skel"></div>';
+
+  try {
+    const res = await fetch("/ask", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question: lastQuery })
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.detail || `Error ${res.status}`);
+    renderAnswer(data);
+    btn.hidden = true;
+  } catch (err) {
+    answerEl.className = "answer refused";
+    answerEl.textContent = String(err.message || err);
+    btn.disabled = false;
+    btn.innerHTML = "<span>✨</span> Try again";
+  }
+});
+
+function renderAnswer(result) {
+  const answerEl = $("answer");
+  const citations = result.citations || [];
+  answerEl.className = "answer" + (result.grounded ? "" : " refused");
+  answerEl.innerHTML = "";
+
+  result.answer.split(/(\[\d+\])/g).forEach(part => {
+    const m = part.match(/^\[(\d+)\]$/);
+    const c = m ? citations[Number(m[1]) - 1] : null;
+    if (c) {
+      const span = document.createElement("span");
+      span.className = "cite";
+      span.textContent = part;
+      span.title = `${c.title} @ ${c.timestamp}`;
+      span.onclick = () => jump(c.video_id, c.start_sec, c.title, null);
+      answerEl.appendChild(span);
+    } else {
+      answerEl.appendChild(document.createTextNode(part));
+    }
+  });
+
+  if (!result.grounded) {
+    const note = document.createElement("div");
+    note.className = "refusal-note";
+    note.textContent = "The lectures didn't cover this closely enough to summarise, so it won't guess. "
+      + "The timestamps above are still the closest moments found.";
+    answerEl.appendChild(note);
+  }
+}
+</script>
+</body>
+</html>
