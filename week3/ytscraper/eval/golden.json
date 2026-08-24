@@ -1,0 +1,32 @@
+[
+  {
+    "_comment": "Entries whose q starts with an underscore are templates and are skipped by the runner. Delete them once you have written real ones.",
+    "q": "_TEMPLATE_ replace this with a real question you know the answer to",
+    "expect_video_id": "REPLACE_WITH_VIDEO_ID",
+    "expect_around_sec": 724,
+    "tolerance_sec": 120
+  },
+  {
+    "_comment": "Omit expect_around_sec to score at video level only, when you know which lecture but not the minute.",
+    "q": "_TEMPLATE_ video-level entry",
+    "expect_video_id": "REPLACE_WITH_VIDEO_ID"
+  },
+
+  {
+    "_comment": "Out-of-syllabus questions. These work before you have written a single retrieval entry, and they are the checks worth demoing: a RAG system that never says 'I don't know' is a broken RAG system.",
+    "q": "React hooks kaise kaam karte hain?",
+    "expect_refusal": true
+  },
+  {
+    "q": "Kubernetes me pod aur deployment ka difference kya hai?",
+    "expect_refusal": true
+  },
+  {
+    "q": "How do I file my income tax return in India?",
+    "expect_refusal": true
+  },
+  {
+    "q": "Explain the attention mechanism in transformers with the QKV matrices",
+    "expect_refusal": true
+  }
+]

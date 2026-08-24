@@ -1,0 +1,292 @@
+[
+  {
+    "q": "memoization aur tabulation me kya difference hai",
+    "expect_video_id": "M0XjVs41H2s",
+    "expect_around_sec": 1448,
+    "tolerance_sec": 120,
+    "_verify": "DP in 15 Days Episode 08 | Subset Sum Equals to Target @ 24:03",
+    "_url": "https://www.youtube.com/watch?v=M0XjVs41H2s&t=1443s",
+    "_distance": 0.431
+  },
+  {
+    "q": "overlapping subproblem kaise pehchane",
+    "expect_video_id": "b-qtjXsGfqo",
+    "expect_around_sec": 0,
+    "tolerance_sec": 120,
+    "_verify": "L34 DSA Patterns 2025 | Merge Overlapping Intervals | Merge Interval DSA Pattern @ 00:00",
+    "_url": "https://www.youtube.com/watch?v=b-qtjXsGfqo&t=0s",
+    "_distance": 0.446
+  },
+  {
+    "q": "0/1 knapsack ka recursion kaise likhe",
+    "expect_video_id": "LWDYXNN4SHU",
+    "expect_around_sec": 77,
+    "tolerance_sec": 120,
+    "_verify": "Back After Break! 0-1 Knapsack Tabulation | Best DP Playlist 2026 @ 01:12",
+    "_url": "https://www.youtube.com/watch?v=LWDYXNN4SHU&t=72s",
+    "_distance": 0.349
+  },
+  {
+    "q": "longest increasing subsequence kaise solve kare",
+    "expect_video_id": "CdGBURVBMn4",
+    "expect_around_sec": 460,
+    "tolerance_sec": 120,
+    "_verify": "Episode 10 of DP in 15 Days | Longest Increasing subsequence part 1 @ 07:35",
+    "_url": "https://www.youtube.com/watch?v=CdGBURVBMn4&t=455s",
+    "_distance": 0.472
+  },
+  {
+    "q": "two pointer technique kab use karte hain",
+    "expect_video_id": "Fu7LD_mIo00",
+    "expect_around_sec": 1683,
+    "tolerance_sec": 120,
+    "_verify": "Episode 3 –Master DSA Patterns with 2 Pointers Technique @ 27:58",
+    "_url": "https://www.youtube.com/watch?v=Fu7LD_mIo00&t=1678s",
+    "_distance": 0.46
+  },
+  {
+    "q": "sliding window ka pattern kaise pehchane",
+    "expect_video_id": "DL8LSXUsfWE",
+    "expect_around_sec": 507,
+    "tolerance_sec": 120,
+    "_verify": "DSA PATTERNS Episode 11 Sliding Window Pattern: Easy & Medium Questions @ 08:22",
+    "_url": "https://www.youtube.com/watch?v=DL8LSXUsfWE&t=502s",
+    "_distance": 0.42
+  },
+  {
+    "q": "kadane's algorithm ka intuition kya hai",
+    "expect_video_id": "N8vJ8RyQEes",
+    "expect_around_sec": 961,
+    "tolerance_sec": 120,
+    "_verify": "DSA PATTERNS Episode 22 | Kadane’s Algorithm Pattern: Introduction & Intuition @ 15:56",
+    "_url": "https://www.youtube.com/watch?v=N8vJ8RyQEes&t=956s",
+    "_distance": 0.436
+  },
+  {
+    "q": "prefix sum ka use kahan hota hai",
+    "expect_video_id": "XLtRoHIDGs0",
+    "expect_around_sec": 1278,
+    "tolerance_sec": 120,
+    "_verify": "DSA Patterns Episode 27 | Master DSA Patterns With Prefix Sum | Leetcode Patterns @ 21:13",
+    "_url": "https://www.youtube.com/watch?v=XLtRoHIDGs0&t=1273s",
+    "_distance": 0.416
+  },
+  {
+    "q": "merge intervals kaise solve karte hain",
+    "expect_video_id": "aH5aeejuJU8",
+    "expect_around_sec": 915,
+    "tolerance_sec": 120,
+    "_verify": "DSA Patterns L31 | Master Merge Interval DSA Patterns | MERGE INTERVALS LEETCODE @ 15:10",
+    "_url": "https://www.youtube.com/watch?v=aH5aeejuJU8&t=910s",
+    "_distance": 0.406
+  },
+  {
+    "q": "linked list me cycle ka start kaise nikale",
+    "expect_video_id": "p8efFVGuqyI",
+    "expect_around_sec": 680,
+    "tolerance_sec": 120,
+    "_verify": "DSA PATTERNS Episode 25 | Linked List Start of Cycle Logic Explained @ 11:15",
+    "_url": "https://www.youtube.com/watch?v=p8efFVGuqyI&t=675s",
+    "_distance": 0.4
+  },
+  {
+    "q": "slow fast pointer kaise kaam karta hai",
+    "expect_video_id": "IxxlDYwMrZ8",
+    "expect_around_sec": 1030,
+    "tolerance_sec": 120,
+    "_verify": "DSA PATTERNS Episode 17 | Linked List Slow & Fast Pointer Technique: Introduction @ 17:05",
+    "_url": "https://www.youtube.com/watch?v=IxxlDYwMrZ8&t=1025s",
+    "_distance": 0.421
+  },
+  {
+    "q": "linked list ko k group me reverse kaise kare",
+    "expect_video_id": "BdpT6_jotcM",
+    "expect_around_sec": 0,
+    "tolerance_sec": 120,
+    "_verify": "Best Explanation on Reverse LinkList Nodes in K Group | DSA Patterns CPP JAVA Python @ 00:00",
+    "_url": "https://www.youtube.com/watch?v=BdpT6_jotcM&t=0s",
+    "_distance": 0.384
+  },
+  {
+    "q": "stack me next greater element kaise nikale",
+    "expect_video_id": "gFqOIPfAEjw",
+    "expect_around_sec": 1700,
+    "tolerance_sec": 120,
+    "_verify": "Next Greater Element | Stack and Queue DSA Pattern 2025 @ 28:15",
+    "_url": "https://www.youtube.com/watch?v=gFqOIPfAEjw&t=1695s",
+    "_distance": 0.422
+  },
+  {
+    "q": "hashmap kab use karna chahiye",
+    "expect_video_id": "5Net0Dd7NAA",
+    "expect_around_sec": 1026,
+    "tolerance_sec": 120,
+    "_verify": "Solve Any HEAP Question By This Template | Top K frequent Elements Leetcode @ 17:01",
+    "_url": "https://www.youtube.com/watch?v=5Net0Dd7NAA&t=1021s",
+    "_distance": 0.514
+  },
+  {
+    "q": "adjacency list aur adjacency matrix me kya difference hai",
+    "expect_video_id": "WR-hWofGb_U",
+    "expect_around_sec": 1452,
+    "tolerance_sec": 120,
+    "_verify": "Graph Representation: Adjacency Matrix vs Adjacency List – Which is Better? @ 24:07",
+    "_url": "https://www.youtube.com/watch?v=WR-hWofGb_U&t=1447s",
+    "_distance": 0.343
+  },
+  {
+    "q": "bfs aur dfs me kya difference hai",
+    "expect_video_id": "O04KAy7cLBs",
+    "expect_around_sec": 2725,
+    "tolerance_sec": 120,
+    "_verify": "Master DFS/BFS in Graphs | Graph series DSA Patterns @ 45:20",
+    "_url": "https://www.youtube.com/watch?v=O04KAy7cLBs&t=2720s",
+    "_distance": 0.444
+  },
+  {
+    "q": "topological sort kaise karte hain",
+    "expect_video_id": "OSYgRvaWFSI",
+    "expect_around_sec": 1932,
+    "tolerance_sec": 120,
+    "_verify": "No one has explained Topological sort like This! @ 32:07",
+    "_url": "https://www.youtube.com/watch?v=OSYgRvaWFSI&t=1927s",
+    "_distance": 0.388
+  },
+  {
+    "q": "dijkstra algorithm kaise kaam karta hai",
+    "expect_video_id": "93copdtW4ZQ",
+    "expect_around_sec": 186,
+    "tolerance_sec": 120,
+    "_verify": "No one Has Explained Dijkstra's Algorithm Like This On The Internet! @ 03:01",
+    "_url": "https://www.youtube.com/watch?v=93copdtW4ZQ&t=181s",
+    "_distance": 0.454
+  },
+  {
+    "q": "bellman ford kab use karte hain",
+    "expect_video_id": "A3sZWwalzz4",
+    "expect_around_sec": 1701,
+    "tolerance_sec": 120,
+    "_verify": "We Crossed 50K! Let's Study Bellman-Ford NOW @ 28:16",
+    "_url": "https://www.youtube.com/watch?v=A3sZWwalzz4&t=1696s",
+    "_distance": 0.475
+  },
+  {
+    "q": "number of islands kaise solve kare",
+    "expect_video_id": "2HZ12B2ZPAQ",
+    "expect_around_sec": 1471,
+    "tolerance_sec": 120,
+    "_verify": "DSA PATTERNS Episode 13 Sliding Window Pattern: Important Questions @ 24:26",
+    "_url": "https://www.youtube.com/watch?v=2HZ12B2ZPAQ&t=1466s",
+    "_distance": 0.568
+  },
+  {
+    "q": "heap se top k frequent elements kaise nikale",
+    "expect_video_id": "5Net0Dd7NAA",
+    "expect_around_sec": 164,
+    "tolerance_sec": 120,
+    "_verify": "Solve Any HEAP Question By This Template | Top K frequent Elements Leetcode @ 02:39",
+    "_url": "https://www.youtube.com/watch?v=5Net0Dd7NAA&t=159s",
+    "_distance": 0.381
+  },
+  {
+    "q": "binary search me aggressive cows problem kaise solve kare",
+    "expect_video_id": "TF53eWL47ws",
+    "expect_around_sec": 1822,
+    "tolerance_sec": 120,
+    "_verify": "Best Explanation of Aggressive Cows Leetcode | Binary Search DSA Pattern @ 30:17",
+    "_url": "https://www.youtube.com/watch?v=TF53eWL47ws&t=1817s",
+    "_distance": 0.439
+  },
+  {
+    "q": "binary search on answer kya hota hai",
+    "expect_video_id": "0Kxg0LPGwFo",
+    "expect_around_sec": 0,
+    "tolerance_sec": 120,
+    "_verify": "One Video To Solve All Binary Search Interview Questions | DSA Patterns 2026 @ 00:00",
+    "_url": "https://www.youtube.com/watch?v=0Kxg0LPGwFo&t=0s",
+    "_distance": 0.408
+  },
+  {
+    "q": "LCA in binary tree kaise nikalte hain",
+    "expect_video_id": "QopDohCvJVA",
+    "expect_around_sec": 80,
+    "tolerance_sec": 120,
+    "_verify": "LCA in Binary Search Tree – Don't Miss This Trick! | Trees Ep 08 | DSA Series @ 01:15",
+    "_url": "https://www.youtube.com/watch?v=QopDohCvJVA&t=75s",
+    "_distance": 0.395
+  },
+  {
+    "q": "binary tree ka diameter kaise nikale",
+    "expect_video_id": "_V7J7exlyzk",
+    "expect_around_sec": 82,
+    "tolerance_sec": 120,
+    "_verify": "Diameter of Binary Tree | Check Complete Binary Tree | Tree DSA Series @ 01:17",
+    "_url": "https://www.youtube.com/watch?v=_V7J7exlyzk&t=77s",
+    "_distance": 0.416
+  },
+  {
+    "q": "level order traversal kaise karte hain",
+    "expect_video_id": "-g6h0Ok1Buk",
+    "expect_around_sec": 0,
+    "tolerance_sec": 120,
+    "_verify": "EP 03: Level Order Traversal In Binary Tree | Intuition and Template @ 00:00",
+    "_url": "https://www.youtube.com/watch?v=-g6h0Ok1Buk&t=0s",
+    "_distance": 0.408
+  },
+  {
+    "q": "recursion ka template kya hai",
+    "expect_video_id": "Qh_U6NYf99o",
+    "expect_around_sec": 0,
+    "tolerance_sec": 120,
+    "_verify": "Recursion Fixed Template For All Questions | One Template To Solve Recursion Problems @ 00:00",
+    "_url": "https://www.youtube.com/watch?v=Qh_U6NYf99o&t=0s",
+    "_distance": 0.385
+  },
+  {
+    "q": "backtracking aur recursion me kya farak hai",
+    "expect_video_id": "yEwnsPI_tUY",
+    "expect_around_sec": 948,
+    "tolerance_sec": 120,
+    "_verify": "DP in 15 Days Episode 06 : No One Has Explained Tabulation Like This @ 15:43",
+    "_url": "https://www.youtube.com/watch?v=yEwnsPI_tUY&t=943s",
+    "_distance": 0.423
+  },
+  {
+    "q": "bit manipulation me XOR ke tricks",
+    "expect_video_id": "T56nhL8Y1po",
+    "expect_around_sec": 3656,
+    "tolerance_sec": 120,
+    "_verify": "Master Bit Manipulation in One Video | XOR Tricks + Interview Questions @ 1:00:51",
+    "_url": "https://www.youtube.com/watch?v=T56nhL8Y1po&t=3651s",
+    "_distance": 0.278
+  },
+  {
+    "q": "greedy algorithm kab use karte hain",
+    "expect_video_id": "OaHw9ZZHknw",
+    "expect_around_sec": 511,
+    "tolerance_sec": 120,
+    "_verify": "Greedy Algorithms: From Zero to Interview-Ready @ 08:26",
+    "_url": "https://www.youtube.com/watch?v=OaHw9ZZHknw&t=506s",
+    "_distance": 0.386
+  },
+  {
+    "q": "React hooks kaise kaam karte hain",
+    "expect_refusal": true
+  },
+  {
+    "q": "kubernetes me pod aur deployment ka difference",
+    "expect_refusal": true
+  },
+  {
+    "q": "how do I file my income tax return in India",
+    "expect_refusal": true
+  },
+  {
+    "q": "explain the attention mechanism in transformers",
+    "expect_refusal": true
+  },
+  {
+    "q": "django me models kaise banate hain",
+    "expect_refusal": true
+  }
+]
