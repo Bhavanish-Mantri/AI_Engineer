@@ -1,0 +1,19 @@
+# Local environment variables
+.env
+
+# Virtual environment
+.venv/
+
+# Python cache / compiled files
+__pycache__/
+*.pyc
+
+# Local audio files (if any)
+audio/
+
+# Local testing and temp files
+langtest/
+*.log
+
+# Exclude SETUP.md as requested by the user
+SETUP.md
