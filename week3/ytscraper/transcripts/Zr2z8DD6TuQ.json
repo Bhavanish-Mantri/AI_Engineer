@@ -1,0 +1,604 @@
+{
+ "video_id": "Zr2z8DD6TuQ",
+ "title": "Definitely Better Than Striver.. Two Sum in Binary search Tree!",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 3402,
+ "segments": [
+  {
+   "start": 3.79,
+   "end": 34.32,
+   "text": "Hey! Today there won't be a tree, there will be a Gangal tree. Today's question is very important. We have spent 1-2 hours trying to understand it. Two-sum. You must remember one thing. We had studied two-sum. When we started YouTube, what was the first question pattern of the series? Two-sum. In which there was a two-pointer. In which there was a two-pointer. Whoever is watching this video, everyone must have watched that video. I am sure of it."
+  },
+  {
+   "start": 34.58,
+   "end": 63.9,
+   "text": "It was a very easy question. This was the foundation question from where we started reading DSL patterns. The question we are going to do today is a two-sum question. But, but, but, this two-sum that you have to do, first you had to do it in array, so it was very easy that you used to do it with IJ. Now you have to do two-sum in a BST, yes, binary search tree. What does that mean? We will tell you. You have not been given an array, like you used to get an array or a vector or an array list, nothing is given."
+  },
+  {
+   "start": 63.9,
+   "end": 85.84,
+   "text": "BST means Binary Search Tree. If you are new to this channel, then check out BST. If you are new to this channel, then check out BST. If you are new to this channel, then check out BST."
+  },
+  {
+   "start": 85.84,
+   "end": 114.75,
+   "text": "this question will not be understood by the leetcode that this is a very easy question it is written easy, but it is not easy, it is a very hard question according to me, the question we have done till now in tree, this is going to be the hardest question, so keep some patience it is possible that you may not understand what is happening but keep some patience and some courage, you will understand everything the question is that you have been given a binary sub-tree, there are numbers in the tree like 5, 4, whatever tree it may be, from that"
+  },
+  {
+   "start": 114.75,
+   "end": 143.12,
+   "text": "What you have to do is the same thing that you had to do in two sums. What you had to do in array two sums is that you have to find two numbers like this in array. Any array of i and array of j whose sum is equal to given k or given target. This is what you have to do in two sums. Exactly this is what you have to do here. Here you have to find two nodes. Any two nodes. It can be node a plus node b. Node means circle. Any two circle whose number we add, it becomes k."
+  },
+  {
+   "start": 143.15,
+   "end": 172.14,
+   "text": "If you get such a circle, if you get such two circles, you have to return true. If you don't get it, you have to return false. This is your question. So this question looks very good to see, but it is a very hard question. According to me, it is a very hard question. That's why it is not hard because its implementation is hard. First of all, its code is also at a hard level and it is very hard to understand the code. So that's why we are saying again and again that listen carefully. Now look, you must have understood the question."
+  },
+  {
+   "start": 172.14,
+   "end": 190.86,
+   "text": "There are two approaches to this. What is it? There are two approaches. The first approach is very good. We will teach that first. Some of you like to read easily. You also like to read easily. The second approach is hard. We will teach that after that. So don't run away from the first approach. We are teaching you the first approach just to make you understand."
+  },
+  {
+   "start": 190.86,
+   "end": 219.76,
+   "text": "It can also happen that if you are blank in the interview, then what to do? You can consider it a brute force. But the first approach, which is an easy approach, will not work in the interview. No, no, no. It will not work at all in the interview. So don't run away after reading the first approach. There will be no benefit from it. The interviewer will reject it. The interviewer will ask you for a second approach, which is the right approach. Okay? Let's start. So let's make a small BST. So let's make a BST like this. 10."
+  },
+  {
+   "start": 219.76,
+   "end": 245.22,
+   "text": "What is a binary substitute? If there is a root, then the left child of the root is smaller than the right child of the root. So in that we make a binary substitute. 10 is bigger than 15. 10 is smaller than 5. Let's take a left child of 5. 5 is smaller than 2. 5's right child should be bigger than 5. But it should be smaller than 10. Remember BST."
+  },
+  {
+   "start": 245.22,
+   "end": 273.12,
+   "text": "The right side of 5 is bigger than 5 but not bigger than 10. Whatever is on the left of 10 will be smaller than 10. So we write 7 on the right side of 5. The left side of 15 is smaller than 15 but will be bigger than 10. We write 12. And the right side of 15 will be bigger than 15 and obviously will be bigger than 10. So we write 20. This is a good binary system. Assume that your K is"
+  },
+  {
+   "start": 273.12,
+   "end": 300.21,
+   "text": "20, your K20 means you have to find two circles. How many? Two circles whose sum is 20. So from here you will get to know that 5 and 15. If we add these two, then it becomes 20. So this is there. This is there in the two circle tree. What do you have to return? True return. There is no other circle whose 20 is there. And there is no other circle whose 20 is there. There are only two circles. It is a unique answer. So no matter if it is unique, it can also be that"
+  },
+  {
+   "start": 300.21,
+   "end": 328.69,
+   "text": "There are a lot of pairs whose sum doesn't matter. If you get one, then you have to return true. So this is your question. So we were talking about the first approach. The first approach will be very easy. You will like it very much to listen to. So we will tell you. See, you know two-sum. It is not that you know two-sum for the first time in your life. You know. You know in what? In array. How does it come in array? Let's revise it once. If you get a sorted array. What is a sorted array? Remember in two-pointer."
+  },
+  {
+   "start": 328.69,
+   "end": 357.31,
+   "text": "If array is useful to sort, then we used to sort it. There also, you used to get sorted array or you used to sort it. So, you know it. How do you know it? Let me remind you. 0, 1, 2, 4, 5. Suppose, this is your sorted array. Any number is a sorted array. So, what did you do? You used to keep i in the beginning and j in the last. That's why it was called two pointer. That two indexes move together. Okay. After that, you used to see that if array of i and array of j is equal to k,"
+  },
+  {
+   "start": 357.31,
+   "end": 380.58,
+   "text": "So, you used to say that you got the answer. You got two indexes. Very good. It's over. But, if that's not the case, then there can be two cases. If the array of i plus the array of jk is not equal, then there can be two more cases. Either the case will be small or the case will be big. So, for both cases, if the cases were small, then tell me one thing. Did you get to know that this index and this index, the sum of these two cases is small? Okay."
+  },
+  {
+   "start": 380.58,
+   "end": 409.36,
+   "text": "In this case, if you move j, if you move j, if you bring j here, then the result will be smaller. For example, if here is 1 and here is 5, you got to know that 1 plus 5 is less than 10. Okay, so 6 is less than 10. Okay. If you bring this here, then here will be 4. So, 1 plus 4 will be smaller than 10. So, you are going to the wrong answer. In this case, what we used to do? We used to increase i. Because, it is possible that after this, something will happen which will make us"
+  },
+  {
+   "start": 409.36,
+   "end": 438.64,
+   "text": "We are just doing a revision. In this case, you used to do i++. And if the area of i and area of j is greater than k, let's assume that 1 plus 5 is greater than 3. Let's assume that k is 3. So 6 is greater than 3. In this case, if you increase i, then 2 plus 5 will be greater than 3. So you are not reaching the answer. What do you want? Reduce j so that the sum comes towards less. You want the less one, right? In this case, we will"
+  },
+  {
+   "start": 438.64,
+   "end": 467.74,
+   "text": "They used to do minus minus. So, this was two-sum. Okay. Did you know perfectly in which? When you used to get a sorted array, did you know this two-sum? So, what we are saying is, there is a very important property in binary search tree. What is the important property? When you do in-order of binary search tree, which order? In-order means, left, root and right. Left, root and right. Remember, the traversal was of three types. Pre-order, in-order, post-order. What is in-order?"
+  },
+  {
+   "start": 467.74,
+   "end": 494.27,
+   "text": "First the left child will get a chance, then the root will take its own chance and then will give a chance to the right child. So when you used to do inorder of binary search tree, then did you get a sorted order? Let's see how you get a sorted order. This is your BST, we write inorder of it. First of all, we will come to 10. So what will 10 do? First it will give a chance to the left child. So we will come to 5. What will 5 do? First it will give a chance to the left child."
+  },
+  {
+   "start": 494.27,
+   "end": 521.25,
+   "text": "We will come to 2. Now, there is no left child of 2. So, 2 will take a chance. If there is no left child, then whose turn is it? Root child. So, first of all, 2 will take a chance. 2's work is done. 2 doesn't have a right child. So, 2 cannot take a chance. Now, we will go up. 5. Now, 5 has given a chance to its left child. So, what is 5? It will take a chance. What? It will take a chance. Will it come? 5. Very good. After taking a chance, 5 will give a chance to its right child. Where will we go? 7."
+  },
+  {
+   "start": 521.25,
+   "end": 546.22,
+   "text": "Now, there is no left child of 7. So, if there is no left child of 7, then 7 will take the chance. 7. If there is no right child of 7, then nothing will happen. We will come up. Now, there is nothing left to do for 5. We have done 5 left and right. Go up more. We have come back to 10. Now, 10 has given the chance to our left child. 10 will take the chance. Very good. Now, after taking the chance, what will 10 do? It will give the chance to the right child. Come to the right child at 15. 15 will not take the chance by itself."
+  },
+  {
+   "start": 546.22,
+   "end": 575.9,
+   "text": "If you give a chance to your left child, then it will come to 12. If you don't have a left child of 12, then 12 will be printed by itself. 12 is done. Now, 12's left and right are both null. No problem. We want it up. 15. You have given a chance to your left child of 12. 15 will be printed by itself. So, 15 is printed. After printing by itself, you will give a chance to your right child. 20 is done. Now, 20. If you don't have a left child of 20, then 20 will be printed by itself. 20. 20 doesn't have a right child. We will go up. 15's work is over. We will go up more. 10's work is also over. Now, we have written everything."
+  },
+  {
+   "start": 575.9,
+   "end": 603.55,
+   "text": "Look carefully if the array is sorted or not. 2, 5, 7, 10, 12, 15, 20. Yes, the array is sorted. Inorder sorts the binary search tree. What does it do? Sort. So, this is giving me an idea. Let's do one thing. We will have given the root of the tree. We will have given the root of the tree. We will inorder this tree. What do we do on this tree? We do inorder traversal. And whenever we do inorder, here we were printing. Here we were printing things."
+  },
+  {
+   "start": 603.55,
+   "end": 631.06,
+   "text": "Instead of printing, we will make a vector or an array. And instead of printing, we will push it in the vector. What will we do? Push. What does it mean? We will write a small function. Just like you wrote inorder, you used to print in order. Don't print. Push it in the vector. How? See. First of all, a node star root has come. Very good. If root is null,"
+  },
+  {
+   "start": 631.06,
+   "end": 660.8,
+   "text": "So, there is no need to do anything. So, what will we do? We will do nothing. Now, now, now. What does in order say? Give the left a chance first, then take it yourself, then the right. So, what does giving a chance mean? Call the same function. For whom? For the left. The left got a chance. Assume that the left's work is over. Now, give yourself a chance. The root itself will take a chance. Taking a chance means pushing it in a vector. In which? Make a vector. Assume that we have made a global vector. Vector of int of"
+  },
+  {
+   "start": 660.8,
+   "end": 689.46,
+   "text": "tmp, okay? So, what will we do? tmp.pushback. Now, Java, RList, Python, whatever your vector is, what will you do in that? Push the root data. Now, the root itself took a chance. Taking a chance means the vector was pushed. Now, what is it? Give the right a chance. Giving a chance means call fun. Call fun. Yes, yes. And return. It's over. What happened? This happened. Give the left a chance."
+  },
+  {
+   "start": 689.46,
+   "end": 717.2,
+   "text": "This is done. The root itself took its chance and this is done. Give the right a chance, so in order. When you complete this, then this TMP, this TMP, what will it become? It will become a sorted array. It will become a sorted array like it was here. This will become the TMP. Once you get the sorted array, you put two pointers in it. Look at your work. Your work is to find the circle. If there is a number in the circle, what did we do? The tree, whatever tree you gave,"
+  },
+  {
+   "start": 717.2,
+   "end": 746.34,
+   "text": "We have converted it into a vector. Because we know the vector, we have converted it. Once you get this, then you put your vector in it. Take your 2.0 ij one. You know that. You don't have to write the code for that. We are expecting such things from you. Once this is done, the work is over. But this approach is not acceptable. This approach. Now see, what will be its time complexity? You do any traversal of any circle, any DFS traversal, right? You go to every circle once. Order of n is where? n is equal to number of nodes."
+  },
+  {
+   "start": 746.34,
+   "end": 774.69,
+   "text": "What does traversal mean? To see every circle of the tree. How are you looking at it? It means that you are looking in order. That you are looking left or right. How are you looking at it? That level order. Whatever it is. You are looking at it, right? Okay. Now, space complexity. What? Space complexity. You are converting this tree into a vector. So, how many nodes will be there in the vector? The number of nodes in the tree will be the same as the number of nodes in the vector. So, space complexity will also be of order of n. Where n is equal to number of?"
+  },
+  {
+   "start": 774.69,
+   "end": 802.46,
+   "text": "notes. So it's okay, I mean it's not that bad, but the interviewer won't listen to this. Until the interviewer himself is a big idiot, he won't listen to this. If you tell us in the interview, we will say that it's okay, it's good for brute force, it's good for beginners, but it's not fun, do something else. So this is approach 1. You must have understood this. You can also code it, it will work, but you don't have to stay here. Now let's start on the next approach."
+  },
+  {
+   "start": 802.46,
+   "end": 831.44,
+   "text": "Open your mind and listen to it. Have patience and pause the video if you want. But watch it in one stretch. Don't do it again and again. Now the hard part starts. Let's go. We have made a BST for you. Pause it and see if it is correct or not. Don't say that you have made something from your mind. The whole rule of BST is being followed. We have not made anything wrong."
+  },
+  {
+   "start": 831.44,
+   "end": 862.16,
+   "text": "I made this tree intentionally to explain you. I didn't want to make a big tree. I made it intentionally. For some time, let's get out of two sums. Let's get out of two sums. Let's give you another problem. Imagine that you are sitting in an interview. We have shown you this BST. We give you a small problem. Tell us by doing this. We tell you. In this tree. Print in sorted order. Print the number in sorted order. Print the number in sorted order. Print the number in sorted order."
+  },
+  {
+   "start": 862.16,
+   "end": 891.36,
+   "text": "in a sorted order, small or big, we want all the numbers printed, do it. So you will say, we will do in-order, we just saw that in-order is there, what is in-order? We will do sorted order, in-order. Okay, we don't want to do in-order. We don't want to do in-order, okay? We want to do something else, not in-order, we want to do something else. So you will say, we don't know anything else, we know in-order, we don't know anything else. It will come. See, what we do, see how we will make our solution. Don't go on this, that this is not, how did you think?"
+  },
+  {
+   "start": 891.36,
+   "end": 921.66,
+   "text": "Bear with me for a while. Don't use in-order and your task is to write all the numbers on the screen in sorted order. You don't know everything except for in-order, right? We don't know too. If we ask you to forget sorted order for a while, find the smallest number of this tree. Find the smallest number of this tree. In any BST, where can you find the smallest number?"
+  },
+  {
+   "start": 921.66,
+   "end": 951.3,
+   "text": "Root. Root is 20. If there is no left child of root, we are saying BST again. Please focus on this. What is BST? Root is here. Smaller than root is in left. Bigger than root is in right. Remember this is Ramban. Come to 20. 20 is a number. Good. If there is no left child of 20. If there is no left child of 20. Means there are elements of 20 only in right. What do we say? Who is the smallest? 20. Because"
+  },
+  {
+   "start": 951.3,
+   "end": 980.64,
+   "text": "If there is no left child of 20, then there is nothing in the left. Whatever is in the right is bigger than 20. This is what BST says. So what happens? But now you can see the left child of 20 here. You can see the left child. So 20 is not the smallest. 20 is not the smallest in any case. Okay. Let's come to the left child of 20. Now there is no way to go to the right child of 20. 30 cannot be small. Why will we go to the right child of 20? 20 is the left child of 20. So the left child will be smaller than 20."
+  },
+  {
+   "start": 980.64,
+   "end": 1010.37,
+   "text": "Come to left child. Come to 10. Okay. If there is no left child of 10, then what do we say? 10 is the smallest. Why? We came to 10 from 20. If there was no left child of 10, then we would say that whatever is on the right of 10 is bigger than 10. And 10 is smaller than 20, so 10 is the smallest. But the problem is that there is a left child of 10 as well. There is a left child of 10 as well. The answer cannot be 10 as well. And we will have to come down. Where is down? Is there any benefit of going to the right of 10? No. The one on the right of 10 is bigger than 10, so it cannot be the smallest."
+  },
+  {
+   "start": 1010.37,
+   "end": 1039.39,
+   "text": "If you want to get the smallest, then where will you get it? In the left of 10. So what are we doing? We are going left. See, we came from the root to 10. We went left from 10 and came to 5. There is the same story at 5. If there was no left child of 5, then we would have said that there is no left child of 5. The one on the right of 5 is the same. If it is bigger than 5, then 5 is the smallest. But the important thing is that 5 also has a left child. Come a little more left. Come a little more left. Come to 2. Come to 2. Yes, yes."
+  },
+  {
+   "start": 1039.39,
+   "end": 1068.98,
+   "text": "There is no left child of 2. Look carefully. There is no left child of 2. There is only right child of 2. So can we say guaranteed that what is its smallest value? 2. What is its smallest value? 2. Why? We came from root to 2 while going left. We came from root to 2. Now there is no more left. There is no more left. It means there is nothing in 2's left. Whatever is in 2's right is bigger than 2. So who is the smallest?"
+  },
+  {
+   "start": 1068.98,
+   "end": 1097.31,
+   "text": "2 would be the smallest value. If someone would give you a task to leave the sorted-rotted, leave the two-sum, leave the sorted too. Tell me the smallest value. So what would you do? You would do this. You would start with a root. And while going left, while going left, while going left, while going left, while going left, until someone's left gets null, until someone's left gets null, then that would be your smallest value. Did you understand this? Very good."
+  },
+  {
+   "start": 1097.31,
+   "end": 1124.18,
+   "text": "You have understood the first stage. So this problem has been solved. Which one? We have not done the sorted order. The smallest value. It is taking time because we want to tell it very easily. We don't want to remind you what will happen. We want you to remember this. It will remain in your mind for a very long time. That's why it is taking time. Your answer is 2. Now see, which path have you taken to get to 2? You started from root. You have reached to 2 from this path."
+  },
+  {
+   "start": 1124.27,
+   "end": 1151.15,
+   "text": "Now see, there is a problem in the tree. Now we have come to our sorted order. That you have to write the whole tree in sorted order. There is a small problem in the tree. You can go from a parent to his children. You can go from root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root to root."
+  },
+  {
+   "start": 1151.15,
+   "end": 1178.48,
+   "text": "that go to the parent of the root, it doesn't work. In the root, left and right, left child and right child can go. There is no way to go to the parent of the children. Now you have come to 2. So see, we do a small trick. To come to 2, you have seen so much. You have seen these three circles. What do we do? We store it somewhere. We store it somewhere. Where will we store it? Suppose we store it anywhere."
+  },
+  {
+   "start": 1178.7,
+   "end": 1206.1,
+   "text": "Let's see how to make our solution slowly. When we reach from root to left, what do we do? Until the left is null, we are storing these 4 circles in a stack. Why stack? You will understand. Be patient and slow down. 20, 10, 5, 2. 20, 10, 5, 2. It is stored."
+  },
+  {
+   "start": 1206.1,
+   "end": 1233.36,
+   "text": "It is stored in the stack. It is very easy to store this. Start from the root and push the root in the stack. Push the root to the left. Push the root to the left. Push the root to the left. Push the root to the left. Push the root to the left. Push the root to the left. Push the root to the left. Push the root to the left. Push the root to the left. Push the root to the left."
+  },
+  {
+   "start": 1233.36,
+   "end": 1260.32,
+   "text": "Now if you take out the top of this stack, will you get the smallest element? Will you get the smallest element? This is the top of the stack. Will you get the smallest element? Yes, you will get it. You will get it till now. After the first step, you will definitely get it. So what is your top? 2. Your top 2 is here. We will print 2 somewhere. Okay? Do you understand so far? Nothing has happened. From the root to the left, when it is not null, we have pushed it in the stack."
+  },
+  {
+   "start": 1260.32,
+   "end": 1288.85,
+   "text": "Once you get the top of the stack, you will get 2. Obviously, you will get it. Because we pushed 2 at the very end. It will come first. Obviously, you will get it. Okay. Pop it too. Pop it too. Pop means remove 2. Very good. You got a 2 in the answer. Remember. Okay. Now look. There is no left of 2. There is no left of 2. That's why 2 was at the top of the stack. If there was a left of 2, if someone was here, if someone was here, if someone was 1 here, then that would have come at the top of the stack after the first step."
+  },
+  {
+   "start": 1288.85,
+   "end": 1315.28,
+   "text": "That hasn't happened. So it means there is no left of 2. So you know that there is no element smaller than 2. 2 is the smallest element. Very good. Now listen very carefully. Your work is to print in sorted order. What? Sorted order. Means the next number you want should be bigger than 2. It should be bigger than 2. It is obvious. So what? Now see what is at the top of the stack. Now see what is at the top of the stack. 5. Okay."
+  },
+  {
+   "start": 1315.28,
+   "end": 1345.42,
+   "text": "If we look at the sorted order of this tree, then should we get 5 after 2? No. After 2, we should get 4 or 3. After 2, we should not get 5 directly. But what is there in your stack at the top? 5. So if you do nothing after this, then what will your stack tell you at the top next time? Write 5 after 2. This will leave these two. This will be wrong. So, so, so, here is the most important thing. We got 2 from the top. We have also printed that 2. Okay."
+  },
+  {
+   "start": 1345.42,
+   "end": 1373.58,
+   "text": "The top of the stack of 2 will be the parent of 2. Why? Because remember we only pushed the stack here. We pushed the root and came to the left of the root. We pushed it and came to the left of it. We pushed it and came to the left of it. So we pushed 5 and came to the left of 5 and came to 2. We pushed 2. So the top of the stack will be the parent of 2. Now do you understand that 2 will be the parent of 2? But after 2,"
+  },
+  {
+   "start": 1373.58,
+   "end": 1402.1,
+   "text": "Should the parent of 2 come in the sorted order? Or something else can come? Something else can come. What can come? The element on the right of 2. The element on the right of 2. And not just one element. All the elements on the right of 2 are smaller than 5. So in the sorted order, all these people should come before 5. All these people should come before 5. I am repeating it again."
+  },
+  {
+   "start": 1402.35,
+   "end": 1432.22,
+   "text": "The parent of 2 is 5. Because you can see in the stack that it is 5. But in sorted order, if there is a right child of 2 or a right subtree of 2, that entire subtree should come before 5. That entire subtree should come before 5. What will we do? We will remove the right child of 2. Look, if the right child of 2 is null, very good. If the right child of 2 is null,"
+  },
+  {
+   "start": 1432.22,
+   "end": 1462.18,
+   "text": "There is no problem. Then 5 could have come. But the right child of 2 is not null. It has to come before 5. What will we do? We will remove the right child of 2. What is the right child of 2? 4. What is the right child of 2? 4. 4. 4 has come. We have just removed it. 4. Okay. So, naturally, should we also push 4 in the stack? Should we also push 4 in the stack?"
+  },
+  {
+   "start": 1462.18,
+   "end": 1491.25,
+   "text": "Yes, we should. Why? Because we are taking out the top, right? So, we are keeping this faith that the top will give us the smallest element. We got 2 for the first time. Very good. Now, if you don't push 4, then the top of the stack will give you 5. What will we do? We will repeat the same thing. Push 4 in the stack. Push 4 in the stack. Okay, 4 is also pushed in the stack. But, do we have to stop here? Do we have to stop here? No. What is 4?"
+  },
+  {
+   "start": 1491.25,
+   "end": 1515.87,
+   "text": "Sorted order should come after 2. No. Why? There is a left child of 4. There is a left child of 4. The left child of 4 will come before that in sorted order. We will do the same thing. We did the same thing with the root. We pushed the root. We pushed the left of the root. We pushed the root. We pushed the left of the root. Then we went to the left. Then until the left of anyone is null, we pushed it till then. On coming to 2."
+  },
+  {
+   "start": 1515.87,
+   "end": 1545.04,
+   "text": "Same work, start from 4. Same work, start from 4. So, what will happen? First, 4 is pushed. 4 is pushed. Very good. 4 is stacked at the top. But, is the left child of 4 null? Is the left child of 4 null? No. So, push it. Use the same loop. Use the same while loop. What is the left child of 4? 3. Push 3. Push 3. Is there any left child of 3? No."
+  },
+  {
+   "start": 1545.04,
+   "end": 1573.74,
+   "text": "There is no left child of 3. So, if there is no left child of 3, then stop. We stopped at 2 as well. There was no left child of 2, so we stopped. We will stop at 3 as well. Now, there is a very important doubt. You will say that you have come right from 2. After this, you are just looking at left and left. If there was a right child of 4, then what would you have done? You would have said that it will be considered. It will be considered. Look, there are very few elements in the stack. There are still many elements to come. If we see it that way, then there is a right child of 5 as well. That is also not there in the stack."
+  },
+  {
+   "start": 1573.74,
+   "end": 1603.73,
+   "text": "10 also has a right child, not even that in the hashtag. 20 also has a right child, not even that. So, have faith. You should have a doubt that, okay, we came to 2. We came to 2 for the first time. You told the right child of 2 that it should come before 5, so push this. After that, you said that the left child of 4, as long as its left is not null, that is also understood. But you are not seeing the right child. You are not seeing it now, but we will see. We will see when the time comes. We will see. Okay."
+  },
+  {
+   "start": 1604.24,
+   "end": 1633.73,
+   "text": "4 will push 3. If there is no left child of 3, then we will stop. This is one iteration. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it. Repeat it"
+  },
+  {
+   "start": 1633.73,
+   "end": 1662.54,
+   "text": "Very good. Now, see, 3 can't be the left side. If 3 was the left side, then we would have pushed it too. We were pushing it like this. 4 was there, then 3 was there, until its left is null. So, whoever comes out of the top of the stack, can't be the left side. This is for sure. Now, the work we do, now 3, what is there in the stack above 3? 3 is popped, poor thing."
+  },
+  {
+   "start": 1662.54,
+   "end": 1692.43,
+   "text": "3 has popped like 2. Who is the next element in the stack? 4, which is the parent of 3, which should also happen. It happened like this. 4 was pushed, then 4 pushed 3. There is 4 in the stack. Should 4 come in the sorted order after 3? Yes, it should come in this case. Why? Because 3 does not have the right child. If there was a right child of 3, let's assume there was 3.5, which is bigger than 3, but smaller than 4, then it would have come after 3."
+  },
+  {
+   "start": 1692.43,
+   "end": 1720.03,
+   "text": "Let's repeat the same thing. Which same thing are we talking about? 3's right child. 3's right child. In this case, 3's right child is null. In this case, 3's right child is null. There is no problem. So what does this mean? There is no need to do anything. Why? 3's left child was not the same. If it was, it would have been pushed. We are doing the same. 3's right child, like 2's right child was 4, so we told him that he will have to do it. But 3's right child is not there."
+  },
+  {
+   "start": 1720.03,
+   "end": 1749.42,
+   "text": "The obvious thing is, who will come after 3? His parent will come. His parent is already in the stack. So there is no need to do anything on 3. Why? Because it got null. How long did you push? Until it got null. 4 came, so you pushed 4. Left from 4, 3 came. Pushed 3, left from 3. It got null, so it stopped. Here it got null for the first time. Stop, stop. Repeat again. We know this might seem a bit confusing."
+  },
+  {
+   "start": 1749.42,
+   "end": 1779.41,
+   "text": "We are explaining this to you to my best of my efforts. And keep watching, keep watching. All the doubts will be cleared. Keep watching, keep watching. A little patience, a little patience. A little patience, don't get confused. Done? The stack looks like this. What will we do? Repeat it, keep repeating it. What came out of the top? 4. What happened to 4? It popped. Write 4 in your result. Write it. Now, now, now. 4. 4 happened? Okay. What is 4?"
+  },
+  {
+   "start": 1779.41,
+   "end": 1808.74,
+   "text": "Is there any right child of 4? If, if, if. See, what is there after 4 in the stack? 5. If there was any right child of 4, suppose 4.5, then it should have come before 5. It would have done the same thing. What same thing? If there was a right child of 4, 4.5, it would have pushed it and pushed all its left children. But the right child of 4 is null. The right child of 4 is null. If it is null, then it is fine. You don't have to do anything."
+  },
+  {
+   "start": 1808.74,
+   "end": 1838.34,
+   "text": "There is no need to worry about the left child of 4. Because the left child of 4 is 3. The work of 3 is done. There was a need to worry about the right child of 4. We told you that there should be a doubt. You had a doubt that when we pushed 4 after 2. We pushed the left of 4. We didn't see the right of 4. We are seeing the right of 4 now. We are seeing the right of 4 now. Now we are seeing that it is null. What will we push the null? Don't push anything. Leave it. Leave it. Yes. Yes. Leave it. Let's go. What is at the top of the stack now?"
+  },
+  {
+   "start": 1838.34,
+   "end": 1864.18,
+   "text": "5, 5, pop the 5, pop the 5. What is 5? Write it in your result. Write it in your result. Now, now, now. After 5, what is there in the stack? 10. But should there be 10 in the sorted order after 5? No, because the right child of 5 is not null. Whatever is in the right of 5 is bigger than 5 and smaller than 10. So this whole subtree"
+  },
+  {
+   "start": 1864.18,
+   "end": 1892.62,
+   "text": "5 ke baad aur 10 se pehle aana chahiye. To jo kaam 2 pe hua tha. Same kaam 5 pe hoga. Same kaam 5 pe hoga. 5 ka right child kya hai bhaiya? 7 hai. 7 hai. Ab. Ab. Ab. Sabse pehle to. Kya 7 ko bhi stack me push hoga? Haan. Same dhah rahi hai 7. Aur kya 7 pe rukh jana hai? Kya 5 ke baad directly 7 aata hai stack me? Nahi. Kyun? Kyunki 7 ka bhi to left child hai."
+  },
+  {
+   "start": 1892.62,
+   "end": 1922.51,
+   "text": "Repeat the same. Once you come to the right side of 5, it is not null. Now until its left is not null, push its entire left family. So the entire left family means push 6. Push 6. Now when you come to 6, then 6's left is null. Stop, stop, stop and stop. Repeat again. Repeat again. Repeat again. What is in the top of the stack? 6. Yes. There is 6 in the top of the stack."
+  },
+  {
+   "start": 1922.51,
+   "end": 1951.6,
+   "text": "Come on, write 6. Now, now, now. Stop now, don't make a fuss. 6. You don't have to worry about the left child of 6. Because either its left child will be null, or its left child will be taken care of. You don't have to worry about the right child of 6. Why? Because look, after 6 pops, there is 7 in the stack. Should 7 come after 6? If there was 6.5 after 6, then it should have gone."
+  },
+  {
+   "start": 1951.6,
+   "end": 1981.07,
+   "text": "But luckily, the right child of 6 is not there. The right child of 6 is not there. It is null. So if it is null, then what will we push the null? If there was a right child of 6, we would have pushed it and the entire left family. Meaning, if it was 6.5, then 6.4, then 6.1, then 6.0, we would have pushed the entire family until the left family is empty. But the right child of 6 is null, so we are lucky. We are safe."
+  },
+  {
+   "start": 1981.2,
+   "end": 2002.93,
+   "text": "So you must be able to see that in the beginning you must be thinking that we are only taking care of the left side. No, we are taking care of the right side too. But now we are taking care of it. Now we are taking care of it at this time. Now the right side child of 6 was not there. Leave it. What is it? Repeat it. Repeat it. Until the stack is empty, keep repeating it. 7. 7 will come out. 7 will come out. And 7 will pop. Write 7 in your result. Write it."
+  },
+  {
+   "start": 2003.09,
+   "end": 2029.97,
+   "text": "Write 7 in your result. Now, you don't have to worry about the right child of 7. Because either the left child of 7 will be null or it will be taken care of. 6 is taken care of. You don't have to worry about 6. 6 was already there. 7 pushed 6. So if 7 is popping, then 6 would have already happened. You don't have to worry about the right child of 7. Because..."
+  },
+  {
+   "start": 2030.26,
+   "end": 2059.22,
+   "text": "What is there in the stack? 10. So, should there be 10 after 7? Suppose, if there was 8 after 7, then would there be 10 or 8? If there was 8, then we would have done the same thing. 7's right child. And suppose, after 8, here 8.2, 8.5, we would have pushed the entire left family. So, luckily, 7's right is null. So, there is no need to do anything. Leave it. Okay? 7 is also done. Keep doing. Pop. 10. 10. Write 10 in your result."
+  },
+  {
+   "start": 2059.22,
+   "end": 2083.73,
+   "text": "Now, now, now. 10 has popped. What's in the stack after 10? 20. But should 20 come directly after 10? No. 10 has a right child too. Whatever is in the right of 10 is smaller than 20 and bigger than 10. So this should come. Now come. What will we do? What will we do? We will take out the right of 10. 12."
+  },
+  {
+   "start": 2083.73,
+   "end": 2113.41,
+   "text": "We will push 12. We will not stop. We will push 12's left as well until it gets counted. So, 11 is also in the bag. Why are we not worrying about 12's right? We will. We will. When 12 pops, we will worry about 12's right. Leave it now. Leave it now. Again. Again. Again. What is the top? 11. We have already told you about 11's left side. There is no need to worry. Right side. So, 11. Okay? Write 11 in your result. Pop 11."
+  },
+  {
+   "start": 2113.41,
+   "end": 2138.53,
+   "text": "There is no need to worry about the left child. And fortunately, the right of 11 is null. Now if it is null, what will you do? Don't do anything. Leave it. Let's go. Now, now, now, what is at the top of the stack? 12. Yes, 12. Pop 12. And write 12 in the result. Write 12 in the result. Now, now, now, what? There is 20 in the stack."
+  },
+  {
+   "start": 2138.53,
+   "end": 2167.92,
+   "text": "Should 20 come directly after 12? No, brother. There is a right child of 12. The right child of 12 should be smaller than 20 and bigger than 12. So what will we do? The right child of 12 is not null. The right child of 12 is 15. Push the 15. And push the entire left family of 15. Fortunately, there is no left family of 15. So 15 will be pushed. Take it out again. Take it out again. 15 came out this time. 15 came out."
+  },
+  {
+   "start": 2168.18,
+   "end": 2195.06,
+   "text": "Write 15 in the result. Now, is there any right child for 15? No, right child for 15 is null. So, it's null. Don't do anything. Very good. Right child null means it's a very good thing. Don't do anything. Now, what came out of the stack? 20 came out. 20 came out. So, write 20. And pop 20. And pop 20. Now, now, now. There is nothing at the top of the stack."
+  },
+  {
+   "start": 2195.06,
+   "end": 2224.32,
+   "text": "Do the same thing. Is 20's right child null? No, 20's right child is not null. Then do the push. Do the right child of 20. Do the push of 30. 20's right is still 30. Do the push of 30. And do we have to stop at 30? Does 30 come after 20? No. The thing on the left of 30, the whole left will come. The whole left of 30 will come. 25 is also pushed in this way. There is no left of 25. We will stop."
+  },
+  {
+   "start": 2224.32,
+   "end": 2252.64,
+   "text": "If you get null, then stop. What did you get next time? What did you get next time? 25. Remember in the stack, this one comes out. Don't take it out from the beginning. This one came out. 25. Don't worry about 25's left. Don't worry about 25's right. But 25's right is null. So don't worry. Get rid of your worries and enjoy life. Erase 20. Finish it. What did you get? 30. 30."
+  },
+  {
+   "start": 2252.64,
+   "end": 2279.97,
+   "text": "Write 30 and pop 30. Okay? Don't worry about 30's left. 30's left must be done. Don't worry about 30's right. But 30's right is also null. 30's right is also null. It's done. 30 is the biggest. Right is null. If it's null, we won't do anything. Now, now, now. When you repeat this, your stack is empty. Your stack is empty. What does empty mean? Now,"
+  },
+  {
+   "start": 2279.97,
+   "end": 2309.73,
+   "text": "Nothing is left now. The game of taking the top is over now. Look carefully. Did you get this in the sorted order or not? Yes, you got it in the sorted order. This entire BST was used without in-order. By using a stack, by applying a small trick. What was the trick? Look again. Started from the root. Pushed the entire left family of the root. Every time, what did they do every time?"
+  },
+  {
+   "start": 2309.73,
+   "end": 2338.85,
+   "text": "Top nikalte the. Usko answer me likhte the. Wo apka element the. Wo apka element the. Ab top ka right dekhte the. Top ka right dekhte the. Ab top ke right ko to push karte hi karte the. Top ke right ke pure left khandaan ko push karte the. Pure left khandaan ko push karte the. Aur ye process ko bar bar bar bar bar bar doharate the. Bar bar bar bar bar bar kya karte the? Doharate the. Accha. To ye."
+  },
+  {
+   "start": 2338.85,
+   "end": 2369.28,
+   "text": "It's been 25 minutes and you guys are still not close to the question. No, we haven't explained the two-sum yet. We have just explained that if you want to find the elements in the sorted order one by one from the binary search tree, then how will you do it? Now let's go to the question. Okay, the story that happened in 25 minutes is too long, but it was important. If we had to write its code, how would we write it? First of all, you would need a stack. First of all, you would need"
+  },
+  {
+   "start": 2369.28,
+   "end": 2399.42,
+   "text": "We need stack. How? Store node pointer itself. We will name it ascending. We will name it ascending. Okay. Let's write the main function first. First, we will write our main function. What is the main function to do? It gets a root. It gets a root and its work is to print in sorted order. Just print. Okay. So, start. Remember what we did in the very beginning. Starting from root,"
+  },
+  {
+   "start": 2399.42,
+   "end": 2430.4,
+   "text": "We will do one thing. Node star. T is equal to root. This is not a two sum. We are writing its code. Because its code is difficult. We believe that whose code is difficult is difficult. T happened. What did we do? We can do this. While. T. Until T is there. Until T is not null. What to do? ASC dot. Push. T. Root is pushed. And. To the whole left family. What will we do? T is equal to. T dot."
+  },
+  {
+   "start": 2430.4,
+   "end": 2460.85,
+   "text": "left and we will close it. What will happen? It will start from root. 20 will push, left will come. 10 will push, left will come. 5, left will come. 2. Now left will go, it will be null. It will stop. So the first step is complete. See, the first step is over. Yes. Now remove it. Now remove the work that was done. See, what do we do? While asc.not empty. How long did we have to do? Until this stack gets empty. What did we do? Node top"
+  },
+  {
+   "start": 2461.62,
+   "end": 2493.36,
+   "text": "Let's make it small. Node small. Node small is equal to ASC.top. We used to remove top. We used to pop from ASC. Isn't it right? We used to pop. Now what used to do? Did we stop? No. Node right child. Node right child is equal to small's right. Remember. 2 came, right? Where was 2? 2. 2 is done. 2's right child is 4."
+  },
+  {
+   "start": 2493.36,
+   "end": 2525.17,
+   "text": "Now, if we repeat the same thing that we did on the root, we will do something about it. We will take the entire left family inside. Repeat the same thing. What do you repeat the same thing? Repeat while right child. Do the same thing that you did with t above. Do the same thing. ASC dot push right child. And not only this, we will do the entire family. Right child is equal to right child dot left."
+  },
+  {
+   "start": 2525.62,
+   "end": 2552.8,
+   "text": "If we say print it in descending order, you will get an intuition. Whatever you have done till now, reverse everything. Let's see."
+  },
+  {
+   "start": 2552.8,
+   "end": 2582.93,
+   "text": "Whatever you have done till now, reverse everything. Let's write next to this. That's why we are writing the code here. Whatever has happened, make everything left to right. Make left to right. So first of all, take one more stack. What is this? Descending order. Descending. Yes. Yes. Descending order. Do the same thing. Look. We are writing the corresponding line for every line. T is root. Now,"
+  },
+  {
+   "start": 2582.93,
+   "end": 2611.34,
+   "text": "while t while t what did we do in ascending order? we started from root and gave a rail to the whole left what will we do in descending order? which element do you want first? the biggest one where will we get the biggest one? we will get it on the whole right the one whose right side is null is the biggest one like 2 we came on 2 and said 2 is the smallest if you go to the whole right, it will be the biggest they are saying we have to reverse everything"
+  },
+  {
+   "start": 2611.38,
+   "end": 2641.55,
+   "text": "What does it mean? DESC dot descending dot push T. Now here T is equal to T dot left. What will happen here? T is equal to yes T dot right. Very good. What will we do now? Same thing. Now do it on descending. Do it on descending. Do it on descending. Do it. What to do? Node star. Its name was small. Make its name big. What to do? Descending dot top."
+  },
+  {
+   "start": 2641.55,
+   "end": 2671.76,
+   "text": "Yes. And descending dot pop. This is obvious. The one with the top will be the pop. Everything is saying reverse. Right child was. Left child. Reverse the name too. Mode star. Left child is equal to. Here small was right. What will happen here? Big's left. They are saying everything will be upside down. We don't want to take 25 minutes more on this. Same thing. It is absolutely upside down. Like this."
+  },
+  {
+   "start": 2671.76,
+   "end": 2700.35,
+   "text": "360 degree while while left child while left child desc dot push left child dot push left child yes yes or same reverse order main right child is equal to right child ka left to left child is equal to up guess kar liye honge toh bohot achi baat hai nahi kiye honge toh aur achi baat hai left child ka"
+  },
+  {
+   "start": 2700.35,
+   "end": 2729.42,
+   "text": "Right. See, everything is reversed. Close it. And here, pop it. See this. Why did we teach these two things? What do these two things do to you? Now, in each step, in each step, in each step, every time when you do this, then you get the values one by one. You get this in ascending order. Small to big. What do you get this? In descending order. Big to small. Big to small."
+  },
+  {
+   "start": 2729.42,
+   "end": 2757.1,
+   "text": "Now, why did we teach this? Why did we teach this? Did we go crazy that we didn't go crazy for 35 minutes in this? Now, watch. Now, watch. Oh, my God. Making this is like that. The way a director makes a film that you don't understand in the beginning and then you understand everything at the end. It feels like that. Okay? When you work so hard, it feels like that. Now, why did we tell you this? Now, you..."
+  },
+  {
+   "start": 2757.1,
+   "end": 2787.78,
+   "text": "Do you know step-by-step? Do you know step-by-step? Bigger than small and bigger than small. Do you know both? Do you know the code of both? What used to happen in 2SUM? What used to happen in 2SUM? Remember in array. Why did you keep i here? Why did you keep j here? What did i give you? Smallest. You were afraid of small, right? So you used to get smallest in i, right? What did j give you? Biggest. Okay."
+  },
+  {
+   "start": 2787.78,
+   "end": 2813.98,
+   "text": "You used to do some work of i, j. After that, you either had to increase i or decrease j. What is the meaning of increasing i? A little big value. And what is the meaning of decreasing j? A little less value. We have learned the same thing in BST. We have learned the same thing in BST. If you do this, then can you do the same work of i, j? If you do both together, then can small"
+  },
+  {
+   "start": 2813.98,
+   "end": 2840.62,
+   "text": "It will give you the smallest value. What will it give you? It will give you 2. Will it give you the biggest value of BST? Yes, it will give you 30. You will add 2 and 30. The answer will be 32. Let's assume that 2 plus 30 is bigger than K. What did we do in this case? J minus minus. J minus minus means?"
+  },
+  {
+   "start": 2840.62,
+   "end": 2863.33,
+   "text": "You don't want the biggest value. You want a smaller value. How does a smaller value happen? By running this thing one more time. If you want I++, you don't want the smallest value. You want a bigger value than that. How does it happen? By running this thing. What does this code do?"
+  },
+  {
+   "start": 2863.33,
+   "end": 2893.26,
+   "text": "which was very simple in array. In array, if you would have done i++, you would have got it. You would have got j minus minus. This is not that easy. In this, if you want a value a little higher than 2, you will have to roll this whole paper. You will have to roll this whole paper. Now we will tell you how it will work. Now we will tell you how it will work. You must be getting some idea. Look at the code. You will get the whole idea. We will also do a small dry run of it. We will do a small dry run of it."
+  },
+  {
+   "start": 2893.49,
+   "end": 2923.34,
+   "text": "First of all, you have to run both ascending and descending stack together. You have to maintain both together. Depending on what you want, you can decide that from your mind. So see what we will do. See what we will do. We will not do anything. That means the whole code is done. The whole code is here. We will make it a function and write it so that it is easy for you. And in today's comments, you will also get the whole code. Don't worry about it. First of all, what will we do? See. The first thing is to make both the stack."
+  },
+  {
+   "start": 2923.92,
+   "end": 2956.58,
+   "text": "The first thing is to make both the stacks. If you don't make the stack, what will happen? Nothing. Let's write it down here. Let's write it down here. Let's make both the stacks. First of all, make it. Okay. Write two functions. The work that was done here, while this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this,"
+  },
+  {
+   "start": 2956.58,
+   "end": 2988.11,
+   "text": "What will we pass in this? Will we pass something in this or not? We will not pass anything. There is no need to pass anything in this. We have to do the same thing. First of all, getSmall will come from the ascending stack. If ASC.empty is there, if the stack is empty, then return null. If the stack is empty, then what will you do? You will not be able to do anything. Return null. Now repeat the same thing. Node star small is equal to ASC.top."
+  },
+  {
+   "start": 2988.11,
+   "end": 3017.94,
+   "text": "Top is done. Let's pop it from ASC. Let's pop it from ASC. Now, should we return the top? No, we will return it. But there was another step. There was a right child too. There was a right child too, man. We are not doing anything. We are copying and pasting the entire code here. We are copying and pasting the entire code. We are copying and pasting the entire code. Small's right. Yes. After that, let's rail this right child. We will rail his entire left family. Come."
+  },
+  {
+   "start": 3017.97,
+   "end": 3047.04,
+   "text": "ASC.PUSH who? right child and its entire left family so right child's left is the same code nothing different in it close it and after doing this what will we return? we will return small this function is done let's write a similar function note star let's write for get big"
+  },
+  {
+   "start": 3047.04,
+   "end": 3077.04,
+   "text": "We don't have to do anything in this as well. If we get big from descending, descending.empty. Return null. Return null. Okay. After that, same, same, same. Write the opposite of what is here. Node star big is equal to descending.top. Remove that from descending. Now, there was a right child here. Reverse, reverse, reverse."
+  },
+  {
+   "start": 3077.04,
+   "end": 3111.12,
+   "text": "Left child is equal to. Here, small's right was. Here, big's left will be. While. Left child. Yes. While left child. Descending dot. Push. Left child. Yes. Yes. And, there, right child is equal to right child's left. Here, what will happen? Left child is equal to left child's right. Left child's right. Very good. Lastly,"
+  },
+  {
+   "start": 3111.7,
+   "end": 3140.48,
+   "text": "RETURN BIG Both functions are ready to be used. Let's start our two-pointer. Let's start our two-pointer. Where? In the main, the LEADCODE function given to you. What did you get? You got a NOTE. You got a NOTE and you got a K for 2SUM. First of all, if the ROOT is NULL. If the ROOT is NULL, RETURN FALSE. It is not possible that you will get it. The ROOT is NULL. FALSE. Now,"
+  },
+  {
+   "start": 3140.48,
+   "end": 3170.06,
+   "text": "Make both the stacks. Start it. Start it. How did we start it? Node star t is equal to root. Let's make ascending one first. So, while t asc.push t and make the entire left family of it. t is equal to t. How long will it run? Until all the left is finished. Similarly, now bring t back to root. And now make descending one. What will we do? Reverse."
+  },
+  {
+   "start": 3171.02,
+   "end": 3201.71,
+   "text": "descending dot push t now if you were railing the left, then rail the right now write t is equal to t write t is equal to t write both the stacks are ready now come now you can start your two pointer now let's start two pointer node star i is equal to get small means we used to do i is equal to zero get small from get small the smallest one same as index zero"
+  },
+  {
+   "start": 3202.61,
+   "end": 3233.55,
+   "text": "node star, j is equal to get big, means j is equal to n minus 1, done. Now, when did two pointer stop? When did two pointer stop? Remember, when did two pointer stop? When did two pointer stop? When i less than this used to happen. Till then it used to run. First of all, see, the i and j should not be null. i and j should not be null. While i and j, means there should be a circle in both, and"
+  },
+  {
+   "start": 3233.55,
+   "end": 3265.49,
+   "text": "i not equal to j i not equal to j and i's data should be less than or equal to j's data what is this? see, in index i was not null so we didn't have to write this this is the same condition while what we used to write in index this is the same condition that i should not be equal to j so it is equal and i's data should be less than or equal to j's data so not much then 2 pointer used to stop after that what will we do? we will stop here also now we have to do the same thing int"
+  },
+  {
+   "start": 3265.49,
+   "end": 3297.6,
+   "text": "val is equal to, or sum, whatever you want to call it, sum is equal to i's data plus j's data. If sum equal equal to k, very good, return true. If sum is greater than k, if sum is greater than k, if 1 and 5's sum is greater than 3, then what will we have to do? Will we increase 1? It will be greater. Reduce 5."
+  },
+  {
+   "start": 3297.6,
+   "end": 3326.64,
+   "text": "What do we do with 5? We reduce it. How will we reduce it? j is equal to get big. What will get big do? It will give a little less value. What will it do? It will give a little less value. Okay. Else, if the sum is smaller than k, then increase i. i is equal to get small. I is equal to get small. Close this. If this loop breaks, if it has to be true, then it will happen. What do we do in the end? Return false."
+  },
+  {
+   "start": 3328.66,
+   "end": 3357.71,
+   "text": "This is the dangal code. Yes, we enjoyed coding today. Now you will ask how to write it. Write it. If you practice, you will also write it. These are the two functions. This is your main. We said it was a hard question. It was a very hard question. We will rate its code as hard. Its explanation is even harder. Understanding it is super hard. But understanding super hard things takes a super duper job. With easy cheat, you will remain easy. Nothing will happen to you. So we will give you this code in the comments."
+  },
+  {
+   "start": 3357.81,
+   "end": 3387.78,
+   "text": "Watch this video. If you don't understand, watch it again. If you don't understand one time, no problem. It's a very hard concept. We say that we don't say hard questions. We say that this is the same question. This is not the same question. It's not easy. If we were the lead code, we would have rated it hard. If you are reading this stack, then whoever ran in approach 1, it's easy for him. He must have made a vector. He won't be able to do anything. If you have come this far, then congratulations. You need patience for this too. So do this. We are definitely saying that this is better than Stryver."
+  },
+  {
+   "start": 3387.78,
+   "end": 3401.62,
+   "text": "This is definitely better. Definitely better. Definitely better. Definitely better. Definitely better. Definitely better. Definitely better. Definitely better. Definitely better."
+  }
+ ]
+}

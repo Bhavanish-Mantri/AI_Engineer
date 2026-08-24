@@ -1,0 +1,194 @@
+{
+ "video_id": "lAdOVqukPCI",
+ "title": "Easiest DP Question Ever! DP Series episode 14",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 962,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 19.14,
+   "text": "Hello guys, how are you? Today's lecture is called Unique Paths. It is a very easy lecture. If you have seen climbing stairs in this DP series. Those who have come for the first time, please read the description. At least see the pattern series or DP series from the beginning. Those who have seen climbing stairs, it will take you 5 minutes to understand. This is the 2D version of climbing stairs. What is the 2D version?"
+  },
+  {
+   "start": 19.14,
+   "end": 45.17,
+   "text": "And one more thing, sometimes we see some comments that the interview was done and the question you asked was answered or you said it was done. There was an internship somewhere, there was a placement somewhere, so it is happening now. Because when we started it, we started it in October-November. Now it's been six months, so slowly, slowly, slowly, the people who were studying, something is happening to them, so we feel very good to hear that. Not because we will get some part from their salary or we will take something from their stipend."
+  },
+  {
+   "start": 45.17,
+   "end": 64.69,
+   "text": "It feels good. I mean, if a person gets a job because of me, then it's a big deal. I mean, in today's world, people are not able to get their own job. If we can get someone else's job, I have a little bit of contribution in it, then it feels good. We feel that the striver or the big people, how they must feel, right? So it's a very good thing. So keep reading. We feel very good after reading those comments. Let's go."
+  },
+  {
+   "start": 64.91,
+   "end": 89.39,
+   "text": "Unique Paths. Unique Paths is a 2D version of Climbing Stairs. Let's do a revision of Climbing Stairs. Let's say you were standing on the zero number. There used to be a ladder. This is zero level, this is one level, this is two level, this is three level. It used to tell you that you have to go from zero to three. Catch was that you can either jump one step or"
+  },
+  {
+   "start": 89.39,
+   "end": 114.86,
+   "text": "You can jump two steps. For example, if you are standing at zero, then you had two choices at zero. Either you could go from zero to one by jumping one ladder, or you could go from zero to two by jumping two ladders. So you had to tell us what the total number of paths was. For that, what we used to do is, if you are standing at DPI, then how many choices do you have to go from DPI? You have two choices. Either you can go to DPI plus one, or DPI."
+  },
+  {
+   "start": 114.86,
+   "end": 131.92,
+   "text": "i plus 2 pe ja sakte ho. Iska kehne ka kya matlab tha? Ki agar aap 0 pe khade hain aur aapke paas 2 choice hai, 1 ya 2 pe jaane ka. Maal liji aapko koi bata deta hai, jadu se koi bata deta hai ki bhai 1 pe 1 se na, jahan bhi aapko paunchna hai, maal liji aapko 10 tak paunchna hai, no matter jahan paunchna hai. Koi aapko bata deta hai ki 1 se 10 tak paunchne ka."
+  },
+  {
+   "start": 131.92,
+   "end": 153.97,
+   "text": "There are 5 different ways to go from 1 to 10. And there are 3 different ways to go from 2 to 10. Now if someone asks you to do one thing, what is the way to go from 0 to 10? So what would you do? You would simply add both of them. You would simply add both of them. So you would return 5 plus 3. You would return 8. This is the same as"
+  },
+  {
+   "start": 154.0,
+   "end": 181.9,
+   "text": "You are standing in Bangalore. You can either go to Ranchi from Bangalore or you can go to Delhi. Your end result is to reach Kolkata. If someone tells you that two trains go from Ranchi to Kolkata, three trains go from Delhi to Kolkata. So tell me one thing, how many trains go from Bangalore to Kolkata? So how many trains will go from Bangalore to Kolkata? Two plus three, five trains will go. So this is how we did climbing. Now let's see what is this unique path? What is unique path and how is it 2D version? See."
+  },
+  {
+   "start": 181.9,
+   "end": 207.57,
+   "text": "Unique path tells you that you are not standing on the staircase. Staircase has become 1D. Staircase has become one-dimensional. Now you are two-dimensional. Two-dimensional means you are in a matrix. Suppose you are like this. Suppose this is your matrix. 1, 2 and this. 0, 1, 2. 0, 1. Now you are standing in this matrix. Where are you standing? In the beginning, you are standing here. Where in the top left corner?"
+  },
+  {
+   "start": 207.57,
+   "end": 228.43,
+   "text": "Top left corner. What is this? What is this called? Top left. Okay. Where do you have to reach your goal? Which way? Which ladder or which box do you have to reach? You have to reach the bottom right corner. That means you have to reach 2 or 1. Okay. What is the rule of walking? Every time, like in climbing stairs, what was the rule? That you can jump one ladder or you can jump two ladders."
+  },
+  {
+   "start": 228.43,
+   "end": 252.32,
+   "text": "Here, the rule is that either you can go down, down means you can go down, or you can go to the right. One step, you can go one step. Where? Either you can go down or you can go right. Meaning, if you are standing on 0 and 0, then you have two ways. Which two ways do you have? The first way is to go right. Go one right from 0, 0."
+  },
+  {
+   "start": 252.32,
+   "end": 279.54,
+   "text": "Stay inside the matrix. We say in the graph that we don't have to stay inside the matrix. So it's logical. But if you are inside the matrix, then how much? First of all, you can go right. Where can you go by going right? By going right, you will reach 0, 1. You will reach here. There is one more way from 0, 0. Which way? If you want, you can go down. You can also go down. When you go down, you will reach 1 and 0 by going down. These are the two ways. So just like we did in the climbing stair,"
+  },
+  {
+   "start": 279.54,
+   "end": 308.7,
+   "text": "If someone tells you that you have to reach here, if someone comes and tells you that listen, there are three ways to reach your target from 0 to 1, whichever way it is, down right, down right, there are three different ways. And there are two ways to reach your target from 1 to 0. So now tell me one thing, how many ways are there to reach the target from 0 to 0? So what will you do? You will do nothing. You will plus these two and return 5. You have to do the same thing here, which happened in the climbing stair."
+  },
+  {
+   "start": 308.7,
+   "end": 337.31,
+   "text": "We have to do ditto. What is the difference? Climbing stairs was a 1D array. There was such a ladder here. 0, 1, 2, 3. It was a 1D array. What is the unique part? It is a 2D array. There is no difference between the two. We used one variable in climbing stairs. We used i. So what was it made of? dpi is equal to dpi plus 1 plus dpi plus 2. Here we have to use two variables. Because if it is a matrix, you need two. For row and for column. So see here. What will we say? This is i and this is j."
+  },
+  {
+   "start": 337.31,
+   "end": 366.61,
+   "text": "What choice do you have? When you go to the right, then this 0 remains the same. And this j increases by 1. Meaning, if you are standing on i and j, and you go to the right, then what happens in the matrix? i remains the same. When you go to the right, then rho remains the same. What increases? Column increases by 1. What increases? Column increases. So, i is done. And this is j plus 1."
+  },
+  {
+   "start": 366.61,
+   "end": 395.3,
+   "text": "Similarly, if you go down, where will you go? Down, means if you go down, then see what will happen. When you go down, then the column will remain the same, but what will increase? Rho 1 will increase. So when you go down, then where will you go? On i plus 1 and j. So that's it, your one guy equation. What equation did you make? If you want to get the answer of i, j, then what will be its answer? Whatever the answer of i plus 1, j, plus whatever i,"
+  },
+  {
+   "start": 395.3,
+   "end": 425.07,
+   "text": "The answer will be J plus 1. It's a simple thing. Now, now, now, there is one more thing. Now, there is one more thing. What is it? So, first of all, we will write the recursion of this. You must have understood what to do in recursion. See, where do you have to start? You have to start from 0, 0. And where do you have to reach? You have to reach n minus 1, m minus 1, which is the bottom right corner. You have to reach this, right? What is this? This is 2 and 1. What is this? This is the value of n minus 1 and m minus 1. So, when you write recursion, what will we write? int fun."
+  },
+  {
+   "start": 425.46,
+   "end": 443.3,
+   "text": "And you have to pass two things. One is your i, which means which row you are standing on, which column you are standing on. And pass this one, how big is your matrix of n and m. In this, you don't even need to make a matrix. It's not like you have to make a matrix. No, you don't have to make a matrix. Because making a matrix is when there is some value in the matrix."
+  },
+  {
+   "start": 443.3,
+   "end": 473.1,
+   "text": "In the question of graph, we were given matrix. Why? Because there could be an obstacle in it. For example, if it is 1, then you can pass 1. If it is 2, then you have to stop at 2. In that way. Here, it is not like that. It is just a matrix. So, there is no need to make anything. First of all, write the base case. What will be the base case? What will you say in the base case? That, let's say you have reached to that. You have reached to that. To what extent? You have reached to your target. Meaning, if i equal to n minus 1 and j equal to"
+  },
+  {
+   "start": 473.1,
+   "end": 497.33,
+   "text": "M-1. If this is the case, then how much time will it take you? How much time will it take you? How much path is there? Tell me one thing. You have to go to Ranchi. You have to go to Ranchi. And someone brought you to Ranchi and made you stand. How much path is possible to go from Ranchi to Ranchi? One. You don't need to do anything, right? You don't need to do anything. How much path is possible to go from Ranchi to Ranchi? One path is possible. So if you have reached your target, then do one return. It's simple."
+  },
+  {
+   "start": 497.33,
+   "end": 517.44,
+   "text": "Now, suppose while going down, you come out of the graph. Or while going right, you come out of the graph. What are we trying to do? Suppose on this matrix, you stand here, 0 and 1. Now if you try to go right, then where will you reach? Where will you reach from 0 and 1? If you try to go right, then you will reach 0 and 1."
+  },
+  {
+   "start": 517.44,
+   "end": 543.1,
+   "text": "Now, zero and two are not in the matrix. See, where is it in the matrix? There are no two columns. So, let's assume that you have left the matrix. Now, when you have left the matrix, how easy is it to reach Ranchi? There is no way. What does this mean? Let's assume that you had to go to Ranchi. Where did you have to go? You had to go to Ranchi from Bangalore. By doing something, by mistake, you have reached America from Bangalore. Where did you reach? America."
+  },
+  {
+   "start": 543.1,
+   "end": 571.38,
+   "text": "Now tell me, is there a train that goes from America to Natchi? America is out of the country, right? There is no train that goes out of India. So there is no train that goes from America to Natchi. America has reached, means where? It has reached out of India. Now if someone from America asks how to go to Natchi? They can't go, they can't go at all. So it will be the same if you get out of the graph, means if you come to the invalid coordinate, then how much path will you get? You will get zero path. We will write that in our recursion. How will we write? If, if, what will we write? I less than zero."
+  },
+  {
+   "start": 571.38,
+   "end": 598.91,
+   "text": "and i greater than equal to n, and j less than 0, and j greater than equal to m. The people who have read the graph, we have used this a lot of times. This is a valid function. Is ij also valid? If you come to invalid, then what will you have to do? Return 0. The game is over. Now what do you have to do? Now what do you have to do? Now what do you have to do? Now you don't have to do anything. Now you have to return. Now you have to get the answer of ij, right? So what will you do? Fun."
+  },
+  {
+   "start": 598.91,
+   "end": 627.92,
+   "text": "i plus 1 and j's answer plus fun of i j plus 1's answer. Take it. This game is over. This recursion is completely over. The recursion is completely finished. Understood? Now, how do we memorize this? It's very simple. Make a DP array. What kind of DP array? n plus 1 and m plus 1 size. What is changing in the recursion function? i and j is changing. So, what do you have to do?"
+  },
+  {
+   "start": 627.92,
+   "end": 655.18,
+   "text": "After this, you have to check one thing that if dp of i j not equal to minus 1, then what you have to do is return dp i j. That's it. After that, you have to store the answer here as well. Here in the answer, what you have to do before this? Equal to this. That's it. This was the memoization. Convert it in tabulation as well. Convert it in tabulation as well. What do we do to convert it in tabulation?"
+  },
+  {
+   "start": 655.18,
+   "end": 685.2,
+   "text": "First of all, let's make the same DPRA. Let's make the same DPRA. Come on, let's do tabulation. We are going very fast because it is a very easy question. I mean, as many questions as you have done so far, we will call it an easy level question. Now, what you have to do is write tabulation. So, let's assume that this is your function of the lead code. This is your function. In this, you will be given two things. N and M. So, what will you do? First of all, make IJ. Make DPRA. How will you make DPRA? The size which was made in the upper recursion,"
+  },
+  {
+   "start": 685.2,
+   "end": 712.29,
+   "text": "Make a DP array of the same size. Vector, vector, int, DP, n plus 1. After that, for i is equal to 0, i less than equal to n, i plus plus. After that, what will we do? We will make one more vector. Vector, int, t, m plus 1. And we will push this in it. So, this is your 2D matrix. What is this? 2D matrix is ready."
+  },
+  {
+   "start": 712.29,
+   "end": 740.0,
+   "text": "Now, fill in the base case value. What is the base case value? Fill it in. So, what was the base case value? i has to be n plus 1 and j has to be m minus 1. In that case, its answer was 1. So, do the same thing in your recursion. First of all, what did you write? dp n minus 1 m minus 1 is equal to 1. The game is over. Fill in more value. Fill in the invalid value. i less than 0 will never happen. i less than 0 will never happen."
+  },
+  {
+   "start": 740.0,
+   "end": 769.84,
+   "text": "greater than equal to n means and j less than 0 and j greater than equal to m means whenever i is equal to n whenever i is equal to n and j is equal to m what you have to do in that case you have to fill 0 so fill it fill it how will you fill first of all fill the row j is equal to 0 j less than equal to m j plus plus after that what will you do as soon as your nth row comes make all the nth row zero similarly i is equal to 0"
+  },
+  {
+   "start": 769.84,
+   "end": 799.78,
+   "text": "i less than equal to n, i plus plus, and as soon as the mth column comes, fill it with 0. The value of the base case is done. Now you have to run the loop. Before running the loop, see how to run the loop. Do you want to run the loop in the opposite direction? Do you want to run the loop in the opposite direction? Do you want to run the loop in the opposite direction? Do you want to run the loop in the opposite direction? Do you want to run the loop in the opposite direction? Do you want to run the loop in the opposite direction? Do you want to run the loop in the opposite direction? Do you want to run the loop in the opposite direction? Do you want to run the loop in the opposite direction? Do you want to run the loop in the opposite direction?"
+  },
+  {
+   "start": 799.78,
+   "end": 828.02,
+   "text": "and j, and dp i and j plus 1. So first of all, look at the row. For the answer of the ith row, you need the answer of i plus 1. Meaning, suppose you want to find the answer of row number 2, for this you will need the answer of row number 3. Meaning, how do you fill the row? In reverse, if you start filling the row straight, meaning 0 to n minus 1, so suppose you are filling row number 0, for this you will need the answer of row number 1. That is not there. So you"
+  },
+  {
+   "start": 828.02,
+   "end": 850.53,
+   "text": "Similarly, if you want to get the answer of j, then you will need the answer of j plus 1."
+  },
+  {
+   "start": 850.53,
+   "end": 880.5,
+   "text": "What will you have to do? You will have to find the answer. Give me a second. So, what we have understood from this is that you will have to fill both row and column upside down. Okay? Fill it. Come on, fill it. You had filled the value of base case. Did you fill the value of base case or not? Yes, you had filled it. Now, you have to fill its value. Okay? So, start running. For i is equal to n minus 1, i greater than equal to 0, i minus minus. For j is equal to n minus 1,"
+  },
+  {
+   "start": 880.5,
+   "end": 904.9,
+   "text": "Sorry, m minus 1, j greater than equal to 0, j minus minus. After this, what to do? Nothing to do. dp i, j is equal to dp i plus 1, j plus dp i, j plus 1. It's over. Both are over. Now we have to return the answer. So remember how to return the answer. Recursion function is..."
+  },
+  {
+   "start": 904.9,
+   "end": 933.36,
+   "text": "The value that was called. The recursion function that was called. With which value? Where were you standing in the beginning? So in the beginning, you were standing at 0, 0. So what will you have to do in return? In DP also, you will have to return DP of 0, 0. Here you go. This tabulation is also finished. We said that it is very easy. Did you find something hard in this? Did you find it even for a minute that you don't understand anything? You might not have found it. If you are a climbing star, you might not have found it. This is my guarantee that if you have seen all the videos till now, then this is the easiest. I mean, if you"
+  },
+  {
+   "start": 933.36,
+   "end": 961.84,
+   "text": "You might not have seen the whole video, some of you might have already done it. There is nothing hard in it. So what is this thing called? DP on grids. And one more thing, we know that the binary search of LIS, we remember. In one video, we want to do the hard hard variant of the whole question together, so that's why we left it. So DP on grids is the name of this thing. Just running DP on a 2D array is not a hard thing. This thing is called 2D DP, which people are afraid of. Don't be afraid, it's a very easy thing. Solve this, see you in the next video."
+  }
+ ]
+}

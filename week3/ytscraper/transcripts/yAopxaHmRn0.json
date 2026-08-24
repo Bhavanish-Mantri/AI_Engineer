@@ -1,0 +1,249 @@
+{
+ "video_id": "yAopxaHmRn0",
+ "title": "L32 | Master DSA Pattern Merge Interval | Leetcode Merge Intervals",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1327,
+ "segments": [
+  {
+   "start": 2.38,
+   "end": 30.08,
+   "text": "Hello guys, how are you all? Today is episode 32. In episode 32, we will continue the merge interval. As we told you, merge interval is a very small pattern. It will end very quickly, so it does not take much time. If you are watching 31, then it will be very easy for you. If you are not watching 31, then it will be a little difficult for you. For those who are watching 31, this is a very fake question. It is a very useless question. You can solve it in 5-6 minutes. My voice is a little heavy because I am very sleepy."
+  },
+  {
+   "start": 30.08,
+   "end": 57.98,
+   "text": "Even in Bangalore, the temperature has increased, but we are still teaching, so you still study. Let's go. What did we do in the last lecture? What did we see in 31? In 31, we saw what is the Merge Interval? What is the flowchart of the Merge Interval? In what kind of questions is it used? So, we saw that the Merge Interval will always be used in the question where you will be given ranges. Ranges means start and stop. There will be a lot of start and stop and then you will have to do something with it."
+  },
+  {
+   "start": 57.98,
+   "end": 83.15,
+   "text": "Either you will have to find some overlap, or you will have to find some conflict, or you will have to find some free time, you will have to find something like this. So remember the last question, we are saying it again and again, the last question because this question is just related to it, you just have to move 5% ahead from it. What was the last question? What we did yesterday, that you had many such categories, ranges, categories of shirts, remember, we gave the example of the shop, that there were many categories."
+  },
+  {
+   "start": 83.15,
+   "end": 109.18,
+   "text": "And you had to merge them. How did you have to merge them? That whatever categories you have left after merging them, should be non-overlapping. What should be non-overlapping? Suppose if there is 1 to 5 here, then the next one should not start from 5, it should start after 5. It might start from 7 and go to 10. The next one should not start from 10, it should start after 10. It might start from 12 and go to 15. What used to happen with this is,"
+  },
+  {
+   "start": 109.18,
+   "end": 138.7,
+   "text": "When a new shirt was coming, you had the convenience to put it in which category, there was no overtapping, it was not that one price is being covered in this and in that, so it had to be done like this. This question is a little extension of that, what is a little extension? It is a very useless question. This question is of insert interval. Insert interval, yes. Insert interval. This is the lead code 57. Okay. What does it say? The same input is also given in this, which was given last time. What input is given? Many ranges are given."
+  },
+  {
+   "start": 138.7,
+   "end": 167.98,
+   "text": "A lot of ranges are given like this. 1, 2 is given. 3, 5 is given. 6, 7 is given. 8, 10 is given. And 12, 16 is given. So, it's a very good thing. Let it be. But, but. There is another range given in this. Separately, separately. This is yours. This is your shop's category. A range is also given separately. What is the range given separately? 4, 8. Okay. What to do with the separate range? So, you don't have to do anything in the separate range. What I have told you is that this separate range."
+  },
+  {
+   "start": 167.98,
+   "end": 193.2,
+   "text": "First of all, you have to do two things. Insert a different range in your category in some way. What should you do? Insert it in some way. Not by inserting it anywhere. By which this sorted property, sorted by start, remember yesterday we said in the question of merge interval, it is very important that your ranges should be sorted according to start time. So that you can see your category according to start."
+  },
+  {
+   "start": 193.2,
+   "end": 223.3,
+   "text": "That's when you could merge. If it wasn't sorted from the start, then it would be difficult for you to merge. So, it is said to insert it in such a way that it is sorted by start. Now, you can see that it is sorted by start. 1, 3, 6, 8, 12. Now, it is sorted. It is absolutely correct. Insert it in such a position. Insert it in such a position. Even after that, it should be sorted. Even after that, it should be sorted. Okay. This is done. This is very easy. We think that you have thought about how to do it. Okay."
+  },
+  {
+   "start": 223.3,
+   "end": 247.1,
+   "text": "After that, you have to merge them again. What? You have to merge them again so that no overlap is left. No overlap is left. And then you have to return it. Then you have to return it. So, what is this question? What was the previous question? The previous question was that there are many ranges. There are many such ranges. You have to merge them. You have to merge them and return them."
+  },
+  {
+   "start": 247.1,
+   "end": 275.47,
+   "text": "This was the last question, there was nothing else in the last question. Okay. We had seen the whole algorithm of that, okay. We will not explain that again. We will see 31, it will be completely clear to you. We had explained it very long and very logically, we had explained it intuitively. In this, what you have to say is that the list is there, that list is there. You just have to insert one more thing in it. You just have to insert one more thing in it. Where to insert? I don't know where, but the sorted property should be maintained. So insert and make it. Suppose you insert here. Suppose the yellow one is inserted here."
+  },
+  {
+   "start": 275.47,
+   "end": 304.48,
+   "text": "And the rest is as it is. Now merge this list. Merge this list so that no overlap is left. No overlap is left. And return this list. So see, everything is the same. Here also we had to merge and return. Here also we have to merge and return. One step has increased, this one. Insert. If you figure out one step of insert, where to insert, where to insert, then you can use the previous code as it is. What did the previous code do? The previous code,"
+  },
+  {
+   "start": 304.48,
+   "end": 333.06,
+   "text": "vector of vector of int which contains ranges and it gives you vector of vector of int which is a merged interval so if you just figure out the insert thing then you can solve the question very easily so let's figure out the insert thing what did insert tell you? it told you that you already have such categories for example you have such categories 6 or 7 8 or 10 12 or"
+  },
+  {
+   "start": 333.06,
+   "end": 361.58,
+   "text": "16. You have a new interval which is 4 and 8. Okay. You have to insert it in some position. You have to insert it in some position and make a new array. More, more. Sorted property should be maintained. This is sorted according to start time. It is sorted according to start time. So, it should be maintained. So, it is very easy. See. Where all it can come? It has a lot of places to come. This new value, this new interval, it will come somewhere in your shop."
+  },
+  {
+   "start": 361.58,
+   "end": 385.87,
+   "text": "It can come first in your shop, it can come here, it can come in between them, it can come in between them, it can come in between them, it can come in between them, it can come in between them, it can come in between them. Let's see if it comes or not. And what we will check every time is that the sorted property is maintained or not. Can it come here? Can 48 come first? No. Why? Because the start time of 48 is 4."
+  },
+  {
+   "start": 386.06,
+   "end": 409.6,
+   "text": "And its start time is 1. So if you put it here, then your sorted property will break. It won't be sorted from start, so it can't come here. No. Can it come here? No. Why? Because 4 is still bigger than 3. If the next one is 3, then it will break. So it will happen that 1 and 4 and 3 shouldn't be there. Can it come here? Yes. Yes, it can come here. Why? Because it is 1. After that 3."
+  },
+  {
+   "start": 409.6,
+   "end": 438.34,
+   "text": "After that, you are saying that we will put 4, 8, then it is okay, there is no problem. And the start after that, what is it? It is 6, then it will work. And after that, see, it is already sorted. So, we can put it here. So, if we pick up this 4, 8, put it here in some way and make an array like this, and then send it to its merge interval function, then my whole problem will be solved. Let's go. So, what to do in this? We have said that it is not possible to insert in the array in the middle of the array."
+  },
+  {
+   "start": 438.34,
+   "end": 468.82,
+   "text": "You will not be able to insert in between the array. You will have to shift the entire index to insert. So we will not do anything. Here you are told that you don't have to do everything inside the array. You can also make a new array. What can you do? You can also make a new array. You don't have to do everything inside. So we will make a new array. What will we do in the new array? See. We will do something very simple. For example, your original array looked like this. We are just telling this for insert. We know how to merge. We have learned how to merge. How will we insert?"
+  },
+  {
+   "start": 468.82,
+   "end": 498.56,
+   "text": "Suppose this is your array. So, this is your 1 and 2. This is the first index. The array will look like this. This is your 3 and 5. Okay. This is your 6 and 7. Okay. This is your 8 and 10. Okay. And at the very end, you have 12 and 16."
+  },
+  {
+   "start": 498.56,
+   "end": 528.05,
+   "text": "0, 1, 2, 3, 4. This is the error given to you. The one given to you to insert is 4, 8. That is 4, 8. In which position will it come? Now see, the whole thing should be sorted according to the start. So, you don't have to worry about the whole range. It should be sorted according to the start time. So, see this problem in such a way that just see the start clearly. What is the start? 1, 3, 6, 8, 12. Its start is 4."
+  },
+  {
+   "start": 528.05,
+   "end": 558.38,
+   "text": "We have to insert 4 in such a position that the one at the back is smaller or equal to this one and the one at the back is greater or larger than this one. This is what we have to check. Come, let's check. First of all, we will make a new array in which we will keep our new ranges. We will keep the ranges along with 4, 8. So, we will make a vector of int like this. Okay. First of all, we will see this. Before making it, we will see if it can come first."
+  },
+  {
+   "start": 558.38,
+   "end": 585.39,
+   "text": "It can go first. Okay? So to go first, there is a very easy way to make it. You have to insert it once. You have to insert it only once. You have to insert it only once. You have to insert it. Because it is only one interval. You don't have to insert it again and again. You have to insert it at one position. So why don't we take a boolean variable? Let's take a boolean variable insert."
+  },
+  {
+   "start": 585.65,
+   "end": 614.67,
+   "text": "And we have to do this as false. Is it false in the beginning or not? We haven't inserted it yet. Boolean tells us this, insert tells us this. Have you been able to insert it till now or not? We haven't been able to do it till now. Okay. After that, why don't we loop in this array? We will loop in this array from 0 to 4. Okay, we will do it. If, if, if, we think that whatever the start is, whatever a of i of 0 is, or whatever the start will be, whatever the start will be, if, if, that start, if that start,"
+  },
+  {
+   "start": 614.67,
+   "end": 641.9,
+   "text": "Greater than equal to, greater than equal to, which is our 4, this is 4, this is. So what we will do is, in the rest, rest, in that rest, and, and, and, and till now insert is false, till now insert is false, till now insert is not done, and the start is bigger than 4, so if it is bigger than 4, then it is fine, if it is bigger than 4, then for the first time we will not get this, so we will push this in rest, which?"
+  },
+  {
+   "start": 641.9,
+   "end": 670.67,
+   "text": "We will push this man here. We will push the for 8. After that, normally we will also push every element of the array. We will push every element of the array. That's it. And at the same time, we will make the insert true. We will make the insert true. Let's see once how it will work. How it will work. See. This is your original array. This is your original array. We will not make so many boxes in it. This is 1, 2. This is 3, 5."
+  },
+  {
+   "start": 671.34,
+   "end": 700.93,
+   "text": "This is 6, 7. This is 8 and 10. And this is 12 and 16. This is your result array. This is your result array. Result array means that we will make new array with the inserted element. One element will be more in this. All of them will be there. But one element will be more. 1, 2, 3, 4. This. 0, 1, 2, 3, 4. This is 0, 1, 2, 3, 4, 5. Why are we making one size more? Because there has to be one more element in it."
+  },
+  {
+   "start": 700.93,
+   "end": 731.15,
+   "text": "Let's do a dry run and see. Your insert element is 4, 8. That's good, let it be. Your insert variable is false. What does insert tell us? Have we been able to insert it till now or not? We haven't been able to do it till now. Come. Come to i is equal to 0. In this array where i is equal to 0, write the start and end of your original array. What is start and end? Write start only, there is no need of end. Start is equal to 1. What do we check?"
+  },
+  {
+   "start": 731.34,
+   "end": 762.85,
+   "text": "If insert equal equal to false. Means it is not inserted till now. And, and, and. The start which is now. Start. Greater than equal to. The interval which is given to you. The interval which is given to you. Means. The interval which is given to you is 4. The start which is now. Is greater than equal to. If this happens. It means the start of now."
+  },
+  {
+   "start": 762.85,
+   "end": 793.65,
+   "text": "is greater than that interval. So, we put this interval before this and after that, we will put the rest. This means that first of all, you push back in rest. Push back the rest interval. Interval means push the interval. After that, insert is equal to true. And close this. Now, normally, without any check, without any problem, you push back the AI also. Push back the AI. Do it like this."
+  },
+  {
+   "start": 793.68,
+   "end": 823.78,
+   "text": "You will have to write this. Let's see what happens with this. I is equal to 0. What is our start? What is start? 1. Is 1 greater than or equal to 4? No, it is not 1. So, don't do anything. Come here directly. Push AI. AI has to push every time. REST is just AI with the inserted element. So, AI has to push. So, push 1 to here. No problem. I is equal to 1. I is equal to 1's start is 3."
+  },
+  {
+   "start": 823.78,
+   "end": 848.05,
+   "text": "Is 3 greater than 4? No. If it is not greater than 4, then it is okay. Why do you push this? We will see further. 3 and 5. Okay. And see, look very carefully. What is i equal to 2? 6. 6 is greater than or equal to 4? Yes, yes. And, and, is insert still false? Insert is still false. Yes, insert is still false. Insert has not been inserted yet. It has not been inserted yet. Okay, very good. So, what did we do?"
+  },
+  {
+   "start": 848.05,
+   "end": 876.53,
+   "text": "In rest, push the interval first, because the start is bigger than this, so it will come after this. Push the interval first. Okay. Make insert true. Now insert is done, there is no need to do anything. After that, you don't have to push the AI, you have to push the AI. Look, insert is done. Now the work ahead will be done automatically. Come on i is equal to 3. 8, 10."
+  },
+  {
+   "start": 876.56,
+   "end": 901.81,
+   "text": "First check whether insert is false or not. Insert is not false, insert is true. So we don't have to think about it. Insert must be done. Just pick it up and insert it. 12, 16. Insert is false. We don't have to check whether it is big or small. It must be done. 12 and 16. See, insert is done. Now see. Its start time is sorted. 1, 3, 4, 6, 8, 12. Everything is sorted."
+  },
+  {
+   "start": 901.81,
+   "end": 928.74,
+   "text": "So your first condition will be satisfied. This is nothing. It is like this that you have given many numbers like this. You have given a number 5. Where will you insert 5? Where will you insert 5? It is just the same. It means that where will you insert 5? Yes, some people will say that we will find it from binary search that what is the position. Even then, you will have to make a loop to make a new array. So there is no need to get as much binary search and as much brain. It is the same simple brain. Whichever start is bigger than it for the first time,"
+  },
+  {
+   "start": 928.74,
+   "end": 957.49,
+   "text": "Meaning, from the start, the first number which is bigger than 5, like 6 is here, then we will put 5 here. Just put it once and it's done. Yes. Now, when you have this array ready, now you can use the question of merge interval in it. Whatever function you had written, you can use it. Come. We have told its code, let's see its dry run once. How will it work with this new array? Come. How will it work with this new array? So, your array is like this. 1, 2."
+  },
+  {
+   "start": 957.62,
+   "end": 984.18,
+   "text": "3, 5 And because we have inserted it, it has become 4, 8. Okay. And then 6, 7. 8, 10. And 12 and 16. We have to do this. So, this is 0, 1, 2, 3, 4, 5. What we used to do in merge interval? Those who haven't seen the previous one, it will be revision for them. So, first of all, the first one. We used to consider the first interval as our starting point. That now let's start with this. So, our one."
+  },
+  {
+   "start": 984.98,
+   "end": 1014.53,
+   "text": "Start and end 1 is equal to 1. So, we take 2. Okay. I is equal to 1. I is here. Is there any merge or not? How did you know? If. And on which you took I, you took start 2. Start 2 is equal to 3. End 2 is equal to 5. Is there any merge or not? How did you know? If end 1 is greater than or equal to start 2, then there was a merge. Then there was a merge. Then there was a merge. It is not like this here."
+  },
+  {
+   "start": 1014.53,
+   "end": 1044.5,
+   "text": "It is not happening, means this is our independent, whatever is in start and end 1 is our independent answer. So write it in your answer. We have written 1, 2 in our answer by merging. And because it is independent now, so make this as this. So make the value of start 1 as 3 and make the value of end 1 as 5. Why? Because the first one is merged. This one has come out as an independent range. It was not merged with anyone so that's why we have made it like this. Let's go ahead, bring the i here."
+  },
+  {
+   "start": 1044.91,
+   "end": 1074.51,
+   "text": "What will happen? Sorry. If we come here. What will happen to start 2? 4. What will happen to end 2? 8. Will there be merge or not? Is end 1 greater than or equal to start 2? Yes, yes, yes. There will be merge. There will be merge. So, what did we make of merge? Start 1. So, start 1 was left. Why? Because we have to make start 1 and end 1 as minimum value and maximum value. So, yesterday we saw that in all these 4, minimum value will definitely be start 1."
+  },
+  {
+   "start": 1074.51,
+   "end": 1102.08,
+   "text": "This would have been 3. What would have been end 1? Maximum of end 1 and end 2. Because there is no relation between end 1 and end 2. There can be any maximum in this. So, maximum of 5 and 8. Which is 8. We have made it. Let's go. Come forward. Come forward. Right? Come here. 6 or 7. So, start 2 is equal to 6. End 2 is equal to 7. Will it merge or not?"
+  },
+  {
+   "start": 1102.08,
+   "end": 1130.43,
+   "text": "End 1 should be greater than or equal to start 2. Yes, yes, yes. Merge will happen. Come, let's change this again. We don't have to write it in the result. Start 1 remains start 1. What becomes end 1? Maximum of end 1 and end 2 which is 8. No problem. Come. Move ahead. 8, 10. 8, 10. 8, 10. Start 2 is equal to 8. End 2 is equal to 10. Merge will happen or not? End 1 should be greater than or equal to start 2. Yes, yes, yes. Merge will happen. Merge will happen. We have to change it again."
+  },
+  {
+   "start": 1130.43,
+   "end": 1156.06,
+   "text": "Start 1 is equal to 3. End 1 is equal to maximum of end 1 and end 2. 10. Yes, 10. No problem. Come forward. Come here. 12, 16. Write start 2. Start 2 is equal to 12. End 2 is equal to 16. Will it merge or not? No, it won't. End 1 is not greater than or equal to start 2. So, this is our category work. Write 3, 10 in the answer."
+  },
+  {
+   "start": 1156.06,
+   "end": 1174.59,
+   "text": "write 310 in the answer and because it was a new start and it was not merged with anyone so now we will update start1 and end1 what will we update? we will update start1 to 12 because it was a new start and it was not merged with anyone we will update it to 16 that's it"
+  },
+  {
+   "start": 1174.59,
+   "end": 1203.18,
+   "text": "we will increase the i, if we increase the i, then the i will be finished, now the i will be finished, so what we saw that when the i was finished, but you still have a start 1 and end 1 which you have not written in the result yet and have not done anything else, so now it is possible to write this also in the result, because now your shop is finished, now you have been doing calculations for a long time, you came to know that this is the range, we will do this, and now the shop is finished, now there is no category left, so whatever you have now, write it in the result and finish the work, write 1216 and finish the work, that's it."
+  },
+  {
+   "start": 1203.41,
+   "end": 1232.4,
+   "text": "This is done. Return it comfortably. So see, by doing one insert, you insert and then merge it. So you can use the same code. The function in the lead code last time, merge interval, you can copy and paste the same function and use it. But we will say that write it by hand. So it will become a practice. So this was its dry run. And you can code it like this. Insert, we hope you understood. This was a very small code of insert. That,"
+  },
+  {
+   "start": 1232.4,
+   "end": 1259.18,
+   "text": "If insert is false, and the next start is bigger than me, then insert it. Yes, there is an edge case. If we get such an element that 20 and 30. See, 20 and 30 are not inserted anywhere because when are we inserting? When my start is greater than or equal to interval of 0. What is interval of 0? 20."
+  },
+  {
+   "start": 1259.34,
+   "end": 1290.32,
+   "text": "No element is greater than 20. If someone's start is not greater than 20, then there will be no insert. That's why, after loop, after for loop, you will have to check here. After for loop, you will have to check again if insert is equal to false. What does this mean? This new interval is the largest, so no one got it. If no one got it, then where will we insert it? In the last, if it is the largest, then obviously it will go in the last. Nothing to do, res."
+  },
+  {
+   "start": 1290.32,
+   "end": 1319.55,
+   "text": "Push back. That's why we say watch the video till the end. Enter. What does this mean? You got this. You had a list like this. And you didn't have to insert 5. You had to insert 15. And where will we insert 15? Where is 15 in this order? It will come here, right? 15. You have to maintain sorted. No one is bigger than this. No one is bigger than this. You couldn't insert. If you couldn't insert, then we will do it at the end. Simple. So we will put it at the end. And then, this is our fix. This is our fix code. So this was a small"
+  },
+  {
+   "start": 1319.55,
+   "end": 1326.37,
+   "text": "See, how easy it is. We will learn one question and many more will be made. So, let's meet tomorrow."
+  }
+ ]
+}

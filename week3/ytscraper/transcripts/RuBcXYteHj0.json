@@ -1,0 +1,249 @@
+{
+ "video_id": "RuBcXYteHj0",
+ "title": "Most Important Question in BINARY Search Algorithm | Find Mountain peak Leetcode",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1318,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 20.37,
+   "text": "Today's question is related to Mountain Array. It is very much related to yesterday's first occurrence. Those who haven't seen it, please watch it. Because it is 90% the same question. There is a little bit of imagination. You have to say that you are walking on the mountain like this. You will look like this. Then you will come to the peak and then you will start to descend on the Dalaran. So there is a little bit of imagination. So we like to study this because it is very..."
+  },
+  {
+   "start": 20.37,
+   "end": 49.81,
+   "text": "It's a good question. It's a good question to think and imagine. So, watch the full video and at the end, those who watch the full video, there is a 2-minute video at the end. We have told you about the edge case. How you should handle the edge case or think about it. So, those who don't watch the full video, watch at least the last 3 minutes. Not to increase my view and hour, but for yourself. So, you will benefit from it. We will not benefit much if you watch 2 minutes or 40 minutes. It counts in the view. So, let's start."
+  },
+  {
+   "start": 49.81,
+   "end": 78.05,
+   "text": "Let's do it quickly. The name of this question is Mountain Array. What is the name of this mountain array? This is the lead code 852. You will get it in sheet beat. But its name is Mountain Array. Now what does it say? You have been given an array. It is not a dangerous question. You have been given an array. Okay. What will that array be like? It has been said that that array will be like a mountain. How is a mountain? You climb a mountain. You climb and climb and climb. One peak comes. Peak means the highest point of that mountain."
+  },
+  {
+   "start": 78.05,
+   "end": 107.44,
+   "text": "where people go for picnics, there is a peak, after that, you come down from the slope. What do you have to do? You have to return this peak. You have to return the index of this peak. And I have told you that there is always a guarantee that the array given to you will be a mountain array. No array will be given that it is not a mountain. Means, an array like this will be given. What does this array tell you? 1, 3, 4, 5, 4, 3. Means like this."
+  },
+  {
+   "start": 107.44,
+   "end": 136.96,
+   "text": "First comes 1. If you make a copy of this drawing, then how will it look? 1, 3, 4, 5. After that, 4 and 3. 4, 3. If you make a drawing, then how will it look? See, this is a slope. We are going up. We are going up. We are going up. One point has come which is a peak. After that, we are going down. After that, we are going down. So, what is its index? This is 0, this is 1, this is 2, this is 3, this is 4, this is 5. What do you have to return? You have to return this peak."
+  },
+  {
+   "start": 136.96,
+   "end": 165.74,
+   "text": "We have to return the index. Okay. We don't have to be afraid of this question. We don't have to be afraid of this question. Those who have understood it, those who have understood it, and we will encourage you to pause the video. Think a little, think a little about what to do in this. Those who have not understood it, let's do it. Let's see what to do. Now the question is saying that there is a mountain. There is definitely a mountain. Okay. But if there is a mountain, then why is this a question of binary search? I mean, how will we bring binary search? So see."
+  },
+  {
+   "start": 165.74,
+   "end": 194.86,
+   "text": "What did we explain to you? When does binary search take place? Binary search takes place when, first of all, whatever you want to find, whatever you want to find, think about it in your mind. What do you want to find here? You want to find the index here. Usually, you only have to find a single thing. It doesn't happen that you have to find the whole array. No. No single thing. Either some index, or some number, or some number of things, or some speed. Now, single. One single thing. Okay? What did we say? Whatever you want to find, you can guess it. You can guess it."
+  },
+  {
+   "start": 194.86,
+   "end": 221.89,
+   "text": "If you want to find the index here, then you can guess the index. Guessing means that you can guess any index from the whole array and see if my answer is possible or not. This is my answer. Is it possible or not? Is it possible or not? And the answer of your guess should have been monotonic. It means that there will be a point where you will feel that no, no, this answer cannot be made."
+  },
+  {
+   "start": 221.89,
+   "end": 244.96,
+   "text": "There will be one point from where you will say that yes, now this answer can be done. And after that, you will continuously say that yes, this answer can be done. This answer can be done. As we were seeing in every question. We were seeing it in lower bound, we were seeing it in ceiling, we were seeing it in first occurrence, we were seeing it in last occurrence, we were seeing it in everything. This is a monotonicity. I mean, there are parts in answer. What is there in answer? There is a no part and a yes part. Okay."
+  },
+  {
+   "start": 244.96,
+   "end": 274.22,
+   "text": "It will never happen that no and yes will be interchanged. In binary search, people will say that in that you said that there was no, then once yes came in between and then no. No, it was not like that. What was that? It was less, less, less, less, less, equal, equal, equal, equal, equal, more, more, more, more, more. So that too was not mixing and matching. Different parts were different parts so that you get to know a limit, you get to know a limit, a turning point that yes, after this, this part is over. After this, the next part has started."
+  },
+  {
+   "start": 274.74,
+   "end": 301.95,
+   "text": "and if your answer space looks monotonic and if you can guess the answer in order of 1 or order of n then there will be binary search so there will be binary search now let's see, think a little, this question is a bit of imagination mountain array, so the array is like this mountain looks like this, right?"
+  },
+  {
+   "start": 301.95,
+   "end": 324.11,
+   "text": "Let's make some points in it. This is a point, this is a point, this is a point, this is a point, this is a point, this is a point, this is a point, this is a point, this is a point, this is a point, this is a point, this is a point, this is a point, this is a point, this is a point, this is a point, this is a point,"
+  },
+  {
+   "start": 324.11,
+   "end": 352.74,
+   "text": "You are climbing a normal mountain. You don't know where the peak is. You will start climbing the mountain from here. You will start climbing the mountain from here. You will climb like this. You will climb like this. You will climb like this. You will climb like this. You will climb like this. You will climb like this. You will climb like this."
+  },
+  {
+   "start": 352.74,
+   "end": 382.61,
+   "text": "One point will come when you will reach this peak. When you will reach this peak, at that time you will stand straight. Look carefully. Think about the question. Feel the question. One point will come, means you will start climbing the mountain. So, you are climbing like this. You are climbing on increasing. One point will come when you will stand straight. That will be the peak. After that, when you will descend the mountain. After that, when you will descend the mountain. So, you will descend like this. So, you will go down. So, you will go down. You climb the mountain like this."
+  },
+  {
+   "start": 382.61,
+   "end": 405.31,
+   "text": "Pahad aise hi chada jaata hai. Aap aisa chadate hain, thoda seeda ho jaate hain aur phir meeche aise karke utarne lagte hain. Toh aise hi hota hai. Okay. Ab peak kaha hai? Jab aap pehli baar seedhe ho gaye the. Vahi peak hai na? Agar aapko bolta ki..."
+  },
+  {
+   "start": 405.31,
+   "end": 427.31,
+   "text": "If someone tells you to climb the mountain and tell you when the peak is, how would you tell him? If someone tells you to climb the mountain and tell you when the peak is, how would you tell him? As long as you are on this climb,"
+  },
+  {
+   "start": 427.31,
+   "end": 449.71,
+   "text": "As long as you are on this slope, you will feel that the peak has not come yet because we are on the slope. As soon as you are straight, you will say that this is the peak. At the same time, you will shout and say that this is the peak. This is the logic of this question. Now, this is the diagram and this is that we are doing this and that, but the question is not made by doing this and that."
+  },
+  {
+   "start": 449.84,
+   "end": 480.48,
+   "text": "What you have been told is a mountain. We have spent a lot of time on basic questions because we have spent a lot of time on basic questions because we have spent a lot of time on basic questions because we have spent a lot of time on basic questions because we have spent a lot of time on basic questions because we have spent a lot of time on basic questions"
+  },
+  {
+   "start": 480.48,
+   "end": 511.2,
+   "text": "5 is there, 7 is there, and after 7 is the descent. After 7 is the descent, 6 is there, and then 4 is there, and 3. So, 0, 1, 2, 3, 4, 5, 6, 7. So, if you make this mountain, then how will it look like? It will look like this. This is 1, this is 2, this is 4, this is 5, this is 7. After that, this is 6, this is 4, this is 3. By doing this, the mountain will look like this. You are getting to know that the peak is 7. Now, see. So, what is this part? This is your climb. Climb."
+  },
+  {
+   "start": 511.2,
+   "end": 540.59,
+   "text": "And this is your peak. And this is your slope. This is your slope or whatever you call it. But observe something very interesting. Observe something very interesting. The slope, how do you know that this point is of slope? If you guess, let's say I leave you at this point. Let's say I leave you at this index 2. Now we will ask you whether this is slope or not. So you will do like this. But you see carefully. Array 2 is."
+  },
+  {
+   "start": 540.59,
+   "end": 562.94,
+   "text": "less than Array 3. That's why Array 2 is higher. That's why this man is higher. Why is this man higher? Because he is lower than his predecessor. That's why he is higher. Otherwise, he would have been down. Look, if this Array of 2 is equal to Array of 3, then it would have been straight. It would have been like this. If Array of 2 is greater than Array of 3, then it would have been down."
+  },
+  {
+   "start": 562.94,
+   "end": 588.08,
+   "text": "If Array of 2 is less than Array of 3, then only it is an incline, then only it is an incline. You didn't get to know? Look, look carefully, look carefully what is happening in this array. Array of 0 is less than Array of 1. Look at every index from your front, okay? You will see a pattern in some time. Array of 1 is less than Array of 2, it is also there. Array of 2 is less than Array of 3, okay?"
+  },
+  {
+   "start": 588.08,
+   "end": 616.77,
+   "text": "Array of 3 is less than array of 4. Yes, this is also correct. 5 is less than 7. But, but, as soon as you touch the peak, as soon as you touch the peak, as soon as you touch the peak, the index number 4, what happens at that time? What happens at that time? See. Array of 4 greater than array of 5. See carefully. 7 is greater than 6. This rule has changed. This rule has changed. This rule has reversed."
+  },
+  {
+   "start": 616.77,
+   "end": 646.96,
+   "text": "Array of 5 is greater than array of 6. Yes, yes. And array of 6 is greater than array of 7. What were these three? Peak plus dhalan. Peak plus dhalan. So peak. When you come to peak, you are still higher than your previous one. After that, when you come to dhalan, you are still higher than your previous one. When you come to this, you are still higher than your previous one. And as long as this rule is there, as long as it is there, as long as any index is less than your previous one, then what is this? Climbing."
+  },
+  {
+   "start": 646.96,
+   "end": 676.16,
+   "text": "So what is this? Climbing. That's it. So you can break your array into two parts. See what parts we can break it into. 1, 2, 4, 5, 7, 6, 4, 3. See very carefully. 1, 2, 4, 5, 7, 6, 4, 3. 0, 1, 2, 3, 4, 5, 6, 7. See. What is 1? 1 is climbing."
+  },
+  {
+   "start": 676.16,
+   "end": 703.15,
+   "text": "This index is also a climb. Why? Because it is less than the previous one. If any point is less than the previous one, then you will feel that it is a climb. And if any point is bigger than the previous one, then you will feel that you are on top. So this will be a climb. And look, this 4 is a climb. This 5 is a climb. But this 7, this 7."
+  },
+  {
+   "start": 703.15,
+   "end": 733.46,
+   "text": "You can call it anything. Non-chadhai or you can call it dhalan or uttar. Whatever you want. This one is 6. Dhalan. This one is 4. Dhalan. This one is 3. Dhalan. Look carefully. Isn't this monotonic? Chadhai, chadhai, chadhai, chadhai, chadhai. And continuously dhalan, dhalan, dhalan, dhalan. And its turning point, its turning point, the first dhalan, yes, first dhalan, this is your peak."
+  },
+  {
+   "start": 733.46,
+   "end": 762.67,
+   "text": "This is your peak. What was 7? 7 was the first index where you got to know that area of i is greater than area of i plus 1. This was the first. First. Wasn't this a question like first occurrence? You have to find the first occurrence. But you have to find the first occurrence of the first occurrence. You have to find the first occurrence of the first occurrence of the first occurrence. Those of you who understood, please code. Those of you who didn't understand, please see. What did you see?"
+  },
+  {
+   "start": 762.67,
+   "end": 788.82,
+   "text": "If you guess any index, then either it will be an increase or it will be a decrease. How will we know the increase? The area of guess will be less than the previous one. That's why we are going up till there. We go from the lower point to the higher point, that's what we call increase."
+  },
+  {
+   "start": 788.82,
+   "end": 812.45,
+   "text": "It will be less than the previous one. It will be less than the area of gas plus 1. How will we know the slope? It will be more than the previous one. That is why it is called slope. You go from the higher point to the lower point. That is called slope. So it will be more. Both things are known. And how does the space of your answer look? It looks like this. Climb, climb, climb, climb, climb."
+  },
+  {
+   "start": 812.45,
+   "end": 838.51,
+   "text": "suddenly slope, then all slopes, then all slopes. It won't happen like this. It won't happen like this that you will get slope and suddenly you will get climb. This question is different. This question is a bit complex. We will do this tomorrow. It is also possible. We will see in tomorrow's question how to handle this. But for now, you are told that there is one mountain. One mountain means climb, peak, slope. That's it. Now, if you get this climb, if you ever come on the climb, your guess comes here, then"
+  },
+  {
+   "start": 838.51,
+   "end": 864.91,
+   "text": "What do you get to know? My left is all the way up. We should go right. We should go right. We should go right. We are getting to know by looking. But if you get a dhalan, then what dhalan are you interested in? You are interested in the first occurrence of dhalan. You are interested in the first occurrence. What did you do in yesterday's question? First occurrence. What do you get to know? This is my answer. It is possible."
+  },
+  {
+   "start": 864.91,
+   "end": 893.79,
+   "text": "This is my answer. Those who didn't watch yesterday's lecture must be having a lot of problems. We explained yesterday's lecture very nicely. Please watch a little bit. Please take care of me. If you didn't watch yesterday's lecture, then you can comment here that you didn't explain this properly. But yesterday we explained this thing in a very detailed manner. That is, we explained it in detail as much as I had the strength. So now many people must be feeling that it is happening again and again. Now if your guess came on this line, then this is your answer. But what do you want?"
+  },
+  {
+   "start": 893.79,
+   "end": 923.57,
+   "text": "first occurrence, so what did you do yesterday? you said there is no use of looking at the right, but we have to look at the left so you told this shopkeeper to keep this one for me, i.e. in my answer, keep this guess but let's look at the left once if we get any other option in the left, like this one, then we will take that if we don't get any option, then we will take this what did you get from this? first occurrence so that's it come, let's show its code, its code is very simple you will be given an integer in fun"
+  },
+  {
+   "start": 924.11,
+   "end": 956.98,
+   "text": "you will be given an error in an integer form int n is equal to a dot size what to do? take low high is equal to n minus 1 int res is equal to minus 1 to keep the answer, come search binary low less than equal to high int mid is equal to low plus"
+  },
+  {
+   "start": 957.01,
+   "end": 990.91,
+   "text": "Let's do guess. Because we are teaching you from the beginning. So, let's do that. Guess is equal to low plus high by 2. After that, what did you have to check? After that, what did you have to check? If. Check the height. How did you check the height? If array of guess is less than guess plus 1. What does this mean? It is height. So, low is equal to guess plus 1. Go right. It is height. Left will be half height. Else."
+  },
+  {
+   "start": 990.91,
+   "end": 1019.92,
+   "text": "If this is the case, take it, keep it for now. Now, you don't have to do anything from the right, but you should see in the left that you want the first occurrence, you don't want the last occurrence, you want the first occurrence. So, high is equal to, this is yesterday's, just yesterday's question. Yesterday's first occurrence is a question, okay? Turn off, return, okay. Just this is yesterday's question. Now, some of you should have a doubt here. What are you checking here? You are checking this here. Array of guesses."
+  },
+  {
+   "start": 1019.92,
+   "end": 1047.79,
+   "text": "Listen to me carefully. It's done. The program is the same. The program is the same. The program is the same. It will work. But it is very important to understand. You are comparing guess and guess plus 1 here. You should come to your mind that if, let's say, at some point, what is guess? Guess is index. What if guess is n minus 1? What if guess is n minus 1? What if guess goes to the last? What will happen? What if guess goes to the last? What will happen? You will start doing this. Array of n minus 1 is greater than array of n."
+  },
+  {
+   "start": 1047.79,
+   "end": 1074.03,
+   "text": "Now this is useless, here you should get segmentation or crash, but this will not happen. This will never happen, why? Because you are told that your array is a mountain, that mountain is fixed. Now see, let's see when guess n-1 is made. Suppose n is equal to 6. Where will you start? Low is equal to 0 and high is equal to 5. We will start from here, from low 0 and high 5."
+  },
+  {
+   "start": 1074.26,
+   "end": 1103.23,
+   "text": "Now, you were saying that what will be my guess? n minus 1 means 5. This will be made only then. Now, what is guess? Low plus high by 2. Low plus high by 2 means when low is equal to 5 and high is equal to 5, then only guess is equal to 5. Then only guess is equal to 5. How did you know this? Put the value of guess and see. So, low, do this and see. Low plus high."
+  },
+  {
+   "start": 1103.23,
+   "end": 1132.64,
+   "text": "by 2 is equal to 5. Low plus high is equal to 10. Means, the value of low and high has to be equal to 10. How far can low and high go? They start from 0 and end at 5. So, between 0 and 5, you have to find 2 pairs whose sum is exactly 10. You will only get 5. 5 plus 5 is equal to 10. 4 plus 5 is equal to 9. 4 plus 4 is equal to 8. You can't take anything else. So, you have to take 5 and high 5. Okay. You see,"
+  },
+  {
+   "start": 1132.64,
+   "end": 1162.85,
+   "text": "You started from here. Low is equal to 0, high is equal to 5. And you are saying that we have come here. Low is equal to 5, high is equal to 5. High is the same. High is the same. We are imagining that if guess becomes 5, then what will happen? If guess becomes 5, then you will have to come to this low. High is the same. High started from 5. High was 5 till the end. Low started from 0 and became 5. Low became 5. So what happened? Low increased. Low increased. Low increased is less."
+  },
+  {
+   "start": 1162.85,
+   "end": 1194.22,
+   "text": "When does low increase happen? When you get a rise. This means that you got a rise in the whole mountain. It means that your array will be like this. Your array will be like this. And your indexes will be like this. Your indexes will be like this. It means that suppose this is 0, this is 1, this is 2, this is 3, this is 4. Suppose your indexes will be like this. Then only, let's make one more."
+  },
+  {
+   "start": 1195.76,
+   "end": 1224.56,
+   "text": "And here, this is index 5. Your array will look like this. Only then it will look like this. Let's see how it will be. Where will we start? Low is equal to 0. High is equal to 5. What will be your initial guess? 0 plus 5 by 2, 2. So, you will come here. You will see here that this is less than your previous one. Means, it is higher. So, what will you do? Low is equal to guess plus 1, 3. High is equal to 5. Okay. Again, what will you do? Guess is equal to mid one, 4. So, here,"
+  },
+  {
+   "start": 1224.56,
+   "end": 1255.17,
+   "text": "You will also see that this is less, this is at a slope, so you will increase the low again. So now low is equal to 5 and high is equal to 5. You will come here. Now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now, now,"
+  },
+  {
+   "start": 1255.17,
+   "end": 1283.62,
+   "text": "Array will definitely be a mountain. Definitely be a mountain. So this is not a mountain. This is a line. Mountain is this. This is called a mountain. Mountain means this A. This A shape is called a mountain. This is a mountain. This is not a mountain. So neither your array will look like this. And neither your array will look like this. It can't be like this. That 0 is here and 5 is here. This means. This is just all the lines. What is this? All the lines. These are all the lines."
+  },
+  {
+   "start": 1283.62,
+   "end": 1311.39,
+   "text": "Your array is not like this and not like this. Your array will be a mountain. It will go up and then down, up and down. That's why we can be confident that it will never happen that your guess will be n-1. That's why we can do this. If you want, you can handle this too. It is very important to explain this because there is a doubt. If we leave it like this, it is not good. That's why we told you. So this is your thought process. If you feel that we should handle it, then you can handle it. There is no doubt about it. So go and code it."
+  },
+  {
+   "start": 1311.39,
+   "end": 1317.1,
+   "text": "It's a very good question. It's a bit of an imagination question. We will do the hard part of it tomorrow, so do come tomorrow."
+  }
+ ]
+}

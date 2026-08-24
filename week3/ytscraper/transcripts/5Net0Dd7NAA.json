@@ -1,0 +1,494 @@
+{
+ "video_id": "5Net0Dd7NAA",
+ "title": "Solve Any HEAP Question By This Template | Top K frequent Elements Leetcode",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2467,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 18.99,
+   "text": "Hello, if you are new to this channel, then go and check the description. Even if you are an old kid, if you haven't seen the last video of the Heap on Pairs series, then turn off today's video right here. You won't understand anything, just watch that and then you will understand. If you haven't seen this, then you won't understand the code and you won't understand what we are doing."
+  },
+  {
+   "start": 18.99,
+   "end": 36.18,
+   "text": "we will recommend you to watch this entire playlist because today we are going to do two questions and we will make you do the first question and the second question is a challenge for you that if you have understood the first question well then think about the second question yourself 10% change will make the second question and do all this and see"
+  },
+  {
+   "start": 36.24,
+   "end": 56.91,
+   "text": "Why are we doing this? It's not that we don't have time to teach. We can teach and we will teach but when we teach from someone, let's say we give an example that we were teaching from Stryver. So Stryver would have done more than 500 questions in his whole YouTube. We haven't solved 500, we have solved 1500. So why did that happen? If we would have just watched his video and would have done the questions he was asking, then..."
+  },
+  {
+   "start": 56.91,
+   "end": 78.61,
+   "text": "We don't learn, right? So by doing all this, you learn by yourself. If we just tell you, you will listen to it, you will note it down in a copy and write it down, then you will be able to learn very little. So this is a chance for you that yes, this will give you confidence that it happened by itself. And we do all this because, we don't do it to demotivate you or anything like that, but to boost your confidence."
+  },
+  {
+   "start": 78.61,
+   "end": 107.17,
+   "text": "If we can do a similar 10-20% change with another pattern, then you will understand that yes, we have got that concept very well. So watch this video, this question. Till the end of this question, we will tell you a trick of heap, what to recognize, which heap to put, max, min, where to put max, where to put min, how to do it, everything will be understood, so let's start. Come, first we will explain the question, listen to the question very carefully, we will tell you in Hindi."
+  },
+  {
+   "start": 107.17,
+   "end": 137.07,
+   "text": "You are given an array and what do you have to return in this array? Frequent elements of the top. Frequent elements of the top means, See, there are many elements in this array. In this array, you must be seeing that if we talk about unique elements, then there are elements of 1, 2, 3, 4. There must be some frequency of every element. Every element must have come many times. For example, if we talk about 1, then 1 has come here once, 2 has come, 3 has come. So, we write once in the next that 1 has come 3 times. It's a good thing. See 2. Once, twice,"
+  },
+  {
+   "start": 137.07,
+   "end": 164.0,
+   "text": "3 times. Nothing else? Okay. 2 has also come 3 times. Let's see 3. Where is 3? It has come 1 time here. 1 time, 1 time, 1 time. So 3 has come 4 times. 3 has come total 4 times. And how many times 4 has come? So 4 has come here 1 time? It has come here 1 time. So how many times 4 has come? It has come 2 times. Is it correct? Okay. For example, you have been given in this question that k is equal to 2. The value of k is equal to 2 has been given in the question. Okay. What do you have to tell?"
+  },
+  {
+   "start": 164.0,
+   "end": 178.29,
+   "text": "Top K frequent elements, means these are all their frequencies. In these, the top 2 frequent elements, see, top 2 frequent elements, first of all, there is 3. Most of the times, 3 has come. 1 has become 3. Let's talk about the next one. Suppose, 4 times, it has come only once."
+  },
+  {
+   "start": 178.29,
+   "end": 203.22,
+   "text": "3 times you will see that 1 and 2, both are 3 times. You can give whatever you want from 1 and 2. So you can say that 1. So we can see that 3 and 1 are top 2 frequent elements. How many? Top 2. Why are you saying top 2? Because k is equal to 2. If k is 3, then you would have given 2 as answer. If k is 4, then you would have given 4 as answer. So this is your question. And the very important thing is that from n log n,"
+  },
+  {
+   "start": 203.22,
+   "end": 232.51,
+   "text": "solve in less complexity means there should not be n log n it is about time complexity there should not be n log n it is written in the question you can see that it is written in the follow up that it should be made in less than n log n ok so top k frequent element so first of all why this is a heap question so remember the pattern of the first day if you have given any array and you have any top k or most k something like this top k frequent greater k greatest k largest if this happens then it is a heap question and"
+  },
+  {
+   "start": 232.51,
+   "end": 258.32,
+   "text": "After that, it seems that there is a max and a min. There is a trick for this, which we will tell you in the end. But first, let's think a little about how we will do this. Assume that you do not have the knowledge of the heap. Assume that you do not have the knowledge of the heap, then what would you do? First of all, it is a matter of frequency here. The frequency of the element will be decided according to which is the top k. The element is not the greatest largest. The element's frequency has to be decided according to which is the top k. And that element has to be returned."
+  },
+  {
+   "start": 258.32,
+   "end": 288.21,
+   "text": "So the most simple solution that is coming to my mind is that if we sort the array, If we sort the array, then my array would look like this. 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 4 and 4."
+  },
+  {
+   "start": 288.21,
+   "end": 317.33,
+   "text": "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11. If we had sorted it, then the array would have become like this. Even now, we will not be able to do anything. What we can do now is that we can remove the frequency of every element. How can we remove the frequency of every element? Now see, all the ones that are 1 will come together. All the ones that are 1 will come together. All the ones that are 2 will come together. All the ones that are 3 will come together. All the ones that are 4 will come together. By doing this, we can remove the frequency of 1 that 1 is 3 times."
+  },
+  {
+   "start": 317.33,
+   "end": 333.89,
+   "text": "We can find out the frequency of 2, that 2 has come 3 times. We can find out the frequency of 3, that 3 has come 4 times. And we can also find out the frequency of 4, that 4 has come 2 times. Okay. But there will be no benefit from this. Because we don't want everyone's frequency. We want the top K. There is no benefit from sorting this as well."
+  },
+  {
+   "start": 333.89,
+   "end": 360.98,
+   "text": "first thing and in sorting already nlogin will be used so you don't have to make it in nlogin it is written in the question so there is no use in sorting because this frequency you can take out normally if you will do it on array if you will use hash map then you can take it out normally also so ok there is no use in taking out the frequency of every element so now we need the frequent element of k ok now let's think about what else can be done now let's see what can be done in this now"
+  },
+  {
+   "start": 360.98,
+   "end": 376.4,
+   "text": "After looking at top k, we can understand that there will be heap here. But how will heap look like? Why? Will it look like max heap? Or will it look like min heap? And one more problem is that will we keep in heap? When we did kth largest element, then we kept number in heap. What will we keep here? Let's see what we will keep here."
+  },
+  {
+   "start": 376.91,
+   "end": 403.02,
+   "text": "First of all, you have to see what the top k is. In the previous question, what was the kth largest element? So it was on the element that which is the kth largest element. Here you have to tell which is the top k frequency element. First of all, according to me, you should know the frequency of every element and it should be stored somewhere. You should know the frequency of every element and it should be stored somewhere. So what can we do in a hash map?"
+  },
+  {
+   "start": 403.18,
+   "end": 427.55,
+   "text": "in one hash map, first we have to store every element and its frequency that 1 has come 3 times, 2 has come 3 times, 3 has come 4 times, and 4 has come 2 times, so we have to store this in the hash map, by putting a loop once, how much time will it take, it will take order of n time, so we are still not on n log n, it will take order of n time, now it is of top, we have to use heap,"
+  },
+  {
+   "start": 427.55,
+   "end": 454.64,
+   "text": "Intuitively, it comes to our mind that the top k is the maximum k. So why don't we use maxheap? If we use maxheap, then it can work. Absolutely it can work. So see. After that, what will we keep in the heap? Can't we keep elements in the heap? If you insert 1 in the heap and then 2, then there will be no benefit. In the heap, you will have to insert the frequency. The thing on which you need the top k or the kth largest, you will have to insert that thing in the heap."
+  },
+  {
+   "start": 454.8,
+   "end": 484.4,
+   "text": "But just inserting the frequency won't work either. For example, if you insert 3, 3, 4, 2 in the heap, and you get some answer in the end, then how will you know whose frequency is 3, 3, 4, 2? In HashMap, you can find out the frequency of 1. You can't find out whose frequency is 3. You can't search by value in HashMap. You can search by key in HashMap. You can ask, how many times is the frequency of 3? It's 4 times. You can't ask, which element's frequency is 4? That element will tell us."
+  },
+  {
+   "start": 484.4,
+   "end": 505.26,
+   "text": "This doesn't happen in HashMap. So, in heap, you won't be able to work only with elements because you don't have to do anything with elements. You won't be able to work only with frequency because you need top frequency. It's a good thing. You will insert it in heap. But, what will happen after inserting? From there, suppose you get the answer in the last. Suppose, you get the answer in heap in the last. 4 and 3."
+  },
+  {
+   "start": 505.26,
+   "end": 534.5,
+   "text": "It is the greatest frequency. 4 and 3 are mostly 2 frequencies. But whose frequency is this 4? Which element's frequency is this? We don't know. Which element's frequency is this 3? We don't know. You have to return the element in the final answer. You don't have to return the frequency. That's why, in heap, we have to insert both the things. What does both the things mean? In heap, we have to insert a pair. That's why we had taught heap on pairs in the previous video. Because this is very important in this question. This question cannot be made without a pair. In heap,"
+  },
+  {
+   "start": 534.5,
+   "end": 562.66,
+   "text": "We will have to insert two things. First, we will have to insert the frequency. First, we will have to insert the frequency and which element is that frequency. How will this be inserted? By putting a loop on the hash map. If you put a loop on the hash map, then you get both the things. You get the key and you get the value. Value and key, we will insert them in the heap. By doing this, we will have to insert in the heap. Okay. So, we got to know what to insert in the heap. Okay. But,"
+  },
+  {
+   "start": 562.66,
+   "end": 581.25,
+   "text": "Now, what will we do? First of all, is it a max heap or a min heap? Intuitively, it comes to my mind that if the top K is asked, then we will take a max heap. We can take it. See what happens. Suppose you make a max heap. You make a max heap here. This is a heap. What kind of heap is this? It is a max heap."
+  },
+  {
+   "start": 581.25,
+   "end": 599.34,
+   "text": "Max is the pair here. The rule of both frequency and element is defined. That it should be max according to the frequency and it should be max according to the element. So, let's say that take both as max. Take both as max. Remember what we were studying yesterday or the day before yesterday. That's why we are saying again and again that if you haven't seen it, then you won't understand it at all."
+  },
+  {
+   "start": 599.86,
+   "end": 619.18,
+   "text": "How does the heap decide which element should go up from this pair? First, it will look at the first. If the first is different, then according to the first, if it is max, then it will be max. If it is min, then it will go to the min top. If the first is same, then it will look at the second. If the second is min, then it will go up and down accordingly."
+  },
+  {
+   "start": 619.34,
+   "end": 649.34,
+   "text": "Let's assume for a while that we make both as max just for simplicity purpose. That we have made both as max. Now let's start inserting. So first of all, this comes, 1 and 3. So how will we insert this? We will make a pair in which the frequency will remain first and the element will remain later. So what will we make? 3 and 1. Okay, so this is the first insert. What is the second? 3 and 2. First, its frequency is 3. And which element's frequency is 3? 2 car 3. Okay, this is also inserted. 3 and 4 means?"
+  },
+  {
+   "start": 649.34,
+   "end": 673.66,
+   "text": "4 is the frequency and which element is it? This is also inserted. After that, 4 and 2 means 2 and 4 means that the frequency is 2 and the element is 4. So, you can see that we have inserted the entire hash map in the heap. Now, what is this heap? This is the max heap. It is according to you, according to the need. How many entries do you want? You want top k. Top k or top 2. In this question, you want top 2. So, we will not do anything."
+  },
+  {
+   "start": 673.66,
+   "end": 703.44,
+   "text": "We will pop two entries from the heap. Which two entries will pop? First of all, in this max heap, who will be the first to pop? Who will be sitting at the top? Whose first is the most? Whose first is the most? 4 and 3's first is the most. So when you will pop the first, what will you get? 4 and 3. What does this 4 and 3 tell you? There was one element whose frequency was 4. And which element's frequency was 4? 3's frequency was 4. So you can write 3 in your answer. Very good. So now this element has disappeared from the heap."
+  },
+  {
+   "start": 703.44,
+   "end": 723.98,
+   "text": "What will be the next element? See, for the next element, if we look at the first, the first is the same of two things, 3 and 3, both are the same, but which one will be sitting at the top? Whose second will be more? Why? Because we are saying that you stay at the max on the first, and according to the second, you also behave like a max heap. So whose is more? Two is more. So you will get this entry, which one?"
+  },
+  {
+   "start": 723.98,
+   "end": 743.7,
+   "text": "3 and 2. Again, what does this entry tell you? The frequency of one element is 3. And which element is that? It is 2. And what will you find out from this? 2. So, you can write 2 in your answer. You got the answer. You wanted the top K. You popped it twice. You got the answer. You can return this very good. This question will be made. Very good. The question is solved. But, but, but."
+  },
+  {
+   "start": 743.7,
+   "end": 767.38,
+   "text": "Now let's take a look at the time complexity. We had told you that there are only 3 operations in heap. Which 3 operations are there in heap? The first operation in heap is to see the top. After that there is push or insert which you insert inside. After that what happens is pop. In pop or java it is called offer."
+  },
+  {
+   "start": 767.38,
+   "end": 795.28,
+   "text": "The time complexity of top is order of 1. It is a constant operation. But what is the time complexity of push and pop? It is log n. What is this n? This n is not the size of your array. Remember that this n is not the size of your array. It is the size of the heap. What is the maximum size of the heap? The maximum size of the heap is decided by how much it can grow in a time. Okay. So we have done this. We have seen this. Now let's see what you are doing."
+  },
+  {
+   "start": 795.28,
+   "end": 819.7,
+   "text": "First of all, we have to make a hash map in this. First of all, we have to make a hash map with array. Whose? For frequency. So, in that, what is the order of n time? Because if you do it once, then it will be n once. We will talk about space later. Let's do time only. Okay. Plus. In heap, what are we doing after that? We are looping on every entry. We are looping on every entry in hash map. Okay. So, at max, how many entries can there be? At max, how many entries can there be? Number of unique elements. See, how big is your hash map?"
+  },
+  {
+   "start": 819.7,
+   "end": 847.49,
+   "text": "1, 2, 3, 4. How much is the size of HashMap? 4. Where did this 4 come from? Because in your array, the number of unique elements was 4. But the number of unique elements of the array can also be N. If every element comes once, then the size of your HashMap and the size of the array will be the same. Everyone's frequency will be 1. So let's assume that the worst possible size of HashMap can be N. What is N? The size of the array is okay. N. What are you doing for every entry? One, you are pushing. Where? You are pushing in the heap."
+  },
+  {
+   "start": 847.49,
+   "end": 863.18,
+   "text": "so what is the time complexity of push? one push log n, n means this is not the size of n array, the maximum size of heap can be at max so see how much the size of your heap can be? the size of your hash map can be as much as the size of your heap, why? because"
+  },
+  {
+   "start": 863.18,
+   "end": 892.54,
+   "text": "The size of your hash map, you are pushing every entry, every key value pair of the hash map in the heap. So how much can the size of the heap increase? It can increase up to the size of the hash map. And how much can the size of the hash map be? What did we see in the worst case? The size of the hash map can be equal to the size of the array. Why? Because if every element comes once, then the size of the hash map is equal to the size of the array. The size of the hash map is the same as the size of the heap. So how much can the size of the heap increase? It can increase up to the size of the array. It means that n can increase. So,"
+  },
+  {
+   "start": 892.54,
+   "end": 913.22,
+   "text": "How much will it be to push and pop once? Log N. Now this N is the size of your array. How many times are you pushing? You are pushing N times. Why? Because how many entries are there in the hash map? There are N entries. If you are pushing every time, then N log N. So see, your N log N came here. You don't have to do it in N log N."
+  },
+  {
+   "start": 913.22,
+   "end": 941.63,
+   "text": "This is not allowed. We can do it. It will be submitted too. But n log n is not allowed. Or n log n will stop you from interviewing. No, brother. This max heap that you are doing. You are pushing every entry in that heap. After that, k times is popped. We are doing its time complexity. See that too. Let's do it. After that, after pushing, what are you doing? You are doing k times pop so that you get the answer. So you are doing k times pop. How much is 1 pop? Log n. n means array size. k log n."
+  },
+  {
+   "start": 941.63,
+   "end": 967.14,
+   "text": "Don't get confused here again and again. The log n of the heap tells you the maximum size of the heap. Because in this condition, the maximum size of the heap and the maximum size of the array can be the same. That's why I am writing n, otherwise I don't have to write. Now your k log n will be less than n log n. So here you get to know that your time complexity will be n log n. You don't have to do n log n, it is not allowed."
+  },
+  {
+   "start": 967.14,
+   "end": 996.88,
+   "text": "Okay, now we know that we can't take max heap because to take max heap means that we have to push sub and remove kmax. So, this is a problem. So, let's solve the problem. It will be made. We will submit it and it will be made. But let's see if there is any other way. So, for simplicity, we write our hash map like this. This was our hash map in which we were storing elements and their frequency. Okay. 1 came here 3 times."
+  },
+  {
+   "start": 996.88,
+   "end": 1026.35,
+   "text": "2 came here 3 times. Let's do this to teach you that 2 came here 1 time, 3 came here 4 times, and 4 came here 2 times. Okay. This is your hash map. What do you want? You want top 2 frequent elements. We saw that max heap didn't work. Why didn't it work? It worked. Nlogin happened. We didn't have to do it in nlogin. So, now see what we can do. Now we will tell you that trick that whenever in heap, whenever in heap,"
+  },
+  {
+   "start": 1026.35,
+   "end": 1057.57,
+   "text": "you get this, kth largest, kth largest, kth biggest, means big, big words, biggest, kth greatest, or top k, or most frequent k, like this, means, what happens with k, if it is a big term, what should be max, always in these cases, minheap will be used, always in these cases, minheap will be used, and sometimes you get, kth smallest, kth smallest,"
+  },
+  {
+   "start": 1057.57,
+   "end": 1074.48,
+   "text": "or kth, shortest, whatever you can think of as parivachi of chhote bottom k means lowest k means whatever you can think of as parivachi of chhote in this case maxheap will be used"
+  },
+  {
+   "start": 1074.48,
+   "end": 1089.46,
+   "text": "In this case, Maxheap will be used. Why didn't we tell you this earlier? Why did we show you that Maxheap can also be used? But why didn't we tell you this? Because you have to think that why can't it be used? Maxheap will take time to unlock. So remember this."
+  },
+  {
+   "start": 1089.71,
+   "end": 1117.87,
+   "text": "If Keth is big, then we have to use min heap. If Keth is big, then we have to use max heap. If Keth is large, then we have to use min heap. If Keth is small, then we have to use max heap. Now I will tell you why this will happen. Just remember this. If Keth is the biggest problem, then don't use max heap. No interviewer will allow you to use it. It will be very easy."
+  },
+  {
+   "start": 1117.87,
+   "end": 1147.38,
+   "text": "But it won't allow you to add interviewers. Okay? Remember this. And let's see what can be the min heap in this. What can be the min heap? Let's go. There is a hash map. What do you want? Top 2. Okay. Top 2 frequent elements. Okay? So, let's assume that there are 6 elements in this array. Let's assume that there are 6 elements in this array. Let's take 6 elements. Let's assume that consider an array which has 6 unique elements. Which has 6 unique elements. Like this. 5, 6."
+  },
+  {
+   "start": 1147.38,
+   "end": 1176.21,
+   "text": "How many times has 5 come? 5 has come once and 6 has come twice. Is it correct? Very good. Let's not do 6 twice. Let's do 6 as 6. 6 has also come 4 times. According to this question, what should be your answer? Your answer should be 3 and 6 because these are the top 2 frequent elements. So, let's try to write this."
+  },
+  {
+   "start": 1176.56,
+   "end": 1206.16,
+   "text": "Let's sort the order of these elements with the order of their frequency. So see, who has come the most times? The most times is 6. Okay? Less than that or equal to that? After that, 3 has come. After that, which one has come? 1 has come, which has come 3 times. After that, 5 has come, which has come 1 time. And in the last, 2 has come, which has come 1 time. Below this, we write the frequency. This has come 4 times, this has come 4 times. 1 has come 3 times. Is anything left? 4, 4 is left."
+  },
+  {
+   "start": 1206.61,
+   "end": 1234.05,
+   "text": "4 has come twice, 4 is small or what is small, sorry. So we are just sorting this by the order of their frequency. After that, what has come, 4 has come twice and after that 5 and 2 have come once. 5 and 2 have come once, 4 has come twice. So this is sorted, ok. What is your answer? Your answer is this one. Top 2, top 2, 3 and 6 are your answers, ok. Look carefully."
+  },
+  {
+   "start": 1234.05,
+   "end": 1263.52,
+   "text": "6, now we will ask a question in every element that this element here, this element here is 6, how many elements is it smaller than? According to the frequency, now everything is from the frequency, now don't look at their values. 6, how many elements is it smaller than? So you will get the answer that 6 is smaller than 0 elements. There is no element bigger than 6. 6 is smaller than 0 elements. Now let's talk about 3. How many elements is 3 smaller than? How many elements is 3 smaller than in terms of this? So now you will say that it is 4, this is also 4, it is not smaller than anyone."
+  },
+  {
+   "start": 1263.52,
+   "end": 1285.66,
+   "text": "Assume that according to this order, how many people are there in front of it? Then you will get the answer that it is smaller than one person. This person, 1, is smaller than how many people? It is smaller than two people. How many people are smaller than 4? How many people are there in front of 4 who are sitting at a higher frequency than it? 3 people are sitting. 5? How many people are sitting in front of 5? 4 people are sitting and in front of 2? 5 people are sitting. Okay."
+  },
+  {
+   "start": 1285.66,
+   "end": 1312.1,
+   "text": "What do you want? What do you want? What is in your answer? In your answer, there are 3 and 6. Meaning, when k is equal to 2, you want such elements which are either smaller than 0, or there are 0 elements in front of it, meaning, they are smaller than 0 elements, or they are smaller than 1 element. Or they are smaller than 1 element. If you get an element which is smaller than 2 elements, then you don't want it in your answer. Why? Because it won't be able to come in top 2."
+  },
+  {
+   "start": 1312.1,
+   "end": 1338.02,
+   "text": "What is the meaning of top 2? First and second. Who is behind first? No one, behind 0. Who is behind second? Behind 1. But the third person, third is behind 2, so he will not come in top 2. That is why we need these two. Now see, see a very important thing, understand a very important thing. We make a min heap. We make a min heap. What do we do? We make a min heap. Just make it. Make it and see."
+  },
+  {
+   "start": 1338.02,
+   "end": 1366.38,
+   "text": "Means what will happen more or less? There will be no question and answer, then it will not happen. No problem, this also did not happen. Okay. Let's make a min-heap. What is this? Min-heap. What type of heap is it? It is of the same type. Frequency and element. For simplicity, min will work in both. Means according to first also it is min-heap and according to second also it is min-heap. You are reminding me of yesterday's lecture. Min-heap is made. What you do is, this"
+  },
+  {
+   "start": 1366.38,
+   "end": 1396.3,
+   "text": "Two elements of the beginning. Because how much do we need in the beginning? We need top k elements. We need top k elements. Pick up two elements of the beginning and put them in the heap. Pick up two elements of the beginning from the hash map and put them in the heap. Meaning, pick up this man and pick up this man. No matter if there is an answer or not. One or two answers are not there. No problem. Put them in. Put them in. You have to see every element, right? Put them in. So, put them in. What happened to this? Three and one happened. And this? One and two happened. Frequency and element got put in. Okay. How much is the size of heap now? How much is the size of heap? Two."
+  },
+  {
+   "start": 1396.4,
+   "end": 1425.22,
+   "text": "Is it correct? Okay. Now let's look at the next element. Let's look at this. 3 and 4 means that the frequency of 3 is 4. It means that what you want to put? You want to put 4 and 3 in the heap. Okay. Now tell me one thing. You want to put 4 and 3 in the heap. Where do you want to put them? You want to put them in the heap. Okay. What will happen at the top of your heap now? What will happen at the top of your heap now? This will happen at the top of your heap now."
+  },
+  {
+   "start": 1425.22,
+   "end": 1448.51,
+   "text": "Why? Because it is a min-heap. Which is the minimum frequency? 1 and 2. Is 4 and 3 greater than 1 and 2? Yes, it is greater than 4 and 3. The ones you want to put, 4 and 3, and the ones at the top of your heap, 1 and 2, you can see that it is greater."
+  },
+  {
+   "start": 1448.51,
+   "end": 1478.11,
+   "text": "Now notice an important thing about 1 and 2. 1 and 2 are sitting at the top of the current heap. The size of the heap is 2. 1 and 2 sitting at the top means that 1 and 2 will be the minimum in this heap. 1 and 2 is sitting at the top of this heap. So 1 and 2 will be guaranteed to be smaller than how many people? 1 and 2 will be smaller than this man."
+  },
+  {
+   "start": 1478.11,
+   "end": 1505.89,
+   "text": "1,2 is the minimum in the size of 2 heaps. In the group of 2 people, it is the poorest. So it will definitely be poorer than how many people? It will definitely be poorer than 1 person. And we saw that 1 and 2 is also smaller than 4 and 3. Because we just saw that we wanted to include 4 and 3. We saw that 1 and 2 is smaller than 4 and 3. So 1 and 3 is guaranteed to be smaller than how many people? It is smaller than 2 people."
+  },
+  {
+   "start": 1505.89,
+   "end": 1523.38,
+   "text": "One from this person and one from the friend of his hip. Because the size of the hip is 2. 1 and 2 was the minimum there. It means 1 and 2 is smaller than 3 and 1 is smaller than 4 and 3. 1 and 2 is guaranteed to be smaller than 2 people."
+  },
+  {
+   "start": 1523.86,
+   "end": 1553.46,
+   "text": "Remember the above. Did you need an element in your answer which is smaller than 2 people? No. Because who will be smaller than 2 people? He will be the third person. Max to max. Max to max will be the third. Which element did you need? Which is smaller than 0 people or maximum smaller than 1 person. But here we can see that the top of the heap, 1 and 2, is guaranteed to be smaller than 2 people. 1 from this and 1 from this. So can 1 and 2 ever be your answer? No."
+  },
+  {
+   "start": 1553.46,
+   "end": 1583.76,
+   "text": "Because 1 and 2 will never be able to come in the top 2 because it is smaller than 2 people. The person who comes in the top 2 cannot be smaller than 2 people. Either he will be smaller than 1 in the 2nd position or he will be smaller than 0 in the 1st position. So what to do? 1 and 2 cannot be your answer at all. What to do with 1 and 2? Pop. Oh sorry. What to do with 1 and 2? Pop. Remove it. It is a useless element. Absolutely useless. And who to enter? Who to enter? 4 and 3 to enter. 4 and 3 to enter. 4 and 3 to enter."
+  },
+  {
+   "start": 1583.76,
+   "end": 1611.65,
+   "text": "Okay? This man's leaf is clean. This man is gone. Okay. Come to the next item. 4 and 2. Means, frequency 4 and element 2. Okay, brother? Frequency 4 and element... What is frequency 4? Sorry. Frequency... Yes. Frequency 2 and element 4. Frequency 2 and element 4. Yes. Okay? Repeat the same exercise. Which one will be sitting at the top of your heap? 3 and 1. 3 and 1."
+  },
+  {
+   "start": 1611.65,
+   "end": 1640.4,
+   "text": "How is 3 and 1 still the same? Did we pop someone else? Oh man! This is... Yes! We had to pop 1 and 2, right? 1 and... Yes, okay, okay, okay. We popped it correctly. We popped it correctly, okay. We popped this and put 4 and 3 in it. We put 4 and 3 in it. Okay. Now come to 4 and 2. What does 4 and 2 mean? How much is its frequency? 2. And how much is its element? 4. Okay?"
+  },
+  {
+   "start": 1640.59,
+   "end": 1659.23,
+   "text": "How much is the element? 4. Look at the top of your heap. Always look at the top of your heap. Who will be at the top of your heap? This element. Who will be at the top of your heap? What does this element say? Frequency 3, element 4. So, this is the element of your top. This is the element of your current. Look, is its frequency smaller than this?"
+  },
+  {
+   "start": 1659.23,
+   "end": 1684.93,
+   "text": "Yes, yes, yes. Your current element is smaller than your top. Now, now, you have come to know about your current element. See, your current element is smaller than the top of the heap. It means that the element on the top of the heap is guaranteed to be smaller than one person. We have known this because the size of the heap is 2. That 3 and 1,"
+  },
+  {
+   "start": 1684.93,
+   "end": 1710.05,
+   "text": "this current is guaranteed to be smaller than one person so this current is guaranteed to be in second position at max and this current is also smaller than your current means this current is guaranteed to be smaller than two people one from the top of your heap and the other from the top of your heap means this is the relation the top of your heap"
+  },
+  {
+   "start": 1710.05,
+   "end": 1739.49,
+   "text": "is smaller than any x because it is at the top of the heap. Who goes to the top of the heap? Minimum element goes, so it will be small. And your current is also smaller than your top. Your current is also smaller than your top. Meaning, can your current ever be the answer? No, your current is definitely smaller than 2 logos. The one smaller than 2 logos cannot be the answer to your top 2. Absolutely not. Ignore the current. Ignore the current at all. Your current can never be the answer. What will we do to the current?"
+  },
+  {
+   "start": 1739.49,
+   "end": 1761.41,
+   "text": "Ignore it. Absolutely ignore it. Move on. What do you get? The frequency of 5 is 1. What do you want to insert? 1 frequency and element 5. Repeat the same thing. This is your current. Who is at the top of the heap? 3 and 1. 3 and 1. Is your current frequency smaller than the top of the heap? Yes, it is. Meaning, your current..."
+  },
+  {
+   "start": 1761.41,
+   "end": 1791.04,
+   "text": "It is smaller than your top. Your top is already smaller than x. So what will happen? How many people is your current smaller than? Guaranteed. It can be more than 2 people. It is definitely smaller than 2 people. You don't need this current in your answer. This answer can never be made. Remove it completely. Ignore it completely. Let's move on. Let's move on. Come on. Let's move on. Let's move on. 6 and 4 means frequency is 4 and element is 6. Okay? What is this?"
+  },
+  {
+   "start": 1791.04,
+   "end": 1803.65,
+   "text": "This is your current. Who is sitting at the top of your heap? 3 and 1. Is your current bigger than your top? Yes, yes, yes, it is bigger. Now, what did you find out about your top?"
+  },
+  {
+   "start": 1803.65,
+   "end": 1829.68,
+   "text": "The top element was already smaller than 1x because the size of the heap was 2. This minimum element was already smaller than x in the size of 2. And this is also smaller than this. This is also smaller than your curve. It means that the top element of your heap is guaranteed to be smaller than 2 logos. It can't be in the answer because it won't be able to come in the top 2. What will we do? This can't be the answer. Remove it. And put 4 and 6."
+  },
+  {
+   "start": 1830.45,
+   "end": 1857.15,
+   "text": "Now all your elements are finished. In the last, which elements are left in your heap? See, only 2 elements are left in your heap. You started with 2 and finished with 2. 4, 6 means? Frequency 4. Whose frequency is 4? 6's frequency is 4. What will go in your answer? 6. And 4, 3. Frequency 4. But which element? 3. Wasn't your answer 6 and 3 according to this? Yes, your answer was 6 and 3."
+  },
+  {
+   "start": 1857.15,
+   "end": 1876.82,
+   "text": "So did you get the answer by thinking of a small trick? Which element is required which can be smaller than how many people? If we are talking about k is equal to 2, then if an element is smaller than 2 people, then it can never be your answer. Who can be your answer? Which is either smaller than 1 or smaller than someone. You will be in the top 2. If k is equal to 3,"
+  },
+  {
+   "start": 1877.01,
+   "end": 1899.12,
+   "text": "Same logic, if an element is smaller than 3 people, it cannot be your answer, then it will not be able to come in the top 3. Who can come in the top 3? Either third person who is smaller than 2 people, second person who is smaller than 1, first person who is not smaller than anyone. So you got the answer by doing this. Let's analyze the time complexity of this with me. First of all, you will need order of n to make a hash map, there is no room for it."
+  },
+  {
+   "start": 1899.38,
+   "end": 1911.47,
+   "text": "The size of the hashmap, you are doing something for every element, you are doing a loop on the hashmap, you are doing a loop on the hashmap, okay, if you are doing a loop, then it will take n. Every time, you are looking at the top, okay."
+  },
+  {
+   "start": 1911.47,
+   "end": 1935.97,
+   "text": "either you are ignoring it or you are pushing it with a pop or you are pushing it with a pop there will be some log in the pop push but what will that log be? will that log be n? no! the size of the heap, remember the size of the heap did it ever go above 2? no! we never allowed the size of the heap to go above k so what will happen? n log k, not n log n"
+  },
+  {
+   "start": 1935.97,
+   "end": 1964.72,
+   "text": "In the previous example, in maxheap, the heap size increased. The heap size became the array size. But we never allowed the heap size to exceed k. If an element was inserted, it was inserted after popping. At any point of time, the heap size was not allowed to exceed 2. What is the time complexity of this? n log k, which is better than n log n. So this is a solution that will be accepted. Whose solution is this? It is the solution of minheap."
+  },
+  {
+   "start": 1964.72,
+   "end": 1993.66,
+   "text": "Look at the dry run of the smallest example. Look at the smallest example, it will be completely clear. So, what is the smallest example? Your array is like this, 1, 2, 1, 2, 1, 2, 3, 1, 3, and 2. Let's make a hash map quickly. In the hash map, how many times is 1? 4 times. How many times is 2? 1, 2, 3, 4 times. How many times is 3? 2 times. Make a min heap."
+  },
+  {
+   "start": 1993.66,
+   "end": 2023.52,
+   "text": "Make a min heap. What have you done in the min heap? How many elements do you need? k is equal to 2. Top k elements. Insert the two items of the beginning in the min heap. Don't think what is there in the beginning. Just for your understanding, we insert this. First, we insert this. 1 and 4 means we insert 4 and 1. 4 and 1. And we insert this. Because hash map is not sorted. It can come in any order. Just for understanding, we insert this. So, we insert 2 and 3 too. 2 and 3. Is it correct?"
+  },
+  {
+   "start": 2023.52,
+   "end": 2037.78,
+   "text": "Let's move ahead. How many elements are left in the hash map? One element. Let's process this. 2 and 4 means frequency 4 and element 2. You want to see this. Which element would be sitting on your top right now? Min one. 2 and 3. 2 and 3."
+  },
+  {
+   "start": 2038.1,
+   "end": 2059.47,
+   "text": "Is this 4 bigger than your 2? Is this 4 bigger than your 2? Yes, it is bigger than your 2. Yes, it is bigger than your 2. What does this mean? This top element will already be smaller than any x. What is x? One element. Because heap's size is 2. So this k-1 element is definitely smaller because it is on the min. And this is also smaller than this."
+  },
+  {
+   "start": 2059.47,
+   "end": 2088.51,
+   "text": "So how many people will be smaller than this 2,3 item? How many people will be guaranteed to be smaller than this 2,3 item? One will be smaller than this and the other will be smaller than 2 people. I cannot be smaller than 2 people in the top 2. Do you want this 2,3? No. Pop 2,3 and enter 4,2. 4,2 can be the answer. All the items are finished. Which 2 items are left in your heap? One is 4,1 which means frequency 4 element 1."
+  },
+  {
+   "start": 2088.51,
+   "end": 2120.0,
+   "text": "And 4, 2. Frequency 4, element 2. 1 and 2. This was not your answer. 1's frequency is 4, 2's frequency is 4. So, in top 2, it is 1 and 2. We will just return it. Very good. So, let's hope that you understood. Come, let's write the code. So, first of all, what will be given to you? One vector will be given. First of all, you have to return an integer and vector. Means, you have to return an array. And you will also be given a vector. Vector."
+  },
+  {
+   "start": 2120.0,
+   "end": 2144.56,
+   "text": "It will be given. Int k will also be given. Okay. Come. Int k is equal to, sorry. Let's take int n. n is equal to a dot size. Okay. Now you have to make a heap. You have to make a heap of pairs. You have to make a heap of pairs. How? Both should be max. Both should be max. So go and see tomorrow's code. We don't remember that code. We will also see that."
+  },
+  {
+   "start": 2144.56,
+   "end": 2170.46,
+   "text": "If you are in C++, then write your own comparator function. In that, everything is told line by line that which pair do you want, which pair do you want, max, max, min, max, all kinds of combinations are told. So what do you want? You want the heap of min and min. In both, you want the heap of min and min. Okay? Okay. So make a heap. If you are in Python, class pair it in the LT function. If you are in Java, class pair it in the"
+  },
+  {
+   "start": 2170.46,
+   "end": 2197.6,
+   "text": "integer, a-b or b-a whatever you want to do so this is easy, you only need int and int we have told you about int and string in this it is easy, you only need int and int so here we are writing make heap heap of pairs what kind of heap? which is min and min means according to first also min and according to second also min now what we have to do? let's make hash map let's make hash map we will give you its code if you want"
+  },
+  {
+   "start": 2197.6,
+   "end": 2224.91,
+   "text": "What will be the hash map? It will store the frequency of every element. So, let's store the frequency of every element. I is equal to 0. I less than N. I plus plus. And F. A I plus plus. Is the frequency work done? The frequency work is done. Okay. Now, what to do? We have to loop on the hash map. And we have to run it. So, let's loop. For. Auto. I. F."
+  },
+  {
+   "start": 2225.23,
+   "end": 2261.22,
+   "text": "After this, what is stored in the hash map? Element and its frequency. So, an int element is equal to i.first. As you remove java and python, int frequency is equal to i.second. Okay? To enter in heap, we make a pair of this. To enter in heap, we make a pair of this. Okay? To enter in heap, Sorry, I got a call. So, what we used to do is, remember what we used to try to do."
+  },
+  {
+   "start": 2261.22,
+   "end": 2291.78,
+   "text": "sorry, we used to insert the k elements of the hash map without any resistance we used to insert it without any resistance we didn't check anything in it whether it is current or not so first of all we will do one thing, we will make a pair of what you have to insert so look at the pair, this is how it is made so what we will do is if you are in java, do new pair and if you are in python, do new pair and if you are in c++, do this and make a pair pair int ger is equal to"
+  },
+  {
+   "start": 2291.78,
+   "end": 2322.93,
+   "text": "what you have to do is, remember, frequency element, frequency and element, means, frequency and element, you have to do that, first of all, we will do one thing, if pq.size is less than k, means, you have not processed k till now, when you will process 2, then hip size will be 2, but if you have not processed, means, in first or second, don't do anything, directly push it, directly push it, which, current, and continue it,"
+  },
+  {
+   "start": 2322.93,
+   "end": 2351.76,
+   "text": "Let's move forward. But if this is not the case, but if this is not the case, but if this is not the case, it means that the PQ size is done. Now what would we do? If the frequency of the current, if the frequency of the current is less than the frequency of your top, then we would have ignored the current because the current fit is smaller than two people. If this is not the case, we would have popped the top and pushed the current. So we will check it like this. What is the current? What is the current? Frequency and element. So it means if,"
+  },
+  {
+   "start": 2352.08,
+   "end": 2381.84,
+   "text": "current.first, which will be its frequency, is smaller than pq.top.first. Means, from the element at the top of pq, if it is small, what do we have to do? Nothing. Ignore. Continue. Continue. Nothing. Ignore. If not, what do we have to do? Remove that top one. Pop it. Pop it because the top one is wrong. The top one will be smaller than 2 logos. So, that can't be the answer. And, pq."
+  },
+  {
+   "start": 2381.97,
+   "end": 2413.6,
+   "text": "Push. What push? Current. Close this hash map loop. Now in your heap, what did we see in the last? That only two elements will be left. If it is K2, then K elements will be left. Which will be of highest frequency. For a result, take this. Vector. Int. Res. And empty this heap. Just like we empty the stack, the heap is also emptied. PQ.Empty. What do you need in res? Frequency or element? Frequency or element? Element."
+  },
+  {
+   "start": 2413.6,
+   "end": 2443.49,
+   "text": "So, res.pushback, whatever is in the top of pq, because you can only find the top, you can't find the element, you can't find it by looking at the details. The second of the top. Why second? We need the element. What did we put in the heap? Frequency and element. Second one. And pq.pop. This is over. And in the last, return res. That's it. Time complexity. We have seen n log."
+  },
+  {
+   "start": 2443.49,
+   "end": 2464.88,
+   "text": "k, k, not n, space complexity order of n, because anyways we will make a hash map, the size of your array can be more or less than the hash map, so this is the discussion, so do make this question, and the next question is in the sheet, which is the frequent words of the top, do try that, otherwise we will tell you tomorrow, okay, let's go."
+  }
+ ]
+}

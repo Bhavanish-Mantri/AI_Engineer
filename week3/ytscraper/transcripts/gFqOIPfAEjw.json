@@ -1,0 +1,389 @@
+{
+ "video_id": "gFqOIPfAEjw",
+ "title": "Next Greater Element | Stack and Queue DSA Pattern 2025",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2078,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.87,
+   "text": "Welcome everyone, today's topic is very interesting for us to learn and you will also like it because it is a very interesting topic, a very easy topic means the day the topic is easy, we will be happy that we will not have to work too hard today. Those who have come for the first time, see in the description, you will know what is happening on the channel and what is not happening. Yes, one more thing, see, you guys request in every video that you do not give iPad notes, iPad notes, look, giving iPad notes is not a very easy task for me because you think that he is making it, he is not giving it."
+  },
+  {
+   "start": 29.87,
+   "end": 55.36,
+   "text": "we don't have any problem in giving but to give ipad notes what we have to do first we have to download it from here then we will send it to our mobile then it will be uploaded to drive from mobile then drive will open in the laptop there will be a shareable link of drive that link will have to be given in the description same is to give code in giving code we have to paste that code somewhere then we have to make it a shareable word document and give the word document in the description"
+  },
+  {
+   "start": 55.36,
+   "end": 83.54,
+   "text": "It's not that I'm afraid of doing extra work. When we can make an hour long video, we can do it for 5-10 minutes. But this is cumbersome. The more my work will increase, that we have to give this and that, the more we will feel lazy to leave it. There is a lot of work, we haven't made notes yet, we don't upload videos, etc. The second thing is that it's not beneficial for you. I mean, we don't understand the purpose of asking for notes and codes. Why are you asking for codes? Listen to one thing very carefully."
+  },
+  {
+   "start": 83.54,
+   "end": 101.82,
+   "text": "If we will code then we will submit in C++, we know C++. We don't know Java and Python that well so we don't submit code in it. So if we will give you the code of Java and Python then we will give it through ChatGPT. So why are you asking me for the code through ChatGPT? If you want the code then you can take it through ChatGPT. As far as notes are concerned,"
+  },
+  {
+   "start": 101.82,
+   "end": 115.04,
+   "text": "So according to me, you should make the notes yourself. If you get the notes and the code, then what are you doing? Then what are you doing by doing this? This is not a web series, right? We don't tell jokes that you get happy by watching it. That let's listen to it today. No."
+  },
+  {
+   "start": 115.04,
+   "end": 142.58,
+   "text": "The purpose of making notes is that you don't have to watch the video again. If you watch a video of 40 minutes, if you make notes of 2 pages, the purpose of notes is that you don't have to watch the video again and again. If you don't make notes by yourself, you will ask for notes. After 2 months, you will not remember anything after watching the notes. You will have to watch the video again. Because these are my notes. How will you understand what was written after watching my notes? That's why we can't give more. We forget. Please forgive us."
+  },
+  {
+   "start": 142.64,
+   "end": 171.39,
+   "text": "Just bear with it. As far as notes and code are concerned, you have to learn the whole purpose. You don't have to test me whether he knows or not. Let's just see his code. No, don't test me. You guys make it. You guys code yourself. The whole purpose of asking for code is useless. See the pseudocode and code yourself. You don't have to make a copy of it in the diary that it is like this. No, you have to make it. So don't look at that. So it's good for you and it's good for me too. It's not that we are very lazy, but it happens a little. Okay, there is also a cold season. Anyway, today's thing is that"
+  },
+  {
+   "start": 171.39,
+   "end": 194.64,
+   "text": "It revolves around these two things and this is going on, the stack is going on. So see, you must be getting these four words, these are sub-problems of four types. There are four types of things, meaning, from here you have to catch one, either you have to catch next or previous. From here you have to catch one, either smaller or greater. So these are four combinations, meaning, either next smaller, next greater."
+  },
+  {
+   "start": 194.64,
+   "end": 220.91,
+   "text": "either previous smaller or previous greater. So, these are the four types of things. You don't have to work hard to learn all four. We will learn one and the whole work will be done. Let's go. Now, let's come to the point that we will discuss in this that what is this, what to do, and why is it taught in the stack? Why didn't we teach it in the queue? Why didn't we teach it in the two-pointer? Why are we teaching it in the stack again and again? That is more important. It is very easy. Again, I am saying that any question in the stack is very easy."
+  },
+  {
+   "start": 220.91,
+   "end": 250.7,
+   "text": "It is difficult to know why it is stacked, so focus on knowing this. Don't focus on making questions. Let's go. So, first of all, let's come to what it says. So, you are given an array, generally. Normally, it is an array or items. It is a list of items. And it tells you that, suppose this is your array. This is your array and this is 4. This is 1. This is 2. Then, this is 5. This is 3. Is it correct? Okay, this is your array. 0, 1, 2, 3, 4."
+  },
+  {
+   "start": 250.7,
+   "end": 278.62,
+   "text": "We will start with previous greater. Because previous is easier to understand and more intuitive. Once you understand previous, next will be opposite. If you understand any one of these four, then the next three will be easy. There is no such rocket science. So, what does previous greater tell you? There are five types of elements in this array. It tells you of every element. Behind every element. Behind means the left side."
+  },
+  {
+   "start": 278.62,
+   "end": 305.5,
+   "text": "Print the greater element at the back. What does this mean? See, there is no one at the back of 4. Obviously, there is no one at the back of index 0. So, it tells you to print some minus 1 or minus 2 for it. Whatever is your default value, print it. So, what does this tell you? There is no need to do much for index 0. For this, print minus 1. Now, it comes here. It tells you to go behind it."
+  },
+  {
+   "start": 305.5,
+   "end": 335.09,
+   "text": "If you go behind this index, go to the left side. Wherever you get a bigger element than this, not equal to, but bigger, you just have to print it. So, you start from here and go to the left side. First of all, you get 4. 4 is bigger than this. Very good. Yes. So, print 4 immediately. No need to think anything else. 4 is printed here. That's it. After that, what does it say? Come to index 2. Swim. Go back. Stop where you get a bigger element. So, when it comes back, it gets 1. 1 is not bigger than this, so it's okay. Go ahead."
+  },
+  {
+   "start": 335.09,
+   "end": 365.04,
+   "text": "And 4, if you get 4, then you print minus 1. Sorry, print 4. Very good. Okay. Now it is very interesting, see. 5, when we go for 5, we don't get any big element at the back. When we go for 5, we don't get any big element at the back. So, in the question, you will be told that if you don't get any big element, then you can only print minus 1. There is no problem in that. So, we printed minus 1 for 5. Again, on 3, when we go for 3, we get 5. So, we immediately stop there."
+  },
+  {
+   "start": 365.04,
+   "end": 392.69,
+   "text": "Let's print 5. So, this becomes your answer. You have to return this. So, what do we call this? Previous greater. Means, just the bigger element at the back of every element has to be printed. Okay? This is a good thing. Now, how will we solve this? One is a very easy solution. Brute force. What is brute force? That is, come to every i. And every time run the loop from i-1 to 0. And see, where you get maximum, you will break there. If you don't get maximum, then print minus 1. So, brute force is very easy."
+  },
+  {
+   "start": 392.69,
+   "end": 422.61,
+   "text": "order of n square is its complexity so this can be done by any 10-12 students but you are not in 10-12 you are very mature students you are not allowed to do this you are told to do something good so see this whole question this whole question is shouting and saying that it is a stack question means why? question is understood in Hindi of every element of every element what do you have to find? what do you have to find for every element? back one back one greater one"
+  },
+  {
+   "start": 422.7,
+   "end": 445.6,
+   "text": "The one at the back is greater. Okay. Suppose there are 2-3 types of greater at the back. Suppose there is a 3 like this. And there is a 5 at the back. And there is a 6 at the back. And there is a 4 at the back. Like this. Means there are 3 greater at the back. There are 3 greater at the back of this 3. What should be your answer? The most recent one. Yes. The most recent. The first. The first. Your answer should be 3. 4."
+  },
+  {
+   "start": 445.6,
+   "end": 468.06,
+   "text": "There can be a lot of greater at the back, but what do you want? Do you want the one that came first? No. The first greater that you get after 3 should be your answer. So what does this mean? Most recent. What? Most recent greatest. Most recent greatest means when you go back, the first greatest that you get should be your answer."
+  },
+  {
+   "start": 468.06,
+   "end": 497.39,
+   "text": "Not the latest one, I mean the latest one is 5, it doesn't matter, we want 4. What do we want? We want 4, so that should be our answer. So, most recent greatest. This is why this question shouts and says that stack can be used in this. Because what is the work of stack? The work of stack is that when you come looking at a lot of items, and you ever need most recent, most recent, based on any condition, means there can be any condition in it,"
+  },
+  {
+   "start": 497.39,
+   "end": 526.1,
+   "text": "You need the most recent even, most recent odd. This is the only thing that comes to the stack that it can give you the most recent items. You pick the items, you throw the items, but you need to know which is the most recent kept item. In my pocket, which is the most recent item that is left? So it has the ability or capability to give you the stack. That is why it is a question of the stack. It is not that someone wants to put a stack in it, so it is a question of the stack. This is why it is a question of the stack."
+  },
+  {
+   "start": 526.54,
+   "end": 554.02,
+   "text": "And this is not a question, what is this? This is a concept. This is a concept. This is how questions are made. Didn't we write it up here? What did we write somewhere? 25 plus questions. By combining these 4 concepts, anyone can make 25-50 questions easily. You will get temperature, stock prices, circular array, non-circular array. By combining, I mean, by going around, questions will be asked. There is only one concept. I mean, there is not even 4 concepts, there is only 1 concept. If you learn that, then you will learn all 4 concepts. After all 4 concepts,"
+  },
+  {
+   "start": 554.02,
+   "end": 582.8,
+   "text": "Variety of people and variety of questions. Let's go. What to do now? There are two ways to do this. We will teach you the one which is easy to understand naturally. Which you will feel that you do this in your natural life also. The second way is a little sophisticated way. It is difficult to think like this. You feel that you have to do this or that while thinking. No. My way is that you will feel that this is the natural way. So see."
+  },
+  {
+   "start": 583.02,
+   "end": 612.06,
+   "text": "What were you doing? Forget the whole array. What are you doing? Forget the whole array. You understand that your array looks like this. Your array looks like this. This is 0, 1, 2, 3, 4, 5. Okay. Come on, focus on one index. Right now, you have to find the next greater of every index. In that, you are feeling that what to do and what not to do in this. Come on, focus on one index. Suppose, I had told you to tell them the answer of i is equal to 3. Don't tell them the name of the whole array."
+  },
+  {
+   "start": 612.06,
+   "end": 639.18,
+   "text": "Tell me the same thing but tell me the answer of I is equal to 3. So what do you do? You do nothing. There is one thing with I is equal to 3 that you run a loop with I is equal to 3 and you find out which is the maximum after going back. That is a good thing. That is brute force. But one more thing you could have done. Now what are the chances of coming behind I is equal to 3? A0, then A1 and area of 2. These three will come. You have now come to area of 3."
+  },
+  {
+   "start": 639.18,
+   "end": 659.57,
+   "text": "And you have to find its previous greater. What do you have to find? Previous greater. You have to find previous greater. Okay. So, what can be the answers of previous greater? One answer of this can be this. Then this can be this. Then this can be this. There will be only one answer. If there is one answer, then it will be minus 1. Leave minus 1. There will be one answer."
+  },
+  {
+   "start": 660.14,
+   "end": 688.11,
+   "text": "Who should you check first? You should check this first. Why? Because if the array of 2 is bigger than the array of 3, then you will get the direct answer. You will not have to do anything else. Do you understand what I am saying? Why will you check this first? Because if this is a big element, then this will be the answer. No other answer can be made. No matter what, it doesn't matter. If the array of 2 is bigger than this, then this will be the answer. That's why we want to check this first."
+  },
+  {
+   "start": 688.11,
+   "end": 713.87,
+   "text": "If it is big, then very good. If it is big, then very good. This is the answer. But if it is not big, it is either smaller or equal, then who do you need to check? Then you need to check this person. Do you understand what I am saying? First of all, you check this person who is closest to you. If this is the answer, then very good. If not, then you will check this person. Because if this is the answer, then very good. Then there will be no difference. If this is also not the answer, then you will check this person."
+  },
+  {
+   "start": 713.87,
+   "end": 742.64,
+   "text": "If this answer is correct, and if this answer is also incorrect, then you will not have anything left, so you will have to write minus 1 as the answer. So what we did in this? A very natural thing is that you want the most recent one, you want the greatest element. So who are you checking first? First of all, you are checking the one at the back. If you got the answer, then fine. After that, you are checking this. After that, you are checking this. So fine. This work is done exactly from the stack. This work can be done exactly from the stack without looping because"
+  },
+  {
+   "start": 742.64,
+   "end": 773.17,
+   "text": "If you make a stack by doing this, then obviously it will be on top. You can check it, then you can check it, then you can check it. So we think this work will be done by stack, but there is a problem in it. Suppose it was in a stack, it would be in a stack or it is there. So this whole thing is in a stack. Now its top is here. So first of all, it is very easy to check, is it st.top or whatever your stack top is. First of all, it is very easy to check."
+  },
+  {
+   "start": 773.17,
+   "end": 797.17,
+   "text": "But to check the one after that, that means to check this person, you have to pop this person from here. In the stack, remember that you can't access randomly. In the stack, you can only access one element, which is the top one. If you want to access more, then you have to pop. There is a gun magazine, right? If you pop one bullet in it, then the next bullet will come back. You can't go and see the third bullet with your finger in your hand. No."
+  },
+  {
+   "start": 797.17,
+   "end": 821.62,
+   "text": "In a gun magazine, the first bullet is always on your thumb. If you pop that first bullet, the next bullet will come from below. Then you can see that. That's why, if you want to see the area of 1, you have to pop the area of 2. But when we are popping, is it safe to pop or not? Is it safe to pop or not?"
+  },
+  {
+   "start": 821.62,
+   "end": 851.49,
+   "text": "What does safe mean? For example, here you have to find the answer of i is equal to 3. Suppose you have to find more answers, then if you pop the arrow of 2, then who knows whether it will be useful in the future or not. So, is it safe to pop the arrow of 2 or not? This means that you have picked up a lot of stones. Then you come here and see that this is not my answer, then remove it. Throw the stone out of your pocket. Can this stone be useful in the future? That is more dangerous. Suppose this arrow of 2 can be useful in the future."
+  },
+  {
+   "start": 851.49,
+   "end": 880.72,
+   "text": "How to throw this? So let's go ahead and see if it works or not. Let's go. Let's see in what condition you will throw array of 2. When will you throw array of 2? You will throw array of 2 only when array of 2 will not be able to be an answer. Okay. When will array of 2 not be able to be an answer? To be an answer, it was necessary that array of 2 had to be bigger than array of 3. Only then array of 2 can be an answer of array of 3. But if answer is not possible, then it means that array of 2 is smaller than or equal to array of 3. This is what it means."
+  },
+  {
+   "start": 880.72,
+   "end": 911.12,
+   "text": "This is what I mean. You are thinking whether to pop or not. If this doesn't happen, if this doesn't happen, then you don't do anything. That would be your answer. In what context are you thinking whether to pop it or not, so that it doesn't work in the future? In this condition. Okay. Now let's see whether the area of 2 can work in the future or not. What does this mean? See. The area of 2 is smaller than the area of 3. So let's assume that these people, their height, this is your area of 2. Its height is a little. And your area of 3 is a little big. A little."
+  },
+  {
+   "start": 911.12,
+   "end": 937.36,
+   "text": "We are worried about this that in the future, will the area of 4 be of any use to the area of 2 or not? Imagine one thing, what will the area of 4 look for? What will the area of 4 look for in the future? Who is the bigger element behind me? Okay, its height can be anything, its height can be bigger than this, it can be very big, its height can be very small, it can be half a foot, it can be anything."
+  },
+  {
+   "start": 937.36,
+   "end": 962.86,
+   "text": "Let's imagine that this is very big. Let's imagine that area of 4 is the biggest. Area of 4 is a very big person. Area of 4 is a very big person. Okay. In this case, in this case, neither area of 3 is going to be the answer, nor area of 2 is going to be the answer. This thing is fixed, right? He wanted a person longer than this. So, both are not longer than this. So, both are not the answer. Okay. Now, let's do one thing. Let's make him a little small person. Let's make him a very small person. He is so small."
+  },
+  {
+   "start": 962.86,
+   "end": 991.66,
+   "text": "In this case, what will be its answer? In this case, its answer will be array of 3. Why? Because it needs a recent element. It doesn't need a later element. In this case, this will be the answer. It's a simple thing. So, what did we see? If it was a very big man, if it was a very big man, then its answer was none. Its answer was none. Very good. If it was a very small man, then its answer became array of 3. Its answer will not be able to become array of 2 under any circumstances. Why will it not be able to become? Because to become array of 2, you will have to bypass array of 3. Okay."
+  },
+  {
+   "start": 991.66,
+   "end": 1016.05,
+   "text": "Array of 3 has to be bypassed or it has to be popped or it doesn't have to be taken. Okay. In what condition will the array of 3 not be taken when this array of 4 will be bigger than this? We didn't take the element in that, right? When we got the small one, we didn't take it. Tell me one thing, when the array of 4 is bigger than the array of 3, then it is obvious that it will be bigger than the array of 2 because we have seen above that the array of 2 is smaller than the array of 3. That's why,"
+  },
+  {
+   "start": 1016.3,
+   "end": 1045.49,
+   "text": "If any element couldn't get the answer of array of 3, then it won't be able to get the answer of anyone. Listen again. If array of 2 couldn't get the answer of array of 3, that's why you wanted to pop it, then you can do it. Because in the future, it won't be able to get the answer of anyone. Because here you can see, if the answer will be made, then array of 3 will be made. If array of 3 won't get the answer, then it's sure that array of 2 won't get the answer. Because if this answer doesn't get the answer, then this person is the longest."
+  },
+  {
+   "start": 1045.49,
+   "end": 1075.1,
+   "text": "Now, when it is longer than this, then it is obvious that if it is longer than this, then how will this be the answer? This is not possible. That's why. If a person is getting popped, then he can never be the answer. So, the whole game is solved. The answer of push and pop is solved. Now, what will we do? We will not do anything. It is very simple. Consider all the numbers as stones. Consider them as stones."
+  },
+  {
+   "start": 1075.1,
+   "end": 1105.36,
+   "text": "The answer of the first one is nothing. The answer of the first one is minus 1. So, we will store the answer of that minus 1. And we will keep the first stone. We will keep the first stone. We will keep the first stone. Where will we keep it? In the stack. In our stack or in our pocket. So, keep it. That's it. Now, start. From where? I is equal to 1. On every I, on every I, on every index, what should be your goal? Your goal should be the back stone which is bigger than us. Means, the back stone."
+  },
+  {
+   "start": 1105.42,
+   "end": 1129.02,
+   "text": "Just, just behind. Just behind is the important. Just behind the stone. Just behind the stone which is bigger than me. Just behind the stone which is bigger than me. Now what will you have to do to do this? You have to keep looking at the stone from behind. Which you will obviously be able to see from the top of the stack. And those which are smaller than you, keep popping them."
+  },
+  {
+   "start": 1129.02,
+   "end": 1157.55,
+   "text": "You have to find a ball on which a name is written. Now you can't see it on the upper one, so what will you do? You can pop it on the upper one and look at the next one. You can't see it on that one either. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look at the next one. Look"
+  },
+  {
+   "start": 1157.58,
+   "end": 1185.14,
+   "text": "What do you want? You want the most recent stone which is bigger than you. So, keep throwing all the stones which are smaller than you from the top. Keep throwing all the stones. Suppose, there is a stone like this. You are standing here. Suppose, this one is really bigger than you. These two are not big. So, don't do anything. First of all, come here. First of all, come here. See, it is bigger or smaller than me. You will know that it is small. Throw it. Remove it. Come here. Ask if it is big or small. He will say that it is small. Throw it."
+  },
+  {
+   "start": 1185.14,
+   "end": 1206.54,
+   "text": "Come here and ask whether it is big or small. It will say that it is big. Yes, this is what we want. We want the first big one. Pick it up and write it in your answer. Pick it up and write it in your answer. That's it. More, more, more. What will you do after that? Write it in your answer. Now what? What did we say? We have to take two types of decision in the stack. By every item, by every item coming,"
+  },
+  {
+   "start": 1206.54,
+   "end": 1236.05,
+   "text": "How many pop? How many pop? So what happened here? Which one is popping? The one which is smaller than this is popping. The one which is smaller than this is popping. So okay, you have taken this decision. After that, will this item happen? Do we have to pick this item? Do we have to pick this item? Means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means pick means"
+  },
+  {
+   "start": 1236.85,
+   "end": 1258.38,
+   "text": "You can also think that why are we picking it? We don't pick it because suppose this was your array. This was your array. 0, 1, 2, 3, 4, 5. Suppose you were looking for an array of 3 at any time. So your stack looks like this. Your stack is array of 0, array of 1, array of 2."
+  },
+  {
+   "start": 1258.38,
+   "end": 1286.72,
+   "text": "Okay, you came here. You started searching from the top of the stack that which one is bigger than us. By the grace of God, you got that the array of 2 is bigger than you. The array of 2 is bigger than you. So, you wrote the array of 2 in your answer. Very good. Now, the question comes that do you have to push this person or not? Do you have to push him or not? Or do you have to leave him? Or will he also not get any work in the future? Okay. Come, make the cases. Whenever you don't understand, make the cases and see. Okay. The answer of the array of 3 was the array of 2. It means that it is a very clear and clear thing."
+  },
+  {
+   "start": 1286.72,
+   "end": 1307.22,
+   "text": "That area of 2 is bigger than area of 3. So let's make a man. This is your area of 2. It is very big. What is this? Area of 2. Whatever area of 3 is, it is a little smaller than this. That's why its answer is area of 2. Okay. So area of 3 is this big. Okay. Assume this is 5 feet. This is 4 feet. Okay. This is your ground."
+  },
+  {
+   "start": 1307.22,
+   "end": 1335.62,
+   "text": "Now, what we are thinking is that will it be right to push the area of 3? Means, can the area of 3 be useful in the future? When we were seeing in the previous case, when the area of 2 was popped, then we came to know that the area of 2 can never be useful in the future. So, it is possible that the area of 3 will never be useful. If it will never be useful, then why will we push it? Okay, let's see. This is the area of 4. Now, it can have some heights. If its height is the largest, if its height is the largest, 6 feet, then there will be no answer between the two. It is a good thing. Very good."
+  },
+  {
+   "start": 1335.62,
+   "end": 1365.3,
+   "text": "If its height is, let's say, 5.5 feet. How much? 5.5 feet. 5.5 feet. So, the answer won't be array of 3 because 5.5 is bigger than 4. Okay, we made a mistake. 4.5. 4.5 feet. 4.5 feet. What does it mean? It is bigger than this. Yes, it is not bigger than this. So, its answer can be array of 2. So, array of 2 should be in your stack. Now, when will array of 3 come? Suppose, the size of array of 4 is 2 feet. Then?"
+  },
+  {
+   "start": 1365.3,
+   "end": 1386.85,
+   "text": "Now, who is the next greatest? Now, its next greater is not Array of 2. Its next greater is here. It is Array of 3. So, the answer can be Array of 3. When? It can happen in the future. If the next element is smaller than Array of 3, then what will be its answer? It will be Array of 3. Because its most recent greatest is Array of 3. It will not go to Array of 2. It does not want Array of 2. It wants the most recent greatest element. So, from this, we get to know"
+  },
+  {
+   "start": 1386.85,
+   "end": 1416.11,
+   "text": "The index you got the answer from is very good. But that particular index should also be there. And the place from where you got the answer should also be there. Now, our general rule is that throw all the stones which are smaller than you. After that, if your stack is empty. If your stack is empty, then throw all the stones which are smaller than you. And if your stack is empty, it means there is no stone left to see. So if your stack is empty, then you can write minus 1."
+  },
+  {
+   "start": 1416.37,
+   "end": 1448.13,
+   "text": "Right? You can write minus 1. Okay. If the stack is not empty, then the top is your answer. Very good. After that, what do you do? Now, because this element's work can come, what we saw earlier that the work of array of 3 can come, then push this element too. When you finish the whole game, then you will get the answer. So, the meaning of saying, let's see a dry run. Let's see what else is left here. So, this is your array. 4, 2, let's do this. 1, 2,"
+  },
+  {
+   "start": 1448.13,
+   "end": 1477.06,
+   "text": "5, 3. Okay? 0, 1, 2, 3, 4. This is your answer array. Here, you have to fill it. For every element, you have to make an answer. 1, 2, 3, 4. It's obvious. For the first element, write minus 1. And put the first element in the stack. Put the first element in your stack. Put it. Come on. Let's start with i is equal to 1. The first thing people do is, till the stack is empty, till then, pop all the small elements. So, 1 i."
+  },
+  {
+   "start": 1477.06,
+   "end": 1507.26,
+   "text": "You can see 4 at the top. So the first element is not smaller than this. So stop. You can't do anything. You could see the top. Your job was that until the top element is not a good element, until the magazine bullet is not a good bullet, keep shooting the bullet. You came to know that no, no, this is big. You don't have to pop it. Stop. Now what will be the answer of 1 which is at the top? Because why didn't this top pop? Because it will be bigger than 1. That's why your answer is made. So what is the answer of 1? 4. After this, what did we think? Put this element too. Who knows the answer will be made. Okay. Put it. Now let's come to 2."
+  },
+  {
+   "start": 1507.26,
+   "end": 1533.2,
+   "text": "Now let's come to 2. What is the work of 2? Pop all the tops that are bigger than this. So see, the first top is bigger than this, which is 1. The top will be from here. This is the top. From the front. The first 1 is bigger than this. Pop it. This is of no use. And we have proved that 1 will not be the answer of anyone in the future. If 1 is not the answer of 2, then it will always be in the shadow of 2. It will not be the answer of anyone. Pop it. See the next top. Sorry. See the next top. 4."
+  },
+  {
+   "start": 1533.2,
+   "end": 1559.92,
+   "text": "It can't pop 4. Okay. Now who will be the answer to 2? The top you can't pop, that will be your answer. Because why didn't you pop it? If it was small, you would have done it. It was big, that's why you didn't do it. So what will be the answer to 2? 4. So write the answer to 2. 4. Come. And while going, it will push 2 as well. It will push 2. Now see. Now we have come to 5. The work of 5 is the same. Pop all the tops that are smaller than you. So what will it do? First it will pop 2. And it will pop 4 as well. 4 is also smaller than this."
+  },
+  {
+   "start": 1560.08,
+   "end": 1584.0,
+   "text": "Now the stack is empty. Now we can't pop. So while getting the answer of 5, you can see that my stack is empty. What does this mean? It means that I haven't got any element which is smaller than me. And really you can see that there is no element behind 5 which is bigger than it. So what will be the answer of 5? Minus 1. 5 will not be able to do anything. Minus 1 will have to be taken. And while going, it will come in the stack itself. Because this might be the answer of someone. Okay. 3 comes."
+  },
+  {
+   "start": 1584.0,
+   "end": 1609.65,
+   "text": "What is the work of 3? To pop the top elements which are smaller than this. 5 is sitting on the top, 5 is not smaller than this. So nothing will happen. What will be the answer of 3? Top. Because why didn't you pop this top? Because it was smaller than this. Sorry, it was bigger than this. 5. While going, just push 3. This will be your answer in the end. Minus 1, 4, 4. Minus 1, 5. Pause and see. You will mix all and you will know that yes, it is correct. Because it is very natural that you are taking stones."
+  },
+  {
+   "start": 1609.65,
+   "end": 1638.32,
+   "text": "What do you do after stopping at any item? You throw away the useless stone. The good stone gets the answer. Before going, you pick up this stone and move forward. So, this is a very natural process. If we want to write its pseudo code, pseudo code is not there. There is no C++ code, there is no Java, there is no Python. You will see how push pop happens. So, first of all, we will make this vector. People ask why you write vector, you write array in it. So, do all this. Vector interest."
+  },
+  {
+   "start": 1638.32,
+   "end": 1669.04,
+   "text": "Which is the size of your array. First of all, res 0 is equal to minus 1. Because there is no previous of the first element, so minus 1. You make a stack. What kind of? Integer type. St. First of all, in that, st.push, insert the one that goes. What to do? Array of 0. So, this is pushed. Okay. After that, start. For i is equal to 1, i less than n, i plus plus. First of all, what was the work? Pop all the useless elements. So, while."
+  },
+  {
+   "start": 1669.1,
+   "end": 1700.08,
+   "text": "Jojo means not one but a lot of them. How many elements will you pop? You will do one, you will do two, you will do many. Here many. We will pop till it gets smaller. While st.not empty means till it gets empty. Remember this or else the program will crash. And st.top, till when we had to do this? Till this top gets smaller or equal. Is equal to area of i. That's it. What we had to do in this? st.pop. That's it. Everything is done. All the tops would have come out. Either the whole stack would have come out or"
+  },
+  {
+   "start": 1700.08,
+   "end": 1729.71,
+   "text": "We would have stopped at such a top which is bigger than this. So just write your answer. That if. St. Empty. That if this stack is empty. Then res i. Is equal to minus 1. Nothing is left. Else. Else. Else. Something is left. Res i is equal to. Some top would have come bigger than this. So we have written this in our answer. And. While going. St. Push. This element. Array of i. And go here. Return. Res. That's it."
+  },
+  {
+   "start": 1729.71,
+   "end": 1755.01,
+   "text": "So this is a small program. What is this small program? Previous greater. Previous greater. Okay. Now we told you that if you learn one, you will learn all four. So let's learn all four quickly. What is next? Previous smaller. You don't have to do anything in previous smaller. You just have to change the logic of popping. What were you popping in greater? What did you want in greater?"
+  },
+  {
+   "start": 1755.01,
+   "end": 1784.4,
+   "text": "You want the most recent which is bigger than us in greater. In previous smaller, you want the most recent which is smaller than us. So when you are popping here, when you are popping, who are you popping now? The ones which are smaller than you. You pop those which are bigger or equal to you. So just if we change this once, then what will become after converting? Previous smaller. We will change 1 less than or equal to. Previous smaller will become. Okay. Both the previous categories are done. What to do with the next one? What to do with the next one? Next is also a category."
+  },
+  {
+   "start": 1784.4,
+   "end": 1817.65,
+   "text": "Next is also there. Next. Smaller. What does next smaller say? Previous means behind me. Next means in front of you. Next means in front of you. So, it tells you this. 0, 1, 2, 3, 4, 5. It tells you one thing. That you have to look ahead. The first smaller element that you get in front, you have to take that. So, obviously, the answer of this person will be minus 1. Because the one on the right is not there. So, you can see that it is completely opposite."
+  },
+  {
+   "start": 1817.65,
+   "end": 1842.45,
+   "text": "So don't do anything, do the same thing. First of all, write the answer of this as minus 1. Whose? Of the last element. You guys put an array of 5 in your stack. You guys start your looping, i is equal to 4, then i is equal to 3, i is equal to 2, i is equal to 1, then i is equal to 0. In every loop, you have to do exactly the same thing. You have to remove that element from the top which is either"
+  },
+  {
+   "start": 1842.54,
+   "end": 1869.47,
+   "text": "What do you want? Next smaller. What did you want above? Okay, let's go. You want next smaller. So, you want smaller. So, whichever is either greatest or equal to you, remove them. If your stack gets empty, then your answer will be minus 1. And while going, push it. So, nothing else. We are running the loop upside down. What? We are running the loop upside down. Hey, whether it is next smaller or previous smaller, what is to be done in that? Previous means back, next means forward. Rotate it like this. If you do something like this, it will be done."
+  },
+  {
+   "start": 1869.47,
+   "end": 1898.99,
+   "text": "So in this, we are just running a loop from here, nothing else. For example, if this code, this code is of previous greater. If we have to change it to next greater, if we have to change it to next greater, then what do we do? If we have to change it to next greater, then we do nothing. We keep everything the same. First of all, that res, n minus 1 is equal to, sorry, minus 1. Minus 1, means last one. Last one's next has nothing, so its minus 1. And, st.push,"
+  },
+  {
+   "start": 1900.08,
+   "end": 1928.91,
+   "text": "a n-1. Look carefully, there res 0 is equal to minus 1, we had pushed 0 in the st, here we have assigned the last one as minus 1 and pushed the last element in the stack. Okay. Turn the loop in the opposite direction. What happened there? 0 was removed, it was going from 1 to n. Here n-1 is removed, what is left? n-2. To what extent? Greater than or equal to 0. I minus minus. Do exactly the same thing that you did there. Do exactly the same thing that you did here."
+  },
+  {
+   "start": 1928.91,
+   "end": 1956.75,
+   "text": "There will be no change in any line while st.notEmpty and st.top Do you need it? We are doing it for next greater. So st.top is smaller than this. Wrong stones. st.pop Okay. What to do? Same. If st is empty, if your stack is empty, then your answer will be minus 1."
+  },
+  {
+   "start": 1957.01,
+   "end": 1988.59,
+   "text": "If this is not the case, what will be your answer? Top of st, because why can't it pop the top? Because it will be bigger than you, so you can't pop it. Before going, st. push array of i. And here, return rest. So, just change the loop. Now, whose is this? This is next greater. How will we make this next smaller? We will do this thing like this. So, see, it is very..."
+  },
+  {
+   "start": 1988.72,
+   "end": 2018.29,
+   "text": "It is the same. Gangadhar is Shaktimaan and Shaktimaan is Gangadhar. So you must be able to understand what we have done. What is the basic feeling of this whole lecture? There were stones. You pick the stones. There is no problem. You have to find the answer of any stone. Let's see the stones at the back. Start. Dirty stones. Throw dirty stones. Dirty stones depends on your question. If it is greater, then the smaller ones are dirty. If it is a smaller question, then the greater ones are dirty. Throw dirty stones."
+  },
+  {
+   "start": 2018.38,
+   "end": 2048.51,
+   "text": "throw it because they have nothing to do, they have dung in them, throw it. Write your answer. Write your answer. How will you write the answer? The stone you couldn't throw, means you were throwing the dirty one, you stopped, means it is good, so write it. And pick this stone too. Pick this stone because it will be useful in the future. So this was the story of 5-4 lines. So this was the next creator. Now you can make a lot of questions. We want you to make a question in homework, which is daily temperatures. What?"
+  },
+  {
+   "start": 2048.51,
+   "end": 2074.9,
+   "text": "Daily temperature. There is a small twist in it. The whole question is the same. There is a small twist in it. The question is, LEAD CODE 739. If you will make the daily temperature, then the whole thing will be clear very well. So, you must be able to understand. Let's go. Now, I think all the concepts of the stack are over. We will do the questions very quickly in the coming one or two classes. We will quickly wrap up the stack and finish it. So that we can study Q and after that we can study minor research. Let's go. See you tomorrow."
+  }
+ ]
+}

@@ -1,0 +1,349 @@
+{
+ "video_id": "2HZ12B2ZPAQ",
+ "title": "DSA PATTERNS Episode 13 Sliding Window Pattern: Important Questions",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1947,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 26.91,
+   "text": "Today is the last day of the sliding window pattern. After this, the sliding window will be over. But before that, listen to an important thing. It will take 2 minutes. 30 minutes ago, we uploaded a video. It was not a lecture of DSA. It was a different type of video. It was not that we are dancing in it. But it was a little like how you should study and why you are wasting time topic wise. Whatever it was, you can go and watch it. It was not a wrong thing. Now, what happened in that video? Two things happened. One was the views in that video."
+  },
+  {
+   "start": 26.91,
+   "end": 54.88,
+   "text": "We will show you a screenshot of it. 1 out of 10 means that is the best video in 10 videos. There were a lot of comments saying that you are doing this and that by talking about DSA videos. Don't make videos like this. Which is a good thing because we have said in the last video that you can comment as you like. But where does the problem happen? Because it is important to say all this because you may be kids and you don't understand."
+  },
+  {
+   "start": 54.88,
+   "end": 81.63,
+   "text": "There is a man named Arvind Yadav. You can see his comment, it will still be there. In his comment, he said, Hey, teach DSA, why do you keep blabbering? If you start commenting like this, that why do you keep blabbering, teach DSA, then, then see, whatever we teach you, then you will have to keep some trust, that if we say that we will teach, then we will teach. Now, we will teach on the channel,"
+  },
+  {
+   "start": 81.63,
+   "end": 110.86,
+   "text": "Apart from this, if we upload any other video, then it's my channel, right? We might feel like dancing, we might feel like singing, so we are uploading. The video of studying is coming. Next time, you will start talking like this, that you should study from DSA, why do you keep blabbering, why do you keep blabbering? So, nothing will happen with all these comments. What will happen with all these comments is that we don't teach by writing a script. I don't have any script in front of me that we say that script here. Whenever we teach, we look at the question and teach whatever comes to mind. And you say that you teach well."
+  },
+  {
+   "start": 110.86,
+   "end": 140.08,
+   "text": "By commenting like this, I will also get some irritation in my mind. Don't be thankless. Do you know what thankless means? In Hindi, it is called as Kritagn. Thankless. We don't care about it. We should have what we want. Otherwise, everything is wrong. Don't comment like this. And there are very few students who comment like this. Most of the people comment like this. If you are commenting like, Brother, you have put DSA. What are you doing? It is a very good comment. We have never said anything in it. Nor will we say. But when you will put such a comment, they will say, What are you talking about?"
+  },
+  {
+   "start": 140.08,
+   "end": 167.49,
+   "text": "There are very few kids like this, so this is a good thing, but we don't like kids like this. This is a public channel, so we can't say that don't watch my video, but if this was my house or if this was my private batch, then we would say that you should go, I mean we don't want you. And this is the entire comment history of Arvind Yadav ji. In the YouTube studio, we get to know what comments he has made till now. Ironically, till now, his 4 comments,"
+  },
+  {
+   "start": 167.49,
+   "end": 197.07,
+   "text": "they all are commenting on the same type of video on which they are talking about something different from the lecture they like to comment but they don't comment on any lecture that they have read today or there is any doubt in this or they understood this or they didn't understand this they don't have any comment on that means they are just watching this type of video and they are commenting by watching this type of video that don't make this type of video this person is not watching the DSI video so what you are not watching if you are not watching the Gyaan video then Gyaan video will be made so you comment on that but"
+  },
+  {
+   "start": 197.07,
+   "end": 226.72,
+   "text": "take care of that, nothing goes more than this, nothing goes for me, we don't know you, you don't know us, so nothing goes, mine definitely doesn't go, it's a good thing, so it was a small thing, take care a little bit, that it is online, you think that we will say anything online, we will write anything, what will someone do, no one will do anything, but it doesn't look good, right, so take care a little bit, and what will happen with this, the more you will edit, the lower my teaching quality will go,"
+  },
+  {
+   "start": 226.72,
+   "end": 255.28,
+   "text": "Isn't it? That's it. That's it with the Gyaan Prachar. Right now, a lot of kids watch only this much. They watch only 3 minutes. Then they will comment that you were teaching Gyaan and you were studying D.S.F. So, keep some patience. Your age is still the same but it's okay. The two questions that we are going to do today are very very important questions. My request to you all is that when we do one question, pause the video at the same time and try to do the second question yourself. Like what happened yesterday? Yesterday we did 3 questions."
+  },
+  {
+   "start": 255.28,
+   "end": 282.13,
+   "text": "In 80% of the comments, it was said that we have done only one and we have studied only one. And the second and third question was done by ourselves. This is what we want, that you should read one question, it is a good thing, it is a new thing to read. But the second, third, fourth, which is the same question, you have to change one line or two lines, you do it yourself. We will do the same today. Today we are doing two questions. We will tell you the first question because it is a little new question. It is not probable that you do it yourself, there is very little probability."
+  },
+  {
+   "start": 282.13,
+   "end": 310.03,
+   "text": "Second question, if you have done the first one, then the second one is equal to the basic questions. You should do the second question yourself. We will teach you that too, but try to do it yourself. Okay? Let's go. The two questions we are going to do today are longest substring with same letters after replacement, longest subarray with ones after replacement. The pattern sheet is in the description. Go and check it out. Row number 29, 29 and 30 in sliding window pattern. We are going to do this. Let's go."
+  },
+  {
+   "start": 310.38,
+   "end": 339.9,
+   "text": "Now, let's come to our question. Longest substring with same letters after replacement. Now, after listening to the question, it seems very dangerous but it is not that dangerous. It is a little dangerous. So, listen carefully. Open the copy book, open your ears and ears and listen carefully. What did you say? That you have a string. Okay. And it is of an integer. Very good. Now, what does this question say to you in Hindi? Read the question. What does it say in Hindi? That in this string, in this string,"
+  },
+  {
+   "start": 339.9,
+   "end": 367.65,
+   "text": "By choosing any character, we can make it into any other character. Meaning, we can change it. Meaning, if there is A, we can make it into B, C, D, anything. Any character. Very good. But, but, but, this operation of changing, you can only do it K times. K times. This is a twist. Meaning, if there is K2, if there is K2, in the string,"
+  },
+  {
+   "start": 367.65,
+   "end": 396.08,
+   "text": "We can change the order of two characters. Here is A and here is B. So, you make it C and make it D. We can do it twice. Not more than 2. We can do it as much as K. So, this is the question. What do we have to do in the question? Sorry. You have to find the length. Whose length do we have to find? Mine? No. You have to find the length of the longest substring. You have to find the longest substring."
+  },
+  {
+   "start": 396.11,
+   "end": 426.0,
+   "text": "containing same letters same letters means same letters what conditions are you doing this operation? again you understand the question is complex this is not a traditional question means you see the question and you click like this that's why it is a hard question it is written hard on the sheet what is he saying?"
+  },
+  {
+   "start": 426.0,
+   "end": 453.63,
+   "text": "If you have this string, there will be characters in the string. You have to find the longest substring in the string, which has the same letters. And to make it the same, the change facility that you have given, that you change the character, you can use that too. You have to use that K-bar to make the biggest substring. Okay? Means, assume A, B, C. It is like this, A, B, A."
+  },
+  {
+   "start": 453.63,
+   "end": 482.72,
+   "text": "and here is C, D, E. You were told that you can change one letter. So, logically speaking, if we make it A, then see, this substring, this one, it has all A. It has a B, but we were told that you can make it. You can make B A. How many times? Once. Can you make this A too? No. Not together. You have to make only one. So, either make B or make this. So, if you make this A, this A,"
+  },
+  {
+   "start": 482.72,
+   "end": 512.18,
+   "text": "then you have to take this substring whose length will be 2 but this substring's length is 3 you have to return 3 this is the question let's go the first thing is that what we always do pattern, flowchart, keep it ready in your mind whose question is this? what to do in this? I mean I have never heard such a question that you have to flip and you can do it many times, you have to change but is this a string question? array or string, whatever it is"
+  },
+  {
+   "start": 512.18,
+   "end": 541.04,
+   "text": "String is also a type of array. Whenever we say string, you have to understand array. Yes. Do you have to find a window or a substring in this? Do you have to find a substring or an array in this? Yes, you have to find a substring. Do you have to find a longest substring? Do you have to find a longest substring? Yes. Is there a condition for that? That this should be in the longest substring. Yes, it is given. What is the condition?"
+  },
+  {
+   "start": 541.04,
+   "end": 570.67,
+   "text": "Whatever letter is in the substring, either it is the same, or it is the same from before, or even if it is different, then you can change it K times. If you are different, then you can change K and make it. So this is our question. Those who don't remember the flowchart, then please see the previous one. Those who don't understand the flowchart, please see the previous one. Those who know the flowchart, they must have understood that this is the question of sliding window. It is the question of sliding window. Okay."
+  },
+  {
+   "start": 570.67,
+   "end": 600.4,
+   "text": "This is an easy part. It is easy for you that it is a sliding window question. How many steps were there in the sliding window? There were 4 steps. Step 1. Step 1 was whether there is a question of sliding window or not. Yes, there is. Very good. What was step 2? Is it fixed or variable? Is it fixed or variable? Is it written anywhere in the question that the substring you will find should be of 3 length or 4 length? It is said that it is the longest substring. Spread it as much as you want. Save this condition. Whenever this happens,"
+  },
+  {
+   "start": 600.4,
+   "end": 631.41,
+   "text": "Variable. Very good. What was step 3? Information. Information. What is information? Whatever window you make, whatever your low to high window will be made, what is its information? Now, what is information? Means, what do you check in that? In that, you have to check whether the whole character is one or not. So, it can be one, like we did in the previous question. In the previous question also, we had to check whether it is unique or not. Is it like this or not?"
+  },
+  {
+   "start": 631.41,
+   "end": 660.69,
+   "text": "Right? So, what is its information? Its information is also, if we keep the frequency of characters in the hash map, then this information can be taken out. What you have to check is that in this substring, everything is A. Now, how will everything be A? Last time, remember, its length is 4 and its frequency is 4. Okay? So, if the size of this hash map is 1, what is the size of this hash map? It is 1. This means,"
+  },
+  {
+   "start": 660.69,
+   "end": 690.66,
+   "text": "If the size of this hashmap is 2, then it is 2 elements. If it is 3, then it is 3 elements. It is 3 unique elements. Means, all the elements should be 1. We can't do it in such a way that 1 should be unique. 1 should be unique. This is the thing. A is unique 1. And A is 12. So, this is correct. Step 3. Sorry, step 4. How will the information go ahead? Same. Like, the low will be removed and the high will be taken. When we will remove the low, if it becomes 0,"
+  },
+  {
+   "start": 690.66,
+   "end": 719.15,
+   "text": "If any frequency is zero, then it will be erased. This is the question of Dictocol. You don't have to do much thumb jam in this. You have understood this. Now, the most important part of the question has come. There is a template of the sliding window variable. If everyone remembers the template or not, then please go and see. What is the template? Low is equal to zero. High is equal to zero. Result is equal to, if it is longest, then int is equal to min."
+  },
+  {
+   "start": 719.25,
+   "end": 749.04,
+   "text": "If it was shortest, then INP would have been maxed. Very good. First of all, what happens? The loop runs. Okay. From where does the loop run? And where does it run? Where does the high run? We increase the high in the loop. Okay. So write it. See. The template will remain the same. See. 70-80% template will remain the same. I am saying it again and again. The template. Watch the video from the beginning. If one video is missed, then it won't be fun. Those who have watched the whole thing, they must be enjoying it. We are doing the same template question by question. Same is written here."
+  },
+  {
+   "start": 749.04,
+   "end": 777.86,
+   "text": "Okay. What happened after that? After that, it was to take the information of high first. You are increasing the high, right? First, take the high inside. So, take it. Take the high inside. How will we take it inside? We will do it like this. What happened? Increase the frequency of the character on high. Very good. Now, what was the part? Till the time this information is wrong, till the time this information is wrong, till the time this information is wrong, till then, we have to increase the low."
+  },
+  {
+   "start": 777.86,
+   "end": 805.04,
+   "text": "We have to increase the low and decrease the window. This is what we were doing since yesterday. What were we doing in this box? See, the whole game is of this box. It will be the same up and down, but it changes a little in the box. What was it? Till the time, information, till the time, what is it? Information is wrong. It is wrong. Increase the low. What should we do with the low? Increase it. And,"
+  },
+  {
+   "start": 805.04,
+   "end": 833.02,
+   "text": "when you increase yellow check here if information is correct if information is correct correct then remove len how to remove len? high minus low plus one and update len with your result this is what we have been seeing since yesterday same pattern so the whole game is of these two boxes"
+  },
+  {
+   "start": 833.02,
+   "end": 867.55,
+   "text": "The whole game is of this part. The rest is the same from front to back. Come on. Now come. Now see. Now see what question he wants to tell you. Come on. A, A, B, A, B, B, A. A. I stopped. Today I don't know how to teach. Okay. A, A, B, A. This is an example. Okay. 0, 1, 2, 3, 4, 5, 6."
+  },
+  {
+   "start": 867.55,
+   "end": 896.0,
+   "text": "This is given to you. The value of K is 1. Very good. Now we have to do this. See. Suppose K is not there. Suppose K is not said in the question. It would have been said to find such a substring. Find such a substring in which the whole letter is the same. If K is not given, then it is possible that there is such a question too. That if K is not there, then find such a substring in which the whole is the same. Then it was a very easy question. It was a very easy question that the size of the hash map should be 1. Is it right? If the size of the hash map is not 1, then the information is wrong."
+  },
+  {
+   "start": 896.0,
+   "end": 925.33,
+   "text": "If the size of the hash map is not 1, it is more than 1, then it is wrong. It will be 1. If it is more than 1, then keep increasing the low. And until the size of the hash map is not 1, keep increasing it. As soon as it is 1, write it down. This is what would happen. But now you have given a K. K means you can change any one element again. You can change any one element again. Now don't think like a computer. Think like a human. Think like a human."
+  },
+  {
+   "start": 925.68,
+   "end": 952.99,
+   "text": "Suppose you have this window. This window is running now. Now you are on this window. It is on this window. How many unique elements are there in this window? There are two unique elements in this window. A and B. So is your information correct? No, it is not correct. So if it was not K, then it would have been wrong. Then it would have increased. Now K is there. Think like a human. What will you do in this? If you are told that you can change one thing in this."
+  },
+  {
+   "start": 952.99,
+   "end": 979.82,
+   "text": "and change it in such a way that all the information is the same. So what do we do? What do we do? We remove this B and write A here. If we had done this, it would have been A and the answer would have been 3. We would have done this. We could have done something else. There is no point in making B C, there is no point in making B D, there is no point in making B anything. There is a point in making B A. Right? Okay. Do you try to make A B?"
+  },
+  {
+   "start": 980.14,
+   "end": 1008.75,
+   "text": "then it would not be possible because only one change is allowed then if this one would remain then it would become BAB then it would be stuck so think here with your mind open why not we are making A as B see what we are trying to say let's make it bigger you have three A A B ok now see A A B this is your substring what we are saying you have to change A it has been said that I have A ok"
+  },
+  {
+   "start": 1008.75,
+   "end": 1038.51,
+   "text": "So, either you make B as A or make A as B. This is what happens, right? Look, A and B are two elements. You have to make them all the same. So, either make B as A or make all A as B. There are only two options. There is no use in making anyone as C. Now, will you like to make A as B or A as B? How will you know? Why are we saying that we have to make B as A and not A as B? So, how do you think? Look,"
+  },
+  {
+   "start": 1038.51,
+   "end": 1067.09,
+   "text": "The K that I have is equal to A. If it is equal to A, then it is more beneficial to make B as A, then you will get the answer. If you go to make A as B, then you will get stuck. So, how do you see this? See, A is twice here. In the whole substring, A is twice. B is once. So, if you have a limitation, which you have been told that you have K, K power, K times power, that you can change it again, then what will any intelligent person like to do? That what is less"
+  },
+  {
+   "start": 1067.09,
+   "end": 1096.74,
+   "text": "It is more beneficial to change what is less, right? If it is K1 only, then if you start with more, then why will you start with more? It is not that we have to do everything, we just have to make B. So change what is less, why should we change what is more? Now see, do one more here. Assume that C is also there. C is also there once. Now what will you do? Now what will you do? Now there are three options in this. Now see, A, B, C, three letters have come. So either you make A as C,"
+  },
+  {
+   "start": 1096.74,
+   "end": 1127.09,
+   "text": "Make both A's C and B's C. And let C be C. Or you make both A's B. Make both B's B. And let C be B. Very good. Or you make both A's A. Make both B's A. And let C be A. What are you doing in this? You will feel that this one is better. Why is this one better? Because A is the maximum. A is the maximum. So let A be A. Change the rest of the rest to A."
+  },
+  {
+   "start": 1127.25,
+   "end": 1151.94,
+   "text": "What does it mean to say? Suppose there is a very big substance, in that 70% you know that it is already A. 30% is anything, anything, B, C, Z, P, anything. So will you change 70% and make something 30%? Or will it be easy to change 30% and make 70%? 30% because it is less, already it is less. So if in 30% everything is different, make everyone A."
+  },
+  {
+   "start": 1151.94,
+   "end": 1173.87,
+   "text": "So we will get 30 operations in this. But if you want to change A, then you will get at least 70 operations here. It is like this that there are two parties in the country. There is a BJP and an entire India Alliance. So BJP is in the majority. And India Alliance is a small small small small party. A small small small party is 30%."
+  },
+  {
+   "start": 1173.87,
+   "end": 1202.62,
+   "text": "If someone wants to change, then change India Alliance to BJP, then there will be one party in the whole country, one party, one rule. But if you try to change BJP and make others, then you will have to do at least 70% of the vote share of BJP. And a lot of parties in India will also have to be changed, then it will take a lot. That's why the thing that is the most in the sub-string, leave it as it is. Change the rest of the thing and make it as maximum as possible."
+  },
+  {
+   "start": 1202.62,
+   "end": 1233.23,
+   "text": "This should be your algorithm. Now what did you understand from this? Now it will open slowly. We are saying that the question is hard. It took us half an hour yesterday. We didn't make it for many days. So it took time. That's why we are explaining it slowly. If possible, we will not explain the next question today. We will give time to this question. We will do it with time. Assume that this is your low."
+  },
+  {
+   "start": 1233.23,
+   "end": 1260.77,
+   "text": "This is your high. You had to do this sometimes. Your A is 2 times. B is 1 time. You have 1 power. Now, this can also happen. See. Can you make this substring better than the power you have? You have to find out in this question. If you have K times power, then by finding K times power, can you make the current substring better or not? So, you have to think about this. Can you do it in this?"
+  },
+  {
+   "start": 1260.77,
+   "end": 1291.14,
+   "text": "Yes, we can do it. Why? Because we can see that K1 is there. A is in majority and A is in maximum, so let A be. And rest B is once, so we can do it once. So it means that K can be either less or equal. But, suppose C is here. Here, here, C is here. Where? Here. Now your high is not here. Your high is here. Means, your hash map looks like this. A2, B1, and C1. Now see, your K1 is here."
+  },
+  {
+   "start": 1291.14,
+   "end": 1319.7,
+   "text": "Can you make this substring good? Let's see. A is in the majority. Leave it. BJP is there. How much is there in the rest of India? 2. So you will have to change 2. Either you make B as A or C as A. Only then it will be complete. A, A, A. 4 times. Otherwise it will get stuck. So do anything. You can't make this substring good. You can't make this substring good. And this is our check. This is our check. That is this information."
+  },
+  {
+   "start": 1319.7,
+   "end": 1349.66,
+   "text": "Is this information right or wrong? Which substring is right? If K was not given, it would have been very simple that the substring which has all 1 is right. But if there is a substring in which you can use K to change it, then it is right. If there is a substring in which you can't use K to correct it, then it is wrong. This is our whole algorithm. Now see how nicely we will solve it. We will solve it nicely."
+  },
+  {
+   "start": 1349.66,
+   "end": 1381.14,
+   "text": "Come first. Come first. Write the format again. Write the template again and again. Practice it. I less than N. Okay. High plus plus. Did you understand? Okay. First of all, take the high inside yourself. Take it. Take it. Okay. Now, what do you have to find out? Is everything unique or not? Is it unique or not? You have to find out two things. Unique and maximum. Which character is in maximum?"
+  },
+  {
+   "start": 1381.68,
+   "end": 1410.22,
+   "text": "What can we do for this? What will be better than HashMap is that you make a big array. Why am I not saying HashMap? Because it is difficult to get the majority from HashMap. How will you know whose frequency is in the majority in HashMap? You will not know that. What will you do in this? Now see, whenever there is a string question, you can use space. It is constant. Why is it constant? I am telling you. You make an array of 26 sizes. What will you make of 26 sizes? Make an array. 0, 1, 2, 3."
+  },
+  {
+   "start": 1410.22,
+   "end": 1440.48,
+   "text": "here 25, you can make an array of this name this will become your hash map whenever you get capital A keep all of this on 0 initially keep all of this on 0 whenever you get capital A, capital A will start from 1 so change this to 1 whenever you get capital B, change 1 to 1 again if you get B, change this 1 to 2 if you get C, change 2 to 1 this will become your hash map"
+  },
+  {
+   "start": 1440.48,
+   "end": 1471.02,
+   "text": "Now what will happen is that if you have to find the maximum, then iterate the array. Return the maximum, it will take constant time. Because the alphabet is 26, then the size of the array will also be 26. So we will iterate 26 again and again, there will be no difference. Now see. Come. For. Okay, I had written it, let's do it again. Increase the speed a little, look at 1.2, it is more fun. We also look at our 1.2. First of all, whatever the index of high is."
+  },
+  {
+   "start": 1471.02,
+   "end": 1501.39,
+   "text": "so F S one more thing one more thing if you make 26 size kare then how will you know that A has to be kept at 0 B has to be kept at 1 and C has to be kept at 2 the value of S the value of S of A is 65 the value of S of A is 65 because we don't want you to fall into that so don't make 26 kare make 256 kare how much? 256 because whatever type of character there is in computer science"
+  },
+  {
+   "start": 1501.58,
+   "end": 1530.82,
+   "text": "All the types of characters in computer science are 256. Space bar, inverted comma, abcd, small abcd, numbers, all of them are 226. So if you do that, then you don't need to do index here and there. So your a will go to 65 in that array, so you don't need to do anything. Do as you do in the hash map. So make an array, we will put 256 to 0. Come. Do plus plus. Wherever you go, your character will come, very good. Now what is it?"
+  },
+  {
+   "start": 1530.82,
+   "end": 1561.14,
+   "text": "this information, this information, is it right or wrong? How will we know? How will we know? That, that, first of all, it is the frequency of that hash map. So, what does this tell you? What does this tell you? What does this tell you? That how many letters are there in it? Not unique letters, total letters. So, you will know this from length. What is length? Length is high minus low plus 1. Length is this. Length means that this is the total character."
+  },
+  {
+   "start": 1561.14,
+   "end": 1586.58,
+   "text": "Now there will be two things in total character. One will be maximum, whose maximum frequency is, for example, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case, in this case,"
+  },
+  {
+   "start": 1586.58,
+   "end": 1614.43,
+   "text": "Difference is 2. And you have to change this difference. This difference makes a lot of mess. This difference makes a lot of mess that there are 2 differences. You have to change 2. So if we want to find the difference, then we will know how much change we have to make. And if that change is less than k, or if it is equal to k, then it is fine. Meaning if this 2, if you have given k2, then very good, you change 2. But if your k1 is there, then this will not be possible. Then you will have to"
+  },
+  {
+   "start": 1614.43,
+   "end": 1642.7,
+   "text": "You will have to do it. Very good. So, this is it. First of all, what should you do? Take out a length. Length is very simple. High minus low plus 1. Okay. Take out a max count. For max count, write a function that will traverse the array and give you maximum frequency. Give you maximum frequency. Okay? So, we will write a find function and show you. In this, pass this array. What will it give you?"
+  },
+  {
+   "start": 1642.77,
+   "end": 1673.2,
+   "text": "It will give you maximum frequency. If A is 2, then it will give you 2. Your length is equal to 4. Take out the difference. Take out the difference. What will be the difference? There is a total character in length. Maximum is of maximum. So, length minus max count. It is possible that this difference is 0 too. If 100% of the country voted BJP, then this is India Gatwandhan. Let's write it. What is this? This is India. And this is BJP."
+  },
+  {
+   "start": 1673.68,
+   "end": 1702.48,
+   "text": "If 100% of the country votes for BJP, then how many votes will India vote for? Zero. So it can be even zero. There is nothing to worry about. It's a good thing. Now, now, is this information right or wrong? How were we deciding? If this difference is less than K, then it's fine. If this difference is equal to K, then also it's fine. But, till the time this information, this difference is more than K, till then our information is wrong. This is what we are explaining from above. So the while loop we used to run, now it will work like this. How will it work? While."
+  },
+  {
+   "start": 1702.48,
+   "end": 1730.54,
+   "text": "What is this while for? For low, till the time the window is closed, till the time the information is wrong. Come. Till the time this case is more, till then there is no scope. What we used to do in this? First of all, remove the low. Remove the low. Remove it. Increase the low. Increase the low. Now, there is no need to erase in this because this is not a hash map, it is an array. So, it must have already become zero. Now, if, now see."
+  },
+  {
+   "start": 1730.54,
+   "end": 1760.03,
+   "text": "What was the max count dependent on? The max count was dependent on f. If you change f here, if you minus something in f, then you will have to subtract the max count again. You will have to subtract it again, right? Take it out. There is nothing happening in the max count. The maximum of an array is the maximum of f. We are writing it as find. You might be able to write it as maximum. Okay. What is the length dependent on? On high and low. Are we changing the low? Yes, we are changing the low. We will have to subtract the length again. Length b."
+  },
+  {
+   "start": 1760.03,
+   "end": 1786.56,
+   "text": "You will have to remove it again. Remove it. And what was the difference? The difference was length minus max. Now both length and max have changed. Difference will also change. Difference will also change. Difference will also change. Change it. Close the while loop. Now, now we have come here. Now what can happen here? How long are you running the while loop? Till, till, till difference"
+  },
+  {
+   "start": 1786.56,
+   "end": 1816.35,
+   "text": "this is greater than k so if this while loop is broken here then it means that either my difference is less than k or my difference is equal to k both the conditions are correct you can do both the conditions openly that is correct information that is correct window you just don't have to do anything length is equal to take it out again what was it? if you got correct information then don't worry and rest is equal to max of rest and length"
+  },
+  {
+   "start": 1816.35,
+   "end": 1845.26,
+   "text": "close the for loop, the high one and press return, see same pattern, same question like yesterday, same pattern, what has changed? something has changed, these three lines had to be written extra these three lines had to be written extra here we have some logic, now this logic has to be written extra after thinking the concept is the same, you have to do the information, when the information is right and when it is wrong, you have to identify it, the rest is up to you, you have to put it in the same format and till the information is wrong"
+  },
+  {
+   "start": 1845.26,
+   "end": 1875.33,
+   "text": "till then you have to keep on teaching till then you have to keep on teaching till then you have to keep on teaching till then you have to keep on teaching till then you have to keep on teaching till then you have to keep on teaching till then you have to keep on teaching till then you have to keep on teaching till then you have to keep on teaching till then you have to keep on teaching"
+  },
+  {
+   "start": 1875.33,
+   "end": 1904.86,
+   "text": "Max consecutive 1, look at the question, coded in 2 minutes, submitted and finished. Both are the same question, almost same question. Not almost, it is the same, it is easier. If this question was 8 out of 10 difficulty, then it is 6 out of 10 difficulty. So if you understood this, it will become that. So go, submit it and also submit that and see. Comment and tell whether it happened or not. If it didn't happen, then we will tell you tomorrow. If it happened, then it is a good thing, we will let it be, we will start new patterns from tomorrow. Okay. So this was today's class and see."
+  },
+  {
+   "start": 1904.86,
+   "end": 1934.3,
+   "text": "You don't have to feel bad about what we said, but you have to understand a little bit. You also have to be patient. Don't complain that you have not studied, your career is ruined, you have ruined your whole life. Don't complain, everything will be done. It will be done as much as you say and it will be done well. It is not that we will come and complete the food and write something here that yes, let's do it like this. We don't do all that. So you also cooperate a little bit. If we are increasing by 9 steps, you also increase by 1 step."
+  },
+  {
+   "start": 1934.3,
+   "end": 1943.63,
+   "text": "We should maintain the decor, right? We will upload this video, it will be a little late. Those who will not be able to see today, see tomorrow. And let's meet in the next video."
+  }
+ ]
+}

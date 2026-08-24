@@ -1,0 +1,209 @@
+{
+ "video_id": "cmSh2xbyX7g",
+ "title": "Introduction To Dynamic Programming | Dynamic Programming in 15 days",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 976,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 17.63,
+   "text": "Welcome back kids. Today is a very happy day. Today we are going to start Introduction to Dynamic Programming. Yes, Introduction to Dynamic Programming. The graph series is now over. There are some concepts left in the graph series. We will see them in the last. But, Introduction to Dynamic Programming. Watch it now."
+  },
+  {
+   "start": 17.63,
+   "end": 36.74,
+   "text": "Today's video is just an introduction. Introduction means no syntax, nothing. We will just explain to you what is dynamic programming. Because there is a rumor that dynamic programming is a hard topic. It is not a hard topic. People read it in the end. That's why many people don't read it. That's why it is hard. It is not hard. It is very logical. It is very logical. It is really a very reasonable thing."
+  },
+  {
+   "start": 36.74,
+   "end": 66.21,
+   "text": "For this, see, those who have come to the channel for the first time, those who don't follow this playlist, you must have come from somewhere else randomly. You have to do three things or you should have done three things before this. I am not saying that you have to do it. If you know, then watch this video. If you don't know, then we are giving you time for these three things. Watch it. Watch this video tomorrow. If this video is like this, then it is not that it will go somewhere. First of all, if you don't know DSA at all, i.e. you don't know variable, loop, what is array, how to remove sum, if you don't know all this, then don't worry, it is not that hard."
+  },
+  {
+   "start": 66.21,
+   "end": 88.85,
+   "text": "DSA Basics. Go to this channel, any channel, go to the playlist, you will see a DSA Basics playlist. It is not a very long playlist. It has 4 videos. In this, you will get CPP, Java, and Python. You will get all three. So, catch any one language. There are 4 videos. Every video is of half an hour. You have to watch 1.30. So, in about 1-2 hours, the whole basic work will be done. In this, you will learn everything which is necessary."
+  },
+  {
+   "start": 88.98,
+   "end": 116.9,
+   "text": "What is the maximum of array? What is the sum of array? How to write loop? What is the digit? You will learn everything. It is covered in the basics. After that, you have to watch this video on HashMap. How will you get the video? Go to the playlist of DSA Patterns 2025. Scroll a little. You will get one video to master HashMap. It is an hour long video. After an hour long video, you will never have to worry about HashMap. So, watch this HashMap. Because HashMap is used everywhere. After that, the most important thing."
+  },
+  {
+   "start": 116.9,
+   "end": 146.66,
+   "text": "You have to watch this recursion playlist. Again, go to the channel, go to the playlist, recursion. How many videos are there in this? 9 videos. 9 videos are enough to explain you recursion from start to end. If you know these three things, if you know basic, hash map, recursion, then you can move forward in this video. If you don't know, then watch that first. Then watch this video. Okay, let's go. Look, dynamic programming is a very simple thing. There is no need to be afraid of dynamic programming. If we want to explain the simple of dynamic programming in one line in Hindi,"
+  },
+  {
+   "start": 146.66,
+   "end": 171.89,
+   "text": "So remember your past. Remember or remember your past. Don't forget your past. Don't forget your past. Remember your past. And whatever decision you have to make in the future, it should be influenced by your past. For example, let me explain you with this example."
+  },
+  {
+   "start": 172.18,
+   "end": 198.62,
+   "text": "If we live in Bangalore, then my Bangalore is at home. Now we are at home. Where do we have to go? We have to go to Bangalore airport. We have to go to Bangalore airport. We have to go to the airport. Now to go to the airport from our home, we have to take a lot of small steps. For example, we may have to go to some place 1 first by walking. From place 1, we may have to go to some bus stand."
+  },
+  {
+   "start": 198.62,
+   "end": 226.27,
+   "text": "from the bus stand to the metro station and then from the metro station to the airport. So basically there is a lot of hop. It is not like we will fly and go somewhere. This is the thing. For example, we started the first day and we are standing in our house. We asked our caretaker that tell me one thing, place 1 means suppose this is the main road. What is place 1? Main road from my house."
+  },
+  {
+   "start": 226.27,
+   "end": 253.49,
+   "text": "This is the main road. We asked our caretaker, tell me how do you go to the main road from my house? He told us something. Whatever the direction is, turn left, turn right, whatever he wanted to tell us, he told us. We came to the main road. We stood on the main road and asked someone, tell me, where do you go to the bus stand? He will tell us how to go to the bus stand. Take an auto from here or from there. He will tell us anything. Okay. Now, let's say we stood on the bus stand. Now, that day is over."
+  },
+  {
+   "start": 253.49,
+   "end": 272.18,
+   "text": "We had to come back home. We couldn't reach the airport due to an emergency. Suppose anything happened. We couldn't go ahead of the bus stand. We had to come back home. Okay. The next day, we decide that we have to go to the airport. What do we decide? We will go to the airport again. Now we are doing the same thing again. Then we will ask the caretaker how to go to the main road. Ask him to come to the main road."
+  },
+  {
+   "start": 272.18,
+   "end": 302.05,
+   "text": "Then from the main road, someone asked how to go to the bus station, so we went to the bus station. Then someone asked how to go from the bus station to the metro station, so he told us that we have to go like this. Now suppose the next day we got an emergency at the metro station, suppose we got a washroom, so we came back home, then we couldn't go to the airport. On the third day, we started doing the same thing again. Standing at home, we asked the caretaker how to go to the main road. The main road guy asked someone about the bus station. Do you think this is logical? Do you live your normal life like this? No, you don't. What do you do?"
+  },
+  {
+   "start": 302.05,
+   "end": 331.65,
+   "text": "If you got to know how to go to the bus station on the first day. If you didn't know anything on the first day, that's a good thing. If someone told you on the first day how to go from home to the main road, how to go to the bus station from the main road. If someone told you, you came back from the bus station. Now, when you started on the second day, why are you asking the same thing again? You started on the second day, you did it again. You won't ask how to go to the main road. You don't know how to go to the main road. You have gone to your past."
+  },
+  {
+   "start": 331.65,
+   "end": 360.3,
+   "text": "You have been to the main road in the past. So when you start the next day, you will not ask for the address of the main road on the next day. You will not ask for the address of the bus station either. On the next day, you may ask for the address of the metro from the bus station. Why? Because you did not ask for the address of the metro from the bus station. So you do not know. Now give the third day. You do not have to repeat the third day. On the third day, you will not ask your caretaker for the address of the main road. Are you mad? You ask the same thing every day. This is what DP means in some sense. What does DP mean?"
+  },
+  {
+   "start": 360.3,
+   "end": 373.49,
+   "text": "You are solving a problem. Assume that you have solved that problem up to a certain part."
+  },
+  {
+   "start": 373.49,
+   "end": 400.3,
+   "text": "Assume that you have solved it to x. You have solved it to x. Now you have to solve x plus 1. You have to solve it for x plus 1. So you will not repeat the calculation you did for x. You will not repeat it. Remember the calculation you did for x. And use it to solve x plus 1. Do not repeat the whole thing. For example."
+  },
+  {
+   "start": 400.3,
+   "end": 415.14,
+   "text": "If someone asks you to count from 1 to 10. Count 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Start counting. Count till here."
+  },
+  {
+   "start": 415.14,
+   "end": 444.05,
+   "text": "till 5, you got to know that how much is it? 6, 10, 15. Counting till 5 is 15. Now your that day is over. Your time of that day is over. Now someone asks you, okay, now do one thing, tell me the answer till 6. So again start counting completely that okay, 1 and 1, 2, 3. No. You already know the answer till 5, right? Use that. Write the answer till 5 in your diary. Write that brother, the sum of 1 to 5 is 15. Write it in a diary."
+  },
+  {
+   "start": 444.05,
+   "end": 466.72,
+   "text": "Now, when you have got the answer of 6, which means the sum of 1, 2, 3, 4, 5, 6, then why do you have to calculate it again? You can use this 15 and say that if you want the answer of 6, then 15 plus 6 is equal to 21. Without any unnecessary calculation, this is called DP."
+  },
+  {
+   "start": 466.72,
+   "end": 496.19,
+   "text": "The big brother of recursion. That's why I said you should see recursion. You have to see it. You don't have any other option. The big brother of recursion is DP. This concept is used in recursion. If you have solved a small part, you use it to solve a big part. This is recursion. What does DP mean? Whoever you have solved, means at every stage, whatever solution you write at every stage, you know it, right? Keep writing it in a diary. Keep writing it in a diary."
+  },
+  {
+   "start": 496.19,
+   "end": 520.37,
+   "text": "If you ever need one of the previous solutions, then instead of calculating it again, just use it. How will you use it? By looking at the diary. Now this diary can be anything, it can be an array, it can be a hash map, it can be anything. The purpose of the diary is only that whatever you have calculated by doing one by one, write down the answer. And if you have any..."
+  },
+  {
+   "start": 520.37,
+   "end": 549.76,
+   "text": "If someone asks you if you need the answer of 3, then to get the answer of 3, don't do 1 plus 2 plus 3 again. Come to the simple answer of 3 and see what is written in your diary that the answer of 3 is 6. And use it. What happens with this? Time is saved with this. What is saved with this? Time is saved. How is this saved? Let me explain it to you with another example. You will understand it very well because if you don't use BP, then your recursion will look stupid. What will it look like?"
+  },
+  {
+   "start": 549.76,
+   "end": 578.34,
+   "text": "We will tell you why it will look stupid. Let's go. One more example. See, one more relatable example. How do you use BP? Imagine you are a tea vendor. Now what is a tea vendor? You have a tea stall. Now you are standing here. You are standing here like this. Someone comes to you and asks you how much is one tea? How much is one tea? If the price of one tea is 10 rupees, then you call it 10 rupees. Is it right? Is it good? One more person says, how much is two teas? How much is two teas? So what do you do?"
+  },
+  {
+   "start": 578.34,
+   "end": 596.72,
+   "text": "You have to do some maths. Now you have to tell 10 into 2 is equal to 20. So you have told him 20. Okay. The third person comes and asks, 2 tea, what? 2 tea plus 1 biscuit. 2 tea plus 1 biscuit. He is asking for a combo. How much is 2 tea and 1 biscuit? If you start doing maths again,"
+  },
+  {
+   "start": 596.72,
+   "end": 622.56,
+   "text": "Meaning, if you again assume the price of 2 into 10 plus biscuit is 5 rupees, 5 into 1, 25, then you are telling it 25, then you are a fool. Why are you a fool? Why are you doing this math again? Why are you doing this math again of 2 tea, 2 tea, that it is 2 into 10? Already you have told a person the price of 2 tea by doing math. See for the first time, when the price of 2 tea was asked for the first time, then obviously you will have to do it."
+  },
+  {
+   "start": 622.56,
+   "end": 651.73,
+   "text": "It's the first time, right? So the first time is fine. You do 10 into 2 and tell me 20. When those two teas are being repeated in one more comma, someone is asking you, how much are two teas and one biscuit? Why are you wasting your time doing this math? Then see. Assume you have just done math. Now you have saved 25. The next person comes. The next person asks you, two teas plus one biscuit plus one fan. Fan means, you know, the one who eats fan. If you are doing math again, what math are you doing?"
+  },
+  {
+   "start": 651.73,
+   "end": 669.95,
+   "text": "10 into 2 plus 5 into 1. Assume your fan is 20 rupees. 20 into 1. You are telling it 45. If you are doing this work, then what are you not using? You are not using DP. You are doing basic programming. Meaning, whatever you do, you are doing it. Use DP."
+  },
+  {
+   "start": 669.95,
+   "end": 695.1,
+   "text": "What did we say? To remember your past means to remember the things that you have already worked hard on. What can you do? Make a board behind you. When someone asks you how much is a cup of tea, write 10 rupees in front of the tea to remember."
+  },
+  {
+   "start": 695.1,
+   "end": 724.0,
+   "text": "When 2 chai is asked, then 20 is written in front of 2 chai to remember. Now, when a person asks you, how much money is there for 2 chai and 1 biscuit? So, don't do math again for 2 chai. Look directly at 2 chai from the board. How much is the price of 2 chai? 20 rupees. Now, how did that 20 come? It doesn't matter to you. Because, no matter how it came, it came, right? That's why it is written. It came right, that's why it is written. You just add the price of biscuit to that 20 and tell it 25."
+  },
+  {
+   "start": 724.0,
+   "end": 732.11,
+   "text": "And write this too. Because this is a new combo. Two chai, one biscuit. What is it? New combo. You are seeing this for the first time in a day. Two chai plus."
+  },
+  {
+   "start": 732.11,
+   "end": 754.27,
+   "text": "You have written the price of 1 biscuit as 25. Next time when a person asks you that how much is 2 tea, 1 biscuit and 1 fan? So don't calculate this part of 2 tea and 1 biscuit again. Why? Because it is already written on your board. What is written? 25 rupees. In 25 rupees, just add the price of the fan and tell him 45 rupees directly. What is happening by doing this?"
+  },
+  {
+   "start": 754.27,
+   "end": 783.55,
+   "text": "You are not doing the same thing over and over again. Your time is running out. Why is that? Because if you do the same thing over and over again and start calculating from scratch, you will take a lot of time. Why will it take a lot of time? Because you are repeating the same thing over and over again. You are doing the same thing over and over again. You are doing the same thing over and over again. You are doing the same thing over and over again. You are doing the same thing over and over again. You are doing the same thing over and over again."
+  },
+  {
+   "start": 783.55,
+   "end": 811.66,
+   "text": "See what happened in this board. Your time was saved. Your time was saved. Your time was saved. Your hard work was saved. Everything was saved. But, but, but, your space increased. Space means, earlier this board was not needed. But, now how does a person remember to remember? He will remember after writing somewhere. It is not that everything will increase in the mind. No. So what happened to you to use this? You had to give space. Means you had to put a board. So this is what DP is."
+  },
+  {
+   "start": 811.66,
+   "end": 838.64,
+   "text": "What we have just explained to you is called Memoization. Memoization means remembering something. What does Memoization mean? Remembering. So whenever you use Memoization in this way, what do you do? You reduce your time and effort, but you increase your space. Why do you increase your space? Because the thing to remember will be remembered somewhere or the other."
+  },
+  {
+   "start": 838.64,
+   "end": 867.38,
+   "text": "It can be an array, it can be anything, it can be a hash map, it can be anything. Any such data structure which can store things. So, this board will always be something like this. So, look at this. You can understand these examples that what is DP? DP is nothing. Look at this. DP is the big brother of recursion. There is no recursion in this, but we are just telling you that the normal things that you do, the normal programming that you do is a very good thing. But when you have to remember things of small problems, that is,"
+  },
+  {
+   "start": 867.38,
+   "end": 890.78,
+   "text": "You can solve a big problem with the answer of a small problem. See here, two tea and one biscuit was a small problem. Plus one fan is a big problem. So you solve a big problem by reusing the result of a small problem. And you also remember the result of small things so that you don't have to do the same thing again and again. What is this work called? Memoization. There is another way of DB, it is called tabulation. It will come later. But the most..."
+  },
+  {
+   "start": 890.78,
+   "end": 905.09,
+   "text": "The basic thing to learn is memoization. This is what we will learn in the next 5, 6, 7, 8 days. What is memoization? Memoization is nothing. You have to write a simple recursion code. Very simple. Brute force. As we have learned."
+  },
+  {
+   "start": 905.09,
+   "end": 926.88,
+   "text": "If you add one to two lines to a simple code, then it becomes DP Memoization. So the first part we will teach you is how to revise recursion. That is why we are saying that it is very important to learn recursion. Learn recursion or learn by watching videos and playlists. Write the code of recursion. After that, add one or two lines to it. What will it become?"
+  },
+  {
+   "start": 926.88,
+   "end": 955.18,
+   "text": "There is no need to do anything else. Memoization is very easy. There may be some problem in tabulation. We will learn that later. We want to make your memoization perfect for the next 6-7 days. Again, we are saying the same thing. Watch the basics playlist. It is very good. Watch the video of HashMap. It is very nice. Watch the playlist of recursion. And we will say that watch mine. Because I have a style to teach. So we will continue the style we are teaching there. You can watch someone else's. There is no such problem. But what will happen?"
+  },
+  {
+   "start": 955.18,
+   "end": 975.19,
+   "text": "See someone else's recursion in some other style. See 2 plus 2 is 4 only. We have studied, strivers have studied, anyone has studied. So 2 plus 2 is 4 only. But how 2 plus 2 is 4 is told is important. We will advise you to see my recursion playlist. And start with me on DP journey from tomorrow. This was an introduction video. Let's meet tomorrow. Thank you very much."
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "video_id": "V6pRTnOZ7Mc",
+ "title": "DSA PATTERNS Episode 10 | Introduction to Sliding Window",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 694,
+ "segments": [
+  {
+   "start": 0.24,
+   "end": 30.96,
+   "text": "Welcome to the second pattern, which is Sliding Window. Those who have seen the two-pointer, it will be very easy for them to see this sliding window. Those who have not seen it, it will be easy for them too. There is nothing like that. But make sure that this introduction video is an introduction video. Okay. This is an introduction, meaning you will get a flow chart in this. In this, you will know the rules that when to use this pattern and how to use it."
+  },
+  {
+   "start": 30.96,
+   "end": 60.7,
+   "text": "So please watch this video till the end because the upcoming videos will depend on this. If you understood this much, then let's move on. Now see, sliding window. What does window mean? And sliding means that this window can be small or big by itself. This means, now this window's size is this much. It is possible that at some future point, the window's size will be this much. It will increase. Or it is possible that at some future point, the window's size will remain this much. So it will shrink."
+  },
+  {
+   "start": 60.7,
+   "end": 91.1,
+   "text": "So it can expand or shrink by itself. That's why it's called sliding or window. Window means this window. Right? Now how does it slide? How does it shrink? With the help of two pointers. That's why we read two pointers first. First we read two pointers and then come to sliding window. Now it shrinks with the help of low and high. What happens is that you keep low on this end and high on this end."
+  },
+  {
+   "start": 91.1,
+   "end": 118.82,
+   "text": "Now these two can only move in the same direction. Low can also move here, high can also move here. So when high moves, whenever you do high++, then this window will expand because the distance between low and high will increase. Whenever you do low++ and keep high in one place, then the window shrinks. Why? Because the distance between low and high will decrease. Notice one thing, if it expands, then it will be from this side, means it will increase from this side."
+  },
+  {
+   "start": 118.82,
+   "end": 148.18,
+   "text": "And when it shrinks, it will cut the part on this side. Meaning, this window is moving in the right direction only. If it shrinks, then we will cut the part from here by increasing the low. If it expands, then we will increase the high and join the part. This is how this window works. This pattern is called sliding window. Now, the first thing, flow chart. Where will it be applied? It will be applied on the array. Array, otherwise string. Because there is an array in string."
+  },
+  {
+   "start": 148.18,
+   "end": 177.81,
+   "text": "It won't be on the link list. It won't be on the 99.9% case on the link list. Remember to tie the knot. It won't be there. What was the first hint for you? Array or string question. It will only be there or else it won't be there. The best thing is good. If, if, if, in the question, if in the question, sub-array or sub-string, when we are talking about strings, this is written."
+  },
+  {
+   "start": 178.29,
+   "end": 208.78,
+   "text": "Is it written or you are able to understand? Only then, the sliding window will be applied. Only then, the sliding window will be applied. Otherwise, it won't be applied. Okay? Subarray means continuous. Continuous. Okay? Substring also means continuous. Subsequence is different. Remember, people get confused. They start applying subsequence. Subsequence means non-continuous. Non-continuous. It means, if there are such elements in an array,"
+  },
+  {
+   "start": 208.78,
+   "end": 237.23,
+   "text": "So take any two elements, so take this and take this, so this is a subsequence. But if the array is like this, it tells you to take all the arrays of 2, then you will have to take two continuous elements, you will have to take this only. Either you will have to take this one, or you will have to take this one, or you will have to take any one which is continuous. Subsequence non-continuous, take any two elements in order. Okay, did you understand? So array string, subarray, substring, okay? Now,"
+  },
+  {
+   "start": 237.26,
+   "end": 276.77,
+   "text": "Are we trying to find something? What is the question asking you? Are we finding? What does the question want from you? The question can want anything from you. Maximum. Minimum. Longest. Longest. Shortest. Either sum. Or count. Either average. Either at most. Or at least. Either."
+  },
+  {
+   "start": 276.77,
+   "end": 309.81,
+   "text": "Look carefully, it's a very big list. But, but, but, when do you have to think about this list? When do you have to think about this list? When you cross these two. If there is a question of array and string, write all the arrays and all the strings. And along with that, write all these things. Look carefully, take a screenshot and note it in the copy. Maximum, minimum, longest, shorted, sum, count, average, at most k, at least k, exactly k."
+  },
+  {
+   "start": 309.81,
+   "end": 338.96,
+   "text": "If you get all these words in the question, you understand that he is asking all these things, these things are being asked to me. So you will do sliding window. Okay? See again, these were the three things. Array string, sub-array, sub-string should be continuous. And if you are doing something from these, then sliding window will be applied. Sliding window will be applied. Sliding window will be applied. See the flow chart again. If there is no flow chart, then see it by pausing. Note it in the copy."
+  },
+  {
+   "start": 338.96,
+   "end": 371.33,
+   "text": "Look at the flow chart and note it down in the copy. After understanding when the sliding window will be applied. Now, one small thing. The sliding window is of two types. One is fixed. The other is dynamic. I just told you that it expands and shrinks. It is possible that it doesn't. How can it not? For example, if you were asked in the question. This is your array. So this is 1, 0, 3, 5, 2."
+  },
+  {
+   "start": 371.33,
+   "end": 401.81,
+   "text": "1, 4. 0, 1, 2, 3, 4, 5, 6. In the question, you are asked to take all the arrays of length 3 and find maximum of all their sum. What does question mean in Hindi? In this array, take all the arrays of length 3, find their sum and return the maximum."
+  },
+  {
+   "start": 402.06,
+   "end": 428.75,
+   "text": "The first thing is that we have to apply our algorithm, we have to apply our flowchart. Is the array written? Yes, it means that the array is given. So, the array is there. All the array is written. Find maximum of all their sum. So, all our conditions are satisfied. Maximum of sum. In this, the sliding window will be applied. If it will not be applied in this, then it will not be applied anywhere. So, this is a perfect question to understand flowchart. What can you do in this? In this, you"
+  },
+  {
+   "start": 428.75,
+   "end": 458.3,
+   "text": "What do we do? When you are given in the question, when you are given length 3 in the question, it is not given in any question. In some it happens that you have to take subarray of any length. But when you are given length, when you are given size, when you are given length, whose length is given? Of subarray or of substring. So you take fix window. How do you take fix window? 3 size window. Now how to write it in code? Pseudocode, we will teach all this tomorrow. But we are just teaching concepts."
+  },
+  {
+   "start": 458.3,
+   "end": 486.69,
+   "text": "Take a fixed length of 3. Right? Take a length of 3. Now see, what was told in 2SUM? Before writing anything, think of its brute force. What is brute force? Take all subarrays. All subarrays of size 3. Take it out from this array. How will it come out? It will come out like this. 1 is this. 1, 0, 3. Then from 0, 0, 3, 5. Then from 3, 3, 5, 2."
+  },
+  {
+   "start": 486.69,
+   "end": 514.42,
+   "text": "Then starting from 5, this much. And then this and this. We got so many sub-arrays. Take all the sub-arrays. Take out the sum of all. Return the max of that. This is very good. But in sliding window, you can make it very fast. So you start your window like this. This is your window. Okay? You take out the sum of this. The sum of this is 4. Okay? The sum of this, of the first sub-array, when you are given a fixed length, then you take out 4. Okay?"
+  },
+  {
+   "start": 514.42,
+   "end": 544.67,
+   "text": "After that, you shift the window to 1. The size of the window is not changing. See, the size is 3. The position of the window has shifted to 1. Now, to get the sum of this, we don't add it from the beginning to the end. See, what happened? You were here. Its sum is 5. Now, you are here. So, 0 and 3 are common. What are we saying? Now, increase the array and see only 4 elements. 1, 0, 3 and 5. Okay? 1."
+  },
+  {
+   "start": 544.67,
+   "end": 573.49,
+   "text": "Again, 1. This is a very important concept to understand. That's why I am explaining so much. This was your first morning. This was your first morning. This was it, right? Yes. This was your second morning. When you shifted, this became your morning. Now look. Now look. 0, 0. 3, 3. These two are common. These two are common, right? What has changed? 1 has changed and 5 has changed. So, what has happened?"
+  },
+  {
+   "start": 573.49,
+   "end": 602.3,
+   "text": "Your first sum was 1 plus 0 plus 3. This was 1, the sum of this one. What is your sum 2? 0 plus 3 plus 5. So what are you doing? See, what is the difference between sum 1 and sum 2? 0 and 3 are the same. 0 and 3 are the same, yes. There is no 1 in sum 2. So there is no 1 and there is 5. This is the difference. If you do this, you get sum 2. What is not in sum 2? There is no 1 in sum 2."
+  },
+  {
+   "start": 602.3,
+   "end": 631.36,
+   "text": "And 5 has been added. So whenever you do this, sliding window. So, what do we say? We know the sum of this. It is 4. How will we get the sum of this? We will not do anything in this to get the sum of this. To get the sum of this array, we will do 4 minus 1 plus 5. So you will get 4 plus 5 is 8. See, the sum of this window will be 8. Is it 8? Yes, it is 8. The sum of this window is 8. How will we get the sum of this window?"
+  },
+  {
+   "start": 631.36,
+   "end": 661.23,
+   "text": "Decrease the one at the back. Decrease the one at the back. Add the one at the front. 10. Take out the sum of this. 3 plus 5 is 8. And 2 is 10. Like this we shift the window. So it makes your work very fast. So this was fixed length. Whenever you are not given the length of the morning in the question. If you are not given the length of the morning. If you are given the dynamic size. Or if you are not given the length. Then you will use dynamic. In which low can increase. High can also increase. So the window will be this big. Sometimes it will be this big."
+  },
+  {
+   "start": 661.23,
+   "end": 689.54,
+   "text": "Sometimes it will be this big, sometimes this big, so it will be big and small. So this was sliding window, its flowchart, its template, its concept. When is sliding window used? So sliding window, any such question where you have to deal with subarray or substring, and you have to do something like minimum, maximum, longest, shorted, this kind of useless thing, then we use sliding window. Write this, note this, and from tomorrow, who has not got the pattern sheet yet, who has not got the pattern sheet yet, download it from the description."
+  },
+  {
+   "start": 689.54,
+   "end": 693.0,
+   "text": "We will start asking questions one by one from tomorrow. See you tomorrow."
+  }
+ ]
+}

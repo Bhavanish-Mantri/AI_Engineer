@@ -1,0 +1,194 @@
+{
+ "video_id": "Qh_U6NYf99o",
+ "title": "Recursion Fixed Template For All Questions | One Template To Solve Recursion Problems",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1016,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 26.16,
+   "text": "Hello kids, how are you? Hope you are fine. So see, we hope you liked yesterday's recursion. So see, before starting, let me tell you a small thing that recursion is of two types. One is sub-problem based, which we saw a little yesterday, the guard one, that you solve your problem, today we will see it in detail. We will tell you the complete template of it, that with the same code, the whole problem is of the same three line code. You have to think of those three things. Like we saw in the sliding window that"
+  },
+  {
+   "start": 26.16,
+   "end": 52.74,
+   "text": "Think about this one point, after that the whole code is boiler plate code, I will tell you the same. The sub-problem thing that happens, will be used in trees and 30% of DP problems. The second is choice and backtracking. My plan was to teach choice and backtracking today itself. See, we have made a very big graph. But we feel that we need to work a little bit to explain it. So if we explain it now, then it will not be understood today. If we cram it in one, then it will..."
+  },
+  {
+   "start": 52.74,
+   "end": 78.19,
+   "text": "So, we will do backtracking tomorrow. But backtracking is very important. Don't miss backtracking because it will be useful in 70% of DP questions and 100% of graph questions. The whole DFS of graph. So, what is DFS? This is what DFS is. That's why we say that recursion is the master of all. Those people who say that their tree is very good and its DP is very strong. No, their tree is not DP strong. Their recursion is strong."
+  },
+  {
+   "start": 78.19,
+   "end": 107.6,
+   "text": "Recursion program takes 1 minute to make dp If you get tree problem and you get recursion then it takes 5 minutes to write code If your recursion is strong then all these things become strong So we will talk about choice 1 carefully With any question, choice 1 means like subproblem And we will tell you when it is used, how it is used, what is the template etc. And tomorrow we will talk about this in detail So watch the whole video, like the video, let's start"
+  },
+  {
+   "start": 107.6,
+   "end": 132.48,
+   "text": "So, let's start with a small problem. The first one is how to read. So, find maximum in an array. We know that 99% of people have done this. It is a very easy, school level, basic level question. It means that there is nothing in this question. How 99% of people have done this? You get a fun in which you get a vector and its size. So, in the beginning, you take maxi is equal to array of 0. After that, you run the loop on the array and maxi is equal to max of maxi and array of 5."
+  },
+  {
+   "start": 132.48,
+   "end": 162.19,
+   "text": "If you think that maxi is smaller than this element, then you can make maxi equal to that element. When you do this on the whole area, then you get the maximum. We don't think that it is necessary to explain because everyone knows it. If you are still studying with me, then you must know this. If you don't know, then it's okay. What is the solution in this? It is a loop writing solution because you are writing for loop. So this is an iterative solution. In this, you are getting a good intuition that where is the work happening? So the work is happening here. This man is doing the basic main work."
+  },
+  {
+   "start": 162.19,
+   "end": 187.44,
+   "text": "Now let's write it with recursion because we are saying again and again that there is no such problem in the world that can be done with a loop and not with a recursion or that can be done with a recursion and not with a loop. Both are interconnected, there are two ways to solve every problem. Come, we will write the recursion, we will learn the template in this, in this we will also tell you how to do similar problems, come. So first of all, what is done in such problems? First of all, you are given a base case."
+  },
+  {
+   "start": 187.44,
+   "end": 207.81,
+   "text": "When we talk about the base case, then this is the problem that whatever problem you have got, you must have got some input in it. Either you have got some number, or you have got some array, or you have got some string, or you have got some tree, or you have got anything. If there is any input, then there is a problem. Solve it on the smallest input. If someone asks you to tell the answer to the smallest input, the answer to that is"
+  },
+  {
+   "start": 207.81,
+   "end": 231.79,
+   "text": "You must be knowing it. If you see any problem on the lead code, you will assume that what is the answer on the smallest input? Then you will tell the answer as it is, whether its answer is 1 or 0, whatever it is. Think about its answer. Think about it. Think about it in your copy. It is very easy. I will show you in every problem that how to think about the answer on the smallest input. It is very easy. Okay. After that, the number on which you are now,"
+  },
+  {
+   "start": 231.79,
+   "end": 262.11,
+   "text": "In this function, the number you are on, the number or the index you are on, if you are talking about array, then you will be on an index. If you are talking about string, then you will be on an index. If you are talking about pure numbers, then you will be on a number. Whatever number you are on, separate that. Separate that. Means, in yesterday's lecture, the floor on which the guard was sitting, separate that floor. The rest of the hotel is on one side. And the rest of the array, the rest of the array, the whole array or the whole string,"
+  },
+  {
+   "start": 262.11,
+   "end": 287.9,
+   "text": "string on one side, whole array, whole string and all other numbers, if you are doing it for n is equal to 10, then it means that separate 10, do the rest of 1 to 9 on one side, make two groups. Okay. For this group, for this group, keep faith that it will be solved. Believe in God, in God, in Allah, in Jesus, whoever you believe in, believe that it will be solved. It will be solved and you will get its answer."
+  },
+  {
+   "start": 287.9,
+   "end": 318.06,
+   "text": "You will get the answer for this. And how will you get it? You will get it by calling the same function. Now if you call the same function on this, the rest of the array that is left, the one number on which you called, keep it separate. The rest of the thing that is left, no matter how big the ghost is, call this function only. Have faith that you will get the answer. Have faith that you will get the answer. That answer and the thing that you have done separately, the thing that you have done separately, the thing that you have done separately, we are just writing this in Hindi. We will tell you the template and pseudocode too. We are just writing this in Hindi to make you understand. Plus, whatever answer you got,"
+  },
+  {
+   "start": 318.16,
+   "end": 346.42,
+   "text": "Mix it and return it. Mix it and return it. If I give you an example, then you have to write an essay of 6 pages. You have to write an essay of 6 pages. Okay. The smallest input can be that if you have to write an essay of 0 pages, then what do you do? You don't write anything. You return only 0. If the teacher says that write an essay of 0 pages, then nothing. You return it empty-handed. You return empty paper. Very good. This is your small case. Assume that your main problem is that you have to write an essay of 6 pages. Now what do you do?"
+  },
+  {
+   "start": 346.42,
+   "end": 375.54,
+   "text": "Separate one page from the last one. What is this? Separate the last page. What is remaining? 5 pages. What is remaining? 5 pages. Assume that this will happen. Assume that someone will give you the answer. Your front, your back, your side will take the tape from somewhere. You will get the answer. Believe that you will get the answer. Once you get the answer of 5 pages, how will you add one page to it and return the answer of total 6 pages? How will you do this? You have to think about it. Come, let's explore this problem."
+  },
+  {
+   "start": 375.54,
+   "end": 395.7,
+   "text": "What is your problem? You have given an array. Okay. There will be some size of the array. It will be equal to n. Okay. What do you have to find out about this array? You have to find out the maximum. Okay. Now, the size of this is n. Make a thing. First of all. What is the smallest input of this? What is possible is the smallest input?"
+  },
+  {
+   "start": 395.7,
+   "end": 424.66,
+   "text": "Now someone will say, what is the minimum size of an array? The minimum size of an array can be 0, but it doesn't make sense. If it is 0, then nothing will be maximum. Okay. So in this problem, we think, logically it is thought, common sense is thought, then what is the smallest input? It will be an array of one size. One size array, because again, an array of zero size, see, an array of negative size does not exist. What is the maximum in an array of zero size? There is no maximum. An array of one size is making sense, that in an array of one size, we can take the smallest input. Okay, tell me, if we take an array of one size, in which one element is 12,"
+  },
+  {
+   "start": 424.69,
+   "end": 454.64,
+   "text": "What will be its maximum? Its maximum will be array of 0. Since the size of array is 1, then what will be its maximum? The same element, array of 0. So, you got the answer of the smallest input. If n is equal to 1, what will you return? Array of 0. You have done the first work. You have crossed the first hurdle. Very good. After that, what did we say? What is the second step? Suppose you get an array of 3 sizes. You get an array of 3 sizes. What did we say?"
+  },
+  {
+   "start": 454.64,
+   "end": 478.8,
+   "text": "The number or the size or the index on which you are right now, the function which is called right now, separate that. Okay. What does n is equal to 3 mean? That your array looks like this. 0, 1, 2. So, assume 3, 10 and 5. It will look like this. Okay. What does n is equal to 3 mean? What is the last element? What is the last element of the array? Array of 2. Array of 2 is the last element."
+  },
+  {
+   "start": 478.8,
+   "end": 505.23,
+   "text": "Separate this. Separate this. Separate this and keep it. Separate this and keep it. Array of 2 is equal to. Separate this and store it somewhere. Okay. Separate this. Now when you separate this. Assume that you cut the array from here. Cut the array from here. Tell 5 that we will keep 5 separate. And the rest of the array is one problem. The rest of the array is one problem. The whole array that is left. How much is its size? How much is its size? Its size is 2. Its size is 2. See. When you got the array in the beginning. Then n is equal to 3."
+  },
+  {
+   "start": 505.23,
+   "end": 528.99,
+   "text": "What did you do? n is equal to 3 means that what will be the last element of the array? Array of 2. You think that we keep the array of 2 separate. Let's make the rest of the array a separate problem. Now when the rest of the array will be separate, then what will be its size? 2. Assume that someone will tell you the answer to this. Assume that someone will tell you the answer to this. And who will tell you? This function will tell you. Magically, with magic, something will happen that this function will tell you the answer to this. Meaning, you will get a function."
+  },
+  {
+   "start": 528.99,
+   "end": 558.82,
+   "text": "will tell the maximum of these two. What is the function of these two? You have to tell the maximum of an array of given size. Assume that you will know the maximum of these two. The maximum of these two, which we will call the answer. What will be this? 10. You got the answer. Whose answer did you get? Remaining. 5 pages. You got the answer of the remaining 5 pages. You had kept the array of 2 separately, which was 5. Combine these two and give the final answer. Okay, now tell me one thing. You had an array."
+  },
+  {
+   "start": 558.82,
+   "end": 587.23,
+   "text": "You separate this element. The maximum of the rest of the array is something. The maximum of the rest of the array is 10. How it came, where it came, I don't know. This element is 5. Now, the maximum of these two will be the maximum of the whole array. It is obvious, right? That you have taken the last element of the whole array. If someone tells you the maximum of right from 0 to second last, then what will be the maximum of the whole array? The maximum of these two."
+  },
+  {
+   "start": 587.23,
+   "end": 616.58,
+   "text": "Are you able to understand this or not? What is the maximum of 5 and 10? 10. So, what will you do? You will return 10. Means, what will you do here? You will return whatever the max is. Whatever the array of n-1 you caught, and whatever the rest of the answer you got, you will return the max of that. So, you will get the maximum of the entire array. Okay? Come, let's write and run this. We are giving so much emphasis on this because it is a very basic problem. But if it is not clear, then there will be some problem in the future. That's why we are giving too much emphasis. We are telling simple things again and again. Okay?"
+  },
+  {
+   "start": 616.58,
+   "end": 649.86,
+   "text": "Come. So, we have to write a function which gives you what? Int fun. It gives you a vector. Good. And this vector also has a size. Okay. The first thing is base case. If n equal to 1. If someone gives you an array of one size, then what do you return? If someone gives you an array of one size, then you return array of 0. That's what happens. Return array of 0. What happened? Base case. Base."
+  },
+  {
+   "start": 649.86,
+   "end": 680.3,
+   "text": "Case. Is it right? Okay. Now, you are on the size. Now, you are on n is equal to 3 size. Let's assume that you are on n is equal to 3 size. So, what will be the last element? Array of 2. Means, array of n minus 1. So, what will we do? Int. Last is equal to array of n minus 1. Hold this and sit. Hold this and sit. Okay. What is left of the rest of the array? What will be the size of the rest of the array? Array of n minus 1 size will be left. The answer to that, assume that this function will give you. Assume. Assume. Int."
+  },
+  {
+   "start": 680.62,
+   "end": 702.93,
+   "text": "Answer is equal to fun a n minus 1. Not n because how much is the size of the rest of the array? n minus 1. You have caught the last element. The last element was the array of n minus 1. You have caught it. How much was the size of the rest of the array? n minus 1. Assume that you will get it. What is this? This is magic. This is magic. This is your belief that you will get it. Now, you have caught the last element of the array."
+  },
+  {
+   "start": 702.93,
+   "end": 731.89,
+   "text": "You have got the answer of the rest of the array. Means in the rest of the array, there is someone maximum who is in the answer. This is the last element. If you remove the maximum of both of them, then you will get to know who is the maximum of the whole array. What to do? Return. Who says this? When we say that how to connect the last and the rest? So if there was sum, if you were told sum of array, then you would have answered last plus. Minimum of array, then you would have answered minimum of last. If you had product of array, then you would have answered last into. But here because we have max."
+  },
+  {
+   "start": 731.89,
+   "end": 762.86,
+   "text": "We are max of last and answer. That's it. This is over. This program will work. Again, where is the work going on here? You won't know when you look from above that who is doing the work. Means, every time we catch the last. On this, someone said that the answer will come somewhere by magic. By mixing the two in the last. But how will the answer come by magic? Come, let's show how it will come. Remember this. Remember this program. This is the template. Every recursion which we are telling first type. Which you"
+  },
+  {
+   "start": 762.86,
+   "end": 792.9,
+   "text": "The first type in which you connect the last problem and the small problem and tell the answer. It runs on this template. Apart from this, there is no other template. When you write a program in dynamic programming, it will look like this. Okay? Come to this. We will show you this by doing a dry run. Assume this was your array. This was the original array. 5, 3 and 2. Okay? 0, 1, 2. Okay? In the beginning, from your main, what do you call?"
+  },
+  {
+   "start": 792.9,
+   "end": 821.39,
+   "text": "Fun of array of 3. Means, what is the size of the array in the beginning? It is 3, right? So, call 3. Come. What will be the call first? This. Come, let's run the program. Is it n1? Is it n1? No, it is not n1, it is n3. So, it will not work. Okay. Then, what do we do? Last is equal to array of n-1. Array of n-1 means, last is equal to array of 2. Is equal to, what is array of 2? 2. Okay, this worked. This worked."
+  },
+  {
+   "start": 821.65,
+   "end": 850.83,
+   "text": "Answer is equal to, answer is equal to fun of array, and reduce one size, reduce one size of it, because we have caught one last, reduce one size of it. So, what will happen? Answer is equal to fun, array, and is equal to 2. Okay? And what did we say yesterday? When you call one more function here, then controller goes to the next function, it has one line left, it has this return line left, but it won't work now. Later, we will run it in the last. Now, leave one line of it. Leave one line of it. Now, in which you came?"
+  },
+  {
+   "start": 850.83,
+   "end": 878.91,
+   "text": "Fun a and n is equal to 2. Fun array n is equal to 2. Run it again. It's the same function. The code of line of this function is the same. So, it will run the same every time. Is n 1? No. You haven't been able to enter the base case yet. Okay. No problem. Hold its last. Last is equal to array of n minus 1. Array of 1. What is array of 1? 3. It worked. Very good. Call its answer now. It will call the answer again. Answer is equal to"
+  },
+  {
+   "start": 878.91,
+   "end": 912.9,
+   "text": "fun of array n, n is equal to 1. One size is less. You again hold the last one in it. One is less. Again, as soon as you call this function, where does the control go? On the function. Where does the control go? On the function. Come, send the control to the function. array n is equal to 1. Now, now, now the importance of the base case comes here. Has n become 1? Yes, n has become 1. So, will there be any other call after this? No. What will we directly return? Array of 0. What will we directly return? Array of 0. Array of 0."
+  },
+  {
+   "start": 912.9,
+   "end": 943.82,
+   "text": "What is the area of 0? 5. We will directly do 5 as a return. So this is finished. This is finished. Where will its answer go? Where will the answer of 1, a and n equal to 1 go? Its answer will go directly here. Its answer will go directly here. 5. 5 will go directly here. Very good. Now, this one will run the remaining one. We said it runs upside down. It comes and then goes upside down again. Now run its last line. What was its last line? Return maximum of"
+  },
+  {
+   "start": 943.82,
+   "end": 972.62,
+   "text": "Last. And. Answer. Means. Maximum of. What was its last? 3. What was its answer? 5. Is equal to 5. What will it return? N is equal to 2. 5 will return. This is also done. Finished. This is also done. Finished. Where will its answer go straight? Here. Here came 5. Now. It also has one line left. Run this too. So. Return. Maximum of. Last and answer. Means. Maximum of 2 and."
+  },
+  {
+   "start": 972.62,
+   "end": 991.58,
+   "text": "5. What is the maximum of 2 and 5? 5. The answer to this is also over. Where will it go straight? And after this, what will you be able to print in the main? 5. See, was the maximum of the array really 5? Yes. So, where is the work happening? This is the matter of trust that where is the work happening? Work is happening everywhere."
+  },
+  {
+   "start": 991.58,
+   "end": 1014.35,
+   "text": "small small small small work is happening again and again that's why you don't get to know at once that the work is happening but the work is happening now believe me this work will be done so this step this step of keeping faith is very crucial that the work will be done if you do this right if you know how to join it correctly then the work will be done believe me so this was the first template on this template every type of question is of first type ok"
+  }
+ ]
+}

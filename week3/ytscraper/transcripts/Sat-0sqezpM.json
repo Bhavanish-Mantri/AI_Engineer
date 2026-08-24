@@ -1,0 +1,334 @@
+{
+ "video_id": "Sat-0sqezpM",
+ "title": "Path Sum Problem in 5 Minutes - No Confusion",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1832,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.33,
+   "text": "Hello friends, so everything is done, all the work is done. Today is Saturday, so let's start the video. We should study on Saturday. We should not study on Sunday, so we may not do it on Sunday. But this week is a little over, so let's start the video. The main agenda of this video is to explain you the path-sum. In the path-sum, you will understand a lot of things. First of all, you will understand what is root to leaf, how it is done, etc. Whenever you get such a question that take out something from root to leaf, not just sum, do anything from root to leaf. Print the root to leaf."
+  },
+  {
+   "start": 29.33,
+   "end": 59.02,
+   "text": "Root Salif ka kuch nikaalo, Root Salif me kuch bhi, kuch bhi. To aap wo sab aap isse kar sakte hain. Shahed, teen question karenge, maalu nahe kitna question karenge, lekin, teen, teen shahed karenge, to teen ho question dekhsiega. Pehla question samajhna zaroori hai, kyunki pehla question basic hai. Basic ka matla fundamental hai. Dusra question nakli hai, to dusra question, question dekh lijiye, khud se kariyega. Teesra question, pehle me thoda sa twist hai. To teesra bhi thoda sa dekhna zaroori hai. Teen ho question code ho jana chahiye, aapko jada, agar aap pehla samajh gaya to,"
+  },
+  {
+   "start": 59.02,
+   "end": 88.83,
+   "text": "If you have seen the recursion, then you don't need to see all three. You will understand all three. Just read the question and try it yourself. What are the three questions? One is path sum 1. One is path sum 2. And one is sum of root to leaf. Sum of root to leaf. Three similar questions will be made from the same template. If you see the code of path sum 1, then everything will be made from you. Where did it go? Yes, this. So this is the code of path sum 1. So from now on, after seeing one template, three will be made. Let's start quickly without wasting time. Let's go."
+  },
+  {
+   "start": 88.83,
+   "end": 119.18,
+   "text": "So, what is the first question? The first question is PathSum1. PathSum1 is a very easy, very fake question. What you have to do? I will tell you quickly. You have been given a tree. Obviously, the thing is that we are teaching a tree, so we have given a tree. Okay, we have given a root. You have also been given a target. A target sum has been given. Okay. You have to do true or false. What do you have to do? True or false. It is very simple. In which thing is true and in which thing is false? If, if, if, root to leaf path, root to,"
+  },
+  {
+   "start": 119.18,
+   "end": 148.93,
+   "text": "Leaf path. Remember when we were studying height, there was a discussion about root-to-leaf that there is something called a leaf from the root. Okay. Now, there is only one root in the tree. There are many leaves. There can be 3, 4, or 5 leaves. It depends on the tree. Now, if any root-to-leaf path is equal to the sum of root-to-leaf path. There will be some circle in root-to-leaf. It will come from the root to the leaf. If its sum is equal to the target,"
+  },
+  {
+   "start": 148.93,
+   "end": 177.54,
+   "text": "If the sum of any leaf from root to leaf, if the sum of any leaf from root to leaf, if the sum of any leaf from root to leaf, if the sum of any leaf from root to leaf, if the sum of any leaf from root to leaf, if the sum of any leaf from root to leaf, if the sum of any leaf from root to leaf, if the sum of any leaf from root to leaf, if the sum of any leaf from root to leaf,"
+  },
+  {
+   "start": 177.54,
+   "end": 206.24,
+   "text": "First of all, let's mark the root of this tree. There is only one root in the tree. This is our fifth root. Let's also mark the leaf. What is a leaf? A leaf is a tree that has no child. Even if there is a child, it is not a leaf. It is possible that someone has a child on the left but not on the right. So it is not a leaf node. Leaf node means a tree that has no child. Left is null and right is null. So this is a leaf node. And this is also a leaf node. This is also a leaf node. It is not a tree leaf node."
+  },
+  {
+   "start": 206.24,
+   "end": 231.31,
+   "text": "Now, the root is 1 and the leaf is 2. So, first of all, let's find the sum of 5 to 2. So, 1 will be 5 and then 2. What will be its sum? 7. The next leaf is also 5. So, you can go from 5 to 3. You can go from 3 to 1. So, its sum is 9. If your target sum is 7, then you have to do true return because it is going to happen. If it is 9, then you have to do true return because it is also going to happen. This is the question in total."
+  },
+  {
+   "start": 231.34,
+   "end": 260.69,
+   "text": "So this is a very easy question. There is no rocket science in this. There is nothing. We will tell you quickly. And we will tell you one template. We will tell you one template. With that template, you will also be able to do path sum to. We will also do it now. Path sum to is the same question. There is a small twist. We will see that later. But it will be made from the same template. Okay. What to do? See. What you have to do? You have to find the path from root to leaf. You have to find the path from root to leaf. So how will the path come out? Suppose there is a tree. Suppose there is a tree."
+  },
+  {
+   "start": 261.14,
+   "end": 288.05,
+   "text": "This is a tree, right? This is a small tree. 1, 2, 3, 4, 5, 6. Now, if we want to get the path of every leaf from the root, then obviously you must be able to understand that the recursion we used to do, we used to pass the root on the fun, that will happen. But what will we do in that? What will we do? Okay. Suppose if the root is null. Suppose if the root is null, then what can we do?"
+  },
+  {
+   "start": 288.05,
+   "end": 316.3,
+   "text": "What does root null mean? Suppose the tree given to you, its root is null, means it is not a circle. So what will we do? We will do nothing. We can't do anything in this, right? There is no discussion in this. Okay. If your root, which you are in this circle, if it is a leaf node, if it is a leaf node, now you will have to do some computation, now you will have to check something, that the sum of the path till now, the sum of the path till now, is it equal to the target? No, something. You will have to check something. Okay. If,"
+  },
+  {
+   "start": 316.5,
+   "end": 346.59,
+   "text": "The root is non-leaf. If the root is non-leaf, then what will you do? There can be three ways. Look, if you are standing on the circle, root means circle, or if it is null, then what will you do? You will do nothing. If it is leaf, then you will have to check something. You will do something. If it is non-leaf, then what will you do? Then nothing. Suppose you are here. This is a non-leaf. What is this? Non-leaf. It is not leaf. What do you want? The path from root to leaf means"
+  },
+  {
+   "start": 346.59,
+   "end": 376.85,
+   "text": "From here, you went here. Now you want the path to leaf. So what will we do? How will we go to leaf? We will go to its left and right and see. We will go to its left and right and see. We will also go to the left of the root. And we will also go to the right of the root. And you can't do anything else. You don't have to check anything on non-leaf. The path of non-leaf is not asked. The path of leaf is asked. So we have seen three cases. If null happens, then nothing will come back. If leaf happens, then we will check something or the other. If non-leaf happens, then we will go to its left and right. Okay, this is done."
+  },
+  {
+   "start": 376.85,
+   "end": 406.29,
+   "text": "How, how, how? We will traverse. How, how, how? What will we do? We will traverse. Okay. Now, now, now. You don't just have to traverse. You don't just have to go around the path. You want the sum, right? You want the sum of that entire path. What do you want of the entire path? Sum. So, it is very simple. See what we will do. This is your 1. Assume it is 2. This is 3. And this is 4. We are taking this very small tree. First of all, you come to 1. Root equal to 1. It will start from here. This is the root. It will start from here."
+  },
+  {
+   "start": 406.29,
+   "end": 436.1,
+   "text": "First of all, check if this root is null. Is this one null? It is not null. Now, if it is not null, it means there is some circle. There is some circle. There is some circle, but it is not null. If there is some circle, and you want the path, you want the sum of the path, you want the sum from root to every leaf, then why don't we take a sum is equal to zero. Here we take a sum variable too. And if this is null, then simply what to do? Sum is equal to"
+  },
+  {
+   "start": 436.1,
+   "end": 462.78,
+   "text": "sum plus the data of the root. If it is not null, then there must be some circle. There must be some circle. It must be on some path to go to leaf. If there is some circle, then there must be some path to go to leaf. Add this. Now, if this root is leaf, how will we check that its left is null and its right is also null? If it is leaf,"
+  },
+  {
+   "start": 462.78,
+   "end": 491.46,
+   "text": "So what do you have to do on leaf? You have to check on leaf only. Leaf means that you have come here. This is leaf. This is also leaf. You cannot go beyond this. Beyond this, you know that if this is leaf, then there is no left or right. So what will you do? You have to check here only. You have to check here only. So here, we will do a simple check that if sum equal equal to my target is done. Okay. And if we keep a global variable, then we will make the result true. Result means a boolean. We will take a boolean here. We will make the result true. Okay."
+  },
+  {
+   "start": 491.46,
+   "end": 514.45,
+   "text": "Now you are on the leaf. Is there anything else to do? No, there is nothing to do. You can't go ahead. Return. Return. It's over. Now, similarly, if this root was null, if it was null, what would you have done? You would have returned. What would you have done? You can't do anything. Come on. It's done. You have returned. Now, if you have come here, if you have come here,"
+  },
+  {
+   "start": 514.45,
+   "end": 543.25,
+   "text": "Means this is non-leaf. Means this path is not finished yet. You have to go to the leaf. You have to go to the leaf from this path. So what will we do? How will we go to the leaf? Go ahead. Call one fun call to the left of the root. And pass the sum too. Similarly, call one fun call to the right of the root. And pass the sum. And in the end, return here. The game is over. This is what we had to do. This is what we had to do. Let me tell you again what we are doing. See."
+  },
+  {
+   "start": 543.31,
+   "end": 571.34,
+   "text": "Let me tell you again what we are doing. See. 1, 2, 3, 4. This is your tree. First of all, we started with root. First of all, the program will start with root. So, root is equal to 1. And sum. How much should be sum in the beginning? When you don't have anything in the beginning, then how much? It should be 0. It became 0. First of all, check if it is null. It is not null. Is it leaf? It is not null. It is circle. So, first of all, what have we done? Sum is equal to"
+  },
+  {
+   "start": 571.34,
+   "end": 599.92,
+   "text": "0 plus 1 is equal to 1. We have added this circle to our sum. Because see, every circle, every circle is a part of some path, isn't it? From every circle, you will reach a leaf. Any circle, no matter how big the tree is. See, no matter how big the tree is. No matter how big the tree is. See, we make a big tree. Now take any circle. Take this. This is a part of some path. Which path is this? Which root to leaf is this? This is its part."
+  },
+  {
+   "start": 600.37,
+   "end": 628.72,
+   "text": "This is also a part of this. This is also a part of this. So it means that every person is a part of it. So what will we do with it? We will add the sum. Let's come back to the dry run. So where did we start? We will start from the root with the sum 0. So first of all, if it is not null, if it is not null, then it is a circle. If it is a circle, then it is a part of something. Add it. It is added. Now we have to see if this is a leaf node or not. If it is a leaf node, then your work is over. What is left now? Just check. But this is not a leaf node. This is not a leaf node. No problem."
+  },
+  {
+   "start": 628.94,
+   "end": 655.74,
+   "text": "If there is no leaf node, then you will have to go further down. What will we do? We will go to the left of it, i.e. to 2. And it will take the sum of 1. Remember, the sum of 1 has been taken, so it will take 1. And we will go to the right as well. We will go to the right and still it will take the sum of 1. This is a good thing. Now this function is called, so let's run it. Now we have come. The root has become 2 and the sum has become 1."
+  },
+  {
+   "start": 655.74,
+   "end": 682.16,
+   "text": "Same thing here also. If it is not null, it is a circle. If it is a circle, then add it. Adding means, the sum was 1 from the beginning. 2 is added. 1 plus 2 is equal to 3. Very good. Again, now 2 is not a leaf node. Leaf node means left is null and right is null. If there is a child of 2, then 2 is not a leaf node. Now what does leaf node mean? You have to go ahead. To go ahead means, you have to go to 4. Sum is equal to 3 and because the right child of 2 is null, then you will go to null."
+  },
+  {
+   "start": 682.16,
+   "end": 712.3,
+   "text": "You will go to null. You can also check here that we don't have to go to null. It won't be of any use. It will be fine. Let's run it on 4. Now we have come to 4. Sum is equal to 3. This is the same story here. It is not null. It is a circle. If it is a circle, then it is this. If it is a circle, then we have to add it. Sum is equal to 3 plus 4 is equal to 7. Now this is a leaf node. Now this is a leaf node. If it is a leaf node, then check it. To check means"
+  },
+  {
+   "start": 712.3,
+   "end": 741.6,
+   "text": "If your target was 7, then you would have made your answer true. That means you would have made your result true and would have returned it. And what would you have done? You would have returned it. Even if you don't have it, you would have returned it. Because see, there is no room to go anywhere after 4. So if your target matches, then you should prove it. If it doesn't match, then don't do it. That means you have to return it in both the conditions. So this is over. Now this null one will work. What happens in null? Nothing happens in null. You can't do anything in null. This will also work. 2 worked. Come to 3. Run 3. Fun."
+  },
+  {
+   "start": 741.6,
+   "end": 768.99,
+   "text": "3 and sum is equal to 1. Sum is equal to 1. This one is running. This one is running here. Again, if this is not null, then add it. What is your sum? 1 plus 3 is equal to 4. Now, there is a 3-leaf node. How did you know? Left is also null. Right is also null. If your target is 3, then very good. You have to make it true. If it is not 3, then you don't have to do anything. In both the conditions, you have to return from here. So, this is also over. This is over. So, you came here. Here, in the last, there is a return."
+  },
+  {
+   "start": 768.99,
+   "end": 787.62,
+   "text": "It means that you got two leaf nodes and one of them was 7 and the other one was 4. So if your target was 7 or 4, it would have been true. If your target was not 7 or 4, it would have been false. The code is very simple. Let's write this first. In the beginning, we will assume that"
+  },
+  {
+   "start": 787.62,
+   "end": 813.26,
+   "text": "Void fun."
+  },
+  {
+   "start": 813.26,
+   "end": 841.23,
+   "text": "Why void fun? Because there is no return in it. If it is true, then we will return it. You can also return it in this. We don't like it. We always like global. That's why we do this. You can return something if you want. One is root, one is sum and one is target. Target means the target that the lead code is giving you. First of all, if root is null, what to do in null? Nothing to do in null."
+  },
+  {
+   "start": 841.33,
+   "end": 871.76,
+   "text": "return it. If the root is not null, that means there is some circle, add that first. Sum plus is equal to root dot data. Added. This circle came in the sum. Now, check for leaf. If the left of the root is equal to null and both should be null, then the right of the root should also be equal to null. Yes, yes. What does this tell you? Leaf. If there is a leaf, then what? Check it. If"
+  },
+  {
+   "start": 872.53,
+   "end": 897.31,
+   "text": "Sum equal equal to target. Okay. If this is the case, what will we do? We will make the result true once. And return it. That's it. If there is no leaf, then what to do? And if you want to go down, then go down. First of all, go left. Go to the left of the root. Sum. Target. Once this is done, then go to the right of the root."
+  },
+  {
+   "start": 897.31,
+   "end": 926.02,
+   "text": "We have to go down, right? We'll go both ways. Now it's possible that one is null and the other is not. It doesn't matter. There is no leaf, right? There is something down there. We don't have to take the path up to here. We have to take the path of the leaf. So go down the non-leaf. You'll see what you get down there later. Take the sum. And take the target. This much is done. So just return it. It's over. Now from the main function. Main function means what will we call from the leadcode function? Nothing. Fun. Root."
+  },
+  {
+   "start": 926.02,
+   "end": 956.06,
+   "text": "What was the first sum? Zero and target. After this, if you have got the path, then this line will run and your true will be done. So after this, return true. The path sum is over. It was a very fake question. Let's move on to another fake question. This question, we will recommend you that once you understand the question, then try it yourself. This question is the exact copy of path sum 1. There is no need to understand or run your brain in this. Look at the question once."
+  },
+  {
+   "start": 956.06,
+   "end": 986.21,
+   "text": "Please try it yourself. Watch the video if you want to watch it. But there is not much in it. So if you want, then do this question yourself and skip to the part of path sum 2. So path sum 2 is a good question. A little bit. This is a useless question. There is nothing in it. Let's tell you what it is. A tree is given to you. Okay. You have to do the same thing. You have to find the sum of root to leaf. But there is a catch in it. What is the catch in it? Now assume there is one root in it. There is one root. Now it tells you to find the path of root to leaf."
+  },
+  {
+   "start": 986.21,
+   "end": 1016.59,
+   "text": "So, it has two leaves. Two leaves means these two. Both are leaves, right? Yes, both are leaves. Now, what did you have to do in path sum 1? You had to get the sum from here to here. So, if you had come here, what would be your sum? 3. If you had come here, what would be your sum of these two? 4. You had to do this. Here, without getting the exact sum, you were told to make a number by combining these two. What do you make by combining these two? Make a number. Means, you have to do the same thing. You have to come from root to leaf. After coming to leaf, what did you get? 1 and 2."
+  },
+  {
+   "start": 1016.59,
+   "end": 1044.54,
+   "text": "So that number should not be the sum of 1 and 2, it should be the number 12. What should it be? It should be 12. Similar story in the second leaf. In the beginning, 1 and 3. It should not be the sum of 1 and 3, it should be the number of 1 and 3. It should be 13. Okay. Once this is done, all such numbers, means when you make the number of all the root to leaf, sum them. What will be their sum? 25. You have to return this. You have to return this. Let's explain again."
+  },
+  {
+   "start": 1044.54,
+   "end": 1073.98,
+   "text": "In 5sum1, the simple sum of root to leaf was 1 plus 2 and 1 plus 3. You don't have to take the sum. What is the number of 1 and 2? 12. What is the number of 1 and 3? 13. When you get all these numbers, you have to return the sum. It is very simple. If you remember, we have done this sometime. We have taught this. What is it telling you to do? What is written in every circle? There are digits in every circle. There are digits in every circle. It is not that there are double digit numbers in any circle. No."
+  },
+  {
+   "start": 1073.98,
+   "end": 1103.86,
+   "text": "In any circle, the digits are from 0 to 9. That's why we make numbers. That's why we make numbers. You can make numbers by combining 1 and 3. Now if you combine 10 and 4, it will be difficult. It will be difficult. Okay. Digits are given. What do you have to make by combining digits? You have to make numbers. You have to make numbers. It has a very simple trick. If you know, if you have done palindrome, or if you have done a reverse number program, then you must know. If you don't know, then learn it. You should know."
+  },
+  {
+   "start": 1103.86,
+   "end": 1132.62,
+   "text": "If you want to make a number by adding digits, like one digit is 1 and one digit is 2. You have to make a number by adding them. How will you make it? In the beginning, you have to take a sum is equal to 0. In the beginning, it is 0. Now you have to add 1. What is the trick for adding 1? Sum is equal to sum into 10 plus digit. So see what will happen. In the beginning, the sum is 0. Suppose you want to add 1. So what will be the sum?"
+  },
+  {
+   "start": 1132.62,
+   "end": 1162.56,
+   "text": "Sum is equal to 0 into 10 plus 1. What did you make? 0 into 10, 0 plus 1. 1. Okay? Done? Now, you have to add 2 to this. You don't have to sum 2. You have to make a number and add 2. Do the same thing. Do the same thing. Look. Sum is equal to sum into 10 plus digit. What did you make? 1. 1 into 10 plus 2. What is 1 into 10? 10 plus 2. 12. Look, it's done. It's done, right? Assume that you have to add 5 to this. I mean, you have to add it to the number. Do the same thing."
+  },
+  {
+   "start": 1162.56,
+   "end": 1187.18,
+   "text": "Sum is equal to sum into 10 plus digit. 12 into 10 plus digit. What is 12 into 10? 120 plus 5, 125. See, the number is getting made. The number is getting made. That's it. This is what you have to do. In the path sum, what did you do here? You were doing this, right? What do you write by changing this? Sum is equal to sum into 10 plus root dot data. It will be connected."
+  },
+  {
+   "start": 1187.18,
+   "end": 1215.6,
+   "text": "Once you come to the leaf node, now you don't have to check anything on the leaf node. Now you don't have to check anything on the leaf node. You don't need this. Now when you have come to the leaf node, then what does your sum contain? Your sum contains 12. You have to keep adding it. Like we took boolean result is equal to true. Here what we will do? Boolean result is equal to whatever we took. What will we do in this? End."
+  },
+  {
+   "start": 1215.6,
+   "end": 1245.92,
+   "text": "Result is equal to zero. What is this? Total sum. When you reach the leaf, you don't have to do anything. Result plus is equal to sum. The game is over. This was it. What was it? What were you doing above? You were adding the data of root. You don't have to do that. You have to add numbers. What did you write instead of this? Sum is equal to sum into 10 plus root data. Now, here, path sum was checked. Here, you don't have to check. As much as the sum is made, as much as the sum of root to leaf is made, you have to add them all together. So, add them all together."
+  },
+  {
+   "start": 1245.92,
+   "end": 1274.29,
+   "text": "This will be the same. Return true, sorry, we had written return true here. Return rest, return rest, return rest, above also here. So this question is very fake, very useless. You can go and do this. Is it easy or medium? It is medium, not medium, it is super easy. If path sum was easy, then it is super easy. Go and do this. Now let's move on to path sum 2. Path sum 2 tells you a similar thing. Path sum 2 is very similar to path sum. If you are given a tree in this too,"
+  },
+  {
+   "start": 1274.83,
+   "end": 1304.3,
+   "text": "Assume that you have given a tree. And what is 1, 3? 4 and 3. 7. And assume that there is also 5 here. Okay? I mean, okay. You have given a tree and you have given a target 7. Target 7. Same. Same. Now, in path sum 1, what I had to tell you is that no matter what the path of root to leaf is, whether it is 7 or not, then we can see that 1, 2, let's make it 4. Let's make it 4. Yes. In this, you can see that 1, 2 and 4 are root to leaf. If it is 7, then true."
+  },
+  {
+   "start": 1304.3,
+   "end": 1333.18,
+   "text": "Similarly, 1, 3, and 3. This is also 7. So, you return true. You don't have to do this in this. In this, all the root-to-leaf, all the root-to-leaf's sum is 7. All the root-to-leaf's sum is 7. You have to return them by making them a vector. Vector of vector. For example, if we see the first path, then one vector becomes 1, 2, and 4. Is it correct? If we see one more vector, then it becomes 1, 3, 3."
+  },
+  {
+   "start": 1333.18,
+   "end": 1356.8,
+   "text": "Both of them have to be returned in one vector. What do both of them have to be returned in? One vector means list of list. Return 2D array. Return 2D array. It's the same question. It has a little bit of that. So, let's see what we'll do in this. The path sum we did in 1, we'll have to do that. What? The path sum we did in 1, we'll have to do that. So, we'll have to do that. Means, we'll have to write everything the same way. We'll have to make sum."
+  },
+  {
+   "start": 1356.8,
+   "end": 1383.25,
+   "text": "You have to check everything. But you have to do one extra thing. When your condition gets met in path sum 1. Means when sum equals to target. So what you used to do in this? You used to do result is equal to true. Now you don't have to do this here. Here you have to make a path along with sum. Or those who are following my recursion. Maintain a diary. Maintain a diary. Remember there used to be a diary maintained in recursion. What did diary say?"
+  },
+  {
+   "start": 1383.28,
+   "end": 1413.1,
+   "text": "The choice you used to take, you used to write it in the diary. You used to write it in the diary. When that work is done, before returning, you used to erase it from the diary. You used to erase it from the diary. You have to do the same work. How to do it? I will tell you now. Come. Assume this is your tree. One, two, three. What is here? Four. And there is three. Four and three."
+  },
+  {
+   "start": 1413.1,
+   "end": 1443.89,
+   "text": "It's a good tree. Okay. Where will we start from? Fun. Root is equal to 1. In the beginning, the sum will remain 0. And a diary. We will make a diary. Diary means an empty vector. Diary means an empty vector. Diary means an empty vector. So, this is an empty vector. Nothing like that. Okay. And a diary. Okay. Come on. If the root is null, then what do we have to do? Nothing. There was nothing in the path sum. There is nothing to do here as well. There is nothing to do in the root null. Okay. After that, what did the path sum do?"
+  },
+  {
+   "start": 1443.89,
+   "end": 1473.57,
+   "text": "If it is not null, then it means there is a certain circle. If there is a certain circle, then it will be in some path. We would have added it to the sum. We will add it here also. We will add it here also. Sum is equal to sum plus root's data. Root's data. It is added to the sum. And one more thing we will do is that you are adding it here. Write it in the diary. Write it in the diary. Because if you go from root to leaf, you will reach to leaf. Sum is equal to target."
+  },
+  {
+   "start": 1473.57,
+   "end": 1502.42,
+   "text": "So, how will you know which path it has come from? We will show it now. We will write this in the diary. This is the number of this root. Diary. Push back. This is the data of the root. This is the data of the root. We have written in the diary that we have come to this circle. Now, if this is a leaf, then what would we do? First of all, check. If."
+  },
+  {
+   "start": 1503.12,
+   "end": 1532.3,
+   "text": "Sum equal equal to target. If it is. What did you do in path sum 1? Result is equal to true. You don't have to do this here. Here. Your diary will be. Your diary will be your path. From which path. From which circle. Zigzag zigzag. And reach here. That you got the target. That will happen in diary. What do you do? In result. Push back. Simply. Simply. Yes. What is result? Result which you have to return. Vector of vector. This is result. Vector of."
+  },
+  {
+   "start": 1532.3,
+   "end": 1556.74,
+   "text": "2D array. This is your result. Push is done. Now, what did we do in path sum 1? Return. Because we can't do anything else after leave. But remember what we said in recursion. If you are maintaining a diary, if you are maintaining a diary, push in the diary."
+  },
+  {
+   "start": 1556.74,
+   "end": 1586.54,
+   "text": "It's a good thing. But reverse it before returning. Reverse whatever is changing in the diary. What has changed in the diary? Pushback has happened. What is the reverse of pushback? Pop back. Pop back. Diary dot. Pop back. Yes. Before returning. Now return. If there is no leaf node, then what would you do? You would do nothing. You would go left and right both. Fun. Go to the left of the root. Take the same sum."
+  },
+  {
+   "start": 1586.54,
+   "end": 1612.61,
+   "text": "Take the same diary. The push has already been done in the diary. Remember that the push has already been done in the diary. Go to the right. Go to the right. Take the same sum and take the same diary. Now, now, now. We used to return it here in the path sum 1. But, but, now look. You have pushed it here. You have changed it here in the diary. Now you have reversed it for the leaf. It has been reversed here for the leaf."
+  },
+  {
+   "start": 1612.61,
+   "end": 1630.0,
+   "text": "You have to reverse for non-leaf as well. If you don't write here, then it won't be reversed for non-leaf. It's good for leaf. For leaf, you have made a pushback popback here. But if it is non-leaf, then it won't go here. It will come down. Do the same thing here. diary.pop"
+  },
+  {
+   "start": 1630.0,
+   "end": 1659.98,
+   "text": "Those who have seen the recursion will understand it very well. Those who have not seen the recursion, then please go and watch the recursion once. We have taught a very small pattern of recursion. There is not much video in it. We have taught the recursion very beautifully. That is why we do not repeat it again and again. Because in recursion, we have given 30, 40, 1 hour on it. Why to reverse? Why not to do it? How is that choice made? How is it unique? We have done everything in recursion. So if you have not seen the recursion, then you should see it. You will get a lot of help. Not in tree, you will get help in graph. Then you will get help in DP."
+  },
+  {
+   "start": 1659.98,
+   "end": 1690.7,
+   "text": "If you don't see the recursion, then you won't be able to come here. This is an advance. That's why we are not giving much time to it. Okay? That's it. It's over. This is the path sum 2. Look at it. Let's do a dry run of this. Let's do a dry run of this. Let's do a small dry run of this. First of all, where will you go? Fun 1. From where? From 0. And your diary is empty in the beginning. Diary is empty in the beginning. If this is not a null, then what will we do? First of all, sum is equal to 0 plus 1 is equal to 1. And we will write this in the diary. So, we have written 1 in the diary. Okay? Now,"
+  },
+  {
+   "start": 1690.7,
+   "end": 1718.99,
+   "text": "Is this a leaf? Do you think this is a leaf? It is not a leaf. So what will we do? 1, 2, we will go to the left. With sum is equal to 1 and diary. Similarly, we will go to 3. With sum is equal to 1 and diary. So we are just showing you the left path. So let's execute the 2 path. Fun 2, sum is equal to 1 and diary as it is. What will we do? It is not null. Sum is equal to 1 plus 2 is equal to 3."
+  },
+  {
+   "start": 1718.99,
+   "end": 1748.93,
+   "text": "Write 2 in the diary. This is an extra step. Have you written it? What will we do here? Is it leaf or 2? It is not leaf. It is beta. Go to 4. Fun. 4. Sum is equal to 3 and diary. Let's execute this. See what will happen. Fun. We have come to 4. Sum is equal to 3 and diary. It is not null. It is a circle. It is not null. So what will we do? First of all, add it to sum. 3 plus 7 is done. Write 4 in the diary. Write 4 in the diary."
+  },
+  {
+   "start": 1748.93,
+   "end": 1776.29,
+   "text": "Write it. Now, 4 is leaf. See, 4 is leaf. If it is leaf, then check it. Let's assume that the target is 7. You have got it. So, will it be pushed? See, did you get the path or not? You got 1, 2, 4. Very good. So, in your result, you have got a path of 1, 2, 4. Now, what will 4 do before returning? From diary, pop back. From diary, pop back. So, in diary, this 4 popped back. Going back, where did we come? This is over. This is also over."
+  },
+  {
+   "start": 1776.29,
+   "end": 1804.46,
+   "text": "We came back to 2. The right side of 2 is null. So, nothing will happen with the null. Now, what does it do before returning 2? It pops back. So, now 2 is also popped. Where did we come back to? We came back here when 2 was also finished. Now, 3 will be executed. So, in the diary, 2 and 4 were pushed. But, these two popped. So, now we have to find the path of 3. Now, these two, these two 3. These two 3 will be added. 2 and 4 will not remain in it. So, these two 3 will be added here. 1, 3, 3. So, what will you get in the second path? 1."
+  },
+  {
+   "start": 1804.46,
+   "end": 1830.93,
+   "text": "3, 3. If you don't pop, suppose if you don't pop, then this 2 and this 4 would remain here. So what path would you get? 1, 2, 4, 3 and 3. You would get this. You don't want this, right? Root to leaf is a different path, right? One path is 1, 2, 4. One path is 1, 3, 3. So these two are there. If you don't pop, you would get this. This would be wrong. That's why we pop. This is very small. Let me explain to you. So this path is sum 2. Go and code this too and come immediately. Let's go."
+  }
+ ]
+}

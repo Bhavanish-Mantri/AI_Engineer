@@ -1,0 +1,449 @@
+{
+ "video_id": "TF53eWL47ws",
+ "title": "Best Explanation of Aggressive Cows Leetcode | Binary Search DSA Pattern",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2212,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.04,
+   "text": "After reading today's question, your brain will definitely be healed. We are going to do aggressive cows. It is not a very hard question. It is of a very strange size. When we used to study, people used to tell us that we have to do this or that. So, come today. The diagram is ready. See, we have made cows. Let's start. Watch from the beginning till the end. You can think of any company. From Amazon to Microsoft to Google, all these questions have been asked. There used to be a very hard question in the past. But it became so famous that it was made medium, Geeks for Geeks. So, new kids, check the description."
+  },
+  {
+   "start": 29.04,
+   "end": 52.02,
+   "text": "Older kids, come and learn aggressive cows together. So, sorry for the drawing. This is the drawing we get. So, let's tell your question. In this question, you have cows. What is cows? So, you must be seeing that this is very beautiful. You have cows. But you don't have one cow. How many cows do you have? K cows. So, you have cows in the form of K. Okay. And you have sheds. Shed means where cows are kept. Okay."
+  },
+  {
+   "start": 52.02,
+   "end": 65.12,
+   "text": "I have given you the number of the shed in the array, but the number in the array is to tell you the position of the shed. For example, 1, 4, 8, 10. If you look at all the sheds in such a way that I have a very big cow shed."
+  },
+  {
+   "start": 65.12,
+   "end": 94.03,
+   "text": "There are many types of sheds. So it tells you that one shed is on position 1, then the next one is on position 4, then the 8th one, then the 10th one. So this shed is empty. You can only keep cows in this. If there is no 2 in this, like after 1 there is 4, there is no 2, then the second shed is not empty, obviously. The third one is also not empty. Which one is empty? The 4th one. Then after 4, 5, 6, 7 is not empty. The 8th one. After 8, 9 is not empty. The 10th one. So you have this 1, 4, 8 and 10. These sheds are available. You have K cows. You have to put K cows in this shed."
+  },
+  {
+   "start": 94.03,
+   "end": 123.7,
+   "text": "Okay, this is fine, but now this will be a simple question that we will put K cows, put it in a line. No, what is the constraint? Look at the constraint, first we will tell you the constraint of the question which is written, then we will explain to you what it means, what it actually means, if it is written then anything can happen. You are told this, minimum distance between any two cows, sorry, the line went a little, it will be a little correct with me, any two cows, minimum distance between any two cows should be"
+  },
+  {
+   "start": 123.7,
+   "end": 150.56,
+   "text": "Should be maximum as possible. Now this is a very confusing statement. It is very difficult to understand this statement. What is written is not understood. So minimum distance between any two cows should be maximum as possible. So what does this tell us? Let me explain. For example, what does this line mean? Minimum distance between any two cows should be maximum. What does this line mean? Let us understand."
+  },
+  {
+   "start": 150.56,
+   "end": 177.5,
+   "text": "Suppose, suppose the shed given to you is like this, the shed is empty, it is given like this, 1, 2, 4, 8, 9. 1, 2, 4, 8, 9. So, 0, 1, 2, 3, 4. This array will be given to you. And you have been told that how many cows are there? Or what is your K? You have three cows, you have to keep three cows here. Okay. First of all, how many sheds are empty? The length of the array is the same, like 5."
+  },
+  {
+   "start": 177.5,
+   "end": 205.76,
+   "text": "If the area length is 5, then you have 5 sheds empty, okay? You have to keep 3 cows. So, okay, it can be kept. If, suppose, it happens that 2 sheds are empty and you have to keep 3 cows, then it can't happen. No, 1 cow needs 1 shed. You can't keep 2 cows in 1 shed. So, first of all, the number of sheds which is empty, which is the area length, should be equal or greater than the number of cows. This is the first thing. Okay. Now, see, 1, 2, 4, 8, 9. Come, let's make this. Suppose, this is your 1. This is your 2."
+  },
+  {
+   "start": 205.76,
+   "end": 229.74,
+   "text": "This is your 4, this is your 8, this is your 9. How many cows do you have to place? You have to place 3 cows. Let's see a combination from our mind that we keep cow 1 here on the other one. We keep cow 2 here. And we keep cow 3 at the end. We keep cow 3 at the end. There are 3 cows. Now what is said? Minimum distance between any of the two cows."
+  },
+  {
+   "start": 229.74,
+   "end": 248.24,
+   "text": "Minimum distance between any of the two cows should be maximum as possible. Maximum as possible. Look at this. Choose any two cows. Choose any two cows. And choose the distance between all the cows. Minimum distance. Minimum distance between any two cows. So, choose the distance between all the cows. Let's see what happens. First of all,"
+  },
+  {
+   "start": 248.24,
+   "end": 270.22,
+   "text": "How will the distance between cow 1 and cow 2 come out? See. 2 and 4. On which stall is cow 1? On which shed? On 2nd. And where is cow 2? On 4th. It's not like it will fall after 1, 2, 3. That's why I have told you the position. Cow 1 is on 2nd shed. Cow 2 is on 4th shed. So how much is the distance between? 4 minus 2 is 2. So the distance between these two is 2. Okay."
+  },
+  {
+   "start": 270.22,
+   "end": 296.26,
+   "text": "Similarly, what is the distance between cow 1 and cow 3? Where is cow 1? On the second shed. Where is cow 3? On the ninth shed. What is 9 minus 2? 7. So, its 7 has come. What is the distance between cow 2 and cow 3? Where is this? On the fourth. And where is this? On the ninth. So, what is the distance between 4 and 9? 5. Out of these three, now what is this? If you choose two cows, then what is the distance between all of them? Out of these three, what is the minimum? 2 minimum."
+  },
+  {
+   "start": 296.26,
+   "end": 322.05,
+   "text": "So, this is your 1. Now, this is the answer of this combination that this is 2. But, there can be many combinations like this. There can be many combinations like this. So, in all combinations, this 2 will come. What is this 2? This is 2. Minimum distance between any two cows. This is. In all combinations, where this will be maximum, you have to return that. So, this is the question. So, there can be many combinations. This is from your mind. You keep cow 1, cow 2, cow 3."
+  },
+  {
+   "start": 322.05,
+   "end": 350.78,
+   "text": "There can be a lot of answers. So you have to return this. Okay, let's see. First of all, let's open this. Let's open this line to see how the minimum distance between these two cows is. See, whenever you keep cows, if you keep cows in any combination, then how will you keep them? Will you keep them in a line? It is not that you will keep a cow above a cow. No, you will keep them in a line. Suppose you keep them anywhere. Suppose you have to keep three cows, then you keep them like this. Cow 1 comes here. And cow 2 comes here. And cow 3 comes here. Suppose you keep it like this."
+  },
+  {
+   "start": 350.78,
+   "end": 379.26,
+   "text": "Okay. Now, if we have said any two cows, then in any two cows, it can be possible that the distance between cow 1 and cow 2, the distance between cow 2 and cow 3, and cow 1 and cow 3, but what do you want of all of them? If you see here, these three came, two, seven, five came, but what do you want of these? You want the minimum one. You want the minimum one. Think about one thing carefully. Three distances. Here we can see that we can have three possible distances of three ways. One is cow 1,"
+  },
+  {
+   "start": 379.26,
+   "end": 406.93,
+   "text": "and the distance between cow 2, which is this distance. This is d1. One is the distance between cow 2 and cow 3, which is this distance, d2. There was another distance, which was the distance between cow 1 and cow 3, which is this distance, which is this distance. This is d3. Now, you need a minimum out of these three. That will be the answer to that combination. Out of these three, which will be the minimum? Now tell me one thing, think for yourself."
+  },
+  {
+   "start": 407.41,
+   "end": 437.22,
+   "text": "Is D1 minimum? Yes, D1 can be minimum. Can D2 be minimum? Yes, D2 can be minimum. But can D3 be minimum? What is D3? We are saying the distance between KAU1 and KAU3 is D3. But what is D3? What is D3? Is D3 equal to D1 plus D2? Is D3 equal to D1 plus D2? What are you doing? You are saying that Delhi and Jaipur"
+  },
+  {
+   "start": 437.22,
+   "end": 452.46,
+   "text": "Delhi and Jaipur is 200 KM from Jaipur Indore is 300 KM so how much will be Indore from Delhi? 200 plus 300 will be 500 KM now from these three"
+  },
+  {
+   "start": 452.46,
+   "end": 481.9,
+   "text": "Delhi to Jaipur can be a minimum. Jaipur to Indore can be a minimum. But how can Delhi to Indore be a minimum? Delhi to Indore is the sum of 200 and 300. So D3 is the sum of D1 and D2. So in any case, this thing is not needed. Cow 1 and cow 3 is not needed. If you don't understand the theme of cow, you will understand it later. Look at another example. Understand 4 cows. What do you understand? 4 cows means, Cow 1 is kept here. Cow 2 is kept here. Cow 3 is kept here."
+  },
+  {
+   "start": 481.9,
+   "end": 506.54,
+   "text": "Let's take out the distance. The distance between 1 and 2 is d1. The distance between 2 and 3 is d2. The distance between 3 and 4 is d3. Now, more distance is possible. d1, d2, d3. We have done random placing. Any one of these three can be the minimum. But, the distance between cow 1 and cow 3 is d3 is equal to d1 plus d2. Similarly, cow 2"
+  },
+  {
+   "start": 506.54,
+   "end": 536.45,
+   "text": "And the distance between cow 4 is d4 is equal to d2 plus d3. So, in any case, do you need d3 and d4? Can they be minimum? Do you need minimum in the end? Only then it is decided that what is the answer to this combination? What is the result of this combination? So, do you have any meaning between d3 and d4? No, because it cannot be minimum. How can it be minimum? d3 is d1 plus d2. So, how can it be minimum? So, what are you thinking? What can be minimum? d1, d2,"
+  },
+  {
+   "start": 536.45,
+   "end": 566.45,
+   "text": "D3. What is this? This is the distance between the adjacent cows. What is this? The distance between the adjacent cows. The distance between any two adjacent cows. You can see. The distance between 1 and 2. The distance between 2 and 3. The distance between 3 and 4. The distance between 1 and 4 is not going to work. If you start seeing the distance between 1 and 4, then this is the sum of all. D1, D2, D3. This is the sum of all. So how can this be the minimum? This is nonsense. This cannot be the minimum."
+  },
+  {
+   "start": 566.45,
+   "end": 596.13,
+   "text": "Okay, we have seen that the minimum distance between any two cows is nothing. This is simply the same thing as the distance between any two adjacent cows. Any two adjacent cows. Okay. So we understood this thing that the distance between any two adjacent cows. What to do with this? Maximize it. What to do with this? Maximize it. We had said that the people who watched the new video of binary search, they will regret a lot in life. In binary search, you have to find one thing. What to find in this?"
+  },
+  {
+   "start": 596.13,
+   "end": 625.98,
+   "text": "Minimum distance between any two cows. Which is? Minimum distance between any two adjacent cows. Any two adjacent cows. What does it have to do? It has to maximize it. It has to maximize it. Okay. What did we do in binary search? What do we have to find? We guessed it. We guessed it. We guessed it. Let's see how we will guess it. And after guessing, how the answer will come. And what will be the monotonic answer so that it becomes the question of binary search. We will see all this. Watch it very carefully. It is a very good question."
+  },
+  {
+   "start": 625.98,
+   "end": 653.73,
+   "text": "there is a problem in understanding once you understand then it will be printed in your mind ok let's go so what have I told you? I have told you that how are the stalls? there is 1 there is 2 there is 4 there is 8 there is 9 how many cows do you have? you have to keep 3 cows now the distance between any 2 adjacent cows you have to maximize the minimum distance between any 2 adjacent cows ok"
+  },
+  {
+   "start": 653.73,
+   "end": 679.79,
+   "text": "So, let's guess that our final answer is going to be 5. What is this 5? What did you guess? This 5 is minimum distance between any two adjacent cows. Isn't it? This is what we were looking for. We guess what we are looking for."
+  },
+  {
+   "start": 679.79,
+   "end": 706.96,
+   "text": "We don't guess something in the air, we just guess something else. No, we just guess what we want to return. So, minimum distance between any two adjacent cows, we just guessed that it is 5 and 5 will be my answer. So, now see, you guessed 5, but is 5 possible in reality? Does any such combination exist where you can keep a cow here and the minimum distance between two cows is at least 5, means it is at least 5. Let's see if it happens or not."
+  },
+  {
+   "start": 707.22,
+   "end": 735.84,
+   "text": "Suppose you put cow 1 here. Suppose you put cow 1 here. Where? On stall number 1. Suppose you put it on 1. Should we start from here? Okay. Now tell me one thing. Answer and tell me. Can you put cow 2 here? Can you put cow 2 on stall 2? If you put cow 2 on stall. Now what have you guessed? Minimum distance between any two adjacent cows should be 5. Minimum distance should be 5 or at least 5."
+  },
+  {
+   "start": 735.84,
+   "end": 753.66,
+   "text": "At least 5. At least 5. What is the distance between cow 1 and cow 2? How much distance is there between cow 1 and cow 2? 1. Is 1 at least 5? 1 at least 5 is not. 1 at least 5 is not. So can you keep cow 2 on 2? No, you can't. You can't keep it in any condition. Why?"
+  },
+  {
+   "start": 753.66,
+   "end": 779.63,
+   "text": "See, you will keep cow 1 on 1, because if you don't keep cow 1 on stall 1, then you are wasting stall 1, so you should keep cow 1 on stall 1. After this, where can you keep cow 2? You can't keep cow 2 here, here you will know that you can't keep it. Why can't you keep it? Because what have you guessed now? What have you guessed now? You have guessed 5, which means the distance between any two adjacent cows should be 5 or more than 5, it cannot be less than 5."
+  },
+  {
+   "start": 779.89,
+   "end": 809.42,
+   "text": "If it will be less than 5, then what will happen? Means your guess will be wrong only. You guessed or you planned it. Consider it as planning. Think of it as planning in your mind. We planned that we will keep the distance between 2 cows at least 5. So you can't keep cow 2 here. Can you keep cow 2 here? No, you can't. If you keep it here, then the distance between 2 cows will be 3. This is also not allowed. You need 5, at least 5. So you can't keep it here also. You can't keep it here also."
+  },
+  {
+   "start": 809.42,
+   "end": 831.02,
+   "text": "Don't place it here. Can you place the cow 2 here? Yes, you can. Why? Now, the distance between the two is 7. Now, the distance between the two is 7, which is more than 5. Now, the distance between the two is 7, which is correct. Now, there are only two cows left. The third cow is left. What is left for the third cow?"
+  },
+  {
+   "start": 831.02,
+   "end": 859.33,
+   "text": "Now look, there is an intuition that you can keep cows one by one, right? If you could not keep cow 2 here, then you will not be able to keep cow 3 either. Meaning to say, you tried for cow 2, but 2 and 4 did not happen. So now you will not try this for cow 3. You will not be able to try this for cow 3. Now look, can you keep cow 3 here on 9? You cannot keep it because then the distance between cow 2 and cow 3 will be 1. What did you want? You wanted 5. You cannot keep cow 3 here either."
+  },
+  {
+   "start": 859.33,
+   "end": 886.46,
+   "text": "But if you don't keep cow 3 here, then where will you keep it? Look at your shed, what happened to your shed? It's over, you don't have any more shed left. So when you guessed 5 or did 5 planning, what you should think is that we will place a cow in such a way that the distance between any 2 cows is at least 5. At least 5 or minimum 5 or whatever. But you noticed that because of thinking 5, why couldn't you do it? Because you took such a constraint that we only want 5."
+  },
+  {
+   "start": 886.46,
+   "end": 913.54,
+   "text": "You couldn't place it. You couldn't place it. You couldn't place it. Wait a minute. What does it mean to say? When you think in your mind that we will do it from 5. We will not let the distance between two cows be less than 5. Then you see that you couldn't place the cow. Your one cow remained like this. So it means that 5 cannot be your answer. If you see from this logic that by doing this 5 cannot be the answer. 5 cannot be the answer."
+  },
+  {
+   "start": 913.54,
+   "end": 940.85,
+   "text": "Let's see, guess one more with me because you are a brave man. Guess three. What does it mean to guess three? Now what you are saying is that we will not allow the distance between two cows to be less than three. We will not allow anyone's distance to be less than three. See, why are we saying this? Why do you think that you have thought something in your mind that this is not written in the question, but it is written in the question. Assume that you think three as your answer. Three as your answer, final answer. So what is the final answer?"
+  },
+  {
+   "start": 940.85,
+   "end": 965.12,
+   "text": "Minimum distance between any two cows Or minimum distance between any two adjacent cows And its maximum So you have thought that 3 is the maximum But what is that? Minimum distance between any two adjacent So if you make the distance between two cows 2 Then how will the minimum be 3? Then the minimum should be 2 That's why So if you make it 2 Then how will the minimum be 3? Yes, you can do this Keep 10 between C1 and C2"
+  },
+  {
+   "start": 965.12,
+   "end": 989.49,
+   "text": "Keep 5 between C2 and C3. Keep 4 between C3 and C4. Yes, now everyone is bigger than 3. And it is possible that the distance between C4 and C5 is 3. So 3 is your answer. But if it is less than 3, then 3 cannot be 3. That is why we are talking in this way that we cannot let this happen. We cannot let this happen. So let's see if it is possible or not. Right?"
+  },
+  {
+   "start": 989.49,
+   "end": 1018.58,
+   "text": "So, now you think that we will not allow the distance between two cows to be less than 3. Good thing. So, put the first cow on the first shade. See, what is the adjacent of the first cow? Side by side. So, the first cow is the first cow, right? So, put the first cow here. Again, now where can you keep the second cow? Where can you keep the second cow? Can you keep the second cow here? No, you can't. Because if you keep it, then the distance between the two will be 1. Which is less than 3. You can't let it happen. So, you can't keep it here. But,"
+  },
+  {
+   "start": 1018.74,
+   "end": 1047.07,
+   "text": "Can you place cow 2 here? Yes, you can. Because now the distance between these two is 3. 3 will work. 3 will work. Don't let it be less than 3. 3 will work. Now cow 2 is placed. But can you place cow 3 here? No. Because then the distance between these two is 4. 4 will work. Don't let it be less than 3. Now look, with this combination, cow 1 here."
+  },
+  {
+   "start": 1047.07,
+   "end": 1077.04,
+   "text": "Cow 2 here, cow 3 here. Now see, the distance between any two adjacent cows is not less than 3. So can 3 be your answer? Yes, it can be. If you do 3 planning, then 3 can be your answer. 3 can be your answer. Okay. Now we will do two things from here. We will do two experiments and see. We guessed 5, it could not be 5. We guessed 3, it could be 3. Okay. Guess 4 too. Guess with me that 4 can be or not. So come. 1, 2, 4."
+  },
+  {
+   "start": 1077.04,
+   "end": 1102.21,
+   "text": "8, 9. Now, what are you guessing? 4. Now, what are you guessing? 4. Means, any distance between two adjacent cows will not be less than 4. So, keep cow 1 here. Where can we place cow 2? Can we place cow 2 on 2? No, we can't. Can we place cow 2 here? No, we can't. No, no, no. It will be 3. Can we place cow 2 here? Yes, we can. Because distance between 1 and 8?"
+  },
+  {
+   "start": 1102.21,
+   "end": 1123.79,
+   "text": "It is 7. It should not be less than 4. Okay. Cow 2. But can you put cow 3 on 9? No. Now the distance between these two will be 1 which will not work. So you can't put cow 3 here too. Now, but see you don't have a shed to keep. Now you can't keep 2 cows again. So guess is equal to 4 is also not possible. So what did we find out? 3 is possible."
+  },
+  {
+   "start": 1123.79,
+   "end": 1153.49,
+   "text": "4 is not possible, 5 is not possible. Now, did you see any pattern? Now we know this, not in the code, but from the above, we know that on any guess, you will get to know whether you can place all the cows on that guess or not. Because you have to place all the cows. You have to place all the cows. So, using any guess, you can place all the cows or not, you got to know. Okay. So, what did you get to know? You got to know till now that when you took 3, then 3 worked. 3 worked, yes."
+  },
+  {
+   "start": 1153.49,
+   "end": 1161.57,
+   "text": "Four, nahi kaam kiya. No. Five, nahi kaam kiya. No. Toh, agar four aur five nahi kaam kiya hai,"
+  },
+  {
+   "start": 1161.57,
+   "end": 1190.86,
+   "text": "Can 6 ever work? 6 means that the distance between any cow will not be less than 6. Okay, tell me one thing. When 4 was not possible, when you thought that the distance between any cow will not be less than 4, in that only your stall decreased and you did not get space. So do you think that 6, when we are saying that what is the meaning of 6? What is the meaning of distance? When you keep 4, then your cows will be a little spread. Means 1 will be here, 2, 3 will be a little far. When you make it 6,"
+  },
+  {
+   "start": 1190.86,
+   "end": 1209.87,
+   "text": "distance between any two cows should be at least 6, then the cow will look more spread. If 4 is not possible, if your stall ends at 4, then do you think that 6 will ever work? No, 6 will never work."
+  },
+  {
+   "start": 1209.87,
+   "end": 1239.68,
+   "text": "If 3 works, then will 2 always work? Yes, 2 will always work because you said earlier that we will not let the distance between any cow be less than 3. It worked. Now you are saying that we will not let the distance between any cow be less than 2. So tell me one thing, which combination worked in 3? Which combination worked in 3? If you remember in 3, then 1, 2, 4, 8, 9. This combination worked in 3. Keep cow 1 here."
+  },
+  {
+   "start": 1239.68,
+   "end": 1267.82,
+   "text": "Keep the cow 2 here, keep the cow 3 here. This combination used to work. Now look at this. For whom did it work? For 3. Look at any two adjacent. The distance between these two is 4 minus 1, 3. Very good. The distance between these two is 8 minus 4, 4. Very good. Okay. So it is working for 3. It means that the distance between any two cows should not be less than 3. It will work on 2. Because what does 2 say? The distance between any adjacent cow should not be less than 2. So it is not less than 2. Where is it?"
+  },
+  {
+   "start": 1267.82,
+   "end": 1284.3,
+   "text": "Is it 3? Is it 4? Where is it? 1. Will it work on 1? Yes, it will work on 1. What does 1 say? The distance between any two cows should not be less than 1. So where is it less than 1? Nothing. When 3 and 4 are not less than 3, then how will it be less than 1? So 1 will also work. So..."
+  },
+  {
+   "start": 1284.3,
+   "end": 1307.39,
+   "text": "This means, if you start guessing, suppose this is your distance, this is your minimum distance, your requirement, that the distance between any cow will not be less than this. Suppose if you start guessing this, 1, 2, 3, 4, 5, 6, 7, 8, anything. So see, suppose 3 used to work."
+  },
+  {
+   "start": 1307.39,
+   "end": 1333.22,
+   "text": "then 1 will also work and 2 will also work. If 4 didn't work then 5, 6, 7, 8, nothing will work. Is this monotonic? Yes, it works. And what comes? Turning point. After that, all are no. So is the answer of guess monotonic? Yes. What are you searching from this? What are you searching from this distance? Maximum."
+  },
+  {
+   "start": 1333.22,
+   "end": 1362.58,
+   "text": "From this distance, you have to maximize the maximum. What is the question? Maximize. Maximize. What do you maximize? In which the answer is yes. In which the answer is yes. In which the answer is no, it is not possible. In that, you will lose the cow. In which the answer is yes, you are seeing that distance 1, distance 2, distance 3. These three are getting yes. But what is the question in this? Maximum or last occurrence. Last occurrence. Yes. Last occurrence. Last occurrence. Yes. Last occurrence. So,"
+  },
+  {
+   "start": 1362.58,
+   "end": 1368.46,
+   "text": "How is the answer of your guess? There will be a lot of yes from one line."
+  },
+  {
+   "start": 1368.46,
+   "end": 1392.78,
+   "text": "A lot of yes will come from a line. Then a lot of no will come from a line. And it will never go back. It will never happen that when you try distance 5, you know that we can't keep it. And when you try distance 8, you know that we can keep it. It will never happen. It will never happen. What do you have to find out from this? Last occurrence of yes. So how did you do last occurrence? Suppose your guess comes here. On yes."
+  },
+  {
+   "start": 1392.78,
+   "end": 1415.04,
+   "text": "We used to write its answer. We used to write its answer. And we used to go to its right and check if there is anything left or not. The left one cannot be there. If you have got yes on distance is equal to 3, then why check distance 1 and distance 2? You wanted maximum. Yes, it is possible that distance 4 is also there. So, you should check distance 4. So, you should go to right. How to go to right? Low is equal to"
+  },
+  {
+   "start": 1415.04,
+   "end": 1433.17,
+   "text": "Guess plus 1. Similarly, if you come on no, if your guess is no, if distance 5 is not working, then distance 6, 7, 8, 9, 10 will not work. You should go straight left. How do you go? High is equal to guess minus 1. Everything is solved."
+  },
+  {
+   "start": 1433.17,
+   "end": 1463.44,
+   "text": "One thing is not solved, when we will tell you the distance, you will ask 3. We have to check on 3. How will the answer of 3 come out? So let's see, whatever we have told in Hindi, we will write it in code. Whatever we have told in Hindi, we have to write it in code. There is no such thing above, we will just write it in code. And if you know, if you understand, then we will encourage you to write it yourself. See, we will tell you how to write in code. Suppose you have given this array. 1, 2, 4."
+  },
+  {
+   "start": 1463.44,
+   "end": 1486.85,
+   "text": "8, 9, 0, 1, 2, 3, 4. Okay. You have k is equal to 3. What is k? Number of cows. Okay. Now, assume that you have guessed one. You will guess every time. And assume that your guess is 3. Your guess is 3. You have to find out that when we are thinking that we will not let the distance between any cow be less than 3, then can we place all the cows? Come. Now, see."
+  },
+  {
+   "start": 1486.85,
+   "end": 1513.49,
+   "text": "So, the first obvious thing is that we will place one cow on stall 0. Place the first cow in the first stall. Why are you wasting one stall? Why do you want to take the first cow later? It won't be of any use. That stall will be wasted. Place the first cow in the first stall. What will we do? int cows is equal to 1. That means, we have placed 1. Where should we place it? At the position of area of 0. We will take one more. Previous position."
+  },
+  {
+   "start": 1513.49,
+   "end": 1542.98,
+   "text": "Previous position is equal to area of 0. Means, how many cows are there? One. Means, one cow has been placed. And at which position is it? At stall number 1. Now, what is our main target? Now, you have to place all the cows. Now, let's see where we can place the next cow. So, let's see. For i is equal to 1, i less than n,"
+  },
+  {
+   "start": 1542.98,
+   "end": 1571.2,
+   "text": "i++, we have to go to every stall and find out whether we can keep the next cow here or not. So suppose you come here and stand, come here and stand at stall number 2. Okay, the last cow, the last cow that was placed, where is it standing? At the previous position. The last cow, cow 1, where is it standing now? It is standing at 1. What will be the distance of both? Int distance is equal to, whatever, array of i minus previous position. Previous position. How much will it be?"
+  },
+  {
+   "start": 1571.2,
+   "end": 1594.72,
+   "text": "2 minus 1, 1 will come. Meaning, if you place this gaon here, then the distance between these two gaons will become 1. But do you agree with 1? Do you agree with 1? If your distance is less than your guess, meaning if this distance is less than our guess, then you don't agree at all. You have to continue. What do you have to do? Continue. You can't do anything."
+  },
+  {
+   "start": 1594.72,
+   "end": 1617.39,
+   "text": "You can't do anything. You can't place here. But if you can place, then congratulations. Increase your cow. Means one more cow has been placed. One more cow has been placed. Congratulations. And update the previous position. What? Update the previous position with array of i. Array of i. Why? Because look, where did it go first?"
+  },
+  {
+   "start": 1617.68,
+   "end": 1628.51,
+   "text": "First, you had kept cow 1 here. So, the previous position was here. You were calculating from here that we cannot keep cow 2 here. Once you have kept cow 2 here, now you will think for cow 3. Now, cow 3..."
+  },
+  {
+   "start": 1628.51,
+   "end": 1656.82,
+   "text": "means cow 3 means cow 2 and not cow 1 so now you have to make this your position and calculate from here so when we come here at 8 so what we will see that the first cow was here so 4 to 8 its distance is equal to 4 so we can place here or we can do yes because our 4 is bigger than 3 or equal so we can do so that's why update it and do like this in the last in the last in the last now see here you will pass k also k means number of cows"
+  },
+  {
+   "start": 1656.82,
+   "end": 1686.38,
+   "text": "And what does this KAU tell you? How many cows did you successfully keep? So if your KAU is greater than or equal to K, return true. Meaning, it is possible. This is just to say that if there are 3 cows, according to your calculation, if you can keep 6 cows in it, congratulations, it is a good thing. You have 3 cows, you can keep 6. Very good. But if you had 3 cows, and according to this calculation, you came to know that no, we are able to keep only 2 cows in it, then what do you have to do? Return false. Else?"
+  },
+  {
+   "start": 1686.38,
+   "end": 1713.86,
+   "text": "return false means suppose you know you can do it here also here also if cow is equal to k then you return but it is fine it is a small thing what I mean to say is if you had to keep 3 cows and you succeed in keeping 6 it is a very good thing congratulations return true means this guess can work if you had to keep 3 and you can keep 2 then it is not a good thing now this cow will be left so you can't do this so this is its small code"
+  },
+  {
+   "start": 1713.86,
+   "end": 1744.72,
+   "text": "We will also do the dry run of this. First we will write the code and then we will do the dry run. First of all, we will write this function. First of all, if there is a function, then we have a Boolean function. In which we will pass vector of int of stalls. stalls int n int k which is the number of cows and int guess which is our distance. First of all, we will keep cows equal to 1. You want to keep the first cow on the first stall."
+  },
+  {
+   "start": 1744.72,
+   "end": 1774.9,
+   "text": "And int position is equal to stalls i. Position is equal to stalls i. The first cow is here. Now, go to every stall one by one and see if you can keep cows or not. Go to every stall one by one and see if you can keep cows or not. So, first of all, what will be the distance? Where is the previous cow and the distance between this stall. Int dist is equal to array of, sorry, array of i means stalls of i. Stalls."
+  },
+  {
+   "start": 1774.9,
+   "end": 1803.84,
+   "text": "i minus position if this distance if this distance is less than your guess means it is 1 but you guessed it means you don't want it to be less than 3 don't do anything continue you can't do anything move forward yes if it is not like this then very good you have succeeded in keeping a cow keep the cow somewhere immediately because why will you waste the stall never waste the stall don't think that yes it is good but I will keep it further no stall should not be wasted cow plus plus and"
+  },
+  {
+   "start": 1803.84,
+   "end": 1822.03,
+   "text": "Position is equal to stalls. I mean, now cow 2 is placed here. So, now for cow 3, calculation will be done with cow 2. So, next you will work for cow 3. After doing this, what will cow give you? Number of, in which you are successful. How many cows you are successful in placing. So, if my"
+  },
+  {
+   "start": 1822.03,
+   "end": 1849.92,
+   "text": "Cow greater than or equal to K. Why are we not doing equal-equal? It is possible that this calculation will increase. It is possible that according to your calculation, your stall, you think that we can keep 6 cows. But suppose you have 3, then it is fine. If there are 6, then it is fine. If there are 6, then it is 10. There should be 3. If there are 3 cows, then there should be 3 cows. If this is the case, return true. Otherwise, return false."
+  },
+  {
+   "start": 1849.92,
+   "end": 1885.04,
+   "text": "This is the function of this. To find the answer of the guess. What is the time complexity of this? Order of N. We will write this later. See here. Now, let's write the main program. Now, let's write the main program. This is the helper function. What have you given in the main program? Int. Aggressive. You have given 1, 2 vectors. Vector int. Stalls. And you have given 1 int k. k means number of cows. So, first of all, int N is equal to. In this, we"
+  },
+  {
+   "start": 1885.52,
+   "end": 1907.6,
+   "text": "Okay, it won't be possible here. Okay, it's okay. n is equal to stalls.size. Okay. One more thing. One more thing. It's a very important thing. Till now, the stalls that we were solving, these stalls were sorted. 1, 2, 4, 8, 9. But if you were given such a stall, if you were given such a stall, which is unsorted, like this. 4, 9, 8."
+  },
+  {
+   "start": 1907.6,
+   "end": 1931.9,
+   "text": "2, 1. So, do you have to sort it? Yes, you have to sort it. The minimum distance between any two cows, means the distance between the adjacent cows, depends on the position and if the position is not sorted, then suppose you put cow 1 on 4. Now, can you put cow 2 on 9?"
+  },
+  {
+   "start": 1931.9,
+   "end": 1943.18,
+   "text": "Now you will know where the first cow was kept. The first cow was kept on 4. So you will think that we can keep cow 2 on 9. Now you will count cow 3."
+  },
+  {
+   "start": 1943.18,
+   "end": 1972.56,
+   "text": "Can you keep cow 3 at 8? So now you will know that the first cow was kept at 9. So now how will we know the cow? To keep it, you will have to see a lot of things, right? You will have to see a lot of things. So then you will have to see the distance between each cow. If it is unsorted, if it is unsorted, it means that it is all random. You keep the cow in any random stall. Now you have to check on someone that we can keep it in this stall or not. So you will have to see the area around it. Is the area around it full or not? It will be very haggled. That's why it is important."
+  },
+  {
+   "start": 1972.56,
+   "end": 2003.62,
+   "text": "keep this position and fill the stall line by line means first you fill the 1 then you fill the 2 then you fill the 4 then you fill the 8 then you fill the 9 what will happen with this? it will be very easy for you that can we keep the cow here or not? just see the adjacent one behind it doesn't mean anything because it won't be minimum in any situation that's why what you should do? you should sort this stalls.begin whatever you use for sorting stalls.end ok, it's sorted now"
+  },
+  {
+   "start": 2003.62,
+   "end": 2026.7,
+   "text": "What comes in this? Low. How much is the minimum distance between two cows? According to your intuition. Now see, one cow will not climb on one. If one cow will be on 1, then the other cow will be on 2. So 2 minus 1 is 1. 1 will happen. 1 will happen. And low is equal to 1. Okay. Now in this type of stall. In 1, 2, 4, 8, 9."
+  },
+  {
+   "start": 2026.7,
+   "end": 2046.37,
+   "text": "If we tell you to place two cows anywhere, place them in such a way that the maximum distance between them is possible. So what will you do? You will place cow 1 here and cow 2 here. So the maximum distance between any two cows is possible. There is no difference between adjacent and non-adjacent. It will be 8."
+  },
+  {
+   "start": 2046.37,
+   "end": 2065.23,
+   "text": "You can't keep 2 cows at a distance of more than 8. Where will you keep them? If you keep cow 1 at 1, and you want to keep the next cow at a distance of 9, then you need stall no. 10. You don't have stall no. 10. Which last stall do you have available? 9. So, even if you want to keep them at the farthest distance, you will keep them at 1 and 9, which is 8. So, what can be your highest guess?"
+  },
+  {
+   "start": 2065.23,
+   "end": 2087.01,
+   "text": "stall of n-1-stall of 0 means the last stall is minus 1st stall if we will guess after this then the answer will not be like this but it will be like this suppose you come to east you guessed that my guess is 20 so it is fine you will keep cow 1 here then you can't keep it here also can't keep it here also can't keep it here also can't keep it here also can't keep it here also so its answer will be like this"
+  },
+  {
+   "start": 2087.01,
+   "end": 2114.7,
+   "text": "What is possible maximum? If you keep it on 1, then you will keep it on 9. 8 is not possible. So, there is no need of more than that. So, what will be the high? Because we have sorted. So, where will you get the last stall? On the last index. On the last index. And where will you get the first stall? On the first index. Where will you get the first stall? On the first index. This is your low-high. Just start guessing, int, rest is equal to some minus 1, keep it. While,"
+  },
+  {
+   "start": 2114.7,
+   "end": 2145.9,
+   "text": "Now it's simple. Once you write this function, everything is simple. Low less than equal to high. Okay. First of all, guess. What? The middle one. Low plus high by 2. Now, if. Whatever is our fun. What used to pass in fun? A. Not A. Whatever. Your stalls. Stalls. N. K. Guess. Means. If this is true. If this is true. Then remember what we used to do."
+  },
+  {
+   "start": 2145.9,
+   "end": 2177.87,
+   "text": "Yes, yes, yes. If it was true, you came here. What did you do? Answer note or write. Answer note or write. Means, rest is equal to guess or write. Write means low is equal to guess plus 1. Else, no. What did you do in no? What did you do in no? You came here. Left. No need to do anything. High is equal to guess minus 1. Let's erase this. In no, high is equal to guess minus 1. This is closed. Return."
+  },
+  {
+   "start": 2177.87,
+   "end": 2185.78,
+   "text": "rest return rest means the last occurrence of yes you got the answer see this is the whole program what is the time complexity?"
+  },
+  {
+   "start": 2186.0,
+   "end": 2211.31,
+   "text": "The time complexity of this while loop is log n. But what is the time complexity of this fun? Only order of n. Because it will go on the whole stall. It will check on the whole stall. Total time complexity and log n. This fits what we had learned the first day. How long does it take to get the answer of guess? Maximum order of n should take. In most cases. So, you have completed your aggressive cause. Please code. It is a very important question. See you tomorrow."
+  }
+ ]
+}

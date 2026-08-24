@@ -1,0 +1,409 @@
+{
+ "video_id": "F86WfZ5RUC8",
+ "title": "DSA PATTERNS Episode 26 | Prefix Sum Pattern Introduction | DSA ROADMAP 2025",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2330,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 21.78,
+   "text": "Welcome to episode 26 of PrefixSum DSA Patterns. It was a very requested pattern. By the end of this video, you will learn everything. You will learn the entire flowchart, which data structure is used to solve PrefixSum, how it is solved. There are 4-5 types of patterns in it. And you will also learn its template, that it does this work, as we learned in Sliding Window. Before that,"
+  },
+  {
+   "start": 21.84,
+   "end": 51.89,
+   "text": "Those who haven't got the sheet, it is in the description. It is pattern-operated, question-operated. Those who are coming for the first time, my name is Pratyush. I am in Akamai. I teach DSA pattern, not Rattvata. Let's go. Prefixum is a very popular pattern of interviewers and students. Because a lot of questions are asked in it. The concept is very simple to say. But you will see how hard the question will be made with this concept. Let's go. Without wasting time. Before giving the knowledge of flowchart and template, it is important to explain to you what prefixum is. Isn't it? Is it right? Look."
+  },
+  {
+   "start": 51.89,
+   "end": 81.2,
+   "text": "Prefix means first. And sum means sum. So prefix sum means first sum. One way you can assume that this whole template only applies to array. Only applies to array. If prefix sum is explained to you in very easy language. So if someone asks you that if we are standing on index 2. Tell us what was the sum in this array before index 2. What sum means till now? Till now in this array of 0 plus"
+  },
+  {
+   "start": 81.2,
+   "end": 109.82,
+   "text": "What was in array of 1? This is called prefix sum. Prefix means before. What was going on before i is equal to 2? This is called prefix sum. It is possible that i is equal to 2 wants to take a decision using this. And when you come here, when you come to i is equal to 3, you will ask the same question again. What was going on in array of 0 plus array of 1 plus array of 2? It is possible that it wants to take a decision using array of 3. This concept is called prefix sum. This is not an algorithm."
+  },
+  {
+   "start": 109.82,
+   "end": 138.77,
+   "text": "What is this? It's a concept. It's a concept. You can't call it an algorithm. It's not an algorithm. It's a concept or a DSA pattern. It's a pattern on which some kind of questions are made. Very special questions are made which will be solved with this pattern and will never be solved. Okay. Let's go. So, let's see the flowchart. That's when you get more interest. Look at the flowchart. What is there in the flowchart? The first thing is that it's a question of array and sub-array. It should be a question of array and sub-array. It should be certain. There can be two types of things in it."
+  },
+  {
+   "start": 138.77,
+   "end": 163.95,
+   "text": "Either ask sum of subarrays, number of subarrays with sum, count of subarrays with sum, subarrays having maximum sum, subarrays having minimum sum, ask something like this. Or ask sum of left and right. What does left and right mean? You are told to go to every index of the array and from 0 to the index before that, the sum is called left. From that index to the end, the sum is called right."
+  },
+  {
+   "start": 163.95,
+   "end": 193.39,
+   "text": "and try to find some pivot or equilibrium in both of them means try to find some condition between left and right this type of question can be asked if this type of question is there then you are very lucky you don't have to do much in this you don't need any special data structure you can do it with simple variables or with array we will learn how to do it so you are very lucky if you get such a question then very good this is the question of prefix sum congratulations otherwise if the question of sum of all arrays is there and one more important thing"
+  },
+  {
+   "start": 193.39,
+   "end": 220.96,
+   "text": "Array also has negative numbers. Array also has negative numbers. Because remember, those who are studying from the beginning, we have already talked about sub-arrays in depth. In which? In sliding window. The whole discussion of sliding window was on how to remove sub-arrays, how to remove windows. So why do we have to study this now? When we studied sliding window so well, then what is this? You are teaching different things again and again. For one thing, you have to study 5 things. No. Sliding window does not work in negative. Sliding window does not work in negative."
+  },
+  {
+   "start": 220.96,
+   "end": 246.67,
+   "text": "Remember the question of sliding window. Have you ever seen any negative value in any question? No, you haven't seen it because sliding window doesn't work in negative. We will tell you why it doesn't work. We will tell you a little. So, there should be a negative number in the array. Because if it is positive, then you can put a sliding window. Sliding window does all kinds of questions well. But there is a negative in the array. Okay. After that, if you are asked for an exact thing, see, this sum, sum ij,"
+  },
+  {
+   "start": 246.67,
+   "end": 273.38,
+   "text": "This means any sub-array between two indexes, the sum of the sub-array between them. If you are asked either equal equal to k, or if you are asked modulus k is equal to equal to zero, that means the sum will be either an exact k, tell me such a number of sub-array, or tell me something that if we mod it from k, it will be zero, that means the multiple of k, tell me that. In this condition, you have to use hash map. For what? As a prefix sum data structure."
+  },
+  {
+   "start": 273.38,
+   "end": 301.36,
+   "text": "Prefix sum is a concept. To use prefix sum, you need some data structure. You need something to store sum. You need a variable, a hash map, a tree, a queue, anything. You need data structure. If you have to find equal or modulo k equal to 0, you will use hash map. It is still a good thing. If you want shortest window with sum greater than or equal to k, this is what we were saying. Look at this."
+  },
+  {
+   "start": 301.36,
+   "end": 325.33,
+   "text": "We have read this exact question in sliding window. What is there in this? There is also negative in this. Sliding window can't work in negative. So if you get this question with negative, you will have to use a DQ. Don't worry, we know you don't know DQ. We will teach you. We will teach you immediately. I mean, there will be a question nowadays, we will teach you. And the third category is a very hard category."
+  },
+  {
+   "start": 325.33,
+   "end": 355.31,
+   "text": "There is a very low chance that he will ask you in an interview but if you give an interview on Google, then he can ask you. Range sum. You have to find the range sum that there is a range on the left and right and there is some sum in between. At that time, you have Merge, Sort on, Prefix, Array. It is a very complicated concept. We will teach it with time. Today, tomorrow, or day after tomorrow, we will teach it with time for an hour. Anyway, this is very hard. This is very easy. You will know for yourself how easy it is."
+  },
+  {
+   "start": 355.31,
+   "end": 386.27,
+   "text": "This is also easy, this is medium and this is hard. This is how the flowchart works. This is how many numbers are there. One, two, three, four. There are four categories of questions. Apart from this, no question comes out of this on the prefix sum. I guarantee that it won't come out of this. Let's talk about the template later. First, let's talk about some important things. First of all, why doesn't the sliding window work on negative? Why doesn't the sliding window work on negative? Because,"
+  },
+  {
+   "start": 386.27,
+   "end": 414.18,
+   "text": "what we used to do in sliding window 0,1,2,3,4 we used to include high in our result and low in our result so if we had to reduce the sum then we used to shrink the low if we had to increase the sum"
+  },
+  {
+   "start": 414.18,
+   "end": 437.7,
+   "text": "So, we used to expand high. That's why it will increase. But, this is only possible with positive number. For example, if negative number starts coming. Suppose, here is minus 1 and here is low. And here is high. So, you see, when you shrink low. It means that you are removing minus 1 from your sum. Means, you are removing negative number. Then also your sum will increase. Then also your sum will increase. In the same way, in the same way."
+  },
+  {
+   "start": 437.7,
+   "end": 467.34,
+   "text": "If you have a negative number and you expand the high and try to bring the high here, then your sum will be reduced. Your sum will be reduced. So your decision-making power is reversed. We used to expand the high to increase the sum and shrink the low to decrease the sum. But by bringing the negative number, if you shrink the low, your sum may increase. If you expand the high, your sum may decrease. So the sliding window fails completely. In which? In the negative case. It's a very important question. You can be asked in the interview. Remember it. Let's go."
+  },
+  {
+   "start": 467.79,
+   "end": 497.76,
+   "text": "Now let's come to what is a prefix sum. As we have already told, prefix sum is the sum of the element at the back of the array. The sum of the element after the array is called suffix sum. Suffix means later. Suffix sum. Array is very simple. For example, if we give you an array. We will tell you that there is such and such element in the array. There is 1, 2, 3, 4 and 5. 0, 1, 2, 3, 4."
+  },
+  {
+   "start": 497.76,
+   "end": 526.13,
+   "text": "So, what will be the prefix sum of any index? What will be the prefix sum of any index? The sum before that index means, if we talk about i is equal to 2, its prefix sum will be Array of 0 plus Array of 1. It's simple, till behind that index. If we talk about i is equal to 4, then its prefix sum will be Array of 0 plus Array of 1 plus Array of 2 plus Array of 3. Simple. But,"
+  },
+  {
+   "start": 526.13,
+   "end": 554.9,
+   "text": "If we talk about i is equal to 0, what will be its prefix sum? Nothing will happen. Its prefix sum will be 0. Its prefix sum will be 0. Because there is nothing before i is equal to 0. That means there is nothing behind it. i is equal to 0 is starting. Similarly, what will be the prefix sum of i is equal to 1? Only a0 will be there. Nothing else will happen. The prefix sum is called the first sum of the index. This is the concept. Now, why did we talk about data structure? Why did we talk about such a big DQ and PQ? Because prefix sum is a concept."
+  },
+  {
+   "start": 554.9,
+   "end": 583.3,
+   "text": "How do you store this sum? If the sum is in the array, then you store the sum in the array or in the variable. This is a very good thing. But you will get such a chance in your life when you will not only talk about a variable or an array. What is this sum? This sum at the back, this sum at the front is an information. This is an information. How will you store this information to make the most of it? For that work, this data structure is written in the flow chart."
+  },
+  {
+   "start": 583.3,
+   "end": 612.85,
+   "text": "All this work comes. All this work comes for that work. Okay. So, let's assume, let's do a very simple program. It is not on the sheet, but it is important to understand it. It is important to understand it. If we say, this is your array. 1, 2, 3, 4, 5. 0, 1, 2, 3, 4. We have asked you a question, that print all the left values. Left values means, print the prefix sum of every index."
+  },
+  {
+   "start": 613.01,
+   "end": 640.94,
+   "text": "Don't do anything for i is equal to 0. Print 0 for i is equal to 0. For the rest, print the sum behind it. So, what is the most basic method of this? What is the most basic method of this? You make another array. What? Make another array of the same size. The same size as your original array. 0, 1, 2, 3, 4. We will name it prefix. Prefix. For the beginning, put 0 in the sum. For the beginning, put 0 in the sum. Okay? Now, now."
+  },
+  {
+   "start": 640.94,
+   "end": 671.17,
+   "text": "We don't have to do anything for i is equal to 0. i is equal to 1. What should be in the prefix array in i is equal to 1? a0. a0 should be there. Do you agree to this? What should be in i is equal to 2? a0 plus a1. Okay. What should be in i is equal to 3? a0 plus a1 plus a2. This should be there. What should be for i is equal to 4? a0 plus a1."
+  },
+  {
+   "start": 671.17,
+   "end": 704.56,
+   "text": "Plus a2, plus a3. This should be it, right? You must be seeing some pattern. a0, a0 plus a1, a0 plus a1 plus a2, a0 plus a1 plus a2 plus a3. You must be seeing some pattern. Come, let's write this on the prefix array index, so it will look more. Come. Prefix, this is 0, is equal to array of 0. This is array of 0 plus array of 1. Sorry, prefix 0, no, prefix 1."
+  },
+  {
+   "start": 704.56,
+   "end": 734.45,
+   "text": "Prefix 1, because there will be no prefix 0. Prefix 0 denotes all the sums before 0. If there is no index before 0, then it will be 0. Okay. And this will be 0 plus array of 1 plus array of 2. What will this be? Array of 0 plus array of 1 plus array of 2 plus array of 3. Okay. This will be the prefix. You are told that this is the prefix that you have to do. So do this."
+  },
+  {
+   "start": 734.58,
+   "end": 766.67,
+   "text": "Prefix 3 and prefix 4. So, one way is that you can make your array by doing this. You can make your array by using this algorithm. Keep running nested loop and keep making. But, what is important to note is that we can write prefix 2. Prefix 2. What is prefix 2? Prefix 2 is array of 0 plus array of 1. Array of 0 is already stored in your prefix 1. Put the value of array of 0. Put the value of array of 0 in the prefix term."
+  },
+  {
+   "start": 766.67,
+   "end": 796.74,
+   "text": "So, what will be your prefix 2? Prefix 1, yes, plus, plus, what is left? Array of 1. Simple thing. This is prefix 2. What will be prefix 3? Do the same thing in prefix 3. Look at prefix 3. Array of 0 plus array of 1. Array of 0 plus array of 1 plus array of 2. Array of 0 plus array of 1 is your prefix 2. Look, both are the same. Look at this."
+  },
+  {
+   "start": 796.74,
+   "end": 826.9,
+   "text": "Put the value and see. This will become prefix of 2 plus array of 2. See. If we put its value as prefix of 2, it will be its array. Prefix of 2. Write the value of prefix 4. Prefix 4. Do the same thing. Do the same thing. See. Array of 0, array of 1, array of 2. Array of 0, array of 1, array of 2. The whole. What is the whole? Prefix 3. What is left? Array of 3. Write it. Prefix."
+  },
+  {
+   "start": 827.15,
+   "end": 858.72,
+   "text": "Prefix of 3 plus array of 3. Is there any pattern? Now you will know the pattern. What was prefix of 2? Prefix of 1 plus array of 1. What was prefix of 3? Prefix of 2 plus array of 2. What was prefix of 4? Prefix of 3 plus array of 3. Meaning? Prefix of i is equal to prefix of i minus 1 plus a minus i minus 1. See this."
+  },
+  {
+   "start": 858.72,
+   "end": 885.42,
+   "text": "This is your equation. This is the equation of prefix sum. Prefix of i is equal to prefix of i minus 1 plus a i minus 1. This is the equation. It will fit in the sum. How will we get prefix of 1? We will get it. What is prefix of 1? Prefix of 1 is area of 0. Prefix of 1 is area of 0. What is prefix of 0? Prefix of 0 is 0. We will leave it as 0. In the same way, what will be prefix of 1?"
+  },
+  {
+   "start": 885.71,
+   "end": 916.0,
+   "text": "Prefix of 1 is equal to, you can write 0 plus array of 0, is equal to prefix of 1 is equal to prefix of 0, prefix of 0 plus array of 0. See, same equation has come. Prefix of i is equal to prefix of i minus 1 plus ai minus 1. That's it, come. If we want to write this by coding, what will we do? First of all, we will make a vector. First of all, we will make a vector. Vector int prefix."
+  },
+  {
+   "start": 916.0,
+   "end": 945.97,
+   "text": "Yes, now see, the Mahanubhavs must be thinking that, oh sir, we don't do this, you don't even know the optimized method. We know everything, we will tell you to tell, okay? So don't worry about me, we know, we will tell you to tell. Just for i is equal to 1, because we have to start from 1, we have to take from 1. And i++, prefix of i is equal to, is equal to, prefix of i minus 1."
+  },
+  {
+   "start": 945.97,
+   "end": 972.27,
+   "text": "plus ARA of I minus. Simple. And return this. If you do return prefix, then you will get that ARA. That's it. We have done prefix sum in this small code. We know how to find prefix sum of any ARA. Why to find it like this? Right. Now, in the same way, in the same way, in the same way, suffix sum can also be found. Suffix sum. Suffix sum."
+  },
+  {
+   "start": 972.3,
+   "end": 1001.87,
+   "text": "Suffix sum is not a separate concept. It is taught along with prefix sum. Because prefix and suffix are the same. It works on the same concept. What does suffix sum say? If you have an array. If you have an array. 0, 1, 2, 3, 4. And you have a suffix array. This. 0, 1, 2, 3, 4. It will work just the opposite. What does prefix array say? The sum before i. Suffix says the sum after i. The sum after right. Right. Right. The sum after right."
+  },
+  {
+   "start": 1001.87,
+   "end": 1032.0,
+   "text": "Obviously, our suffix of 4 will have 0. Because there is no index available after 4. Suffix of 3 will be array of 4. Suffix of 3 will be array of 4. Suffix of 2 will be array of 3 plus array of 4. Suffix of 1 will be array of 2 plus array of 3."
+  },
+  {
+   "start": 1032.0,
+   "end": 1062.0,
+   "text": "Plus area of 4. You must be seeing the same pattern. Those who are smart kids, those who are cute kids, must have seen the pattern. All cute kids must have seen a good pattern. If you have seen it, then pause and make it yourself. Don't stay in printing. Okay? Those who know the pattern, write this equation yourself. This equation, write it yourself. Pause the video. And those who don't understand the pattern, then come and print it together. What is happening here? Same is happening. Suffix 3 is equal to A4."
+  },
+  {
+   "start": 1062.0,
+   "end": 1092.61,
+   "text": "The equation that will be made in this, suffix of i is equal to suffix of i plus 1 plus a i plus 1. The prefix is completely opposite. What did the prefix say? Prefix i is equal to prefix i minus 1 plus a i minus 1. Suffix is completely opposite. Suffix i is equal to suffix i plus 1 plus a i plus 1. It is completely opposite. If you do this, you will get a suffix error."
+  },
+  {
+   "start": 1092.61,
+   "end": 1123.36,
+   "text": "So now you have learnt how to make prefixes and suffixes. What do both of them denote? Any prefix i denotes the sum from 0 to i-1. The sum from 0 to i-1. Any suffix i denotes the sum from i-1 to n-1. The sum from i to i-1. The sum on the right."
+  },
+  {
+   "start": 1123.36,
+   "end": 1151.47,
+   "text": "So, if you look at any array, if you look at any index, here i is, we call this one left part, or prefix sum, or prefix sum, and we call this part right part, and we call it suffix sum. Suffix sum. Suffix sum. Is it right? From here, from here, we call it segway. Do you understand what segway means? Segway."
+  },
+  {
+   "start": 1151.98,
+   "end": 1183.02,
+   "text": "Segway means that what we were talking about is going to transition very easily in our first question. Our first question which is our first question. What is our first question? Find pivot index. Leetcode 724. Find pivot index. Find pivot index. Watch very carefully. Please watch very carefully. Those who have watched till here, then watch. You have already wasted 19 minutes. Means you have wasted 19 minutes. And waste 19 minutes and watch."
+  },
+  {
+   "start": 1183.02,
+   "end": 1212.35,
+   "text": "Let's go. Find pivot index. What does the question tell you? You have been given an array. You have been given an array by doing this. You have been given an array. 1, 7, 3, 6, 5, 6. 0, 1, 2. You have to tell an index. You have to tell any such index in which whatever is its left sum is strictly equal to the right sum. Left means prefix sum. Right means suffix sum."
+  },
+  {
+   "start": 1212.35,
+   "end": 1243.98,
+   "text": "You have to tell an index in which prefix of i is equal to suffix of i. Suffix of i. You have to tell this. You have to tell this. You have to tell an index like this only. So, from what we have read, a question will be like this. You know how to make prefix array, you know how to make suffix array. So, let's see how it will be done. Let's see how it will be done. So, this is our array. Our array is 173. 173 and 656."
+  },
+  {
+   "start": 1244.08,
+   "end": 1275.2,
+   "text": "6, 5, 6. 0, 1, 2, 3, 4, 5. Let's quickly make a prefix array. Let's quickly make a prefix array. Let's make an array of the same size. This is our prefix. This is our prefix. What is prefix 0? 0. After that, what is prefix i? i is equal to prefix i minus 1. The value at the back plus a i minus 1. The sum of both. So, the value at the back plus 1. 1 or 7? 8. 8 or 3? 11. 11 plus 3? 17. 17 plus 5? 22."
+  },
+  {
+   "start": 1275.2,
+   "end": 1306.3,
+   "text": "This is your prefix array. Make a suffix array. Start making the suffix array inverted. 0, 1, 2. Yes. That's why we say watch the whole video. Those who know that they have left, their suffix array will be wrong. They won't be able to do anything in life. Those who have left after watching till now, that leave it, he keeps saying, they won't be able to do anything in life. How did we write the code to make the prefix array? How did we write the code to make the prefix array? i is equal to 1, say i less than n, i plus plus. Why? Because"
+  },
+  {
+   "start": 1306.3,
+   "end": 1334.42,
+   "text": "Prefix i. Prefix i minus 1. We wanted the value at the back. Does suffix need the value at the back? No. Suffix needs the value at the front. So from where will you start making the suffix? From the front or from the back? From the back. Because if we make it from the front. If. See in this. It is very big. That's why we say watch the whole video. Because we don't write the script and teach. It suddenly came to mind. In which order does prefix array populate? First p0 is made. Then p1 is made."
+  },
+  {
+   "start": 1334.42,
+   "end": 1363.82,
+   "text": "Then P2 is formed and then P3 is formed. Why? Because P3 needs P2. P2 needs P1. P1 needs P0. But in suffix array, suffix of n-1 is 0. Everyone knows this. After that, suffix n-2 will be formed. Why? Because it needs the previous value. n-2 needs its previous value. After that, this will be formed. Then suffix n-3 will be formed. Meaning, if there is an array of 5 lengths, then first of all, we will write suff 4 as 0. There is nothing after this."
+  },
+  {
+   "start": 1363.82,
+   "end": 1392.62,
+   "text": "After that, the sum of 3 will be made. After that, the sum of 2 will be made. After that, the sum of 1 will be made. And at the end, the sum of 0 will be made. It is being reversed. So how will it be made? i is equal to n minus 2. Because n minus 1 is already 0. i greater than or equal to 0. i minus minus. Now you can write here, the sum of i is equal to the sum of i plus 1 plus the area of i plus 1."
+  },
+  {
+   "start": 1392.62,
+   "end": 1423.06,
+   "text": "the loop will go the other way round, it will crash like this because if we know the next value then we will make it you are using the suff of 0 for the suff of 1 but you are making the suff of 0 first, so what will you use it for? same thing, watch the whole video, okay? let's go yes, what does your question say? find an index in which the prefix i is equal to the suffix of i so make both, let's go, make the suffix from the back first will be 0, last one will be 0 then 6, 11, 17, 20"
+  },
+  {
+   "start": 1423.06,
+   "end": 1453.39,
+   "text": "No. 6, 5, 6 came first, then 5, 11 came, then 17 came, then 20 came, and then 5, okay. Now, you don't have to do anything. Check on every index whether the prefix of i and suffix of i are equal or not. Is it equal on 0 index? Is it equal on 0 index? No. On 1 index? No. On 2 index? No. Yes, it is equal on 3 index. It is equal on 3 index. It is equal on 3 index. Got it. So, i is equal to 3. Return it. Return i is equal to 3."
+  },
+  {
+   "start": 1453.39,
+   "end": 1484.27,
+   "text": "It will be a very simple code. But this is not the right way. It is a good way. It will be submitted on the lead code. But this is not a good way. Give me the first thing. You had to make different arrays for prefix sum and suffix sum. You had to make two different arrays. You had to make two arrays. You had to make two arrays. Keep this in mind. Many teachers leave two arrays after teaching. They leave it after teaching. We too could have left it. But this is not the right way. The interviewer will not accept it."
+  },
+  {
+   "start": 1484.27,
+   "end": 1515.73,
+   "text": "So, you have to make two arrays. So, it is very difficult to make two arrays. Why are you making two arrays? It is not fun to make two arrays. Okay. See, on every i, what do you need? You just have to check that my prefix of i is equal to my suffix of i. Suffix of i. You have to check this. Prefix of i is equal to suffix of i. Okay. See."
+  },
+  {
+   "start": 1516.56,
+   "end": 1547.76,
+   "text": "Suppose this is your array. This is your array. 0, 1, 2, 3, 4, 5. So this is 1, 7, 3, 6, 5 and 6. You need prefix of i on every i. You need prefix of i. What is prefix of i? On i is equal to 0, what will be prefix of i? It will be 0. Prefix of 0 will be 0. On i is equal to 1, what will be prefix of i?"
+  },
+  {
+   "start": 1547.92,
+   "end": 1576.35,
+   "text": "It will be array of 0. On i is equal to 2, it will be array of 0 plus array of 1. On i is equal to 3, it will be array of 0 plus array of 1 plus array of 2. So, see, it is increasing with each element. It is increasing with each element. So, there is no need for the whole array. We had said that the array is simple. We have already made an array so that it is convenient. But there is no need. How is there no need?"
+  },
+  {
+   "start": 1576.35,
+   "end": 1606.22,
+   "text": "You can assign a variable. If you assign a variable, left is equal to 0. For example, left is equal to 0. On every i, you update the left. On every i, what were you doing earlier? You were preparing the whole prefix array. On every i, update the left. How will you do it? See. When you come to i is equal to 1. Because our program should start from i is equal to 1. And i should end by n minus 2. Because on i is equal to 0, there is no left space. You can keep it, there is no problem. Leave it."
+  },
+  {
+   "start": 1606.22,
+   "end": 1634.11,
+   "text": "I is equal to 1. When you come to I is equal to 1, then what happens? Your left is 0. Now what to do? In left, add plus is equal to array of 0. Just do this much work. What are we saying? When you come to I is equal to 1, you add the first element to your left. Now your 1 is done."
+  },
+  {
+   "start": 1634.11,
+   "end": 1662.7,
+   "text": "Left is 1, where is i is equal to 1? Look at the prefix array, i is equal to this. It was 1 in the prefix array, it became 1. Now keep this, we will talk about the right later, look at the left. First, how will we do the prefix array in a variable? How are we funneling the whole array in a variable? Whenever you go to i is equal to 2, what do you do? Add the old element to the left, add a1. Do left plus is equal to a1. What? Left was 1 earlier, you added a1 to 1."
+  },
+  {
+   "start": 1662.7,
+   "end": 1692.74,
+   "text": "1 plus 7 is 8. This is your prefix. See. Prefix to 8. Similarly, similarly, when you go to i is equal to 3, what do you add to the left? Array of 2. See. Array of 2. 3. This will become 11. Prefix of 3 will also be 11. See. Prefix of 3 will also be 11. So, there is no need of prefix of i. We can make a variable and get a prefix. So, this was about prefix."
+  },
+  {
+   "start": 1692.74,
+   "end": 1720.69,
+   "text": "How to make a suffix? For suffix, we have to make an array because it comes from the back. No. Look, if you understood left, what did we do? The whole prefix array, we were making the whole prefix array first, then we were using it. Here, we are making it simultaneously. For every i, we are updating the left and making it as left. What happens? Left means sum, isn't it? We read it from array, we read it from hash map. That's why we were saying that the importance of data structure."
+  },
+  {
+   "start": 1720.75,
+   "end": 1749.01,
+   "text": "Prefix is the same concept. Here also you are doing the same concept. Prefix was also the same concept in making the array. The difference between using the array or the variable or what to use depends on that. One thing we came to know that we will make the left. We are able to make the left. What are we doing? Left plus is equal to array of i minus 1. If we are doing this, then what is becoming ours? It is becoming. Okay. Let's go. Now what will we do? See. Now right key is required."
+  },
+  {
+   "start": 1749.71,
+   "end": 1782.58,
+   "text": "Where did our right part come from? From suffix of I. We made it left, how will it come right? Come, let's see how it will come. 173, 173, 656. 656, okay. 0, 1, 2, 3, 4, 5. Let's write its prefix and suffix array quickly. Just for explaining. We have made the prefix left, but still to explain how to get the suffix array. 0, 1, 2, 3, 4, 5. What was its 0? It was 1."
+  },
+  {
+   "start": 1782.58,
+   "end": 1813.04,
+   "text": "8, 11, 17, 22. This was the prefix. What was the suffix? What was the suffix? 0, 1, 2, 3, 4, 5. The suffix was made from here, 0, then 6, then 11. Then this, one minute, 6, 5, 11. And 6, 17, 20 and 27. It was made like this, okay. Now look at it carefully. This was the suffix, right? Yes, it was. Now look at it carefully."
+  },
+  {
+   "start": 1813.04,
+   "end": 1841.9,
+   "text": "What is the sum of the whole array? 7 plus 1 is 3. 11, 17, 22, 28. 28. The sum of the whole array is 28. Now see, this is your original array. This is your original array. This is your prefix array. This is your suffix array. When you add all three values to one index, you will always get the sum of the array. 1 plus 0, 1 plus 27, 28. Is there a sum? Yes. 7 plus 1."
+  },
+  {
+   "start": 1842.03,
+   "end": 1871.92,
+   "text": "7 plus 1 plus 20, 28. 3 plus 8, 11 plus 17, 28. 6 plus 11, 17 plus 11, 28. 5 plus 17 plus 6, 28. 6 plus 22 plus 0, 28. See, on every i, when we are summing all three, we are always getting some sum of errors. Why are we getting this? It is not because of magic."
+  },
+  {
+   "start": 1872.27,
+   "end": 1902.82,
+   "text": "On any index i, on any index i, on any index i, on any index i, what did the left always tell you? Array of 0 plus array of 1 plus dot dot dot dot array of i minus 1. It used to stop before that. And what did the right tell you? Array of i plus 1 plus array of i plus 2 dot dot dot dot array of n minus 1 till the end. And if you add array of i in between this,"
+  },
+  {
+   "start": 1902.82,
+   "end": 1931.97,
+   "text": "So, this is the array of sum. This is the array of sum. From 0, 1, 2 to last. Now, after making it complete, what did you get? Array of sum. So, what did we understand from this? We had already seen that left. How to make prefix array left? If you have left, then can you take right? Yes, you can take right. Because, as soon as, what is your equation? Left plus array of i plus right."
+  },
+  {
+   "start": 1931.97,
+   "end": 1964.3,
+   "text": "is equal to sum. What will be the value of right always? Sum minus left minus area of L. See this. Your game is over. Right is also found. Left will be found. Both the areas are over. Come, we will write the code and dry run it. Many people are telling us that we don't dry run. Maybe we tell some mistakes and leave it. No. Come. We will dry run it properly. 1, 7, 3,"
+  },
+  {
+   "start": 1964.46,
+   "end": 1992.91,
+   "text": "6, 5, 6. It will be completely clear. We will see one dry run and it will be completely clear. What did we say? What does left denote? Left always denotes your prefix sum. Left is always a prefix. Left means pre. Left means before, right means after. So, in the beginning, always keep left as 0. It will start with 0. Okay. Take out the sum of the array. Take out the sum of the array. How do you take it out? By running the loop, take out the sum of the array. So, sum is equal to 28. What are we saying?"
+  },
+  {
+   "start": 1993.01,
+   "end": 2020.24,
+   "text": "We also have an int right. We will take it out later in the loop. Now, from where should our loop start? Our loop should start from 1 according to me. Because there is no possible left of the array of 0. What will be left of the array of 0? Nothing. According to me, your loop should start from 1. Come. i less than n. i plus plus. Okay. Now, how will the left be made on the array of i? The left will be made on the array of i by adding the element of the previous array. Now, the left is 0."
+  },
+  {
+   "start": 2020.24,
+   "end": 2043.78,
+   "text": "When you have come here, then what should be your left? Your left should be the value of array of 0. So, add any value of array of 0 in left. First of all, we will do left plus is equal to array of i minus 1. Minus 1, the previous one, not this one. Okay. Left has come. You already have sum. What formula did we see in right? Sum minus array of i minus left. Because,"
+  },
+  {
+   "start": 2043.78,
+   "end": 2074.06,
+   "text": "Left, right, and array of i. What is the combination of the three? Always the array of sum is formed. Always the array of sum is formed. In this type of question, always remember this point. Left, array of i, and right. If you combine them all, then the array of sum will be formed. Got it? What do you have to check? You have to check left and right only. Prefix i and suffix i. This is what you were combining. Just combine it. If, sorry, I wrote the prefix wrong. If left equal equal to right, equal equal to right. Return."
+  },
+  {
+   "start": 2074.06,
+   "end": 2104.37,
+   "text": "What? I. We have to return this index. We have to close it. If we don't get anything, then we have to return minus 1 here. Simple thing. Let's drive this. In the beginning, left is equal to 0. Sum is equal to 0. Sorry, sum is equal to 28. The sum of the whole array is 28. There is nothing on i is equal to 0. There is nothing on i is equal to 0. It is on i is equal to 1. First of all, update left. Left is equal to left plus array of 0. 1. What will be right?"
+  },
+  {
+   "start": 2104.56,
+   "end": 2135.82,
+   "text": "Right will be 28 minus area of i, which is 7, minus left, which is 1. So, 20. Is left and right equal? No. Go ahead. No, no, no. Now, left's value has increased. Left's value has become 1. Okay. Again, what have you added to left? Add area of 1. Add 8. What will be right? Right will be 28 minus area of i, which is 3, minus 8. 17. Is 8 and 17 equal? No. No, no, no. Update left."
+  },
+  {
+   "start": 2135.82,
+   "end": 2164.45,
+   "text": "I is equal to 3. In left, what do we do? Add the value of array of 2. Add the value of the previous one. 8 and 3, 11. Right is equal to, right is equal to, 28 minus, minus, what is array of 3? 6. Okay? Minus 6. Minus, minus, left. What will be the answer to this? 22 minus 11. Yes. Left and right are equal. What does this mean? This index, its left, means the first part and the next part are the same."
+  },
+  {
+   "start": 2164.45,
+   "end": 2197.84,
+   "text": "What did you return with khatak? 3. This is the prefix array. Now you have learned the whole prefix array. What did you learn? Remember the flowchart. Which category did you learn? Where did it go? Correct? Did you forget? We made the flowchart vector in the beginning. Yes. You have learned this. You have learned this. What did we say in this? Simple data structure. Simple. Simple means either array or variable. This. You have learned this."
+  },
+  {
+   "start": 2197.84,
+   "end": 2226.26,
+   "text": "Congratulations. In the coming days, you will learn all the patterns and templates. Now let's see the template. This is the template. First of all, you have to initialize the prefixed data structure. In this case, we initialized the left variable. If you have an array, then make an array. If you want to make an array, then make a prefix or suffix array. If you want to use a hash map, then make a hash map. After that, loop over array."
+  },
+  {
+   "start": 2226.26,
+   "end": 2256.11,
+   "text": "We did the same thing. We did loop over array. Update prefix. Update prefix means update left. You will have to make prefix on every i. You will have to make prefix on every i. If prefix is coming, then you will have to make it complete from before. If you will use left, then you will have to make left every time. So we updated. And we did check condition. Check condition can be done in different ways. Here we took out left. After left, we had to take out right also. Then we had to check condition. And it's done. We use all the prefix on this template. It's a simple template of 4 steps."
+  },
+  {
+   "start": 2256.11,
+   "end": 2287.26,
+   "text": "So, now you have learnt the prefix sum, at least the pivot and equilibrium question. In the coming days, we will do 5 more questions. From each question, you will learn a new pattern. Now, you have learnt the simple one. In the coming 2 questions, you will learn the hash map one. In the next question, you will learn the DQ. In the next question, you will learn the sum of range. If you have learnt these 4 questions, then you will have 400 questions of prefix sum."
+  },
+  {
+   "start": 2287.26,
+   "end": 2314.99,
+   "text": "This is my personal guarantee. So, be consistent. Prefix sum is a very important concept in interview. Prefix sum, sliding, cadence, these are all intermediate concepts. These people are not as easy as array. These people are not as easy as two-pointer. These people are not as difficult as dynamic programming graphs. They come in the middle. And a lot of questions are made from them. 60% of questions are made on these patterns. Which are the middle patterns. The intermediate patterns are made on this. Don't miss this."
+  },
+  {
+   "start": 2314.99,
+   "end": 2326.22,
+   "text": "Reading 2 pointers is a very good thing. Don't wait. We will study dynamic programming directly. It is very important to study this type of patterns if you have an interview. Okay? Let's meet tomorrow. Come tomorrow from time."
+  }
+ ]
+}

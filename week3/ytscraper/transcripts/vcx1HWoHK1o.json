@@ -1,0 +1,244 @@
+{
+ "video_id": "vcx1HWoHK1o",
+ "title": "Intro To Graphs DSA Pattern | Master Graphs in 12 Days | Zero",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1245,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 26.38,
+   "text": "If you have come this far, then congratulations. You have reached the graph in the DSA journey. If you are coming to the channel for the first time, then check the playlist of DSA patterns. In less than 50 hours, you will be able to cover the entire DSA in an optimal way. So again, coming this far means that you are 90% ahead of the public. These days, people don't take studies seriously. Now that IPL has started, many people will be in the mode of IPL. They will see what is happening in IPL. What is happening in life is more than that."
+  },
+  {
+   "start": 26.38,
+   "end": 55.22,
+   "text": "They will have to work on which team is winning in IPL and whose run rate. So we will do all that. Anyway, today we will not talk about anything technical in the graph. Technical means we will not talk about any syntax. We will not talk about how to write a graph, how to read a graph. We will just talk about why we have to read a graph. There must be a reason for the graph. The graph comes in the advanced topic. It comes in a very hard topic. People don't want to read it so they don't want to teach it. There must be some reason. Today we will talk about that and"
+  },
+  {
+   "start": 55.22,
+   "end": 82.43,
+   "text": "In total, if we remove today's video, then in 10-12 videos, you will be able to read the whole graph. The whole graph does not mean that you will get a PhD in the graph. No. But you will be able to read whatever works for the interview. Now, there can be a lot of exceptions. Someone might say that there was such a question in Google about the graph. You have not covered that. Remove 1-2% of the case. We will teach you as much as we know in the graph in a very optimal and easy way. You will not get to know. You will finish the graph."
+  },
+  {
+   "start": 82.43,
+   "end": 110.72,
+   "text": "For this, no prior knowledge is required. It's not like you have to get a sum in DSA then you will study in graph. People think that if they study DSA then they will get in graph. No, it's not like that. It's a different type of pattern. You may not know binary search. You may not know stack. No problem. It's a sort of independent topic. The things that should be known are basic. If someone says that we haven't done programming till now, it will be a problem for him."
+  },
+  {
+   "start": 110.72,
+   "end": 139.86,
+   "text": "Someone will say that we don't know how to write an array. If you don't know how to write an array, then you won't be able to read. So for them, we are saying that once you read the basic playlist and whatever you need, we will tell you. Before every video, if we think that no, no, before this you should know this. For example, you should know 2D array at least. Or it may be that you should know the link list. We will give you the link of the video. We will tell you the number of the video. That brother, watch this video. After that, come here and continue. So don't worry about it. What should we know? If we don't understand, then what will we do? Everything will be understood. Okay, let's go."
+  },
+  {
+   "start": 140.05,
+   "end": 168.34,
+   "text": "So let me tell you what a graph is. Before that, let's just read about trees. Those who don't know trees, it's a good thing. So graph and tree are very similar data structures. But what is the difference? We are talking about tree data structure. So tree always represents hierarchy. Now what does hierarchy mean? Hierarchy means that here one person will be at the top. One minute."
+  },
+  {
+   "start": 168.34,
+   "end": 194.86,
+   "text": "What does hierarchy mean? One person is at the top, hierarchy means that there is a person above, some people are working under him, some people are working under him, so whenever you have to show hierarchy, for example, if we talk about office, then there is a CEO in the office, there is a CEO below the CEO, there is a CFO, there is a CMO, so these three people come below the CEO. Now it is possible that there is a CTO, now some directors work under the CTO, so they also come below the CTO."
+  },
+  {
+   "start": 194.86,
+   "end": 224.0,
+   "text": "Now, some engineers work under the director, so they come from the bottom. So whenever hierarchy was to be shown in the data structure, that one person is at the top, below him, below him, then what did we use? We used trees. If a tree drawing is made, then it looks like this, that one person lives at the top, below him two more people live, below him two more people, below him two more people. So we used to focus more on binary trees, that brother, this is the root, or we can say that the root is the person at the top, below him there are two more people, below him there are four more, this is how the tree used to be."
+  },
+  {
+   "start": 224.0,
+   "end": 253.38,
+   "text": "But the problem with this is that in the real world, everything is not like this. You are showing a connection in this. It's a very good thing. Assume that you are showing a connection between people. But what happens in the real world is that everything is not like this. Hierarchy cannot enter everything. For example, the best example to explain graphs is Instagram. What do you take? Take Instagram. Everyone knows how to use Instagram. Take the example of Instagram. Assume that I have an account on Instagram."
+  },
+  {
+   "start": 253.38,
+   "end": 274.46,
+   "text": "Very good. And there are two more people whom we follow and they also follow us. For example, one man is Aman and one man is Sunita. Okay? One girl is Sunita and one man is Aman. Three people go on Instagram. Now, there can be a lot of combinations in this. In this, it is possible that we follow Aman. We follow Aman means we follow Aman."
+  },
+  {
+   "start": 274.46,
+   "end": 293.79,
+   "text": "Aman, it's possible that he doesn't follow us back. It's not necessary in Instagram that whoever you follow, he follows you. It's not necessary. It's possible that Aman doesn't follow us. But Aman follows Sunita. Okay. Sunita also follows Aman. Okay. And Sunita also follows us. Sunita also follows us. But..."
+  },
+  {
+   "start": 293.79,
+   "end": 321.94,
+   "text": "We don't follow Sunita. Now the owner of Instagram, Mark Zuckerberg, will have to store this kind of data somewhere. Only then will it be known who is following whom, who is his friend. There are three people on Instagram, billions of people. Now billions of people have so much complex data that who is following whom, that person is following you again or not. You are following someone else. So this kind of data will have to be stored somewhere on Instagram."
+  },
+  {
+   "start": 321.94,
+   "end": 349.46,
+   "text": "Now, Instagram can't copy and remember that Pratyush follows Aman and Sunita. It can't be like this. It will be too big. It will be useless. That's why a graph was made to deal with such things. What was made exactly to deal with such things? A graph where you have a lot of people or a lot of things, for example. You have to show a connection between them. You have to show a connection between them. Then you are telling that a lot of people"
+  },
+  {
+   "start": 349.46,
+   "end": 377.86,
+   "text": "Or a lot of items. Items can be anything. Items can be people. And you have to show some connection between them. One more example is Google Maps. Now what will be the items in Google Maps? In Google Maps, the item will be places. Or location. Location is there, right? Now, suppose there is a location. Here is Bangalore. Here is Ranchi. And here is Chhattisgarh. There are a lot of locations. Now you have to show them the road between them. If you want to go from Bangalore to Ranchi,"
+  },
+  {
+   "start": 377.86,
+   "end": 406.61,
+   "text": "So what is the best road? It is possible that there is no direct road between Bangalore and Ranchi. It is possible that you have to go from Bangalore to Chhattisgarh first and from Chhattisgarh you have to go back to Ranchi. It is possible that if you have to go from Ranchi to Chhattisgarh, then it is a direct road that you can go one way from Ranchi to Chhattisgarh. So Google Maps uses it. Instagram, anywhere in the world, if there are a lot of items and a lot of connections to show between them. Connection can also be one way, connection can also be two way. For example, Instagram's connection is two way."
+  },
+  {
+   "start": 406.61,
+   "end": 432.61,
+   "text": "We follow you and you follow us. So this is a two-way. We follow you because one is that Pratyush brother follows you. If you follow Pratyush, then the other connection is made. Graphs will have to show such things. Why? Because if you think of a tree here, we will show a tree that we will say that Pratyush is not in the root. Why? Because there is no hierarchy between this. There is no hierarchy between the three people of Instagram. What does hierarchy mean?"
+  },
+  {
+   "start": 432.61,
+   "end": 459.38,
+   "text": "How can you say that Pratyusha is at the top among the three? It is possible that Pratyusha has a lot of followers. It doesn't matter. Is Pratyusha at the top? It means that Pratyusha's Aman and Sujitha are coming under Pratyusha. There is no hierarchy. What is the hierarchy in places? How can you say that do one thing, put Ranchi in the root and Bangalore. Why? You can't do that otherwise it is not logical. That is why the graph is used where there is no hierarchy."
+  },
+  {
+   "start": 459.38,
+   "end": 479.89,
+   "text": "But you need to show the connection. In this, there is a difference between tree and graph. What is tree? Tree is a hierarchical data structure. One man up and one man down. Graph is uniform. It means that all the items have the same value. And you have to show the connection between all the items. In this, you have to use graph. Okay. Now."
+  },
+  {
+   "start": 479.89,
+   "end": 498.4,
+   "text": "You must have understood why it is important to read the graph because there are many real world scenarios where you have to read the graph. The whole Google map, the way you see, you see how much time it will take to go from this area to that area. How is the time taken out? What is the Google map? If you look at the whole Google map in a very small way, there is a graph."
+  },
+  {
+   "start": 498.4,
+   "end": 522.14,
+   "text": "There are many small paths and there is a chain of roads in between them. Now where to go in the chain of this road will take you the least time. If you have to go from A to B, then how will you go? This whole thing works on the graph. In this Dijkstra algorithm and A star, there are many different types of things, but everyone's core data structure is used. Graph is used in everything."
+  },
+  {
+   "start": 522.14,
+   "end": 550.85,
+   "text": "Facebook, Instagram, any social media, all of them use graph. What is used in all of them? Graph is used. Okay. So this is an introduction to graph. What is graph? You understand graph. At any time, you will be given a lot of items. And there will be connections between those items. Meaning one item is connected to a lot of items or not. Connected or not. If we want to make its drawing, then its drawing is exactly the same as I have explained to you. If suppose there are three people. One person is Pratyush."
+  },
+  {
+   "start": 550.85,
+   "end": 580.51,
+   "text": "and one person is Aman and one person is Sunita. So, if you want to make a connection, this connection is decided beforehand. If in drawing, suppose Aman goes from Pratyush to Aman, what does this mean? That Pratyush follows Aman. If an arrow goes from Aman to Sunita, it means Aman follows Sunita. If a back arrow comes from Sunita to Aman, it means Sunita follows Aman. What does she do? Sunita follows Aman."
+  },
+  {
+   "start": 580.51,
+   "end": 602.66,
+   "text": "This is the graph. Now let's talk about the drawing. This is a drawing, right? How will it be written? We told you how to write a tree. How to write a tree? It is written by making a struct node. A tree is something like this. There is a big box in the tree. There used to be data in between. Data means if you want to store any number, then there used to be that in between. After that, there used to be a left pointer and a right pointer."
+  },
+  {
+   "start": 602.66,
+   "end": 628.05,
+   "text": "We are talking about the binary tree. What was its function? If you haven't seen the tree series, then watch it. It will be fun. What was the meaning of left? Left used to point to another box. Left used to point to another box. There will be data here too. Right also used to point to another box. It used to have its own data. And these two also had their own left and right. So, this is how a tree was made. Now, how will the graph be made? Let's see. In today's lecture, we will tell you a very basic thing. How do you make a graph?"
+  },
+  {
+   "start": 628.05,
+   "end": 656.35,
+   "text": "You can implement it by yourself today. How can you implement the graph? It is called 2D Array. 2D Array. Everyone knows 2D Array. Matrix is called 2D Array. We made a matrix in school. There will be a matrix in 11-12. This is called a matrix. It has a matrix. 0, 1, 2, 0, 1, 2. You can make a Facebook-level app with a matrix. How can you make it? Let me show you. What do you have to store in the graph?"
+  },
+  {
+   "start": 656.35,
+   "end": 682.19,
+   "text": "First of all, how many items are there or how many unique people are there? This will have to be stored. Suppose you are making Instagram. So how many unique people are there? And is there a connection between them? Does Pratyush follow Aman or not? Does Aman follow Pratyush or not? This has to be stored in Instagram. So what can you do? You make a 2D array. First of all, if there is a Facebook founder, then he will write how many unique people are there. Suppose someone tells him that there are 3 unique people."
+  },
+  {
+   "start": 682.19,
+   "end": 707.47,
+   "text": "So what will it do? It will make a matrix of 3x3. What is 3x3? It will make a matrix or a 2D array. How? Like this. Look. It will make a matrix like this. What will remain in this? I will tell you. In this, in row and column, these three people will remain. Meaning, here Pratyush will remain, then Aman will remain, and here Sunita will remain in the last one. Okay? Same above also. So it will denote Pratyush."
+  },
+  {
+   "start": 707.47,
+   "end": 737.18,
+   "text": "We are drawing this for you. The code is 012012. Aman will be here and Sunita will be here. Now the main important thing is that you have to store the connection. Suppose Pratyush went to Aman's profile and pressed the follow button. Where will you store it? Where will you keep it? Where will you remember it from? How will Instagram find out? What will you do in that? Whatever matrix it is, whatever matrix it is, suppose if Pratyush follows Aman, then in the Pratyush row,"
+  },
+  {
+   "start": 737.18,
+   "end": 765.79,
+   "text": "We will make that box 1 on the row of the left column and on the column of the right column. What will we do to that box? We will make it 1. We will make that box 1. We will give it the value of 1. Assume that there can be only two values in the matrix, either 0 or 1. What does 1 mean? If we make the box of the left column and the column of the right column 1, it means, if someone sees this matrix, he will understand."
+  },
+  {
+   "start": 765.79,
+   "end": 794.98,
+   "text": "Pratyush follows Aman. What? Pratyush follows Aman. If Aman has to follow Sunita, then what will he do? He will come to Aman's row and in Sunita's column and in this box, he will write 1. He will write 1 in this box. Sunita follows Pratyush. In Sunita's row, in Pratyush's column, he will write 1 in this box. Sunita also follows Aman. In Sunita's row, in Aman's column,"
+  },
+  {
+   "start": 794.98,
+   "end": 822.06,
+   "text": "We will write 1. We will fill the rest with 0. We will fill it with 0. See, we have filled it with 0. Now, this matrix is ready. Now, if someone asks, let's say the founder of Facebook asks you, you are an engineer, that brother, tell me one thing, who does Aman follow? What is in Aman's following list? So, what will you do? You will go to Aman's row. In Aman's row, wherever you see 1, you will say that it is Aman's following list. So, where is 1 visible?"
+  },
+  {
+   "start": 822.06,
+   "end": 846.45,
+   "text": "How many people does Aman follow? Just one person. Who? Sunita. Who is in Sunita's following list? There are two people. Pratyush and Aman. How many people will Sunita see in her following list? Two people. Who? When you click on following, what do you see? How will Pratyush and Aman be seen? Sunita will go and read. In Sunita's row, wherever there is one, Sunita will follow them."
+  },
+  {
+   "start": 846.45,
+   "end": 873.09,
+   "text": "Now, no one can follow themselves on Instagram. So look, Pratyush and Pratyush have zero followers. Aman and Aman have zero followers. Sunita and Sunita have zero followers. By doing this, it is very easy. It looks easy, right? There is no rocket science in this. It is a very easy way. I mean, you can do everything in this. Whatever is possible on Instagram, you can find out all the information in this. Who follows whom, who doesn't follow whom, you can find out everything. Okay. But now, if this is the case, then is this used in Facebook? No, this is not used."
+  },
+  {
+   "start": 873.09,
+   "end": 902.82,
+   "text": "Why is it not used? It is a very easy method. It is a very good method. So it should have been used. It is not used. Why is it not used? See. Now there are 3 people here. There are 3 people here. Now there are 3 people on Instagram. Okay. How big of a matrix did you have to make here? You had to make a matrix of 9 sizes. 3 into 3 means, how much box is written? 9 means 3 into 3. 3 rows and 3 columns. You had to make a matrix of 9 sizes. Is it right? Okay. Now this thing is not made in your copy. Where is this thing made? In the computer."
+  },
+  {
+   "start": 902.82,
+   "end": 930.4,
+   "text": "Let me tell you the basics of computer organization. You should know it. It's not that you should know it, but it feels good. If you are a computer science student or you are a general DSA student, you should know all these things. Now look, let's assume that every box consumes one byte. Your RAM or whatever you buy, what do you call it? I have 8 GB RAM. So it stores one byte of memory in every box."
+  },
+  {
+   "start": 930.4,
+   "end": 959.22,
+   "text": "Now, how many people are there on Instagram? If we look at today's data of Instagram, then we think that there are around 2 billion people in it. Here we have made 3 people, right? There are 2 billion people on Instagram. 2 billion unique people. There are 2 billion unique people. Or there are users. Or there are 2 billion accounts. If you want a matrix of 9 sizes out of 3 people, that means 3 square. It would be 3 square, right? If there were 4 people here, then how big would it be? 4 into 4, 16 size. So, you have to make a matrix of square size for all the people."
+  },
+  {
+   "start": 959.22,
+   "end": 988.34,
+   "text": "2 billion, 2 billion means 2 x 10 to the power 9 users. You have to make a square of this. Means 2 x 10 to the power 9 x 2 x 10 to the power 9. Means 4 x 10 to the power 18. You have to make a matrix of this size. I will tell you how big this number is. What did we say above? Every box, every box, how much do we take? Minimum will take 1 byte. What will take less than 1 byte? 1 byte is"
+  },
+  {
+   "start": 988.34,
+   "end": 1016.91,
+   "text": "Nothing happens these days. One byte means, we are taking one byte because we are writing only 1 or 0. We are writing 1 or 0. Now, this much box means you need so many bytes in your computer. We will keep it somewhere. We will keep it in some computer. I will tell you how much this is. See this. 4 into 10 to the power 9 into 10 to the power 9. This whole thing, 4 into 10 to the power 9 bytes is called 4 GB. Into 10 to the power 9. What is this?"
+  },
+  {
+   "start": 1016.91,
+   "end": 1045.39,
+   "text": "1 billion means 4 billion GB. You need 4 billion GB of memory. 4 billion GB. Not 4 GB, 4 billion GB. If you buy any gaming laptop, how much RAM do you get? 24 GB. Very premium. 24 GB unified memory. 56 GB or 36 GB unified memory. In 24-36 GB, you think, wow, what a memory I got. How much do you get?"
+  },
+  {
+   "start": 1045.39,
+   "end": 1072.83,
+   "text": "You get a 1 TB SSD. 1 TB means only 1000 GB. 1000 GB SSD is in very high end machines. How much memory do you need? You need 4 billion GB memory. If Instagram comes up with this, that we will make a matrix for every person, we will make 0101 for every person. 4 billion means how much? 1 billion means 4 billion GB of it needs memory. That's why Instagram can't use this. Why can't it use this? Because"
+  },
+  {
+   "start": 1072.83,
+   "end": 1100.4,
+   "text": "You might not be able to understand but this is a very big memory. Just imagine how much is 4 billion GB. We don't know what will happen in that. If we write it in TV, we can understand it better. 4 million TV. 4 million TV. If you buy a laptop for each TV, you will need 40 lakh laptops to store this one thing. Just to store this one thing. We don't know where the rest will go. Only to store this matrix. Now,"
+  },
+  {
+   "start": 1100.46,
+   "end": 1125.73,
+   "text": "This is why it can't be used in Instagram. Why? Because it takes a lot of space. As your number of people increases, it's easy in the beginning. In the beginning, 3, 4, 5, 6, 10 people are fine. As soon as the number of people increases, it will destroy your whole system. But this is very fast. Suppose you have a matrix. Someone asks you to tell me immediately."
+  },
+  {
+   "start": 1125.73,
+   "end": 1155.07,
+   "text": "Kya Aman Sunita ko follow karta hai? Kya Aman Sunita ko follow karta hai? Aap jhataak se dekhe bata sakte hai. Agar yeh 1 hai to follow karta hai, 0 hai to nahi karta hai. Kya Aman Pratyush ko follow karta hai? Turant dekhe pata chal jayega ki nahi Aman Pratyush ko follow nahi karta hai isko dekhe, 0 dekhe. To yeh bahut fast hai, bahut accha azaar ko pata chalega. Lekin, yeh jo space ka problem hai na, iske liye yeh use nahi hota. Asa nahi ki nahi hota hai. Aapko DSA problem mein yeh aega, aapko yeh aana chahiye iske liye bata diye. Isko kya kate hai? Adjacency matrix. Adjacency matrix."
+  },
+  {
+   "start": 1155.07,
+   "end": 1183.98,
+   "text": "matrix. What is this thing called? Adjacency matrix. Means, all the people, if n nodes are there, nodes means n people are there, n into n matrix is formed. What is this thing called? Adjacency matrix. This is one way of representing any graph. In the coming days, we will also question it and show it. But this is one way of adjacency matrix. Now the problem of space, to remove this, what had come? Adjacency list. Adjacency"
+  },
+  {
+   "start": 1183.98,
+   "end": 1213.33,
+   "text": "List adjacency. What is list? We will learn this in detail. We will tell you its syntax. We will tell you how to write it. We will teach you how to make a graph. If someone tells you that there are three people and there is a connection between them, then how can you make your graph and print it? We will teach you all this in the coming lectures. But this was just an introduction that this happens. You will have to deal with this in the coming days. In the coming days, you are going to learn this kind of things. You are going to study this kind of things. And in the coming two weeks, you will be enough in the graph."
+  },
+  {
+   "start": 1213.33,
+   "end": 1242.54,
+   "text": "We will try to teach you as much as we know. So this was a small introduction about the graph. If you don't understand anything, no problem. So we just told you the story type. We didn't prepare anything here. Let's tell you what time it will take in the introduction. So we told you this. So look at this. Play around a little bit in this. Make your own matrix. Read the matrix once. If you don't know 2DR, then according to me, you should read it. You will get everything in this playlist."
+  },
+  {
+   "start": 1242.54,
+   "end": 1244.56,
+   "text": "See you tomorrow."
+  }
+ ]
+}

@@ -1,0 +1,304 @@
+{
+ "video_id": "14NH9aD7XeY",
+ "title": "Tree Series Last Video Construct a Binary Tree from Preorder and Inorder Traversal",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1675,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 24.21,
+   "text": "Look, today I will give you a disclaimer. The question is not easy. The question is complex. It is not hard but it is complex. I am sweating a lot while teaching. So, those who are serious, watch that only. Those who are here and there in the air, don't watch it. You won't understand it. So, don't waste so much time. I mean, if you watch it for 2-3 minutes, then don't watch it. You won't understand it at all. I will tell you now. It is not because the teaching is bad. We should teach."
+  },
+  {
+   "start": 24.21,
+   "end": 54.03,
+   "text": "The question is very difficult. This is the most difficult of all the tree questions till now. So, you can see that this sheet is over while teaching. So, those who are serious, see that only. Those who are serious, it's not your business. So, let's go. Let's start by explaining the question. Let's understand the question. Then we will come to our real-life example. This time, you have a very strange thing that no tree has been given. No tree note has been given. You have been given two arrays. Okay. You have been given two arrays. One array is pre-order."
+  },
+  {
+   "start": 54.03,
+   "end": 79.22,
+   "text": "In the past, there was a tree. In the past, there was a bridge. What kind of tree will it be? What will happen to us? It will happen anywhere. Pre-order of that tree has been given. Another thing of that tree has also been given. In-order has also been given. Yes, in-order has also been given. Okay. By using these two arrays, you have to generate a real tree. It means you are a creator or you are a builder. By generating a real tree,"
+  },
+  {
+   "start": 79.22,
+   "end": 109.78,
+   "text": "you have to return the root. So till now you used to get the root, you used to do something in it, now you have given an array, that means you have given its pre-order and in-order traversal. You generate its root and show it. Before moving ahead, a very important question or concept that you should understand is that why are two things given? If you would have given a pre-order, what is a pre-order? Root, left, right. Okay? What is in-order? Left, root,"
+  },
+  {
+   "start": 109.87,
+   "end": 139.65,
+   "text": "Right. You would have thought that if someone would have given us only one pre-order, then we would have made it. For example, if someone tells you that there is a tree, its pre-order is 1, 2, 3. So, in simple, you could have thought that it is 1. So, 1 becomes root. This becomes left. And this becomes right. So, why don't we make such a tree that it becomes 1, 2, and 3. Very good. You can definitely make it. But, you have made this tree. You have made this tree and submitted the paper. We will make another tree. Let's see what will come after its pre-order."
+  },
+  {
+   "start": 139.65,
+   "end": 162.13,
+   "text": "Let's make another tree. See. 1, 2, 3. Is it different from your tree? Absolutely different. Take out its pre-order. We will come here. 1, 2 on the left child. 3 on the left child. Its pre-order is also 1, 2, 3. See another tree. 1, 2, 3. Its pre-order is also 1, 2, 3. Means."
+  },
+  {
+   "start": 162.13,
+   "end": 192.4,
+   "text": "If you give us a pre-order of 1, 2, 3, then we can make 6-7 types of tree for you. It means there will be no unique answer. It will not be known whether the tree you made is right or the tree we made is right. The pre-order of both is the same. But, but, but, when you give in-order with pre-order, when you give in-order with pre-order, then things change. See, suppose you have the same pre-order, 1, 2, 3. And your in-order is also 1, 2, 3. Your in-order is also 1, 2, 3. Now see, one thing is certain that you"
+  },
+  {
+   "start": 192.4,
+   "end": 220.59,
+   "text": "1 will be the root of the tree. If this is a pre-order, then 1 will be the root of the tree. If the root of the tree doesn't come before the pre-order, then it won't be possible. 1. Okay. Okay? Now, if you say, if you say that we will do one thing, we will make this. We will make this. You say that this is the tree, its pre-order is matching. Now, take out its inorder and see. First of all, it will come here. The root itself will not be printed. First, it will give a chance to the left side. So, it will become 2, then 1, then 3."
+  },
+  {
+   "start": 220.59,
+   "end": 247.47,
+   "text": "Does this match with your inorder? No, this is your inorder. You had to combine both of them and give the answer. But the answer you are giving matches with this. Pre-order is the same, but is inorder the same? No. That's why, with the combination of pre-order and inorder, a unique answer will come. If you do any circle from here to there, it will change. If you have given only pre-order, then a lot of things... I mean, you see, we have made 6-7 types of things in 3 lengths, right?"
+  },
+  {
+   "start": 247.47,
+   "end": 276.91,
+   "text": "If you give 100, then you will give 1 lakh trees. There are many possibilities. If both are given, then there is only one possibility, a unique possibility. Now we will move ahead and see how to understand it, how to code it. And we will give you an advice that you will understand it stage by stage. Don't expect that the initial explanation will come 100%. It is stage by stage. In the beginning, there is an explanation, i.e. there is an intuition in the beginning. Then there is a little more deep intuition. Then there is an explanation with its number."
+  },
+  {
+   "start": 276.91,
+   "end": 306.78,
+   "text": "Then there is the code and then there is the dry run. You will understand it stage by stage. You will understand it till the end. And even then, if you don't practice it on the copy pen, then it won't come. We will give this as a disclaimer. Keep patience and let's move ahead. Now see, we have made Dada ji. Dada ji is made, right? Dada ji's work is over. How? Pre-order. Make the first one and make Dada ji. You will know what is left and right. Everything is done. Now let's do one thing. Let's make Dada ji's entire left subtree. Which one? Let's make Dada ji's entire left subtree."
+  },
+  {
+   "start": 306.78,
+   "end": 333.31,
+   "text": "If we look at the right, then we can make the whole left. So tell me one thing, that you already knew that Dada ji was here till 2. In Dada's left, Papa and Pratyushi can come, which is 0 and 1. So do you have any other array of work? At least when you are looking at the left subtree, then is there any other array of work? There is no other array of work. So we will do one thing, that as long as we are in the left subtree, we will look at the same array. Let's assume that this is the array. How? Let's assume that a low is equal to 0 and"
+  },
+  {
+   "start": 333.31,
+   "end": 362.75,
+   "text": "High is equal to 1. Rest of the inorder array is not there. Because rest of the inorder array is useless. Dadaji has been created. Dadaji's right is in the right subtree. Left subtree is useless. Now only two things are important for you. Okay. Now come. We have come to the left subtree. Now tell me one thing. We have come to the left subtree. You know that Papa and Pratyush are in the left subtree. Now its next index is 1. Which is Papa. Whose? Pre-order. Remember pre-order. We first looked at index 0 and it became Dada. When we came to index 1, we came to Papa. Now tell me one thing."
+  },
+  {
+   "start": 362.75,
+   "end": 390.11,
+   "text": "What should be the immediate child of this? Should it be Papa or Pratyusha? We are talking about this circle. Should it be Papa or Pratyusha? What should it be? If you say that we will fill Pratyusha here. Both can be filled, Papa and Pratyusha. Both can be filled. You say that you will fill Pratyusha in both. If it is so, then tell me one thing."
+  },
+  {
+   "start": 390.11,
+   "end": 419.74,
+   "text": "That when Dada is here and Pratyusha is saying that we will pay, then how did Papa come before Pratyusha in the pre-order? How did it happen that when you got the pre-order, Dada came, Dada should have come. After that, we got root. After root, left came. Now how did Papa come in the left? Pratyusha should have come, right? Pre-order should have been Dada and Pratyusha. How did Papa come? Where did Papa come from? Papa came because Pratyusha cannot be here. Papa has to be here."
+  },
+  {
+   "start": 419.74,
+   "end": 448.3,
+   "text": "Papa will have to be here. So if Papa is not here, then your pre-order is wrong. You are doing something wrong. Listen again. When we were on Dadaji, we saw that Dadaji has Papa and Pratyusha on the left. So it can be in the left subtree. Both can come from anywhere. But when we move forward in the pre-order, we see that Papa is on 1. Can Pratyusha come here in any birth? No, it can't. Because if Pratyusha comes here,"
+  },
+  {
+   "start": 448.3,
+   "end": 467.01,
+   "text": "So you first write Dada in the pre-order. Then you write Pratyusha. Then why did you write Papa? Then you write Papa later. Pre-order tells you in which order the circle will be formed. As soon as you come to the left circle, the next person who is Papa, you write that here. Now, now, now, look very carefully."
+  },
+  {
+   "start": 467.01,
+   "end": 494.93,
+   "text": "The same thing that you repeated in Dadaji. You looked for Dadaji in Inorder. You told the left of Inorder to come to the left sub-tree. You told the right of Inorder to come to the right sub-tree. Do the same thing on Papa. Do the same thing on Papa. What should you do? Look for Papa in Inorder. Look for Papa in Inorder. Where did you find Papa? You found him on zero. You found him on zero. Now, now, in this, is there anyone on Papa's left? Is there anyone on Papa's left?"
+  },
+  {
+   "start": 494.93,
+   "end": 522.11,
+   "text": "No, there is no one on the left of zero. That means, can there be anyone in the left sub-tree of papa? No, there can't be. No, there can't be. No, there can't be. Who is on the right of papa? And see, we had told you carefully. When you have come here, you have come with this array. Low zero, high one. You are considering only this array. On the right of papa. What is on the right of papa? There is a reflection. That means,"
+  },
+  {
+   "start": 522.11,
+   "end": 550.21,
+   "text": "It means that in the right sub-tree of papa, what can happen? It will happen. It will happen. Either it is one or it will happen. Do you understand or not? Why are you saying that papa's left sub-tree will not happen? Because in the in-order array in the left of papa, what do you see? Nothing is seen. So when nothing is seen, the form is papa. There is nothing in the left of papa. So when there is nothing, then nothing will happen. Nothing will happen. What happened in the right of papa? It will happen. Now, now."
+  },
+  {
+   "start": 550.21,
+   "end": 578.42,
+   "text": "Now there is no need to make papa's left because it is null. We are not telling you the code, we are telling you how to think about it. We will write the code too. Let's make papa's right. Now when you make papa's right, when you make papa's right, you brought this array. Now when you make papa's right, then just consider this. Just consider this. Because dadaji was already there. In this array, how will it be? Low b1 and high b1. Low b1 and high b1. Again."
+  },
+  {
+   "start": 578.42,
+   "end": 607.81,
+   "text": "Which person will be on the right of Papa? The next person in the pre-order will be Pratyush. So what is this? Pratyush. Repeat the same thing with Pratyush. Where did you get Pratyush? On 1. Is there anyone on the left of Pratyush? There is someone on the left of Pratyush, Papa. But which array have you brought? Low 1, high 1. You are considering only this much. You are seeing only this much array in this order. So is there anyone on the left of Pratyush? There is no one. Is there anyone on the right of Pratyush? There is no one. Meaning?"
+  },
+  {
+   "start": 607.81,
+   "end": 635.84,
+   "text": "Pratyush is a leaf node. Pratyush has left and right. Everything is equal. Is it done? Papa's work is done. Papa's left is done. Papa's right is done. Come back to Dada. Dada's left is done. Dada's left is done. See. The original tray was like this. Does the left look like this? Yes, it looks like this. Now let's make Dada's right. Now let's make Dada's right. What will happen? What will happen in making Dada's right? First of all, which three people are there in Dada's right? Rohan, Chacha, Suraj. How did you know? In the inorder array."
+  },
+  {
+   "start": 635.84,
+   "end": 660.18,
+   "text": "Dada's right. So we will just consider so many IRAs in order. From where to where? Low is equal to 3 and high is equal to 5. Because the rest is useless. Okay. Now. Now let's talk about right subtree. Come. In the right circle, who should be among the three? The next pre-order person. The next pre-order person. 3. Why? Why? Why?"
+  },
+  {
+   "start": 660.18,
+   "end": 688.18,
+   "text": "If you say that we don't want to keep him, we want to keep Rohan here. So when you want to keep Rohan, then why didn't Rohan come here? How did Chacha come here? See, this is your route. Left is over. Now starts right subtree. What is Chacha doing here if Chacha is not here? If Chacha is not here, then what is Chacha doing here? That's why who will stay here? Chacha. Chacha. Chacha will stay here."
+  },
+  {
+   "start": 688.18,
+   "end": 717.84,
+   "text": "Same kan chacha pe dhaura haiye. Chacha ko khojye. Kaha mila? Yaha pe. Chacha ke left me kaun hai? Ek aadmi hai. Rohan. Kaunsa aadmi hai? Low B3 ho gaya. High B3 ho gaya. Chacha ke left me kya bacha? Sirf Rohan. To chacha ke left me kya hoga? Rohan. Rohan me kuch hai nahi darudar karne ke liye. Kyunki jab aap Rohan pe aenge. To Rohan ke left me kuch nahi hai. Right me kuch nahi hai. Jaisa Pratyush ke saath hua tha. Chacha ke right me kaun hai? Suraj. Chacha ke right me kya hoga? Suraj."
+  },
+  {
+   "start": 717.84,
+   "end": 747.17,
+   "text": "This is how you are making a tree. This is how you are making a tree. This is how you are making a tree. This is how you are making a tree. This is how you are making a tree. This is how you are making a tree. This is how you are making a tree. This is how you are making a tree. This is how you are making a tree."
+  },
+  {
+   "start": 747.17,
+   "end": 774.61,
+   "text": "The next step is to find Dada from here. Dada is found. All the items in Dada's left will go to the left sub-tree. All the items in Dada's right will come to the right sub-tree. Now make Dada's left sub-tree. What will happen in the left sub-tree? Go one step ahead. What comes? Papa. This will happen here. Papa is done. Do the same thing. Find Papa here. Go to Papa's left. If there is nothing in Papa's left, then Papa's left is null. Go to Papa's right. What is there in Papa's right?"
+  },
+  {
+   "start": 774.61,
+   "end": 804.51,
+   "text": "Pratyush. Pratyush is the next letter. Very good. Left is complete. Back to Dadaji. To Dadaji's right. Which three people can be in Dadaji's right? Rohan, Chacha, Suraj. Come to the right. Who will be the first? The next letter is Chachaji. Find Chachaji. To the left of Chachaji, here. To the right, here. What does Chacha's left mean? Rohan. To Chacha's left, see, Rohan is written. To Chacha's right, Suraj. So, to Chacha's right, Suraj is written. You will make it like this if you want to make it in copy. If you want to make it in copy."
+  },
+  {
+   "start": 804.51,
+   "end": 832.61,
+   "text": "Now look at its code. Now look at its code. It has a lot of things to do. So what will happen to its code? It will write the code and then we will dry run it. Come. So what do you have to return? You have to return a node star. That is the problem. You have to return a node star. So we will make it something. We will make it a make tree. Make tree. You will be given two vectors. You."
+  },
+  {
+   "start": 832.61,
+   "end": 862.98,
+   "text": "Two vectors will be given. One will be your pre-order and one will be your in-order. What will be your in-order? Okay? Okay. First of all, it is not needed. But what we do is... Is it needed or not? Yes, it is needed. See. What is yours? In pre-order, you will go index by index. So, this is fine. We will do this. Every time. But when you get Dadaji, you will have to find Dadaji here. In-order, Dadaji is on which index?"
+  },
+  {
+   "start": 862.98,
+   "end": 892.96,
+   "text": "That's how we'll know. Let's do one thing. Let's make an inorder array into a hash map. What will happen is that you won't have to look at the whole thing to find Dadaji. You'll just ask where Dadaji is. Dadaji is here. Then you'll get it. Come. Let's make an unordered map. Unordered. We'll see the code and give it to you. Whose unordered map is it? Int and int. What does this say? Which number is on which index? Because Dadaji is not the real number. Which index is on which index? Okay? In. And one."
+  },
+  {
+   "start": 892.96,
+   "end": 922.38,
+   "text": "Let's run the loop. int i is equal to 0. i less than in order dot size. And i plus plus. And what will we do? In in order i is equal to i. Means this number is on this index. Very good. After that what will we do? After that we will write a function. After that we will write a function. Let's close this here. And let me tell you how to call. See. After that we will write a function."
+  },
+  {
+   "start": 922.38,
+   "end": 951.07,
+   "text": "We will write a global variable in this function. index is equal to zero. What does this index say? In which pre-order index are you? You are going to pre-order one by one. You are going to the pre-order index one by one. And from there you make a circle. Once your index starts at zero, then you make a circle of Dadaji. After that, you call the same function for Dadaji's left subtree and right subtree. We make an index and you need a low and high. Why do you need low and high? At this time,"
+  },
+  {
+   "start": 951.07,
+   "end": 981.31,
+   "text": "Which part of the inorder are you looking at? When you start, you were looking at the entire inorder. That's why you found Dadaji here. Once you found Dadaji, when you went to Dadaji's left, you were just looking at this much. You didn't need this much. You were just looking at this much. When you went to Dadaji's right, you were looking at Dadaji's front to right. So what will we do for this? Low to high. What? Low to high. Okay. So let's write a function. This function will return things. Node."
+  },
+  {
+   "start": 981.31,
+   "end": 1012.26,
+   "text": "Fun, right? Let's pass a pre-order. That we are doing this pre-order array's index. Pre-order. Done? Very good. Anything else? Low and high. Int. Low. Int. High. Okay? And we will make this hash map global. This hash map. We will make this hash map global. So that it doesn't have to be passed. It can be accessed here. Come. Now come."
+  },
+  {
+   "start": 1012.26,
+   "end": 1042.38,
+   "text": "First of all, first of all, first of all, tell me one thing. Let's assume, let's assume that the base case will be written later. Let's assume that it is not. First of all, you are on any index. So when will you start? Index is equal to zero. So first of all, make a node of this. Make a node of this. How? Node star. Node is equal to new node. Whose? On whom are we? From whom did we start? From Dadaji. From index. From pre-order index. So."
+  },
+  {
+   "start": 1042.38,
+   "end": 1072.05,
+   "text": "In the pre-order index, whatever element is there, make a node of it. So what did this work? This means that a node named dada is made. Once the dada node is made, it means that you have seen this in the pre-order. Go ahead, make index plus plus. Index plus plus. Done? This was the work of pre-order. Now what is the work? In order, find dada. In order, find dada. Means, find its index."
+  },
+  {
+   "start": 1072.05,
+   "end": 1100.74,
+   "text": "int id is equal to in our hash map and node's data. Or pre-order, whatever you have made, dadaji. What does this do? It finds dadaji. After that, what did you do? Same function, same function, called for left and called for right. Meaning, when you called for left, then suppose here, where did you get dadaji? On second index. So, what was your id? 2."
+  },
+  {
+   "start": 1100.74,
+   "end": 1129.86,
+   "text": "When you called for left, what did you do? You had to see 0 to 1 on the left, Papa and Pratyusha. And when you called for right, you had to see 3 to 5. 3 to 5. Meaning, in the beginning, how much was low? 0 and how much was high? 5. Because we were looking at the entire inorder. When you got id is equal to 2, then what happened? You stayed at low is equal to 0, but you came to id minus 1. This became its low and high. What became the low and high of right?"
+  },
+  {
+   "start": 1129.86,
+   "end": 1159.7,
+   "text": "id plus 1, which is 3, and high. So, this will be your lower high. What does lower high mean? That you are seeing the same in order. When you are on the left of Dada, then just see Papa Pratyush. You don't need to see the entire ending. If you are on the right of Dada, then see Rohan, Chacha, and Suraj. You don't need to see the rest. See. After that, what will we do? Node dot left. Means, on the left of Dada, Dada's left is equal to same function, same function."
+  },
+  {
+   "start": 1159.7,
+   "end": 1187.47,
+   "text": "Pre-order will pass as it is. From low to id-1 means from the beginning to the end of dada. low id-1 and what is the right of node? 1 pre-order as it is and from dada to the end of dada means from id-1 to high. What will these two do?"
+  },
+  {
+   "start": 1187.47,
+   "end": 1217.6,
+   "text": "This will make the whole left subtree of Dada. This will make the whole right subtree of Dada. Once this is done, then what have you done? What is happening in this? What is happening in the first time? You made a Dada. After that, you called. So, the whole left subtree has been made. The whole right has been made. Once it is done, then return it. Return node. That's it. This is its code. This is its code. We have not written the base case in it yet. We have not written the base case in it yet."
+  },
+  {
+   "start": 1217.6,
+   "end": 1245.47,
+   "text": "I haven't written the base case, I'll show you. Remember this. And when we call this from the main, how will we return? Fun. We passed the pre-order in fun. And in the beginning, how much low-high do you want to see? How much do you want to see in the beginning? You want to see the entire in-order. So low is equal to zero. And what will be the high? In-order, the size of the in-order. Whatever the size of the in-order is. And minus one, which means the entire. This is done. This is the code."
+  },
+  {
+   "start": 1245.47,
+   "end": 1275.73,
+   "text": "If you see its dry run, it will be more clear. Let's make a small tree for reference. Suppose this is your tree. 3, 1, 2 and 4. This is your tree. Is it correct? Let's write its pre-order. If we make an array of its pre-order, then 3, 1, 2, 1. If we make an array of its in-order, then what will it be? 1, 3, 4, 2. Is it correct?"
+  },
+  {
+   "start": 1276.21,
+   "end": 1306.51,
+   "text": "Come. Is it okay? Okay. First of all, what do we call? First of all, our index is 0. What is the index now? 0. Means, what is the pre-order? We are looking at 0. So, fun. Assume that we are calling on index is equal to 0. We are not calling, we are doing it to explain. And, in the beginning, what is low and high? You want to see the entire in-order. You want to see the entire in-order. Low is equal to 0. High is equal to 3. You want to see the entire in-order. Very good. Now, come."
+  },
+  {
+   "start": 1306.51,
+   "end": 1336.19,
+   "text": "First of all, what do we do? We haven't written the base case yet. But first of all, what do we do? We make a circle. Whose circle? We increase the index of the pre-order. It says, you are here now. Make its circle. Increase the index. Next time, its circle will be made. So, first of all, whose circle will be made? 3's. Means, here we have made the circle of 3. And what happened to the index? It became 1. Okay? Very good. After that, left subtree. After that, now this 3,"
+  },
+  {
+   "start": 1336.19,
+   "end": 1365.78,
+   "text": "Now, find this 3 in order. Where did you find it? In 1. Means, what is your ID? 1. What to do? Call for left and call for right. So, what will we do? 1 will be called with low is equal to 0 and high is equal to ID minus 1. ID minus 1. See, ID minus 1. What will be ID minus 1? 0. And what will be 1 called? Low is equal to ID plus 1. 2. And high will be same. High is equal to 3."
+  },
+  {
+   "start": 1365.78,
+   "end": 1395.17,
+   "text": "What is this for? For left. What is this for? For right. Okay? Do you understand till now? Come, let's make this. Fun. Remember, our index is 1. Till now, we have only made 3 in circle. Let's go. What is this? Low is equal to 0 and high is equal to 0. Okay. Let's see. First of all, what we have to do? The index. What is the index now? 1. Means you are here. Make a circle of this."
+  },
+  {
+   "start": 1395.17,
+   "end": 1423.07,
+   "text": "So let's assume that we have made its circle like this. Now what we will do? We will find this 1. Where will we find it? In order. Where did we find this 1? Here it is. Here it is. After that what will we do? Now look carefully. You might be able to see it in the drawing. When we came here, we were looking at this only. We were looking at the left of 3. So there is nothing in the left of 1 and there is nothing in the right of 1. Let's see how our code catches it. What do we do?"
+  },
+  {
+   "start": 1423.07,
+   "end": 1450.32,
+   "text": "After making idx, increase idx too. Increase idx to 2. Now let's call. What did you get? 0. Where did you get 1? You got it at 0. So what will we do now? To call left subtree, what will happen? Low will remain the same and high id will be minus 1. Okay. For right subtree, low id will be plus 1 and high will remain the same. This will be the call. Okay. Now tell me, is this making sense?"
+  },
+  {
+   "start": 1450.32,
+   "end": 1480.0,
+   "text": "What does low and high tell you? Look from low to high. It happens everywhere in the sliding window. Look at the area from low to high. It is telling you to look from 0 to minus 1. It is a stupid thing, isn't it? At least look from 0 to 0 and you will understand that look at a block. What happens when you look from 0 to minus 1? It is a useless case. Nothing can happen, isn't it? Look from 1 to 0. How will we look at this? We can look at 1 to 0. We can look at 1 to 2. Low should always be equal to high or small, isn't it? What does it mean to be higher than low and high? There is no special meaning. Which area are you looking at? You are not looking at it."
+  },
+  {
+   "start": 1480.0,
+   "end": 1509.46,
+   "text": "With this, we have to add another line here. If low is greater than high. If it is greater than low high, what will happen in it? Null. Nothing. Return null. Return null. That's why when you call both on 1, the answer of both is null. So see, there is no beta of 1. This function is over. This function is over. Who did this 1 come from? Who did this 1 come from?"
+  },
+  {
+   "start": 1509.46,
+   "end": 1539.74,
+   "text": "From the left of 3. From the left of 3. From the left of 3. See. It's done. The left of 3 is done. Let's make the right of 3. Let's make the right of 3. Come. Let's make the right of 3. What's the call? Low is equal to 2. High is equal to 3. What's the index? It's 2. So, let's make a circle named 2. Let's increase the index to 3. That's right. Now, what to do? Search the circle you have made in order. Where did you get 2? You got it here. ID is equal to 3."
+  },
+  {
+   "start": 1539.74,
+   "end": 1570.77,
+   "text": "ID is equal to 3. Same thing. Make left and right. What will be its left? Low will remain low. And high ID will be minus 1. Very good. What will be right? Low will be 3. Sorry, low ID plus 1 will be 4. And high 3 will remain. Okay. Now this is left. Let's run this. Fun. Low is equal to 2. High is equal to 2. Where is your ID? On 3. Meaning?"
+  },
+  {
+   "start": 1570.77,
+   "end": 1601.02,
+   "text": "Make a circle of 1 somewhere. We have made a circle of 1 here. We have made a circle of 1 here. Done. And increase the ID. Increase the ID. Keep in mind that your pre-order array is over. The pre-order array is over. Okay? Now, what to do? The circle you have made, the circle you have made, look for it. Look for it. Which one? Which one did you make? 3, 1, 2, 1. How did this become? Oh, sorry. This was 4. This is 4. This is 4. So, you will make 4 here too. Look for 4."
+  },
+  {
+   "start": 1601.02,
+   "end": 1630.85,
+   "text": "Where did you get 4? Here. ID is equal to 2. ID is equal to 2. Do the same thing. Try to call for left and right. So low will remain low. High will become ID minus 1. Try to call for this. So low is equal to ID plus 1. High will remain the same. Look carefully. Both are nonsense. You can't see from 2 to 1. You can't see from 3 to 2. It's all over. Where did it come back? It came back to its left. Meaning? To whose left?"
+  },
+  {
+   "start": 1630.85,
+   "end": 1658.18,
+   "text": "This one. In the left of 4, 2. We have to do the right of 2 too. But the right of 2 is a nonsense thing. We can't see from 4 to 3. This is also finished. Where did this come back? This came back and attached to the right of your main tree. And what will you do in the last return? This is your root. Is this the same tree that we made? Yes, this is the same tree that we made. So this is a small dry run. But again, the question is very hard."
+  },
+  {
+   "start": 1658.18,
+   "end": 1674.16,
+   "text": "So, you would have got help by explaining, but until you do not copy it, it will not come so easily. It will take time. It is a very good question. And with this, today's tree series is over. Next time, we will move on to graph or DP. Let's go."
+  }
+ ]
+}

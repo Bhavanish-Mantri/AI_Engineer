@@ -1,0 +1,124 @@
+{
+ "video_id": "ftpI12-e3zs",
+ "title": "DSA PATTERNS Episode 21 | Linked List Slow–Fast Pointer Complete Revision",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 623,
+ "segments": [
+  {
+   "start": 0.11,
+   "end": 29.12,
+   "text": "Give us 15 minutes of your life, the slow and fast pointer of the link list, with which you can make 60% questions, you will be clear. My name is Pratyush Narayan. If you are new to the channel, then there is a pattern link in the description. We read DSA here pattern wise, not topic wise. This is the easiest and fastest way to read DSA. Anyway, we had started the story of slow and fast pointer. First of all, what is its flow chart? What is the flow chart? How will you know if this pattern is to be applied or not by looking at the question?"
+  },
+  {
+   "start": 29.12,
+   "end": 55.92,
+   "text": "Its flowchart is different. In 2-pointer or sliding window, we used to understand by looking at array or linked list whether it can be applied or not. In this question or in this pattern or in this category, there is no such thing. It means that this pattern can be applied in array, it can be applied in a single number, it can be applied in string and it can be applied in linked list as well. This makes this pattern a little difficult to identify."
+  },
+  {
+   "start": 55.92,
+   "end": 80.35,
+   "text": "First of all, you don't have to look at all these things to know if it can be applied or not. It doesn't matter. Any data structure can be applied. Now let's come to what should happen in the question. If you are asked in the question to find the cycle. What to do? Find. To find means to say true or false. Is it a cycle or not? This cycle can also be a link list cycle. This cycle can also be a number cycle."
+  },
+  {
+   "start": 80.35,
+   "end": 107.39,
+   "text": "This cycle can also be a cycle in an array, any type of cycle, any type of practical, you feel that a cycle is being formed, means A is going to B, B is going to C, C is coming back to A, so somewhere you have to find the cycle. This pattern will look firm, what will it look like? Firm with 100% guarantee. Moreover, the cycle is given to you that let's tell you that there is a cycle. Find the start of the cycle, what should you find? The starting point of the cycle means,"
+  },
+  {
+   "start": 107.39,
+   "end": 136.58,
+   "text": "Which person or which element or which thing makes the cycle in the question, due to which the cycle is made. Again, if this is in your question, 100% slow and fast pointer will be used. Moreover, you have to find the middle of anything, middle of linked list, you have to find. What to do? Middle of linked list, middle of linked list, 100% this pattern will be used, nothing else will be used. So, there are only three cases. What are the three cases?"
+  },
+  {
+   "start": 136.58,
+   "end": 157.5,
+   "text": "Firstly, you have to find the cycle. Secondly, you have to find the starting point of the cycle. And thirdly, you have to find the middle of the link list. In all three patterns, in all three types of questions, what will you get with 100% guarantee? Slow and fast pointer. Now see, we are not able to tell you because time is less. We don't know if we will get to know or not."
+  },
+  {
+   "start": 157.5,
+   "end": 186.4,
+   "text": "It is possible that the question is not written directly that you have to find the cycle. It is possible that the question has given you a very big story, a very big thing. You have to understand by looking at the question. Like the question with the duplicate number, the question with the duplicate number in the array. In that, we understood by looking at the question that the cycle will be formed. Means if there is 0 and 1, then 1 is going to 2 and 2 is coming to 3 and T is coming to 4. Now 4 can go to anyone, 4 can go to anyone, 4 can go to anyone from these three."
+  },
+  {
+   "start": 186.4,
+   "end": 212.85,
+   "text": "4 goes to anyone or 4 comes to itself. The cycle will definitely be made. So by looking at the question, we understand that the cycle will be made and its answer has to be the starting point. If you are looking at the playlist in between, then it is possible that you do not understand something. Watch the playlist from the beginning. This playlist is currently running. The name of this playlist is DSA Pattern 2025. Watch it from the beginning. Okay. Let's go. We talked about three scenarios. What scenario did we talk about? First of all, is there a cycle or not? It is a question."
+  },
+  {
+   "start": 213.04,
+   "end": 243.55,
+   "text": "First of all, it has a set pattern. What is set pattern? Set pattern. Every question will be made on this pattern. Take two things. What? Slow and fast. Keep both of them on start. On whose start? On your home's start? No. If there is a link list, then you can keep it on head. If there is an array, then you can keep both of them on index 0. If there is a number, then you can keep both of them on number only. Means, keep them on start. Keep them on start from where your things are happening. Very good. Now, after that, run a loop. While."
+  },
+  {
+   "start": 243.55,
+   "end": 273.36,
+   "text": "Let's see its condition now. First of all, make slow one step ahead. How much ahead? One step ahead. If there is a link list, then you will write next. If there is an array, then you may write that slow is equal to array of slow. This can go ahead. If you have given any number, then you must have been told in the question that what happens after going one step ahead. For example, in the happy number, I told you that the number becomes the sum of the squares of your digit. So, you will be told everything. Okay. And,"
+  },
+  {
+   "start": 273.36,
+   "end": 303.49,
+   "text": "How many steps do you increase to fast? 2 steps. Not 1 step, increase 2 steps forward. If, if, sorry, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if, if"
+  },
+  {
+   "start": 303.49,
+   "end": 333.07,
+   "text": "What to do? Keep slow on start again. Keep fast where it is. Now what to do? While slow not equal to fast. What? Not equal to fast. Now how many steps forward to slow? One step forward. How many steps forward to fast? One step forward. Not two steps. One step forward. Sorry. Not two. One. One. One. One. One step forward. One step forward. And close this while loop."
+  },
+  {
+   "start": 333.07,
+   "end": 362.69,
+   "text": "As soon as this while loop breaks, it means that your slow has become equal to fast. Why? Because the condition is the same. Just return and slow it. If there is a cycle, then that's it. You have to do this work. In both types of templates, the same pattern, same template, same blueprint is there. What do you have to think? What do you have to think in every question? What is going to be the start point? And what do you have to think? One step ahead and two steps ahead. What does this mean?"
+  },
+  {
+   "start": 362.69,
+   "end": 389.31,
+   "text": "How will you do this? These are the two things you have to think about. And what do you have to think about? This condition. Which condition? This condition. What does this condition tell you? That your fast should not end. What does it mean by ending? If it is a linked list, then your fast will not get null. If it is an array, then your fast will not get out of the array. If it is a number,"
+  },
+  {
+   "start": 389.31,
+   "end": 418.29,
+   "text": "So there will be a condition given in every number question that if the number becomes 1, then your program is over. So you see that fast has not become 1 or whatever your condition is, it has not become. Means fast did not come out. This means that if there is a straight road, means there is no cycle, then fast will come out somewhere while walking. You have to write the condition of coming out here. If there is a link list, then we write null. Similarly, we write in array. Whoever has seen the past question, they will not have any problem in this."
+  },
+  {
+   "start": 418.64,
+   "end": 449.39,
+   "text": "Okay. What was the last one? Middle. What was it? Middle. We have to find the middle. It's simple, bro. It will always say to find in the linked list. We have to keep slow on the head. We have to keep fast on the head. Now, what we have to do? Why? Why? If it doesn't come out. So, fast not equal to null. And, and, and, fast.next not equal to null."
+  },
+  {
+   "start": 449.49,
+   "end": 479.33,
+   "text": "After this, what we have to do? We have to make slow one step ahead. One step, one step, not two steps. And how many steps do we have to make fast go ahead? Two steps. Fast.next.next. We have to stop it. When will this loop end? When fast goes out. Fast has gone out."
+  },
+  {
+   "start": 479.33,
+   "end": 505.42,
+   "text": "Means fast has covered the whole distance. So how much distance will slow cover? Slow will cover exactly half. Return, slow. That's it. Find the middle of the linked list. This is how it is done. So see, from this one pattern, how many questions did you learn? How many variety of questions did you learn? You learned the question of linked list. You learned the question of array. You learned the question of number too."
+  },
+  {
+   "start": 505.81,
+   "end": 533.62,
+   "text": "We have learnt the question of number also. So, from this one pattern, three types of questions are made. Which types of questions? The three conditions which have been told. I am telling again, cycle, start of cycle, and middle. Three types of questions, three types of data structure. All three can be combined and come anywhere. So, what was this? Slow and fast pointer. What was this? Slow and fast. Yes, I made one mistake that,"
+  },
+  {
+   "start": 533.62,
+   "end": 563.41,
+   "text": "There is one pattern missing in the DSM pattern sheet. What pattern is missing? Cadence and prefix sum. Cadence and prefix sum. Prefix sum. This pattern is missing. What will we do with it? We will add it. And from tomorrow, we will start cadence. We will start cadence. Cadence is a very important pattern. What is it? It is a very important pattern. We will start cadence from tomorrow. And the video will be a little long from tomorrow."
+  },
+  {
+   "start": 563.41,
+   "end": 585.5,
+   "text": "That's why tomorrow's video is going to be a little long because in the same video, we are going to tell you the flowchart of both Cadence and Prefix Sum. Today's video was very short. It was a revision video. Keep watching and be consistent. If you have a backlog, please cover it. And keep solving questions. Keep solving questions yourself. Don't trust me that my brother will solve it. Why should we do it?"
+  },
+  {
+   "start": 585.5,
+   "end": 605.42,
+   "text": "You also have to do the main work of making this channel, you have to teach, we don't have to teach, we can learn from ourselves. We don't need a YouTube channel to learn from me. So the purpose of this channel is that you learn. When will you learn? You will learn by watching the video, you will learn by revising, you will learn by making notes, you will learn by asking questions. So keep practicing, practice is the key."
+  },
+  {
+   "start": 605.42,
+   "end": 619.66,
+   "text": "If you will keep practicing, then you will not have to depend on me that when we will teach, you will also study. We don't know anything. We don't even know 10% DSA. You can go much ahead than me. You are very fast kids. Come tomorrow. From tomorrow, we will start studying Cadence."
+  }
+ ]
+}

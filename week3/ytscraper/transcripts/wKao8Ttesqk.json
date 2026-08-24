@@ -1,0 +1,374 @@
+{
+ "video_id": "wKao8Ttesqk",
+ "title": "Most Teachers Skip This Problem Because It is HARD | DP Series Episode 15",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2018,
+ "segments": [
+  {
+   "start": 0.56,
+   "end": 23.12,
+   "text": "Today's question doesn't have a 5-10% chance of being answered in any interview. It's not even 5%. It's less than 5% because it's a very hard topic. It's a hard question. It's difficult to understand. It's difficult to explain. It's not an intuitive way either. You will think that we never think about this. If we eat anything in the world, it doesn't come to our mind. It comes to my mind too. There is nothing wrong in it. It's in everyone's mind."
+  },
+  {
+   "start": 23.12,
+   "end": 49.7,
+   "text": "It's a little different question, it takes a little different type of DP in it. So if you want, we can leave this topic if we say very little. But now we will say that when we have already seen 14 things, then see 15 too, there will be no loss, there will be no disease. It's up to you, if you want to see, then you can see, but if you see, then you will take an expectation that it is a little hard, that is, it is not that easy. Earlier, we were doing the easy problem, we were not doing the easy problem, we were doing the easy way that yes, I understood completely."
+  },
+  {
+   "start": 49.7,
+   "end": 77.78,
+   "text": "It's a little hard. So with that expectation, we will start explaining this problem to you. Look, what is the name of the problem? The name of the problem is minimum cost to cut a stick. What? Minimum cost to cut a stick. Cut a stick. Okay, very good. But what does this problem say? If you read this problem in the lead quote, you will not understand it. Even we will not understand it. That's why we are sitting here to help you. What has it told you? That you have a stick. What does stick mean? A stick, a stick, a line. Okay?"
+  },
+  {
+   "start": 77.78,
+   "end": 98.46,
+   "text": "Its length is n units. Very good. Then it will ask you to label the stick from 0 to n. We will explain this later. For some time, let's say we label from 0 to n. Then you will be given an array whose name will be cuts. What will be its name? Cuts. In cuts,"
+  },
+  {
+   "start": 98.46,
+   "end": 126.91,
+   "text": "You must have written some points where you have to cut the stick. For example, if you are given a stick which has n is equal to 7 and you have to cut it at 4 points. You can't stop it. What can be those 4 points? 1, 3, 4 and 5. 1, 2, 3. So this can be your stick. What can be the stick? The length of the stick is 7. You can consider it as a meter."
+  },
+  {
+   "start": 126.91,
+   "end": 156.51,
+   "text": "Where we have to cut the first meter, we have to cut the third, fourth and fifth meter. Let me show you how your stick looks like. This is your stick. Now what we said that it is labeled. What is labeled? What does it mean? Let me tell you. What is zero sign? This is your zero. This is one. This is two. This is three. This is four. This is five. This is six. And this is"
+  },
+  {
+   "start": 156.51,
+   "end": 181.9,
+   "text": "So, the labeling is done from 0 to 7. The length of the stick is 7 meters. See, which is 7 meters? 1 meter, 2 meter, 3 meter, 4 meter, 5 meter, 6 meter, 7 meter. There is a stick of 7 meters. And on every meter, you have been labeled from 0 to 7. Not 1 to 7, 0 to 7. Now, the cuts array given to you. What is there in the cuts array? 1, 3, 4, 5."
+  },
+  {
+   "start": 181.9,
+   "end": 211.55,
+   "text": "You have to cut here and here. You have to cut here, cut here, cut here and cut here. After doing this, the stick will split into pieces. I am telling you again where you have to cut. You have to cut at the position written in your cut array. You have to cut here and here. What do you have to do here? You have to cut. You will say that it is very simple. We will cut it."
+  },
+  {
+   "start": 211.55,
+   "end": 240.98,
+   "text": "No, it is not that simple. Why is it not that simple? Now, this order of cutting, you must be seeing what it is. You will think that first we will cut the stick at 1 meter. Means, we will cut the stick in two parts. This will be one part, this will be the second part. After that, we will cut the third meter. So, we will cut here again. So, now how many are the sticks? Now, the sticks will become three parts. We will do the same, we will keep cutting. But, every time we cut the stick, every time we cut the stick, there will be a cost. What will come?"
+  },
+  {
+   "start": 240.98,
+   "end": 270.98,
+   "text": "The cost will come. What is that cost? How is that cost explained? Whatever the length of the stick you are cutting, that will be its cost. What will happen? Whatever the length of the stick you are cutting, that will be its cost. Let's explain this with a small example. Let's explain this with a small example. Then it will be more understandable."
+  },
+  {
+   "start": 270.98,
+   "end": 297.71,
+   "text": "We have given a stick of 3 meters. How many meters do you need? We have given a stick of 3 meters. So, we have made a stick of 3 meters. Now, the numbering will be from 0 to 3. Assume that this is 0. Assume that this is 3. Assume that this is 1. Assume that this is 2. So, this will be the numbering. You have been told that you have to cut at two places. You have to cut at two places. At 1 meter and at 2 meters. So, you have to cut at two places."
+  },
+  {
+   "start": 297.71,
+   "end": 326.59,
+   "text": "Now you can cut this in any order. This means that first you will cut the one meter order and then you will cut the two meter order. This order is possible. In this order, we will show you the cost and why the order is important and why the cost is important. Suppose you cut the one meter order first."
+  },
+  {
+   "start": 326.59,
+   "end": 355.3,
+   "text": "In the beginning, the stick is not cut anywhere. In the beginning, the stick is one unit. In the beginning, if you cut at 1 meter, then how much length of the stick are you cutting? You are cutting this whole 3-meter stick. You are cutting this whole 3-meter stick from one place. So, what will be the cost of cutting at 1 meter? The cost will be 3. Now, now, now, remember. Now, you have cut at 1 meter."
+  },
+  {
+   "start": 355.3,
+   "end": 384.42,
+   "text": "It is divided into two parts. How many parts? It is divided into two parts. See this. Your stick is cut into two parts. Why is it cut into two parts? Because you have made a cut here. Your stick is divided into two parts. Where do you have to make the next cut? You have to make the next cut on the number of two meters. That means you have to make the next cut here. But now the stick on which you are making the cut. The stick is divided into two parts. Now the stick on which you are making the cut. What is its length?"
+  },
+  {
+   "start": 384.42,
+   "end": 408.29,
+   "text": "Its length is 1 and 2. Its length is only 2 meters. So when you cut on the other meter after 1 meter, then its cost will be only 2. Only 2. What will be the total cost? 5. What will be the total cost? 5. Are you understanding this or not? What does cost mean? You have to cut on the stick. You can cut, but..."
+  },
+  {
+   "start": 408.29,
+   "end": 437.06,
+   "text": "The length of the part on which you are cutting the stick will be added to your cost. If you want, you can do one more thing. First, you cut at 2 meters and then at 1 meter. You can also do this. In this also, your cost will be 3. How will the cost 3 come in this? Let me tell you. How will the cost 3 come in this? 3 will also come in this. We should have used a little more example. But the cost can change. We will also show you how."
+  },
+  {
+   "start": 437.06,
+   "end": 466.38,
+   "text": "Suppose you will decide to cut at 2 meters. So we will quickly make a stick. And what will happen to make a stick? This will be 0, this will be 3, this is 2 and this is 1. Now you have decided that we will cut at 2 meters first. Means you will cut at 2 meters first. When you are cutting at 2 meters, then how big is the stick? The original stick is 3 meters. Its cost will be 3. Okay. As soon as you cut at 2 meters, the stick broke in the middle. The stick broke in the middle."
+  },
+  {
+   "start": 466.38,
+   "end": 493.89,
+   "text": "What happened to the stick in the middle? It broke. Now you want to cut at 1 meter. But the length of this part on which you are cutting does not mean that the cut is over. The length of this part is 2 meters. So you will get the cost of 2 meters. Again, the total cost here will be 5. But your cost could have changed. So this is the meaning of stick, labeling, cutting and cost."
+  },
+  {
+   "start": 493.89,
+   "end": 518.42,
+   "text": "You can cut it in any order. If you want, you can cut it at 5 meters, then you can cut it at 1 meter. You have to do all the cuts. It is up to you. While doing this, you have to find the minimum possible cost. You have to find the minimum possible cost. This is your question."
+  },
+  {
+   "start": 518.42,
+   "end": 546.27,
+   "text": "So that's why we were saying that it's a little harder. It took 8-10 minutes to explain the question. So we hope that you understood the question. If someone asks you to explain the question in Hindi, then you will explain it. Till now, you will not have any sense of how to solve it. Don't worry about it. Now we will teach you how to think about it. Come, come forward. Now that you have understood the question, then we will do a deep dive in it and start understanding its solution. See, suppose you are given a big stick. How long is it? It is a 10-meter stick. Obviously, there"
+  },
+  {
+   "start": 546.27,
+   "end": 575.39,
+   "text": "There will be a marking from 0 to 10 on each meter. You have been told to cut 5 meters. Where do you want to cut? 1 meter, 3 meters, 5 meters, 7 meters, 9 meters. You don't want to leave any cut. This is not what you are thinking in your mind. You don't want to think that you will leave any cut. No, you have to cut all the cut. You have to cut according to yourself. You have to cut in order. Okay. Keep one thing in mind. If you have a 10 meter stick, you will not be asked to cut at 0 and 10 meters. Why? Because it is logical. If you cut at 0,"
+  },
+  {
+   "start": 575.39,
+   "end": 603.49,
+   "text": "So what will be the benefit? You cut the stick in the beginning. So what happened? You didn't cut the stick. You cut it on 10. So nothing happened to your sword and hammer. What does it mean to cut? If you cut, you will cut somewhere in the middle, right? Now as this is the hand. Now there will be some work to cut the hand from the middle, right? You are saying we will cut from here, from here. There is air to cut from here, right? Do you understand the thing? You are saying we will cut from here. There is a whole hand from here. So what does it mean to cut? So never you will be asked to cut on 0 and 10. Keep this in mind."
+  },
+  {
+   "start": 603.49,
+   "end": 633.44,
+   "text": "You can say anything from 1 to 9 to cut. Now let me explain you a trick or solution. Suppose you have all the cuts available in the beginning and you have to cut everything from here to here. So what we will do is we will take a variable. Now you have to finish the cuts array by cutting. There are 5 cuts in the cuts array. 1, 3, 5, 7, 9. You have to cut them all and finish them. So what we will say in the beginning? Do one thing in the beginning. I is equal to 0."
+  },
+  {
+   "start": 633.44,
+   "end": 659.87,
+   "text": "and J is equal to 4. We have to get the answer from here to here. If we cut all these cuts and get the answer, if we get the minimum cost, then I will get the answer. So, you say very good. Okay. I is equal to 0 and J is equal to 4. So, the whole error is still there. Okay. The stick is still in one piece. The stick is not cut in a single piece. Now, it is your choice that which cut do you want to cut first in I is equal to 0 and J is equal to 4. This is entirely your choice."
+  },
+  {
+   "start": 659.87,
+   "end": 687.5,
+   "text": "Suppose your mind says that you will make a cut of 7 meters first. We will make a cut of 7 meters first. Someone asks you to make a cut of 7 meters. What will happen by making a cut of 7 meters? First of all, this stick will be cut from 7. It will break from 7. When it breaks from 7, this will happen here and this will happen here. Now 7 meters was here. You have made a cut of 7 meters. Very good. Do it."
+  },
+  {
+   "start": 687.86,
+   "end": 714.34,
+   "text": "You have to find the length of the part where you have cut. Because there is a cost associated with every cut. You have to add that cost again and again. So you cut at 7 meters. Now forget any formula. Just look at the stick and tell what the cost will be. When you cut the stick at 7 meters, when the stick was in a single piece, you cut it from 7 to 8. What will be its length? What was the length of the stick in the beginning? It was 10 meters. So for convenience, we add 10 to the answer."
+  },
+  {
+   "start": 714.34,
+   "end": 743.89,
+   "text": "This is not a formula, we are just telling you in common sense. So everyone will say that in the beginning the stick was 1 piece, now cut it from 7 meters. When the stick was 1 piece in the beginning, then whether you cut it at 7 meters, 4 meters, 9 meters, the cost of everything will be 10. Because what is the cost? The cost is not that where you are cutting, no. The length of the stick on which you are cutting. So cut it anywhere in the beginning, cut it wherever you want, when the stick is 1 piece, the cost will be 10."
+  },
+  {
+   "start": 743.89,
+   "end": 772.94,
+   "text": "So, your cost is 10. Write 10. Okay. Now, what happened by cutting 7? And by cutting 7, your stick got cut in two parts. One is your left part. One is your right part. One is your left part. And one is your right part. Now, because you have cut 7. Because you have cut 7. What was left in the cuts array?"
+  },
+  {
+   "start": 772.94,
+   "end": 801.52,
+   "text": "There are two things left in the cuts array. First of all, the cuts array is left with i is equal to 0 and j is equal to 2. Meaning, the left part is left to be cut. And the right part, i is equal to 3, 4 and j is equal to 4. i is equal to 4 and j is equal to 4. Aren't these two left and right parts left to be cut? In the beginning, you had to solve the entire cut array."
+  },
+  {
+   "start": 801.52,
+   "end": 831.66,
+   "text": "You decide that we will cut this one. We will cut it at 7 meters. Cut it at 7 meters. The cost is 10. What is left in the cuts array to do? This left part and this right part. Okay. If we solve both of them. If we solve both of them. And add their answers. And in that answer. The cost to cut 7 is 10. Which is 10. So will my final answer come? Listen again. You."
+  },
+  {
+   "start": 831.66,
+   "end": 859.63,
+   "text": "Sorry. I am coughing because of speaking too fast. See, what were you doing in the beginning? You said that I is equal to 0 and J is equal to 4. We will solve it. You could have chosen anything in this. What did you choose? You chose that we will cut this one. This one. We will cut index 3. The one with 7 meters. Okay. By cutting 7 meters, your cost came to 10. We will talk more about cost. Now, common sense came to 10. Now, what was left after cutting this?"
+  },
+  {
+   "start": 859.63,
+   "end": 890.03,
+   "text": "What is left in the cuts array? One left part which is i is equal to 0 and j is equal to 2. Plus one right part i is equal to 4 and j is equal to 4. We will add both of them. We will add 10 to this. And after adding all of them, will you get the answer? Yes, you will get the answer. You must be able to understand that by doing this, you will get the answer. Okay. Now, let's talk about the left part. Which part? Let's talk about the left part. Left part means 1, 3, 5. 1, 3, 5. Okay."
+  },
+  {
+   "start": 890.03,
+   "end": 912.98,
+   "text": "Now see, now the stick is broken in two parts. Now the stick is not a single piece, now the stick is not of 10 meters. Now you have one stick left, which is 1, 2, 3, 4, 5, 6, 7. 1 is a 7 meter stick, 1, 2, 3, 1 is a 3 meter stick. Meaning, if you cut the 10 meter stick on the 7th meter, then one side is 7 meters and the other side is 3 meters."
+  },
+  {
+   "start": 913.26,
+   "end": 942.11,
+   "text": "Concentrate on the left side. You have to solve for i is equal to 0 and j is equal to 2. Only for this cut. Leave the rest. You have to take a decision from these three. 1, 3, 5. Which one do you like to cut? You have to take this decision. Now it will open here. The mystery of cost will be solved here. Suppose you cut anything from this. From this, on this stick,"
+  },
+  {
+   "start": 942.11,
+   "end": 967.78,
+   "text": "If you want to cut at 1 meter, 3 meter or 5 meter, what is the cost of that? What is the length of the stick you are cutting? You are cutting a 7 meter stick. You are cutting a 7 meter stick. How much? You are cutting a 7 meter stick. You can cut at 1 meter, 3 meter or 5 meter."
+  },
+  {
+   "start": 967.78,
+   "end": 993.34,
+   "text": "Cut at 4, 6, wherever you want to cut. But what will be the cost? The cost will always be 7. Because the stick you are cutting is 7 meters long. Similarly, even on the right, you can cut at 8 or 9. You don't have to cut at 10. So, no matter if you cut at 8 or 9, what will be the cost?"
+  },
+  {
+   "start": 993.34,
+   "end": 1022.29,
+   "text": "3 meters will come, 3 meters will come, because you are cutting a 3 meter big stick. This is also understandable, but this is also a matter of common sense. Till now, there has been no talk of maths or formula in the program. You will write that it is common sense, 7 meters is known. Okay. Now how does this cost come out? Now you had this stick left. 7 meter left mark stick was left. You want us to cut it according to 1, 3, 5."
+  },
+  {
+   "start": 1022.29,
+   "end": 1049.14,
+   "text": "We have already done that if you choose any of the three, the cost will be the same. Your cost will be the same because it is of 7 meters. But how did this 7 meters come? But how did this 7 meters come? This 7 meters is coming in such a way that when you came in the left part, then at which i and j value did you come? i is equal to 0, j is equal to 2. You came here. You came here, right? This part is the same, right? Okay."
+  },
+  {
+   "start": 1049.52,
+   "end": 1076.08,
+   "text": "How did you come to this part? When you have cut on j is equal to 3, then only you have come here. When you have cut on 7, then only this left part got separated. Then only you have come here. Because main cuts are from 0 to 4. You have come to 0 to 2. How did you make this part from 0 to 2?"
+  },
+  {
+   "start": 1076.08,
+   "end": 1105.7,
+   "text": "j is equal to 3 pe cut lagay honge na, tabhi aap idhar aay honge, tabhi aap idhar aay honge. Iska length kaise nikalajayega? Iswale bhaag ka kya length hai? Iswale bhaag ka kya length hai? Iswale bhaag ka length simple simple hai. Aap agar yaha pe hai, j is equal to 2 pe, j plus 1 ke cut pe jo bhi value likha hua hai, kya likha hua hai? 7 likha hua hai. 7 minus 0, 7 minus 0."
+  },
+  {
+   "start": 1105.7,
+   "end": 1130.53,
+   "text": "7 meters. Similarly, when you go to the right part of the recursion, then you will go to i is equal to 4 and j is equal to 4. Now tell me one thing, how will you reach here? When you have cut on idx is equal to 3, then you will reach here. Then you will reach here. See, when you cut here,"
+  },
+  {
+   "start": 1130.53,
+   "end": 1159.07,
+   "text": "then only you will reach this part and this part. When you cut at 3, then only you will reach 4. Your range will be 4, 4. That's why, how will the length of this come out? What is the total length of the stick? 10 minus minus this cut, this cut, this cut value of i minus 1. What is the cut value? 7 is equal to 3 meter. Look at this. Look at this. I will explain it again. I know it is very confusing."
+  },
+  {
+   "start": 1159.07,
+   "end": 1184.3,
+   "text": "Again, understand from the beginning. In the beginning, the cuts array was something like this. You cut at 7. You cut at index number 3 or at the meter of 7. After doing this, the cuts array is also divided into two parts which you have to solve. One part is left and one part is right. Now, when you go to the left part, how many sticks are left in the left part?"
+  },
+  {
+   "start": 1184.3,
+   "end": 1212.91,
+   "text": "How many sticks are left on the left side? The same length will be left on the left side. The cut you have made on this 7 meter. How did you reach I is equal to 0 and J is equal to 2? Because you have made a cut on J is equal to 3. That's why you have reached. So how does its length come? What is the smallest length of the stick? 0 does not cut on 0. So what do you do? Whatever its J value is."
+  },
+  {
+   "start": 1212.91,
+   "end": 1242.64,
+   "text": "J plus 1. J plus 1 means cuts of J plus 1 minus 0. Minus 0. So, its length is 7 meters. Come to the right. I is equal to 4. J is equal to 4. How will it be made? When you have cut on the 3rd index. Now, how to find its length? How to find its length? How much is the maximum length of the stick? 10 minus cuts of I minus 1. Here it is. I minus 1."
+  },
+  {
+   "start": 1242.64,
+   "end": 1271.74,
+   "text": "Do you understand or not? Understand or not? Understand or not? Understand or not? Understand or not? Understand or not? Understand or not? Understand or not? Understand or not?"
+  },
+  {
+   "start": 1271.74,
+   "end": 1300.93,
+   "text": "You are saying that we have cut 1. Cut it. And you have cut 5. You have cut 7 as well and you have cut 9 as well. Connect the stick again. 1, 2, 3, 4, 5, 6, 7, 8. This is how it happened. Only 3 is left. Only 3 is left to cut. Now see. When you go to cut only 3, then your i and j will look something like this. i is equal to 1 and j is equal to 1. Because only one cut is left in the cut series. This is your cut series."
+  },
+  {
+   "start": 1300.93,
+   "end": 1329.86,
+   "text": "We are saying that the entire cut is done. What is the cost? Leave it. The last cut is left. You have to do 3. The last cut is 3. That means your i and j will be same. That's why you will cut on that index. What are we saying from the beginning? You can choose any cut between i and j. You are saying that the entire cut is done. Only 3 is left. i1, j1. Now you have to cut this. See. That means you have to cut this stick. See. This blue stick. This one."
+  },
+  {
+   "start": 1329.86,
+   "end": 1356.32,
+   "text": "You have to cut the blue rod. You have to cut here. What is your work? How will we know the length of the rod we are cutting? How will we know the cost? See. You have I1 and J1. Okay? Now, how will we find your length? Now, when you have come to 3, when you have come to 3, when you have come to 3, then you have I1 and J1. What does this mean? Already I is equal to 0 is cut. Already I is equal to 0."
+  },
+  {
+   "start": 1356.32,
+   "end": 1384.42,
+   "text": "It has been cut. That is why you have come to i is equal to 1. What does i mean? How far do we have to solve the cuts array? i and j tell us. If you have come to i1, j1, it means i is equal to 0 has already been cut. 1 has already been cut. This also means that j is equal to 2 has also been cut. That is why you have come to j is equal to 1. What did you have to solve in the beginning? i0 to j4. While doing this, you came to i1, j1. This means"
+  },
+  {
+   "start": 1384.42,
+   "end": 1411.17,
+   "text": "I0 is also cut and J2 is also cut. What is the trick to find its length? The trick to find its length is cuts of J plus 1 minus cuts of I minus 1. See how. Now what is your I and J? Now what is your I and J? Anything. There is 1 and 1. You are trying to find the cut for this. When we cut 3, then what length of the stick will 3 be cutting? What are we saying?"
+  },
+  {
+   "start": 1411.17,
+   "end": 1439.22,
+   "text": "that if i and j have come, it means i minus 1 has also been cut and j plus 1 has also been cut. To find its length, if you cut j minus 1 minus i, cut i minus 1, then its length will come. How will it come? See. What is j plus 1? It means cuts of 2. Minus, what is i minus 1? Cuts of 0. 5 minus 1 is equal to 4. See, what is the length of this blue part? 1 meter, 2 meter."
+  },
+  {
+   "start": 1439.38,
+   "end": 1469.38,
+   "text": "3 meter, 4 meter. Is its cost 4? Absolutely 4. In this way, its cost will be deducted. Using this logic, you can deduct the cost of any cut. What do you want for this? If you have come from i to j, i-1 cut has been deducted. j-1 cut has been deducted. This one is left. You can understand it like this. What can you do?"
+  },
+  {
+   "start": 1469.38,
+   "end": 1495.9,
+   "text": "Suppose you are slowly traveling around the city. You are saying that we are now looking at the Bangalore beach from Ranchi. Suppose Delhi comes just before Ranchi and Patna comes just after Bangalore. Did anyone ask you the length of Ranchi and Bangalore? How many kilometers is there between Ranchi and Bangalore? You know that Delhi was 100 kilometers and Patna was 900 kilometers."
+  },
+  {
+   "start": 1495.9,
+   "end": 1521.5,
+   "text": "So how can you calculate its length? Just do 900 minus 100. This stretch will be of 800 km. This will be its answer. This will be its answer. Meaning, you come to IJ. So what will you do? You have to calculate the cost of any cut. So what will you do? Cuts J minus 1 minus cuts I minus 1. It's a little difficult to understand. Please think about it. Please think about it in your mind. Don't get frustrated that it didn't come. We also didn't come. We also"
+  },
+  {
+   "start": 1521.5,
+   "end": 1552.54,
+   "text": "We have seen more than 20 videos. We have seen more than 20 videos. We have seen more than 20 videos. We have seen more than 20 videos. We have seen more than 20 videos. We have seen more than 20 videos."
+  },
+  {
+   "start": 1552.54,
+   "end": 1580.64,
+   "text": "In the beginning, if you cut anything, let's say its n is equal to 10. It is a 10-length stick. What did we say? In the beginning, if you cut anything, its cost will be 10 meters because the stick was 10 meters. But how will it come? In the beginning, your i is 0 and j is 4. What have we taught you so far? If you cut anything from this, your cost will be cuts of j plus 1 minus cuts of i minus 1. This is a stupid thing. Why is this a stupid thing? Because i is 0 and j is 4."
+  },
+  {
+   "start": 1580.64,
+   "end": 1608.91,
+   "text": "This will mean that you will say that cuts off 5 minus cuts off minus 1. What is this? There is no minus 1 index in this. There is no 5 index. Index is 0 to 4. It will be wrong. That is why we will do a trick and add two things to it. What we told you earlier that you will never be asked to cut 0 and 10 because there is no benefit of it. Do one small thing. Add 0 in front of it in the beginning."
+  },
+  {
+   "start": 1608.91,
+   "end": 1635.57,
+   "text": "And add 10 at the end of the cuts. Arrange the index. See, arrange the index. Arrange the index. 0, 1, 2, 3, 4, 5, 6. Is it correct? Now, what do you have to do in the beginning? You have to solve from here to here. We don't have to cut 0 and 10, so we don't have to solve them. So, in the beginning, instead of passing 0 and 4, we have to"
+  },
+  {
+   "start": 1635.95,
+   "end": 1662.8,
+   "text": "We will pass 1 and 5. We will pass 1 and 5. Now see if the answer of the first one will be 10. See what will happen. What is it? Cuts j plus 1 minus cuts i minus 1. What will happen? Cuts 5 minus cuts 0. Cuts 0. Yes, because i is 1 now. Cuts of 0. What is cuts of 5? Cuts of 5? Sorry, it will be cuts of 6. It is j plus 1. Cuts of 6. What is cuts of 6? 10."
+  },
+  {
+   "start": 1662.8,
+   "end": 1689.84,
+   "text": "Minus. What is cuts of 0? 0. The answer is 10. Now your answer will be correct. If you had not done this, your segmentation error would have been done. Because we are using this formula. How will we use it in the beginning? In the beginning, who will you use? Suppose, I is equal to 3. Then it is fine. I minus 1 can be used. J is equal to 2. Then also it is fine. J is equal to 3 can be used. But in the beginning, if I is equal to 0, then how will you access I minus 1?"
+  },
+  {
+   "start": 1689.84,
+   "end": 1718.91,
+   "text": "And in the beginning, if j is at the end of the cuts array, then how will j plus 1 be accessed? The program will crash. That's why, what will we add? We will add a boundary. If one boundary is 0, then there will be no need to cut it. If one boundary is 10, then there will be no need to cut it. And we will leave the middle one and solve it. So that's it. How will we code this? Let's see how we do it. First of all, let's write the function. int fun"
+  },
+  {
+   "start": 1718.91,
+   "end": 1748.37,
+   "text": "First of all, what will pass in this? Vector, int, cuts. Okay. And one will be i and one will be j. Okay. First of all, see that if i is greater than j, which means all your cuts are over, then there is no need to do anything else. Return 0. What is i, j? i, j is range, right? So, suppose i is 2 and j is 1. So, 2 to 1 is not a range. 2 to 1 is a negative range. It is over. You don't have to do anything. Okay. After that, take a variable."
+  },
+  {
+   "start": 1748.53,
+   "end": 1776.99,
+   "text": "Res is equal to int max. Okay. Take it. Now, you can choose any cut between i and j. So, choose one by one. For int k is equal to i. k less than equal to j. k plus plus. Okay. Now, you choose it. Int. First of all, remove the cost. What is the cost? Cuts of j plus 1 minus cuts of"
+  },
+  {
+   "start": 1776.99,
+   "end": 1807.36,
+   "text": "I minus 1. We got the cost of this cut. Now, what do we do? Take out a temporary answer. Cost plus. Now, if you have cut on K. You have cut on K. Means, your I was here, J was here. Suppose, you choose that we have cut on this K. What is left? I to K minus 1 and K plus 1 to J. These two are left, right? So, solve this. Cuts. I to K minus 1 plus."
+  },
+  {
+   "start": 1807.36,
+   "end": 1837.25,
+   "text": "fun of cuts from k plus 1 to j. Solve this. Whatever answer you get, res is equal to minimum of res and r. Close this loop. What will happen is that you will try all the cuts one by one. The cut that gets the best answer first will be your answer. In the last, you press return. This is the function. What will you have to change in the main function? In the main function, you will be given two things. Suppose,"
+  },
+  {
+   "start": 1837.25,
+   "end": 1866.72,
+   "text": "It is the function of the lead code. On the lead code, first of all, you will be given n, which means the length of the rod, n is equal to 10. And you will be given a vector, which is cuts. Which is what? Cuts. Okay. First of all, what do we do? First of all, what do we do? Change the cuts array. Change the cuts array. What does it mean to change? First, put a zero and then put n at the end. We will name it as c. We will make another vector. Vector int."
+  },
+  {
+   "start": 1866.72,
+   "end": 1897.52,
+   "text": "C. Okay? After that, what do we do? int I. After that, come. First of all, add a 0 to C. Here, we will name it cuts. This is your C. First of all, a pushback in cuts. Cuts is empty now. Cuts is empty now because you just made it. Pushback 0. Now, put all the content of C in cuts as it is. For I is equal to 0. I less than C dot size. I plus plus. After that,"
+  },
+  {
+   "start": 1897.52,
+   "end": 1923.41,
+   "text": "Cuts.pushbackci. Okay. It's finished. In the last, push one more thing in cuts. What did you push? Push N. If you had to push 0 and 10, then push N. It's finished. Now, sort the cuts. Sort. Because sorting will make it easier for you. Sorting will make it easier for you. Because of sorting, we can make a decision that it's okay."
+  },
+  {
+   "start": 1923.41,
+   "end": 1954.1,
+   "text": "1, 3, 5, 7, 9. Which one should we cut? 5. What's left? 1, 3 is left. What's its length? 5 minus 0, 5. What's the next one? 7, 9. What's its length? 10 minus 5, 5. Okay. Cuts.begin and cuts.end. We have done this. Sort. Now you just pass this in your function. What do we have to pass in the function? Let's assume that int s is equal to cuts.size. Cuts.size. Let's assume that the size of cuts is 6. It means that your cuts will look something like this."
+  },
+  {
+   "start": 1954.1,
+   "end": 1983.28,
+   "text": "Your cut is 0, 1, 3, 5, 7, 9, and 10. Consider this as your cut. 5, 6. You have added this and this. What will be its size? 7. From where do you have to solve? From here to here. Meaning from 1 to 5. Meaning, what will you pass in your function? Return. In fun, pass cuts. What will you pass instead of i? What will you pass instead of 1, j? S minus 2. Not S minus 1, S minus 2. Till here. This. This."
+  },
+  {
+   "start": 1983.28,
+   "end": 2009.74,
+   "text": "You have to solve it till 5. That's it. Your work is done. Again, we are saying again and again that the question is hard. It was hard to explain. It was very hard. We had to think a lot. We are still not clear whether you understood or not. Because this is the problem. When we record, we don't understand. We are not live. So, we don't know. So, we teach you according to our style. If you don't understand, then watch the video once or twice. We will say that if you still don't understand, then..."
+  },
+  {
+   "start": 2009.97,
+   "end": 2017.95,
+   "text": "Try a little or leave it. It's not easy to understand every question. It's not necessary to understand every question. Okay. No, let's go."
+  }
+ ]
+}

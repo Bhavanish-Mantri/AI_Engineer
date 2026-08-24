@@ -1,0 +1,654 @@
+{
+ "video_id": "v4pIgiBQMh8",
+ "title": "DSA PATTERNS Episode 12 Sliding Window Pattern: Core Interview Questions",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 3725,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 23.42,
+   "text": "Welcome! We do not ask you to solve the questions, we teach you the pattern of DSA. Pattern does not mean the star pattern, but the pattern or template to solve the questions. You can make any new question. And those who are old students, please come. Sliding window is on day 3. You know, you will get the notes, questions, code links in the description."
+  },
+  {
+   "start": 23.42,
+   "end": 52.24,
+   "text": "The sliding window that we are going to do today is a very important session because as much as the question of the variable size window can be, we will finish it all straight away. You will start thinking that this is happening in every question, we have to apply the same thing, change one or two lines here and there and the question will be made. Got it? Okay. The sliding window is very important because in any interview, there is a 50% probability that you will be asked about the sliding window. The probability of asking about the DP graph is not that much, very few companies ask about it."
+  },
+  {
+   "start": 52.24,
+   "end": 82.96,
+   "text": "Sliding window almost every company will ask. If they want to ask a medium level question, then sliding window will ask. Okay? Today, the three questions we are going to ask. Three, three. You guys were saying that speed is not increasing, so let's increase the speed. First is longest substring with K distinct. First is longest substring with K distinct. Okay? You will get everything in the pattern sheet. Second is fruits into basket. Fruits into basket."
+  },
+  {
+   "start": 82.96,
+   "end": 112.3,
+   "text": "basket and the third one is no repeat substring the third one is no repeat substring don't be scared after seeing the three questions in the first question itself, I will explain it to you so well that the other two will be made by you or should be made by you, this is my belief ok, what we talked yesterday, the people who haven't seen yesterday's lecture, see it or at least see a little of it what we talked yesterday, we solved two questions yesterday one was of fixed size window and the other was"
+  },
+  {
+   "start": 112.3,
+   "end": 138.85,
+   "text": "Variable size window. Okay. I told you about 4 steps of sliding window. Everyone will remember those 4 steps. That what is done. The most important step was this one. Is it fixed or variable? Did you understand? Okay. For fixed, there is a set pattern, set template. What is it? Let me revise it quickly. What do we do in fixed? We keep low equal to 0. High is equal to whatever window size you have given. If K is given."
+  },
+  {
+   "start": 138.85,
+   "end": 167.98,
+   "text": "So, we keep k-1. If 2 is given, then keep 1, 3, and 2. What did we do after that? After that, we used to move the high. From where the high used to move? From wherever it is and till n. After that, we used to do some work with its result. Anything can be done. After that, what did we do? We used to increase the low. And we used to remove the low from the result. We used to remove the low from the result. After that, what did we do?"
+  },
+  {
+   "start": 168.24,
+   "end": 191.5,
+   "text": "we would increase the high once we would check that the high has not gone out of n if it has not gone out then what would we do in the result whatever your result or sum or frequency or average could be we would add the high to that this is what we used to do while doing this we used to get the answer so it is very simple any question of fixed you have to do like this"
+  },
+  {
+   "start": 191.79,
+   "end": 221.22,
+   "text": "Variable becomes a little difficult. Why is it difficult? First of all, it becomes difficult to understand how to do it and its time complexity. There were a lot of comments that you didn't understand the time complexity. Let's explain it. What to do in variable? First of all, how to understand the variable window? Whenever you are not given any case size. Whenever you are not given any case size. It is not said that the size of the subarray should be this much or the size of the substring should be this much. It is just said that find any subarray. Find the longest, find the shortest."
+  },
+  {
+   "start": 221.22,
+   "end": 250.38,
+   "text": "find this and that, then that is a variable. This is a very simple thing. Okay. Now if this is a variable, then we can't do that that we keep low at 0 and high at k-1 because k is not given. What do we do in this? We keep low at 0 and high at 0. This was discussed yesterday, you must remember. After that, we keep increasing the high. After that, we keep increasing the high and"
+  },
+  {
+   "start": 250.38,
+   "end": 277.39,
+   "text": "Then, we keep shrinking the low. We will understand all this. If it is going from the top, then don't take it difficult. We keep shrinking. Yesterday, we made a mistake that to increase the high, we used the while loop. We should not do the while loop. The while loop will not strike you that much. Today, we will explain it with the for loop. And the pattern that we will tell today, the same template will be used in every similar question. Any longest substring or longest subarray, the same pattern will be used. Okay. See, what do we do in this? In this, we"
+  },
+  {
+   "start": 277.39,
+   "end": 308.64,
+   "text": "Let's understand the template from the beginning. What do we do in this? Where is your high? Is your high at 0? What do we do? For? We are telling any question. The question hasn't even started yet. We haven't even read the question yet. We are telling. High is equal to 0. High less than n. n is the size of your string, the size of your array. And high plus plus. Now the need for while loop is over. For is done. What do we have to do first? In any similar question in which"
+  },
+  {
+   "start": 308.64,
+   "end": 338.78,
+   "text": "Longest substring or longest array in which k is distinct or exactly k, whatever it is. First of all, where your high is right now, your high is at 0, it should have its result. Result means what information that window is giving you. It might be giving you a sum, it might be giving you a frequency, it might be giving you an average, it might be giving you anything. Whatever information you have of that window, whatever your information is, you have to include the high in it."
+  },
+  {
+   "start": 338.78,
+   "end": 368.0,
+   "text": "include what does include mean? if there is a sum then add an array of high if there is an average then add an array of high and do anything if there is a frequency then take a hash map and add a plus plus to the high you are understanding, in information you have to include the high now now now a very important step once the high is included now you must have given some condition that if this information is like this then we need this if this information"
+  },
+  {
+   "start": 368.0,
+   "end": 396.59,
+   "text": "If it is not like this, then we don't need it. You must have given something, right? That whatever your substring is, it should have k distinct elements only. Or it should have less than k distinct elements. Either more than k, some condition must have been given that if this information is like this, then we need it in the answer. Okay. So, two things can happen. Your information is either like that, perfect, means you have to take this window. Or your information is not like that. There can be only two cases. So,"
+  },
+  {
+   "start": 396.82,
+   "end": 423.94,
+   "text": "Here comes the most important step. Now we are making a box, we will tell you what to do in it. As soon as you have included high, it is possible that the information has come that you do not want. So here we are till information is wrong. What is the meaning of wrong?"
+  },
+  {
+   "start": 423.94,
+   "end": 454.21,
+   "text": "Either it has increased or decreased. It is basically wrong. For example, you have been told to find a window whose sum is 10. Okay. It is possible that as soon as you include this high, your sum becomes 11. Or your sum becomes 9. Anything can happen. So, it is wrong. So, as long as it is wrong, why did it happen? Once you increased the high, it happened. Now, we will fix it. Here, we have to fix it. We will fix it. How will we fix it? See."
+  },
+  {
+   "start": 454.21,
+   "end": 482.14,
+   "text": "In any variable window, once high is done, high will only increase from this for loop. High will only increase from this for loop. You should not mix and match with high in 90% of cases. Where can you mix and match? Why is it called variable size window? Because it is a variable, it keeps on decreasing and increasing. When high increases, then this variable increases, the window increases. And to reduce the window, we bring the low from the back. This happens, right? This is your window, high keeps on increasing."
+  },
+  {
+   "start": 482.14,
+   "end": 512.3,
+   "text": "And as we want to reduce the window, we start reducing the low from here. You have to do the same thing. You have to fix it. How will you fix it? By shrinking the low. By shrinking the low. Shrink means by reducing. What will we do along with reducing? First, we will remove the low from your information. This used to happen in fixed size also. It was 100, 200, 300. So, it was 100, 200 only. After that, when we used to move forward, we used to tell 100 to go. So,"
+  },
+  {
+   "start": 512.59,
+   "end": 543.33,
+   "text": "remove the low from the result or the information. If you have a sum, then reduce the array of low from the sum and increase the low. How many times do you have to do this work? Not once or twice. You have to keep doing this work in a loop. How long do you have to keep doing this work? Until your information is correct. It may mean a lot of correctness question to question. We will study further."
+  },
+  {
+   "start": 543.33,
+   "end": 572.21,
+   "text": "The rule is that until your information is correct, you have to keep doing this work. What do you have to do? You have to keep increasing the low and keep removing the low. It means you are making the window smaller. Your high is increasing, the high stopped at one place, then you are bringing the low slowly, slowly, slowly, slowly, until the information is correct. Okay, that's a good thing. Now, once you have done it, what does this mean? Now your information must be correct."
+  },
+  {
+   "start": 572.21,
+   "end": 600.82,
+   "text": "See, it is not that simple. As we are telling you, it is not that simple. Question by question, one or two lines change, but this is the logic. Now, your information must be correct. Now, you have to calculate the length here. How do we calculate the length? High minus low plus 1. And we have to calculate this length in our result. Min or max, whatever you ask, ask the longest, ask the shortest, ask anything. So, if you ask the longest,"
+  },
+  {
+   "start": 600.82,
+   "end": 629.7,
+   "text": "So what will we do? Max result and length. And we will close this for loop here. Which for loop? The high one. We will close the high for loop here. So this is a general pattern of variable size of sliding window. Whenever you get a question like longest substring, it should have k, it should have at most k, at least k, exactly k, anything. Okay? See this once. See this once. From here to here."
+  },
+  {
+   "start": 629.7,
+   "end": 658.18,
+   "text": "You can see this. This is the general format. What is the format? Let's read it once again. Keep increasing the high. Keep increasing the high from 0 to n, plus plus. The high will be very less that you have to poke it inside. The high will keep increasing with your for loop. First of all, include the high in the information. Till the time your information is wrong, keep increasing the low. Once your information is correct, then write it in your result. And return the result by closing the for loop."
+  },
+  {
+   "start": 658.18,
+   "end": 688.38,
+   "text": "Keep this in mind and write it in a copy. Now write it in a copy. Have you written it in a copy? That's good. Now come. Okay. Now let's come to its question. Time complexity. Once we will do the question, we will tell you. Okay. What is the first question? Longest substring with k distinct characters. Meaning? Meaning? What is given in the question? You have been given a string. What is given? String. Okay. There are some characters in the string. All are lowercase characters. Meaning? Small letters. Okay. That's good."
+  },
+  {
+   "start": 688.38,
+   "end": 719.74,
+   "text": "And you are given a K. K is an integer. Okay. What do we have to find? Longest. Longest. Substring. Substring. Longest substring. What should be there? In this, exactly. Exactly. K. This one K. Distinct. Means unique. Alphabets. Alphabets. This is the meaning of this question in Hindi. What is the whole question? String is given. K is given."
+  },
+  {
+   "start": 719.74,
+   "end": 748.75,
+   "text": "Find the longest substring in the string which has k distinct characters i.e. k unique characters. Do you understand? This is the question. Let's follow the flowchart step by step. What was the flowchart? What was the flowchart? Step 1. Will the sliding window pattern be applied or not? Is this an array or a string question? Yes, it is a string question. Is the longest substring or subarray written in it? Is the longest substring or subarray written? We have to find it. Yes."
+  },
+  {
+   "start": 748.75,
+   "end": 779.82,
+   "text": "Is it written anywhere exactly k or less than k or at most k? Yes, it is written. What is written? Exactly k. If you feel that where did this come from, then it was in the flowchart of day 1. Before starting any pattern, keep its flowchart handy that this is the flowchart. Only then it is known that it is of sliding window. So see, all three are in it. All three are positive in it. This is definitely, not definitely, but 90% is the question of sliding window."
+  },
+  {
+   "start": 780.11,
+   "end": 805.36,
+   "text": "Okay, why do we say 90% in this and not 100% in this? It is possible that you may feel that some question is of sliding window but there is a little off chance that it is not. It may be of greedy or DP. So how do you have to approach in the interview? Where do you have to start in the interview? You have to start from sliding window. Okay? Because this is the problem. You read 20-30 types of algorithms and you don't know that"
+  },
+  {
+   "start": 805.36,
+   "end": 833.1,
+   "text": "From where to start? It is possible that you started with binary search and then wasted 15 minutes in it. Then you came to know that it was not of binary search. So this increases your probability of choosing the right algorithm. Are you understanding this thing? Okay. The first step is that this is a question of sliding window. I am understanding. What was the second step? Is it fixed or variable? It is fixed that it is variable. Is it given anywhere in the question that if you want to find the substring, then the length of the substring should be this much? No."
+  },
+  {
+   "start": 833.1,
+   "end": 858.64,
+   "text": "The question is, how long is the longest substring? Whenever it comes that how long can it be, then close your eyes and assume that this is a variable question. In fixed, you will always be told to find the area of k size or find the sub-window of 3 size. So it is understood that this is a variable. What was the next step? See, those who do not understand this step, so we say that you should see it daily."
+  },
+  {
+   "start": 858.64,
+   "end": 886.83,
+   "text": "Those who are new students, as mentioned in yesterday's lecture, there are four steps in any sliding window question. It is important for you to understand that. That's why, watch it consistently, otherwise don't watch it. If you watch a web series, then don't watch it from the beginning. Go directly and watch the fifth episode, you won't understand who is Munna Bhaiya and who is Guddu Bhaiya. Right? Okay. What was the next one? Information. Information. Information. What is information?"
+  },
+  {
+   "start": 886.96,
+   "end": 917.01,
+   "text": "What do you have to find in longest substring? What do you understand by looking at the substring? In this question, you were given k distinct characters. What does it mean? If you have any window, there will be some characters in it. Suppose this is your substring or window in which your low is here and high is here. So this is your window. What do you have to find in this? You are told that if it has k distinct characters,"
+  },
+  {
+   "start": 917.01,
+   "end": 945.26,
+   "text": "then it is right, otherwise it is wrong. It can be A, A, B, C, D. It can be A, A, B, B, and C. What do you think after looking at it? How many distinct characters are there in it? One is A, one is B, one is C. There are three. What is the information of this window? How many unique characters are there in it? That is the information. Did you understand?"
+  },
+  {
+   "start": 945.26,
+   "end": 974.1,
+   "text": "How will we calculate it? We will calculate it with HashMap. If you keep a HashMap, and whenever you go to any character, increase its frequency. What will happen in this? If you cover this entire window, then your HashMap would cost money. The frequency of A would be 2, the frequency of B would be 2, and the frequency of C would be 1. See, there are 5 total characters in this. But what is the size of HashMap? The size is 3."
+  },
+  {
+   "start": 974.86,
+   "end": 995.33,
+   "text": "Do you understand? What is a HashMap? Characters and its frequency. You are writing that the frequency of A has come twice. B has come twice and C has come once. So the total characters are 5 and that is the length of the window. But what is the size? How many unique elements are there in the HashMap? There will be only 3 unique elements in the HashMap. By doing this, you can find the information. Very good. What was the next step?"
+  },
+  {
+   "start": 995.33,
+   "end": 1022.72,
+   "text": "When you move the window, either move the high or move the low, then how will you change this information? Will you iterate from low to high again and again? No, this is already covered in fixed. What do we do? If, if, according to now, your low is here, high is here. If high moves, then what do we do? We do nothing. Array of high, or string of high, we make it plus plus."
+  },
+  {
+   "start": 1022.72,
+   "end": 1052.66,
+   "text": "If it moves high, then we will add its frequency. What will we do to move low? What will we do to shrink low? We will reduce the low. We will do this, we were doing this yesterday also. We will do minus minus and we will do low plus plus. It is a simple thing. There is a confusion in this. Suppose this is your array. This is your current hash map. A is 1, B is 2, C is 2. Your low is pointing to A."
+  },
+  {
+   "start": 1052.66,
+   "end": 1079.63,
+   "text": "For example, it is like this. Now, you have to remove A. Means, you have to remove this low. So, what did we say to remove? What did we do yesterday? If it was sum, then what would we do with sum? If we would have minused it with sum, then it would have been removed. How will we do it in HashMap? In HashMap, we are saying that its frequency, there is a frequency in HashMap. So, you have to reduce its frequency. So, you will reduce its frequency in HashMap. If we reduce its frequency, then it will become zero. It will become, we will reduce 1 to zero. Now, now,"
+  },
+  {
+   "start": 1079.63,
+   "end": 1109.06,
+   "text": "In any language, if you make it zero, then it is not removed from the HashMap. This A is still in the HashMap, it is not removed from the HashMap, its frequency has become zero. If someone asks how unique the character is, then you are saying that the size of the HashMap is unique, but the frequency of A is zero. What is this HashMap telling us? We have a window in which A is not one bar, B is two bars, C is two bars."
+  },
+  {
+   "start": 1109.06,
+   "end": 1134.86,
+   "text": "It should be 3 and its size should be 2. It should be 2, right? Because A is 0. For this, for this, for this thing, see, there is no problem in sum. If you minus in sum, then it is gone. But this A is not gone yet. Its frequency is 0. For this thing, for this thing, after this, we will have to check if f of A low, A low is equal to 0, then erase, f dot erase."
+  },
+  {
+   "start": 1134.86,
+   "end": 1162.51,
+   "text": "This is the syntax of CPP. In Java Python, you can see how to remove it from the HashMap. Take this. What does this mean? If the frequency of any character is zero, then there is no use of keeping it on the HashMap. It will be wrong. Remove it. Erase it. Right? You have a lot of people. You have taken all the money from one person. That person is completely ruined. There is no use of keeping him. You have to erase him. So this is a small step. Okay?"
+  },
+  {
+   "start": 1162.61,
+   "end": 1192.16,
+   "text": "It's not that hard, I just told you to tell you. If we write this directly in the code, then we don't understand. So people do this, they don't tell you now, you go to the code and see that f.raise is written, then why is it written, it is written because it is zero, remove it. You understood this much, the fourth step is clear. Now look carefully what we learned on the top, the top for loop, we learned that for loop is such a big block, how to use it. Now what to do?"
+  },
+  {
+   "start": 1192.16,
+   "end": 1222.58,
+   "text": "What to do? First of all, what did we say? Keep the low at zero. Keep the high at zero too. Now, let's make an array. Let's make an input array. a, a, b, a, c. a, a, b, a, c. And, let's do b. 0, 1, 2, 3, 4, 5. This is your string. Your k is 3."
+  },
+  {
+   "start": 1222.58,
+   "end": 1254.0,
+   "text": "This is given in the question. Don't keep k3, it will be bad. Your k is 2. Did you understand? Now, this is your question. Now what will you do? First of all, what did we say? Low has to be 0 and high has to be 0. First of all, what do we have to do? We have to run the for loop. If we run the for loop, then only the high will increase. We are increasing the high one by one. Run it. For high is equal to 0. High less than n. n means, whatever size it is, it has 6."
+  },
+  {
+   "start": 1254.29,
+   "end": 1285.2,
+   "text": "Is it 6? Yes, it is 6. Okay. What was the first thing we said? Which will definitely happen. Include high in your information. Include it. Where does our information get stored? It gets stored in the HashMap. So, let's make a HashMap here. A small, cute HashMap. Let's make it here. What is this? HashMap. Frequency one. Okay. Now, HashMap will remain empty in the beginning. Its size will remain 0. Size will remain 0. Okay. Now,"
+  },
+  {
+   "start": 1285.49,
+   "end": 1316.99,
+   "text": "See, the first thing to do is to include the high in your information. How do we include it? F, S, high. S is your string. And S is plus plus. What does this do? There is nothing in your hash map. Where is your high now? Let's make your high here. Your low is here and high is also here. Zero is there. So now your character is A. A is not in your hash map."
+  },
+  {
+   "start": 1316.99,
+   "end": 1346.77,
+   "text": "A is not on the HashMap yet. But when you do this, when you do this work, then if it is not there, then it is added. And it starts from 0 and makes it 1. You can do this, okay? If you don't understand this, then first insert it with 0 and then make it 1. By mixing and mixing, the work is the same that its frequency increases. If it is not there, then it is inserted with a frequency of 1, not 0. Not 0, with 1. Okay. Now A1 has come on your HashMap. Right."
+  },
+  {
+   "start": 1346.77,
+   "end": 1372.53,
+   "text": "Now, see the next step. This is done. Very good. We have reached here. Now, what was the next step? In the next step, you have to think that is my information correct? What does it mean to have correct information? To have correct information, the substring that has been asked, on what condition has it been asked? On what condition has it been asked? What is written in the question? In which there are exactly k characters, k unique characters, what does it mean?"
+  },
+  {
+   "start": 1372.88,
+   "end": 1401.97,
+   "text": "that no matter how many characters are there in your window, the length of your window can be anything, it can be 100, but, but, but, there should be only K in unique characters. Meaning, if A is repeated 100 times, then it is fine, it will be counted as 1. If B is repeated 50 times, then it will be counted as 2. If C is repeated 10 times, then it will be counted as 3. No matter the length, we were learning this information, what did we call it? The size of the hash map, the size of the hash map. Now, what is the size of your hash map? 1. It is 1, right? Okay."
+  },
+  {
+   "start": 1402.22,
+   "end": 1431.28,
+   "text": "How do I undo this? The size of the hash map is 1. So, what does it mean that the information is correct? If the size of the hash map is exactly K, then the information is correct. Isn't it? If the size of the hash map is exactly K, then it will be correct. This is what it means. If A, B, C, this is your window, then what will be the size of the hash map? 3. How many distinct characters are there in this? 3. This is a simple thing."
+  },
+  {
+   "start": 1431.28,
+   "end": 1460.75,
+   "text": "Now, what is the size of this hash map? 1. What does this tell us? That there is only one distinct character in my window. There is only one distinct character. Okay. Now, what did we say? Information can either be right or wrong. It's a good thing. Come. Information, there are only two cases, right? There are only two cases in the world. Right or wrong. But, but. Now, there is only one case of right. See, here we are writing a small one to make. There is only one case of right. f.size equals to k. There is only one case of right."
+  },
+  {
+   "start": 1460.75,
+   "end": 1489.39,
+   "text": "What is wrong? Either f.size is greater than k or f.size is smaller than k. This can be the case of three types in the world. This is normal. This is your right case. Now what we said that until the information is wrong, you shrink the window. It does not happen in every case. We said that it changes a little but that is the general logic. Now see."
+  },
+  {
+   "start": 1489.68,
+   "end": 1517.87,
+   "text": "In this case, we will understand better. What did we say? That till the time our information is wrong, we have to shrink the low. Now look at this case. For example, your F size is less than K, as it is here. Your hash map size is 1 and K length is 2. So yours is less, so this is wrong information. So should we shrink in this case also? No. Why? What does it mean to shrink the window? To shrink the window means that you have to"
+  },
+  {
+   "start": 1517.87,
+   "end": 1546.67,
+   "text": "Shrinking the window means that you will bring the low towards the high. This means that if the window is like this, then you will make the window smaller. And when you make the window smaller, then you will keep blowing it with the HashMap one by one. This is what was said that first reduce the frequency of the low. If the frequency of the low becomes zero, then blow it. So it means that if the size of F is less than K, then we understand one thing that if we shrink the low, then"
+  },
+  {
+   "start": 1546.67,
+   "end": 1577.33,
+   "text": "the size of F will be less. Will it be less or will it remain the same? Will it increase or not? Will it increase or not? Listen very carefully. This is what we don't understand. And this is what the teacher doesn't explain. If we are shrinking the low, then the size of the hash map will remain the same. It means the size will remain the same. Its frequency may decrease, but the size will remain A. Either its size will be less. It means if A becomes 0, then A will fly away. These two things can happen, right? So now see, when the size of F is already less than K,"
+  },
+  {
+   "start": 1577.33,
+   "end": 1604.11,
+   "text": "So why do you have to increase the low so that it gets lower? It shouldn't be lower, we want it exactly. That's why, if the size of F is already less than K, then there is no use in shrinking. Now see, what happens by increasing the high? By increasing the high, the size of F increases. This is what happens. If we increase the high, then if it enters the hash map, then it increases. And by shrinking the low, its size decreases. Meaning,"
+  },
+  {
+   "start": 1604.11,
+   "end": 1627.82,
+   "text": "When you move the low, the size will decrease and when you move the high, the size increases. That's why we move the high so that the size increases. So, when the size of F is less than K, we don't think that shrinking the low has any benefit. Now you need to increase the high. It is already less. You have to go up to 2."
+  },
+  {
+   "start": 1627.82,
+   "end": 1653.15,
+   "text": "You are sitting on 1, so will you increase it or decrease it and bring it to 0? You will increase it, right? Your goal is to touch the tube. Did you understand? That's why handling this case, there is no need in the low part, it has two parts, right? In one part, the high's for loop runs and a while loop runs inside the high, which is low. This was the template."
+  },
+  {
+   "start": 1653.15,
+   "end": 1681.04,
+   "text": "If the size of f is less than k, then you need to increase the height, then it will increase next time. There is no use in shrinking the low, then it will be more wrong. You are already at 1, you have to go to 2, then if you increase the low, then you will go to minus 1 or minus 2. So you are going further, you don't have to go. That's why. Oh man, this is very difficult. Yes. So, when the size of f is less than k, then there is no need to go to the low part. But now see."
+  },
+  {
+   "start": 1681.04,
+   "end": 1709.62,
+   "text": "If the size of f is bigger than k, now you have to go to 2, now you are sitting at 3, will you increase the height? No, then you will go to 4. In this, you have to increase the low, because when the low increases, then the size of the hash is gradually reduced. So you have this. So the low part will definitely happen, but in what condition it will happen, you have to decide."
+  },
+  {
+   "start": 1709.74,
+   "end": 1737.3,
+   "text": "When we have increased from k, then we have to decrease a little on k. There is only one way to decrease, to increase the low. If we increase the low, then the size will decrease. And if we increase the high, then the size will increase. Remember these two things. According to that, you have to decide it. Come. Now let's decide it. Did you understand this much? If you don't understand, then comment and we will explain. Let's erase it. Now you will understand it slowly. Let's go. What did we say?"
+  },
+  {
+   "start": 1737.42,
+   "end": 1766.58,
+   "text": "information can be wrong means if it is bigger than k then we have to shrink it and what did we say on the face till the time information is wrong then reduce the low till the time information is wrong then reduce the low means while while f dot size f dot size is greater than k what does this mean till the time f dot size is bigger than k then reduce the low what is the way to reduce the low first of all take s"
+  },
+  {
+   "start": 1767.38,
+   "end": 1793.81,
+   "text": "Minus minus, removed. After that, what did we say? After that, what did we say? If its frequency is 0, then erase it because it will not happen by itself. So, if F dot F A S low equal equal to 0, it is possible that while decreasing someone, its frequency becomes 0. If this happens, then erase it from the hash map. That's why the size will be less."
+  },
+  {
+   "start": 1793.81,
+   "end": 1816.08,
+   "text": "If you don't do this, then your size will not be less. The frequency of all will be zero, but that character will remain. It is necessary to reduce the size. The work is done, blow the low. Now what is there? Increase the low. Increase the low. And close this while loop. See this. What is happening in this part? As long as my information is wrong,"
+  },
+  {
+   "start": 1816.08,
+   "end": 1845.22,
+   "text": "As long as my information is wrong, and which one is wrong, not the less one, the more one is wrong. Means if it is more, then it is wrong. In the less one, you have seen that there is no need to do this, you will keep getting more wrong. So this is correcting it. This will correct it. This will correct it. As long as the information is wrong, keep increasing the low. The work is done, now come, now it is very important. You must be thinking that in everything it is said that it is very important. But it is there, in the beginning it is there. Now see."
+  },
+  {
+   "start": 1845.22,
+   "end": 1874.51,
+   "text": "Now what have you done? Here you had done something in size. The size had increased. Here you had reduced the size. Now, there can be a case of two types. We had seen that there were three types of cases in the beginning. The size of F would be exactly K. The size of F would be less. The size of F would be more. So, if the size of F is more, then it is handled. If this Y loop breaks, then when will it break? Either the size of F becomes equal to K, then it will break. What are you saying?"
+  },
+  {
+   "start": 1874.93,
+   "end": 1901.15,
+   "text": "For example, what we are saying is that if the size of f is 3 and k is equal to 2, then you are reducing the size of f one by one. At some point, the frequency will keep decreasing, then it will be 0, then the size will also decrease. So either that 3 will be reduced to 2, then this while loop will break because when the size of f is equal to k, then it will break, it will not break like this. If there is 4, then 4 will be 3 first, then 3 will be 2."
+  },
+  {
+   "start": 1901.15,
+   "end": 1930.86,
+   "text": "When this will be equal, then this while loop will break. This is the condition, so it can be equal now. If the size of f was less than k, which was a case which we have not handled, if the size of f was 1, then will this while loop work? No, because it is not more than 1 and 2, then this while loop will never work, you will come here. This means that when you have come here after breaking this while loop, then there can be two types of cases. The size of f can be equal to k,"
+  },
+  {
+   "start": 1930.86,
+   "end": 1950.14,
+   "text": "It may be that it is more than or equal to f. Either the size of f was not bigger than k, it was small, so you never run it. So there can be two conditions. What was the step after this? What was that in the template? That the information is correct, then add it to the result. But there can be two types of information."
+  },
+  {
+   "start": 1950.14,
+   "end": 1979.62,
+   "text": "Can it be equal to k or less than k? Which one do you want? You want k's equal. Exactly k is written. Exactly k is written. If it was written at least k, then what would we do? We would add that too. So, exactly is written. Exactly is written. So, put an if. If f dot size equal equal to k, then now you have to include it in your final answer. How do we do it? Very simple. You must have remembered it by now. High."
+  },
+  {
+   "start": 1979.62,
+   "end": 2013.04,
+   "text": "Minus low plus 1. And result is equal to max. Longest is max. Length and result. Close this if. This for loop is closed. For loop is high. And come down and do return result. Simple thing. Comfortable. See. What happened? 3 parts. Here 2 types of case were possible. Less than or equal to f size k. Here you check."
+  },
+  {
+   "start": 2013.04,
+   "end": 2042.03,
+   "text": "According to what was said in the question, that's why we checked it. The next question that we will show, fruit into basket, the sum of fruit into basket is same. We will change one thing, the whole code will be changed. So, according to the question, what did we say in the question? Brother, you want equal. So, here we saw that either less can be or equal can be. When we reached here, we want to take equal. So, we took equal by doing if. Okay. See. We told three things, we did only three things. We don't lie. See."
+  },
+  {
+   "start": 2042.03,
+   "end": 2070.16,
+   "text": "I told you three things. First of all, include high in the information. Until it is wrong, decrease the low. And include the correct information in the result. It is a three-step process of any sliding window. Did you understand? This is the code. You will get the code in the link."
+  },
+  {
+   "start": 2070.22,
+   "end": 2098.74,
+   "text": "What is the time complexity of this? A lot of people are saying that its time complexity is the order of n square. Why? Because one for loop is moving forward. It means while loop is also moving forward. The loop is moving. The high is moving. If you are moving one loop of low, then n into n, n square. No. See. How far is the high loop moving? High is moving from 0 to n. So it is simple. n times is moving. Every time when high is moving, what is happening? Every time when high is moving, what is happening? You can either increase low,"
+  },
+  {
+   "start": 2099.06,
+   "end": 2131.31,
+   "text": "You are either increasing the low or not doing anything. This is happening, isn't it? If the size of f is greater than k, then only you are teasing people, otherwise you are not touching people. When does n square occur? n square occurs when i goes from 0 to n and for every i, j also goes from 0 to n. So this is called n into n, n square. But see what is happening here. Assume that high is equal to 0. Assume, let's give an example and explain."
+  },
+  {
+   "start": 2131.31,
+   "end": 2155.98,
+   "text": "Suppose here low did not work, then nothing happened. High is equal to 1 worked. Suppose here also low did not work, nothing happened. High is equal to 2 happened. Suppose here you had to shrink low. Now from where are you shrinking low? Low was at 0. Will low ever cross high? No, it will not. Why? Because the value of k in the question is 1."
+  },
+  {
+   "start": 2155.98,
+   "end": 2178.61,
+   "text": "Generally, it would have been given. K distinct, means exactly, there is no character of minus 1 distinct, there is exactly 0 distinct character, so there is no question. At least 1 is there, at least 1 is there. So, where will the low stop? Will the low stop at the height or will it stop at the height less than the height? It will not happen that the low crosses the height. Why? Because when is the while loop going on? When is the while loop going on? When the size of your f is bigger than k."
+  },
+  {
+   "start": 2178.61,
+   "end": 2208.91,
+   "text": "To increase the size of F, there should be some window. There should be some window size, then only we will get the hash map. There should be at least 1, then only the size of the hash map will be 1. So, low is going to your high or it is going to stop before the high. So, what will be your low? Low is equal to 0. Low is equal to 1. And suppose, low is equal to 2. In worst case, low is equal to 2 will also work. Okay. Then you do high is equal to 3. Suppose, nothing worked here also. Then you do high is equal to"
+  },
+  {
+   "start": 2208.91,
+   "end": 2239.02,
+   "text": "Assume that the low was 2 from here and it became 3 from here and stopped. Then you will come to high is equal to 5 here. Assume that the low is equal to 3 and it became 4. Assume that. Now you have come to high is equal to 6 and your program is over because you have reached n. Now see what is happening. What is happening here? See. Is it happening that at every high, at every high, is it happening that at every high the low is going from 0 to n? No, it is not going."
+  },
+  {
+   "start": 2239.02,
+   "end": 2267.47,
+   "text": "Why? Because low will go till high, it will go less than high. It will not happen that at every high, it is not even going at every high. It is not even going at every high. If it is going, then it is just going till high. Understood? It is never happening that at every high, we are doing n operations for low. Understood? At most, how many operations are we doing? Which is the value of high. At most, how many operations are we doing? Which is the value of high. That is why, at every high, n times are not going."
+  },
+  {
+   "start": 2267.79,
+   "end": 2292.62,
+   "text": "Generally speaking, your high will go from 0 to n. In the worst case, your low will also reach from 0 to n. In the worst case, it will reach from 0 to n. The time complexity of this is not n into n, it is n plus n. If the high is going from 0 to n, then every time it is going, it is certain."
+  },
+  {
+   "start": 2292.62,
+   "end": 2319.42,
+   "text": "It is possible that in every loop, low is moving little by little. It is not moving together or many times. It is moving little by little. It is happening like this. It is possible that high, high is going from 0 to 1, 1 to 2, 2 to 3, 3 to 4, 4 to 5. What is happening every time is that low is moving little by little. It is possible that it moves from 0 to 1, then from 1 to 2, then from 2 to 3. It keeps moving like this."
+  },
+  {
+   "start": 2319.42,
+   "end": 2352.72,
+   "text": "So, in total, high is going from 0 to n and low is going from 0 to n slowly in the middle. Once, not many times. That's why its complexity order is n, not n square. Okay. Did you understand? If you didn't understand, then tell me. We will tell you again. So, this is your first question. Done. Done? Okay. Did you understand the code? Did you understand time complexity? Did you understand the template? Please remember the template. Write it in the copy. Come to the next question. Fruits into baskets."
+  },
+  {
+   "start": 2353.33,
+   "end": 2382.86,
+   "text": "See, we will tell you so simply. Fruits into basket. The question will end in 10 minutes. It will end in 10 minutes. It won't take even 10 minutes. Okay? Come. Now, what is someone saying? Now, see. This is what you have to understand. Now, in this question, you don't have any substring, subarray written. This is a real world question. Real world means, you have been told a story. What story have you been told? We will tell you. And this has been asked in front of me in Amazon. This question has been asked in front of me in Amazon interview a few days ago by a child. Okay? So, it is very important."
+  },
+  {
+   "start": 2383.38,
+   "end": 2412.7,
+   "text": "It is said that you have a farm where fruit trees are arranged left to right. Okay. It is said that fruits are of I type. We will tell you in Hindi why it is so English. What is said to you? This is your farm. What is yours? Zero, one, two, three, four. This is your farm. Arid egg. Fruits are kept in it. Okay. There is a type of fruits like mango, orange, pomegranate. Whatever it is, it is represented by numbers."
+  },
+  {
+   "start": 2412.7,
+   "end": 2446.98,
+   "text": "So your fruit is 0, 1, 2, 2, ultimately 0. This is your fruit type. 0 is fruit type, 1 is fruit type, 2 is fruit type. It is kept like this. You have a basket. You have to collect fruit from left to right. Okay. There is a limitation of this basket in which at most 2 distinct types can be collected. Types of what? Fruit. This is the limitation of this basket. It is written in the question. You will understand after reading the question."
+  },
+  {
+   "start": 2446.98,
+   "end": 2474.77,
+   "text": "Now you have to tell me the maximum number of fruits that you can collect. Maximum number of fruits, not distinct fruits. There are only two distinct fruits, but it is possible that you have taken 3 apples or 4 pomegranates, then you have taken 7 fruits. Tell me the meaning of this question."
+  },
+  {
+   "start": 2474.77,
+   "end": 2504.14,
+   "text": "The last question is the same, exactly the same question. What is the question saying? What does the question say? 0, 1, 2, 2, right? 0, 1, 2, 2. 0, 1, 2, 3. It says it's a basket. In a basket, at most, there are two types of distinct. Do you remember anything from the last question? What did the last question say? Find a substring in which exactly K is distinct. What does this say? Now see, you have to take the fruit from left to right. Meaning?"
+  },
+  {
+   "start": 2504.66,
+   "end": 2532.34,
+   "text": "If you want to take it from left to right, then you can't take one fruit and then take the fourth one. No, you have to take it from the line. How many fruits can you take from the line that there are only two distinct types in it? This is what he is saying in the question. How many fruits can you take from the line that there are only two distinct fruits in it? Or less than two. It is also less than two. It will also work less than two. It should not be more than two. Either it is one or two. There can be only two cases. So, if you take this one,"
+  },
+  {
+   "start": 2532.34,
+   "end": 2561.33,
+   "text": "If you take this window, 0 and 1, what is the number of distinct fruit in this? 2. What is the number of fruit? 2. If you take this one, what is the number of distinct fruit in this? 1 and 2. But you get 3 fruit in this. You get 3. So, its answer will be 3. Same question. See, we write the question in sliding window. Find longest, find longest subarray which has"
+  },
+  {
+   "start": 2561.49,
+   "end": 2592.54,
+   "text": "at most at most two distinct numbers this question is your sliding window question see this same question right? find longest sub-array in which at most two distinct elements are there this is what you are telling me that I have a bag that is useless question is telling you this so when question is understood in Hindi then this is it and return the maximum number of fruits you can pick means maximum"
+  },
+  {
+   "start": 2592.54,
+   "end": 2621.42,
+   "text": "It's an array. How much can you take in one bar? How much can you take in one bar, in one line? You don't have to take 0, 2, and 2. No. If you want to take this, you'll take it like this. This is wrong. It has 3. So, this is the answer. Is the answer? Come. So, the last question is the same. The last one is the same, right? There's one twist. There's one twist. Now, we won't tell you the step by step. It's the same step. Recognize the sliding window. It's a variable. Is the window variable or fixed? It's variable because..."
+  },
+  {
+   "start": 2621.52,
+   "end": 2651.26,
+   "text": "The length of the window is not given. It should be distinct at most 2. There is one difference. Here it is written at most 2. In the previous one, what was it? Exactly k. The k here is the 2 of k. This is it. Nothing has changed. At most is written in place of exactly k. Remember the same last code. Everything will be the same."
+  },
+  {
+   "start": 2651.26,
+   "end": 2681.42,
+   "text": "When you came here by reducing the low, you reduced the low here. When did you reduce it? f dot size greater than k. This is what you did. Because what you have to do is go to the utmost k. That means when will your information be correct? Either it is less than k or equal to k. If it is greater than k, then to increase the high means you have to reduce the low, so you reduced the low. Now, what did we say last time? This was the twist of last time. When you came here,"
+  },
+  {
+   "start": 2681.42,
+   "end": 2711.76,
+   "text": "So, the size of F is either equal to K or less than K. There can be only two cases because we have handled most of them. Now, which information was correct last time? Last time, this information was correct. That's why we calculated this one by putting IF. This time, both the information are correct. This is a simpler question. We should have done this question first and then that question. These are both correct. This is also correct."
+  },
+  {
+   "start": 2711.76,
+   "end": 2741.28,
+   "text": "At most, what does k mean? Less than k or equal to k. Not more than that. So, this one is also correct. This one is also correct. This one is also correct. So, there is no need of if. Make it simple. Make it simple. Make it simple. I minus low plus 1. Res is equal to max. Res. Make it len. Close the for loop. Return. Res."
+  },
+  {
+   "start": 2741.28,
+   "end": 2770.13,
+   "text": "The program is finished. Same program, same. The frequency you will make, the hash map you will make, last time we were writing the character frequency. This time integer number. If not character, then we will write integer integer. Rest everything will be same. Line by line will be same. Here, instead of string, array is given. And instead of character, number is given. And instead of exactly k, at most k is given. So it's good that our code is small. There is no need to put if. Rest, the whole code is same."
+  },
+  {
+   "start": 2770.13,
+   "end": 2801.79,
+   "text": "The whole code is the same. You can try and see. Write both the codes side by side. Or you can see my submission. Both the codes are exactly similar. Is it right? Okay. Everything is the same. Time complexity and space complexity is one. This is the time. This is the space. See how easily the question was made. How much time would it have taken? It would have taken 5-10 minutes. And we gave so many lectures. So, this is the question. It is a question that will be made immediately. Okay."
+  },
+  {
+   "start": 2801.79,
+   "end": 2837.33,
+   "text": "Now, let's come to the third question. Now, let's come to the third question. The third question is also 70% same. What is the third question? Longest substring without duplicate characters. It is said in this question. Without. See, they will make it so easy. You guys do this too. This is your question number 3. Okay. Let's read the question. String is given. Okay."
+  },
+  {
+   "start": 2838.16,
+   "end": 2866.96,
+   "text": "You have to find the longest substring in the string. Very good. What is the condition? The last two conditions were related to k. Exactly k distinct or exactly at most k distinct. This condition does not have k. What is written in this? Without duplicate characters. Means, whatever substring you take, whatever substring you take, all the characters should be unique. This."
+  },
+  {
+   "start": 2867.6,
+   "end": 2897.39,
+   "text": "The whole character should be unique. This is its condition. So this is stuck. We are saying again and again that this question is in the same question, in the same format, but there is no K in it. So if there is no K, then the whole logic will be wrong. We have been walking with K last time. Okay. Now think a little and see. Open your mind a little in this. Come. Come, open your mind. Let's see, we will get something or the other. A little thinking makes a lot of things happen. Come. A, B, C, A, B. Assume that is yours."
+  },
+  {
+   "start": 2899.5,
+   "end": 2931.74,
+   "text": "Okay. In this window, suppose make a window. How many distinct characters are there in this window? Three? One, two, three. There are three? Okay. How many distinct characters are there in this window? One, two, three. Okay, let's make one more. Make this one. How many distinct characters are there in this window? There are only two. Do you see? A and B. There is no A. But how do we know? How do we know? By looking at this, we know that"
+  },
+  {
+   "start": 2931.74,
+   "end": 2963.28,
+   "text": "We got to know after looking that there are only two, not three. How do we know that there is a distinct character in it? Is everything distinct or is there any duplicate? Let's assume that you are given a sub-array. Let's assume that this is your question. Your question is a very simple question. This is your array. In this, you are told A, A, B, C. You are told to tell whether everything is unique or not."
+  },
+  {
+   "start": 2963.66,
+   "end": 2994.91,
+   "text": "Is it unique or not? Is it unique or not? Is it unique or not? How will you tell? Tell it immediately. It is possible that you go from the beginning to the end and keep making the hash map. Keep making the hash map. Do 2 for A, do 1 for B, do 1 for C. Then you see that if someone's frequency is more than 1, then it is not duplicate. So you will return false. Is there any other way? See."
+  },
+  {
+   "start": 2994.91,
+   "end": 3026.0,
+   "text": "Assume you have a hash map. You have a hash map of this array. I don't want to traverse the entire hash map. Is there any other way to tell? Yes, there is. What is the size of the array? Listen carefully. The size of the array is 4. a, a, b, c is 4. What is the size of the hash map? The size of the hash map is 3. Why is the size of the hash map 3? Why is the size of the hash map not 4? Because the element has been repeated."
+  },
+  {
+   "start": 3026.45,
+   "end": 3053.33,
+   "text": "When we take out the size of the HashMap, then there is the number of unique characters. We have been doing this since then. The size of the HashMap always gives us the number of unique characters. So, if someone is asking you whether every character in the array is unique or not, then there is only one test for this. The number of unique characters, meaning the size of the HashMap, is unique if it is equal to the array of size. If it is less, then it is not unique. Did you understand or not? You must have understood."
+  },
+  {
+   "start": 3053.49,
+   "end": 3083.62,
+   "text": "If the size of the hash map is equal to the size of the array, then it is unique. It means that the frequency of every person is one. If a person has been repeated, then it is natural that the size of the hash map will be less than the size of the array, then it is not unique. So, we got to know. We got to know, right? There is no need for k, right? Now see, I will tell you how there is no need for k. Okay. Come to the same template. Come to the same template. Now you understand this, come to the same. Write low is equal to zero. Write high is equal to zero. Res is equal to"
+  },
+  {
+   "start": 3083.62,
+   "end": 3115.97,
+   "text": "Find the longest, write int min. Come on. Come on. Run it. high is equal to 0. High. Come on, run it and see. High. What is it? Less than n. High. Plus plus. Come on. What was the first work? First of all, this is your hash map. What was the first work? Connect the information. Connect the information of high. Connect. f s high plus plus."
+  },
+  {
+   "start": 3115.97,
+   "end": 3145.92,
+   "text": "Now, what was the next step? Assume that A is equal to 1. Next step, is the information right or wrong? If it is wrong, then shrink the low. But now see, how will we know if it is right or wrong? K is not there, but what we have seen is that if the size of the hash map is less than the size of the window or the size of the array, then it is not unique, it is wrong."
+  },
+  {
+   "start": 3145.92,
+   "end": 3175.04,
+   "text": "It was wrong, right? Which window size is there in the HashMap? Meaning, the thing in the HashMap, a is equal to 1 or whatever it is, from where to where is it? Is it from low to high? This is what we are doing. Low was one place, we are running high from 0 to n and adding the information of high. So, the data in the HashMap right now is the data from low to high. This is the information. This is the window information in the HashMap. So, from where to where is the window?"
+  },
+  {
+   "start": 3175.04,
+   "end": 3204.26,
+   "text": "From low to high. So, what is the size of the window whose information is in the HashMap? You know how to find its size, right? Let's call this as k. Come, int k, high, minus, low, plus 1. This is the size, right? Look. Assume, you have this array. What is this array? a, a, b. 0, 1, 2. Your low is here, your high is here."
+  },
+  {
+   "start": 3204.26,
+   "end": 3234.56,
+   "text": "If there is something in your hashmap, then it is its size. So from here we will know if everything is duplicate in this window or not. What is its size? High, minus, low, plus 1. It is this. Okay. Did you know the k? Okay. Now see, the information can be wrong or it can be correct. Write the case. How is it wrong? How can it be correct? It can be correct if f.size is equal to k. So this is correct. This is good information. We were doing that k is equal. Array size is equal so it is correct."
+  },
+  {
+   "start": 3234.56,
+   "end": 3267.79,
+   "text": "Okay. f dot size less than k. f dot size less than k. This is wrong. This is wrong. Okay. Is it possible that f dot size can be greater than k? Think about it. What is k? k is the size of this window. You are saying, is this possible? This is never possible. Why? What is there in the hash map? The frequency of the character in that window. So, if the character in the window is"
+  },
+  {
+   "start": 3267.79,
+   "end": 3291.41,
+   "text": "Assume that A, B, C, A, B. This is your window. So, you are saying that the size of HashMap can be more than this. It can be 6 characters. It can never be. Why? Here it is already less. This is already a duplicate. So, here the size of HashMap will be 3. If everything was unique, this would also happen. In this case also, the size of HashMap would be 6."
+  },
+  {
+   "start": 3291.41,
+   "end": 3318.91,
+   "text": "and the size of the window is also 6. It will never happen that the size of the hashmap will be 7 and your length will be 6. When the character is 5, how will 6 come in the hashmap? How will 6 come? This is a useless thing. We don't have to think about this. Very good. The question is easy. Now, this is right. This is wrong. Now, we saw that people shrink in the wrong one. Now, this..."
+  },
+  {
+   "start": 3318.91,
+   "end": 3349.74,
+   "text": "In the previous question, what were we doing? We were shrinking the low in the greater case. Because we used to say that when the low increases, the size of the hash map decreases. So, here it is already less. So, should we shrink the low? Because it will get lower. Yes, we should shrink it. And this is the twist in the question. You will have to think whether to shrink it or not. Don't remember whether we shrink it in more or less. It can be in every case. But, see. What is K?"
+  },
+  {
+   "start": 3350.16,
+   "end": 3379.41,
+   "text": "In the previous question, k was given, k was a fixed value, meaning, k was 3 here. So, when your 1 was there, the size of the hash map, then we didn't increase it to low, because 1 will be reduced to 0. If we want to go from 1 to 3, then 1 will be reduced to 0, so we didn't do it. But, here k is not given. What is k? The size of your window. How is the size of your window coming out? High minus low plus 1. This is k, right? So, what does it mean to say?"
+  },
+  {
+   "start": 3379.41,
+   "end": 3411.14,
+   "text": "the size of your f is less now suppose it is 2 and your high minus low plus 1 is 3 this is your window size, this is k so when we increase the low when we increase the low then the size of your f will be either the same or it will be less this is what we were seeing but but but"
+  },
+  {
+   "start": 3411.14,
+   "end": 3439.98,
+   "text": "When you increase the low, then the size of K will also decrease. Why? High minus low plus 1 is the size of K. Suppose, when the low was 2, then the size of K was something else. When you are increasing the size of low, then the size of the window is also decreasing. See, the size of the window is now this much. If you increase the low, then it will remain this much. So, when you are increasing the low, then K"
+  },
+  {
+   "start": 3439.98,
+   "end": 3468.91,
+   "text": "It is definitely decreasing. It will not remain the same. It will keep on decreasing. That is why, it is possible that suppose the size of F is 3 and the size of window is 4. Now if we decrease one, then suppose the size of F is 2 and its size will be 3. If we decrease one more, then it is possible that it will remain the same. The size of F can also remain the same because it is not happening. Its size is 2. But this will definitely decrease. This will definitely decrease. Now see, we got both."
+  },
+  {
+   "start": 3469.46,
+   "end": 3499.38,
+   "text": "This is the right one. That's why, when the size of F, the size of F can't be more than K, we have proved this. When the size of F is less than K, then low should be shrunk because it is possible that both will be found at some point. Now, how will you understand this? Just by thinking. In every case, think that by increasing the low, can there be any benefit or not? If there is, then increase it. If it seems that there is no benefit at all, if K is fixed, then there is no benefit at all, then the size of F will be less and K will remain there. What is the change here?"
+  },
+  {
+   "start": 3499.38,
+   "end": 3529.82,
+   "text": "The size of F is either the same or decreasing. The size of K will continuously decrease when we bring it. So, it is possible that we will get both of them at some point. And that is what we need. Okay. That is what we need. So, come. How much was written here? K was calculated. Okay. Write the next code. So, while F dot size less than K. Till it is less. Till then. Till then. It cannot be more. It has to be equal. Okay. First of all, what should we do? First of all, what should we do?"
+  },
+  {
+   "start": 3529.82,
+   "end": 3560.98,
+   "text": "f s low minus minus and if if if if f s and its what is low if it becomes zero erase it remove it reduce the size reduce the size ok and low plus plus this much we are doing last time also but now see here in last question what was this k it was fixed"
+  },
+  {
+   "start": 3562.86,
+   "end": 3591.26,
+   "text": "What is k here? High minus low plus 1. So, when you are increasing the low here, then you have to calculate k again. You cannot do the previous one. That is why k is decreasing again and again. When the low is increasing, then why is k decreasing? Because k is dependent on the low. That is why you have to calculate high minus low plus 1 again. And this while loop is stopped here. See. So, a change of one line was added. What was added?"
+  },
+  {
+   "start": 3591.26,
+   "end": 3620.67,
+   "text": "We are calculating the value of k. Last time k was given. This time k is not given. So we are doing it. Okay. Come on. Now when will this while break? When will this while break? When will it break? Only two cases were possible. Either it was less or it was equal. We call the less one while. As long as it is less. This while means as long as. As long as there is life. So as long as there is mischief in it, reduce it. As long as there is mischief in it, reduce it. It means it has come here. It means what has happened here? It is. It is equal. It is equal. That's why it has come here. Otherwise it doesn't come."
+  },
+  {
+   "start": 3620.67,
+   "end": 3648.26,
+   "text": "Now, whatever you do, if your information is correct, then do it. High minus low plus 1 and rest is equal to max of rest length. Just do return rest. The game is over. The game is over. The game is over. See. What has changed in this? What has changed in this? Almost nothing has changed. This k has changed."
+  },
+  {
+   "start": 3648.26,
+   "end": 3676.77,
+   "text": "How did we know that our information is correct or wrong? That changed. K was given earlier, now K is not given. K is calculated. According to that, decision changed in shrinking. Earlier, if it was more, then we were shrinking. Now if it is less, then we are shrinking. Never remember that in more it shrinks, in less it doesn't. No, no, it can happen in all. I showed you that it can happen in all. Think. Think logically that it can happen or not. If there is any benefit, then shrink. If there is no benefit, then never do it. So this happened. Same."
+  },
+  {
+   "start": 3676.77,
+   "end": 3706.14,
+   "text": "Order of end time is done. Order of one space is done. Order of one space is not done. Basically, let's say order of one space is done. Why order of one space is done? Because we are using hash map. You might think that order of one is done. But what is the maximum size of hash map? 26. Because it is given that it is lowercase. Lowercase characters are there. So, whenever you write, your hash map will look like this. It will look like this. And its maximum size will be 26. Let's consider it as constant. That's why order of one is done."
+  },
+  {
+   "start": 3706.14,
+   "end": 3720.08,
+   "text": "So this was today's third question. You will get the code link in the description. Go and submit all three questions. And from now on, we are trying to catch up with the speed. So you also increase your speed. See you tomorrow and stay consistent."
+  }
+ ]
+}

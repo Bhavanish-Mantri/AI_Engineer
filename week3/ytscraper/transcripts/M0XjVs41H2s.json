@@ -1,0 +1,404 @@
+{
+ "video_id": "M0XjVs41H2s",
+ "title": "DP in 15 Days Episode 08 | Subset Sum Equals to Target",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2047,
+ "segments": [
+  {
+   "start": 0.08,
+   "end": 20.24,
+   "text": "If you are watching this video from the beginning, then this problem will not take more than 5 minutes. If you are not watching from the beginning, then you can do anything. If you will study Hanuman Chalisaik, then you will not understand anything."
+  },
+  {
+   "start": 20.24,
+   "end": 41.39,
+   "text": "Subset sum problem is an easier problem than the knapsack problem. The knapsack problem is 50% easier than the knapsack problem. What does the problem say? That you have an array. What is there in the array? What is there in the array? In the array, you have a positive integer. What is positive? Look very carefully. It is not a negative integer. It is just a positive number."
+  },
+  {
+   "start": 41.39,
+   "end": 67.34,
+   "text": "Suppose you are given a sum. Suppose you are given a sum of 6. That means you are given an array which has a positive number. You are given a sum. The sum is also positive. The sum is also not negative. So everything is positive. Okay. Very good. What do you have to tell? You just have to tell two things. True or false. True or false. When? When there is any such subset in this array. Subset means a part of the array."
+  },
+  {
+   "start": 67.34,
+   "end": 91.66,
+   "text": "It's not a continuous part. It's not a part of an array. There are 10 elements in an array. Subset means you took 4 elements and that too is a subset. You took 5 elements and that too is a subset. You took all 10 elements and that too is a subset. Subset means any part of an array. It's not continuous. Take any number of your choice in an array. Take any combination. If there is a subset whose sum is equal to this sum."
+  },
+  {
+   "start": 91.66,
+   "end": 120.67,
+   "text": "So, in this case, what do you have to say? That yes, it is true. If there is no subset in the array, means there is no such combination of array, which you can make this sum by joining, in that case, you have to return false. For example, for example, if the array is given like this, 1, 2 or 4, 0, 1, 2, okay? Assume your sum is equal to 3, then what should be your answer? Your answer should be true. Why? Because if you want, then you can take 1 or 2, whose sum will be 3."
+  },
+  {
+   "start": 120.67,
+   "end": 149.81,
+   "text": "Do you understand? If your sum is 6, then also your answer should be true. Why? Because you can take 2 and 4 and make it 6. If your sum is 5, then also your answer should be correct. Why? Because you can take 1 and 4 and make it 5. But if your sum is 10, then can you take any subset that makes the sum 10? No, you can't. You can't take any part of SRA that makes the sum 10. In this case, what should be your answer?"
+  },
+  {
+   "start": 149.81,
+   "end": 178.94,
+   "text": "Your answer should be false. So this is your overall question. Come, let's understand this question. Let's open it. Let's see why this is a DP problem. If it is a DP problem, then how will we write recursion? If we write recursion, how will we write tabulation? We will see everything very quickly. So first of all, what we have to tell you is that when anything is a DP problem or when anything is a recursion problem, whenever you are given a choice, what is a choice-based question?"
+  },
+  {
+   "start": 178.94,
+   "end": 207.79,
+   "text": "Choice-based question means that you have to take a choice at every point. You can't design an algorithm that we will take this number or we will not take this number. As we are saying again and again that you can't take a decisive decision that we will not take this number or we will take this number. What does this mean? Suppose your array is like this, 1, 2 and 5."
+  },
+  {
+   "start": 207.79,
+   "end": 230.62,
+   "text": "0, 1, 2. Now look, suppose your sum is 4. Your sum is 4, which means you have to get the sum of 4. Now you have come to the first element. On which first element? On this element. What number is this? 1. Now can you take such a decision with a clear mind that we will take 1 or we will not take 1. If you take such a decision, you say that let's go."
+  },
+  {
+   "start": 230.62,
+   "end": 253.9,
+   "text": "Whatever the subset will be, we will keep 1 in it. Now see, if you keep 1, the whole is a positive integer. You wanted a sum of 4. In your subset, whatever you want to make a subset of, you say that 1 will be there or you take a specific decision. Now if 1 will be there, then you need 3 more in front. Meaning from the previous array, from the remaining array, you need"
+  },
+  {
+   "start": 253.9,
+   "end": 279.92,
+   "text": "3 will have to be taken out from somewhere. That's why 3 and this 1 will become 4. So look, can 3 be made in the next array? Can you achieve the sum of 3 from 2 and 5? No, you can't. What does it mean? You can't take such a decision that we will take 1. Because if you take 1, then you will have to find 3 in the next array. Now, is there 3 in the next array or not? How will you know until you see the array or not? So you can't take the decision to take."
+  },
+  {
+   "start": 279.92,
+   "end": 301.6,
+   "text": "But if you decide that you will not take any number at all, you will leave it at all. Now suppose you say that we will never take 1, no matter what happens in the world, we will not take 1. If you do not take 1, suppose the sum you have to make in the future, you have to make 8. To make the sum of 8, you will have to take the whole array, 1 plus 2 plus 5."
+  },
+  {
+   "start": 301.6,
+   "end": 330.51,
+   "text": "How much is 1 plus 2 plus 5? 8. If you take this decision that we will not take 1, then you will not be able to reach the answer. Now, how many sums can 2 and 5 make together? 7. How much did you want? 8. So, if you would have taken 1, then it would have been beneficial, but you were adamant that you will not take 1. So, you cannot take this decision. So, in any problem, if you cannot take any algorithmic decision that whether to take it or not, then that question is always choice-based. In this, you have to play in two ways."
+  },
+  {
+   "start": 330.51,
+   "end": 356.67,
+   "text": "You have to take one type of choice. Let's take it and see. Then you have to come back. Then what do you say? Let's leave it and see. That means at every point, at every point, you have two or three things. As much as you have a choice, let's do that. Let's take this number and see if the answer comes or not. If it comes, it's a good thing. Let's not take this number and see if the answer comes or not. If it comes from it, it's a good thing. Now, if none of the two answers come, then the answer will not come."
+  },
+  {
+   "start": 356.67,
+   "end": 378.69,
+   "text": "This kind of question is always called a choice-based problem. That's why DP is used in these questions. Because you can't think of anything from the beginning that we should design something that will make this happen. When we were studying house robber, we explained it in detail. Even in house robber, the thief could not make this decision that this house has to be looted or not. That will be known later. Your current decision..."
+  },
+  {
+   "start": 378.69,
+   "end": 405.79,
+   "text": "The good and the bad is known only after looking at the future. That's why this kind of problem happens. There is a problem of DP in which we do choice-based things. And where choice-based things come, what happens there? There is a natural recursion. This is what recursion means. You took a choice and got into it. You came back and reversed that choice. You took another choice and got into it. That's why in these questions, there is a recursion. If in recursion, you..."
+  },
+  {
+   "start": 405.79,
+   "end": 433.73,
+   "text": "Overlapping sub-problems means if you are solving the same thing over and over again, then you can memoize the recursion problem and make it DP. Memoize is done, then you can write the tabulation in the final form. So let's go. The question is very easy. Let's see what you have to do in the question. Let's assume that this is your array. Let's assume that your array is 1, 3, and 4. 0, 1, 2. That's a good thing. What is your sum? Let's assume that your sum is 5. What is your sum? 5."
+  },
+  {
+   "start": 433.73,
+   "end": 461.07,
+   "text": "Okay, sum is 5. You always start from where? From the first number to the last number. For every number, how many choices do you have available? Either you can take that number, which means your subset is going to be made. Either you can include that number or you can leave that number. That we will not take this number. What will we do with this number? We will not take it. So, suppose you come to i is equal to 0."
+  },
+  {
+   "start": 461.3,
+   "end": 490.19,
+   "text": "When you come to i is equal to 0, how much sum do you want to make? How much is your target sum? 5. Okay, now you have come here. Now you have i is equal to 0 means for this person, for this 1. How much choice do you have? You can take it. First of all, you can take it. Say yes, we will take 1. There will be one choice that we will not take 1. If you take this 1, then where will you go? i is equal to 1. But now you have taken 1. Now you have taken 1 in this choice."
+  },
+  {
+   "start": 490.19,
+   "end": 513.89,
+   "text": "How much sum do you need from the rest of the array? If you need 5 from the whole array, you can say that we will take this 1. How much sum do you need from the rest of the array? If you can get the sum of 4 from the rest of the array, then that 4 and this 1 will become 5 and you will get the answer. So if you take this, when you go ahead,"
+  },
+  {
+   "start": 513.89,
+   "end": 539.92,
+   "text": "From now on, your requirement is to find the sum of 4. If you are able to find the sum of 4 from i is equal to 1 to the last, whatever you do, you will find the sum of 4. On the top, you had brought 1. 1 and 4 together will make 5. If you decide that we will not take this, we will not take this i is equal to 0, means we will not take 1, then in this case also, if you do not take it, then you will go ahead. See, you have to go ahead. That is the rule."
+  },
+  {
+   "start": 540.05,
+   "end": 564.37,
+   "text": "Now, if you don't take this 1, then how much sum do you want from the next array? You only want 5, because if you don't take this, then you have wasted it. Now, in the next array, you have to find out that you didn't take 1. If you get 5 in the rest of the array, then my answer will come. So, in the rest of the array, if we get sum is equal to 5, then my answer will come. Now, from these two, assume its answer came true and its answer came false."
+  },
+  {
+   "start": 564.37,
+   "end": 591.65,
+   "text": "Now, if you get the correct answer from any of the choices, whether you are getting the correct answer by taking or not, you are getting the correct answer from both, means if you get any one answer that yes, this is possible, then what will you do? You will say that yes, this is possible. If you are not getting the answer from any choice, means neither one is getting the answer by taking nor one is getting the answer by not taking, then you will say that if both are false, then we will return it as false. For example,"
+  },
+  {
+   "start": 591.65,
+   "end": 603.04,
+   "text": "Assume you are in 10th class. You have two options. Either you pass in 10th or you fail in 10th. And your final goal is whether we will be successful or not."
+  },
+  {
+   "start": 603.04,
+   "end": 631.65,
+   "text": "Suppose you know that you won't be successful if you pass the 10th. But you will be successful if you fail the 10th. So what is the answer to your life? That we will be successful. Because there are only two choices. Suppose you will be successful if you pass the 10th. But you will not be successful if you fail the 10th. Even then the answer to your life is that we have become successful. Now suppose it happens that you are not successful if you pass the 10th. And you are not successful if you fail the 10th. So what will happen to your life? That we have failed."
+  },
+  {
+   "start": 631.65,
+   "end": 660.11,
+   "text": "We passed 10, we failed 10. We didn't get success from both. So what is the answer to my life? Failure. So this is what you have to do. Now, you understand this. Now, there is one more small thing. One more small thing. Assume this is your RA. Assume this is your RA. 10, 3 and 2. 0, 1, 2. This is your RA. You have to make your sum 5. You have to make your sum 5. So you must be knowing the answer. If we take 3 and 2, then my 5 will come. So its answer is true. Okay?"
+  },
+  {
+   "start": 660.11,
+   "end": 681.68,
+   "text": "But here also you will do the same thing. Here also you will come to i is equal to 0. And how much sum do you have to make in the beginning? You have to make a sum of 5. Very good. I am understanding. Now tell me one thing. The number on i is equal to 0 is 10. The number on i is equal to 0 is 10. It means that this 10 is bigger than your sum. It is bigger than your sum."
+  },
+  {
+   "start": 681.68,
+   "end": 705.58,
+   "text": "That's why we were telling you that everything in the array is positive. Now tell me one thing, is there any chance of taking this 10? If you take two options in it, then we will see yes and no from both. Now tell me, is there any sense of the yes part? You are saying that we have to make a total sum of 5 and you are saying that let's try one thing, let's take 10."
+  },
+  {
+   "start": 705.58,
+   "end": 723.71,
+   "text": "If you take 10 in your subset and the entire integer of array is positive, then whatever sum you get will be greater than 10. If you take 10 already, then whatever sum you get in the future will be greater than 10 or equal to 10. In any case,"
+  },
+  {
+   "start": 723.71,
+   "end": 744.46,
+   "text": "5 can be made or not. If there was a negative integer, it would have been made. If there was a negative integer, it could have been made. But when everything is positive, you take a number of 10, you had a goal to make 5, then why are you doing this? One more thing can be done in this that if your number, whichever number you are taking the decision on, it is getting bigger than the sum of that time."
+  },
+  {
+   "start": 744.46,
+   "end": 772.8,
+   "text": "You don't have to think about it at all. You just have to say that we won't take this. We will definitely skip this. In that case, there is no need to explore the path of yes. For example, again, you come from the 10th example. Suppose you are in 10th. You have two options that you can pass 10th or you can fail. Suppose your final goal is to take a job. Final goal is to take a job in engineering. Now suppose you come to know that the job you are going to take,"
+  },
+  {
+   "start": 772.8,
+   "end": 801.06,
+   "text": "there is a minimum requirement that you should pass the 10th. The job for which you are applying, there is a minimum requirement that you have to pass the 10th. In this case, do you need to explore the 10th fail? If you fail the 10th, it is obvious that you will not be able to take the job. So, you will not be able to take it. So, for what will you explore it? The same logic is here too. When you know that we have to make this sum, any sum, 5, 6, 7, whatever you have to make. The current number is bigger than the sum."
+  },
+  {
+   "start": 801.06,
+   "end": 829.49,
+   "text": "Equal is fine. It has become greater than sum. This definitely means that if you take it, you will not get any benefit. Your result will always be no. So when the result will always be no, then what should we explore? When we know, we will do what we don't know. In this case, if you ever find out that my array of i is greater than sum, in this case, what you have to do is, by doing straight no, you have to move ahead on i plus 1 or sum. You don't have to think much in this. If you find out that array of i is less than equal to sum,"
+  },
+  {
+   "start": 829.49,
+   "end": 859.98,
+   "text": "Then you have to explore two types of choices. So, we have opened the whole list of questions. Now, we don't think that writing its recursion will cause any problem to anyone. Let's tell you. Let's tell you. What will we write for recursion? First, we will write a function for recursion. int fun. What will pass in it? First of all, your array will pass. Okay. How many elements are there in the array? This will pass. Very good. int i. Means, at which number you have to take a decision now, that will pass. Now,"
+  },
+  {
+   "start": 859.98,
+   "end": 888.06,
+   "text": "int sum, which you have to make sum. Okay. Base case. What does base case mean? What does base case mean? Suppose you reached the last of the array. All the elements are finished. Okay. Now tell me one thing. All the elements are finished. What does it mean to finish all the elements? That you have done something. You must have taken some elements. You must have left some elements. That means you have reached here by doing something. Now. Now. Now. If your sum. If your sum."
+  },
+  {
+   "start": 888.06,
+   "end": 917.39,
+   "text": "Zero ho gaya hai. Agar aapka sum zero ho gaya hai, kehne ka kya matlab hai? Sum kya hota hai? Dekhiye, jab aap kisi element ko lete hain, to aapka sum kam ho jata hai. Sum matlab, ab aapko kitna chahiye? Wo dhire dhire kam hota rehta hai. Maan lijiye, maan lijiye ek number tha 1, aur aapka sum tha 5. Agar aap 1 ko lete hain, agar aap 1 ko lete hain, agli number pe jaate hain, wo joki hai 3, to sum aapka kya ban jata hai? 5 tha, aap 1 ko le liye, 5 mese 1 hat gaya, aapka 4 ho gaya, sum kam ho gaya."
+  },
+  {
+   "start": 917.46,
+   "end": 946.32,
+   "text": "Suppose you didn't take 3, you came to the next number, your number became 4. If you didn't take, your sum remained the same, there was no change in the sum. Now suppose you took 4, you took 4 and you reached the end of the array. Now you took 4 and your sum was 4. What happened to your sum? It became 0. Now see how you have reached this end. You have reached with two numbers. First of all, you have reached with 1 and you have reached with 4."
+  },
+  {
+   "start": 946.32,
+   "end": 950.98,
+   "text": "What is the sum of 1 and 4? 5. What was the sum of your beginning?"
+  },
+  {
+   "start": 950.98,
+   "end": 977.79,
+   "text": "5. Yes, yes. It means that if your sum reaches 0 at the end, it means that you must have taken some number by which the sum gradually became 0. It means that you got the answer. 1 and 4 is your answer. Suppose if the sum was not 0, suppose the number you had to take out, the sum given in the beginning, suppose it was 6. Now it is 6. You took 1. What happened to your sum?"
+  },
+  {
+   "start": 977.79,
+   "end": 1004.03,
+   "text": "Your sum is 5. If you didn't take 3, then your sum is again 5. If you took 4, then your sum was 5. If you took 4, then your sum is 1. Your sum is 1. Now, in this case too, see which number we have brought. 1 and 4. What is its sum? 5. How much did you want? 6. Your sum at the end, your sum at the end is not 0. Your sum is left something. If at the end, your sum is left something,"
+  },
+  {
+   "start": 1004.03,
+   "end": 1032.13,
+   "text": "It means that your path, your decision is not successful. You have to return false from here. If your sum becomes zero, it means that whatever decision you have taken, whatever number you have taken, it has become successful and you can do true return. This is what we are writing in the base case in the recursion that if you reach the end and your sum becomes zero, it means that very good, yes, yes, it means that your decision was right, you can do true return."
+  },
+  {
+   "start": 1032.13,
+   "end": 1059.94,
+   "text": "If this doesn't happen, if your sum is non-zero, then what can you return? You can go straight to false return. This is your total. This is your base case. Yes, this is your base case. Now you can start writing your recursion. First of all, what did we say? Check the logic. What logic? If array of i is greater than sum, which means the number you are trying to check is greater than sum."
+  },
+  {
+   "start": 1059.94,
+   "end": 1089.94,
+   "text": "In this case, what did we say? Don't think too much. Go ahead. What does it mean to go ahead? No path. We will not take it. To not take it, go ahead. Array n i plus 1. When you don't take it, then there is no change in the sum. So, in the future, you will take the sum. The sum will come. Now, if it is not like that, then you have two choices. Now, you have the power to take the choice. What will happen first? Int c1 is equal to Take this number. To take it means Array n i plus 1."
+  },
+  {
+   "start": 1089.94,
+   "end": 1115.04,
+   "text": "Now, when you take this number, what sum is left for the next? Sum minus array of i. If sum was total 5, you take 1. What sum is left for the next? 4. From the next array, you have to find 4. So, what will happen? Sum minus array of i. Very good. Now, what is the second choice? This was the choice to take. We will not take the second choice. Absolutely not. If we will not take, then move ahead. Array n."
+  },
+  {
+   "start": 1115.04,
+   "end": 1131.55,
+   "text": "i plus 1. And if you don't take it, then there will be no change in the sum. The sum will remain the sum. Very good. Now, what did we say? What is this? 10th failed and passed. If you get success in either path, then your life will be successful. Meaning, C1."
+  },
+  {
+   "start": 1131.55,
+   "end": 1159.82,
+   "text": "or c2, c1 or c2, c1 or c2. This function is not of int type, this function is of boolean type, because in the end you have to return the same, true or false. So this function is boolean. If any one of c1 or c2 is successful, then your function is successful, your life is successful. And close it. See this, it is a small recursion. It didn't take much time, it didn't take much effort. Now, how is this recursion made DP? How is it memoized? You are seen,"
+  },
+  {
+   "start": 1159.82,
+   "end": 1188.02,
+   "text": "What variable is changing in this function? Is the array changing? No. Is the end changing? No. What is changing? One thing is changing, i, and the other thing is sum. Sometimes i is 0, then 1, then 2. Sum does not change. If you take sum, then sum is less. If you don't take, then it remains the same. If you take again, then it becomes less. Which two variables are changing? i and sum. So what should be your dp array? Your dp array should be a 2d array."
+  },
+  {
+   "start": 1188.02,
+   "end": 1201.79,
+   "text": "What should be the size of 2DRA? I, where can the value of I go? From 0 to n, which means n plus 1. And what can be the sum? Sum starts from sum and gradually goes to 0."
+  },
+  {
+   "start": 1201.79,
+   "end": 1230.46,
+   "text": "Is our sum ever negative? Do we ever let our sum be negative? No, we don't let it be. Why? Because when will the sum be negative? It will never be negative. When your sum was 5 and you took 10, then your next sum is minus 5. We don't allow this. If the sum is 5 and you get a number 10, then we never take that number. We never let the sum be negative. So what will be the size of your array? Sum plus 1. If we make a DP array of this size,"
+  },
+  {
+   "start": 1230.46,
+   "end": 1251.92,
+   "text": "store the answer of the variable that is changing and check it in the answer that if the answer is known then return it like this if it is not known then run the recursion and see store it for the future so what will this whole recursion become? this whole recursion will become memoization how do we do memoization? nothing is done in memoization in memoization you just have to do one thing"
+  },
+  {
+   "start": 1252.11,
+   "end": 1281.89,
+   "text": "First of all, what do we have to make in the main function? In that, we have to make our DP array. Let's write it separately, let's write the memorization from the beginning. So first of all, what will be made in your main function, your GFG function? It will be given something like int GFG. GFG will give you two things. GFG will give you this array and will not give you the size of the array, but will give you the sum. We have to get the sum from this array. First of all, what is the work? int n is equal to"
+  },
+  {
+   "start": 1281.89,
+   "end": 1312.34,
+   "text": "Array dot. Size. Size came out. After that take an int I. Now make your DP array. How? Vector of. Vector of. Int. 1, 2. DP. How much size? N plus 1 size. Now fill column in this. For. I is equal to 0. I less than equal to N. I plus plus. After this. Make column array. How much size? Sum plus 1 size. Vector. Int. T."
+  },
+  {
+   "start": 1312.34,
+   "end": 1341.49,
+   "text": "How many sizes? Sum plus one size and we will fill minus one in the sum. After that, dp of i is equal to t. What is this? This is a 2D array of size n into n plus one and sum plus one in which all minus one is filled. After that, we will call our function. Okay, when we call the function, then where will the recursion function start? It will start from zero. i is equal to zero. Sum. How many sums do you have to find in the beginning? The sum given to you. Sum and?"
+  },
+  {
+   "start": 1341.49,
+   "end": 1371.94,
+   "text": "This DP will also pass. This is done. Now we have to change a little bit in this recursion. So let's change a little bit in this recursion. See. First of all, we will change this function. Because you are passing DP. So here we will get DP. What will we write? Vector of. Excuse me. A little handwriting has happened today. This has become a little dirty. A little problem will happen. Take this. Let's remove this. Take this. This function is done. Don't touch the base case in making recursion memoization. Don't touch the base case. Now."
+  },
+  {
+   "start": 1371.94,
+   "end": 1400.69,
+   "text": "What do we have to write here? If, if dp of i sum not equal to minus 1, not equal to minus 1, what do we have to do? We have to return it from here. What? dp of i n sum, we don't have to think about it. It's already done. If it's not like this, if it's not like this, now you have to remove it. But, whenever you write return, what do you have to write after this? After this, you have to, let's erase this a little."
+  },
+  {
+   "start": 1400.94,
+   "end": 1431.12,
+   "text": "Before the return statement, what will we write? Before the return statement, we have to write this. Return. Whatever answer you are returning, just store it in this. While going, sum is equal to, what answer were you writing? Fun. Array, n, i plus 1 and sum. This is done. This path is done. There is one more path. When you have choice, this one is also return. This one is also return. Here also, you have to do the same thing. What do you have to do? DP."
+  },
+  {
+   "start": 1431.28,
+   "end": 1448.61,
+   "text": "I sum equal to C1 and C2. See this. What did your recursion become? Memoization. What did it become? Memoization without any garbage. Hope you understood. Now, next stage is"
+  },
+  {
+   "start": 1448.61,
+   "end": 1471.78,
+   "text": "Memoization to tabulation. How do we make a tabulation? Today we feel that we are going a little fast, but now you have learned. Now you are not kids, you have learned to a great extent. Now you can do it. Because if we do the same thing again and again for 1-1.5 hours, it will not be fun. How do we make memoization to tabulation? If you have seen the video of Napsa, then you have to do the same thing. What do you have to do?"
+  },
+  {
+   "start": 1471.78,
+   "end": 1500.72,
+   "text": "You have to see how recursion fills things. In the same order, you have to write a loop and fill it. So see what recursion is doing. First of all, we will analyze the base case of this recursion. In tabulation also, now see the thing you have made in it, the array you have made in it, in memoization, you have to make the same array here. You will have to make an array of what size? Vector of Vector of int dp"
+  },
+  {
+   "start": 1500.72,
+   "end": 1525.26,
+   "text": "And n plus 1 and sum plus 1, whatever is made. Okay. Look at the base case. What does the base case say? If i, n is there. If i, n is there. Okay. What does that mean? And sum is 0. This is a very specific condition. If i, n is there and sum is 0, then only you have to return 2. If your i, n is there and sum is anything, any number other than 0,"
+  },
+  {
+   "start": 1525.26,
+   "end": 1555.02,
+   "text": "So, you have to return false. Meaning, your DPRA will be, its nth row, what is it? It is the nth row. Everything will be false in that. For example, if your, if your n is equal to 3 and sum is equal to 2, then what size will your DPRA be? 3 plus 1 and 2 plus 1. Meaning, 4 and 3. So, your DPRA will look something like this. Your DPRA will look like this. 1, 2, 3 and 4. And 1,"
+  },
+  {
+   "start": 1555.02,
+   "end": 1581.47,
+   "text": "2, 3, 0, 1, 2, 3, 0, 1, 2. What does the base case say? If n is this row and sum is 0, then only you will write 1. 1 means true. In the rest, 0 and 0. If i is n and sum is non-0, your answer should be 0. And the rest will be minus 1 in the beginning."
+  },
+  {
+   "start": 1581.47,
+   "end": 1611.26,
+   "text": "will be minus 1. Rest of them will be minus 1 in the beginning. This will be your DP array. Looking at the base case, we have filled our DP array with the first value, the initial value, as we filled it in the map stack yesterday. Okay, the base case work is done. Now, you will have to see what is happening here. So, the very first thing, if AI is greater than sum, then what happens? DP of ISUM"
+  },
+  {
+   "start": 1611.26,
+   "end": 1637.92,
+   "text": "Kiske barabar hota hai? I plus 1 aur sum. I plus 1 aur sum. Matlab ki, DP of I sum is equal to DP plus I plus 1 aur sum. Agar, else, else, else, kya hota hai? DP of I sum, DP of I sum equal to 2 choices. Pahla to I plus 1 aur sum minus AI. Matlab, DP I plus 1 aur"
+  },
+  {
+   "start": 1637.92,
+   "end": 1667.47,
+   "text": "Sum minus Ai. Yes. Sum minus Ai. Or, I plus 1 and sum. Means, DPI plus 1 and sum. What do we have to do with these two? We have to add these two. Means, whenever you fill DPI, if the array of I is bigger than your sum, then DPI sum is equal to DPI plus 1 sum. If not, then you have to subtract two things. DPI sum is equal to I plus 1 sum minus Ai."
+  },
+  {
+   "start": 1667.47,
+   "end": 1697.55,
+   "text": "OR, OR means OR, AND OR OR. DPI plus 1 OR sum. You can understand that recursion is doing this. Now, the work we did yesterday to see recursion, how DPR is being filled, we are not doing that now because we said that you should do that in the beginning. As the time increases, you will not need to do that. You will start understanding it yourself. Now, you know what the formula is and how to fill the tabulation. But, in which order to fill, how do you know that? See,"
+  },
+  {
+   "start": 1697.55,
+   "end": 1725.28,
+   "text": "What do you need for any DPI sum? You always need DPI plus 1. See, you always need DPI plus 1. Meaning, if you want to fill any row, if you want to fill row 1, then you will need the values of row 2. If you want to fill the values of row 2, then you will need the values of row 3. Meaning, how to fill the DPI array? You have to fill it in reverse."
+  },
+  {
+   "start": 1725.28,
+   "end": 1750.98,
+   "text": "First, you will fill the row number 3, which means you will fill the row of n. Now, how do you have to fill it? You have to fill from n-1 to 0. You have to fill from n-1 to 0. You have to fill from n-1 to 0. Sum, how do you have to fill the column? You can fill it in any way. Yesterday, it was the same thing in the calculator. If you see, what do you want?"
+  },
+  {
+   "start": 1750.98,
+   "end": 1774.58,
+   "text": "For dpi sum, either you want the same thing or you want sum minus ai, but you want the next row. So when you come to fill any nth row, if n plus 1 row has been filled, then you can fill the sum in any way. You can fill it from 0 to sum or you can fill it from sum to 0. But how to fill the row?"
+  },
+  {
+   "start": 1774.58,
+   "end": 1803.5,
+   "text": "n-1 to 0, 0 to n-1, it will be wrong. If you go to fill 0, to fill 0 row, you need 1 row value. To fill 1 row, you need 2 row value. That will be wrong. So, in row, you have to fill in this order. In column, you can fill according to you. After doing everything, how do you know your final answer? Your recursion, how did you call your main function recursion? With what number did you call your main function recursion? See this."
+  },
+  {
+   "start": 1803.5,
+   "end": 1833.1,
+   "text": "What is this? I. And what is this? Sum. Meaning? Dp of 0 and sum. What is this? This is your final answer. This is your final answer. And this is what you have to return. With these methods, you can write your tabulation. How? Let's write the tabulation. See how easy it will be. First of all, you will come to the gfg function. What will you be given? Int gfg. Vector of."
+  },
+  {
+   "start": 1833.81,
+   "end": 1863.73,
+   "text": "int a int sum. This will be given to you. First of all, find the length of the array. n is equal to array of size. Int i and j. Make your array of dp in the same way. Vector of int dp. How much size? The size of the recursion. Now fill a column in it. i is equal to 0. i less than equal to n."
+  },
+  {
+   "start": 1863.73,
+   "end": 1891.06,
+   "text": "i++. Now column array will be made. Vector of int t. How much size? Sum plus 1 size and fill minus 1 in sub. dp of i is equal to t. Array is ready. Fill the base case value. Means in nth row. First of all j is equal to 0. j less than equal to sum. j++. And what will we do? dp of n."
+  },
+  {
+   "start": 1891.06,
+   "end": 1920.37,
+   "text": "j, means whatever is in nth row, make all of them 0, make all of them 0, okay, now, one value has to be 1, which value? dp of n and 0, means when you came to n, and your sum was 0, there true return used to happen, pick up one value and make it 1, your base case work is over, now start filling this dp array, how to fill it? How to fill row, I have told you, i is equal to n minus 1, i greater than equal to 0, i plus plus, okay,"
+  },
+  {
+   "start": 1920.37,
+   "end": 1949.04,
+   "text": "How is the column? Your choice. We will fill it directly. j is equal to 0. j less than equal to sum. If you want, you can fill it the other way round. It is your choice. Let's go. First of all, see what you have to see. What did we see in recursion? If array of i was greater than sum, meaning if array of i is greater than, we don't have to write sum, j. Now who represents your sum? j. And who represents your i? i. If it is greater, what was its formula? dp i."
+  },
+  {
+   "start": 1949.04,
+   "end": 1980.35,
+   "text": "j is equal to straightly i plus 1 and j. It's over. Else, what used to happen in else? Now you had two types of things. dp i j is equal to first of all dp i plus 1 and j minus j minus array of i and dp of i plus 1 and j. What do you have to do with this? Make this more. Make this"
+  },
+  {
+   "start": 1980.35,
+   "end": 2009.54,
+   "text": "Do more. See this. J loop is closed. I loop is closed. Finally, from where to return the answer? What was the caller of recursion? DP of 0 and sum. See this. In which has your memoization changed? In tabulation. To change in tabulation, don't do much work. Analyze what happened in recursion. Do the same work with the help of loop. Take care of 2-3 things. First of all, according to base case,"
+  },
+  {
+   "start": 2009.54,
+   "end": 2035.38,
+   "text": "how to fill the value according to the base case and if you want to fill the value in the DP array, then how to fill it? How to fill it in the row? How to fill it in the column? It depends on where the value of the DP of i, j is coming from. If you are using DP of i plus 1 j, then obviously you will have to fill the row in the opposite direction. Now, if there is no such problem in j, then you can do j as you want. So what happened?"
+  },
+  {
+   "start": 2035.38,
+   "end": 2046.98,
+   "text": "Tabulation. And what is the name of this problem? Subset sum. Subset sum. It is a very important problem. It is a very fundamental problem. Please make this. Dry run it. If you don't understand, then ask in the comment. See you in the next lecture. Let's go."
+  }
+ ]
+}

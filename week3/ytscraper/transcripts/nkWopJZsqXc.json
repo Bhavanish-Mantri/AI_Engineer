@@ -1,0 +1,284 @@
+{
+ "video_id": "nkWopJZsqXc",
+ "title": "One Pattern To Solve Any Tree Question On Leetcode!",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1421,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.18,
+   "text": "Yes, Happy Holi to all of you. We have also come to our home as you can see the setup etc. So today, we know that India's match is also going on, so we will teach it quickly. Today, we are going to start a new template. As much as the traversal has been done, pre-order, in-order, level order, zigzag, everything has been done. Now we are going to enter mirror and symmetry. Mirror and symmetry are going to enter. It is very easy because most of the questions in it are of easy level. It is a very easy question. Look, there are a lot of questions in mirror and symmetry. If you look at the pattern sheet, you will get 6 questions."
+  },
+  {
+   "start": 29.18,
+   "end": 50.42,
+   "text": "My goal will be to tell you a fixed template. To tell you a fixed template. How to recognize such a question. Obviously it is a tree question. But how to recognize such a question. And how to solve it. So we will discuss this in this video. So this mirror or symmetry. So don't go on these words. Don't look at exact word to word. Look at their meaning."
+  },
+  {
+   "start": 50.42,
+   "end": 65.94,
+   "text": "For example, two trees are given and you have to tell if both the trees are the same. Same means same, exact same. Or if both are similar in some way. It is possible that the number of nodes is the same. Similar means not exactly the same, a little bit. Or if both are mirror images of each other."
+  },
+  {
+   "start": 66.0,
+   "end": 91.46,
+   "text": "What does mirror image mean? Both are symmetrical. Mirror image means that if you are showing like this, then both are mirror image. So both are mirror image or symmetrical or not. Both are equivalent or not. Either it will tell you that there is a tree, invert it. Invert means to make left child right child and right child left child. Do something like this. Means whenever you have to see the similarity between one or two trees, that both the trees are same or not."
+  },
+  {
+   "start": 91.46,
+   "end": 116.93,
+   "text": "What is this sub-tree? Are these two symmetrical? Can these two be equivalent? If we put this tree on it, will it be the same? If you want to see anything like this, then it comes in the pattern of this mirror and symmetrical tree. And it has a very simple answer of true or false. If two trees are the same or not, then there is a very simple answer of true or false. So watch this whole video. While watching the whole video, you will understand it slowly. To explain this, we will use the question same tree."
+  },
+  {
+   "start": 116.93,
+   "end": 144.91,
+   "text": "If you understand the same tree, then you can go and try the symmetrical tree. You can also try the invert tree. We will make it like this, but you can try it for homework. And remember this template. How to solve any question? What are the fixed set of rules? Remember them, don't forget them. Because if you forget, then there will be a problem later. So remember it, make notes, do whatever you have to do. Remember it and let's start the video quickly. So we will try to explain this to you from the same tree. Lead code 100."
+  },
+  {
+   "start": 145.65,
+   "end": 171.74,
+   "text": "Its name is sameTree because to understand this template or this pattern, the easiest question is sameTree because it is a very simple question. What it tells you is that till you are given the root of two trees, whatever question you do, there was only one tree in it. Whether you do inorder, postorder, level order, whatever you do, there was only one tree in it. Now you have been given two roots, which means one tree can be this, 1, 2, and 3. And another tree can be this, 1, 2, and 4."
+  },
+  {
+   "start": 171.74,
+   "end": 201.25,
+   "text": "What is given to you? The root of both the trees is given. Means root 1 is given to you. This is root 1 and this is root 2. Okay. Now what you have to do after seeing these two? You have to tell whether these two trees are same or not. Similar or not. Symmetrical or not. Same. Same. Same means exactly same. Means the shape of both the trees. Means whatever you feel to see. Or the value of both the trees. Everything is point to point same or not. So okay."
+  },
+  {
+   "start": 201.25,
+   "end": 231.07,
+   "text": "Before moving forward, as we have already told you that in this kind of pattern, don't imagine a very big tree. Always take a 3-note tree at max and think about it. It will be very easy. If we give you both this tree, then what do you do? You have just seen and told that this looks wrong, but that is fine. If you have to walk step by step, then what do you do? First of all, you look at this circle, the one above. We look from above, why do we look from below? We will look from above. We look at this circle. Okay, suppose if one circle was null,"
+  },
+  {
+   "start": 231.07,
+   "end": 259.68,
+   "text": "Null means that there is a circle here, but there is no circle here. This root 2 is null. There is no tree in root 2 and there is a tree in root 1. So what do you say? Are both the trees the same or not? You immediately say that both the trees are not the same. I am repeating it again. If you are looking at both, then it is obvious that you will start looking at both the trees from this circle. If you come to know that there is nothing in root 2, root 2 is empty, there is nothing in root 2, and there is a big tree in root 1, then what do you say? Are both the trees the same or not? You immediately say that they are not the same."
+  },
+  {
+   "start": 259.68,
+   "end": 289.09,
+   "text": "There is no need to go further. So, we came to know that if both are nulls, then root 1 and root 2, both have nothing. Both are completely empty. So, you say that it is the same. This means that you were told to compare two trees and there is no tree. It means there is a field. You were told that this tree is this tree and that tree is that tree. There is no tree. Both are empty. So, both are the same. So, what I mean to say is that first of all, you will think that both should be circles. Both should be circles. If we write the whole point somewhere nearby."
+  },
+  {
+   "start": 289.09,
+   "end": 316.43,
+   "text": "If there is one circle, let's say both the circles are null, then what do you say? Yes, it is the same. If both are null, then you have to go ahead. So you say yes, it is the same. If one of the two is null, then it is not the same. If one is there, then not the same."
+  },
+  {
+   "start": 316.43,
+   "end": 336.72,
+   "text": "So, not same. Why are we writing this point? We will tell you. We are just writing this. How will you think with your mind? We are just writing it in copy. So, both are nulls. Same. One of both is null. Not same. But, here both are circles. Both are not nulls. Now, what do you see? After that, what do you see next? You see what value is written in this. What value is written in this?"
+  },
+  {
+   "start": 336.75,
+   "end": 365.42,
+   "text": "If you would have known that here it is written 1 and here it is written 10, then also you would not have gone further. You would have said that both the trees are not the same, just finish it. But now see, both are circles and both the circles have the same value. If you would have known that here it is written 1 and here it is written 10, then would you have put your mind ahead or not? Because there was a problem here. How will both the trees be the same? When the root is not the same, then how will it be the same? So here you would have said not same."
+  },
+  {
+   "start": 365.46,
+   "end": 395.73,
+   "text": "So, one more point that we got to write. Now, you have come till here, means both are circles, there is no null between them, very good. If the value of both is not same, then not same, direct not same. Okay, all three points are covered. Now, you have come to all three points, means both are circles, very good. There is no null between them, very good. The value of both is also same. The value of both is also 1, 1 is same. Now, you were looking at this circle, the value of both is also same."
+  },
+  {
+   "start": 395.73,
+   "end": 421.62,
+   "text": "So, at this time, you should close your eyes and say that both the trees are the same. No, you should not say that. Because look, both the trees are not the same. Here is 3, here is 4. But, when you look at this circle, you did these 3 points on this circle, you liked it. So, till now, it cannot be called false. Okay, it seems true to see. But, after this, what should you do? What does same tree mean? If this 1, 1 is the same,"
+  },
+  {
+   "start": 421.62,
+   "end": 433.84,
+   "text": "Its child should also be the same. Then only the tree will be the same. I haven't asked you if the circle of the root is the same or not."
+  },
+  {
+   "start": 434.06,
+   "end": 460.91,
+   "text": "I have asked you whether these two are child-same or not, that is, whether the whole tree is same or not. So this is done, you have done this circle, but will this also have to be compared to each other, and the right child of both will also have to be compared to each other, only then you will be able to tell whether the whole tree is same or not. That is why we say that always think of a three-note tree, which is very simple. So what do you do first? First, you compare this circle. This is better than three points."
+  },
+  {
+   "start": 460.94,
+   "end": 486.93,
+   "text": "If one of these three points fails, you will return from here. Meaning, there is no need to go ahead. If these three points are successful, after that, you will repeat the same thing on the left circle of both and the same thing on the right circle of both. If the answer of both is true, then you can say that the whole tree is the same. What does it mean to say? Once it is successful."
+  },
+  {
+   "start": 487.02,
+   "end": 509.42,
+   "text": "After that, where will you go? After that, you will go here on the right circle, sorry, on the left circle, you will repeat the same thing on the left circle. First of all, what will you see? Are both nulls? Do you see both the circles null? No, you don't see both the circles null. No problem, it's good. Do you see one of the two nulls? No, you don't see one of the two nulls. Okay."
+  },
+  {
+   "start": 509.52,
+   "end": 534.85,
+   "text": "And is the value of both of them not the same? No, the value of both of them is the same. The value of both of them is the same. This means that the three points are the same on the circle of 2. The three points are the same on the circle of 2. Now, is there any benefit of going ahead of 2? Look here. There is no benefit of going here. You have to go here. You should go. But now see, 2 has a left binnale and 2 has a right binnale. 2 has a left binnale and 2 has a right binnale. So, it's okay."
+  },
+  {
+   "start": 534.85,
+   "end": 547.95,
+   "text": "Now, because our tree is the same, we will assume that it is correct for 2. It is correct for 2. Very good. Same work, same work. For whom is it repeated? For 3. Same work is repeated for 3."
+  },
+  {
+   "start": 547.95,
+   "end": 573.79,
+   "text": "Same means same set of points. Do you see both the circles as null? No, you don't see both the circles as null. Do you see one of the two as null? No, you don't see one of the two as null. But, is the value of both of them the same? No. It has 3 and 4 written in it. So, what did we do? The value of both of them is not the same. It is directly not the same. For whom is this not the same? For 3. For whom is this not the same? For 3, this one."
+  },
+  {
+   "start": 573.79,
+   "end": 603.7,
+   "text": "Now, remember which circle you were at in the beginning? At 1. So, 1 did its circle, so it was said, okay, good. 1 did this work for 2, so 2 said it was good. But, when 1 wanted to do the same work for its right child, then what did its right child say? No, not same. So, what does this mean? This whole tree and this whole tree, is it same or not same? Not same. What is it? Not same. Because, the root circle worked well. The root circle worked well."
+  },
+  {
+   "start": 603.7,
+   "end": 623.89,
+   "text": "The left circle also worked well. But when we compared the right circle, 3, 3, then it said that no, no, no, it's not the same. That's why this whole tree, who is the representative of the whole tree? Root. Who is the representative of the whole tree? Root. So, Root said that what is the whole tree? It's not the same. Now,"
+  },
+  {
+   "start": 623.92,
+   "end": 652.37,
+   "text": "Now, by doing this, you understood 30-40% of it. Very good. Now, whatever point we have written here, we will try to write it in code. So, see what you did. First, you got root 1 and root 2. For that circle, you did this work. For root 1 and root 2, you did these three works. After that, in the fourth point, you did the same work for the left child of both. In the fifth point, you did the same work for the right child of both."
+  },
+  {
+   "start": 652.4,
+   "end": 682.48,
+   "text": "Now, can these two also return true or false? Can these two also return true or false? Now, if these three points of the root are correct, and these two are true, these two left and right both are true, then you say that it is the same tree. How will we write this in code? With recursion, like the tree code is written. The tree code is very easy to write. Look, bool, fun. What is bool? Fun. What will you get in the beginning? Two roots. What will you get? Two roots."
+  },
+  {
+   "start": 682.48,
+   "end": 714.24,
+   "text": "Right? Now, we will do dry run also, don't worry. Everything will be understood. If you understand slowly also, no problem. It is a very easy question. There is no rocket science in it. We are taking so much time because we want to understand it correctly. Now, whatever point you have written, whatever point you have written, first of all, what have you written? If both are null, then same. If both are null, then same. If both are null, it means true. So, if root 1 equal equal to null and root 2 equal equal to null. Okay. What do we have to do? Return true."
+  },
+  {
+   "start": 714.24,
+   "end": 744.22,
+   "text": "Return true. Because we can't do anything after this. What will you do after this? Assume that root 1 and root 2 are null, then what is the meaning of left and right? There is no value, there is nothing. So, do true. Now, if one of the two is null, if one of the two is null, then not true. So, not true. That means, we will write like this, if root 1 equal equal to null, or root 2 equal equal to null, then return false. Now, why will this work? This is a coding trick. Look."
+  },
+  {
+   "start": 744.22,
+   "end": 770.98,
+   "text": "What does this mean? If √1 is equal to null and √2 is equal to null, then we can understand that both are nulls and they are ANDs. Now suppose if there is one null and there is none, then it will be caught by this. It will be caught by this. Why will it be caught? Suppose √2 is null and √1 is not. Then it will see that √1 is null and will say no, it is false. And √2 is equal to null and will say yes, √2 is equal to null. So what does this mean? When you write like this, this means that both are nulls."
+  },
+  {
+   "start": 770.98,
+   "end": 797.52,
+   "text": "This means that one of the two is null. So what we had to do in this was to do false. Now if it didn't happen, if both are circles, then what did we check? If the value of both is not the same, then false. If the value of root is not the same, if 10 is written in root and 5 is written here, then what does it mean from left to right? Do false here. So if you come here, then if root1.data not equal to"
+  },
+  {
+   "start": 797.52,
+   "end": 820.83,
+   "text": "Root 2 dot data means that the data of this root circle and that root circle is not equal. What to do? False the return. False the return. Now, remember, when you were on this 1, when you were on this 1, when you were on this 1, then you covered all three points. After that, what did we do? For this whole tree, what was necessary? That you do the same work with the left child."
+  },
+  {
+   "start": 820.83,
+   "end": 849.22,
+   "text": "Do the same thing with the right child. What does same thing mean? Same thing means this. The work that is happening in this function, do the same thing. So what do we do? Remember, r1 is equal to, what will we do? In this function, we will pass the left of root 1, and we will pass the left of root 2. So the same thing will happen. Exactly like recursion. What do you have to do? Whatever work you have done for this circle, you have to do the same work for both the left circles. And,"
+  },
+  {
+   "start": 849.22,
+   "end": 867.31,
+   "text": "Whatever work you have done for this circle, you have to do the same work for the right circle. This is similar. In pre-order, in-order, what we used to do? Remember, there was a root. Now, before the root, you used to say, do one thing, send the left, print that. So, what is this? Recursion is going on. Now, we will tell you by drawing it completely. But,"
+  },
+  {
+   "start": 867.31,
+   "end": 896.94,
+   "text": "What is this fun? Whatever you thought of working here, this fun is working the same way. If we write it pointwise, then this is point 1, this is point 2, and this is point 3. You want that for both these roots, root 1 and root 2 work for 1, 2, 3, let's say. You want that root 1's left and root 2's left have the same work. So what will you have to do? Pass both of them. Pass both of them in fun, then the same work will be done. And its result, where will it come? In R1. In R1, it means true or false. True or false. Similarly, bool."
+  },
+  {
+   "start": 896.94,
+   "end": 924.13,
+   "text": "R2 is equal to. You want the same work for both right. Pass it. Pass it. Root 1 dot right and root 2 dot right. Finished. Now, if both are true, R1 and R2 are both true, then you can say that yes, what we were doing for 1 and this, this whole tree is same. If one is true and one is false, then"
+  },
+  {
+   "start": 924.13,
+   "end": 955.94,
+   "text": "Not at all. So this 2 and 3, the work that will be done in 2 and 3, will give something or the other, true or false. If both are true, then you can say that the whole tree is true. If both are true, then what does it mean? If R1 is equal to true and R2 is equal to true, then you can say that the return is true. You could have also done this, return R1 and R2, but okay. If it is not so, return false."
+  },
+  {
+   "start": 955.94,
+   "end": 986.99,
+   "text": "Return. False. Okay? So, look at this code. Now, let's explain the dry run of this. That's why, if we start with the dry run of a big tree, then it will never be understood. That's why, write it on a tree of 3 nodes. After that, what do we do with its dry run? On a big tree. Remember this code. Remember this code. Come, let's show you the dry run on a complex tree, on which there won't be 3 nodes. Look. Let me tell you one thing. Let's make a tree. One. Two. Three. After that, here, four."
+  },
+  {
+   "start": 986.99,
+   "end": 1017.74,
+   "text": "Okay? Let's make another tree. 1, 2, 3 and 4. See this. We have made this tree. Does this tree look similar to you? Does it look the same? No, it doesn't. Because it looks like everything is the same here. Everything is the same here. But this is the left child of 4, 3. Here is the right child. So will we be able to catch this with our code? Let's see what will happen. First of all, what will you pass? Root 1 and root 2. Means first of all, you will be given these two. First of all, you will be given these two. So let's do recursion."
+  },
+  {
+   "start": 1017.74,
+   "end": 1048.11,
+   "text": "Let's do the recursion. Let's make it a little smaller. Let's do the recursion of this. So what will you pass first in fun? In fun, r1 is equal to 1, r2 is equal to 2. Right? Root 1, root 2 is equal to 1, 1, 1. Sorry, 1, 1. Both are 1, 1. Both are 1, 1. So what is the first point? The first point is that are both circles null? No, both circles are not null. Is there any one of them null? No, there is not one null. Are both values same? Yes, both values are same. Very good. Now what do you have to do?"
+  },
+  {
+   "start": 1048.11,
+   "end": 1075.26,
+   "text": "You have to do the same thing for both the left child and the same thing for both the right child. So, for both the right child, let's do the left child of both first, 2. Both the left child is 2, 2. R2 is equal to 2, 2. And, you have to do the same thing for both the right child as well. Meaning, for both the 3, 3 as well. Because till now, everything is the same. Come. Now, suppose this is done. Let's call this. Let's call this and write. There will be one more fun call, in which R1, 2 will be there."
+  },
+  {
+   "start": 1075.26,
+   "end": 1104.05,
+   "text": "And R2 will be 2. Now, who are you in this? Remember, who are you in this? You have come in this. Now, you have come here. These two are being checked. Similarly, check. Are both nulls? Both are not nulls. Both are circles, right? 2, 2. Both are circles. You can see. Okay. Is there any one of the two nulls? No, there is not one null. Is the value of both the two same? Yes, the value is same. Now, we have to do the same work for its left side. But, what is its left side? What is the left side of this 2 and this 2? Null. So, do the same work. Do the same work. What is done? Fun."
+  },
+  {
+   "start": 1104.05,
+   "end": 1131.65,
+   "text": "R1 is equal to null and R2 is equal to null. And you will call the same for the right child. So, its right child is also null. Fun. R1 is equal to null and R2 is equal to null. So, you did it. Come, let's call this too. Now, when this call happens, R1 is equal to null and R2 is equal to null. So, in which case will it go? That's why we checked here. If both are null, then what do we do? Return true."
+  },
+  {
+   "start": 1131.65,
+   "end": 1160.48,
+   "text": "Both the roots that you have given are empty. So what will you do? You will return true. What do you have to think about that? So what will be its answer? What will be its answer? True. Its answer will be true. And similarly, what will be its answer? True. Now, this function, 2, what will it return? Because its left child is also null, true. Right child is also true. This whole 3 point is also passed. So what will it do? Return true. Return true. Where will this true go?"
+  },
+  {
+   "start": 1160.48,
+   "end": 1191.02,
+   "text": "This true will come here, near 1. This was your main function, right? You started from here, right? Now, the answer of its left child has come true. But, no, its right child is still there. So, let's do this. Let's do this execute. Come. Now, we will execute this. In which, you got 3 in root 1, and you got 3 in root 2. Now, where have you come? Now, you are standing here. Remember, here. In both, you are standing here. In both, you are standing here."
+  },
+  {
+   "start": 1191.02,
+   "end": 1210.13,
+   "text": "Do the same thing. Is both the circles null? No, they are not. Is there one null in both the circles? No, they are not. Is the value of both the circles the same? Yes, the value of both the circles is the same. Now, what do we have to do? Now, you have to call both the circles for 3k left child and 3k right child as well. So, let's call them. So, first of all, we will call 3k."
+  },
+  {
+   "start": 1210.13,
+   "end": 1235.68,
+   "text": "both will call for left child. So see, what is the left child of the first 3? 4. So what will happen? R1 will become 4. But, but, what is the left child of the second 3? Its left child is null. So it will call null. Now when this will execute, see, when this will come, then root 1 will be 4, root 2 will be null."
+  },
+  {
+   "start": 1235.68,
+   "end": 1250.5,
+   "text": "Where will it be caught? It will be caught here. If, now it will say that if both are null, say that both are not null, one is 4 and one is null. But if one of the two is null, then what will it return? False. False. False. Why?"
+  },
+  {
+   "start": 1250.5,
+   "end": 1275.66,
+   "text": "Because when you were in this 3, when you were in this 3, there is 4 in the left child of this 3, so this is called to it. But there is null in the left child of this 3, so this is called to 4 and null. So can these two be similar? No, these two cannot be similar. So what will happen here? False. Where will this false come? This false will come here. And because of this, what will this caller of 3, 3 return?"
+  },
+  {
+   "start": 1275.66,
+   "end": 1288.94,
+   "text": "Return false. Because if your left child is telling you false, then you can't say true on top. You will have to say false. Where will this false come? This false will come here. This false will come here. Now."
+  },
+  {
+   "start": 1288.94,
+   "end": 1315.28,
+   "text": "Remember, now you have come to your major function. Now we have come here. 1 and 1. 1, 1 had passed its 3 points. There was no null between the two. The value of 1 was also same. Its left child had also passed. Its left child also said that 2, 2 is good. But when it called it for its right child, then this function said that false. Now what should it return? The main function 1, 1, what should it return? False. What is written in the code?"
+  },
+  {
+   "start": 1315.28,
+   "end": 1337.58,
+   "text": "If R1 is also true and R2 is also true, which means the answer of the left is also true and the answer of the right is also true, then you have to return true. If it is not true, then what will you return? False. So what will our 1 return? False. And what is your final answer? False. And you can also see if this tree is the same or not. It is false. So is this code working? It can definitely work."
+  },
+  {
+   "start": 1337.58,
+   "end": 1366.56,
+   "text": "And you can try to dry run. Don't do one thing. Go to the last and make a big tree. Change the value. See what will happen. Go somewhere. Because see what we are doing. This is what happens in tree question. You get a root. You do some work on that root. You repeat that work for left child. And repeat that work for right child. Based on the result. Based on the result you return something. Based on the result you return something. Means. Root came. You did some work on root."
+  },
+  {
+   "start": 1366.56,
+   "end": 1393.54,
+   "text": "For the left child, we did the same thing with the same function. For the right child, we did the same thing with the same function. And based on the result, we returned something at the end. So this is the code of the same tree. It is a simple code. Every code of the tree is simple. If you ever want to think of such a code, then think in this type of tree. Think in this type of tree. If you start thinking in this type of tree, it will not come. Always take such a simple tree and think of it. After that, make a point. What do you have to make in the point?"
+  },
+  {
+   "start": 1393.54,
+   "end": 1419.98,
+   "text": "what you have to write in root, what you have to do in root, same work for left, same work for right, and what you have to return by combining both the results, so you will be able to see, and definitely do dry run, the more you understand recursion by dry run, the more you will not understand it by any master, okay, so that's it, so do the same, and if possible, do symmetrical tree, or else we will do it tomorrow, if you want to do it for homework, then you can try symmetrical tree, try it, it may be done, and see you tomorrow,"
+  }
+ ]
+}

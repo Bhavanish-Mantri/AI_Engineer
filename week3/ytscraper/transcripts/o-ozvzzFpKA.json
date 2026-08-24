@@ -1,0 +1,364 @@
+{
+ "video_id": "o-ozvzzFpKA",
+ "title": "35. DSA PATTERNS 2025 | Master Merge Interval With Interview Questions | FAANG",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1981,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.44,
+   "text": "Before we start today's revision, there is one question left which is a very famous and common question. This question can be asked by Amazon, Microsoft or any other good company. The question is the same, the way to solve it is the same. They make different stories in it. Some say that there are meeting rooms, some say that there is a train station, some say that there is a metro station. So the story is different, the question is the same. It is a very important question and a very famous question. And this is one of the questions in Merge Interval for which"
+  },
+  {
+   "start": 27.44,
+   "end": 55.31,
+   "text": "complex data structure, no fancy data structure is required, it is made with common sense. So, the special thing about merge interval is that most of its questions can be made with common sense. What is common sense? Yes, common sense. It is known by looking, it is known by thinking, it has to be coded. So, before we do the revision of the whole pattern, let's see this question and then we will move on to the revision. So, what does this question say? This question says that minimum meeting rooms. What? Minimum meeting rooms."
+  },
+  {
+   "start": 55.31,
+   "end": 85.14,
+   "text": "Those who are coming here for the first time, you can check in the description. We read the patterns here. See from the beginning, don't see from the middle. So, what does it tell you? That there is a hotel or anything. There is a hotel or an auditorium. There are some meetings to be held there. What? There are some meetings to be held. Every meeting has a start time and an end time, obviously. What is every time? There is a start and an end time of every meeting. So, that happens. You have to know that how many rooms do you need in the hotel? How many? How many rooms do you need to have all these meetings?"
+  },
+  {
+   "start": 85.17,
+   "end": 115.09,
+   "text": "What does it mean? Even if you don't understand it like a meeting People come to a hotel to check-in and check-out So someone says that my check-in time is start 1 and my ending time is end 1 Another person says that my check-in time will be start 2 and my check-out time will be end 2 How many rooms will you have to keep in the hotel so that everyone gets accommodated? If you want to understand this question If someone says that we will check-in at 10 am and"
+  },
+  {
+   "start": 115.09,
+   "end": 143.41,
+   "text": "We will check out at 11 am. We need a room for an hour. Someone else says that we will check in at 1 pm and leave at 4 pm. In this scenario, you need only one room in the hotel. Why do you need only one room? Because there is one room. You give one room to that person 1. Give it to him at 10 am. What will he do? He will enter at 10 am. He will give you the room keys at 11 am and leave. Then your room will be empty. At what time? Your room will be empty at 11 am."
+  },
+  {
+   "start": 143.41,
+   "end": 172.82,
+   "text": "The other person who comes at 1 pm, you give him this room again. He will stay in it. And at 4 pm, he will also give you the key and leave. Then your room will also be empty. So you can run the hotel only by keeping one room. When? When the check-in and check-out are like this. But, but, but. If the first person says that we will come at 10 am. And we will leave at 1 pm. How much? We will leave at 1 pm. The second person tells you that we will come at 12 pm. In the afternoon. And we will leave at 3 pm."
+  },
+  {
+   "start": 172.82,
+   "end": 200.7,
+   "text": "How many are there? 3 will come out. Now see, suppose you have 1 room. There will have to be 1 room in the hotel. If you have to keep 1 guest, then you need 1 room. Okay. You give this room to this person 1. Okay. But what will happen? This person will take the room at 10. But when will he empty it? At 1 in the afternoon. But at 12 in the afternoon, person 2 will also come. Now you can't give the same room to person 2. There can't be 2 people in 1 room. There will be 1 person in 1 room. You will need another room in which you will put person 2. At what time? 12."
+  },
+  {
+   "start": 200.7,
+   "end": 221.14,
+   "text": "Why do you need two rooms here? Because your existing room is not empty at 12 o'clock. It is not empty, right? There is already a person one in it. This will go for one reason. This person came before 1 o'clock, so you had to give him another room. In this scenario, you will need a minimum of two rooms. If you want to accommodate everyone on time. This question says that you have given a lot of people."
+  },
+  {
+   "start": 221.14,
+   "end": 250.03,
+   "text": "Everyone has check-in time and check-out time. There are two areas. In one area, everyone has check-in time and in the other area, everyone has check-out time. You tell me how many rooms do you have to keep in the hotel so that everyone can stay comfortable? Or in this question, it is said that all the meetings should be comfortable. We said that different stories will be made. Someone will say that the timing of the train is given. How many times does the train come and go? How many platforms do you need? Someone will say that the timings of the metro are given. How many stations do you need? Someone will say that there are meetings in the hotel. How many rooms do you need in the hotel? People. I mean, the story can be made differently. There is a variety of stories. There is a variety of people."
+  },
+  {
+   "start": 250.03,
+   "end": 278.1,
+   "text": "The concept is that how much room do you need? First of all, is this a question of merge interval or not? Of course it is. Because there is only one way to identify the question of merge interval. That you have given ranges. What have you given? Ranges means start and stop has been given. Clearly start and stop has been given here. Means check-in time has been given and check-out time has been given. If we talk about this question, then the start time and end time of the meeting has been clearly given to you. So it is certain that it is a question of ranges. So the merge interval will definitely be given here. Okay."
+  },
+  {
+   "start": 278.1,
+   "end": 305.01,
+   "text": "Now, what is the concept of solving this? Till now, we were doing that... Till now, what did we learn? That if there is a merge interval, then it's a good thing. We used to sort it from the start time. We used to overlap it. There was a condition of overlapping. If there was an overlap, then how did we merge two intervals? There was a math of that too. That there was start 1 and maximum of end 1 and 2. But now, what are we doing in this question? In this question, you don't have to merge anything. You just have to see how much maximum number of rooms is required. Meaning, in a way, he is saying that..."
+  },
+  {
+   "start": 305.01,
+   "end": 333.98,
+   "text": "Suppose you draw a drawing like this. This is the start and this is the end of one person. The next person goes from here to here. And then one person goes from here to here. And one person goes from here to here. Now see, where there will be the maximum number of intersections, look at this place. At this place. Look at this place, the maximum number of intersections. How many are there? Three. That means the time slot of three meetings is common. There is a common timing. Here you have to keep a minimum of three rooms. So according to the drawing, you know that yes,"
+  },
+  {
+   "start": 333.98,
+   "end": 363.95,
+   "text": "You will need 3 rooms because there will be a new time slot where 3 meetings will be going in parallel. Parallel is the key. Parallel. These 2 people, this 2 people, 1 time slot used to come like this. Which time slot? From 12 pm to 1 pm. This was a common time slot. These 2 people were living in parallel in your hotel. That's why you needed 2 rooms. The upper 2 people were never living in parallel. This used to come at 10 pm and leave at 11 pm. After that, 1 pm used to come and 4 pm. So, only 1 person was living in parallel. In this, 2 people were living in parallel. So, you needed 2 rooms."
+  },
+  {
+   "start": 363.95,
+   "end": 387.46,
+   "text": "So this is the question. Now there are many ways to solve this, but the best way is the most common sense way. What is the common sense way? As a hotel owner, you should not make a single room in your hotel. Your hotel is under construction. You don't have a single room. You have decided that as people come,"
+  },
+  {
+   "start": 387.46,
+   "end": 410.5,
+   "text": "In the same way, we will make the room and give it to them as per our need. If the room is already empty, then we will give it to them. If all the rooms are full, then we will not give it to everyone. See, for example, it tells you that this is the check-in time. Check-in time is 1, 10 and 7. What is this? Check-in time or start time of the meeting. Check-out time is 4, 5, 10."
+  },
+  {
+   "start": 410.5,
+   "end": 440.91,
+   "text": "This is your end times and this is your start times. What does this mean? See, there are 3 elements in both of them. There are 3 elements in both of them. There are total 6 elements. If you make this a pair, then it will look like this. The first meeting goes from 1 to 4. The second meeting goes from 10 to... Oh sorry, it's not like that. It means that there is no pair in particular. You are told that these are your start times. There are 3 start times and 3 end times. It means that you have to have 3 meetings in your hotel."
+  },
+  {
+   "start": 440.91,
+   "end": 469.95,
+   "text": "You have been told the start time of all three. And you have been told the end time of all three meetings. Which meeting will end when is not told. Means no specific range has been told. Means you have not been told that one meeting is one from one to four. No, it is possible that one meeting is one from one to five. One meeting is one from one to ten. We don't know. The start will be at this time and the end will be at this time. Okay. That's why we have given this example. What is the best intuition? That you are a hotel owner. You don't keep anything. You don't keep anything. What is our start time? One, ten, seven. Okay. And what is the end time?"
+  },
+  {
+   "start": 469.95,
+   "end": 496.1,
+   "text": "Sorry, it was 15. 15 and 10. Okay. So, you do one thing. Don't make any room now. There are 3 types of start time. Start time means, people will come to you at start time and give us a room. Start time means, give us a room. Give us a room. This is what it means. What does end time or checkout time mean? This room is emptying. This room is emptying. This room is emptying. It is emptying."
+  },
+  {
+   "start": 496.1,
+   "end": 525.52,
+   "text": "This is what happens in a hotel. People will come at the start time, ask for the keys of the room, occupy the room. At the end time, they will vacate the room. In any such question, the same thing will happen. When the train comes at the station, when the train comes, it will occupy the platform. When the train goes, it will vacate the platform. When the metro comes, it will occupy the station. When the metro goes, it will vacate the station. This is what happens. Let's go. That's why, that's why, it becomes very important that we see this in chronological order. Amit Shah ji says, you understand chronology. What is chronological order? In this, we see according to time."
+  },
+  {
+   "start": 525.52,
+   "end": 550.0,
+   "text": "Let's look at it according to the time. Let's look at it according to the time. How will we look at it according to the time? What is this? This is only the time. Or you can think of it as an hour. It is the hour of the day. It comes at 1 o'clock and leaves at 4 o'clock. It comes at 10 o'clock and leaves at 15 o'clock. Or it comes at 7 o'clock. It is anything. It is the time. These are the ranges. So, let's look at it according to the time and see how much room we will need."
+  },
+  {
+   "start": 550.03,
+   "end": 577.76,
+   "text": "What is the first time? First of all, out of these six, not out of three, out of all six, what will be your first event of the day? The first event of the day will be at 1 o'clock. At 1 o'clock, a person will say that we want a room. Because he is from the start. Because he is from the start, right? He is from the start. He will come at 1 o'clock and say that we want a room. So, you didn't have any room just now, you make a room. You make a room. This is your R1. So, you got to know that you need at least one room because you had to make a room to give it. Okay."
+  },
+  {
+   "start": 577.76,
+   "end": 607.81,
+   "text": "Let's say you let a person in. Let's say you let a person in. Let's say you let a person in. Let's say you let a person in. Let's say you let a person in. Let's say you let a person in. Let's say you let a person in."
+  },
+  {
+   "start": 607.81,
+   "end": 633.46,
+   "text": "So what do you do? What does it mean to have an empty room? Remove one room from all the rooms you have. Remove one room. We will break that room again. Break this room. What do you do to this room? Break it. You broke the room. Okay. Now there is again zero room in your hotel. Which is also a good thing. There is zero room in your room. One guest came till now. One guest left. There is zero room in your hotel. Let's go. What is the next time? We can see the next time at 7. At 7 o'clock."
+  },
+  {
+   "start": 633.46,
+   "end": 660.93,
+   "text": "A person comes at 7 o'clock and asks for a room. Because this is the start, the start part. This is the start area part. He asks for a room. Okay. There is not a single room in your hotel. Make a room and give it to him. Make a room and give it to him. Okay. Which is the next event? Do you see the next event? Yes. Now in the next, 10 is in both. 10 is in both. See. 10 is here and 10 is here too. Okay. Now what to do?"
+  },
+  {
+   "start": 660.93,
+   "end": 689.49,
+   "text": "There is a line in this that if two meetings will be like this, if two people will be like this, if one person says that we will take room from 4 to 10 o'clock, okay? One person says that we will come exactly at 10 o'clock, exactly at 10 o'clock, and leave the room at 12 o'clock. If such two events come, then what to do in this? So this is generally written in the question, but in 90% of the cases it happens in this, right? That if it is the same, if it is the same, then we will assume that it will vacate first,"
+  },
+  {
+   "start": 689.49,
+   "end": 715.47,
+   "text": "he will empty it first, after that you can give him a room. So it will work in one room only. What does it mean? 4 to 10 doesn't mean that 10 and 10 are common, so you have to make 2 rooms, no. The first person will empty it, after that you can give him a room. Here we will do the same thing, like there are 2 10s, one is 10 at the start and one is 10 at the end. So we will assume that the one at the end will empty it first, the one at the start will get it later. So first of all, in the next event, let's take this one."
+  },
+  {
+   "start": 715.47,
+   "end": 742.42,
+   "text": "He says he is vacating the room at 10. What are you doing? You are vacating the room. Who is vacating the room? Don't make a difference. What do you do in vacating the room? Break one room from your hotel. Break it. Break it. Break it. Very good. Okay. Next. Come again at 10. The person at 10 says he wants one room. He wants one room. So, okay. Make one room and give it to him. This is your R1. Okay. Remember how much is the maximum number of rooms. Okay. Next event. We are seeing 15. What does 15 say?"
+  },
+  {
+   "start": 742.42,
+   "end": 768.8,
+   "text": "15 because it is the part of the end, it says we have to empty the room, empty the room, no problem, empty the room, break the room of your hotel, break it, how much room did you make maximum, you must have seen in this, if you remember from the beginning, we made a maximum of one room, this will be your answer, everyone's work will be done in one room, you have done everyone's work in one room, it has never happened that you had made one room, another person came that we need a room, then you have to make another room, it has never happened, where will it happen, see one more example, dry run, it will be completely clear, see this is all common sense,"
+  },
+  {
+   "start": 768.8,
+   "end": 799.25,
+   "text": "No coding, no algorithm, nothing. It's a common sense question. This happens in real life too. Merge interval is such a DSA pattern which is very close to real life. Whatever you do in real life, you do it here too. Let's go. Come. 2, 9, and 6. Okay? And what is the end time? 4, 12, and 10. Do the same thing. As a hotel owner, you don't have any room. No room. Okay. What will be the first event of the day? 2. What does 2 say? Because this is the start part. This is the start."
+  },
+  {
+   "start": 799.25,
+   "end": 827.3,
+   "text": "And this is your end. So because this is the start part, this is called room 2. Room 2. Give it. Make a room and give it. Make a room and give R1. Okay. Remember how many room drawings we will make together. Okay. What is the next event? Four. Four is called, because this is the end part, this is called we have to empty the room. We have to empty the room. Okay. Empty the room means break one room. Break any one of your rooms. Come on. Break any one of your rooms. I mean, it is not like this. Room 1, room 2, room 3 will be made. Break any one of your rooms. Remove it. Come on."
+  },
+  {
+   "start": 827.3,
+   "end": 856.21,
+   "text": "Come to the next event, what is the next event? We can see 6. 6 because it is the start part. It says, bro, give us a room. Give us a room, we are very hungry. Make a room and give it to him. Okay, give it. Which is the next event? See the next event. This is done, yes. The next event is not 12-10, the next event is also 9. See the next event very carefully. 9 because it is the start part. It says, give us a room. Give us a room. You will have to make another room. Whenever you want to give a room, you will have to make a room. Come on, make it. Now see."
+  },
+  {
+   "start": 856.21,
+   "end": 884.5,
+   "text": "You have to make two rooms at once. Two rooms have been made in your hotel at least once. So, two will be your answer. Let's see what happens next. Next is 10. 10 says that the room is empty. You have to empty the room. If you want to empty the room, break any room according to you. Break it according to you. Break it and throw it away. Throw it away. Let's go. What does the next say? 12. 12 is the end. It says that you have to empty the room. You have to empty the room. Break any room according to you. Break one of your rooms."
+  },
+  {
+   "start": 884.5,
+   "end": 911.2,
+   "text": "And your whole day is over. How many rooms did you make at maximum? How many rooms did you make at maximum at one time? Two. Your answer is two. In this hotel, in this type of guest, you won't be able to run a hotel without two rooms. Why? Because there was a person in one room before. And again he came and said that give us a room. So you had to make another room without breaking that room. Because there is another person in that room. So how many rooms did you make in one hotel? You had to construct two rooms. That's why the answer is two."
+  },
+  {
+   "start": 911.2,
+   "end": 942.13,
+   "text": "You will have to do two rooms. You will have to keep two rooms so that you can accommodate all the guests. So, if you understand the example of breaking this room and making a room, it will be easy. Let's go. So, what should we do in this? Now, what should we do in this? Means, this was good, I understood, dry run etc. How will we implement this in code? So, see, what are you doing in one way? What are you doing in one way? You are going according to the time. You are going according to the time. You are going according to the time. Okay."
+  },
+  {
+   "start": 942.13,
+   "end": 971.95,
+   "text": "According to the time, it is a good thing. And you are going according to the time, but you have two types of events. If your start event was there, means if someone came from your start area, then you would make a room. You would make a room. You used to do this, right? If your stop event was there or the end event was there, you would break the room. You would break the room. Okay. At any time, you used to keep track of how much room could be made."
+  },
+  {
+   "start": 971.95,
+   "end": 1001.22,
+   "text": "Maximum, at one time, how many rooms are there? This would be your answer. So, this is easy. We used to make rooms. Keep a variable. Room is equal to zero. In the beginning, there was no room in the hotel. What does it mean to make a room? Room plus plus. What does it mean to break a room? Room minus minus. You have to keep a max. Keep a res. Res is equal to max of? Res and room. This is a very good thing."
+  },
+  {
+   "start": 1001.22,
+   "end": 1030.1,
+   "text": "The problem is, how does it run according to the time? How does it run according to the time and how to identify if it is of start or stop? So see, you are given two arrays in this question. One array is of your start, 2, 9, and 6. One array is of your stop, which is 4, 12, and 10. This is your stop and this is your start. You are given two arrays in this question. When you have to run according to the time, see, you have to run according to the time."
+  },
+  {
+   "start": 1030.1,
+   "end": 1059.25,
+   "text": "One thing we could have done is that we could have sorted both in one array. So we could have written 2, 9, 6, 4, 12, and 10. We could have done this and we could have sorted this. If we would have sorted this, then we would have known that 2, 4, 6, 9, 10, and this 12. So this would have been an array. If we would have combined these two arrays, then we would have sorted them. Now you will work according to the time. Now you will work according to the time. But you won't know which event was whose part."
+  },
+  {
+   "start": 1059.25,
+   "end": 1088.11,
+   "text": "this 2, was it the start part or the stop part? will it ask for a room or will it vacate the room? you won't be able to know that so there is one way to know that, there is another way, that is you make an array of pairs the array that you made here, instead of a single, you make an array of pairs so when you insert 2 in it, you insert 0 with 2, 0 means that it is the start part when you insert 4, you insert 4 as 1, from 1 you will know that it is the stop part"
+  },
+  {
+   "start": 1088.11,
+   "end": 1115.28,
+   "text": "But this is a bit of a useless method. Why do you have to make one more array? You have already given two arrays and you are making one more array. So your space is increasing. The space is increasing. And we have to do pairs in it. Then if we sort it, then if the start and stop will be the same, then it will be sorted from 0 to 1. Means it is a very rough type of approach. You can do one thing. You can do one thing. Start and stop are already given. Start and stop are already given. Means you have 2, 9, 6."
+  },
+  {
+   "start": 1115.54,
+   "end": 1146.11,
+   "text": "See, you have understood the whole question. The whole algorithm is clear. Now, how to implement it? How to code that thing that you have thought about? We are looking at that. So, it tells you that it is 4, 12, and 10. You have to run according to the time. You have to run according to the time of the day. So, why don't we sort both the arrays? If we sort both the arrays, then at least my start will be sorted and my end will also be sorted. Come, sort both. Sort both. This will become 2, 6, 9. Okay. What will become of the second one?"
+  },
+  {
+   "start": 1146.11,
+   "end": 1173.79,
+   "text": "4, 10, and 12. This is your start. This is your end. Both are sorted. Now, what is this? You must be wondering. Merge two sorted arrays. Merge two sorted arrays. We did something in this. Why? Look. When both arrays are sorted, the start is sorted. This is 0, this is 1, this is 2. If you go down this, you will go according to the time."
+  },
+  {
+   "start": 1173.79,
+   "end": 1196.3,
+   "text": "The end is also sorted by itself. So this is also 0, 1, 2. If you go down, you will go according to the time. But, but, but, which one is bigger in this and in this? According to that, you will have to go. You need lowest time. You always need lowest time. You know this array is sorted. Okay. This array is sorted. So when you will take out the first lowest time, this 0, 1, 2. 0, 1, 2."
+  },
+  {
+   "start": 1196.3,
+   "end": 1225.39,
+   "text": "If you have to take out the first lowest time, then who are the candidates? Those who have seen the two-pointer pattern, they must have understood completely. Who are the candidates of the first one? Either this person or this person. There can't be anyone else. There can't be anyone else. There can't be any other candidate of the first one. Why? Because you have shorted the whole array. There can't be a candidate of the first one, 6 or 9, because 2 should come before 6 or 9. It can't be in 10 or 12, because 4 should come before 10 or 12. So the first candidate is the same. Okay, no problem. Keep an eye here."
+  },
+  {
+   "start": 1225.39,
+   "end": 1254.18,
+   "text": "Keep j. What do you know first? The start one is small. The start i is less than the stop j. What did we do? The first event is of start. First of all, room++ res is equal to max of res and rooms. And what do we do in merge disorder? The one whose work is done, i++. Else, else, else."
+  },
+  {
+   "start": 1254.18,
+   "end": 1281.06,
+   "text": "Else, suppose if you did this, then your i would have come here. Now it would have come here. Now which one is more? Which one is less? The one with stop is less. So see, there are 3 cases in this. Start i and stop j, means which one is bigger? So in this you got to know that if stop j is small, then you don't have to do anything. Room minus minus, j plus plus. But if both are equal, then what will we do? We understood above in the example."
+  },
+  {
+   "start": 1281.06,
+   "end": 1310.19,
+   "text": "If someone's checkout time is also 10 o'clock and someone else's check-in time is also 10 o'clock, then what will happen? According to the question, first that person will check out, that means first he will vacate a room, then this person will check in, then he will increase this room. So if, if in such a case, start i equal to stop j comes, then you have to treat it in such a way that first the one who is at the end will vacate his room, that means the hotel guy will break a room, after that this person can check in, then he will feel like doing it or not."
+  },
+  {
+   "start": 1310.19,
+   "end": 1341.31,
+   "text": "In this case also, you have to do J++ and Room minus minus. You have to do like this. Let's dry run this and see a little. What were our two arrays? What were our two arrays? Our two sorted arrays. We have sorted both of them. 2, 6, 9. 2, 6, 9. This is a question of common sense. There is no math in this. Okay? And this is the end array. This is your end array. Okay? What is this? 4."
+  },
+  {
+   "start": 1341.31,
+   "end": 1369.01,
+   "text": "10 and 12. 0, 1, 2. In the beginning, I is equal to 0. J is equal to 0. In the beginning, you don't have any room. So, room is equal to 0. Rest is equal to 0. Rest means whatever answer you want to contain. Let's go. I is J. Which one is small? This one is small. No problem. So, whose event is this? This is the start event. The first time of the day is the start. So, what did you do first? Room is 1. Okay."
+  },
+  {
+   "start": 1369.01,
+   "end": 1398.37,
+   "text": "rest is equal to maximum of rest and room, so rest is also 1, okay. I is increased. Let's go, I has come here. Which one is small now? J is small now. What does J mean? It is coming before time and it is also a stop. What did you have to do? Break the room minus minus and increase J. J has come here. Which one is small in I and J? This one is small, 6 is small. What does it mean? A person came and said that we have started and we need room. So what did we have to do? We had to increase the room from 1."
+  },
+  {
+   "start": 1398.37,
+   "end": 1428.29,
+   "text": "Result is equal to maximum of result and room. So the one will remain. I also had to increase. No problem. Come here. Which one is small now? I is still small. Come. One more I. One more I. You will have to increase the room one more. Increase the room. What happened after the result was updated? You. I also increased. Now. Now. I went out. I went out. Once I went out, you don't have to do anything. Why don't you have to do anything? See. Your I went out after coming here. So what did you do in merge to sorted array? I and J were running. Okay."
+  },
+  {
+   "start": 1428.29,
+   "end": 1458.16,
+   "text": "But when i goes out, then what do we do? After that, we used to run j completely. When j goes out, then we used to run i completely. But there is no need for this. Okay. Why is there no need for this? Okay, tell me one thing. Who will go out first always? Who will go out of the array first? Who will go out of the array first? i or j. Who will go out? Some people will think that both can go out. Right? So, both can't go out. Why can't it go out? See."
+  },
+  {
+   "start": 1458.32,
+   "end": 1487.58,
+   "text": "Who will go out? Who will go out? Let's come to the last one. Let's come to the last entry of both. Let's come to the last entry of both. The last entry will be small. The last entry of the array that will be small will go out first. It will go out first because we are increasing it by seeing it small. So the last entry of the array that will be small will go out. It's an obvious thing. Now tell me, will the last entry of the start be small or will the last entry of the stop be small? What does the last entry tell you? What does the last entry of the start tell you? Last time to check in."
+  },
+  {
+   "start": 1487.58,
+   "end": 1514.43,
+   "text": "Last time check-in. Any person, last time check-in. Okay. Means, if done at any time of the day, then it will be last. There are no check-ins after this. Okay. And what does the last of the end tell you? Last check-out time. Last check-out time. Now, tell me one thing. How much will any person check-in later? Means, suppose this is a very big number. Suppose it is 100. Check-in at 100. Check-in at 100. Check-in at 100."
+  },
+  {
+   "start": 1514.43,
+   "end": 1544.35,
+   "text": "He will check out at some point. And check-out time can never be before check-in. You can't say that we checked-in at 2 o'clock and check-out at 1 o'clock only. If you checked-in at 2 o'clock, then you will check-out at 2, 1, 2, 2, after 30 seconds. You will never check-out at 2 o'clock, right? For this, there will definitely be a new check-out time for this or for someone else. At least for this, there will be a bigger check-out time than this. So it can be 101, 102, 200 or anything. A number bigger than 100 will definitely be there. Either it is his check-out time or someone else's check-out time can be bigger than this."
+  },
+  {
+   "start": 1544.35,
+   "end": 1568.74,
+   "text": "Its checkout time will be bigger than that. That's why, your start will always end first. What will end first? Start will end because the last of start will always be smaller than the last of end. Because check-in time cannot be greater than the checkout time. Whatever the check-in time is, checkout time will be bigger than that. It can be of anyone else also. It will definitely happen. That's why, first i will end. So, when first i will end,"
+  },
+  {
+   "start": 1568.74,
+   "end": 1596.9,
+   "text": "then you can do this, you can also run J, then you can do this, like we used to do in 2pointer, that J less than N, and what will be done, nothing, room minus minus, and J plus plus, so you can do this, but there will be no benefit from this, you will not get any benefit, why not, because we were looking for maximum room, we were looking for maximum room, so where was our entire interest, our entire interest was when we used to increase the room, when I was small, so whenever we increased the room,"
+  },
+  {
+   "start": 1596.9,
+   "end": 1625.26,
+   "text": "Whenever we used to increase the room, we were interested in taking the maximum there. If the room is minus, then it's fine. Let's assume that at some point, the room will become 3. After that, if there is a check-out of 3 people, then the room will be from 3 to 2, then it will be 1, then it will be 0. So, you don't have any interest in this. You were interested in 3, you must have got 3. Whenever the room increases to 3, you must have done the calculation. There is no special interest in this, so there is no need to do this. If you want to, you can do it. If you want to, you can do it. If you want to, you can do anything. Let's go."
+  },
+  {
+   "start": 1625.62,
+   "end": 1658.9,
+   "text": "Did you understand who will go out and who will go where? Let's see the code once. The code is very simple. What is your function? int meeting You are given two types of arrays. Sorry. You are given two types of arrays. Start and stop. So this will be int meet. The one you are given is start. Start and the other one is stop. What? Stop. First of all, come."
+  },
+  {
+   "start": 1658.9,
+   "end": 1684.67,
+   "text": "Take out the size. Both will not be the same size. The more people will check in, the more people will check out. Always. So, take out the size of one of them. Start dot size. Sort both of them. Sort both of them because we have to use chronology. We have to look at it according to time. Sort. Start dot begin. Start dot begin and start dot end. Those who say that you don't give the link of the code, this is the link of the code. Look at this code."
+  },
+  {
+   "start": 1684.67,
+   "end": 1712.91,
+   "text": "What will happen by copying and pasting my link? This is the code. This is the code we run there. We don't run anything else there. Why do we need the link of the code? Where do you have to copy and paste it? Look at this. Second, sort that too. That's why we are writing the entire code. We are not writing the pseudocode. And until you get used to writing in copy, you won't get coding. Okay? It's all nonsense that you don't have to become a typist. Sort both. Okay? What did you have to take? int room is equal to 0."
+  },
+  {
+   "start": 1713.42,
+   "end": 1743.86,
+   "text": "int res is equal to 0. There is no room in the beginning. Let's run our two-pointer loop. We need two more variables. int i is equal to 0, j is equal to 0. Both at the start. While i less than n and j less than n. If start i is less than stop j. Is less than stop j. What did we do? Room++. Record this room in your result."
+  },
+  {
+   "start": 1743.86,
+   "end": 1774.72,
+   "text": "This will be max, rest of room, i to plus plus. Else, means, if stop j is big and both are equal, then it doesn't matter, first it will empty it in equal. Else, nothing to do. Room, minus minus, j plus plus. Close it, close the loop, and what? Return, rest. See, it has such a small code. What is so small about it? It is a code, it is a code of common sense. What is it?"
+  },
+  {
+   "start": 1774.72,
+   "end": 1798.66,
+   "text": "Is this a common sense code? Time complexity? Sort it. n log n. Space complexity? Nothing, nothing. All these questions will be made in this way. You will have to look at it according to the time. Understand chronology. Look at it according to the time. If that time is the time of check-in, increase your resource. What is room? Room is the resource, right?"
+  },
+  {
+   "start": 1798.66,
+   "end": 1820.16,
+   "text": "There will be a lot of this, they ask questions in the operating system, a lot of processes are coming, how many CPUs are required, I mean, there can be a variety of stories in this, if the story starts to be made, then a lot will be made. So, how many processes are coming, how much thread will take, whatever it is, the process will come, increase the thread, the process will go, reduce the thread. Means, check-in, means when the entry will happen, you have to increase your resource, you have to record it."
+  },
+  {
+   "start": 1820.16,
+   "end": 1849.44,
+   "text": "Exit will happen, reduce your resource, reduce any resource by making such a variable. It doesn't matter which guest will be in which room. No, you just have to ask the number of rooms, then you will get the number of rooms by doing this. So, this was the question. Let's do a small revision. Yes, we will still say that there are 3 questions left in the merge interval. We are not doing those 3 questions because it has a little advanced data structure. What is needed in that? We need heap etc. So, when you will read heap, then you will start getting all these questions. So, this was the merge interval. What was there in the merge interval? First of all,"
+  },
+  {
+   "start": 1849.44,
+   "end": 1880.48,
+   "text": "It works on ranges. On start and stop. On start and stop. One category in which you have to merge. Merge or find overlap. Find overlap or find intersection. Anything like that. You have to do it. What is special about it? You have to sort from start. Sort from start. Ranges. Then you have to do your work. How will you know overlap? If you are looking at two ranges. Then if end 1 is greater than or equal to start 2."
+  },
+  {
+   "start": 1880.48,
+   "end": 1904.72,
+   "text": "What does this mean? Overlap. If it is overlap, then how did we merge? What will happen if we merge both? First, its start will be 1 and the second will be max of end 1 and end 2. In this way, the question of overlapping will be asked, insert interval will be asked. What did we do in intersection of two ranges? We did the merge to sorted array approach."
+  },
+  {
+   "start": 1904.78,
+   "end": 1930.93,
+   "text": "We used to give two ranges to two arrays. The range that was small, whose start was small, we used to use this algorithm and merge it and write it in our answer. The one you think is small, you used to increase it. This is it. The one whose end time was small, you used to increase it. That was a good question. Okay. What did we do in this question? Whenever you are told that there are many entries and many exits, there are many entries, there are many exits, you get minimum number of"
+  },
+  {
+   "start": 1930.99,
+   "end": 1960.61,
+   "text": "minimum number of resources resources means anything like room,station,threads,cpu anything so what we have to do first of all we have to run according to time first of all we have to run according to time from start to end if there is entry we have to increase our resources if there is exit we have to reduce our resources we have to reduce our resources that's it every question will be done so this was a small question a very good question a very important question"
+  },
+  {
+   "start": 1960.61,
+   "end": 1976.62,
+   "text": "There was also a small revision. From tomorrow, the stack is going to start. From tomorrow, the stack is going to start. Stack and monotonic stack is also good. It is a very deep topic. It is a deep pattern. So, we will start it from tomorrow. Come, let's meet tomorrow. Come, bye-bye."
+  }
+ ]
+}

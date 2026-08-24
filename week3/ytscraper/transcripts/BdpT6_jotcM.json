@@ -1,0 +1,574 @@
+{
+ "video_id": "BdpT6_jotcM",
+ "title": "Best Explanation on Reverse LinkList Nodes in K Group | DSA Patterns CPP JAVA Python",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 3144,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.17,
+   "text": "Today's question is a highly requested question. Reverse nodes in K-group in a linked list. This is a hard question on Leetcode. Personally, this is a very close question to my heart because I had an interview in Arista a year ago. In 35 plus LPA, it was asked the same question that make reverse nodes in K-group. We could not make it and after that we were very sad. And before teaching this, we have not only read it ourselves, we have seen the entire video. We saw this question of Stryverji, we saw this question of pepcoding, we saw this question of lovebubber. We felt that everywhere it was told that how to solve this question."
+  },
+  {
+   "start": 29.17,
+   "end": 57.17,
+   "text": "that when this question is asked that what group to solve, then solve it like this. That is not the right way because if you solve this, I have two more questions that you will not be able to solve. That is why today we will see how to solve any question of this type. Because it is possible that you may not be asked what group to solve, you may be asked something else. If you look at the sheet, then above it and below it, there are one question on both of them that will not be made by you. If you will learn only this that remember this, how to make this and after that we will give the rest. Come and in this video, especially we"
+  },
+  {
+   "start": 57.17,
+   "end": 83.82,
+   "text": "We are going to show you by coding because we think that in this video, in this question, or in this way, it will be beneficial for you to see the code. So stay connected, come with us. Now, before doing the group of reverse nodes in K, we want to ask you one more question. The name of that question is swap nodes in pairs. What is its name? Swap nodes in pairs. So we want to ask you this question before that. Why do we want to ask? We will tell you, let's see what it means."
+  },
+  {
+   "start": 83.82,
+   "end": 111.82,
+   "text": "If you are new here, then we highly recommend that you watch episode 44. At least watch episode 44 so that you can reverse it. Yes, watch episode 43 also. So that you can reverse the linked list and you get to know that when we were given left and right, which was discussed in episode 44, what we used to do after that. So if you get to know these two things, then it will be fun. If you don't get to know, then also it will be fun. What is swap loading pair? It is a very simple question that you will be given a linked list."
+  },
+  {
+   "start": 111.82,
+   "end": 140.02,
+   "text": "You can give a link list like this. 1, 2, 3, and 4. You will be given a list like this. Its address is 100, 200, 300, and 400. You will be given a list like this. Now, what do you have to do? What do you have to do? You have to pick a pair from this. What do you have to do? Pair. So, how many pairs are there? The first pair is this. The second pair is this. Now, reverse every pair on your own. Reverse every pair. Means, write it like this. 2, 1."
+  },
+  {
+   "start": 140.24,
+   "end": 169.63,
+   "text": "Reverse 4 and 3 in the same way. As soon as the arrow is placed, place it in the same way. This will look like this and this will look like this. But you can see that your link list is broken. So don't break it. The arrow that is here should come here. And your new head will be like this. New head will be like this. Do you understand what the question says? There is a link list. Break it in pairs. Break it in pairs. Reverse each pair."
+  },
+  {
+   "start": 169.63,
+   "end": 199.62,
+   "text": "You will find that your link list will be broken, then add the link list again. And in a bigger example, if we see, 1, 2, 3, 4, 5, 6, 7. There are odd number of notes. Do the same thing in this too. Break it in pairs. The first pair is this, the second pair is this, the third pair is this, and the fourth pair is 7. There is no one with 7, so 7 will be left alone. 7 will be left alone. Reverse it."
+  },
+  {
+   "start": 199.62,
+   "end": 229.84,
+   "text": "1, 4, 3, 6, 5, and 7 to 7, because 7 is alone. How can we reverse a person alone? Now, 2, 1, 4, 3, 6, 5, and 7. But now your link is broken, you have to join it again. You have to join it again. And, this is your new head. You have to return this new head. You have to return this new head. So, this is your question. This is your question. Okay. Look. Whenever I give you a question, what do you have to do in this? Look."
+  },
+  {
+   "start": 229.84,
+   "end": 247.04,
+   "text": "First of all, you should know how to reverse. How to reverse any one linked list, which we have read in Curve and Prev, you should know that. You should also know that, if someone asks you to reverse how many times, if someone asks you to reverse 2 times, from any head node,"
+  },
+  {
+   "start": 247.04,
+   "end": 276.58,
+   "text": "Reverse always starts from where? From where the head passes, from where it starts to reverse. Normally, we write that until the null comes, reverse it. It means that until the linked list is not finished, reverse the entire linked list. But this is not always necessary. If someone tells you how many times you have to reverse, how many times you have to reverse. Suppose someone tells you that you have to reverse 2 times. How will you do that? You should know that. How will you do that? See. For example, you have a list. What do you have? A list. You have a small list of 4 nodes."
+  },
+  {
+   "start": 276.58,
+   "end": 306.22,
+   "text": "This is 100, this is 200, this is 300, and this is 400. Here 1 will be there, 2 will be there, 3 will be there, and 4 will be there. This is 200, this is 300, this is 400, and this is null. Now, it tells you that do one thing, in the head you have 100, reverse it from 100. But, don't reverse the whole link list. Do it 2 times, reverse it 2 times and show us. Let's see how we will do it. What you do is,"
+  },
+  {
+   "start": 306.77,
+   "end": 336.54,
+   "text": "times is equal to 2 times is equal to 2 Now, what did you do? Curr is equal to, where did you put the curr? On the head, in reverse, we are talking about reverse Where did you put the curr? On the head From where did you start the prep? From null, it will be the same, it will be the same but the while condition in which you used to write curr not equal to null, it means that till the null comes, till then reverse, reverse the entire length list, you don't have to write this while times minus minus while times minus minus and"
+  },
+  {
+   "start": 336.54,
+   "end": 362.3,
+   "text": "The same code you used to write, the same reverse code you used to write, write that only. What did you write? Note star next is equal to curr's next. We used to store curr's next. We used to rotate curr's next. Where? On previous. Previous is equal to whom did we rotate? Curr and we used to take curr forward. We used to take curr forward. What will happen with this? With this, this work"
+  },
+  {
+   "start": 362.3,
+   "end": 391.41,
+   "text": "it will be 2 times no matter where the null is coming and where it is not it doesn't matter it will work 2 times so let's see what will happen with this first of all your curve will be on 100 your prev will be on null let's reverse it once first of all this person will rotate this arrow will be cut and this will be null after that once it will be reversed next time your curve will be equal to 200 and"
+  },
+  {
+   "start": 391.41,
+   "end": 416.94,
+   "text": "Prev is equal to 100. Do one more reverse. What will happen? This arrow will also rotate. What will happen to this arrow? It will rotate. And in the end, your curve will be equal to 300. And prev is equal to 200. But now you will stop. Why? Because you had to reverse twice. To reverse twice means to pull the arrow back twice. So you did it. Where is the first arrow? The first arrow is this one. The second arrow is this one."
+  },
+  {
+   "start": 416.94,
+   "end": 446.38,
+   "text": "you can also do this, that you don't have to reverse it all the time if someone gives you a note that reverse it from here and reverse it so many times then you can do it very easily with the help of times so this is also easy now why should we tell you this? because we are going to need it now what does your question tell you? first of all we will see for even number of notes we will see for odd number later assume you have a question like this"
+  },
+  {
+   "start": 446.8,
+   "end": 476.14,
+   "text": "3, 4, 5, 6, 100, 200, 300, 400, 500, 600. Any question like this, do something like this, do something like this, in that you will be told that you have to keep reversing in a particular group. What do you have to do in a particular group? You have to keep reversing. For that, see what you have to do. What do you know first? You know first that if someone gives you left,"
+  },
+  {
+   "start": 476.14,
+   "end": 501.3,
+   "text": "If someone gives us a left note and tells us to reverse it so many times, then we are in a state of reversing it easily. We are in a state of reversing it easily. Okay, you can do it. See, what have you done? Do what you know. Your linked list is like this. What have you been told? See, what have you been told? That you have to reverse every pair. Do what you know."
+  },
+  {
+   "start": 501.3,
+   "end": 529.36,
+   "text": "First of all, which pair will we reverse? First of all, the pair 1, which is 1, 2. First of all, you keep left is equal to 100. Okay? Keep left is equal to 100. Now, you have to reverse it 2 times. Assume that here, before reversing 2 times, remove its right. Remove left and right. How will you remove right? How will you remove its right? What will be the right of this pair? Leave it now. How will you remove it? Assume that someone tells you that right is 200."
+  },
+  {
+   "start": 529.36,
+   "end": 557.74,
+   "text": "You have to reverse from 100 to 200. Okay. Okay. First of all, suppose this is left 1 and right 1. First of all, you have to reverse. So, how will you reverse? By sending left in the reverse function, you will ask it to reverse 2 times. So, when you do this, you will find that your linked list will look like this. Both these arrows will break. What will happen to both these arrows? They will break and this 2 will point at this. This 2 will point at this. Okay. Is the reverse done? Very good. Okay."
+  },
+  {
+   "start": 557.74,
+   "end": 585.66,
+   "text": "Now, now, now, what will we do? Reverse the next pair. You don't know anything else. If you want to reverse pair by pair, then reverse pair by pair. Let's see what happens. Next, let's assume your left 2 is equal to 300. Let's assume that someone told you this. Let's assume someone told you that this happens. Okay, no problem. How will the right 2 come out? 400. We will tell you how it will come out. Let's assume it comes out. I mean, it's not that hard. From left, you will get the next node. The next node of left will be your right. So, we will tell you. There is no such rocket science in it."
+  },
+  {
+   "start": 585.66,
+   "end": 615.44,
+   "text": "Reverse this group too. If you reverse this group too by sending the left, then you will find that your arrow has rotated. It rotated. Very good. Let's move ahead. Left 3 is equal to 500. Right 3 is equal to 600. Why am I telling you this much? Because you will have to do this concept again and again. So, it is not good to remember that you should do this. That is fine. But think of it like this. Reverse this too. When you reverse this, then you will find that"
+  },
+  {
+   "start": 615.44,
+   "end": 646.06,
+   "text": "Your arrow has been turned like this. Okay? This is yours. Very good. But is this the right thing? Have you reached the right answer? No, you haven't reached the right answer because your linked list is broken. Let's see what answer you wanted. Ideally, what answer did you want? Ideally, you wanted this answer. 2, 1, 4, 3, 6, 5. Here, here,"
+  },
+  {
+   "start": 646.06,
+   "end": 673.1,
+   "text": "here and here and here now we will see how much work we have done this is your answer by the way this is your answer what you wanted this is your answer ok how much work you have done how much work you have done and how much work is left see we will see is 2 to 1 arrow in your answer yes yes it is in my answer you have made 2 to 1 very good very good"
+  },
+  {
+   "start": 673.1,
+   "end": 701.97,
+   "text": "Is the arrow from 1 to 4 in your answer? No, there is no arrow from 1 to 4. See, there is no arrow from 1 to 4. No, there is no arrow from 1 to 4. No problem. So, mark this. No problem. Is the arrow from 4 to 3 in your answer? Yes, the arrow from 4 to 3 is in my answer. Is the arrow from 3 to 6 in your answer? No, there is no arrow from 3 to 6. Is the arrow from 6 to 5 in your answer? Yes. So, you have made half the answer. Half the answer is left. Half the answer means you have made a small part of it. A small part of it is left. Let's see which parts are left."
+  },
+  {
+   "start": 702.26,
+   "end": 731.6,
+   "text": "First of all, this is 100 and this is 400. One is left, 100.next is equal to 400. This step was left. Okay. And what is left? 300, 600. 300.next is equal to 600. This step is also left. Okay. Now, we can't write it like this by hard coding. Okay. Now, 100.next. 100.next is equal to what? 400."
+  },
+  {
+   "start": 731.66,
+   "end": 759.95,
+   "text": "The variable you had, what was it? Left 1, right 1, left 2, right 2, left 3, right 3. Look at it according to that. Isn't this yours? Left 1 dot next is equal to right 2. Left 1 dot next is equal to right 2. Yes, 100 dot next is equal to 400. If you had done it, if you had come here and done it, that left 1 dot next is equal to right 2. If you had done this, then it would have been done. You would have done this step. And,"
+  },
+  {
+   "start": 760.08,
+   "end": 790.3,
+   "text": "Left 2 dot next is equal to right 3. Left 2 dot next is equal to right 3. If you had done this step, then 300 next would have become 600. Your entire answer would have been ready. And what is your head? What is your new head? 200. What is your right 1? Right 1 is your head. If you had done this step along with reverse, if you had done this step along with reverse,"
+  },
+  {
+   "start": 790.3,
+   "end": 816.43,
+   "text": "When you reverse left 2 and right 2, then left 1.next is equal to right 2. Left 1 is the previous left. When you reverse left 3 and right 3, then left 2's next is equal to right 3. If you want to make a head and store the value of right 1 and return it, then you can make this question."
+  },
+  {
+   "start": 816.43,
+   "end": 845.22,
+   "text": "Okay? So, after reversing, you have to make half an answer. After that, you have to see what other strings we have to connect, what other connections we have to make so that we can make this question. So, you got to know that we have to do these things. Come, let's see. Let's see more. Don't worry. If you don't understand, you will understand. I promise you that by the end of this, you will be able to write this program even in your sleep. Let's go. Let's take one more example. Let's take one more example. Odd number of nodes. Odd number of nodes."
+  },
+  {
+   "start": 845.22,
+   "end": 875.01,
+   "text": "This is also possible. It will not be always even. Okay. 100, 200, 300, 400, 500, 600, 700. And it can be done on the number of nodes, right? Yes, it can be done. How many pairs will be made in this? According to me, there will be 4 pairs in this. 1, 2, 3, and 4. There will be a single node in the 4th pair. So, let's see. Let's start with left 1, right 1. And we will see what happens in left 1, right 1."
+  },
+  {
+   "start": 875.01,
+   "end": 904.75,
+   "text": "Let's say, left 1 is equal to 100. How will the left 1 and right 1 come out and how will the left 2 come out? We will see all that. It is a normal calculation. We are trying to make you understand that what you have to do in this is that you have to reverse every pair. We are doing the same thing that we are putting our focus on every pair and reversing it. And after doing everything, we see which wires are left and which connections are left and we have to connect them. Left 1 and right 1 is equal to 200. What does left and right denote?"
+  },
+  {
+   "start": 904.75,
+   "end": 931.74,
+   "text": "which note to start and which note to reverse, left and right denotes that you don't need right in reverse function, but you need right somewhere else, that's why we are writing, just for simplicity we are writing for simplicity, ok when you will reverse this, then you will get to know that these two arrows are broken these two arrows are broken, ok, no problem come forward, left 2 is equal to 300 right 2 is equal to 400"
+  },
+  {
+   "start": 931.74,
+   "end": 960.45,
+   "text": "Reverse this too. How? By sending it in the reverse function or by writing it there. You have to reverse 2 times. From where? Start from left 2 and reverse 2 times. Do it. This arrow also broke. This arrow also broke. Sorry. So this arrow became here. Very good. This is very easy. If someone tells you to keep doing this, then you can keep doing it. It is very easy for you. Left 3. Yes, it is easy when you have seen the reverse. Now someone will say that we have never seen the reverse. So why are you seeing this for the first time? 500, 600."
+  },
+  {
+   "start": 960.45,
+   "end": 979.07,
+   "text": "If you reverse this, then you will find that both these arrows will also break. What will happen to both these arrows? They will break. So, this arrow will be made here. Okay? Even now, one pair is remaining. Now, left 4 is equal to 700. But what will happen to right 4? Right 4 is equal to null. Because nothing else is left."
+  },
+  {
+   "start": 979.07,
+   "end": 1004.27,
+   "text": "what was right? starting from which node to which node? so you are always seeing that if you want to reverse pairwise, how many nodes are there in pair? two nodes, so there are two nodes in one group, what is there in one group? there are two nodes, so you used to see that left was 100, right was next to that, so here left is 400 is equal to 700, next to that is null, so it is fine, you will reverse this also, if you reverse this, nothing will happen, if you reverse this, nothing will happen, there is nothing behind it, so it will remain the same,"
+  },
+  {
+   "start": 1004.37,
+   "end": 1032.35,
+   "text": "Your linkage looks like this. But how should your answer look? Your answer should look like this. 2, 1, 4, 3, 6, 5, and 7. Let's see. 2, 1, like this, like this, like this, like this. Which strings are there and which are not? Is there a 2, 1 string? Yes, there is a 2, 1 string. But is there a 1 and 4 string? No. There is no 1 and 4 string. Okay."
+  },
+  {
+   "start": 1032.35,
+   "end": 1062.1,
+   "text": "Is the wire of 4 and 3? Yes, you have connected the wire of 4 and 3 in reverse. But the wire of 3 and 6 is not there. Is the wire of 6 and 5? Yes, the wire of 6 and 5 is there. But is the wire of 5 and 7? No, the wire of 5 and 7 is not there. So there are no 3 wires. And coincidentally, which 3 wires are there? 100, 400. 300, 600. 500, 700. See."
+  },
+  {
+   "start": 1062.1,
+   "end": 1088.29,
+   "text": "100.next is equal to 400. What happened here? Left 1.next is equal to right 2. Left 1.next is equal to right 2. That's why we took right. Previous left's next is equal to now's right. Previous left's next is equal to now's right. This line is connected. Left 2.next is equal to right 3. Yes. Left 2.next is equal to"
+  },
+  {
+   "start": 1088.29,
+   "end": 1111.01,
+   "text": "Right 3. Previous one left next is equal to current one right. Yes. This wire is connected. This wire is connected. 500.next is equal to right 4. 500.next. Sorry. Now see. Now it is wrong. Now if you write this. Left 3. See. Left 3.next is equal to right."
+  },
+  {
+   "start": 1111.01,
+   "end": 1131.42,
+   "text": "4. So what will happen is that 500.next is equal to null. So 500.next will remain null. But you don't want null. You don't want null. You want 500.next is equal to 700. Where is this 700 stored? It is stored in left 4. That's why if any part is saved, if any last part is saved,"
+  },
+  {
+   "start": 1131.42,
+   "end": 1151.63,
+   "text": "7 is saved alone, 7 is not reversed. Now see, why 7 is saved? Because 7 has only 7 nodes. What do you need by law? Next to 500 should be 700. Next to 500 should not be null. So, if any part is saved, if any part is saved in reversing, how will you know that it is saved? Its right will be null."
+  },
+  {
+   "start": 1151.63,
+   "end": 1175.52,
+   "text": "its right will be null, which means this whole part can't be reversed, so it's a remainder part. What is 7? 7 is a remainder part. 7 can't be a pair, so 7 is left. So how can we reverse in 7? We can't. That's why, left 3.next is equal to, not right 4, left 4. Because right is null."
+  },
+  {
+   "start": 1175.52,
+   "end": 1205.57,
+   "text": "This part is saved. This part is saved. That's why left 3 dot next is equal to left 4. Left 4. In which? The part that will be saved in the last part. In the last part. How will we find out? We will tell you. You have added this part too. You have added this part too. So, what did we find out? What did we do in total? See. First of all, how many variables do we need? One you need is left. One you need is left. Means, to track current left. From every left, from every left,"
+  },
+  {
+   "start": 1205.57,
+   "end": 1226.5,
+   "text": "We don't do arrow like this. From every left, you have to take out the right. What do you have to take out? You have to take out the right. Yes. You have to take out the right. You have to take out the right. Okay? So, left and right are done. What else do you need? Do you need anything to reverse? No, you don't need anything to reverse. Why? You know the times, right? How many times do you have to reverse?"
+  },
+  {
+   "start": 1226.5,
+   "end": 1254.19,
+   "text": "We have to reverse every pair. How many nodes are there in the pair? 2 nodes. We have to reverse 2 times. Very good. So, it will be reversed. After that, the last connection that we used to connect. What did this connection say? Previous left. Previous left. Dot next. Is equal to current right. Yes. Current right. Current right. So, what do you want? You will always want previous left. Previous left."
+  },
+  {
+   "start": 1254.19,
+   "end": 1284.18,
+   "text": "notice, when we reversed the first pair, left 1 and right 1, at this time we didn't connect any wire, because there was no previous left when you came to the first left, then previous left was null, so here according to now, if we talk about previous left, then it was null, so how will we connect the wire of null? yes, after this, when you came to left 2, then your previous left was left 1, so after that you went connecting the wire, so do you need one more variable? previous left"
+  },
+  {
+   "start": 1284.18,
+   "end": 1313.74,
+   "text": "Previous left. Okay. One more thing. Now, this left 1 and left 2, left 3, left 4. Now, it looks easy to see that you have written it like this. But, how is it written in real? See. For the first time, you know. Now, we see. Slowly, the concept is done. So, we are slowly entering the implementation. Slowly, they are clearing all the things. See. 1, 2, 3, 4, 5, 6, 7. Okay. 100, 200, 300."
+  },
+  {
+   "start": 1313.74,
+   "end": 1341.41,
+   "text": "400, 500, 600, 700. Okay? This, this, this. Don't worry. We will write the code from start to end. Okay. What will be the first left? Obviously, it will be 100. What will be the first left? It will be 100. It will be the first left, right? Okay. How will we subtract right from left? How will we subtract right from left? Look. You..."
+  },
+  {
+   "start": 1341.41,
+   "end": 1369.14,
+   "text": "what does right mean? right means that in that group, here also it is a matter of group, if you think carefully then it is also a group, it is a group of two nodes, you have been told that swap nodes in pairs means reverse every pair, reverse every pair, so this is only a group, how much is the size of the group? 2, okay, so you have left is equal to 100, so this is one node, how many more nodes will you have to go ahead so that you can keep the right on the right node, so you can do this for"
+  },
+  {
+   "start": 1370.0,
+   "end": 1399.7,
+   "text": "Int i is equal to 0. Some people will say, why are you doing this? Let's do right is equal to left dot next. Let's do right is equal to left dot next. Why are you not doing this? You will understand in some time. Have some patience. You must be thinking, what is all this nonsense? Right is equal to left dot next. You must be thinking. Left is 100. You have to keep right until that group ends. So, there are two groups. So, why are you not doing right is equal to left dot next? Why are you not doing it? You will know in some time. And you will be grateful that why are you not doing it. i is equal to 0. i less than."
+  },
+  {
+   "start": 1399.7,
+   "end": 1430.96,
+   "text": "What is the size of the group? 2. If you do i less than 2 minus 1. If you do this and do i plus plus. And before starting, write is equal to 100 initialize. In this loop, if you do write is equal to write dot next. What will happen? Let's see. First of all, write is equal to 100. Okay. Now what is written? i is equal to 0. i less than 2 minus 1. Means i less than 1. So assume when i is equal to 0."
+  },
+  {
+   "start": 1430.96,
+   "end": 1455.28,
+   "text": "So what will be your right? Condition is satisfied. What will be your right? Next to right, 200. Okay? I++. I is equal to 1. Now this condition will fail because what have you written in the condition? You haven't written I less than 2. You have written I less than 1. So now this condition will fail. See, your right has reached 200. Right has reached 200, which is a trick. You can remove it anyhow. See, from left,"
+  },
+  {
+   "start": 1455.28,
+   "end": 1485.25,
+   "text": "You have to keep the right on the node where the group ends. The size of the group is 2. Now, no matter how you think about it, from where we will take out the right, how we will take it out, you have to keep the right in the right place. It also shows in a way, it also tells in a way that see, the size of your group is 2. Your left, your left has already come here on a node. You have also kept the right on this node. So how many elements are left in the group? How many elements are left in this group except this node? Only one element is left. In the group of two, you have kept it on one element."
+  },
+  {
+   "start": 1485.25,
+   "end": 1501.87,
+   "text": "How much is left? 1. So you have to increase it one more time, then right will increase. If the size of the group was 3, then you would have kept both left and right here. And leaving this, how many children are there in the group? 2 children. So you would have to increase it 2 times. That's why we are writing that see, now the size of the group is 2, so how many times did you have to increase? 1 time."
+  },
+  {
+   "start": 1501.87,
+   "end": 1525.1,
+   "text": "If the size of the group was 3, then how many times did you have to increase? 2 times. That's why you have to increase 1 less than the size of the group. That's why we have written i less than 2 minus 1. Not i less than 2. i is equal to 0. i less than 1. So this will work once. Because the size of the group is 1, so it will work once. By doing this, you can take out the right. By doing this, you can take out the right. By doing this, you can take out the right. Okay? Now it is very easy. Now it is very easy."
+  },
+  {
+   "start": 1525.1,
+   "end": 1551.74,
+   "text": "Now you will reverse it and do it. But, but, but, this is your left 1. This is your left 1, right 1. You have taken it out by showing it from the head. How will the left 2 come out? How will the left 2 come out? What was left 2? What was above? Left 2 was 300. What was left 2? 300, 300. Okay. Why did this 300 come? When you reverse one pair, reversing one pair means that your left was here."
+  },
+  {
+   "start": 1551.74,
+   "end": 1578.82,
+   "text": "And the right was here. This means that 100 to 200 is reversed. From the next node, you start the next group. From the next node, you start left 2. Then here goes right 2. Then from the next node of right 2, you start left 2, 3. Then here goes right 3. After that, from the next node of right 3, you start left 4. So, you can do one thing. You can take a variable. What?"
+  },
+  {
+   "start": 1578.82,
+   "end": 1608.02,
+   "text": "Next left. Yes. Next left is equal to what? Right's next. Right's next. Means. That current right. Suppose right is at 200. Next to 200. Store 300. When all the work is done. When all the work is done. Then what do you have to do at last? Left is equal to next left. And this process has to be repeated. What do you have to do with this process? It has to be repeated. It has to be repeated. Let's see this. Let's see what it means. What does this process mean? Let's see."
+  },
+  {
+   "start": 1608.34,
+   "end": 1637.09,
+   "text": "Let's hope that it will be clear. According to me, we are teaching very well. We don't know how well it is going. Okay. Let's go. One. This is a little difficult. When you make a recorded video, you don't get feedback. Like when we teach live, we keep finding out whether you understand or not. The kids stop us saying that we didn't understand this thing. Here we have to guess whether we understood or not. That's why sometimes you think that we are repeating the same thing again and again. So we don't want to take a chance."
+  },
+  {
+   "start": 1637.09,
+   "end": 1666.02,
+   "text": "because it is possible that you have understood by 90% chance and you have not understood by 10% chance so we don't want to take that chance that it is okay, it must have come because then it doesn't look good, right? let's go what did we say? in the beginning, left is 1 and left is 2 in the beginning, left is equal to 100 how will the right come out? how will the right come out? by running the loop we will increase it once more first of all, we will make right equal to left so right is equal to 100 now if we increase right once more then right will become 200"
+  },
+  {
+   "start": 1666.02,
+   "end": 1692.48,
+   "text": "What will be right? 200. Now, we will store the next of right for next left because next time it is necessary. What happened? 300. Very good. Now, what to do? Nothing to do. We have to reverse. Where? We have to send left. We have to send left and tell it to reverse 2 times. What to do? Reverse 2 times. So, we are hoping that you will get a reverse program. We will write a function in this. Reverse. What?"
+  },
+  {
+   "start": 1692.48,
+   "end": 1720.38,
+   "text": "We will send left in this and 2 times, reverse it 2 times. So, as soon as you will reverse, then these two arrows will disappear. Both the arrows will disappear. That's it. Now, now, now. Now, we don't have to do anything. We have to move ahead. But, but remember one thing. We had done one thing after every reverse. Previous left, previous left dot next is equal to current right. So, see. Now, if you are first time, then now your previous left is equal to null. Now, your previous left is equal to"
+  },
+  {
+   "start": 1720.38,
+   "end": 1751.68,
+   "text": "It will be null. Now this is fine. Now this is fine. But, when you will go to left 2, when you will go to left 2 next time, then you will get the work of previous left. Then you will get the work of previous left. That's why, that's why, we will do two things. First thing, what will we do? If previous left. Means, if any left had come earlier, now it has not come, now it is the first time, then it is fine. But if it had come, then what would we have done? Previous left dot next is equal to what? Previous left dot next is equal to what happened?"
+  },
+  {
+   "start": 1751.68,
+   "end": 1781.87,
+   "text": "Current wala right, current wala right, abhi ka right, abhi ka right, yes, abhi ka right is equal to right. Okay, ye toh ho gaya. Lekin, ab aage ke liye, aage ke liye, previous left ko yaad rakhna padega, kyunki aapka left badalne jaa raha hai, aapka left hamesha badalta raha hai. Toh, previous left is equal to left. Yes, yes, ho gaya, bas. Ab aap apne left ko badha dijiye. Ab aapne left ko kaise badha dijiye? Left is equal to, isi liye ke next left ko rakhe hue the. Next, left."
+  },
+  {
+   "start": 1783.02,
+   "end": 1811.07,
+   "text": "Do like this. Remember that now we are dealing for even nodes. Okay, we will deal for that too. So this is your small thing. Okay, let's see what happens. Next, what will happen? Left is equal to next left. So left is equal to what? 300. Where will right start from? From left. How many times will right have to be increased? Once. If we increase it once, what will right become? 400. First of all, what do we have to do?"
+  },
+  {
+   "start": 1811.07,
+   "end": 1837.97,
+   "text": "store the next left what is the next left? the next of 400 is 500 after that what you have to do? reverse left and 2 reverse left and 2 means start from 400 and reverse 2 nodes start from 300 and reverse 2 nodes and reverse 2 nodes is it reversed? ok now if prev left if prev left what is prev left? yes yes yes"
+  },
+  {
+   "start": 1837.97,
+   "end": 1865.26,
+   "text": "Now, the value of your prev left is not null. The value of your prev left is the previous left. What was the previous left? 100. So, if it is there, then what had to be done? prev left.next is equal to right. prev left.next is equal to right. Means, 100.next is equal to 400. 100.next is equal to 400. 100.next is equal to 400. Yes. And next time, before going ahead, prev left is equal to left."
+  },
+  {
+   "start": 1865.26,
+   "end": 1895.54,
+   "text": "Prev left is equal to left. So, what happened after changing prev left? 300. 300. Yes. Yes. After that, what do we have to do? Left is equal to next left. So, left is equal to 500. Come forward. Left is equal to 500. Now, I hope you have understood Dryden. I mean, there is no complete code. Now, we will write it. We will write it easily. Is equal to, what will be right? It will start from 500. It will increase once. It will increase once. So, what will happen?"
+  },
+  {
+   "start": 1895.54,
+   "end": 1925.39,
+   "text": "600. Yes. First of all, we will store next left. What will be the next left stored? 700. Okay. After that, we will reverse here. By sending left, and we will say, reverse 2 times. So, it will reverse 2 times. So, what will happen? These two arrows will disappear. These two arrows will disappear. And this arrow will come here. What to do? If previous left is there, if previous left is there, what is previous left? Yes, that is 300. So, previous left dot next is equal to current right. Current right means,"
+  },
+  {
+   "start": 1925.39,
+   "end": 1952.56,
+   "text": "300.next is equal to 600. 300.next is equal to 600. Yes, yes, yes. And before going, Prev left is equal to Prev left is equal to left. Prev left is equal to left. So 500. So what is Prev left is equal to? 500. And left is equal to next left. Left is equal to next left. Is equal to 700. Okay."
+  },
+  {
+   "start": 1952.56,
+   "end": 1980.69,
+   "text": "And what are these things happening? These things are happening in while loop, by the way. We are imagining that we are doing this thing in while loop, in infinite times. Okay? Now let's see. Now look very carefully. Left is equal to 700. Left is equal to 700. What will be right? Right will start from 700. But when you will increase right once, then what will be right? Null. Null. Right will be null. So,"
+  },
+  {
+   "start": 1980.82,
+   "end": 1998.66,
+   "text": "We have to pay attention in our for loop that you keep increasing right. In for loop you keep increasing right but you have to pay attention that right is null. Now see right is null. Now right is null. Why right is null? Right is null because see your entire linked list is finished."
+  },
+  {
+   "start": 1998.66,
+   "end": 2024.7,
+   "text": "your complete link list is over and only one part is left which is not complete now what you had to do remember what you had to do you had come here in this condition you had one part left which is not complete now your program has come to an end there is no need to reverse it why?"
+  },
+  {
+   "start": 2024.7,
+   "end": 2054.74,
+   "text": "Because you had to reverse the pair. You had to reverse by doing 2 2. Now there is only 1 in this. So how will we reverse 1? It is not even in the question that we will not do this. But. But. Now you can finish the program. You can finish the program. But. Before going. Left 3 dot next is equal to left 4 means. The previous left. Every time you used to do that previous left dot next is equal to right. No. What to do in this? What to do in this? Previous left. Previous left."
+  },
+  {
+   "start": 2054.74,
+   "end": 2084.42,
+   "text": "Dot next. Is equal to left. Yes. Left. Means. What was previous left? 500 dot next. 500 dot next is equal to 7. That's it. Now. Can you finish your program? Can you finish your loop? Whatever you were running while loop. Is there any need to do anything else? No. We reached last. There was a part of last. We don't have to reverse it. Previous left has connected it. Now you don't have to do anything. Now what you have to do? You have to break your while loop. Break your while loop."
+  },
+  {
+   "start": 2084.42,
+   "end": 2109.12,
+   "text": "You have to break your while loop. What do you have to do? Your program has been broken. And what do you have to return in the end? Rest. Yes, see one thing. Rest was not made anywhere. What was rest? Rest was the head of your new note. What will always be the head of the new note? The first, first, first right, first right, first right 1, right 1, right 1. The first right will be reversed. See 2, 2, 2. So?"
+  },
+  {
+   "start": 2109.12,
+   "end": 2131.73,
+   "text": "every time when you will reverse then what you have to pay attention here before doing this if my rest is equal to null rest is equal to right means in the beginning rest will be null as soon as you come to know that one left right is reversed then what you have to do is"
+  },
+  {
+   "start": 2131.73,
+   "end": 2164.27,
+   "text": "it has to do res equal to write which means it has to do res on the first right so this was its small dry run by doing this you can do the whole code now let's write the code let's write the code and there are some edge cases here and there you will understand how this works what will be given to you first we will write here then we will go to the computer and then we will see node start you will be given any function in which you will be given a node start head"
+  },
+  {
+   "start": 2164.27,
+   "end": 2194.51,
+   "text": "First of all, if head is null, then what you have to do is return head. After that, start the program. First of all, what you need is a node star left is equal to head. Okay. You need one node star for result which should be null. Result means head, new head. Remember one, what you needed was previous left. Previous left. Okay."
+  },
+  {
+   "start": 2194.58,
+   "end": 2224.94,
+   "text": "In the beginning, this is also null. We also need right. So, take right. But don't assign right now. Or you can do it as you wish. You can do it or not. This much is done. This much work is done. Let's start while loop. While loop. Till when? Do you know how many pairs are there in it? Do you know how many pairs are there in linked list? No, you don't know. Because you don't know the length of linked list from before. Use infinite loop for this. Use infinite loop. Now, now, first of all, what did we do? Right is equal to left."
+  },
+  {
+   "start": 2225.07,
+   "end": 2255.41,
+   "text": "Right to left. And now let's run our loop. How? Now you have to find the right. How? If the right has come to the left, what is the size of the group? What is the size of the group? It is 2 for now. Okay. So run the for loop. Now, now, i is equal to 0. i less than. Imagine here we assume that int size is equal to 2. What is this size? Which size do you want to reverse? I mean, we want to reverse every 2, 2, 2, 2. So size is 2. So what did we see? i less than."
+  },
+  {
+   "start": 2255.54,
+   "end": 2285.26,
+   "text": "Size minus 1. I plus plus. Now, in this, we used to write right is equal to right dot next. But, there can be a condition that right can be null. There can be a condition that right can be null. So, you do this. If right equal equal to null. Stop it. Break. Don't do it after that. If right is null, then don't do null dot next. Don't do it. If not, then fine. Right is equal to right dot."
+  },
+  {
+   "start": 2287.15,
+   "end": 2318.0,
+   "text": "Now, your left and right are set. But, but, now you have to check. Now, what you have to do? You have to check. The code may be small, but okay. What you have to do? You have to check. See, if right is not null, then it is normal. Then it is normal. Then the linkage is left. So, let's do that first. If right. Come on. Right is null. No, it is not. Very good. Yes. Now, we can do our own. What can we do? First of all, reverse. First of all, reverse. So, one reverse function. We will write reverse function. No, sorry."
+  },
+  {
+   "start": 2318.0,
+   "end": 2347.76,
+   "text": "First of all, keep the one next to right. What will happen to it? It is your next left. It is your next left. Keep it. Don't leave it. Right dot. Next. Keep it. Very good. Now reverse it. What will you send in reverse? Left. And how many times do you have to reverse? Two times. Where was two? Size. Send size. Send size. Reverse it. Reverse it. That's it. What was the next step? Previous left. If it is"
+  },
+  {
+   "start": 2347.76,
+   "end": 2376.29,
+   "text": "If previous left. Then what we had to do? Previous left dot next is equal to. Right now. Right now. Right now. And now update previous left. Previous left is equal to left. Previous left's work is done. You have to update the result. If result equal equal to null. Result is equal to right. Result is updated."
+  },
+  {
+   "start": 2376.29,
+   "end": 2405.97,
+   "text": "Previous left's work is done. Is there any work left? No, there is no work left. Left is equal to next left. You have moved on to the next group. It is not over yet. It is not over yet. This was that if right is correct, then left right. But what did we do in the last 7? Else. Now right is null. When 7 was null, what did we do? When 7 was null, what did we do? Did we do something reverse? No, no, no. We just did this. Previous left dot next is equal to left. So do that here too."
+  },
+  {
+   "start": 2406.38,
+   "end": 2437.94,
+   "text": "If previous left, then previous left dot next is equal to left. Is it done? Very good. Now, should we break the loop? No, no. Assume that there is only one list. Assume that there is only one node. You have only one node. You have only one node in the whole question. See what will happen in this. Left is equal to 100. You will start while loop. Right is equal to 100."
+  },
+  {
+   "start": 2437.97,
+   "end": 2459.55,
+   "text": "If you increase it once, then your right will be null. In that case, you will feel that the linked list is over and it is done. You have only one node, not even one pair. You will see that if I have previous left, then previous left.next is equal to left. But in the beginning, there is no previous left because this is the first left. This is the first left and there is nothing in the previous left. So you will break it. But pay attention."
+  },
+  {
+   "start": 2459.55,
+   "end": 2488.34,
+   "text": "your result is still null your result is still null still null still null so you will return null you didn't have to return null you had to return 100 so for this suppose if there is only one node you can check here if my result is equal to null see if before this you get any left or right left or right is fine your result is not null your result is right but if result is null means you didn't get anything then what should you return"
+  },
+  {
+   "start": 2488.34,
+   "end": 2509.01,
+   "text": "Result is equal to left. Result is equal to left. Why? 100. It's the same. Left. Right is not there. Right is finished. If you are getting result null, that means, you didn't get anything before this. You didn't get anything. You didn't do anything. So, result is equal to left. Result is equal to left. So, if result equal equal to null."
+  },
+  {
+   "start": 2509.71,
+   "end": 2538.96,
+   "text": "Result is equal to left. Yes, now you break it. Your program is finished. What is happening? This infinite while loop, this while loop, it is breaking the while loop. It is breaking the while loop. That's it. By closing the bracket of while loop, what should we do here? Return, rest. Return, rest. So, this is done. We will write the reverse function. We will write the reverse function. We will write as we write. Come, we will show you its code. We will show its code on the screen. We will not show it here. So, here is your question."
+  },
+  {
+   "start": 2538.96,
+   "end": 2565.33,
+   "text": "Come, let's start. So, these are some macros that we keep for ourselves. You can make it or you can not make it. So, we will not write any new code. Whatever code is written, it will be written. Whatever code was written, it will be written. These are some formatting things. You don't need to see this. Let's go. What was written first? If head equal equal to null. Return."
+  },
+  {
+   "start": 2565.81,
+   "end": 2596.77,
+   "text": "Yes, someone will say that give this code, copy paste this code and give it. No, we will not give it. Why will we give it after copy pasting? We don't understand its significance. Why do you need it? Why do you need a copy pasted code? I mean, we are not able to understand its logic at all. Done. What else did we need? Res is equal to null. Previous left is equal to null. One size, because you have to reverse in pair, so take size equal to 2. Is there anything left to take? No. We will see if there is anything left. Why?"
+  },
+  {
+   "start": 2596.77,
+   "end": 2625.74,
+   "text": "true, infinite loop, yes, infinite loop, yes, first of all, right is equal to left, after that for int i is equal to 0, i less than size minus 1, i plus plus, see inside that if your right is equal to null, go out, go out, break, break, i loop is happening, i loop is not happening, otherwise right is equal to right dot next, ok, now,"
+  },
+  {
+   "start": 2626.13,
+   "end": 2654.98,
+   "text": "If you have a right, it means you have got a left right. Very good. Let's do our thing. First of all, what did you do? Node left. First of all, what did you do? Node next. Next. Left is equal to right dot. Next. Very good. Sorry. Right dot. Next. Okay. After that, what did you do? After that, you did nothing. After that, you did reverse. You did left."
+  },
+  {
+   "start": 2654.98,
+   "end": 2686.22,
+   "text": "We used to send size. Let's see the function of reverse. Pay attention that reverse is not returning anything. It is not returning anything because it is not needed. Void reverse. Node star head. Int. Times. Means how many times do we have to do? How many times do we have to reverse? So, node star. Curve is equal to head. Node star. Prev is equal to null. Bus. While. Times. Minus. Minus. And write the same reverse code. Next is equal to curve's next. Curve's next is equal to."
+  },
+  {
+   "start": 2687.12,
+   "end": 2714.67,
+   "text": "prev prev is equal to curr and curr is equal to next and we don't have to return anything pay attention we don't have to return previous it's a void function we don't need it because see why did you return previous because the one you reverse we need its new head we know that when you reverse left to right then right will be its new head so we know we don't need it reverse is done now if my previous left then"
+  },
+  {
+   "start": 2714.67,
+   "end": 2743.86,
+   "text": "Previous left's next is equal to current right. Yes. Current right. Current right. Okay. And previous left is equal to left. Aage kaam aega. Aage kaam aega. Or, result. If result equal equal to null, toh result is equal to right. First right aapka answer hoga. Answer. Matlab head. Aapka head kya hoga? Pehla head. Pehla right. Sab kuch hone ke baad, left is equal to next left. Ye toh hua ki if right hai. Else,"
+  },
+  {
+   "start": 2743.86,
+   "end": 2763.31,
+   "text": "Else, what does this mean? Everything is over. But you have to do one thing. Previous left dot next is equal to, if, if previous left is there, if previous left is there, if previous left is there, then previous left's next is equal to left, not right. Right is not there, right is not there, that's it."
+  },
+  {
+   "start": 2763.31,
+   "end": 2801.95,
+   "text": "And if res is equal to null, which means if there is only one node in the linked list, then res is equal to left. Not right, but left. Because the one that is left is left only. The right has nothing. And after else, your break is over. After the while loop, what will we do? Return res. Let's see if something goes wrong. We will debug. It's taking a long time."
+  },
+  {
+   "start": 2801.95,
+   "end": 2832.1,
+   "text": "Okay? Yes, 100% efficiency means very nice code, very nice code. Okay. Now, now, now, to do this, we came to teach you this question, we came to teach you reverse notes in K group, but we have wasted 40-45 minutes on this question. Why have you done that? Why have you done that? Come, let's tell why have you done that? Come, let's tell why have you done that? Why have you wasted so much?"
+  },
+  {
+   "start": 2832.1,
+   "end": 2861.5,
+   "text": "So why was it so easy? Because it was so easy. Now come. Now you are ready to win this question. Reverse in K group. What does the question say? Suppose K has 3 values. So make a group of 3. Make a group of 3. Leave the last one. Reverse every group. Reverse every group. 3, 2, 1, 6, 5."
+  },
+  {
+   "start": 2861.5,
+   "end": 2891.25,
+   "text": "4, 8, 7. When you reverse, this will be done. But, this arrow, this arrow, join and return. Return this. Isn't this question the same as the previous one? The previous question was the same. The previous question was the same. Reverse in K. K's value was 2 last time. This time, K is given. This time, 2 is given. See. Open your mind. Open your mind."
+  },
+  {
+   "start": 2891.25,
+   "end": 2922.46,
+   "text": "Open your mind. If you don't open your mind, you won't be able to do anything. 6, 7, 8. Come. Make a group of 3. Come and see what is left 1 and right 1. Left 1. Right 1. What is it? 100. And what is right 1? 300. It's a group of 3. Left 2. Right 2. What is it? 400. 600. Left 3. What is it? 700."
+  },
+  {
+   "start": 2922.46,
+   "end": 2949.58,
+   "text": "And what is right 3? Null. Right 3 is nothing. Where is this group complete? The group is not complete. And in the question, it is said exactly that if a group is not complete, in the last, if a group is saved, it has to be left as it is. It doesn't have to be reversed. It doesn't have to do anything. It doesn't have to do anything. Look. First of all, here, reverse it. Left 1, right 1. It will become such an arrow. It will become such an arrow. Reverse left 2, right 2. It will become such an arrow."
+  },
+  {
+   "start": 2949.58,
+   "end": 2978.78,
+   "text": "Left 3, right 3, don't do anything. More, more, more. After reversing this, after reversing this, what is previous left? 100. What is right now? 600. 100.next is equal to 600. Look. After doing this, after doing this, because right is null here, means your program is over. What did you do last time? Previous left.next is equal to left, not right, left. 400.next is equal to"
+  },
+  {
+   "start": 2978.78,
+   "end": 3007.58,
+   "text": "700, 700, 700. And this will remain the same. And what do we have to return? The first right, the first right, the first right. This is not exactly the same. Look. 3, 3. 2, 2. 1, 1. 6, 6. 5, 5. 4, 4. After 4, after 4. What is after 4? What is after 4? Sorry, we also reversed this by mistake. This will not be reversed. The last group is not reversed."
+  },
+  {
+   "start": 3007.58,
+   "end": 3037.79,
+   "text": "7, 8, what is after 4? After 4, 7, 8. This is exactly the last question. What will change? Nothing. The value of size will change. Let's see how easy it will be. We will not change any code. We will copy and paste the whole code. We will copy and paste one thing. Let's see. We will copy and paste the whole code. We will copy and paste each line. First of all, copy and paste the reverse function."
+  },
+  {
+   "start": 3037.79,
+   "end": 3067.86,
+   "text": "Copy and paste from here to here only. This is... This is annoying. Copy. See this. Reverse notes in K group. Reverse notes in K group. Lead code hard. Lead code hard. Nothing is hard. Copy and paste. Copy and paste. K is given here. K is given here. What is K? This size. This size. This size is equal to 2. This is K. This is K. This is K. Copy and paste it completely. Copy and paste it completely."
+  },
+  {
+   "start": 3067.86,
+   "end": 3104.53,
+   "text": "Now let's see. Pick up the whole thing and copy paste it. Pick up the whole thing and copy. Paste. On the top, instead of size is equal to 2, size is equal to k. Size is equal to k. See. See. What did we say? It's exactly the same question. One line, one line has to be changed. Size is equal to k. That's why, see, we teach you this, right? If we teach you this first, then you think that, okay, this will be made like this. But you have to think like this for every question."
+  },
+  {
+   "start": 3104.53,
+   "end": 3132.88,
+   "text": "think of all the reverse questions like this, first reverse whatever you have said, then connect it with your mind, so this is the code, now we will not give this code, do this code yourself, if you will take this code and do it, then we will not understand, if we will copy paste this code and give it to you, then what will you do, will you paste it too, no, don't do it, write it yourself, we have written it ourselves, we have written it in front of you, it was not that we have printed it from somewhere, no, we have written it ourselves, so put the habit of writing it yourself,"
+  },
+  {
+   "start": 3132.88,
+   "end": 3143.63,
+   "text": "and do make this question, both the questions tomorrow we will make a harder version of this question till then thank you very much for coming"
+  }
+ ]
+}

@@ -1,0 +1,414 @@
+{
+ "video_id": "j4wjZqzhMqc",
+ "title": "Learn Recursion Like A Pro",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2162,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 26.86,
+   "text": "The two questions we are going to do today, one will be Fibonacci and the other will be palindrome string. So this is a very basic question. Why is it a basic question? Because these two questions are made to teach recursion. We think that someone put this question in DSA because people understood recursion. Not only recursion, we will also teach you dynamic programming in the future. We will start with this question. Why? Because recursion code looks very good. Fibonacci has a three-line code and palindrome string has a five-line code. But this code is very useless. Why is it useless?"
+  },
+  {
+   "start": 26.86,
+   "end": 56.67,
+   "text": "When DPI comes, you will understand what the hell is this code. Second thing, some people were commenting that Sir, I can understand, but I can't fully understand. So treat this recursion series as a recursion. What should your work be every day? Your work should be just to read episode X. For example, today 3 or 4, whatever is going to come. You just understand this much. Don't worry about the rest. Sir, I can't understand the question of backtracking right now. Whatever the rest of the question is, the remaining 20, 30, 100 episodes, whatever has to come, leave it in trust that it will be understood. What do you do in recursion?"
+  },
+  {
+   "start": 56.67,
+   "end": 59.2,
+   "text": "solve a small problem every day."
+  },
+  {
+   "start": 59.2,
+   "end": 88.16,
+   "text": "For today, what is your small problem? Understand this episode x properly. Just understand this 30-35 minutes. Whatever is going to happen in the rest, 10 hours lecture, leave it. Leave it like a recursion, by the grace of God. And you believe that you will get the rest of the answer. That means you will understand the rest of the episodes. You understood today's episode. When you will combine both, you will understand the whole recursion. So, overall, look at the recursion series like this. What do you have to do every day? You have to do one small thing. And what is the base case?"
+  },
+  {
+   "start": 88.16,
+   "end": 110.29,
+   "text": "Base case means that if you don't watch any episode, then you will understand everything. If you don't watch any episode, then you will understand everything. If you don't watch any episode, then you will understand everything. If you don't watch any episode, then you will understand everything. If you watch any episode, then you will understand everything."
+  },
+  {
+   "start": 110.29,
+   "end": 136.5,
+   "text": "If you want to do recursion, then in today's episode 4, put all your attention and power in understanding. Leave the rest to God, that sir, God will make us do this. Like we do in recursion, if there is a very big problem, where will we get the answer from? We will get it from somewhere, we will get it from the air or magic. Let's solve a small problem. When we mix it completely, then mine will be complete. Okay? So we give special attention to kids with base cases. They like it a lot. Let's start quickly. Come on."
+  },
+  {
+   "start": 137.1,
+   "end": 165.66,
+   "text": "So, the first question, as promised, is a boilerplate question. What is boilerplate? It is a recursion for this question. Recursion is made for this question. Not only recursion. When you will study dynamic programming, you will also start with this question. So, listen carefully. Fibonacci. You must have heard of Fibonacci somewhere. You must have heard in Maths or those who are doing B.Tech, V.Tech. You must have heard somewhere that Fibonacci number exists. Now, how to write Fibonacci number? So, suppose we start from 0. So, in the beginning, we write two numbers 0 and 1."
+  },
+  {
+   "start": 165.66,
+   "end": 190.02,
+   "text": "Just understand the question, what is fibonacci? Okay. So, this is 0 with fibonacci. Assume that the index starts from 0. What is this? First fibonacci. Okay. What is second fibonacci? The sum of these two. What is the sum of 0 and 1? 1. So, we will write second as 1. Okay. How will we write the next one? The sum of the last two numbers. Which were the last two numbers? 1 and 1 means 2. Next one? Same. The sum of the last two numbers."
+  },
+  {
+   "start": 190.02,
+   "end": 211.22,
+   "text": "3. Next? Sum of 3 and 2. 5. Next? Sum of 5 and 3. 8. Next? 13. This is Fibonacci. Meaning, if anyone tells you nth Fibonacci, which starts from 0, 0, 1, this happened, 2nd, this happened, 3rd, this happened, 4th. If anyone tells you nth, then you have to sum the two of the Fibonacci behind it and remove it. Okay. So, did you understand this?"
+  },
+  {
+   "start": 211.22,
+   "end": 240.14,
+   "text": "Now, why are we saying that this is a standard recursion question? Because we will be telling you the two numbers of the beginning. If we don't tell you the two numbers of the beginning, then how will you get it out? For every number, you need the sum of the previous two numbers. You need the sum of the previous two Fibonacci numbers. So, if no one tells you the two numbers of the beginning, then we will not be able to get it out. That is why we have told you that if we ask, what will be f of 0? Then you say that f of 0 will be 0. What will be f of 1? f of 1 will be 1. These two are told to you. Very good."
+  },
+  {
+   "start": 240.14,
+   "end": 269.66,
+   "text": "How will we get f of 2? How will we get f of 2? The sum of the last two things. That means either the sum of f1 plus f of 0. This is done. How will we get f of 5? The sum of f of 4 plus f of 3. We are not saying this. This is Fibonacci. How will we get f of 10? If we get f of 10, then we will get f of 9 and f of 8. This is a simple program. You must have already clicked. First of all, I have told you two things. What are the two things?"
+  },
+  {
+   "start": 269.66,
+   "end": 295.78,
+   "text": "What will be the answer of f of 0? 0. What will be the answer of f of 1? 1. What is this? Now let's talk about the steps of recursion. First of all, what did we say? Think of the base case. Meaning, whatever input you have, think of the smallest input of that. Take out the answer of the smallest input of that. So, this is already told to you. What will be the answer of the smallest input? If your input is 0, if n is equal to 0, what should be the answer? 0. If n is equal to 1, what should be the answer? 1."
+  },
+  {
+   "start": 295.78,
+   "end": 325.54,
+   "text": "So, we have thought about the base case. Okay. Now, what we are saying is, solve a small problem. Solve a small problem. So, let it be. Rest of the, what we had said, if you want to write an essay of 6 pages, and if someone tells you 5 pages, if someone tells you the answer of 5 pages, how will you tell in that? In this, there is no need to do that much. If someone asks you the answer of n, then what happens to it? Whatever the answer of n-1, plus whatever the answer of n-2. This will be the answer. Why will it be the answer?"
+  },
+  {
+   "start": 325.54,
+   "end": 341.18,
+   "text": "Suppose someone is asking you the answer of 10. If someone tells you that the value of the 9th one is x and the value of the 8th one is y, then can you tell the value of this 10 very easily with a pinch? They will say, yes, we can tell, x plus y will be."
+  },
+  {
+   "start": 341.18,
+   "end": 370.26,
+   "text": "So, if someone is asking you the value of n, that we are giving you n, what will be nth Fibonacci number? So, you will tell us to do one thing, you tell us the value of n-1, so tell us x, and n-2, means tell us the value of 8th, y, we will add x plus y and give you 100. So, the program is over. The program was so good, recursion is very easy, DP is also easy, meaning Fibonacci is the best program. So, what will be given to you? Suppose, some function is given, Fib, and you are given an int n."
+  },
+  {
+   "start": 370.26,
+   "end": 398.32,
+   "text": "What is your work? Nth Fibonacci. So, first of all, what is it? Write the base case. If n is equal to 0, then return 0. Simple. Don't do anything. If n is equal to 1, what to do? Return 1. It is given in simple question. What happened? Base case is over. Base case is over. After that, what do you want? What do you want to get nth? Someone tell the answer of n minus 1. Someone tell the answer of n minus 2. So,"
+  },
+  {
+   "start": 398.32,
+   "end": 416.88,
+   "text": "Use magic. Assume that this function will tell you. Int, answer 1 is equal to, call this function for n-1. Assume that you will get the answer. Assume that you will get the answer with magic. Answer 2, call this function for n-2."
+  },
+  {
+   "start": 416.88,
+   "end": 447.44,
+   "text": "Assume that you will get the answer with magic. So what happened? You are trusting. You are trusting or you are keeping faith. You are keeping faith that this function in which we haven't done anything, in which we don't know anything, this will give us the answer of n-1, n-2. Once you get both the answers, then the work for you is very easy. What did you do? Return answer 1 plus answer 2. Your program is over. What did you do here? You added the answer of the last problem. You added and made your answer."
+  },
+  {
+   "start": 447.44,
+   "end": 477.14,
+   "text": "make your answer by adding it what have you done by adding it? you have made it and returned it simple thing come let's try to dry run it once so this is the code let's dry run it suppose what we ask you? 5, let's ask for n is equal to 5 n is equal to 5 will be little big maybe let's ask for n is equal to 3 ok come so from main or whatever is yours what will you call? fun of 3 come let's start calling"
+  },
+  {
+   "start": 477.14,
+   "end": 505.3,
+   "text": "First of all, fun in which n is equal to 3. Does it fulfill the base case? Is n 0 or 1? n 0 or 1? No. So, you have to find both the answers. So, come on. a1 is equal to fun of n is equal to 2. And a2 is equal to fun of n is equal to 1. Now, what will happen after that? Return a1 plus a2. Now, let's run it one by one. Come on, let's run this."
+  },
+  {
+   "start": 505.55,
+   "end": 535.23,
+   "text": "The first line is done. What is the first line? Fun n equal to 2. The compiler will jump on that. Where will the compiler jump? It will jump on n equal to 2. Come. This is also not a base case. Because what is the base case? When n is 0 and 1, then it will end. Otherwise, it will keep on increasing. It will keep on calling. Do the same thing in this. a1 is equal to fun of n is equal to 1. a2 is equal to fun of n is equal to 0. And return is a1 plus a2. Come. Now run this too. Now this is also a function call. So the compiler will jump here. Run this."
+  },
+  {
+   "start": 535.23,
+   "end": 564.21,
+   "text": "as soon as you will run this fun n is equal to 1 now this is the base case n1 what we will return in n1 what is the answer of n1? 1 so what will this symbol return? 1 and what will this be? finished its work is finished what is the answer of this? 1 similarly when you will call this now this also worked what is the answer of n is equal to 0? we are not writing but this will be called and what is the answer of that? 0 this also worked return a1 plus a2 so what is 1 plus 0?"
+  },
+  {
+   "start": 564.21,
+   "end": 593.47,
+   "text": "1. So what will happen? After completing this function, who will it return? Here, it will return 1. Simple. Now come, there was one line left. What is it? fun n is equal to 1. Again, fun is equal to n, n is equal to 1. So this is the base case. So what will you return here? 1. You got both. What do you have to return? Return a1 plus a2 means 1 plus 1. What will you return? 2. Now what will be the answer? 2. If we write the series of Fibonacci, then we will start from 0 and 1."
+  },
+  {
+   "start": 593.47,
+   "end": 623.74,
+   "text": "Then 0 plus 1, 1. 1 plus 1, 2. So, this is 0. This is 1. This is 2. This is 3. What is the answer? 2. Same answer. We can print it. So, this was very simple. We hope that there will be no doubt in this. If you have seen any of my previous videos of my recursion series, then this is a piece of cake for you. What is it? Piece of cake. In this, we don't think that you will have any problem in understanding. If you are feeling a lot of courage, you have a lot of power inside you, then you can run it for n is equal to 5."
+  },
+  {
+   "start": 623.74,
+   "end": 646.21,
+   "text": "We will run it for n is equal to 5. Your copy will be filled. But you should run it. It is a good exercise. I don't have that much space. There is not much space in the iPad. That's why we are not running it. It will be a mess. You can run it in your copy. For n is equal to 5. It will be a very long tree. And what should you get the answer? 0, 1, 1, 2, and 3. So this is 0, 1, 2, 3, 4, and one more. 5. Your answer should be 5."
+  },
+  {
+   "start": 646.21,
+   "end": 664.3,
+   "text": "your answer should be 5 in the end so go and submit it, here is the code the recursion code is like this, it is very small and cute it is very easy to write, it is difficult to understand, it is difficult to run, it is difficult to dry run so this is the Fibonacci series, you have learnt it, congratulations next question is not of integer or array, it is of string"
+  },
+  {
+   "start": 664.3,
+   "end": 692.93,
+   "text": "This is the string. Again, we know that you must have already seen this question. You have to check in this whether the string is palindrome or not. Those who don't know palindrome should know. Palindrome is a straight and inverted unit. Straight and inverted unit means, if you write it by reversing, then you should get the same string. For example, Naman. Naman is a word. If you reverse Naman, then see, N-A-M-A-N. This is the reverse of Naman. Both are the same. What do we call this type of string? Palindrome."
+  },
+  {
+   "start": 692.93,
+   "end": 706.74,
+   "text": "If you want to take L string A, B, C, then reverse it. C, B, A. This is not the same string, right? So this will be not palindrome. Similarly, you have given this string. You have to tell true or false. If it is palindrome, then tell true. If it is not, then tell false."
+  },
+  {
+   "start": 706.74,
+   "end": 724.34,
+   "text": "Again, there are many ways to solve this problem. We don't want to comment that we will solve this problem with two pointers. We are not teaching that. We know that we will solve it, but my point is that you have to teach recursion. We don't want to make a master of palindrome string. Because we see many such comments."
+  },
+  {
+   "start": 724.34,
+   "end": 748.5,
+   "text": "In one of the two-pointer lecture, in which we were doing two merge array, it was negative, it was a sort of negative array. So, there were a lot of knowledgeable people's comment that this is not the way, you keep two pointer here and there. That was not the purpose of teaching, the purpose was to teach merge two sorted array. So, my aim is that you should read what you want to teach. Question, you have seen from somewhere or not, you have been told by chat GPT that this is not the optimized approach, it will not work."
+  },
+  {
+   "start": 748.5,
+   "end": 776.8,
+   "text": "Those who are studying, those who want to learn the concept, do it. Question is a means, right? If we just make a theory, then it won't work, right? Question is a way to tell you the concept. Focus on the concept. Question, chat GPT is said to be done like this, then chat GPT will not be able to teach you. Chat GPT will only be able to give you, okay? Let's go. So, the thing is simple, that you will be given a string, that you have to return true or false. But how will the recursion take place in this? Means, it should come to mind that how will the recursion take place in this? What is there in the recursion that we have studied till now?"
+  },
+  {
+   "start": 776.8,
+   "end": 803.78,
+   "text": "First of all, you have to think of the base case. The base case means that the smallest input. Think of the answer on the smallest input and return it. First of all, the base case. Okay, we will think of this once, no problem. After that, what is the index you are on right now, separate them. Separate them. Means, suppose you are on this array, then you separate this one. And this is your remaining."
+  },
+  {
+   "start": 803.78,
+   "end": 830.1,
+   "text": "Take out the answer of the remaining person from the same function. Take out the answer of the remaining person from the same function. How will it come out? By magic. Call the same function for the remaining person. The answer will come. If you keep trust on it, it will come. Now, the one you have taken out, the one you had kept separate, means if you had one separate, plus the remaining, plus the remaining answer you got, make the answer by connecting it. Means, again, how to write 6 pages?"
+  },
+  {
+   "start": 830.1,
+   "end": 859.94,
+   "text": "separate one page that I will write one page by myself if someone tells me the answer of 5 pages then connect your one page and the 5 pages that someone told you and connect both of them and submit your answer to the teacher so in total this was our recursion template that this is what we have to do let's think how we will do in this first of all base case what is base case? base case means the smallest input now you are getting a string in input what you are getting in input? string what is the smallest string?"
+  },
+  {
+   "start": 859.94,
+   "end": 889.07,
+   "text": "If the length of a string is 0, then what will you do? If the length of a string is 0, then will its answer be true or false? It will be true. Why? It is an empty string, which means there is nothing in it. If you reverse it, it will also remain empty. So, if it is empty, it will remain true. So, you think that the answer of length is equal to 0 remains true. What will be the answer of length is equal to 1? If the length of a string is 1, what will be its answer? A."
+  },
+  {
+   "start": 889.07,
+   "end": 913.65,
+   "text": "This is the string. Reverse it. It will be A. It looks the same. N. Reverse it. It will be N. It will be the same. So, if you reverse any one length string, it will remain the same. So, if there is one length, then its answer is also true. Let's go. We have got the answer for 0 and 1. Very good. Now, let's move ahead. Now, let's move ahead. Now, let's assume that length is equal to 2. We got 3. Length of string is 10. Now, what will we do? We have to think about it."
+  },
+  {
+   "start": 913.9,
+   "end": 942.13,
+   "text": "think like a human, we keep saying that learn to think like a human and then go to code don't think about the language of code in the beginning don't think about which if you will write and which for loop you will write, it won't work like that think like a human when we give you a big string, what do you do? we are writing a big string M-A-L-A Malayalam Malayalam is an Indian language of Kerala Malayalam is a big word"
+  },
+  {
+   "start": 942.13,
+   "end": 966.9,
+   "text": "How do you think? How do you do it? One way is that you write it by reversing it in the copy and mix it line by line. But if you don't want to reverse it, then how do you solve it? As a human, how do we solve it? Let me tell you. First of all, we hold this. The first one and the last one. M and M are the same. If this first and last is not the same, then this string palindrome cannot happen. Assume that Z is shown in the last."
+  },
+  {
+   "start": 966.9,
+   "end": 995.22,
+   "text": "M and Z are not the same, right? So how will this be a palindrome? So we reject it first. If M and M are the same, then we move forward. So we move forward from one side and move forward from the other side. We give this and we take this. Again, if it would have been difficult for us here, if we would have made a mistake here, A would have been there and B would have been there, then we would have rejected this as well that this string is not a palindrome. But because it is still the same, this one was also the same, means the first and last one was the same. Second and second last are also the same. We will move further."
+  },
+  {
+   "start": 995.22,
+   "end": 1022.43,
+   "text": "we will move forward, move forward, L and L, this is also the same, this is also the same, again, here if we, where we see that this is not the same, we immediately move away from there, that no, this palindrome cannot be, it is a very big string, we cannot see it together, okay, this is also the same, we will move forward, we will move forward, so we moved forward, A and A, again, this is also the same, this is also the same, we will move forward, we will move forward, where will we come, we will come here, now both have come here,"
+  },
+  {
+   "start": 1022.43,
+   "end": 1036.27,
+   "text": "Now both, because one has moved forward from here and the other has moved forward from here. This will obviously be the same. This will obviously be the same. So now we can't move forward. Means we have compared everything. So now we say that yes, this is true. This is true."
+  },
+  {
+   "start": 1036.27,
+   "end": 1066.14,
+   "text": "We do it like this. As a human, you do it like this. It's a very big string, so what do you do for palindrome? Do one thing, look at the first one, look at the last one, it's the same. Look at the second one, look at the second last one, it's the same. Look at the third one, look at the third last one, it's the same. Look at the fourth one, look at the last fourth one, it's the same. Look at the fifth one, look at the fifth last one, it's the same. Where you get it, you stop and say, yes, everything looks the same, it's palindrome. When you reverse, you do the same thing. When you reverse, I'll reverse it and show you. Assume your string looks like this."
+  },
+  {
+   "start": 1066.14,
+   "end": 1092.56,
+   "text": "L, A, Y, A, L, A, M. When you write it by reversing, you write this. M, A, L, A, Y, A, L, A, M. And compare these two. What are these two? What are you comparing these two? This is first. And this is last. Which has become first after reversing. This is second. And this is second last. Let's compare these two. And where you get that this is not, then you..."
+  },
+  {
+   "start": 1092.56,
+   "end": 1119.94,
+   "text": "L is 3rd and this is 3rd last and this is 3rd last and this is 4th last and this is 5th and this is 5th last and this is 6th"
+  },
+  {
+   "start": 1119.94,
+   "end": 1148.96,
+   "text": "6th to the last. But there is no use of doing this. Why there is no use of doing this? Because this A is the same as this A. So this is already done. See this. This is already done. So if till here everything was the same, then you can say that it is palindrome. So if you do it by reversing, then also you follow the same logic. That you pick up first and pick up last and compare. If it is not similar, return false. If it is similar, bring it forward, i.e. come to second. Bring it to second last. Again compare. You do similar. Okay."
+  },
+  {
+   "start": 1148.96,
+   "end": 1179.09,
+   "text": "Now, how can this thing be solved with recursion? Okay. Every time, every time, what are you doing? See. M, A, L, A, Y, A, L, A, M. Okay? Assume, every time, see, every time you can do one easy thing, if you get this string right now. Every time you can do one easy thing, that you can compare the first one, assume you are here, and the last one, the first one of this string and the last one of this string. Compare them. Which one are you doing? First one."
+  },
+  {
+   "start": 1179.09,
+   "end": 1208.72,
+   "text": "from last. This is an easy task, right? It is a task of one compare. If the answer is no, it is not equal, then you can directly return false. You can do it, right? If here is m and here is y, then palindrome can't happen. It can't happen at all. If first and last are not equal, then you can do anything. If the rest of the string is anything and palindrome can't happen, then you don't do it. Okay. If this first and last is equal, like it happened here, then now you know one thing that this one"
+  },
+  {
+   "start": 1209.1,
+   "end": 1232.3,
+   "text": "This one is equal to this one. So this palindrome is possible. But now you have to check this other string. This other string. If someone tells you that this other string is palindrome or not. If someone tells you that this is palindrome or not. Then you can take its decision very easily. Why are we saying this? That's why we are saying this. If someone tells you that this middle string is palindrome."
+  },
+  {
+   "start": 1232.3,
+   "end": 1261.55,
+   "text": "This middle string is palindrome. How big can it be? No problem. It is palindrome. Suppose it is like this. A, A, A, A, A, A. This is palindrome. Okay. Who have you checked? The first one and the last one. So, won't this whole string become palindrome? Yes, it will. Why? Because first and last are equal. First and last are equal. And this middle part, this is also palindrome. This is also palindrome. So, when you see this whole string like this, then it will definitely become palindrome. Why?"
+  },
+  {
+   "start": 1261.55,
+   "end": 1287.22,
+   "text": "because when you will reverse it, then what will happen? this person will be compared to the last person, so it is already same and all these items, this middle part, write it by reversing it a, a, a, a, a, a because it is already palindrome, obviously it will be equal palindrome says that single and its reverse is equal obviously it will be equal, means"
+  },
+  {
+   "start": 1287.54,
+   "end": 1317.63,
+   "text": "No matter how big the string is, if you get a string with a length of 1000, if you look at its first and last, if its first and last are not equal, then the middle string can be anything, no matter how big the middle string is, it can't be a palindrome, then it's a sure thing, the return will be false. But, if s of first is equal to s of last, suppose here is y and here is y, if someone tells you that this middle part which you have left, which is from second to second last, the middle part,"
+  },
+  {
+   "start": 1317.63,
+   "end": 1346.03,
+   "text": "If someone tells you about this, whether it is true or false, whether this string is palindrome or not, then you can say that if S of first is equal to S of last. First of all, this is absolutely necessary. And this middle part, which is second to second last, the green part, this middle part is also palindrome."
+  },
+  {
+   "start": 1346.9,
+   "end": 1370.42,
+   "text": "The back part is also palindrome. If these two things are there, then the answer is true. This is where the game of recursion comes. For the first and last, what we will do is, we will pass two pointers. See, keep this string. n, a, m, a, n. 0, 1, 2, 3, 4. This is the string."
+  },
+  {
+   "start": 1370.42,
+   "end": 1399.3,
+   "text": "What you have to do is, every time you have to compare first and last. You just need one thing. Compare first and last. Trust the answer of the middle part that you will get it. And if both are true, then return it. So in the beginning, what will we do? Fun. We will pass the string. A low pointer is equal to 0. And high pointer is equal to 4. In the beginning. This is called from main. Means, in the beginning, what is first and last? The string is 0. And the size of the string is minus 1. That is last. Okay."
+  },
+  {
+   "start": 1399.3,
+   "end": 1429.42,
+   "text": "For some time forget the base case. First of all, what did you say? If S of low not equal to S of high. Means, the string you got now, if the first and last are not the same, then do anything, it is not possible in palindrome. Immediately do return false. Return false. Equal. Now, this means that you have not come here. Means, it is equal. Now, what do you have to do?"
+  },
+  {
+   "start": 1429.42,
+   "end": 1458.88,
+   "text": "Now, this is equal. 0 and 4 are equal. Now, if there is a palindrome in the middle of it, then what do you have to do? Return. Now, everything depends on which? Everything depends on the middle one. First and last, you have seen that both are n. Now, if there is a palindrome in the middle, then the answer of the whole string will be true. If there is no palindrome in the middle, then the answer of the whole string will be false. So, you can do simple. Fun S. Who are we saying the middle part? In the beginning, it was low. And yes, it was."
+  },
+  {
+   "start": 1458.88,
+   "end": 1486.37,
+   "text": "What is the middle part? Low plus 1 and high minus 1. Means low plus 1 and high minus 1. And close this function. Understand again. What are you doing every time? Every time when you get a string, every time you get a string, then low stays here in the beginning and high stays here. So first of all, let's check if these two are the same. If these two are not the same, then you will use any force of the world. Palindrome is not there. Very good."
+  },
+  {
+   "start": 1486.37,
+   "end": 1516.27,
+   "text": "If these two are same, then everything depends on this green part. If this green part is palindrome, then the whole string is palindrome. If this green part is not palindrome, then the whole string is not palindrome. So what do we do? Next call is low plus 1 and high minus 1. You believe that you will get the answer. You believe that you will get the answer. This is the same function."
+  },
+  {
+   "start": 1516.27,
+   "end": 1544.72,
+   "text": "This is the same function. This is its rule. Let's believe that we will get the middle answer from somewhere. What is my job? My job is to get the first and last answer every time. God will give us the middle answer somewhere. We will see the middle answer, add both the answers and tell our answer. So this is done. Now what is its base case? For its base case, it is necessary to do a dry run. See. Remember the base case. What did we say in the beginning? We said on length. Where did it go? The base case was written somewhere. Yes."
+  },
+  {
+   "start": 1544.91,
+   "end": 1564.26,
+   "text": "If length is 0, then also true. If length is 1, then also true. Okay, let's see what happens. Come, let's do this on num1. So, this is your string. n, a, m, 0, 1, 2, 3, 4. This is your string. In the beginning, what do we do? fun, low is equal to 0."
+  },
+  {
+   "start": 1564.26,
+   "end": 1593.94,
+   "text": "High is equal to 4. Because it will be called from the main. What is the first? 0th index. And what is the last? 4th index. Okay. So, first of all, let's see. 0 and 4. Means, n and n. Is it same? Yes, n and n is same. So, what do we call? Return. Low is equal to 1. High is equal to 3. Means. Now, everything is up to you. Low is equal to low plus 1. And high minus 1. We have left your trust on you. Come. Run this. Low equal to 1. High equal to 3. This will also do the same work. This will also just look at this a and this a."
+  },
+  {
+   "start": 1593.94,
+   "end": 1622.99,
+   "text": "Is it the same? Yes, it is the same. Now what will it do? What is left over from the rest? What will it call? Fun. Low is equal to 2. And high is equal to 2. Now see, it is a very important thing. Notice it here. Now low is equal to high. Low is equal to high. When low is equal to high, then what will be the length of that string? What will be the length of that string? Remember the sliding window. How was the length of the sub-array of low to high? High."
+  },
+  {
+   "start": 1622.99,
+   "end": 1652.51,
+   "text": "minus low plus 1. High minus low plus 1 means 2 minus 2 plus 1 is equal to 1. What is the length? 1. What did we say in the base case? If the length of a string is 1, then is it a palindrome? Yes, that palindrome is certain. So, if you have got the base case here, if low equal to high, what does this mean? The length of the string you are looking at, the part you are looking at right now, what is its length? 1. Why? High minus low plus 1, its length will be 1."
+  },
+  {
+   "start": 1652.51,
+   "end": 1683.18,
+   "text": "Let's return true from here. Let's return true from here. Let's return true from here. But this doesn't end here. This was an odd length string. If we make an even length string, N, N, A, A, B, B, 0, 1, 2, 3, 4, 5. This is an even length string. Let's see what happens here. In the beginning, what will we call? Low is equal to 0, high is equal to 5. Okay? Are these two the same? N and N. Yes, they are the same. So, who will we give our fate to?"
+  },
+  {
+   "start": 1683.18,
+   "end": 1713.84,
+   "text": "The middle string. So who will it call? Fun. Low is equal to 1 and high is equal to 4. Again, do the same thing. This and this. Compare low and high. If it is not the same, then we will come from there. If it is the same, then we will move ahead. Who will we give our share to? Fun. Low is equal to 2. High is equal to 3. Do the same thing. Is B and B the same? Yes, B and B are the same. Move ahead. Fun."
+  },
+  {
+   "start": 1714.26,
+   "end": 1745.01,
+   "text": "low is equal to 3, high is equal to 2. Now see, this is wrong. It is said that this is a string which starts, whose first help is at low is equal to 3, and whose ending is at high is equal to 2. This can never happen. What is a string whose starting is at 3, and whose ending is at high? This is not a possible string. If you take out the length of this string, then what will come? High minus low plus 1 means 2 minus 3."
+  },
+  {
+   "start": 1745.01,
+   "end": 1771.9,
+   "text": "What will be its length? 0. What will be its length? 0. What will be its length? 0. High minus low plus 1. What will be the length of 2 minus 3 plus 1? 0. What did we see in the base case? If the length of a string is 0, then is it true or false? We said yes, it is true. Because if there is an empty string, then what will happen if we reverse the empty string? It will come empty. So this is also 0. So have you got your base case? Every time when you have low and high pass,"
+  },
+  {
+   "start": 1771.9,
+   "end": 1801.73,
+   "text": "we will find an int length. What will we find? High minus low plus 1. If length equal equal to 0 and length equal equal to 1, then return true. Because 0 length string and 1 length string, both are true. If this is not the case, then you can do something else. It is simple. Come, write the code and try it. We will also do a non-palindrome. So first of all, write the code. Bull fun"
+  },
+  {
+   "start": 1801.73,
+   "end": 1831.76,
+   "text": "What do you have to pass in this? First of all, your string. First of all, your string. After that, two things. Low and high. Meaning, what are we seeing at this time, low and high? Meaning, at this time, we are seeing first and last. So, what will the main pass in this? 0 and S dot size minus 1. 0 and last index. Okay. First of all, we want to find the length. How will the length be found? High minus low plus 1. Okay. Base case. What is the base case? If length is 0 and length is 1."
+  },
+  {
+   "start": 1831.76,
+   "end": 1856.54,
+   "text": "return it as true. This will happen. Is it an empty string or a single string? It will be absolutely true. Now, if this is not the case, now if this is not the case, then first of all, what should we do? If s of low is not equal to s of high, means if, the string you are looking at, the first and last are different, then if you put any other world power in it, then this palindrome will not be possible. Return false. Return false."
+  },
+  {
+   "start": 1856.54,
+   "end": 1883.7,
+   "text": "If this happens, if n and n are the same, then now my whole fate is in the hands of the middle string. Now we will say that whatever you do will happen. If the middle palindrome is there, then we are the whole palindrome. If the middle palindrome is not there, then we are not the whole palindrome. So, what is simple? Narrow return. How will the middle answer come? Believe that this function will give in some way. Believe that, middle means low plus 1 and high minus 1. Believe that it will give."
+  },
+  {
+   "start": 1883.7,
+   "end": 1913.84,
+   "text": "This is happening on trust, that God will give it to us. So this is happening on trust. See, there is so much code, there is nothing to do about it. Let's run it and see. Let's take a non-palindrome string and see. In which, n is n, a is a, and here is b and here is c. Let's see what will happen. First of all, the main one. What will be the first function called? low is equal to zero and"
+  },
+  {
+   "start": 1913.84,
+   "end": 1944.18,
+   "text": "High is equal to 5. Okay. This will be equal. Okay. Take out the length. What will be the length? 5 minus 0 plus 1 is equal to 6. So, does this fall in the base case? No. Now, the length is 0 and 1 is not there. So, you will have to move ahead. First of all, what will be checked? Is S of 0 and S of 5 equal? N and N. Is this equal? Yes, it is equal. Now, whose hand is this? The one who will say this later. The one who will say this is in his hand. So, low is equal to 1 and high is equal to 4. Now, the one who will say this will be the same. Come."
+  },
+  {
+   "start": 1944.18,
+   "end": 1970.58,
+   "text": "Call this function. So, fun, low is equal to 1 and high is equal to 4. Remember, this was your main function. This is your main one, which will give you the result in the main. Rest, all the calls will continue. Come. Same thing. Take out its length as well. 4 minus 1 plus 1 is equal to 4. So, is this also a base case? No, this is also not a base case. First of all, compare S of 1 and S of 4. S of 1."
+  },
+  {
+   "start": 1970.58,
+   "end": 2000.3,
+   "text": "S of 4. Is this equal? Yes, this is equal. So what will it say? Now my whole decision is on which? On the middle one. Low is equal to 2 and? High is equal to? On which? On 3. Come, call this. Call this man. Fun. Low is equal to 2. High is equal to 3. Fine. Take out its length. 3 minus 2 plus 1 means 2. Is this also a base case? No, this is also not a base case. Length is 0 and 1 is not there, so it is not a base case."
+  },
+  {
+   "start": 2000.3,
+   "end": 2030.34,
+   "text": "Is S of 2 and S of 3 equal? No, S of 2 and S of 3 are not equal. So what will this person return? False. What will he return? False. And this will end. Where will this false go and sit? Here. So what answer did this person get? False. What will this whole function return? False. To whom did this answer go and sit? Here. What will this whole person call the main? False. So what will you print? False."
+  },
+  {
+   "start": 2030.34,
+   "end": 2057.79,
+   "text": "Look carefully, is this palindrome or not? No, this is not a palindrome. This is how the program works. So again, where is the actual work happening? Nothing is happening. Only this work is happening. Very good. Every time we are comparing first and last. We are keeping faith for the middle string that we will get it. So this is recursion. Now do you understand what we are saying? So this is recursion on string. Same, if you want, you can also reverse the string. So we want you to do it yourself. Make any string a reverse string."
+  },
+  {
+   "start": 2057.79,
+   "end": 2077.95,
+   "text": "do reverse string with help of recursion not with loops, we know that you can do it with two pointers do reverse string using recursion so we want you to do it yourself you should learn to do this it is almost similar to palindrome so this is how recursion works the code is again very small see it is not of 5-6 lines, we have written it spread so it is of 5-6 lines"
+  },
+  {
+   "start": 2077.95,
+   "end": 2107.57,
+   "text": "we wanted to finish it in 2-3 lines, in 2-3 lines the code will be finished, the code is very small, it is very dangerous to walk, you will feel that oh my god, what happened, I don't understand anything, so keep doing it with recursion, and some people were saying that sir, I understand, I don't understand completely, so understand this recursion playlist as a recursion, understand what is happening every day, understand this lecture every day, you are afraid of the rest of the lecture, that the rest is very big, it will not come, do your work every day,"
+  },
+  {
+   "start": 2107.57,
+   "end": 2132.03,
+   "text": "Leave the rest of the lecture to God. Your work will be done till the end. When this series ends, you will understand the whole recursion. You will not know how it came. What you have to do every day is a small work. You have to understand today's episode. You have to ask questions about today's episode. Don't worry about the rest of the world. Leave it to God. Trust. Recursion also trusts. Trust that it will be done somehow. What is your work?"
+  },
+  {
+   "start": 2132.03,
+   "end": 2160.82,
+   "text": "that if we understand episode 4 and if god explains us all episodes 5 to 20 then we will understand everything you just focus on this do this work and leave this work to god if god wants then it will be understood completely so these were two questions make both questions in fibonacci palindrome if you want then make reverse string also we are continuously updating in the pattern sheet till tomorrow you should see the questions completely but these three we have already put see you tomorrow"
+  }
+ ]
+}

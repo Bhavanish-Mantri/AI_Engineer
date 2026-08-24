@@ -1,0 +1,3844 @@
+{
+ "video_id": "yEwnsPI_tUY",
+ "title": "DP in 15 Days Episode 06 : No One Has Explained Tabulation Like This",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2067,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 6.0,
+   "text": "Dear students, how are you? First of all, look at this picture. We remember that we did Fibonacci in D.P."
+  },
+  {
+   "start": 6.0,
+   "end": 14.0,
+   "text": "Remember, the first day, the first question was Fibonacci series. But at that time when we submitted the code, it took 39 milliseconds as you can see."
+  },
+  {
+   "start": 14.0,
+   "end": 23.0,
+   "text": "Today, what we have submitted a few seconds ago, it took 2 ms. Memory also took less than that. When we did it that day, it took 8.4 ms."
+  },
+  {
+   "start": 23.0,
+   "end": 29.8,
+   "text": "now 7.6 means there is some benefit in memory and memory means space and time means there is a lot of benefit"
+  },
+  {
+   "start": 29.8,
+   "end": 38.6,
+   "text": "but why did this happen, it means that the day we studied dp is not correct or the code we submitted now has some advanced computation"
+  },
+  {
+   "start": 38.6,
+   "end": 48.1,
+   "text": "we will see that today, so see when the dp series started or when we have been telling you for a long time that any dsa question"
+  },
+  {
+   "start": 48.1,
+   "end": 54.1,
+   "text": "There are two ways to solve any topic or pattern of DSA question in the world."
+  },
+  {
+   "start": 54.1,
+   "end": 56.1,
+   "text": "The first way is by recursion."
+  },
+  {
+   "start": 56.1,
+   "end": 62.1,
+   "text": "Recursion means that you call a function again and again and keep changing the input."
+  },
+  {
+   "start": 62.1,
+   "end": 63.1,
+   "text": "That is one way."
+  },
+  {
+   "start": 63.1,
+   "end": 66.1,
+   "text": "The second way is iterative."
+  },
+  {
+   "start": 66.1,
+   "end": 71.1,
+   "text": "Iterative means you write for loop, while loop or do while loop somewhere."
+  },
+  {
+   "start": 71.1,
+   "end": 74.1,
+   "text": "So any DSA problem can be solved in both ways."
+  },
+  {
+   "start": 74.1,
+   "end": 79.34,
+   "text": "There is no such problem in the world which you can't do with recursion and you can do it with iterative."
+  },
+  {
+   "start": 79.34,
+   "end": 84.1,
+   "text": "There is no such problem which you can do with iterative but not with recursion."
+  },
+  {
+   "start": 84.1,
+   "end": 88.34,
+   "text": "Which one to choose depends on which one is easier to understand."
+  },
+  {
+   "start": 88.34,
+   "end": 90.3,
+   "text": "For example, Sum of Array."
+  },
+  {
+   "start": 90.3,
+   "end": 94.6,
+   "text": "In Sum of Array, it is easier to write a loop i is equal to 0, i less than n, i plus plus, this one."
+  },
+  {
+   "start": 94.6,
+   "end": 96.1,
+   "text": "In that, we write iterative."
+  },
+  {
+   "start": 96.1,
+   "end": 97.1,
+   "text": "Like Fibonacci."
+  },
+  {
+   "start": 97.1,
+   "end": 100.86,
+   "text": "In Fibonacci, recursive was easier to read because you don't have to think much."
+  },
+  {
+   "start": 100.86,
+   "end": 105.02,
+   "text": "If you want to add n-1 and n-2, then it is easier and more convenient."
+  },
+  {
+   "start": 105.2,
+   "end": 106.36,
+   "text": "If there was a decursion, then we write recursion."
+  },
+  {
+   "start": 107.24,
+   "end": 111.06,
+   "text": "But one thing is certain that any problem can be solved in both ways."
+  },
+  {
+   "start": 112.74,
+   "end": 113.56,
+   "text": "This is the difference."
+  },
+  {
+   "start": 113.98,
+   "end": 115.54,
+   "text": "Till now, we have done so much in the DP series."
+  },
+  {
+   "start": 116.4,
+   "end": 122.06,
+   "text": "Till now, we have done Fibonacci, Climbing Star, House Robber, 01 Knapsack."
+  },
+  {
+   "start": 122.84,
+   "end": 124.58,
+   "text": "What we did in all four problems?"
+  },
+  {
+   "start": 125.08,
+   "end": 126.8,
+   "text": "First of all, we wrote its recursion."
+  },
+  {
+   "start": 127.56,
+   "end": 128.74,
+   "text": "It was a good thing that we wrote recursion."
+  },
+  {
+   "start": 128.74,
+   "end": 132.74,
+   "text": "After that, we saw whether there is an overlapping problem in this."
+  },
+  {
+   "start": 132.74,
+   "end": 135.74,
+   "text": "That means, the same input is not being repeated again and again."
+  },
+  {
+   "start": 135.74,
+   "end": 137.74,
+   "text": "We are not solving the same input again and again."
+  },
+  {
+   "start": 137.74,
+   "end": 139.74,
+   "text": "If this was the case, then what did we do?"
+  },
+  {
+   "start": 139.74,
+   "end": 143.74,
+   "text": "We had remembered the answer of that input."
+  },
+  {
+   "start": 143.74,
+   "end": 144.74,
+   "text": "What did we do?"
+  },
+  {
+   "start": 144.74,
+   "end": 145.74,
+   "text": "We had remembered."
+  },
+  {
+   "start": 145.74,
+   "end": 149.74,
+   "text": "This is called memorizing."
+  },
+  {
+   "start": 149.74,
+   "end": 151.74,
+   "text": "What was this method called?"
+  },
+  {
+   "start": 151.74,
+   "end": 152.74,
+   "text": "Memoization."
+  },
+  {
+   "start": 152.74,
+   "end": 155.74,
+   "text": "Whatever the spelling is, this method was called memoization."
+  },
+  {
+   "start": 155.74,
+   "end": 156.74,
+   "text": "This is what we were doing."
+  },
+  {
+   "start": 156.74,
+   "end": 158.74,
+   "text": "but but but"
+  },
+  {
+   "start": 158.74,
+   "end": 160.74,
+   "text": "now dp's question is also"
+  },
+  {
+   "start": 160.74,
+   "end": 162.74,
+   "text": "dsa's question right"
+  },
+  {
+   "start": 162.74,
+   "end": 164.74,
+   "text": "so if dp's question"
+  },
+  {
+   "start": 164.74,
+   "end": 166.74,
+   "text": "dp's fibonacci or house robber"
+  },
+  {
+   "start": 166.74,
+   "end": 168.74,
+   "text": "can be done with recursion"
+  },
+  {
+   "start": 168.74,
+   "end": 170.74,
+   "text": "then house robber or fibonacci"
+  },
+  {
+   "start": 170.74,
+   "end": 172.74,
+   "text": "can't be done with iterative"
+  },
+  {
+   "start": 172.74,
+   "end": 174.74,
+   "text": "it can be done with iterative"
+  },
+  {
+   "start": 174.74,
+   "end": 176.74,
+   "text": "we have said that it is not possible"
+  },
+  {
+   "start": 176.74,
+   "end": 178.74,
+   "text": "that something can be done with recursion"
+  },
+  {
+   "start": 178.74,
+   "end": 180.74,
+   "text": "and not with loop"
+  },
+  {
+   "start": 180.74,
+   "end": 182.74,
+   "text": "so fibonacci, house robber, 0-1 knapsack"
+  },
+  {
+   "start": 182.74,
+   "end": 184.74,
+   "text": "all of them"
+  },
+  {
+   "start": 184.74,
+   "end": 191.74,
+   "text": "There will be some way to solve it, there will be some way to solve it so that you can solve iterative and you don't have to write recursion."
+  },
+  {
+   "start": 191.74,
+   "end": 199.74,
+   "text": "This iterative method is called tabulation in DP. What is it called? It is called tabulation."
+  },
+  {
+   "start": 199.74,
+   "end": 206.74,
+   "text": "Let me tell you one more thing very frankly that if in any interview if you are asked the question of DP, there are rare chances,"
+  },
+  {
+   "start": 206.74,
+   "end": 212.74,
+   "text": "but if asked, then you are not expected to write its recursion and memorize it."
+  },
+  {
+   "start": 212.74,
+   "end": 217.74,
+   "text": "It is a good thing to know, you will be asked what you are doing, but your final selection,"
+  },
+  {
+   "start": 217.74,
+   "end": 221.74,
+   "text": "its final expectation, do you know what will happen to you? You will have to write the"
+  },
+  {
+   "start": 221.74,
+   "end": 227.74,
+   "text": "tabulation code and show it. Why? You will understand this in this lecture, but if"
+  },
+  {
+   "start": 227.74,
+   "end": 234.74,
+   "text": "it is said from above, then memoization, memoization in DP, I am giving you a recap,"
+  },
+  {
+   "start": 234.74,
+   "end": 240.74,
+   "text": "memoization which is a form of recursion and tabulation which is an iterative form."
+  },
+  {
+   "start": 240.74,
+   "end": 244.44,
+   "text": "In DP, the time complexity of both is the same."
+  },
+  {
+   "start": 244.44,
+   "end": 248.24,
+   "text": "Time complexity doesn't mean that there will be an order of n squared and an order of n."
+  },
+  {
+   "start": 248.24,
+   "end": 249.74,
+   "text": "No, both will be an order of n."
+  },
+  {
+   "start": 249.74,
+   "end": 255.74,
+   "text": "But, if we look at it practically, then tabulation takes less time."
+  },
+  {
+   "start": 255.74,
+   "end": 258.04,
+   "text": "We will tell you why it takes less time."
+  },
+  {
+   "start": 258.04,
+   "end": 261.04,
+   "text": "But, if we look at it realistically, the time complexity is the same."
+  },
+  {
+   "start": 261.04,
+   "end": 262.44,
+   "text": "It has an order of n and an order of n."
+  },
+  {
+   "start": 262.44,
+   "end": 267.24,
+   "text": "But, if you look at it in real life, as you saw in the screenshot of the lead code,"
+  },
+  {
+   "start": 267.24,
+   "end": 269.74,
+   "text": "then tabulation takes less time."
+  },
+  {
+   "start": 269.74,
+   "end": 276.06,
+   "text": "And one more thing, the most important thing in tabulation, in 90% of cases, it takes less space."
+  },
+  {
+   "start": 277.42,
+   "end": 279.06,
+   "text": "Yes, yes, it takes less space."
+  },
+  {
+   "start": 279.22,
+   "end": 284.72,
+   "text": "Meaning, in the problem of recursion, what do we tell you, what is going to be your biggest problem in memoization?"
+  },
+  {
+   "start": 285.1,
+   "end": 288.82,
+   "text": "Your time will be less, time will save DP, but DP needs space."
+  },
+  {
+   "start": 288.82,
+   "end": 296.72,
+   "text": "Why? Because the diary you are maintaining, the diary you are writing in, where will that diary come from?"
+  },
+  {
+   "start": 296.72,
+   "end": 322.38,
+   "text": "Diary will take space, write it in vector, array, hash map, write it in anything, it needs space, so the biggest problem of DP is that you need space, tabulation will solve this problem in 90% cases, you will have less space and realistically less time, remember realistically, time complexity will not be less, but if you run it, then you will run in less time, this method is called tabulation,"
+  },
+  {
+   "start": 322.38,
+   "end": 326.28,
+   "text": "Solving any DP problem in an iterative manner"
+  },
+  {
+   "start": 326.28,
+   "end": 328.44,
+   "text": "What is called tabulation"
+  },
+  {
+   "start": 328.44,
+   "end": 330.12,
+   "text": "Now it comes to how to write tabulation"
+  },
+  {
+   "start": 330.12,
+   "end": 333.72,
+   "text": "Till now you were writing recursion, memorization etc"
+  },
+  {
+   "start": 333.72,
+   "end": 337.98,
+   "text": "In this we will tell you a simple thing"
+  },
+  {
+   "start": 337.98,
+   "end": 339.34,
+   "text": "Remember that trick"
+  },
+  {
+   "start": 339.34,
+   "end": 342.28,
+   "text": "With this one trick you can solve any problem"
+  },
+  {
+   "start": 342.28,
+   "end": 344.92,
+   "text": "If you have written its recursion approach"
+  },
+  {
+   "start": 344.92,
+   "end": 347.26,
+   "text": "Or memoization approach"
+  },
+  {
+   "start": 347.26,
+   "end": 350.48,
+   "text": "You can convert it to tabulation in 5 minutes"
+  },
+  {
+   "start": 350.48,
+   "end": 352.04,
+   "text": "In how many minutes?"
+  },
+  {
+   "start": 352.38,
+   "end": 366.94,
+   "text": "In 5 minutes, in 5 minutes tabulation, you don't have to remember any formula, you don't have to remember any rule, you just have to understand one small thing, if you understand this one thing, you can convert any question into tabulation, which is also your final goal, okay?"
+  },
+  {
+   "start": 366.94,
+   "end": 368.94,
+   "text": "Come, let's explain Fibonacci to you."
+  },
+  {
+   "start": 368.94,
+   "end": 370.94,
+   "text": "You have understood the recursion in Fibonacci."
+  },
+  {
+   "start": 370.94,
+   "end": 373.94,
+   "text": "Let's convert the same Fibonacci into tabulation today."
+  },
+  {
+   "start": 373.94,
+   "end": 375.94,
+   "text": "And let's see how it is beneficial."
+  },
+  {
+   "start": 375.94,
+   "end": 376.94,
+   "text": "What is beneficial?"
+  },
+  {
+   "start": 376.94,
+   "end": 377.94,
+   "text": "Is it beneficial or not?"
+  },
+  {
+   "start": 377.94,
+   "end": 379.94,
+   "text": "Is space saved or not?"
+  },
+  {
+   "start": 379.94,
+   "end": 380.94,
+   "text": "We will see everything."
+  },
+  {
+   "start": 380.94,
+   "end": 381.94,
+   "text": "Keep watching."
+  },
+  {
+   "start": 381.94,
+   "end": 382.94,
+   "text": "Drink water and sit down."
+  },
+  {
+   "start": 382.94,
+   "end": 383.94,
+   "text": "Let's start the video."
+  },
+  {
+   "start": 383.94,
+   "end": 385.94,
+   "text": "So see, it will be very systematic."
+  },
+  {
+   "start": 385.94,
+   "end": 386.94,
+   "text": "It will be very slow with me."
+  },
+  {
+   "start": 386.94,
+   "end": 389.94,
+   "text": "What we are saying will be understood a lot by registering."
+  },
+  {
+   "start": 389.94,
+   "end": 391.94,
+   "text": "It will be completely clear to you in 10 minutes."
+  },
+  {
+   "start": 391.94,
+   "end": 392.94,
+   "text": "Okay."
+  },
+  {
+   "start": 392.94,
+   "end": 395.94,
+   "text": "So let's remember the recursion of Fibonacci."
+  },
+  {
+   "start": 395.94,
+   "end": 402.94,
+   "text": "Yes, in Fibonacci, we said that you can take the hash map of dp, it doesn't matter, the"
+  },
+  {
+   "start": 402.94,
+   "end": 403.94,
+   "text": "diary is a diary."
+  },
+  {
+   "start": 403.94,
+   "end": 407.94,
+   "text": "Take the vector, take the hash map, take anything, we converted the vector because it will be"
+  },
+  {
+   "start": 407.94,
+   "end": 408.94,
+   "text": "easy to explain."
+  },
+  {
+   "start": 408.94,
+   "end": 413.94,
+   "text": "Okay, so see what used to happen in Fibonacci, for whom you used to call the function?"
+  },
+  {
+   "start": 413.94,
+   "end": 414.94,
+   "text": "For n."
+  },
+  {
+   "start": 414.94,
+   "end": 419.94,
+   "text": "In the beginning, in this dp, dp is your diary, so in the beginning, all the answers are minus"
+  },
+  {
+   "start": 419.94,
+   "end": 420.94,
+   "text": "1."
+  },
+  {
+   "start": 420.94,
+   "end": 423.94,
+   "text": "Means you have seen this in house robber, you have seen this in knapsack that it is"
+  },
+  {
+   "start": 423.94,
+   "end": 453.5,
+   "text": "means you don't know its answer till now, you will know, it's a good thing, first of all, the base case used to come that if n is 0 or 1, then return any, means, Fibonacci used to tell you that if n is 0, then the answer will be 0, if n is 1, then the answer will be 1, very simple, very comfortable, very good, after that, you used to see that if dp of n is not minus 1, means, if you are trying to find the answer of n, if its answer is done, if its answer is computed, then don't do the same thing again and again, return directly from here, this was also correct,"
+  },
+  {
+   "start": 453.94,
+   "end": 454.94,
+   "text": "If this is not the case,"
+  },
+  {
+   "start": 454.94,
+   "end": 457.34,
+   "text": "means if there is no answer in your DP,"
+  },
+  {
+   "start": 457.34,
+   "end": 459.34,
+   "text": "if you still don't know the answer of this n,"
+  },
+  {
+   "start": 459.34,
+   "end": 460.34,
+   "text": "then what would you do?"
+  },
+  {
+   "start": 460.34,
+   "end": 462.34,
+   "text": "Then you had only one option,"
+  },
+  {
+   "start": 462.34,
+   "end": 464.34,
+   "text": "that you call the recursion for which?"
+  },
+  {
+   "start": 464.34,
+   "end": 466.34,
+   "text": "What should be the answer of fun of n?"
+  },
+  {
+   "start": 466.34,
+   "end": 469.64,
+   "text": "Fun of n-1 plus fun of n-2"
+  },
+  {
+   "start": 469.64,
+   "end": 470.94,
+   "text": "and whatever answer comes out,"
+  },
+  {
+   "start": 470.94,
+   "end": 472.54,
+   "text": "we would store it in the DP also."
+  },
+  {
+   "start": 472.54,
+   "end": 473.94,
+   "text": "We thought that it will be useful in the future."
+  },
+  {
+   "start": 473.94,
+   "end": 476.54,
+   "text": "This was the recursion code of your Fibonacci."
+  },
+  {
+   "start": 476.54,
+   "end": 477.54,
+   "text": "Okay?"
+  },
+  {
+   "start": 477.54,
+   "end": 479.94,
+   "text": "Now, your goal is that you have to write the tabulation,"
+  },
+  {
+   "start": 479.94,
+   "end": 481.14,
+   "text": "that is, in the loop,"
+  },
+  {
+   "start": 481.14,
+   "end": 482.54,
+   "text": "now we don't have to write the recursion,"
+  },
+  {
+   "start": 482.54,
+   "end": 486.74,
+   "text": "we have to find out the answer by writing a loop"
+  },
+  {
+   "start": 486.74,
+   "end": 490.44,
+   "text": "if someone asks you to tell the answer of n is equal to 5"
+  },
+  {
+   "start": 490.44,
+   "end": 492.64,
+   "text": "you have to write a loop and tell the answer"
+  },
+  {
+   "start": 492.64,
+   "end": 495.24,
+   "text": "you don't have to write recursive function"
+  },
+  {
+   "start": 495.24,
+   "end": 496.84,
+   "text": "that is your goal, for what?"
+  },
+  {
+   "start": 496.84,
+   "end": 498.34,
+   "text": "for tabulation"
+  },
+  {
+   "start": 498.34,
+   "end": 500.34,
+   "text": "so see, any recursion"
+  },
+  {
+   "start": 500.34,
+   "end": 501.74,
+   "text": "once you write recursion"
+  },
+  {
+   "start": 501.74,
+   "end": 503.44,
+   "text": "once you understand recursion"
+  },
+  {
+   "start": 503.44,
+   "end": 505.14,
+   "text": "to convert it into tabulation"
+  },
+  {
+   "start": 505.14,
+   "end": 506.54,
+   "text": "there is a simple flow"
+  },
+  {
+   "start": 506.54,
+   "end": 507.94,
+   "text": "there is a flow chart type"
+  },
+  {
+   "start": 507.94,
+   "end": 510.54,
+   "text": "we will tell you that, see"
+  },
+  {
+   "start": 510.54,
+   "end": 516.14,
+   "text": "First of all, take a small input in your mind that let's see for n is equal to 4."
+  },
+  {
+   "start": 516.22,
+   "end": 517.54,
+   "text": "Let's see for n is equal to 5."
+  },
+  {
+   "start": 517.62,
+   "end": 517.98,
+   "text": "It will be increased."
+  },
+  {
+   "start": 518.14,
+   "end": 518.76,
+   "text": "Let's see for 4."
+  },
+  {
+   "start": 518.86,
+   "end": 520.22,
+   "text": "This recursion will work for 4."
+  },
+  {
+   "start": 520.44,
+   "end": 520.6,
+   "text": "Okay."
+  },
+  {
+   "start": 520.68,
+   "end": 520.86,
+   "text": "Good."
+  },
+  {
+   "start": 521.38,
+   "end": 522.02,
+   "text": "So, see."
+  },
+  {
+   "start": 522.28,
+   "end": 523.88,
+   "text": "Now, you have to write the step slowly."
+  },
+  {
+   "start": 524.7,
+   "end": 526.18,
+   "text": "First of all, you will make a dp array."
+  },
+  {
+   "start": 526.7,
+   "end": 527.42,
+   "text": "What array will you make?"
+  },
+  {
+   "start": 527.52,
+   "end": 527.78,
+   "text": "dp."
+  },
+  {
+   "start": 528.0,
+   "end": 532.34,
+   "text": "1, 2, 3, 0, 1, 2, 3, 4."
+  },
+  {
+   "start": 532.7,
+   "end": 534.18,
+   "text": "This size of a dp array is made."
+  },
+  {
+   "start": 534.42,
+   "end": 534.58,
+   "text": "Okay."
+  },
+  {
+   "start": 535.56,
+   "end": 536.84,
+   "text": "In the beginning, there is sub-1."
+  },
+  {
+   "start": 537.1,
+   "end": 538.5,
+   "text": "In the beginning, there is sub-1."
+  },
+  {
+   "start": 538.5,
+   "end": 540.52,
+   "text": "In the beginning, there is sub-1."
+  },
+  {
+   "start": 540.54,
+   "end": 541.94,
+   "text": "This is your DP array, right?"
+  },
+  {
+   "start": 542.66,
+   "end": 544.48,
+   "text": "Okay, in the beginning, it is all minus 1."
+  },
+  {
+   "start": 544.84,
+   "end": 546.44,
+   "text": "Now, you have to see one thing, right?"
+  },
+  {
+   "start": 546.9,
+   "end": 549.58,
+   "text": "That this array, your recursion function,"
+  },
+  {
+   "start": 550.08,
+   "end": 552.64,
+   "text": "in which order your recursion function,"
+  },
+  {
+   "start": 553.16,
+   "end": 556.22,
+   "text": "in which order your values are filling in this DP array?"
+  },
+  {
+   "start": 556.94,
+   "end": 558.7,
+   "text": "Your recursion function,"
+  },
+  {
+   "start": 558.88,
+   "end": 561.66,
+   "text": "in which order your values are filling in this DP array?"
+  },
+  {
+   "start": 563.3,
+   "end": 566.24,
+   "text": "And to fill in any one value in it,"
+  },
+  {
+   "start": 566.24,
+   "end": 569.02,
+   "text": "i.e. to fill in any one value in DP,"
+  },
+  {
+   "start": 569.02,
+   "end": 572.02,
+   "text": "What are the things that are being used to fill in the DPA?"
+  },
+  {
+   "start": 572.02,
+   "end": 573.02,
+   "text": "What are the things that are being used?"
+  },
+  {
+   "start": 573.02,
+   "end": 575.02,
+   "text": "You will have to note that down."
+  },
+  {
+   "start": 575.02,
+   "end": 576.02,
+   "text": "What does it mean to say?"
+  },
+  {
+   "start": 576.02,
+   "end": 578.02,
+   "text": "We will clear it for you now."
+  },
+  {
+   "start": 578.02,
+   "end": 580.02,
+   "text": "In the beginning, DPA is minus 1."
+  },
+  {
+   "start": 580.02,
+   "end": 582.02,
+   "text": "But if you want,"
+  },
+  {
+   "start": 582.02,
+   "end": 585.02,
+   "text": "then you can write the value of the base case in DPA."
+  },
+  {
+   "start": 585.02,
+   "end": 586.02,
+   "text": "Look, what is DPA?"
+  },
+  {
+   "start": 586.02,
+   "end": 588.02,
+   "text": "DPA is the answer."
+  },
+  {
+   "start": 588.02,
+   "end": 590.02,
+   "text": "DPA says that if N is 0,"
+  },
+  {
+   "start": 590.02,
+   "end": 591.02,
+   "text": "then its answer will be this."
+  },
+  {
+   "start": 591.02,
+   "end": 593.02,
+   "text": "If N is 2, then its answer will be this."
+  },
+  {
+   "start": 593.02,
+   "end": 595.02,
+   "text": "If N is 4, then its answer will be this."
+  },
+  {
+   "start": 595.02,
+   "end": 597.02,
+   "text": "What do you want in the last?"
+  },
+  {
+   "start": 597.02,
+   "end": 598.02,
+   "text": "You want this value in the last"
+  },
+  {
+   "start": 598.02,
+   "end": 627.72,
+   "text": "value of dp of 4. This is what you want in the last. So, look, in the beginning, all are minus 1, but if you want, then you can put the answer of base case in dp. Base case means, what is the answer of n is equal to 0? You know that it is 0, right? Yes, I know. The answer of n is equal to 1, do you know or not? I know, it is 1. So, you can put these two in dp. So, put them. So, you put these two in dp. So, we call these two 0 and 1. Now, remember,"
+  },
+  {
+   "start": 627.72,
+   "end": 629.5,
+   "text": "First of all, what did you fill?"
+  },
+  {
+   "start": 629.64,
+   "end": 630.92,
+   "text": "Which slot did you fill in DP?"
+  },
+  {
+   "start": 631.68,
+   "end": 634.74,
+   "text": "First of all, DP of 0."
+  },
+  {
+   "start": 634.84,
+   "end": 635.02,
+   "text": "It was filled."
+  },
+  {
+   "start": 635.68,
+   "end": 636.08,
+   "text": "From whom?"
+  },
+  {
+   "start": 636.46,
+   "end": 636.9,
+   "text": "From 0."
+  },
+  {
+   "start": 637.2,
+   "end": 638.16,
+   "text": "You filled it yourself."
+  },
+  {
+   "start": 638.3,
+   "end": 638.8,
+   "text": "We know it from the base case."
+  },
+  {
+   "start": 639.5,
+   "end": 639.66,
+   "text": "Okay."
+  },
+  {
+   "start": 640.2,
+   "end": 643.8,
+   "text": "Next, DP of 1 is equal to 1."
+  },
+  {
+   "start": 644.0,
+   "end": 644.86,
+   "text": "These two were filled in the first."
+  },
+  {
+   "start": 645.0,
+   "end": 645.8,
+   "text": "Rest of them are minus 1."
+  },
+  {
+   "start": 645.92,
+   "end": 646.72,
+   "text": "Rest of them are minus 1."
+  },
+  {
+   "start": 647.44,
+   "end": 650.2,
+   "text": "Now you have to see how recursion fills your DP."
+  },
+  {
+   "start": 651.46,
+   "end": 654.02,
+   "text": "How recursion puts value in it."
+  },
+  {
+   "start": 654.26,
+   "end": 655.08,
+   "text": "Come, let's see."
+  },
+  {
+   "start": 655.28,
+   "end": 655.86,
+   "text": "Come, let's see."
+  },
+  {
+   "start": 655.86,
+   "end": 661.86,
+   "text": "Let's run recursion. Let's run the recursion dry run. Let's understand what is happening in the recursion, what is happening in the real, see."
+  },
+  {
+   "start": 661.86,
+   "end": 667.86,
+   "text": "First of all, the recursion will be called for n is equal to 4. The function of the lead code will call for n is equal to 4 only."
+  },
+  {
+   "start": 667.86,
+   "end": 675.86,
+   "text": "Now, this is not the base case. Do you know the answer of n is equal to 4? No, you don't know the answer of n is equal to 4 now because it is minus 1."
+  },
+  {
+   "start": 675.86,
+   "end": 677.18,
+   "text": "So, you will have to call further recursion."
+  },
+  {
+   "start": 678.1,
+   "end": 678.82,
+   "text": "So, what will you do?"
+  },
+  {
+   "start": 679.62,
+   "end": 681.4,
+   "text": "dp of 4 is equal to,"
+  },
+  {
+   "start": 681.4,
+   "end": 685.88,
+   "text": "you will call fun of 3 plus fun of 2."
+  },
+  {
+   "start": 686.32,
+   "end": 686.82,
+   "text": "This will be it, right?"
+  },
+  {
+   "start": 686.98,
+   "end": 688.04,
+   "text": "What does this line mean?"
+  },
+  {
+   "start": 688.38,
+   "end": 691.82,
+   "text": "Return dpn is equal to fun of n minus 1 plus fun of n minus 2."
+  },
+  {
+   "start": 692.1,
+   "end": 693.14,
+   "text": "This line means that"
+  },
+  {
+   "start": 693.14,
+   "end": 695.62,
+   "text": "dp of 4 is equal to fun of 3,"
+  },
+  {
+   "start": 695.76,
+   "end": 696.4,
+   "text": "whatever answer comes,"
+  },
+  {
+   "start": 696.54,
+   "end": 697.54,
+   "text": "plus fun of 2,"
+  },
+  {
+   "start": 697.64,
+   "end": 698.24,
+   "text": "whatever answer comes."
+  },
+  {
+   "start": 698.34,
+   "end": 698.5,
+   "text": "Okay?"
+  },
+  {
+   "start": 699.24,
+   "end": 699.54,
+   "text": "Come."
+  },
+  {
+   "start": 699.94,
+   "end": 701.18,
+   "text": "Call fun of 3."
+  },
+  {
+   "start": 701.3,
+   "end": 701.74,
+   "text": "Call fun of 3."
+  },
+  {
+   "start": 702.3,
+   "end": 704.16,
+   "text": "Fun n is equal to 3."
+  },
+  {
+   "start": 704.66,
+   "end": 705.66,
+   "text": "Here also, the same thing will happen."
+  },
+  {
+   "start": 705.66,
+   "end": 707.6,
+   "text": "neither n is equal to 3 is the base case,"
+  },
+  {
+   "start": 707.7,
+   "end": 709.74,
+   "text": "nor you know the answer of n is equal to 3."
+  },
+  {
+   "start": 709.82,
+   "end": 710.72,
+   "text": "No, you don't know. It's minus 1."
+  },
+  {
+   "start": 710.82,
+   "end": 711.18,
+   "text": "You don't know."
+  },
+  {
+   "start": 711.68,
+   "end": 712.78,
+   "text": "Same thing will happen here too."
+  },
+  {
+   "start": 712.86,
+   "end": 713.26,
+   "text": "What will happen?"
+  },
+  {
+   "start": 713.72,
+   "end": 714.9,
+   "text": "So, here also you will say,"
+  },
+  {
+   "start": 715.02,
+   "end": 716.12,
+   "text": "okay, now we don't know."
+  },
+  {
+   "start": 716.66,
+   "end": 717.22,
+   "text": "So, we will say,"
+  },
+  {
+   "start": 717.66,
+   "end": 720.22,
+   "text": "dp of 3 is equal to"
+  },
+  {
+   "start": 720.22,
+   "end": 723.68,
+   "text": "fun of 2 plus fun of 1."
+  },
+  {
+   "start": 724.02,
+   "end": 724.42,
+   "text": "Good thing."
+  },
+  {
+   "start": 724.98,
+   "end": 725.66,
+   "text": "Run fun of 2."
+  },
+  {
+   "start": 726.2,
+   "end": 726.68,
+   "text": "Run fun of 2."
+  },
+  {
+   "start": 727.68,
+   "end": 729.3,
+   "text": "Fun n is equal to 2."
+  },
+  {
+   "start": 729.96,
+   "end": 730.78,
+   "text": "Here also same problem."
+  },
+  {
+   "start": 730.9,
+   "end": 732.3,
+   "text": "Neither n is equal to 2 is the base case,"
+  },
+  {
+   "start": 732.6,
+   "end": 734.0,
+   "text": "nor you know the answer of n is equal to 2."
+  },
+  {
+   "start": 734.0,
+   "end": 737.36,
+   "text": "If you know, it doesn't mean that it is in your DPR, the same thing will happen here as well."
+  },
+  {
+   "start": 737.72,
+   "end": 742.86,
+   "text": "So, you will say that dp of 2 is equal to fun of, fun of what?"
+  },
+  {
+   "start": 743.3,
+   "end": 747.78,
+   "text": "n is equal to 1 plus fun of n is equal to 0."
+  },
+  {
+   "start": 748.26,
+   "end": 750.88,
+   "text": "This will happen, this will happen, n is equal to is the same, till now everything is clear,"
+  },
+  {
+   "start": 750.96,
+   "end": 752.04,
+   "text": "till now we have not told you anything new."
+  },
+  {
+   "start": 752.88,
+   "end": 753.16,
+   "text": "Okay."
+  },
+  {
+   "start": 754.1,
+   "end": 755.16,
+   "text": "Now, listen very carefully."
+  },
+  {
+   "start": 756.12,
+   "end": 759.4,
+   "text": "n is equal to 1, n is equal to 1, what is the answer to n is equal to 1?"
+  },
+  {
+   "start": 760.22,
+   "end": 762.54,
+   "text": "Do you know the answer to n is equal to 1 from the beginning?"
+  },
+  {
+   "start": 762.54,
+   "end": 764.84,
+   "text": "Like, yes, you know, what do you know?"
+  },
+  {
+   "start": 764.94,
+   "end": 768.12,
+   "text": "The answer of n is equal to 1, you know that it is 1."
+  },
+  {
+   "start": 768.62,
+   "end": 769.72,
+   "text": "You know that it is 1."
+  },
+  {
+   "start": 770.34,
+   "end": 773.48,
+   "text": "So, in one way, we can write that if we call this,"
+  },
+  {
+   "start": 773.96,
+   "end": 776.38,
+   "text": "its value is same as dp of 1."
+  },
+  {
+   "start": 776.96,
+   "end": 777.2,
+   "text": "Okay?"
+  },
+  {
+   "start": 777.84,
+   "end": 780.22,
+   "text": "Plus, you know the answer of n is equal to 0,"
+  },
+  {
+   "start": 780.3,
+   "end": 781.24,
+   "text": "it is written in your dp array."
+  },
+  {
+   "start": 781.5,
+   "end": 781.9,
+   "text": "What happens?"
+  },
+  {
+   "start": 782.12,
+   "end": 782.46,
+   "text": "It becomes 0."
+  },
+  {
+   "start": 783.28,
+   "end": 785.6,
+   "text": "Plus, dp of 0."
+  },
+  {
+   "start": 785.92,
+   "end": 786.92,
+   "text": "Plus, dp of 0."
+  },
+  {
+   "start": 787.76,
+   "end": 789.64,
+   "text": "Has the work of n is equal to 2 been done?"
+  },
+  {
+   "start": 789.64,
+   "end": 789.96,
+   "text": "Yes."
+  },
+  {
+   "start": 789.96,
+   "end": 794.04,
+   "text": "Now, in your DP array, you are going to fill one thing for the first time."
+  },
+  {
+   "start": 794.18,
+   "end": 794.82,
+   "text": "Which value?"
+  },
+  {
+   "start": 795.36,
+   "end": 796.58,
+   "text": "We are going to fill dp of 2."
+  },
+  {
+   "start": 797.94,
+   "end": 800.62,
+   "text": "What is the value of dp of 2 ultimately?"
+  },
+  {
+   "start": 801.28,
+   "end": 803.56,
+   "text": "dp of 1 plus dp of 0."
+  },
+  {
+   "start": 804.06,
+   "end": 805.58,
+   "text": "Now, what will it do?"
+  },
+  {
+   "start": 805.94,
+   "end": 806.96,
+   "text": "What will it fill in dp of 2?"
+  },
+  {
+   "start": 808.3,
+   "end": 810.3,
+   "text": "1 plus 0 is equal to 1."
+  },
+  {
+   "start": 810.46,
+   "end": 813.94,
+   "text": "Meaning, dp of 2 has changed from 1."
+  },
+  {
+   "start": 815.02,
+   "end": 815.74,
+   "text": "Write this."
+  },
+  {
+   "start": 816.22,
+   "end": 817.38,
+   "text": "What did you fill in the third?"
+  },
+  {
+   "start": 817.86,
+   "end": 819.14,
+   "text": "dp of 2."
+  },
+  {
+   "start": 819.14,
+   "end": 820.74,
+   "text": "How to fill dp of 2?"
+  },
+  {
+   "start": 820.94,
+   "end": 821.98,
+   "text": "What to use to fill?"
+  },
+  {
+   "start": 822.66,
+   "end": 826.02,
+   "text": "dp of 1 plus dp of 0."
+  },
+  {
+   "start": 826.3,
+   "end": 827.28,
+   "text": "This is what we did in recursion."
+  },
+  {
+   "start": 827.78,
+   "end": 830.24,
+   "text": "We are writing here that what does recursion do?"
+  },
+  {
+   "start": 830.52,
+   "end": 832.04,
+   "text": "What is recursion doing in reality?"
+  },
+  {
+   "start": 833.38,
+   "end": 835.06,
+   "text": "Recursion, what is it doing?"
+  },
+  {
+   "start": 835.5,
+   "end": 836.82,
+   "text": "How is it filling dp of r?"
+  },
+  {
+   "start": 836.88,
+   "end": 838.72,
+   "text": "It must be doing something by which dp of r is filling."
+  },
+  {
+   "start": 839.1,
+   "end": 839.96,
+   "text": "Recursion is doing this."
+  },
+  {
+   "start": 840.3,
+   "end": 840.84,
+   "text": "Good thing."
+  },
+  {
+   "start": 841.02,
+   "end": 841.3,
+   "text": "Come back."
+  },
+  {
+   "start": 841.78,
+   "end": 843.3,
+   "text": "n is equal to 2 is over."
+  },
+  {
+   "start": 843.46,
+   "end": 844.6,
+   "text": "n is equal to 2 is over."
+  },
+  {
+   "start": 845.42,
+   "end": 846.52,
+   "text": "n is equal to 3."
+  },
+  {
+   "start": 846.86,
+   "end": 847.26,
+   "text": "Come back."
+  },
+  {
+   "start": 847.64,
+   "end": 848.12,
+   "text": "Now see."
+  },
+  {
+   "start": 848.12,
+   "end": 851.12,
+   "text": "fun 2 se kuch na kuch answer aya hoga"
+  },
+  {
+   "start": 851.12,
+   "end": 853.56,
+   "text": "fun 2 se kuch na kuch to answer aya hoga"
+  },
+  {
+   "start": 853.56,
+   "end": 855.18,
+   "text": "fun 2 se kuch na kuch answer aya hoga"
+  },
+  {
+   "start": 855.18,
+   "end": 855.96,
+   "text": "jo ki"
+  },
+  {
+   "start": 855.96,
+   "end": 858.06,
+   "text": "ab dp of 2 me bhi likha ja chuka hai"
+  },
+  {
+   "start": 858.06,
+   "end": 859.38,
+   "text": "isko ham bol sakte hai ki"
+  },
+  {
+   "start": 859.38,
+   "end": 860.66,
+   "text": "ye dp of 2 ban chuka hai"
+  },
+  {
+   "start": 860.66,
+   "end": 861.06,
+   "text": "plus"
+  },
+  {
+   "start": 861.06,
+   "end": 862.46,
+   "text": "fun of 1"
+  },
+  {
+   "start": 862.46,
+   "end": 863.86,
+   "text": "fun of 1 again kya hai"
+  },
+  {
+   "start": 863.86,
+   "end": 864.64,
+   "text": "base case"
+  },
+  {
+   "start": 864.64,
+   "end": 865.7,
+   "text": "fun of 1 base case hai"
+  },
+  {
+   "start": 865.7,
+   "end": 866.96,
+   "text": "fun of 1 ka answer abko malum hai"
+  },
+  {
+   "start": 866.96,
+   "end": 867.3,
+   "text": "kya hai"
+  },
+  {
+   "start": 867.3,
+   "end": 868.2,
+   "text": "dp of 1"
+  },
+  {
+   "start": 868.2,
+   "end": 869.2,
+   "text": "isko likh dijiye"
+  },
+  {
+   "start": 869.2,
+   "end": 870.56,
+   "text": "dp of 1"
+  },
+  {
+   "start": 870.56,
+   "end": 871.54,
+   "text": "ab dekhiye"
+  },
+  {
+   "start": 871.54,
+   "end": 872.16,
+   "text": "ab dekhiye"
+  },
+  {
+   "start": 872.16,
+   "end": 874.14,
+   "text": "fun of n is equal to 3 me bhi lo khade hai"
+  },
+  {
+   "start": 874.14,
+   "end": 876.6,
+   "text": "kaunsa dp ka slot bharaja raha hai"
+  },
+  {
+   "start": 876.6,
+   "end": 878.5,
+   "text": "dp of 3 bharaja raha hai"
+  },
+  {
+   "start": 878.5,
+   "end": 880.18,
+   "text": "kis se bharaja raha hai"
+  },
+  {
+   "start": 880.18,
+   "end": 882.7,
+   "text": "dp of 2 plus dp of 1"
+  },
+  {
+   "start": 882.7,
+   "end": 884.34,
+   "text": "matlab ki answer iska aega 2"
+  },
+  {
+   "start": 884.34,
+   "end": 886.44,
+   "text": "yaha pe aake likh dega 2"
+  },
+  {
+   "start": 886.44,
+   "end": 887.74,
+   "text": "again likhye"
+  },
+  {
+   "start": 887.74,
+   "end": 889.68,
+   "text": "chauthhe number pe kya bharagaya"
+  },
+  {
+   "start": 889.68,
+   "end": 892.0,
+   "text": "dp of 3 is equal to"
+  },
+  {
+   "start": 892.0,
+   "end": 894.66,
+   "text": "kaise bharagaya kis value use karke bharagaya bhai"
+  },
+  {
+   "start": 894.66,
+   "end": 896.16,
+   "text": "dp of 2"
+  },
+  {
+   "start": 896.16,
+   "end": 898.0,
+   "text": "plus dp of 1"
+  },
+  {
+   "start": 898.0,
+   "end": 900.4,
+   "text": "yes yes yes dp of 1 very good"
+  },
+  {
+   "start": 900.4,
+   "end": 901.92,
+   "text": "n is equal to 3 ka bhi"
+  },
+  {
+   "start": 901.92,
+   "end": 903.0,
+   "text": "kaam hogaya tamam"
+  },
+  {
+   "start": 903.0,
+   "end": 905.4,
+   "text": "n is equal to 4 pe wapas aayiye"
+  },
+  {
+   "start": 905.4,
+   "end": 909.46,
+   "text": "fun of 3 is complete and you have filled the answer of fun of 3"
+  },
+  {
+   "start": 909.46,
+   "end": 911.08,
+   "text": "write this as dp of 3"
+  },
+  {
+   "start": 911.08,
+   "end": 912.6,
+   "text": "its value will remain the same dp of 3"
+  },
+  {
+   "start": 912.6,
+   "end": 915.34,
+   "text": "plus fun of 2 is called again"
+  },
+  {
+   "start": 915.34,
+   "end": 916.36,
+   "text": "fun of 2 is called again"
+  },
+  {
+   "start": 916.36,
+   "end": 918.48,
+   "text": "but when fun of 2 is called"
+  },
+  {
+   "start": 918.48,
+   "end": 920.96,
+   "text": "then the answer of fun of 2 is already present in dp"
+  },
+  {
+   "start": 920.96,
+   "end": 923.98,
+   "text": "so no more recursion will take place"
+  },
+  {
+   "start": 923.98,
+   "end": 925.86,
+   "text": "dp of 2 will be returned directly"
+  },
+  {
+   "start": 925.86,
+   "end": 928.54,
+   "text": "write this as dp of 2"
+  },
+  {
+   "start": 928.54,
+   "end": 929.56,
+   "text": "now see"
+  },
+  {
+   "start": 929.56,
+   "end": 932.88,
+   "text": "on the 5th number which dp slot are you filling"
+  },
+  {
+   "start": 932.88,
+   "end": 934.02,
+   "text": "dp of 4"
+  },
+  {
+   "start": 934.02,
+   "end": 937.38,
+   "text": "Kis value se dp of 3 plus dp of 2"
+  },
+  {
+   "start": 937.38,
+   "end": 938.08,
+   "text": "Matlab ki"
+  },
+  {
+   "start": 938.08,
+   "end": 939.56,
+   "text": "Yaha pe kya answer aajayega"
+  },
+  {
+   "start": 939.56,
+   "end": 940.64,
+   "text": "3 aajayega"
+  },
+  {
+   "start": 940.64,
+   "end": 942.78,
+   "text": "Yaha pe answer aajayega 3"
+  },
+  {
+   "start": 942.78,
+   "end": 945.56,
+   "text": "Isko bhi apne list me likh lijiye"
+  },
+  {
+   "start": 945.56,
+   "end": 948.44,
+   "text": "Last number pe dp of 4 bhara gaya"
+  },
+  {
+   "start": 948.44,
+   "end": 949.88,
+   "text": "Aur iski value kya hui"
+  },
+  {
+   "start": 949.88,
+   "end": 952.5,
+   "text": "3 plus dp of 2"
+  },
+  {
+   "start": 952.5,
+   "end": 953.04,
+   "text": "Yes"
+  },
+  {
+   "start": 953.04,
+   "end": 953.5,
+   "text": "Yes"
+  },
+  {
+   "start": 953.5,
+   "end": 953.96,
+   "text": "Yes"
+  },
+  {
+   "start": 953.96,
+   "end": 955.84,
+   "text": "Ye karne ke baad"
+  },
+  {
+   "start": 955.84,
+   "end": 957.28,
+   "text": "Sara cheezain khatam"
+  },
+  {
+   "start": 957.28,
+   "end": 958.7,
+   "text": "Aur aapka recursion end ho jayega"
+  },
+  {
+   "start": 958.7,
+   "end": 959.8,
+   "text": "Aapka recursion kya ho jayega"
+  },
+  {
+   "start": 959.8,
+   "end": 960.64,
+   "text": "End ho jayega"
+  },
+  {
+   "start": 960.64,
+   "end": 961.84,
+   "text": "Aapka final answer"
+  },
+  {
+   "start": 961.84,
+   "end": 963.02,
+   "text": "Kahan pe aapko mila hai"
+  },
+  {
+   "start": 963.02,
+   "end": 968.6,
+   "text": "Your final answer is this, dp of 4, which is 3."
+  },
+  {
+   "start": 968.76,
+   "end": 970.26,
+   "text": "So, what will be your answer? 3."
+  },
+  {
+   "start": 970.86,
+   "end": 971.94,
+   "text": "Now, look very carefully."
+  },
+  {
+   "start": 972.12,
+   "end": 973.1,
+   "text": "Now, you have written this."
+  },
+  {
+   "start": 973.28,
+   "end": 974.32,
+   "text": "It is not necessary to write this every time."
+  },
+  {
+   "start": 974.38,
+   "end": 975.96,
+   "text": "We will think about how to explain it to you."
+  },
+  {
+   "start": 976.18,
+   "end": 977.72,
+   "text": "We can think about it even without writing it."
+  },
+  {
+   "start": 978.04,
+   "end": 978.8,
+   "text": "You guys write it once."
+  },
+  {
+   "start": 979.82,
+   "end": 981.76,
+   "text": "In this order, what is the question?"
+  },
+  {
+   "start": 981.88,
+   "end": 982.92,
+   "text": "What is the recursion doing?"
+  },
+  {
+   "start": 983.48,
+   "end": 985.08,
+   "text": "Recursion is doing exactly this."
+  },
+  {
+   "start": 986.26,
+   "end": 990.2,
+   "text": "That is why we said, if you understand what the recursion is doing,"
+  },
+  {
+   "start": 990.2,
+   "end": 993.2,
+   "text": "then it is very easy to convert it into iterative."
+  },
+  {
+   "start": 993.2,
+   "end": 994.2,
+   "text": "What is recursion doing?"
+  },
+  {
+   "start": 994.2,
+   "end": 996.2,
+   "text": "See, what is recursion doing first?"
+  },
+  {
+   "start": 996.2,
+   "end": 1000.2,
+   "text": "Recursion is making a DP array first."
+  },
+  {
+   "start": 1000.2,
+   "end": 1002.2,
+   "text": "DP array of length n plus 1."
+  },
+  {
+   "start": 1002.2,
+   "end": 1005.2,
+   "text": "Assume n plus 1 because for n is equal to 4,"
+  },
+  {
+   "start": 1005.2,
+   "end": 1007.2,
+   "text": "you need 0, 1, 2, 3, 4 type of index."
+  },
+  {
+   "start": 1007.2,
+   "end": 1009.2,
+   "text": "So assume it is of 5 size."
+  },
+  {
+   "start": 1009.2,
+   "end": 1013.2,
+   "text": "After that, what is recursion doing first?"
+  },
+  {
+   "start": 1013.2,
+   "end": 1015.2,
+   "text": "It is assigning 0 to DP 0."
+  },
+  {
+   "start": 1015.2,
+   "end": 1016.2,
+   "text": "Can you do this?"
+  },
+  {
+   "start": 1016.2,
+   "end": 1017.2,
+   "text": "Absolutely."
+  },
+  {
+   "start": 1017.2,
+   "end": 1018.2,
+   "text": "DP of 0 is equal to 0."
+  },
+  {
+   "start": 1018.2,
+   "end": 1020.24,
+   "text": "Here it is semicolon, this is C++, okay?"
+  },
+  {
+   "start": 1020.82,
+   "end": 1021.8,
+   "text": "What is the second work doing?"
+  },
+  {
+   "start": 1022.6,
+   "end": 1024.02,
+   "text": "DP1 is equal to 1."
+  },
+  {
+   "start": 1024.3,
+   "end": 1025.72,
+   "text": "Very good, very good, done."
+  },
+  {
+   "start": 1026.4,
+   "end": 1027.44,
+   "text": "What is the third work doing?"
+  },
+  {
+   "start": 1028.34,
+   "end": 1030.12,
+   "text": "DP2 is equal to what?"
+  },
+  {
+   "start": 1030.52,
+   "end": 1031.92,
+   "text": "DP1 plus DP0."
+  },
+  {
+   "start": 1032.36,
+   "end": 1033.44,
+   "text": "Meaning? Meaning?"
+  },
+  {
+   "start": 1034.08,
+   "end": 1036.34,
+   "text": "DP2 is equal to DP1 plus DP0."
+  },
+  {
+   "start": 1036.68,
+   "end": 1037.48,
+   "text": "What is the next work doing?"
+  },
+  {
+   "start": 1037.86,
+   "end": 1040.24,
+   "text": "DP3 is equal to DP2 plus DP1."
+  },
+  {
+   "start": 1040.62,
+   "end": 1042.52,
+   "text": "Is a pattern noticing you?"
+  },
+  {
+   "start": 1042.52,
+   "end": 1044.52,
+   "text": "Is a pattern noticing you?"
+  },
+  {
+   "start": 1044.68,
+   "end": 1045.68,
+   "text": "Is it noticing us?"
+  },
+  {
+   "start": 1045.84,
+   "end": 1047.14,
+   "text": "Which pattern is it noticing us?"
+  },
+  {
+   "start": 1047.14,
+   "end": 1049.5,
+   "text": "if your n is equal to 4"
+  },
+  {
+   "start": 1049.5,
+   "end": 1051.52,
+   "text": "if n is equal to 4"
+  },
+  {
+   "start": 1051.52,
+   "end": 1053.8,
+   "text": "then do you know what recursion is doing"
+  },
+  {
+   "start": 1053.8,
+   "end": 1055.28,
+   "text": "and how you can do this"
+  },
+  {
+   "start": 1055.28,
+   "end": 1056.84,
+   "text": "recursion is doing this"
+  },
+  {
+   "start": 1056.84,
+   "end": 1058.94,
+   "text": "for i is equal to 2"
+  },
+  {
+   "start": 1058.94,
+   "end": 1060.94,
+   "text": "i less than is equal to 4"
+  },
+  {
+   "start": 1060.94,
+   "end": 1062.02,
+   "text": "i plus plus"
+  },
+  {
+   "start": 1062.02,
+   "end": 1063.76,
+   "text": "and every i"
+  },
+  {
+   "start": 1063.76,
+   "end": 1066.52,
+   "text": "dp of i is equal to"
+  },
+  {
+   "start": 1066.52,
+   "end": 1068.92,
+   "text": "dp of 2 is equal to what"
+  },
+  {
+   "start": 1068.92,
+   "end": 1071.26,
+   "text": "dp of 1 plus dp of 0"
+  },
+  {
+   "start": 1071.26,
+   "end": 1071.74,
+   "text": "means"
+  },
+  {
+   "start": 1071.74,
+   "end": 1074.38,
+   "text": "dp of i is equal to"
+  },
+  {
+   "start": 1074.38,
+   "end": 1076.92,
+   "text": "dp of i minus 1"
+  },
+  {
+   "start": 1076.92,
+   "end": 1079.38,
+   "text": "plus dp of i minus 2."
+  },
+  {
+   "start": 1079.56,
+   "end": 1080.28,
+   "text": "Yes, yes."
+  },
+  {
+   "start": 1080.72,
+   "end": 1082.54,
+   "text": "Exactly the same thing."
+  },
+  {
+   "start": 1082.88,
+   "end": 1084.52,
+   "text": "Exactly the same thing"
+  },
+  {
+   "start": 1084.52,
+   "end": 1087.16,
+   "text": "your recursion is doing line by line."
+  },
+  {
+   "start": 1087.42,
+   "end": 1089.38,
+   "text": "We have proved what recursion is doing."
+  },
+  {
+   "start": 1089.88,
+   "end": 1092.04,
+   "text": "Recursion is doing exactly the same thing."
+  },
+  {
+   "start": 1092.74,
+   "end": 1094.36,
+   "text": "Once you have clear"
+  },
+  {
+   "start": 1094.36,
+   "end": 1096.02,
+   "text": "what recursion is doing,"
+  },
+  {
+   "start": 1096.92,
+   "end": 1097.9,
+   "text": "for that, think of loop."
+  },
+  {
+   "start": 1098.44,
+   "end": 1099.2,
+   "text": "It is a game of children."
+  },
+  {
+   "start": 1099.64,
+   "end": 1100.5,
+   "text": "Recursion is doing the same thing."
+  },
+  {
+   "start": 1100.92,
+   "end": 1102.36,
+   "text": "What did recursion fill first?"
+  },
+  {
+   "start": 1102.72,
+   "end": 1104.46,
+   "text": "dp of 0 filled by itself 0."
+  },
+  {
+   "start": 1104.62,
+   "end": 1105.16,
+   "text": "You also fill it."
+  },
+  {
+   "start": 1105.16,
+   "end": 1113.16,
+   "text": "dp of 1, 1 filled, you also fill, after that this game started playing, dp of 2 became dp of 1 plus dp of 0,"
+  },
+  {
+   "start": 1113.16,
+   "end": 1121.16,
+   "text": "means dp of i is equal to dp of i minus 1 plus dp of i minus 2, do this work till 4, you will get dp of 4,"
+  },
+  {
+   "start": 1121.16,
+   "end": 1128.16,
+   "text": "in the last return dp of 4, that's it, the game is over, this work is doing recursion, you also can do this work,"
+  },
+  {
+   "start": 1128.16,
+   "end": 1133.16,
+   "text": "what is the need of recursion for this, whatever you are doing, do it, write it like this, write it like this,"
+  },
+  {
+   "start": 1133.16,
+   "end": 1153.62,
+   "text": "What do you have to write? Look. Write this. What will you get in the lead code? You will only get n. Int lead code. What will you get? Int n. Okay. What is your work? First of all, a vector of int dp. How much size? n plus 1 size. Now what did recursion do in the beginning?"
+  },
+  {
+   "start": 1153.62,
+   "end": 1157.28,
+   "text": "dp of 0 is equal to 0"
+  },
+  {
+   "start": 1157.28,
+   "end": 1158.6,
+   "text": "dp of"
+  },
+  {
+   "start": 1158.6,
+   "end": 1160.26,
+   "text": "yes, do one more thing"
+  },
+  {
+   "start": 1160.26,
+   "end": 1160.92,
+   "text": "that here"
+  },
+  {
+   "start": 1160.92,
+   "end": 1162.86,
+   "text": "write that if"
+  },
+  {
+   "start": 1162.86,
+   "end": 1164.54,
+   "text": "n equal equal to 0"
+  },
+  {
+   "start": 1164.54,
+   "end": 1166.46,
+   "text": "or n equal equal to 1"
+  },
+  {
+   "start": 1166.46,
+   "end": 1167.42,
+   "text": "return n"
+  },
+  {
+   "start": 1167.42,
+   "end": 1168.02,
+   "text": "because it is possible"
+  },
+  {
+   "start": 1168.02,
+   "end": 1168.62,
+   "text": "that n 0 1"
+  },
+  {
+   "start": 1168.62,
+   "end": 1169.98,
+   "text": "so do it for that"
+  },
+  {
+   "start": 1169.98,
+   "end": 1170.98,
+   "text": "return n"
+  },
+  {
+   "start": 1170.98,
+   "end": 1171.48,
+   "text": "this is done"
+  },
+  {
+   "start": 1171.48,
+   "end": 1172.14,
+   "text": "one line's work"
+  },
+  {
+   "start": 1172.14,
+   "end": 1172.46,
+   "text": "now"
+  },
+  {
+   "start": 1172.46,
+   "end": 1174.6,
+   "text": "dp 0 is equal to 0"
+  },
+  {
+   "start": 1174.6,
+   "end": 1175.44,
+   "text": "recursion was also done"
+  },
+  {
+   "start": 1175.44,
+   "end": 1177.1,
+   "text": "dp 1 is equal to 1"
+  },
+  {
+   "start": 1177.1,
+   "end": 1178.04,
+   "text": "recursion was also done"
+  },
+  {
+   "start": 1178.04,
+   "end": 1179.54,
+   "text": "now dp what was done"
+  },
+  {
+   "start": 1179.54,
+   "end": 1180.08,
+   "text": "brother"
+  },
+  {
+   "start": 1180.08,
+   "end": 1181.06,
+   "text": "for"
+  },
+  {
+   "start": 1181.06,
+   "end": 1182.48,
+   "text": "int"
+  },
+  {
+   "start": 1182.48,
+   "end": 1184.38,
+   "text": "i is equal to 2"
+  },
+  {
+   "start": 1184.38,
+   "end": 1185.56,
+   "text": "0 1 is done"
+  },
+  {
+   "start": 1185.56,
+   "end": 1185.84,
+   "text": "from 2"
+  },
+  {
+   "start": 1185.84,
+   "end": 1187.18,
+   "text": "i less than"
+  },
+  {
+   "start": 1187.18,
+   "end": 1187.96,
+   "text": "equal to n"
+  },
+  {
+   "start": 1187.96,
+   "end": 1189.36,
+   "text": "i plus plus"
+  },
+  {
+   "start": 1189.36,
+   "end": 1190.0,
+   "text": "and"
+  },
+  {
+   "start": 1190.0,
+   "end": 1190.86,
+   "text": "what did you do"
+  },
+  {
+   "start": 1190.86,
+   "end": 1192.52,
+   "text": "dp of i"
+  },
+  {
+   "start": 1192.52,
+   "end": 1193.54,
+   "text": "is equal to"
+  },
+  {
+   "start": 1193.54,
+   "end": 1194.78,
+   "text": "dp of i"
+  },
+  {
+   "start": 1194.78,
+   "end": 1195.46,
+   "text": "minus 1"
+  },
+  {
+   "start": 1195.46,
+   "end": 1196.34,
+   "text": "plus"
+  },
+  {
+   "start": 1196.34,
+   "end": 1197.54,
+   "text": "dp of i"
+  },
+  {
+   "start": 1197.54,
+   "end": 1198.16,
+   "text": "minus 2"
+  },
+  {
+   "start": 1198.16,
+   "end": 1199.26,
+   "text": "finished"
+  },
+  {
+   "start": 1199.26,
+   "end": 1200.42,
+   "text": "where was the answer"
+  },
+  {
+   "start": 1200.42,
+   "end": 1201.04,
+   "text": "of recursion stored"
+  },
+  {
+   "start": 1201.04,
+   "end": 1202.1,
+   "text": "in dp of 4"
+  },
+  {
+   "start": 1202.1,
+   "end": 1202.66,
+   "text": "means"
+  },
+  {
+   "start": 1202.66,
+   "end": 1203.8,
+   "text": "what do you have to return"
+  },
+  {
+   "start": 1203.8,
+   "end": 1204.82,
+   "text": "what do you have to do"
+  },
+  {
+   "start": 1204.82,
+   "end": 1205.86,
+   "text": "dp of"
+  },
+  {
+   "start": 1205.86,
+   "end": 1206.72,
+   "text": "n"
+  },
+  {
+   "start": 1206.72,
+   "end": 1207.74,
+   "text": "take this"
+  },
+  {
+   "start": 1207.74,
+   "end": 1208.88,
+   "text": "this code"
+  },
+  {
+   "start": 1208.88,
+   "end": 1210.26,
+   "text": "what is said in english"
+  },
+  {
+   "start": 1210.26,
+   "end": 1212.2,
+   "text": "tabulation"
+  },
+  {
+   "start": 1212.2,
+   "end": 1230.76,
+   "text": "Tabulation. Why is this code called tabulation? Because the work that Recursion was doing, you did that work yourself without Recursion, with the help of a simple loop. How to write this loop? How did you understand? When you see Recursion and ask Recursion, what are you doing? What does it mean to do?"
+  },
+  {
+   "start": 1230.76,
+   "end": 1237.76,
+   "text": "In which order are you filling the dp array and what are you using to fill the dp array?"
+  },
+  {
+   "start": 1237.76,
+   "end": 1244.76,
+   "text": "If you get to know that once you click on it, you write it here, then it is a very basic problem to change it in the loop."
+  },
+  {
+   "start": 1244.76,
+   "end": 1251.76,
+   "text": "This will be told to you by a 10 class student. What is called this transformation? Tabulation."
+  },
+  {
+   "start": 1251.76,
+   "end": 1254.76,
+   "text": "It is not complete yet, there is one more thing left in it, he is fine, he will tell you now."
+  },
+  {
+   "start": 1254.76,
+   "end": 1259.76,
+   "text": "But you will also have a doubt in your mind that when tabulation was so easy to do,"
+  },
+  {
+   "start": 1259.76,
+   "end": 1262.76,
+   "text": "So, why did you study recursive from day 1?"
+  },
+  {
+   "start": 1262.76,
+   "end": 1266.76,
+   "text": "If we had not taught you recursive, if you had not understood memoization,"
+  },
+  {
+   "start": 1266.76,
+   "end": 1268.76,
+   "text": "if you had not understood this dry run,"
+  },
+  {
+   "start": 1268.76,
+   "end": 1269.76,
+   "text": "then how would you have written this?"
+  },
+  {
+   "start": 1269.76,
+   "end": 1270.76,
+   "text": "How would you have written this?"
+  },
+  {
+   "start": 1270.76,
+   "end": 1271.76,
+   "text": "How would you have written this?"
+  },
+  {
+   "start": 1271.76,
+   "end": 1272.76,
+   "text": "How would you have managed this?"
+  },
+  {
+   "start": 1272.76,
+   "end": 1275.76,
+   "text": "In FIMO Naki, you would have thought that it would have been very easy to teach this only."
+  },
+  {
+   "start": 1275.76,
+   "end": 1279.76,
+   "text": "But in complex problem, until you understand recursion,"
+  },
+  {
+   "start": 1279.76,
+   "end": 1280.76,
+   "text": "you cannot write the tabulation."
+  },
+  {
+   "start": 1280.76,
+   "end": 1285.76,
+   "text": "Because tabulation is based on the fact that you are understanding recursion,"
+  },
+  {
+   "start": 1285.76,
+   "end": 1290.76,
+   "text": "You will not be able to write the correct tabulation until you get to know the correct tabulation."
+  },
+  {
+   "start": 1290.76,
+   "end": 1295.76,
+   "text": "Whatever is reminding you to do this in the tabulation is wrong."
+  },
+  {
+   "start": 1295.76,
+   "end": 1296.76,
+   "text": "Recursion is the base."
+  },
+  {
+   "start": 1296.76,
+   "end": 1299.76,
+   "text": "When you will not be able to understand the recursion, you will not be able to do anything in the tabulation."
+  },
+  {
+   "start": 1299.76,
+   "end": 1301.76,
+   "text": "This is what we are telling you frankly."
+  },
+  {
+   "start": 1301.76,
+   "end": 1305.76,
+   "text": "Now you must be getting a picture that this happened in the recursion and this happened in the tabulation."
+  },
+  {
+   "start": 1305.76,
+   "end": 1308.76,
+   "text": "There is one more improvement in this which should also be done in the tabulation."
+  },
+  {
+   "start": 1308.76,
+   "end": 1309.76,
+   "text": "We will tell you that now."
+  },
+  {
+   "start": 1309.76,
+   "end": 1312.76,
+   "text": "But we hope that you have understood this whole process."
+  },
+  {
+   "start": 1312.76,
+   "end": 1315.76,
+   "text": "That how recursion is analyzed."
+  },
+  {
+   "start": 1315.76,
+   "end": 1319.76,
+   "text": "An order is shown in which order the DPRA is filling."
+  },
+  {
+   "start": 1319.76,
+   "end": 1321.76,
+   "text": "What is being used to fill the DPRA?"
+  },
+  {
+   "start": 1321.76,
+   "end": 1323.76,
+   "text": "There must be something that is being used."
+  },
+  {
+   "start": 1323.76,
+   "end": 1326.76,
+   "text": "From that, take out a pattern and write it in the form of a loop."
+  },
+  {
+   "start": 1326.76,
+   "end": 1327.76,
+   "text": "This is called tabulation."
+  },
+  {
+   "start": 1327.76,
+   "end": 1329.76,
+   "text": "Come forward, we will tell you one more interesting thing."
+  },
+  {
+   "start": 1329.76,
+   "end": 1331.76,
+   "text": "Now listen to one more thing."
+  },
+  {
+   "start": 1331.76,
+   "end": 1332.76,
+   "text": "This is very important."
+  },
+  {
+   "start": 1332.76,
+   "end": 1334.76,
+   "text": "This is called space optimization."
+  },
+  {
+   "start": 1334.76,
+   "end": 1336.76,
+   "text": "We have seen very few people studying this."
+  },
+  {
+   "start": 1336.76,
+   "end": 1340.76,
+   "text": "We learned this from Stryver ji, I mean we are honestly saying that we learned this from him."
+  },
+  {
+   "start": 1340.76,
+   "end": 1343.76,
+   "text": "Very few people tell this thing, but this is a very important thing."
+  },
+  {
+   "start": 1343.76,
+   "end": 1346.76,
+   "text": "See, this was your iterative approach of tabulation."
+  },
+  {
+   "start": 1346.76,
+   "end": 1350.76,
+   "text": "You will run it, it will be submitted, there is no problem, it will be submitted comfortably."
+  },
+  {
+   "start": 1350.76,
+   "end": 1354.76,
+   "text": "But there is a small problem in this, what is the problem, we will show you now."
+  },
+  {
+   "start": 1354.76,
+   "end": 1356.76,
+   "text": "What are you doing, we will tell you."
+  },
+  {
+   "start": 1356.76,
+   "end": 1359.76,
+   "text": "See, you make a dp array of n plus 1 size."
+  },
+  {
+   "start": 1359.76,
+   "end": 1364.76,
+   "text": "After that you write dp 0 as 0 and dp 1 as 1, it is good, do it."
+  },
+  {
+   "start": 1364.76,
+   "end": 1369.8,
+   "text": "After that, you run the loop from 2 to n, and for dPi, dPi-1, whatever the value is,"
+  },
+  {
+   "start": 1369.8,
+   "end": 1371.96,
+   "text": "you are adding dPi-2 and giving your answer."
+  },
+  {
+   "start": 1371.96,
+   "end": 1373.7,
+   "text": "In the end, what are you returning?"
+  },
+  {
+   "start": 1373.7,
+   "end": 1375.08,
+   "text": "You are returning dPn."
+  },
+  {
+   "start": 1375.08,
+   "end": 1376.1,
+   "text": "Okay."
+  },
+  {
+   "start": 1376.1,
+   "end": 1378.26,
+   "text": "Let me tell you something."
+  },
+  {
+   "start": 1378.26,
+   "end": 1381.14,
+   "text": "Suppose n is equal to 5."
+  },
+  {
+   "start": 1381.14,
+   "end": 1382.86,
+   "text": "n is equal to 5, okay?"
+  },
+  {
+   "start": 1382.86,
+   "end": 1384.38,
+   "text": "You will make an array like this."
+  },
+  {
+   "start": 1384.38,
+   "end": 1385.94,
+   "text": "5 plus 1 is a type of array."
+  },
+  {
+   "start": 1385.94,
+   "end": 1391.1,
+   "text": "1, 2, 3, 0, 1, 2, 3, 4, and 5."
+  },
+  {
+   "start": 1391.1,
+   "end": 1393.08,
+   "text": "You have made an array of this size."
+  },
+  {
+   "start": 1393.08,
+   "end": 1397.78,
+   "text": "Now let's see, first of all you write 0 and 1 here, you have used dp of 0 and 1."
+  },
+  {
+   "start": 1398.44,
+   "end": 1400.84,
+   "text": "Tell me one thing, what do you need to get dp of 2?"
+  },
+  {
+   "start": 1402.02,
+   "end": 1407.36,
+   "text": "Now if you get dp of 2, 3, 4, 5, then what do you need to get dp of 2 according to this formula?"
+  },
+  {
+   "start": 1408.26,
+   "end": 1416.7,
+   "text": "dp of i minus 1 plus i minus 2, means you need dp of 0 and dp of 1 to get dp of 2."
+  },
+  {
+   "start": 1417.58,
+   "end": 1419.36,
+   "text": "Once dp of 2 is taken, then you will go to 3."
+  },
+  {
+   "start": 1420.04,
+   "end": 1422.44,
+   "text": "Now what do you need to get dp of 3?"
+  },
+  {
+   "start": 1423.08,
+   "end": 1427.78,
+   "text": "You need dp of 2 and dp of 1."
+  },
+  {
+   "start": 1428.62,
+   "end": 1429.02,
+   "text": "This is it, right?"
+  },
+  {
+   "start": 1429.14,
+   "end": 1429.92,
+   "text": "This is what happens, right?"
+  },
+  {
+   "start": 1429.92,
+   "end": 1430.08,
+   "text": "Okay."
+  },
+  {
+   "start": 1430.84,
+   "end": 1432.18,
+   "text": "And next, you will also get dp of 4."
+  },
+  {
+   "start": 1432.72,
+   "end": 1434.86,
+   "text": "To get dp of 4, you need two things."
+  },
+  {
+   "start": 1435.64,
+   "end": 1439.3,
+   "text": "You will need dp of 3 and you will also need dp of 2."
+  },
+  {
+   "start": 1439.94,
+   "end": 1440.18,
+   "text": "Okay."
+  },
+  {
+   "start": 1440.96,
+   "end": 1444.34,
+   "text": "dp of 5, which is your final answer, what will you need for that?"
+  },
+  {
+   "start": 1444.34,
+   "end": 1448.0,
+   "text": "For that, you will need dp of 4 and dp of 3."
+  },
+  {
+   "start": 1448.74,
+   "end": 1449.3,
+   "text": "This is it."
+  },
+  {
+   "start": 1449.34,
+   "end": 1451.84,
+   "text": "And in the last, you will get dp of 5 as your answer."
+  },
+  {
+   "start": 1451.84,
+   "end": 1478.6,
+   "text": "This is what you are doing in the loop, you are still not getting it right, now tell us one thing, to get dp of 2, dp of 0 and dp of 1 was needed, okay, okay, good thing, to get dp of 3, dp of 2 and dp of 1 is needed, is dp of 3 needed to get dp of 0, no, no, once dp of 2 is done, its value comes, x comes, assume anything,"
+  },
+  {
+   "start": 1478.6,
+   "end": 1487.6,
+   "text": "After that, when you come to dp of 3, you don't need dp of 0, you just need dp of 2 and dp of 1."
+  },
+  {
+   "start": 1487.6,
+   "end": 1492.6,
+   "text": "For dp of 4, do you need dp of 1? No."
+  },
+  {
+   "start": 1492.6,
+   "end": 1496.6,
+   "text": "For dp of 4, do you need dp of 0? No."
+  },
+  {
+   "start": 1496.6,
+   "end": 1503.6,
+   "text": "For dp of 4, you only need dp of 3, which you have just taken out, and dp of 2, which you took out one step earlier."
+  },
+  {
+   "start": 1503.6,
+   "end": 1510.6,
+   "text": "For dp of 5, you only needed two things, which you took out now and which you took out before this."
+  },
+  {
+   "start": 1510.6,
+   "end": 1515.6,
+   "text": "For dp of 5, you don't need dp of 0, dp of 1, dp of 2."
+  },
+  {
+   "start": 1515.6,
+   "end": 1523.6,
+   "text": "So tell me one thing, when you need only two old values to take out one value, how many?"
+  },
+  {
+   "start": 1523.6,
+   "end": 1525.6,
+   "text": "Only two old values are required."
+  },
+  {
+   "start": 1525.6,
+   "end": 1528.3,
+   "text": "means if you are taking out dp of 5"
+  },
+  {
+   "start": 1528.3,
+   "end": 1530.28,
+   "text": "what is the value you need?"
+  },
+  {
+   "start": 1531.04,
+   "end": 1533.14,
+   "text": "only dp of 4 and dp of 3"
+  },
+  {
+   "start": 1533.14,
+   "end": 1534.84,
+   "text": "before that, whatever has come"
+  },
+  {
+   "start": 1534.84,
+   "end": 1536.12,
+   "text": "it does not matter"
+  },
+  {
+   "start": 1536.12,
+   "end": 1537.76,
+   "text": "you will not understand this small input"
+  },
+  {
+   "start": 1537.76,
+   "end": 1539.88,
+   "text": "but imagine that n is 100"
+  },
+  {
+   "start": 1539.88,
+   "end": 1542.56,
+   "text": "so you see that n is equal to 100"
+  },
+  {
+   "start": 1542.56,
+   "end": 1544.6,
+   "text": "to take out dp of 100"
+  },
+  {
+   "start": 1544.6,
+   "end": 1546.7,
+   "text": "you will need only"
+  },
+  {
+   "start": 1546.7,
+   "end": 1548.3,
+   "text": "dp of 99"
+  },
+  {
+   "start": 1548.3,
+   "end": 1550.04,
+   "text": "and dp of 98"
+  },
+  {
+   "start": 1550.04,
+   "end": 1552.98,
+   "text": "before that, what is there in 0 to 97"
+  },
+  {
+   "start": 1552.98,
+   "end": 1554.12,
+   "text": "in the array"
+  },
+  {
+   "start": 1554.12,
+   "end": 1564.12,
+   "text": "So, when you don't care about the last value, when you don't need the entire array, why are we storing the entire array?"
+  },
+  {
+   "start": 1564.12,
+   "end": 1566.12,
+   "text": "Why are we storing the entire array?"
+  },
+  {
+   "start": 1566.12,
+   "end": 1571.12,
+   "text": "Every time, you only need the value of the last value after the last value."
+  },
+  {
+   "start": 1571.12,
+   "end": 1573.12,
+   "text": "That's it. You only need two values of the last."
+  },
+  {
+   "start": 1573.12,
+   "end": 1576.12,
+   "text": "Meaning, you only need the two values of the recent."
+  },
+  {
+   "start": 1576.12,
+   "end": 1577.12,
+   "text": "You only need that."
+  },
+  {
+   "start": 1577.12,
+   "end": 1581.12,
+   "text": "It doesn't matter what is written in the remaining array."
+  },
+  {
+   "start": 1581.12,
+   "end": 1586.12,
+   "text": "So when there is no difference, then where are we sitting with so much space?"
+  },
+  {
+   "start": 1586.12,
+   "end": 1589.12,
+   "text": "What will we do with so much space? There is no plot. Why are we sitting?"
+  },
+  {
+   "start": 1589.12,
+   "end": 1594.12,
+   "text": "We will do space optimization in this. What space optimization will we do?"
+  },
+  {
+   "start": 1594.12,
+   "end": 1601.12,
+   "text": "See, every time, every time, what do you need? Previous value means previous value"
+  },
+  {
+   "start": 1601.12,
+   "end": 1605.12,
+   "text": "and its previous value also means previous previous."
+  },
+  {
+   "start": 1605.12,
+   "end": 1609.12,
+   "text": "Only two are required, right? When you are on 2, when you are taking out dp of 2,"
+  },
+  {
+   "start": 1609.12,
+   "end": 1614.54,
+   "text": "What do you need? First, you need the previous one, which is dp of 1, and the previous one, which is dp of 0."
+  },
+  {
+   "start": 1615.1,
+   "end": 1616.2,
+   "text": "This is what you need, right?"
+  },
+  {
+   "start": 1616.64,
+   "end": 1622.26,
+   "text": "So, what you are doing here, you are making an array, and dp 0 is 0, and dp 1 is 1."
+  },
+  {
+   "start": 1622.8,
+   "end": 1625.34,
+   "text": "Don't make an array for this. Just take two variables for this."
+  },
+  {
+   "start": 1625.54,
+   "end": 1628.38,
+   "text": "What we want to say is, you can do this. See, it is a very simple thing."
+  },
+  {
+   "start": 1629.24,
+   "end": 1632.06,
+   "text": "You have come. After that, what have you done? You have done this."
+  },
+  {
+   "start": 1632.8,
+   "end": 1635.82,
+   "text": "Int. Previous. Previous."
+  },
+  {
+   "start": 1635.82,
+   "end": 1665.8,
+   "text": "Previous means your computation has to start from dp of 2, which is your loop, you know the answer of 0 and 1, for 2, what is previous, just before that, 1, 1, 1, so if in previous, whatever work you wanted to write in dp of 1, what did you want to write, 1, store it in previous, the game is over, and int, previous, previous, means one more before, so for dp of 2,"
+  },
+  {
+   "start": 1665.82,
+   "end": 1667.06,
+   "text": "previous ho gaya 1"
+  },
+  {
+   "start": 1667.06,
+   "end": 1667.74,
+   "text": "dp of 2 ke liye"
+  },
+  {
+   "start": 1667.74,
+   "end": 1669.18,
+   "text": "previous ka previous kya hua"
+  },
+  {
+   "start": 1669.18,
+   "end": 1670.24,
+   "text": "dp of 0"
+  },
+  {
+   "start": 1670.24,
+   "end": 1671.14,
+   "text": "to jo bhi value"
+  },
+  {
+   "start": 1671.14,
+   "end": 1672.66,
+   "text": "aap dp of 0 me rakhna chaate the na"
+  },
+  {
+   "start": 1672.66,
+   "end": 1673.4,
+   "text": "0"
+  },
+  {
+   "start": 1673.4,
+   "end": 1674.9,
+   "text": "usko yaha pe rakh dijiye"
+  },
+  {
+   "start": 1674.9,
+   "end": 1676.3,
+   "text": "usko yaha pe rakh dijiye"
+  },
+  {
+   "start": 1676.3,
+   "end": 1677.66,
+   "text": "usko yaha pe rakh ke"
+  },
+  {
+   "start": 1677.66,
+   "end": 1679.08,
+   "text": "khatam ho gaya khel"
+  },
+  {
+   "start": 1679.08,
+   "end": 1680.88,
+   "text": "ab dekhiye kya trick karenge"
+  },
+  {
+   "start": 1680.88,
+   "end": 1682.46,
+   "text": "ab dekhiye am kya khel karte hain"
+  },
+  {
+   "start": 1682.46,
+   "end": 1683.1,
+   "text": "for"
+  },
+  {
+   "start": 1683.1,
+   "end": 1684.78,
+   "text": "int"
+  },
+  {
+   "start": 1684.78,
+   "end": 1686.36,
+   "text": "i is equal to 2"
+  },
+  {
+   "start": 1686.36,
+   "end": 1688.14,
+   "text": "i less than equal to n"
+  },
+  {
+   "start": 1688.14,
+   "end": 1689.38,
+   "text": "i plus plus"
+  },
+  {
+   "start": 1689.38,
+   "end": 1690.2,
+   "text": "theek hai"
+  },
+  {
+   "start": 1690.2,
+   "end": 1691.68,
+   "text": "ab aap kya kiye the"
+  },
+  {
+   "start": 1691.68,
+   "end": 1692.58,
+   "text": "ab aap kya kiye the"
+  },
+  {
+   "start": 1692.58,
+   "end": 1693.9,
+   "text": "dp of i is equal to"
+  },
+  {
+   "start": 1693.9,
+   "end": 1694.92,
+   "text": "dp of i minus 1"
+  },
+  {
+   "start": 1694.92,
+   "end": 1724.9,
+   "text": "plus dp of i minus 2, dp is not there, we are saying that we have not made an array, there is no dp array, so see, what do you want to get the answer, make an answer variable, answer is equal to, what do you want, previous plus previous of previous, add those two, this is what dp array meant, this is what dp of 2 answer used to come, dp of 1 plus dp of 0, we said that before starting, in previous, in a way, dp of 1, assume that it is here, previous, previous, in a way, dp of 1,"
+  },
+  {
+   "start": 1724.92,
+   "end": 1733.16,
+   "text": "zero hai toh iska answer kya aega previous plus previous of previous okay very good very good"
+  },
+  {
+   "start": 1733.16,
+   "end": 1739.8,
+   "text": "answer aage answer aage aapka dp of two solve ho gaya lekin lekin iska answer to aage aap dp of"
+  },
+  {
+   "start": 1739.8,
+   "end": 1745.0,
+   "text": "three kaise nika liye ga dp of three ke liye kya do cheeze chahiye dp of three ke liye chahiye uska"
+  },
+  {
+   "start": 1745.0,
+   "end": 1753.3,
+   "text": "ek previous uska ek previous jo ki up dp of two ko hona padega aur uska previous ka previous jo ki"
+  },
+  {
+   "start": 1753.3,
+   "end": 1755.34,
+   "text": "dp of 1 ko hona padega."
+  },
+  {
+   "start": 1755.84,
+   "end": 1757.38,
+   "text": "Matlab ki, ek baar aap answer"
+  },
+  {
+   "start": 1757.38,
+   "end": 1759.26,
+   "text": "nikal liye, ek baar aap answer nikal liye"
+  },
+  {
+   "start": 1759.26,
+   "end": 1761.3,
+   "text": "yahape. Answer is ka nikal gaya, previous plus previous"
+  },
+  {
+   "start": 1761.3,
+   "end": 1763.48,
+   "text": "previous. Very good. Ab aapko values"
+  },
+  {
+   "start": 1763.48,
+   "end": 1765.58,
+   "text": "ko thoda change karna padega."
+  },
+  {
+   "start": 1765.98,
+   "end": 1767.3,
+   "text": "Abhi tak, abhi tak,"
+  },
+  {
+   "start": 1767.6,
+   "end": 1768.84,
+   "text": "abhi tak, aapka jo"
+  },
+  {
+   "start": 1768.84,
+   "end": 1771.3,
+   "text": "previous ya previous hai, previous ka"
+  },
+  {
+   "start": 1771.3,
+   "end": 1773.52,
+   "text": "previous, wo betha hua hai, dp of"
+  },
+  {
+   "start": 1773.52,
+   "end": 1775.24,
+   "text": "0 leke. Wo abhi, abhi shuru"
+  },
+  {
+   "start": 1775.24,
+   "end": 1777.76,
+   "text": "karne bhi, dp of 0 ke betha hua hai."
+  },
+  {
+   "start": 1778.3,
+   "end": 1779.54,
+   "text": "Previous kis pe betha hua hai?"
+  },
+  {
+   "start": 1780.08,
+   "end": 1781.06,
+   "text": "dp of 1 pe."
+  },
+  {
+   "start": 1781.06,
+   "end": 1808.62,
+   "text": "In the beginning, we were talking about the beginning, you had decided that this will happen, you have now taken out the answer, this answer, by combining previous and previous previous, your answer in one way, what is it now, dp of 2, now you have to take out dp of 3 the next time, dp of 3 needs which two values, dp of 2 plus dp of 1, this was the equation,"
+  },
+  {
+   "start": 1808.62,
+   "end": 1812.48,
+   "text": "What will be Dp of 2?"
+  },
+  {
+   "start": 1813.06,
+   "end": 1813.88,
+   "text": "Previous"
+  },
+  {
+   "start": 1813.88,
+   "end": 1815.62,
+   "text": "And Dp of 1 means"
+  },
+  {
+   "start": 1815.62,
+   "end": 1816.66,
+   "text": "Previous"
+  },
+  {
+   "start": 1816.66,
+   "end": 1817.54,
+   "text": "Previous"
+  },
+  {
+   "start": 1817.54,
+   "end": 1818.66,
+   "text": "So now what to do?"
+  },
+  {
+   "start": 1819.38,
+   "end": 1820.84,
+   "text": "Previous previous value"
+  },
+  {
+   "start": 1820.84,
+   "end": 1825.7,
+   "text": "Previous previous value"
+  },
+  {
+   "start": 1825.7,
+   "end": 1827.52,
+   "text": "Previous previous"
+  },
+  {
+   "start": 1827.52,
+   "end": 1828.32,
+   "text": "Previous previous"
+  },
+  {
+   "start": 1828.32,
+   "end": 1829.2,
+   "text": "Previous previous"
+  },
+  {
+   "start": 1829.2,
+   "end": 1829.3,
+   "text": "Last too"
+  },
+  {
+   "start": 1829.3,
+   "end": 1830.26,
+   "text": "Leave it 2"
+  },
+  {
+   "start": 1830.26,
+   "end": 1832.14,
+   "text": "Equal to previous"
+  },
+  {
+   "start": 1832.14,
+   "end": 1833.36,
+   "text": "See this"
+  },
+  {
+   "start": 1833.36,
+   "end": 1834.1,
+   "text": "What will happen due to this?"
+  },
+  {
+   "start": 1834.34,
+   "end": 1836.02,
+   "text": "What value comes in your previous previous?"
+  },
+  {
+   "start": 1837.06,
+   "end": 1837.9,
+   "text": "Dp of 1"
+  },
+  {
+   "start": 1837.9,
+   "end": 1843.4,
+   "text": "And what do you want in previous?"
+  },
+  {
+   "start": 1843.58,
+   "end": 1845.68,
+   "text": "dp of 2 which you have just taken out in answer."
+  },
+  {
+   "start": 1846.26,
+   "end": 1850.92,
+   "text": "Means previous is equal to answer."
+  },
+  {
+   "start": 1851.5,
+   "end": 1852.08,
+   "text": "See this."
+  },
+  {
+   "start": 1852.34,
+   "end": 1853.08,
+   "text": "Your work is done."
+  },
+  {
+   "start": 1853.64,
+   "end": 1856.6,
+   "text": "Now when you will run this loop again."
+  },
+  {
+   "start": 1856.76,
+   "end": 1858.04,
+   "text": "Now i is equal to 2 is done."
+  },
+  {
+   "start": 1858.46,
+   "end": 1860.24,
+   "text": "When you will run i is equal to 3."
+  },
+  {
+   "start": 1861.12,
+   "end": 1862.9,
+   "text": "You will do the same thing again."
+  },
+  {
+   "start": 1863.38,
+   "end": 1865.3,
+   "text": "Answer is equal to previous."
+  },
+  {
+   "start": 1865.3,
+   "end": 1867.48,
+   "text": "which was dp of 2"
+  },
+  {
+   "start": 1867.48,
+   "end": 1869.8,
+   "text": "plus previous previous"
+  },
+  {
+   "start": 1869.8,
+   "end": 1872.12,
+   "text": "which was dp of 1"
+  },
+  {
+   "start": 1872.12,
+   "end": 1874.32,
+   "text": "you will get dp of 3"
+  },
+  {
+   "start": 1874.32,
+   "end": 1874.68,
+   "text": "answer"
+  },
+  {
+   "start": 1874.68,
+   "end": 1877.12,
+   "text": "go to 4, same thing will happen"
+  },
+  {
+   "start": 1877.12,
+   "end": 1879.42,
+   "text": "see, before starting"
+  },
+  {
+   "start": 1879.42,
+   "end": 1881.02,
+   "text": "we stored 2 things"
+  },
+  {
+   "start": 1881.02,
+   "end": 1883.68,
+   "text": "previous, its previous"
+  },
+  {
+   "start": 1883.68,
+   "end": 1885.96,
+   "text": "here we wrote what we had to write in dp of 0"
+  },
+  {
+   "start": 1885.96,
+   "end": 1888.0,
+   "text": "in previous we wrote"
+  },
+  {
+   "start": 1888.0,
+   "end": 1889.22,
+   "text": "what we had to write in dp of 1"
+  },
+  {
+   "start": 1889.22,
+   "end": 1891.54,
+   "text": "now we started running our loop"
+  },
+  {
+   "start": 1891.54,
+   "end": 1893.66,
+   "text": "every time we get our answer"
+  },
+  {
+   "start": 1893.66,
+   "end": 1900.66,
+   "text": "After taking out the answers, we shift them one by one."
+  },
+  {
+   "start": 1900.66,
+   "end": 1901.66,
+   "text": "What do we do?"
+  },
+  {
+   "start": 1901.66,
+   "end": 1905.66,
+   "text": "Previous, previous, you become DP of 1."
+  },
+  {
+   "start": 1905.66,
+   "end": 1909.66,
+   "text": "Previous, you become the answer."
+  },
+  {
+   "start": 1909.66,
+   "end": 1911.66,
+   "text": "Next time, do the same thing."
+  },
+  {
+   "start": 1911.66,
+   "end": 1912.66,
+   "text": "Do the dry run of it."
+  },
+  {
+   "start": 1912.66,
+   "end": 1913.66,
+   "text": "You will understand more."
+  },
+  {
+   "start": 1913.66,
+   "end": 1915.66,
+   "text": "But we have explained as much as we knew."
+  },
+  {
+   "start": 1915.66,
+   "end": 1917.66,
+   "text": "Why did this happen with this work?"
+  },
+  {
+   "start": 1917.66,
+   "end": 1919.66,
+   "text": "Why did you put so much mind into it?"
+  },
+  {
+   "start": 1919.66,
+   "end": 1924.66,
+   "text": "Now, what is the space complexity of this program?"
+  },
+  {
+   "start": 1924.66,
+   "end": 1926.66,
+   "text": "Are you using any extra space?"
+  },
+  {
+   "start": 1926.66,
+   "end": 1927.66,
+   "text": "No, we are not."
+  },
+  {
+   "start": 1927.66,
+   "end": 1928.66,
+   "text": "How much?"
+  },
+  {
+   "start": 1928.66,
+   "end": 1930.66,
+   "text": "We are using the order of one space."
+  },
+  {
+   "start": 1930.66,
+   "end": 1932.66,
+   "text": "The array that you were using earlier,"
+  },
+  {
+   "start": 1932.66,
+   "end": 1934.66,
+   "text": "such a big array,"
+  },
+  {
+   "start": 1934.66,
+   "end": 1936.66,
+   "text": "you were using the array in recursion as well,"
+  },
+  {
+   "start": 1936.66,
+   "end": 1937.66,
+   "text": "you were still using it,"
+  },
+  {
+   "start": 1937.66,
+   "end": 1938.66,
+   "text": "but in this way,"
+  },
+  {
+   "start": 1938.66,
+   "end": 1940.66,
+   "text": "you see what we actually need."
+  },
+  {
+   "start": 1940.66,
+   "end": 1942.66,
+   "text": "We don't need the entire array."
+  },
+  {
+   "start": 1942.66,
+   "end": 1944.66,
+   "text": "We only need the last two values."
+  },
+  {
+   "start": 1944.66,
+   "end": 1946.66,
+   "text": "We only need the last two values."
+  },
+  {
+   "start": 1946.66,
+   "end": 1948.66,
+   "text": "So, if we need the last two values,"
+  },
+  {
+   "start": 1948.66,
+   "end": 1950.66,
+   "text": "keep adjusting the last two values"
+  },
+  {
+   "start": 1950.66,
+   "end": 1952.66,
+   "text": "keep adjusting and keep using the variables"
+  },
+  {
+   "start": 1952.66,
+   "end": 1954.66,
+   "text": "for that, what is the need to maintain the whole array"
+  },
+  {
+   "start": 1954.66,
+   "end": 1956.66,
+   "text": "in this way, your space complexity"
+  },
+  {
+   "start": 1956.66,
+   "end": 1958.66,
+   "text": "order of 1 means"
+  },
+  {
+   "start": 1958.66,
+   "end": 1960.66,
+   "text": "constant space, in this no space"
+  },
+  {
+   "start": 1960.66,
+   "end": 1962.66,
+   "text": "is being used extra"
+  },
+  {
+   "start": 1962.66,
+   "end": 1964.66,
+   "text": "and time complexity"
+  },
+  {
+   "start": 1964.66,
+   "end": 1966.66,
+   "text": "order of n and order of 1"
+  },
+  {
+   "start": 1966.66,
+   "end": 1968.66,
+   "text": "this is your time and space"
+  },
+  {
+   "start": 1968.66,
+   "end": 1970.66,
+   "text": "that's why I told you that in 90% of problems"
+  },
+  {
+   "start": 1970.66,
+   "end": 1972.66,
+   "text": "tabulation will finish your space"
+  },
+  {
+   "start": 1972.66,
+   "end": 1974.66,
+   "text": "what is this called?"
+  },
+  {
+   "start": 1974.66,
+   "end": 1976.66,
+   "text": "space optimization"
+  },
+  {
+   "start": 1976.66,
+   "end": 1983.66,
+   "text": "Do we need the whole dp array? No, we just need the last two values."
+  },
+  {
+   "start": 1983.66,
+   "end": 1987.66,
+   "text": "So, keep moving the last two values in the variable here and there."
+  },
+  {
+   "start": 1987.66,
+   "end": 1991.66,
+   "text": "Why do you have to maintain such a big array?"
+  },
+  {
+   "start": 1991.66,
+   "end": 1995.66,
+   "text": "So, what is this called? Tabulation with space optimization."
+  },
+  {
+   "start": 1995.66,
+   "end": 1998.66,
+   "text": "That is why we told you that realistically speaking,"
+  },
+  {
+   "start": 1998.66,
+   "end": 2001.66,
+   "text": "tabulation is considered good with memoization."
+  },
+  {
+   "start": 2001.66,
+   "end": 2005.66,
+   "text": "That is why it is considered good because in memoization, recursion is called."
+  },
+  {
+   "start": 2005.66,
+   "end": 2008.66,
+   "text": "Recursion will be called again and again and again, it takes time."
+  },
+  {
+   "start": 2008.66,
+   "end": 2010.66,
+   "text": "You will have to take space from above."
+  },
+  {
+   "start": 2010.66,
+   "end": 2013.66,
+   "text": "You can't do this trick in recursion, so you will have to take it there."
+  },
+  {
+   "start": 2013.66,
+   "end": 2016.66,
+   "text": "In tabulation, the whole work will be done in one function by running the loop."
+  },
+  {
+   "start": 2016.66,
+   "end": 2020.66,
+   "text": "And if you want, you can use your brain to optimize space."
+  },
+  {
+   "start": 2020.66,
+   "end": 2023.66,
+   "text": "This was the optimized version of Fibonacci."
+  },
+  {
+   "start": 2023.66,
+   "end": 2027.66,
+   "text": "That means if you are asked in an interview, then you will have to tell this."
+  },
+  {
+   "start": 2027.66,
+   "end": 2032.66,
+   "text": "Recursion is fine, recursion memoization is fine, but this should be the target."
+  },
+  {
+   "start": 2032.66,
+   "end": 2035.66,
+   "text": "If you have understood this, then please go and submit it."
+  },
+  {
+   "start": 2035.66,
+   "end": 2038.66,
+   "text": "And we want you to try more problems."
+  },
+  {
+   "start": 2038.66,
+   "end": 2040.66,
+   "text": "Try to write climbing stairs in tabulation."
+  },
+  {
+   "start": 2040.66,
+   "end": 2041.66,
+   "text": "It is the same problem."
+  },
+  {
+   "start": 2041.66,
+   "end": 2043.66,
+   "text": "It is exactly the same problem like Fibonacci."
+  },
+  {
+   "start": 2043.66,
+   "end": 2046.66,
+   "text": "Please go and try to solve the climbing stairs yourself."
+  },
+  {
+   "start": 2046.66,
+   "end": 2048.66,
+   "text": "Otherwise, we will do it in the future."
+  },
+  {
+   "start": 2048.66,
+   "end": 2051.66,
+   "text": "And if there is any difficulty in understanding any part,"
+  },
+  {
+   "start": 2051.66,
+   "end": 2054.66,
+   "text": "then please make a big comment."
+  },
+  {
+   "start": 2054.66,
+   "end": 2055.66,
+   "text": "Comment that you did not understand."
+  },
+  {
+   "start": 2055.66,
+   "end": 2056.66,
+   "text": "We will explain this."
+  },
+  {
+   "start": 2056.66,
+   "end": 2058.66,
+   "text": "Because if he does not understand,"
+  },
+  {
+   "start": 2058.66,
+   "end": 2060.66,
+   "text": "then there is no purpose to move forward."
+  },
+  {
+   "start": 2060.66,
+   "end": 2066.66,
+   "text": "So please comment on how it is and how it is not and let's meet the next day. Thank you."
+  }
+ ]
+}

@@ -1,0 +1,574 @@
+{
+ "video_id": "O04KAy7cLBs",
+ "title": "Master DFS/BFS in Graphs | Graph series DSA Patterns",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2818,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 28.51,
+   "text": "Look, the video is very important, DFS, BFS, all the questions in the graph are made from this, so it is very important that you understand it very well, and if you don't understand, then tell us that you don't understand, so that we can teach it again. The second thing is that there is still a comment coming in the video that we thought that the problem was solved. There is still a comment coming that the code will not be done, where is the code? We don't understand what this is, what is this? See, what is this that we have written here, what is it called? According to me, this is a code, according to you, is it something else?"
+  },
+  {
+   "start": 28.51,
+   "end": 55.18,
+   "text": "Give me the code, give me the notes. If we give you this, what will you understand from this? After a month from today, if you see this, what will you understand from this? See, we are saying it again and again. You might not like to hear it. Until you write in notes or copy, until you understand the code, you will not understand DSA. I mean, we don't understand it at all. I mean, I don't have such a problem these days."
+  },
+  {
+   "start": 55.18,
+   "end": 84.19,
+   "text": "Do you think this is geography? If I give you notes, take it as a CD. There are a lot of people on Instagram. You must have commented on every reel of Instagram. Comment code to get the link. Comment this to get the link. Tell me how many things you have opened before today. See, your inbox is full. From PDF, Word, Content, this cheat sheet, that cheat pad. Your inbox is full of everything. How many things have you opened and seen till now?"
+  },
+  {
+   "start": 84.19,
+   "end": 114.08,
+   "text": "You won't be able to see it. You are used to keeping it. This is content. Give me the code. Give me the notes. Give me everything. We will keep it. We won't read it. Focus on reading. Focus on understanding. People would have asked for the code in 2005-10. That time there was no internet. There was nothing. I didn't understand. That time. I don't understand. Give me the code. You don't show the code while doing it. If we are writing the code here. Why do you want to see us typing it? Do you think we write something wrong?"
+  },
+  {
+   "start": 114.08,
+   "end": 131.07,
+   "text": "If you understand the whole video, what is the need to ask for code? You have to do the code. What do you guys understand? In which direction do you want to read? This will not benefit anyone. Look, if we give the code, we will learn. You will never learn. We are telling you openly."
+  },
+  {
+   "start": 131.07,
+   "end": 152.19,
+   "text": "If you don't make notes on your own, you think we should save some time. We don't do anything like that. We know that no one is doing anything like that. We have also gone to college. We have also not come to a direct job after 10. Everyone has gone to college. No one works like that. No, no, save some time, don't make notes. If someone gave you a code, you would have copied and pasted it. Time would have been saved. We will not learn. Then there is no point in seeing all this."
+  },
+  {
+   "start": 152.19,
+   "end": 178.32,
+   "text": "In this type of content, there is no benefit of doing this. Then you watch reels, watch movies, enjoy IPL. There is a variety of enjoyment mode. In this type of content, there is no code. When will there be code in the video? What is this? What is written here? What is written here? Explain it to us. What is this? What is written here? The explanation given above, what was it for? What was its end goal?"
+  },
+  {
+   "start": 178.32,
+   "end": 187.84,
+   "text": "Learn the code yourself. If you don't struggle, you won't get it. Even if you don't understand this code, write it yourself."
+  },
+  {
+   "start": 187.84,
+   "end": 211.31,
+   "text": "This type of code. So, don't do job. If you go to job, you will lose your mind. In job, such class, object, and thread word will start. Then you will have to resign from the job. Otherwise, that same chat, GPT, cloud, etc. will survive for some time. If you can't write this 50 line code by yourself, then you are not ready for the job. Then you are not ready for the technical field. Then you start doing some other work. Okay? Let's start."
+  },
+  {
+   "start": 211.63,
+   "end": 238.02,
+   "text": "Hello friends, welcome to my channel. If you are watching this video for the first time, please check the description. At least you should watch the graph series from the beginning. There are two videos from the beginning. If you watch them, you will understand more. This is my hope from you. In today's lecture, we have learned what is a graph, what is a general idea, and how to make a graph, i.e. whether it is made in adjacency matrix or in adjacency list. And we have told you that in 90% of questions,"
+  },
+  {
+   "start": 238.02,
+   "end": 259.12,
+   "text": "You will either have to make an adjacency list or you will have to make it yourself. When will you have to make it yourself? When you will be given the number of vertices and edges. He would have told you that there are four people, 0, 1, 2, 3, and these are all the edges between them. After that, he would have also told you what kind of graph it is. Is the graph connected or disconnected? We will tell you that later."
+  },
+  {
+   "start": 259.12,
+   "end": 287.82,
+   "text": "Directed or undirected. Directed means the one with an arrow. If one edge goes, it is an arrow. 0 to 1 means only 0 to 1, not 1 to 0. Undirected means there is a common line between 0 to 1 and it is also in 1 to 0. After that, is it weighted or not? Is there any weight of every edge or not? All this has been discussed in detail. Today, what we are going to do is DFS and BFS. You are knowingly or unknowingly coming to DFS and BFS in tree etc. But at that time, it may happen that"
+  },
+  {
+   "start": 287.82,
+   "end": 315.52,
+   "text": "We didn't name it DFS, my mistake was that we didn't tell you specifically that this is DFS and this is BFS. In the tree question, whenever you write a recursion function, let's say inorder, talk about inorder. Left, root and right used to be DFS. Whenever you used to do a level order problem, level order traversal was a problem, that is called BFS. Today we will explain you in detail with name. It is very important that you watch both these videos, both DFS and BFS, both the parts because"
+  },
+  {
+   "start": 315.52,
+   "end": 339.81,
+   "text": "These are the two traversals. In every question, we will not tell you in detail. We will tell you that if you have to do DFS in this, then do DFS. If you have to do BFS in this, then do BFS. So these two are very basic and fundamental traversals of the graph. The graph is seen in these two ways. Either depth first search which is called DFS or breadth first search which is called BFS. Okay. Let's come to DFS. On which? On DFS."
+  },
+  {
+   "start": 339.81,
+   "end": 369.47,
+   "text": "Now let us explain DFS with an example. Take the example of Instagram because graph is a very real world thing. Almost every app that deals with people or deals with a lot of things uses graph somewhere. If we talk about Instagram, then what do you do? You open Instagram at 9 o'clock in the night and you come to my profile. Whose profile are you on? You came to my profile. Starting with Pratyush, you go to Pratyush's Instagram page. You see that Pratyush has followed 32 people."
+  },
+  {
+   "start": 369.47,
+   "end": 396.1,
+   "text": "In my following list, there are 32. There are thousands in the follower list, but let's say there are 32 in the following list. Now, let's see who Pratyush Bhaiya has followed. So, first you get to know that Pratyush Bhaiya has followed Deepika Badukone. What do you do? You go to the profile of Deepika Badukone. You go to Pratyush Bhaiya, open the following list. See, there are 32 followers. You liked it the most. Okay, you have followed Deepika Badukone. Where did you go? You went to Deepika's profile."
+  },
+  {
+   "start": 396.1,
+   "end": 423.62,
+   "text": "Okay. Maybe you are on Deepika's profile. 100 following. She has followed 100 people. You started searching there. You came to know that the person who liked Deepika the most is Ranveer Singh. So where did you go? You went to Ranveer Singh's Instagram. This is how it happens. You don't stop stalking. You went to Ranveer Singh's profile. Now if you look at Ranveer Singh's profile too. Suppose here 200 following. Very good. Now you liked Ranveer Singh's profile the most. Okay, he follows Ronaldo. You went to Ronaldo's profile."
+  },
+  {
+   "start": 423.62,
+   "end": 447.76,
+   "text": "By doing this, you will see what you are doing here. First of all, you came to Pratyush. Where was your starting? Pratyush. So the first person was Pratyush. After that, Pratyush used to follow 32 people. But you didn't visit all 32, you only visited one. Who? Deepika Badukone. After that, you came directly to Deepika's profile. Now here in the following 22, there were 31 other people. We are not seeing them for now. Where did you come directly?"
+  },
+  {
+   "start": 447.76,
+   "end": 476.05,
+   "text": "Deepika Padukone's profile. After that, if Deepika follows 100 people, then you are not looking at the remaining 100. You are only looking at one person. Who? Ranveer Singh. Ranveer Singh. So, Deepika's remaining 99 were left. Mine were 31. Ranveer Singh follows 200 people. But, what are you interested in? Ronaldo. So, where did you come from here to Ronaldo? This exact work that you are doing, is called DFS. What is it called? DFS means,"
+  },
+  {
+   "start": 476.05,
+   "end": 499.34,
+   "text": "Depth first search. Depth first search. Depth first search. What does this mean? You have started. You are going in and out. You are going in and out. You are going in depth. You are going in depth. You are not doing this that you have opened the profile of Pratyush and all the 32 following of Pratyush. You have not done this. You have opened the profile of only one person. Whose? Deepika's."
+  },
+  {
+   "start": 499.34,
+   "end": 528.53,
+   "text": "It won't happen that after Deepika, you've seen the following of all 100 people. No, you just entered one Ranveer Singh. You didn't see all 200 people in Ranveer. You entered Ronaldo in one. And what are you doing? You're going down. You're going deep, deep, deep, deep. Until you get such a profile. Suppose you get such a profile somewhere. Connecting some of Ronaldo's connections. Modiji. Suppose you get Modiji's profile. And Modiji has zero following. Modiji doesn't follow anyone. Modiji."
+  },
+  {
+   "start": 528.53,
+   "end": 554.3,
+   "text": "Modi Ji doesn't follow anyone. He says he won't follow anyone. So until you find someone who has zero following, you can't go ahead of Modi Ji. If Modi Ji doesn't follow anyone, then what will you do? Now you will go back. Now you will go back. So what are you doing here? You are going deep, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in, going in"
+  },
+  {
+   "start": 554.3,
+   "end": 584.11,
+   "text": "Depth first search. Deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep."
+  },
+  {
+   "start": 584.21,
+   "end": 604.14,
+   "text": "Undirected graph. Undirected graph. Okay. What does connected mean? Connected means that all the vertices in the graph are connected. There is a way to reach all of them. Let's say there are 4 vertices. 0, 1, 2, 3."
+  },
+  {
+   "start": 604.14,
+   "end": 633.36,
+   "text": "If this graph looks like 0 to 1 is an edge, 0 to 2 is an edge, and 2 to 3 is an edge. We call this graph connected because here you can see that everyone is connected to each other. No one has left alone, there is no such island. But if someone tells you that this is an unconnected or disconnected graph, what does disconnected graph mean? Disconnected graph means that 0 is here, 1 is here, 2 is here. Now these three are connected to each other, but there is another vertex, 3. No edge is going to 3."
+  },
+  {
+   "start": 633.36,
+   "end": 652.02,
+   "text": "So you can break this graph into two parts. One part is just 3 and the other part is this. So you can break it into two parts. You can break it in such a way that these two parts are not connected to each other. This kind of graph is called a disconnected graph."
+  },
+  {
+   "start": 652.02,
+   "end": 679.34,
+   "text": "But for now, I have given you a simple graph and an undirected graph. What does undirected mean? Any edge, if you have a line from 0 to 1 or edge from 0 to 1, then you will also get an edge from 1 to 0. There is no doubt about it. So you have got this graph and GFG has made it easy for you. You will get the link in the sheet. In GFG, they have also given you an adjacency list. Here, I have made one more thing easy for you."
+  },
+  {
+   "start": 679.34,
+   "end": 704.27,
+   "text": "I have just told you the vertex and that's it. The list that we had made last time, what was the list made of? That there used to be a big vector in which the number of vertices used to be indexed. In every index, the number of zeroes used to be written like this. The number of ones used to be written like this. So, I have made a list of these in advance so that you don't have to make this in this question. Now, you have to..."
+  },
+  {
+   "start": 704.27,
+   "end": 731.57,
+   "text": "Do you want to print DFS traversal or return DFS traversal? DFS traversal means a list of a vector of integer. A vector of integer means in this graph, if you start from zero, if you start from zero, just like how it started in Instagram, if you start from zero in this way, then what list will you get of numbers that you have to return? So this is your question and how do you do this?"
+  },
+  {
+   "start": 731.57,
+   "end": 760.51,
+   "text": "Depth first search. What to do? Depth first search. Let's see what to do and what not to do in this. Let's go. So this is your graph. You can see the graph. And we have written the adjacency list for this. Let me explain it once. See, this is the graph. How many vertices are there in this? 1, 2, 3, 4, 5 vertices from 0 to 4. The size of the adjacency list will always tell you the number of vertices."
+  },
+  {
+   "start": 760.51,
+   "end": 784.8,
+   "text": "What is this list? This list is nothing. Every index has a vertex. You can consider every index as a vertex. You will get a vector in every index. You will get a vector in every index. What will that vector tell you? This index, suppose if we talk about 0, which nodes are 0 connected to? So you see in the graph, which nodes are 0 connected to? So 0 is connected to 2, 3 and 1. So what is this? 2, 3, 1."
+  },
+  {
+   "start": 784.8,
+   "end": 806.59,
+   "text": "Let's talk about 1. 1 is connected to what? 1 is only connected to 0. So what vector will you get in index 1? Only 0. 2 is connected to what? 2 is connected to 0 and 4. So here you will get to see 0 and 4. So anytime, adj.size or adj.length, as much as adj has all the vertices, its length will tell you how many vertices are there in it."
+  },
+  {
+   "start": 806.59,
+   "end": 835.06,
+   "text": "Let's start our game. Just like Instagram, we will start. You have been told where to start. Starting point. When you will start a stock on Instagram, there will be a starting point. You have decided to start a profile stock from Pratyush. In the same way, you have been told that your starting node should be zero. Normally, it is always zero. Where is your starting from? Zero. Okay. So, where is your start? So, first of all, what will be your node? Now, I am just telling you roughly."
+  },
+  {
+   "start": 835.06,
+   "end": 856.82,
+   "text": "What can you do? We are not talking about the code. Your node is 0. Now if it is 0, then first of all you have to cover the whole graph with DFS. So what can we do? If it is 0, then we can write 0 in our result. You should write 0. If you are starting with 0, then write 0. Now see, you have to write 0."
+  },
+  {
+   "start": 856.82,
+   "end": 886.26,
+   "text": "You have to look at the neighbors of your zero. What are these neighbors? Zero is connected to who? What are they called? Neighbors. These three nodes are the neighbors of zero. What are these three nodes of zero? They are direct neighbors. Four is not a neighbor of zero because zero is not connected to four. So these three nodes are the neighbors of zero. Very good. How will you know the neighbors? From the adjacency list. The adjacency list tells you who is connected to zero. What did you do?"
+  },
+  {
+   "start": 886.26,
+   "end": 915.25,
+   "text": "Start going to neighbors of 0. This is just like that. Go to Pratyush on Instagram. There is a following list of Pratyush. Pratyush follows 32 people. What are they? They are Pratyush's direct neighbors. Those who Pratyush follows are Pratyush's what? Direct neighbors. So you have to do the same. What do you have to do? You have to find out direct neighbors. Okay. Now see. How many direct neighbors are there of 0? There are 2, 3 and 1. 2, 3 and 1. There are 3 neighbors. You have to"
+  },
+  {
+   "start": 915.25,
+   "end": 932.59,
+   "text": "Left to right, means start deleting neighbours one by one. And the neighbour you select, get inside them. For example, if you get to know in Pratyush that he follows three people. First is Deepika, second is Sachin and fourth is Amitabh Bachchan."
+  },
+  {
+   "start": 932.59,
+   "end": 960.94,
+   "text": "So, these are the three neighbors of Zee Pratyush. You have to catch any one neighbor. You catch the first one or the second one. Catch someone. Catch Deepika and get deep into Deepika. Then go to Deepika's profile. Search for Deepika's neighbor. Catch her. Get deep into her. I mean, you have to go deep into catching someone. So, what do we do? We catch the two first. Who? Catch the two first. There is no such thing as why to catch the two. Catch the left or right, whoever it is. Catch the two. Next node. What will be our next node?"
+  },
+  {
+   "start": 960.94,
+   "end": 989.36,
+   "text": "It's 2. Very good. It's 2. So, what will we do? We will write 2 in our result. Write 2 in your result. Very good. Now, find out the neighbors of 2. How will we find out the neighbors of 2? By adjacency list. Any vector in adj of 2 will be the neighbor of 2. What is the neighbor of 2? 0 and 4. 0 and 4. Now, see. Here is a very important thing. Here is a very important thing. Now, what did we do above? We started from 0. There were 3 neighbors of 0. 2, 3, 1. We came to 2. Okay."
+  },
+  {
+   "start": 989.36,
+   "end": 1019.09,
+   "text": "There are two neighbors of two, zero and four. So what will you do now? Now that the first neighbor is zero, will you go back to zero? Will you go back to zero? No, we won't go. Why? Let me tell you, it's a very practical reason. It's just like that. Where did you start from? You started from Pratyush. Okay? You started from Pratyush. Pratyush had a lot of neighbors. The first neighbor of Pratyush was Deepika. Okay? What did you do? You came to Deepika's profile. Very good. Now assume, assume that"
+  },
+  {
+   "start": 1019.09,
+   "end": 1047.63,
+   "text": "For some reason or the other, Deepika Kavadupan also follows Pratyusha. Deepika also follows us because it's an undirected graph. Assume that Instagram is undirected. If Pratyusha follows Deepika, Deepika also follows Pratyusha. So what will you see in Deepika's following first? Pratyusha will be seen. Now what will you do? Now think logically, think like a human. You went to Pratyusha's Instagram, saw Deepika from there, came to Deepika. Now you are getting Pratyusha again from Deepika."
+  },
+  {
+   "start": 1047.63,
+   "end": 1076.91,
+   "text": "Do you go back to Pratyush's Instagram? No, you don't. Because if you do this, you will get stuck in this. You will go back to this. You will come back to Deepika. You will come back here. You will keep doing this. You want to see more profiles, right? You have to stalk new people. If you have come to Deepika from Pratyush, that means you have seen Pratyush's profile, right? You remember that we have seen Pratyush's profile, right? So even if Pratyush comes to Deepika's neighbor, you don't pay attention to him. You don't pay attention to him. You don't go back to Pratyush to see Pratyush. You have seen. You remember, right?"
+  },
+  {
+   "start": 1076.91,
+   "end": 1082.27,
+   "text": "Exactly the same thing has to be done here."
+  },
+  {
+   "start": 1082.27,
+   "end": 1111.63,
+   "text": "In your neighbor, zero has come. But you have to remember, have we seen zero? Seen means, have we written here or not? You have to remember this. Don't go back to zero, because why are you going back to zero? It's logical, right? Think of it from the example of Instagram. Why are you going back to where you have already seen that profile once? That's why you have to keep a method to remember this. What do we call this method? Visited array, right?"
+  },
+  {
+   "start": 1111.63,
+   "end": 1134.26,
+   "text": "Visited array means the node you have visited once. What does visited array look like? The size of visited array is equal to the number of vertex or adj. There will be 5 boxes in this. 0, 1, 2, 3, 4."
+  },
+  {
+   "start": 1134.26,
+   "end": 1161.3,
+   "text": "In the beginning, all the numbers will be 0. 0 means that you haven't seen it. 0 means that you haven't visited it. Very good. Now, one extra step. As soon as you come to a note, we came to 0 to start. So, you had written 0 in the result. Do one more thing. Make visited of 0 to 1. What do you do to visited of 0? Make it to 1. See, we have made it to 1. Now, now, now."
+  },
+  {
+   "start": 1161.3,
+   "end": 1191.17,
+   "text": "When you went to 2. Now look at 2. Before going to 2, check if you have seen 2's profile. If you haven't seen 2's profile yet, then you have come to 2. Now look. On 2, what did you get as your first neighbor? Zero. But, is Zero already visited? Yes, Zero is already visited. So, will you pay attention to Zero? No, we will not pay attention to Zero. We will not pay attention at all. Because it is done. Zero means Pratyush. We have seen Pratyush's profile. He is in Deepika's profile. We have to explore new people, right? We will not keep on seeing them again and again. So, what do you do to Zero?"
+  },
+  {
+   "start": 1191.17,
+   "end": 1219.22,
+   "text": "Ignore. What do we do with 0? Ignore. Why? Because 0 is already visited. We saw 0 above, right? So visited of 0 must have been 1. Very good. Look at the next neighbor of 2. Now 2 had 0. 0 was ignored. Look at the next. We are looping. We are just running this loop. 4. Is 4 visited? No. 4 is not visited. So what will you do? You will enter 4. In which? You will enter 4. Enter. What is your next note? 4. What do you have to do? First of all,"
+  },
+  {
+   "start": 1219.22,
+   "end": 1239.39,
+   "text": "First of all, we will write the result above here. First of all, we had written 0, 2 here. This is our result. First of all, write 4 in the result. You got 4. And what do you make visited of 4? What do you make visited of 4? 1. Visited of 4 is 1. And we had to make visited of 2 1 here. We forgot that. We forgot that. Here, 1."
+  },
+  {
+   "start": 1239.39,
+   "end": 1260.85,
+   "text": "Now see, why are we making visited of 4 as 1? Because if someone's neighbor gets 4 in the future, then we should remember that we have already seen 4. We should not go to 4's profile again and again. Very good. Now what to do? We have to do the same thing. See the neighbor of 4. How will we get it? By adjacency. What is the neighbor of 4? 2. The neighbor of 4 is just 2."
+  },
+  {
+   "start": 1260.85,
+   "end": 1286.46,
+   "text": "Do you want to go to 2? You should not go. Why? Because visitor of 2 is 1. That's why you have already seen the profile of 2. So you should not go. What did you do to 2? Ignore. Now, after 2, is there any other neighbor of this node 4? No, there is no other neighbor. So what will you do? Nothing. You will finish it. What will you do to it? You will come up. This is just the same. You do this. This is just the same."
+  },
+  {
+   "start": 1286.46,
+   "end": 1298.51,
+   "text": "You started with Pratyush's profile. After Pratyush, you went to Deepika. After Deepika, you went to Ranveer Singh. You went to Ranveer Singh. But the problem is that Ranveer Singh only follows Deepika."
+  },
+  {
+   "start": 1298.51,
+   "end": 1327.82,
+   "text": "Ranveer Singh only follows Deepika. So Pratyush came to Deepika. Deepika came to Ranveer. Now Ranveer only follows her. But you have seen Deepika. You have already seen Deepika. So what will you do? You will close this. Or you will come back to Deepika by pressing back on Instagram. Because there will be more followers of Deepika. Let's see them. Deepika's first follower was Ranveer Singh. Let's see him. Now he used to only come to Deepika. So we don't want to go. You pressed back. You pressed back button on Deepika by pressing Ranveer Singh. Deepika came more."
+  },
+  {
+   "start": 1327.82,
+   "end": 1334.46,
+   "text": "This is exactly what we are doing here. Let's go."
+  },
+  {
+   "start": 1334.46,
+   "end": 1364.29,
+   "text": "So what did you do? In node is equal to 4, everything is over. There is no need to do anything else. We came to node 2. Is there any other neighbor of node 2? Remember what happened to node 2? It was 0. We had ignored 0. It was 4. We checked 4. Is there any other neighbor of node 2? There is no neighbor left. So what will we do? Back button. We will come back by pressing back button. Node 2 is over. There were only two followers of Deepika. Malik Jaranveer Singh and Sachin Tendulkar. Both are over. What will you do? Nothing. We will come back. Now we have to do one more stop. We came back."
+  },
+  {
+   "start": 1364.29,
+   "end": 1390.08,
+   "text": "Where did you come back? We came back to note 0. See how we did it. 2, 4, we did it again and came back here. The next neighbor of note 0, there are more neighbors of note 0 left. It was 32 following, right? You just entered into Deepika. There are more people. Enter into more. Do the whole stock. Come to 3. Should you take 3? Yes, you should take 3. Why? Visited of 3? What is it? Zero. So you take 3. Where did you come by taking 3?"
+  },
+  {
+   "start": 1390.08,
+   "end": 1408.83,
+   "text": "Note is equal to 3. What is the first thing to do? Write 3 in your result. And what to do with visited of 3? Make it 1 to remember. Very good. Look at the neighbor of 3. What is the neighbor of 3? Zero. What is the neighbor of 3? Zero."
+  },
+  {
+   "start": 1408.83,
+   "end": 1435.58,
+   "text": "Do you need to enter 0 more? No, why? It's visited of 0, 1. Why will you enter 0? We have seen it. Don't do anything. Neighbor is over. Ignore. Press back button. It's over. Press back button. Where do you want to go? Back to node 0. This neighbor of node 0 is also done. Who is the next neighbor? 1. Do you need to enter 1? Yes, you need to enter. Because what is visited area? 0. So 1 has not been visited yet. Where have you come?"
+  },
+  {
+   "start": 1435.58,
+   "end": 1464.82,
+   "text": "Note is equal to zero. Sorry, note is equal to one. Note is equal to one. What is the first thing? Write one in the result. Write one in the result. And what do you do to visitor one? Do one. It's done. You visited one. Very good. Come back. Look at the neighbors of note one. Look at the neighbors of note one. Only zero. Should you enter zero more? You shouldn't enter zero. Because visit is zero. What will you do on one? Nothing. Back button."
+  },
+  {
+   "start": 1464.82,
+   "end": 1491.73,
+   "text": "Back button. Where did you come back after pressing the back button? On note zero. Is there any other neighbor left near note zero to check? No one is left. That means the whole Instagram is over. You have been sitting here and there all night and stalking. Now there is no celebrity left whose profile you have not visited. See, the whole visit is over. The whole visit is over. What is the problem? Do you want to close Instagram? Close Instagram. What is your result? 0243102"
+  },
+  {
+   "start": 1491.73,
+   "end": 1503.25,
+   "text": "4, 3, 1. 0, 2, 4, 3, 1. This work is called DFS. How will this work? First of all, go to 0. Write 0. After 0, come to 2. Write 2. After 2, come to 4."
+  },
+  {
+   "start": 1503.25,
+   "end": 1529.79,
+   "text": "This is what DFS is. This is exactly what DFS is."
+  },
+  {
+   "start": 1529.79,
+   "end": 1559.57,
+   "text": "We were talking about how to do this and how to do the code of this. Look at the code of this. The code is also simple. Whatever we say is the code of that. So first of all, we make a function of DFS. This is the standard function of DFS. In every question, in every graph question, wherever DFS will be used, you will have to write the same function and the same format. So see, what will we write first? Void, DFS. This is a kind of recursion. What is this kind of recursion? I hope you are understanding what we are doing again and again."
+  },
+  {
+   "start": 1559.57,
+   "end": 1586.64,
+   "text": "They are calling here and there. First of all, pass your adjacency matrix in this. Why adjacency matrix? Because it is useful to find our neighbors. Very good. Now, which node are we on? We have seen that we have come to node 2, 4, 3. Now, we have to go to 2 after 0. Now, which node are you on? Now, which node are you on? Now, which node are you on? We have to see that. One is your vector."
+  },
+  {
+   "start": 1586.64,
+   "end": 1605.97,
+   "text": "which is your result store vector in which you will do something and one more thing you have to do vector of bool vector of boolean visited vector of boolean visited which we will keep false in the beginning but as we keep looking at the node we will keep making it true"
+  },
+  {
+   "start": 1605.97,
+   "end": 1635.54,
+   "text": "What was the first thing you did when you came to any node? You wrote it in the result. So write it in the result. To whom? To the node. There is a value in the node. Node means whether you are on 0 or 2 or whatever. What was the first thing you did when you came to the node? The first thing you did was push back the node in the result. Did you push back the node in the result? Very good. What was the next thing you did? Visited of node is equal to true. What? Visited of node."
+  },
+  {
+   "start": 1635.54,
+   "end": 1662.18,
+   "text": "Is equal to true. Means we have seen this node. Now if this node comes in any neighbour. Don't see it again. Don't see it again. Don't see it again. What did we do after that? See all the neighbours of this node. See all the neighbours of this node. How will we see the neighbours? So see int i is equal to 0. i less than adj node dot size."
+  },
+  {
+   "start": 1662.18,
+   "end": 1691.3,
+   "text": "ADJ node dot size I++. What is this doing? Look. What is ADJ? Vector of vector of int. ADJ of node. Means ADJ of let's say 0. Where will ADJ of 0 come? It will come. So this is a vector. 2, 3, 1. We are looping on this. We are looping on this. Okay. Now how will you remove neighbor? Int. Neighbor is equal to. ADJ. Oh. What happened? Yes. ADJ node. So that was vector."
+  },
+  {
+   "start": 1691.3,
+   "end": 1714.86,
+   "text": "On that, you are looping i. See this. It will give you its neighbor one by one. First it will give you 2, then 3, then 1. What is the adj node? A vector of 2, 3, and 1. If you are looping on that, what will you get index-wise? First you will get 2, then 3, then 1. What did you check after getting the neighbor? If, if, visited of neighbor, means this neighbor,"
+  },
+  {
+   "start": 1714.86,
+   "end": 1741.89,
+   "text": "is equal is equal to false means if this neighbor is not explored if you haven't seen this Instagram profile yet then what would you have done? you would have entered in this how will you enter? call the same function DFS ADJ what will happen in place of node? neighbor now you are going to enter in this neighbor node result or visited it's over it's over it's so small what are you doing?"
+  },
+  {
+   "start": 1741.89,
+   "end": 1764.34,
+   "text": "If this neighbor is not visited, you call the same DFS function for it. It is just like you were on node 0, you saw 2, again DFS is called. For what? For node is equal to 2. From Pratyush's profile to Deepika's profile. Same DFS function. For what? For neighbor. And that's it. Return is over."
+  },
+  {
+   "start": 1764.94,
+   "end": 1775.86,
+   "text": "This is your DFS code. Any DFS code will follow this pattern, this format. You will have to write these 2-3 lines every time. Every time. First of all, your result."
+  },
+  {
+   "start": 1775.86,
+   "end": 1803.9,
+   "text": "Anything can happen in the result. If you were told to print all the nodes, then you would have done a cout node here. But, this visited node is equal to true, don't forget. If you forget, it will go into an infinite loop. Your program will go into an infinite loop. Why will it go into an infinite loop? Because you started from Pratyusha and went to Deepika. Deepika starts Pratyusha, you go back to Pratyusha, you go back to Deepika. This will go on and on. You will never be able to see other people. Your program will crash. So, you visited, you looped on every neighbor. What is this?"
+  },
+  {
+   "start": 1803.9,
+   "end": 1832.42,
+   "text": "loop over neighbors, loop over neighbors, very good. After that, how to remove neighbors? ADG of node and I. After that, if this is false, then do it. Now, what do you need to call this? To call this, you don't need anything. Assume that you have this main function, which gives you GFG, we will write that too. Maybe you don't understand that too. This is the main function, this is the GFG function. In this, you have only one thing. What is given? Vector of,"
+  },
+  {
+   "start": 1832.42,
+   "end": 1862.99,
+   "text": "Vector of int and adj. There is only one thing in it. So first of all, what do we do? Int n. Int n means number of vertex. What have we told you? Whatever size of adj will be, it will tell you the number of vertex. Because adj contains for every vertex. All the things in adj, it will tell you n. First of all, we make our result. Vector int res. Make an empty vector. After that, make a visited array. How to make a visited array? See. Vector of"
+  },
+  {
+   "start": 1863.02,
+   "end": 1888.02,
+   "text": "bool viz now write the size of it how many nodes do you need same as adj means the number of nodes in adj is the same as the visited node and n is 0 this is a trick, this is the syntax of C++ even if you want manually what do you need? the point is that you need a boolean array of n size in which everything is false in the beginning so just make it however you want by looping whatever you want to do now"
+  },
+  {
+   "start": 1888.02,
+   "end": 1917.55,
+   "text": "What have you been told? Whom do you want to start with? Whom do you want to start Instagram stocking with? With zero node. So start with zero node. What did ADJ pass instead of node? Zero. And result? Visited. If this DFS runs once, then your result array will be made. How? Because we are making it here every time. This whole story will run. Once this whole story runs, you can return the result comfortably. Very good."
+  },
+  {
+   "start": 1917.55,
+   "end": 1942.48,
+   "text": "See this program, there is not much rocket science. Once you understand, you will be able to write all this like butter. Write by yourself, make copies, make drawings, see what is happening. See what happens when you leave a few things, that is, remove a few lines, see what happens. If there is a good way, implement it. That means you have learned DFS. What do we call it? Depth first search. Congratulations a lot. Let's go towards BFS."
+  },
+  {
+   "start": 1943.41,
+   "end": 1972.56,
+   "text": "Now, let's come to BFS. That was DFS. D for Dog. This is B for Banana. BFS. What is its name? Breadth First Search. What was that? Depth First Search. This is Breadth First. This is a little different. This is a little different. How is it different? Let me tell you. See. Take the same example of Instagram. On whose profile did you go? On my profile. What did you do in DFS? You saw Deepika from Pratyusha. You saw Ranveer from Deepika. You saw Ronaldo from Ranveer. You kept going until everything was over. Okay. We will not do this in this."
+  },
+  {
+   "start": 1972.56,
+   "end": 1999.3,
+   "text": "Suppose Pratyush follows two people. Deepika and Sachin. Okay? Follows two people. Deepika also follows two people. Maybe she follows Ranveer Singh. And she also follows Sachin. Okay? Let's do this and that. What is breadth first? Now you don't enter deep. Now on which node you are on, on which node you are on, means you came on Pratyush in the beginning."
+  },
+  {
+   "start": 1999.3,
+   "end": 2029.25,
+   "text": "Finish all the neighbours of Pratyush. Finish all the neighbours of Pratyush in this order. Meaning, after Pratyush, you first go to Deepika. Go to Deepika? Okay. You will go to Deepika. So, first of all, you will go to Deepika. You will definitely go. Pratyush's first neighbour is Deepika. After that, what did you do in DFS? After coming to Deepika, you would enter Ranveer Singh. After Deepika, you would enter Ranveer Singh. You don't have to do this. All the neighbours of Pratyush will finish in this order. They will finish in this order. Meaning, Pratyush, first go to Deepika's profile."
+  },
+  {
+   "start": 2029.25,
+   "end": 2052.66,
+   "text": "Deepika's profile, okay, something will happen. Okay. After that, Sachin's profile should open. Sachin's profile should open. After that, after that, Pratyush's neighbor is over. After that, you can open Deepika's neighbors. Then you, Ranveer, I mean, what is this? You are also knowing by name, right? You are covering breadth first. You are searching breadth first. What are you doing?"
+  },
+  {
+   "start": 2052.66,
+   "end": 2062.46,
+   "text": "Breadth first search. What was that? We were going deep, deep, deep. What is it? Breadth first search. What is it? Breadth first search means"
+  },
+  {
+   "start": 2062.46,
+   "end": 2088.56,
+   "text": "on which note, if there are some neighbours on that note, cover those neighbours first in that order. Don't get into every neighbour, that first let's move this neighbour completely. No. Finish all the neighbours of Pratyush first. After that, where to enter, how to enter, enter that. Don't do that, that if you come to Deepika, then first move Deepika completely. Deepika will see everything. No, don't do that. Pratyush's neighbours will be finished in this order."
+  },
+  {
+   "start": 2088.56,
+   "end": 2114.56,
+   "text": "This is also very easy. If you understand DFS, then it is easier than that. DFS is considered very easy from DFS. They came here, okay. Now see here, doing DFS will not work. In DFS, we had written a function that went to node, took out the neighbor of node and entered the neighbor. Then the same work will happen to the neighbor. You are taking out the neighbor of the neighbor and entered it. So you will go to the other side. In this, you will have to maintain an order."
+  },
+  {
+   "start": 2114.56,
+   "end": 2141.5,
+   "text": "If you come to zero, then you have to maintain the order of all the neighbors of zero. Remember the tree. Remember the tree's level order traversal. Remember the tree's level order traversal. What did you use? Q. What did you use? Q. If it is about breadth first search or level order, then you will have to use Q. This is the only way in the world. You will have to use Q. How will we use Q? Let me tell you."
+  },
+  {
+   "start": 2141.5,
+   "end": 2171.34,
+   "text": "What is Q? Those who don't know, check out the level order. Q1 is data structure. There are two types of endings in Q. This is front and this is rear. Front and end. When you push in Q, you keep pushing from the rear. Let's say you push 3 things in Q. 1, 2, 3. First 1 will push from the rear, then 1 will come here."
+  },
+  {
+   "start": 2171.34,
+   "end": 2190.06,
+   "text": "2 will be pushed from the rear, so 2 will come after this. 3 will come after this. Now when you take it out, this is about pushing. When you pop, it pops from the front. It puts a hand in the front and takes out whatever it gets. So if you pop once, what will come? If you pop once, 1 will come."
+  },
+  {
+   "start": 2190.06,
+   "end": 2219.78,
+   "text": "Second time we will pop, 2 will come. Third time, 3 will come. So see, the order in which you pushed, 1, 2, 3, it popped in that order. That's why we call it Q. Whenever you have to maintain the order, that Sachin entered, Vipika entered, this entered, and you want this order to be maintained, then you put it in a Q. When you pop it, you will get the same order. So see, what we will do in this, we will do a very small trick. It came here. The rest will be the same. You will need one result vector. You will need one result vector."
+  },
+  {
+   "start": 2219.78,
+   "end": 2249.33,
+   "text": "And we also need a visited array. Which will tell us that it's done, we have seen it. Don't see it again and again. What will be the visited array in the beginning? Zero. The result will be empty in the beginning. What have you been told to start with? From node is equal to zero. From node is equal to zero. We will make a queue. What will we make? This is our queue. This is its front. This is its real. First of all, what should we do?"
+  },
+  {
+   "start": 2249.71,
+   "end": 2268.21,
+   "text": "Q dot push 0 and visited of 0 is equal to 2. We will tell you why we are doing it. What did we do in Q? Push. So in Q, 0 was pushed. And what happened to 0's visited? 1. Now we don't have to go to 0. 0 is done."
+  },
+  {
+   "start": 2268.24,
+   "end": 2300.24,
+   "text": "After that, what we will do? We are just explaining you level order. Level order is the same. Level order is very easy actually. After that, iterate on this queue. Until this queue is empty, run while loop. When this queue is empty, you will see how your BFS is finished. Let's see. While queue.empty. While queue.empty. Okay? What will you do? Which node will you remove? Node is equal to queue.pop. The node is removed. Very good."
+  },
+  {
+   "start": 2300.24,
+   "end": 2317.66,
+   "text": "Q.pop sorry not Q.pop Q.front Q.front in java it can have different syntax you have to remove front and Q.pop what happened with this first of all what value came in node 0 and it got popped by Q after that now now"
+  },
+  {
+   "start": 2317.66,
+   "end": 2345.09,
+   "text": "What did they do in DFS? They patented all the neighbors of 0. They called DFS for their neighbor. Don't do that in this. Because all the neighbors of 0. All the neighbors of 0 which are unvisited. Remember. Push the unvisited ones in the queue. Push all the unvisited neighbors of 0 in the queue. Who is the neighbor of 0 now? Who is the neighbor? 2, 3, 1. 2, 3, 1. Do it one by one. Should you push 2?"
+  },
+  {
+   "start": 2345.09,
+   "end": 2374.27,
+   "text": "Do you want to push 2? Yes, because 2 is not visited. So, do two things. Push 2. Push 2. And what do you do with visited of 2? Do 1. Very good. Do you want to push 3? Yes, do it. So, push 3. But, but, but, what do you make visited? Make 1. Very good. Do you want to push 1? Yes, because 1 is unvisited."
+  },
+  {
+   "start": 2374.27,
+   "end": 2400.38,
+   "text": "So, push it. Push it normally. But, 1 also in visited. Make it 1. It's over. It's over. All the neighbors of 0, all the unvisited neighbors of 0, you have pushed. And, here, here, what you have to do, we forgot one thing. Write 0 in result. Write 0 in result. It's over. Close it. Check again. Is Q empty? No, Q is not empty. Come. What will come out in node?"
+  },
+  {
+   "start": 2400.38,
+   "end": 2420.5,
+   "text": "Front wala. Front wala. Kya hai front me? Two. Dhiyan se dekhiye. Zero ka pehla number kya tha? Two tha. Kya pehle two nikal raha hai? Haan. Dekhiye order kese maintain hota hai. Kya nikala front se? Two. Two ko pop kar dijiye. Two ko apne result me likh dijiye. Two ko apne result me likh dijiye. Very good likh diye. Kya karna hai? Same kaam karna hai."
+  },
+  {
+   "start": 2420.5,
+   "end": 2436.02,
+   "text": "Put all the unvisited neighbors of 2 in the queue. We will process it when the time comes. Put all the unvisited neighbors of 2 in the queue. Which is the neighbor of 2? From where will we get the neighbor of 2? From adjacency. 0 and 4."
+  },
+  {
+   "start": 2436.05,
+   "end": 2461.01,
+   "text": "Do you need to entertain 0? No, visited of 0 is 1. That means 0 is done. Do you need to entertain 4? Yes, you need to entertain. So entertain. What do you entertain? In Q, push 4. And don't forget to make 1 in visited. Don't forget to make 1 in visited. Now see. You can see that all the notes are visited. Now see how the process is done."
+  },
+  {
+   "start": 2461.01,
+   "end": 2486.9,
+   "text": "Zero ke baad two ho gaya. Two ke baad aur kuch to karne ka hai nahi. Two khatam ho gaya. Kya queue empty ho gaya hai? Nahi. Queue empty nahi hua hai. Kya nikla? Three nikal gaya. Aapka node kya ban gaya? Three. Three ko pop kar diye. Okay. Kya karna hai three ke saad? Result mein daal do. Ab, three ka neighbor kaun kaun hai? Zero. Kya aapko zero ko entertain karne ka darwat hai? Nahi. Zero visited hai. Kuch mat kariye. Khatam kar dijiye. Agla nikaaliye queue se. One."
+  },
+  {
+   "start": 2486.9,
+   "end": 2513.66,
+   "text": "No is equal to 1. What to do? Write 1 in the result. What is the neighbor of 1? The neighbor of 1 is 0. Will 0 be entertained? No. Ignore 0 because it is visited. Finish it. Why is it empty? After the pop of 1. No, it is not empty. Who is left? 4. Remove 4. No is equal to 4. Write 4 in the result. Who is the neighbor of 4? 2. Who is the neighbor of 4? 2. Do you want to entertain 2? No."
+  },
+  {
+   "start": 2513.66,
+   "end": 2543.36,
+   "text": "Don't do anything. Is your queue empty now? Yes, it is completely empty. Did you get BFS in the result? 0, 2, 3, 1, 4. How did you get this? How did you get this? How did you get this? We will tell you how you will get this. See. We have done it one by one. Let's write everyone's neighbor. See. Who was the neighbor of 0? 2, 3, 1. The neighbor of 1 was 0. We are telling you how it works in reality. This is fine. The code is working. 0. No, sorry. Who is the neighbor of 2? 0 and 4."
+  },
+  {
+   "start": 2543.36,
+   "end": 2570.78,
+   "text": "0 and 4. Neighbor of 3 is 0. Neighbor of 4 is 2. What did we say? First of all, we will start from 0. So, write 0 in the result. Now, all the neighbors of 0 will be there. So, first 2 will be there. Write 2. First 2 will be there. Write 2. Now, don't go into 2 blindly. Don't go into 2 blindly. Finish all the neighbors of 0. Finish all the neighbors of 0. 3 and 1. 3 and 1."
+  },
+  {
+   "start": 2570.78,
+   "end": 2587.36,
+   "text": "Now, the neighbor of 0 is finished. The neighbor of 0 is finished. In the next case, go to the first neighbor of 0. See in this, does 0 need to be deducted? No. But, does 4 need to be deducted? Yes, 4. This is finished. Finished?"
+  },
+  {
+   "start": 2587.36,
+   "end": 2617.36,
+   "text": "Now go to the next neighbor of 0. Now you will not get anything. So BFS works like this. First of all, you exhaust all the neighbors on the node. See all the neighbors. After that, go back slowly. 0, 2, 3, 1, 4. See what we came up. 0, 2, 3, 1, 4. This is your BFS. It is very easy. Its code is smaller. Means its code is smaller than DFS. We don't need to write any special function in this. What will we write? See. You need a vector int. This is your GFG function. Okay."
+  },
+  {
+   "start": 2617.9,
+   "end": 2647.17,
+   "text": "And you will be given an adjacency matrix. Adjacency matrix vector of vector of int. You guys are very lucky that you don't have to make this. But if you need to make it, then we hope that you will make it. First of all, take out m. Its ATJ size is same as DFS. Very good. Make a vector for your result. Make a vector for result. Result. And make a boolean. For which? For visited."
+  },
+  {
+   "start": 2647.17,
+   "end": 2678.45,
+   "text": "How many size? In the beginning of n size, everything is false. Make a Q. Q int Q. Very good. What was it? Push the first one in Q. Because we have to start. And if you have pushed it, make it false. Sorry, make it true. Make it true. And you can write true as 1. Now let's run our loop. While Q dot not empty. While Q dot."
+  },
+  {
+   "start": 2678.45,
+   "end": 2695.44,
+   "text": "Not empty. What will we do? Int. Take out the node. Which one? Take out the node from the front of Q. We have to process this. Q is the order in which you are putting in Q and processing it one by one. It is very intuitive. Think once in your mind what is the intuitive thing."
+  },
+  {
+   "start": 2695.44,
+   "end": 2725.18,
+   "text": "You have to process it in this way. The way you have to process it, you have to push it in that way. If you have to process all the neighbors of 0, you can see that you are pushing all the neighbors of 0. So, it's not like magic is happening. You are pushing it in such a way that you are getting it. Now, pop this person from the queue. First of all, push back this person in the result. Push back this person in the result. To whom? To node. Done. Now, put all the unvisited neighbors of node in the queue. How will we do it? For"
+  },
+  {
+   "start": 2725.18,
+   "end": 2754.7,
+   "text": "The same loop will run. i is equal to zero. i less than adj node dot size. Means in adj node, all its neighbors will be i plus plus. How will the neighbor come out? Neighbor is equal to adj node's i. This will give you neighbor one by one. If visited of neighbor equal to false. If this is false, then"
+  },
+  {
+   "start": 2754.7,
+   "end": 2781.14,
+   "text": "Push it in the queue. Push it in the queue. To whom? To the neighbor. Not to the note. To the neighbor. OR visited of neighbor is equal to true. Once it's pushed, you don't want it again and again. Once it's done, you don't want it again and again. One, one, one, return less. Look at this. This is a very innocent code. What do you call this? BFS. What do you call this? BFS."
+  },
+  {
+   "start": 2781.14,
+   "end": 2811.33,
+   "text": "The time complexity of both DFS and BFS is order of N. N is equal to number of nodes. The space complexity is also order of N. Where N is equal to number of nodes. Both DFS and BFS. This is space and this is time. What is the space and time complexity of both DFS and BFS? Order of N. So this is the code of BFS. We are doing the same thing. On the top you have the code of DFS and on the top you have the code of DFS. So do both the codes for sure. Don't close it like we have already done it. We will do it later. Don't do it later."
+  },
+  {
+   "start": 2811.33,
+   "end": 2816.69,
+   "text": "See you in the next video."
+  }
+ ]
+}

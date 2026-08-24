@@ -1,0 +1,339 @@
+{
+ "video_id": "HBI6DQOT_qk",
+ "title": "Graph Series Episode 10 - Shorted Path In Non Weighted graph",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1770,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 28.82,
+   "text": "Hello kids, you are watching Pado with Pratyush. My name is Pratyush. And before going to today's question, the question is very important, so watch it. But before that, it came in a comment that how much time should be given in DSL? So see, we don't do much lipa poti. You should give as much time as you have. You don't have a shortage of time. We know it, you know it. So don't ask all these questions that how much time should be given. I mean, you are not doing anything like that. Nobody asks how much time should be given in PUBG while playing PUBG. Nobody asks how much time should be given in IPL."
+  },
+  {
+   "start": 28.82,
+   "end": 56.9,
+   "text": "When it comes to education, people get very angry that they don't have to study more than a minute. Give as much time as you have, otherwise it will be very difficult. Don't ask all these questions. How much time will it take in this? How much time will it take in that? Until you learn, give time and leave everything. Leave everything. Be in college, gym, film, leave everything now for a year or two. Focus on one big target and work on it. If it doesn't work, then everything else will remain empty."
+  },
+  {
+   "start": 56.9,
+   "end": 85.54,
+   "text": "All these things have to be thought about later, how much time is there in this and how much time is there in that. I mean, we should think about all these things, how much time should be given in the job, how much time should be given in YouTube and in this. That is not your job, you have only one job, you have been sent away from home for only one job, to study. No one is telling you to do a job, earn money, your parents don't tell you to do a job, work in a pizza shop, send us money, no one says that. You have been sent for only one job, just for studying. Don't ask in that, how much time is there in this, then what else do you do?"
+  },
+  {
+   "start": 85.54,
+   "end": 113.52,
+   "text": "So eat, study, do three things. Apart from this, whatever you are learning that no, entertainment is also important. No, the more entertainment you are taking, the more entertainment you do not deserve. Do something and then do the entertainment you want to do. If you want to see the vlog of Sourav Joshi, what to do, we will talk about that later. Now this is a useless question. How much time should I give? Give as much as you have. Come on, start. Look, we tell you the general rule before starting that understand the general pattern, understand the rule, understand anything."
+  },
+  {
+   "start": 113.52,
+   "end": 141.42,
+   "text": "Whenever there is a question about the shortest path, you have to find the shortest path in the graph or you have to find the shortest distance, whatever it is. Distance, path, its distance, any question related to this. And an unweighted graph is given. Either non-weighted graph. Unweighted or non-weighted. What does non-weighted mean? That the line of each graph is of one weight. What is its weight? One. Weight means to understand that, like in Google Maps,"
+  },
+  {
+   "start": 141.42,
+   "end": 163.15,
+   "text": "In Google Maps, it shows the distance from Bangalore to Ranchi and Delhi. But if Google Maps says that the distance from Bangalore to Ranchi is 1 km, the distance from Bangalore to Delhi is 1 km, and the distance from Delhi to Ranchi is 1 km, then you have to always use BFS. Why? I will tell you later."
+  },
+  {
+   "start": 163.15,
+   "end": 190.11,
+   "text": "For short, if there is a problem that you have to find the distance and the non-weighted means that all the edges have the same weight. Non-weighted means that all the edges have the same weight. It is possible that every city is 10 km away from each other. There is no problem. Every city is 1 km away from each other. There is no problem. Always what to use? Use simple BFS. Never use too much of your brain in this."
+  },
+  {
+   "start": 190.11,
+   "end": 213.98,
+   "text": "You don't have to use Dijkstra, Bellman, etc. They are all made for weighted graphs. You don't need non-weighted or non-weighted. You don't have to use DFS or DAFS. I will tell you why you don't have to use it. In short, I will tell you that this is the rule. Now the question is that you are given a graph."
+  },
+  {
+   "start": 213.98,
+   "end": 243.22,
+   "text": "What kind of graph is it? First of all, you should write it in your copy. What kind of graph is it? You are given a connected graph. How? Connected graph is given. Very good. What does connected mean? All things are in one component. There is no separate part. 0, 1, 2 are in separate parts. 3, 4 are in separate parts. It is not like that. Okay. Undirected is given. How? Undirected means, if your edge is between 0 and 1, then you can go from 0 to 1. You can go from 1 to 0. It is an undirected graph. Okay. And,"
+  },
+  {
+   "start": 243.22,
+   "end": 264.1,
+   "text": "Non-weighted graph is given. What does non-weighted mean? How much is the weight of each edge? One. The weight of each edge is one. One can be anything. Unit weight. One kilometer, one meter, one cent. Anything can happen. But everyone has equal weight. And how much is it? One unit weight. Okay. You are given a source."
+  },
+  {
+   "start": 264.1,
+   "end": 289.09,
+   "text": "A source node is given. Now, there are many nodes in the graph. There are 8 nodes in the graph. So, it will be from 0 to 7. You have given any source node. Now, this source can be anything. 0, 1, 2, anything. Depending on the number of vertices. Okay. From that source, from that source, you have to find the distance of the rest of the nodes. You have to find the distance and find the shortest distance. Not longest. Shortest distance."
+  },
+  {
+   "start": 289.09,
+   "end": 312.08,
+   "text": "How much minimum distance do you have to cover to reach every node from that source? This is your question and you have to make a vector and return it. For example, if n is equal to 4, it is a graph of 4 nodes, then you have to return a vector of 4 sizes, 0, 1, 2, 3. Let's assume that the source given to you is 0, then the distance from 0 to 0 will be 0."
+  },
+  {
+   "start": 312.08,
+   "end": 339.49,
+   "text": "It is possible that the distance from 0 to 1 is 1 edge and you have crossed it. The distance from 0 to 2 is 2 edge and the distance from 0 to 3 is 1 edge. By doing this, you have to make a vector. So, this is your question. Now, we will tell you how does this question work? How do we think about it? Why did we say that you have to use BFS always in it? Why not DFS? We will understand all that gradually. Let's go. So, look. Any such question works on a concept. Assume that your source is 0. Your graph looks something like this. Okay? 0 is in the middle."
+  },
+  {
+   "start": 339.49,
+   "end": 368.34,
+   "text": "Now 0 is connected to 4 people. How many people are connected to 0? 4 people. Front, back, right, left are connected to 4 people. So 1, 2, 3 and 4. Very good. 0 is connected to 4 people. How much is the weight of each edge? 1. How much is the weight of each edge? 1. Very good. Now assume that it is connected to 2 more people. 2 is connected from here. Let's make it 1. 2 is also connected to more people."
+  },
+  {
+   "start": 368.34,
+   "end": 395.36,
+   "text": "3 is also connected to another person, 4 is also connected to another person, and 1 is also connected to another person. Now we will do the numbering of this. So this will be 4, 5, 6, and 7. This is your graph. What is the total node? n is equal to 8. Assume that you have given the source as 0. What you have to do is, from 0, because 0 is your source, how much time will it take to go to every node from 0? What does time mean?"
+  },
+  {
+   "start": 395.36,
+   "end": 424.43,
+   "text": "How much weight, how many edges do you have to cross? How much distance do you have to cross to reach every node? And you have to return a big vector like this. Now see how this concept works. You should imagine that you are standing at zero. You are standing at zero because zero is your source. What is zero? It is your source. So what should you do first? What should you do first? We will make an array. Suppose we make an array. What size? 8 size. 4, 5."
+  },
+  {
+   "start": 424.82,
+   "end": 452.14,
+   "text": "6 and 7. Okay? Where are you standing initially? You are standing at 0. Because 0 is your source. Now tell me, how much time does it take to go from 0 to 0? 0 takes time. You are at 0 from 0, right? So how much time do we take to go from 0 to 0? But take distance from it. I am losing time by mistake. Distance. How much distance is there from 0 to 0? 0 distance. So first of all, do one thing. Write 0 here. Write 0 here. Very good. Now you have to imagine this. Now you are standing at 0 and you..."
+  },
+  {
+   "start": 452.14,
+   "end": 480.75,
+   "text": "Jor se chillaiye. Jor se chillaiye. Chillane ka matlab samajhte hai? Zero pe khada ho ke aa aisa karke chillare hai. Now if you stand on zero and shout loudly, then sound travels in every direction. Sound aisa nahi hai ki agar aap kisi room me chillayenge to sound sirf aage jayega. Sound phel jata hai. Sound kya? Phel jata hai. Ya to light kya hota hai? Phel jata hai. Aap zero pe khada ho ke jor se chillaye. Sound har jaga phelega. Sound har jaga phelega. Sound upar bhi jayega."
+  },
+  {
+   "start": 480.75,
+   "end": 502.75,
+   "text": "Right, left and down. So the sound spread everywhere. Now tell me, after 1 second, how long does it take for the sound to go 1 km? For simplicity, it takes 1 second for the sound to go 1 km. After 1 second, where will the sound of your screams reach?"
+  },
+  {
+   "start": 502.75,
+   "end": 522.03,
+   "text": "Its sound will reach to 1 because 1 is 1 km away. Every edge is 1 km away. Sound will reach to 2 because 2 is also 1 km away. Your shouting sound will reach to 3 because 3 is also 1 km away. And your shouting sound will reach to 4. So these 4 people, these 4 neighbours."
+  },
+  {
+   "start": 522.03,
+   "end": 548.59,
+   "text": "How far is it from zero? One kilometer. So in one second, your sound will reach all four of them at once. Sound doesn't go like this that first we will go here, then here, then here. No. Sound spreads everywhere. Sound spreads all around. So after one second, after one second, what will happen? Your sound will reach all four people. It will reach all four buildings. What does this mean? If you have to go from zero to all four, then how long will it take?"
+  },
+  {
+   "start": 548.59,
+   "end": 575.14,
+   "text": "One. One distance. How long will your sound last? One distance. What does it mean? To these four. To these four. Which are one away from zero. One distance away from zero. How long will it take? One, one, one, one. From zero to two, three, four. How much distance did you have to travel to reach the four? One. One. It happened at once. It didn't take one second to reach one. Then it didn't take two seconds to reach two. How's the sound?"
+  },
+  {
+   "start": 575.14,
+   "end": 603.06,
+   "text": "In all four directions. So how did you reach all four directions? You traveled one distance and reached one unit. Now, the sound hasn't stopped. Now, after a second, your sound is here, here, here, here. The sound will spread more. How much? It will spread more. After the next second, after the next second, where will your sound reach? At four, seven, five, and six."
+  },
+  {
+   "start": 603.06,
+   "end": 631.09,
+   "text": "After 2 seconds, your sound will spread more. Sound goes 1 km in 1 second. After 2 seconds, your sound will reach 4, 7, 5, and 6. How much distance will you have to travel to reach these 4? 2 edge. After 2 seconds, your sound will reach 4. What is the answer to this? 2, 2, 2. Is there anything left?"
+  },
+  {
+   "start": 631.57,
+   "end": 660.72,
+   "text": "Did I leave anything? 0, 1, 2, 3, 4, 5, 6, 7. I have left something. 1, 2, 3, 4 is done. Okay, I made a mistake. Okay, whatever it is. And one more here, two. Okay. So, this is how it works. You have to imagine that you are standing on the source and shouting. Now, your sound is traveling everywhere. Your sound is traveling in all directions. How long does it take for your sound to go? This is its main concept. This is called BFS. What is happening?"
+  },
+  {
+   "start": 660.72,
+   "end": 687.31,
+   "text": "We are searching for the first breath. Your sound started from here. After covering one distance, your sound reached here, here, here and here. How much distance did these four have? One. Next, the sound will spread further. After the next second, your sound went from here to here. From here to here. From here to down. From here to right. So how much distance will these four have? Two."
+  },
+  {
+   "start": 687.31,
+   "end": 712.82,
+   "text": "This is called BFS. You are doing breadth first search. First of all, the people who are one kilometer away from zero. Which people are one kilometer away from zero? This one, this one, this one, this one. What do you write the answer of those four? One. So see, make a circle, make a radius of your impact. Which people are two kilometers away? This man, this man, this man and this man. So what is the radius for these four? Two."
+  },
+  {
+   "start": 712.82,
+   "end": 742.06,
+   "text": "This is how BFS works. We will do the same thing in BFS, but you can use it to understand that this is how your sound is spreading. Again, why it works only in non-weighted, we will tell that too, and why you can't do DFS, we will tell that too. When we move ahead, we will take this work a little deeper and explain it to you. Let's go. In this small example, I will explain to you how it works in SQL. Suppose this is your graph, a very simple graph. How many nodes do you have? There are five nodes in total. Your source is zero. What is your source?"
+  },
+  {
+   "start": 742.06,
+   "end": 762.11,
+   "text": "So what will we do? First of all, what will be the distance from 0 to 0? What will be the distance from source to source? 0. So the answer to this will be 0. The answer to this will be 0, 1, 2, 3, 4. So what will we do? We will maintain a Q. What will we maintain? Q. Whenever BFS is used,"
+  },
+  {
+   "start": 762.11,
+   "end": 792.32,
+   "text": "Whenever you get the name of BFS, you have to maintain Q. You have to learn Q. You have to do Q. BFS means Q. Q is used for BFS. Stat is used for DFS. Right? When we were studying BFS, you also used Q. What will we put in this Q? Where has the sound reached now? And how much distance does it have to cover? Now, when you shout in the beginning, when you stand on zero and shout, where is the sound now? Now, we will do two things in Q. One will be node. That is, where is the sound now? In position. And"
+  },
+  {
+   "start": 792.32,
+   "end": 820.02,
+   "text": "How much distance have you travelled? So, in the beginning, when you stand at zero and shout, you are at zero. And now, how much edge has the sound travelled? Nothing has travelled. Your sound is at zero. So, zero. Take this. So, what is the first thing we have asked? Zero and zero. Why have we asked zero? Because zero is the source. And how much distance has the sound travelled? Zero distance travelled. Very good. Now, start reading this cue. Start reading this cue slowly."
+  },
+  {
+   "start": 820.02,
+   "end": 847.84,
+   "text": "Now you come to zero. First of all, remove this person. What did you get? Node is equal to zero and distance is equal to zero. What does this mean? How much distance do you need to come to this node? Zero distance. Write zero in the answer quietly. Write zero in the answer comfortably. Now, if the sound has to travel zero distance to come here,"
+  },
+  {
+   "start": 847.84,
+   "end": 875.87,
+   "text": "the sound had to travel zero distance to reach the zero node. So, how far will the sound reach to all the neighbors of zero? One more distance will be added. Listen again. Come to the above example. If you were here in the beginning, and the sound distance was zero here, which means the sound had to travel zero to reach from zero to zero. So, how far will the sound reach to all the neighbors of zero?"
+  },
+  {
+   "start": 875.87,
+   "end": 904.48,
+   "text": "Whatever is the current distance now, plus 1. Because what we have said is that sound takes 1 unit time to go to 1 edge. So, if you come to know that we have come to node is equal to 0 and my distance is 0. Okay. So, whatever is the neighbor of 0, which is 1 distance from 0, how much time will it take to go to that? Whatever is the current distance, plus 1. What is the neighbor of 0?"
+  },
+  {
+   "start": 904.48,
+   "end": 932.72,
+   "text": "How many neighbors are there? There is only one direct neighbor of 0 which is at the distance of 0 to 1. What is that neighbor? That is node 1. So what will we push in the queue now? We will push node 1. What is the distance? How much will the sound take? There was 0 to come to 0. How much distance will it take to go to 1? 1 will increase. 1 will increase. Because this is its immediate neighbor. It is at one distance from it. So 1 and 1. What will we do in the queue? Push it."
+  },
+  {
+   "start": 932.72,
+   "end": 962.88,
+   "text": "Is there any other neighbor of 0? No, there is no other neighbor of 0. And when you push someone in the queue, then mark it as visited. What do you mark it as? Mark it as visited. Because there is no need to go to one place again and again. So now 0 is also visited and 1 is also visited. Your queue looks like this. You have now succeeded in writing the answer of 0. Come again. Let's remove it again. Whom will we remove? Remove this person. What happened? Node is equal to 1. Distance is equal to 1. Meaning, the sound you produced,"
+  },
+  {
+   "start": 962.88,
+   "end": 992.24,
+   "text": "How much distance did he have to travel to get to node 1? He had to travel 1 distance. Write it comfortably in your answer. That the result of 1 is equal to 1. Is it right? One minute. Yes, sorry, the phone is ringing. How much distance did he have to travel to get to node 1? 1, so you have written 1. Now, now, now, the neighbors of 1, the neighbors of 1, who are at one distance from 1, if the sound had to come here, then how much time would it take for the sound to go here, here, here?"
+  },
+  {
+   "start": 992.24,
+   "end": 1019.39,
+   "text": "One more distance will increase. This is what we did last time. To reach here, the sound had to travel one kilometer. Now there are three people one kilometer away from 1. How long will the sound reach here? In one sub, the distance plus 1 will reach 2. And the neighbor of 1 is also 0. But 0 is already visited. Do this work on non-visited at any time in DFS or BFS."
+  },
+  {
+   "start": 1019.39,
+   "end": 1046.32,
+   "text": "Visited people are useless. Their game is over. How long will this sound reach the non-visited neighbor of 1? Whatever the distance of 1 is, the longer the sound is applied to 1, the more it will increase. Because all three people are 1 km away from 1. So even if it is applied to 100 in 1, there is no problem. It will reach 101. See, the radius is spreading. In the beginning, your radius was this. Then your radius became this."
+  },
+  {
+   "start": 1046.32,
+   "end": 1072.26,
+   "text": "Now your radius becomes this. So what is happening here? It is spreading. How many neighbors are there of 1? There are 3 neighbors of 1. Push all 3 in the queue. With how much distance? With the distance of 1 plus 1. So what will be pushed? First of all, 2, 2 is pushed. And 3, 2 is pushed. And 4, 2 is also pushed. 4, 2 is also pushed in your queue. 3 people are pushed in your queue."
+  },
+  {
+   "start": 1072.26,
+   "end": 1101.66,
+   "text": "Okay, that's a good thing. Take out the next person. Take out this person. What does this person say? The node number is 2 and the distance is 2. Meaning, how far did the sound travel to get to node 2? 2 km or 2 unit distance or 2 edges travel. Write it comfortably. Is there any non-visited neighbor of 2? No, there is only one neighbor of 2, which is already visited. No problem, don't do anything. Next time, take out this person. What is the node?"
+  },
+  {
+   "start": 1101.66,
+   "end": 1126.96,
+   "text": "3. What is its distance? 2. Means, how much distance does the sound need to reach 3? 2 distance. Write the answer comfortably. Is there any non-visited neighbor of 3? No, there is no non-visited neighbor of 3. So, no problem. Take out this person. Node is equal to 4. Distance is equal to 2. How much time will it take for the sound to reach 4? It will take 2 times. Write 2. Time or distance, whatever it takes."
+  },
+  {
+   "start": 1127.02,
+   "end": 1153.44,
+   "text": "Is there any non-visited neighbor of 4? There is no non-visited neighbor. No problem. See your queue is empty. When your queue is empty, have you written the distance of Sarth in your answer? Yes, you have written the distance of Sarth. Return it comfortably. How is it working? First of all, you start from source. What is the distance of source? It is 0. After that, you push it in queue."
+  },
+  {
+   "start": 1153.44,
+   "end": 1183.3,
+   "text": "Now, let's take out the elements one by one. So, you get that to go to node is equal to x, it will have to travel some d distance. First of all, let's note d in the answer. After that, all the neighbors of x, all the non-visited neighbors of x, if d distance was taken till x, then all the neighbors of x, all of them will take d plus 1 distance to go, because every neighbor is at a distance of 1 kilometer. While doing this, a time will come when everything will be over and"
+  },
+  {
+   "start": 1183.3,
+   "end": 1211.33,
+   "text": "You will get the final answer. How is it working? By making a radius. Whose radius? The sound's radius. The sound was here at distance 0. It reached here at distance 1. In distance 2, it surrounded everyone. What did it surround everyone with? The breath was spreading slowly. So this is the intuition of BFS. Okay. Why wouldn't DFS be applied in this? You must be wondering that question. Why? If we are doing BFS, then we will do DFS. Same thing. You could have also done this."
+  },
+  {
+   "start": 1211.33,
+   "end": 1235.34,
+   "text": "Suppose this is your graph. 0, 1 and 2. This is the graph. This is your source. Your source is called this. So you can also do this. What to do first? If source is equal to 0, then write 0. 0, 1 and 2. Its answer will be 0. After that, why don't we do DFS and reach 1. And because we know that source's distance is 0."
+  },
+  {
+   "start": 1235.34,
+   "end": 1265.2,
+   "text": "So, when we go to 1, then we will take 0 plus 1. So, the answer of 1 will be 1. Now, we don't have anywhere else to go to 1. We will come back. Now, we will again go from 0 to 2. We will talk the same thing. If the distance was 0 on 0, then when we will go from 0 to 2, then we will take 0 plus 1, 1. So, the distance of 2 will also be 1. So, you are seeing that this is also correct. Because, you will reach the distance 0 to 0. As soon as you travel one distance, then you will reach 1 and 2. So, the solution is correct."
+  },
+  {
+   "start": 1265.2,
+   "end": 1294.32,
+   "text": "But we will tell you when this solution will be wrong. Let's see why this solution will be wrong. Suppose this is 0, 1, 2. Okay? And take this. In this graph, see what will happen. First of all, where will you start? 0 is equal to source. What is the distance of 0? 0. So what did you do? Write 0 in the answer of 0. Very good. Everything is fine till here. Now you are doing DFS. So imagine that where are you going? You are going to 1."
+  },
+  {
+   "start": 1294.32,
+   "end": 1322.21,
+   "text": "When you go from 0 to 1, we will increase this 0 to 1. So how much time will it take to go to 1? 0 plus 1, 1. So now write 1 as 1. Everything is fine till now. But now you are at 1. Is there any non-visited neighbour of 1? Yes, there is a non-visited neighbour of 1. Who? 2. So when you go from 1 to 2, how much distance was there at 1? 1. When you go to 2, you will think of 1 plus 1, 2 distance. And what will you write in the answer?"
+  },
+  {
+   "start": 1322.21,
+   "end": 1349.01,
+   "text": "It takes 2 distance to reach 2. But, but, but, look at this graph carefully. If the source is 0, then 0 is correct. In 1 second, your sound will reach here and here too. Both will reach. 2 edges are coming out of 0. 1 edge is going to 1 and 1 edge is going to 2. Meaning, both 1 and 2 are at a distance of 0 to 1."
+  },
+  {
+   "start": 1349.01,
+   "end": 1369.1,
+   "text": "So when you will be at the source at 0, as soon as 1 second will happen, your sound will go at 1 and 2 at the same time. But what is the problem with DFA? You are going from 0 to 1. You are not considering the age from 0 to 2. You went to 1, distance is equal to 1. It is correct till here."
+  },
+  {
+   "start": 1369.1,
+   "end": 1395.54,
+   "text": "But when you went from 1 to 2 because of DFS, you took distance is equal to 2. This is wrong. This should not happen. That's why DFS is doing it one by one. DFS is treating the sound in such a way that the sound will go here first, then here, then there. No, the sound doesn't spread like that. The sound spreads in all four directions. You have to do all the neighbors together. You can't do this that you enter one neighbor and go inside him. No."
+  },
+  {
+   "start": 1395.54,
+   "end": 1425.17,
+   "text": "Take all the neighbors at once. That's why DFS will be wrong. Why? Because after going to 1, it will write 2 on 2. Now when you come back to 0, you will know that both 1 and 2 have been visited. Because 2 has been visited because of 1. So you will never go to 2. If you had gone to 2, then it would have been possible. If you had gone to 2 from 0, then you would have taken 1 and written 1. But you will never go to 2 because 2 has already been visited."
+  },
+  {
+   "start": 1425.17,
+   "end": 1440.02,
+   "text": "You don't have to go to the neighbor one by one. You don't have to go inside the neighbor. Spread your radius slowly. Send your voice to people. That's why DFS cannot be used in this question. That's why DFS cannot be used in this question. Let's go."
+  },
+  {
+   "start": 1440.02,
+   "end": 1467.9,
+   "text": "If you have understood this much, then write the code. What will be given to you in the code? You will be given a 2D array which has edges. Remember, if there are edges, then you will have to make your graph yourself. You will have to make your adjacency list yourself. You will be given the number of vertices. Very good. And you will also be given a source vertex. Come, let's make it quickly. So, your GFG function is something like this. Vector int. Vector int means you have to return the distance from source to every node. So, assume that this is the function."
+  },
+  {
+   "start": 1467.9,
+   "end": 1490.56,
+   "text": "First of all, you will be given a vector of vector of int edges. We deliberately make this graph in every question because we want you to remember it. We don't want to, but let's make it. These will be your inputs. First of all, make your adjacency list. Vector of, vector of, int, and yes,"
+  },
+  {
+   "start": 1490.56,
+   "end": 1520.46,
+   "text": "The people who code, please don't print this graph from my code. Go to every question and type it. Only then it will sit in your mind. It sits in your mind. Don't learn by copying and pasting. Copy and paste later. When it comes, then copy and paste. It doesn't come now. Type it in every question. Make a graph yourself. Only then it will be caught in the question. Come on. Int i. First of all, make a graph. How to make a graph? We do that on all edges."
+  },
+  {
+   "start": 1520.53,
+   "end": 1548.21,
+   "text": "I less than edges dot size. Very good. I plus plus. First of all, take out the source. S is equal to edges. I is equal to 0. Because how will edges be given? From source. Listen. Int D is equal to edges. I is equal to 1. It is an undirected graph. So, you have array of S dot pushback. Pushback."
+  },
+  {
+   "start": 1548.21,
+   "end": 1573.1,
+   "text": "D. We have to do this. But what does undirected mean? There is an edge from D to S. So, array of D dot pushback S. It is undirected. Okay? The graph is ready. Very good. Now, make two more things. First of all, to write the result, you have to make a vector. To write the result, sorry. To write the result, you have to make a vector of n size. And,"
+  },
+  {
+   "start": 1573.1,
+   "end": 1603.95,
+   "text": "You should also make a vector for visited. If you want, you can combine visited and result together. But make it. There is no difference. No one will tell you to remove visited. Already when you are taking so much space, it is fine. What did you do? Make a queue. What do you have to enter in the queue? You have to enter two things in the queue. Node and distance. So you have to enter a pair in the queue. Pair. Int. Int. Queue. Very good. First of all, what do you have to enter in the queue? Your source. Your source."
+  },
+  {
+   "start": 1604.11,
+   "end": 1632.18,
+   "text": "How far will the sound reach till the source? In the distance of zero. Don't enter zero instead of source. Enter whatever source is given. Don't assume that everything is starting from zero. Source can be anything. So enter source carefully. Don't enter zero. Now come on. Your visited of source is also 1. Because source is visited. Don't go to source again and again. Come on. While q.not empty."
+  },
+  {
+   "start": 1632.18,
+   "end": 1660.93,
+   "text": "Until Q is empty, we will keep looking. What will we do every time? We will remove one person. So pair int int p is equal to Q dot front. Don't forget to pop Q dot while doing this. Otherwise it will go in the infinity loop. What is in this pair? First of all, it has a node. What is p dot first? Its first person is its node. And what is the second person? Its distance. What is p dot second? What will the sound take to reach here?"
+  },
+  {
+   "start": 1660.93,
+   "end": 1690.19,
+   "text": "The first thing to do is to write the distance in the result. The sound will take the distance to reach the node. Now look at all the neighbors of this node. How do we look at the neighbor? int j is equal to 0 j less than array of node dot size j plus plus. int neighbor neighbor is equal to array of"
+  },
+  {
+   "start": 1690.19,
+   "end": 1718.78,
+   "text": "Node and J. That's why we say write all this yourself. Write it in every question. Don't copy paste all this. There's not much time left. There's not much time left. There's not much time left. There's not much time left. There's not much time left. There's not much time left. There's not much time left. There's not much time left. There's not much time left. There's not much time left. There's not much time left."
+  },
+  {
+   "start": 1718.78,
+   "end": 1747.9,
+   "text": "If the sound seems to be at a distance to the node, then how much distance to go to the neighbor? Plus 1 because it will be at a distance of 1 km. Distance plus 1. This is pushed. And turn off its visited too. It has been visited. It has been seen. Close. Close. Close. What to do in the last? Return. Press. See this. It is a one page code. It is not a very big code. So what is this? BFS code."
+  },
+  {
+   "start": 1747.9,
+   "end": 1769.92,
+   "text": "You can see why DFS will not work. If you want, you can try DFS once. There will be a wrong answer. Why will there be a wrong answer? I have already told you in the above video that there will be a wrong answer in this. So go and code it, definitely code it. There are very high chances that it will come in any interview. And from tomorrow, we will take a step towards Dijkstra and Bellman Ford. You are now ready for that thing."
+  }
+ ]
+}

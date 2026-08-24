@@ -1,0 +1,389 @@
+{
+ "video_id": "TqxB7zruBm4",
+ "title": "Do Not Miss This Amazon Interview Question | Binary Search DSA Patterns Cpp Java Python",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1930,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 30.0,
+   "text": "Today's question was asked to me in Samsung R&D. So watch this question very carefully. After watching this question, all the next questions like split array, all those questions are a copy of this. All the lead code hard questions will be made on binary search. So if you are watching, you have seen Coco, you have seen Aggressive, and this question. By combining these three questions, no matter how hard a story-based problem you get on binary search, it will be made by you. So listen with your ears open. It may be a little complex question, but try to watch it till the end. Let's go."
+  },
+  {
+   "start": 30.0,
+   "end": 50.85,
+   "text": "So see, what is the question? Reading a question is also a skill. Meaning, reading a question from GeeksforGeeks or Leetcode, understanding it, writing it in your own language. This is a skill that you will get gradually. Anyway, we will explain to you in Hindi what it is. You have some books. Okay. There are some pages of every book. What is there in every book? There are some pages. Okay."
+  },
+  {
+   "start": 50.85,
+   "end": 68.24,
+   "text": "Suppose if you have 3 books, then first book has 20 pages, second book has 30 pages, third book has 10 pages. You have K number of students. You own a library, you have K children and your book has pages like this. Now there are some rules. What are some rules?"
+  },
+  {
+   "start": 68.56,
+   "end": 94.46,
+   "text": "Every student should get a book. Every student should get a book. Any student should not stay without a book. Okay? It's a good thing. Every book should be distributed. It means that you have to give every book to one child. You can't do this that we have kept a book with us and we have not given it to anyone. No. Every book should be distributed. You should not have any book that will not save even one child. Okay? One book to only one student. Now, you can't distribute one book to two children. You can't do this that you have torn the book, you have given it to 20-15, you have given it to 30. No."
+  },
+  {
+   "start": 94.46,
+   "end": 122.19,
+   "text": "How many pages are there in a single book? It can be 50 pages, 10 pages, or 5 pages. You have to give it to the same child. Okay? And continuous assignment means you have to give books in lines. You can give one book to one child. You can give two books to one child. You can give three books to one child, etc. Now, this is the rule. As you move forward, it will become clear to you why this is the rule. Okay. This is a question. This is the rule. But what do you have to do? How to distribute? Okay. You have to find one thing."
+  },
+  {
+   "start": 122.19,
+   "end": 147.39,
+   "text": "When you do any distribution, suppose you have two children and you give book 1 and book 2 to this child and book 3 to this child. Suppose book 1 had 10 pages, book 2 had 20 pages, book 3 had 25 pages. So how many pages did student 1 get? How many pages, not books, how many pages? 10 plus 20, how many pages did he get? 30 pages."
+  },
+  {
+   "start": 147.39,
+   "end": 165.09,
+   "text": "How many pages did student 2 get? It's not about the book, it's about the pages. How many pages did he get? He got 25. Who is the maximum among these two? 30. So what is this? Maximum pages to one student. Okay, so what is this? 30."
+  },
+  {
+   "start": 165.09,
+   "end": 194.86,
+   "text": "Now, this is a combination that if you give money, then 30 will come in it. If you could have done something else, you could have given book 1 to student 1, book 2 to student 2, book 3 to book 3, etc., etc., then you could have got some more answers. Out of all these combinations, you have to minimize this thing. What do you have to do? Minimize. What work, what do you have to minimize? Maximum pages to 1 students have to be minimized. Maximum pages to 1 students have to be minimized. Same problem is like an aggressive cow. What did you have to do in that?"
+  },
+  {
+   "start": 194.86,
+   "end": 224.93,
+   "text": "That there was a distance and what you had to maximize in that, that was the opposite question. In that, you had to maximize the minimum distance between any two cows. In this, you have to minimize the max pages of any child. What to do? Minimize. So, let us explain with an example that what does this mean? What does this mean? Come. So, assume that you have such and such pages that you have four books. You have four books. Twelve. Thirty-four."
+  },
+  {
+   "start": 224.93,
+   "end": 252.42,
+   "text": "67 and 90. Please note that it is not necessary that it should be sorted. It is not necessary that it should be sorted in pages. No. How many pages can be in any book? And how many children do you have? How many children do you have? Two children. So see, you can do 2-3 things. You can do that the first child, this is S1, you give him this book in which there were 12 pages. Give only one book. Give only one book with 12 pages. Okay. Second child,"
+  },
+  {
+   "start": 252.42,
+   "end": 280.19,
+   "text": "2nd child S2, you have to give him the other 3 books because you have to give him the other 3. Now see, you can't do this that you will give him book 2 and book 3 and not book 4 to anyone. No, you have to give book 4. So by doing this, you have only 2 children, so you have to give. In this, which child will have the maximum? See, how much does this child have? 12 pages total. How many pages does this child have? 191 pages. So what will be the answer to this? 191. One is this combination. There is one more combination. What? You give him 12 and 34."
+  },
+  {
+   "start": 280.19,
+   "end": 306.83,
+   "text": "And give the 67 and 90 to the other child. Now see how much it will be. Now how much does he have? 5 and 45 pages. And he has 157. What is the maximum? 157 came. Okay. You can do one more thing. Give him 12, 34 and 67. And give him just 90. How much did this child have? 4, 2, 6, 113 pages. This child has 90 pages."
+  },
+  {
+   "start": 306.83,
+   "end": 336.32,
+   "text": "How much is the maximum? 1113. Now, these are three combinations. Only three combinations are possible in two children because you can't do anything else. You have to give continuous. Every book has to be given to one child. So, you can only do this. So, nothing else. In these three, which answer is the minimum? Which answer is to be minimized? This answer. This answer. This answer. What will be your answer? What will be your answer? What will be your answer? Your answer should be... Oh, not on this. It gets spoiled in between. What should be your answer? 113."
+  },
+  {
+   "start": 336.32,
+   "end": 366.0,
+   "text": "What should be the answer? 1, 1, 3. Why? Because this is the minimum answer. So, you have to find a combination like this. And you have to find the minimum possible. What do you have to find? Maximum pages to one student. You have to minimize that. So, those who have seen aggressive cows, they must have known what to do. Those who have not seen, let's see. Have you not seen? So, it is my mistake that you have not seen. So, let's see. First of all, first of all, what do you have to maximize? What do you have to minimize?"
+  },
+  {
+   "start": 366.0,
+   "end": 395.92,
+   "text": "Maximum pages to one student. It is like an aggressive cow. Maximum pages to one student. Okay. Now, what to do? So, now the thing which you have to minimize. What to do? You have to minimize it. You have to minimize it. Remember. Okay. Okay, tell me one thing. One child. Now, this is maximum pages to one student. Now, what do you have to do? You have to guess the same thing. You have to guess the same thing. Okay."
+  },
+  {
+   "start": 395.92,
+   "end": 425.9,
+   "text": "So, let's guess. Let's guess and see what it is. So, these are your books. One has 12 pages, this has 34 pages, this has 67 pages and this has 90 pages. These are your 4 books. And how many students do you have? Two students. You have two students. Okay. Now, what do you have to do? You have to guess. Let's guess one thing. We will guess that maximum pages to one student."
+  },
+  {
+   "start": 427.28,
+   "end": 449.92,
+   "text": "What should be the maximum? We say that maximum pages to one student should be 30. You can do anything. It should be 30. Meaning? Maximum pages to one student should get 30. Meaning? What does this mean? That any child can't get more than 30 pages."
+  },
+  {
+   "start": 449.92,
+   "end": 476.61,
+   "text": "No, it is not allowed. Because we have guessed 30. We will do such a thing that we will guess the maximum page that is allowed to any child. Let's see. First of all, start giving the page to student 1. What did you do in Aggressive Cow? You started for every cow. Start for student 1. Can you give this book to student 1? Yes, you can. Why? Because any child should not get more than 30 pages. You can give him 12. Okay."
+  },
+  {
+   "start": 476.61,
+   "end": 495.7,
+   "text": "Student 1 is not over yet. You can give more to student 1. But when you come to the next book, there is page 34 in the next book. So can you give this to student 1? If you give to student 1, then it will be 12 plus 36. But what have you guessed? You have guessed 30. That means you can't give this to student 1."
+  },
+  {
+   "start": 495.7,
+   "end": 520.26,
+   "text": "You could have given 12 to student 1. If you give 34, then it will exceed the limit that we have thought. You cannot give this. You can give only one book to student 1, 12. Now you will have to go towards student 2. But, but, but, it is a very difficult thing. When you come towards student 2, then which book is left? 34. Can you give 34 to student 2? No, you cannot."
+  },
+  {
+   "start": 520.26,
+   "end": 548.4,
+   "text": "Why can't you give? Because any child is allowed to pay 30 paise maximum. You can't even give 34 paise. This means that you can't give this 34 paise book to any child. What will happen to this book? It will remain undistributed. So 30 paise can't be your answer. You can't set such a limit that you will give 30 paise to any child. Similarly, 70 paise can't be your answer."
+  },
+  {
+   "start": 548.46,
+   "end": 551.78,
+   "text": "70 can't be the answer. Why? Because"
+  },
+  {
+   "start": 551.78,
+   "end": 579.15,
+   "text": "Now, if your answer is 70, then who will you give this 90 book to? You won't be able to give it to anyone. 80, 80 can't be the answer because then who will you give this 90 to? One thing we know is that the answer should be 90. 90 can be more than 90. Why? Because even if you decide 89, that any child should not get more than 89 pages, then who will you give this 90 to? Who will you give this 90 to? You won't be able to give this 90 to anyone. That's why one thing we know is that whichever book has maximum pages,"
+  },
+  {
+   "start": 579.15,
+   "end": 608.94,
+   "text": "There is no smaller answer than that. Let's check for 90. Why not? 90 can be done according to our logic. Let's check. Let's check 90. 12, 34, 67, and 90. Okay. Let's check what we will do. Max pages to one student. One student. How much should it be? It should be 90. We can't give more than 90 to any student. Let's check."
+  },
+  {
+   "start": 608.94,
+   "end": 638.5,
+   "text": "First of all, student 1. Can you give student 1 the 12th book? Yes, you can give the 12th book. Very good, give it. Can you give student 1 the 34th book? Yes, you can give it. Because when you do 12 plus 34, it is 46. Which is less than 90. You can give it. But can you give student 2 67? No. Okay, you can give it. No, you can't give it. Because when you do 67 in this, what will happen? 12, 34, 67, 4, 2, 6, 13."
+  },
+  {
+   "start": 638.5,
+   "end": 659.28,
+   "text": "1, 1, 13 which is more than 90. So, student 1 is finished. Now, you can't give any more book to student 1 because it is a continuous assignment. You can't do this that you don't give 3rd book to student 1 and then give 4th. No. Assignment should be continuously. So, you don't give it. Student 1's work is done. Now, from where you have to give this 67? You have to give it to student 2."
+  },
+  {
+   "start": 659.28,
+   "end": 686.42,
+   "text": "If we have to give it to student 2, then okay. Can we give it 67? Yes, we can give it. 67 can be given. Why? Because it is less than 90. It has 67 pages. But, can you add 90 to this? No. Because if you add 90, what will happen? 157. 157 is less than 90. So, you can't give it to student 2. So, student 2's work is done. But, do you have more children to give? See, no one has got the 90 book yet."
+  },
+  {
+   "start": 686.42,
+   "end": 715.79,
+   "text": "Student 1 got this much. Student 2 got 67. Now who will get the 90 book? You wanted student 3 here. You don't have student 3. You have only 2 kids. What do we know from this? You can't get 90 as well. You can't get 90 as well. Why? Because the kids are finished. What are we doing? We are giving each kid as much as possible. As much as possible."
+  },
+  {
+   "start": 715.79,
+   "end": 739.6,
+   "text": "He is giving as much as he can. He is going to the limit as much as he can. In student 1, we did not stop after 12. We used to keep on giving until we hit the limit. Even after doing this, all your books were not distributed. One of your book was left with 90 pages. So, can your answer be 90? Your answer cannot be 90. Your answer cannot be 90. Now, one more thing."
+  },
+  {
+   "start": 739.6,
+   "end": 766.82,
+   "text": "It is clear that the answer is not possible. What number can be the answer? Let's talk about that. This concept is difficult for people to understand. That's why I am adding it. 12, 34, 67, 90, 0, 1, 2, 3. Assume that you guessed that maximum pages. Maximum. Tell me one thing. How much maximum page can you give to any child in this library? Will you be able to give the sum of the whole book?"
+  },
+  {
+   "start": 766.82,
+   "end": 792.48,
+   "text": "We will not be able to give more than the sum of all the books. So, what is the sum of all the books? 191 plus 12. 203. We said that no child will get more than 203, which can never be given. If you give all the books to one child, then it will remain 203. So, 203 cannot be given. So, let's see whether 203 is possible or not. First of all, student 1. Can you give student 1 12? Yes, you can. You can give 12."
+  },
+  {
+   "start": 792.48,
+   "end": 822.26,
+   "text": "Can he also give 34? Fill every student's bag till the top. Until you don't hit the limit. So, you won't hit the limit even if you give 34. So, he can also be given 34. Can student 2 be given 67? Yes, he can be given. You have still hit the limit. You have still got 113. It is less than 203. And, can this kid also be given 90? Yes, you can also be given 90. All the books are over. Because, what is the sum of this? 203. 203 is allowed. You guessed it. Okay."
+  },
+  {
+   "start": 822.26,
+   "end": 848.37,
+   "text": "So your book is finished. But now people will think that even 203 can't be my answer. Why? Because all the children didn't get the book. Now see, why didn't all the children get the book? Because you were greedy and gave the same book to all the children. Now suppose you have one child left. You have one child left. S2 is left. S2 doesn't have any book. So see, what rule did we make? No child can get more than 203 books."
+  },
+  {
+   "start": 848.37,
+   "end": 875.7,
+   "text": "No child can get more than 203 books. If your only child is capable of keeping all the books, then this answer is possible. How can this answer be possible? Because what do you do? Pick up one book and give it here. It's over. Remove it from here. Remove it from here. See. It's still correct. How much does this child have? 113 books. This child has 90 books. You are within your limit. So this answer is possible. If this answer is possible,"
+  },
+  {
+   "start": 875.7,
+   "end": 903.25,
+   "text": "It is not a problem for the child to stay, it is a problem for the child to leave the book. Why is it not a problem for the child to stay? Why is it not a problem for the child to stay? I am trying to explain this to you, don't remember it. These people remember that it is okay to stay away from the child. Why is it not a problem for the child to stay? Suppose you have 10 books. You have 10 books. One, one, one, one, one. One, one, one, one, one, one. There are 10 books, each one has a page."
+  },
+  {
+   "start": 903.25,
+   "end": 928.38,
+   "text": "You came to your limit by thinking that any child should not have more than 10 pages. So it is obvious that if there is S1, you can give all of S1. Now give all the books to S1. How much will it be? 10. You are in your limit. Now suppose you have 3 more students. You will think that this cannot be the answer."
+  },
+  {
+   "start": 928.38,
+   "end": 952.62,
+   "text": "It is possible. This happened because you were greedy. You were trying to decide which child to give as much as possible and then decide. Once you know that this is right, this target is achievable even in your small children. This is the max target. It is achievable even in small children. What to do? Pick up each book and give one here, give one here, give one here. What will happen?"
+  },
+  {
+   "start": 952.62,
+   "end": 982.21,
+   "text": "If it disappears from here, then it will get 7. If it disappears from here, then it will get 7. If it disappears from here, then it will get 7. If it disappears from here, then it will get 7. If it disappears from here, then it will get 7. If it disappears from here, then it will get 7. If it disappears from here, then it will get 7. If it disappears from here, then it will get 7."
+  },
+  {
+   "start": 982.21,
+   "end": 1011.63,
+   "text": "if your number of books is less than your number of students means you have 2 books and you have 3 students now it is not possible to do anything because you don't matter pages every student should get 1 book but you have only 2 books so if you give every student 1 book then they will forget about page now it is not possible in this case your answer should be minus 1 not possible but"
+  },
+  {
+   "start": 1011.63,
+   "end": 1037.65,
+   "text": "If you are distributing like this, if you have in mind that you can give 10 pages to a child, and your work is done in one child, and you know that your number of books is equal to the number of students, or your number of books is greater than the number of students, then you are fine. You have given everything to the child, right? Take out a little bit from that and give it to the other child. You don't have to give, you have to think in your mind. Saying this means that this is a yes answer, this is a possible answer. This is a possible answer. Okay."
+  },
+  {
+   "start": 1037.68,
+   "end": 1049.79,
+   "text": "Now see, if you understood this much, then in which direction we are moving, you must have understood. In the above question, when you guessed 90, then you came to know that this is not possible. This is not possible."
+  },
+  {
+   "start": 1049.79,
+   "end": 1068.3,
+   "text": "Now tell me one thing, why is it not possible? Because all the children are finished. You have taken as much as every child could have taken. The book is still left. The book is still left. It means that the limit of the child has been hit. The child has kept as many books as he could have kept in the bag. Even after that, you still have 1-2 books or 3 books left."
+  },
+  {
+   "start": 1068.3,
+   "end": 1082.98,
+   "text": "So that's why it was not possible. So tell me one thing, if 90 is not possible, when you apply the limit of 90, then it is not possible. When you apply the limit of 80, do you think it will be possible? No. This is also not possible. Why?"
+  },
+  {
+   "start": 1082.98,
+   "end": 1099.15,
+   "text": "Assume that you have a lot of kids and all of them have one bag. You set a limit that you will allow them to keep 10 kg in each bag. So suppose while doing something, this kid keeps 8 kg."
+  },
+  {
+   "start": 1099.15,
+   "end": 1128.61,
+   "text": "this is 9 kg and this is 8 kg and then this is 7 kg but you still have 5 kg remaining which no child can take. If you give this 5 kg to any child, it will be more than 10 kg. So you have this and you say that it is not possible. So why did this happen? Because you have set a limit of 10 kg. So if you set a limit of 7 kg that every bag can have only 7 kg, then also it will not be possible. So what will be left here will be more. So you are going towards a worse solution."
+  },
+  {
+   "start": 1128.61,
+   "end": 1150.82,
+   "text": "Now, when you put a limit of 10 kg, you know that everyone's bag is full. Even after that, I have 5 kg left. Even after that, I have books left. So, if you put a limit of 7 kg, then you will have more. That's why if there is no 90 solution, 80 will never be a solution. Similarly, if there is a 150 solution, if 150 is possible, possible means that"
+  },
+  {
+   "start": 1150.82,
+   "end": 1179.62,
+   "text": "Or all the books are finished. All the books are finished. It is possible that one book is finished. We will see that. It will be done. If the limit of 150 is possible, then the limit of 170 will also be possible. The limit of 170 will also be possible. Why? Because in 150, you will see that one book is finished. He will keep it in 170. What does this mean? When you have set the limit of 10 pages, then what did S1 do?"
+  },
+  {
+   "start": 1179.62,
+   "end": 1204.93,
+   "text": "S1, I have kept everything. S1, I have kept 10 books of each page. If you put a limit of 15, then also S1 will keep everything. S1 is 10. So, if you put a limit of 15, 20, 1000, what difference does it make? S1 is 10, right? So, okay, if the work was done in 10, it will be done in 15, 20, 1000. So, how do you see? Up to 1 point, you get to know 9, 9."
+  },
+  {
+   "start": 1204.93,
+   "end": 1225.81,
+   "text": "No, no, no. To what point? What are we guessing? Maximum number of pages allowed to a student. No to one point. Suddenly there will be a point where it will become a yes and it will always remain a yes. If 113 is possible, then 114 is also possible, 115 is also possible, 116 is also possible. Everything is possible. Okay."
+  },
+  {
+   "start": 1225.81,
+   "end": 1253.95,
+   "text": "Now this is the answer to your guess. Is it monotonic? Yes, it is monotonic. What do you have to find in this? You have to minimize this limit. You have to minimize. Minimize means the first occurrence of yes. The first occurrence of yes. Because it is possible that this limit is in 1, 1, 3. This is 1, 1, 4. This is 1, 1, 5. This is 1, 1, 6. But which one do you have to take from these four? You have to minimize the first occurrence. You have to take the first occurrence. So,"
+  },
+  {
+   "start": 1253.95,
+   "end": 1282.96,
+   "text": "What will you do? You will make it low, high, and guess. If your answer is no, you should close your eyes and go to the right. But if your answer is yes, you should store it and go to the left. Same problem with the first occurrence, the shop problem. Come, let's try to solve it. First of all, we write a function in which we will tell whether our limit is possible or not."
+  },
+  {
+   "start": 1282.96,
+   "end": 1311.98,
+   "text": "So, first of all, we will do one thing. See. First of all, we will do one thing. Bull. Fun. We will do dry run. Don't worry. So, vector. Int. Books. This is your books. This is your number of books. And, what is yours? An int. Limit. Means, any child is not allowed to give more than this many pages. And, your number of children. Number of children. Okay. So, see."
+  },
+  {
+   "start": 1312.02,
+   "end": 1343.12,
+   "text": "Give the first book to the first kid. Give the first book to the first kid. Okay. So, we will take K. K means number of kids. He has got the book till now. So, K is equal to 1. And, int page is equal to array of 0. Means, the first kid has got the first book. We will try to do something from the next book. So, first of all. Or don't give the first book. We will give it in the loop."
+  },
+  {
+   "start": 1343.12,
+   "end": 1365.34,
+   "text": "K is equal to 1 means that you are focusing on the first child. What you have to remember is that if your child is finished at any time and your book is still there, your game is over. So, I is equal to 0, I less than N, I plus plus. Now, can you give this book to this existing child or not? How will you know?"
+  },
+  {
+   "start": 1365.34,
+   "end": 1395.33,
+   "text": "So, he doesn't have anything before int. Now, this child doesn't have any page. It is an empty child. We are focusing on the first child because it is K1. Can you give that book to this child or not? If page plus books i less than equal to limit, means if by giving this book, the number of pages to this child is within the limit, then you can give it absolutely. You can give it absolutely."
+  },
+  {
+   "start": 1395.33,
+   "end": 1424.94,
+   "text": "So, you just have to give it ahead. Page is equal to page plus books I. You can give it absolutely. You can give it absolutely. Come ahead. Books I and go ahead. But, else, else. Now, you can't give this child. Now, you can't give that book to this child. Now, who will you have to give that book to? To the next child. So, what will you have to do to give to the next child? K plus plus. K plus plus. One's work is done. K increased. And, page."
+  },
+  {
+   "start": 1424.98,
+   "end": 1445.92,
+   "text": "is equal to books i. books i. books i. But by doing this, by increasing this k, if your k is bigger than your student, if your number of students is bigger than your student, then what will you do? Return false. Return false."
+  },
+  {
+   "start": 1445.92,
+   "end": 1475.98,
+   "text": "because what does it mean to be an adult? you had two children you came to know that you can't give this book to the second child if we want the third child, then it will be K3 but if that happens, you have to make the return false and if everything goes well, then you can do return true in the last you can do return true in the last now how does this work? let's see how this dry run works it is a bit confusing, see the dry run, it will be clear so we will see for both cases, when we can do it and when we can't so make an array like this, 12, 34"
+  },
+  {
+   "start": 1475.98,
+   "end": 1505.68,
+   "text": "67, 90. 0, 1, 2, 3. Okay? Come, what do we guess first? Our limit. Let's see limit is equal to 100. Is 100 possible or not? Come. So, what will happen in the beginning? K is equal to 1. Now, we are focusing on the first child. How many pages does he have in the beginning? 0 pages. Okay? Come, let's start giving the book. I is equal to 0. So, what did you know? 12. Can you give 12 to him? Is page plus 12 is less than or equal to 100? Yes, you can give. So, what will you do? Page is equal to"
+  },
+  {
+   "start": 1505.68,
+   "end": 1532.96,
+   "text": "12. Now you are on the first child. Very good. i is equal to 1. 34. Can you give it 34? Yes. 12 plus 34. 46 is less than or equal to 100. You can give it. Now you also give this to this child. Now what is your page? 46. i is equal to 2. Can you give it 67? No. Why? Because 46 plus 67 will become 113. Which will cross your limit. You can't give it. So what did you do? K plus plus."
+  },
+  {
+   "start": 1532.96,
+   "end": 1558.3,
+   "text": "K is equal to 2. Now you are on second child. You will have to give this book to this second child. 67. And has your K increased from student? How many students did you have? 2. Has your K increased from student? No. Now you are on second child. You have 2 children. That is allowed. Now you are on last child. But it is okay. Come forward. I is equal to 3."
+  },
+  {
+   "start": 1558.3,
+   "end": 1577.25,
+   "text": "90. Can you give this 2nd kid K is equal to 2? No. 67 plus 90 is 157. Your limit will cross. So, you have to give this 3rd kid. You have to give K is equal to 3. And you have to give this 3rd kid 90. But, your K is 3. How many kids did you have? 2."
+  },
+  {
+   "start": 1577.25,
+   "end": 1602.1,
+   "text": "K is greater than students. What will happen? False. That's why 100 is not possible. 100 is not possible. This is why it is not possible. You will have to raise your children to do this. Your children are finished. Your book is not distributed. Not possible. Let's see a possible case. Let's see a possible case. So, we should see a possible case too. Assume that the limit you set was 150."
+  },
+  {
+   "start": 1602.1,
+   "end": 1630.61,
+   "text": "150. Let's see. In the beginning, which child are you focusing on? The first child. How many pages does it have in the beginning? 0 pages. i is equal to 0. Let's see. 12. Can you give it 12? Yes, you can. 0 plus 12 is 12. Less than or equal to your limit. You can give it. So, what is its page? 12. i is equal to 1. Can you give it 34? Yes, you can. You can give it 34. Because 12 plus 34 is 46. 150 is less than that. 46."
+  },
+  {
+   "start": 1631.09,
+   "end": 1658.77,
+   "text": "i is equal to 2. Can you give it 67? Yes, you can give it. 46 plus 67 is 113. It is still within your limits. It is still within your limits. It is equal to 113. But when i is equal to 3, can you give it 90? No. 67 plus 90, sorry, 113 plus 90 will be something else. It will be 203. It will go ahead of 150. You can't give it. So what should you do? Start with the second child."
+  },
+  {
+   "start": 1658.77,
+   "end": 1680.26,
+   "text": "and how much page is this other student getting? he is getting the page of this book. But now your loop is over, your loop is over. In your loop, did it happen anywhere that your kid, your K, on which kid are you dealing? Did it ever happen more than the number of students? No. K is equal to 2 will work because you have 2 number of students. That's why, what is 150? Yes."
+  },
+  {
+   "start": 1680.26,
+   "end": 1707.82,
+   "text": "150 is not the answer. Its answer is 113. But, what did you do on yes? You wrote 150 and went left. So, you will get 113 at some point. Because if 150 is true, very good. If it is true, but you have first occurrence, then you will get left. So, this is code, this is dry run. And let's write the main function too. Yes, there are some things in the main function. So, your main function is, which is,"
+  },
+  {
+   "start": 1707.82,
+   "end": 1738.77,
+   "text": "It is a function of geeks for geeks. What will you get in it? You will get an array of books in which there will be number of pages. And what will you get? You will get number of children. You will get number of children. Okay? Come. Now see, you don't have to sort this array. Don't sort this array. According to the position of the book, the contiguous allocation, you don't have to sort it. This is a very big signal for them who used to say that binary search is done in sorted array. No, it is done. It was not in sorted array. Binary search will be done. Come. n is equal to"
+  },
+  {
+   "start": 1739.31,
+   "end": 1764.5,
+   "text": "Books dot size. First of all, what did we say? If the number of books is less than your children, then it can't be possible. If n is less than stud, not possible. If you can't do it, then return minus 1. You can't do it, right? 2 books and 3 children. How will you give? You have to give every book to the same child. You will tear it and give. No, you can't give. Now comes low and high. And low, high."
+  },
+  {
+   "start": 1764.53,
+   "end": 1771.7,
+   "text": "How can you set the lowest limit of the maximum number of pages in this array?"
+  },
+  {
+   "start": 1771.7,
+   "end": 1798.85,
+   "text": "12, 34, 67, 90. If you put a limit of 80, then obviously the answer will not come. Why? Because no one will get this 90 page book. If you put a limit of 85, then obviously the answer will not come because no one will get this 90 page book. So you have to keep the maximum of this array as a low. Because you have to keep it that much. You will get a bigger answer than 90. 90 can't be a small answer. So what is low? Maximum of the array. And what is high? How many pages can a child give maximum? Sum."
+  },
+  {
+   "start": 1798.85,
+   "end": 1825.55,
+   "text": "If you give all the books to one child, then it is not possible. If the sum of pages of the entire book is 203, then even if you put a limit of 500, it does not matter. You can put it. How will you give 500 pages to a child? It is not possible. So what did you find out? What is low? Maximum of error. And what is high? Sum of error. Come. For i is equal to 0, i less than n, i plus plus, low is equal to"
+  },
+  {
+   "start": 1825.55,
+   "end": 1857.89,
+   "text": "make low 0 in the beginning because 0 pages are not in any book so max of low and ai the maximum of array remember if there is no sorted array then don't do array of n-1 and ai and high is the sum of the whole array sorry we are writing books and array like this but understand that one thing low and high is defined very good now your work is over now int rest is equal to minus 1 while low"
+  },
+  {
+   "start": 1857.89,
+   "end": 1888.59,
+   "text": "Less than equal to high. Okay. Sorry. Don't put this. Int. Guess. Guess the middle work. Low plus high by 2. If fun of books and your guess limit and number of children. If its answer is yes. If its answer is yes. Then result is equal to guess. And you should go left for first occurrence."
+  },
+  {
+   "start": 1888.98,
+   "end": 1916.46,
+   "text": "High is equal to guess minus 1. Else, if its answer is no, then you should go right, no need to do anything. Low is equal to guess plus 1. Close this and in the last, return guess, sorry, return rest. Time complexity, n log n. Why n log n? This while loop takes log n and this whole fun, how much will this fun come in? Order of n."
+  },
+  {
+   "start": 1916.46,
+   "end": 1929.6,
+   "text": "This was the book allocation problem, which is very famous. So go and code it. See, take the same code and try more problems. From tomorrow, we will start 2D matrix. Thank you for watching."
+  }
+ ]
+}

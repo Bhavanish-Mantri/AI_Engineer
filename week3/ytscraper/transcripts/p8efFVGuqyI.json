@@ -1,0 +1,194 @@
+{
+ "video_id": "p8efFVGuqyI",
+ "title": "DSA PATTERNS Episode 25 | Linked List Start of Cycle Logic Explained",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1024,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 19.22,
+   "text": "There are a lot of videos on the DSA internet about this topic. About what? About the start of the linked list cycle. We too had studied, we also made some mistakes. A lot of people have studied before me, they have also made a lot of mistakes. Let's see, someone is making a mistake, someone put a calculus differentiation in it, someone said that this is what happens, let's assume, remember the algorithm of four lines, no, no, no, no."
+  },
+  {
+   "start": 19.22,
+   "end": 48.0,
+   "text": "When you will be asked in the interview, how much more important is it than logic that how easily you can explain it. If you will not be able to explain it in an easy language, then no one will select you. Today my goal will be to open this topic in such a way that then you will have to remember why it is like this and why it is like this. Come, let's start. Give us some time. What have we read in the linked list till now? When we did the linked list pattern, then even I made a mistake that we should have gone so deep."
+  },
+  {
+   "start": 48.0,
+   "end": 77.12,
+   "text": "Today we sat for 2-3 hours and thought about it. We were told no, no, no, no. By the way, if someone asks you a question, you won't be able to tell him. What did we tell him? That we used to keep two pointers. One slow, one fast. Slow pointer used to move one step, fast pointer used to move two steps. Okay. It used to start with both the heads. And because it's a cycle, what will fast do? Fast will move fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast fast"
+  },
+  {
+   "start": 77.12,
+   "end": 107.76,
+   "text": "Because the slow will also come in the cycle after an hour. And when the slow starts in the cycle and the fast is moving fast, then it will catch it at some point. It will catch it at some point. It's a good thing. Let's catch it. For caution or for our convenience, take some variables from your mind. It will come from your mind that what do you think. See, one thing is fixed that this is the head. Okay. This is the start point. Whose? Of the cycle."
+  },
+  {
+   "start": 107.76,
+   "end": 137.82,
+   "text": "Let's assume that this is the meet point. Let's assume that this is the meet point. Let's assume that this is the meet point. Let's assume that this is the meet point. Let's assume that this is the meet point. Let's assume that this is the meet point. Let's assume that this is the meet point. Let's assume that this is the meet point."
+  },
+  {
+   "start": 137.82,
+   "end": 166.96,
+   "text": "Let's go. So, this distance at the back from the start, which is saved in the cycle, the point of one cycle will be the one where they will meet after walking slowly. There will be a part of the circle left. So, consider this as C minus Y. Why should we give it a name? The length of the whole cycle is C. The one at the top, the green one, is Y. So, the one at the bottom, the red one, will be C minus Y. This will be it. Let's go. Now, come. In class 9, 10, or 7, 8, there was speed distance time, right? What? Speed distance time."
+  },
+  {
+   "start": 166.96,
+   "end": 189.23,
+   "text": "Speed distance time. There is no fancy concept in this. It is speed distance time. What is the speed of both? Of slow and fast. The speed of slow is 1. The speed of fast is 2. The speed of fast is 2. Time seems to be same. Time seems to be same means that when the program started and when both of them met at some point, the program was over. So both of them are getting the same amount of time to roam."
+  },
+  {
+   "start": 189.23,
+   "end": 219.09,
+   "text": "Fast is a different thing, but time is the same. When will the program end? When both will be available. So, time will be available in 1 hour, 2 hours, 20 hours, both will be the same. So, time is the same. Time both have 1 unit. So, distance. What is distance? Speed into time. This is it. Okay? What will be the distance of slow? What will be the distance of slow? 1 into 1. Consider time as 1. And what will be the distance of fast?"
+  },
+  {
+   "start": 219.09,
+   "end": 245.78,
+   "text": "Fast car distance will be 2 into 1. So, here you can see that the distance of slow and the distance of fast car is a bit wrong. Why? Fast car distance is 2 times as of slow. As of slow. It's an obvious thing. So, there is no need to do math for this. If a person is running faster, then at the same time, when you run 1 km, he will run 2 km. This is what happens. Let's go. Now, come. Now, what do we do? Again, make a small, small link list. Make a small link list to see variables. Just to see variables."
+  },
+  {
+   "start": 245.78,
+   "end": 276.51,
+   "text": "Make it as big, small, good or beautiful as you want. First of all, write the variable quickly. You said that this is x, this is y, this is your meet point. And what is left in the circle? C minus y. See, what has slow done? What has slow done in his life? He jumped one step at a time, entered the cycle at some point and met it."
+  },
+  {
+   "start": 276.51,
+   "end": 306.82,
+   "text": "It must have come from head to start. Start is this. This is start of cycle. This is head. Slow must have come from head to start. And then, it must have gone from start to meet point. It must have gone to meet point. Okay? What must have done fast? What must have done fast? Fast must have come from head to start. It is necessary to come from head to start. After that, it must have turned very round. It is possible. It is not certain that it must have turned round. It must have turned round."
+  },
+  {
+   "start": 306.82,
+   "end": 334.67,
+   "text": "Where? In the cycle. He must have roamed many times. No matter how many times, 10 times, 20 times, 50 times, as many times as possible. Okay. And then, when it is completely round, then this too, from the start, must have disappeared. Means, he must be wanting to roam once more. At the same time, there must have been a meeting, so the program was stopped. This must have happened. Let's go. This must have happened, right? Let's go. Yes. Some people will say that it is possible that he must have roamed slow too. It is not possible that he entered the slow cycle and met. You can roam slow too. Let's go."
+  },
+  {
+   "start": 334.67,
+   "end": 364.62,
+   "text": "Yes, we don't want to leave any doubt. We don't want to leave any doubt that people will say in the comments that this point was ignored, that's why I couldn't explain. No, even if it is slow, even if it is slow, rotate it around. Rotate it around. And then, when the whole rotation is done, then at least it must have gone from the start. From the start, meet. Now see, now no one can say that no, no, it is good, so take it. Take everything, see all the scenarios. Okay. This is done. Slow."
+  },
+  {
+   "start": 364.62,
+   "end": 387.5,
+   "text": "This is fast. Now, in terms of this variable, let's write the distance of both. You all know, right? You all know x, y, z. Come on, write. Write the distance of slow. First of all, slow. First of all, what did we do with slow? Head to start. Okay. Write. What is the distance of head to start? x. Write x. Plus. Okay, you are saying that it should be round. How many times? How many times? M bar. M bar."
+  },
+  {
+   "start": 387.5,
+   "end": 418.46,
+   "text": "M bar C. What is C? The length of the cycle. So, if it rotates, then C will cover the distance in one time. If it rotates M bar, then MC will cover the distance. Very good. After that, what did we do? When it is complete, from start to the meeting point, which is Y. Okay. Write it down. Y. The distance of slow. Write down the distance of fast. What did we do with fast? This also started from head. This also started from head. Means, X plus. This also rotated. So, it didn't happen that both rotated at the same time. This rotated N times."
+  },
+  {
+   "start": 418.46,
+   "end": 448.96,
+   "text": "N times will be wrong. And, when this is also done in the last, then this also goes from start to meet. So, Y is done. This is D1. This is D2. Distance. Distance. Now, what was written in the first page? The distance of fast is 2 times of slow distance. So, put the formula in this. So, it means 2 times X plus MC plus Y is equal to X plus MC plus Y. Is this slow distance or fast distance? You have seen it before, right? Okay. Come."
+  },
+  {
+   "start": 448.96,
+   "end": 479.66,
+   "text": "2x plus 2mc plus 2y is equal to x plus nc plus y. Okay. Equate this. x plus y plus 2mc is equal to nc. Did you get it? Did you get it? Okay. Continue. x plus y plus 2mc is equal to nc. Now see. You have taken m and n."
+  },
+  {
+   "start": 479.66,
+   "end": 507.09,
+   "text": "You have taken m and n, right? Take it there. Make cc one side. x plus y is equal to nc minus 2mc. x plus y is equal to cn minus 2m. Now see, you have taken n and m. What does n and m mean? How many times have you rotated? Obviously, how many times will it not be negative? Did anyone tell you to run in the field once, twice or thrice?"
+  },
+  {
+   "start": 507.09,
+   "end": 536.08,
+   "text": "It won't be negative. We will run once, or we will run 0 times, or we won't be able to run, right? It will be the same. So, in any case, sorry, it will be greater than or equal to 0. This whole thing, n minus 2m, whatever it is, we don't have to study so many variables. Give it a name. What should we give it a name? P. P, C. Simple thing is, let's keep it P. No matter how many times it is, what do we care? It will be 10 times, 20 times, 30 times. It doesn't matter. Keep running. It will work. Let's try to find the value of x. P times C."
+  },
+  {
+   "start": 536.08,
+   "end": 564.18,
+   "text": "x is equal to p times c minus y. This is written. Do one small thing in this. This can be written as p minus 1 c plus c. We have written this work as x is equal to p minus 1 c plus c minus y. See this."
+  },
+  {
+   "start": 564.75,
+   "end": 593.2,
+   "text": "We have not done any heavy math in this. This is class 5-6 math. We are doing LHS-RHS from here to there. Now see what happened. x is equal to p-1c plus c-y. Was c-y a special value? Yes, what was the special value? What was c-y? c-y was the one which was left over. This one. This was c-y."
+  },
+  {
+   "start": 594.22,
+   "end": 622.96,
+   "text": "This was C-Y, you took it, we didn't take it, you took it. Now what is the meaning of this? See this equation, this equation is the absolute truth of the world. Why? It has come from math. It has come from the formula of math, speed, distance, time. We haven't taken any assumption in any variable that it must have happened like this. No, no, no. Show whatever has happened, whatever can happen. Even if it is slow, even if it is fast, whatever can happen in the world, this equation has come by assuming everything."
+  },
+  {
+   "start": 622.96,
+   "end": 652.37,
+   "text": "What is this equation? True is 100%. This cannot be wrong. Now you see, what we write in the algorithm, remember this. Sorry, which was the question? This one. This is the absolute truth of the world. Remember this. Now come. Do one thing, what did our algorithm say?"
+  },
+  {
+   "start": 652.37,
+   "end": 680.62,
+   "text": "that as soon as slow equals to fast, what we used to do? We used to keep slow on the head and fast on the other side and we used to start driving both of them. How much? At one speed. Not on both, but at one speed. And where both of them used to meet, we used to say starting point. What did we use to say there? Starting point. Is that okay? Let's go."
+  },
+  {
+   "start": 680.82,
+   "end": 709.78,
+   "text": "Now let's make a small link list. Don't make a link list, first make a cycle. What is our equation? x is equal to t minus 1 c plus c minus y. According to yourself, whatever you want, first take the cycle length. Cycle is equal to, you said my 10 length cycle, there are 10 nodes in it, very good. t minus 1, t minus 1 has to be a number, how many times does it rotate? Take it as 3."
+  },
+  {
+   "start": 709.78,
+   "end": 738.86,
+   "text": "Take p-1 as 2 for simplicity. Take anything. Take y as 8. So, c-y will be 2. What will be the value of x? 2 into 10 plus 10-8 is 2. This tells you that if you have made any such linked list, if you take any linked list,"
+  },
+  {
+   "start": 738.86,
+   "end": 766.83,
+   "text": "What does X mean? The head to the start of the linked list cycle, which is its tail. It will have to follow this rule. It will have to have this length. If you make a cycle like this, and if you say that it can happen so many times, your tail will have to follow this rule. Because this is an equation. Where did the equation come from? Everything has been calculated that it will happen, it can happen, it can not happen. Everything has been calculated. What does this mean?"
+  },
+  {
+   "start": 766.83,
+   "end": 796.34,
+   "text": "So, let's explain it with an example that how and why it has to be accepted. You take your cycle length 8, sorry, take 10. Take your P-1 as 3. And take C-Y as 2. What does this mean? Whatever is your cycle length, what is C-Y? If this is your meeting point and this is your start point, it means that this length is 2. Okay?"
+  },
+  {
+   "start": 796.34,
+   "end": 823.06,
+   "text": "What will be the length of the rest of the cycle? The length of the rest of the cycle will obviously be 8 because the length of the cycle is 10. And you have to rotate it 3 times. According to this equation, what will be x? 3 into 10 minus 2. Is it minus or plus? Plus 2, sorry, plus 2. 32. Means, x will be 32. Now, what did we say? Keep the slow on the head. Move the slow forward."
+  },
+  {
+   "start": 823.06,
+   "end": 848.66,
+   "text": "Keep the fast here, keep the fast at the meeting point and increase the fast to this side And you will always get both at the start, so see, slow will run 32 times So it will come to the start point, it will come to the start point here This is for sure, now let's see what will happen if fast runs 32 times, see Fast first of all, fast will run 2 times and reach here"
+  },
+  {
+   "start": 848.94,
+   "end": 876.5,
+   "text": "It will reach here in 2 times. After that, how many times does it have to run? 30 times. 30 times. Because it will take 32 times to reach there. It has to run 30 times. Now see, when it runs 10 times out of 30 times, it will come back to the start. Because there is a cycle. It will run 10 times and come back there. If it runs 10 times the second time, it will come back here. It has run 20 times. If it runs 10 times the third time, it will come back there. Because it is a cycle. So, what does it mean? First of all, where did it come after running 2 times? At the start."
+  },
+  {
+   "start": 876.5,
+   "end": 898.7,
+   "text": "After that, if you run 10 more times, you will be at the start. If you run 20 times, you will be at the start. If you run 30 times, you will be at the start. And in the 32nd time, who will come at the start? Slow will also come. So we can see both slow and fast, that after running 32 times, where is it coming? At the start. You will definitely get it at the start point. You can get it there. How did you do it?"
+  },
+  {
+   "start": 898.7,
+   "end": 926.37,
+   "text": "You can make any link list from your mind. Think of any cycle number in it. Think of any y. According to that, you will have to make x. This is the question. This question runs according to math. Neither according to me nor according to you. You will have to make it like this. See. What does this mean? See, what do many people say? Now, those who have studied it, they tell it like this. That if those who have studied it, they tell it like this that this is L1. This is a cycle. And this thing was L2. And this thing is."
+  },
+  {
+   "start": 926.37,
+   "end": 953.52,
+   "text": "It was C minus L2. So, people start saying L1 is equal to C minus L2. No. L1 is equal to C minus L2. It was there. L1 is 32. C minus L2 is 2. So, 32 is equal to 2. No. No. No. No. What is that? L1 is equal to sum NC plus C minus L2. This. So, 32 is equal to 2. 32 is equal to something. 3 into cycle length plus 2. It is like this."
+  },
+  {
+   "start": 953.62,
+   "end": 979.54,
+   "text": "Understand? If you want to write this mathematically, there is no need for that. But, L1 mod C is equal to C minus L2. Listen carefully. L1 means X. X mod C is equal to X minus, sorry, C minus Y. How much was C minus Y here? C minus Y was 2. How much was X? 32. What are we saying? 32 mod 10 is equal to 2. See, 2 is equal to 2."
+  },
+  {
+   "start": 980.69,
+   "end": 1009.76,
+   "text": "this is not possible, we also made a mistake, because it is difficult to understand why this will happen. Now everyone says, no, no, no, do the work, remove this, and L1 is equal to, why remove this, there is no reason to remove it, there is a reason, it is cyclic, so no matter how much you travel, your node position will not change, but without telling it, remove it, nothing moves in maths, you don't have to remove anything, do the maths and see, whatever your cycle length will be,"
+  },
+  {
+   "start": 1009.76,
+   "end": 1023.09,
+   "text": "According to that, you will get your poochhadi. Let's hope that you have understood. You have to think very hard. You have to think with a lot of mind. So, let's see this and we will come back to our schedule from tomorrow. Let's go."
+  }
+ ]
+}

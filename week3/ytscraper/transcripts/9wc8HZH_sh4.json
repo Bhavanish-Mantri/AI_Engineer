@@ -1,0 +1,229 @@
+{
+ "video_id": "9wc8HZH_sh4",
+ "title": "DSA PATTERNS Episode 16 | Sliding Window Pattern: Amazon Interview Question",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1193,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 19.01,
+   "text": "Before my kids ask me to make a video about studying, they won't watch this. This is a video about studying. Listen carefully. The new students who are coming, you will know in this video that we have been shouting and teaching for so many days, why your Stryver brother, your Lovebubber brother, your college, your college, any college, this man is better than that."
+  },
+  {
+   "start": 19.01,
+   "end": 46.85,
+   "text": "Look at the question on your screen. What is this question? It is a hard question. The lead code is a hard question. Facebook, Amazon, LinkedIn, Microsoft, whatever company name you can think of, it has been asked in all of them. This question has given a hint of four ways. It means that it is very hard. Now look, the problem is that if you have studied from these three brothers or any of your brothers, if this question is in their course, then you can make this question. But if this question is not in their course, then you will not be able to make this question."
+  },
+  {
+   "start": 46.85,
+   "end": 72.66,
+   "text": "and always remember one thing that in interview questions don't come from anyone's course or sheet because all interviewers are not taught by us so all are not taught by them that's why we teach you patterns or templates what do we teach? template or rules once you learn these rules then any question will be made you don't need to write question by question because how many questions will you write? 500, 1000, 10000, 20000 there is no limit to it come"
+  },
+  {
+   "start": 72.66,
+   "end": 101.97,
+   "text": "Let's open this question and see how many fake and stupid questions are asked in any company like Amazon. What is the question saying to you? You are given two strings, S and T. Its length is N and its length is M. You have to search in S. What do you have to search? You have to search minimum window. What do you have to search? You have to search minimum window substring. You have to search this. But what is its condition? There must be some condition."
+  },
+  {
+   "start": 101.97,
+   "end": 129.38,
+   "text": "Its condition is that the string of T is present in this window including duplicates. Its character is present in this window. It doesn't mean by order. For example, if T is A, B, C, then you make any window in S. For example, you want to make this window. So, somewhere A, B, and C should be present in this. May be B is present here."
+  },
+  {
+   "start": 129.38,
+   "end": 152.35,
+   "text": "It can be A or C. So, B, A, C should be present once. If your string is A, B, C, C, then whatever window you choose, C should be there twice. C should be there twice, wherever it is in the window, in any order. But C should be there twice, A should be there once, B should be there once. Apart from this, anything else can happen."
+  },
+  {
+   "start": 152.35,
+   "end": 181.92,
+   "text": "It should happen. And you have to find minimum sub-string of such window. What to find? Sub-string. Not length. Not length. Not length. Sub-string. Means you have to return any sub-string of such window. This is your question. Now, my kids, who have read, who have revised sliding window, Pause it. Think for yourself. The new kids who are watching, come. You won't know the template or pattern. We will tell you. Any sliding window question, any sliding window question in the world, is of two types."
+  },
+  {
+   "start": 181.92,
+   "end": 211.82,
+   "text": "One is max window and the other is min window. This question is of min window. In any question of min window, the condition in which you have to return the window, if there is some sum, then it should be greater than or equal to. Greater than or equal to something. The sum is not necessary. Whatever you ask, it will be greater than or equal to something in the condition. What is the condition in this question? In this question, in S,"
+  },
+  {
+   "start": 211.82,
+   "end": 239.98,
+   "text": "A sub-string or a window in which the entire character of T is present. And it should be present in the same frequency. The entire character should be present. It should be present. It should be present. It means, the entire character of T should be present. After that, you can do anything. So, it means that whatever frequency or sub-string will be there, it should be at least greater than or equal to T."
+  },
+  {
+   "start": 239.98,
+   "end": 267.94,
+   "text": "At least it should be bigger than that. It should be full of T. Apart from that, anything should be there. Did you understand? So, you are getting the minimum pattern. You got the condition too. Come. Come, let's see. How many steps were there? What was step 1? What was step 1? See, we are not telling you all this new. We are telling you all this. You will see. You will see the last 2 lectures. You will know this flow chart. Okay? You don't know? No problem. Come, let's tell you in 2 minutes. Step 1 is."
+  },
+  {
+   "start": 267.94,
+   "end": 297.12,
+   "text": "we have to identify what kind of question it is. So, we are getting to know that it is a sliding window question. So, if someone has two opinions, if someone has a doubt, it is not according to me because the substring is asking. It is a string question. A condition is given. Perfect example of sliding window question. Very good. Let's come to step 2. Is it a fixed or a variable question? Is it a fixed or a variable window question? Somewhere you are being told to give a substring of length. Either give a substring of length this much or give a minimum substring."
+  },
+  {
+   "start": 297.12,
+   "end": 326.82,
+   "text": "As soon as I asked you to give minimum or maximum, it became a question of this variable. Very good. Step 3. We have to play here. What is the information of your window? And how will you store it? Information means, whatever window you are holding, whatever window you are holding, what is this window? What will this window tell you? What do you want to know from this window? So, what do we want to know from this window? Is the entire character of T a frequency or not?"
+  },
+  {
+   "start": 326.82,
+   "end": 353.68,
+   "text": "For this, what will we store the information of this window? Frequency. Frequency means HashMap, HashMap or Array, anything. Means, all the characters in this window have a frequency. Only then you will know, right? For example, if a window of S is made in which A is twice, B is once and C is twice. Your T was of this type in which A was once, B was once and C was once."
+  },
+  {
+   "start": 353.68,
+   "end": 379.31,
+   "text": "So, will these two match or not? So, how will we know if it will match or not? See, what was your T? Your T is this. Means, A was in T once. So, A should be in this once. Is A more than 1? Yes, it is more. So, very good. This matched. B was in this once. So, B should be in this window once or more than once? Is it more than or more than 1? Yes, it is. Very good. C?"
+  },
+  {
+   "start": 379.31,
+   "end": 407.82,
+   "text": "T has 1 bar which means in S window also, C should be 1 or more than 1? Is it? Yes it is. So what is your information? It is correct. When is information wrong? For example, let's take a window where A is 1 bar and B is 1 bar and C is not. And your T is given that A should be 1 bar, B should be 1 bar and C should be 1 bar. So now see, your T says that A"
+  },
+  {
+   "start": 407.82,
+   "end": 433.74,
+   "text": "Once or more than once, that is very good. Once or more than once, that is also very good. But your T says that C should also be more than one or more than one. But what is your C? C is zero. If C is not there, then C is zero. If C is not there, then what does it mean? C is zero. C has not come even once. So this information is that what happened to you? It is wrong. It is wrong. Now see. Now see. How will you know if it is wrong or right?"
+  },
+  {
+   "start": 433.74,
+   "end": 460.26,
+   "text": "It is very simple. What are they doing in every question of the string? If you want to find any frequency and you don't even know the hash map. What you don't know is that you don't even know the hash map. What is simple is that take an array of 256. How much size? 256. Why 256? Because my birthday is on 256. No, no, no. In C++, the total character is 256. In any programming language, the total character is 256. You take an array of 256 size. Make all of them 0."
+  },
+  {
+   "start": 460.26,
+   "end": 483.07,
+   "text": "When you want to include a character's frequency, increase it. When you want to remove a character's frequency, decrease it. By doing this, your frequency will be created. If it is an array, then it is a simple array. No hash map is being used in it. Now see. Now see. Now see. What was the next? Information. Is it right or wrong? Information. Is it right or wrong? Is it right or..."
+  },
+  {
+   "start": 483.07,
+   "end": 507.66,
+   "text": "This is wrong. How will we know this? Because this is a major part of our flowchart. How will we know this? What did we do last time? For example, there will be a window of S and T is ABC. T is ABC. T will be given to you. So first make this thing of T. What should you make? Make an array of 256. Make an array of T. So what will happen? In this, A, B, C, on any index, there will be 1."
+  },
+  {
+   "start": 507.76,
+   "end": 534.7,
+   "text": "Okay. Now suppose your S has a window in which A is there, B is also there, but C is not there. Now this information, now this window, now this window, and anything else can happen. Anything else can happen. There is no difference. D can be 10 times, E can be 15 times. There is no difference. Where is the difference between us? This. It should be greater than this. We will check from the character in T. It should be greater than that. You can keep anything else. Now see."
+  },
+  {
+   "start": 534.7,
+   "end": 558.35,
+   "text": "How will we know if it is the right window or the wrong window? Check it out. What is the question telling you? A, B, and C, the characters in T, their frequency, in which? In the window area. In the window area, should it be equal or greater than that? So check it out. If A's frequency is 1, then is it equal or greater than 1? Yes, it is."
+  },
+  {
+   "start": 558.35,
+   "end": 585.55,
+   "text": "If B has 1 here, then is it greater than or equal to B? Yes, it is. But if C has 1, then is C greater than or equal to 1? No, it is 0. So what happened to this window? This window is wrong. It doesn't matter whether D has 10 or E has 15. We don't need that. We just have to match the frequency of the characters in T. Okay? Now you know how to decide whether the information is right or wrong. If you know this much, then come now. We will solve the question in 2 minutes."
+  },
+  {
+   "start": 585.81,
+   "end": 615.66,
+   "text": "Minimum window. What was the flowchart of minimum window? What was the flowchart of minimum window? From where did the high go? Those who are my students, pause it and make it yourself. We have cleared it for you. From where did the high go? From 0 to N. After that, what did we do? Remember yesterday's lecture. Those who are coming directly after seeing the day after tomorrow, don't watch it. Watch yesterday's lecture. Yesterday's lecture. In yesterday's lecture, the minimum flowchart was told. In the day after tomorrow's lecture, the maximum flowchart was told. The same flowchart will be used in every thing in the world. Come on. What did we do?"
+  },
+  {
+   "start": 615.66,
+   "end": 643.89,
+   "text": "What to do after this? What to do before this? You have to include high in your information. Where to include high? How will you include it in your information? You will increase the character of high in the array. It's simple. Now, as long as the information is correct, correct, correct, not wrong. Those who are watching the day after tomorrow, they must be thinking that they are saying the opposite. Watch tomorrow's please."
+  },
+  {
+   "start": 643.89,
+   "end": 673.86,
+   "text": "till the time the information is correct, we have to do two things. First of all, we have to write this in our result. Why? Because we want this information to be correct. We have to write this in our result. And the next thing we have to do is, we have to remove the low from our information. We have to remove it from our information and increase the low. This is all we have to do. We have to close the high and return our result. This is the pattern of any minimum window substring."
+  },
+  {
+   "start": 673.86,
+   "end": 697.46,
+   "text": "Now, let's see how we will do this. First of all, we will make two arrays. We will make two arrays. We will make two arrays of 256. We will make two arrays of 256. Why? One array is for your S window and one array is for your T. It is for T. Now, suppose this is your T array. So, give it a name. Need. Needed. Needed. This much is required. This much is required. What we are saying is condition."
+  },
+  {
+   "start": 697.46,
+   "end": 727.2,
+   "text": "Sum greater than equal to K. So what is K? K is needed. Needed means K. It should be bigger than this. And what name will you give to this? You give it have name. How much is it now? I have how much now? Now see. Needed, how will you know how much is needed? Traverse T. Traverse T. Traverse T. And whatever character is in T, do it in needed. Means, if T is A, B, C, then first A, do A from 0 to 1. If B is there, then do B from 0 to 1."
+  },
+  {
+   "start": 727.2,
+   "end": 755.47,
+   "text": "If there is C, then make it 1 from 0. If there is another C, then make it 2 from 1. First of all, make your needed. Your needed is made. Now come, we will start our sliding window. Write, for high is equal to 0. High less than n. This is nothing new. We are doing the same thing again and again. First of all, what we have to do? We have to take high inside. Take high inside. What is the name of your window? It is have."
+  },
+  {
+   "start": 755.47,
+   "end": 784.38,
+   "text": "In half, who has to be taken in? High has to be taken in. The character of high. So your S, high. S, high. And plus plus. High has come in. Now what to do? Till the time the information is correct, till then you have to do something. Come, write low. While. Now see. Information is correct or wrong, we have told you how the calculation will be done. We will write a function of that. Now we will write a function. We will write it now and show it. For now, assume the name of that function is M. Fun. What is the name of that function? Okay, it is Saheed."
+  },
+  {
+   "start": 784.38,
+   "end": 813.44,
+   "text": "The name of the function is sahi. And what were you doing in sahi? You were comparing have with needed. Needed should be in have. So what will we pass in this? Have and needed. We will show you now. And close this. Meaning? Till it is correct. Till it is correct. Till it is correct, what do you have to do? You have to store the result. One more thing. Here you don't have to give length to the result. Here you don't have to give length to the result. You have to return the whole substring."
+  },
+  {
+   "start": 813.44,
+   "end": 842.35,
+   "text": "we have to return the substring to do this, if we had done length then what we would have done is we would have written the result as result is equal to minimum of result and length ok so first of all you have to remove the length first of all you have to remove the length so remove the length first of all we used to remove this every time you remove the length means of this window which is right now its length is so and so you can do one thing which is not known in substring we will tell you if if rest greater than l length"
+  },
+  {
+   "start": 842.35,
+   "end": 867.28,
+   "text": "We used to say that if res is greater than length, then there is a benefit of updating. Otherwise, there is no benefit. We need minimums. So, first of all, res is equal to length. Do one more thing. How do you get substring in C++? To get substring, you have to pass two things. You can get substring of any string. How? You have to pass its starting point and you have to pass its length of substring. For example, if you have A, B, C."
+  },
+  {
+   "start": 867.28,
+   "end": 885.06,
+   "text": "0, 1, 2. So, if you write 0 in starting and write 2 in length, then it will take A and B. So, you will get its answer AB. If you write 3 in length, then it will take A, B and C. So, its answer will be ABC. Meaning, do starting point and start taking the length's substring from there. Now, see."
+  },
+  {
+   "start": 885.06,
+   "end": 912.46,
+   "text": "You got to know the length from here. The length is going to be the result of this. The length is going to be the result of the final. And how will the starting point be changed? Do you need the final every time or do you need the minimum substring? For that, you need two things. One is the length of that substring which we will store in the rest again and again. It will come in the last. But, starting point. What will be the starting point? The starting point of any window is always low. The meaning of window is low to high. So, you take one more variable and in start,"
+  },
+  {
+   "start": 912.46,
+   "end": 941.34,
+   "text": "At the start, store the low. When are we doing this work? When your rest is bigger than the length. That's when we are doing this work because we want the minimum. We used to do the same work in one line. Rest is equal to minimum of length and rest. Just because we have to give a substring in it, then you will have to do it like this. You can do it in any other way according to your thinking. What else do we have to do? Close it. The first work is done. What was the first work? As a result, we took the low one. Now that window. Now what do we have to do? Let's remove the low. Let's remove the low. How will we remove the low? Let's remove the low quickly."
+  },
+  {
+   "start": 941.34,
+   "end": 971.18,
+   "text": "s low, minus minus, the game is over. Make the low plus plus. That's it. This while loop is over. After that, do we have to do anything? No, we don't have to do anything. This high loop is over. High's fall loop is over. Now, what we used to do? We used to do return result. But, what do you have in result now? Now, you have length in result. There is length in result. And what is there in start? There is starting point in start. So, how do we get substring? We have to do substring return, right? Do it, man. Do it. Return."
+  },
+  {
+   "start": 971.18,
+   "end": 1000.14,
+   "text": "S. We have to return the window of S, right? Substr. We write Substr like this. First of all, what do we give here? Starting point. And length. Where will the length be stored? In the result, the minimum one. That's it. Hard question is solved now. It took 16 minutes even after giving so much lecture. This is the hard question of the lead code. Hard question with 4 types of hints. Means, it's a good hard question. It's solved. What did we use in this? We used a simple template. Did anything change in this rule?"
+  },
+  {
+   "start": 1000.14,
+   "end": 1028.56,
+   "text": "Did anything change in this rule till now? What did you do in minimum? Tell us one more step which is extra for you. Oh, what did you do? This is not right. Yesterday you said this, today you did this. No. We are doing the same step. Run high. Take high in result. Till the time information is correct, take it in result and keep increasing low. In the end, return the result to it. Now come, what we told you. Information is correct, how will we find out wrong? Come, now many people have problem in writing code. We will write it. How did we find out right or wrong?"
+  },
+  {
+   "start": 1028.56,
+   "end": 1058.53,
+   "text": "First of all, what were we doing in right and wrong? What were we passing? We were passing two things. Vector, int, have. Have means the one which is in the window of S. Very good. And what was the next vector we were passing? The one which is needed. What is it? Needed. What was the name of needed? Needed. Okay. What was its logic? That the value in need, there will be any value in need. In need, the value of A will be 1, B will be 2, C will be 3, anything will happen. Rest will be 0. So, the value of the character in need,"
+  },
+  {
+   "start": 1058.53,
+   "end": 1083.9,
+   "text": "The value of that character in have should be equal to or greater than that. Come, you will get to know by simple loop. What is the size of both your arrays? 256. That is why 256 is known, it is very easy. Come, run it, take 256 and do i++. Now, when will this information be wrong? When will this information be wrong? When the value of have will be less than the value of need."
+  },
+  {
+   "start": 1083.9,
+   "end": 1107.46,
+   "text": "this is the same, if have a is 0 and need a is 1 then this will be wrong so run an if that if have i less than need i at any time at any time in 256 then return false means it is not correct function name is correct now if this loop is complete if this loop is complete 256 times means that you never caught this condition"
+  },
+  {
+   "start": 1107.46,
+   "end": 1137.34,
+   "text": "Your this condition has never been executed. What does it mean that this condition has never been executed? That the i of have is always equal to the i of need, so it is greater. This is our condition to be correct. Here, quickly, quickly, return true. Take this. We have written the right function. What is this? We have written the right function. Take this. Say right. Say right. What is the name of this function? Say right. Right. This was being used right here. Where? Here. This was being used right here. See. Same happened. The question is over."
+  },
+  {
+   "start": 1137.34,
+   "end": 1166.8,
+   "text": "this question and if you explain this way to an interviewer, then he will be shocked that what have you told, he is telling it in a systematic way what will be the opposite of this, that you will be hanged, the striver brother was hanged, there he will ask that why are you doing this, there he will ask you that why are you doing this, why are you doing this, from where have you hunged, you will come to know that he does not know and those who are new kids, they must be thinking that you also hanged, you also said that till the time the information is correct, keep doing this, see tomorrow's lecture, nothing is hanged"
+  },
+  {
+   "start": 1166.8,
+   "end": 1192.74,
+   "text": "I have to tell you this quickly, so I have told you. Nothing has been fixed. It has been told logically that why it shrinks. The logic of both shrinking, in the maximum window and in the minimum window, why it is different, why it is upside down, everything has been told. Try it carefully. Enjoy it. And go and submit this question now. It is a very important question from the perspective of the interview. So, you can joke on your side, but it is a very important question. Isn't it? Let's meet tomorrow. Tomorrow, we will start the link. Isn't it? Let's go."
+  }
+ ]
+}

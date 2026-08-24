@@ -1,0 +1,404 @@
+{
+ "video_id": "N8vJ8RyQEes",
+ "title": "DSA PATTERNS Episode 22 | Kadane’s Algorithm Pattern: Introduction & Intuition",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2180,
+ "segments": [
+  {
+   "start": 0.66,
+   "end": 24.77,
+   "text": "Come on, till today you must have read this thing on the internet many times, Cadence Algorithm, Cadence Algorithm, many people teach it, Stryverji teaches it, Lubbubber teaches it, every person teaches it, but the way we are going to teach you, no one has taught it that way. See, what is the problem? That we teach DSF pattern and people start teaching Cadence Algorithm. Now, both are right to read, it is not wrong to read, but"
+  },
+  {
+   "start": 24.77,
+   "end": 42.88,
+   "text": "By reading the algorithm, you will get only one question. Cadence algorithm was made to solve only one question. If you read the algorithm, you will get that question. For example, you will get maximum sub-subarray and minimum sub-subarray. Maximum product sub-array will not be made."
+  },
+  {
+   "start": 42.88,
+   "end": 68.22,
+   "text": "Why won't it be made? It won't be made until you watch the video of that teacher. Then he will say that it is like a cadence, do this, do that. You won't understand why he did this and why he did that. He will think that the teacher told him, so let's make him do it. But how many questions will be made like this? Don't teach the cadence algorithm. Cadence is a kind of pattern. The thought process used in cadence is called a pattern. What is the thought process?"
+  },
+  {
+   "start": 68.22,
+   "end": 98.26,
+   "text": "When you will study the thought process, then you will understand that this thought process was used in maximum sub-array, this was used in product, this was used in this, this was used in everything. It will be easy for you. See, the whole goal is to make a new question. Nothing will happen by writing the algorithm. We will write one question by writing the algorithm. In the next question, the same algorithm will be written but it will be written in such a way that you will not understand why this happened. So, that is not my goal of teaching. Let's go. First of all, first of all, first of all, whatever the cadence algorithm or cadence pattern is,"
+  },
+  {
+   "start": 98.26,
+   "end": 128.24,
+   "text": "Why is it used? Whenever you are given a sub-array in the question, and it is written there, contiguous. And for this contiguous sub-array, you have to either get the sum, or you have to get its product, or you have to get anything, like frequency, and this is called best. What does best mean? Either it is minimum or it is maximum."
+  },
+  {
+   "start": 128.24,
+   "end": 157.33,
+   "text": "Best has only two meanings. It means, if you are told that there is an array, then you have to find a sub-array whose sum is maximum or minimum, or whose product is maximum or minimum. Not only the length of the sub-array, but also the value of the sub-array. Sometimes, you have to ask for the start of the sub-array, in which the sum becomes maximum. Sometimes, you have to ask for the sum. Sometimes, you have to ask for the ending. Sometimes, you have to ask for both the start and the ending. So, this is the way of asking a question."
+  },
+  {
+   "start": 157.33,
+   "end": 187.3,
+   "text": "But, but, the basic thought process of cadence, understand how it works. Don't make a cadence algorithm. Cadence algorithm is a 3 line algorithm, we will make it right now. With that, you can make a question of maximum sum, but then the product will not be made. Right? Let's go. First of all, if you see an array, then you will remember that we are doing something on sub-array, sub-sequence and sub-string. What are we doing? Sliding window. Sliding window has been coming from many days. Sliding window, we used to solve many such questions that"
+  },
+  {
+   "start": 187.3,
+   "end": 215.5,
+   "text": "Take out the maximum size sub-array whose sum is something. Take out the minimum size sub-array whose sum is something. But what was the problem in sliding window? Sliding window didn't work in negative elements. What? It didn't work in negative elements. For example, if yours were 1, 2 or 3, all of them would have been positive. Just for example. What happens in this? What happens in this? When you increase the high, we are talking about sliding window. When you increase the high, your sum increases."
+  },
+  {
+   "start": 215.5,
+   "end": 244.54,
+   "text": "Obviously, if we increase the high, then the sum will increase. When you increase the low, your sum decreases. Obviously, increasing the low means removing one element, then your sum will decrease. But this is only applicable in the positive. As soon as the negative comes here, what is negative? It is possible that when you increase the high, then you have to include a negative element in your sum. Your sum can increase or decrease. The same thing happens in the low."
+  },
+  {
+   "start": 244.54,
+   "end": 270.88,
+   "text": "When you increase the low, it is possible that you are taking out a negative element. So your sum can increase and your sum can decrease. So see, the whole sliding window failed in negative because you don't know what will happen by increasing the high. Earlier you knew that the sum increases by increasing the high and the sum decreases by increasing the low. But when the negative came, you don't know what will happen by increasing the high and what will happen by increasing the low. So what is the decision making power? Your decision making power"
+  },
+  {
+   "start": 270.88,
+   "end": 300.11,
+   "text": "This is the decision making power, whether to increase the high or low. So your power is over, you won't understand what to do. That's why sliding window fails in the case of negative elements. Okay. To tackle this, we got cadence. Let's go. Understand the thought process of cadence, we will understand the flowchart of cadence after that. Understand the flowchart too, I have told you the flowchart too. There should be a question of sub-array. There should be a question of sub-array. There should be a question of sub-array. You have to find something best. What does best mean?"
+  },
+  {
+   "start": 300.11,
+   "end": 330.54,
+   "text": "Maximum or minimum What should we use? We should use sum We should use product We should use any kind of frequency What will be the use of this kind of thing? And, and, and There should be negative elements in array There should be negative as well There should be positive as well There should be zero as well Everything should be there Everything should be there So what is the use? Cadence There is no other way Except this, there is only one way Dynamic programming, we will discuss that later But what will be the use? Cadence will be there"
+  },
+  {
+   "start": 330.61,
+   "end": 360.56,
+   "text": "This is its flow chart. This is its 3-point flow chart. Now, what is the thought process of thinking about the cadence? First of all, do one thing. First of all, let's make an array. What do we make? 1, 4, 3, and 2. 0, 1, 2, 3. Okay. Look, if all are positive, all are positive, all are positive, what have you been told? That all the sub-arrays in this array, all the sub-arrays, find the sum of all."
+  },
+  {
+   "start": 360.56,
+   "end": 389.46,
+   "text": "Find the sum of all and from that, return the maximum sum. Return the maximum sum. If all are positive, then the sum of the whole array will be the maximum sum, right? All the arrays are positive. So, 1 plus 4 plus 3 plus 2, sum them all, 10 will come. Give this answer. So, if all are positive, then no need of cadence, no need of sliding window. That means, give the sum of all the arrays. That's right. Okay."
+  },
+  {
+   "start": 389.68,
+   "end": 420.53,
+   "text": "So, we understood one thing about cadence that it should be negative. So, let's modify this area a little bit. Let's minus this area here. Okay. Understand the thought process of cadence very carefully. We will use this template in all the future classes. Whose? Template. Cadence works on the same template. You have to go index by index. You have to go index by index. Yes. Yes. You have to go index by index."
+  },
+  {
+   "start": 420.53,
+   "end": 451.76,
+   "text": "On every index, you have to take two types of choices. What are the two types of choices? On every index, you have to take two types of choices. See, what are you trying to find on every index? Any answer ending at this index. This. You are trying to find this. Any answer ending at this index. Okay?"
+  },
+  {
+   "start": 451.76,
+   "end": 481.68,
+   "text": "And what are the choices you have to take on every index? Now what can this index do? See, when you make an array, when you make an array 1 and 2 and 3, how do you write all its arrays? Do you know how to write all its arrays? What are all its arrays? First, either it will be 1, with 1, it will be 2, 1, 2, 3. Similarly, if you start with 2, then it will be 2, 2 and 3. And similarly, it will be 3. Now see, ending at 3, what is ending at 3? What we are saying, we are saying it again and again, ending at 3."
+  },
+  {
+   "start": 481.68,
+   "end": 510.67,
+   "text": "How many sub-arrays do you see out of 6 that are ending at 3? See, one is this sub-array, one is this sub-array, one is this sub-array. There are 3 sub-arrays. How many are seen in ending at 2? One is this sub-array, one is this sub-array. How many are seen in ending at 1? Only one. Ending means that the sub-array that ends on that index. We have to find the answer for that. Okay. Good. So, first of all, at each index i, each index i,"
+  },
+  {
+   "start": 511.98,
+   "end": 542.03,
+   "text": "What do we have to find? The answer of ending at that index. Okay. Now, how will this come out? See, there can be two types of things in this. If the answer that you already have, if you add i to that answer, then you will get ending at i. What does it mean to say? If you see this square, 1, 2, 3. Let's assume that we are finding out for 3, that how many answers will end at 3. If,"
+  },
+  {
+   "start": 542.03,
+   "end": 568.14,
+   "text": "You will already have the answer of 1 and 2. Either it will be before that or it will be anything. It will be of 2 or 1. Suppose you have the answer before that. If in this answer, if we talk about sum, if we add array of i, then this is a possibility. This is the possibility. Suppose you have the answer before that. If you add array of i in it, then you get that you are ending at array of i. This is the possibility. What is the second possibility?"
+  },
+  {
+   "start": 568.14,
+   "end": 597.36,
+   "text": "Exclude all the previous answers. Remove all the previous answers. Just make one with the array of i. Meaning, this one. This one. This one. What is this? It is made with only 3. What is this? It is made with 2 and 3. Meaning, if you had the answer of 2, then you would have added 3 to it. What is this? If you had the answer of 1 and 2, then you would have added 3 to it. So, in total, there are only two types of choices. One is that the previous answer is running. You add this array of i to it. So, that will become the ending at i."
+  },
+  {
+   "start": 597.36,
+   "end": 622.34,
+   "text": "The next choice is to remove all the previous answers and keep only the array of i. This is also an answer. What happens is that the previous answer, the previous answer, add the array of i to it. One is to remove all the previous answers and keep only the array of i. Only the array of i. There are only two options."
+  },
+  {
+   "start": 622.34,
+   "end": 650.03,
+   "text": "If you do this for every index, then you will get a lot of answers. One will end at 0, one will end at 1, one will end at 2, one will end at 3, and so on. One will end at n-1. So, you got the answer of all the indexes. If you get the best answer in the ending of all the indexes, then if you take out the max of this, then you will get your result."
+  },
+  {
+   "start": 650.51,
+   "end": 678.83,
+   "text": "Any sub-array will end at some index, right? Like 1, 1, 2, 3, 1, 2, 2, 2, 3, 3. All these are sub-arrays. Every sub-array will end at some index. Like this is ending at 1, this is ending at 3, this is ending at 2, this is ending at 2, this is ending at 3, this is ending at 3. Any sub-array will end at some index. If you just get the ending answer of every index, then you will get the result if you take its max. It's simple."
+  },
+  {
+   "start": 678.83,
+   "end": 709.04,
+   "text": "Okay. Cadence works on this thought process only. We will see that the next 5, 6, 7, 8, all the questions have the same thought process. The algorithm will not tell us what to do yet. Understand the thought process. If you do this, you will get the answer. Okay. Now, come. Now, come. See. Take one row. Take what? Take one row. Minus 2, 1, 2, minus 4 and 5. Okay. 0, 1, 2, 3, 4."
+  },
+  {
+   "start": 709.52,
+   "end": 739.98,
+   "text": "Tell me one thing, on i is equal to 0, what can be the best answer to end on 0? What can be the best answer to end on 0? There is nothing before i is equal to 0. It will start from 0. So, you had only two choices. You had either to take the first one or to take the array of i. So, the first choice is not available on this. So, you will get only one choice on this, that you will have to take the array of i. This is how we got to know."
+  },
+  {
+   "start": 739.98,
+   "end": 767.98,
+   "text": "i is equal to 0, which is the best answer till now, the best answer of this ending till now, what is that? It is an array of 0 only. It is an array of 0 only, which is minus 2. Okay. And our answer, the final result of our answer, what does it do? It takes the maximum of the ending result of all the indexes. So when i will remain at 0, then your answer also, there is nothing else in your answer. So your answer will also have to be an array of 0 only. This is a natural thing, there is nothing before that. There is only one choice. So this is also minus 2. Okay."
+  },
+  {
+   "start": 768.21,
+   "end": 791.73,
+   "text": "Come to i is equal to 1. See this dry run, the thought process will be completely clear. Why do we do this? Come to i is equal to 1. Okay. Now you have the first answer. What is the answer? This one. Best ending. We will take the best ending. Best ending means i minus 1. When you stay on i, then your best ending is at i minus 1. What does best ending say to you? The best answer to the one that ended at i minus 1 is this."
+  },
+  {
+   "start": 791.73,
+   "end": 821.34,
+   "text": "Okay? Then you have two choices, either you get into it, or you get into it and make the best at i, or you start something else. Okay? This is done. Now see, how many choices does i equal to 1? Two choices. Firstly, the answer that is coming from before, i minus 1, which means the best ending of 0, do something with it, i.e. get into this minus 2 and add 1 to it. Either he has a choice to start on his own, i.e. he doesn't take anyone, he just takes himself. So either he takes himself,"
+  },
+  {
+   "start": 821.34,
+   "end": 851.12,
+   "text": "You can take 1. Okay. What will be its answer? Minus 1. What is its answer? 1. Which one is good in both? Which one do you think is good? Maximum, right? Maximum sums are there. You think this is good. So, you take this. Now, your best ending. Now, what has become your best ending? When your i is equal to 1 came. Now, what has become your best ending? 1. 1 has become. You don't have to do anything to the answer. Update the answer with your best ending. The answer was minus 2 earlier. Is minus 2 smaller than 1? Yes, it is small. So, cut the answer and take 1. Let's go. Go ahead."
+  },
+  {
+   "start": 851.12,
+   "end": 880.77,
+   "text": "Come to I is equal to 2. How many choices does I is equal to 2 have? Either you get this with your previous one or you just make your own. So if you get it with your previous one, it means with best ending. What does best ending represent? Your good answer which you used to end at 1. Now see, it is not necessary that the one you used to end at 1 will be 0, 1. It is possible that it will be just 1. It will end at 1. This is it. No matter where you are going, it will end at 1. Okay. What option does it have? Either you get it in this, which means 1, and you get it yourself. Or you just take yourself."
+  },
+  {
+   "start": 880.77,
+   "end": 905.6,
+   "text": "Now, what is its answer? 3. Its answer is 2. Which option does it find good? It finds 3 option good. So, it will take 3. Now, what is your best ending? 3. Update the answer. Cut the answer to 1 and make it 3. Because 3 is big. Okay. Now, see. Now, the algorithm will open. I is equal to 3 has come. I is equal to 3 has come. It also has two options. The best ending till now. It should be connected with it. Or it should just take itself."
+  },
+  {
+   "start": 905.6,
+   "end": 932.43,
+   "text": "What is this? Minus 1. What is this? Minus 1. And what is this? Minus 4. Which one is bigger? Minus 1 is bigger. So, what will it do? It will join. So, what is your best ending now? Minus 1. Should you update the answer or not? Because your answer is 3 and this is minus 1. It doesn't matter. Now, come. i is equal to 4. See what option is near i is equal to 4. Either you get it with the best ending till now. So, make it like this."
+  },
+  {
+   "start": 932.43,
+   "end": 961.36,
+   "text": "Make it 5. Either it will remain its own 5. Now see, this is minus 4 and this was 5. So who will it choose? It will choose the one which is bigger. So it will keep only itself. Now your best ending is 5. Was your answer 3 and now your best ending is 5? Update it and take 5. Your algorithm is finished. What is your answer? Just 5. If you will see in this array, see the entire array. Print and see the entire array. Write and see. This array is the best array. 5."
+  },
+  {
+   "start": 961.36,
+   "end": 988.86,
+   "text": "And no one else can come. If you try to take 1, 2, minus 4, and 5. Take this one. Its answer will be 3, minus 4, plus 5. Which will be 4. Which is not a good answer. So, 5 is a good answer. This is the thought process of cadence. What you have to do on every i? You have to find the best ending at i. Best ending at i. So, how many choices do you have? Usually, there are two choices. Either, the one with the first one. With the first one."
+  },
+  {
+   "start": 988.86,
+   "end": 1018.16,
+   "text": "Either you get it or keep it to yourself. Let the first one go, keep it to yourself. In both these choices, whatever is good, whatever is good, what does it become? Best ending again. Best ending again. Okay? What do you use for this? For this, you already have the best ending, which is the ending up to i-1. When you went to i-1, you had i0, so that was it. Whenever it happens, update the best ending in the result. What do you do? Update it in the result."
+  },
+  {
+   "start": 1018.48,
+   "end": 1046.83,
+   "text": "Result me. This is the whole thought process. Read it this way. Don't change the algorithm. Till now we haven't seen any line in the algorithm code. Don't change the algorithm. This is the thought process of cadence. Cadence algorithm is a five line algorithm. It doesn't have anything like that. Now come. Now let's come to the question. What is the question? Maximum sum. Subarray. Subarray. Okay. This is the question. What is your question?"
+  },
+  {
+   "start": 1046.83,
+   "end": 1074.27,
+   "text": "Now, in this question, what did we say? Minus 2, 1, minus 3, and 4, minus 1. 0, 1, 2, 3, 4. Okay? Let's also give a 2. Let's also give a 2, right? Let's go. 5. First of all, what did we say? i is equal to 0. Before i is equal to 0, nothing happens. That's why write the best ending. So, write the best ending. What should we do with the best ending? Write it. What? Array of 0."
+  },
+  {
+   "start": 1074.27,
+   "end": 1103.73,
+   "text": "till now you don't have anything else, then in answer also write Array . After that what you have to do? You don't have to do anything. You have to run the loop till where? I is equal to 1. I less than n. I++. First of all, what did we say? Now this I has two choices. Either it gets along with the first best ending or it starts its own. So first of all, you take out one value, V1 is equal to the best ending till now."
+  },
+  {
+   "start": 1103.89,
+   "end": 1134.02,
+   "text": "Because this is the problem of sum. So to add this you have to do sum. This is a simple thing. Second choice he has is that just take yourself. Just take yourself. Now what will be the best ending at index i? Maximum of both. Do what you like from both. So how will you decide good? Because this is the question of max. Max is not the question of good. Good can also mean min. If it is the question of min then good means min. If it is the question of max then good means max. Just max of what? V1, V2. The work is done."
+  },
+  {
+   "start": 1134.02,
+   "end": 1156.66,
+   "text": "Now, what did you get? At i. At i. Means, ending at i. Nothing more to do. Your answer, we had seen earlier that if we take max of all i's ending, then we will get it. Answer is equal to max of answer best ending. Best ending. Just close this. What do you return? Answer."
+  },
+  {
+   "start": 1156.85,
+   "end": 1186.48,
+   "text": "Return the answer. This is the code of 4-5 lines. If I had told you this code in the beginning itself, then you would have remembered it. First you have to write this line, then this line, then this line, then this line. By the way, there is no study. By the way, how much do you remember? Your brain's RAM is limited. You can't remember much. It is not possible to remember that much. You will forget. If you remember, you will forget. If you remember for 2-3 days, you will forget. Okay. This is the thought process. Did you understand the maximum error? What happened? It was solved with sourness."
+  },
+  {
+   "start": 1186.64,
+   "end": 1216.91,
+   "text": "Now let's see how easy the approach is. Come to the just opposite question. What? Minimum sub-array sum. What? Minimum sub-array sum. Just opposite question. What do you have to find? Take all the sub-arrays. Take out all the sum. Last time we were finding the maximum sum. Now we are finding the minimum sum. That's the difference. Don't do anything. Just don't do anything. Take minus 2, 1, minus 2, 3, 4. Take anything."
+  },
+  {
+   "start": 1217.3,
+   "end": 1243.39,
+   "text": "First of all, what did we say? Best ending. Best ending. Best ending. When i is equal to 0, what will be the best ending? There is nothing behind it. A0 will remain. What will be the answer? What will be the answer? And there is no answer available. A0 will remain. Okay. Do nothing. Run the loop. From where to where? From 1 to n. Run the loop. Come. What do we do?"
+  },
+  {
+   "start": 1243.39,
+   "end": 1269.46,
+   "text": "Which two options do you have? Do you have the option of meeting the first one or the option of doing something of your own? End. V1. Because the question is about the sum, you have found the sum, then what will happen? Add the area of i to the best end you have. What is the second option you have? Your own. You will not do anything, you will stay alone. Stay alone. Now, who is the good answer for both? Why is there a good answer for both?"
+  },
+  {
+   "start": 1269.46,
+   "end": 1298.21,
+   "text": "This is a minimum question. So, the one which is less in both will be a good answer. Last time, there was a maximum question. So, good means maximum. This time, there is a minimum. So, good means minimum. So, minimum of two choices. This and this. V1, V2. That's it. How will we update the answer? You want the minimum answer. Same. Like we did last time. Answer is equal to min. Min. Not max. Min. You want minimum. So, good means minimum. Answer. Or. Best. Ending. It's over."
+  },
+  {
+   "start": 1298.21,
+   "end": 1328.1,
+   "text": "close the loop here return answer see how much line has changed nothing has changed only minimum and maximum has changed in the previous program maximum was maximum here both are minimum and minimum only this has changed the third process was same these are both cadence algorithms but the pattern or the template what is that?"
+  },
+  {
+   "start": 1328.1,
+   "end": 1358.1,
+   "text": "What is that? It is the same. What is that? It is the same. The thought process is the same. You have to find the ending at i. Any time, in any question like this, you have to find the ending at i. For that, you will have two choices. Meet with the previous one. Meet with the previous one. Or start your own. Start your own. And take whatever you like in both. And keep updating your result every time. That's all you have to do."
+  },
+  {
+   "start": 1358.35,
+   "end": 1386.99,
+   "text": "Now see this question, this is another question in which we have read till now, there will be a little twist in it. See what twist will come. Okay, it is the same question. Instead of sum, what do you have to find? Product. The rest is the same, you have to find maximum product. That means, you can write as much as you can. What do you take out of the sum? Take out the product. That means, product. The whole product. In that, whatever the max is, return that. Okay? Till now, we have done what we have read. What did we read?"
+  },
+  {
+   "start": 1386.99,
+   "end": 1416.93,
+   "text": "How far do we have to keep the best ending? Till i. Keep updating your result. Let's read only two steps. So let's go. Best ending at. What will be the best ending in the beginning? When i will be at 0. Then there is nothing at the back. So a is 0. Okay. Do minus 2. And there is nothing at the rest. That is also a 0. So do minus 2. Now see. When we. When we. When we. See. It is in the beginning. Now see. Apply what we have read. We will not do anything new. We will come to i is equal to 1."
+  },
+  {
+   "start": 1416.93,
+   "end": 1446.29,
+   "text": "What choice do you have on i is equal to 1? Get it with the last one, which is the best ending till now, and make it your own. There are two choices. So, what was the last one? Minus 2. So, either it can make minus 6 with the last one, or it can make 3 by itself. What do you think is big in both? Because the max question is 3. Obviously, it is big. So, we will update the result and write 3. And the max ending will be this. Okay. Now, look. Look very carefully. Look very carefully. The game will get messed up here. i is equal to 2, means minus 4. What choice does it have?"
+  },
+  {
+   "start": 1446.29,
+   "end": 1473.33,
+   "text": "He has a choice that the best ending till now has become 3. It is still the best ending till now. So either he makes it minus 12 along with 3. Or he makes it minus 4 by himself. There are only two choices. Now see which one is bigger in both? Minus 4 is bigger in both. Minus 12 and minus 4. Minus 4 is bigger in both. So you will make your best ending in this. And you will see if my result is smaller than this. You will know that my result is not small. So what will you return? You will return 3 in the program. Okay. Good thing."
+  },
+  {
+   "start": 1473.39,
+   "end": 1489.95,
+   "text": "But if you look at this array, what is its maximum product? Its maximum product is not 3. Its maximum product is minus 2 into 3 into minus 4 which is 24. This is its product. Why?"
+  },
+  {
+   "start": 1489.95,
+   "end": 1517.73,
+   "text": "Its product is this, we are returning 3, means we are taking only this array, not all the arrays. But if you would have product the whole array, then you would have got 24, which is the maximum, which should have been in the answer. In this, you will say that you have failed, the whole thought process is wrong. In this, you have not studied the algorithm, you have not studied the pattern, so it is wrong. Okay. Why is it wrong? See, why is it wrong? Assume, in all the arrays, in all the arrays, 2, 3, 4, if all of them are positive elements, if all of them are positive elements, then this,"
+  },
+  {
+   "start": 1517.73,
+   "end": 1546.0,
+   "text": "It works equally. Suppose, if 4 has a choice, that do it in the previous product or make your own. So, in positive, it works equally. There is no problem. Why is there a problem? Why is there a problem? The problem is because of negative. Okay. What happens in negative? Negative into negative is equal to positive when you make a product. This is the problem, right? There is no problem in sum. Negative plus negative is equal to negative. And positive,"
+  },
+  {
+   "start": 1546.0,
+   "end": 1574.61,
+   "text": "Plus positive is equal to positive. It's a very simple game. But, the one that goes upside down, negative into negative, means it becomes positive. Okay. Now, see. Now, see. Think in a systematic way. What was the original array? This was minus 2 and this was minus 4. Minus 2 didn't have any choice because it's the first element, so let's leave it at minus 2. 3 had two choices. What did 3 have? To do 3 into minus 2 or to keep 3. So, he tried to keep 3. Okay. When we came to 4,"
+  },
+  {
+   "start": 1574.61,
+   "end": 1603.6,
+   "text": "Sorry, when it comes to minus 4, we are giving it only two choices, either it should remain, this is a very good thing, it should also remain, or it should be minus 4 into 3 and make it minus 12. But, but, but, there is one more choice in this which we are not able to give it. What is the choice? If it had done minus 4 into minus 6, then it would have become 24. It was said earlier, if we consider minus 6 up to here, then if it does 4 into minus 6, then it will become 24. Okay."
+  },
+  {
+   "start": 1603.76,
+   "end": 1625.94,
+   "text": "Where did this minus 6 come from? This is the minus 6. This minus 6 will come from here. This is the minus 6. This means that 4 has, 4 is not 4, it is minus 4, it is negative. So either it has the maximum product which is running till now, the ending product which is running till now, make something from that."
+  },
+  {
+   "start": 1625.97,
+   "end": 1643.31,
+   "text": "Or it can remain as it is Or the minimum product that is running till now If any product is running in negative till now If it connects with it in any way Then it will become positive Because what is negative into negative? It becomes positive Means"
+  },
+  {
+   "start": 1643.54,
+   "end": 1672.72,
+   "text": "If there is a positive, there is nothing to be afraid of, it will either remain its own, or the maximum product that is running till now, maximum ending at i-1, whatever is running, do product with that and see. There is a problem with the negative, that you have to give three options to the negative. What three options will you have to give? If it is negative, the minimum product that is running till now, it means that the product may also be positive, but it is possible that the minimum that is running till now, that is negative. What happens? It is negative, as we saw here."
+  },
+  {
+   "start": 1672.72,
+   "end": 1697.58,
+   "text": "What did you get before minus 4? Minus 6. What was this? It was a minimum product. It was a minimum ending product. So, it has one thing that it can make itself by combining with the minimum ending product. What will happen with this? If the minimum product also becomes negative by case, in case, by luck, then it will become positive. It will become positive. It has one thing that the maximum product which is running till now,"
+  },
+  {
+   "start": 1697.58,
+   "end": 1726.14,
+   "text": "Maximum is going on. It may be positive or negative. Whatever it is. Make something with it. Okay. It can be positive in this. It can also be negative. Either it has one option. That take yourself. This case will definitely be negative. So now see. When you are just tracking maximum ending. You are not able to handle this case. You are not able to. For this. For this. What you have to do is a small twist. Instead of one. You have to track two types of ending. What?"
+  },
+  {
+   "start": 1726.14,
+   "end": 1756.05,
+   "text": "What did we used to track? Remember. Best ending. We used to track best ending. What did we say? What will be best? It will depend on the best question. Whether it is maximum or minimum. Best ending. We have seen which is the best ending for negative. Negative has more benefit if you do it with minimum. It is a very logical thing. Suppose you do minus 4 with 1 and do minus 4 with 2. What will be its answer? Minus 4. What will be its answer? Minus 8. See, which is bigger?"
+  },
+  {
+   "start": 1756.05,
+   "end": 1785.26,
+   "text": "Bigger is minus 4. When you multiplied this with the smaller one, then it was fine. Negative, the bigger the element you multiply with, the worse the result will be. What are you saying? If you multiply negative 4 with 1000, then it will become negative 4000. But if you multiply negative 4 with 1, then it will remain negative 4. So negative 4 is bigger than negative 1000, so it becomes upside down. Meaning, what does positive still need? Positive still needs the max ending thing."
+  },
+  {
+   "start": 1785.26,
+   "end": 1812.22,
+   "text": "But the negative element, the negative i element, what does it need? It needs a product with a min ending. You have to give it a min ending choice. If you give it max, the situation will get worse. Why? Because you will try to product the positive with as many big numbers as possible. But you try to product the negative element with as many small numbers as possible. That's why the positive is fine. If the sum was going on till now, it was fine."
+  },
+  {
+   "start": 1812.22,
+   "end": 1842.21,
+   "text": "When the product of the negative element comes, then the rule is reversed. So what will be the best ending for the negative? For that, the best ending is not the maximum ending, but the minimum ending before that. Only then it can decide that if we get a minimum ending, then should we do the product with it or should we do it ourselves? Only then it will be able to take this decision. For this, what will you have to do? We used to track the best ending. In this, you don't track the best ending. You track a maximum ending and a minimum ending. How? Come."
+  },
+  {
+   "start": 1842.21,
+   "end": 1870.7,
+   "text": "First of all, this is the array, 3 and 4. You track a min ending. Min ending means, what will end on i. Min ending means, on the index of i, what is the minimum answer to it? What is the minimum product? So, the simple thing is that in the beginning, this will also be a0. And max ending means, what has ended on i, that will also be a0. And in the beginning, your result will also be a0 because there is nothing else. Okay. Come on, run the loop. i is equal to, sorry, 1. i less than n."
+  },
+  {
+   "start": 1870.7,
+   "end": 1899.02,
+   "text": "I++. Okay. First, how many choices did you have? Two choices. Either you make it with the best ending or you make it yourself. Now, you have two types of best ending. One is min and one is max. So, for simplicity's sake, you don't have to see every i, whether it is positive or negative. Make three. Make three variables. What? The first value is, it will remain itself. It will not depend on anyone. It will start by itself. Very good. Stay. What is the second choice? That this min ending,"
+  },
+  {
+   "start": 1899.02,
+   "end": 1926.27,
+   "text": "is a min ending, it should be connected to it. So this is the second one. What is the third choice? The third choice is that it should be connected to the max ending. Now see, we have covered both negative and positive. If you want, you can do this. What does positive have to do with max ending? Negative needs the min ending one. So you can do it according to that. But simplicity purpose, you will have to make only three variables. Earlier you used to make two, now make three."
+  },
+  {
+   "start": 1926.27,
+   "end": 1949.97,
+   "text": "After that what we used to do? We used to update the best ending. Now how many types of best ending do you have? Two types. One is max ending and one is min ending. According to that both will be updated. How? What does max ending say? What is the maximum product that comes on i and ends on i? Okay? This is what it says. So max of these three is max. So do v1 and max v2, v3."
+  },
+  {
+   "start": 1950.32,
+   "end": 1972.99,
+   "text": "What does this mean? First of all, take out the max in V2 and V3 and then see the answer in V1 and make it. It's simple. What does min ending say? Min ending says that we want to be the minimum product ending on I. Just reverse it. Min V1, min V2, V3. That's it."
+  },
+  {
+   "start": 1972.99,
+   "end": 2001.92,
+   "text": "Both of your best-endings are updated here, simply. After that, what do we do? We update the result. What is the result? The result is your question. The question has been asked to you maximum. Result is equal to max of result. And after this, we were writing best-ending. You have two ways of best-ending. So do one thing, write this. Max of, here max-end. This means this first one. And min-end. Min-end means this one."
+  },
+  {
+   "start": 2001.92,
+   "end": 2030.26,
+   "text": "So, look at both of them. In both of them, look at the obvious things. Max end and min end. What do you call max? The maximum product that ends at i. What do you call min end? The minimum product that ends at i. Which one will be bigger? Obviously, max ending will be bigger. So, if you want, you can write only max ending. But to understand, because we used to see rest as best ending. Here, there are two types of best ending. So, we will see both of them. There is no problem in that. Write this. Close the loop and return rest. Simple thing."
+  },
+  {
+   "start": 2030.26,
+   "end": 2050.78,
+   "text": "Same thought process. Nothing changed. What changed? The meaning of best ending changed. The meaning of best ending changed. For whom? For positive element, the meaning of best ending is something else. For negative element, the meaning of best is not minimum maximum. Best means what is best for me. The best time for me, we will see that. We will not see what is best for the whole world."
+  },
+  {
+   "start": 2050.78,
+   "end": 2076.56,
+   "text": "It is possible that something is best for someone else. It is possible that something is best for someone else. So it is best for the positive to give us the maximum product till now. Because we will enjoy the more we multiply the positive with the bigger number. Negative says that give us as small as possible. If we are asked to give negative, then we will multiply with that. Negative always finds a small number for its product. Positive always finds a big number for its product. This problem was not in the sum."
+  },
+  {
+   "start": 2076.56,
+   "end": 2105.58,
+   "text": "Because in sum, whether the number is positive or negative, it is said that the bigger the number you give us to sum, the more we will like it. This is the logic. The bigger the number you give us, the more we will like it. But in negative, it is completely opposite. So the meaning of best in negative has changed. For what? For negative and positive. That was just a small change. So instead of one best ending, keep two best endings. Keep one minimum best ending, keep one maximum. Give the number according to which you want. If you don't want to do so much time-sum,"
+  },
+  {
+   "start": 2105.58,
+   "end": 2134.77,
+   "text": "Make three choices instead of two. So what is happening in this? We are making three choices on every number. One is to meet with the mean at the back. One is to meet with the max at the back. And one is to stay alone. Stay alone. Don't meet with anyone. Stay alone. That's it. It's over. See three questions. We have done three questions. Three questions. What are the three questions? There is a question of medium level in the lit code. Medium level. If we had just made you remember the cadence algorithm,"
+  },
+  {
+   "start": 2134.77,
+   "end": 2163.17,
+   "text": "Let's remember the cadence algorithm. First of all, we will remind you of the maximum. Then we will remind you of the minimum. Then if you don't like the product, then we will remind you of the product. So how much will you remember? There are a lot of such questions now. Don't remember. So that's why. Thought process. What is the thought process? I. We have to see the thing that ends on I. According to us, we have to take the best. Along with that, either we have to take a separate choice. Whichever is a good choice, we have to update it to the result. So just see every code. I mean, it is a difficult 10 line code. So three codes."
+  },
+  {
+   "start": 2163.17,
+   "end": 2178.77,
+   "text": "Go and quote it. And there are 1-2 questions of Cadence left. So, we will do all that. And soon, after this, prefix sum will also come. We will add prefix sum in sheet. For those who don't have sheet, it is in description, it is updated in all. Go and do questions of Cadence soon."
+  }
+ ]
+}

@@ -1,0 +1,409 @@
+{
+ "video_id": "A3sZWwalzz4",
+ "title": "We Crossed 50K! Let's Study Bellman-Ford NOW",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2093,
+ "segments": [
+  {
+   "start": 0.08,
+   "end": 19.44,
+   "text": "Before we start the video, we would like to share something with you. You must be knowing that our 50,000 or 51,000 subscribers has been completed. We have seen a lot of congratulations and comments. Thank you very much. We haven't celebrated it much because I don't have a major role in it."
+  },
+  {
+   "start": 19.44,
+   "end": 46.06,
+   "text": "Whatever happened, we didn't even know when we started that so much will happen, it will happen so soon. So whatever happened, it happened because of you, because of God or because of anyone. So it's okay. But we liked it. Knowing that we are able to help you in some way means the hardships or the difficulties that we faced while studying, the difficulties that we faced while learning DSA, you should be a little less than us. This is always my effort."
+  },
+  {
+   "start": 46.06,
+   "end": 73.86,
+   "text": "We really like it when people read this kind of pattern and we know some kids by name who were asking in the comments 2-3 months back what is index, what is time complexity and what is array. Those kids have read tree, recursion, graph and in the future they will read DP and in such a small amount of time. If traditionally we would have taught that first the whole array should be taught by doing 500 questions then we don't think it would have been possible."
+  },
+  {
+   "start": 73.86,
+   "end": 88.43,
+   "text": "So if any one of you can read DSA and finish DSA because of me or because of the channel, then we will be very grateful for that. And whatever has happened, I am very grateful. We don't talk about all this emotionally."
+  },
+  {
+   "start": 88.43,
+   "end": 117.71,
+   "text": "And if you are on this channel, if you are watching this video and you are not studying the DSA pattern, then you are missing a lot. I will tell you. Because the most efficient and the smallest way and the best way to study DSA is this pattern wise. In a very short amount of time, go ahead a lot. If you want, you can do a course of 6 months, 8 months, 10 months. Keep studying, keep studying, keep studying. It is a brute force technique. But in a very short amount of time, study DSA in a very good and efficient way. For that, you should definitely study the pattern."
+  },
+  {
+   "start": 117.71,
+   "end": 147.23,
+   "text": "And that's it. Let's move ahead. What is today's topic? Bellman-Ford. So what were we doing in the graph series till now? We have done a lot of things till now. The most recent thing that happened was that we saw the Dijkstra algorithm. What did we see in the Dijkstra algorithm? We understood it and made its question. So what was the main motive of Dijkstra? That you were given a single source, right? And you used to get the shortest path to all other vertex or all other nodes."
+  },
+  {
+   "start": 147.23,
+   "end": 170.13,
+   "text": "This is what used to happen in Dijkstra. That there is a single source and you get the shortest path till the other vertex. But there was a big problem in Dijkstra which we had discussed. If there were negative weights. If there were negative weights. Either there was a negative weight cycle. Or there was a negative weight cycle."
+  },
+  {
+   "start": 170.13,
+   "end": 194.8,
+   "text": "So Dixitra didn't work. What does it mean to not work? Dixitra never stopped. He didn't understand that now he has to stop. For example, if someone gave you a Google map that this is Ranchi and this is Patna. Now the road from Ranchi to Patna is of 2 km. How many km is that? 2 km. The road from Ranchi to Patna is of 2 km. And the road from Patna to Ranchi"
+  },
+  {
+   "start": 194.8,
+   "end": 224.64,
+   "text": "It is of minus 10 km. It doesn't happen, but it can be given in the question. Now in this case, Dixitra never stops. Why doesn't it stop? We have explained this in the previous video very calmly. Look, Dixitra will start by giving 0 to Rachi and giving infinity to it. Now if you relax from Rachi, then your Patna will become 2. Now when you relax from Patna, then Rachi will become 2 minus 10, minus 8. Now Rachi will become less. If Rachi becomes less, then Patna will become less. Patna will become minus 8 plus 2, minus 6."
+  },
+  {
+   "start": 224.64,
+   "end": 250.88,
+   "text": "If Patna is reduced, then RANCHI will be reduced again. Now RANCHI is reduced to minus 16. In this way, it will keep on moving and it will crash to infinity. Because it will not understand when to stop. It kept on moving and it kept on knowing that RANCHI is also decreasing and Patna is also decreasing. So it kept on moving. Why did this happen? Because there is a negative cycle here. This cycle RANCHI to PATNA to RANCHI is a cycle. What is the total value of this cycle?"
+  },
+  {
+   "start": 250.88,
+   "end": 273.31,
+   "text": "2 and minus 10, minus 8 km. So, this is a negative cycle. So, in such a case, Dixitra gets stuck or it doesn't work. To solve this disease, to solve this limitation, there is a new algorithm and it is a very easy algorithm. It is a very easy algorithm from Dixitra. What is its name? The name of that man or that algorithm is Bellman-Ford. Bellman-Ford. Bellman and Ford will be two men."
+  },
+  {
+   "start": 273.31,
+   "end": 302.4,
+   "text": "These are the two algorithms. And don't think that there is a lot of rocket science by listening to the algorithms. It is a very simple and very small thing. Bellman-Ford also does the same thing. What is the same thing? It gives you from single source to all other nodes. What does it give you? It gives you the shortest path. It is a good thing. And the limitation of Dijkstra is that Dijkstra sometimes does not work in negative weight and in negative weight cycle it does not work at all. Bellman-Ford solves that. How?"
+  },
+  {
+   "start": 302.4,
+   "end": 316.82,
+   "text": "Bellman-Ford also works in negative weights. And if there is a negative cycle in the graph, Bellman-Ford can also detect it."
+  },
+  {
+   "start": 316.82,
+   "end": 345.28,
+   "text": "If you are given a map where there is a negative cycle, where you can't find the shortest path, because it is a cycle, meaning the more you walk, the less it will be. So where Dijkstra used to get stuck in this, Dijkstra used to walk infinity, Bellman Ford will detect this and tell you that there is a negative cycle, this can't be done, this can't be done. Why? Because if there is a negative cycle, then you can't do this shortest path, because what will happen in that, the more you walk, the less it will be. This is the same thing that,"
+  },
+  {
+   "start": 345.28,
+   "end": 369.78,
+   "text": "The more you work, the more you like it. So you will keep working and working and working. So when will you stop? Bellman-Ford detects this thing that stop, stop, stop. There is a negative cycle in the graph. Its solution is not possible. You stop. So it will not crash your program by going to infinity like Dijkstra. And this is very, very easy from Dijkstra. It is very, very easy to understand and to write. You will see that you will know in the code that where in Dijkstra you..."
+  },
+  {
+   "start": 369.78,
+   "end": 383.79,
+   "text": "15 types of things had to be done. Make a heap, do this, do that, do that, do all this. Bellman-Ford is a very beautiful, very cute algorithm. It is a very intuitive algorithm. So today we will learn Bellman-Ford. After learning Bellman-Ford, we will do a few questions of it and you will understand Bellman-Ford completely."
+  },
+  {
+   "start": 383.79,
+   "end": 413.49,
+   "text": "In any interview, if you are given a choice that do this, do that, then you don't do Dijkstra, you do Bellman-Ford. Bellman-Ford is easy, efficient and intuitive algorithm. Writing is small, understanding is small, it is a very cute algorithm. So let's go ahead and start with the example of understanding Bellman-Ford. So look, again we made a Google map, okay? And you must be thinking that it is very complex. We have made it complex on purpose to explain our point. Okay? You too have been given a source like Rachi and on other cities,"
+  },
+  {
+   "start": 413.49,
+   "end": 435.7,
+   "text": "What Dixitra used to do? He used to do a lot of things. He used to do this and that. Bellman and Ford came and said, don't do so much work. There is no need to be so complex. He said, okay. Now he asked, do one thing. In this map, Rachi is your source, understood. Which city is the most complex? Complex means, where there are multiple paths to go. So he said, Delhi."
+  },
+  {
+   "start": 435.7,
+   "end": 464.61,
+   "text": "Delhi is the most complex. Why is Delhi the most complex? See, if you want to go from Ranchi to Bangalore, then there is only one path in the whole map. You will have to take this road from Ranchi to Bangalore because there is no other road in Bangalore. Now see, there is no other road in Bangalore. There is only one road. Similarly, there is only one path to go to Patna. Which path? Ranchi to Bangalore, Bangalore to Patna. There is no other path. There is one path to go to Kolkata. Ranchi to Bangalore, Bangalore to Patna, Patna to Kolkata. To go to Delhi, if you want to travel from Ranchi to Delhi, there are four paths. Which?"
+  },
+  {
+   "start": 464.61,
+   "end": 493.84,
+   "text": "First, you can go directly from Ranchi to Delhi. Second, you can go from Ranchi to Bangalore. Third, you can go from Ranchi to Bangalore, from Bangalore to Patna, and from Patna to Delhi. Fourth, you can go from Ranchi to Bangalore, from Bangalore to Patna, from Patna to Kolkata, and from Kolkata to Delhi. So, Delhi is the most complex city. Now look, there is only one path in the other three. Decision making becomes hard when you have to see multiple choices. So, in this map, Belmond Wood asked to tell the most complex city."
+  },
+  {
+   "start": 493.84,
+   "end": 522.78,
+   "text": "He said Delhi. He said do one thing. Write down the entire route to go to Delhi. Now you have told that we will go from here to there. Write down the entire route. Write down one place and see. So people said okay, let's write. One man said, you can directly go to Delhi from Ranchi. He said okay. Second, you can go to Bangalore from Ranchi. You can come to Delhi from Bangalore. He said great, write more. You can go to Bangalore from Ranchi. You can come to Patna from Bangalore. And you can go to Delhi from Patna. He said very good, write more."
+  },
+  {
+   "start": 522.78,
+   "end": 552.35,
+   "text": "He said, we can come to Bangalore from Ranchi. That's a very good thing. Then we will go to Patna. Then we will go to Kolkata. And we will come back to Delhi from Kolkata. He said, very good. Is there anything else to write? He said, no, there are four to write. Now see, the final answer of Delhi can be any of these four paths. The shortest distance of the path will be the answer of Delhi. So Bellman-Ford said, okay. Now do one thing. Write edges. Write whatever edge is given in this graph at one place. Like you are given the vector of edges. So Bellman-Ford said, write."
+  },
+  {
+   "start": 552.35,
+   "end": 577.49,
+   "text": "We have written all these edges in total. Look, there are 7 edges. From Kolkata to Delhi, from Patna, whatever is there and its weight is written here. Okay. Now Bellman-Ford said, do one thing. Mark Ranchi with 0. Mark the answer of Ranchi with 0. Because Ranchi is the source. You don't know the rest of the 4. What do you mark the rest of the 4 with? Mark it with infinity. And make an array like this. Which was also made in Dijkstra. Okay. Now, Bellman-Ford said,"
+  },
+  {
+   "start": 577.49,
+   "end": 604.56,
+   "text": "Do one thing. Look at all the edges. Look at all the edges and do their relaxation. What does relaxation mean? If an edge tells you that source is destination edge and its weight is WT weight. What does relaxation mean? What did we read in Dixra? If the answer of destination which is written in this array that is greater than"
+  },
+  {
+   "start": 604.56,
+   "end": 630.24,
+   "text": "Result of source. Means the answer of source. What happened? Which is the answer of source. Plus weight. If this is the case. Then what do you do? Update it. Update it. With whom? Result of source plus weight. This is relaxation. If the value of Ranchi is 0. Which is the source. And there is a road of 2 km from Ranchi to Bangalore. So 0 plus 2. 2."
+  },
+  {
+   "start": 630.24,
+   "end": 656.54,
+   "text": "If the current value of Bangalore is more than 2, then update Bangalore. This is called relaxation. So, what did Bellman Ford say? Do one thing, relax all the edges. Hold all the edges and relax. So, see, if you hold and relax the edges, then what will happen? Assume that you are given the edge in this order. So, now this is your situation. So, what did Bellman Ford say? Come on, relax. Let's see what happens one by one. Hold the starting edge."
+  },
+  {
+   "start": 656.54,
+   "end": 684.66,
+   "text": "He is speaking from Kolkata to Delhi and what is he saying? It is one-way. But you see that the source from Kolkata to Delhi, Kolkata's own value is infinity. What does infinity mean? That we don't know right now. Infinity means that we don't know anything. We don't know the answer at all. Don't relax this. If the answer from source is infinity, then what are you doing? If you don't know how to reach Kolkata, then what are you relaxing from Kolkata? Don't do anything. Leave it for now."
+  },
+  {
+   "start": 684.94,
+   "end": 712.29,
+   "text": "Same thing. Patna to Kolkata. Patna itself has infinity. So what will you do by relaxing from Patna to Kolkata? Now someone is saying that relax from Patna to Kolkata. Now there is an infinity distance to reach Patna. So what difference will it make to Kolkata? It will also become infinity. Leave it. Leave it for now. Okay. Patna to Delhi. Same story. Patna itself has infinity. So what will it tell others? Leave it. Patna to Bangalore. Same. Bangalore itself has infinity. What will it tell others? Leave it."
+  },
+  {
+   "start": 712.29,
+   "end": 733.92,
+   "text": "Bangalore to Delhi, same. Bangalore has its own infinity. What will it look like in Delhi? Leave it. But, but, look. Ranchi to Bangalore, Ranchi to Bangalore. Is the distance of Ranchi infinity? No. Do you know the distance of Ranchi? Zero. It's a good value. Very good. Relax. Ranchi to Bangalore is an edge whose weight is 2. Meaning, Ranchi to Ranchi, it looked like zero."
+  },
+  {
+   "start": 733.92,
+   "end": 760.21,
+   "text": "If the road to Bangalore is 2, then what can be the value of Bangalore? 0 plus 2 which is 2. Is this 2 smaller than this infinity? It is absolutely smaller. What should we do? Relax Bangalore. What does it mean to relax? What does it mean to relax? Make this 2. Make this 2. Make this Bangalore 2. Take this. What did we do to Bangalore? We made it 2. We made Bangalore 2. Very good."
+  },
+  {
+   "start": 760.21,
+   "end": 787.01,
+   "text": "There is one more day left to relax. From Ranchi to Delhi, 20. What is 20 from Ranchi to Delhi? 20. Ranchi itself is 0. Ranchi to Delhi is a 20-kilometer road. So 0 plus 20, 20. Is this 20 smaller than the infinity of Delhi? It is absolutely smaller. What should we do? Relax Delhi, brother. Relax Delhi. Relax Delhi immediately. What should we write after relaxing Delhi? 20. Relax Delhi and write 20. Is it over?"
+  },
+  {
+   "start": 787.01,
+   "end": 816.85,
+   "text": "In this iteration, you have seen all the edges, right? You have seen all the edges one by one. Now, if the upper edge is not relaxed, then what can we do? We did what happened. Do you see an interesting thing? A very interesting thing must have been found. There are two things in this. Rachi to Bangalore and Delhi. Bangalore and Delhi have been updated. Okay? This first path, the smallest path, how long will it take to go to Rachi to Delhi? Have you got its answer in this? Will it take 20 kilometers? Yes, you have got it."
+  },
+  {
+   "start": 816.85,
+   "end": 843.01,
+   "text": "The direct road of Ranchi to Delhi, which you had written that this can also be a path, the smallest path. Have you got its value that its value is going to be 20? Yes, you have got its value. You have got its value in one way. You don't have to write it. You have to think that its value is 20. Remember that you have got it. How many times have we relaxed? We have relaxed even once. We have got its value. What did Bellman Ford say? Okay."
+  },
+  {
+   "start": 843.01,
+   "end": 867.63,
+   "text": "You have three more left. It's not like your program is over. If someone asks you, what is the path from Ranchi to Bangalore to Patna to Kolkata to Delhi? You don't know. You don't know. Okay? And you haven't got the answer yet. Bellmanford said, do one thing. What you just did, lifting all the edges and relaxing, do it one more time. Do it one more time. Someone asked, same thing? Yes, same thing. Do it again. Come, let's see what happens. Repeat the same thing."
+  },
+  {
+   "start": 867.79,
+   "end": 896.54,
+   "text": "Kolkata to Delhi. Will we relax? Kolkata itself is infinity. No, we won't. Patna to Kolkata. Will we do it? Patna itself is infinity. No, we won't. Patna to Delhi. Will we do it? No, Patna itself is infinity. No, we won't. Bangalore to Patna. What can we do? Yes, Bangalore was infinity last time. Now, there is a value in Bangalore. Do it. Bangalore to Patna whose weight is 2. So, Bangalore's value is 2. There is an edge whose weight is 2. 2 plus 2 is 4. Is this 4 less than Patna's infinity? Absolutely less."
+  },
+  {
+   "start": 896.54,
+   "end": 925.76,
+   "text": "Relax Patna. Relax Patna and write 4 in Patna. Write 4 in Patna. Relax. Go ahead. Go ahead. There's more to relax now. Bangalore to Delhi, whose weight is 20. Let's try. Let's try. Bangalore's own answer is 2. This is 20. What will be 2 plus 20? 22. Is this 22 smaller than this? No, it's not smaller than this. So, let's not relax this. Let's not relax this. Or do one thing, to make you understand,"
+  },
+  {
+   "start": 925.76,
+   "end": 955.46,
+   "text": "We will try to explain it to you. We will try to explain it to you. We will try to explain it to you. We will try to explain it to you. We will try to explain it to you. We will try to explain it to you. We will try to explain it to you. We will try to explain it to you."
+  },
+  {
+   "start": 955.46,
+   "end": 984.88,
+   "text": "2 plus 17, 19. Is this 19 smaller than the one in Delhi? 20? It's absolutely smaller. Relax Delhi again. Relax Delhi again. And what do you make? Make Delhi 19. Make Delhi 19. Make Delhi 19. Yes. Yes. It's done. Very good. Come. The edges are still left. Ranchi to Bangalore, 2. So if we do Ranchi to Bangalore, the same answer will come. There will be no benefit of doing it. No problem. Ranchi to Delhi, 20. Ranchi to Delhi, 0 plus 20. It's not smaller than 19, so it's fine."
+  },
+  {
+   "start": 984.88,
+   "end": 1014.16,
+   "text": "One more time, the whole edge got relaxed. One more time, it got relaxed. Remember, how many times have we done this? Till now, we have done it two times. Here, we write it somewhere. We have done it two times. Once before, once now. Now, what did you get to know? Now, see what you got to know. Delhi got updated again and became 19. Which path has it become 19? Ranchi to Bangalore and Bangalore to Delhi. So, did you get the answer for this path too? Yes, you got the answer for this path too. What answer did you get? You got 19."
+  },
+  {
+   "start": 1014.16,
+   "end": 1038.62,
+   "text": "Did you get the answer for the other two? No, you didn't get the answer for the other two. But by doing the same thing one more time, by doing the same relaxation, you got the answer for the other path as well, 19. That means you are doing something right. But did you get the old answer now? No, you didn't get the old answer. Until we don't cover this complex path, how will we get the old answer? What will Bellman Ford say? You guessed it right. Do it one more time."
+  },
+  {
+   "start": 1038.62,
+   "end": 1068.43,
+   "text": "Again. What do you do once again? Hold all the edges and relax. Repeat the same thing. Let's repeat. Kolkata to Delhi. Kolkata itself is infinity. We won't do it. Patna to Kolkata. We can do it. Do it and see. Patna itself is 4. This is weight 2. 4 plus 2 is 6. Is this 6 less than infinity? Absolutely less than infinity. What do you do to Kolkata? Relax and make it 6. Relax Kolkata and make it 6. Yes. Yes. Relax Kolkata and make it 6. Let's go."
+  },
+  {
+   "start": 1068.75,
+   "end": 1097.89,
+   "text": "Patna to Delhi, 13. Let's see. Patna itself is 4. This weight is 13. 4 plus 13, 17. Is this 17 less than the current answer of Delhi? Yes, it is absolutely less. Update Delhi and make it 17. Breaking news and your Delhi has been updated. What has become of your Delhi? 17 has come to your Delhi. 17 has come to your Delhi. Very good. Keep moving forward. Patna to Bangalore, same answer will come. Let's see. Delhi to Bangalore, no benefit."
+  },
+  {
+   "start": 1097.89,
+   "end": 1119.62,
+   "text": "Ranchi to Bangalore is of no use. Ranchi to Delhi is of no use. This iteration is also over. How many times have we done this iteration? 3 times. 3 times. Yes. 3 times. 3 times. Now look. Delhi has been updated again and has become 17 from 19. What kind of 17 is this? Ranchi to Bangalore. Bangalore to Patna. Patna to Delhi. Did you get the answer for the third one?"
+  },
+  {
+   "start": 1119.62,
+   "end": 1148.45,
+   "text": "Yes, you also got the answer of the third one. But, do you think your work is over? No, your work is not over completely. What will Bellman Ford say? One more time, one more time, one more time. Let's do it one more time. Kolkata to Delhi, there is one weight. Do it and see. Kolkata itself is 6. This weight is 1. 6 plus 1, 7. Is this 7 less than Delhi's 17? It is absolutely less. What will you do by updating Delhi? 7, by updating Delhi,"
+  },
+  {
+   "start": 1148.45,
+   "end": 1172.21,
+   "text": "Do 7. What do you write after updating Delhi? 7. Come on, write 7. To relax, do more. Patna to Kolkata, there will be no benefit. Do it. There will be no benefit. Same will remain. Patna to Delhi, there will be no benefit. Bangalore to Patna, there will be no benefit. Bangalore to Delhi, there will be no benefit. Ranchi to Bangalore, Ranchi to Delhi, there will be no benefit. One more is over. How many times have you repeated the same thing? Four times."
+  },
+  {
+   "start": 1172.21,
+   "end": 1200.21,
+   "text": "Four times. Which one? The process of relaxing the whole age. We have repeated it four times. Your Delhi has changed again. Your Delhi is now seven. What path did you get the answer for? Ranchi to Bangalore, Bangalore to Patna, Patna to Kolkata, Kolkata to Delhi. Did you get the answer of the fourth one, the most complex one? Yes, you got it. Now, when you have done it four times, Bellmanford says,"
+  },
+  {
+   "start": 1200.21,
+   "end": 1229.14,
+   "text": "Stop it. Stop it. Now your answer is complete. The array that you have made, this is your answer. Bellman-Ford tells you, four times, stop it. This is your answer. But why? Why isn't Bellman-Ford saying, do it one more time? Bellman-Ford, why isn't he saying, do it one more time. Do it two more times. How did Bellman-Ford know that it stopped? He found out because in this program, number of cities, number of nodes, how many are there?"
+  },
+  {
+   "start": 1229.14,
+   "end": 1259.14,
+   "text": "5. How many are the number of nodes? 5. How many times does Bellman-Ford tell you to do this relaxation? 4 times. How many? 4 times. That means, n-1 times, n-1 times. But why did n-1 times come? Because, in the worst case, in the worst case, this path, means, if you want to reach a destination from source, and you have multiple paths,"
+  },
+  {
+   "start": 1259.14,
+   "end": 1288.08,
+   "text": "In the worst case, your number of edges will be 4. Your number of edges will be 4. Why am I saying this? Because, let's say you want to travel from Kashmir to Kanyakumari. You want to travel from Kashmir to Kanyakumari in India. If someone tells you to do whatever route you want to take, how many states or edges will you travel in? In the worst case,"
+  },
+  {
+   "start": 1288.08,
+   "end": 1313.7,
+   "text": "How many edges will you travel? If there are 29 states in total in India, then in the worst case scenario, you will travel 28 edges. Why? Because you will not repeat any city. If someone asks you to find the part of Kanyakumari from Kashmir, then you will not start from Kashmir and go to Uttarakhand."
+  },
+  {
+   "start": 1313.7,
+   "end": 1342.22,
+   "text": "You went to Himachal Pradesh from Uttarakhand and came back to Uttarakhand from Himachal. If you want to go from Kashmir to Kanyakumari, if someone asks you to choose the longest route, whatever you want, then too, every state will visit only once, right? Why are you visiting a state again and again if you want a shortest distance? If you have come to Uttarakhand, went to Himachal from Uttarakhand and came back to Uttarakhand, what is the logic? You don't go to Uttarakhand better than that. This is the logic that if you want to go to Ranchi to Delhi,"
+  },
+  {
+   "start": 1342.22,
+   "end": 1367.41,
+   "text": "So your biggest path can be of 4 edges or n-1 edges. That can be this path. Apart from this, there can't be a path bigger than this. If you are doing this, that you went from Ranchi to Bangalore, then Bangalore to Patna, then from Patna to Bangalore, then from Bangalore to Kolkata, then from Bangalore to Kolkata, then from Bangalore to Patna, then from Bangalore to Kolkata, then from Bangalore to Patna, then from Bangalore to Patna, then from Bangalore to Kolkata, then from Bangalore to Kolkata, then from Bangalore to Patna, then from Bangalore to Patna, then from Bangalore to Kolkata, then from Bangalore to Kolkata, then from Bangalore to Kolkata, then from Bangalore to Kolkata, then from Bangalore to Kolkata, then from Bangalore to Kolkata,"
+  },
+  {
+   "start": 1367.41,
+   "end": 1393.38,
+   "text": "That's not the case. That's why Bellman-Ford says, if you have n vertices and you relax your edges by n-1 times, then you will definitely get the answer. Why? Because the most complex part of the scenario we have written was the last one. How many edges are there in the last? Ranchi to Bangalore, 1 edge. Bangalore to Patna, 2 edge. Patna to Kolkata, 3 edge. Kolkata to Delhi, 4 edge."
+  },
+  {
+   "start": 1393.38,
+   "end": 1417.92,
+   "text": "You can't make a path more than 4h, whereas n is equal to 5. If you are making a path more than 4, then you are doing something wrong. Either you have got a negative cycle. You have got a negative cycle. It means you have got a cycle in which if you rotate it again and again, it starts decreasing. So, what does Bellman Pod say? If your n is equal to 5, then..."
+  },
+  {
+   "start": 1417.92,
+   "end": 1445.55,
+   "text": "n-1 times, if you relax all the edges, then you will get all the answers. You will get all the answers. There can be no better answer than this. I mean, if you look at Delhi, what path will be better than this? We have covered all the paths. From the simplest path to the most complex path. There is no other complex path in which there are other edges to compare. I mean, when you used to do this, what used to happen? First of all, you only knew the answer of Ranchi."
+  },
+  {
+   "start": 1445.55,
+   "end": 1464.29,
+   "text": "You relaxed once and got the answer of Bangalore. You relaxed three times and got the answer of Patna. You relaxed again and got the answer of Kolkata. You relaxed again and got the answer of Delhi. This is what happened to you. You knew the answer of Ranchi from the beginning."
+  },
+  {
+   "start": 1464.29,
+   "end": 1484.4,
+   "text": "In the 1st relaxation, you got to know about Bangalore. In the 2nd relaxation, you got to know about Patna. In the 3rd relaxation, you got to know about Kolkata. In the 4th relaxation, you got to know about Delhi. You will definitely get to know. You don't need to do the 5th relaxation because you will definitely get to know. It's not possible that you won't get to know because you already know about Ranchi. How much is left?"
+  },
+  {
+   "start": 1484.4,
+   "end": 1513.63,
+   "text": "Rest, n-1 vertex remains. If you relax n-1 times, then it is a sure thing to find out the rest of 4. You can't find a smaller answer than this. You can do anything and see. That's why Bellman-Ford tells you to relax n-1 times. You will get the answer. But there is one more thing. We told you in the beginning that it detects negative cycles. What does it do? It detects negative cycles. For that, how to detect? Till now, nothing has happened like detection."
+  },
+  {
+   "start": 1513.63,
+   "end": 1540.91,
+   "text": "Let's make a very simple map of two cities. Ranchi and Patna. The map of two cities is very big. Ranchi to Patna will go one edge and Patna to Ranchi will go one edge. Let's write the weight. Let's assume that Ranchi to Patna goes in two and this goes in three. Your source is Ranchi. What is the weight of Ranchi? The answer is zero. What will Bellman Ford say?"
+  },
+  {
+   "start": 1540.91,
+   "end": 1568.16,
+   "text": "How many vertexes are there? There are two vertexes. You already know the answer of Ranchi, right? Zero. Relax once. How many? N minus 1. Relax once. You will definitely get the answer of Patna. Relax once. Relax Ranchi. Now if we relax Ranchi, then what will happen? Zero plus two, two. What will Patna become? Patna will become two. Finished. Bellman-Ford said, finished. There can't be a better answer than this. But, but, if there is a negative cycle in this graph, then its answer will not come."
+  },
+  {
+   "start": 1568.16,
+   "end": 1595.84,
+   "text": "Bellman-Ford says, do n-1 times. Get out of the loop. Do it one more time. Do it one more time. What do you do one more time? Relax all the rest of the edges. If you don't get a good answer in that, if in that relaxation, in your nth relaxation, you have to do n-1. Do nth and see one last time. If you don't get a good answer in your nth relaxation, if you don't get a good answer, which you shouldn't get,"
+  },
+  {
+   "start": 1595.84,
+   "end": 1624.96,
+   "text": "Everything is fine. You can return it. What will happen in the end relaxation? Relax both of them. Relax Ranchi to Patna. 0 plus 2, 2. Is this 2 less than this? No, 2 is not less. You didn't get a good answer. Very good. Leave it. Relax this edge too. 2 plus 3, 5. Is 5 less than this? No, 5 is not less than this. You didn't get a good answer. Everything is fine. There is no negative cycle. You can return it comfortably. Ranchi's 0 and Patna's 2."
+  },
+  {
+   "start": 1624.96,
+   "end": 1652.46,
+   "text": "But if there is a negative cycle in it, now see, make it negative. Take this. This cycle is now negative minus 1. This cycle of Ranchi to Patna to Ranchi has become a negative cycle. Now see what will happen. Now when you will relax this nth bar, then see what will happen. Relax this. Ranchi 0, 0 plus 2, 2. Is it smaller than 2, 2? No, it is not small. It is a good thing. But now relax this edge. See what will happen."
+  },
+  {
+   "start": 1652.46,
+   "end": 1677.6,
+   "text": "Patna's answer is 2. This edge is minus 3. 2 plus minus 3. What happens? Minus 1. Minus 1 is a small answer. It means you got a good answer. When? By going to nth iteration. By getting a good answer in nth iteration, it means negative cycle is present in your graph. Negative cycle is present in your graph. Don't do anything. Return minus 1. This graph can't do anything."
+  },
+  {
+   "start": 1677.6,
+   "end": 1701.71,
+   "text": "Keep doing it, you won't get any benefit. Why won't you get any benefit? Because the more you roam in this cycle, the smaller the answer you will get. So when will you stop roaming? This means, in this, the shortest distance can't be computed. What is there here? There is a negative cycle here. There is a negative cycle here. Are you understanding or not? So what does Bellman-Ford say? Bellman-Ford says, if n nodes are there,"
+  },
+  {
+   "start": 1701.71,
+   "end": 1714.0,
+   "text": "Close your eyes and do n-1 relaxation. Why do you do n-1 relaxation? Because you already know Rachi. If you relax 4 times, you will get the correct answer of 4. Very good. After that,"
+  },
+  {
+   "start": 1714.0,
+   "end": 1741.74,
+   "text": "testing karne ke liye ek aur baar karo, ek aur baar karo. Agar us ek aur baar me koi sahi answer nahi, koi acha answer nahi mila, koi update nahi hua, very good, return kar do. Agar us nth baar me, agar aapko pata chalene lagta hai ki nahi, abhi bhi chota answer mil raha hai kisi ka to, wo graph ekdum gone case hai, bekaar graph, negative case ka graph hai, usme minus one return kar do. Yeh hota hai Bellman-Ford. Thik hai. Toh umeet karte hai ki aapko samajh me aaya hoga, bahut acche se."
+  },
+  {
+   "start": 1741.74,
+   "end": 1767.54,
+   "text": "We have put it in whatever we knew to teach. We don't think it is better than this that it could have been explained and it will be explained. You will remember this for the rest of your life. Come, let's write its code and show you how it is done. You have already seen dry run. So it is fine. Let's write its code. What is there in the code? You have to return a vector int. You have a graph of edges. What kind of edges are there? You have a source, destination and"
+  },
+  {
+   "start": 1767.54,
+   "end": 1798.66,
+   "text": "weight. This is the edge of vector of vector. As it was in Dijkstra. So this is your Bellman. First of all, the number of vertex is given. And vector of vector of int of edges. Okay? This is given to you. And a source is given. A source is also given. Okay? Let's go. First of all, what should we do? Make one of those. Distance array. Result array. Result of n size. And what are we calling everyone? 1e."
+  },
+  {
+   "start": 1798.66,
+   "end": 1828.27,
+   "text": "1E8 means 10 to the power 8. Do int max of this. We don't want to do int max. What does 1E8 mean? 10 to the power 8. If you write 1E9, then it will be 10 to the power 9. After that, it is very good that you don't have to make any adjacency list in this. Why don't you have to make it? Because what is your whole work? To relax edges. So, edges are already given in edges. So, what is the use of making adjacency? It is very good. We have already said that it is going to be a very small code. You don't have to do anything in this. After that,"
+  },
+  {
+   "start": 1828.27,
+   "end": 1857.38,
+   "text": "The answer of the result of source is 0. So, make it 0. Is it okay? Start the relaxation. How many times? n minus 1 times. For int i is equal to 0. i less than n minus 1. i plus plus. Do i less than n minus 1. Not n. Because n minus 1 times to relax. Not n times to relax. What happens? Relaxation means loop on all edges. Loop on all edges. int j is equal to 0."
+  },
+  {
+   "start": 1857.38,
+   "end": 1887.76,
+   "text": "j less than edges dot size and j plus plus. Okay. Take out all three things. Int source is equal to edges of j's 0. Its first one. Int d is equal to edges of j of 1. And int weight is equal to edges of j of 2. Okay. Now, who to relax?"
+  },
+  {
+   "start": 1887.76,
+   "end": 1918.85,
+   "text": "If result of S is not equal to 1E8. Means if suppose source itself is infinity. Which you want to relax. From this source to this destination. Where we will relax it. Source itself is infinity. So what will relax anyone? So if it is not 1E8. 1E8 means in our case also infinity. Or result of D is greater than result of S plus weight. This is what relaxation means. So what will we do?"
+  },
+  {
+   "start": 1918.85,
+   "end": 1949.25,
+   "text": "Result of D is equal to result of S plus. Wait. It's done. Relax. It's done. Relax. Close this. Close this. What happened? What did you do? N minus 1 times up. Relax. You should get the right answer by now. You should get the right answer by now. But for testing, relax one more time. Relax one more time. Repeat this J loop again. Repeat this J loop again. For INT, J is equal to 0."
+  },
+  {
+   "start": 1949.25,
+   "end": 1976.8,
+   "text": "J less than edges dot size or J plus plus. Again write everything. I N T S is equal to edges of J 0. I N T D is equal to edges of J 1. I N T W T is equal to edges of J 2. Is it correct?"
+  },
+  {
+   "start": 1976.8,
+   "end": 2004.9,
+   "text": "Try to relax. Check if it can be relaxed or not. If result of S not equal to infinity, which means 1E8, and result of D is greater than result of S plus weight, which means we are still getting the right answer. How can we get the right answer in nth iteration? If so, then you have been asked to return a vector of minus 1. Return. Return."
+  },
+  {
+   "start": 2004.9,
+   "end": 2032.27,
+   "text": "Minus 1. I have asked you a question. GFG has asked that if you get this, what does it mean? What is this? This is a gone case. This is a gone case with a negative cycle. This is a graph of a negative cycle. No one can do anything in this. Return one vector which has minus 1. Which has minus 1 filled in it. So return it like this. And close this loop. If this doesn't happen, then what will you return after being comfortable? Your result. That's it."
+  },
+  {
+   "start": 2032.27,
+   "end": 2062.03,
+   "text": "See how cute and cute this code is. And its intuition is not like this that you have to remember a lot. You don't have to remember anything. You have to relax n-1 times. Why? Because you already know the source. The rest of the n-1 vertex will be found in n-1 time. Because there can't be any path in which there is more edge or more complex path. And for testing, relax one more time. For what? For testing. If testing fails, in nth relaxation, if you are getting the right answer, if you are getting a good answer,"
+  },
+  {
+   "start": 2062.03,
+   "end": 2091.9,
+   "text": "It's a negative cycle. Tell the graph to remove this graph. Return minus 1 to all. If you don't get it, then very good. Your Bellman-Ford is complete. So, you have learned Bellman-Ford. When to use Bellman-Ford? Whenever single source, shortest path, and negative weights are given to you. Negative weights. Whenever negative weights are given, don't use Dijkstra. We say, don't use Dijkstra even usually. Make Bellman-Ford your companion. Make it your companion. And let's meet in some next video."
+  },
+  {
+   "start": 2091.9,
+   "end": 2093.0,
+   "text": "Let's code it."
+  }
+ ]
+}

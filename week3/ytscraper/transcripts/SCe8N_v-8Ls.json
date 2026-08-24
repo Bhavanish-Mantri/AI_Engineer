@@ -1,0 +1,394 @@
+{
+ "video_id": "SCe8N_v-8Ls",
+ "title": "You Will Never Forget The HEAP Greedy DSA Pattern After This Video",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2032,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 25.46,
+   "text": "Okay, when we were in school or you must have had exams in college, then what used to happen in that, right? That many students from different classes used to go to the same room and there used to be an invigilator of the class, usually there used to be a PT teacher there, okay? So, the PT teacher used to get a task that Sir, you have 3 students, assume that you have 3 students, 2 students are from class 8 and 1 student is from class 9 and there are 3 seats in your class because you have 3 students, you have 3 seats allotted. You have to make the students sit in such a way that"
+  },
+  {
+   "start": 25.46,
+   "end": 51.44,
+   "text": "two of the same class students will not sit in the front or the back because then they will steal. This is what used to happen, right? Class 8 students can't sit in the front or the back because they used to steal. So, you have to do something so that two of the same class students don't sit in the front or the back. So, see what PT teacher used to do here. Now, PT sir didn't get HEEP, PT sir didn't get GREEDY, PT sir didn't get DSA pattern, nothing. PT sir didn't even know PT properly."
+  },
+  {
+   "start": 51.44,
+   "end": 80.43,
+   "text": "So, now he used to see that 2 kids belong to class 8, 1 kid belongs to class 9, I have 3 seats and we have to make them sit in such a way that there is no theft. So, what PT teacher used to do is, now see from these 3 seats, in 2 seats only class 8 will sit because class 8 has 2 kids, in 1 seat class 9 will sit. So, if PT sir would have done like this, if PT sir would have done like this, that he would have made class 9 sit here, suppose, he would have made class 9 sit in the 1st seat. So, what would he have to do? That next time both the kids of class 8 would have to sit in the back."
+  },
+  {
+   "start": 80.43,
+   "end": 108.22,
+   "text": "Nothing can happen to women, they have to sit at the back. But what would happen in this? These two would steal, this is not possible. That's why what did PT sir do? What did PT sir do? PT sir just used his intelligence, he didn't know anything, he didn't know any maths, DSA, he didn't teach anything. So, using his intelligence, the people who were more, the two children of class 8 were more, so what did they do? They used to make the first class 8 sit here. They used to make the first class 8 sit here. Okay, one child's work was done."
+  },
+  {
+   "start": 108.22,
+   "end": 137.41,
+   "text": "Next time, for two seats, two more kids are left. One kid belongs to class 8, one kid belongs to class 9. So, they can't make class 8 sit here, because then there will be theft. Now, what they used to do is, they used to make class 9's kid sit in the middle. They used to make class 9's kid sit in the middle. This kid's work is also done. Now, for the last seat that is left, only one kid is left, which belongs to class 8. Now, what they used to do is, they used to make class 8's kid sit here. Like this, their work is done. See, now there will be no theft. All three kids got three seats, there was no theft. So, PT sir,"
+  },
+  {
+   "start": 137.41,
+   "end": 157.23,
+   "text": "and she said to the English teacher that yes ma'am I have done my work. Now why are we telling you all this? Why are we telling you the story of school or college? Because today's question is the same. Today's question is late code 767, whose name is reorganized string. Same question, you are a PT teacher, you have to do the same arrangement in the class."
+  },
+  {
+   "start": 157.23,
+   "end": 173.39,
+   "text": "the need to tell the story is that whenever you get such a question or whenever you get any question from DSEE then first of all don't think in the program that which data structure will be applied in this, which algorithm will be applied in this, which pattern will be applied in this. No. Think with common sense that"
+  },
+  {
+   "start": 173.39,
+   "end": 200.98,
+   "text": "What will happen? Especially these problems of HEEP and GREEDY that we are going to start, HEEP plus GREEDY. In this, more than programming, your common sense is important. You need to know what the PT teacher knew. It is important to think. Think like a human. Don't think like a computer. Think like a human and write its code. After that, think about what data structure is suitable for what we have thought. Write the code accordingly. Always think in this way. That's why I have told you the story. Now come, let's understand the real question."
+  },
+  {
+   "start": 201.1,
+   "end": 230.91,
+   "text": "This question is exactly the same thing that you are asked to do. See how simple it will be with that example. You have been given a string. For example, AAB. In that, the lower case or the upper case letter will be the same. And you have to reorganize it. Reorganize means to rearrange it. You have to write the string again. Means you can change the position of the letters or you can do anything. There is one condition. No two same letters can be together. Same as it was with PT sir, that the two children of class 8 should not be behind or else there will be theft. Here also you cannot keep two letters together because"
+  },
+  {
+   "start": 230.91,
+   "end": 260.51,
+   "text": "is not allowed. Now you have to try, you have to try, it may not be possible, it may not be possible, for example, that if you get a string in which A, A, A is three times, A, A, just this string, now you have to reorganize, it means that you have the same number of seats as you have the number of children, see, PT sir had three children, he had three seats, PT sir did not have that because he had unlimited seats, no, three seats for three children, so reorganizing means that the length of the string is three,"
+  },
+  {
+   "start": 260.51,
+   "end": 289.52,
+   "text": "You have to reorganize this only, you can't add anything in it, you can't increase the number of seats in the middle, so you have to do only this. For example, you have only 3 seats, now you have only 3 seats to keep. If you keep A in the first seat, now you will have to keep A again in both the seats because this A's work is done, the other 2 A's are left, so you will not be able to keep it because it is not possible. In this case, you have to return an empty string. You have to return an empty string that brother, it is not possible, now what will we do? We have given 3 A's, so how will we do it, how will we alternate it? We can't do it, okay."
+  },
+  {
+   "start": 289.52,
+   "end": 311.95,
+   "text": "But if you can, for example, you have A, A, B, this one. How many seats will you have? You will have 3 seats, obviously, because you have to arrange 3 letters on 3 seats, so that cheating does not happen, or the same letter does not happen in the front and back. What will you do in this? With your own mind, which PT sir did, first you will put A here, then you will put B here, then you will put A here. So what will you return?"
+  },
+  {
+   "start": 311.95,
+   "end": 333.81,
+   "text": "A, B, A. Now you can see that there is no possibility of theft here because no two people are sitting back and forth in the same direction. Very good. Now that we have thought about this much, then we will start thinking a little more about how we will approach this. Because PT sir was seeing three seats, there were three kids, so it was easy. But you don't have three, you may have a very big stream. So what will you do? See."
+  },
+  {
+   "start": 334.35,
+   "end": 362.08,
+   "text": "Suppose you have a very big string, you have taken out the frequency of every letter, that is, how many children are present in every class. You get to know that A is 3 times in the whole string, that is, you have to set 3 A's in that string. And you have B twice. How many seats will there be? That is, your string is something like this. Your string can be anything, A, A, A, B, B. You got that A is 3 times and B is 2 times. You have to set this."
+  },
+  {
+   "start": 362.08,
+   "end": 388.05,
+   "text": "Let's make a seat just for simplicity. 1, 2, 3, 4, and 5. We have made a seat like this. Your job is to set them. Now look, on the first seat. Now set it seat by seat only because what will be the benefit if you fill the middle one first. Now let's go seat by seat. First of all, we focus on this seat. Which child should be seated on this? Which child should be seated on this? Same problem was of PT sir. Which class child should be seated on this seat?"
+  },
+  {
+   "start": 388.05,
+   "end": 417.07,
+   "text": "You can do anything, for now you can do anything, A can sit here, B can also sit here. But what will be the problem? Let's see what would be the problem if you made B sit in this. Suppose you made B sit in this. Very good, make him sit. So now B is reduced from 2 to 1. 1B's work is done, okay. Next time, on the next seat, you can't make B sit, it's obvious that you can't make B sit, so make A sit. Right now we are just seeing that if you do whatever you want, then what will happen? Make A sit, okay."
+  },
+  {
+   "start": 417.07,
+   "end": 445.98,
+   "text": "How much is it after removing A? It is 2. Very good. It is on the next seat. It is on the next seat. Now A cannot sit obviously. B can sit. B has sat. B has sat. B is finished. Pay attention. B is finished. We have set both B. It is absolutely fine till now. But, now see what is your problem? Now you have 2 seats left. You have only 2 kids left. 2 A is left and 2 seats are left. Very good. But, now these 2 A's, there is no way to keep them on these 2 seats. So that there is no theft. Why? Because what will you do?"
+  },
+  {
+   "start": 445.98,
+   "end": 474.48,
+   "text": "Now on this one, you will make A sit, till now it will be fine. A will be reduced from 2 to 1, means 1 A will be left. Now on this last seat, see on this last seat, you don't have any option left to do anything, because B is finished, both are also sitting. You have only one child left, which is A type. If you want to make A sit here, then it will be wrong. If both will steal, then you have failed. So means you can't do anything with your mind, right? You can't do that, that whoever you want, make him sit. No, it will be wrong."
+  },
+  {
+   "start": 474.48,
+   "end": 502.38,
+   "text": "In comparison to this, in comparison to this, if you had done something like this, if you had done something like this, that if we again make a sheet here, 1, 2, 3, 4, and 5. What did we start with? With B, because we said that do whatever you want to do. No, we will start with this. The child whose frequency is the highest, how many are there in the beginning? In the beginning, A is 3 and B is 2. Which child's frequency is the highest? A's. So we will start with this, we will fill A here."
+  },
+  {
+   "start": 502.54,
+   "end": 530.64,
+   "text": "Now, we will reduce its frequency to 2. Now, 4 kids and 4 seats are left. Now, you will say that both the frequencies are same. Now, whom should we make sit? So, try to make A sit. Try to make A sit. Can A sit here? No, he can't sit. Why? Because the last one is A. If A is sitting in front of it, then you can't make A sit behind it. Now, whom should you make sit? Now, you have to make B sit. Now, you are helpless. Now, you have to make B sit here. Make B sit and turn B's frequency to 1. Okay?"
+  },
+  {
+   "start": 530.9,
+   "end": 556.88,
+   "text": "Again, now who should be seated on the 3rd seat? Who should be seated on the 3rd seat? The maximum frequency person. Why are we saying this? We will explain it to you very easily. But assume that you are choosing the maximum frequency. So whose maximum frequency is A? It is 2. And can A sit here? It can absolutely sit here. Because A is not sitting in front of it. B is sitting in front of it. So you can absolutely make A sit. Make A sit and make it 1. Again, now for this seat, for the 4th seat, both have frequency 1. Who should be seated?"
+  },
+  {
+   "start": 556.88,
+   "end": 575.07,
+   "text": "If you want to make anyone sit, then try to make A sit. But you won't be able to make him sit. Why? Because A is the one in front. You won't be able to make him sit. Who will have to make him sit? B. You will have to make B sit by giving up. Make B sit. B is finished. B is finished. For the last seat, whose maximum frequency is A? Because A is the only child sitting, so make A sit here."
+  },
+  {
+   "start": 575.07,
+   "end": 603.36,
+   "text": "Now see, A, B, A, B, A. Is there any cheating possible here? No. That means you have done the right thing. And are you able to complete it? Yes. You can give your results from A, B, A, B, A. What can you return? A, B, A, B, A. So see, last time when we started from B, it didn't work. This time we started from A, so it worked. Why did this happen? We will tell you. Now see. Imagine you have a lot of things. You have A three times."
+  },
+  {
+   "start": 603.36,
+   "end": 631.5,
+   "text": "B has 2 bars and C also has 2 bars. So, how many are there? 3, 2, 5, 2, 7 seats. So, if we make a seat here. 1, 2, 3, 4, 5, 6 and 7. You have 7 seats and you have 7 children. So, you have to make them sit. Why are we saying this? That you should give preference to each seat. Whose frequency is the highest. Whose frequency is the highest. Why are we saying this?"
+  },
+  {
+   "start": 631.5,
+   "end": 660.99,
+   "text": "Because if you don't do this, then you have to make it a little smaller. For example, it will be difficult for you to think of 7 seats. Think on 3 seats only. Think on 3 seats. 1, 2, 3. You have A twice and B once. We are asking that on this seat, who should you give preference to? Which child should you give preference to? So we are saying that the one whose frequency is the most should be given. Why is that? Here we are saying that you should only make A sit. You will have to make A sit actually."
+  },
+  {
+   "start": 660.99,
+   "end": 687.04,
+   "text": "Why am I saying this? Because if you don't make A sit here, if you don't make A sit here, if you make B sit here by mistake, in the end, two seats will be left, two seats will be left and you will have two A left, which is not possible, which is not possible. If you have two seats and two A left, then you will not be able to alternate it. You will not be able to alternate this child because you have limited seats."
+  },
+  {
+   "start": 687.04,
+   "end": 695.63,
+   "text": "Seats are limited. You won't be able to do that. That's why it's important that you choose the seat whose frequency is the highest because"
+  },
+  {
+   "start": 695.63,
+   "end": 721.14,
+   "text": "You should try to finish the child whose frequency is the most. You should try to finish the child whose frequency is the most. You should try to finish the child whose frequency is the most. You should try to finish the child whose frequency is the most. You should try to finish the child whose frequency is the most. You should try to finish the child whose frequency is the most."
+  },
+  {
+   "start": 721.14,
+   "end": 744.32,
+   "text": "In the end, you will stand at a stage where you will have 3 seats and you will have 3 A seats. This is not possible. You should have finished A earlier because A was good. A had the highest frequency. So, A was the most difficult to arrange. Because A had the highest frequency, so A needed that many alternate seats. Yes, in the end, you have 1 seat and you have 1 A seat."
+  },
+  {
+   "start": 744.32,
+   "end": 765.82,
+   "text": "This is fine. A seat is left, A is left. Let it be. That's why we are saying that in every seat, you should choose the child whose frequency is maximum till that point of time. And it should be possible for that child to sit there. It should be possible. Assume that if you want to make A sit on this seat, and if you want to make A sit on this seat again, then that is not possible. Because A has already sat."
+  },
+  {
+   "start": 765.82,
+   "end": 781.52,
+   "text": "In this, you should go further. Try to put the one whose frequency is second. Try to put the one whose frequency is third. So, you should move ahead according to this. So, this is its logic. Think a little in your mind that why is this logic? Think a little common sense that"
+  },
+  {
+   "start": 781.52,
+   "end": 808.32,
+   "text": "If you want to arrange alternately, then the child whose frequency is the most, the child whose class is the most, we will try to finish it as soon as possible because it will be easy later. If the child whose class is the most is saved in the end, then it will be very difficult because then you will have two benches and two children, so it will be very difficult to go to the last. That's why we take the child whose frequency is the most on every seat. Now let's see when we"
+  },
+  {
+   "start": 808.32,
+   "end": 835.18,
+   "text": "We have understood the logic, now we have understood why it is important to do this, why to do this frequently, it is not written anywhere, it is just common sense to finish the most frequent one as soon as possible. Now let's see why this is a heap question or why this is anyone's question. Now think like a computer, when you have thought that you have to do this, what do you need to do this? Let's assume that you have a string whose name is AABB."
+  },
+  {
+   "start": 835.18,
+   "end": 864.05,
+   "text": "First of all, how many letters are there in this? There will be a maximum of 26 letters, from A to Z. Let's make a frequency map of this. Assume that A is 2 times, B is 2 times. Let's make a hash map or you can keep it in any array. Now, seat by seat, how many seats do you have? You have 4 seats. You have 4 seats. This is good, right? What do you want on every seat?"
+  },
+  {
+   "start": 864.05,
+   "end": 890.0,
+   "text": "What do you need in every seat? One letter whose frequency is the highest. Not the highest in the beginning, but at that stage, if you have filled some seats, then in every seat you need the highest remaining frequency. Which is the largest letter at this point of time? Who is the highest at this point of time? What does this thing do? This is what the max heap does."
+  },
+  {
+   "start": 890.06,
+   "end": 919.02,
+   "text": "If you want maximum or minimum at every point, then heap will give you maximum or minimum at every point. That's why it's a heap question. Because apart from heap, which data structure can do this? Can stack do this? No, it can't. What does stack give you? It gives you last picked up. Can queue do this? No, it can't. Can HashMap do this? No, HashMap is unordered. It can't tell you. And first of all, in HashMap, instead of key, there are letters and then there is frequency. So HashMap can't do this."
+  },
+  {
+   "start": 919.02,
+   "end": 948.1,
+   "text": "till now whatever we have studied, whatever data structure, whatever pattern we have studied, none of it is possible except in Heap. The power of Heap is that at every point of time, if you want maximum or minimum, then it can give you and it can give you very fast, it can give you in log time. That is why this is the question of Heap. So what will we do? Just for explanation, what do we do? This frequency, we put it in Heap. First of all, what do you want at every point? Do you want maximum or minimum at every point? You want maximum frequency. What do you want?"
+  },
+  {
+   "start": 948.1,
+   "end": 975.82,
+   "text": "You need maximum frequency. Okay. And you also need that letter. Because you have to make a string. You have to actually make a string and return it. You also need that letter. With this, you will understand that you need a pair. You need a heap of pairs. Heap of pairs. How? What do you want that maximum to be? On what? On what thing? On frequency. How do you want this pair? First, you want this integer which is its frequency. And you want a letter."
+  },
+  {
+   "start": 976.11,
+   "end": 1004.5,
+   "text": "which is its character which means this frequency belongs to which letter? we will have to tell that as well so what will you insert in your heap? what will you insert in your heap? the frequency of each letter and that letter itself by making a pair what kind of heap will it be? it will be max heap we can do max in both because you need max in frequency that is equal in letter suppose there is same frequency of 2 letters same frequency of 2 letters A also has 2 and B also has 2 which one do we need in both?"
+  },
+  {
+   "start": 1004.5,
+   "end": 1026.74,
+   "text": "Anyone can take it. It is not written in the question. Till the time it is not written in the question, keep it normal. So we are in our heap. In what kind of heap? In max heap. What will we store? What will we store? We will store 2 and a. Means there is a letter a whose frequency is 2. It was 2 in the starting. We will get it from hashmax. And there is a letter b whose frequency was also 2."
+  },
+  {
+   "start": 1026.83,
+   "end": 1046.26,
+   "text": "Do you understand? Okay. You have to set all these letters somewhere. If at any point of time you feel that this cannot be set, then you have to return an empty string. Assume that it can never be set in life. Empty string. We will see an example of that too. This can happen. So what is this? This is your max heap."
+  },
+  {
+   "start": 1046.26,
+   "end": 1076.38,
+   "text": "Come, let's start. So, till when you have to do this? See, either you run the loop on the number of seats, that how many number of seats there will be, the sum of all the frequency, there are 4 kids total, you have to do it on 4 seats, either you run it till the time your heap is empty, when your heap is empty, then we will understand that all the kids are set and they will return the string. So, we will write a simple while loop, that while, till the time PQ is not empty, till the time PQ is not empty, means till the time you have kids, till then you can see, ok. Now, what will you do? See,"
+  },
+  {
+   "start": 1076.38,
+   "end": 1107.25,
+   "text": "Let's start. Let's start decorating. Remember one thing. You will get the maximum frequency of letter. But how will you know whether you can keep that letter on the sheet or not? How will you know whether you can keep that letter on the sheet or not? In the beginning, you will have a string rest. Result. Which will be empty. In the beginning, the result will be empty. How will you know whether you can keep it on the sheet or not? Look. Either the size of the rest is zero. Or the size of the rest"
+  },
+  {
+   "start": 1107.25,
+   "end": 1135.76,
+   "text": "is 0 then you can keep it because till now there is nothing so you can keep any child on the first seat if its size is not 0 then res and actually let's take the seat from which we will start? seat is equal to 0 seat is equal to 0 means 0 seat is empty now if res of seat minus 1 is not equal to that letter then you can keep it so you can keep it how will it happen? let's see in the beginning in the beginning our seat"
+  },
+  {
+   "start": 1135.76,
+   "end": 1163.97,
+   "text": "In the beginning, our seat, what is our seat is equal to 0, means you want to keep it on the seat of 0, in our string, in our string, our string means, what is your result, the result is empty in the beginning, the result is empty in the beginning, let's see, what do you do, take out, take out a person, take out a person, so what will you do, P is equal to 2A, to whom, to the top one, what will the top of the heap give you, whose frequency is the highest, of which letter, so this person left, this person left the heap, left the heap, very good,"
+  },
+  {
+   "start": 1163.97,
+   "end": 1192.08,
+   "text": "Now you have to check whether you can keep it or not. Can you keep it or not? So what did we say? How will it be checked? If seat is 0, what does seat 0 mean? You want to know about the first seat. You can keep anyone on the first seat. You can keep anyone, right? You can keep, right? So you can keep. And ref seat-1 not equal to p.second means?"
+  },
+  {
+   "start": 1192.11,
+   "end": 1220.5,
+   "text": "If the seat is not 0, but seat 1 and 2, then the last seat, the last seat which was big, means the seat in front of it, according to the seat, you can think in front, but the one just behind the string, if that and this letter are not equal, then you can keep it. If they are equal, then you can't keep it. If you have already kept A here, then you can't keep the second A here. There will be cheating here. You can't keep that. If you can keep it, if you can keep it, then keep it. If you can keep it, then keep it. What will you do?"
+  },
+  {
+   "start": 1221.23,
+   "end": 1252.22,
+   "text": "what to do in this? do push back in rest means rest.pushback push back this p.second push back this p.second and do plus plus in seat do plus plus in seat now seat is one now seat is one now one seat has to be filled now now a very important thing what was this pair? this pair was 2a means 2 people of type a were left 2 people of type a were left how many people have you placed? one person you have placed one person"
+  },
+  {
+   "start": 1252.22,
+   "end": 1280.94,
+   "text": "If you have placed one person, then how many people are left on type A? One person is left. You have to push it again in the heat. You can't do it like this that you won't push it. No, you have to push it. Why? Because two people were left on type A. How many people are left on set? One child. You have made one child sit, VBD sir. One child is left, right? You have to push it. If there was only one child, if only one A came out of this P, you made it sit, then you wouldn't have pushed it. What is the way to find out this?"
+  },
+  {
+   "start": 1280.94,
+   "end": 1311.06,
+   "text": "do a simple thing that p.first minus minus means one is removed from p.first so what will be your p? what will be the first of your p? it will be 1 if it is bigger than 0 means some kids are left, suppose one has 10 kids so you make one sit, how many kids are left? 9 kids, you have to put these 9 kids back in the heap because you will be useful next time also, you can't do that that you remove the heap, two kids, both the kids are not set, one kid is set so we will do one thing that if p.first"
+  },
+  {
+   "start": 1311.41,
+   "end": 1340.35,
+   "text": "greater than 0 means it is still there. So, PQ dot push P. Push it again. So, what is pushed again? 1A. 1A. Not 2A. 1A is pushed. Okay. And close it. And close it. Is it right? Okay. But, but, if this doesn't happen, this is done. This is already done. If this doesn't happen, then what happens? If this doesn't happen, then what happens? We will give the answer later. Go a little further with me. Now, what will we do?"
+  },
+  {
+   "start": 1340.35,
+   "end": 1366.14,
+   "text": "Now, your seat is equal to 1. Next time, this loop will run again because the hip is not empty yet. It will run again, right? Okay. Now, what will you get? Now, what will you get here? Now, you will get this man. This man is at the top because maximum frequency. Now, whose is it? It is of B. It is not of A. One is less. It is of B. Now, you will get here that it is 2 over B. And this man got out of the hip. This man got out of the hip. That's right. He got out."
+  },
+  {
+   "start": 1366.14,
+   "end": 1394.27,
+   "text": "Do it again. If seat equal equal to 0, then seat is not 0, seat is 1. Okay. Or, rest seat minus 1 not equal to p dot second. So, what has become your rest? Now, what has become your rest? Your rest has become a. You have made a sit. So, what will it check? That rest is 0 not equal to b. Yes, so a not equal to b. So, can you make b sit in this seat? Yes, you can make b sit. So, make him sit. So, make him sit. What does it say? Rest dot pushback, p dot second. So, it means, we have pushed b in this."
+  },
+  {
+   "start": 1394.27,
+   "end": 1422.8,
+   "text": "Seat plus plus. So remove the seat from 1 and make it 2. P dot first minus minus means make this 2 1. Means you have set 1 P. 1 is left. If P dot first is greater than 0, then P dot push P. So what will we do? We will push 1 B. We will push 1 B and move forward. Now see, 2 kids are set. Now there will be a problem. Now it will not be set. You will see that it will not be set. Now come. Next time again, the hip is not empty."
+  },
+  {
+   "start": 1422.8,
+   "end": 1451.66,
+   "text": "Let's take it out again. What will it be? p is equal to... Now see, 1, 1. These two are the same. What will it be? What did you do? When the first is the same in heap, then according to whom does the discussion take place? According to whom does the decision take place? According to the second. When the first is the same, then according to the second, the decision takes place. Now which one is bigger in a and b? b is bigger. Which one is bigger in a and b? b is bigger. So again it will be 1 and b. 1 and b. Take it out."
+  },
+  {
+   "start": 1451.7,
+   "end": 1480.18,
+   "text": "remove 1 and b, p is equal to 1 and b, this will come, p is equal to 1 and b, now let's check whether you can keep it in seat 2, let's see, is seat 0, no, seat is not 0, seat is true, now second seat, means seat 0, 1, 2, you want to fill seat 2, no, rest seat minus 1 should not equal to p dot second, but rest seat minus 1, last child is also b, so can you keep b on this seat or not, you can't keep b on this seat,"
+  },
+  {
+   "start": 1480.18,
+   "end": 1510.02,
+   "text": "You can't put B on this sheet. Why can't you put it? Because now you have made the kids sit like this. A is sitting here. B is sitting here. If you make B sit on this again, then they will start cheating. So this is not possible. Now, now the game comes. This is F. Else, else, else. Now we have to write else here. Else. Else means, this P. This P. After this, we will also do PQ.POP by the way. After this, we will also do PQ.POP. So this is POP."
+  },
+  {
+   "start": 1510.02,
+   "end": 1535.41,
+   "text": "Elf, that kid can't sit, that kid can't sit, that kid can't sit, he can't sit at all. Okay. But what else will we do? What else will we do? What did we say? We will try to make him sit every time whose frequency is the highest. But if he can't sit, then what way do you have? Make him sit whose next frequency is the highest. There is no other way. See, what does any other way mean? Assume that you have..."
+  },
+  {
+   "start": 1535.44,
+   "end": 1557.42,
+   "text": "A was 2 times. So you tried to make A sit. But A can't sit. Suppose A is already ahead. Now you have to make someone sit. You can't keep the seat empty. Because seat is limited. If you keep it empty, nothing will happen. You should make the next child sit. What does next child mean to me? Whose frequency is next largest. So how will you get next largest frequency? By doing PQ.TOP once more."
+  },
+  {
+   "start": 1557.42,
+   "end": 1583.33,
+   "text": "Already when you did pq.top, you got this 1b. If you do pq.top again and again, you will get next. That child can sit here for sure. Why? Because if you take out b, the frequency of b was something else, b cannot sit here. Now if you take out any other child, then it will not be b. It will not be b because every letter has one entry. In heap, every letter has one entry. Every letter has duplicate entry. It is not like,"
+  },
+  {
+   "start": 1583.33,
+   "end": 1605.52,
+   "text": "There is one entry which has only one frequency 1 and another entry which has only one frequency 3. Not like that. Every letter has a unique entry. The next child will definitely be unique and he can definitely sit. But there is a catch in this. If, now to have the next child, to have the next child, there should be the next child, there should be the next child, if here pq.empty comes,"
+  },
+  {
+   "start": 1606.13,
+   "end": 1633.38,
+   "text": "Now you will say that you have put a while loop above that PQ is not empty, then how will it come there? But after this while loop, you have also done a pop here. Suppose there was only one entry in the heap. There are only one type of children left and you cannot make them sit. Now PQ is not empty. What does this mean? You can never fill that class. What does this mean? That in the last, two seats are left. Any two seats are left. And you have two children left."
+  },
+  {
+   "start": 1633.38,
+   "end": 1655.38,
+   "text": "You can never make these two A kids sit here. How will you know? Once you will pop 2A, you will know that this 2A cannot sit on this seat. You will try to find some other type of child, but someone will say that there is no other type of child. There are two A's and two seats, make them sit. What is there? You can't make them sit. How did you know? There is nothing else in the heap, brother. There is nothing left to make them sit. What do you do here directly?"
+  },
+  {
+   "start": 1655.38,
+   "end": 1685.2,
+   "text": "return empty string, not possible, not possible, not possible, but if it is not, then you can make that child sit, but if it is not, then you can make that child sit, how? same thing, so we will take out another pair int char, we will keep its name p2, and we will see it from pq.top, and then we will also pop pq.pop, pop it, do the same thing, make it sit, it can sit for sure, there is no need to check, rest.pushback,"
+  },
+  {
+   "start": 1685.71,
+   "end": 1716.91,
+   "text": "P2.second, P2.second, okay? And seat++, same work, we did seat++. Again, P2.first, minus minus, its work is done. And if P2.first greater than 0, then PQ.push, P2. This is else condition, this is else condition. But is this else condition complete? No, no, no, you forgot one thing, you forgot one thing, see. On top, you popped this P."
+  },
+  {
+   "start": 1716.91,
+   "end": 1744.32,
+   "text": "You had popped this P above, which means 1B was not in the heap. What was not there? Let's write it here. You had popped 1B. You came to know that B cannot sit on seat number 2. So what did you do? You popped it one more time. So you popped this man. You popped 1A. So what is your P2 here? What is this? 1A. 1A can definitely sit there. So what did you do in the result? ABA."
+  },
+  {
+   "start": 1744.32,
+   "end": 1772.27,
+   "text": "Increase the seat by 3. Increase the seat by 3. Everything is fine till now. Now what did you do? P2 dot first minus minus. So what did you do to this 1? Zero. Now zero A. There was no need to put zero A back. Because A's work is done. So your A's work is done. But. But. This man who popped. This P. This original P popped. Which you tried to make him sit first. You haven't made him sit till now. You haven't made him sit till now. He couldn't sit. Okay."
+  },
+  {
+   "start": 1772.27,
+   "end": 1800.93,
+   "text": "If you couldn't sit, then try another kid. But because you couldn't make him sit, won't you have to push him back in the heap? If you don't push him, it will be wrong. If you don't push him, then see, as of now, your heap is empty. Because you popped him too, you popped him twice at once. Now your heap is empty, now your while loop will break. What is made of you? ABA. ABA. But how many kids were there? There were four. There were two A's and two B's. Where is the other B? The other B is here."
+  },
+  {
+   "start": 1800.93,
+   "end": 1828.16,
+   "text": "So whenever you go to else, before you finish this, before you finish this, what will you have to do? pq.push p, not p2, p, which you took out the original p, you took out the original p, you don't have to do anything in this, you don't have to reduce its first, because it didn't sit, you couldn't sit any of these, 1, b, no one sat, b1 couldn't sit, you have to pq.push,"
+  },
+  {
+   "start": 1828.16,
+   "end": 1857.65,
+   "text": "after this you have to close this else and you have to close your while loop and in the end you have to rest the return after everything is done this was the whole thing, see the code, the code is a bit complex listen carefully and we want you to write the code yourself because it was very good the idea is the same, the idea is the same, what we are doing, see we will tell you the step first of all, take out the frequency of every letter from the hash map"
+  },
+  {
+   "start": 1858.35,
+   "end": 1886.21,
+   "text": "Push in heap. Push in heap. How did we push in heap? Frequency and letter. Right. After that, loop will run while PQ not empty. Till all the kids are not empty, keep running till then. On top, we take rest is equal to an empty string and seat is equal to 0. Because we will start moving from 0 seat. Every time, what will we do? P is equal to"
+  },
+  {
+   "start": 1886.21,
+   "end": 1916.91,
+   "text": "a child with max frequency, any child with max frequency, if possible, means if it is possible on seat, what do we do? We make it sit, means do it, do it, means rest.pushback seat++, after that what did we do? p.first, minus minus, if p.first greater than 0, pq.push, p, again push."
+  },
+  {
+   "start": 1916.91,
+   "end": 1943.07,
+   "text": "But if it is not possible, then what we used to do? First of all, we used to check that if PQ is empty, which means there was only one entry in PQ, which you have already popped and kept here. Now there is no child left and this child cannot sit, which means not possible. Not possible means absolutely not possible. It will not be fun, not possible. Otherwise, something can happen. P1 is equal to PQ.top."
+  },
+  {
+   "start": 1943.07,
+   "end": 1966.74,
+   "text": "means this is the second largest child and pq.pop too whenever you do top just do pop once pq.top pq.pop after that set p1 set p1 means do push in this do plus plus etc etc after that do p1.first minus minus also p1.first also do minus minus also and do push this also"
+  },
+  {
+   "start": 1966.9,
+   "end": 1995.71,
+   "text": "if greater than 0, means if there are more than 1 children left, even after doing minus minus, push it and remember remember this pq.push p remember this man push here because this man's work is not done and close your while loop, in the last return result in the last return result, so this is its total explanation it is a little complex topic but we hope that everyone understood"
+  },
+  {
+   "start": 1995.71,
+   "end": 2022.8,
+   "text": "If you can do it, then we want you to make two more questions. If you are watching till here, then it's a good thing. People don't watch till here. It's a very easy question. If you have reached till here, then it's a very easy question. We want you to make the leetcode 1046. Make the leetcode 1046. And try it. We will tell you tomorrow. It has a hard version. This reorganized string has a hard version. Leetcode 621, which is the task scheduler."
+  },
+  {
+   "start": 2022.8,
+   "end": 2031.37,
+   "text": "It is the same concept but it is a little harder version. So try this. Try this. Think a little what to do. Otherwise we will tell you like this. Let's meet tomorrow."
+  }
+ ]
+}

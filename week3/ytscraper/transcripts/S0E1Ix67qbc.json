@@ -1,0 +1,454 @@
+{
+ "video_id": "S0E1Ix67qbc",
+ "title": "Believe Me, You DON'T Know The Binary Search Algorithm | DSA Patterns Course 2026",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2333,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 28.86,
+   "text": "Before studying, whenever we ask people if they know binary search, 80-90% of them say yes, they know binary search, low is equal to 0, high is equal to n-1, mid is equal to low plus high by 2, let's see, let's remove it here and there. So, there is nothing more ridiculous than this. I mean, this is such a thing that we are asking you, do you know how to make food? You are saying, yes, yes, yes, there is such a big desk in my house. That was not the question, which desk is there in your house, that was not the question. Do you know how to make food or not? Then you will say, no, no, no, there is a desk, so we know, no."
+  },
+  {
+   "start": 28.86,
+   "end": 51.18,
+   "text": "This is not binary search. This is a question of binary search. This is the first question of binary search. You have been given the first question of binary search. That the array is sorted, it does this and that. This is the reason that as soon as you get aggressive cows, cocoa eating, allocation, boobs, mountain, and array, you lose your senses. Oh my god, what is low-high in this? It doesn't even look sorted. What to do in this?"
+  },
+  {
+   "start": 51.18,
+   "end": 76.85,
+   "text": "In this video, remove all the trash related to Binary Search. We will tell you a story. According to the story, we will teach you Binary Search from the beginning. Those who have not heard about Binary Search before, it is a very good thing. You are in the right position. Those who know a little bit, believe us for a while and forget all that. You will know by the end of this video what is Binary Search. Not a question, what is the concept? Why is it?"
+  },
+  {
+   "start": 76.85,
+   "end": 105.71,
+   "text": "Why? You will also realize that it has nothing to do with searching and sorting. It is in the sorted area. It was in that question. The reason is not that it is in the sorted area. No. And you will know that it is a game of guessing. It is a game of guessing. It is a game of trial and error. It is a game of reducing your number of guesses. So, you will know these 4-8 things in this video. Open your mind and see. Come, let us tell you the story. Before that, those who have come for the first time, you will see the description. You will get the complete playlist and"
+  },
+  {
+   "start": 105.71,
+   "end": 136.14,
+   "text": "If you want, you can start from this video also. Because we are going to treat it as an independent topic. So you can start from here also, no problem. Come, let's listen to the story. Come, let's start the story. Now, why are we teaching this story? Because people remember the story, okay? You never forget the story. So it is important that first you listen to the story. After that, we will talk about what happens on this. The fan is in everyone's house. This is a very important thing that the fan will be in your house. We will apologize for the bad drawing. But we know only this. So come, your fan is here. You are sleeping comfortably on the bed here."
+  },
+  {
+   "start": 136.14,
+   "end": 162.3,
+   "text": "And you have a regulator. There is a regulator of fan with which you can run 1, 2, 3 numbers. Okay. Now, the weather is of summer. Now, whose weather is it? It is of summer. Okay. You have a problem with summer. You want that it should not be hot. You have a requirement that it should not be hot. It is an obvious thing. It should not be hot in summer. Okay. No matter how cold it is. I mean, no matter how fast the fan is running, you do not have a problem with that. Because, what do we do? In summer, there is only one requirement that it should not be hot."
+  },
+  {
+   "start": 162.3,
+   "end": 191.23,
+   "text": "If it is too cold, then you have to cover it with a blanket. So just assume that you have a problem with the heat. Once the heat is gone, that's it. Okay. But, the more you run the fan, the more the fan will run. For example, if you run it on 5 numbers, then the fan will run fast. So, the electricity bill will come. Assume that the faster you run the fan, the more electricity bill will come, which obviously comes. Now, who wants the electricity bill to come more? Everyone wants the electricity bill to come less. So, you have one requirement that my bill"
+  },
+  {
+   "start": 191.23,
+   "end": 219.76,
+   "text": "At least earn. At least earn. Okay. Now, when these two are your requirements, then what do we do? No one knows at what number to use the fan regulator. We all do the same. We also do the same. You say to use one number, then you say, no, no, it's too hot, it's too slow. Do it on two numbers, then it does it on two. Then it says, no, no, no, do it more. It does it on three numbers, then it does it on four numbers. So one point comes, suppose that point comes on four numbers, that you say, yes, yes, wait, wait, wait. Now we feel good, now we can sleep. So you go to sleep. Okay."
+  },
+  {
+   "start": 219.76,
+   "end": 239.44,
+   "text": "So here you will do the same thing because there is no way to know from the beginning. I don't know, it is a very magical thing of regulator. No one knows from the beginning, everyone has to test. So now let's plug each regulator one by one and test. What do we test? There is such a point in which there is no heat, in which the fan is running so fast that there is no heat and you can sleep comfortably."
+  },
+  {
+   "start": 239.44,
+   "end": 267.12,
+   "text": "The electricity bill should also be less. Because if there is no problem with the electricity bill, then what you do is that you put the fan on maximum. Suppose you put it on the 7th number and go to sleep. But if you put it on the 7th number, then the electricity bill will come a lot. Because if the 7th is the maximum, then the 7th will come a lot. It is possible that your requirement is being satisfied by putting it on the 5th number. It means that you are feeling very comfortable on the 5th. But if you put it directly on the 7th, then you will not know. That is why it is important that you have to do trial error. Trial error is a guess."
+  },
+  {
+   "start": 267.34,
+   "end": 295.31,
+   "text": "One way of guessing is that the fan has a trial error. Everyone does a trial error in the fan. So how will you do a trial error? See, first of all, what do we normally do? First of all, you will do the fan on 1 number. First of all, you will do it on 1 number. In this, you assume that it is getting hot. Now if it is getting hot, then there is no point in the electric wheel. I mean, if it is getting hot by turning the fan, then why did we put the fan on? So now your talk did not happen on 1 number. You turned the fan on 2 number."
+  },
+  {
+   "start": 295.6,
+   "end": 325.74,
+   "text": "Assume that you are feeling hot on number 2. Assume that you are still feeling hot on number 2. So what will you do? You can't do anything. You will move forward. On number 3. You are still feeling hot on number 3. You are a very hot person. You are a very hot person. You are still feeling hot. Okay. Assume that you are on number 4. Assume that you are on number 4. Assume that you are on number 4. Assume that you are on number 4. Assume that you are on number 4. Assume that you are on number 4. Assume that you are on number 4. Assume that you are on number 4. Assume that you are on number 4. Assume that you are on number 4."
+  },
+  {
+   "start": 325.78,
+   "end": 353.46,
+   "text": "Now tell me one thing, do you need to go to 5 more numbers? Because look, this is very natural, that's why we are taking real life example because you have intuition in your mind, we don't have to force that no, no, think like this only, this only happens, no, this is very real life, that if you feel comfortable by doing it on 4 numbers, comfortable means that you are not feeling hot, so will you feel hot by doing it on 5 numbers? Is it possible that you are not feeling hot on 4 numbers and you will feel hot on 5 numbers?"
+  },
+  {
+   "start": 353.46,
+   "end": 383.25,
+   "text": "No, it's not possible at all because it's real life, you won't feel it. You will feel comfortable even on 5th number. It may feel a little cold. It may feel a little cold but we don't have a problem with cold. We have a blanket. So we are capable of tolerating cold. Similarly, if you do it on 6th number, then it is also not possible that you will feel hot on 6th number. You will enjoy on 6th number too. And on 7th number, obviously, you will enjoy. So this tells us that once you start feeling good on 4th number, then what do you do? You go to sleep."
+  },
+  {
+   "start": 383.25,
+   "end": 402.99,
+   "text": "You are going to sleep. Why? Why do you have to do this? Because look, when you are feeling cold on 4 numbers, it is obvious that you will feel cold on 4, 5, 6, 7, everything. You will feel cold on everything. So, theoretically, you could have slept on any of these 4 numbers. But, what was your other requirement? Electric bill. What?"
+  },
+  {
+   "start": 402.99,
+   "end": 432.14,
+   "text": "Electricity bill. Electricity bill is minimum. No one wants more electricity bill. It is useless to want more electricity bill. You want less electricity bill, right? Okay. So, your electricity bill is minimum. Out of these four, the minimum electricity bill will come on number 4. Obviously, if it goes slow on number 4, it will come more on number 5, 6 and 7. So, both your requirements, where are you getting satisfied? On number 4. You are getting satisfied on number 4. How did you know? You didn't know anything. You guessed. Guess."
+  },
+  {
+   "start": 432.14,
+   "end": 456.66,
+   "text": "Guess or try error. Try error means start guessing from 1. Don't listen to 1. Don't listen to 2. Don't listen to 3. Don't listen to 4. Did you listen to 4 for the first time? 4. You came comfortable from the heat for the first time. And you stopped at 4. And you slept at 4. This is one way to solve this problem. What? This is one way. One way is that you can solve this problem like this. Normally we solve it like this. But."
+  },
+  {
+   "start": 456.75,
+   "end": 483.79,
+   "text": "There is one more way, see, we are not talking about any code or algorithm, everything is going on in real life, that you have to find the number of the fan, this is your problem. So there was one way that you came to 1 number, 2 number, 3 number, 4 number and stopped at 4 number. But there is one more way, let's tell you what it is. Imagine there are 4 levels in your fan, how many levels are there in your fan? 1, 2, 3, 4, 5."
+  },
+  {
+   "start": 483.79,
+   "end": 501.84,
+   "text": "Now you have to choose one of these for yourself. What do you have to choose? In which you do not feel hot and your bill comes from less. Less means earn as much as possible. You have to choose one."
+  },
+  {
+   "start": 502.7,
+   "end": 526.43,
+   "text": "What did you do in the first one? In the first one also, you didn't know, right? So, you started guessing. From where? From 1 to guess. 1, 2, 3, 4. You were guessing from the line. I don't feel like guessing from the line. I feel like we can do anything. I have a room, I have a house. We can do anything. We don't need to guess from the line. We don't feel like. What do we need? We don't feel like. Any random number. What do you have left now? You have left to guess from 1 to 7. Okay?"
+  },
+  {
+   "start": 526.43,
+   "end": 551.49,
+   "text": "We want to guess any random number between 1 and 7. Suppose you guess the number 3. Now when you guess the number 3, you will know that you are feeling hot when you guessed 3 numbers."
+  },
+  {
+   "start": 551.49,
+   "end": 575.7,
+   "text": "So, you should not use fan on 3 number. Why? Because it is hot on 3 number. We don't have to worry about bill in summer. We don't have to worry about bill when it is hot. If it is hot, then the point of this fan is already used. We should not use it in summer. So, you understand that you can't use 3 number. You can't sleep on 3 number. But..."
+  },
+  {
+   "start": 576.18,
+   "end": 605.6,
+   "text": "You get to know a very important thing. A very hidden important thing. If you are intelligent. If you are intelligent. Tell me one thing. You are feeling hot by doing fan on 3 number. Will you feel hot or comfortable on 2 number? If you are feeling hot by doing fan on 3 number. Will you feel hot or comfortable on 2 number? Will you feel hot on 2 number too? 2 number means fan will run slowly. Yes. And."
+  },
+  {
+   "start": 605.6,
+   "end": 627.6,
+   "text": "Will you feel hot even on number 1? Yes, you will feel hot even on number 1. If you are feeling hot on number 3, then how can it be that you will feel comfortable on number 2? And how can it be that you will feel comfortable on number 1? So it's a stupid thing, isn't it? If the fan of number 3 is running slowly, then the fan of number 2 will run slower than that. The fan of number 1 will run slower than that. What does this mean?"
+  },
+  {
+   "start": 627.6,
+   "end": 650.11,
+   "text": "you guessed randomly you will get to know that number 3 is a wrong guess number 3 is a wrong guess what does wrong guess mean? that it is hot so it is not a correct guess it is a wrong guess but along with that you will also get to know that number 1 and 2 are also going to be my wrong guesses"
+  },
+  {
+   "start": 650.11,
+   "end": 672.62,
+   "text": "Without guessing, you would have known that 1 and 2 can be wrong. Without guessing, you would have known that 1 and 2 can't be your answer and 1 and 2 is also going to be wrong. This was not happening in the above way. When you guessed 1, you only knew that it seems to be 1 and 1 is wrong. You didn't know about any other number. You didn't know about any other number. But..."
+  },
+  {
+   "start": 672.82,
+   "end": 701.81,
+   "text": "When you randomly guessed 3, then you got to know that if 3 is wrong, if 3 is wrong, you will see the right, but if 3 is wrong, then what did you get to know? 1 and 2 will be definitely wrong. So do you need to guess 1 and 2? You already know that they will guess and you will lose. You are playing gambling. What is this? You are playing gambling, right? You already know that if you throw a leaf, then you are going to lose. So will you throw a leaf? Why will you throw? Your mind is not bad. You are sleeping early, right? So what will we do?"
+  },
+  {
+   "start": 701.81,
+   "end": 731.2,
+   "text": "from your mind, means from which you have to guess, we will remove 3, 3 is gone, but 1 and 2 are also gone, 1 and 2 are also gone, without guessing, you will come to know that 1 and 2 are not possible, very good, ok, you should have come, now what is left, 4, 5, 6, 7, again guess randomly, and at this time, suppose you have to guess 6, suppose you have to guess this one, what does it mean to guess, just do the regulator on that number, that's it, just do the regulator on that number, on 6 number, now let's see what will happen,"
+  },
+  {
+   "start": 731.2,
+   "end": 760.03,
+   "text": "Now see what will happen. When you answered at number 6, then a very interesting thing happened. Very interesting, listen very carefully. This is of more important level. Everyone understands the wrong one that if 3 is hot, then 3 is not the answer. If 1 and 2 are hot, then 1 and 2 are not. That is good and easy. This is a little difficult, see. At number 6, you are feeling comfortable. You are feeling comfortable. Why? Because we have assumed that you will feel comfortable after 4. From the above example, you can assume anything. But according to our example,"
+  },
+  {
+   "start": 760.03,
+   "end": 785.14,
+   "text": "according to us, we liked it on no. 4 let's assume that you are comfortable on no. 6 and you don't know anything, you just know that you did fan on no. 6 yes, it started looking good, suddenly it started looking good, ok so, what should you do? see, it is looking good on no. 6 so, should you sleep after doing it on no. 6? this is also a way, it will come in your mind that yes, if it looks good, then go to sleep if it looks good, then go to sleep but see, what is one thing for you?"
+  },
+  {
+   "start": 785.55,
+   "end": 815.25,
+   "text": "You can sleep on 6th number. You can sleep on 6th number. Your one problem is solved. What? Your summer problem is solved. But, but, will there be the lowest electricity bill on 6th number? Will there be the lowest electricity bill? Will there be? What? Now, how do we answer this question? Assume, assume. Now see, on 6th number, it is comfortable, but will there be the lowest bill on 6th number? If, if, if there is such a scenario,"
+  },
+  {
+   "start": 815.25,
+   "end": 842.59,
+   "text": "if you feel comfortable doing it on 5th number you don't know, we are just thinking, doing it on 5th number we don't know anything right now you are experimenting, you are guessing right now, so we don't know anything but if you feel comfortable doing it on 5th number then you should have done it on 5th number you should have done it on 5th number if you feel comfortable doing it on 4th number we don't know anything, we are thinking, we are thinking in our mind we are making a story in our mind"
+  },
+  {
+   "start": 842.59,
+   "end": 869.17,
+   "text": "If it would have been comfortable on 4, then you should have slept on 4. So, you got comfortable on 6. That's a good thing. Congratulations to you. But you can't sleep on 6. If you sleep, then you will miss that if it will be comfortable on 4 too, if you haven't tried 4 till now. You haven't tried 4 till now, right? What have you tried till now? You tried 3. You came to know that it is not comfortable on 3."
+  },
+  {
+   "start": 869.17,
+   "end": 897.68,
+   "text": "4 can be something on 4, because 3 will increase the speed, 4 can be something on 4, 5 can be something on 5, anything can happen on 5. So you don't know about 4 and 5. If you sleep on 6, if you sleep on 6, closing your room, then you will miss an opportunity. What opportunity? If you would have got an answer on 4 and 5, if you would have been comfortable on 4 and 5, then you don't know about this. You don't know about this. You don't know, no, you don't know, okay. So 6 can be your answer."
+  },
+  {
+   "start": 897.68,
+   "end": 922.5,
+   "text": "It is also possible that 4 and 5 will be hot. Anything can happen in the world. For 4 and 5, all the options are open. It is possible that it will be hot, it is possible that it will be cold, it is possible that it will be hot in one and cold in the other. Anything can happen. But that option will have to be seen. That option will have to be seen. Your game is not over yet. So, 6 may be your answer. 6 may be your answer. That is why in your diary, in your diary,"
+  },
+  {
+   "start": 922.5,
+   "end": 952.1,
+   "text": "Write 6. If nothing happens, then we will sleep at 6. If nothing happens, if 4 and 5 keep feeling hot, then we will sleep at 6. This is fine. And you also know that you cannot sleep now. Write 6 in the diary. You cannot sleep at 6 now. Okay. But, but, you have come to know a very important thing. You are feeling comfortable at 6. You are feeling comfortable at 6. Now,"
+  },
+  {
+   "start": 952.1,
+   "end": 973.2,
+   "text": "If you do it on 7, will you start feeling hot or will you still be comfortable? You will still be comfortable. You will still be comfortable on 7. Why? You are feeling comfortable on 6. You will definitely feel comfortable on 7. It is not possible that you will feel hot on 7. Why? The speed will increase on 7."
+  },
+  {
+   "start": 973.2,
+   "end": 995.36,
+   "text": "When you got the wrong answer, you got to know for sure that the number behind me is definitely wrong, so you don't have to guess. Now that you are comfortable with number 6, then you know that the number ahead of me is 7, 8, 9, 10, 1000 levels, there is no difference. You will feel comfortable in all of them."
+  },
+  {
+   "start": 995.36,
+   "end": 1024.78,
+   "text": "Okay, so 7 is also comfortable. So can 7 be your answer? No, 7 can never be your answer. You should never put the fan on 7. Why? Because the bill will be more on 7, right? The bill will be more on 7, right? See, listen very carefully. That's why we are stressing it more. This is the core of binary search. This is the core of binary search, okay? On 6, you get to know that we are feeling comfortable. Okay."
+  },
+  {
+   "start": 1024.78,
+   "end": 1048.3,
+   "text": "Let's write 6 in our diary. But you can't sleep with 6 because you have no idea about 4 and 5. It's possible that you are slowing down. If you slow down, it's possible that you start feeling hot. It's possible that you are comfortable. Anything is possible. But you have a definite idea about 7 that it will be comfortable. Why? 6 is comfortable and 7 will also be comfortable. Okay."
+  },
+  {
+   "start": 1048.37,
+   "end": 1077.62,
+   "text": "So can 7 be the answer to any of your permutations in the universe? No! If the answer is 7, then why would we take 7? Why would we take 6? If we want to sleep on 7, then why would we do that? We will sleep on 6, right? No matter how big the bill is on 6, we will earn from 7 or 8. So in any universe, 7 cannot be my answer. Similarly, if it was 8, then it cannot be 8 either."
+  },
+  {
+   "start": 1077.62,
+   "end": 1103.98,
+   "text": "After 6, all the levels, given that 6 is comfortable for you, after 6, all the levels in the board are useless. We will not take anyone. If we want to take, we will take 6. And we will explore the lower one from 6. But we will not explore the one beyond 6 at all. Or we will not guess at all. Why? There is no use. If you do it together, you will get more bills. So we hope that you are understanding this. If you don't understand this,"
+  },
+  {
+   "start": 1103.98,
+   "end": 1128.77,
+   "text": "rewind for 2-3 minutes and listen again, this is the core of the whole algorithm. Now, as soon as you know that you are comfortable with 6, then what did you do? First, you wrote 6 in your diary, level 6, that nothing happened, nothing happened, at last you will sleep on 6, you will sleep on 6, and now you don't need to guess 6, because 6 has been guessed."
+  },
+  {
+   "start": 1128.77,
+   "end": 1157.55,
+   "text": "6 is guessed and you don't even need to guess 7. Why? I have told you that you will get more bills on 7. You will be comfortable on 7 but there is no benefit. There will be more bills on it. So if you have to keep 7, then it is better to keep 6. Come on. Now, what is left? You have 4 and 5. 4 and 5. Assume. Assume. You. Come on, don't write 4. Assume that you guessed 5. Assume that you guessed 5. Assume that you guessed 5. In 5 also,"
+  },
+  {
+   "start": 1157.55,
+   "end": 1180.16,
+   "text": "What did you find out in 5? It seems comfortable. Yes, it seems comfortable. Very good. Very good. Very good. It seems comfortable on 5. Very good. Same logic which was applied for 6. You can't sleep on 5. You can go to sleep on 5. You can go to sleep on 5. Means, okay. Now, before 5, there is 4. Before 5, there is 4."
+  },
+  {
+   "start": 1180.16,
+   "end": 1203.17,
+   "text": "You don't know the answer to this. If it will be hot on 4, then you would have slept on 5. But if it will be comfortable on 4, then you should have slept on 4. So both things can happen. But all the levels beyond 5 are useless. Beyond 5, 6, 7, 8, 9, 10, 11, 1000, everything is useless. Why? It is comfortable on 5. So if we have to sleep, then we will either sleep on 5 or sleep on something less than 5."
+  },
+  {
+   "start": 1203.17,
+   "end": 1232.26,
+   "text": "We won't sleep before 5, because I have so much intelligence that if it feels comfortable at 5, then why will we sleep at 6? We will sleep at 5, right? We don't have to pay more bills. So, look carefully at what was written in your diary. 6. Why did you write it in your diary? You thought that if nothing happens, you will sleep at 6. Now you will never sleep at 6. Why? Because you feel comfortable at 5. Now you will write 5 by removing the 6 level from your diary. That if nothing happens, you will sleep at 5. And you will remove 5 from your guess. 5 is a guess. And there was no level left before 5."
+  },
+  {
+   "start": 1232.26,
+   "end": 1258.8,
+   "text": "7 was removed by 6 earlier. 6 was removed by itself earlier. 5 is left. Nothing is left. So, 5 is removed from our guess space. Now, you have only one element left to guess. 4. So, okay. Guess 4. Guess 4. Guess 4. Guess means, rotate the regulator on 4 numbers. Rotate it on 4 numbers. What did you get to know? It seems comfortable on 4 too. Yes. It seems comfortable on 4 too. It seems comfortable on 4 too. Same logic. Now,"
+  },
+  {
+   "start": 1258.8,
+   "end": 1285.01,
+   "text": "because you feel comfortable on 4, you feel comfortable on 5, 6, 7, 8, 9, 10, whatever happens in the next 1 lakh level of your regulator, no one has any work, no one has any work, so first of all, check your diary, it has 5 written in it, it's useless, why will we do it on 5, we feel comfortable on 4, we will sleep on 4, why 5, write 4, why, it will happen, right now there is only one level, you can write, right now there is only one level, but assume that there is more behind, there is more, anything happens,"
+  },
+  {
+   "start": 1285.1,
+   "end": 1307.02,
+   "text": "So write in your diary that if nothing happens, then you will pass 4. And now there is nothing in front of 4, there is nothing behind 4, so delete 4 too. Now see, you don't have anything left to guess. Now you have the first, the beginning is like this. Guess anything from 1 to 7. Slowly, slowly, while eliminating this, you don't have anything left to guess. Meaning, in a way,"
+  },
+  {
+   "start": 1307.02,
+   "end": 1336.61,
+   "text": "In a way, you have guessed all the levels. Have you really guessed all the levels? Remember, you have never guessed on fan 2. You have never guessed on fan 1. You have never guessed on fan 7. But in a way, you have come to know that there is no benefit from it. In the last, what is written in your answer? Level 4. And by doing this, you will sleep comfortably and confidently. This is the level, this is the level, in which you will not even feel hot. And your bill will also be less than everyone."
+  },
+  {
+   "start": 1336.61,
+   "end": 1360.98,
+   "text": "will be the lowest. This is that level. See, in the above example also, this was the same. So, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something or the other, while doing something"
+  },
+  {
+   "start": 1360.98,
+   "end": 1390.8,
+   "text": "Exactly this story can be asked from you. The famous questions you see, aggressive cows, cocoa bananas, they are based on this story. They are based on this real life story. That is why it is called binary search. The work we have done, the smart way we have found to guess, the smart way we have found to guess, that is called binary search. That is called binary search."
+  },
+  {
+   "start": 1390.8,
+   "end": 1419.81,
+   "text": "One difference is that we used to guess randomly. We used to guess randomly i.e. between 1 and 7, we guessed 3, 2, 7, whatever we guessed. To get rid of this randomness in binary search, we always guess the value of mid. We always guess the value of mid. This was the purpose of this story, to make you understand what binary search is. Now, if you have understood this story,"
+  },
+  {
+   "start": 1419.81,
+   "end": 1445.94,
+   "text": "Now look, some people will say that what are you teaching? Just teach low plus high mid. If you will teach that, nothing will happen to you. If you will teach low plus high by 2 mid, then it will never become aggressive. This story will never happen. This story can actually be asked. I am not joking. We have made this story ourselves. But actually this story can be asked that if you have this, then do it. Okay. Now come. Now we will come to binary. Now you are ready to study binary search."
+  },
+  {
+   "start": 1445.94,
+   "end": 1474.88,
+   "text": "Now you are finally ready, whatever was a mess in your mind must have been removed, these things must have entered, now you are ready to read binary search. See, till now whatever pattern we had read, in all of them we used to work with some logic. This first pattern is going to happen which is based on guess, guess or trial error, trial error, yes, guess is based on trial error, what were you doing in the fan regulator?"
+  },
+  {
+   "start": 1474.88,
+   "end": 1495.12,
+   "text": "You were only guessing. Why did you do it on 3 number first? Why did you do it on 4 number first? There is no logic. Guess. There is no logic of randomness. There is no logic of guessing. You are making a mistake. This is a game of making a mistake. The whole pattern is to make a mistake. Why did you take mid in low to high? Why don't you test mid minus 1? Why don't you test mid plus 1?"
+  },
+  {
+   "start": 1495.12,
+   "end": 1523.47,
+   "text": "There is no logic. We are cheating. Did you know that the answer will come from mid? No, we don't know. We are cheating to know. We don't know anything. We don't know anything. We cheat in this pattern. This whole pattern is a cheating pattern. Okay. And, there is a very interesting thing in this pattern. Okay. Now, you said that you are guessing. But, what will you guess? You guess. What will you do? I mean, guess. What? Will you guess your name? No. Whatever is asked in the question,"
+  },
+  {
+   "start": 1523.47,
+   "end": 1552.56,
+   "text": "Whatever you have to find out in the question, whether it is an index, or a number, or a regulator number in a story, or a number of cows, or a speed, or a number of days, or a number of pages, or anything, depending on the question, depending on the story, you guess that thing."
+  },
+  {
+   "start": 1552.56,
+   "end": 1581.47,
+   "text": "For example, if you were asked which number of the regulator you will set, then you knew that the number in the regulator is from 1 to 7. You used to guess from 1 to 7. You used to say that there are 3 numbers in the fan. What was 3? It was a guess. But, but, but, notice a very important thing. In the regulator, see how many digits were there. In the regulator, it was 1, 2, 3, 4, 5, 6, 7."
+  },
+  {
+   "start": 1581.47,
+   "end": 1611.17,
+   "text": "Assume that you saw the data of summer and winter in such a way that you were feeling hot in 1, you were feeling hot in 2, you were feeling hot in 3, suppose you were feeling hot in 4, you were feeling hot in 5 too. You felt cold on 6. You felt cold on 6. Cold means you felt good. Now, if you are feeling cold on 6, then will you feel cold on 7, 8, 9, 10, 11, 12, all of them? Yes, you will feel cold on all of them. It is not possible that you will feel hot on 7. No."
+  },
+  {
+   "start": 1611.17,
+   "end": 1637.01,
+   "text": "So look carefully at how this data is looking. Hot, hot, hot, hot, hot, hot. Up to a point, hot. Up to a point, hot. Suddenly, a point comes. Suddenly, a point comes where it suddenly gets cold. And after that, cold, cold, cold, cold, cold. So what kind of data is this? This kind of data is called monotonic data. Meaning?"
+  },
+  {
+   "start": 1637.07,
+   "end": 1663.15,
+   "text": "Whatever you are guessing, you will get a yes-no type or a true-false type or in this case, a hot-cold type of answer. You will get an answer that this answer is right or wrong. You can get either right or wrong. You will get anything depending on the questions. We will do 15-20 questions in the future. Every question has the same format. You will get something or the other."
+  },
+  {
+   "start": 1663.15,
+   "end": 1691.89,
+   "text": "How do you play gambling? What does guess mean? Guess is a number. Let's say we are playing a game. We have thought of a number 7. Let's say we have thought of a number between 1 and 10. You have to guess that number. Then what will you do? You will say, is that number 2? We will say, no, it is not 2. Is that number 3? We will say, no, it is not 3."
+  },
+  {
+   "start": 1691.89,
+   "end": 1721.15,
+   "text": "Is that number 9? No, it is not 9. Is that number 7? Yes, it is. If you do this, then you will get to know if that guess is right or wrong. Is that a good guess or a bad guess? For example, did you get to know about the fan? When you have a fan on 3, you feel hot. When you have a fan on 6, you feel cold. So, you got to know something. Okay. This data of getting to know will always be in the same form."
+  },
+  {
+   "start": 1721.15,
+   "end": 1750.96,
+   "text": "At one point, everyone will be hot. Or everyone will be bad. Or everyone will be false. Everyone will be false. Everyone will be no. And after one point, all of a sudden, it will change to cold. It will change to cold. It will change to cold. It will change to good. It will change to good. It will change to good."
+  },
+  {
+   "start": 1750.96,
+   "end": 1771.94,
+   "text": "It will change to true. It will change to true. It will change to true. It will change to yes. It will change to yes. It will change to yes. At a point, at this point, this point is called turning point. This point is called turning point. And in 99% of binary search questions, you have to tell this turning point."
+  },
+  {
+   "start": 1771.94,
+   "end": 1801.82,
+   "text": "Look carefully at the regulator. In this example, what did I have to tell you? The number of the fan in which it was cold and the lowest bill was 6. What was 6? Turning point. Turning point means the answer of your guess was coming in a way. It was coming bad all the time. One point came and it suddenly became good. It suddenly became good. It suddenly"
+  },
+  {
+   "start": 1801.82,
+   "end": 1810.0,
+   "text": "And after that he never changed. After that he never changed. It didn't happen that you were feeling hot. Once you felt cold."
+  },
+  {
+   "start": 1810.0,
+   "end": 1839.28,
+   "text": "then once again you felt cold and when you ran the next number, you felt hot again. No, no, it is not possible. And if it is happening, if you feel that it is happening, then it is not a question of binary search. Binary search works on the same logic that once your guess data, the answer to your guess changes, then it will remain the same for the rest of your life. It means that if you make a guess,"
+  },
+  {
+   "start": 1839.31,
+   "end": 1866.83,
+   "text": "If the answer is wrong, then the answer will be wrong on all the lower cases. Why? Because it is like this, wrong, wrong, wrong, wrong, right, right, right, right, right. What does this mean? This means, yes, yes, yes, yes, yes, yes, yes, right, right, right, right, right, right. If you get something wrong here, then you know for sure that all the values of the left will be wrong."
+  },
+  {
+   "start": 1866.86,
+   "end": 1894.22,
+   "text": "All the left values will be wrong. And on the contrary, if you get it right here, then you know that all the right values will be right. All the right values will be right. If you are feeling hot on 3 numbers, you will definitely feel hot on 1 and 2. You know this. You don't know what will happen on 4. Pay attention. You don't know what will happen on 4. And if you are feeling cold on 6, you will definitely feel cold on 7 and 8."
+  },
+  {
+   "start": 1894.22,
+   "end": 1922.82,
+   "text": "We don't know what will happen at 5. We have to see that. But it will definitely be cold at 7. So, whatever you guess, whatever you guess in any question, whether it is index or binary search. What happens in binary search? When you are asking questions, that tell me the index of this number. We guess the index only. We guess the index only. We don't do anything else. You say, okay, we will take low here. We will take low at 0. We will take low at 0. Those who know."
+  },
+  {
+   "start": 1922.82,
+   "end": 1943.38,
+   "text": "high is equal to n-1 and mid is equal to low plus high by 2 and we will check the amid. Why will you check the amid? What logic do you have to check the amid? Try error is happening. We are doing try error. There is no logic of try error. We are checking. What will we do? We are guessing. After that,"
+  },
+  {
+   "start": 1943.38,
+   "end": 1972.21,
+   "text": "Be patient, we will do all the questions. If you don't know the name of binary search, then you are saying that you don't know anything about binary search, then you are in the best position to read this. The first thing, whatever comes, whatever you are asked in the question, now that when will binary search take place? You do the same thing by counting. You guess. You have that whatever is being asked, for example, if you ask the number of days, you guess it. You get an answer from that guess."
+  },
+  {
+   "start": 1972.21,
+   "end": 2001.82,
+   "text": "you get an answer from that guess. And that answer is in a monotonic format. That means that answer will be wrong till a limit. The answer will be correct suddenly and it will be correct even today. It won't happen that the answer is correct from one guess, then it is correct, and then if you make a bigger guess, then the answer is wrong. No, then it is not a binary truth question. This is the recognition. And the thing that you guess, how will you get its answer? How long will you get its answer?"
+  },
+  {
+   "start": 2001.82,
+   "end": 2027.62,
+   "text": "you should either know it in constant time or you should know it at max end time. What does it mean? Listen again. You picked the fan at number 3. Now, in that, you are feeling hot or you are feeling cold. You knew this immediately. You knew this immediately. You knew this immediately. That's why binary search worked here. If you picked the fan at number 3,"
+  },
+  {
+   "start": 2027.62,
+   "end": 2056.45,
+   "text": "And if someone tells you to wait, you will tell him after a day that you are feeling hot or cold. So you could not do this work here. What does this mean? This guess work can be done in the same questions where you can find out the answer of that guess immediately or in the worst case, you can find out in order of n time. If n square is there to find out, no, it will not happen. That is why, suppose there is a question of sliding window. What have you been told? Max, subarray, whose sum?"
+  },
+  {
+   "start": 2056.45,
+   "end": 2083.54,
+   "text": "less than equal to k means longest subarray so you should be in your mind that why don't we guess in this also so we guess in this also so you say that okay do one thing low is equal to 1 and high is equal to 3 we guess this subarray okay is this subarray correct? correct means is it really longest or is it wrong? how will you check this? how will you check this? who will tell you that this is correct or wrong? for this you will have to find all subarrays"
+  },
+  {
+   "start": 2083.54,
+   "end": 2113.41,
+   "text": "For this, you will have to find all the errors, see the sum of all and check if it is the longest. So, it is a very lengthy process. To check one guess, you will have to check many guesses. It is not that if the guess is correct on 3 numbers, then you can finish the program. No, you will have to guess more. So, when the process of finding one guess is so lengthy, how long will it take for all the guesses? That is why, it is very important in binary search that whatever guess you are doing, first of all,"
+  },
+  {
+   "start": 2113.41,
+   "end": 2141.55,
+   "text": "What is a patent? First of all, what is a template? In 90% of cases, you will be asked a single thing. If it is a binary search, you will be asked an index. If it is a story-based question, you will be asked a single thing. Like, tell me the regulator's number. Tell me the number of days. The number of pages. A single thing. And generally, these are optimization problems. Optimization means minimum or maximum. Like, what was the regulator's problem?"
+  },
+  {
+   "start": 2141.55,
+   "end": 2164.69,
+   "text": "The problem of this regulator was that set the fan on the lowest number so that it doesn't get hot. So that it doesn't get hot. Means the lowest possible number so that it doesn't get hot. And why the lowest? Because the electricity bill has to be the lowest. So you used to say 4."
+  },
+  {
+   "start": 2164.69,
+   "end": 2193.79,
+   "text": "Set it at 4 because if you go below 4, 3 will be hot and 5 is not good because it is cold here as well. So set it at 4. So what is this? There are optimization problems. Find the minimum number of cows that can do this. Find the minimum number of days that cuckoo can eat all bananas. So when we will do all these questions, there will be optimization problems and a single thing will be asked. Okay. Whatever single thing is being asked,"
+  },
+  {
+   "start": 2193.79,
+   "end": 2218.58,
+   "text": "You can guess it. You can guess it. You can guess it. Guess from where to where? One will be that what is the highest value of this? What is the lowest value of the fan? 1 number. And what is the highest value of the fan? 7 number. All these questions will be given to you. Even if it is hidden, but it will be given. But it will be given. Okay. You can guess. Third, an answer of that guess."
+  },
+  {
+   "start": 2219.47,
+   "end": 2243.89,
+   "text": "You should either get the answer in order of 1 or in order of n. It should not take more than this to find the answer. Meaning, if you picked 3 numbers, will it be hot or cold? You should know the answer immediately. It should not take time. It can take order of n time. And whatever your answer is, it should be monotonic. It should be monotonic. Meaning, it should be like this. Bad, bad, bad."
+  },
+  {
+   "start": 2243.89,
+   "end": 2272.88,
+   "text": "If it becomes good suddenly, then it remains good. After that, it can never become bad. After that, it can never become bad. All these things together make a question of binary search. All these things together make a question of binary search. If there is not even one of these four, then there is no question of binary search. So binary search is this. This is called binary search. The low, mid, high you are reading is an implementation of it. It is a small implementation of it."
+  },
+  {
+   "start": 2273.07,
+   "end": 2287.12,
+   "text": "That is not binary search. You have to put binary search in array, that is why you are doing low, mid, high. If you have to put it somewhere else, then you do something else. If you have to put it in a tray, then you can put binary search anywhere. And it is not always necessary that some people remind that array should be sorted. No."
+  },
+  {
+   "start": 2287.12,
+   "end": 2315.36,
+   "text": "This is not necessary. Array should be sorted for some other reason. When we will do the next question of binary search, then you will understand. So for this reason, there is no rule that binary search says that we will use sorted array. No. That is not its logic. Its logic is connected with guess and its answer. Its logic is connected with guess and answer. Its logic is not connected with sorting and searching. So binary search's question and binary search's pattern are different things. Today you have learnt the pattern. We will do at least 12-15 questions on this."
+  },
+  {
+   "start": 2315.36,
+   "end": 2332.21,
+   "text": "It will be clear slowly. Okay. So, okay. If you don't understand anything, then comment. It is very important that you should understand this video completely. You should understand this video 100%. If you understand a little bit, 99%, then watch it again. If you still don't understand, then comment. Then we will teach you. Okay. Let's go."
+  }
+ ]
+}

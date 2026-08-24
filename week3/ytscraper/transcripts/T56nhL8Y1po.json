@@ -1,0 +1,689 @@
+{
+ "video_id": "T56nhL8Y1po",
+ "title": "Master Bit Manipulation in One Video | XOR Tricks + Interview Questions",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 3665,
+ "segments": [
+  {
+   "start": 0.94,
+   "end": 21.63,
+   "text": "After this one video, you won't have any difficulty in understanding bit manipulation again and you won't need to watch any other video of mine. This is my hope. So, let's give a disclaimer that drink some water and sit down because we don't know how big the video will be because we have understood bit manipulation as much as we know and as much as you need for placement or in general."
+  },
+  {
+   "start": 21.63,
+   "end": 49.15,
+   "text": "I think you need to know bit manipulation to become a child of computer science. Because if you don't understand the basic of the computer, then we don't think you will be able to go very far in your computer science career. Because whatever website you make, whatever app you make, whatever you do, whatever AI you do, whatever electricity the computer is made of, if you don't understand that, then you won't understand it very well."
+  },
+  {
+   "start": 49.15,
+   "end": 78.03,
+   "text": "We will explain bit manipulation in today's video. So, let's see what is bit manipulation, why is it there, how much you have to pay, why do you have to pay, why is it done like this. Imagine two soldiers are standing, one is a commander and the other is a general soldier. The commander is standing far away on the mountain and his soldier is standing far away with a gun."
+  },
+  {
+   "start": 78.38,
+   "end": 105.1,
+   "text": "Now the commander has to pass an order whether the soldier has to shoot or not. Now imagine that the commander has a flare gun. Do you know flare gun? It used to be in PUBG. Flare gun has two types of capabilities. Either you can shoot a red bullet from it. Meaning the whole sky will be red. Or you can shoot a green bullet from it. This can be done in flare gun."
+  },
+  {
+   "start": 105.1,
+   "end": 128.27,
+   "text": "Now, the commander has told this soldier, this soldier with a yellow gun, that as soon as sir says, we will fire. He has told him to do one thing, every night at 10 o'clock, every night at 10 o'clock, look at me. We are very far away, but okay, it will be night, look at my mountain in general. Every night at 10 o'clock, either we will fire a red bullet,"
+  },
+  {
+   "start": 128.27,
+   "end": 156.93,
+   "text": "Ya toh hari goli chalayenge flare gun se aur tumko dikh jayega because light dikhti hai logon ko light dikhti hai na bhai bohot doot se bhi light dikhegi andhera mein agar mera chalaya hua flare laal color ka hua toh tum goli mat chalana ok bohot achi baat hai soldier bala yes sir aur agar mera chalaya hua flare haray color ka aajata hai 10 bajay raat ko toh tum goli chala dena bas itni baat hui hai har roz raat ko 10 bajay soldier apne dekhta hai commander ki aur agar laal color ki flare chalati hai toh kuch nahi karta hai"
+  },
+  {
+   "start": 156.93,
+   "end": 184.64,
+   "text": "If a green bullet is fired, it also kills the bullet. Now tell me, how simple is this way of communication? Do you need anything else for this communication? Do you need a phone? Do you need a computer? Do you need the internet? Do you need a letter? Do you need a postman? No matter how far, as long as you can see the mountain even a little far, it is not a very easy way of communication. If there is a red flare, you don't have to do anything. If there is a green flare, you have to fire the bullet. That's it."
+  },
+  {
+   "start": 184.64,
+   "end": 213.66,
+   "text": "This is called Bit Manipulation. And from the time computer was invented till today, all modern supercomputers operate in the same way. All of them operate exactly in the same way. You don't have to run it on the red and green flares. But you will have a doubt in your mind that this is very basic whether you have to run a bullet or not. For example, if the commander is told to run two bullets,"
+  },
+  {
+   "start": 213.66,
+   "end": 242.4,
+   "text": "How will it communicate if you fire 2 bullets? How will it communicate if you fire 3 bullets? How will it communicate if you fire only 1 bullet? Here the question is whether you want to fire or not. It is of on and off type. Off means you don't want to fire. On means you want to fire 1 bullet. But if he has to say, do one thing, fire 2 bullets. How will you tell? You don't have to do anything for this. You have to take one more flare gun for this. For this, you have to take one more flare gun. Now, commander will not fire 1 flare gun. Commander will fire 2 flare guns."
+  },
+  {
+   "start": 242.4,
+   "end": 271.33,
+   "text": "Red or green can come out of both. Now, both of us have decided to do this. Now we are using two flare guns. Red or green can come out of both. So, how many combinations can be possible? Four combinations can be possible. How? Either we shoot red with both the flare guns. It is possible. We shoot red with the first flare gun. And we shoot green with the second flare gun. It is possible. We shoot green with the first flare gun."
+  },
+  {
+   "start": 271.33,
+   "end": 300.82,
+   "text": "and we shoot red from the other side, the soldier might say, or we shoot green from both the flare guns. Now, we are firing two flares, right? Red and green can come out of both. So, we can do four things in total. Now, the soldier was told what four means. If red and red are firing from both, don't do anything. Meaning, don't do anything. Don't do anything. If red and green are coming out from the first, then do one thing, shoot one bullet."
+  },
+  {
+   "start": 300.82,
+   "end": 328.26,
+   "text": "If the green is coming out from the first and second red, then you have to shoot 2 bullets. If the green is coming out from both, then you have to shoot 3 bullets. See, just by increasing one flare, your capability has increased so much. Earlier, you could tell whether to shoot or not to shoot. Now, you can tell 4 things. Don't shoot. Shoot 1 bullet. Shoot 2 bullets. Shoot 3 bullets. So, if you want to give more complex instructions, someone will say that no, we also have to explain that shoot 2 bullets and shoot 1 bomb."
+  },
+  {
+   "start": 328.26,
+   "end": 356.93,
+   "text": "Two bullets and one bomb and landmine destroyed. You have to do anything in the world. You have to tell them to do one thing. Leave your post, go to my house, get my wife shopping and come back. You have to give this much instruction. You just have to increase the number of flare guns. You have to increase the number of flare guns from which red or green comes out. Depending on the pattern. Someone will say that we have brought five flare guns. We have brought five flare guns. In both, red green and red green comes out."
+  },
+  {
+   "start": 356.93,
+   "end": 384.4,
+   "text": "So any combination is possible from that. It is possible that he hit red from the beginning. Red. And he fired green from the middle two. He fired green from the bridge two. What is the meaning of this combination? This combination will have some meaning which will be decided. When the soldier will see this combination. Which combination? Red, green, red, green, red. He will do something or the other which is told to him. This is how computers work. Near the computer, this number of flare gun. This one."
+  },
+  {
+   "start": 384.4,
+   "end": 403.09,
+   "text": "or two or three. How many are there? There are lakhs of them. The computer has lakhs of flare guns. There are thousands of flare guns. And the computer can produce any combination from its mind. This is called bit manipulation. And this red flare gun and this green flare gun"
+  },
+  {
+   "start": 403.09,
+   "end": 418.78,
+   "text": "Red Goli and Green Goli. This Red Goli is called Zero in computer language. And this Green is called One in computer language. Computer understands exactly this much. Whatever complex job you are doing on computer,"
+  },
+  {
+   "start": 418.78,
+   "end": 440.32,
+   "text": "From Hello World print, watching movies, playing games, sending WhatsApp messages to your friends, any work you do on the computer at the end is a combination of this red and green flare gun, which the computer calls 0 or 1."
+  },
+  {
+   "start": 440.32,
+   "end": 469.65,
+   "text": "Which means you have a lot of flare guns and you have to do a lot of red-green-red-green-red-green combinations. And by reading it, by looking at the signal, just like a soldier or a computer understands what a man wants to do. When you watch a movie on Netflix, how is that movie reaching you? How is that movie coming to your mobile from Netflix's office to your laptop? That movie is nothing more than a lot of 0101's"
+  },
+  {
+   "start": 469.65,
+   "end": 498.27,
+   "text": "It can have lakhs of 0-1s. To get you to a movie, lakhs of 0-1s are coming to your computer. How do they come? They come from optical fiber. What does optical fiber use? It uses light. What is light? This is what happens. Red or green means light on or off. This is what is called bit manipulation. And with bit manipulation, you can do things that have never come to your mind. You can solve complex BSA questions."
+  },
+  {
+   "start": 498.27,
+   "end": 528.3,
+   "text": "you can do anything that you can't even imagine with the help of red green red green red green or 0 1 0 1 0 1 0 1 this is called bit this 0 and this 1 is called bit and the computer understands only 2 bits either 0 or 1 now let's move on now it comes to binary number system which I told you that the computer only needs red and green or 0 or 1 this is called binary number system what does binary mean?"
+  },
+  {
+   "start": 528.3,
+   "end": 551.7,
+   "text": "2. What does binary mean? 2. The number system we use is called the decimal number system. Decimal. What does deca mean? 10. Do you understand this? Okay. So the system we use is called decimal. The computer number system is called binary. So now there should be some conversion between these two because we don't understand binary and decimal."
+  },
+  {
+   "start": 551.7,
+   "end": 578.98,
+   "text": "Why don't you understand decimals? It should be in your mind to make a computer into a decimal. No. What is a computer? What is a computer at the end? Have you seen the bulb of electricity? In the first class of electrical engineering, the bulb is shown. The bulb is connected to a switch. The bulb can exist in two states. Either that bulb can burn or that bulb can extinguish. There is no other state other than that. This bulb can either be on or off."
+  },
+  {
+   "start": 578.98,
+   "end": 602.18,
+   "text": "Now you will say that it can be a ding, but in general, what does a bulb do? Switch on, bulb burns, it turns off, it is called electrical engineering. Computer, if you close millions of bulbs in one box, then it is called a computer. Computer at the end, at its most simplest form is to close millions of bulbs in one place."
+  },
+  {
+   "start": 602.18,
+   "end": 624.85,
+   "text": "If the first 5 bulbs are burning, then this is what it means. If the last 50 bulbs are burning, then this is what it means. This is called a computer. Now, what is called in CSE? Transistor. You must have heard that transistors are getting smaller and smaller. It is nothing. It is a bulb. Does it burn or not? If electricity goes in it, it will burn. If electricity does not go in it, it will not burn."
+  },
+  {
+   "start": 625.01,
+   "end": 647.57,
+   "text": "Because the bulb has only two states. The bulb can't do anything else. The bulb can burn or extinguish. The third thing is that it doesn't know. That's why the computer only understands binary. But we understand decimal. Decimal means the digits in our number system are from 0 to 9. If you want to make any other number, then you can make it with the combination of 0 and 9. How? If you want to make..."
+  },
+  {
+   "start": 647.57,
+   "end": 664.18,
+   "text": "105. So now what will become 105? 105 has 1, 0, 5. All of them are alphabets. Computer has binary. So computer has only 0 and 1 available. Computer does not understand 2, 3, 4, 5. It only understands 0 and 1."
+  },
+  {
+   "start": 664.18,
+   "end": 689.68,
+   "text": "So how to convert our number to binary and how to convert binary to our number? This is the problem. So it was seen that let's take 11. 11 is our number. We and you understand 11. He doesn't understand. You will have to convert it to binary. Now 11 does not mean that the one written in it is binary. No, this 11 is our number. This 11 is our number. How is it converted to binary?"
+  },
+  {
+   "start": 689.68,
+   "end": 718.11,
+   "text": "Now let's write it in the power of 2. Let's write it in the power of 2. So tell me one thing, what is the highest power of 2, which is less than 11? If you write 4 in the power of 2, then it will become 16. No need of 16, it is greater than 11. If you write 3 in the power of 2, then it becomes 8. So you say yes, start with the power of 2. So what does the computer do? From the power of 2 to 3, it writes the power of 2 to 0. This is done. Now,"
+  },
+  {
+   "start": 718.11,
+   "end": 747.46,
+   "text": "What does it see? What is 2 to the power of 3? It is 8. Is 8 less than 11? Yes, it is less than or equal to 8. So instead of this, what will it write? It will write 1. Instead of this, it will write 1. And now from your 11, it will be 8 minus 3. The computer will move forward. What is 2 to the power of 2? 4. Is 4 less than 3? No. So don't take 4. Instead of 4, write 0. Move forward. What is 2 to the power of 1? 2."
+  },
+  {
+   "start": 747.46,
+   "end": 773.82,
+   "text": "Is 2 less than or equal to 3? Yes, it is. So, we will take this and write 1 instead of this. And since you have taken 2, you will subtract 2 from 3 and write 1. The computer will move ahead. What is the power of 2? It is 1. Is 1 equal or less to this 1? Yes, it is. So, it will also take this 1. See, 1, 0, 1, 1. What is this? It is the binary representation of 11."
+  },
+  {
+   "start": 773.82,
+   "end": 801.09,
+   "text": "This is the binary representation of 11. This is how the computer calculates the number 11 on your keyboard. But how do we calculate 1011 in 11 again? It is very simple. 1011 is a binary number. You and I will not understand it just by looking at it. You and I don't know the meaning of it. We need 11 so that we can read it. How does the computer do this?"
+  },
+  {
+   "start": 801.09,
+   "end": 831.18,
+   "text": "In binary system, there is a position of each one. That position starts from here. This is 0 position. This is 1 position. This is 2 position. This is 3 position. Is it correct? Okay. Now what will the computer do? Here 1 is written. 1 into this position is 2 to the power of 0. What will happen to this? 1 into 2 to the power of 0 is 1. Okay. Here also 1 is written. And this position will be given to 2 to the power of 1. 1 into 2 to the power of 1 means 2. Okay."
+  },
+  {
+   "start": 831.18,
+   "end": 853.39,
+   "text": "Again, here it is written 0 and the position here will be given in the power of 2. So, 0 into anything will be 0. Again, here it is 1 and it is the third position in the position. It will give the power of 2, 3. This will be 8. Add all these. 1 plus 2 plus 0 plus 8. What is it? 11. This returns to you. So, what is this?"
+  },
+  {
+   "start": 853.39,
+   "end": 879.76,
+   "text": "Binary to decimal conversion. When we write 11, then the computer makes it 1011 according to itself. It does something on it. And when it gets 1011, it is converted back to 11 to show us. So, this is the difference between binary and decimal number system. So, the binary number, let's say, in this number, 1, 0,"
+  },
+  {
+   "start": 879.76,
+   "end": 908.54,
+   "text": "1, 1. How many digits do you see in this? We see 4 digits in this. 1, 2, 3, 4. So this is called a 4-bit representation. How many bits? 4 bits. Because we see 4 digits in this. 4 bits. Every digit, every 1 or 0 is 1 bit in itself. It is counted as 1 bit. And where does its positioning start? It starts from the left. 0, left or right, whatever, means from here to there. You are understanding, right? 0, 1."
+  },
+  {
+   "start": 908.54,
+   "end": 933.12,
+   "text": "2 and 3. Positioning will always start from 0, not from 1. So for a 4-bit number, you write it like this. The computer also understands it like this. Now tell me one thing. You have a 4-bit. In this, how many decimal numbers can you write maximum? In this, how many decimal numbers can you represent maximum? Now tell me one thing. In this,"
+  },
+  {
+   "start": 933.12,
+   "end": 962.35,
+   "text": "Can we represent this number as 128? No. Why can't we? Because what did we tell you? This 4-bit number, 1, 0, 1, 1. What number can be represented in 4-bit? So you can do one thing. Take 1 in all 4 bits. The computer has only 2 numbers. 0 or 1. Apart from that, I don't understand anything. Now if someone tells you that it's 4 bits. Take 1 in all 4 bits and see what the maximum number is. Let's see what will happen."
+  },
+  {
+   "start": 962.35,
+   "end": 989.33,
+   "text": "Its positioning will be 0, 1, 2, 3. Let's convert this into a decimal and see what happens. 1 into 2 power 0, this will be 1 into 2 power 1, this will be 1 into 2 power 2, and this will be 1 into 2 power 3. This is 1, this is 2, this is 4, this is 8. We will add them all together and what will be your answer? 15. Meaning, in 4 bits, in 4 bits,"
+  },
+  {
+   "start": 989.33,
+   "end": 1015.12,
+   "text": "What is the maximum decimal number that can be represented? 15. Minimum? Make all of them 0. What will be the answer to this? 0. Because whatever the position is, 0, 1, 2, 3. Into is 0, right? What is written here is into. And the position goes to the power of 2. So 0. Meaning, what range do you have in 4 bits? You have..."
+  },
+  {
+   "start": 1015.12,
+   "end": 1044.94,
+   "text": "is 0 to 15. If you want to make 16 in binary, if you want to see 16's binary, then is it possible in 4 bits? No. You will have to take 5 bits for that. You will have to take 5 bits for that. Do you understand? So, under a general rule, if you say that I have x bits, then what range of decimal can you represent in that? From 0 to 2 power x minus 1."
+  },
+  {
+   "start": 1044.94,
+   "end": 1074.46,
+   "text": "If you have 4 bits, then what can you do? From 0 to 2 power 4 minus 1, which will be 0 to 16 minus 1, which will be 0 to 15. The number above 15 cannot be represented in 4 bits. It correlates the same with the flare gun. If the commander has to give 2 actions, that means action number 0,"
+  },
+  {
+   "start": 1074.46,
+   "end": 1100.16,
+   "text": "and action number one, then it will work in one bit only. But if the commander has to give three actions, for example, action zero, action one, action two, then he will have to take two bits. Can you give three types of action with one flare gun? No. How many actions can you give with one flare gun? Only two. Do you want to shoot or not? That's it. If you have to give three actions, that means you don't want to shoot,"
+  },
+  {
+   "start": 1100.16,
+   "end": 1128.82,
+   "text": "If you want to shoot one or two bullets, then you have to keep two flare guns with you. That's why we said that the more action you need, the more number of flare guns you will get. If someone says that I have a 10-bit number, that means I have 10 flare guns, then how much number can it represent? It can be 0, 2 to the power of 10 minus 1, which will be 0, 1, 0, 2, 4 minus 1."
+  },
+  {
+   "start": 1128.82,
+   "end": 1157.22,
+   "text": "You can represent from 0 to 1023. If you want to represent 2000, then you will not be able to do it with 10 bits. You will have to take more than 10 bits. So this is a whole map. That is why 2 is a very important number when it comes to computer science. Everything is related to 2. In our normal life, everything is related to 10. Because we read the decimal number system. Computer reads the binary number system. For that, everything is related to the power of 2. Everything. Smallest thing and biggest thing."
+  },
+  {
+   "start": 1157.22,
+   "end": 1186.06,
+   "text": "Where does it converge? On the power of 2. So, this makes sense that if a computer wants to represent a number in a decimal number system, then how many bits will it need? It is designed in such a way that how many bits will it need? Because when you do x bits, then you have a range from here to here. You must have studied computer science in college. So, you must have told some teacher that the integer that we read in C++ or Java, it has a range. This is its range."
+  },
+  {
+   "start": 1186.51,
+   "end": 1215.46,
+   "text": "What is this? Because integer operates on 16 bits. When you write int a, int a has 16 bits. Int a has 16 bits. Or there are 32 bits in some compilers. So according to that, what does 32 bits mean? How much decimal value can that integer hold? 0 to 2 to the power of 32 minus 1. That's it. Not that much. Do you understand this or not?"
+  },
+  {
+   "start": 1215.46,
+   "end": 1230.58,
+   "text": "This is called Binary Number System. Now let's move ahead. Now, because this binary number system is made, our computer is able to know 0 and 1. But one more thing is that in our decimal number system,"
+  },
+  {
+   "start": 1230.58,
+   "end": 1258.96,
+   "text": "There are some operations in our decimal number system. There are operators like plus, minus, into, division. There are many operators. If someone wants to write 2 plus 2, he says 4. So, it is necessary in computer science too. Now, we have made it in decimal. It will be necessary in binary too. So, someone said that do semi-operators in binary too. But someone said that no, this will not work. Why will it not work? What does the computer understand? 1 or 0."
+  },
+  {
+   "start": 1258.96,
+   "end": 1288.56,
+   "text": "Now, if someone says that if the computer wants to do 1 plus 1, then what will be the answer of 1 plus 1? Someone will say that 2 will come. But son, the computer does not understand this 2. The computer only has the knowledge of two alphabets, 0 and 1. So, how can the answer of 1 plus 1 be 2? That is why in computer science or bit manipulation, different types of operators are used. What are those different types of operators? The first operator is AND."
+  },
+  {
+   "start": 1288.56,
+   "end": 1318.08,
+   "text": "If you do 0 and 0, where is this and? Which is written on your keyboard above 7, it is called and. Only one and. If you do 0 and 0, its result is 0. If you do 0 and 1, its result is 0. If you do 1 and 0, its result is also 0. But if you do 1 and 1, its result is 1. Why? Because and operator, when"
+  },
+  {
+   "start": 1318.08,
+   "end": 1346.75,
+   "text": "If both numbers are 1, then only its result can be 1, otherwise its result will be 0. Now see here, is both 1? No, both are 0, 0 will come. Is both 1? No, 1 is 0, answer will be 0. Is both 1? No, answer will be 0. Is both 1? Yes, both are 1. So what does and mean? When both are true, both are 1, then answer will be 1, otherwise answer will be 0."
+  },
+  {
+   "start": 1346.75,
+   "end": 1375.92,
+   "text": "The second operator is OR. OR is just opposite to AND. The answer of 0 and 0 is... Sorry. How is OR written? How is OR written? 0 and 0. This stick is not 1, it is a stick. If you look at your keyboard, you will see a stick somewhere. Its answer will be 0. 0 and 1. Its answer will be 1. 1 and 0. Its answer will be 1. 1 and 1. Its answer will be 1. Means..."
+  },
+  {
+   "start": 1375.92,
+   "end": 1405.68,
+   "text": "If one of the two is 1, then its answer will be 1. If both are 0, then its answer will be 0. So, look at these two. These two are just opposite to each other. And what does it say? And what does it say? If both are 1, then we will give answer 1. And it says, if one of the two is 1, then we will give its answer 1. So, what is the name of these two operators? And or on operator. Okay, very good. What is the next operator? The next operator is,"
+  },
+  {
+   "start": 1405.68,
+   "end": 1434.7,
+   "text": "Zor, next operator is Zor and this is the most important operator. What does Zor say? We can do Zor on two numbers. 0, 0, 0, 1, 1, 0, 1, 1. What does Zor say? If both are same, if both are same, means these two are same, 0 and 0 are same, 1 and this is also same, the answer of same is 0. If both are different, 0 and 1 are different, 1 and 0 are also different."
+  },
+  {
+   "start": 1434.7,
+   "end": 1461.79,
+   "text": "Their answer will be 1. This is called ZOR. What does ZOR mean? If you can do ZOR in 0 and 1. If both are same, 0 ZOR 0, its answer will be 0. 1 ZOR 1, its answer will be 0. But if both are different, 0 ZOR 1, its answer will be 1. 1 ZOR 0, its answer will be 1. How do we write this? 1, this one and 0. What does this mean?"
+  },
+  {
+   "start": 1461.79,
+   "end": 1489.7,
+   "text": "This is the sign of ZOR operator which you will find above 6 on the keyboard. Above 6 you will find the symbol of ZOR. Generally, you call it as power symbol in general math. But if you write this in computer science, then what does it mean? ZOR operator. What does it mean? ZOR operator. So, did you understand why we need different operators? For example, in our world of math, there is plus minus into division. What are the main operators in the world of computer science? And, or, or."
+  },
+  {
+   "start": 1489.7,
+   "end": 1517.84,
+   "text": "What is its symbol? AND, OR and ZOR. So these are the three basic operators like we have plus and minus. The plus and minus of the computer is AND, OR and ZOR. Let's move ahead. Before moving ahead, let me show you how to use it and how it works. You try it yourself. Open the compiler and write. AND operator. Write int a is equal to 6 and 9 and print it."
+  },
+  {
+   "start": 1517.84,
+   "end": 1536.72,
+   "text": "Now how will it be in computer? 6 and 9. You have written in your language that computer is 6 and 9. So you don't understand 6 and 9. So it will convert 6 into binary first. What will be the binary of 6? 0, 1, 1, 0. How? You will think that it is done immediately. You will also do it immediately. It will take some practice. See."
+  },
+  {
+   "start": 1536.94,
+   "end": 1561.25,
+   "text": "To do 6 in binary, what will we do? We are taking 4 bits here just to explain. For 6, 3 bits is enough because when you take 3 bits, how much can be represented in 3 bits? From 0 to 2 power 3 minus 1 means from 0 to 7. So for 6, 3 bits is enough. But for 9, you will take 4 bits because 9 does not come from 0 to 7. For 9, we will take 4 bits. So we can also make 6 4 bits. Let's go."
+  },
+  {
+   "start": 1561.25,
+   "end": 1591.01,
+   "text": "So how will we represent 6? What is the power of 2 which is less than 6? Is it right to take 2 power 3? No. So see, 2 power 3, 2 power 2, 2 power 1, 2 power 0. 8, is it right to take 8? No, 8 is greater than 6, so I wrote 0. 4, is it right to take? Absolutely right. I wrote 1 here. When you take 4, 4 out of 6 is minus 2. Now, 2, is it right to take 2? Absolutely right. 2 is less than equal to 2. Take this. Now this is 0."
+  },
+  {
+   "start": 1591.01,
+   "end": 1619.97,
+   "text": "Here it is 1. Is 1 less than 0? No, it is not 1. So it is 0. So what happened to it? 0, 1, 1, 0. Similarly, what will we write to 9? 1, 0, 0, 1. What happened to 9? 1, 0, 0, 1 means? When you write 1, 0, 0, 1, it means 1 into 2 power 3, 8. And this is 1 into 2 power 0, which means 1, 8 plus 1, 9. The rest are 0. Okay. Now what will the computer do? It will apply the logic of same and. Look from here."
+  },
+  {
+   "start": 1619.97,
+   "end": 1649.84,
+   "text": "What will be the end of 0 and 1? Is it both 1? No. So, its answer will be 0. What will be the end of 1 and 0? Is it both 1? No. So, its answer will be 0. What will be the end of 1 and 0? Is it both 1? No. So, its answer will be 0. And what will be the end of 0 and 1? Is it both 1? No. So, its answer will be 0. Now, tell me. This 0, 0, 0, 0. When you convert it to decimal, its answer will be 0. So, what will be your A on the screen? 0. Very good. Now, you write int."
+  },
+  {
+   "start": 1649.84,
+   "end": 1679.84,
+   "text": "B is equal to 6 or 9. 6 or 9. Let's see what the answer is. 0, 1, 1, 0 is 6. 1, 0, 0, 1 is 9. What else will be 0 and 1? Is there even 1 of them? Absolutely 1. What else will be 1 and 0? Is there even 1 of them? Absolutely 1. What else will be 1 and 0? Is there even 1 of them? Absolutely 1. What else will be 0 and 1? Is there even 1 of them? Absolutely 1, 1, 1, 1. When you convert this to decimal, the answer will be 15. So what will be the answer of B?"
+  },
+  {
+   "start": 1679.84,
+   "end": 1709.62,
+   "text": "15. Now you write Zor. 6, Zor 9. And you print C. Let's see what answer comes. 6, 0, 1, 1, 0. 9 means 1, 0, 0, 1. What does Zor say? If both are same, answer will be 0. If both are different, answer will be 1. What is the answer of 0 and 1? Same or different? Different bits. Answer will be 1. Answer of 1 and 0? 1. Answer of 1 and 0? 1. Answer of 0 and 1? 1. So what will be C's answer?"
+  },
+  {
+   "start": 1709.62,
+   "end": 1737.76,
+   "text": "1, 1, 1, 1 means 15. In this way, you can try AND and ZOR by yourself. Very good. There is one more operator whose name is NOT. Write it in exclamation. NOT of 6. NOT means 0, 1, 1, 0. After that, it will toggle every bit. What will it do? It will toggle. It will make 0 as 1. It will make 1 as 0."
+  },
+  {
+   "start": 1737.76,
+   "end": 1759.07,
+   "text": "1 becomes 0 and this becomes 1. 1, 0, 0, 1. What is the answer? 9. So, what is the answer? 9. So, not operator means, reverse every bit. Make 0 as 1 and 1 as 0. The answer is 9. So, these are 4 operators. Now, there are 2 more operators which you need to learn. That is left shift. What is left shift?"
+  },
+  {
+   "start": 1759.07,
+   "end": 1782.48,
+   "text": "What is left shift? This is left shift. This is left shift. It means two arrows pointing to the left. What is left shift? If you write 6, then what will happen? 0, 1, 1, 0. What is left shift? Left shift every bit."
+  },
+  {
+   "start": 1782.48,
+   "end": 1810.35,
+   "text": "When 0 will shift to the left, then 0 will get lost somewhere. Because it is a 4 bit number. 1 will shift to the left and come here. This one will shift to the right and come here. This one will shift to the left and come here. Now, this space is empty. This space is empty. If space is empty, then the computer writes 0 from its mind. What does the computer write from its mind? It writes 0. What does the computer write from its mind? It writes 0. Who writes it?"
+  },
+  {
+   "start": 1810.35,
+   "end": 1840.02,
+   "text": "Computer writes it. Okay. Yes, here it will be 1. It will be 1. 1, 1, 0, 0 means, when you shift 0, 1, 1, 0 once to the left, then every bit shifts to the left at one place. So, the bit here is lost. The bit there is lost. It is lost, right? Okay. Now, the rest of the bits have shifted. The remaining place, write 0 there. What is this number? This is the number. See this. 0 into 2 power 0. This is 0. 0 into 2 power 1."
+  },
+  {
+   "start": 1840.02,
+   "end": 1866.18,
+   "text": "0. What is this? 1 into 2 to the power of 2 is equal to 4. And what is this? 1 into 2 to the power of 3 is 8. If we add them together, what will we get? 12 will come. Meaning, when you shift 6 one time to the left, what does it become? It becomes 12. What does it become? It becomes 12. Meaning, when you"
+  },
+  {
+   "start": 1866.18,
+   "end": 1895.6,
+   "text": "X times left shift. What do we do? X times left shift. So, do you know what that number becomes? If you are shifting N X times left shift, then it will become N into 2 to the power X. This will become. Do it. If you shift 6 one time left, one time left shift, then what does it become? 6 into 2 to the power 1 is equal to 12. 6 into 2 to the power 1 which is 12. Now,"
+  },
+  {
+   "start": 1895.6,
+   "end": 1923.73,
+   "text": "The right shift is just upside down. How is the right shift represented? From here. How was the left shift represented? There were two arrows on the left side. There are two arrows on the right side of the right shift. Let me show you. 1, 1, 0, 0 which is 12. Shift it once to the right. So see. This one shifted to the right and came here. This one shifted to the left and came here. This one shifted to the right and came here. This one shifted to the left and got lost."
+  },
+  {
+   "start": 1923.73,
+   "end": 1952.85,
+   "text": "One place is saved, one place is saved, now this place is saved. Write here from your mind, 0, 1, 1, 0. What is 0, 1, 1, 0? It is 6, it is 6. Meaning, when you right shift n x times, x times, then what happens? n by, n by 2 power x. What used to happen in left shift? Multiplied by 2 power x. In right shift, divided by 2 power x. Meaning,"
+  },
+  {
+   "start": 1952.85,
+   "end": 1981.34,
+   "text": "If you right shift 12 one time, then what will it become? 12 by 2 power 1 which is 6. So, what do these operators call? Left shift and right shift. Left shift means, how is it written? Int A is equal to 6. Left shift 1. What does this mean? Shift 6 once. Int B is equal to"
+  },
+  {
+   "start": 1981.34,
+   "end": 2007.76,
+   "text": "12, 16, here and there, 2. What does this mean? Shift 16 2 times to the right. Shift 2 times to the right. What is left shift and right shift? Every bit, as many times as you have written here, as many times as you want to do, that position will go left or right. What is its formula? N. If a person writes like this, interest is equal to N."
+  },
+  {
+   "start": 2007.76,
+   "end": 2037.17,
+   "text": "Left shift x. So what will be the result? Result will be. N into 2 power x. If someone writes. Result is equal to N. Right shift x. So what will be the result? N by 2 power x. See this. This is left shift right shift. How many operators have you learnt? In total. 6 operators have learnt. Which ones? And. Or. Zor. Not. Left shift. And."
+  },
+  {
+   "start": 2037.46,
+   "end": 2058.29,
+   "text": "Right shift. In total, there are only 6 operators in binary. Apart from this, there is no 7th operator. Apart from this, there is no 7th operator. So, this was bitwise manipulation's operator. Now, let's see some interesting things. Let's see some interesting patterns. According to which, we will again ask questions."
+  },
+  {
+   "start": 2058.29,
+   "end": 2086.29,
+   "text": "Now, we have told you that we will teach you some important patterns. You can call it a pattern or a trick. It is a very important trick. Why is it an important trick? It is the most important. What does it mean? 1 left shift i times. 1 is i times left shift. So, we will show you by changing the value of i. First of all, what will be the binary representation of 1? Consider it in 4 bits. 0, 0, 0, 1. This is the original 1."
+  },
+  {
+   "start": 2086.61,
+   "end": 2112.62,
+   "text": "I is equal to 0. I is equal to 0. Means this is 0 times left shifted. This is original one. There is no shift till now. Let's shift left once and see. Means I is equal to. And here we make this. Here we make position to explain you. This is position is equal to 0. This is position is equal to 1. This is position is equal to 2. And this is position is equal to 3. Okay. It was easy to understand for that."
+  },
+  {
+   "start": 2112.88,
+   "end": 2139.76,
+   "text": "I is equal to 1. I is equal to 1. See. This means, shift each bit once. This one 1, this one 1 will come here. This one 1 will come here. This one 0 will come here. This one 0 will come here. Whatever is left, we will put 0 there. Okay. Let's do it one more time. Let's do it one more time. Means, what will be the meaning of saying? I is equal to 2. Means, again, do it one more time. Put this one 1 here. Means, 1."
+  },
+  {
+   "start": 2139.76,
+   "end": 2167.22,
+   "text": "And this 0 will come here, this 0 will come here, this will become 0. Okay. Let's do it one more time. Let's do it one more time. Meaning, this 1 will come here. So, this came here. Now the rest are left. This 0 came here. This 0 came here. One is left, so we put it here. See what value is being made. See what value is being made. What is its value? 1. What is its value? 2. What is its value? 4. What is its value? 5."
+  },
+  {
+   "start": 2167.22,
+   "end": 2197.57,
+   "text": "Sorry, 8. Sorry. How much is its value? 8. Now, notice one thing very carefully. When you were doing left shift at i is equal to 0, it means there was no left shift. It means there was left shift 0 times. Which bit or which position was 1? Position 0, 1. Position 0, 1. When you did i is equal to 1, which position was 1? This one. First position. First position. Which position was 1 at i is equal to 2?"
+  },
+  {
+   "start": 2197.57,
+   "end": 2221.73,
+   "text": "second position second position i is equal to three position one ha third position third position matlab ki jab aap one left shift i karte hai toh kaisa number banta hai ek number banta hai ith bit wala set banta hai ith bit set matlab ki ith bit hi one rehta hai sirf aur baaki sare"
+  },
+  {
+   "start": 2221.73,
+   "end": 2249.28,
+   "text": "Rest of the bits are 0. Rest of the bits are 0. See, i is equal to 2. Which bit was 2? Which bit was set? Set means 1. Set means 1. Second bit, means second position bit was 1. Rest of the bits were 0. Now, why did we understand this? What will we do in this? It is there. This is called a bit mask. This is called a bit mask. Bit mask means,"
+  },
+  {
+   "start": 2249.28,
+   "end": 2276.62,
+   "text": "But this particular thing is called bit masking where all the bits are of one type but one particular position is called bit masking. What is the work of this? Let me tell you the work of this. If someone tells you that 6 is a number. What is the representation of 6? 0, 1, 1."
+  },
+  {
+   "start": 2276.62,
+   "end": 2303.62,
+   "text": "0, 0, 1, 1, 0. Okay. Write the position. 0, 1, 2, 3. If someone says, third bit, third bit, whenever someone says nth bit, then he is talking about the position. So, don't think that someone will say, this is 1, 2, 3. No. He is talking according to this position. If someone says, set the third bit. Set the third bit. Or, or, or, before this, before this,"
+  },
+  {
+   "start": 2303.62,
+   "end": 2333.31,
+   "text": "Before that, someone asks you a simple question. What is the second bit set? What is the second bit set? What does second bit mean? Is this bit 1 or 0? If someone asks you this question, how will you know? You will have to see bit by bit. But there is a way. What can you do? Make a bit mask. Make a bit mask in which 1, left shift, 1, this one, left shift,"
+  },
+  {
+   "start": 2333.31,
+   "end": 2360.66,
+   "text": "Make 2. Make 1 left shift 2. When you make 1 left shift 2, what will it mean? The rest of the bits will be 0. And this bit will be 1. Did you understand? 1 left shift will come. This is what it means. End these two. End these two. See what answer comes. 0, 0, 0. 0, 0, 0. 0, 0, 0. The rest is 0. Because end means if one is also 0, then the answer will be 0."
+  },
+  {
+   "start": 2360.66,
+   "end": 2384.8,
+   "text": "So, when these three bits were 0, then obviously 0 should come here. But, but, but, this one is 1. This one is bit 1 because you are this bit mask. This is your bit mask. This is your bit mask. Now, if this one is bit 1, then its answer will be 1. If this bit was 0, then its answer would have been 0. So, look, what is your answer? 0, 1, 0, 0. This is 1."
+  },
+  {
+   "start": 2384.8,
+   "end": 2413.84,
+   "text": "Non-zero result. This is a non-zero result. This can only mean that the second bit is set. Yes, the second bit is set. If someone asks you a question, that take this number, 6, 0, 1, 1, 0. Positioning, 0, 1, 2, 3. If someone asks, is the third bit set or not? Do the same thing. 1, make a bit mask of left shift 3. How will that bit mask look?"
+  },
+  {
+   "start": 2413.84,
+   "end": 2441.31,
+   "text": "Here 1, rest is 0. And do it. Obviously 0 will come. Obviously 0 will come. Obviously 0 will come. But this bit is 1. Now it depends on this bit. It depends on your number. Now your number's bit is 0. Its answer will also be 0. See this. This is a 0 result. 0 result. Means 3rd bit is not set. 3rd bit is not set."
+  },
+  {
+   "start": 2441.31,
+   "end": 2470.93,
+   "text": "unset. So, this is one way. If anyone is asking you, do you have a number n? Is its ith bit set or not? Is its ith bit set or not? So, what can you do in this? You can make a bit mask. int bit mask is equal to 1 left shift i. After that, if an and bit mask not equal to 0,"
+  },
+  {
+   "start": 2470.93,
+   "end": 2498.02,
+   "text": "Then it is set. Else, it is unset. See, this is a trick that you can use. Why? Because when you make a bit mask, then we are making the meaning of bit mask in such a way that whichever bit you are checking, whichever position you are setting, that will be 1 there. The rest will be 0. So obviously, their AND will be 0. But where it is 1, on which will the answer depend?"
+  },
+  {
+   "start": 2498.02,
+   "end": 2527.01,
+   "text": "It will depend on this x, which is the bit of that position of your number. If the bit of that position of your number is 0, your answer here will also be 0. If the bit of that position of your number is 1, then your answer here will be 1. So, we will immediately know whether it is 0 or 1. Very good. Okay. You can do more work with this bit. You can do more work with this bit math. Someone told you that n is equal to 6. 0, 1, 1, 0. Okay. Someone told you, set the"
+  },
+  {
+   "start": 2527.01,
+   "end": 2556.4,
+   "text": "Third bit. Set the third bit. Means, write positioning. 0, 1, 2, 3. Set the third bit. If third bit is 0, then make it 1. If it is 1, then also make it 1. Means, in your answer, third bit's answer should be 1. Rest of the numbers should be as it is. What will you do? You will see what you will do. You will make a bit mask. 1, left shift 3. What will that mean? Here 1, rest of the place 0. Make it more."
+  },
+  {
+   "start": 2556.4,
+   "end": 2584.18,
+   "text": "Do this again. See what happened. 0 0 0 1 0 1 1 0 1 0 1 1 See this. What is this? 1 1 1 0 What was your original number? 0 1 1 0 Did this bit of yours get set? Yes, it got set. Did the remaining 3 bits remain the same? 1 1 0 1 1 0 Yes, they remained the same. Why? Because this is the property of OR."
+  },
+  {
+   "start": 2584.18,
+   "end": 2606.74,
+   "text": "When you make a bit mask, you make the third bit as 1 in the bit mask and the rest as 0. Now whatever the other numbers are, here A, B, C, A, B, C, 0, 1, whatever it is. Now look, A and 0, this is already 0. Now it will depend on A. If A is 1, then 1 will come here. If A is 0, then 0 will come here."
+  },
+  {
+   "start": 2606.74,
+   "end": 2632.75,
+   "text": "If b was 1, then 1 will come here. If b was 0, then 0 will come here. But the bit that we are asking to be set, you make it 1. So irrespective of x, no matter if it is 0 or 1, here your answer will be 1. So we did not touch the rest of the bits. Only what we were told, set the third bit, we made it 1, this bit masking."
+  },
+  {
+   "start": 2632.75,
+   "end": 2662.1,
+   "text": "What did you learn? First of all, is it set or not? Is it set or not? Is it set or not? What did you do? Did you make a bit mask? And did it. If the answer is 0, then it is not set. If it is 1, then it is set. Very good. What is the second trick? Set it. Set it. Whatever is there, set that bit. Did you make a bit mask? And did it. And did it. It set on its own and the rest of the number remained the same. Now see more. See more."
+  },
+  {
+   "start": 2662.38,
+   "end": 2691.87,
+   "text": "Now someone said, n is equal to 6. 0, 1, 1, 0. Write the positioning. 0, 1, 2, 3. Toggle. Toggle the third bit. Toggle the third bit. What does toggle mean? If the third bit is 0, make it 1. If the third bit is 1, make it 0. See what we will do. Make bit mask. Make bit mask on the third bit. 1, 0, 0, 0. Make it 0. Make it 0. See what will happen."
+  },
+  {
+   "start": 2691.87,
+   "end": 2721.63,
+   "text": "What will be the force of 0 and 0? 0. What will be the force of 1 and 0? 1. What will be the force of 1 and 0? 1. So, will these three bits remain the same? They will remain the same. Now, let's see what will happen in the third bit. The force of 0 and 1. What will be the force of 0 and 1? 1. Has this 0 become 1? Yes, it has become 1. If there was 1 here, if there was already 1 here, then what would be the force of 1 and 1? 0. So, has this 1 become a toggle? Yes, it has become a toggle. So, what should we do?"
+  },
+  {
+   "start": 2721.63,
+   "end": 2742.29,
+   "text": "You can make a bitmask and toggle any bit without touching the rest of the numbers. So these are the three types of tricks. What are they dependent on? Bitmasking. On what? Bitmasking. Yes, bitmasking. You can do very powerful things with bitmasking."
+  },
+  {
+   "start": 2742.29,
+   "end": 2770.64,
+   "text": "Why are these things possible? Because these operators are made in this way. These operators are made in the same way. By doing one bit mask, by doing AND, you find out if it is set or not. If you do more bit masks, then you set that bit irrespective of what it was. If you do more, then you toggle that bit without touching the rest of the numbers. Without touching the rest of the numbers in one or two steps. Okay. One more question comes. Unset."
+  },
+  {
+   "start": 2770.64,
+   "end": 2784.18,
+   "text": "Unset the third bit. Unset the third bit. Now, set the third bit. Unset the third bit. What happens when you unset the third bit? It is 6. 0, 1, 1, 0. Write the positioning. 0, 1, 2, 3."
+  },
+  {
+   "start": 2784.18,
+   "end": 2813.39,
+   "text": "Set the third bit. Sorry, unset the third bit. Means, unset this one. Make this one 0. Make this one 0. Look at the second bit to understand. This is already 0. Look at the second bit. Means, the second bit is 1. Make it 0. Means, whatever the second bit is, make it 0. Just opposite of set. What will we do? Look. First of all, we will make bit mask. First of all, we will make bit mask. What will be the second bit's bit mask? 1, left shift 2. So, this will look like this."
+  },
+  {
+   "start": 2813.39,
+   "end": 2841.63,
+   "text": "It will look like this. What will you do with this? You will make it not. You will make it upside down. You will put not on this. 1011. Write this here. 1011. Now what will you do in this? You will do and. Now you will do and in this. See. 0 and 1. 0. 1 and 1. 1. 0 and 1. 0. 1 and 0. 0. See. Has this 0 remained the same? Absolutely. Has this 1 remained the same? Has this 0 remained the same? Absolutely."
+  },
+  {
+   "start": 2841.63,
+   "end": 2871.07,
+   "text": "Is this bit unset? It is completely unset. So what did we do in this? For unset, make a bit mask. Make a not of bit mask. And done. It is unset. So you have learnt 4 types of tricks. Which 4 types of tricks? First, check if it is set or not. Check if it is set or not. What used to happen? Bit mask and if result 0 is unset, result 1 is set. Second, set the it bit. Make a bit mask."
+  },
+  {
+   "start": 2871.07,
+   "end": 2900.86,
+   "text": "Or kardo ho jayega. Tisra. Unset karo. Bit mask banao. Not of bit mask le lo. And kardo. Ab unset ho jayega. Chautha. Toggle kardo kisi ith bit ko. Bit mask banao. Zor kardo. Apne aap wo toggle ho jayega. To ye char operation. Ye char apne aap mein question ban sakta hai. Lekin ye charo kya hai. Tricks hai. Ye charo choti choti choti choti. Tricks hai. Ok. Aur tricks dekhiye. Aur tricks dekhiye. Abhi khatam nahi hua hai. Bad bada topic hai. Tik hai. Aur tricks dekhiye. Check karo."
+  },
+  {
+   "start": 2900.86,
+   "end": 2927.82,
+   "text": "Check if n is odd or even. Is n odd or even? This is your question. Is n odd or even? Now you know to do this. If n mod 2 is equal to 1, then it is odd. And if n mod 2 is equal to 0, then it is even. But you have to solve it with bitmask. Notice one thing. Let's do one thing. 0, 1, 2, 3, 4, 5, 6, 7. This is the decimal number."
+  },
+  {
+   "start": 2927.82,
+   "end": 2956.54,
+   "text": "Is this the decimal number? Yes. We write the binary representation of all these in 3 bits. See, 0 will be 0 0 0, 0 0 1, 0 1 0, 0 1 1, 1 0 0, 1 0 1, 4 and 2, 1 1 0, 6 will be 1 1 0, 1 1 1. Okay, we have written all the binary. You can also write it quickly. Notice a pattern."
+  },
+  {
+   "start": 2956.54,
+   "end": 2988.05,
+   "text": "Which are the odd numbers? 1 is odd, 3 is odd, 5 is odd, 7 is odd. Look at the last bit of all. Or look at the 0th bit of all. The odd bit will always be 1. The even numbers will always have the 0th bit 0. The even numbers will always have the 0th bit 0. The 0 of 0 is 0. The 2 of 0 is 0. The 4 of 0 is 0. The 6 of 0 is 0. It means that a pattern is being shown. In even numbers, the 0th bit,"
+  },
+  {
+   "start": 2988.11,
+   "end": 3015.89,
+   "text": "is unset. In odd numbers, the 0th bit is set. Just check it. What do you have to check? You have to check that n is even or odd. Which bit are you interested in? On the 0th bit. int bitmask is equal to 1 left shift 0. Left shift 0. Means it will remain 1 but it's okay. How do you check if any bit is set or not? If n"
+  },
+  {
+   "start": 3015.89,
+   "end": 3045.54,
+   "text": "And bit mask equal equal to zero. This means that it is unset. This means that it is unset. Print even. Else, print odd. This is what used to happen. Is any bit set or not? How did they check? By making bit mask. They made bit mask. And if bit mask was zero, then it means that it was unset. It was not set. If it is not set, then what kind of number will it be? It will be even number. Printed even. It is set. What kind of number will it be? It will be odd number. Printed odd."
+  },
+  {
+   "start": 3045.54,
+   "end": 3073.42,
+   "text": "So these were some general tricks. This is not that complex but it is important to know. If you don't know this then you will face problems later. Last trick and the most important trick is n and n-1. What does this mean? n is equal to 14. Hold 14 in 4 bits. What is 14? 1, 1, 1, 0. Do it and you will get 14. Is it right? Is it good? Very good. Now what do we do? n is 14."
+  },
+  {
+   "start": 3073.42,
+   "end": 3100.16,
+   "text": "For 14, what is n-1? 13. Try to end it with this. What will 13 be? 8, 4, 11. And if we add 2 after 11, it will be 8, 4, 12. 0 and 1. What is this? It is 14. This is 13. Okay? See what happens. End it. End 0 and 1. 0. 0. 1. 1. What is 14?"
+  },
+  {
+   "start": 3100.16,
+   "end": 3129.73,
+   "text": "14 became 1100 means 12. What happened? 14's rightmost set bit disappeared. 14's rightmost set bit disappeared. 14's rightmost set bit disappeared and it became 12. Do the same with 12. Do the same with 12. 1 1 0 0 This is 12. Try to do it with 11. 1 0"
+  },
+  {
+   "start": 3129.73,
+   "end": 3157.73,
+   "text": "1, 1. This is 11. And do it. See what happens. 0, 0, 0, 1. See. 12's rightmost set bit disappeared. The rest of the number remained the same. So, so, so. What is this trick called? Some kerningham. Kerningham. I forgot the pronunciation of that. Kerningham. Something is said. When you do n, n and n minus 1. So."
+  },
+  {
+   "start": 3157.73,
+   "end": 3183.6,
+   "text": "rightmost set bit, rightmost set bit disappears. What happens? It disappears. It becomes zero. If you do this continuously, then one by one, set bits decrease. One by one, set bits decrease from right. See, if you do 12 with 11, then it becomes 8. It is 8. Do 8 one more time and see."
+  },
+  {
+   "start": 3183.6,
+   "end": 3206.59,
+   "text": "1, 0, 0, 0. This is 8, right? Do this with n minus 1. 0, 1, 1, 1. This is 7. Do the AND. See what happens. It disappeared completely. All the set bits disappeared one by one. It also had the rightmost set bit. It disappeared. So, there are kerning hand tricks. Any number n. Assume there are 3 set bits in n."
+  },
+  {
+   "start": 3206.59,
+   "end": 3233.98,
+   "text": "If you want to remove the set bit one by one or if you want to count it, then keep doing this n and n-1, n and n-1 until it becomes 0. What will you get from this? How many bits are set in it and one by one we will keep removing the set bits from the right. This is the trick. What is the trick? Again, n is given, right? Now keep doing this, n is equal to n and n-1. Keep doing this until n is greater than 0."
+  },
+  {
+   "start": 3233.98,
+   "end": 3265.04,
+   "text": "One by one, the bits of 1 will disappear from the right and your number will gradually become 0. What do we call this? Cunningham trick. Now you are ready to solve the question. So what is the first question? Let's open the first question. Where is the first question? Count set bits. Yes, count set bits. Lead code 338. What does it tell you? You are given a number n. What is this?"
+  },
+  {
+   "start": 3265.04,
+   "end": 3291.18,
+   "text": "What is this? Yes, number of, sorry, the lead code is not 338, my mistake. Lead code 191. Yes, lead code 191. I have given you a number n. Count number of set bits. Count number of set bits. Means, n is equal to 11. What is 11? 1, 0, 1, 1. How much should its answer be? It should be 3."
+  },
+  {
+   "start": 3291.18,
+   "end": 3322.0,
+   "text": "If you want this, then you can do without this trick also. How can you do it? See. How can you do it? See. You can do one thing. You can do one thing. Int res is equal to 0. While n greater than 0. Okay. What will we do? See. Int bit is equal to n by 2. If bit equal equal to 1. Res plus plus. n is equal to n by 2."
+  },
+  {
+   "start": 3322.0,
+   "end": 3351.34,
+   "text": "What are we doing? We have already taught this. See what we are doing. There is 11, right? There is 11. 11 will be useful for those of you who were studying in school. Divide by 2. How much is the answer? 5. How much is the remainder? 1. Count this. Count this. Keep it. Divide this by 2 again. 5. How much will it be? 2. How much is the remainder? 1. Keep it. Divide 2 by 2 again. How much will it be? 1. How much is the remainder? 1. When 1 used to come here, it used to stop."
+  },
+  {
+   "start": 3351.34,
+   "end": 3370.3,
+   "text": "This number 1011 is the representation of 11. We are doing the same thing that we did in school. What are we doing? We are dividing n by 2. If remainder comes as 1, then it is a set bit. It comes as 0. We do nothing."
+  },
+  {
+   "start": 3370.3,
+   "end": 3400.53,
+   "text": "and divide it by 2. How long will this work? Until n becomes 0. But you can also do it with the cunning trick that we just taught. What trick did we teach? If you keep doing n and n-1 again and again, one by one the set bit disappears. So what can we do? int res is equal to 0 while n greater than 0. What will we do?"
+  },
+  {
+   "start": 3400.53,
+   "end": 3428.94,
+   "text": "Res plus plus or n is equal to n and n minus. Take this. The work is over. What will happen? First of all, n will remain 11. What will you keep doing again and again? 1, 0, 1, 1. First of all, this bit will be zeroed. Continuum trick. This will become 0. It was counted once. It was a set bit. The second set bit will become 0 one more time. The third set bit will become 0 one more time. What will be the answer?"
+  },
+  {
+   "start": 3428.94,
+   "end": 3457.07,
+   "text": "So what is this number and one bit? You can count it like this. You can also do it with the method above. The method above is the representation of the code you studied in school. What does it use? It uses the Cunningham trick. Let's move ahead. Next question. Lead code 136 single number. Now see. What does single number say? That you have got an array. You have got an array. Every element. Every element in that array. Means every number in that array."
+  },
+  {
+   "start": 3457.07,
+   "end": 3488.1,
+   "text": "appears twice means every element is repeated except for one except for one yes except for one means your array looks like this four one two one two look at this which element is repeated see one is repeated twice two is repeated twice four is repeated once four is repeated once you have to find this four because it is odd one out whenever you get a question like this missing number this is missing repeated duplicate always"
+  },
+  {
+   "start": 3488.1,
+   "end": 3518.14,
+   "text": "Zor use hoga. Hamesha Zor use hoga. Kyuki Zor kya bolta hai? Zor na, bolta tha ki agar tum same Zor same karoge, hum isko zero bana denge. Hum isko kha jayenge. Agar number koi different aya, different aya, to hum isko chod denge. To hum isko kuch na kuch tumko answer pradhan karenge. Yahi bolta tha na bhai. Ki agar zero Zor zero karoge to zero aayega. One Zor one karoge zero aayega. Zero Zor one karoge to answer one aayega. Aur one Zor zero karoge to answer?"
+  },
+  {
+   "start": 3518.14,
+   "end": 3545.65,
+   "text": "What does it mean? If you do 2, Zor, 2, the answer will always be 0. If you do 2, Zor, 4, there will always be a non-zero answer because 2 and 4 will differ somewhere in the bit. If every bit of 2 and 4 was the same, it would have become 2, 2, 4. 2 and 4 will differ somewhere. The answer will always be non-zero. What does it mean to say? Zor tells you not to worry."
+  },
+  {
+   "start": 3545.78,
+   "end": 3575.38,
+   "text": "Here, all numbers have their own friends. 1 has one more 1, 2 has one more 2. 4 is alone. What does Zor say? Do one thing. Zor everyone. What will happen? You will start doing this. 4 Zor 1, Zor 2, Zor 1, Zor 2. What will happen? 1 will eat its 1. 1 will eat its 1 and become 0. 2 will eat its 2. 2 will eat its 2 and become 0."
+  },
+  {
+   "start": 3575.38,
+   "end": 3598.86,
+   "text": "What will be left? 4. What will be the answer to this? 0. When you solve any number from 0, the answer is A. Keep doing it. What is 4? 1, 0, 0. Solve from 0. See what will be the answer. 0, 0, 1. What is the answer? 4. When you solve any number from 0, the answer will be the same. The number will not change."
+  },
+  {
+   "start": 3598.86,
+   "end": 3627.78,
+   "text": "same number will be eaten by each other. So what will happen? If we make the ZOR of the whole array, if we make the ZOR of the whole array, then the same number will be eaten by each other and it will become a big 0. And the number which will be saved, which has no friend, which is an odd one out number, that X ZOR will become 0 and the answer will be, X, return this, return this. How? See, int X is equal to, int X is equal to,"
+  },
+  {
+   "start": 3627.78,
+   "end": 3656.45,
+   "text": "Let it be 0. For int i is equal to 0, i less than a dot size, or i plus plus, x is equal to x is or array of i, or return x. Khtam ho gayi baat. Khtam ho gayi baat. Very good. To yeh do question kar diye hai. Tien question aur bacha hai. Ab mera upna man nahin kar raha hai padhane ka. Bahut lamba ho gaya lecture amko lagta aapke liye bhi. To tien question."
+  },
+  {
+   "start": 3656.45,
+   "end": 3664.62,
+   "text": "But these are the basics of bit manipulation. You have learned a lot. See you in the next lecture."
+  }
+ ]
+}

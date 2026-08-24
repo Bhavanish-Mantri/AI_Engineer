@@ -1,0 +1,599 @@
+{
+ "video_id": "I1-0ALAJxZI",
+ "title": "HEAP On Pairs Explained in One Shot | CPP JAVA PYTHON | DSA Patterns",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 3091,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 22.38,
+   "text": "99% of people skip this kind of concept. They don't even know how to read or teach. So, we have seen a lot of people who leave the question of heaps on pairs and read simple heaps. No. See, today we were going to ask two questions, but one thing struck us that you don't know this yet, you don't know heaps on pairs. And it is not as simple as it looks."
+  },
+  {
+   "start": 22.38,
+   "end": 51.09,
+   "text": "because it is language specific and very complex, I don't know why so today in this video, this video might seem very big to you but in this video there are 3 sections, in fact there are 4 sections first is this intro section, so we will encourage you to watch this full 2-3-4 minutes, we will give you an intro of what is going to happen after that you can move on to your language you must be seeing a timestamp somewhere, C++, Java, Python you can go to that timestamp and see your syntax because you have to explain how it is written, so watch"
+  },
+  {
+   "start": 51.41,
+   "end": 77.49,
+   "text": "In the intro, we had studied two questions, K-most largest and K-smallest. In that, you had made Heap. It is a very good thing. So, what was the problem in that? You had made Heap in two ways. One is MinHeap, in which the smallest element goes up. One is MaxHeap, in which the largest element goes up. It is a very good thing. But, what were you storing in that Heap? Integer."
+  },
+  {
+   "start": 77.49,
+   "end": 99.7,
+   "text": "If you were storing an integer, then your heap would look like it was above 7, 3, 2, 5, etc. But in heap questions of medium level or hard level, sometimes you have to store pairs. What does pair mean? For example, you are storing a data like this. For example, you are storing the data of name. For example, you are doing this that Aman"
+  },
+  {
+   "start": 100.18,
+   "end": 129.63,
+   "text": "How many children is Aman? Aman is the name of 4 children. So this is a pair. C++ pair, Java people will teach you how to make a class. So keep some patience. For Python people too. Suppose the second name is Namita. How many girls is Namita? So this will say that it is the name of 3 girls. Then comes Pratyush. How many children is Pratyush? So Pratyush is the name of 5 children. So this is the data. If someone asks you, tell me one thing. Tell me 2 such names which are most frequent. How many? Tell me 2 such names."
+  },
+  {
+   "start": 129.63,
+   "end": 153.9,
+   "text": "The most frequent and most children's name is Pratyush of 5 children and Aman of 4 children. What does it say by shouting? Heap. How many elements do you need? Top K elements. Top K name. What does it say by shouting? Heap. But where is the problem? This is Heap. How to store this data in Heap? For example,"
+  },
+  {
+   "start": 154.13,
+   "end": 171.62,
+   "text": "How will you store this data in heap? Heap used to say that minimum will go up and min heap used to say that maximum will go up. But when you start storing this pair, now it has two values, one is string, the first is string and then it has an integer. So how will heap decide that"
+  },
+  {
+   "start": 171.62,
+   "end": 192.54,
+   "text": "from which we have to sort, means from which person we have to send up, what will the heap see? The heap will see its first, the heap will see its second. Suppose you say, sir, what is there in this? Who is there in the string? We will see its second and do that. So, okay, you will see the second, but suppose the name of one person is Aman, that is the name of four children. And one more name is Pratyush."
+  },
+  {
+   "start": 192.54,
+   "end": 215.49,
+   "text": "That too is the name of 4 children. Now what you have to say is that we were going to take a decision according to the second. But the second is 4. Now which pair will be at the top of the heap? Aman 4 or Pratyush 4? Who will be there? Who will tell? For this, we decide that whenever we make a heap of pairs. First of all, making a heap of pairs is the hardest syntax wise. After that, we decide that look brother."
+  },
+  {
+   "start": 215.49,
+   "end": 243.47,
+   "text": "We will make a heap like this. We will decide the rule and show you the program of the rule later. But we think that we are going to make a heap of pairs. What will be stored in the heap? The whole pair will be stored. Now, how will we decide which one is above, which one is below, which one is minimum? We can say that if the second of two pairs is not equal, suppose one is here and the other is here."
+  },
+  {
+   "start": 243.82,
+   "end": 263.74,
+   "text": "Then it is okay that if you compare between these two, their second is not similar, their second is different. Means there is a 4 and there is a 3. Do one thing in this that send the maximum second up. So what will he say that okay, Pratyush 4 went up. Pratyush 4 went up and Naman 3 came down. Naman 3 came down in your hip."
+  },
+  {
+   "start": 263.74,
+   "end": 281.9,
+   "text": "But suppose there is an alien entry whose 4 and his 4 are the same. So what will happen? Now we can say, do one thing. Now you start looking at the first and put the alphabetically small name above it. Now what will it do? Its alphabetically small name. Aman's name is alphabetically small. So what will it do? It will put Aman above it."
+  },
+  {
+   "start": 281.9,
+   "end": 311.92,
+   "text": "then you will see your money. Now if you will do top query, what will you get? You will get Aman 4. Why? Because one thing is that this 4 and 4 is bigger than this. And when both 4 are tied, then you make a rule that keep the small one above the alphabetical one. So how is this rule made? It is easy to think that we will make it like this. But how will this rule be made? Now how do we sort first? You say that when first is not equal, when the first of the pair is not equal, then you do it on first. In that first also, do we have to make it min or max?"
+  },
+  {
+   "start": 311.92,
+   "end": 323.82,
+   "text": "It is possible that if the first of two pairs is not equal, then what do you want to do? Do you want to bring the behavior of min heap or max heap? If the first of both pairs is same, then it comes to the second of both pairs."
+  },
+  {
+   "start": 323.82,
+   "end": 350.08,
+   "text": "what kind of behaviour do we need on the second of these two? do we need min or max? it is possible that you say that when first is not equal then it should behave like min heap and when first is equal then look at the second and start behaving like max heap question by question it depends there are many combinations so let me show you how to make such a heap in every language because it is very important that you know how we will make this heap and how we will write for it so now you can skip to your section"
+  },
+  {
+   "start": 350.08,
+   "end": 377.14,
+   "text": "The next section is of C++, then Java, then Python. So, go to your sections. Welcome to the C++ part. So, now you have heard the introduction. So, there are a lot of ideas. But listen carefully. It will be a bit complex. If it is possible till the end that you don't understand even 10%, then we will give you the syntax. With that syntax, you have to always make heap when it comes to pair. You know how to make normal heap, how to make max, how to make min. There is a bit of difficulty in pair. So, let's go."
+  },
+  {
+   "start": 377.36,
+   "end": 407.41,
+   "text": "For simplicity, what we will do is that you can do anything anytime. You can make an integer of string, string of string, integer of anything. We will take a pair in which we want that first person should always be integer and second person should always be string. We will do this that when first is not equal, when first is not equal, then what will happen? That means decision will be made on first. And when first is equal, then decision will be made on second. Now see, there can be a lot of possibilities in this. For example, if your two pairs look like this. One and apple."
+  },
+  {
+   "start": 407.41,
+   "end": 435.7,
+   "text": "2 pairs are like this and another pair is 2 and lichy. Now see here, the first of both is different, it has 1 and 2. In this, the decision should be on the first. Now how should it be on the first? Should it behave like min-heap on the first or like max-heap? Means, suppose 1 and apple are already there, when you push 2 and lichy, should 2 and lichy go on top or should 2 and lichy stay below it?"
+  },
+  {
+   "start": 435.7,
+   "end": 462.32,
+   "text": "What happens in max heat? When you push someone in max heat, the person who is at max is sitting at the top. When you push someone in min, the person who is at min is sitting at the top. So here too, there will be that behavior. How should that behavior be? That behavior can either be of min type or max type. So it means that when our first is being decided, when our first is not equal, then the behavior can be min or max. Similarly, suppose there is one more pair which is 1 and banana."
+  },
+  {
+   "start": 463.22,
+   "end": 485.92,
+   "text": "Now if we look carefully, then this one and this one are similar. So first is same, so we can't take decision on first. If two elements are same, then how will we take decision on which one is small and which one is big. Now the decision will be from second. Now the decision will be from apple and banana. Again, how should this decision be? Is it a min type decision or is it a max type decision? What kind of decision is this? So again, there can be two things in second too. Meaning, we have"
+  },
+  {
+   "start": 485.92,
+   "end": 502.78,
+   "text": "total 4 types of heaps can be made in pair first is that both of them should behave like min-heap means when decision is being taken on 1st then also they should behave like min-heap and when decision is being taken on 2nd then also they should behave like min-heap now it can be that min is here and max is here"
+  },
+  {
+   "start": 502.78,
+   "end": 525.2,
+   "text": "When the first of two pairs is different, then it will behave like min-heap. But when the first of two pairs is same, then it will behave like max-heap. Meaning, one and apple, one and banana. One and one is same. Now, it will send the banana one up because it is behaving like max-heap. So, this can happen. Similarly, first it will behave like max and then it will behave like min. Either both of them will be max-max."
+  },
+  {
+   "start": 525.2,
+   "end": 550.24,
+   "text": "So you can see that 4 cases are possible. You will keep getting 4 cases question by question. You should know how to make a heap. The rules of my heap is that when first is not equal, then do this. When first is equal, then decide on second and do this. So you should know how to make these 4 things. Now we will explain to you how this happens. So first of all, you will have to make a heap. And from my opinion, we know that you..."
+  },
+  {
+   "start": 550.24,
+   "end": 579.54,
+   "text": "Chat GPT will say that there is no need to do so much for minheap. But you always make it in this way. Always when you want to make pair of heaps, then you follow this. First of all, write priority queue. Priority queue. Now, earlier we used to make this heap of integer. Now you make this heap of pair. So write pair int string. Whatever pair you want. If you want int, then make it like this. Pair string is done. Comma vector of"
+  },
+  {
+   "start": 579.54,
+   "end": 600.34,
+   "text": "Whatever is written here, write it here. Pair of int. Pair of int and it is that big. We know it is very big. Close two colon. One pair and one vector. Give comma and write cmp. Close this and give pq's name. Remember this line."
+  },
+  {
+   "start": 601.68,
+   "end": 631.6,
+   "text": "Remember this line. Why do we remember this line? Let me tell you. This line is syntax. When you want to make a pair of heaps, follow this. Now, what is CMP in this? Let me tell you. CMP means comparator. Our comparator. We are going to write our CMP above. So, whoever. If you want to make a pair of heaps, no matter if you want min in both, max in both, what do you want? You will need something from these four, right? If you need anything, then from these four. There can't be anything other than these four. You make this. Write CMP. Now, let's talk about what is CMP. Look."
+  },
+  {
+   "start": 631.86,
+   "end": 661.2,
+   "text": "C++ will use your CMP to decide which element should go to the top and which element should not go to the top. What does this mean? See, CMP always compares two things. Assume that the pair you have is 1 and apple. 1 and apple. One is this and this is 2 and banana. Assume that we are trying to make a decision on which one of the two will go to the top. C++ asks your CMP one question."
+  },
+  {
+   "start": 661.49,
+   "end": 685.39,
+   "text": "This is your A and this is your B. This is your first A and this is your second A. C++ asks one question. Is A worse than B? Worse. Not better. Worse. Worse. Worse than B. Worse than B. Means it is worse than A or B. Now that worse means anything. That worse means worse. C++ means it is worse."
+  },
+  {
+   "start": 685.39,
+   "end": 714.38,
+   "text": "If it talks about min, then the more one will be bad. If it talks about max heap, then the less one will be bad. So what is bad? If its answer gives your comparator function yes, we will write the comparator function, we will tell you how to write it. But if its answer comes yes from there, B goes on top. If its answer comes no, A goes on top. This is the work of C++."
+  },
+  {
+   "start": 714.38,
+   "end": 743.89,
+   "text": "He took two pairs, A and B. One apple, two bananas. Now he will ask, is A worse than B? A is worse than B. If the answer is yes, then B will go to the top because A is worse. If the answer is no, that means A is not worse than B. A will go to the top. Now we will show you how this will happen in min-heap and max-heap. What will we do to make it happen? Let's go. Again, there is a little syntax overload. You have to make a struct. We know that you don't know struct. Learn it. Learn it. Remember it. It's okay."
+  },
+  {
+   "start": 743.89,
+   "end": 778.0,
+   "text": "ConstructCMP. Open it like this. Bool. We said, what does CMP send? Yes or no. So, a bool function. Bool operator. This is all syntax. You have to remember all this. Write it in copy. We will type it again and again. You will remember. Const pair. Const pair A. Const pair B. Okay. Const pair A and const pair B."
+  },
+  {
+   "start": 778.0,
+   "end": 809.95,
+   "text": "we can do it like this also, we don't need to do this much we don't need to do this much you can write it like this also, we have to write bool operator bool you can write it in one place, it will be useful for your whole life we don't remember it, we are saying it by looking at the instant code what is your pair? what is your pair? your pair is like this pair of int and string you wanted to insert this pair, right? yes so, do this and pair int string"
+  },
+  {
+   "start": 809.95,
+   "end": 836.59,
+   "text": "Now let's write this function. First of all, you have to see that if a.first is not equal to b.first. If a.first is not equal to b.first. If a.first is not equal to b.first. It means that the decision has to be made on first. Now let's see what we will write in this. Now come."
+  },
+  {
+   "start": 836.59,
+   "end": 865.36,
+   "text": "What is this? What is C++ asking and whose answer is it expecting? Is A worse than B? Let's assume for a while that these are both A and B. Okay. In the first one, you want to do min-heap behavior. Meaning, what do you want? Which of these two should be at the top? Which is minimum, which is small. See, first of all, if 1 and 2 are not equal, then fine. Which of these two pairs should be at the top in heap? Min one, because we are making min-heap. So, at the top,"
+  },
+  {
+   "start": 865.36,
+   "end": 893.07,
+   "text": "One and apple should remain. Is A worse than B? How is this asked? If you want to make min-heap, then what does worse mean? Which person will be worse? The person who is greater will be worse. That person will be worse. If min is your expectation, then what will be worse? The person who is greater will be worse."
+  },
+  {
+   "start": 893.55,
+   "end": 923.7,
+   "text": "What do you want in this? You want the smaller one to go there. See here, what will you write? Return a.first greater than b.first. a.first greater than b.first. Now see what will happen in this. What are you returning here? If a.first is greater than b.first, then you are returning true. If you are returning true, see. Come to this case. What is a.first? 1. What is b.first? 2."
+  },
+  {
+   "start": 923.7,
+   "end": 948.51,
+   "text": "Is 1 greater than 2? What will be its answer? No. No. What do we say? When C++ gets no, what does it say? A goes on top. A goes on top. So, who will go on top? 1 and apple will go on top. If, suppose, what happens here? Here, what happens? Here, suppose, A happens. 3 and apple happens. Now, what question do you ask? Is 3 greater than 1? Its answer is yes. Worse. Worse. What happens on yes?"
+  },
+  {
+   "start": 948.51,
+   "end": 977.57,
+   "text": "B goes on top. Means you and banana goes on top. So, automatically this min-heap behavior enforces. So, what is this? This is min-heap behavior. a.first is greater than b.first. If its answer is yes. See, if its answer is yes. If its answer is yes. Let's assume that we send a and b. Remember that in yes, b goes on top. It is opposite. If yes comes, then b goes on top. If, assume. If, assume."
+  },
+  {
+   "start": 977.57,
+   "end": 1004.67,
+   "text": "A dot first is greater than B dot first. Its answer is yes. If its answer is yes, then A dot first is big and B dot first is small. In mean heap, who should go up? B dot first. It automatically sends B dot first in yes. If its answer is no, then A dot first is not greater than B dot first. It means A dot first is actually small. Who should go? A dot first. Or who does it send? It automatically sends A dot first in no. This is the behavior of mean heap."
+  },
+  {
+   "start": 1004.67,
+   "end": 1033.23,
+   "text": "If you are not able to understand it, then remember it. There is no problem in this. We know that it is very complex. We don't know why it has been made so complex. It could have been simplified but it was not done. There must be some reason. Yes. Now what do you have to write? Now this happened when a.first is not equal to b.first. Then this happened. If that is not there, then you have to take a decision on the second. Let's assume that we want a min on the second. Write the same thing. Return a.second greater than b.second."
+  },
+  {
+   "start": 1034.16,
+   "end": 1064.34,
+   "text": "what is this? min-heap on second same logic min-heap on second what to do? close your operator close struct and don't forget to put semicolon see this you have to write this cmp on top if you don't understand remember when you write a.first greater than b.first it will become min-heap in reverse a.second greater than b.second it will become min-heap of second if you want to make first one max-heap if you want to make first one max-heap what will you do? just write this here"
+  },
+  {
+   "start": 1064.66,
+   "end": 1091.25,
+   "text": "Return a.first less than b.first. What did this become? This became max. This became maxheap. Look at it from that logic. You will understand. We will dry turn and see what will happen. You have to make the second one maxheap. Just reverse the sign. Return a.second greater than, sorry, greater than, no, less than, less than b.second."
+  },
+  {
+   "start": 1091.98,
+   "end": 1110.54,
+   "text": "B dot second. This will not be asked in the interview because 99% of people do not know this logic. So you have to do this. If you want heap of pairs, then you have to do this. Depending on the use case, whether you want min in first or max in second, you have to do this. Remember this template."
+  },
+  {
+   "start": 1110.83,
+   "end": 1137.92,
+   "text": "If you want max, change this sign. We will give you this in the comment or in the doc. Take a screenshot of this, you have to write the CMP function above. And where is this CMP used? This CMP is used in your priority queue. With this CMP, your C++ will know what type of heap you have."
+  },
+  {
+   "start": 1137.92,
+   "end": 1153.66,
+   "text": "So this is the syntax of C++. It was important to learn this syntax because there will be a lot of questions when you have to do this. What happens is that if you want to make both max, if you want these two cases, that you want both max or both min, then you don't have to do this much, but you should do it."
+  },
+  {
+   "start": 1153.66,
+   "end": 1182.8,
+   "text": "remember just to be safe that whenever you want to write a cmp when you want to make heap of pairs then write this cmp first decide whether you want min or max write this cmp accordingly and use this cmp you can also write a.first not equal to b.first we are assuming that my decision making will be on first if first is not equal then decision will be on first and second will be on second"
+  },
+  {
+   "start": 1182.83,
+   "end": 1207.31,
+   "text": "you can also assume that if my second is not equal then first we will take decision on second then we will take decision on first so here you have to write a.second not equal to b.second and this thing you have to write first so you can customize all this, this is called customized operator it is called comparator function, it is your custom comparator operation so write this somewhere for now you will remember this one day while typing this priority queue line, write it somewhere"
+  },
+  {
+   "start": 1207.31,
+   "end": 1226.32,
+   "text": "you have to write this whole line whenever you want heap of pairs you have to write this, right? so this is a small syntax, go and do it once go once and execute it in compile if you have any doubt then ask let's move forward to the java section so now you come to the java section so I hope you skipped C++ and Python, you have come here"
+  },
+  {
+   "start": 1226.48,
+   "end": 1255.57,
+   "text": "As discussed earlier, we need a heap. We need a heap which has two things, which has a pair. So just for covering the whole case, we wanted to make an integer pair, but sometimes you have to make an integer and string, string and another string, string and an integer, so we will take a mix. We want to make a heap in which, let's say, my first item, the first item of the pair is an integer. And the second item of my pair is a string."
+  },
+  {
+   "start": 1256.34,
+   "end": 1279.65,
+   "text": "So we want to make a pair in which the first is an integer and the second is a string. So you have to make a heap like this. Now there can be cases in this. What can be the cases in this? When you used to make a heap, when you used to make a heap of 1, then you used to see whether my heap should be minimum or maximum. That was easy because there was 1 in it. But now see, there will be 4 cases here. It is possible that you want the minimum sorting to be according to the first item."
+  },
+  {
+   "start": 1279.65,
+   "end": 1309.09,
+   "text": "which means if the first item is different, then who will go to the top, the minimum item will go and if these two are there, then the second one, if the integer value of these two pairs is the same, now the string will be pressed, now who should go up on the string, which string also has a minimum, then it is possible that you also need a minimum here, it is possible that you need the first minimum heap, but according to the second, you need the maximum heap, it is possible that you need the maximum of the first and the minimum of the second, either you need the maximum of the first and the maximum of the second,"
+  },
+  {
+   "start": 1309.09,
+   "end": 1322.56,
+   "text": "So, there can be 4 cases in 2 pairs. According to this, you need a heap. It will depend on the question as to what you need. If the first one is not equal. If the first one is 2 pairs. In this, there is 1 and some apples."
+  },
+  {
+   "start": 1322.56,
+   "end": 1345.95,
+   "text": "and here is 2 and we have to make something out of it so see when it is not equal then it will be according to the first if these two are equal suppose here is 1 and here is guava so now this and this is equal now it will depend on which one should go up from apple and guava so you have to think of both the rules that my first should be minheap and if the first one is same and integer is same then according to the second one it should be maxheap or minheap so there will be 4 types of categories"
+  },
+  {
+   "start": 1345.95,
+   "end": 1371.74,
+   "text": "See, first of all you have to make a pair class. This is common, so we will give you this in the code. First of all, you have to make a class. What is the name of the class? Pair. What is the name of the class? Pair. Open the class. Now what do you want in this pair? You want two things. In which order? What do you want first? Int first. First int first. What do you want first? Int type. What do you want second? You want string type. So string and second."
+  },
+  {
+   "start": 1371.74,
+   "end": 1399.28,
+   "text": "You can change this according to your own choice. If you want the first string, then put the second string there. That means, write the string first and the int second. If you want both the integers, then you can write the int first and the int second. That's why we are taking both the examples and telling you. Now, you have to make its constructor. In the constructor, you will have an int f pass and a string s pass. Whenever you want to make a pair. And what will you do? First is equal to f. And second is equal to s."
+  },
+  {
+   "start": 1399.28,
+   "end": 1423.12,
+   "text": "This will make your pair. We will tell you how to use it. This is your class. This will be common. This will be common. It will depend on what you want in the pair. You want integer, integer, integer character, whatever you want. Okay. Now let's come to our case. How will we write the priority queue? So see, to write the priority queue, there are some rules. You have to write a comparator. You have made a pair, right?"
+  },
+  {
+   "start": 1423.12,
+   "end": 1447.65,
+   "text": "You have made a pair. But remember how to make priority queue. Normally, priority queue integer bq is equal to new priority queue. By doing this. But now you need a comparator in this. What is comparator? Comparator lets you define rules. What does it let you define? It lets you define rules. Means, you need max and min. So, you need both. Now see, what does comparator do?"
+  },
+  {
+   "start": 1447.65,
+   "end": 1477.31,
+   "text": "Comparator always works on two things. Suppose you have two items. At any time, you have two items. How does heap work? There are already some items in heap. If you push one more item, then according to that, it is decided that what is the priority of this item? How much will this item go up? May be it will go up the most. What will happen to it? So you have two items. Suppose according to now, you have two items, one one and one apple. One apple. You have one more item, which is two. And this is banana."
+  },
+  {
+   "start": 1477.31,
+   "end": 1505.65,
+   "text": "Okay? There are two items which means there are two pairs. Okay. How will the heap decide which one will go up and which one will not go up? Look. You will have to ask a question. You will have to ask a question. Rules. Rules. We will have to define the rules. Okay. If its answer, if its answer is negative, if its answer is negative, now we will know how to define the rule, but if its answer is negative, then it will mean that A, the name of this whole item is A."
+  },
+  {
+   "start": 1505.65,
+   "end": 1531.02,
+   "text": "And the name of this whole item is B. The name of this pair is B. If its answer is negative, then it means that A comes before B. Before B means that A's priority is more than B. So A before B. It means that A will come above B. If its answer is positive, then it means that B comes before A."
+  },
+  {
+   "start": 1531.02,
+   "end": 1558.93,
+   "text": "These are the two rules. According to the answer of the rule, it decides that the answer of the rule is positive. Positive means B comes before A. Negative means A comes before B. You will have to remember. This is the syntax. No one can do anything in this. You will have to understand and remember. Now we will show you how the rule is written. Remember that this is your one apple and you have to make two. These are your two pairs. So when these two pairs meet each other, then whose priority should be more? Okay, come."
+  },
+  {
+   "start": 1559.34,
+   "end": 1588.53,
+   "text": "We will write and tell you how to declare. You have understood this pair. Now when you declare priority queue. When you make priority queue. Priority. Priority. Queue. Queue. Okay. After that here. Pair. Which one is this pair? This is class pair. This is the pair. Okay. Write this spelling here too. Pair is done. Okay. Close it. Pair is done. That is an integer and string pair. Its name. PQ."
+  },
+  {
+   "start": 1588.56,
+   "end": 1616.78,
+   "text": "Is equal to. New. Priority. Q. Okay. Let's close its colon. Till here everything is correct. Till here everything is correct. Now what to do? Now you need to define the rule. Let me tell you. Look. Open a bracket here. Open a bracket here. Open a bracket. After that do. A. B. What is A B? These are written in brackets. What is A B? A B is your pair. A is this pair. B is this pair. A B is written."
+  },
+  {
+   "start": 1616.78,
+   "end": 1642.38,
+   "text": "After that, give an arrow. All this is syntax. You have to remember all this syntax. We also think that why is it such a rubbish syntax. But now, when this language was written, at that time, no one had any idea that their use will be like this. DSA will move ahead and their use will be like this. So, all this was thought that these are very complex things. Who will use all this? But now, DSA is happening. Question is becoming like this. So, okay, now you have to do it. After that, open a curly bracket. Opened a curly bracket."
+  },
+  {
+   "start": 1642.42,
+   "end": 1671.18,
+   "text": "Now see, what we told you in the beginning, in the introduction, that if, suppose, the first item of both, if the first item of both differs, if the first item of both differs, then who will have the decision on the first item? If the first item of both is the same, suppose, here also it is said to make one more, then who will have the decision on the second item? So first we write the role of that, that the first item of both is the same, the first item of both is not the same, so we will just concentrate on the first. So what have we written? If,"
+  },
+  {
+   "start": 1671.57,
+   "end": 1700.51,
+   "text": "a.first a.first because what is a? it is a pair a.first means that int first not equal to b.first b.first now you have to write its rule now whose rule do you have to write? what do you want? first item of pair first item do you want to make min only or max only? come let us cover first case this one we want to make both min means min on first and min on second so we see first we want to make first min we first"
+  },
+  {
+   "start": 1700.51,
+   "end": 1730.75,
+   "text": "We want to make min. Meaning, if there are two items, one and apple, apple and two and apple. Now, their first is not equal. One and two are not equal. Okay, what do we want? We want to make min. Meaning, when these two will enter in heap, then which thing should be at the top? According to min heap, one and apple should be at the top. Why? Because one, one, now the decision is being made on first. One is smaller than two. You want to make min heap, meaning one should be at the top. One should be at the top."
+  },
+  {
+   "start": 1730.75,
+   "end": 1748.83,
+   "text": "Okay. So 1 is smaller than 2, that's why 1 should be at the top. And what did we tell you? If the answer of the rule is negative, then A comes before B. What is A? According to now, what is A? 1 and apple. This is A. What is B? 2 and banana. This is B."
+  },
+  {
+   "start": 1748.83,
+   "end": 1774.7,
+   "text": "Who do you want at the top? You want A at the top. Why? Because A is smaller than this. So what do you have to write here? What do you have to write here? You have to define a rule whose answer is negative. Only then A comes before B. Only then you can make it a min. Only then 1 and apple will come above 2. You have to write return. Return. A dot first. A dot first. Minus B dot first. Sorry, B dot. Yes, B dot first."
+  },
+  {
+   "start": 1774.7,
+   "end": 1794.77,
+   "text": "What will happen with this? What is a.first? a.first is 1. What are we returning in this rule? When a.first and b.first are not equal, we want the decision to be from first and the person whose first is small goes to the top because we want to make min only. What will we do? Return a.first minus b.first. What will happen with that? 1 minus 2."
+  },
+  {
+   "start": 1794.77,
+   "end": 1819.7,
+   "text": "What is the answer of 1 minus 2? It is negative answer. It means A comes before B. So, automatically A becomes B. So, your min-heap is done. When A first and B first are not equal, then your min-heap is done. A dot first minus B dot first. Let's assume that A is something else. Let's assume that A is 10 and apple. It is possible that A is like this. And what is B? B is 6 and banana."
+  },
+  {
+   "start": 1819.7,
+   "end": 1833.92,
+   "text": "So, in this case, who should stay above when you are trying to make a min? In this case, B should stay above because B's first is small. In this case, see what is the return? a dot first minus b dot first. What will be the answer? 10 minus 6."
+  },
+  {
+   "start": 1833.92,
+   "end": 1862.51,
+   "text": "4. 4 is positive. What does positive mean? B comes before A. See, B comes before A. Automatically, 6 will go up. 10 is not made. So, whatever is small will go up. What are you doing? a.first minus b.first. If a.first is small, then you will subtract b.first. So, the answer will be negative. So, a will go up. If a.first is big and you don't want to make it, then you want b.first to go up. So, a.first minus b.first. If a.first is big, its answer will be positive. So, b will go up."
+  },
+  {
+   "start": 1862.51,
+   "end": 1886.53,
+   "text": "This is how it works. In what case did this happen? When a.first is not equal to b.first, which means you want to take the decision on first. But, suppose this is not the case. If this does not happen, then you will have to write another rule. To write another rule, you want your decision to be from the second string. When? When the first one is not equal. Okay, so what do you want?"
+  },
+  {
+   "start": 1886.53,
+   "end": 1914.91,
+   "text": "Now you want it to work minimally in this too. What does minimum mean? Lexicographically minimum. Alphabetically minimum. Apple and banana. In these two, lexicographically minimal means, alphabetically which one is small? Apple is small. So you want apple to come up. For this, you have to use a string function. Return. Return. a dot second. a dot second means the string next to a, which is apple. Dot."
+  },
+  {
+   "start": 1914.91,
+   "end": 1940.88,
+   "text": "compare to, this is a java function, compare to b.second b.second now what does it do? compare to what happens? compare to what happens? if you compare two things, apple and banana banana, ok now two strings are written in this compare to, let me explain to you, what is compare to? string 1 dot compare to compare to"
+  },
+  {
+   "start": 1940.94,
+   "end": 1970.86,
+   "text": "String 2. How does this work? If string 1 is smaller than string 2, if it is smaller, its answer is negative. Or minus 1. Its answer is negative. If string 1 is equal to string 2, its answer is 0. If string 1 is greater than string 2, its answer is positive. This is the function of compare to. Now look carefully. It matches exactly your requirement. Look what we have written here. Look carefully."
+  },
+  {
+   "start": 1970.86,
+   "end": 2000.64,
+   "text": "A dot second dot compared to B dot second. What is there in place of str1? This is your str1. This is your str2. In place of str1, we wrote a dot second. In place of str2, we wrote b dot second. Now, what will happen? If str1 is smaller than str2, then the answer will be negative. Meaning, if a dot second is smaller than b dot second, then the answer will be negative. What does negative mean? a comes before b. So, automatically, a comes before b. Meaning, it became mini. If a dot second is bigger than b dot second, then what will be the answer?"
+  },
+  {
+   "start": 2000.64,
+   "end": 2028.54,
+   "text": "It will be positive. Positive means, B comes before A, so B will automatically go up. So again, this satisfies your requirement. After writing both the rules, you can close this. Who? By closing this curly bracket, you can close this bracket. This is your syntax. What is this? Min heap on first. Min heap on first. Min heap on second. Min heap on second."
+  },
+  {
+   "start": 2028.54,
+   "end": 2057.14,
+   "text": "This first case is covered that you need min and min in both. So both of you will have to write a rule that if first is not equal then make a rule on first. If first is equal then make a rule on second. How to make a rule on second? By using compare to. This is the first case. This is just the first case. But if you want, if you want what? You want what? Suppose you want min on first. You want min on first. Means you want min heap of first integer. But if first integer is same then you want maximum heap on second. You want max heap."
+  },
+  {
+   "start": 2057.14,
+   "end": 2087.63,
+   "text": "Max heap on second. Means, if there is one and apple, and there is one and banana. These are two. Now, its first is same. Decision will be on second. What do you want in second? Max heap means, the alphabetically bigger word comes on top. Means, this man. This banana man should come on top. One and banana should come on top, and then one and apple. Means, you want max heap. Earlier, you wanted one and apple only. How will you write this? Come. You have to write the same rule."
+  },
+  {
+   "start": 2087.82,
+   "end": 2122.58,
+   "text": "The previous one also had a first payment. This time also there was a first payment. What will we do? Let's write. Priority. Q. Pair. PQ. Is equal to. New. Priority. Q. Do this. And open bracket. And open this bracket. After that. Same. A, B. Give arrow. And open curly bracket. If. A dot first. Not equal to. B dot first."
+  },
+  {
+   "start": 2123.18,
+   "end": 2153.36,
+   "text": "a.first not equal means on which decision is going to happen on first so what you have to do you want min heap means same which is written here above what was written above return a.first minus b.first so if a.first is small then automatically negative will come negative will come then a will go up so here also you have to write same return a.first minus b.first finished but now you want on max now you want second one on max you want second one on max so what you will do see"
+  },
+  {
+   "start": 2153.36,
+   "end": 2180.29,
+   "text": "Return b.second, b.second, dot, compared to a.second. What did we do here? We reversed it. Where string 1 was written, string 2 was written. And where string 2 was written, string 1 was written. What did we do above that? Where on max heap, we did a.second compared to b.second. What did we do here? b.second compared to a.second. Now see what will happen."
+  },
+  {
+   "start": 2180.29,
+   "end": 2209.23,
+   "text": "And here, let's close it once. Curly bracket and this is closed. Here, see what will happen. Here, we have b dot second. So, if b dot second, b dot second is less than a dot second, the answer will come, its answer will come negative. If b dot second greater than a dot second, its answer will come positive. Okay. What will happen with this? What will happen with this? See, if b dot second is"
+  },
+  {
+   "start": 2209.23,
+   "end": 2226.77,
+   "text": "less than a dot second, then what will be the answer? Negative. What does negative answer mean? a will go first, a will go first. So in this case, in this case, egg will go first. So suppose, this happened in a, one and apple. And what happened in b? One and banana."
+  },
+  {
+   "start": 2227.57,
+   "end": 2255.71,
+   "text": "If you do this, then see, b.second is greater than a.second, then what will be the answer? The answer will be positive. The answer will be positive. Positive means, b will go up. So banana will go up. This is maxheap. But if a was guava, then a.second is greater than b.second. So what will be the answer? Negative means a will go up. So the upper guava will go first. Now what will happen is, the string which is alphabetically larger, will go up. So automatically, what have you made here? Maxheap on second."
+  },
+  {
+   "start": 2255.71,
+   "end": 2285.17,
+   "text": "And there is still a min heap on this. There is still a min heap on this. Now, you have learned both things on second. If you want to make minimum heap on second, above, here was a.second, here was b.second. If you want to make maximum heap on second, here was b.second, here was a.second. Why? I have explained the logic to you. Now, what is it? If you want to make maximum on first, then some people might have guessed. You want to make maximum on first. See, what you have to do? You want to make maximum on first. That means, if a.first is greater than b.first,"
+  },
+  {
+   "start": 2285.17,
+   "end": 2316.3,
+   "text": "If this happens, which one goes up? A dot first goes up. Okay. And if A dot first is less than B dot first, then what? B dot first goes up. Means we have to make max in one way. We want max in first. Till now in both cases, we had seen min in first. Now we want max in first. What will we do? It's simple. Reverse it. The condition which was there, return B dot first minus A dot first. Reverse it. B dot first minus A dot first. Let's show what will happen."
+  },
+  {
+   "start": 2316.3,
+   "end": 2345.31,
+   "text": "Suppose you have 1 and apple and you have to make 2 more. What is this? This is a and this is b. What have you done? You have done b dot first minus a dot first. Meaning return 2 minus 1 is equal to, this is positive. Positive means b will go up. What happened? 2 went up. Suppose you have to make 10 and apple and 2 more. What have you done? 2 minus 10 minus 8 negative. Which one will go up? 10 will go up. This will solve your problem. So remember these two things for integer and string."
+  },
+  {
+   "start": 2345.31,
+   "end": 2373.46,
+   "text": "now here we are telling first and second integer can be on first and integer can be on second but when you want min heap on integer then you do a.first minus b.first when you want max heap on integer then you do b.first minus a.first when you want min heap on string then you do a.second dot compare to b.second when you want max heap on string then you do b.second and a.second so this is how you declare your heap"
+  },
+  {
+   "start": 2373.46,
+   "end": 2403.5,
+   "text": "It is a very big syntax and very complex. We will write it in a doc. We will type it 2-3-4 times. We will solve the questions. You will remember all this. So, even if you don't remember, no issues. You can see its syntax anytime. So, you will understand. Now, how do we use it? This has to be made. This has to be made. How do we use it? If you want to push, then you can do pq.add. After this, new pair. Open it. Whatever pair you want to make. Pair means one integer, one string. So, you have to make two."
+  },
+  {
+   "start": 2403.5,
+   "end": 2434.74,
+   "text": "and apple keep inserting like this and keep inserting pq.add new pair 3 and banana keep inserting like this all this is being inserted in heap all this is being inserted in heap all this is being inserted in add first you add only one thing now add two things how will you remove? how will you remove? assume you have to remove everything while same pq.notempty how will you remove? one you that pair p is equal to"
+  },
+  {
+   "start": 2434.74,
+   "end": 2448.59,
+   "text": "pq.pol and you can print it as sopln sopln p.first you can print integer with this sopln means system out println p.second"
+  },
+  {
+   "start": 2448.59,
+   "end": 2470.59,
+   "text": "you can print it, use it, compute it, you can do anything but the main thing is how it will be made when you decide that my first is integer and second is string if you want min on first and max on second then how it will be made? it will be made with this rule we have explained this rule to you we have not explained all the combinations because you have understood it right? explain the maximum and minimum of string and the maximum and minimum of integer"
+  },
+  {
+   "start": 2470.59,
+   "end": 2497.71,
+   "text": "Try to make it and dry run it. We will give you the full code in the comments today. We will give you the code of this syntax. We don't like to give you the code of logic. That doesn't mean anything. Its code is necessary. We will give you this code today. If we run it once or twice, you will understand. We believe this syntax is very dirty. Welcome to the Python section. You must have skipped Java C++."
+  },
+  {
+   "start": 2497.87,
+   "end": 2522.38,
+   "text": "Just for example, as we discussed in the intro, we will see how you have to make a pair of heaps. You can define your own rule on that, that my first should be minimum and the second should be maximum. You can do anything like this. So, let's make a pair and show you that we will make a heap of pairs. We will make a heap which will hold a pair. What is there in the pair? There is first and second in the pair. There is first and second in the pair."
+  },
+  {
+   "start": 2522.38,
+   "end": 2544.67,
+   "text": "Now, first and second can be anything. First integer, second string, anything can be. In Python, data type is not there. So, it is fine. Python is a very loose type language. So, it is fine for all that. But, now you can take a decision. That my heap, assume that first is not equal to two items. I have one more apple. This is my first pair. And I have two more bananas."
+  },
+  {
+   "start": 2544.67,
+   "end": 2561.04,
+   "text": "So if their first is not equal, then we will take a decision on the first. How will we take a decision on the first? It can be min-hib or max-hib on the first. Suppose 1 and 2 are not equal, then whose priority should be higher? If we make min-hib, then 1 and apple will be higher because 1 is smaller than 2."
+  },
+  {
+   "start": 2561.14,
+   "end": 2589.18,
+   "text": "if we will make maxi then 2 will be above 2 and banana will be above 2 because 2 is bigger than 1 so you can decide according to that so see according to that in normal heap there were only 2 things so make minheap or maxi there are 4 things here why? you want that my first will be according to min and my second will also be according to min means if first is not equal then the rule will be on first that minheap will be like that if first is equal then the rule will be on second and that will become minheap but what will happen if this is min and this is max means"
+  },
+  {
+   "start": 2589.18,
+   "end": 2617.15,
+   "text": "If first is not equal, then it will behave like min heap. But if first is equal, then it will behave like max heap. Based on the second. If this is max and this is min. Similarly, this is also max and this is also max. So, 4 types of cases can be made. You have to make 4 types of heap. Very soon, we will explain to you how to make it. Its syntax is very bad. I mean, okay. This syntax. That's why Python is not a language to read at all. So, see."
+  },
+  {
+   "start": 2617.15,
+   "end": 2647.87,
+   "text": "In the beginning, first of all you have to make a pair. Class pair. Okay. Do it like this. You have to do a diff of this. Double underscore init. Once again double underscore. And you have to do self. First. Second. We will tell you how to use this. And by giving colon. Self dot first. Is equal to first. And self dot second."
+  },
+  {
+   "start": 2647.87,
+   "end": 2678.03,
+   "text": "is equal to second. So, this is to make a pair that this pair will be like this. Okay? Let's go. Now, you have to define a function which we call less than. Less than. Keep this name only. def double underscore lt s underscore. In this, it will pass two things. Self and other. Means, it will always compare in two pairs. Whenever it compares, in heap, it is in two things. One and apple. This is your one pair. This is your p1 or a. Second p2 can be that this is 2."
+  },
+  {
+   "start": 2678.03,
+   "end": 2708.34,
+   "text": "and banana, so this is the second pair. Between these two pairs, there will be a decision that which one to send up. If there is a min heap, then you have to send one apple up. If there is a max heap, then you have to make two bananas. So, here you have to write the rules. So, how do you write the rules here? First of all, you have to write, if self.first not equal to other.first. Not equal to other.first. Means, if"
+  },
+  {
+   "start": 2708.75,
+   "end": 2740.38,
+   "text": "Sorry, if is not written like this in Python. I have got a little used to it. If self.first. Yes. Means, if both are not the same first. If both are not the same first, then who has to make the decision? First has to be made. Now, what do you do? See, what does less than ask? Less than always asks what? Less than always asks a question. In self and other. That what? My self is less than other. Less than other."
+  },
+  {
+   "start": 2740.38,
+   "end": 2771.17,
+   "text": "It can get two answers for this. Either it can get the answer yes or it can get the answer no. If it gets the answer yes, then self before other. This is the default behavior. Otherwise, before, before, sorry, other before self. Other before self. What does it mean? Let me tell you. Whenever it looks like a priority, because there are two. One is self and other. Self and other are just two pairs. P1, P2. It asks, is P1 less than P2?"
+  },
+  {
+   "start": 2771.17,
+   "end": 2799.76,
+   "text": "p1 is less than p2. This is the same question asked to LT. It doesn't mean what you write there. It asks if p1 is less than p2. If the answer is yes, then p1 will go before p2. If the answer is no, then p2 will go before p1. That's why Python by default implements min. So, look. The first case is that you have to keep min in both. Min in first and in second. So, here you can write less than. If this is the case, then return is self.first"
+  },
+  {
+   "start": 2800.11,
+   "end": 2831.89,
+   "text": "less than other dot first. Other dot first. If its answer is yes, means if self dot first is really better than other dot first, then self will go up. If self dot first is greater than other dot first, then its answer will be false. So, other dot first is small, it will go up. So, let's write this in min. If first is equal, then return same. Self dot second less than other dot."
+  },
+  {
+   "start": 2831.89,
+   "end": 2860.35,
+   "text": "Second. That's all you have to do. What is this? This is your min on first. Meaning minimum heap on first. Minimum on second. Why? Because look. LT is less than. Less than is less than. We have written exactly that. Self dot first is less than other dot first. Self dot second is less than other dot second. So whatever he is asking, we have written here. That's why both are min and min. Now."
+  },
+  {
+   "start": 2860.35,
+   "end": 2890.8,
+   "text": "If you want to make both as max. If you want to make any one as max. Just write this less than as greater than. Write this less than as greater than. If you want to make both as max. Do nothing. What do you write instead of this line? Return. Self dot first. Greater than. Other dot first. That's it. This is max. Now this is max on. Why? Because this less than. The question which python is asking. The question which python has thought. That less than. We have written its opposite. That self is greater than other."
+  },
+  {
+   "start": 2890.8,
+   "end": 2912.48,
+   "text": "Now, its answer will be the opposite. So, suppose if self is smaller, self means 1 and apple, 2 is 1 and apple. 2 and banana. What will Python ask? For Python, this is self and this is other. So, Python will ask a question from our LT. Tell me one thing, is self smaller than other? What are we returning?"
+  },
+  {
+   "start": 2912.48,
+   "end": 2942.35,
+   "text": "If self.first is greater than other.first, return true. So, here, is self.first greater than other.first? No. So, what will we return? False. But, what question did Python ask? Is self is less than other? Its answer is false. What is false? Other will go before self. Other will go before self. Means, 2 will go before. So, what did it become? It became max-heap. So, we are giving the opposite answer to what Python is asking. We are lying to it. So, Python thinks, okay, okay, okay. So, that's why it becomes max-heap."
+  },
+  {
+   "start": 2942.51,
+   "end": 2969.84,
+   "text": "default behavior is min-heap so if you write less than as less than then it will remain min if you change this less than to greater than then it will become max this way you will understand all four combinations what does all four mean? what happened? min on first, min on second suppose you want max on first and min on second then leave this as it is and make this greater than as we have done here if you want max on both then make both greater than and you will get both so write these four ways on one place"
+  },
+  {
+   "start": 2969.84,
+   "end": 2996.4,
+   "text": "You just have to remove greater than and equal to from this combination. You just have to remove greater than and equal to from this combination. You just have to remove greater than and equal to from this combination. You just have to remove greater than and equal to from this combination. You just have to remove greater than and equal to from this combination. You just have to remove greater than and equal to from this combination. You just have to remove greater than and equal to from this combination."
+  },
+  {
+   "start": 2996.59,
+   "end": 3026.74,
+   "text": "How is its usage? Similar to the other usage. Heap is equal to, this is done. For, you have to push something in heap. Suppose you have to push a pair, then what will you do? Heap queue, dot, heap, push, its name is heap, and the pair you made, pair of, suppose we made one and apple. One and apple, by doing this we made a pair. Push is done. You have to remove, how will you remove?"
+  },
+  {
+   "start": 3026.86,
+   "end": 3058.83,
+   "text": "while heap p is equal to heap q dot heap pop heap and how will we print this? what is this p? this p is a pair p dot first this is p dot second so whatever you do in sub you just have p first p second so we will give you the syntax of this in the code in the comment you will have to write this you will have to write this first this whole part"
+  },
+  {
+   "start": 3059.73,
+   "end": 3084.51,
+   "text": "This one will be exactly the same, you make a pair, but if you give less than here, then it will be min, if you give greater than here, then it will be max, remember. So you can decide, you have to max the first, you have to max the second, what to do, okay? Its code is syntax, it is just syntax, it is complex, we know. Okay, what can we do? Python is telling us that this language was not made to study DSA, that's why it is such a strange language, okay? So let's go."
+  },
+  {
+   "start": 3084.51,
+   "end": 3090.16,
+   "text": "Do try this. This is the full code. Try it. If possible, use the help of ChatGPT. No problem."
+  }
+ ]
+}

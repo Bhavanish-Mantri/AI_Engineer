@@ -1,0 +1,159 @@
+{
+ "video_id": "XpHIIQwVxvI",
+ "title": "Revise Stack Data Structure in 10 Minutes | DSA Patterns Course",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 826,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 25.09,
+   "text": "From this 10-minute lecture, you can summarize the last 5 lectures, which are 36, 37, 38, 39, and 40. So, 5 lectures combined for about 2.5-3 hours. You can summarize them all in 10 minutes. So that you can do a revision of this entire pattern. This revision video is very important because even though you come while watching the lecture, you need someone to tell you in a concise way. So, you will be able to remember everything."
+  },
+  {
+   "start": 25.09,
+   "end": 54.32,
+   "text": "after 10 or 11 minutes you will understand in which question the stack is used this is the most important part because in this course you don't learn how to make a question don't remember in which question the stack is to be used and why to use it because you won't be able to remember much why to use the stack? to understand this, focus all your energy and there are some important concepts like next greater, daily temperature, etc. so you will learn everything very quickly so first of all"
+  },
+  {
+   "start": 54.32,
+   "end": 83.79,
+   "text": "When we started stack, we were very much focused on one thing that what is stack and why is stack used? As soon as you understand this thing that why is stack used? And you will understand that what is the power of stack? What is the power? If we are reading a DSA pattern or a specific data structure, it has its own power. Power means that something of its own is used. It can do something unique that no one else can do. Otherwise, it is not made."
+  },
+  {
+   "start": 84.11,
+   "end": 109.46,
+   "text": "If there is a stack, then the stack can do something which the hash map can't do, which the array can't do, which the link list can't do. That's when the stack was made. If you read Q, then Q can do something unique which the stack can't do, which the hash map can't do. The hash map can do something which the rest of the things can't do. That's why they were made. So when you understand what a data structure can do and what it offers you, what specific problem it solves,"
+  },
+  {
+   "start": 109.46,
+   "end": 137.9,
+   "text": "then you won't have any problem in thinking whether it will fit in the question or not, or how it will fit. So what does stack tell you? First of all, what is stack? Stack is last in, first out, everyone knows that. But what does stack offer you? What problem does stack solve for you? Stack tells you this, if you have a lot of items, if you have a lot of items, suppose you have a lot of stones like this, and you are left to right, left to right or right to left, in any order,"
+  },
+  {
+   "start": 137.9,
+   "end": 166.24,
+   "text": "They are going and filling the stone in their pockets. The stag tells you that you can go and pick the stone. What can you do with the stone? You can pick it. What does picking mean? You can pick it up and put it in your pocket. You can throw the stone at any time. If you don't want to pick up the stone, then don't pick it up. Either you pick it up or you can throw it back. So you can throw it back. You can do both things. Pick up the stone or not pick it up."
+  },
+  {
+   "start": 166.24,
+   "end": 196.37,
+   "text": "you can pick it up and throw it, you can pick it up and throw it, you can pick it up and throw it, you can pick it up and throw it, you can pick it up and throw it, you can pick it up and throw it, you can pick it up and throw it,"
+  },
+  {
+   "start": 196.37,
+   "end": 225.68,
+   "text": "What is the most recent stone in your pocket? No matter if you pick up 5, throw 7, pick up 3, and then throw, it doesn't matter. In your pocket at this time, after doing this whole story, in your pocket at this time, what is the most recent stone? That always gives you a stack. What does it give you? Stack. It can only give you a stack. It can't give you a hash map. It can't give you a simple array. It can't give you a queue. Nothing. It can only give you a stack."
+  },
+  {
+   "start": 225.68,
+   "end": 254.35,
+   "text": "Okay, we don't know whether we have picked up the stone or not. Now tell me the most recent. Last also means the most recent. Which stone was found most recently? This gives you the stack. And you have to keep in mind that all the questions we have done, the main problem of all of them was this. The main problem of all of them was that what did you want? You had to deal with a lot of items. It could be a string question, it could be a bracket question, it could be a temperature question."
+  },
+  {
+   "start": 254.48,
+   "end": 281.2,
+   "text": "It could be an integer question. It could be anyone's question. There were a lot of items. In every question, you needed this. You needed the most recent ones. You needed the most recent items. You didn't need the first item. You didn't need the second item. You needed the most recent item in every question. That's why all these questions are stack questions. It's not that stack is a magic trick. And someone wanted to solve these 5 questions with stack. No. These 5 or 6 questions, whatever we have done,"
+  },
+  {
+   "start": 281.2,
+   "end": 309.92,
+   "text": "This can be solved only with stacks because their base problem is that we need the most recent things. And stack has only one power, stack has only one use in the world that it can give you the most recent element. How does stack happen? We give this example again and again and it looks very good, this is a very apt example. Stack is like a magazine in a gun. Now if you have seen in the movies, there is a bullet in it. What? There are a lot of bullets in it. There are a lot of bullets in it."
+  },
+  {
+   "start": 309.92,
+   "end": 337.95,
+   "text": "When you have to take out the bullet from the magazine, what do you do? How many bullets do you see at a time? Just one, which is at the top. If someone wants to empty the magazine, what does he do? He takes out the first bullet from the thumb. So the first bullet goes out of the thumb. As soon as the first bullet goes out, there was a spring in it, all the next ones come up. So the second bullet comes up now. So by doing this, you can empty the whole magazine. So the stack is just like that magazine, okay? You always see one bullet. Which one? The top one."
+  },
+  {
+   "start": 337.95,
+   "end": 359.52,
+   "text": "You can do anything with that bullet, you can see it, you can hit it, anything. You can also throw it out of your thumb, that is, you can throw it out of the magazine, what do we call it? Pop. Now you have the second bullet, the first one comes because there is a spring in it, there is a spring in the stack as well. So the magazine of the stack and the gun is exactly the same, exactly the same. Okay, you can do anything."
+  },
+  {
+   "start": 359.52,
+   "end": 389.14,
+   "text": "you can push, but to push the bullet in the magazine, you can't push it in the upper part of the magazine, not by making a hole in the middle of the magazine, if you push it in the upper part, then the rest of the things will go down and what you push will come up, so the stack is just like this and it solves this problem, that's why, that's why, in any question, in any question, if your main problem is that we want the most recent one, for example, when we were solving the string one, when we were solving the duplicate things of the string, what did he say,"
+  },
+  {
+   "start": 389.14,
+   "end": 413.94,
+   "text": "There should not be any adjacent letter twice or k times, which we did in the hard version. So, what he used to say is that there should not be any adjacent letter twice. Your main problem was that when you used to reach a particular index in string, suppose you reached i here. Naturally, you used to think that we should compare it with i-1. But, but, but,"
+  },
+  {
+   "start": 413.94,
+   "end": 439.98,
+   "text": "you could not do it with i-1 because it may not be in your string because it may have moved because it was not like we were taking the whole string, it was just like picking up a stone pick up any stone but it may have fallen down or thrown away so it is not necessary that i-1 is in your string what you need is, in my answer right now when we are standing on i my answer is coming"
+  },
+  {
+   "start": 439.98,
+   "end": 469.58,
+   "text": "Which is the top letter of that answer? You wanted this. If that letter was matching with this, then we wouldn't have taken this. What was your problem? The answer is being made, okay. We don't care what's in the string at the back. We don't care. In the answer, which is the top, the most recent letter? Tell me that and we'll compare it. So, who solves this problem? Stack solves it. That's why it's a stack question. What was the next question? Balance parenthesis, right? Balance parenthesis."
+  },
+  {
+   "start": 469.58,
+   "end": 497.63,
+   "text": "In this, we told you how balance parenthesis does C++ or Java. So, when C++ or Java sees any opening bracket, then it can't do much in the opening bracket, it stores it. It can store it anywhere. Now, it is your wish, you can store it anywhere. Do it in array, link list, hash map, etc. But, when it sees closing bracket, then it tries to compare it. Who? C++ or Java. It tries to compare it. But, with whom it tries to compare? Because,"
+  },
+  {
+   "start": 497.63,
+   "end": 519.73,
+   "text": "In C++, if you look at the curly bracket, then all the curly brackets are of the same type, there is no name for the curly bracket. If we open the curly bracket of if, it also looks like this. If we open the curly bracket of for, it also looks like this. If we close the curly bracket of if, it also looks like this. If we close the curly bracket of for, it also looks like this. It is not that you give a name to it, we give the name of the variable, there is no name for the bracket, so all the brackets look the same."
+  },
+  {
+   "start": 519.73,
+   "end": 549.49,
+   "text": "All the opening brackets are identical. All the closing brackets are identical. So how does C++ know that the closing brackets that you have used are the closing brackets of if, for, function or class? All of them look the same. That is why C++ thinks that with whom do you want to compare this closing? With the last or most recent opening bracket. Remember the lecture."
+  },
+  {
+   "start": 549.49,
+   "end": 578.78,
+   "text": "Closing bracket used to be compared with the most recent opening bracket. And who solves this exact problem? Stack solves it. Keep storing opening brackets in stack. It will always give you the most recent opening bracket which is open. That's why the question is a stack question. It's not magic that someone feels like it's not a stack. This question can only be solved by stack. Because who will solve this problem? Most recently, stack will solve it. Okay. What was the next concept?"
+  },
+  {
+   "start": 578.78,
+   "end": 603.57,
+   "text": "next greater element, or next smaller element, or previous greater element, or previous smaller element, all these. Now, why stack was used in these? Why is this stack's most important concept? Because it is also doing the same thing. See, when we talk about previous greater element. So, suppose when you are standing on array of 4. So, logically, you have to find previous greater element, so that you get the first one."
+  },
+  {
+   "start": 603.57,
+   "end": 627.39,
+   "text": "So, in which order should you give chance to the elements? First of all, which of your answers are possible? Your answer is A0 is possible, A1 is possible, A2 is possible, A3 is possible. A5 is not possible because you have to find the previous and not the next. We are talking about the previous greater. But, the first chance to get the answer, should you give it to A0? No, no, no."
+  },
+  {
+   "start": 627.39,
+   "end": 656.86,
+   "text": "You should give the first chance to the area of 3. Why? Because just previous, if the area of 3 is bigger than you, then you don't need to go back. You don't need to go back to the area of 0, 1, 2. If the area of 3 is not bigger than you, then you need to go back. Then you need to give the chance to the area of 2. Even now, the number of the area of 0 has not come. If it also refuses, then you should give the chance to the area of 1. If it also refuses, then you should give the chance to the area of 0. So, in which order are you giving the chance?"
+  },
+  {
+   "start": 656.86,
+   "end": 683.41,
+   "text": "First of all, array of 3, then array of 2, then array of 1, then array of 0. Who does this exact work? Stack. If you keep storing all the elements, then array of 3 will be stored at the very last. At the very last, but the bullet that will go at the very last, that will be in the first or at the top of the magazine. So, it is like a magazine. That's why, what is used in all these things? Stack. And that's why this stack is such an important concept."
+  },
+  {
+   "start": 683.41,
+   "end": 712.26,
+   "text": "So, understand the main power of a stack. A stack has only one function. See, a stack is a very simple data structure. Yes, those people who are coming for the first time, you must be thinking that he is not telling the question. All the questions from 36 to 40 are told in a very deep way because it is a revision video. Okay? A stack is a very simple data structure. A stack has only three things. One, it gets push. Push means, fill the bullet. One, it gets pop. Throw the bullet with your thumb. One, it gets top. Top is nothing. Look at the one above. In Java, it is called peak."
+  },
+  {
+   "start": 712.26,
+   "end": 741.01,
+   "text": "So, stack is a very simple data structure. It doesn't have much to do. But, it has a unique power. The unique power is that you keep pushing the items. Means, you keep picking up the items. Keep picking up the items. Keep throwing them. Do whatever you want to do. But, at any point, if at the most recent, most recent, picked up, the item that is still there. Not the item that fell. Still, still, picked up item. Picked up item. Which is still there. Which is still there. In Hindi, you can understand it like this. Which is still there."
+  },
+  {
+   "start": 741.1,
+   "end": 767.97,
+   "text": "If you ever need it, then it can give you a stack. It can give you immediately. Rest, the data structure will struggle a little. This is what the stack knows to do. The stack knows nothing else to do. If you ask him, tell me one thing, what did we pick up four days ago from now? I don't know. Did you pick up this element? Do you have it or not? Search and tell me. He will say, I don't know. Which element did you pick up first? He will say, I don't know."
+  },
+  {
+   "start": 767.97,
+   "end": 796.8,
+   "text": "You just need to know which one is the most recent. And the question in which you can see the problem of which one is the most recent, the most recent item, the most recent letter, then you will understand that what should be included in it? The stack should be included. This is the way to understand the stack. The question of the stack is not difficult. The question of the stack is difficult in the sense that you will not know whether to put the stack or not. Knowing that is the most difficult and that will work when you will understand the power of the stack."
+  },
+  {
+   "start": 796.8,
+   "end": 825.65,
+   "text": "So, that's it for today. From tomorrow, a new pattern will start. So, stay consistent and keep reading. We all know that your end is almost over. So, don't focus too much on making Christmas. Christmas and New Year will keep coming. If you don't get a job, it will be very difficult. So, it's not like New Year will not come next year. New Year is coming. We have seen 25 New Year. We will see 50 in the future too. So, it's not like New Year is stopped. New Year comes every year. You focus on making yourself new. Don't party too much on New Year. Let's meet."
+  }
+ ]
+}

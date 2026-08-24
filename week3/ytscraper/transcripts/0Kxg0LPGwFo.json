@@ -1,0 +1,459 @@
+{
+ "video_id": "0Kxg0LPGwFo",
+ "title": "One Video To Solve All Binary Search Interview Questions | DSA Patterns 2026",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2260,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 14.32,
+   "text": "First of all, it's my happy birthday. We received a lot of wishes. Thank you, thank you everyone. We are 25 years old now. And we had said that the pattern will be finished by the birthday. But due to some delays, it couldn't be done. But I think whatever has happened is very good. And it will be done very soon."
+  },
+  {
+   "start": 14.32,
+   "end": 43.86,
+   "text": "Today's lecture is the most important of binary search because when people get stuck in binary search, then when they come to the problem of story, you will not be asked in any interview binary search that there is a number, search it and tell me. No, that was the concept. You always have story problems like Coco, aggressive cow. Today in this question, Coco will explain you so well that you will be able to solve all the sheet problems. You will not have to watch that video again for any problem. So listen carefully to Coco's problem because it is a very famous problem and it is a base problem to understand this story problem."
+  },
+  {
+   "start": 43.86,
+   "end": 73.34,
+   "text": "So in this video, we will not just explain you how to solve this problem, no. We will explain why this is of binary search, why every story problem is of binary search, and how all the things will be solved from the same template. It is exactly one template, every problem has one template. Learn one template, it will happen that you are filling it with value. So listen very carefully, very carefully till the end. If you understand, then don't skip the video. Listen to this video carefully, you don't have to watch the next 5 videos. Do you understand?"
+  },
+  {
+   "start": 73.34,
+   "end": 102.06,
+   "text": "And again, thank you and let's start the video. Come, first of all we will explain you the question in Hindi. And my target is that you understand this question. You also understand that what is the question of binary search? How to recognize such questions? Because we don't want you to remember that these 5 things are of binary search. No, many questions are possible. We want you to understand that what is this question? How to recognize it? And how to solve it? It will be the same template of everything. So first of all, we will tell you the question in Hindi. So it will be given like a story."
+  },
+  {
+   "start": 102.19,
+   "end": 124.3,
+   "text": "First of all, I have told you that there is a bear. What is the name of the bear? Coco. It is a female bear. So, its name is Coco. Now, Coco has some bananas. You can see that there are bananas here. And this banana is not kept alone. This banana is kept in a group. Somewhere there are 3, somewhere there are 5, somewhere there are 7. Anything can happen. Now, what can Coco choose? She can choose her K. K means eating speed."
+  },
+  {
+   "start": 124.3,
+   "end": 154.02,
+   "text": "What? What is K? Eating speed means, how many bananas will she eat in an hour? Coco can decide that herself. We have to eat 3 bananas in an hour or 10 bananas in an hour. Coco will decide that. Okay. What will happen after deciding? Look. For example, Coco decides that my K is 4. It means that we can eat 4 bananas in an hour. So what will happen? In the first hour, let's assume that she came here. She came to this one where 3 bananas are kept. So look, now we can eat 4 in an hour. Here there are 3. So what will she do? She will eat these 3. After eating these 3,"
+  },
+  {
+   "start": 154.02,
+   "end": 180.18,
+   "text": "It will make it zero. But, its speed of making 1 is still remaining, but it will be wasted. It won't happen that after eating 3, it will move to the 5th one. No. If it is less than the speed, then it will eat the whole banana and stay there for 1 hour. So, its 1 hour will be wasted here. 1 hour means it will occupy here and eat these 3 bananas. When its speed is 4. Okay, it will come here, on 5 bananas. So, see. The banana is 5. How much can it eat in 1 hour? 4. So, what will it do in the first hour?"
+  },
+  {
+   "start": 180.18,
+   "end": 206.38,
+   "text": "In the first hour, she will eat 4 out of 5 because she can eat 4. Now 1 banana will be saved here. Next time, next time, what will she do in the next hour? In the next hour, she will just make 1 to 0. Means she will eat 1 banana and will stop there. That hour was wasted. She will not go anywhere to eat 3 more in that hour. So how much did she take here? Here she took 2 hours to eat. Okay. What will she do if she comes at 7? In the first hour, in the first hour, she will eat 4 at 7 and make it 3. Okay."
+  },
+  {
+   "start": 206.38,
+   "end": 230.53,
+   "text": "What will she do in the next hour? What will she do in the next hour? And for her, if she goes on one pile, then she will eat the whole thing. Because wasting is not like this, right? That you eat one pile, there are 3 left in it, you have increased somewhere else, then there is nothing like that. No, no, that is not her target. If she goes on one pile, then she believes that she will finish it. Now, in the next hour, there are 3 left here. What is its speed? 4 kilos to eat. So, she will eat all 3 out of 3. And it will finish here too. So, here also it took 2 hours. So, how much time did it take in total?"
+  },
+  {
+   "start": 230.53,
+   "end": 257.71,
+   "text": "Here it took 1 hour to eat 3 meals, it took 2 hours to eat 5 meals, it took 2 hours to eat 7 meals, so in total it took 5 hours. So you can see that as you choose K, then according to K, your hour will increase or decrease. Means the speed you choose, it may take more hours or less hours, according to that it will increase. Okay, this is the story. What do you have to do? There are some guards there, not just Coco."
+  },
+  {
+   "start": 257.71,
+   "end": 276.93,
+   "text": "What is there? Some guards are sitting there, okay? Guards are sitting there to guard the banana. Now guard, guard has gone out to drink water or tea. Guard will come back in H hours. Guard will come back in H hours. H hours means something will be given to H. For example, guard has said that we will come back in 5 hours."
+  },
+  {
+   "start": 276.93,
+   "end": 306.86,
+   "text": "We are going to have tea or do some work. We will be back in 5 hours. Meaning, Coco has only 5 hours to eat this banana. Whoever is giving you H, H will be giving you that the guards have gone out and will be back in this time. So, Coco has only 5 hours to eat the banana. Okay, this is also done. Okay. Now, what do you have to do? What is the question you have to do? You have to tell the minimum value of K. Try to remember. Minimum value of K. What is K? Eating speed. Not its maximum. Its minimum value"
+  },
+  {
+   "start": 306.86,
+   "end": 332.0,
+   "text": "So that, so that, Coco can finish all bananas. Finish all bananas. Means all the piles should be finished. All the piles should be finished. All bananas. And its minimum value of K. Because Coco likes to eat slowly. Coco doesn't like to eat in a hurry. So obviously, you have to keep some speed. But Coco wants to..."
+  },
+  {
+   "start": 332.0,
+   "end": 359.76,
+   "text": "It would have been better if my work would have been done at the minimum speed. So, this is the premise of the question. So, what do you have to return? Minimum value of K. Minimum value of K. So, see. Now, this is the question. Now, why is this the question of binary search? Remember, in the first class of binary search, we told you some rules. First of all, we told you that whatever happens to you, you have to optimize something or the other. First of all, you have to find a single thing. Single thing or single value. Here, what do you have to find?"
+  },
+  {
+   "start": 359.76,
+   "end": 386.83,
+   "text": "Speed. Minimum value of K. What is eating speed? It is a single thing. You have to optimize it. It means either you have to minimize it. Whatever you are finding. Or you have to maximize it. Generally. You have to optimize it. You have to minimize it. Okay. After that what did we say? If you have to find this. You can guess it. If you can guess it. Guess what you are finding."
+  },
+  {
+   "start": 386.83,
+   "end": 393.9,
+   "text": "Do trial and error. Let's see if my work is done or not. And the answer of that guest means"
+  },
+  {
+   "start": 393.9,
+   "end": 423.47,
+   "text": "Now whatever you have been told to find, whatever you have been told to return, you have been told to return the minimum speed of k, what was said in the binary search question? Return the index where this is present. So we used to guess the index. So whatever you have been told, you have to guess that. The answer to that guess, the answer to that guess means that answer is correct, that answer is wrong, that answer is a little wrong, what is that, yes or no? You should know this in order of 1 or you should know in order of n in some cases. Order of 1 means in binary search you would know immediately that"
+  },
+  {
+   "start": 423.47,
+   "end": 452.45,
+   "text": "Is that number on the guess or not? Array of guess equal equal to target. It went straight ahead. In some cases, you can get order of end time. It is allowed. Okay. And whatever your answer will be, whatever your answer will be, means, suppose you write all possible guesses and write all the answers side by side. Write all the answers side by side. So, what should this be? It should be monotonic. What did monotonic mean? If your answer, suppose, is coming in yes or no, then it should have been yes, I,"
+  },
+  {
+   "start": 452.45,
+   "end": 476.54,
+   "text": "yes comes, yes comes, yes comes, suddenly no comes at one place, and then no comes, and then no comes. It should not be a mixer match that two yes is coming, one no is coming, two, it should not be like this. And in 99% of cases, you have to find this turning point only. Remember the example of fan, in the fan regulator, you have to find the turning point only. Okay. So what is this question? It fits better in all of us, let's see."
+  },
+  {
+   "start": 476.54,
+   "end": 500.82,
+   "text": "Do you want to find a single thing? Yes, you want to find a minimum eating speed, which means a single thing. Do you want to optimize the speed? Yes, we want to minimize the speed. It's not like tell us any speed. No, tell us the minimum speed by which it can work. What is the work here? Finish all bananas. Finish all bananas is your condition. Finish all bananas is your condition."
+  },
+  {
+   "start": 500.82,
+   "end": 524.86,
+   "text": "Can you guess? Yes, I mean you can guess the speed. You can say anything like eating feed. Here we guessed. Here we said 4. So what was 4? 4 was my guess. Yes, guess. We will see what happens. So you can guess. Okay. Do you get the answer of guess in order of 1 or order of n? Let's see. I don't know. We will have to see. And is your answer monotonic? Let's see. Let's see. Okay. Come. Now,"
+  },
+  {
+   "start": 524.86,
+   "end": 548.62,
+   "text": "Those who have understood, we will encourage you to pause the video and make it yourself, and those who haven't understood, let's see. So remember that in the example of the fan, there was something like this, that if you remember the example of the fan, then what was there? That find the minimum speed of the regulator, find the minimum speed, so that it doesn't get hot, first thing, so that it doesn't get hot, and the bill also comes as low as possible."
+  },
+  {
+   "start": 548.62,
+   "end": 562.22,
+   "text": "Bill is also less than less. So why was the bill less than less? Because you had to define the minimum speed. In minimum speed, the bill will come less than less. But how should that minimum speed be? In which you don't feel hot. In which you don't feel hot. So this is also something like this. Tell me the minimum eating speed."
+  },
+  {
+   "start": 562.22,
+   "end": 592.02,
+   "text": "Minimum eating speed. Now minimum eating speed will say something like I will keep the eating speed at zero. I will keep it at one. One can be the minimum speed. You can eat only one banana. You don't have to eat half a banana. You will eat one banana. If you eat zero, then it will never end. So someone can say that minimum is one. But there is also a condition in it. That you will have to eat all the bananas. You have to eat all the bananas. And in how many hours? In H hours. You have to eat all the bananas in H hours. It is not that you have to delay. No. So that is a condition. That is a condition. That is how you have to minimize. Let's see."
+  },
+  {
+   "start": 592.02,
+   "end": 622.29,
+   "text": "Assume that you have a pile like this. You have a pile of 3, 6, 7, and 11. 0, 1, 2, 3. Okay? This is your pile. It is a banana pile. And you have been told that in how many hours will the guards come? In 8 hours. Meaning, how many hours do you have to eat? You have 8 hours to eat. Okay. Now what do you have to tell? You have to tell the minimum eating speed. Okay. Okay, so think with your own mind that what can be the minimum eating speed of any person? What can be the minimum speed?"
+  },
+  {
+   "start": 622.29,
+   "end": 651.52,
+   "text": "Now, any person's minimum speed will be 1. You will eat 1 banana in an hour, right? In an hour, if Coco says that we will eat 0 banana. First of all, there is no need to eat 1 banana in an hour. There is speed, right? Speed is not negative, first thing. Okay. Now, there is no need to eat 0 banana in an hour. Because if you eat 0, then you will not be able to eat, then nothing will happen. So, according to me, your minimum speed, minimum possible speed should be 1. That you will have to eat 1 banana per hour to think anything. Okay. High."
+  },
+  {
+   "start": 651.52,
+   "end": 669.23,
+   "text": "How much can you eat a maximum banana in an hour? How much can you eat a maximum banana in an hour? Now see, remember what is Coco's behavior? If, if, let's say she goes somewhere, she goes somewhere here, X goes to any one pile, you can go to any one pile in an hour, okay? Let's say there is a banana here, okay."
+  },
+  {
+   "start": 669.33,
+   "end": 698.29,
+   "text": "If its speed is less than X, then it will do that first it will eat that much, then it will eat the remaining amount and will waste that much. If its speed, suppose X is equal to 5 here, if you also change the speed of cocoa to 10, that we can eat 10 bananas in an hour, then its 1 hour is going to be wasted here because it will eat 5 in an hour and make it zero. But even then it will waste 1 hour here. It will not happen that if you had 5 bananas, then you will get some special benefit from doing 10 speed, you will not get any special benefit. In this pile,"
+  },
+  {
+   "start": 698.48,
+   "end": 724.77,
+   "text": "In this pile, you can see that 11, where is the most banana kept? It is kept in 11. If you had chosen cocoa speed 11, if you had chosen cocoa speed 11, if you had chosen cocoa's highest speed, highest speed, let's assume that we can eat 11 bananas, then only it will take 4 hours minimum, then only it will take 4 hours minimum. Why? See, it will come here, how much is 3 here? Its speed is 11. All three will be eaten in how many hours? In 1 hour. All three will be eaten in how many hours?"
+  },
+  {
+   "start": 724.77,
+   "end": 749.23,
+   "text": "Here it will be eaten in 1 hour. It will come on 6. How much is there on 6? All 3 will be eaten in 1 hour. See, you have kept its ring speed at 11. But it is not getting any benefit. It is 6. It will stay there after eating 6. It will come on 7. It will be eaten in 1 hour. It will come on 11. It will be eaten in 1 hour. So, how much is the total? The number of piles are there, it will take that much time. You can see that if there are 4 piles, then it will take you 4 hours. Why?"
+  },
+  {
+   "start": 749.23,
+   "end": 765.68,
+   "text": "Because when it goes on a pile, it will eat it. If your speed is more than this, then the speed is very high, there is no problem. It will eat the banana and will waste 1 hour there. So it will take you at least 4 hours to know your speed. Now, if you increase your speed more than 11, someone will say that we will keep our speed 1100."
+  },
+  {
+   "start": 765.68,
+   "end": 794.45,
+   "text": "you can keep it, it will still take 4 hours, why? 3 is there, your speed is 1100, your speed is 1200, your speed is 2000, it doesn't matter at all, you will have to waste 1 hour there, by this we understand that the maximum element of the array, the maximum of the piles, in which most of the bananas are kept alone, if you choose that speed, then in 4 hours, 4 means whatever n is there, the size of your array, the piles that are kept, you will definitely get that, so we understand that, what can we keep highest, we can keep the highest of the maximum array,"
+  },
+  {
+   "start": 794.45,
+   "end": 822.59,
+   "text": "That's it. Very good. Okay? Now, what did we have to do in binary search? We had to guess. What did we have to do? We had to guess. Come on. Let's guess. Guess with me. Come on, let's see. Let's guess. We have to find two things. Now, what do we have to guess? What do we have to do? What is this? This is eating speed. Again, we have to say that whatever we have to find, we have to guess on that. That we will do this, we will do that. This is guess. What do we have to guess? We will guess whatever we have to find. Till now, we were finding index. Till now, we were finding index in every question. Index was getting guessed."
+  },
+  {
+   "start": 822.59,
+   "end": 848.62,
+   "text": "Now what do you have to find? Minimum speed. So guess the speed. Okay. Come, let's guess. We say that randomly, whatever is in my mind, we will do that. We say 3. Coco will think that let's try with 3 that we will eat 3 bananas in 1 hour. We will eat 3 bananas in 1 hour. Come, let's see how much time it will take. So your banana is kept like this. How? 3, 6, 7, 11. Right?"
+  },
+  {
+   "start": 848.62,
+   "end": 874.94,
+   "text": "Your speed is 3. Let's see how long it will take. And yes, remember that the guard will come in 8 hours. The guard will come in 8 hours. If it will take more than 8 hours, then you will not be able to eat. So that's it. You have to eat before the guard comes. Eat within 8 hours, then it will be done. Otherwise, you will not be able to eat. Okay. Let's see how long it will take. What is your guess? 3. Means you can eat 3 in 1 hour. First of all, it will come here. So here it is 3. Very good. So it will eat 3 immediately and make it 0. Here it will take 1 hour. 6."
+  },
+  {
+   "start": 874.94,
+   "end": 895.3,
+   "text": "How many hours will it take for 6? See, in the first hour, in the first hour, it will eat 6 and make it 3. But it is still left. It can't go yet. It is still left to make it 3. In the next hour, it will eat this 3 and make it 0. So, it took 2 hours here. It took 2 hours here. 7. How long will it take for 7? If your eating speed is 3, you have 7 bananas, then how long will it take? See, in the first hour,"
+  },
+  {
+   "start": 895.3,
+   "end": 921.92,
+   "text": "If she can eat 3 out of 7, then she will do 4. If she can eat 3 out of 4 in the 2nd hour, then she will do 1. And in the 3rd hour, she will eat 1 and do 0. But she will not go further, her hour is wasted. If there is one banana left, then your hour is wasted. 11. Oh man. In the first hour, she will eat 11 and do 8. After that, she will eat 8 and do 5. After that, she will take another hour, in which she will eat 5 and do 2. And..."
+  },
+  {
+   "start": 921.92,
+   "end": 951.28,
+   "text": "It will take one more hour to eat two and get zero. So until it eats the whole banana, the pile doesn't move forward. Let's count how much time it will take. How much time did it take here? One hour. Here, two hours. Here, three hours. Here, four hours. Total how much? One plus two, three, three, six. Ten hours. Ten hours. When will the guard come? In eight hours. If Coco guesses these three, then how much time does it take? Ten hours. So will Coco be able to eat three at the speed of three? No. No. No."
+  },
+  {
+   "start": 951.79,
+   "end": 974.21,
+   "text": "Coco will not be able to eat from the speed of 3. We came to know that there can't be an answer in 3. There can't be an answer in 3. Okay? It's a good thing. Come, let's try to do something else. We are telling you this because we want you to solve all the questions of binary search by looking at this one question. 3, 6, 7, 11. Let's go. 0, 1, 2, 3."
+  },
+  {
+   "start": 974.21,
+   "end": 988.3,
+   "text": "We say that the speed that we are guessing right now, whatever we are guessing, guess 7. 7, it can be guessed because look, what we said that my lowest speed is 1 possible, highest can be 11, so we said do 7, you can do anything, right? Let's do 7, let's see."
+  },
+  {
+   "start": 988.66,
+   "end": 1015.79,
+   "text": "What will happen in 7? Now see, we have to make 3 here. How much is its eating speed? 7. So what will it do? It will eat 3 in 1 hour and stop there. It will eat it and it will take 1 hour here. 6. What will it do in 6? 6 is less. It will eat 6 in 1 hour and stop there for 1 hour. Okay. It will take 1 hour. See, it will take 1 hour in every pie. If it has to make 1 in it, it will take 1 hour. And it will make 1. Okay. 7. 7 too. Okay. Your speed is 7. 7 bananas are there. Eat 7. Eat 7 and stop for 1 hour. 11."
+  },
+  {
+   "start": 1015.86,
+   "end": 1044.83,
+   "text": "What will happen in the first hour? She will be able to eat 7 out of 11. 4 will be left. In the second hour, she will eat 4 out of 4 and make it 0. So now 2 is left. Let's see how much time it took. 1 hour to eat this, 2 to eat this, 1 to eat this, and 2 to eat this. 1 plus, sorry, 1 here. So 1 plus 1 plus 1, 3 plus 2. 5 hours. Yes, yes, yes. In how many hours will the guard come? In 8 hours. If Coco eats at the speed of 7, then she will eat in 5 hours."
+  },
+  {
+   "start": 1044.83,
+   "end": 1071.81,
+   "text": "So, it will eat in 5-6 hours. Okay. So, we came to know that if we guess, then how do we know the answer? Now, here we did this, but how do we know? Let's see how to know. Suppose, this is very simple. You just have to think in every problem related to the story, how to know the answer of the guess. Because, till now, in the binary search, you used to get the answer of your guess immediately. How? You used to guess on index. So, you used to do like this, array of guess."
+  },
+  {
+   "start": 1071.81,
+   "end": 1094.86,
+   "text": "equal to target, so you would have known immediately that my guess is correct, that my guess is in the less one, that my guess is in the more one, you would have known immediately, but now you will not know immediately like this, how will you not know, assume that you have 3, 6, 7 or 11, now k is equal to whatever your k speed is, whatever your guessing is, you have guessed 3, now how will you know that from these 3, now see,"
+  },
+  {
+   "start": 1094.86,
+   "end": 1117.25,
+   "text": "After guessing one speed, what can happen? Either you will be able to eat or you will not be able to eat. This is what will happen. There is nothing in between. Either Coco will eat all or Coco will not be able to eat. Or, one more thing can be known that either you will eat in how many hours. See, from every speed, even if your speed is 1, at some point or the other, you will eat a banana. At some point or the other, you will eat a banana."
+  },
+  {
+   "start": 1117.25,
+   "end": 1145.84,
+   "text": "It's just a matter of how many hours it takes. If it takes you 100 hours to eat, then there is no use. So you will get to know that at what speed we have to know how many hours. See, how will we know? 0, 1, 2, 3. Now see, your K is 3. Now see, you can think of it as an example. Suppose your banana is 10. Your speed is 10, what is your speed? K. How many hours will it take to eat? What does this mean? You can eat 3 in 1 hour. So see,"
+  },
+  {
+   "start": 1145.84,
+   "end": 1173.47,
+   "text": "In the first hour, if you eat 10 and do 7, then 1. After that, if you eat 7 and do 4, then 1. After that, if you do 4 and do 1, then 1. After that, if you do 1 and do 0, then 1. Now see, this is not 10 by 3. What is 10 by 3? 10 by 3 is 3. We are talking about integers, we are talking about computer language. 10 by 3 is 3. But, if 10 modulus 3 is not equal to 0, which means that a remainder is left,"
+  },
+  {
+   "start": 1173.47,
+   "end": 1191.98,
+   "text": "Why 10 by 3 is 3? Because out of 10, you can eat 9 first. How long will it take to eat 9? 3 hours. But even after eating 9, the remainder of 1 is left. It will take 1 more additional hour to eat this. If this is the case, then 3 plus 1 is equal to 4 answers. Similarly,"
+  },
+  {
+   "start": 1191.98,
+   "end": 1219.98,
+   "text": "Suppose you have to make 7. What is your eating speed? 3. So see, how long will 7 take? If you eat 7 in the first hour and make it 4, then it will take 1 hour. After that, if you eat 4 and make it 1, then it will take 1 more hour. But the remainder is left. So to eat this 1, it will take 1 more hour. So 3. Let's see. First of all, 7 by 3. How long will it take? 7 by 3 is 2. Because we are doing integer division. But 7 modulus 3 is not equal to 0. So 2 plus 1 is equal to 3."
+  },
+  {
+   "start": 1219.98,
+   "end": 1248.0,
+   "text": "By doing this, you can find out. Yes, yes, you can find out. See, k is equal to 3. Come, let's see. Remember, we had taken out the answer of k is equal to 3. Where? 10 hours. Come, let's see if it comes out or not. First of all, 3. First of all, 3. So, what will we do first? 3 by 3 is equal to 1. And, 3 modulus, 3 is equal to 0. It means, there is no remainder. It means, in one hour, you will eat and clean it. Nothing will be left. Its answer is 1. Very good. 6. 6 by 3 is equal to 2."
+  },
+  {
+   "start": 1248.0,
+   "end": 1277.04,
+   "text": "So, 2. But, 6 modulus 3 is not a remainder. Meaning, if you eat 6, 3 times, 2 times, then 6 will be finished. So, there is no need to stop. Very good. 2. 7 by 3 is equal to 2. But, 7 modulus 3 is not equal to 0. Meaning, if you divide this and eat it, then 6 will be 1. It will take you another hour to eat 1. 2 plus 1. Okay. 11. 11 by 3 is equal to 3. But, but, what is 11 modulus 3?"
+  },
+  {
+   "start": 1277.04,
+   "end": 1301.22,
+   "text": "It is 2. Now see, 2 does not mean that you will take 2 more hours. No. See, 11 by 3 is equal to 9. It means that you will eat 9 out of 11. It means that you will eat 9 in this and 2 will be left in this. It took you 3 hours to eat 9. That is written here. But, how many hours will it take you to eat 2? It will take 1 hour. Because what is your speed? Your speed is 3, right? Your speed is 3. So, 1 hour in eating 2. So, if 11 modulus 3."
+  },
+  {
+   "start": 1301.22,
+   "end": 1324.64,
+   "text": "is not equal to 0, then whatever r you are counting will be plus plus. So here also we will do plus 1. How much came? 1 plus 2, 3, plus 2, 5, plus 6, plus 9, plus 10. You got to know this. How did you get to know this? You choose a speed, traverse on the array, do this and that for every element. We will write its code too, but I am telling you. How much time did it take?"
+  },
+  {
+   "start": 1324.64,
+   "end": 1335.94,
+   "text": "Order of n, order of n, not order 1. You will not know immediately whether it will happen or not. You will have to look at the whole array. You will have to look at every pile and calculate whether it will take 10 hours or 11 hours. Okay."
+  },
+  {
+   "start": 1335.94,
+   "end": 1365.55,
+   "text": "Very good. Order of n. Does it satisfy the condition? How to get the answer of the guess? If you get it in order of 1, it is very good. It can be in order of n. If it is in order of n, then you got the answer of the guess. Okay. Now, the next thing is, is your answer monotonic? Is it monotonic? Okay, tell me one thing. Now, think a little. Think a little. When we teach, we don't want to teach something magical that you don't understand. We think along with you. We teach you how to approach. If you make it yourself, then how will you think? Okay."
+  },
+  {
+   "start": 1365.55,
+   "end": 1395.34,
+   "text": "Let's assume that when you guessed your speed as 3, then it can be any pile. You knew that it took 10 hours. What is this? It is simple speed and time. What is simple? It is speed and time. It is speed and time. It is a pile. Your speed is okay. You did one more thing. You chose your speed as 7. How much was it in 7? According to me, it was 7. Where was it? Did I forget the 7th one?"
+  },
+  {
+   "start": 1396.14,
+   "end": 1420.35,
+   "text": "I think it was 7. I forgot the 7th one. It took 4 hours. Let's say it took 4 hours. I don't remember. You can see. If your speed was 7, then it took 4 hours. Okay, tell me one thing. In this case, what is the duration of your guard's arrival? 8 hours. It means you have a window of 8 hours. In this case, will you be able to eat cocoa? Will you be able to eat cocoa when your speed was 3? No. No."
+  },
+  {
+   "start": 1420.35,
+   "end": 1435.18,
+   "text": "She will not be able to eat at all. Why? Guard will come in 8 hours. It will take you 10 hours to eat. So if your 10 is greater than 8, you will not be able to eat. But, speed is equal to 7. Yes. Why? She will finish eating in 4 hours. When will guard come? After 8 hours. Very good. There is enough time. Okay."
+  },
+  {
+   "start": 1435.41,
+   "end": 1460.11,
+   "text": "Now, realize a very important thing. In speed 3, you said that you won't be able to eat. Means, when your speed was 3, you couldn't eat. Because your speed will be slow. If your speed is slow, you won't be able to eat. You took more time. Who takes more time? The one who is slow. The one who studies slowly, he studies in more time. The one who studies fast, he studies fast. This is what happens, right? Okay. Now, if we ask you that will you be able to eat in speed 2?"
+  },
+  {
+   "start": 1460.11,
+   "end": 1487.23,
+   "text": "Do you need to do any calculation for this? Isn't it logical that you won't be able to eat in speed 2? You won't be able to eat in speed 2. If you won't be able to eat in speed equal to 3, then how will you be able to eat in speed equal to 2? If we are saying that when your speed was 70 km per hour, then it took you 3 hours to go from Delhi to Jaipur. Now if someone asks you that if we want to drive at a speed of 40 km per hour,"
+  },
+  {
+   "start": 1487.23,
+   "end": 1511.65,
+   "text": "Will it take 3 hours or more? It will take more than 3 hours. The speed has decreased, the time will increase. So, if the speed is equal to 3, it will take 10 hours. If the speed is equal to 2, it will take more than 10 hours. It may take 11 hours. So, no matter how many hours it takes, the answer will be 9. Because the minimum time is 8 hours. So, if the speed is equal to 3, it will take 9 hours. So, what do you know?"
+  },
+  {
+   "start": 1511.65,
+   "end": 1533.41,
+   "text": "If you try any speed less than this, the answer will be no. It is not possible that when Koko is eating at the speed of 3, it will take 10 hours and if she starts eating at the speed of 2, it will take only 2 hours. No, it is not possible. If she eats at the speed of 2, it will take 20 hours and more time. Similarly, if yes is coming in speed 7, if you increase the speed,"
+  },
+  {
+   "start": 1533.41,
+   "end": 1561.68,
+   "text": "If you increase the speed, then will it take less than 4 hours? If you were running at a speed of 100 kmph, then you would have reached in 2 hours. If we were running at a speed of 200 kmph, then we would have reached in 1 hour. So, let's assume that it will take only 3 hours. Is 3 hours also a yes? Yes. See, you have to complete within 8 hours. Now, do you eat in 4 hours? Or do you eat in 2 hours? Or do you eat in 30 minutes? That is your perspective. So, here also, it is a yes. So, see, this monotonicity has been created. How?"
+  },
+  {
+   "start": 1561.68,
+   "end": 1589.15,
+   "text": "What did we say? What did we say? From where does your speed vary? From where does your speed vary? Your speed can be 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11. In this case, up to 1 point, up to 1 speed, all the answers will remain no. Up to 1 speed, all the answers will remain no. But, 1 speed will come where the answer will be yes for the first time. And beyond that, the speed you increase,"
+  },
+  {
+   "start": 1589.15,
+   "end": 1617.6,
+   "text": "Everyone's answer will be yes. Yes. Yes. See if the monotonicity is made or not. The monotonicity is made. The monotonicity is made. Who are you interested in? You are interested in the yes one. But you have to do it at minimum speed. Now you can say that we will do 11 only. No, we don't have to do 11. The example of the fan. Minimum speed so that you can eat all the bananas. So minimum speed so it is yes. This is your turning point. This is your turning point. What is this? First occurrence. First occurrence."
+  },
+  {
+   "start": 1617.6,
+   "end": 1629.78,
+   "text": "So, if your guess, again, if your guess comes here, you know that my answer is no, where should you go? You should go right. How do you go right? Low is equal to?"
+  },
+  {
+   "start": 1629.78,
+   "end": 1658.96,
+   "text": "Guess plus one. If your answer comes on yes, then what did you do in the first occurrence? Remember what you did. First of all, you used to write its answer. First of all, you used to write its answer. And if this is there, then these two are useless. How is the right one first occurrence? You are interested in minimum speed, right? Remember the example of the fan. If you started liking number 8, then why are you trying 9 and 10? Try a little less to save the electricity bill. Try minimum. Go left. But write this. Write this. There is no guarantee. Write this. And?"
+  },
+  {
+   "start": 1658.96,
+   "end": 1677.89,
+   "text": "Go left, go left, go left. If you do this, what will you get in the end? You will get an answer. Very good. Come, let's write its code and try run it. So, understand this question very well. It is a very famous question. It has been asked almost in every company. Okay? Come, write its code. First of all, you have to write a function."
+  },
+  {
+   "start": 1677.89,
+   "end": 1706.32,
+   "text": "In this type of question, you will have to write a function, for what? The step to get the answer from the guess, you used to get to know every time. This time, to get the answer from the guess, you will have to do a different process. First of all, let's write int fun. What will you pass in this? Look, first of all, we will pass our piles, which is my piles, array. We will pass the length of the array. In this, we can also pass what is my speed. Now, what speed have you guessed? Pass that too."
+  },
+  {
+   "start": 1707.15,
+   "end": 1728.75,
+   "text": "Okay, we need to pass only this much. Now, what is the meaning of this? What is its work? If you pass in this that my K is equal to 3 speeds, then it will tell you the hours. Now see, from every speed, from every speed, we will eat at some point, right? From every speed, we will eat at some point. From one speed also, it will take at some point 2 years, but we will eat. So, if it tells you the hours, suppose it tells you that tell me."
+  },
+  {
+   "start": 1728.75,
+   "end": 1753.84,
+   "text": "My guess is that if we eat from 3 speeds, how long will it take? Let us return that it will take 10 hours. After that, we will check this in our binary search, that if my 10 is greater than 8, the answer is no. What is 8? The time for the guard to come. But, if my 10 is less than or equal to 8, the answer is yes. According to that, we can take the decision. So, let us return this as our. Okay. How did we do it? int h is equal to 0. After that, what did we do?"
+  },
+  {
+   "start": 1753.84,
+   "end": 1783.22,
+   "text": "How long did we run the loop? From the beginning to the end. Okay. Run the loop. And what did we do? First of all, h is equal to h plus array of i by speed. By speed. Remember what we did. 10 by 3. 10 by 3. That's what we did. That's what we did. If there is 6 bananas, your speed is 3, then 6 by 3. It will take 2 hours. But if any remainder is left, suppose it is 7, then 7 by 3 will take 2. If any remainder is left, not equal to 0, it will take 1 hour to clean that remainder."
+  },
+  {
+   "start": 1783.22,
+   "end": 1798.78,
+   "text": "So, if array of I modulus speed not equal to 0, then H++. That's it. And return H. What does this mean? It will eat in this much time. It will eat in this much time. It will eat in this much time and finish it."
+  },
+  {
+   "start": 1798.78,
+   "end": 1827.34,
+   "text": "Now let's come to the main program. This is your helper function. You will always have to write helper function in the story problem. This is the reason why people find this question hard. That they don't understand what to do. You don't have to do anything. You were getting the answer from the guess earlier. Now you will have to work a little hard. So the whole hard work is in this. Rest is the guess. What is the hard work in the guess? There is no hard work in it. Do any guess. But in the process of getting the answer from the guess, you will have to put a little hard work and a little brain in every question. Now let's come to our main function."
+  },
+  {
+   "start": 1827.34,
+   "end": 1855.6,
+   "text": "So, in our coco function, what was given to you? First of all, you were given a banana, that the banana is kept like this. And you were given a deadline for the guard to come. You were told that the guard will come in an hour. It was given like this. Come. First of all, int n is equal to a.size. Okay? Now, what did we say? What can be your lowest speed? 1. Okay?"
+  },
+  {
+   "start": 1855.6,
+   "end": 1883.62,
+   "text": "What can be the highest speed? Max of error. Write max of error by running the loop. Max of error. We are not writing max of error in this. As we write, write it. Okay? So, write max of error. Because there is no use of more speed than that. There is no use of more speed than that. Okay. Come. What will we take? We will take the result. We will take minus 1. Okay? Yes. And if it happens that it will not be able to eat. It will not be able to eat. It has not been said in this. But maybe you will get that."
+  },
+  {
+   "start": 1883.62,
+   "end": 1912.14,
+   "text": "you have to return minus 1 and suppose she won't be able to eat. It's like the guard came back in an hour and there is no possibility to eat in an hour, so she won't be able to eat. Suppose in this area, where there were 4 piles, we saw that it will take at least 4 hours. Now the guard will say that I am going for an hour, I will come immediately. So if she won't be able to eat, then return minus 1, otherwise it won't happen. There is no such test case in the question. That's it, you are ready. You have done the main work, now what do you have to do? Low less than equal to high."
+  },
+  {
+   "start": 1912.14,
+   "end": 1942.29,
+   "text": "We will also do its dry run, don't worry. First of all, guess the middle one. Why the middle one? We can do it according to ourselves, but it is better to do the middle one. Okay. Now, what did we do? int hour is equal to, now by calling this function, what all did we have to call in this? a, n and your speed, which you have guessed. Okay. Now, you got an hour, whether it will eat in 10 hours or in 20 hours. Now, how will we know its answer is yes or no? If hour is greater than God,"
+  },
+  {
+   "start": 1942.29,
+   "end": 1964.93,
+   "text": "If hour is greater than guard, means it takes 10 hours to eat, guard will come in 40 hours. What is this? This is no. Yes, how was your answer? See, no, no, no, no, no, continuous. So if you are on no, then where do you have to go? If you have to go right, then always look at the diagram and find out. So what will you have to do? Go right. How to go right? Low is equal to? Guess."
+  },
+  {
+   "start": 1964.93,
+   "end": 1990.51,
+   "text": "Plus 1. Else. Else means yes. Yes. What did we do in yes? First of all, we used to note this guess in the result. Because you need first occurrence. If you need first occurrence, then where will you get it? You can get it in left. Remember the question of first occurrence. Please see that. It was a nice question. We had explained it very well. Please see that. Guess minus 1. Close this. Close this. Return. Rest. So see."
+  },
+  {
+   "start": 1990.9,
+   "end": 2017.22,
+   "text": "It's a perfect binary search question, but what's the difference? What's the difference? You are doing this work, this one. How much time are you taking in this? Order of n. Order of n time is taking. And how much time will it take in total binary search? Approximately log n. So its total time complexity is n log n. Why? Because every time in binary search, how much time did it take? Log n. Because you used to get the answer of this guess immediately. You used to get the answer of guess immediately. Now you are not getting it immediately. Now you..."
+  },
+  {
+   "start": 2017.22,
+   "end": 2045.71,
+   "text": "you have to work for it, so n log n. So we said that you have to think about this work only. In every problem, you have to think about this helper that how will we get the answer of what we are guessing? Just one thing. If you think, any question will be made. Come, let's try its dry run. Let's try its beautiful dry run. So, what dry run should we do? Not that big. Let's do the same example that we were studying. So, 3, 6, 7, 11. 3, 6, 7, 11. Okay? 0, 1, 2, 3."
+  },
+  {
+   "start": 2045.9,
+   "end": 2073.62,
+   "text": "In the beginning, what did he say? What will be the low? 1, because we will have to eat 1. What will be the high? The maximum of your array, the maximum pile is 11. Let's guess. So, what will be the guess in the beginning? 1 plus 11 by 2, means 6. Let's see if it works in 6 or not. So, let's see what will happen in 6. How much time will it take to eat this? 3 by 6. Yes, you see. We have 3 eggs, so how much? 3 by 6. 3 by 6 is 0, but..."
+  },
+  {
+   "start": 2073.62,
+   "end": 2102.38,
+   "text": "3 modulo 6 is not equal to 0, means some remainder, remainder is left, whole 3 is left, so we have to do 1 plus, so 1 hour, so how many hours will it take to eat this? 1 hour, to eat this, 6 by 6, 1 hour, to eat this, 7 by 6, 1 hour, but 7 modulo 6 is not equal to 0, so 2 hours, 11, 11 by 6 is 1, but 11 modulo 6 is 5, means not equal to 0, 1 more hour to clean it, 1 more hour, so how much happened? 1 plus 1, 2, 4, 5, 6, 6, when will your GATFAP come?"
+  },
+  {
+   "start": 2102.38,
+   "end": 2126.98,
+   "text": "Your guard is going to come in 8 hours according to this. So will it be done in 6? Yes, it will be done in 6. Its answer is yes. Yes means write it in the result. Write it in the result and go left. Let's see if we get anything better or not. So how do we go left? High is equal to guess minus 1. Now what happened? High is 5. Guess what will come? 3, 3, 3. Let's see what will happen in 3. Let's see what answer you get in 3."
+  },
+  {
+   "start": 2126.98,
+   "end": 2156.83,
+   "text": "Now your speed is 3. So let's see in 3. You will get 10. But let's see if it works with the program or not. 3. What is 3 by 3? 1. Is 3 modulus 3 0? Yes, it is 0. There is no remainder. There is no need to add anything. 6 by 3 is 2. 6 modulus 3 is 0. There is no need to add anything. 7 by 3 is 2. But 7 modulus 3 is 1. So one more. 3. 11 by 3 is 3. But 11 modulus 3 is not 0. So there will be remainder. So one more hour. One more hour. How much? 1 plus 2 is 3. 6, 9, 10."
+  },
+  {
+   "start": 2156.83,
+   "end": 2182.88,
+   "text": "Now it takes 10 hours. When will the guards come? They will come in half an hour. Will she be able to eat anything? No. No means like this. No, no, no, no, no. Yes, yes, yes, yes. Yes is in the right of no. Come to the right. How do we go to the right? Low is equal to guess plus 1. High is equal to 5. What is your guess? 4, 4, 4. Come, let's see 4. Come, let's see 4. Come, let's see 4. See from 4."
+  },
+  {
+   "start": 2182.88,
+   "end": 2203.18,
+   "text": "3 by 4 is 0. But 3 modulus 4 is not equal to 0. So it will take 1 hour. 6 by 4 is 1. But 6 modulus 4 is not equal to 0. 1 more. 2. 7 by 4 is 1. But 7 modulus 4 has remainder. 2. 11 by 4 is 2. But 11 modulus 4 is not equal to 0. 3."
+  },
+  {
+   "start": 2203.18,
+   "end": 2232.7,
+   "text": "1 plus 2, 3. 5, 8. Exactly 8. So it will be done in 8. Yes, it will be done in 8. Because now let's assume that if you eat in 8 and it is done in 8, then it will be done. So what is this? Yes. What did we do in yes? We used to update the result. 4. And we used to go to the left and see once. Once we used to go to the left and see. Low 4 and high is equal to 3. Now see. Your low has increased from high. That means this is Betu's thing. That my start speed is 4 and end speed is 3. So this is Betu's thing. Question is over. What is your answer?"
+  },
+  {
+   "start": 2232.7,
+   "end": 2258.58,
+   "text": "4 means 4 is the minimum speed. And there is also, see, if you reduce it by 4, 3, it took 10 hours on 3, it took 8 hours on 4, so 4 is your turning point. So, according to this, you can do 4. So, that's it for today. And do solve this question. And if you want, you will get all the questions in the sheet below this. Solve all that. Everything is solved like this. In the coming days, we will tell you how it happens. Okay. Let's meet."
+  }
+ ]
+}

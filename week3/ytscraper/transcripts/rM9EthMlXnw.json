@@ -1,0 +1,439 @@
+{
+ "video_id": "rM9EthMlXnw",
+ "title": "DSA Patterns Episode 7: Two Pointers Pattern: More Interview Questions",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2582,
+ "segments": [
+  {
+   "start": 1.17,
+   "end": 34.26,
+   "text": "So today we are in lecture 4 and I was getting a lot of messages from many days that if you ask me to do one question, it will not end. Today we will do 3 questions. So if you want to drink water, then go to the toilet. Which questions will we do? Triplet sum to zero. Those who don't have a sheet, you will get a sheet in the description. Okay. Triplet sum close to target. Close to target. You will see this in the sheet. And triplets with smaller sum. Triplets smaller."
+  },
+  {
+   "start": 34.26,
+   "end": 67.01,
+   "text": "Why am I doing three questions at once? Because if you understand the logic of this, you will need to do 10% or 20% here and there in this. The rest of the logic is almost the same. First of all, we will understand the logic. Then if you want the code link, you will get the code link in the description. You will get the sheet link in the description."
+  },
+  {
+   "start": 67.01,
+   "end": 98.35,
+   "text": "You will get the link of notes of ipad in the description of popular demand. Did you understand this much? You will understand the logic of all three. You have to go and submit the code yourself. If you are not able to understand, then see mine. You will get the sheet and ipad notes in the description. Okay. First of all, let's come to the first question. What is the first question? Triplet sum to zero. What does this question want to tell you? You have an array. You have an array."
+  },
+  {
+   "start": 99.66,
+   "end": 129.52,
+   "text": "In that array, you have to find triplets. Triplets means three things. One, two, three. Whose sum is equal to zero. This is your question. What is the question again? Find triplets whose sum is equal to zero. There is one more hidden thing. There is one extra thing. Your answer should be unique."
+  },
+  {
+   "start": 129.62,
+   "end": 158.58,
+   "text": "should be unique. It means, do not repeat your triplets. Do not repeat triplets. For example, if sum is equal to 0, then if you have one triplet of 1, minus 1, and 0, then you make it like this, 1, 0, and minus 1. Both these answers are the same. This and this. One answer. Why? Because the elements are the same."
+  },
+  {
+   "start": 158.67,
+   "end": 190.35,
+   "text": "So you can't repeat it. You have to give only one. Either 1 or 2. You can't give both. This means unique. Right? Okay. The first thing that we do first is why is this a two-pointer question? Either it is or not. Why does this come in a two-pointer pattern? What did we say? Remember the flowchart. Is there an array? Yes. Is it sorted? It is not sorted. What will be the benefit of sorting? We will see that later. We don't know. Okay."
+  },
+  {
+   "start": 190.9,
+   "end": 221.74,
+   "text": "Are you being told that you have to find more than one thing? Do you have to find more than one thing? Yes, you have to find triplets. Not even pairs. Normally, you have to find an index in the question. You have to find a number. In this, you have to find triplets, not pairs. Is this happening here? Yes, it is happening. See, there is an array."
+  },
+  {
+   "start": 221.74,
+   "end": 251.42,
+   "text": "You have to find more than one thing. Now let's talk about if it is not sorted, then will it be easier to sort it or not? Think a little about it. Now, first of all, you don't have sorted. You are not given sorted. But will it be useful to sort? Why will it be useful and how will it be useful? See that. What are they saying? Okay, let's say A, B, C, D, E. 0, 1, 2, 3, 4."
+  },
+  {
+   "start": 251.42,
+   "end": 282.67,
+   "text": "Okay? What do you have to find? Those whose sum is zero. So, you have to have x plus y plus z. Its sum should be zero. Okay. For a while, forget the duplicate. For a while, forget the duplicate and unique thing. We will tell you, but for now, forget it. Assume that everything is unique. The whole element is unique. So, what can be the brute force? What can be the brute force? You move one i from zero to m."
+  },
+  {
+   "start": 283.38,
+   "end": 311.97,
+   "text": "j from 0, sorry, j from i plus 1 to n and k from j plus 1 to n and every i, j, k, if you do this, if you run 3 loops, you will get all the triplets. See the sum of every i, j, k. If this is equal to 0, include it in the answer. We will do it like this, right?"
+  },
+  {
+   "start": 311.97,
+   "end": 342.51,
+   "text": "If you want to check the whole triplet, then we will check it like this. Its time complexity will be n cube, qn cube. Those who don't understand the time complexity, the time complexity video is made for this, go and watch it. Okay? We will not tell the same thing again and again. And space complexity is the order of 1. So this is your brute force. Now can we reduce it a little? Okay. Let's see. a, b, c, d, e. 0, 1, 2, 3, 4."
+  },
+  {
+   "start": 343.22,
+   "end": 372.13,
+   "text": "See, there is no difference between brute force and optimized. See, when we go from brute force to optimized, then we are doing the same thing. You don't have to think that if we were doing something else in brute force, then we have to do something else in optimized. We have to do the same thing. We have to do the work quickly. We call it optimized. The logic is the same. So, what were we doing in brute force? i is equal to 0 to n was working. Yes, it was working. What did it mean? What did it mean in Hindi?"
+  },
+  {
+   "start": 372.13,
+   "end": 404.32,
+   "text": "That we were fixing i. For example, we fixed i here. Okay. Now, what does this mean? That when array of i is equal to a, then what were we doing? Meaning, we were running two more loops. What were we doing after running two more loops? We were looking for two more elements, so that when we sum with i, the total sum becomes 0. Meaning, we were doing this only. Plus x plus y is equal to 0."
+  },
+  {
+   "start": 404.32,
+   "end": 434.22,
+   "text": "and we were looking for y only because i is fixed, i can be 4, 5 or 6 we are looking for this and this now look at this equation we are looking for a i plus x plus y equal to 0 x plus y is equal to minus of a i or not? everyone knows this simple math does this simple math work or not?"
+  },
+  {
+   "start": 435.09,
+   "end": 463.23,
+   "text": "Now we are looking for this. What does this mean in Hindi, which we are trying to explain to you? For Ai, we were looking for 2xy. Now, what does the whole question say? That we are looking for 2xy for Ai. We are looking for this pair. What is the sum of this? Is its sum 0? No, no, no. The sum of x and y should be this. The sum of x and y should be this. This is our condition."
+  },
+  {
+   "start": 463.23,
+   "end": 488.13,
+   "text": "This is our new question. Find this. Does anyone remember anything after seeing this? Does anyone remember pair sum or to sum? To sum. What was the first question of this pattern? It was to sum, right? This used to happen in to sum. In to sum, find pair with given sum. This is what we used to do in to sum."
+  },
+  {
+   "start": 488.13,
+   "end": 517.63,
+   "text": "Here also you have to do the same thing, here also you have to run a two-sum for every i. There you have to run a two-sum for the whole program. Here for each i, you have to write a two-sum. Do you understand why? Okay, and everyone knows two-sum, everyone knows two-sum. Is two-sum a two-pointer pattern question? Yes. So is this question also a two-pointer pattern? Yes. Did we sort in two-sum?"
+  },
+  {
+   "start": 517.63,
+   "end": 545.44,
+   "text": "Yes, we used to sort in 2sum. Will it be beneficial to sort here? Absolutely, because it is a 2sum question. This is a 2sum question. You just have to use that 2sum many times. Many times use 2sum. That's why 2sum is taught first, 3sum is taught later, 4sum is taught after that. Did you understand? If you didn't understand, tell us in the comments. But you should know. Is it right? Okay."
+  },
+  {
+   "start": 545.44,
+   "end": 575.34,
+   "text": "Yes, one more thing, what were we doing till now? We were doing 2sum. In 2sum, when you were reading 2sum, what were we doing in 2sum? Let's revise it quickly. First of all, we used to sort the array. That's right. 1, 3, 4, 5, 7. 0, 1, 2, 3, 4. We used to keep one left here and one right here. Our target was, let's say, what was it? Okay, our target was 9."
+  },
+  {
+   "start": 576.05,
+   "end": 604.3,
+   "text": "We used to add them together. Now 1 plus 7 is equal to 8. If 8 is equal to 9, then it's a good thing. If 8 is smaller than 9, then what would we do? If 8 is smaller than 9, then we would increase left. So now left came here. 3 plus 7 is equal to 10. Now 10, if 10 is not smaller than 9, if 10 is bigger than 9, then we would reduce right. So now we came to 5 and 3. Now 5 and 3 is equal to 8. 8 is smaller than 9."
+  },
+  {
+   "start": 604.3,
+   "end": 632.37,
+   "text": "Okay, we used to increase the left. Now, the left is on 4 and the right is on this. 4 plus 5 is equal to 9. This was the simple logic. We used to work according to this. Now, you will get the 3-sum. But why do you have to learn more? For the duplicate thing. For the duplicate thing. In 2-sum, you didn't have any issue with the duplicate. It wasn't written anywhere in the question that you have to give unique. You had to write that you have to give only one answer. So,"
+  },
+  {
+   "start": 632.37,
+   "end": 663.7,
+   "text": "You have to give one answer. As soon as you get the answer, you return it. Understood? But, but, but, if your array was like this, 1, 1, 1, 2, 2, 3, 3, 3. It could have been like this too. It is a sorted array. Okay? Your sum, we are still talking about 2 sums. We haven't come to 3 sums yet. We will come to 3 sums and finish it in 5 minutes. You have to give sum is equal to 4. And you have been told to find"
+  },
+  {
+   "start": 664.4,
+   "end": 696.06,
+   "text": "All unique pairs. Find all unique pairs. Not one. In twosum, I used to say find one. This is your question now. Find all unique pairs. So, fine. If there are all unique pairs, then the core logic will remain the same. So, left is equal to 0. Right is equal to. Last one is right. Bring 7. Now, what will be the sum? 1 plus 3 is equal to 4. Fine. So, now see. This is 4."
+  },
+  {
+   "start": 696.06,
+   "end": 723.47,
+   "text": "and the sum that you have to find is 4, this became 1 with a heartbeat. Earlier, what we used to do, we used to return it. We used to finish the function when we didn't have to find it. But, in this, you have to find everything, you have to find the entire pair. So, first of all, we should store this. First of all, we should store this 1 and 3. Now, we knew about this condition that what we do when the sum is smaller than the target and what we do when it is bigger. But when the sum"
+  },
+  {
+   "start": 723.47,
+   "end": 753.41,
+   "text": "equal equal to target, we have never learnt this, so we will learn this today. Because this work is going to come in threesome. Now see, sum is equal equal to target. This is done, this is done. So, if there is no duplicate in the array, see, you got 1, you also got 3. So, when the sum was small, we used to increase the left. When the sum was small, we used to increase the left. When it was big, we used to increase the right. But if the sum is equal, what will we do?"
+  },
+  {
+   "start": 753.41,
+   "end": 782.69,
+   "text": "If it is equal, then we will increase both, because you have got this. Your array is only left because this one is 1 and this one is 3. They have made a sum by joining each other. Now when you don't want to take it as unique, then you should not be interested in both. Now do you understand what we are doing? For example, 1 is making 4 with 3. If you just reduce the right, then it will be either equal or less because it is in the sorted array."
+  },
+  {
+   "start": 782.69,
+   "end": 812.05,
+   "text": "Similarly, 3 is made with 1. So, if you only increase 1, then you have to take 1 and 3 again. Now, do you understand what I am saying? I will tell you again. 1, 3, these two together, people don't understand why they have to increase both. 1 and 3, they are making 4 together. It is a very good thing. So, one thing happened that 1 and 3 got stored in the answer. Now, how will the movement of left and right be? What did we say in the two-pointer? Every time, either left will increase, or right will increase, or both will increase."
+  },
+  {
+   "start": 812.11,
+   "end": 840.27,
+   "text": "So why do we have to say that why do we have to do both? We have to do both in this. You understand it case wise. Now see here 1 and this and 1 is equal. Let's understand it case wise. See, we have to do something. Either we have to increase left, reduce right or increase both. So we explain it to you case wise. First of all, what you do is increase left. Do left plus plus and leave right. What will happen with this? This one will come here."
+  },
+  {
+   "start": 840.27,
+   "end": 867.87,
+   "text": "Okay, and this 3 will remain here because we are looking at this. Again, the sum of 1 and 3 will be 4, so you will have to store 1 and 3 here again. This spoils our duplicate one. Okay. Come to case 2. Don't increase the left, increase the right. So leave the left here. Increase the right and bring it here. Now see, again this 1 and 3 is equal. We are not saying that it will happen every time, but it is happening in this case. Isn't it? That's why the example has been taken. So if you store 1 and 3 here again, then this is spoilt again. Okay."
+  },
+  {
+   "start": 867.87,
+   "end": 897.1,
+   "text": "So, there is only one case left, to increase both. But, but, look carefully, if you increase both, then also 1 and 3 is coming here, then again 1 and 3 will be stored. What are you saying? Increase left and bring it here, reduce right and bring it here, then these two are 1 and 3, because they are in duplicate array. So, again you will write 1 and 3. So, we will have to do something for this too. So, the first thing you understand is that both have to be increased. So, if sum equals to target,"
+  },
+  {
+   "start": 898.0,
+   "end": 928.85,
+   "text": "First of all, store it in the result. First of all, increase both. If you don't increase both, then the duplicate will come. We have taught you that if you increase one, then it will come. Left plus plus, right minus minus. Okay. But even if you increase both, the duplicate may come. Now what is this? What is in this? Look. Look. Look very carefully. Look very carefully, please."
+  },
+  {
+   "start": 929.3,
+   "end": 958.37,
+   "text": "Your left was on 1 before. Your left was on 1 before. You assume that you increased the left and increased it again. So in this case, your left is on 1 again. What are you storing in your final answer? You are storing a pair in it. You are storing a lot of pairs in your final answer. So you have stored 1 and 3 in the answer once."
+  },
+  {
+   "start": 958.37,
+   "end": 985.47,
+   "text": "This is the one who has got 4. You want to find some more pairs. Now tell me one thing, till the time you keep storing 1 and 1 in this row, will this row change? It won't. Why? Your target is to make everyone 4. So it's simple maths. Till the time you put 1 here, 3 will keep coming here. When you put 2 here, then only 2 will come. So, if this one is same,"
+  },
+  {
+   "start": 985.47,
+   "end": 1014.16,
+   "text": "So this will also remain the same. I want to tell you this. What are you saying? You put 1 and 3 in this row. Now, until you keep putting 1 here, 3 will keep coming here. Until 1 keeps coming here, 3 will keep coming here. What does this mean? If you find the answer on this, you got 1 and 3 answers. Did you understand? Now, until 1 keeps coming here, it will keep doing the same thing, right? So what is the benefit of 1? Once 1 has come in your answer,"
+  },
+  {
+   "start": 1014.16,
+   "end": 1045.81,
+   "text": "Why do you need 1 again in left? Once you have seen left 1 and the answer is also there, why do you need 1 again? So, till the time we increase 1, if the answer is there, till the time we increase 1, the first thing should be this. Let it be. It is being checked at the top. Let it be. Right? First of all, till the time we increase A, left,"
+  },
+  {
+   "start": 1045.84,
+   "end": 1077.23,
+   "text": "Equal equals to a left minus 1. Till then we have to increase the left. Do you understand what I am telling you? First the left was here. Then the left came here. Okay? Now the left came here. Now see, is this left equal to the one at the back? Yes. So increase the left. Is this left equal to the one at the back? Yes. Increase the left. Is this left equal to the one at the back? No. Okay? So this is unique."
+  },
+  {
+   "start": 1077.23,
+   "end": 1106.83,
+   "text": "This line means that until you get the unique answer, keep increasing the left. Do the same thing in the right. While, while, a right, left was being compared to the back one, because left is moving in this direction, right is moving in this direction, so from the front one, so until this 3 is equal to the front 3, increase it. This 3 is equal to the front one, increase it. This 2 is not equal to the front one, leave it. So, equal equals to a,"
+  },
+  {
+   "start": 1106.83,
+   "end": 1135.33,
+   "text": "right plus 1 till then you have to reduce right right minus minus and this you have to stop and what we were doing in this this was when you have got the answer you have got the answer it is possible that you did not get the answer it is a very good thing else if sum less than target what we used to do in sum less than target we used to increase left very good else what does this mean"
+  },
+  {
+   "start": 1135.33,
+   "end": 1164.16,
+   "text": "The sum will be greater than the target. There can only be one. There can only be three cases. In this, we have to increase the right. We have to reduce the right. This is done. And you have to return your answer. Whatever you have stored in the result, whether it is in the vector or in something else. So you have to return it. Once, look very carefully, with an open mind. Okay? ToSum. ToSum with duplicate. If you have got the answer. If you have got the answer. The first thing is,"
+  },
+  {
+   "start": 1164.16,
+   "end": 1191.98,
+   "text": "We have to increase the left and decrease the right because there is no use in increasing 1, we saw that. Now, we have to keep increasing the left until the left is unique, not different from the previous one. Because if you have written 1 as 1, then if you write 2 as 1, then the same answer will come. You have to do similar work in the right. Until the right is unique because of the same logic. If you have written 1 as 3 and here is 1, then if you write 2 as 3, then it will come as 1. If you write 3 as 3, then it will come as 1. So there is no use."
+  },
+  {
+   "start": 1192.05,
+   "end": 1224.66,
+   "text": "We have to reduce the right. The rest will remain as it is. When you don't get the result, then the rest will remain as it is. So this was to sum with duplicates. With duplicates. Did you understand? Okay. Why did we give so much knowledge? Because it will be useful in the future. Now let's come to our question. Triplet sum 0. Triplet sum 0 is done. Okay."
+  },
+  {
+   "start": 1224.72,
+   "end": 1260.11,
+   "text": "In this, you have to find three things whose sum is zero. It's a good thing. See how we do it with two sums. Come on. Minus one, zero, one, two, minus one, four. Zero, one, two, three, four, five. This is what you are saying. In this, you have to find all the triplets. First of all, you understand our logic. For each i, you have to run two sums with"
+  },
+  {
+   "start": 1260.14,
+   "end": 1289.52,
+   "text": "sum is equal to minus of a i. This is our logic. For each i, we have to run 2sum. In 2sum, a sum passes. So that sum will pass minus of a i. This is the logic of our entire program. So what happens to run 2sum? First of all, sort it. Sort it. Write 2 here after sorting. If you write after sorting, then minus 1 minus 1 0 1 2 4"
+  },
+  {
+   "start": 1289.52,
+   "end": 1320.24,
+   "text": "0, 1, 2, 3, 4, 5. Now see, there is one more important thing here. So don't go to submit it now. One more thing is very important. What is the logic? i is equal to 0 to... Yes, one more thing. For each i, we are looking for 2sum. Okay. So should we do this? That i should be from 0 to 5. And we should start left and right. We have to start left and right for 2sum. In 2sum,"
+  },
+  {
+   "start": 1320.24,
+   "end": 1351.02,
+   "text": "Left would be 0 and right would be n-1. Both would start from the end of the array. Left would start from here and right would start from here. But what to do in this? Your i is here. So, from where will left and right start? So, is it beneficial to keep left as 0? No. Because i can be at 0. i can be at 0. If you keep left here, then it will be the same element twice. What is our main goal? Array of"
+  },
+  {
+   "start": 1351.02,
+   "end": 1384.88,
+   "text": "i plus array of left plus array of right is equal to 0. So, it is obvious that i should not be equal to left and left should not be equal to right and i should not be equal to right. It is obvious, right? If we are doing this, we don't have to come to 1. Keep this in mind. Keep this in mind. Now tell me. i is equal to, let's assume, from 0 to 5 is going on in this array."
+  },
+  {
+   "start": 1385.36,
+   "end": 1414.46,
+   "text": "So where will the left go? If the left goes from anywhere, then it will go from i plus 1. The left will not be able to go from i. The left will always go from i plus 1. Where will the right go? No matter how many ends the right will go from, then right is not equal to i. So we can do one thing. Look at this. There are many ways to solve this. You run the i completely and ignore the left and right. That is also a way. But the easiest way is, when you take i is equal to 0,"
+  },
+  {
+   "start": 1414.46,
+   "end": 1445.02,
+   "text": "then you take left is equal to 1 and right is equal to as it is, take 5. This means left is here, right is here. From this part, you will get a pair and your i will be here. When your i is here, then you keep the left here, keep the right here. From this part, you will get a pair and this will be your answer. When your i is here, from this part, you will get, then you keep the left here, keep the right here."
+  },
+  {
+   "start": 1445.02,
+   "end": 1474.19,
+   "text": "Similarly, when you are here, you will get the answer from this part. But, but, but, if your i comes here by mistake, if your i comes here by mistake, what will we do now? Now, we said to keep the left here. Where will the right be? We said to keep the right at the last. So, the right will also come here. Which is wrong. It is wrong, right? Left and right should not be equal. See, it is written in the rule. That's why, that's why, the i should never go to 4. The i should always stop here."
+  },
+  {
+   "start": 1474.42,
+   "end": 1503.23,
+   "text": "Okay, we don't have to take i here. So where is i stopping? It is stopping here when two boxes are empty. Because we need at least two elements for pair after i. If you are looking for pair after i, then you need at least minimum 2. So minimum 2 will be found here. i will always go to 3. What is 3? n is equal to 6. What will 3 become? 6 minus 2 is equal to 4. So, if i is equal to 0, i less than"
+  },
+  {
+   "start": 1503.23,
+   "end": 1533.98,
+   "text": "n minus 2 and i plus plus. Why n minus 2? n is equal to 6. 6 minus 2 is equal to 4. i less than 4 means i will go from 0 to 3. See. It will only go from 0 to 3. 0, 3. It should not go to 4. i is done. Now, after this, it is simple. After this, it is very simple. Left is equal to i plus 1. Right is equal to n minus 1. Sum is equal to"
+  },
+  {
+   "start": 1533.98,
+   "end": 1569.33,
+   "text": "Minus 1 into a of i. Why? Because the sum of all three should be 0. So what should be of a left and a right? 0 minus a i. So minus a i. After that do this of left right. While left right. Okay. Calculate the sum of these two. a left plus a right. Okay. If s equal equal to sum."
+  },
+  {
+   "start": 1569.65,
+   "end": 1599.7,
+   "text": "That's it, we got the answer. In the result, store it. In the result, store it. You can do it in any way, in vector, collection, list, in python, so store it. After that, increase one to the left, reduce one to the right, because we have to do this, this is the minimum, but it can still be a duplicate. So while, now see, we want to increase the left until we don't get unique. But if you are increasing the left, then always, always, whenever you increase the index in an array,"
+  },
+  {
+   "start": 1599.7,
+   "end": 1626.38,
+   "text": "If we increase the index, then definitely write an index less than n. While left n and air of left, if it is equal to the one at the back, it is still there, it is still there, it is still there, then left plus plus. Whenever you are increasing, then definitely write this one. First, not later. I will tell you why. While similarly right,"
+  },
+  {
+   "start": 1626.38,
+   "end": 1654.88,
+   "text": "Now we want to reduce right, so whenever you want to reduce anything, write it as 0. Greater equal to 0 and array of right equal equal to array of right plus 1. Is it right? So keep reducing this. And close this. Did you understand? What is this? S is equal to sum. If S is less than sum, then what will happen? S is less than sum, then what will happen?"
+  },
+  {
+   "start": 1654.88,
+   "end": 1689.87,
+   "text": "Nothing will happen in this. We have to do left plus plus and go ahead. Else, we have to put an else if in this. Else, right plus. Right minus minus. And then, return result. This is done. Okay. Is this program correct? Is this program correct? The program is 99% correct. 1% is wrong. Why 1% is wrong? Let's understand. What is array? Minus 1, minus 1, 0, 1, 2, 4. What is array? Array, minus 1."
+  },
+  {
+   "start": 1689.87,
+   "end": 1720.8,
+   "text": "Minus 1, 0, 1, 2, 4. 0, 1, 2, 3, 4, 5. Okay. We will logically explain what is wrong. First of all, what will be I? On 0. I is equal to 0, minus 1. What is our sum? 1. We only need sum 1, right? Okay. In this part, is the sum of anything 1? Yes. The sum of 0 and 1 is 1. The sum of 0 and 1 is 1. So, one will be your answer."
+  },
+  {
+   "start": 1720.8,
+   "end": 1752.05,
+   "text": "Minus 1, 0, 1. Very good. The sum of minus 1 and 2 is also 1. So, minus 1, minus 1, and 2. Where is your answer? Verify it. Is its total sum 0? Yes. Is its total sum 0? Yes. Are these two unique? Yes. Very good. After that, what happens? If it is complete, then i will be plus plus. If it is plus plus, then i is equal to 1. Now, look, pay attention to one thing. i is equal to 1, but there is minus 1."
+  },
+  {
+   "start": 1752.05,
+   "end": 1778.48,
+   "text": "i is equal to 1, there is also minus 1. So, minus 1. Now, do you see any 1 in this? Is there any sum of 1? Yes, the sum of 0 and 1 is 1. 0 and 1. So, this is in your result. But, this thing came in your result earlier, right? It came earlier, right? It came earlier, right? It came earlier, right? It came earlier, right? It came earlier, right? It came earlier, right? It came earlier, right? It came earlier, right? It came earlier, right? It came earlier, right? It came earlier, right? It came earlier, right? It came earlier, right? It came earlier, right?"
+  },
+  {
+   "start": 1778.48,
+   "end": 1808.51,
+   "text": "Why duplicate? Because we are taking care of left and right. But we are not taking care of i, we are not taking care of here. Here also you have to do the same thing. If, what is the same thing? If i has gone to minus 1, for minus 1 you have lost all the pairs. Don't lose the pair for the other minus 1. Same pair will come. Either, right? Duplicate will come. If array of i equal equals to array of i minus 1 continue."
+  },
+  {
+   "start": 1808.51,
+   "end": 1839.3,
+   "text": "Continue means, increase i, no need to execute left and right, just increase i. What will happen with this? First time i, yes, one more thing. First time i is 0, right? First time i is 0, so you are saying that a is 0 equal to a minus 1, so this will be wrong. Add one more here. What are we saying? First time i is 0, if i greater than 0 and ai equal equal to ai minus 1,"
+  },
+  {
+   "start": 1839.3,
+   "end": 1867.73,
+   "text": "Continue. Okay? What does this mean? If i is 0, then the first one will be false, no problem. Because the first one will be unique, right? The first one will always be unique. So, minus 1 will work. But when it comes to i1, then you will see, is it greater than i0? Yes, it is. Is this minus 1 the same minus 1 as the previous one? Yes, it is the same minus 1. So, there is no point in running it. Come here. Is it greater than i0? Yes, it is on 2. Is this equal to 0 minus 1? No, it is not equal. Okay? So, it will run from here."
+  },
+  {
+   "start": 1867.73,
+   "end": 1897.68,
+   "text": "So in this, you are also doing duplicate eliminate on i, which means a, b, c. There are three things in triplet. So you are doing duplicate eliminate in the beginning and you are also doing duplicate eliminate in the rest of the left and right. So this is how you get a unique answer. So this is your program which is 100% correct. Now what will be its time complexity? First of all, what did we do? Sort n log n. Those who don't know the independent section, then read it. See the lecture on time complexity. What else are we doing?"
+  },
+  {
+   "start": 1898.06,
+   "end": 1925.63,
+   "text": "i, 0, 2, n-2 is running. Okay. What is happening in every i? Left and right work is happening. Which can be seen in average. Left half array is running. Right half array is running. So total n times is running. This n-2. So one is this. And second is this. Whose will be n-2. For each n-2 we are doing n. Order of n square."
+  },
+  {
+   "start": 1925.63,
+   "end": 1955.92,
+   "text": "n square is greater or n log n is greater? n square is greater. So total time complexity is n square. Space is not used much in order of 1. This is your 3-sum program. Go and see the code. I don't know how much time has passed, but go and see the code. Before we move on to the next question. Did you understand what you want to say? Now come. In understanding the next question, we said that there is a 10% difference in logic. It won't take much time."
+  },
+  {
+   "start": 1955.92,
+   "end": 1989.78,
+   "text": "The next question is 3sum. But first you have to submit this and then see this. Closest. Okay. So, you have been told that you have been given a target. You have also been given an array. You have to find, you have to find the index in this. Okay. Do you have to find the index or what do you have to do? Okay, okay. Okay. You have to find three numbers. Sum is closest to target. Not equal, closest to."
+  },
+  {
+   "start": 1989.94,
+   "end": 2021.76,
+   "text": "Target. And, the three numbers that you have found, return their sum. Okay. Let's understand what this means. The question is almost the same. 10% is given here and there to get it right. First of all, the sum. What were we doing last time? The sum was equal to zero. In this, we were finding all triplets. One change in this is that the sum is giving you a target instead of zero."
+  },
+  {
+   "start": 2021.76,
+   "end": 2052.05,
+   "text": "And sum closest is written, not equal, closest. So what does closest mean? That it can be a little bigger or less than this, for example. If sum is equal to 0 and your target is equal to 1, then your difference, absolute difference, not minus plus, absolute difference, what is the difference between 0 and 1? There is a difference of one step, okay. Sum is equal to 3, target is equal to 1. How much difference is there in both? How much difference is there? There is a difference of 2. This is 2."
+  },
+  {
+   "start": 2052.46,
+   "end": 2082.48,
+   "text": "Sum is equal to 1 and target is equal to 1. What is the difference between 1 and 1? It is 0. So, difference is equal to 0. The least difference between the three is the sum closest. So, 1 is its closest. Naturally speaking, what is the closest number from any number? It is the same number. What is the closest number from any number? It is 2. So, on the number line, here is 1 and here is 3. So, 1 and 3 are on one step."
+  },
+  {
+   "start": 2082.48,
+   "end": 2113.58,
+   "text": "0 and 4 are on two steps. 2 itself is on zero step. This is the number, which means it is the closest. Did you understand? Now what you have to do is find three integers in the array. Okay. And return their sum. Their sum return. This is your question. So, till now, we don't need to explain in this that why is this a two-pointer question. You must have understood that why is this a two-pointer question. Okay."
+  },
+  {
+   "start": 2113.58,
+   "end": 2146.27,
+   "text": "So, the same program which we had written last time, we will change it a little bit. We will tell you what we will change a little bit. See, what can be the best answer of the world? The best answer in this problem is that the sum of these three elements of i, j should be equal to target. This can be the best, that it should be equal to target. This can be the best, there can't be a better answer than this. What did we say?"
+  },
+  {
+   "start": 2146.27,
+   "end": 2176.42,
+   "text": "What is the closest to 2? It is 2. This can be the best. Okay. Suppose the sum is less than the target. It is possible, right? There can be a condition that your i, j, k... i, j, k means? i, left, and right. We are assuming that we are watching the video. The sum of i, left, and right is smaller than the target. Okay, it is smaller. When it was smaller, what did we do? We did left plus plus. We didn't want it to be smaller."
+  },
+  {
+   "start": 2176.42,
+   "end": 2208.05,
+   "text": "Okay, but, but, but, before doing this, see how close this sum is. Take out a difference. Absolute sum minus target. What is this? This is the difference that we were taking out here. This is the difference. 2, 0, 1. What is the distance between sum and target? Take a variable. If, maybe the name of this variable is some initial difference or any difference. If max diff."
+  },
+  {
+   "start": 2209.2,
+   "end": 2239.82,
+   "text": "If max diff. First take max diff at infinity. Max diff. Take max diff at infinity. So this will be the biggest. Is diff. Then. First of all set max diff on this. Set max diff. And take a sum. Res. Res sum is equal to sum. Okay. This is done. Now. After this we have to increase left. Okay. Now do you understand what I am telling you?"
+  },
+  {
+   "start": 2239.82,
+   "end": 2271.95,
+   "text": "I will tell you again and again. What did we say? It is working on the pattern of 2sum. What did we do in 2sum? Sorry, 3sum. It is working on the pattern of 3sum. i goes from 0 to n-2. Left goes to i plus 1. And right goes to the end of the array. What did we do in 3sum? Sum equals to target."
+  },
+  {
+   "start": 2271.95,
+   "end": 2302.26,
+   "text": "Yes, there is no duplicate work in this. There is no duplicate work in this. Okay? There is no duplicate work in this. So, in general, do left plus plus, right minus minus. Next case, sum less than target, do left plus plus in this. And in sum greater than target, do right minus minus. This is what we used to do. This is the logic of 3-sum. Now,"
+  },
+  {
+   "start": 2302.26,
+   "end": 2331.86,
+   "text": "The logic of this will remain the same, because you are doing the work, you are searching for the work, but you have to search for the closest. As you are doing this work, see what is your best answer? Your best answer is this. Why is this the best answer? If you understand this, then the rest of the work will be done automatically. Why is sum equal to target the best answer? Why? Because the difference is absolute sum minus target. Absolute makes any number positive. So the difference"
+  },
+  {
+   "start": 2332.08,
+   "end": 2360.5,
+   "text": "What can be the minimum value possible? What can be the minimum value possible? Zero. And this condition gives you zero. That's why this is the best answer. It's not like I had it in my mind. That's why this is the best answer. What you do is, before doing anything, before evaluating these three conditions, you have the sum. Okay. What you do is, find the difference. Absolute, sum, minus, target."
+  },
+  {
+   "start": 2361.01,
+   "end": 2391.26,
+   "text": "See, you should have another max diff variable in the beginning which is at infinity and you have a result sum which you have to return. See that this diff, is it less than max diff? This means that the diff which came now, in this i, in this left and in this right, is it from the previous answer to the present answer? This means that what was your answer till now? That's why we have taken it as infinity in the beginning."
+  },
+  {
+   "start": 2391.26,
+   "end": 2418.8,
+   "text": "Till now, your answer is small. If it is small, then you are going to a little closer sum. For example, till now your maximum diff was 5. Means, till now all the sums were 5 steps away. You got to know that this step is only 3 steps away. So, is it less than 3 5? Yes, if it is. First of all, update this. diff max diff is equal to diff. So, you make the best answer till now as 3. And, our result sum is"
+  },
+  {
+   "start": 2418.96,
+   "end": 2447.74,
+   "text": "Do the resultSum.ai plus... Oh, this is in the sum, right? This is in our sum. Update it and close it. So, where will we add this part in the very beginning? In the very beginning of evaluating these three conditions on the left and right, this thing. See, what does this mean? Let's tell it again. This is very simple. It's like finding the maximum. What was your maxdiff till now? Till now, your maxdiff was 5."
+  },
+  {
+   "start": 2447.74,
+   "end": 2475.5,
+   "text": "We have got a diff which is 2. Is it less than 2.5? Yes. So now make your max diff or your champion, which is the best answer till now, 2. And store this sum in result sum. So what will happen? If you get something like this, sum is equal to target, sometimes you get it, then your diff will become 0. If 0 is less than max diff, which it will be, then your max diff will become 0 and this sum will come in your result. After that, nothing can be less than 0, so you will return this answer. This is its logic."
+  },
+  {
+   "start": 2475.5,
+   "end": 2502.48,
+   "text": "write the same program which was written in 3SUM just do it in the beginning you can see my code of CPP, Python, Java, you will understand so we are doing the same work of 3SUM but before that we are doing some calculation and there is no case of duplicates in this so we are not handling duplicates because it will become complex and you have been told in the question that you may assume that the input will have exactly one solution means"
+  },
+  {
+   "start": 2502.48,
+   "end": 2527.22,
+   "text": "No duplicate. If you get a sum equal to target, then it will be unique, it will not be duplicate. If you get this, then everything will be unique. So just before that, you have to do all this and see that the sum that you have got, is it like this or like that. Okay? After that, you can run all three conditions. Sum equal equal to target, sum less than target, sum greater than target. So 3sum is always the same in its core, see. Not 3sum, 2sum."
+  },
+  {
+   "start": 2527.22,
+   "end": 2553.98,
+   "text": "The logic of 2sum is always the same in its core. Left, right, left, right. Okay? So, all this is never changing. Depending on the question, you are either adding something extra or decreasing it. For example, you have added some part in the duplicate. You have added some part in the closest. So, you are doing the same. Always remember the core logic. Understand the core logic carefully. And go and submit the question. Again, iPad notes, sheet link, my C++ Python link in the description."
+  },
+  {
+   "start": 2553.98,
+   "end": 2581.85,
+   "text": "Let's leave the third question as we said in the beginning. Triplets with smaller sum. Let's leave that because we haven't seen the time but it must have been a lot. We will do triplets with smaller sum tomorrow. From now on, we will do 2-3 questions every day. Because we had to do revision in this question, so it was a little big. But we will try 2-3 questions from now on. So we will do triplets with smaller sum tomorrow. And tomorrow, we will try to do 3 questions. So let's meet."
+  }
+ ]
+}

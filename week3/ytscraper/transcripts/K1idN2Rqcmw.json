@@ -1,0 +1,324 @@
+{
+ "video_id": "K1idN2Rqcmw",
+ "title": "Learn DSA Like Never Before | Master Stack DSA Pattern With This Simple Trick",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1630,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 19.31,
+   "text": "Hello friends, my name is Pratyush Narayan. Those who are coming for the first time, you must have studied TSA in many places. Many people must have taught this question of stack, but no one must have taught this pattern wise. And by telling so much intuition that when to apply, okay. So one more thing that we are recording this video for the third time. For the first time, due to leetcode, we have read the wrong question. After that,"
+  },
+  {
+   "start": 19.34,
+   "end": 37.89,
+   "text": "The next time I made it, I felt that it was not that much fun. I mean it was not that simple to explain. Whenever I couldn't speak, even I couldn't understand it completely. Let's see this third time and how many times it goes. So until we don't get satisfaction, we don't upload videos. So some of you complain that brother, upload 3 videos every day, upload 5 videos every day."
+  },
+  {
+   "start": 37.89,
+   "end": 52.94,
+   "text": "Quality matters, nothing will happen with quantity, if we keep making it, then nothing will happen. So until we don't get full satisfaction, we don't upload videos. Because we don't want any of my videos to be in such a way that people say that they don't understand, then what are you saying to your mind, you are talking nonsense, we don't want that, okay."
+  },
+  {
+   "start": 52.94,
+   "end": 76.91,
+   "text": "Till the end of this question, you will get to know a very important thing in the stack. Because explaining the question is a different thing. It is very easy to explain the question. It is of 10 minutes. Yes, do this in the question. Take the stack, push it in the stack, pop it, do this. But while doing this push pop, you will get this question. The next question will not be made. We will tell the second, the third will not be made. We will tell the fifth, the tenth will not be made. So it will be like this. Here you will understand why to put the stack. And why to put, when to put."
+  },
+  {
+   "start": 76.91,
+   "end": 94.82,
+   "text": "It is not written in the question that you have to put a stack. No, nothing is written. The question is a question and there is a story in it. Why do you have to put a stack? How will you know that you have to put a stack? That's why we started this whole course of this pattern because we want to tell you that which data structure, which algorithm, when to put."
+  },
+  {
+   "start": 94.82,
+   "end": 117.18,
+   "text": "Don't remember what you have to do in this question and what you have to do in that question. The third question will be that how many questions you have to remember. There is no limit to this. What are the steps to be taken? There will be some steps to be taken. There will be a template like there was a template in the sliding window. Till the time the result was increasing, you had to shrink it. Then you had to expand it. It was a fixed template. And we will not just show you the theory. We will do an interview with the question of Amazon Uber and show you what to do."
+  },
+  {
+   "start": 117.18,
+   "end": 144.5,
+   "text": "So, let's go. First of all, look at the question. The description of the question is very stupid. Due to its stupidity, one of my slots got wasted. We haven't seen such a stupid description of the question till date. I don't know what they think when they write the question. I mean, what do they think? Okay, God knows. We will tell you the question in Hindi. The question is LC1047. Lead code 1047. Remove all adjacent duplicate in a string. It's a confusing question, so listen carefully in Hindi."
+  },
+  {
+   "start": 144.5,
+   "end": 171.94,
+   "text": "What does the question say? You are given a string. You are given a string by doing this. A, B, B, A, C, A. Very good. You have to remove the whole adjacent. Adjacent means that which is together. One after one. You have to remove the duplicate. You have to remove the duplicate. And you have to remove this duplicate in pair. Remember that it is very important. You have to remove it in pair. Means, you become a robot. You see the whole string like this. Like this, like me. Which two letters are you getting? Which is together and same. So, you will get."
+  },
+  {
+   "start": 171.94,
+   "end": 198.54,
+   "text": "By looking at these two, you can clearly see that they are one and different. Delete these two strings. What should you do with these two? Delete them. So your string will look like this. Now one more thing. As soon as you delete it, your string will come from the left and from the right. There will be no hole. It's not that if you delete it from the middle, then there will be a hole. No. The whole string will be returned. This person will come here. And this part will come here. A, C, A. This is your new string."
+  },
+  {
+   "start": 198.54,
+   "end": 222.78,
+   "text": "You don't have to do this work once, you have to do it continuously. Now tell me which two letters you think are together and one too. So you will find that these two are one. Do the same thing again, remove both and connect the rest of the string, there should be no gap. Now your string is CA. This is your answer because now you can't find any pair which is together and duplicate too."
+  },
+  {
+   "start": 222.78,
+   "end": 248.22,
+   "text": "So, we have to do this in the question. Yes, there is a very important thing in the question that I have not told you that you have to remove this duplicate in pairs. For example, if your string is like this, B, B, B, C, D, this is it. So, after reading the question, you will feel that yes, I mean, remove these three. These three are duplicates, remove these three. No, you don't have to remove these three. I have told you that you have to remove them in pairs. In pairs. You either choose these two or you choose these two. Come on, for your convenience, choose these two."
+  },
+  {
+   "start": 248.22,
+   "end": 269.74,
+   "text": "Come. What will the rest of the string do? It will come and get stuck. There won't be a hole. So, this one will also come here. The rest of these two will come here. The middle one also flew away. Now, sorry, what is this? It is CD. Yes, what is this? It is CD. Is there any 2 letter in this string that you think is together and is the same? No, no, it is visible from the top. This is your answer. So, by doing this, you have to return the answer."
+  },
+  {
+   "start": 270.03,
+   "end": 294.94,
+   "text": "This thing is not explicitly written that you have to remove 2, you will do dry run, it will be wrong, then you will understand, that's why I also did it. So we have told you this. So this is not a big deal, this is the problem of the lead code, it is not your problem, don't take it upon yourself. So BCD, this is the question, now you have to solve this. So now see, it is not written anywhere that you have to put a stack, read the whole question, do control F somewhere, stack is not written anywhere. So how will we do it?"
+  },
+  {
+   "start": 294.94,
+   "end": 323.25,
+   "text": "So, we have already done this kind of question. We have done this kind of question in 2-pointer also like remove duplicate or rearrange duplicate. So, in that we used to see that what is adjacent duplicate? That which is together and same too. So, one method which should come in your mind and also came in my mind that yes, we will run simple loop. What? We will run simple loop. How will we run? For example, this B, B, B, C and D. By doing this, one string will remain. Okay. We will run simple loop. We will run loop. Run it. What will we do in loop?"
+  },
+  {
+   "start": 323.54,
+   "end": 352.56,
+   "text": "So, first of all, we will assume that the first one is unique. Means, we will always see from the back side that there is no adjacent to the back side. Write this in your answer. Write this in your answer. This is your answer. This is your answer. There is a string. Push back in it. Okay. Now, start your i with 1. Your i came here. We will always see that is this i equal to the last one? Is this i? That is adjacent. Adjacent. What does it mean to remove the pair? If it is equal to the last one, then we will remove both. What will we do? We will remove both. So,"
+  },
+  {
+   "start": 352.62,
+   "end": 381.36,
+   "text": "Okay, you have already taken it. Okay, we will see if there is any edge case in it. Remove these two. Increase the i. Don't take this in the answer. Increase the i. Come. Keep the i here. From whom will you check this? From whom will you check this? Now you remove the two at the back. Remove the two at the back. You will check this too. You will feel that yes, this is also duplicate. So you don't have to take this too. But you have to take this. You have to take this. Look. You had to take this. Because the two at the back have been removed."
+  },
+  {
+   "start": 381.71,
+   "end": 409.66,
+   "text": "This thing will be clear in this example. This is the same algorithm. Let's assume that this was the edge case. That 3B came. What should we do in this? Our algorithm failed in this. It will fail anyway. Why will it fail? Come here. Your A, B, D, A and C. Come. Let's do one thing. Come here. Your I is here. Let's assume that the first one is unique. So write the first one in your answer. Write A."
+  },
+  {
+   "start": 409.66,
+   "end": 433.33,
+   "text": "Your i is here. Now see, is it equal to your previous one? So, you thought that it is not equal, so write it in your answer. Okay, write it. Now come here. Is it equal to your previous one? Yes, it is equal to your previous one. So, you have to remove this babu sahab. You have to make the previous one disappear too. So, assume that you have a miracle that you can make the previous one disappear. So, you can make it disappear. Okay, make it disappear. Okay. Now, your i is here. Where?"
+  },
+  {
+   "start": 433.33,
+   "end": 462.83,
+   "text": "When you will check it from the previous one, you will know that it is not equal. This a is not equal to b, so you will write it in your answer. Then you will come here. If you will check it from the previous one, you will know that it is also equal, so you will write it in your answer. So your answer is this. But this answer should not have been there. Why this answer should not have been there? Look at this answer, a is coming. This should not have been there in the answer. Why? Because when you will remove it for the first time like a robot, then first of all this will be removed. After that your string will become this."
+  },
+  {
+   "start": 462.83,
+   "end": 492.75,
+   "text": "After that, the robot will again see that two letters have come together again. It was not together earlier. Earlier, this A and this A were far apart. But, till you reached this A, the B of the back was also removed. There was a hole in the back and the A of the back was also removed. These two are the same again. You will have to remove these two again and your answer should be only C. But your answer is AA C. So, it will not work only by looking at the back. It will not work even by looking at the front. So, what to do now? I mean, we are stuck now."
+  },
+  {
+   "start": 493.36,
+   "end": 520.78,
+   "text": "So what is to be done in this? Where is the problem in this? What are we doing? What are we doing every time? We are checking the i from the back. We are checking from i-1. If it is equal, then we take it. If it is not equal, then we do something. But this method is not working. Especially in this example. It is a very good example. Why is it not working in this? Because when you came to this a, when you came to this a, then where was the problem? You saw from the back."
+  },
+  {
+   "start": 520.78,
+   "end": 538.64,
+   "text": "You saw it from the back and you got to know that B is at the back. So you thought that A must be unique. But it wasn't unique. Why? Because by the time you came here, the front B has been deleted. What has happened? Both have been deleted. That's why you had to check it from here. You had to check it from the first A."
+  },
+  {
+   "start": 538.64,
+   "end": 565.87,
+   "text": "You don't have to check it from B because B is not in your answer. B has been removed by the robot earlier. So why are you checking it? So this problem is coming in checking I and I-1. Same problem will come that you will check I, I plus 1 also. So in simple loop, this problem will come that you will not know what is behind. Both the back ones are also deleted. You don't know about this. You are checking it from this. You don't have to check it from this. You have to check it from the back A. So what will we do in this?"
+  },
+  {
+   "start": 566.45,
+   "end": 596.53,
+   "text": "Let's think about it in a different way, what can we do in this? Forget all the data search, come to your main problem, what do you have to do? So, what are you doing in one way? You assume that your string is like this, A, B, B, A. It is further, C, C, whatever it is. You are here at some time, your i is here. Normally, what we used to do? We used to check with i-1. Normally, we used to try to check with this. But,"
+  },
+  {
+   "start": 596.53,
+   "end": 625.36,
+   "text": "because your robot may have removed the one at the back, removed the one at the back, removed these two, or these three, or these four, whatever it may have removed, the one that is left in the string, the one that is still left, the one that is still left, you need to check it with that. This is it, right? You are checking it with this, but it may not be saved, who will tell you that it is not saved? You need to check with the one that is left, then you will know whether it is a duplicate or not. You will have to remove both, you will have to remove this and this as well."
+  },
+  {
+   "start": 625.36,
+   "end": 650.29,
+   "text": "If you ever come here, then you don't have to check with the person behind you. You have to check with the last element of the person who is left behind. This is in this question. And this is what stack does. What does stack do? It processes things item-wise."
+  },
+  {
+   "start": 650.38,
+   "end": 679.65,
+   "text": "What is the item here? The item is your character. We have already said that in array and string, whatever your index is, it will become your item. Okay. It tells you that you can pick items. You can pick items. To pick means to push in the stack. Keep it with you, keep it in your pocket. It is possible, it is possible that any item, any item falls from your pocket. Fall from your pocket. Fall, get lost, get forgotten. It means, look here, these two were not in your pocket. It was forgotten."
+  },
+  {
+   "start": 679.65,
+   "end": 708.5,
+   "text": "You are coming, you were coming like this. So, by law, these two should have been there but they are not. In your pocket, which is the last item left? Meaning, last item means the most recent. Last also means recent. Item, which one? You don't see that. Which one is left which hasn't fallen yet? Which item is left? Which one is left? When you get the answer for this, then this tells you the stack. That suppose, you pick up 1, 2, 4, 6."
+  },
+  {
+   "start": 708.5,
+   "end": 736.42,
+   "text": "then 6 falls from your pocket and 4 falls from your pocket which is the last item left in your pocket? that 2 is left that 2 is left, that 6 is not left if you ever come to 7 you don't have to look at 6, you have to look at 2 because 4 and 6 have fallen the same thing is happening here too A, B, B now B, B has been dropped by the robot from your pocket who is left? A so the one on the right should be compared to that A it should not be compared to the one on the back because it is not in the pocket so why are you looking at it?"
+  },
+  {
+   "start": 736.42,
+   "end": 761.65,
+   "text": "In this type of question, you will get every question of the stack in such a way that you will keep processing the item left to right. You will need the last one item every time. And which will be the last item that you saw? No, the one that is on your back index. No, the item you have picked and it is still there. Last picked item."
+  },
+  {
+   "start": 761.65,
+   "end": 790.66,
+   "text": "which didn't fall from your pocket, which didn't fall from your pocket, it is possible that things might fall from your pocket, it is possible that things might fall from your pocket, you might lose it. But the last thing that you picked up, which is still there, you will need that in every question of the stack. You will need it in every question, you will need it here as well. As you can see, when you came to this A, you needed the last item that was left in the answer. You needed that. This is the stack. Now, there is another way to understand this."
+  },
+  {
+   "start": 790.66,
+   "end": 820.05,
+   "text": "There is another way to understand this. Suppose this is your string. What is it? A, B, B. Why are we giving so much force in this? If we wanted, we could have told it very simply that do this, do that. But we are giving force because it is very important to understand when to apply it. Because it is very hard to understand. This is what we call learning DSA. Otherwise, DSA is to be written. So, write it by looking at the question. There is no problem. But this is what we call DSA. 0, 1, 2, 3, 4, 5. Okay."
+  },
+  {
+   "start": 820.43,
+   "end": 844.1,
+   "text": "You maintain an answer. What do you maintain? An answer. You maintain an answer. You have to give a string at the end. You maintain an answer. In the beginning, it will remain empty. In the beginning, it will remain empty. So, the first item, you think of it like this. You want to keep it in your answer. You want to keep it in your answer. Or else, think of it like this. You pick up each item and in your answer,"
+  },
+  {
+   "start": 844.1,
+   "end": 871.54,
+   "text": "What is stack? Pick up an item and keep it in your pocket. It is possible that some item falls in the middle and you have to drop it. Every time you will need the last picked item. So, the obvious thing is that the first one is still not in your pocket. So, put the first one in your pocket. It is your pocket. It is your pocket, answer, stack, whatever you want to call it. Put it here. Put it. Okay. Come to the next item. B. B. Okay. Now, you"
+  },
+  {
+   "start": 871.54,
+   "end": 899.25,
+   "text": "If you want to check B duplicate, who do you want to check B against? Before B, you have seen this. This much has happened. When you are here, you have seen this much. But, it is possible that some item at the back has fallen. It is possible that some item at the back has fallen. Which is the last item picked? Which is still in the string? Which is still in your pocket? That is this, this is this, A. This is not it, this is it. Compare with this. Is B equal to this? B is not equal to this? B can come here. B can come here. Write B here."
+  },
+  {
+   "start": 899.25,
+   "end": 929.07,
+   "text": "See, it will be more clear. Before coming here, you have seen so many strings. But it doesn't mean that you have seen them. It means that we pick an item. Which last picked item do I have? We are here. You want to pick this B and keep it here. You want to pick this B and keep it here. This is not allowed because it is the same. This is the same. The last picked item that you had left in your string till now, you want to pick this and keep it adjacent to it. This is not allowed in your answer. So you will have to ignore this."
+  },
+  {
+   "start": 929.07,
+   "end": 956.72,
+   "text": "you will have to lose the item which is in the top of your pocket you will have to throw it that it is not allowed, why it is not allowed? where do you want to keep this B in your answer? you are trying to keep it here, it is not allowed, B is also not allowed so you will have to ignore this you will have to ignore the item which is in the top of your pocket or you will have to pick it up and throw it so throw it from your pocket, you threw it see, both of them fell, what happened? both of them fell"
+  },
+  {
+   "start": 956.72,
+   "end": 974.77,
+   "text": "Now you have come here, which we were talking about earlier. Now you have come here. Who do you want to compare with here? Where do you want to keep it? You want to keep it here in this box. This is not allowed. Because even though you have seen so many strings, but these two have fallen. Which is the last item in your pocket?"
+  },
+  {
+   "start": 974.77,
+   "end": 999.87,
+   "text": "This is the last item in your pocket. You want to write this on top of this. This is not allowed here. This is not allowed. Because the last item in your pocket is A. There is another A on top of that. It is not allowed. You have to remove the duplicate and remove it in pair. So you have to ignore this. You have to ignore whatever is in your pocket. You have to throw that too. Throw this A as well. Throw this A. Throw this A. Throw it. Look."
+  },
+  {
+   "start": 999.87,
+   "end": 1011.68,
+   "text": "You have seen so many strings, but you don't have anything in your pocket. You have to throw everything. Because what is our rule? Let's assume this is your pants pocket."
+  },
+  {
+   "start": 1011.68,
+   "end": 1033.58,
+   "text": "The rule says that if there is C written on the pocket of your pant, you can't put C on it. This is not allowed. You have to throw both. If there is D here, then you can put E on it. You can put F, Z, anything. You can't put D or D on it. You have to throw both. So this is your pocket. What is this? It is your pocket. That's why. Come here. C."
+  },
+  {
+   "start": 1033.58,
+   "end": 1059.2,
+   "text": "Where do you want to put C? You want to put C here. Your pocket is completely empty at this time. You have seen this much, but there is nothing in your pocket. So, if there is nothing in your pocket, then there is no such problem. So, you put C. Come here. Who will you compare this with? The one at the back? No. Where do you want to put this? You want to put this here. So, this is allowed. Because C is at the top of your pocket. You want to put A on it. So, these two are adjacent."
+  },
+  {
+   "start": 1059.2,
+   "end": 1086.82,
+   "text": "It's not a duplicate, it's a different letter. You can put it here. So you write it here and your loop is finished. See, what's left in your pocket? C and A are left in your pocket. Okay. Now how will you make an answer from this pocket? You have to get a string in the answer. So what did we say? In the stack, you can do push from one side, you can also do pop in the same way. There is no other way to remove the element from the stack. You can't remove the element one by one, I mean you can't remove the straight element, you have to remove it by doing pop. So when you will remove it by doing pop, first of all you will pop this."
+  },
+  {
+   "start": 1086.82,
+   "end": 1111.46,
+   "text": "Your string will become A. We will pop and push back as we saw in reverse yesterday. We will pick up C. But this is not your answer. Your answer should be C, A. Your answer is A, C. Why is it coming like this? Because as we told yesterday, if you push any item list, any list of items 1, 2, 3, 4 in the stack, and when you pop it and take it out, then it will become 4, 2, 3, 1. It will become reverse because"
+  },
+  {
+   "start": 1111.46,
+   "end": 1137.9,
+   "text": "You are doing push in one way and pop-up in the opposite way. You are taking the last one first. That's why it is reverse. When you will reverse it, you will get CA. This is your answer. This is your answer. That's why there was a stack in this question. Because you didn't have to compare this duplicate with your previous one. You have the items till now. Which is the last picked item in it? Because after that you wanted to keep it here."
+  },
+  {
+   "start": 1137.9,
+   "end": 1165.42,
+   "text": "That's why you had to do comparison with that. If you do comparison with that, you will feel that it is duplicate. You will ignore this one only. You will throw the one which was on the top of the pocket. Because it is useless, it should not be in your answer. In your answer, in the final answer, there should not be any two adjacent letter duplicate. This is the aim of this question. That's why we do it with stack. So this was its small dry run. Come, see its code quickly. We hope that you must have understood. Don't go on easy. Its lead code is easy question."
+  },
+  {
+   "start": 1165.42,
+   "end": 1197.89,
+   "text": "First, we didn't explain the question properly and after that, we have written it easily. We don't know what is its difficulty rating. Let's go. It is a very hard question. The question is not hard. I mean, it is hard to do that in the question. Okay. Let's try to code it. And along with that, we learn the template that what you have to do in the stack. In the stack, you have to decide two things. What? What did we say? There is an item list. You can pick the item list first. First of all, you have to decide this. There is an item list. You have one item."
+  },
+  {
+   "start": 1197.89,
+   "end": 1228.88,
+   "text": "first you have to decide that because of this item because of this because of this who who or how many how many items you will have to throw how many items you will have to throw you will have to throw which item you can throw which you can throw in your pocket and no one else but with every item you have to decide that because of this how many items you can throw like"
+  },
+  {
+   "start": 1228.88,
+   "end": 1253.15,
+   "text": "When we came here, we saw that B was at the top of the answer. So what did we decide? Because of this, we had to throw this also. Because in the question, it was said that you have to remove this in pair. We ignored this. What did we do? We threw this also. When A came, we saw that this is at the top. So we went and forced to throw this also. So this happens. The first decision is that because of this item,"
+  },
+  {
+   "start": 1253.15,
+   "end": 1282.67,
+   "text": "How many elements do you want to throw? Which one do you want to throw? You have decided that you want to throw only the upper one. How many? How many? How many? You want to throw one, two, three. How many did you want to throw here? You just wanted to throw one here. You wanted to throw one. You didn't want to throw more than that. Why? Because you were told to remove the pair. Remove one of this and remove the upper one. Leave the rest on your own. Remove the pair. There are three as well. So, you don't want to remove all three. You want to remove any two. That's why. It is said in the question. You want to remove one. Okay. After that. After that, you have to decide the item. The item."
+  },
+  {
+   "start": 1282.67,
+   "end": 1287.57,
+   "text": "Rakhna hai ki nahi? Rakhna hai ki nahi?"
+  },
+  {
+   "start": 1287.95,
+   "end": 1317.02,
+   "text": "Do we have to keep it or not? This is the second question. For example, when it was B, we did not keep it because we had to ignore it. This is a duplicate, so it was also ignored and thrown away. When it was C, we saw that the one above the answer, which means there was nothing above the answer, that's why we decided to keep C. When it was A, we saw that the one above the answer is C, so we can keep A above C, we keep this, we keep this, we keep this, we don't keep the rest. We also decided that there is nothing above the answer, so we can keep this. We also kept this. So you will have to take this decision that"
+  },
+  {
+   "start": 1317.02,
+   "end": 1348.7,
+   "text": "The item will first decide how many items we have to throw because of that item. When it will throw all of them, it will be completely satisfied, then you have to decide whether you have to keep this item or ignore it. You have to decide that. So if you decide these two things, any stack question will be made. Let's see its code quickly. First of all, you will get a function by doing this. String fun string s. Okay. First of all, for ourselves, what was the answer we were making? It was the same stack. That at the top, looking at the top of the pocket, it was the same stack."
+  },
+  {
+   "start": 1348.7,
+   "end": 1378.22,
+   "text": "First of all, int n is equal to s dot size. Okay. What kind of stack? What were we pushing in the stack? We were pushing the letter. So, we have to make a character type stack. Whose? Character type. Stack char st. St is the name of the stack. Okay. Now, now, now, what will we do? Take an int i. And to make a result, take any string rest. We will make the result by reversing it. Okay. Come on, run the loop. For i is equal to 0. Let's run the loop here."
+  },
+  {
+   "start": 1378.29,
+   "end": 1409.5,
+   "text": "Move the loop here. For i is equal to 0, i less than n, i plus plus. Okay. The first case can be that there is nothing in your answer, there is nothing in your pocket. So you can keep anything. If your pocket is empty, then you can keep anything in the first element. So if your whole stack is empty, then you can keep it. Now what do you do? st.push. Push the case, si, and continue. After this, you don't need to do anything. Okay."
+  },
+  {
+   "start": 1409.5,
+   "end": 1438.83,
+   "text": "This is a good thing. Now, what was the next decision? How many items will this item throw? So, what did we say? It will throw one. It will ignore itself, but it will throw one. So, when will it throw? When the element above the pocket is equal to it, then it will help to throw it. So, if st.top equal equal to si. Means, this is b and now b is also running on the top of the answer. So, it is obvious that these two will not be together. So, it will go itself, but it will also throw it. In this condition, what do you have to do? st.pop."
+  },
+  {
+   "start": 1439.06,
+   "end": 1466.26,
+   "text": "and continue because if it is like this then we will not keep this element also if it is not like this means the stack is not empty and the top of the stack is not equal to it means if the top of the stack is C and you want to put A then you can put it we will keep this element we will keep this item how will we keep it? we will push it it is very simple you can push only one pop it is not a game from where to do what push pop is the same push"
+  },
+  {
+   "start": 1468.14,
+   "end": 1497.1,
+   "text": "Close this. Your loop is complete. Now, whatever alphabets are left in the stack, that is your answer, but it is in reverse form. So, first of all, you have to empty the stack and take it in a string, and you have to reverse it. Like we emptied the string and took it here. AC came, we reversed AC and made CA and returned it. So, what will happen? You have to empty the stack. We had taught how to empty the stack in the last video. See here. While stack is not empty. How do we write this? It's a not. Stack is"
+  },
+  {
+   "start": 1497.58,
+   "end": 1527.42,
+   "text": "Not empty. Okay. What? Rest dot. Push. Back. Which one? St dot top. You can see only one element. You can't see the middle element. You can only see the top one. And st dot pop. Means you have stored it after seeing it once. You have popped it. You will see the next one. So you are removing the element one by one. Like a bullet comes out of a gun. How does a bullet come out of a magazine? First of all, the upper one comes out of a cut. Then all the lower ones come out of a cut. Then the upper one comes out of a cut. That is the stack. That is the stack. Stack of bullets is a magazine. You must have seen this. The magazine."
+  },
+  {
+   "start": 1527.42,
+   "end": 1558.19,
+   "text": "How is the bullet in it? It is kept like this, it is kept like this, it is kept like this. As soon as you pop it, all the cuts come up. There is always one above. So if you hit it like this, it also comes out. That's where the stack is. Close this. And the work is not complete yet. The string you just got is in reverse form. You have to reverse. Reverse. Res dot. Begin. Res dot. End. That's it. Reverse is done. Return it comfortably. That's it. This was one question of stack."
+  },
+  {
+   "start": 1558.19,
+   "end": 1586.03,
+   "text": "Hopefully, you have understood why you have to apply it. I mean, you must have understood the question. You know what to do and how to do it. There is nothing so hard in push pop. Why are you doing it? Why are you doing every step? If we are doing this, if we are doing this, then why? Why are you doing only one pop? Why are you not doing the pop again and again? Why are you not doing two pops? Why are you not doing three pops? Why are you checking the empty? Why are you not keeping this item? Why are you keeping it? Because it is said in the question. So, you will have to take all these decisions in every question."
+  },
+  {
+   "start": 1586.03,
+   "end": 1614.77,
+   "text": "This is the simple format, this template will be in every question, but you will have to take these decisions. What is the first decision? The item came, due to this, how many elements will be reduced? Due to this, how many elements will you have to throw? In this question, it was said that one will have to be thrown because you have to remove it in pair. If it is said that remove all the duplicate lines, then throw all. Throw all the duplicates behind. Okay? Do you have to keep this item or not? So if this is duplicate, then you don't have to keep it because it will be ignored. If this is not duplicate, or if the stack is empty, then you can keep it."
+  },
+  {
+   "start": 1614.77,
+   "end": 1626.96,
+   "text": "That's what it means, right? That's it. So, this was a small question. We will move on to the next few questions on this concept only. So, watch carefully. And we will meet tomorrow. Today's video might be delayed because it's already time. Let's go."
+  }
+ ]
+}

@@ -1,0 +1,314 @@
+{
+ "video_id": "91qkzhmEO48",
+ "title": "I Will make Binary Search Easy For You | DSA Patterns Course | C++ Java Python",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1605,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 25.98,
+   "text": "Before studying, read this comment, which we have been shouting for so many days. At least one person has understood it. The rest must have also come. We have seen its comment, so we will tell you. We have been trying to explain this thing to you for many days. That you have to learn to think from me. Don't stay behind code and notes. We have seen many children that till now while studying DSA, he does not have a copy. He neither has a copy nor a pen. We had seen our friends in college that"
+  },
+  {
+   "start": 25.98,
+   "end": 40.3,
+   "text": "I used to open the laptop and look at the screen for a long time. I used to ask him, what are you doing? He used to say, I am reading DSA. I said, are you reading DSA? Where is your copy? Where is the pen? He said, no, no, we will look at the question and if we understand it, we will code it. Otherwise, we don't do it."
+  },
+  {
+   "start": 40.3,
+   "end": 58.35,
+   "text": "this kid was studying DSA even after 5 years, he is still studying DSA, he didn't get it nor will he ever get it so don't look at DSA in such a way, nothing is coming, just take a copy pen, you watch all these videos, right? just take a copy, take a pen, a pencil, whatever you have, iPad, notes, whatever you have, just take it"
+  },
+  {
+   "start": 58.35,
+   "end": 87.18,
+   "text": "When we used to study, we used to watch someone's video or a video of a striver. We used to watch someone's video. We used to copy that this is a class, this is not a video. Look, we are not that beautiful to look at. We are not heroes that you come to see my face. This is a type of study, right? So like you study in school, you study in college, this is also a type of study. So take it with you so that you can write something in it. First of all, the child comes and starts searching for where to get the code. There is a very good website to find the code. Its name is chatgpt.com. There you will get the code of every type."
+  },
+  {
+   "start": 87.18,
+   "end": 110.82,
+   "text": "Where are the notes? You make the notes. My notes are cheating. My code is cheating. What will happen? Learn from us how to think. We will tell you something. Think by yourself. Attach it to your mind. Once you understand, try to code it yourself. You will learn by doing this. My cheating and stealing will not be of any use. Let's start. Today's question is minimum in sorted array. Rotated sorted array."
+  },
+  {
+   "start": 110.82,
+   "end": 137.68,
+   "text": "Leetcode 153. So we will encourage that if you are watching the previous 2-3 videos, then you should definitely try it once. Pause the video before moving ahead. Go and read the questions and try it. And the new students, check the description. And the students who are still here, either you have played it or you will not think about it. Come, let's start. We will explain the questions to you. First of all, we will understand the questions. After that, we will see why it is a question of binary search."
+  },
+  {
+   "start": 137.68,
+   "end": 164.85,
+   "text": "After that, we will see how it is related to what we were studying till now. And then when these three things will be done, then you will know that the question is of one minute. The question is not more than one minute. If you understand everything till now, then the question will come to you in one or two minutes. You will come to do the code, you will come to write, you will come to submit, everything will be done. Let's go. You have been told that you have been given a sorted array. You have been given a sorted array. Okay. You have to find its minimum."
+  },
+  {
+   "start": 164.85,
+   "end": 192.26,
+   "text": "Find the minimum number, not the index. If we find the index, we will get the number. We have to find the minimum number. We have to return or find. Some people will say that this is stupid. The minimum number of the sorted array is in the beginning. The minimum number of the sorted array is the array of 0. So we will return it. Very good, return it. But what is the twist in this? This array is not only sorted, it is also rotated. What does this mean? Now,"
+  },
+  {
+   "start": 192.26,
+   "end": 218.11,
+   "text": "Rotation, what does rotation mean? Remember when we did the question of link list rotation, what used to happen? If you used to say that we are rotating something k times, then it used to happen that suppose 5 people used to stand in the link list, 5 people used to stand and we used to say that k is equal to 2 times rotated k. So what used to happen by rotating once? That this person, the first person used to come to the second position. The second person used to come to the third. The third person used to come to the fourth."
+  },
+  {
+   "start": 218.11,
+   "end": 242.7,
+   "text": "4th person used to come on 5th position and 5th person used to come on 1st position because 6th position was not left so this used to happen this used to happen this used to happen 1,2,3,4,5 after rotation this used to happen 5,1,2,3,4 one more time because this was one rotation this k is equal to 1 times of rotate if we had done one more rotation then we had to repeat the same thing in which this 1st person used to come here"
+  },
+  {
+   "start": 242.7,
+   "end": 272.88,
+   "text": "This one used to come here, this one used to come here, this one used to come here, and the last one didn't have any space left, so it used to run in the beginning, so it used to come here. Come on. It used to happen that you can say that this is two times rotated. Same thing is done in this array, same thing is done in this array, but, but, you are not told the value of k. You don't know the value of k, because if you know the value of k, then it will be very easy. You don't know the value of k. And one more thing, you don't know if the array is rotated or not."
+  },
+  {
+   "start": 272.88,
+   "end": 299.04,
+   "text": "Is the array rotated? It is not even certain. It means that it is not even certain. It can be rotated. It can not be rotated. It can be rotated. It can not be rotated. It can be anything. It means anything in the world. For example. See. Now slowly. Now come to this question. Let's think. Now till here you understood the question. That you have been given a rotated sorted array. You have not been told rotation. It is said possible. It can be possible that it is rotated. You have to find its minimum element."
+  },
+  {
+   "start": 299.04,
+   "end": 324.46,
+   "text": "So see, how to think of any question, how to think of any thing, that's why we say, here comes the pen copy that we were talking about, right? That's why we are not saying that we are selling pen copy, no. What happens with pen copy is that at least, suppose you read the question, you read the question like this, read it 3-4 times in English, you don't understand anything, you are looking at it, looking at it, after 15 minutes, you message on Instagram that your course is useless, we see the 15 minute question, we don't understand anything, no."
+  },
+  {
+   "start": 324.78,
+   "end": 354.29,
+   "text": "If you don't understand anything, then you must know how to make a drawing. Everyone knows how to make a drawing. Everyone knows how to make an array drawing. Make an array drawing. Write down the input. Do indexing. See the output. If you do something, then you will be stunned that after 1-2 months, how much this thing is going to benefit you. Come. Assume that you have an array like this. 1, 2, 3, 4, 5, 6, and 7. So this is a sorted array. This is a sorted array. Okay. And this is 6."
+  },
+  {
+   "start": 354.29,
+   "end": 383.26,
+   "text": "Now, if it is not rotated, then what is its minimum? Array of 0, which you all know very well. Where will be the minimum of sorted? In the beginning. Okay. But he is saying that it is possible that it is rotated. It is possible, isn't it? It is possible. Assume that we rotate it 3 times. It will give you after rotating. The question will give you after rotating. Okay. Assume that if you rotate it 3 times, then what will happen? See. We will do it 3 times, right? So, first of all, this will happen in rotation. 7, after that 1, 2, 3, 4, 5, 6."
+  },
+  {
+   "start": 383.26,
+   "end": 411.06,
+   "text": "what happens in every rotation, one last element comes first in every rotation, one last element comes first and the rest of the things shift one by one, this happens in every rotation, you can do it and see this happened once, if we do it twice, then 6, 7, 1, 2, 3, 4, 5 this happened twice, do it one more time take 5 here, 5, 6, 7, 1, 2, 3, 4 this area will be given to you, this area will be given to you as input now I have not told you from before that it is rotated or not, this is the input"
+  },
+  {
+   "start": 411.06,
+   "end": 437.65,
+   "text": "You have been told that this is a sorted error, which may be rotated. You have to find its minimum, which is this. So what happened? We have made a drawing of the question, we have seen the question, we have understood, everyone knows this much, it is easy to do this much. Now think about it, what to do now? See, now those who are thinking, pause, as soon as it clicks on you, that yes, it has come to the mind, pause the video as it is, go and see it by coding it."
+  },
+  {
+   "start": 437.65,
+   "end": 464.29,
+   "text": "now suppose you will be given an array like this so see carefully how this array will look like this array will be given like this that 5, 6, 7, 1, 2, 3 and 4 1, 2, 3, 4, 5, 6 this is your array now see carefully what you have to find you have to find the minimum you have to find the minimum ok now this array"
+  },
+  {
+   "start": 464.29,
+   "end": 492.82,
+   "text": "How was this array before? We are all assuming that you don't know anything about k. How was this array before? This array used to look like this. Let's not make it an array. Let's just write the number. How did this array look originally? This array looked like this. 1, 2, 3, 4, 5, 6, 7. Now if someone rotates it by k times, what happens to it? Rotating it by k times means that the last k elements will go to the beginning."
+  },
+  {
+   "start": 492.82,
+   "end": 521.94,
+   "text": "And in the beginning, n minus k elements, n is equal to 7, k is equal to 3, means the last 3 elements will go to the beginning. And the beginning n minus k elements, means the beginning 4 elements will go to the end. So, both of them reverse their position in a way. So, they become like this. 5, 6, 7, it comes here."
+  },
+  {
+   "start": 521.94,
+   "end": 545.57,
+   "text": "And 1, 2, 3, 4. This comes here. This is what happens. This goes here. And this goes here. This is what rotation means. This is what rotation means. Now, now, now, look very carefully. Now, what is this? These are two parts. What is this? These are two parts. This is your part 1. This is your part 2. If we call an array,"
+  },
+  {
+   "start": 545.57,
+   "end": 573.9,
+   "text": "that according to k, divide it into two parts. Keep the n minus k of the beginning in one part. Keep the last k in one part. So, what is happening is that part 1 is coming here instead of part 2. And part 2 is coming in the beginning. So, this is happening. There are two parts in the array. This is it. Okay. If, if, if someone tells you, now see, what is the whole game? The whole game is of guessing. Guessing. What will we guess? Index. Now, people will say that we have to return the number in this, so why are you guessing the index?"
+  },
+  {
+   "start": 573.9,
+   "end": 602.58,
+   "text": "We are guessing the index because if you guessed the index, then you have to do the return array of index. That's the only difference. Okay. If someone tells you, let's say you guessed an index, let's say you guessed an index, let's say you guessed an x index. If someone tells you, if someone tells you that that x belongs to part 1 or part 2, then what will happen? Let's think. Let's think. Look."
+  },
+  {
+   "start": 602.58,
+   "end": 618.98,
+   "text": "Now open your eyes, slowly this question will open, slowly you will understand that whatever you were studying for the last 2 days is interrelated, everything is related. See, how was Eric in the beginning, without rotation, how was he? 1, 2, 3, 4, 5, 6, 7."
+  },
+  {
+   "start": 618.98,
+   "end": 645.14,
+   "text": "k can be anything. Let's assume that k is 3. Let's assume that k is 3 just to explain to you. So what do we say? What does k 3 mean? The last 3 elements make a separate part. The beginning n minus k makes a separate part. And what does rotation mean? The elements of part 2, part 2 comes first and part 1 comes later. So look, if we look at every element, every element of array either belongs to part 1 or part 2."
+  },
+  {
+   "start": 645.14,
+   "end": 674.51,
+   "text": "In part 1, there is n-k. In part 2, there is k. So, every element will be either part 1 or part 2. So, in the beginning, see. In the beginning, see. Which part is 1? 1 is part 1. Yes. 2 is part 1. 2 is part 1. 3 is also part 1. And 4 is also part 1. Because in the beginning, n-k elements, we say that this is the first part, which we will take in the last. Okay. But, whose is 5? 5 is part 2. Whose is 6? 6 is part 2."
+  },
+  {
+   "start": 674.51,
+   "end": 704.53,
+   "text": "Yes. Whose is 7? 7 is of part 2. Every element is a part. Every element is in the same part. Now you must be thinking that we used to say monotonicity. That the answer of your guess will be the same. Now see. Now when you rotate. This was the original area. This was the original area. When you rotate, how will the area look? The area will look like this. 5, 6, 7. After that, 1, 2, 3, 4. Let's write the part again. Let's write the part again. Which was 5?"
+  },
+  {
+   "start": 704.53,
+   "end": 731.49,
+   "text": "5 was of part 2. 6 was of part 2. 7 was of part 2. And 1 was of part 1. 2 was of part 1. 3 was of part 1. 4 was of part 1. Now, what is your answer? Your answer is this. What is this? Part 1's first occurrence."
+  },
+  {
+   "start": 731.49,
+   "end": 747.58,
+   "text": "Look carefully. This is the first occurrence of part 1. Yes. This is the first occurrence of part 1. Because your array looks like this. When your array was sorted, you said that in the beginning, n-k was part 1. So, you got to know that the first 4 things are part 1."
+  },
+  {
+   "start": 747.58,
+   "end": 773.47,
+   "text": "And the last three things are part 2. When you rotate the pair, all the elements of part 2 come here. So now the rest of the beginning is part 2. And the last four are part 1. What do you want in the answer? What do you want in the answer? You want 1 in the answer. Means you want the first occurrence of part 1. So now if you guess something."
+  },
+  {
+   "start": 773.47,
+   "end": 791.89,
+   "text": "Now, if you magically get to know whether this is part 1 or part 2, let's say you come here, you get to know that this is part 2. If this is part 2, then where should you go? Where will you get part 1? If you get part 1 on the right, then you should go on the right. If you guessed something and got part 1, then what would you have done in the first occurrence?"
+  },
+  {
+   "start": 791.89,
+   "end": 820.43,
+   "text": "we used to keep this, we used to keep this and we used to tell the shopkeeper that now we will go to the left, we will go to the left and see if we find anyone else because it is possible that the answer is there, it is possible that someone else is present on the left, then we will take him, if we do not find anyone on the left in part 1, then we will take you, then where did you have to go here, left and from here right, the whole question is complete, there is a small problem, there is a small problem, this is part 1 or"
+  },
+  {
+   "start": 820.43,
+   "end": 843.3,
+   "text": "Part 2, how will you know? How will you know? Because this is the main point of binary search, that when you guess something, the answer of that guess, you should either know in order of 1, or you should know in order of n. This used to happen, right? Okay. So, everything is sorted. If your array is seen in one way, then you will get it in this way, that part 2, part 2, part 2, part 2."
+  },
+  {
+   "start": 843.3,
+   "end": 852.78,
+   "text": "Part 1 will start all at once and then all will be of part 1. So, how is the answer of the guest? Monotonic."
+  },
+  {
+   "start": 852.78,
+   "end": 880.67,
+   "text": "The answer is monotonic. It means that in the beginning of many parts 1, suddenly part 2 comes and then part 1 comes continuously. There is no mix and match. It doesn't happen that part 2 is there, part 1 is there and then part 2 comes. No, no, no. Continuous part 2, continuous part 1 means monotonic. But there is a small problem that part 1 and part 2 are ours, right? Part 1 and part 2 are ours. How will we know?"
+  },
+  {
+   "start": 880.67,
+   "end": 911.34,
+   "text": "Let's see how it will be known. One more thing, you have been told that array is unique. Array is unique. What is array? It is unique. Okay. Now let's see what is part 1 and part 2? How is part 1 and part 2 known? See. This is your array. Suppose it is rotated sorted array. So this is your 5, 6, 7, 1, 2, 3 and 4. 0, 1, 2, 3, 4, 5 and 6."
+  },
+  {
+   "start": 911.34,
+   "end": 943.28,
+   "text": "This is your array, okay. How will we know? How will we know if this is part 2 or part 1? Now, what is part 2 in this? See, these three are part 2. This is P2, this is P2, this is P2. And the rest are part 1. And the rest are part 1. Now, let's make a drawing of this array. Make a drawing of this array. See how the drawing looks. This drawing looks like this. First, 5 comes here. Then, sorry. Here, 5 comes somewhere. Then, 6 comes."
+  },
+  {
+   "start": 943.28,
+   "end": 972.21,
+   "text": "Then 7 comes. By doing this, it climbs up. It suddenly falls and falls very low. Where? Straight on 1. It falls straight on 1. It falls very low. It falls very low on 1. Let's make it lower. It falls very low on 1. Okay. After this, it climbs a little. After this, it starts climbing. From 1, it goes to 2. From 2, it goes to 3. From 2, it goes to 4. Now see."
+  },
+  {
+   "start": 976.3,
+   "end": 1006.58,
+   "text": "Pay attention to one thing. All the elements of part 1... Sorry, this is part 2. This is part 2. And this is part 1. This is part 1. This is part 1. All the elements of part 2 are more than all the elements of part 1. All the elements of part 2 are more than all the elements of part 1. See. 5 is more than all the elements of part 1. 1, 2, 3, 4 are the most."
+  },
+  {
+   "start": 1006.58,
+   "end": 1035.92,
+   "text": "6 is more than every element of part 1. 7 is more than every element of part 1. And this had to happen. This had to happen. Because how did part 2 and part 1 become? Some array was sorted. Some array was sorted till here. What did you do? You broke it from here. You broke it from the middle. And you took this part and put it in the beginning. So now this part obviously will be bigger than all the parts at the back. Sorted array means the same thing. That your array was like this. 1, 2, 3, 4."
+  },
+  {
+   "start": 1035.92,
+   "end": 1065.23,
+   "text": "5, 6, 7. You say that we will make a separate part of this and we will add it in the beginning. The obvious thing is that if you make a part of the last things, then if this is your part 2 and this is your part 1, then the obvious thing is that every element of part 2 will be bigger than your part 1 element. Because it is a sorted array and you are taking it there. So see. Now see. Slowly open your mind and think with me. This is your array. 5, 6, 7. 1, 2."
+  },
+  {
+   "start": 1065.23,
+   "end": 1092.85,
+   "text": "3, 4. What is your problem? If you will guess an index, then someone will tell you that is it part 2 or part 1. So we are trying to find something which is common in part 2. Which is common in part 2. Let's see what is common in part 2. 5. It is bigger than every element of part 1. So if it is bigger than every element, then this index is 0, 1, 2, 3, 4, 5, 6. Means,"
+  },
+  {
+   "start": 1092.85,
+   "end": 1118.9,
+   "text": "5 is bigger than every element of part 1. Who is the biggest element of part 1? Part 1's biggest in part 1. Who is it? 4. Isn't it 4? The last one. The last one. The last index one. Array of 6. Array of 6. It's a natural thing that part 1's biggest is 4. Look. 5 is bigger than 4. Yes. 6 is bigger than 4. Yes."
+  },
+  {
+   "start": 1118.9,
+   "end": 1148.59,
+   "text": "7 is bigger than 4. But... But... Now come to part 1. 1 is not bigger than 4. 2 is not bigger than 4. 3 is not bigger than 4. And... 4 is also not bigger than 4. So we got it. We got it. Look, look, look. Yes, yes. We got a trick. 5, 6, 7. 1, 2, 3, 4. 0, 1, 2, 3, 4, 5, 6. If... If..."
+  },
+  {
+   "start": 1148.59,
+   "end": 1169.36,
+   "text": "Array of guess, if array of guess is larger than array of n-1, then this is part 2. Else, this is part 1. See, it will be in all. Array of guess, if we see 5, 5 is greater than 1, part 2. 6 is greater than 4, part 2. 7 is greater than 4, part 2. But,"
+  },
+  {
+   "start": 1169.36,
+   "end": 1198.67,
+   "text": "1 is not greater than 4, part 1. 2 is not greater than 4, part 1. 3 is not greater than 4, part 1. And 4 is not greater than 4, part 1. So, this is also monotonicity. This is a strange monotonicity. Part 2, part 1, we had seen. This is also monotonic. What is monotonic? If you ask a question, if you ask a question, that what? Array of guess is greater than array of n minus 1. So, you got an answer like this. Yes. Yes. Yes. No. No."
+  },
+  {
+   "start": 1198.67,
+   "end": 1214.96,
+   "text": "no, no, see it's monotonic, yes, yes, yes, turning point is suddenly no, no, no, no, no, and in a way you can say that where there will be no for the first time, where there will be no for the first time, this will be your minimum element, this same thing we understood from part 1 and part 2, this is P2,"
+  },
+  {
+   "start": 1214.96,
+   "end": 1243.12,
+   "text": "This is P2, this is P2, this is P1, this is P1, this is P1, this is P1. Because how do we know P2? If the area of gas is greater than the area of n-1, then it will be P2. If the area of gas is not greater than n-1, then it will be P1. So, by doing this, we got to know. Let's see a small dry run of this. We are sure that this will be clear. If it is not clear, then tell us and we will explain again. That is why we are walking slowly because now we don't want to do what we used to do earlier."
+  },
+  {
+   "start": 1243.12,
+   "end": 1272.13,
+   "text": "So earlier you used to say that explain everything in one question, make 5-6 questions in one question. What happens is that the 5th question gets spoiled. This is your array. You don't know what it is. No problem. Let's guess. Low is equal to 0. High is equal to 4. What is the initial guess of both? The mid value of 0 plus 4 by 2 is 2. So you came here. Okay. Now, is this part 1 or part 2? How will you know? Array of guess."
+  },
+  {
+   "start": 1272.13,
+   "end": 1299.63,
+   "text": "Array of guess greater than array of n-1 means, what array of 2 is greater than array of 4? What 5 is greater than 2? Yes, yes, means this is part 2, means this is part 2. Remember carefully, in which format was your array? Your array was like this, p2, p2, p2, p2, p2, then p1, p1, p1, p1, means continuously p2, then continuously p1. So, if you are in part 2, if you are in part 2,"
+  },
+  {
+   "start": 1299.63,
+   "end": 1316.38,
+   "text": "So where should you look? You should look at the right. How do we look at the right? By doing low is equal to guess plus 1. So what will be the next low? Is equal to 3. High is equal to 4. What will be its guess? 3 plus 4 by 2. 3. 3. Come. Coming."
+  },
+  {
+   "start": 1316.38,
+   "end": 1344.75,
+   "text": "What? What? What? Array of gas is greater than array of n minus 1. What? 1 is greater than 2. No. No. No means this is part 1. If this is part 1, then what did you do? If this is part 1, then what did you do? You would have written it in the answer. Write the guess. And look to the left to see if there is anything else. First occurrence. Remember what happened in the first occurrence. Explain it very nicely. First occurrence. Please look at it. What was there in the first occurrence? We will look to the left. How do we look to the left? High is equal to gas minus 1."
+  },
+  {
+   "start": 1344.75,
+   "end": 1374.75,
+   "text": "Low is equal to 3. High is equal to 2. Your loop is over because low is greater than high. What did you get in the answer? Rest is equal to 3. Means this index. If you return the array of 3, will you be able to return 1? Yes, you will be able to return 1. Yes, you will be able to return 1. One more thing. If the array is not rotated. If the array is rotated. It is possible that it is not rotated. In the question, it is possible that the array is like this."
+  },
+  {
+   "start": 1374.75,
+   "end": 1400.77,
+   "text": "2, 3, 4, 5. 0, 1, 2, 3, 4. So, let's see if it works or not. So, what is the error? See, there is no error rotated in this. So, all the things in this are the same. P1, P1, P1, P1, P1, P1. There is no P2 in this. There is no P2 in this. So, let's see what is the error in that. Low is equal to 0. High is equal to 4. Gas is equal to 2. Come."
+  },
+  {
+   "start": 1400.77,
+   "end": 1429.5,
+   "text": "Now see, what do we have to check? Is it P1 or P2? It may or may not be P2. What do we know? We have to check. Is the area of gas greater than the area of n-1? No. No means this is P1. But now what will we do? We will write this in the result and we will go to the left and see. So go to the left and see. Low is equal to 0. High is equal to gas minus 1. Now we have come here. Now what will be the gas? What will be the gas? Zero. Okay. We have come to zero."
+  },
+  {
+   "start": 1429.5,
+   "end": 1458.61,
+   "text": "Now, what will we do? Now, what will we do? Now, what will we do? What? Array of guess is greater than array of n minus 1. No, 1 is not greater than 5. Means, this is also t1. What will we do? We will write this in the answer. And, we will go to the left. We will go to the left. Come, let's go to the left and see. Low is equal to 0. High is equal to guess minus 1. Minus 1. Your program is over. What is the result value? 0. What is array of 0? 1. Is this minimum? Yes, this is minimum. Yes, this is minimum. Come, let's code and show you."
+  },
+  {
+   "start": 1459.15,
+   "end": 1491.52,
+   "text": "int at this point of time, you should really pause this video and do it yourself. After that, do it and then come and check what you did wrong. What do you have? Vector int this. Int n is equal to a dot size. Int low is equal to 0. High is equal to n minus 1. We will keep a variable for result which will be minus 1. Come, let's start."
+  },
+  {
+   "start": 1491.52,
+   "end": 1520.88,
+   "text": "While low is not greater than high. Okay. I and T. Guess is equal to what? Low plus high by 2. Low plus high by 2. What do we have to check? Is it part 1 or part 2? If array of guess is greater than array of n minus 1, then what is this? This is part 2. Part 2 means, what was the array? Part 2, part 2, part 2, part 2."
+  },
+  {
+   "start": 1520.88,
+   "end": 1549.71,
+   "text": "Part 1, part 1, part 1, part 1. So you need to go right. Low is equal to. Guess. Plus 1. Else. Else. Means this is part 1. Very good. Write this in answer. Store this in answer. But. Tell that shopkeeper that we want to see more. Because what occurrence are you looking for? First occurrence test. You want to find first occurrence. So. High is equal to. Guess. Minus 1. Close this. Close this. And."
+  },
+  {
+   "start": 1549.71,
+   "end": 1577.81,
+   "text": "In the end, return array of rest. Don't do rest. It doesn't ask you for the minimum index. It only asks you for the number. In this case, return array of rest. So, this is your small code. Time complexity, login. Space complexity, order of 1. This is done. So, this is your binary search code. Now, some people will say that we will do it with linear search. It will be done with linear search too. You search minimum. So, that doesn't make sense. Why do we have to do linear search? So, there is no point in reading this."
+  },
+  {
+   "start": 1577.81,
+   "end": 1604.08,
+   "text": "So what was this question? This was the question of first occurrence. There was a little trick that you have to think about part 2 and part 1. You can think about it in various ways. Part 2 and part 1, we are telling you to understand that you have to understand what monotonicity is. The day you start seeing this monotonicity, that day you will become a binary search. So let's code this and see you in the next one."
+  }
+ ]
+}

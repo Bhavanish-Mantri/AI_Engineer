@@ -1,0 +1,879 @@
+{
+ "video_id": "DSGtYGZKEZ4",
+ "title": "I Failed a 40 LPA Interview Because Of This Binary Search Question | Do not Miss This",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 4249,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 8.86,
+   "text": "In binary search, the hardest question is not possible which we are going to do today. This is the hardest question of binary search. You will understand that the whole binary search does not ask a hard question."
+  },
+  {
+   "start": 8.86,
+   "end": 36.14,
+   "text": "This was asked in the D-Shock interview, 40 LPA, and it was missed. Why was it missed? Because we also thought like you that yes, okay, we have studied, we have studied the basics, we don't study hard, we didn't understand, we didn't study, we were left out. One more thing is that the video is going to be very long because you won't understand a question directly, before that you will have to make a base, you will have to learn a little. Just like we did a 2D matrix yesterday, some people didn't even see that, it's a very good thing, you guys don't see it, but before that you will have to make a base, so don't be afraid."
+  },
+  {
+   "start": 36.14,
+   "end": 61.54,
+   "text": "If you want to see it, then watch it completely. Because we are seeing that you enjoy telling your children these days that my attention span has become very low, we can't even see 30 seconds. So you are not able to sit for an hour now, right? You are not able to sit for an hour while studying. So now you just have to study, so you are not able to sit for an hour. So don't sit. Let it be 6 months, 8 months, let the college end. Your job will be in BPO. In BPO, you will get a sales job."
+  },
+  {
+   "start": 61.54,
+   "end": 87.15,
+   "text": "then you will sit for 15-18 hours and the boss will take you out in the sun he will tell you to sail and come and if you sail for 3 days then he will kick you out tomorrow at that time everything will be fine, tension span, this that, anxiety, depression, everything will be fine we know such people, come at night, eat, sleep, and cry before sleeping"
+  },
+  {
+   "start": 87.15,
+   "end": 115.66,
+   "text": "Some of you might think that we are very tough, we don't cry at all. Please cry, let the BPO job take some time. When it will take 12,000 jobs and you have to work for 16 hours a day, cry a lot. There is no one left without crying. At that time, everything becomes right. All excuses, motivation, procrastination, discipline. It is a very good job. It is a very good job that a person gets completely improved. It is a rehab center. Work there for 2-3 years, all your illness will be cured. Because you don't understand now."
+  },
+  {
+   "start": 115.66,
+   "end": 143.33,
+   "text": "You might not be listening to anyone at home. You might think that my father is mad. He is illiterate. What will he say and what will someone tell us? So it's a good thing. So keep watching. I mean don't watch these things related to studies. And keep watching Carryminati, BB Ki Vines. Watch what Kartik Aryan did today. There are 10-20 more Lafander videos. Watch their videos a lot. So watch the one or two years, the days parents are raising. This life will end at some point or the other. So the whole life will not work. It will end at some point or the other."
+  },
+  {
+   "start": 143.33,
+   "end": 168.27,
+   "text": "After that, you will go to the real world and the world will break you from the middle because you are hollow from the inside, you don't know anything from the inside. So again, you must be thinking that this is what they are saying, this is what they are saying. This is the truth because we have seen the world. We too were like you in college, at some point, we also made a lot of mistakes. Now it is understood that people used to say the right thing, they should not have done it. So watch it completely, drink water with patience, let's start."
+  },
+  {
+   "start": 168.27,
+   "end": 190.21,
+   "text": "After looking at this question, you will think that we did this question yesterday, then we are doing this question again. No, it is not like that. Look, you have been given a matrix that is sorted row-wise and column-wise. What does it mean? Look, every row is sorted in itself. Every column is also sorted in itself. So you will think that yesterday's matrix was also there, so we have to find 11 in it. So what did we do yesterday? We did index 0 and index last, which will be 24 here."
+  },
+  {
+   "start": 190.21,
+   "end": 206.37,
+   "text": "by taking out the row and column, we can see whether it is big or small. But one thing is missing here. Yesterday's question or yesterday's matrix had one more special property that the last item of this row was smaller than the first item of the next row."
+  },
+  {
+   "start": 206.37,
+   "end": 235.74,
+   "text": "What does this mean? If the last item of the first row was 15, then it would guarantee that the first item of the next row would be greater than 15. Similarly, if the last item of this row was 19, then the first item of the next row would be greater than 19. What would happen with this is that when you would write the matrix flat, then it would become a sorted array. But in this matrix, the third condition is missing. What is missing? If you write all the rows flat, then you will be able to write like this. 1, 4, 7, 11, 15."
+  },
+  {
+   "start": 235.74,
+   "end": 261.79,
+   "text": "2, 5, 8, 12, 19, 3, 6, 9, 16. So, see, this array is not sorted. Why is this array not sorted? Because, see, it is sorted till here. It is sorted till 15, but then, see, after 15, 2 comes. After that, it is sorted till here, but then, see, after 19, 3 comes. So, that's why, you cannot use that trick in this, that we will take index 0 and index 24, and do it like that, because this array is not sorted. If this array is not sorted, then,"
+  },
+  {
+   "start": 261.79,
+   "end": 290.98,
+   "text": "You can't decide whether you want to go right or left. Why? Because suppose you are searching for 11. You come to 12. Now, 12 is bigger than 11. Usually, in sorted array, we used to go right. But, smaller than 12 elements are present in 12's left. And, smaller than 12 elements are present in 12's right. So, will you go right or left? You can go anywhere. So, that trick won't work here. Okay? This way, we understand that that trick won't work in this question. Okay."
+  },
+  {
+   "start": 290.98,
+   "end": 320.53,
+   "text": "So when this trick can't work, then what else can it do? Yesterday we saw one more thing, that what we did was, we took out the binary search of row, that which row can have 11. And then we put binary search on one of the rows, because all columns are row-wise sorted and column-wise sorted. But that trick will fail here too. Why will it fail? How did you take out the row yesterday? How did you take out the row yesterday, that which row can have 11? You saw that the first item, the first item of each row,"
+  },
+  {
+   "start": 320.53,
+   "end": 346.43,
+   "text": "The first item, if it is less than or equal to 11, then we used to say that it is yes. What did we say? That it is yes. So if we see in the first row that it is 1. If it is 1 less than or equal to 11, then we used to say that it is yes. If it is 2 less than or equal to 11, then we used to say that it is yes. If it is 3 less than or equal to 11, then we used to say that it is yes. And if it is 10 less than or equal to 11, then we used to say that it is yes. But if it is 18 less than or equal to 11, then we used to say that it is no. And what did we get out of this yes?"
+  },
+  {
+   "start": 346.43,
+   "end": 371.47,
+   "text": "last occurrence and in this row itself we used to try to find 11 but now look very carefully what will you get in this matrix? this one, which column is this? this third column if you try to find 11 in this array then you will not get 11 so what will you return? that this is not 11 but in this matrix there is 11 so we said that the third condition"
+  },
+  {
+   "start": 371.47,
+   "end": 381.55,
+   "text": "that the last element of each row was smaller than the first element of the next row. That was a very important condition. Due to that one condition, we could have done a lot of things which you cannot do here. Look carefully."
+  },
+  {
+   "start": 381.55,
+   "end": 405.18,
+   "text": "You will think that in this row only 11 will be there or else it will not be there. But 11 is here also. Why? Because this matrix just tells you two things that every row is sorted by itself and every column is sorted by itself. There is no other relation other than that. You cannot do that that if here is 19 then all the items below it will be more than 19. Not all the items below it will be more than 19. If you see 19 here then it only means"
+  },
+  {
+   "start": 405.18,
+   "end": 429.71,
+   "text": "that all the things of this row will be smaller than 19 and all the things of this column will be bigger than 19. What happens in this area of 19 diagonal, you have no idea. Similarly, if you see 6 here, it has only two things. These things will be smaller than 6. Right things will be bigger than 6. The upper 6 will be smaller than it. The lower 6 will be bigger than it. But,"
+  },
+  {
+   "start": 429.71,
+   "end": 454.18,
+   "text": "You have no idea about what happens here and here and here. You can't do this very deterministically. That's why the trick to find that row and that row fails here. Because this 11 could have happened anywhere. This 11 could have happened here, it could have happened here, it could have happened here, it could have happened here, it could have happened anywhere. That's why you can't do that trick in this. So let's see what we did yesterday."
+  },
+  {
+   "start": 454.18,
+   "end": 483.68,
+   "text": "Both have failed here. Why? Because one condition has been removed. That the whole matrix is not sorted. Every row is sorted and every column is sorted. Every row from the other row does not mean that it will be sorted or not. So let's go. And let's open some more wisdom and see what we can do in it. Think. Let's think a little. Whenever you feel that the first thing is not working now, then don't be sad about it. Think that if the first thing is not working, then which thing will work? Let's see what will work. Right? So let's think together."
+  },
+  {
+   "start": 483.68,
+   "end": 499.87,
+   "text": "So while thinking about this, you have to remember in your mind that what was the core concept of binary search. Never remember that binary search means low, high, mid. No, we have not even studied. So what you have to remember is that what was the purpose of binary search? So what have we done in binary search till now?"
+  },
+  {
+   "start": 499.87,
+   "end": 529.46,
+   "text": "Till now, what we used to do is, we used to guess an answer that whatever we had to find, we guessed it. And we used to see that, okay, if this is the answer, then it is a very good thing. Otherwise, we used to eliminate it. Meaning, we used to say that, okay, if this is not the answer, then either we will not see the right part, either we will not see the left part, or in other words, either we will not go to the answer smaller than this, and we will go to the answer bigger than this. Either we will not see any answer bigger than this, and we will go to the answer smaller than this. This has happened in every question. Whether it is a simple search, whether it is a mountain,"
+  },
+  {
+   "start": 529.46,
+   "end": 530.19,
+   "text": "Hope."
+  },
+  {
+   "start": 530.19,
+   "end": 559.73,
+   "text": "whether it is coco banana or book allocation in all of them we used to guess and we used to get to know that there is no benefit of seeing the bigger one just keep seeing the smaller one or there is no benefit of seeing the smaller one just keep seeing the bigger one so let's go so when you get a question of any matrix and you think that it is a question of any sorted matrix then to a great extent it will take binary search or it will take heap I am not talking about heap because you don't know anything about heap no problem so if it is a question of any sorted matrix then there is a lot of chance that it will take binary search or it will take heap"
+  },
+  {
+   "start": 559.73,
+   "end": 589.31,
+   "text": "If there is an unsorted matrix, then there will be a graph in it. That is a different topic. Always try to start from the corner of the matrix in any such question. To guess the corner, you can guess any index. Is it 11? No, it is not 11. It is smaller than 11. Then you will not understand what to do. That is why it is preferable to start from the corner. Corner means corner. Let's start from a corner for simplicity's sake. How many corners are there in this? 4."
+  },
+  {
+   "start": 589.31,
+   "end": 609.09,
+   "text": "2, 3, and 4. Okay. Just for simplicity sake, let's start from this corner. There are 4 corners. We will see all 4. I feel like starting from this. So, what do you do? What does it mean to start from this? Now, you are starting from this. You are looking at the whole matrix. Now, if you have one index, then it won't work. If you say that index is equal to..."
+  },
+  {
+   "start": 609.09,
+   "end": 627.66,
+   "text": "Take 3. It won't work with 3. Yes, you can remove row and column with 3, but it's not necessary. What you do is, you take i is equal to 4, which will come here. And take j is equal to 0. So, you will reach here. i, 4, 0 means array of i and j. Means, where will you reach? You will reach this corner. Okay."
+  },
+  {
+   "start": 628.02,
+   "end": 656.24,
+   "text": "First of all, you check that this corner element, whatever element is here, is it equal to my target? Is it equal to 11? Then you will come to know that it is not equal to 11. Okay, if it was not equal to 11, then you would have prorated it. Very good, the program would have ended. But it is not equal. So there can be two cases. Now see, either this 18 will be bigger than 11, or this 18 will be smaller than 11. There can be only two cases. If it is not equal, then what happens? Either it is big or it is small. Here we can see that 18 is bigger than 11. Okay. Now,"
+  },
+  {
+   "start": 656.24,
+   "end": 669.5,
+   "text": "If 18 is greater than 11, then you will have to move somewhere. Now comes the concept of elimination. What do you understand from this 18?"
+  },
+  {
+   "start": 669.5,
+   "end": 688.66,
+   "text": "This 18 is bigger than 11. This 18 is bigger than 11. This is visible. Okay. You know one more thing. Every row is sorted. Every row is sorted in itself. Meaning, 18, 21, 23, 26, 30. This row is sorted in itself. And every column is also sorted. Similarly, every column is also sorted. Okay."
+  },
+  {
+   "start": 688.88,
+   "end": 715.94,
+   "text": "Now, what will we decide in this? Now, if we talk about this 18, then what is the identity of this 18? If someone asks you to tell the address of this 18, then what do you say? It is in row number 4 and column number 0. Row number 4 and column number 0. Does this 18 live or belong? Now, what will we do?"
+  },
+  {
+   "start": 715.94,
+   "end": 732.35,
+   "text": "Either we will remove this row number 4 from our game or we will remove this column number 0 from our game. See how we will remove it. You have understood that 18 is greater than 11. This whole row, this whole row number 4,"
+  },
+  {
+   "start": 732.35,
+   "end": 757.84,
+   "text": "Do you need to search this now? No, no, why? Because what was 18? Look carefully at 18, the first element of this row is 18. And if 18 is greater than your target, then this whole row will be greater than your target. This is the absolute truth, no one can change it. Yes, column number 0. See, the last element of column number 0 is 18. You have found 18 here."
+  },
+  {
+   "start": 757.84,
+   "end": 787.12,
+   "text": "It is possible that 11 is here. It is not written that 11 can be here or not. But one absolute truth that you have come to know is that 11 cannot be in row number 4. Why? Because you are looking at the initial element of row number 4, 18. This is bigger than your target. And this is a complete row sorted. It means that all four elements will be sorted. So, in this, who can you eliminate? Can you eliminate row number 4 or column number 0? You can eliminate row number 4. So, eliminate."
+  },
+  {
+   "start": 787.12,
+   "end": 814.56,
+   "text": "Eliminate row number 4. Eliminated. Eliminated. Eliminated. Eliminated. Eliminated. Eliminated. Eliminated. Eliminated. Eliminated. Eliminated. Eliminated. Eliminated. Eliminated."
+  },
+  {
+   "start": 814.56,
+   "end": 836.13,
+   "text": "It should be 3. Row number 3 and column number 0. It means just above this. Because we always try to start from the corner of the matrix. Which corner did you start from earlier? You started from this corner. What did you find out? This whole row is useless. You eliminated it like this. Which matrix is left?"
+  },
+  {
+   "start": 836.13,
+   "end": 865.73,
+   "text": "This matrix is left. What is its corner? The corner we were interested in, the bottom and left corner. Its corner is this. How will it come? Just by going up. Now you have come to this. Now you have come to this. This, 10. What is the identity of 10? What is the identity of 10? If we say, tell the identity of 10, tell the address, then this row belongs to number 3 and this column belongs to number 0. Okay? Now repeat the same thing. Is 10 smaller or bigger than your 11?"
+  },
+  {
+   "start": 865.73,
+   "end": 888.32,
+   "text": "10 is smaller than your 11 means, what can you eliminate now? what can you eliminate in row number 3 and column number 0? see very carefully see, this one is already eliminated your matrix is only this much left now see, 10 is the first element of our row number 3"
+  },
+  {
+   "start": 888.32,
+   "end": 905.57,
+   "text": "10 is the first element of our row number 3. And this is smaller than 11. That means you want an element bigger than 10. So, an element bigger than 10 can be here. So, it is possible that your 11 is in this row. So, you cannot eliminate this row. But, 10 is the last element of our column. Again and again we are saying that the lower row is gone."
+  },
+  {
+   "start": 905.57,
+   "end": 932.53,
+   "text": "The last element of this column number 0 is 10. What does this mean? If 10 is smaller than 11, all these elements will be smaller than 11. What do you get to know? Your 11 can never be in column number 0. Why? Because if you check the last element of column number 0, you get to know that it is bigger than 11, which means it can never be. So in this, who will you eliminate? You will eliminate column number 0. Let's eliminate it."
+  },
+  {
+   "start": 932.53,
+   "end": 959.09,
+   "text": "Let's eliminate. Eliminated. Eliminated. Eliminated. Eliminated. It's over. Now see, what's left of your matrix? What's left of your matrix? This one. Now when you have eliminated column number 0, which corner of this remaining matrix happened? Which corner happened? This corner. How will this corner come? Do right move. What do you do? Do right move. Come here. What is this? What is this? Row."
+  },
+  {
+   "start": 959.09,
+   "end": 977.04,
+   "text": "Because row 3 was not eliminated. What was eliminated? Column 0 was eliminated. Column 0 was eliminated. Which column did you come in? Column 1. On which did you stand? You stood on 13. Repeat the same thing. 13 is bigger than 11. What does this mean?"
+  },
+  {
+   "start": 977.04,
+   "end": 1004.3,
+   "text": "13 is the first element of this row, row number 3. If 13 is bigger than this, then the whole row will be bigger than 11. There can never be 11 in this row. What should we do? Eliminate this row. We can't eliminate this column. Why? Because 13 is bigger. There can be 11 here. Absolutely there can be. But there can never be 11 in this row. Whom are we eliminating? Eliminate the row. Let's eliminate this whole row. Finish. Finish. Finish. Finish. If we eliminate the row, then where do we have to go?"
+  },
+  {
+   "start": 1004.3,
+   "end": 1026.45,
+   "text": "Go up. Why? Because what is your matrix left? Look at this matrix. Where is its corner? 6. Up. Up. Up. Now, what have you come to? Now, what have you come to? Now, look carefully. So, you will get a sense in your mind. If you look carefully, then it will enter your mind. We are telling this as simple as possible. Come on. What have you come to? You have come to row 2."
+  },
+  {
+   "start": 1026.45,
+   "end": 1054.53,
+   "text": "Column 1. What do you have? 6. Now you are in this. Is 6 smaller than 11 or bigger than 11? 6 is smaller than 11. What does this mean? What will be eliminated? 6 is the last element of this column. Means the biggest element of this column is 6. If 6 is smaller than 11, then these two will definitely be smaller than 11. So 11 can never be in this column. Yes, it can be in this row. It can be in this row. I don't know. It can be. No. But it can't be in this column. So what will be eliminated?"
+  },
+  {
+   "start": 1054.53,
+   "end": 1082.85,
+   "text": "Column will be eliminated. Let's eliminate it. Eliminate the column. Eliminated, eliminated, eliminated. Where do we have to go? Right, right, right. Row number 2. Column number 2. In which column? In 9. Similarly, 9 is also smaller than 11. 9 is also smaller than 11. It means, the ones above 9 will definitely be smaller. Because the last element of this column is 9. Eliminated, eliminated. Column eliminated. Eliminated, eliminated. Where do we have to go?"
+  },
+  {
+   "start": 1082.85,
+   "end": 1109.47,
+   "text": "come to the right row will remain the same column will increase column will increase 16 is bigger than 11 so what does it mean? 11 can never be in this row because 16 is the first element of this row don't do it in this column column's last element is 16 so it can be a smaller element than 16 but you will never get 11 in this row what will be eliminated? row will be eliminated"
+  },
+  {
+   "start": 1109.47,
+   "end": 1131.5,
+   "text": "Let's eliminate this row. Eliminated, eliminated. This row is eliminated. Which is the remaining matrix? This one. How will be its corner? It will have to go up. What does it mean to go up? Row is equal to? Row is equal to 1. Row is equal to 1. Column will remain the same. Row is equal to 1. Column will remain the same. What did you get? 12. 12 is bigger than 11."
+  },
+  {
+   "start": 1131.5,
+   "end": 1159.49,
+   "text": "Look carefully. The first element of this row is 12. That means 11 can never be in this. What will be eliminated? This row will be eliminated. The column will not be eliminated. Because there is 11 above. You must be understanding why it won't be. So, eliminate the row. How will we do it? Eliminate this row. Eliminated. Eliminated. Take the row up. Take the row up. The row is here. What is 1? We have done wrong with 0 also."
+  },
+  {
+   "start": 1159.49,
+   "end": 1181.81,
+   "text": "ok here will be some 1 eliminate 1 row is equal to 0 column is equal to 3 row is equal to 0 column is equal to 3 what will be in 3? 11, we got 11 return it we got 11 and return it but assume that what are you looking for? you are looking for something which is not there ok we will see that too so you got 11 again we are telling you what you have done"
+  },
+  {
+   "start": 1181.81,
+   "end": 1205.57,
+   "text": "Let's look at the corner of this matrix. Now we are looking at the corner of the remaining matrix. So what did we say? How will we look at the corner? So what will we do? We took row is equal to 4 and column is equal to 0. So which corner should we look at? This corner. Okay. After that, what did we see? It can be equal, very good. But now let's assume that array of row and array of column"
+  },
+  {
+   "start": 1205.57,
+   "end": 1231.3,
+   "text": "What is it? It has become bigger than your target. What happened? It has become bigger. Like 18 is bigger than 11. So what did we say in this? That if this 18 is bigger than your 11, then it means that if this is bigger than your target, and if 18 is bigger than your target, then what does it mean? All the people in this row will be bigger than 11. So it can never be in this row. It can be in the column. So this whole row would have been eliminated. What did eliminate mean?"
+  },
+  {
+   "start": 1231.3,
+   "end": 1259.1,
+   "text": "Row minus minus or column same. When you used to come up, when you used to come up, you, row is equal to 3 and column is equal to 0. Did you know? 10 is less than 11. 10 is less than 11. What did you know from this? 10 is the last of this column. So if this is less than 11, this whole column will be less than 11. So what did you eliminate? Column. Column. Eliminated. Eliminated. Eliminated. So where did you move? Right. How does right move?"
+  },
+  {
+   "start": 1259.1,
+   "end": 1281.17,
+   "text": "How does right move? And in what condition? When array of row, array of column less than target. So you used to eliminate the whole column. Eliminating the column means right move. How? Column plus plus. You do this. Till when? Till when? See. Where did row start? Row. Where did row start? Last row. Means n minus 1."
+  },
+  {
+   "start": 1281.17,
+   "end": 1301.39,
+   "text": "Where did the column start? From 0. Every time, row is getting minus minus and column is getting plus plus. Meaning, till when do you have to do this work? Till row is greater than or equal to 0 and every time column is getting plus plus, then how far will the column go? As much as m, as much as maximum column will go till there, we will not go beyond that. And column is less than m."
+  },
+  {
+   "start": 1301.39,
+   "end": 1313.58,
+   "text": "Till this is happening, till this is happening, keep doing this. Start from one corner and see that in every operation, we either eliminate a row or eliminate a column. We don't do both, both can never happen."
+  },
+  {
+   "start": 1313.71,
+   "end": 1337.5,
+   "text": "Both things can't be less. If you came to 18, you knew that 18 is greater than 11, then you said that this row will be eliminated. This column was not eliminated. Why? Because in this column, 18 is the last element. That's why we said that we will start from the corner so that this can be done. In this 18, this is the last element. So, in this column, 11 can be done. It can be done in this column. You don't know. But you know one thing that it can't be done in this row at all."
+  },
+  {
+   "start": 1337.5,
+   "end": 1358.34,
+   "text": "Because the first element of this row is 18. 18 is greater than 11. Nothing will happen in the entire row. That's why we were eliminating row or column every time. This is the matter of that. But you should have a doubt that when you had to choose the corner, then what was so special about this corner? This is also a corner. This is also a corner. This is also a corner. Absolutely, you have the right doubt."
+  },
+  {
+   "start": 1358.34,
+   "end": 1369.58,
+   "text": "This doubt should come. And this doubt should come for sure. Don't assume in your mind that whatever he is telling is the true truth. No, you should ask that why won't this happen? Why didn't he take that corner? Why did he take this corner? Let's see."
+  },
+  {
+   "start": 1369.71,
+   "end": 1392.53,
+   "text": "Can we take any other corner? Of course we can. Let's take all four corners and see what our goal is. We don't want to take a corner because we want to take a plot of a corner. No, the goal of taking a corner is that in every operation, you can either eliminate one row or one column. The whole column, the whole column and the whole row. There should be one thing. So that is your requirement. Take all four corners and see. If you can do it, then that's a good thing."
+  },
+  {
+   "start": 1392.56,
+   "end": 1422.22,
+   "text": "Let's do one thing, let's make a matrix once again. And this time we will try to start from some other corner. This time we will see from some other corner, whether it can be eliminated or not. It can be eliminated, absolutely do it. If it can't be eliminated, then don't do it. 0, 1, 2, 3, 4. 0, 1, 2, 3, 4. 3 and 4. What is your matrix? 1, 4, 7, 11, 15. 2, 5, 8. 12 and 19. 3, 6, 9, 16 and 22."
+  },
+  {
+   "start": 1422.32,
+   "end": 1445.7,
+   "text": "10, 13, 14, 17, 24, 18, 20, 23, 26, and 30. Take care. Come, let's start from that corner. Why can't we do it? We can do it. So, what is rho? Rho is equal to 0 and column is equal to 4. So, this is just the opposite corner. What was it last time? Rho was here and column was at 0. Now, rho is 0 and column is at the last. So, this corner is done."
+  },
+  {
+   "start": 1445.7,
+   "end": 1460.0,
+   "text": "Suppose your target is 11. You want to find 11. Now see, 15 is greater than 11. Now see what you will know in this. First of all, see 15 is row. Is it first or last? 15 is row. It is the last element. It is the last element. Okay."
+  },
+  {
+   "start": 1460.0,
+   "end": 1477.92,
+   "text": "If 15 is bigger than this, then what do you want? If you want 15 smaller elements, then you can get 15 smaller elements on this side. You cannot eliminate this row. But if 15 is the first element of this column, and this entire column is sorted, what does this mean? If this column..."
+  },
+  {
+   "start": 1477.92,
+   "end": 1505.47,
+   "text": "First element is bigger than your target. So, this whole column will be bigger than your target. So, can you eliminate the column in this? Yes, you can. What can you do in this? Eliminate, eliminate, eliminate, eliminate, eliminate. What does eliminate mean? Column was 4, now it is eliminated. In the remaining matrix, which is the top right corner? This one. How will we know? Column minus minus."
+  },
+  {
+   "start": 1505.47,
+   "end": 1535.31,
+   "text": "Minus minus means column 3. And here you got 11. So yes, you can do it. Let's see one more example. Suppose you are looking for 12. Just for example, you are looking for 12. Now you come here. Where? Row is equal to 0 and column is equal to 3. What is this? You came to know that 11 is less than 12. 11 is less than 12. Now look carefully. 11 is less than 12 means you want more value than 11. So can you eliminate this column? No. Because there can be more value than 11."
+  },
+  {
+   "start": 1535.31,
+   "end": 1564.59,
+   "text": "11 is the first element of this column so it is possible that you get 12 in that column but this last element of this row is left and the last element of this row is the biggest element in this row and if 11 is less than 12, less than your target then this whole row will be less than 12 because this row is sorted so what can you eliminate in this row? row's column row can be eliminated, there is no benefit of this row now what can you do? eliminate this whole row eliminate, eliminate, eliminate and what can you do?"
+  },
+  {
+   "start": 1564.59,
+   "end": 1589.94,
+   "text": "We have taken the row down. How? Row plus plus. So yes, you can also use this corner. This corner also makes sense. This corner also makes sense. Come, let's see that there are two more corners left. Let's also see from them that something is made from them or not. Come, it is very tough to make this matrix again and again. Come, it's okay, it's a little right with me. We are telling this because we don't want you to take a rattle. That no, this is how it happens. Nothing like this happens."
+  },
+  {
+   "start": 1589.94,
+   "end": 1618.78,
+   "text": "It means that we are not Gautam Buddha that what we have said will happen and nothing else will happen. No. What can happen will happen. What can not happen will not happen. So, we have seen that both the corners work. Does it work equally? Why does it work equally? Because you can either eliminate a row or you can eliminate a column. Let's see the remaining two corners are left. 1, 4, 7, 11, 15, 2, 5, 8, 12, 19, 3, 6, 9, 16, 22, 10,"
+  },
+  {
+   "start": 1618.78,
+   "end": 1648.0,
+   "text": "13, 14, 17, 24, 18, 21, 23, 26, and 30. Very good. Let's go. So, what will we do now? We will see that there were two corners left. So, take this corner. Why can't we take the first corner? We can take it at all. So, its row is also 0. Column is also 0. Column is also 0. Suppose you are searching for 11. So, you got to know that 1 is less than 11. 1 is less than 11. Let's see if you can eliminate 1 from row and column or not."
+  },
+  {
+   "start": 1648.0,
+   "end": 1670.29,
+   "text": "You want a bigger value than 1 because 1 is smaller than 11. 1 is the first element of its row. So can you eliminate this row? No, you can't because you will make a mistake. You can see that a bigger element than 1 can be in this row because 1 is the first element of this row. It is possible that the row cannot be eliminated but"
+  },
+  {
+   "start": 1670.29,
+   "end": 1681.49,
+   "text": "you can't eliminate this column as well because you want a bigger element than 1 right? there can be a bigger element than 1 in this column because 1 is the first element of this column so see 1"
+  },
+  {
+   "start": 1681.49,
+   "end": 1709.15,
+   "text": "Why couldn't you do anything? Because 1 is the first element of its row. 1 is the first element of its column. So if you want a bigger value than 1, then it can be in this direction as well. And it can be in this direction as well. So now whom will you eliminate? No one. You can only eliminate 1. Yes, okay. 1 can't be my answer. Rest, row, column, anything can happen. So you couldn't eliminate row or column from 1. When? When you started from this corner. You won't be able to make a conversation from this corner. Let's see. There is one more column left."
+  },
+  {
+   "start": 1709.15,
+   "end": 1720.78,
+   "text": "One more corner. We will save this corner. What does it say? Row is equal to 4. Column is equal to 4. Now, what is it? 30 is greater than 11. It means you want a value less than 30. But,"
+  },
+  {
+   "start": 1720.91,
+   "end": 1744.06,
+   "text": "30 is the last element of our row. It means that there can be less than 30 in this row. It means that 11 can be there. Don't you know? It can be there. You can't eliminate this row. Similarly, 30 is the last person of your column. So, 11 can be there or it can be higher. Because you want less than 30. You can get less than 30 higher. Again, you can't eliminate your row or your column. Why? Because 30..."
+  },
+  {
+   "start": 1744.06,
+   "end": 1768.77,
+   "text": "This row is also the last element and this column is also the last element. You will also get a value smaller than 30 above. You will also get a value smaller than 30 here. So you will not be able to eliminate anything. You can only eliminate 30. So that's why you will not be able to talk about these two corners. Because in this you will not be able to do row or column eliminate. Why did you talk about these two corners? Because what used to happen in this? If you take this one, then it used to say that row 4."
+  },
+  {
+   "start": 1768.77,
+   "end": 1798.7,
+   "text": "and column 0 means that this was the last element of 18th row and this was the first element of row 4 but this was the last element of column 0 that's why you could do this similarly if you consider this corner 5 then it would say that we are in row 0 and column 4 so this was the last element of row 0 and this was the last element of column 4"
+  },
+  {
+   "start": 1798.7,
+   "end": 1816.5,
+   "text": "If it was the first element, then these two were upside down. That's why you were able to do this that if it is big, then maybe all the lower ones will be big, so eliminate the lower one. If it is small, then maybe all the left ones will be small, so eliminate them. But when you come to these two corners, then you can't do anything, right? Because if you from here,"
+  },
+  {
+   "start": 1816.5,
+   "end": 1839.33,
+   "text": "If you want a small element, then you will get a small element in this row as well as in the column. Similarly, if you want a 30, then you will get a small 30 in the column above. If you get it in this row, then what will you do? You will not be able to do anything. That is why it is important that you start from one of these two corners. You can do this too. It is your choice. But there will be no difference between these two corners. And why do we start from the corner?"
+  },
+  {
+   "start": 1839.33,
+   "end": 1867.55,
+   "text": "It is logical that you start from the corners because you want to empty the matrix one by one. What are we doing? We are slowly cutting the matrix from the bottom. We either cut this, the matrix gets smaller. After that, we cut this, the matrix gets smaller. Then we cut this, so the matrix remains the same. Then we cut this, the matrix remains the same. So we are slowly cutting the matrix. So where do we cut anything? We cut from the end, right? Now we will start cutting from the middle. You will say from the middle that this column is useless."
+  },
+  {
+   "start": 1867.55,
+   "end": 1878.66,
+   "text": "So it won't be fun. Suppose you say that you won't start from the corner. We will start from here. So your 9 is less than 11. Let's see what you can eliminate in 9 is less than 11."
+  },
+  {
+   "start": 1878.66,
+   "end": 1908.26,
+   "text": "First, you can eliminate this. You can eliminate all the left ones of 9 because all the left ones are small. You can eliminate this too. But, see, you cannot eliminate any row or any column completely. You have eliminated half row and half column. So, you cannot do anything completely. So, what will you do now? Now, you have to find here as well as here. Where will you find? So, it is difficult. So, what happens here? If you cut the row, it cuts the entire matrix. If you cut the column, it cuts the entire matrix. So, that is the advantage."
+  },
+  {
+   "start": 1908.26,
+   "end": 1938.4,
+   "text": "So, this is the dry run. Let's see its code. It is a very small code. So, we will make it from this corner. We will make it from this corner. So, row is equal to n minus 1 and height is 0. You can make it from any corner. You can make it from that corner also. So, first of all, you will be given a matrix. So, what will we do? Int n is equal to a dot. We will size it. Int m is equal to a 0 dot. We will size it. After that, what will we do? We will take two variables."
+  },
+  {
+   "start": 1938.4,
+   "end": 1968.11,
+   "text": "row is equal to n minus 1 and column is equal to 0 bottom left corner so while row is n minus 1 row will go up slowly so till row is greater than 0 and column will go right slowly then column should be less than m if you get array of row and column equal to target"
+  },
+  {
+   "start": 1968.11,
+   "end": 1998.66,
+   "text": "You do return true. Very good. You are very lucky. Return true. But now you have two conditions. If array of row column greater than target. Greater than target. Look at the top. 18 greater than target. 18 greater than. So what did we eliminate? We need small elements. So we will get small elements in this column. We will not get in this row at all. Row eliminate. How to eliminate row? Row minus minus. Row minus minus."
+  },
+  {
+   "start": 1998.66,
+   "end": 2027.36,
+   "text": "What? Rho minus minus. Else, else, else, if it gets smaller, if it gets smaller, then what do we do? Suppose it comes here, 10 got smaller, 10 got smaller, means you need bigger than 10 elements. Now, you won't get bigger than 10 elements in this column because the last element of this column was 10, so the whole column would get eliminated. How will the column get eliminated? Do column++, Rho will remain there because you will get bigger than 10 elements here. So, we assume that you remember that. Else, column,"
+  },
+  {
+   "start": 2027.36,
+   "end": 2056.91,
+   "text": "If you don't get anything after this, then you are done. Now, what will be the time complexity of this? What are you doing every time? Every time you are either eliminating one row or eliminating one column. So, what will happen in the worst case? You will eliminate each row one by one and eliminate each column one by one. You will not get the answer. What is the total number of rows? N plus M."
+  },
+  {
+   "start": 2056.91,
+   "end": 2071.31,
+   "text": "order of n plus 1. Why? Because what can you do in the worst case? Once you have eliminated a row, then suppose in the beginning, just for example, in the beginning, what was there? That row and column looked like this. In the beginning, you had a total of 5 and 5 columns."
+  },
+  {
+   "start": 2071.31,
+   "end": 2100.75,
+   "text": "So how long will this program run? Until all the rows are finished. Suppose you eliminate all the rows, then it is finished. Either all the columns are eliminated, then also it is finished. Because there is such a condition. Row greater than equal to 0 and column less than. Means all the rows, all the columns are finished. Zero is done. Work is finished. Come, let's do it one by one and eliminate everyone. First we will do the row, then the column. Let's see what will be the worst case. Let's see how much it will be. Make it 4 from 5 and make it 5. Now do the column. This is 4, this is 4. This is 3, this is 4."
+  },
+  {
+   "start": 2100.75,
+   "end": 2129.79,
+   "text": "then this is 3, this is 3, we have to take the worst case that once row is getting eliminated, once column is getting eliminated so that the program runs for maximum time. Then do this 2, do this 3, do this 2, do this 2, do this 1, let it be 2. After that do this 1, do this 1, after that do this 0 and 1, after 0 and 1, it will end, right? It will end. How many times did it run? 1, 2, 3, 4, 5, 6, 7, 8,"
+  },
+  {
+   "start": 2129.79,
+   "end": 2157.38,
+   "text": "9, 10. What is 10? 5 plus 5. Now, we are making 5 as 0 and that 5 as 0 as well. So, how much maximum can you do? You can do it 10 times at a time. So, what is its time complexity? Order of n plus m. So, this was a very good question. You should definitely submit it. Now, let's come to our main question. What is our main question? Which was already an existing hard question. For which we have made so much ground that we should look at the corners. And according to the corner, how can you take a decision?"
+  },
+  {
+   "start": 2157.38,
+   "end": 2184.58,
+   "text": "you have given a matrix which is sorted row wise and column wise there is no relation between one row and the other row there is no relation between the last row and the previous row so as mentioned in the previous question, it is the same matrix but what you have to tell in this, in the previous one you have to search and tell if it is there or not in this you will be given k and you have to tell kth smallest element in this matrix"
+  },
+  {
+   "start": 2184.58,
+   "end": 2208.98,
+   "text": "smallest element. What does this mean? If we write this matrix, all the numbers in sorted order, then first 1 will come, then 5 will come, then 9 will come, then 10 will come, then 11 will come, then 12 will come, then 2 times 13 will come, and 1 15 will come. If we count in this, where is kth smallest, then if we try to count, then this is 1, 2 is, 3 is, 4 is, 5 is, 6 is, 7 is, 8 is."
+  },
+  {
+   "start": 2208.98,
+   "end": 2238.27,
+   "text": "this is kth smallest which means 8th smallest so what you have to do is return 13th this is your question now why we were teaching this corner question we were teaching this because if you see this question then this question is hard actually this is a hard question because the question asks you to tell kth smallest so how to find kth smallest in this you can't even do like we started from corner 12 so how will you know whether 12th is kth smallest or not"
+  },
+  {
+   "start": 2238.27,
+   "end": 2264.85,
+   "text": "there is no such relation, you could have said that 12 is bigger or smaller than any target, that would have been easy but 12 is your 8th smallest or not, how will we know that, that's why the question becomes hard. Okay, let's think about it, if we don't think about it, then what will we do, we will think about it. First of all, we have told you that in matrix, whenever you are given a sorted matrix, then think about the binary search or heap in it. Okay, tell me one thing,"
+  },
+  {
+   "start": 2264.85,
+   "end": 2286.5,
+   "text": "Whatever your answer will be, no matter what number, will it be the same matrix number? You have to tell about this matrix, 8s. So, you have to tell about any small s. You have to tell about the same matrix number. Okay. In this matrix, you are seeing that there are 9 types of numbers. In this matrix, which is the smallest number? The smallest number is 1, which is?"
+  },
+  {
+   "start": 2286.5,
+   "end": 2313.68,
+   "text": "Array of 0 and 0. And which is the biggest number in this matrix? Which is the biggest number in this matrix? That is 15. Which you will get in array of 2 and 2. Or in array of n-1 and n-1. Okay. If you have any answer, then you will lie between these two. 1 and 15. Will it not happen that your answer will be 20? Why won't it happen? Because there is no 20 in the matrix. The biggest number in the matrix is 15. The smallest number is 1. Means, in the whole matrix,"
+  },
+  {
+   "start": 2313.68,
+   "end": 2339.06,
+   "text": "If any number is not smaller than 1 and not bigger than 15, then you will know that my answer will be between 1 and 15. Now let's write all the numbers between 1 and 15, no matter whether it is in the matrix or not. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 Listen carefully. 11, 12,"
+  },
+  {
+   "start": 2339.06,
+   "end": 2363.5,
+   "text": "13, 14, and 15. Is this done? Your answer will be in this only. Yes. But there is a problem in this. What is the problem in this? That all the elements between 1 to 15 are not in your matrix. There are 9 numbers in your matrix. So, it is not like that in your matrix, you can see that there is no 4. There is no 3. Okay. What you have to tell is, you have to tell Kth smallest element in matrix. Kth smallest element in matrix. Okay."
+  },
+  {
+   "start": 2363.7,
+   "end": 2392.94,
+   "text": "What is the meaning of kth smallest element? What is the meaning of kth smallest element? Let's see. You have to say kth smallest. Meaning, if you write all the numbers and start counting from 1, then somewhere you will get a number which will come in kth position. What will come? It will come in kth position. Okay. How many numbers will come smaller than this? How many numbers will be smaller than this? k minus 1 small numbers. k minus 1 small numbers will be."
+  },
+  {
+   "start": 2393.52,
+   "end": 2422.38,
+   "text": "This is what it means, right? Kth position. This means that the Kth position, how much number will be smaller than this? K minus 1 will be smaller than this number. Okay. So, remember this. So, remember this. Okay. Now, if we tell you that, bro, look, you know your answer space that whatever my answer is going to be, it is going to be between 1 to 15. It is going to be between this. Okay. If we tell you that you guess any number between this. Guess any number. For example, you,"
+  },
+  {
+   "start": 2422.38,
+   "end": 2451.22,
+   "text": "Guess 4. Don't think if the number 4 is in the matrix or not. Guess 4 that my answer can be 4. When can your answer be 4? If you find out the number of elements. Listen carefully. We are going on 4. We guessed 4 with our mind that my answer can be 4. You don't know if 4 is the answer. You also don't know if 4 is in the matrix or not. You don't know if 4 is in the matrix or not."
+  },
+  {
+   "start": 2451.22,
+   "end": 2479.94,
+   "text": "But we can find out one thing very easily. You guessed 4, right? Number of elements in your matrix. Number of elements in your matrix. Smaller. Smaller. Or equal. Equal to 4. If you find out in some way. That how many elements are there in your matrix. Which is smaller than 4 or equal to 4. Then what will you get? If we just look at the matrix and tell. Then you will say 1."
+  },
+  {
+   "start": 2479.94,
+   "end": 2505.55,
+   "text": "Yes, there is only one element and you can see that all the other elements are bigger than 4. What is the answer for the element smaller than 4? You got its answer as 1. 1 means one element which is bigger than 4. Can 4 ever be your answer? No, it can't be. Why can't it be? Look, you got to know that in this matrix, how many elements are smaller than 4? You got to know that there is only one element. What is your K? Your K is 8."
+  },
+  {
+   "start": 2505.55,
+   "end": 2531.2,
+   "text": "Whatever your answer should have been, the ideal answer should have been at the 8th position. At the 8th position means, how many elements should you have got smaller than this? You should have got 7 elements. You should have got 7 elements smaller than this. How many elements did you get smaller than 4? You got 1 element. So can 4 be your answer? Absolutely not. Absolutely not. And if 4 is your answer, now see."
+  },
+  {
+   "start": 2531.2,
+   "end": 2550.08,
+   "text": "4 is not in the matrix. So, 4 was not like this. But, even if 4 was in the matrix, even if 4 was in the matrix, then 4 could not be your answer. Why? Because, when we find out the number of elements in the matrix, in the matrix, which are smaller or equal to 4, then my answer is 1. 4 could not be your answer."
+  },
+  {
+   "start": 2550.08,
+   "end": 2576.77,
+   "text": "4 is gone. And tell me one thing, if 4 cannot be your answer, then can 3 be your answer? When you subtract from 3, the number of elements in matrix, smaller or equal to 3, its answer will be less than 1. 1 will come or less than 1. 3 will also have 1. It is not possible, that if you do this thing in 3, that how many elements are smaller than 3, then you get that, no, 9 elements are smaller than 3. It is not possible. So, 4 also comes with 9. If 4 cannot be your answer,"
+  },
+  {
+   "start": 2576.77,
+   "end": 2596.7,
+   "text": "nothing can be your answer. Nothing less than 4 can be your answer. So, how will you know this? We will discuss this further. But, you can understand that if 4 can't be my answer. Why can't 4 be my answer? Because if we find out how many elements are less than or equal to 4, then we will know that the answer is in only one element. So, if..."
+  },
+  {
+   "start": 2596.7,
+   "end": 2624.99,
+   "text": "4 is smaller than k, then my answer can't be 4. And if my answer can't be 4, then the number of elements in the space can't be my answer. So, all four are finished. Okay. Try one more guess. Try one more guess. 6. You guessed 6. Do the same thing. How many elements are there in the matrix which are smaller than 6 or 6? Then you will know that there is 1 and 5. That's it. And all are big. So, what is the answer of this? What is the answer of 6? 2."
+  },
+  {
+   "start": 2624.99,
+   "end": 2650.16,
+   "text": "So, if the answer of 6 is 2, then can this be your answer? No, because what is K called? 8. So, 8 means it should have been less than or equal to 7. Or if you had written smaller or equal to, then it should have been K. It should have been K, meaning from the 8th position, suppose if a number comes from the 8th position, then when you would have written smaller or equal to, then the answer should have been 8. So, this also cannot be your answer. Okay. 5 also went because of 6? Okay."
+  },
+  {
+   "start": 2650.26,
+   "end": 2679.25,
+   "text": "Now, take one more example. Guess 14. 14 is not in your matrix. What's the use of guessing? Guessing doesn't cost anything. Just guess. Now, repeat the same thing in 14. Is 14 smaller or equal? How many things are there? You will know that 1 is 5, 9 is 10, 11 is 13, 12 is 13. How many elements are there? The answer to this is 8. Yes, yes."
+  },
+  {
+   "start": 2679.44,
+   "end": 2704.99,
+   "text": "Now tell me, when you find out that 14 is less than or equal to how many people are there, then your answer is 8, which should have been there. What is 8? 8 is greater than or equal to K. So what does it mean that you should return 14? No, because you don't know if 14 is in your matrix or not. You find out the answer in this number line that 14 can be there. 14 can be there."
+  },
+  {
+   "start": 2704.99,
+   "end": 2727.23,
+   "text": "You don't know if 14 is in your matrix or not. You don't know if 14 is in your matrix or not. If you search it, you won't know. So, look. 14 may be your answer. So, we will put 14 in it. Now, if 14 is here, you got to know that when we write 14, then 14 is less than or equal to"
+  },
+  {
+   "start": 2727.23,
+   "end": 2751.18,
+   "text": "I had 8 elements, 8 elements which was my k. Now tell me, can 15 be your answer? It can never be, because even if 15 is there in the matrix, even if 15 is there in the matrix, then it will come after 14. It will come after 14, so assume this will be k plus 1. So if you get to know in 14 that yes, when you take out this number, that how many numbers are there in the matrix, less or equal to me, then you got the answer 8."
+  },
+  {
+   "start": 2751.18,
+   "end": 2771.28,
+   "text": "You got to know that 15 can't be the answer. Because 15 will come only after that, right? 15 will come only after that, right? Okay. So you got to know that 15 can't be the answer. But 14 can be. It's not certain. Because we don't know if 14 is in the matrix or not. Now come. Now guess one more. 9. How many are smaller than 9? 1, 5, 9."
+  },
+  {
+   "start": 2771.28,
+   "end": 2799.78,
+   "text": "Just 3. 3 is not possible because it is smaller than k. So 9 is smaller or less than or equal to how many? 3 elements. It is not possible. So it will never happen in the world. 9 is gone. Along with that, 7 is also gone. 10, 11, 12, 13 is left. Guess 12. How many big elements are there from 12? 1, 2, 3, 4, 5, 6, 7. 7. Can 12 be your answer? No, it is not possible. 12. See, why are we saying that 12 can never be your answer? Because you said 12. It is written here 12."
+  },
+  {
+   "start": 2799.78,
+   "end": 2827.46,
+   "text": "Now you ask a question that how many elements are there in the matrix which are less than or equal to 12? So you got to know that there are 7 elements which are less than or equal to 12. So what does it mean that 7 elements are less than or equal to 12? It means that you will have something like 1, 2, 4, 5, 6, 7, 8, something like that. After combining everything, there are 7 elements which are less than or equal to 12."
+  },
+  {
+   "start": 2827.46,
+   "end": 2847.92,
+   "text": "12 can't be your answer. 12 can't be your answer. Why can't it be? Because what do you want? k is equal to 8. 8 is the smallest. 12 can't be your answer. Now, 12 is gone. So, 11 is also gone. 10 is also gone. What is left? Only 13 is left. Guess 13. What will come in 13? 1, 5, 9, 10, 11, 13."
+  },
+  {
+   "start": 2847.92,
+   "end": 2876.24,
+   "text": "12, 13. 8, 8, 8. Yes, 8. Means, there are 8 such elements in the matrix which are less than or equal to 13. Less than or equal to 13. What does this mean? 13 can be your answer. 13 can be your answer. Now, let's say one word. I am telling you very carefully because it is very important. We don't want you to remember it. See, what are we doing? We are taking a number line first. What number line are we taking? From 1 to..."
+  },
+  {
+   "start": 2876.24,
+   "end": 2903.87,
+   "text": "15 because we know that my answer will be here. Okay. After that, let's guess any element in this. Let's guess what we do now. Let's see for 13, can it be 13 or not? After that, what do you find? In matrix, now see, two cases will be made. See, now it will be very clear. In matrix, how many elements are there? In matrix, how many elements are there which are less than or equal to 13? You get to know that it is 8. Its answer is 8."
+  },
+  {
+   "start": 2903.87,
+   "end": 2930.69,
+   "text": "Now, this number 8 can be anything. It can be like this. It can be like this. 1, 2, 3, 4, 5, 6. How much is it? It's 6. 7, 8, 9, 10. It's 8, right? Its answer is 8. It can be like this. Is this element in your matrix? It's here too, right? What were you asking in the matrix? How much is 13 less than or equal to? You said 8. It's possible that your matrix looks like this. It looks like this from 1 to 8."
+  },
+  {
+   "start": 2930.69,
+   "end": 2954.77,
+   "text": "From 1 to 8. So is 13 your answer? Is 13 your answer? No, 13 is not your answer. Why? Because 13 is not in the medals. Okay. But, but, but, your answer can be 13. Your answer can be 13. And now, for your real answer, you will have to do a little less than 13. You will have to do a little less than 13. You will have to do less. When you will do less,"
+  },
+  {
+   "start": 2954.77,
+   "end": 2976.78,
+   "text": "then you will get 8 answers at some point because the real answer of this matrix is 8 because if you write this matrix by spreading it then it will write 1, 2, 3, 4, 5, 6, 7, 8 so its real answer is 8 but for that you will have to come down from 13 why are you not going above 13? because why are you not going above 13? if you go above 13 then you will go to 15"
+  },
+  {
+   "start": 2976.78,
+   "end": 3005.47,
+   "text": "So, 15 can't be your answer because 13 is less than or equal to 8 elements. 15 is less than or equal to 10 elements. It is possible that 15 is less than or equal to 10 elements. Suppose, it will be like this. When you will write 15, then in your matrix, this number will come that 8 and 14 and 15. It will be like this. 10 elements are bigger than 15. When you will write these too, when you will write these too, then 1, 2, 3, 4, 5, 6, 7, 8, 14 and 15. What will be your answer in this also? See."
+  },
+  {
+   "start": 3005.47,
+   "end": 3028.77,
+   "text": "1, 2, 3, 4, 5, 6, 7, 8. Only 8 will come. There is no point in going further. If you go 15, 20, then only this will keep increasing. But 8 is the smallest. 8 will always come as the smallest which you have got once on 13. Now you don't need to go above 13. Come below 13. There might be a 13 answer. There might be a 13 answer. How can 13 be the answer? 13 can be like this."
+  },
+  {
+   "start": 3028.77,
+   "end": 3051.23,
+   "text": "How many elements are less than or equal to 13? You got to know that there are 8 elements. What are those 8 elements in the matrix? Let's assume they are 1, 2, 3, 4, 5, 6, 7, and 13. It is possible that there are 13 in the matrix as well. Then you will get to know that 8 elements are less than or equal to 13. In this case, your answer will be 13."
+  },
+  {
+   "start": 3051.23,
+   "end": 3070.21,
+   "text": "In this case, your answer will be 13. That's why we store 13. We don't accept 13 completely. This is my answer. We don't exclude it completely that this is not my answer. There may be an answer. If the matrix is like this, then 13 will be your answer. If the matrix is like this, then 13 will be your answer. Okay."
+  },
+  {
+   "start": 3070.21,
+   "end": 3094.7,
+   "text": "Assume that you have 8, now you must be thinking that k is equal to 8, so exactly 8 number is smaller than this. Assume that when you guessed for 13, you came to know that in the matrix of 10 numbers, 13 is less than or equal to and it looks like this. And your matrix looks like this, 7 was fine, now your matrix looks like 8, 9, 10. 8, 9, 10, not 8, 9, 10, do 8, 9, 13 only."
+  },
+  {
+   "start": 3094.7,
+   "end": 3121.46,
+   "text": "In your matrix, these 10 elements, 1, 2, 3, 4, 5, 6, 7, 8, 9, 13, this is less than or equal to 13, that's why you got it. Now, in this case, is 13 your answer? No, it's not your answer. Because when you write it by spreading it, see, 1, 2, 3, 4, 5, 6, 7, 8, 9, 13. Come, let's see. This 1, 2, 3, 4, 5, 6, 7, 8, this is your answer. Your real answer is 8."
+  },
+  {
+   "start": 3121.46,
+   "end": 3144.77,
+   "text": "How will this happen? When you tell 13 that you can get an answer for 13. For whom? For the upper case. When 13 can actually be your answer. And we will come down a little and see. What will happen with this? When you actually reduce it to 8. You will ask how many people are less than or equal to 8. Your matrix will say that there are so many people less than 8. 1, 2, 3."
+  },
+  {
+   "start": 3144.77,
+   "end": 3174.0,
+   "text": "3, 4, 5, 6, 7, 8. How many people are less than 8? 8 people. So, is 8 greater than your case? Yes, it is greater. It means, it is equal to or greater. Now, in this case, what will be your answer? 8. In this case, actually, your answer is 8. So, when you come in this, you will store 8 in the result and go down to check. But if you don't get it, then your final answer will be 8. This is how this thing is working. That's why, when we find this thing, that number of elements less or"
+  },
+  {
+   "start": 3174.0,
+   "end": 3197.94,
+   "text": "Equal to. Equal to guess. So if this number. If this number. If this number. Number of elements less than equal to guess. If this comes greater than equal to k. Okay. This answer can be. This answer can be. But. It can't be certain. You have to look further down. It can be possible that another small number can be the answer. Another small number can be the answer. But. But. If you come to know that this number."
+  },
+  {
+   "start": 3197.94,
+   "end": 3218.03,
+   "text": "This is less than k. Let's see why there is no answer in that as well. Let's assume your guess is 7. How many numbers are there in the matrix which are 7 or less than 7? Your matrix says that these are the numbers. 1, 2, 3, 4, 5. Okay?"
+  },
+  {
+   "start": 3218.03,
+   "end": 3242.22,
+   "text": "and 7. This is the number. If all the other numbers are bigger than 7, then how many are there? 1, 2, 3, 4, 5. Your number is 6 which is smaller than k. Now let's see why 7 can never be your answer. Because when you will write it by spreading it, you will feel like 1, 2, 3, 4, 5, 7. What is this? 1st, 2nd, 3rd, 4th, 5th, 6th. What is this?"
+  },
+  {
+   "start": 3242.22,
+   "end": 3271.04,
+   "text": "6th smallest. What do you want? 8th smallest. Means there is another element in the matrix which will come here in 8th position. And this cannot be 7. If this was 7, if the real answer was 7, then why is 7 not here? If someone says it is duplicate, then it should have been here. That is why we are searching for equal to. Not just less than, less than or equal to. So its answer should have been 7. Its answer did not come."
+  },
+  {
+   "start": 3271.04,
+   "end": 3295.04,
+   "text": "It means that the next element looks like this. It looks like 8 and 9. That's why it couldn't come in the guess 7 in your case. That's why 7 can never be your answer. If 7 would have been the answer, if any person had to hold the kth position, if any person had to hold the kth position, and if someone asked him, tell me how much is smaller or equal to you, then his answer would be at least,"
+  },
+  {
+   "start": 3295.04,
+   "end": 3305.57,
+   "text": "At least K will come, right? It is not possible that a person is sitting in the Kth position and he is saying that there are only 5 people smaller or equal than me, we are in the 8th position. It is not possible, right?"
+  },
+  {
+   "start": 3305.57,
+   "end": 3328.19,
+   "text": "If you are in 8th class and someone asks you how many classes are there in your class? You can't say that you have 4 classes smaller than me. So how are you sitting in 8th class? No, that's why if this number is less than k, then the answer cannot be given. But if this number is greater than k, then the answer can be given."
+  },
+  {
+   "start": 3328.19,
+   "end": 3349.36,
+   "text": "It is not certain. It may not be in the matrix. It may not be in the matrix. No problem. Go down and see. You will get that answer at some point. You will get that answer at some point. You will get that answer at some point. So this was one thing. We hope that you understood this. If you did not understand this, then rewind it once more. Otherwise, comment and we will teach it again. Let's go."
+  },
+  {
+   "start": 3349.49,
+   "end": 3373.74,
+   "text": "Now, the thing is that this whole story that we said that you have to subtract less than or equal to, how do we do it? We will do it very easily. We can do it with our corner trick. Let's see how we do it. Let's make our matrix, row wise sorted, 0, 1, 2, 0, 1, 2, this is 1, 5 and 3, 10, 11, 13, 12, 13 and"
+  },
+  {
+   "start": 3373.74,
+   "end": 3398.37,
+   "text": "15. Where do you want to get it from? Low is equal to 1 and high is equal to 15. Because our answer is going to lie in between this. Okay. First of all, what will you guess? The middle one. What is 1 plus 15 by 2? 8. For 8, find out the answer. Is it smaller than 8 or equal? How many elements are there in this matrix? What do you do? Start from the corner. That's why the corner is important. Start from the corner. Look at 12. Now you know that 12 is greater than 8."
+  },
+  {
+   "start": 3398.37,
+   "end": 3422.37,
+   "text": "12 is greater than 8. Now if 12 is greater than 8, then does it mean that this whole column will be bigger than 8? Yes, obviously it will be bigger. Yes, it will be bigger. If 12 is bigger than 8, then this whole row will be bigger than 8. So do we need to find more in this row? No, this row is empty. Go up, brother. Go up. Come here. 10."
+  },
+  {
+   "start": 3422.37,
+   "end": 3451.36,
+   "text": "10 is also greater than 8. No, no, no. I am not enjoying this at all. If 10 is greater than 8, then this whole row will be bigger than 8. Go up. Go up. 1. 1 is less than or equal to 8. Yes, 1 is less than or equal to 8. What does this mean? What does this mean? If 1 is less than or equal to 8, then can we say that the whole row is bigger than 8? No, the whole row is not bigger than 8. It is not bigger than 9 and 8. So, you cannot say that you can add all the elements to the whole row. No. But, but, but,"
+  },
+  {
+   "start": 3451.36,
+   "end": 3471.82,
+   "text": "1 and all the people who are left in this column will be less than 8. Why? Because the column is also sorted. So if you are going in this column like this, if 1 is less than or equal to 8, all the people who are left in this column will be greater than 8. If you are at row number 0,"
+  },
+  {
+   "start": 3471.82,
+   "end": 3501.07,
+   "text": "If you are on this row number 0 and you know that this element is less than 8 or equal, all the things left in this column, see, these two are already eliminated. These two are already eliminated. This is already finished. How many things are left in this column? In this column, row plus 1, one thing is left which is 1. You can add 1 to your answer. And now the work of this column is finished. Now the work of this column is finished. Shift the column. Shift the column."
+  },
+  {
+   "start": 3501.07,
+   "end": 3524.06,
+   "text": "Shift the column and come here. Is 5 less than or equal to 8? Yes, yes, yes. It means that the number of people left in this column, both of them are finished. Both of them are finished because Rohi was eliminated. But how many people are left above 5? Only 5 is left. You can add one more in your answer. And the work of this column is finished. Shift it. 9."
+  },
+  {
+   "start": 3524.06,
+   "end": 3553.98,
+   "text": "Is 9 less than 8? No, no, no. 9 is greater than 8. What does it mean? Now, the number of people left in this row, the number of people left in this row, there is only one 9 left. We have taken a very bad example. We will take another example. No problem. Now, the number of elements left in this row, there is no benefit. Eliminate the row. As soon as you eliminate the row, you will come here. You will be finished. What did you find out? How many people are less than 8? 2 people. If you see, how many are there? 1 and 5, there are only 2 people. Let's take one more example. This is a very bad example. We will take one more example. It will be very clear."
+  },
+  {
+   "start": 3553.98,
+   "end": 3581.94,
+   "text": "If we take one more example, then it will be clear. This question is hard. If you don't know this question in the first time, then it's okay. No one knows it. So, this question is very hard. So, what did we say? One more example. 1, 5, 9, 11, 13, 12, 13, 15. Let's see for 11. Let's guess for 11. Let's guess for 11 and try to find the answer for 11. How much will it be? What is your guess?"
+  },
+  {
+   "start": 3582.19,
+   "end": 3602.48,
+   "text": "11. From where? From this corner. 12 greater than 11. What does this mean? This whole row is bigger than 11. Eliminate the whole row. Eliminate the whole row. Come up in the upper row. Same column. Column is not eliminated. Same column. 10. Yes. 10 is less than or equal to 11. What does this mean?"
+  },
+  {
+   "start": 3602.48,
+   "end": 3629.62,
+   "text": "This 10 is the last element of this column. If this 10 is smaller than 11, then all the people on this column will be equal to it. Now how much should you add? You should not only add this 10. You should add 10 and 1. You should add both and remove this column. Why? Because 10 is the last element of this column. If 10 is smaller than 11, then why do you have to do it separately? Count this and add it."
+  },
+  {
+   "start": 3629.62,
+   "end": 3657.89,
+   "text": "What will we do? How much will we add to our answer? Not one. Which row are you on? You are on row number 1. Row number, sorry, on 1, right? How many things will be left in this? How many things will be left? You can see 1 plus 1. Two things will be left. Means row plus 1. Row plus 1. Means we will add row plus 1 to our answer. How much will we add? 2. We have added 2 to our answer. And now you can eliminate this column. Now this column is done. Come to the next column. Right shift and come here."
+  },
+  {
+   "start": 3657.89,
+   "end": 3680.7,
+   "text": "Is 11 less than or equal to 11? Yes. But what does this mean? We will not just add this 11. Add all the ones above this column. How many people are left in this column? Row plus 1. 2 people are left. Add 2 to your answer. And eliminate this column. Come to the next row. Come here."
+  },
+  {
+   "start": 3680.7,
+   "end": 3699.23,
+   "text": "13 is greater than 11. Means, how many people are left in this row? Because 13 is now the last person of our row. 13 is the first person of this row. Eliminate 13 as well as this row. And go up. Go up. Eliminate this row and go up."
+  },
+  {
+   "start": 3699.23,
+   "end": 3728.91,
+   "text": "9. 9 is less than or equal to 11. Yes. Yes. But we will not just add 9. All the elements above 9, we will add them to that column. So, where are you now? Now, you are in row is equal to 0. How much will you add? Row plus 1. Row plus 1. We will add 1 to our answer. We will add 1 to our answer. And, we will eliminate this column. We will eliminate this column and go to the right. If we go to the right, then it will end. How much did we add? 2 plus 2 plus 1 is 5. See, it will be 5. 1. We are adding less than 11. 1."
+  },
+  {
+   "start": 3728.91,
+   "end": 3758.54,
+   "text": "2, 3, 4, 5. Rest of them are greater than 11. So, what is your answer? 5. So, in this way, we will find the answer. And, in our main binary search, we will use this. For what? To find the answer for guess. How many numbers are smaller or equal to guess? If, if this answer, if this answer, if this, if this answer, is less than your K, then we have seen that this guess can never be the answer. And, even smaller numbers can't be the answer. Low is equal to,"
+  },
+  {
+   "start": 3758.54,
+   "end": 3782.1,
+   "text": "Guess plus 1. But if this answer is greater than or equal to k, then this answer is possible. It is not certain because it is not in the matrix. Who knows? And even if it is there, it is not in the answer. Even that is not known. The answer is possible. But you will have to see the elements below this. See them too just to make sure. So, high is equal to guess minus 1."
+  },
+  {
+   "start": 3782.1,
+   "end": 3810.94,
+   "text": "You will do these two things and in the end, you will get your answer. You will get it. You will definitely get it. How will you get it? Because, what are you doing? You are looking for the last element in a way. Look, how do we tell this in guess and answer? If you write 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, and whatever is written till 15. If you ask one answer in every guess, that number of elements in matrix,"
+  },
+  {
+   "start": 3810.94,
+   "end": 3826.58,
+   "text": "Less than equal to, yes. This number should be greater than equal to K. So how will yours look? Yours will look like this. For a time, no will come. No, no, no, no."
+  },
+  {
+   "start": 3826.58,
+   "end": 3855.68,
+   "text": "No. Suddenly there will be a number where yes will happen. Meaning that all the small elements in the matrix are greater than or equal to k. And after this, obviously they will remain greater than or equal to k. It won't happen that there were 7 to small 8 elements, but we are not getting 10 to small 8 elements. How will we not get? If we get 7 to small, then why won't we get 10 to small? After this, yes will come continuously. After this, yes will come continuously. What are you looking for? You are looking for this first occurrence. You..."
+  },
+  {
+   "start": 3855.68,
+   "end": 3885.2,
+   "text": "is looking for the first occurrence. You are looking for the first occurrence. You are looking for the first occurrence. So what should you do? How do you get the first occurrence? If you have come to 9, go to the right. If you have come here, store it and go to the left. The same thing is done with the first occurrence. Come, let's write its code and see if we can write it or not. So first of all, let's write a function on which we will tell our guess that my guess is this number. Find a number less than or equal to this and tell us. So it will tell or not."
+  },
+  {
+   "start": 3885.2,
+   "end": 3915.34,
+   "text": "We write int fun in which we will pass our matrix. In which we will pass its matrix. Okay. In this, we will pass our int n, our int m and our int guess. What is its work? Tell me the number of elements in matrix less than or equal to my guess. So what will we do? We are starting from the last coordinate. Again, you can start from that coordinate also. Same as last question. Int."
+  },
+  {
+   "start": 3915.34,
+   "end": 3941.84,
+   "text": "Rho is equal to n minus 1. That's why we wanted to study these two questions in the same setting. And you should also study them in the same setting. Because by studying them separately, you forget. Column is equal to 0. We have to do the same thing. Why? Rho greater than or equal to 0. And column less than m. If array of Rho column"
+  },
+  {
+   "start": 3941.84,
+   "end": 3972.53,
+   "text": "Less than equal to guess. Less than equal to guess. So what did we do? We used to add the whole column and eliminate the column. We used to add the whole column. How did we add it? Let's see this too. Count is equal to 0. To return. Count is equal to count plus row plus 1. Why are we doing row plus 1? Because you are in any matrix. You are in any matrix. You are here. You are like this. 0, 1, 2, 3, 4. And you are here. Your row is equal to 3."
+  },
+  {
+   "start": 3972.53,
+   "end": 3993.81,
+   "text": "you have to add this element and add all the elements above it means you have to add this, this, and this how many elements are there? 1, 2, 3, 4, how will this 4 come? so 0, 1, 2, 3, we will do 3 plus 1, 4 will come so this is a simple trick, simple math we have added row plus 1 and what will we do? we will eliminate this whole column column plus plus"
+  },
+  {
+   "start": 3993.81,
+   "end": 4024.86,
+   "text": "We will go to the right place. Else. Else. Else. Means this is bigger than that. If this is the first element of row. Corner one is bigger. Whole row will be bigger than that. Row will be eliminated. Row. Minus. Minus. We will go up. Same as previous question. We will close this while loop. And return. In last. We will count. This is the fun part. Now it is very easy to write main function. Now it is very easy to write main function. There is nothing left in main function. Main function. We will write it in 2 minutes."
+  },
+  {
+   "start": 4024.86,
+   "end": 4057.57,
+   "text": "What is in the main function? In the main function, you have a matrix. So int kth smallest. This is the name of your function. In this also, you have a matrix. By doing this, you have given a matrix. And you have also given an int k that you have to tell kth smallest. So first of all, remove its n. By doing a dot size, it means how many rows are there in the whole matrix. Remove its m also. How many columns are there in the whole matrix. Okay. Now, what will be your low? Array of?"
+  },
+  {
+   "start": 4057.57,
+   "end": 4088.61,
+   "text": "0, 0 means the smallest element of that matrix. The answer can be there. What can be your height? What can be your height? The last element of the matrix, the corner element, there is no bigger element than that in the matrix. So, it can be there in the final. n minus 1, m minus 1. Okay. Take your rest. Take rest is equal to minus 1. Now, start writing binary search. While low less than equal to high. Ain't guess."
+  },
+  {
+   "start": 4088.61,
+   "end": 4115.57,
+   "text": "is equal to low plus high by 2. Now what to do? Take out the answer. How many elements are smaller than guess? How many elements are smaller than guess? So how will it be? Fun. a, n, m, guess. You will get your answer. Now, if your answer is less than k, if your answer is less than k, what to do? Nothing. Low is equal to guess plus 1. Else, else, else."
+  },
+  {
+   "start": 4115.57,
+   "end": 4143.14,
+   "text": "If it is greater than or equal to k, then this answer is possible. There is no surety. rest is equal to guess. The big ones will never be the answer. The big elements will never be the answer. And, high is equal to guess minus 1. Do it like this. Do it like this. In the end, return rest. Your program is over. What happened? It is a small program. This is your main binary search. And this is your"
+  },
+  {
+   "start": 4143.14,
+   "end": 4169.7,
+   "text": "Helper function. How much does helper function take time complexity? Same as last time, row, column, row, column, subtracting, subtracting, order of m plus n. Order of m plus n. How much is the time complexity of this one? The maximum element, the maximum element of the matrix, its log. Log of maximum element. And every time you are doing order of m plus n. In this helper function. This is its time complexity. Space complexity is nothing."
+  },
+  {
+   "start": 4169.7,
+   "end": 4189.84,
+   "text": "So, you have done this question. We hope that you have understood this thing. You have understood the K thing. When we search for less than equal to, we feel that it is not clear. When you search for less than equal to things, how do you know that there can be some answer and there can be no answer?"
+  },
+  {
+   "start": 4190.77,
+   "end": 4211.86,
+   "text": "How do we know? We hope you understand. Please comment and we will tell you again. We will explain it to you again. Now, after doing this question, now comes the Dishaw question. What is that Dishaw question? Kth smallest in multiplication matrix."
+  },
+  {
+   "start": 4211.86,
+   "end": 4238.72,
+   "text": "You don't have to do anything, just copy and paste the same code there because it has told you that according to n and m, you have made a matrix, that matrix is also sorted row wise and column wise. You have to do the same there, you have learned the kth smallest in sorted matrix, you also know that. You don't even need to make a matrix, just read the question and do it yourself, you will understand it. So do that question yourself, it was a very important question."
+  },
+  {
+   "start": 4238.72,
+   "end": 4248.21,
+   "text": "In binary search, the hardest question that can be asked can be asked. It is not a hard question in binary search. Right? So, today's video is a bit long. See you tomorrow."
+  }
+ ]
+}

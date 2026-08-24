@@ -1,0 +1,479 @@
+{
+ "video_id": "1yax0YQOb8w",
+ "title": "Let's Revise HEAP Data Structure With This Leetcode Hard Question | CPU Task Scheduler",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2539,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 24.08,
+   "text": "So we were reading a comment actually, so today we thought of doing a revision of heap, because core scheduler 3, according to me, we think that when we teach you recursion, then you should come to it, because it is a choice problem, so you should know that the choice we are doing, then why can't we do recursion and why should we do heap, so we want to teach you recursion first, then we will come to it. We were seeing another comment, we made a question, you may have reorganized the ring."
+  },
+  {
+   "start": 24.08,
+   "end": 47.79,
+   "text": "we thought that this cpu task scheduler is the same type of question and it is 90% correct so we didn't teach it we thought it will be done but today you must be seeing this code we have written this code by ourselves so this code is a very big code so we shouldn't have done this the question is actually very complex and we shouldn't have done this so those who had that comment it was a very helpful comment come we will see this question"
+  },
+  {
+   "start": 47.79,
+   "end": 54.69,
+   "text": "It is a very similar question. If you have made a reorganized string, then also understand this question, think about the approach of this question."
+  },
+  {
+   "start": 54.69,
+   "end": 84.16,
+   "text": "and writing the code of this question is very implementation heavy you can say that we will explain it to you in easy language that what to do and what not to do but how to do that that is not there so that is wrong from us also many times we are doing this submit from us also a lot of error not syntax error but run time error we also got a lot of errors here and there so we thought that we should teach this so come and read this after reading this you can say that 80-85% of your heap is complete the hard questions are left course scheduler is left two heaps are left"
+  },
+  {
+   "start": 84.16,
+   "end": 113.17,
+   "text": "we will do recursion dp after that we will make more sense so we will do that later so see this till the end its code is very hard intuition is not that hard you will feel it as natural common sense that yes this should be done you will come to the mind that yes this should be done how to do that is not there in the understanding so let's start quickly so we did a question about reorganized string if you remember then maybe 1,2,3 lectures before there was a question in which reorganized string was to be done in that we told you an example of PT sir"
+  },
+  {
+   "start": 113.17,
+   "end": 139.81,
+   "text": "We told you an example of PT sir. What did we tell? That he has such a seat in the class. Exam is going to take place. And he has some students. Like there is a student from class 8. There is a student from class 9. And there is a student from class 8. By doing this, there are 3 students. Now, how did he have to make these students sit? Like we sit in the exam. How? By doing the alternate. Otherwise, the student starts stealing. So, what did he do? Because there are 2 students from class 8. 2 students from class 8 and 1 student from class 9. So, if he..."
+  },
+  {
+   "start": 139.81,
+   "end": 153.87,
+   "text": "This seat will be filled in such a way that Class 9 is placed here. Suppose Class 9 is placed here. Now they will have to place both Class 8 here. Because the seat was so limited. So they would have to place it here and they would have stolen it. They didn't want this. So what did they do?"
+  },
+  {
+   "start": 153.87,
+   "end": 171.17,
+   "text": "All of them were seated according to the frequency because their goal was to finish the child with the highest frequency first so that their tension is reduced. Later, if one child is left at the end, then they will set him anywhere. But settle the child with the highest frequency first. So what did they do? Class 8 students were seated here."
+  },
+  {
+   "start": 171.17,
+   "end": 193.65,
+   "text": "Now they have two children left, one of 9 and one of 8. Again, both the frequencies are the same. Now one of the children is of 8th class and the other is of 9th class. So which one will they sit? Try both. Try the 8th class. Can the 8th class sit? It can't sit. Why? Because it will be stolen. So what did he do? He used to make class 9 sit. Now class 9 is also round. In the end, which one of the children is left? Class 8. He used to set it here."
+  },
+  {
+   "start": 194.0,
+   "end": 223.95,
+   "text": "So, P.T. sir didn't know anything about DSM, but P.T. sir used to make this question using common sense, according to frequency. Now, in teaching this, we felt that this question is similar and there are many ways in which CPU scheduler is used. CPU scheduler. These two questions are exactly the same, except for one very important thing. Listen very carefully. It's the same problem. Okay? It's the same problem. You have some children. Suppose, their name is A, B, C, D, like this. So, you have such children. There is one A, there is one more A."
+  },
+  {
+   "start": 223.95,
+   "end": 247.79,
+   "text": "There is one more A and three kids are of B. You have to arrange them. You have to make them sit like PT sir. But the constraint is not that you have to make the kids sit alternately. In the previous one, you had to make them sit alternately. It will be done. What is the constraint here? There is a gap. Gap is equal to 2. What does this mean? You can make any kid sit. But"
+  },
+  {
+   "start": 247.79,
+   "end": 268.46,
+   "text": "There should be a gap of at least two seats between two similar children. If you place one child here, then suppose this is seat 1, this is seat 2, this is seat 3, this is seat 4, this is seat 5, this is seat 6."
+  },
+  {
+   "start": 268.46,
+   "end": 298.34,
+   "text": "This seat will be 7 and so on. Okay. Now you have placed A here. On seat 1. You can place anyone on seat 1. It is your choice. You cannot place A on seat 2. Why? Because it has been said that there should be two gaps between two consecutive A's. There should be a gap of two seats. So here you can place B more. You can place B. So now A's work is done. B's work is done. Next, on this seat, now you have two types of children. Either A or B. Can you place A here? You cannot place A. Why? Because when you place A here,"
+  },
+  {
+   "start": 298.34,
+   "end": 324.96,
+   "text": "How many seats are there in this A and this A? One seat. It should not be of one seat. There should be a gap of two seats. At least. It is said at least that there should be a gap of two seats. Can you make B sit here? No, you can't make him sit. If you make B sit, then how much gap will be left between these two? Zero seat. It is not allowed. There should be a gap of at least two seats. So this one, seat 3, you will have to keep it idle. No one will be able to sit on this seat. No one will be able to sit on this seat. Go ahead."
+  },
+  {
+   "start": 324.96,
+   "end": 347.41,
+   "text": "On seat 4, can you make A sit? Yes, you can make A sit. Because if you make A sit here, how much gap is there between these two? Two seats. It works. If you want to keep two gaps, you can keep more than two, but you have to keep two. Here you can make A sit comfortably. This A's work is done. Come to the next seat. On seat 5, can you make A sit? No, you can't make A sit. Because if you make A sit here,"
+  },
+  {
+   "start": 347.41,
+   "end": 374.8,
+   "text": "How much gap is there between them? 0 seat. We don't want 0, we want 2. We can't make A sit. Can you make B sit here? Yes, you can make him sit. Why? Because how much gap is there between them? 2 seat. 3 seat, 4 seat gap is left. Very good. B's work is also done. Come to the next. In S6, can you make B sit? No, you can't make B sit because B is here. 0 seat gap. You can't make A sit either. Remember, you can't make A sit either. Why? You'll make him sit here, right? How much gap is there?"
+  },
+  {
+   "start": 374.8,
+   "end": 399.76,
+   "text": "One seat gap. You don't want one seat gap. You want two seat gaps. Again, you can't make anyone sit here. Neither A nor B. This seat is empty. What is this seat? It is empty. Move forward. On seat 7, can you make B sit? No. If you make B sit, then one seat gap will be left. Can you make A sit? Yes, of course. You can make A sit. Why? Between these two, how much gap is there between seat 4 and seat 7? Two seat gap. It works. Two seat gap. It works. Move forward."
+  },
+  {
+   "start": 399.76,
+   "end": 428.56,
+   "text": "S8, now you will get more seats, because all the kids are not finished yet. This one is finished, but this one kid is remaining. Can you make this kid sit on this seat? Absolutely, you can make him sit comfortably. Why? Because again, there is a gap of 2 seats between them. How many seats did you get? How many seats did you get? 1, 2, 3, 4, 5, 6, 7, 8. You have to return 8. Minimum number of seats to fix all the students, so that there is a gap of at least 2 seats between them. Whatever gap you are given, there should be that much gap."
+  },
+  {
+   "start": 428.75,
+   "end": 455.62,
+   "text": "So here the question differs. So according to me, the previous question if the lead code was medium, this question, although it is medium, this question is quite hard. There are two things here. First, you have been given a gap that there should be at least this much gap between two children. After that, you do not have any constraint of seats. It is not that you have been told that you will get only six seats. Because there are six children, you will get six seats. No, there are six children, you will not get six seats. Use it. You have used eight seats here. You have to tell that you can sit in a minimum number of seats."
+  },
+  {
+   "start": 455.62,
+   "end": 479.04,
+   "text": "If you wanted, you could have used 100 seats. But what is the minimum number of seats? Can you sit in less than 8 seats? No, you can't. So you have to return 8 seats. So this is the premise of this question. Now let's start thinking how to solve this question. So see, what does common sense say? Common sense says the same thing that was said in the previous question too, that the child who is the most frequent,"
+  },
+  {
+   "start": 479.04,
+   "end": 507.01,
+   "text": "If A is 3 times, then A is the most frequent in every step. So you should try to make him sit. In the previous video, we had done that the child who was the most frequent, then sir used to try to set him. If this is set, then the rest will also be done in some way. So in every step, one thing is that you should try to make the most frequent one sit. According to common sense, because what will happen is that if you will leave the most frequent one, suppose you had a lot of children and A was the most frequent. Now suppose B, C, D was once."
+  },
+  {
+   "start": 507.01,
+   "end": 534.64,
+   "text": "B, C, D were one at a time, okay? And A was how many times? It was four times. Now, what will happen with this? Let me tell you. Assume that you are doing it with your own mind that no, what do we mean? We can make anyone sit, so we can make them sit. Now, what will you do? Where will you make B sit? On seat number 1. Is it set? Where will you make C sit? On seat number 2. Because B and C are different, so there is no concept of gap in this. Where will you make D sit? On seat number 3. So, three kids, three seats, work is done. But, now what do you have left? A."
+  },
+  {
+   "start": 534.64,
+   "end": 562.53,
+   "text": "Okay? Assume that your gap is 2. How much gap should there be between every similar child? There should be a gap of 2 seats. You can make A sit on seat 4. Because A is sitting for the first time, so it's okay. Distance doesn't matter from D. For the next A, you won't be able to make the next A sit on seat 5. Nor will you be able to make him sit on seat 6. Because there should be a gap between every A, of at least 2. You will be able to make the next A sit on seat 7. Similarly,"
+  },
+  {
+   "start": 562.53,
+   "end": 591.25,
+   "text": "Seat no. 8 and seat no. 9 will have to be left empty. Where will you be able to place the next one? Seat no. 10. Similarly, on the next 11 and 12, you will have to leave a gap again. Where will you be able to place the last one? On S13. You will be able to place it here. So see, this is 1A. 1, 2, 3, 4. How many total seats did you get? 13 seats. You got 13 seats. How many children were there? 4 and 3, 7. Out of 7 students,"
+  },
+  {
+   "start": 591.25,
+   "end": 613.49,
+   "text": "You are taking 13 seats, which means almost double. Why did this problem happen? This problem happened because you filled BCD in the beginning. You thought BCD is good, lowest frequency, so you filled it in the beginning. You left A, you left the child who was the most, for the last. Now what happened by leaving it in the last, now you have only A left. You are taking approximately 1A for 1A, 3 seats."
+  },
+  {
+   "start": 613.49,
+   "end": 643.86,
+   "text": "because of placing 1a, 3 seats are spoilt. See, he is spoiling 3 seats. He is also spoiling 3 seats. He is also spoiling 3 seats. He is doing it, isn't he? Yes. If you had already filled A, if you had already tried to fill it, then you would have needed less seats. We will show you. We will also tell you why that happens. See. That is why we are telling you because it is not necessary to remember that the frequency should not be increased. We will use common sense. Come, let's try. Place A. Where? On S1. Okay? The obvious thing is that A cannot sit in S2 and S3."
+  },
+  {
+   "start": 643.86,
+   "end": 669.63,
+   "text": "Next, place A in S4. It's obvious that A will not be able to sit in S5 and S6. Place A on S7. It's obvious that A will not be able to sit on S8 and S9. Place A on S10. There are four A's. One, two, three, four. We have completed the maximum number of A's. Now, what all do you have left?"
+  },
+  {
+   "start": 669.63,
+   "end": 698.96,
+   "text": "B, C, D. All three are one at a time. You can make all three sit anywhere. B, C, D. That's it. How many seats were there in total? 10 seats. How many were there above? 13 seats. Why were there 13 seats? Because you had left the most frequent one for last. Now in order to make him sit, you had to keep more seats idle. Every A had to keep 3-3 seats idle. But what happened in this? If you look here in a way, every A is making a group like this. He is making it, right? Every A has to make it. But, but, but, this A 2 seat,"
+  },
+  {
+   "start": 698.96,
+   "end": 725.46,
+   "text": "You had made it idle, here you have entered B and C. This second one, the one seat that was made idle, you have entered D there. So you have reduced the idle seat. So the less you reduce the idle seat, idle seat means empty seat. The less the empty seat will be, the less the total number of seats will be. That's why common sense tells us that we should start with the most frequent one. And the most frequent one should be filled at every step. Now let's see how we will fill and what we will do to fill it. Let's go."
+  },
+  {
+   "start": 725.46,
+   "end": 754.1,
+   "text": "Now what we will do is, we will think like a master. Suppose you have a class like this. There are 3 children of A and 3 children of section B. And your gap is 2. That means, there should be a gap of 2 sets in every similar child. So first of all, as we did in the reorganized string, let's remove their frequency. First of all, what should we do? In a question like this, where you need frequency, remove the frequency in the HashMap. So what should we do? A is 3 times and"
+  },
+  {
+   "start": 754.29,
+   "end": 784.1,
+   "text": "D is three times. You have taken out a frequency. Now, in common sense, what did we think? Which child should we try to set first? The most frequent one. The most frequent in every step. What do you want in every step? The one whose frequency is the highest. What does this mean by shouting? Heap. Because, which child do you want in every step whose frequency is the highest for now? So, what does it mean? Heap. Make a heap. What is this? Max heap. What do you want? You want frequency."
+  },
+  {
+   "start": 784.1,
+   "end": 809.84,
+   "text": "And what is the frequency of that child? What is the frequency of that child? What does it say? One is int and one is char. What is its? Pair. What kind of heap? We want max frequency. Max heap. If the frequency of two children is same, then it doesn't matter. Take anyone. So let both be max. Let both be max in first and second. So what kind of heap do you want? Max heap. Why? We want maximum frequency child in every step. That's why we want max heap."
+  },
+  {
+   "start": 809.84,
+   "end": 834.22,
+   "text": "What will be stored in maxheat? Frequency and child. So what will we store? 3 and A and 3 and B. What is this? Maxheat is ready. Is it correct? Okay. Now let's try to fill seat by seat. What do we do after doing one by one? Let's try to fill seat by seat. We were doing the same last time too. Because what will PT sir do? Try to fill seat 1. Come."
+  },
+  {
+   "start": 834.96,
+   "end": 865.68,
+   "text": "Try to fill seat 1. We will take a variable seat. We will also see that implementation. We are just explaining to you. We think like this in our mind. Try to fill seat 1. Who will we try to fill in every seat? The maximum one whose frequency is maximum. So in seat 1, you have the first child. Do hip pop. So what is the first child? Its frequency is 3. And your child, what is that child? It is A. Okay. Done. Your first child popped."
+  },
+  {
+   "start": 865.68,
+   "end": 893.01,
+   "text": "This person has popped from here. Very good. Now, a decision comes. Can you make this child sit on this seat? Can you make this child sit on this seat? How will we know that? In the previous question, it was very easy. In the previous question, our reorganized string, where did it go? In the previous reorganized string, it was very easy to do this. Why was it easy to do this? Because you used to take an array of a variable, a string. And if you wanted to see, let's say,"
+  },
+  {
+   "start": 893.01,
+   "end": 922.27,
+   "text": "whether we can place it on index 3 or not. So, you just checked that my res is not equal to this character, so you can place it. But it is not that easy here. Here, suppose you are in seat 1, then you will say that you can place it in seat 1, but suppose you are in seat 10. Suppose, just for example, you are in seat 10. And your gap is 5. Now, here you can place A or not."
+  },
+  {
+   "start": 922.27,
+   "end": 950.19,
+   "text": "To see this, you have to see everything. You have to see 9, 8, 7, 6. You have to see all of this. Why? Because if A is sitting here, then you can't make it sit on the 10 because there will be a gap of 3. Sorry, you can't make it sit on the 5. Suppose if A is sitting on the 5, then can you make it sit on the 10? You can't make it sit. Why? Because then how many seats will there be here? There should be a gap of 4 seats. How much should there be of 5 seats? If A is sitting anywhere here,"
+  },
+  {
+   "start": 950.77,
+   "end": 975.54,
+   "text": "from seat no. 5 to seat no. 9, if A is sitting anywhere, then you can't make it sit on the 10. So, it's hard to check this. Now, will you have to run a loop for this? Run the loop of the gap from the present index and then check, then it will be very difficult. We don't want to see so much difficulty in our life. To keep life easy, because you understand this problem, right? What is the problem? Can A sit on this seat or not? How will you know? Now, you can see the gaps in the back."
+  },
+  {
+   "start": 975.54,
+   "end": 1004.86,
+   "text": "plus 1, whatever is there, the 4-5 seats at the back, whatever you want to see, you will have to see that. If A is sitting there, then it cannot sit here. But see how we will do a trick, we will do a small trick. What we will do is, we will maintain a register. PT sir has a copy, we maintain a register in that. What will we write in that register? What will we write in that register? That A and B, we will make a hash map of both of them. We will say that this is our register. What will we write in this? A can sit in the next seat."
+  },
+  {
+   "start": 1004.86,
+   "end": 1030.72,
+   "text": "Which seat can A sit on? Which seat can A sit on? Which seat can A sit on? Which seat can A sit on? Which seat can A sit on?"
+  },
+  {
+   "start": 1030.72,
+   "end": 1059.76,
+   "text": "Seat is at 10, we are trying to make A sit here, but it is written in the free one that A can sit at 12. No one can sit before 12. Now how this will happen, we will see that too. But suppose someone tells you that A can sit at 12, no one can sit at less than 12. So you will immediately know that 10 is less than 12, no one can sit. If it is written here that A can sit at 10, then definitely sit. If it is written here that A can sit at 8, that means A can sit at seat 8 or anyone can sit ahead of 8, then definitely sit. 10 is greater than 8, so this can definitely happen."
+  },
+  {
+   "start": 1059.76,
+   "end": 1087.34,
+   "text": "Let's assume that in the beginning, every child can sit on seat 1. Anyone can sit on seat 1 in the world. So, on seat 1, your frequency is 3 and child is A. Your child is on seat 1. Can A sit on seat 1? Yes. How did you know? What is free of A? Free of A is 1. So, is free of A greater than or equal to this seat? Yes."
+  },
+  {
+   "start": 1087.34,
+   "end": 1116.61,
+   "text": "Free of A, what? Greater than equal, greater than or less than? Less than equal to, sorry. Less than equal to seat. Less than equal to seat. Means, A can sit on 1 minimum. Is the seat you are trying to make sit bigger or equal to this? Yes, it is equal to this. Very good. Now, what will you do? Now, what will you do? We will make it sit on the seat. We will make it sit on the seat. So, how will we make it sit? First of all, suppose you make A sit on this seat 1. First of all, we will have to reduce one frequency."
+  },
+  {
+   "start": 1116.61,
+   "end": 1145.55,
+   "text": "We will have to decrease the frequency of A. And suppose after decreasing the frequency, if it would have become zero, then we would not have pushed it in the heat. Because if it becomes zero, then A will be finished. But after decreasing the frequency, it is 2. We will push it back in the heat. What will we do? 2 and A. We will push it back in the heat and move forward. We will move forward. You have placed A on seat 1. Yes, one more thing. Now A has sat on seat 1."
+  },
+  {
+   "start": 1146.13,
+   "end": 1174.21,
+   "text": "A can sit on which seat? Can it sit on 2? No. How many gaps should there be? 2. No. Can it sit on 3? No. How many gaps should there be? 2. No. Can it sit on 4? Yes, it can sit on 4. Because if you put A here, then there will be a gap of 2. What is the next minimum seat on which it can sit? The seat on which you are now. Seat is equal to 1 plus gap."
+  },
+  {
+   "start": 1174.21,
+   "end": 1204.08,
+   "text": "plus 1 is equal to 4. So what we will do is, the free register that we have made, this free register that we have made, we will also update this. What will we call this? Free A is equal to whatever was the current value in this, whatever was the current value in this, plus gap plus 1. So A can sit on this. After that, another very important thing that we are saying to do is,"
+  },
+  {
+   "start": 1204.08,
+   "end": 1232.93,
+   "text": "How did you know whether it will be correct to place A on seat 1 or not? By reading this free diary. You will have to copy this diary too. Where have you placed A? On seat number 1. Now if he has sat on seat number 1, then where will he be able to sit? If A has sat on seat number 1, then you have placed A on seat number 1. Can he sit on seat number 2? No, he cannot. Why? Because there should be a gap between the two seats. He cannot sit on seat number 3."
+  },
+  {
+   "start": 1232.93,
+   "end": 1261.71,
+   "text": "Seat 4, yes, you can make A sit here. You can make him sit, you don't have to make him sit. You can make him sit on the minimum seat. You can make him sit on 4. Why? Because there will be a gap of 2. So, what will happen? The seat on which you have just made A sit, 1. Plus gap, plus gap, because he has left the chairs, plus 1 on 4. So, while going, what do you have to do? Free A, which is your child, is equal to, wherever you have made him sit, plus gap, plus 1. So, what will happen? 4."
+  },
+  {
+   "start": 1261.74,
+   "end": 1293.5,
+   "text": "Where can A sit next? 4. This will be useful when we go ahead. When we check on seat 2, then it will be useful. Come, let's move ahead. Seat 1 is done. Let's move to seat 2. Let's see what we will do on seat 2. We will do something. Come, let's see. Seat number 2. Every time, who should try to sit? The one with the most frequency. Whose is it? 3B. It's not 2. It's not A. It's B. Come. Pop this. And let's see. So, what did you get? Your frequency is"
+  },
+  {
+   "start": 1293.5,
+   "end": 1318.7,
+   "text": "3 and your child or your task is B. Can you make B sit on seat 2? How will you know? B can sit on which seat minimum? On 1. You can make B sit on which seat minimum? On 2. You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on which seat minimum? You can make B sit on"
+  },
+  {
+   "start": 1318.9,
+   "end": 1343.95,
+   "text": "What will we do? We will reduce its frequency. If its frequency had become zero, there was no need to push it in heat. But its frequency did not decrease, it did not become zero, which means B is still left, so you will have to push it again. Come on, push it to B. And the most important thing, while going, where have you placed B? On seat number 2. Where have you placed B? On seat number 2. B has sat here. Can it sit on seat 3? No, there should be a gap."
+  },
+  {
+   "start": 1343.95,
+   "end": 1373.02,
+   "text": "Seat 4? No, there should be a gap. Seat 5? Yes, it can be. How did you know? 2, on which you have placed B, plus gap, plus 1. 2 plus 2 plus 1, 5. So what will we do? We will upgrade free B. How? Free B is equal to whatever seat you have placed on, on the second seat, plus gap, plus 1. So, where can B sit next? On 5. It was very good till here. You have placed both the people on both seats, A and B."
+  },
+  {
+   "start": 1373.02,
+   "end": 1403.02,
+   "text": "Both have worked. From the next seat, seat 3 will become complex. Now open your eyes and nose and see. Now it will become complex, see. Now see. Now you will not be able to sit anyone, see. Come, let's try. Seat 3. We have come to seat 3. First A sat, B sat, now we will sit this. From the hip, who will we remove now? From the hip, who will we remove? If you see according to the max, then both have the same frequency. Who is bigger between A and B? B is bigger, so this one will be removed. So remove this."
+  },
+  {
+   "start": 1403.02,
+   "end": 1434.0,
+   "text": "Take this child out and try to make him sit. What did you find out? There is a child who has two children left. And what kind of child is this? This is B. Okay. Can you make him sit on seat number 3? You can't make him sit. How did you find out? Free B. Free of B. It is 5. You can't make B sit on any seat less than 5. It is greater than your seat. You can't make him sit. Are you stuck? You are stuck, right? You can't make him sit. What will you do now? What did you do last time in reorganizing?"
+  },
+  {
+   "start": 1434.0,
+   "end": 1463.57,
+   "text": "Last time, we used to see that if we can't make him sit, we used to take out the next max, make him sit, and push him back. This is what we used to do. Last time, if you haven't watched it, then watch it. In the last reorganized stream, because there was an alternate, so if A can't sit, then B can definitely sit. That used to happen. Because, what we used to do, we used to take out another max, whoever it was, and make him sit, and make him go inside. But, for a little while, for a little while, let's assume that we, this man, this 2B,"
+  },
+  {
+   "start": 1463.57,
+   "end": 1492.64,
+   "text": "send it somewhere, tell it to stand in the corner, we will see you now, don't push in the heap, if you push in the heap, then A will come out in the max, then nothing will happen, okay, tell it to stand in the corner, 2 and B, nothing has been done, no change has been done, if you know that you can't make it sit, tell it to stand in the corner for a while, we will see you now, we will handle you, take out the next max from the heap, take out the next max, what came out, 2A, your heap is empty, your heap is empty,"
+  },
+  {
+   "start": 1492.64,
+   "end": 1511.25,
+   "text": "What does 2a mean? Its frequency is 2. What child is this? A child. Can you make A sit on seat no. 3? No, you can't. A will sit on seat no. 4. He can't sit on seat no. less than 4. He can't even sit on seat no. A. Now you are stuck. What used to happen in the past? Someone or the other used to sit."
+  },
+  {
+   "start": 1511.25,
+   "end": 1540.19,
+   "text": "both can't sit now you can't give this seat to anyone neither one nor two this seat is going to be empty now what will you do now you are stuck now take out both you are stuck there is nothing then what will you do now let's see ask him to go too stand in the corner now what can we do ask him to go too stand in the corner there will be a corner anywhere ask him to stand in the corner with your hands up now we will handle you try to take out the next but try to take out the next your hip"
+  },
+  {
+   "start": 1540.19,
+   "end": 1567.9,
+   "text": "your heap is empty now you can go out now you can go out now see what happened on seat no. 3, can you make any person sit? no you can't because now take out A because there were only two people there were only two people in the whole class by counting take out A, A can't sit sorry take out B, B can't sit take out A, A can't sit now there is no one left in the heap to do anything there is no one left in the heap to do anything now what will you do?"
+  },
+  {
+   "start": 1567.9,
+   "end": 1587.09,
+   "text": "This means that your seat is going to be empty. Seat no. 3 is idle. As we saw earlier, seat no. 3 used to be empty. I have shown it somewhere. See this. Seat no. 3 used to be empty in the upper seat as well. But, but, but. Okay, if it is empty, then there is no problem. If it is empty, then okay, it is empty. But the two people who you have taken out and put in the corner,"
+  },
+  {
+   "start": 1587.09,
+   "end": 1611.9,
+   "text": "you have to push these two people back into the heap because they are still there you can't let them go anywhere you have to make them sit so after this suppose this corner is a vector or an array of pairs this is just a corner where you take out those people who are not able to sit and store them for some time so that they can be stored for some time"
+  },
+  {
+   "start": 1611.9,
+   "end": 1630.66,
+   "text": "After doing this, you have to see this whole data structure, this vector. And whatever is in it, as it is, you have to insert it here. As it is, you have to insert it in the heap. These two, 2B, 2A, insert both of them here. 2B, 2A, insert both of them here."
+  },
+  {
+   "start": 1630.66,
+   "end": 1652.56,
+   "text": "as it is, the work of seat number 3 is done, no one could sit on seat number 3, there is no difference whether they sit or not, as it is, nothing has changed in this round, in this round neither the free change of A and B, nor the change of A and B frequency, means this round is completely useless, your seat number 3 is empty, come ahead, come ahead, come to seat number 4, come to seat number 4,"
+  },
+  {
+   "start": 1652.98,
+   "end": 1684.69,
+   "text": "Let's hope that you understood this. Because this seat is completely empty. That's why we have done this corner work. The one who is not able to sit, we will tell him to go to the corner. Okay, we will insert you later. We did this in the previous also. We did this in the previous also. We did this in the previous also. We did this in the previous also. We did this in the previous also. We did this in the previous also. We did this in the previous also. We did this in the previous also. We did this in the previous also. We did this in the previous also. We did this in the previous also."
+  },
+  {
+   "start": 1684.75,
+   "end": 1714.83,
+   "text": "Can you make B sit on seat no. 4? No, you can't because he will sit on seat no. 5 and not on seat no. 4. So, you can't make him sit on seat no. 4. What will you do? You will tell him to go to the corner. You go to the corner. Whoever you are, you also go to the corner. He is stored in the corner. Okay. This man has left the heap. Take out the next child. Try that because we are trying to take out the one whose frequency is the highest. Try the next one. Frequency is equal to 2 and child is equal to A."
+  },
+  {
+   "start": 1714.83,
+   "end": 1739.92,
+   "text": "Child is equal to A. This person has also left from here. Okay. Can we put A here? Yes, we can put A here. Very nice. Why? A's free, I'm sorry. How much is A's free? 4. 4 can sit on 4. So, put it here. First of all, what should we do? Let's assume that it sits on seat number 4. It sits on seat number 4. Its frequency is 1. Now, it is not 0. So, push it as it is. Push 1A. Push 1A here. And,"
+  },
+  {
+   "start": 1739.92,
+   "end": 1769.89,
+   "text": "Which seat are you sitting on? On 4. Which should be the next free seat? 4 plus gap. 4 plus 2 plus 1. 7. 7. 7. 7. Okay. Done. Now, it should be done. This is done. The work of seat 4 is done. But, after this, what should we not forget? Why didn't we tell this in seat 1 and seat 2? Because no one had gone in the corner. The first person had sat. But, after this, you have to see. Is anyone standing in the corner? Yes, 2B is standing. 2B had left earlier. 2B has not gone anywhere yet. 2B, as it is, enter."
+  },
+  {
+   "start": 1769.89,
+   "end": 1797.71,
+   "text": "As it is, no processing of 2B has been done. Neither the frequency nor the frequency of 2B is over. As it is, put it inside. Come next. Then go. We are taking so much time in this because it is a very important understanding to make. Okay? That's why we are working so hard and doing dry run. Seat number, on which we were sitting? 5. On seat number 5, what person will come out? 2B will come out. Frequency is equal to 2. Child is equal to B."
+  },
+  {
+   "start": 1797.71,
+   "end": 1827.62,
+   "text": "Can B sit on 5? Yes, it can sit because if you remember, it was 5. Make it sit. Make it sit means reduce its frequency. Make 1B as it is. Make 1B as it is. Till now, remember that no one is standing in any corner. The first person who came out was sitting. Okay. Free B. Free B has to be upgraded. If you have made it sit on 5, then the next one can sit on it. 5 plus 2's gap. 7 plus 1 can sit on 8. Make it 8. Make it 8."
+  },
+  {
+   "start": 1827.62,
+   "end": 1859.54,
+   "text": "Is there any person standing in the corner in this round? Was there any person standing in the corner in this round? No, there was only one person standing in the corner. Don't do anything, if there is no one in the corner, then there is nothing to do. Go ahead. Go ahead. Go ahead. Seat number 6. What will come out on seat number 6? 1B. Take out 1B again. Frequency is equal to 1. And child is equal to B. Pop this. Now see. Can you make B sit on seat number 6? No, you can't. Why? B can't sit in less than 8."
+  },
+  {
+   "start": 1859.54,
+   "end": 1887.28,
+   "text": "What will he do? He will say, you go to the corner for a while. For a while. Go to the corner, we will handle you in a while. See the next kid, he has the highest frequency. 1A. Pop it. 1A. Frequency is equal to 1. What is child? A. Can you make A sit on seat number 6? No, you can't. What is free? 7. He can't sit in less than 7. He will say, go to the corner, we will see you in a while. We will see you in a while."
+  },
+  {
+   "start": 1887.28,
+   "end": 1917.18,
+   "text": "Try to take out the next one. The heap is over and there is no child. What is this seat going to be? This seat is going to be idle. This seat is going to be useless. It doesn't matter. Let it be. What can we do? We don't have it in our hands. The children who were standing in the corner, as it is, put them in the heap. 1B, 1A. As it is, put them in. Which seat went idle? Seat number 6. Look at the example above. What was seat number 6? It was idle, really. Really, it means they are going right. Come, let's go to the next seat. Seat number 7. Until the heap is empty, you have to do this."
+  },
+  {
+   "start": 1917.18,
+   "end": 1947.02,
+   "text": "till all the kids are finished, till then you have to do this. Seat number 7, remove someone, remove 1B. Remove 1B, remove it, pop it. Can B sit on seat number 7? No. What is the free of B? 8. It can't sit at all. It can't sit at all. So what will we say? Brother, you go to the corner, we will see you in a while. We will see you in a while. Next, come. 1A, remove this, it has a frequency. 1A."
+  },
+  {
+   "start": 1947.38,
+   "end": 1970.02,
+   "text": "Can A sit on 7? Yes, it can sit. What is A's free? 7. So 7 is greater than or equal to 7. Okay, you can sit. What do we have to do? First of all, reduce the frequency to 0. If the frequency is 0, then the work is over. You don't have to do anything else. You can update it for free or not. There is no point because if A is 0, then we are not inserting it back on the sheet because it is 0. There is no point. If you want to update it for free, then do it. It doesn't matter."
+  },
+  {
+   "start": 1970.02,
+   "end": 2000.5,
+   "text": "It's finished. Who sat on seat number 7? A came and sat. After doing this, was there anyone in the corner? Yes, this person was in the corner. Put it back. As it is, put it back. Okay. Next M is here. Seat number 7 is filled. Come to seat number 8. Now come to seat number 8. Keep increasing the seats. Until everyone sits, until the heap is finished, you have to keep increasing the seats. Seat. 8. What is on top? There is only one person. 1B. 1B. Okay? There is only one person. Remove it."
+  },
+  {
+   "start": 2000.56,
+   "end": 2018.8,
+   "text": "Can B sit on 8? Yes, B can sit on 8 for sure. What will we do? 0 frequency of B, B sat on 8 and B's frequency is 0. If the frequency is 0, will we insert it in the heap? No, we will not insert it at all. And it's done. You can update it for free or not, it's up to you."
+  },
+  {
+   "start": 2018.8,
+   "end": 2049.2,
+   "text": "Now, is there any person standing in the corner? No, there is no one standing in the corner. So, we will not enter anything. Okay, come to the next. But, you get to know that now your heap is empty. Heap is empty means there is no child. All the children are finished. Now, which seat did you finish at last? Seat number 8. What will you return? 8. You will get 8 seats to make these 6 children sit. See the diagram above. Did it work in 8 seats? Yes, it worked. And it must have worked in this order. You can see from this diagram."
+  },
+  {
+   "start": 2049.2,
+   "end": 2080.78,
+   "text": "Now let's go to write its code. It is a bit of implementation heavy code. So bear with it. Come let's see its code. So you must have given two things. You must have given vector int a in which you must have given that task. Not vector int sorry vector of char. Vector of char. Vector of char and you have given an int gap. Okay. First of all let's do the work of frequency. So int n is equal to a dot size. First of all do the gap of frequency."
+  },
+  {
+   "start": 2081.26,
+   "end": 2111.78,
+   "text": "So let's take a hash map for frequency. Unordered map of this type of character and integer. This is the frequency. And let's take a free one too. Because you have to keep it free at the end. When is every person free? Yes, look at this. It doesn't matter how many number of tasks are there. Number of unique tasks can be 26. Because ABCD is up to Z. ABCD is not there. So every task is ABCD."
+  },
+  {
+   "start": 2111.78,
+   "end": 2143.15,
+   "text": "A, B, C, D can be a maximum of 26. Don't worry that we are taking out the same thing again and again. It is 26, not more. For I is equal to 0, I less than N, I plus plus. We will do two things. First, we will increase the frequency of this task. And in the beginning, which seat can the free of this task sit on? On 1. Everyone can sit on 1 in the beginning. Very good. After that, what will we do? We will take a heap. How?"
+  },
+  {
+   "start": 2143.98,
+   "end": 2178.26,
+   "text": "Let's write it here. Let's write here. Let's take the heap. We have to take the max heap of pair. Priority. Q. Pair of. What kind of? Integer character. Please note that we made a mistake in coding. So, you won't know why it will be a mistake. Okay. What do we have to put in this? The frequency of all and that task. So, for auto ifreq. Let's do it in the frequency hash map. And pq.push. Let's do it in C++. Let's see in Java."
+  },
+  {
+   "start": 2178.26,
+   "end": 2211.41,
+   "text": "what we have to do? i.second means first its frequency then that letter hip is ready now what we have to do? seat, from which seat you have to start? int seat is equal to take it from 1 now come, now we have to start filling seat by seat till when we will fill? while pq.not empty till the time this pq is empty we will fill"
+  },
+  {
+   "start": 2212.02,
+   "end": 2241.33,
+   "text": "What is your goal for every time? Your goal is to find a child who can sit on the seat. And it is not necessary that you get it in the first time. It is not necessary that you get it in the second time. It is not necessary that you get it in the third time. It is possible that you will have to find 3-4 people and 3-4 people will have to stand in the corner. Only then you will get something. First of all, let's make that corner. We had said that we are sending the child in the corner. Vector of pair of intent care. Whatever will come out of the hip, if it is not of our work, then we will send it in this corner. Call it pulled."
+  },
+  {
+   "start": 2242.77,
+   "end": 2274.54,
+   "text": "Whatever you are pulling or popping, we will send it in this corner. This is the corner. It was here. There was a corner here. This is the corner. No, where was it? This. This one. Where we were sending it in this corner, this is the corner. Okay. Keep taking out the children. Keep taking out the children continuously. See. Write one more. while pq. empty We are writing a while inside this while. Why are we writing? Let me tell you. Take out one child. Take out one child. How? Pair of"
+  },
+  {
+   "start": 2274.58,
+   "end": 2307.47,
+   "text": "int char p is equal to pq.top Don't forget to pop pq.top. Now you have to see if this child can sit here or not. So if, free of, what will be its task? Let's write the task. This child has come out. So what is its frequency? p.first. This child is so many times. And which child is this?"
+  },
+  {
+   "start": 2307.86,
+   "end": 2331.09,
+   "text": "This child is P dot second. Can this child sit on this seat? Let's see. If free dot, the child of free, can sit on which seat? If it is less than or equal to seat, then it can sit here. What did it do in seat? First of all, let's assume it sits here. If P dot first,"
+  },
+  {
+   "start": 2331.6,
+   "end": 2361.49,
+   "text": "greater than 1, means the frequency you have taken out, suppose if its frequency is 1, if its frequency is 1 now, then there is no need to push it, there was one child, one sat, if it is greater than 1, then what will you have to do? pq.push, push it back, with whom? p.first with minus 1, we have made one child sit, minus 1 and p.second will remain the same, and change its free also, free of p.second,"
+  },
+  {
+   "start": 2361.78,
+   "end": 2391.86,
+   "text": "is equal to the seat on which he is sitting plus gap plus 1. Okay? And if he sits, if he sits, break this loop. The second loop is the checking loop. This is the checking loop. After one, a kid is picking it up. Until he finds someone, as soon as he finds someone, break this. Break this. This is the if. If he can sit, break this check-in loop. But if he can't sit, what will we do? Else,"
+  },
+  {
+   "start": 2391.86,
+   "end": 2419.12,
+   "text": "If he can't sit, what would he do? What would the kids say? Go play in the corner. The pull we had, this pull we had, push, back, P. This L has stopped. This check while has stopped. Checking while. Checking while. Which while? Checking while. The one who was checking continuously. This while has stopped. Now when this while has stopped, now when this while has stopped, two things have happened."
+  },
+  {
+   "start": 2419.12,
+   "end": 2442.85,
+   "text": "Either a child would have sat down due to which we wrote this break and came out, or the heap was completely empty and no one could sit in it. This whole seat went idle. Both scenarios are fine. In both scenarios, one of your seats is lost. Either a child would have sat on one of your seats. If a child has sat, then we put him back inside by doing frequency and freeing him. If a child is not sitting, then it is fine, then this seat will be empty. What can we do?"
+  },
+  {
+   "start": 2442.85,
+   "end": 2473.15,
+   "text": "Come out means try on the next seat but Before trying on the next seat We will put the kids who were standing in the corner back in the seat without doing anything for i is equal to zero i less than pull to dot side It is possible that no kid has come No problem, we will put them back as much as they have come PQ dot push as it is will put Because we haven't done anything with those kids We didn't make them sit, we didn't do anything for them Now seat plus plus Seat plus plus Next time"
+  },
+  {
+   "start": 2473.15,
+   "end": 2484.98,
+   "text": "We'll see in the next one. And the main while loop is closed. When will the whole game end? When this while loop will come to know that the PQ is empty. What do you have to return in the end? Seat."
+  },
+  {
+   "start": 2485.46,
+   "end": 2514.34,
+   "text": "In last, you don't get seat. Seat minus 1. Why seat minus 1? Because according to the previous example, suppose in seat number 8, you made the child sit. Now you made the child sit and come out. But you do seat plus plus one more time in last. So when you will exit in last, then this seat will be 9. When you will exit, then this seat will be 9. That's why we have seat minus 1. So seat will be 8. Now you were going to go on 9th seat, but now it is over. That's why we have done 8. So see this is a very good code."
+  },
+  {
+   "start": 2514.34,
+   "end": 2537.65,
+   "text": "We will give you the code today. It is a very good code. We will not say that it is a simple code. It is a very implementation-heavy program. If you get it in an interview, it will take 10 minutes to write this code. It will take 10 minutes even in typing. So, this was the code. We thought that this was a very good question. Rest, we will read the code schedule when we do the recursion."
+  }
+ ]
+}

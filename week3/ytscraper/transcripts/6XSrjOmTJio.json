@@ -1,0 +1,384 @@
+{
+ "video_id": "6XSrjOmTJio",
+ "title": "Today You Will Know Why I Am The Best DSA Teacher | DP Series Episode 14",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1952,
+ "segments": [
+  {
+   "start": 0.78,
+   "end": 24.06,
+   "text": "Today's lecture is a very long and satisfying lecture because today we are doing 4 questions together. In any video before today, we have not studied 4 questions together, we have studied 3 questions together. DP on Stocks is a very famous topic and many people have already studied it. It has 4 questions. Buy and sell starts from 1 and goes up to 4. There are 5 questions but 5 questions are probably in the lead quote premium. I don't have it in the lead quote premium."
+  },
+  {
+   "start": 24.06,
+   "end": 48.21,
+   "text": "1 is easy, 2 is medium, 3 and 4 are hard. So how do people teach this? They teach 1 one day, 2 the next day, 3 the next day and 4 the next day. But this is not the right way to teach. We will teach you all these 4 together. And by teaching together, it doesn't mean that we will teach one by one. No. By the time we teach you YNCELL STOCKS 1, you must have understood so many things."
+  },
+  {
+   "start": 48.21,
+   "end": 77.76,
+   "text": "After this, after understanding 1, no matter how much time it takes, 10 minutes, 15 minutes, 20 minutes, once you understand 1 properly, in 2, 3, 4, you just have to copy and paste. What do you have to do? You just have to copy and paste and change the value of one variable. Whose value do you have to change? You have to change the value of one variable and change one or two lines. Okay? So, I mean, give your full focus to understanding this. Don't think that this is easy. Some people will think that this question is easy. Why are you wasting so much time in this? It could have been like this."
+  },
+  {
+   "start": 77.76,
+   "end": 102.64,
+   "text": "But you don't have to understand this. Your goal is to understand this. So we are getting ready for 4 from 1. Listen carefully to 1. You won't understand 1. You won't understand anything. Okay? So what does the question tell you? What does buy and sell stock mean? That you have been given an array. Okay? You have been given an array. What did you give? Array. Okay. The numbers written in the array, what are those numbers? Those numbers are prices. Prices. Whose prices are they?"
+  },
+  {
+   "start": 102.64,
+   "end": 132.13,
+   "text": "Stocks ke prices hai. For example, agar aapko koi aisa area diya hua hai. 7, 1, 5, 3, 6 aur 4. 0, 1, 2, 3, 4, 5. Har din ye stock ke aapko prices diya hua hai. Har din prices matlab, pehle din ye price hai, dusre din ye, tisre din ye, ye, ye, falana falana prices diya hua stock ke. Acha. Aapka kaam kya hai? Aapka kaam kya karna hai? Aapke paas ek mauka hai. Aapke paas kitna mauka hai? Ek mauka hai ki aap,"
+  },
+  {
+   "start": 132.13,
+   "end": 150.99,
+   "text": "You can buy the stock once. Don't worry about the price, you can buy it no matter how expensive it is. And you can sell it once. How many times? You can sell it once. So what is your job? You will wake up on the 0th day. On what? You will wake up on the 0th day."
+  },
+  {
+   "start": 150.99,
+   "end": 171.92,
+   "text": "Every day you will see the price of the stock. The power you have in the whole day is of one time. You can buy it if you want. For example, if you buy the stock on day 0, then you will get 7 rupees."
+  },
+  {
+   "start": 171.92,
+   "end": 198.38,
+   "text": "You don't have the option to buy. You can buy only one stock. You can sell it if you want to. That is also up to you. You can sell it if you want to. For example, one day you went crazy and sold it for Rs.3 on day 3. How much? You sold it for Rs.3. What was your net profit? It was minus Rs.4. You bought it for Rs.7 and sold it for Rs.3. What was your profit? Minus Rs.4."
+  },
+  {
+   "start": 198.38,
+   "end": 223.3,
+   "text": "You have to find your maximum profit possible. What do you have to find? Maximum profit possible. If you know your maximum profit possible is minus 4 rupees, in that case, you have to return zero. Because why will someone make a profit of minus? Make a profit of zero, don't do anything. So this is your question. Like what should be the answer to this question? You should buy it here. What should you buy?"
+  },
+  {
+   "start": 223.3,
+   "end": 251.41,
+   "text": "You should buy on 1. So, how much did you buy? You bought a stock of 1 rupee. And, you should sell it on this day. When it is of 6 rupee, you should sell it on this day. So, how much is your net profit? You can make a profit of 5 rupee. So, this is your question. Is it right? Let's go. Now, it seems very simple to listen to this. People will think that we will do one thing. Generally, what do we do? This is a real world problem. Generally, when you buy, you want to"
+  },
+  {
+   "start": 251.41,
+   "end": 281.15,
+   "text": "Let's buy at the lowest price. If any person does business, then he wants to buy at the lowest price. And when he sells, then he wants to sell at the highest price. How much? He wants to sell at the highest price. This is what business is. What is the gain in 9-10? Selling price minus cost price. So, we have to reduce the cost price and increase the selling price. So, someone will say, okay, let's do one thing in this. Let's find the minimum value of the array. Okay, brother, find it. So, suppose you found out that this array's"
+  },
+  {
+   "start": 281.15,
+   "end": 300.82,
+   "text": "Someone said that the minimum value is 1 rupee. So we will buy it in 1 rupee. What else did someone say? That we will also find the maximum value of this area. And we will know that it is 7 rupee. Now this is not possible. You will say that 7-1 profit is 6. No. Now you are saying that we will buy on the minimum day. So you buy on day 1."
+  },
+  {
+   "start": 300.82,
+   "end": 319.7,
+   "text": "You are saying that you will sell it on the maximum day. How can it be possible to sell it for 7 rupees? It is not possible that you buy it on 22nd June and sell it on 20th June. So you don't have to travel time. If you buy it on 22nd June, you have to sell it on the next day. You can sell it on 22nd June. Now someone will also say that let's give him a solution. Let's find the minimum value."
+  },
+  {
+   "start": 319.7,
+   "end": 349.79,
+   "text": "They will say, okay, find it. And whatever is the maximum value in front of that minimum, whatever is the maximum value in front of that, we will sell it. So, someone will say, okay, sir, have you bought it in minimum 1? Whatever is the maximum value in front of 1, which is 6, we will sell it at 6. So, I have 5 rupees. The answer is also given in this. So, why don't we make it with this? Why don't we make it with this? Let me explain it to you. See. This logic is sound. This logic means, it should come to mind. It should come to everyone. What you are saying is, let's assume that this is 1. After this, it is 2, 3, and?"
+  },
+  {
+   "start": 349.79,
+   "end": 379.55,
+   "text": "Four. Okay. Zero. Let's do it like this. This is your logic, right? Zero, one, two, three, four, five. Let's assume that this is one minimum value. What should be your logic? Let's say we have found the minimum which is one rupee. Let's buy it in one rupee. The maximum which is four in front of one. Let's sell it in four. Net profit is three rupees. This is your logic. Okay. But now assume that we have written this for four days intentionally. Before this, before one, let's assume that this is written. So,"
+  },
+  {
+   "start": 379.55,
+   "end": 407.66,
+   "text": "And 1 lakh. 100 and 1 lakh is written. Now what will we do? Now should its answer be 3? No. What should its answer be? You should buy it for 100 rupees. And you should sell it for 1 lakh rupees. Means your answer should be 99,900 rupees. How much are you taking out? 3 rupees. That's why it won't work. We tell all this because you shouldn't have any doubt in your mind. That this one is not told. They won't understand. You should know why it won't work."
+  },
+  {
+   "start": 407.66,
+   "end": 422.29,
+   "text": "So you understood that this will not work. It will not work by removing minimum and maximum. You can do whatever you want. Now see. Now we will start explaining this question to you. What is to be done in this? What can you do in this? See. First of all, this question."
+  },
+  {
+   "start": 422.29,
+   "end": 443.66,
+   "text": "This is a question of choice. We have been telling you from the beginning that whenever you see the problem of DP, then see if it is a question of choice, is it a question of free will? Can you think of such an algorithm that will work every time? This means that if this minimum-maximum algorithm worked every time, then this would not have been a question of DP, then you would have done some math type of question. But here we understand that no."
+  },
+  {
+   "start": 443.66,
+   "end": 471.49,
+   "text": "Such an algorithm cannot be made in the beginning that we will buy the minimum and sell the maximum. No, because it is dependent. You are getting to know the price of the stock every day. So you will always have a choice. What will be the choice? How many choices do you have in this question? There is one choice that you buy it. There is one choice that you buy it. And there is one choice that you sell it. What is one choice? That you sell it. You always have this choice."
+  },
+  {
+   "start": 471.49,
+   "end": 497.6,
+   "text": "So what is the way to solve this? Look, buy and sell. There are two transactions. How many transactions are there? There are two transactions. How many? There are two transactions. This is two transactions. Okay, two transactions. Okay, tell me one thing. This is a normal thing that if a person has not bought yet, if a person has not bought yet, then can he sell?"
+  },
+  {
+   "start": 497.6,
+   "end": 524.62,
+   "text": "If a person has not bought, then how will he sell? If you haven't bought anything, will you sell it? You can't sell your hand. So if you haven't bought, then you can't sell. If you have bought, then he has the option to sell. Everyone understands this. This is not a rocket science. The option to sell opens only after buying. There is no option to sell in the beginning. If you don't buy a car, you won't be able to sell it. That's a good thing."
+  },
+  {
+   "start": 524.62,
+   "end": 553.87,
+   "text": "So in this question, what is your limitation? You have been told that you can buy once and sell once. What can you do once? You can sell. What will we do in this? We will make this buy-sell a transaction. What? Once buy, once sell. How much is the total transaction? How much is the total transaction allowed? Two transactions are allowed. Okay? One buy, one sell. Okay. In the beginning, let's assume that when your transaction"
+  },
+  {
+   "start": 553.87,
+   "end": 581.14,
+   "text": "is equal to 2. When your transaction is equal to 2, it means that you have not yet bought. You have not bought anything in the beginning. Till then, the transaction will remain 2. You will only have the option of buying. Only the option of buying will remain open. Yes, yes. Only the option of buying will remain open. Once you buy, the option will remain open. It means you can do two things."
+  },
+  {
+   "start": 581.14,
+   "end": 609.07,
+   "text": "Either you buy that day or you do nothing. It is not necessary to buy, but until you have two transactions, you do not have the option to sell. If you buy, if you choose one day, one day you wake up and you feel that today we will buy, then what will we do? You had two transactions, one buy and one sell. When your buy transaction is done,"
+  },
+  {
+   "start": 609.07,
+   "end": 633.87,
+   "text": "Now, how many transactions are left? One transaction is left. If you have one transaction left, then you don't have the option to buy. You have already bought, which means you cannot buy twice. Now, you have the option to sell or to do nothing. Now, you don't have the option to buy. Let me tell you again."
+  },
+  {
+   "start": 633.87,
+   "end": 659.18,
+   "text": "In the beginning, we thought that we have two transactions. By the time you see that there are two transactions, you only have the option to buy. Buy or nothing. Once you buy, we will reduce the transaction from one to one because one transaction is done. When your transaction is one, you only have the option to sell. Now you don't have the option to buy. Either you can sell or you can do nothing."
+  },
+  {
+   "start": 659.18,
+   "end": 682.78,
+   "text": "If you sell, we will reduce the transaction by one more and make it zero. Now you have zero transaction allowed. If you have zero transaction allowed, now you have only one thing left to do, which is nothing. Now you can't do anything. Now your profit is going to be zero."
+  },
+  {
+   "start": 682.78,
+   "end": 704.34,
+   "text": "Whatever you had to do, you did it. You did buy once, you did sell once. Now you have nothing left to do. So does everyone understand this or not? When we were saying that you have a choice, then what is the choice? How is the choice? We will decide on the basis of this transaction. Two transactions means either buy or do nothing."
+  },
+  {
+   "start": 704.34,
+   "end": 733.89,
+   "text": "One transaction means either sell or don't do anything. Zero transaction means don't do anything and you are not allowed to do anything. So this can be our recursion. What kind of recursion can it be? We will pass two things in recursion. What will we pass? First of all, I. On which day are you? On which day are you seeing the stock? And we will pass a K value. What does K mean? Number of transaction left. What? Number of transaction left. Yes. Yes. Number of transaction left."
+  },
+  {
+   "start": 733.89,
+   "end": 763.17,
+   "text": "According to K, we will decide what choices are available and we will write them. Sorry, the light went off. So, according to K, we will decide what is available and what is not available. If you try to buy someday, suppose you try to buy someday, 0, 1, 2. Suppose this is 1, this is 2 and this is 3. Suppose when I is equal to 0 and your K is equal to 2,"
+  },
+  {
+   "start": 763.17,
+   "end": 787.23,
+   "text": "You decide that you will buy today. So what will happen by buying? What will happen by buying? What will happen by buying? On your purse, you will get minus 1. You will have to do plus minus 1. Or in simple words, you will have to reduce minus 1 from whatever you have. Because you are buying. Buying reduces money."
+  },
+  {
+   "start": 787.23,
+   "end": 806.26,
+   "text": "Assume that when I2 is there, you say that we will sell now. Because when I2 is there and K1 is there, then you say that K1 is there, now we want to sell. When you sell, then you will do plus 3. By selling, the money increases. By buying, the money decreases. This is what happens. Assume that you have 100 rupees."
+  },
+  {
+   "start": 806.26,
+   "end": 832.75,
+   "text": "You said that today we will book for 50 rupees. So your bank will do minus 50. After that you said that okay, now we will sell it for 70 rupees. So your bank will do plus 70. That's why 120 and that's why you will say that it was a profit of 20 rupees. So whenever you buy, then what will we do? Minus AI. By way, minus AI. Your money will be less. When you sell, then what will you add to it? Plus AI. That much money."
+  },
+  {
+   "start": 832.75,
+   "end": 856.59,
+   "text": "will increase. This is your profit. This is your profit. Automatically, when you do this, you get a profit of Rs. 20. You don't have to do anything separately. Is it right? In the beginning, you have this. Is it right? It is Rs. 0. It is minus 50. It is plus 70. How much profit has come? Rs. 20. In the last, whatever profit will be left, whatever maximum profit will be left, we will return it. Come, let's write its recursion."
+  },
+  {
+   "start": 856.59,
+   "end": 885.73,
+   "text": "So let's hope that you understand the entire Ramayan because it is going to be very important in the future. Now you must be thinking that we are doing a little overkill, that means we should not have done this much. There is also a fall loop to solve this. You can do a simple fall loop, but that is not the aim. The interviewer will not ask you this, the interviewer will ask you stock 2 or 3 or 4, okay? He will not ask you 1. That is why I am saying that you are interested in this story, okay? Let's go. INT fun, what will we pass in this? First of all, we will enter vector int."
+  },
+  {
+   "start": 885.73,
+   "end": 916.0,
+   "text": "A, which is your price array. After that, you, N, how many are there? I, I means on which day are there? And, I and T, K. K, okay? For this question, what is K? 2. How many transactions do you have? 2. Because it is written that you can buy once and sell once. So, how much did you get in total? 2 transactions. Okay. First of all, if I equals to N, means you went beyond the whole day, then what is it? You can't do anything with 0, right? After that, what will you do? The stock market is over. It is closed. So, what to do? 0."
+  },
+  {
+   "start": 916.0,
+   "end": 944.69,
+   "text": "Now, if K is equal to 0, what did we teach? If there is 0 transaction left, what does K tell? How much transaction is left? If there is 0 left, then how much will be the profit? Nothing, brother, nothing, nothing. Return 0. It's over. Now you have to decide whether you will sell or buy. K is not 0, it means K is something. K is either 2 or 1. Now you have to decide whether you will sell or buy. What power do you have? So if, if,"
+  },
+  {
+   "start": 944.69,
+   "end": 973.73,
+   "text": "K is equal to 2. Which means this is a case of buying. So you have two choices. The first choice is to buy. What does it mean to buy? Fun, AN, I plus 1. And if you buy, your transaction will be less than 1. You are using a transaction. What will you do? K minus 1. And K minus 1."
+  },
+  {
+   "start": 973.73,
+   "end": 1003.17,
+   "text": "Minus AI. What did we say? When you buy something, you do minus AI in it. So this was the first choice in which you bought. What is the second choice? You will not do anything. You will pass it. Means we will not buy. So if you will not buy, then you go straight ahead. Neither this will change, nor anything will be minus. Two choices. Out of these two, out of these two, whatever is the maximum, we will return it. This is over. Now, now, else, else, else."
+  },
+  {
+   "start": 1003.17,
+   "end": 1026.77,
+   "text": "What does this mean? You are in the sell category. If K is not 0, K is not 0, K is not 2, then K will be 1. Now you have the power to sell. Same thing, first you can sell if you want. A, N, I plus 1 and if you sell, your transaction will be less."
+  },
+  {
+   "start": 1026.77,
+   "end": 1050.13,
+   "text": "Now, if you are selling, then you will do plus AI. If you are selling, then your money will increase. It was less above. In buy, it will increase in less sell. You also have another choice here that you do nothing. You leave it and go ahead. It is not necessary to sell. It is not necessary at all. Leave K as it is. And return maximum of C1 and C2. Take this."
+  },
+  {
+   "start": 1050.13,
+   "end": 1077.7,
+   "text": "Else is over, this is over. Look at this code carefully, stick this code carefully in your mind and understand. Let's come to the main function. What will we do in the main function? Let's come to the main function. int, this is your stock function. This is your stocks function. Vector, you are given only one thing, a. Okay. First of all, int n is equal to a dot size. Okay. Okay."
+  },
+  {
+   "start": 1077.7,
+   "end": 1103.95,
+   "text": "Now, we will make a k from our own mind. How much should be in this question? k means number of transactions are allowed. So, from our own mind, write k is equal to 2. It's done. Now, use it. Now, what will we do? int gain is equal to our function. We will call. How will we call the function? a, n. When will it start? From 0th day. And, pass k. After this, take care of one thing."
+  },
+  {
+   "start": 1103.95,
+   "end": 1128.88,
+   "text": "If this gain is negative, suppose there is no way to make a profit, then what will you do? You won't do anything. Max of zero and gain. We don't need this. We think that the one who is not going to do anything will also work. Let's check this quickly that we don't need to do anything."
+  },
+  {
+   "start": 1128.88,
+   "end": 1157.6,
+   "text": "There is no need to do this. We think that our case is that we will not do anything. It is our choice. Why will we take a negative value? If you don't want to do anything. So if we will not do anything, then we are accepting it. Okay, my internet is gone. Okay, there is no need for this. There is no need for this. If there is, then see. I don't think so. My code has not run. My net is gone. No, no, do this. Do this. If you will not do anything, then you will not do anything. Take this."
+  },
+  {
+   "start": 1157.6,
+   "end": 1181.57,
+   "text": "The question of buying and selling stocks is over. Yes, now this is a recursion. You have to convert it to DP. You have to convert it to tabulation. We don't want to focus on that. You don't have to do anything in that. What is this? There is I and K. So what type do you have? You have to make a DP array of I plus 1 and K plus 1. And you have to memoize it. We are not telling you in that right now because it has been going on for a long time. It is just of 2-3 lines. My goal for you is"
+  },
+  {
+   "start": 1181.57,
+   "end": 1211.04,
+   "text": "There are three problems to be taught in the future. So this problem has become like this. Memoirize in this. Memoirize and then tabulate too. You must have learned that too. But now this problem has happened. Now see how much time it will take to do 2, 3, 4. Let's move ahead. Buy and sell stocks 2. Now come to 2. Buy and sell stocks 2. Read this question. One meaning of the question is. In the last question, how much was it allowed for you to buy and sell? In this, unlimited transaction is allowed. Yes, unlimited transaction means."
+  },
+  {
+   "start": 1211.04,
+   "end": 1238.26,
+   "text": "Buy as much as you want, sell as much as you want. But, it doesn't mean that you buy 3 stocks and sell all 3. No. Sell one by one. It means buy, sell that. If you want, then buy. Then sell. Then buy, then sell. It should be in this order. It shouldn't be that you buy 10 stocks at once and sell them in a line. No, don't do that."
+  },
+  {
+   "start": 1238.26,
+   "end": 1266.78,
+   "text": "Kharido, becho, kharido, becho, kharido, becho. Ye unlimited hai. Ye cheez unlimited hai. Matlab, jo aapko number of transactions tha kya? Number of transactions, pichle question me do tha. Isme number of transactions infinite hai. Matlab, jitne man karat number kharido beta. Lekin order me, order me. Kharidna hai, phir bechna hai. Aisa bhi nahi karna hai ki pehle hi bech diye. Wo to against the rule hai. Matlab, ye wala cheez unlimited hai. Ab ye toh bilkul naya question hai. Iske liye toh phir 20 minute dena padega."
+  },
+  {
+   "start": 1266.78,
+   "end": 1291.55,
+   "text": "You don't have to. You don't have to. In the last question, we learned a small trick to solve it. See, what was happening in the last question? In the last question, we were starting with k is equal to 2. So, when k is equal to 2, you had the option to buy. It was a buy or nothing option. When we used to buy, we used to do minus 1 in this and make it k is equal to 1."
+  },
+  {
+   "start": 1291.55,
+   "end": 1313.46,
+   "text": "Now, when k is equal to 1, then we used to say that now you have the option to sell. Okay. After selling, we used to make it minus 1 again. And when k is equal to 0, then we used to say that now you can't do anything. This is what we were doing. Okay. In this question, we won't be able to do this. You see, the meaning of infinite transaction is not that you pass k to infinite."
+  },
+  {
+   "start": 1313.46,
+   "end": 1339.07,
+   "text": "Then how will the DP array be made? There is no such thing as infinite. If some people are thinking that we will pass K is equal to int max, then the DP array that you made, the DP array that we made, you must have made it, you must have made it with confidence. This was, now from where to bring infinite memory in this, we cannot do that. There is no need to do that. Why don't we do one thing? Tell me one thing."
+  },
+  {
+   "start": 1339.07,
+   "end": 1366.48,
+   "text": "k is equal to 2 only pass in this also k is equal to 2 only pass but someone will say that 2 transaction is not allowed infinite is allowed ok in buy pass k is equal to 2 ok as it is as it is pass now when you buy then you make it k is equal to 1 till there also ok in k is equal to 1 you sell also in k is equal to 1 you sell also but but after selling after selling"
+  },
+  {
+   "start": 1366.48,
+   "end": 1395.1,
+   "text": "Here, instead of doing minus 1, make it again k is equal to 2. Meaning, make it again k is equal to 2. Here, this is done. What do we want to say? In the beginning, you pass k is equal to 2. Keep the same check that when k is equal to 2, we will buy. It's a good thing. After buying, you make it k is equal to 1. It's fine till there too. In k is equal to 1, the same code is checked that k is equal to 1 means sell. But,"
+  },
+  {
+   "start": 1395.1,
+   "end": 1419.09,
+   "text": "After selling, make it again K is equal to 2. Don't make it K is equal to 0. The program will stop from 0. Make it again K is equal to 2. What will happen with that? It will automatically convert to infinite. Why are we saying this? Suppose you had K is equal to 2. You bought 1. This became K is equal to 1. This became K is equal to 1. Means you bought 1."
+  },
+  {
+   "start": 1419.09,
+   "end": 1443.23,
+   "text": "Now you have the option to sell. You sell it again and make it 2 again. Now you have sold one. Now your case has become 2 again. That means you have the power to buy again. If you want, you can buy again and make it 1 again. Then 1 is done. Now you have the power to sell again. If you want, you can sell it again and make it 2."
+  },
+  {
+   "start": 1443.23,
+   "end": 1469.76,
+   "text": "See, this has become a cycle in itself. So, by changing only one word automatically, this two transaction thing will become an infinite transaction. Where to change? Look, buy is as it is. This is a buy, let it go. If you want this, then remove it. It will not be needed because we will not let K0 happen. If you don't want, then don't remove it."
+  },
+  {
+   "start": 1469.76,
+   "end": 1499.15,
+   "text": "By is fine. Cell is also fine. You just have to change one place. After cell, when we were doing this k minus 1, here again pass 2. Here again make it 2. After k is equal to 1, again make it 2. The program is over. We said that it will be very easy to understand 2. It is over. There will not be a single line change in the main function. Here 1 minus is made plus. Your program is over. Go and run it. And go and buy and sell top 2."
+  },
+  {
+   "start": 1499.15,
+   "end": 1527.47,
+   "text": "Let's move on to buy and sell stocks 3. We used to say that all the hard work will be in one. The rest is not even small. It is useless. Both are fake questions. Now come to buy and sell stocks 3. This is a hard question. This hard question means that the lead quote is hard. It is not hard for us. It is not hard for us at all. Don't think of it as hard. Let's read the question 3 and see what it says."
+  },
+  {
+   "start": 1527.6,
+   "end": 1557.02,
+   "text": "You have given the same error. What is this question? You can do at most two transactions. How many? You can do two transactions. You can do two transactions. Now, in this question, the meaning of transaction is opposite. In this question, the meaning of transaction is opposite. The meaning of two transactions. One transaction means this one. Buy, sell. These people, the lead code people,"
+  },
+  {
+   "start": 1557.02,
+   "end": 1576.37,
+   "text": "One transaction counts. And one more buy and sell. One more buy and sell. This is counted as one transaction. So, you have two chances to talk about this. That means, buy and sell that once. Buy and sell that twice. So, this is the question."
+  },
+  {
+   "start": 1576.37,
+   "end": 1605.89,
+   "text": "This question is a very important question. This question is also a very important question that we will also tell you. Now, for their transaction, our transaction, what was our transaction? Buy means one transaction, sell means one transaction. So, if you are allowed two, means you get one buy, one sell, one buy, one sell. So, what is the total? Our, which we were writing K, you are allowed total K is equal to four. Yes, you are allowed K is equal to four. Now, now, now,"
+  },
+  {
+   "start": 1605.89,
+   "end": 1617.89,
+   "text": "When you will start from k is equal to 4. So in the beginning. Now see. Now the code which we wrote in the first one will break. Because what the first code is checking? It was checking only 3 things. k is equal to 0."
+  },
+  {
+   "start": 1617.89,
+   "end": 1642.93,
+   "text": "K is equal to 1, K is equal to 2. In this, he used to say nothing. In this, he used to say sell. In this, he used to say buy. But now, we have come to K is equal to 4. Because in total, how many things are allowed? 4 things. You can buy and sell 2 times. 4 things are allowed. So, we have to change it a little. Let's see what we have to change. In the beginning, K is equal to 4 will remain. You can only buy. You can only buy here."
+  },
+  {
+   "start": 1642.93,
+   "end": 1669.76,
+   "text": "By buying, you will make it K is equal to 3. Now, if you have bought once, then you can sell it. By selling, you will make it K is equal to 2. Now, you will make it less in sell. Now, in sell, it is not like you will add it again. That was done in infinite. Now, you will make it normal. What you were doing, less in buy, less in sell. K is equal to 2 has come. You can buy again. After that, you will come to K is equal to 1. K is equal to 1, you will sell again."
+  },
+  {
+   "start": 1669.76,
+   "end": 1699.55,
+   "text": "K is equal to zero. And once K is equal to zero, it will end. This is the cycle of this. So, notice one thing. Here, you can buy. Here, you can buy. Meaning, in 4 and 2, when K is equal to 4 and 2, you can buy. And here, sell. And here, sell. Meaning, when K is equal to 3 and 1, you can sell. Can you see anything? When, when,"
+  },
+  {
+   "start": 1699.55,
+   "end": 1728.54,
+   "text": "K is even, you can buy. When K is odd, you can sell. See this. See this. This is it, right? Nothing else is happening. When K is even, you can buy on 4 and 2. 4 and 2. When K is odd, you can sell. On 3 and 1. This is it, right? So, do this. What do you do? Remove your code. Remove your code."
+  },
+  {
+   "start": 1728.54,
+   "end": 1758.0,
+   "text": "Let's change some things. First of all, the cell we did for infinite, let's make it k-1 again. Now, now, let's leave k is equal to 0. Here, instead of checking equal to 2, k modulus to equal equal to 0, means even. What does this mean? Even. Yes, yes, even. And, if not, let's leave the else one the same. Look at this code. Look at this code. And,"
+  },
+  {
+   "start": 1758.0,
+   "end": 1786.93,
+   "text": "In our main function, here we had kept k is equal to 2. Here we have kept k is equal to 4. Here we have kept k is equal to 4. This is the end of the code of buy and sell stocks 3. I had to change the code this much. I had to understand this much. So, there must not have been any problem in this. This is my full hope. This is a hard question by the way. This is a very hard question. Let's go to 4. Let's go to 4. Buy. Let's go to 4. Buy. Sell stocks."
+  },
+  {
+   "start": 1786.93,
+   "end": 1816.99,
+   "text": "4. Let's see what 4 will give. It will take less time in 4. It will take less time in 4. What does 4 give? Okay. 4 says same is less. Now, now, now. In 3, in 3, how much? We are talking about the transaction of the lead code. 2 transactions were allowed. How much? 2 transactions were allowed. Transaction means the lead code. By cell counts 1 transaction. So what did we do to it? We made k is equal to 4. We did 2 into. By cell, by cell, 2 into will happen. This question, what does it tell you?"
+  },
+  {
+   "start": 1816.99,
+   "end": 1846.43,
+   "text": "You are allowed K transactions. In this question, you will get a K. What does the transaction mean? What does the lead code understand? It understands buy and sell as one transaction. So what will we do? We will do nothing. We will directly do K is equal to K into K into 2. And we will print the code of 3. The game is over. This is what he is saying. Only this has changed in it. In 3, you were allowed 2. In our world, 2 into 2. 4 was allowed."
+  },
+  {
+   "start": 1846.43,
+   "end": 1875.86,
+   "text": "In this question, K transaction is allowed. So how much will be allowed in our world? K into 2 transaction. The rest is the same. What difference does it make? When you solve for K is equal to 4, then won't the code K is equal to 8 work? Won't the code K is equal to 8 work? Absolutely it will work. Why won't it work? What to do? Come simple. In your main function, take out your main function. Where is the main function? Now instead of K is equal to 4, and now in this function, you will also get K. You will get K."
+  },
+  {
+   "start": 1875.86,
+   "end": 1905.42,
+   "text": "You will also get it. Simply what to do? Remove the int here. And K is equal to K into 2. It is over. Buy and sell stocks 4 is over. As it is, let the recursion remain. It is over. Buy and sell stocks 4 too. How many minutes did it take? It took 2 minutes to solve a hard question. So that's why we said that understand 1. 2, 3, 4. It will fall like that. It will fall like a domino. So go and solve all the questions. What to solve? First solve."
+  },
+  {
+   "start": 1905.42,
+   "end": 1930.0,
+   "text": "And your job is to memorize the first code in DP and do tabulate. You should also do tabulate by yourself. We didn't tell that today because that was not my main focus today that you have to teach memoization. No, we have taught that. You have to teach them how to build anything, how to think anything from the ground up. So if you start solving 4 directly, then you think what is he teaching? Right? If we teach it separately that first teach 1."
+  },
+  {
+   "start": 1930.0,
+   "end": 1951.5,
+   "text": "Now until you learn 1, the next day you come to learn 2, then you know that you have forgotten 1. Now you have learned 2, then the next day you took a break to learn 3, then you forgot everything. So you should not do it like that. That's why my goal was that in one slot, one to four, we will tell you in one shot. So solve this and now 15 days of DP is over. You have learned DP like work. What work like work? You have learned very good DP. Okay, see you in the next one."
+  }
+ ]
+}

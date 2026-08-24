@@ -1,0 +1,274 @@
+{
+ "video_id": "lyZp-49pdzQ",
+ "title": "DSA PATTERNS Episode 14 Sliding Window Pattern Revision (Part 1)",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1532,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.94,
+   "text": "So today we are doing the revision pattern of the sliding window. Some people will say that we wear the same t-shirt everyday. So it's true that we haven't taken bath for 2-3 days. But anyway, what is this today? It's a revision video. It's a revision video. For those who are coming on the channel for the first time, it's a summary video. In 10-20 minutes, we will slide the sliding window inside you. And we will say that if you are coming on the channel for the first time, then watch the rest of the video first. It's not much. There are 3-4 videos. If you watch them and come here, you will understand more."
+  },
+  {
+   "start": 27.94,
+   "end": 54.78,
+   "text": "Even if you don't want to see it, you can see it here. 50-60-70% you will understand. Okay. Come. When we started sliding window pattern, we told you a flow chart. Let's see that flow chart quickly. What is a flow chart? Question should be of array or string. It is not of link list. We see one or two questions of link list in which sliding is applied. But mainly, the question should be of array or string."
+  },
+  {
+   "start": 54.78,
+   "end": 81.01,
+   "text": "This is the first condition. If this does not happen, then the sliding window will not work. Okay. What is the next condition? Subarray or substring or window. This should be the question. You have to find this. Meaning, you have to find something from this. You have to find this. If you don't find this, then the sliding window will not work. Okay. Now, what do you have to find in this? In subarray,"
+  },
+  {
+   "start": 81.01,
+   "end": 110.56,
+   "text": "It won't be that the subarray has to be printed. There is no such question. You have to find something about the subarray. For example, you have to find the longest, the shortest. And you have to find the sum. This is in the plus. This is one part. Longest, shortest. You have to find the sum of that. You have to find the frequency. You have to find something like at least k. You have to find something like at most k."
+  },
+  {
+   "start": 110.56,
+   "end": 140.27,
+   "text": "Either exactly k, such a condition has been given. To find the average. To find its maximum or minimum. Means, take all the arrays and tell the length of all the arrays. Either tell the sum of all the arrays. Either at least k should be in it. Exactly k should be something like this. At most k should be something like this. So, what will you get? Sliding window. There is a 90% chance that you will get it. So, after reading the question, this is how it is understood."
+  },
+  {
+   "start": 140.3,
+   "end": 169.54,
+   "text": "It is possible that you have not written the word but when you think of the question in Hindi, then you will have to find it. So, think of any question in Hindi that what is the question asking? The name is written but what is the question asking? Like fruits into basket, in that it was not written anything. In that it was said that it is a plant or something like that. But what did you have to find? What did you have to do? You have to keep that in mind. This is the flowchart. Now, there are four steps in the sliding window. There are four steps to solve any question."
+  },
+  {
+   "start": 169.54,
+   "end": 196.54,
+   "text": "Step 1 is to identify whether there is a sliding window or not. So, this you can identify from the flowchart. Very good. What is step 2? It is fixed that there is a variable window. So, if it is written in the question that you have to find the window of k size or you have to find the subarray of k size or you have to find the substring of k size, then it is fixed. Whatever you are given, whether you are given k or not, call it."
+  },
+  {
+   "start": 196.54,
+   "end": 226.19,
+   "text": "then verify that the size is 3 only. Fix means that the size of the window remains the same. If the size remains the same and we keep pushing the window, then it is fixed. If nothing is written like this, if it is said to find the longest, or the shortest, or something like this, then it is a variable. It is very simple, you will understand by looking at it. Are you saying that the size of the window should be this, or the size of the sub-array should be this? If you are not saying, then it will be a variable. There is no need to use your brain. What is step 3? What is step 3?"
+  },
+  {
+   "start": 226.19,
+   "end": 255.87,
+   "text": "What is the information of the window? The information of the window. What does this mean? Those who have seen the video must be able to understand. Those who haven't seen it. Suppose you are in an array and a window is made. Window means you are in a sub-array. So you are in a sub-array. Okay. You are in a sub-array. Your low is here. And high is here. So your window is this. This is your window. Yes. What do you understand from this window? When we make this window, what are we doing in this window?"
+  },
+  {
+   "start": 255.87,
+   "end": 285.22,
+   "text": "In this window, it may be 1, 2, 3, 4, 1. It may be that you want to find the sum of this window because the question is asking you. It may be that you want to find the max of this window. It may be that you want to find the min of this window. It may be that you want to find the average of this window. Anything can happen. It can happen according to the question. It may be that this is a string and you want to find the frequency of the character. What do you want to do with the character? You want to find the frequency. It may be that you want to find the number of unique characters. The question is asking you to find it. All these things,"
+  },
+  {
+   "start": 285.22,
+   "end": 313.84,
+   "text": "It is the information of the window. So you have to understand that what is it asking? Find the longest substring. Okay. But what should be in the find the longest substring? Means what should be in the substring? In that substring, all the letters should be unique. In that substring, all the numbers should be negative. All the numbers should be even. This is the information of that window. So you have to understand this. And how will we remove this? You have to understand this too. Okay. Step 4. Step 4. Step 4."
+  },
+  {
+   "start": 313.84,
+   "end": 343.07,
+   "text": "when you move that window, when you slide that window, sliding means the window is moving like this or this is moving like this or this is moving out like this so how will you pass the information? how will you change it? how will you change the information? for example, you have an array of 100, 200 and 300 now your window is here, now your window is this now suppose your information was sum so you will write the sum of this as 300"
+  },
+  {
+   "start": 343.07,
+   "end": 369.94,
+   "text": "But when this window goes from 100 to here, when your window becomes 200 and 300, then its sum will be 500. How will you get this? You will get the existing sum, which was 300. You will subtract 100 from it, which was the value of the low. And you will add the new one, which is 300. So this is 300 minus 100, 200 and 500. You have to do it in such a way that when the window moves, its information"
+  },
+  {
+   "start": 369.94,
+   "end": 399.94,
+   "text": "How do we find the new window? We will not do this by traversing the information again and again. Suppose there is a character's frequency, how will we do it? Suppose the character is stored in the HashMap. It is A1. So the character on which you are moving, the one on which there is a low, remove it. Either reduce its frequency to zero and remove it. The new frequency which is high, add it to the HashMap. If its frequency is not there, increase it. If it is not in the HashMap, write it as 1. So you have to understand how the information will change."
+  },
+  {
+   "start": 399.94,
+   "end": 429.41,
+   "text": "Now, the two types of question, fix and variable. In fix, we don't think that anyone will have any doubt, but let's tell them quickly. Fix. There is a pattern of fix. There is a pattern of fix window question. Now, what does fix window mean? What do we say? Whenever you are told that there is a window of particular size, means, there is a window of k size. For example, k is equal to 3. Just for example. So, from where will your window be made? Now, it is obvious that if this is an array,"
+  },
+  {
+   "start": 429.41,
+   "end": 455.04,
+   "text": "If this is an array, then this is 0, 1, 2, 3, 4, and 5. If your k is 3, then your window will start from the start. Where will it go from the start? If you want to make it of 3 sizes, then it will go till here. So, what are you able to see here? Now, what happens in the window is that its starting is low. That means, where is the window starting from? And its end is high. This happens. Now,"
+  },
+  {
+   "start": 455.04,
+   "end": 484.53,
+   "text": "You have to correct the start. It is not said to start from the middle of the array. There is no other way. So, always low is equal to 0. Where will the high be? If the low is 0 and the window size is 3, then where will the high be? The high will be at k-1, where 2, 2, see. If the high stays here and your low stays here, then your window size will automatically be 3. Always, always in a fixed window. This will be your starting point. Okay?"
+  },
+  {
+   "start": 484.53,
+   "end": 513.52,
+   "text": "After that, in the fix, the starting window means low is equal to 0 and high is equal to k minus 1. Take out the information of this. Taking out the information of this means that the information also depends on that if it has a sum, then you run i from low to high. Run it. Make i plus plus. Write it in 4. And whatever information it tells you, suppose its information is a sum, then in a sum,"
+  },
+  {
+   "start": 513.52,
+   "end": 543.02,
+   "text": "is equal to sum plus ai. If it is saying that we have to get its maximum, then take a maxi variable and calculate max in it. Whose max is it? Maxi and ai. So, it is simple. You traverse the array. Means, if it wants to talk in the whole array, then what to do? You traverse the array, it will do it. So, store its information. Whose? Of the first window. After that, now we will start the work. Now, we will move high. See."
+  },
+  {
+   "start": 543.06,
+   "end": 572.11,
+   "text": "while high less than n we will write why we will write because every time we have to move the window every step we have to move the window and not only one we have to move both let's see what we will do first of all first of all now you have the answer of this window the first window when low is equal to 0 and high is equal to k minus 1 we have told that we have to remove that now write this in answer now it also depends on what answer you are asking answer from you"
+  },
+  {
+   "start": 572.11,
+   "end": 600.64,
+   "text": "He is asking us to give the maximum in the information of all the windows or the minimum in the information of all the windows according to that. Suppose he is asking you to get the sum of all the windows, give the maximum from that sum. So do max. And where is the answer to this window? The answer to this window is in the sum. So first of all, do this work. First of all, you have to do this work. After that, now let's move the window and pass the information that we had taught."
+  },
+  {
+   "start": 600.64,
+   "end": 631.52,
+   "text": "First of all, the low is at 0, so when you move the low, the low was here earlier, now you want to move the low to plus 1. So first, remove the low from the information. How will you remove it? Again, it will depend on what your information is. For example, your information is sum. So, sum is equal to sum minus array of low. Is it simple? And low plus plus. Very good. Is it done? Remove the low, increase the low, then it is fine. Now,"
+  },
+  {
+   "start": 631.52,
+   "end": 659.23,
+   "text": "we have to increase the high, we have to increase the high to get its information, similarly the information will pass so increase the high and take its information don't remember the sum, the sum can be a question, it can be an average, it can be something else, a product, so according to you sum plus array of high but, but, but in between this, in between this step and in between this step there is an edge case"
+  },
+  {
+   "start": 659.23,
+   "end": 689.1,
+   "text": "It is possible that when you came in this loop, when you came in the while loop, then high is equal to n minus 1. It is possible that high is in the last. As soon as you increase the high, if you increase the high by plus plus, then high is equal to n. There is no n index in the array, there is only n minus 1 in the array. So this will be wrong, what you are doing will be wrong. That is why, check here before doing this, if high equal equal to n break. Break. Check it and close it."
+  },
+  {
+   "start": 689.17,
+   "end": 718.7,
+   "text": "After doing all the questions, you must have got the answer. Return the answer. This is the template for any fixed sliding window question in the world. What did we do first? First, we took out the answer of the start window. After that, we are calculating. What did we do first? We wrote our answer in the start window. We increased the low."
+  },
+  {
+   "start": 718.7,
+   "end": 748.27,
+   "text": "means by removing it increase it then increase the high and include it in the answer here this is the template of any fixed window very good so in this we don't think there will be any doubt it is very simple this is the hard question only that information changes now come now come to the variable this is the hard now come it is not hard means it is a little hard it is not hard those who watch the video it is not hard ok come to the variable now in the variable"
+  },
+  {
+   "start": 748.62,
+   "end": 776.56,
+   "text": "What were we doing in the fixed house? We were keeping low as equal to 0. And we were keeping high as equal to k minus 1. But why is it a variable? Because we haven't given you k. It is of this size. So how will you do this? You won't be able to do this. That's why you don't have to do anything in this. You have to keep low at 0. Because start will be from 0. And you have to keep high at 0. Keep high at 0. Start we will do from 0. Slowly we will increase or decrease. We will see. Variable means that window"
+  },
+  {
+   "start": 776.56,
+   "end": 806.48,
+   "text": "It is not a fixed size window. It can increase or decrease. How will the window size decrease? When you increase the low. And how will the window size increase? When you increase the high. Right? Now your window is this. Here it is low. Here it is high. It is possible that you increased the low and brought it here. So the window is reduced. So the window size is reduced. It is possible that your high is here. And you increased the high and brought it here. So your window size increased. It increases like this. Okay? You don't have to do anything simple. Where is our high now?"
+  },
+  {
+   "start": 806.67,
+   "end": 835.82,
+   "text": "High is equal to 0. We will take the high from 0 to n. We will keep increasing the high. How will we increase it? We will increase it by loop. So, don't write while loop if you don't understand. Write it simple. With the help of for loop, we will increase the high every time. There is no way to increase the high. It will increase. Before doing all this, you will think about the information. Let's go. What is the first thing to do? Include the high in the answer. In the answer, keep increasing the high."
+  },
+  {
+   "start": 835.82,
+   "end": 861.54,
+   "text": "So let's increase it and include it. First of all, in the answer, sorry not in the answer, whatever information you have. Information means sum of the window. In the information, include the high. Include the high. Do the first thing without thinking. Include the high means if there is a sum, then add AI to the sum. If there is a product, then add AI to the product."
+  },
+  {
+   "start": 861.54,
+   "end": 893.14,
+   "text": "If there is a frequency, then add that letter in the hash map which has high. First of all, did you understand? Very good. Now, now see. Now, what do you have to do? Now you have to decide. Now what do you have to decide? Information, what you have done now, calculate. Information, is it right or wrong? Is it right or wrong? It is wrong. What does this mean? How will this be decided? This is the most important part of the question."
+  },
+  {
+   "start": 893.17,
+   "end": 924.22,
+   "text": "Is the information right or wrong? How will you know if the information is right or wrong? You will understand by reading the question. For example, you have been told to find a window in which a person is standing. What have you been told? That there are a lot of people standing here. From the line. Okay? A lot of people are standing. You have been told that this is the person's area. Isn't it? It happens like this. You have been told to find the longest sub-area. That is, the longest sub-area possible."
+  },
+  {
+   "start": 924.22,
+   "end": 954.46,
+   "text": "In which the total weight of a person is 100 kg. Every person has some weight. For example, he has 20, he has 50, he also has 50. Like this. It is said, find the longest window in which the weight is exactly 100. Like we said, exactly K, at most K. So, it can be like this. That the weight is 100. Now, what will be your information in this? What information do you have to find? Weight. Total weight of the window. So, what will be your information in this case?"
+  },
+  {
+   "start": 954.46,
+   "end": 982.86,
+   "text": "total weight of window from low to high. We have taken out the information by including low and high. When is your information correct? Your information is correct means according to the question. When? Whenever your information means the weight you have taken out is equal to 100. So this is correct. This is correct. This is the question. Okay. When is your information wrong?"
+  },
+  {
+   "start": 982.86,
+   "end": 1010.7,
+   "text": "Your information is wrong in only two cases. If your information is less than 100, which is your weight, or if your information is more than 100, these are both wrong information. These are both wrong information. This is correct information. First of all, you should understand when the information is correct and when it is wrong. Now, there is a part."
+  },
+  {
+   "start": 1010.7,
+   "end": 1041.34,
+   "text": "Where are we now? We are here, in this line. We are making this drawing for you to understand. If the information is wrong, what is the general logic? What is the general logic? After this, let's write a part here. Till the time, till the time, information is wrong, wrong, till then, till then, increase the low. Increase the low. Means shrink the window. Shrink."
+  },
+  {
+   "start": 1041.34,
+   "end": 1070.82,
+   "text": "Shrink. Okay. It's not that simple. It's simple. What should I say? Keep increasing the low until the information is wrong. What does that mean? But when is the information wrong here? Information is wrong in two cases. But along with this, you also have to think that by increasing the low, will we be able to correct that information or not? Meaning? The purpose of increasing the low is that if the information is wrong, then we want to correct it. Now see. What does increasing the low mean? That you"
+  },
+  {
+   "start": 1070.82,
+   "end": 1100.45,
+   "text": "First of all, what are you saying? When you increase the low, you will remove the low from the information and then increase the low. So if this man is standing, suppose this man, here is the low. His weight is 20 kg. And this other man, his weight is 50 kg. And here is high. Okay? Now what will happen in your information? Now what will come in your information? 20 plus 50, we said, information means the sum of everyone's weight. So his answer will be 70. This will be the answer to the information. Okay. Now what are we saying?"
+  },
+  {
+   "start": 1100.45,
+   "end": 1127.71,
+   "text": "Is this information correct? No, it is not correct. 70 is less than 100. 100 is correct. So should we increase the low in this case? The purpose of increasing the low is to correct the information. Because we will increase the low till the time the information is wrong. But think about one thing. Increasing the low means that you will have to reduce this 20 to your 70. Only then you will be able to increase the low. Think about one thing. 70 is already less than 100."
+  },
+  {
+   "start": 1127.71,
+   "end": 1156.1,
+   "text": "You are saying that we will keep increasing the low. What will happen by increasing the low? What will be the difference in the information by increasing the low? Information will be reduced in this case, right? By increasing the low, your 70 will not be reduced further. If the 70 is reduced further and becomes 50, then it will also be less than 100. If it is reduced to 30, then it will also be less than 100. So here the information is not seen to be correct. No, no, it is not seen. Something is already less. To correct it, there is a need to increase it, right? There is no need to reduce it."
+  },
+  {
+   "start": 1156.1,
+   "end": 1183.36,
+   "text": "If you keep reducing it, then it will never be right. That's why in this wrong case, there is no benefit in reducing low. And where there is no benefit, we don't work. Okay. Did you understand or not? In the simplest way possible, we have told that what will happen by increasing the low? By increasing the low, the weight will be less. You are saying that your weight is already less than 100. So why are you increasing the low? Now you should not add more people that it should be 100. We have to do 100 on 70."
+  },
+  {
+   "start": 1183.36,
+   "end": 1213.49,
+   "text": "So will you want to add something to it or decrease it? You will want to add something to it. But by increasing the low, it is decreasing. In this case, this logic has failed. So there is no need to do this. When is there a need to do this? When is it? Assume. Assume. Assume that this is your array. Okay? This is your 70. And this is your 50. Assume. Right? So now where is your low? Now your low is here. And your high is here. Okay?"
+  },
+  {
+   "start": 1213.71,
+   "end": 1242.37,
+   "text": "Now see, what will be the information of this window? The information of this window will be 120. Yes. Is this wrong? Yes, it is wrong. Why? Because it is greater than 100. We saw two cases where it was wrong. Now, can it be useful to increase the low? Yes. Why? Because if we want to make 120 to 100, then we will have to subtract something in it. That's why it will happen. We don't know how much it is. So, we will subtract something. That's why we will reach near 100. How will we get the right information? You have 120. If you want 100, then you will have to subtract a little."
+  },
+  {
+   "start": 1242.37,
+   "end": 1272.91,
+   "text": "That's why. And what happens when you increase the low? The same thing happens, it gets subtracted. In this case, we will keep increasing the low. Now, let's see how to write this. What did we say? Till the time it is wrong, we will increase the low. In this hope, there was one more line missing in this. In this hope that information becomes correct."
+  },
+  {
+   "start": 1272.91,
+   "end": 1303.07,
+   "text": "That's why we didn't increase it in less and we are increasing it in more. So how do we write this? Write this. How long do we have to increase it? Until the information is correct, right? So while, or till the information is wrong, we will increase it. This will be better understood. While, whatever your information is, whatever your information is, while information is wrong. Wrong. Till the time it is wrong, now when you write it in the code, then it is possible that your sum is greater than 100. This is possible because according to this question,"
+  },
+  {
+   "start": 1303.07,
+   "end": 1333.39,
+   "text": "There were 3 cases. Sum equal to 100. Very good. Sum less than 100. No need to do this. But sum greater than 100. So till the time sum is greater than 100. Till then. Till then. What will we do? First of all. Sum is equal to. Sum minus. Array of low. Take out low from information. Low plus plus. That's it. When will this work? When will this work? Till the time your sum is greater than 100. Till then. Till then we will keep reducing the sum. And keep increasing the low. Now as soon as it breaks."
+  },
+  {
+   "start": 1333.39,
+   "end": 1363.47,
+   "text": "as soon as it breaks then comes third and last step third and last step now now here in this part if if information if information is correct if it is correct if it is correct or if it was correct before then then remove the length of window how to remove the length? high minus low plus 1 not the length of low and high we are not doing any math in this"
+  },
+  {
+   "start": 1363.47,
+   "end": 1392.14,
+   "text": "your 0, 1, 2 if low is here and high is here then its length will be 2-0, plus 1, 3 okay remove the length and add this length to your answer as per your convenience if you have asked for maximum then do maximum if you have asked for minimum then do minimum anything that depends on your question and close the while loop close the while loop close the while loop and that's it, it will come be comfortable and return the answer let's revise it again"
+  },
+  {
+   "start": 1393.14,
+   "end": 1423.33,
+   "text": "keep increasing the high keep increasing the high one by one from the while loop in the information keep including the high keep including the high after that till the time till the time the information is wrong wrong wrong wrong and means it can be right to increase the low there is hope whether it can be right or not is a matter of time but there is a little hope from the low that it can be done by increasing the low"
+  },
+  {
+   "start": 1423.33,
+   "end": 1454.45,
+   "text": "there is hope till then in this part till then increase the low first remove it then increase it then do it after this next part if information is correct it may or may not be correct it may or may not be correct people are not gods we are not gods it may or may not be correct information if it is correct if it is correct it is correct"
+  },
+  {
+   "start": 1454.67,
+   "end": 1484.9,
+   "text": "include it in the result. Result means, take its length, whatever you cut, include it in the result. And, close the while loop. And, return the answer. Any world's sliding window variable problem happens with this flow chart. It happens with this template. This is a template. Whatever question we have done, 1, 2, 3, 4, 5, 6, 7, 8. We have done 8 questions. By changing one line or two lines,"
+  },
+  {
+   "start": 1484.9,
+   "end": 1513.49,
+   "text": "It is similar, one line or maximum two or three lines. Only then it is possible to write something above and something below. Changed the information question by question. To decide whether the information is right or wrong, I had to write more than two lines. But 70% will be this template. Not even 70, 80%. 80% template will be this. So if you are watching this video till here, congratulations. Fixed and variable, you have learnt. We will practice one to two questions from the pattern sheet, which you will get in the description."
+  },
+  {
+   "start": 1513.49,
+   "end": 1528.91,
+   "text": "you will get the sliding window. If you will explain the sliding window to an interviewer, then he will be happy that yes, the kid is fast. Right? So, this was the revision and the link list is going to start from tomorrow. The pattern of the link list means not the topic of the link list. So, come regularly from tomorrow and be consistent."
+  }
+ ]
+}

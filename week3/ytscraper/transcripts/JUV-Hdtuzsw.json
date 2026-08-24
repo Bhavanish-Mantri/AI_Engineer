@@ -1,0 +1,314 @@
+{
+ "video_id": "JUV-Hdtuzsw",
+ "title": "DSA PATTERNS Episode 23 | Kadane’s Algorithm: Most Important Interview Question",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1677,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.76,
+   "text": "If you have come to this channel by mistake, then congratulations. And congratulations to all my students. Today, in DSA Patterns, we will do Cadence. We will finish Cadence almost. Only revision will be left. It started yesterday or the day before yesterday, so it will end today. How will it end? You don't have to write the cadence algorithm. You have to read it pattern-wise so that a new question is made. There is no benefit in writing the same question. We will do 3 questions. 3 will remain 2. Yesterday, 3 were done. Today, 3 will be done. In 6 questions, you will clear the whole cadence. There will be no question of cadence that will not be made by you."
+  },
+  {
+   "start": 27.76,
+   "end": 48.43,
+   "text": "We will use the same template. We will not tell you anything new which we didn't tell you yesterday or the day before yesterday. We will use the same template which we told you yesterday. We told you about best ending, minimum, maximum, product. We told you about what is best ending, how best ending is shifted, how it is stored in the result. Using the same things, the question will be solved. We will not tell you anything new. This question, maximum with one deletion."
+  },
+  {
+   "start": 48.43,
+   "end": 77.26,
+   "text": "I am giving a disclaimer, watch it completely. The question is a bit complex. We will repeat it in the video that it is complex. But if you listen to it completely, you will understand it. And if you don't understand it, then keep watching it. Watch it and then forget about it in a week. If you understand it, then it will become a thing of your life that you understand it. Okay? Don't watch it. It will take a lot of hard work. It will take a lot of hard work to make it simple and explain it to you. Right? So watch it. Rest, iPad notes, code link, pattern link, you will find them somewhere in the description. Like it and let's start quickly."
+  },
+  {
+   "start": 77.65,
+   "end": 106.19,
+   "text": "See, the first question is 99% the same as the first question of the previous question of one twist. Yesterday, we had done a question whose name was Max Subarray, right? Okay. In this question, it is the same. It is Max Subarray. But there is a small twist. One deletion is allowed. What is allowed? One deletion is allowed. What does this mean? If we look at yesterday's question, in this array, what will be the maximum sum subarray if we use caddy? You will know that this subarray,"
+  },
+  {
+   "start": 106.19,
+   "end": 135.79,
+   "text": "0 plus 3 is equal to 3. Your maximum sum will be sub-array. Very good. But, now what does this question tell you? That you do the same thing that you were doing, right? Make a sub-array whose sum is good, give it. But, in the process of making sub-array, you have a power, option, power, whatever it should be called, you can ignore one element. What can you do? Ignore or delete, means you can't count its sum. This will especially benefit the negative number that,"
+  },
+  {
+   "start": 135.79,
+   "end": 165.63,
+   "text": "Suppose there is a negative element, and you feel that your whole array is working fine, but in the middle, a negative element comes and spoils everything. So, you ignore it. For example, if you take this whole array, 1, minus 2, 0, and 3. Now, what is the total sum of this? 1 minus 2 minus 1, and this is 2. Now, since you have power, you ignore this negative number. Ignore it, don't count it. Now, what will be its sum? 1 plus 0 plus 3, which is 4. So, you have to return 4 in the answer."
+  },
+  {
+   "start": 165.63,
+   "end": 194.64,
+   "text": "See, you have an option. Don't do it like you have to delete. No, no, no. You don't have to do it. It's an option. If you feel like it, then do it. If everything is positive, then why would you do it? If you think you need it, then do it. Okay. Let's solve it with yesterday's template. What did yesterday's template say? First of all, best ending. What should you do with best ending? Define and clear it. What did define and clear mean? Think in your mind, what does best ending signify?"
+  },
+  {
+   "start": 194.64,
+   "end": 214.69,
+   "text": "What does best ending normally signify in maximum sum? Best sum possible at any severity ending at index i. This is what we used to do."
+  },
+  {
+   "start": 214.69,
+   "end": 237.33,
+   "text": "on every index i, we will see that how many variables are ending on that index i and what is the best result in that and we will see that, if we see on every i, we will get the answer so on top of best ending, this was the meaning and this will be the meaning for the rest of the life the meaning of best will change according to the question the meaning of best ending will be the same, in theory this is the meaning but the meaning of best will change ok, now see"
+  },
+  {
+   "start": 237.81,
+   "end": 268.13,
+   "text": "In maximum sum subarray, how many best endings were possible? Only one was possible. Why? Because you didn't have any option or power in it. You just needed a best ending which would give maximum sum till now and we can use it in our own. So only one was possible. Here you have an option. Here you have an option. Who gave you this option? The option has given you a question. That you can delete. Due to this, in any index of any kind, on any index i, suppose a lot of subarray is ending here."
+  },
+  {
+   "start": 268.13,
+   "end": 295.47,
+   "text": "How many answers are possible? How many best answers are possible? One is possible that you don't do any deletion. Don't do any deletion. Means till now, don't delete anything. There is no need to delete anything. We will read it to everyone. Okay. Don't do any deletion. This answer is possible. What is another answer possible? Exactly one deletion. Do one deletion. What have you done? Do one deletion. One is possible and the other is possible."
+  },
+  {
+   "start": 295.47,
+   "end": 322.08,
+   "text": "There is nothing other than this. Maximum sum is, there was only one possible, that the maximum sum we have to take, there is nothing other than deletion and addition. So take one, here you will have to take two because you don't have an option in the question. Either you don't do any deletion, or you do it as you normally do, or you do one deletion, do one deletion anywhere and give the answer. It is possible that this line has not been deleted, the previous three element one has been deleted, but in the subarray there is only one deletion. Okay, now come."
+  },
+  {
+   "start": 322.08,
+   "end": 351.55,
+   "text": "Now when we understood the best ending, how it will be, where it will be, after that what we used to do? After that we used to write the initial values. We used to think that if there was only one element in the array, then what would be your best ending? So see, in this we think of two types of variable names, no deletion, no delete. Now tell me what is the meaning of no delete? That nothing has been deleted till now. So if nothing has been deleted and its value is 1, whatever it is,"
+  },
+  {
+   "start": 351.55,
+   "end": 371.01,
+   "text": "So what will be your best possible answer? It will be 1, right? How much can be the subarray of i is equal to 0? It can be 1. There is only one element in it. You are saying that nothing has been deleted yet. So this will be the answer. Very good. What will be 1 delete? 1 delete is not making sense. Why? Because we just said that there is only one element in the array."
+  },
+  {
+   "start": 371.01,
+   "end": 400.5,
+   "text": "How many sub-arrays are possible on this one element ending? One sub-array is possible. There will be only one element in it. You are saying that we have deleted one from that too. So, your array will be empty. Your sub-array will be empty. That is not allowed. That cut-in does not allow you. So, this seems nonsensical. So, I don't want to give any value to this. So, let's write it int min. Write anything. I mean, this is some nonsensical illogical value. That there is one element. If we delete it, what will happen? Nothing will happen. It will be a mess. Let's go. Result. Result."
+  },
+  {
+   "start": 400.5,
+   "end": 429.76,
+   "text": "What was the result? In the beginning, the result was always equal to the best ending. In this, you have two types of best ending. In one, you are saying that it is nonsensical, illogical. And in one, you are saying that it has the value of array of 0. So, the result will also be 1. Or whatever your array of 0 is, it will be 1. So, you have defined the initial condition. Very good. Come. Now, what was the next step to see? How will the best ending change? How will the best ending change with every i? And this is the most important step."
+  },
+  {
+   "start": 429.76,
+   "end": 450.46,
+   "text": "This is the most important step of this algorithm or pattern. How will the best ending change? This. If you get the answer to this question, then you can solve 90% of the questions. Come. Assume that this is 1, this is minus 2, this is 0, this is 3. 0, 1, 2, 3. Now, when we run i from 1 to n,"
+  },
+  {
+   "start": 450.46,
+   "end": 477.1,
+   "text": "So, we have to change both the best ending. Because we have to change the best ending. How many types of best ending are there? There are two types. So, we have to change both. Both were changing in the product also. There were two types in the product also. One was min and one was max. So, we have to change both. Okay. What is one? Which one is the ending one? No delete. Okay. What is one? One delete. One delete. There are two types of best ending. Okay."
+  },
+  {
+   "start": 477.1,
+   "end": 502.91,
+   "text": "This is normal. This is the normal cadence that we were reading till now. So how many options were there in this? There were two options in this. Either the array of i should meet with the no delete one and make a separate one. Or make a separate one, just keep the array of i. Meaning, either in the no delete one that is still going on, we meet with it. Or we make our own. Because what does no delete mean? No delete means not a single deletion. Array i which ends with i."
+  },
+  {
+   "start": 502.91,
+   "end": 533.49,
+   "text": "The maximum sum of all sub-arrays, which doesn't have any delete. This is a normal ketene. Either you get it in no-delete. Either you get it in no-delete and make a sum. Or you make a different sum. In both of these, whatever the max is, give its value in no-delete. Where should you give its value? In no-delete, where should you give its value? In no-delete. So, very good. This is simple. Here is a twist. This is difficult to understand. One-delete is difficult to understand. Now, see. What does one-delete mean? One-delete means that"
+  },
+  {
+   "start": 533.74,
+   "end": 560.54,
+   "text": "there should be one delete there should be one delete there should be one delete there should be one delete there should be one delete there should be one delete there should be one delete there should be one delete"
+  },
+  {
+   "start": 560.54,
+   "end": 592.43,
+   "text": "There are two cases in this. One should be deleted. Very good. We are saying that one should be deleted. Now, when you are on index i, then either it is possible that someone has been deleted from before. Someone has been deleted from before. Someone has been deleted from before. Either you want to delete array of i. What do you want to do with array of i? You want to delete. You want to delete."
+  },
+  {
+   "start": 592.43,
+   "end": 609.23,
+   "text": "Both are not possible at the same time. It will not happen that you will get the same answer of the previous one, in which one has been deleted and you delete the array of i, then there will be two deletions. So, you have two choices for index i. So, if any one has been deleted from the previous one, then it has only one option to get it."
+  },
+  {
+   "start": 609.94,
+   "end": 634.29,
+   "text": "What to do? To get. If no one has already deleted, then it can delete itself. So if it wants to delete from itself, if it wants to delete itself, it means that we don't take, then which best ending will it need, the one at the back? Will it need the one with no delete? Or will it need the one with one delete? Again we are saying the question. If area of i wants that this time only we get deleted,"
+  },
+  {
+   "start": 634.29,
+   "end": 662.82,
+   "text": "So which best ending will it need from the back? Remember the product question. Which best ending did the negative number need? It needed minimum best ending. The positive number needed maximum best ending. So if the array of i wants to delete itself, then which best ending does it need? It needs the no delete one from the back. Because if you take the one delete one from the back, then one delete from the back means that one has been deleted till the back. And if you delete the array of i too, then two will be deleted. But,"
+  },
+  {
+   "start": 662.82,
+   "end": 691.87,
+   "text": "If we take the previous no delete and delete the array of i, then we can delete it. Very good. If you take the previous one delete, then what does it mean? If you take the previous one delete, then it means that either you will have to meet in that one delete or you can make it different. You can make it different as per your wish. See. Now,"
+  },
+  {
+   "start": 691.87,
+   "end": 719.47,
+   "text": "Now once we write the code, then we will explain what is happening. First of all, we know that there is a little confusion, it is a very confusing question. If you think in this way, then it is a very confusing question. So this is actually a very hard question, but if you have a little patience, you will understand. i is equal to 1, i less than n, i plus plus. First of all, we will do our no delete work because this is a normal thing. So, no delete."
+  },
+  {
+   "start": 719.47,
+   "end": 752.94,
+   "text": "What is this no delete? It was the best ending at i-1 in which no deletion is possible. So we knew what happens in this. No delete plus array of i and only array of i. Do this. Your no delete is set. What is no delete? It is set. It is equal to, sorry. We know it is a very hard question but be patient. So no delete is equal to max of, there are two options in this. No delete plus array of i or array of i starts on its own."
+  },
+  {
+   "start": 752.94,
+   "end": 782.74,
+   "text": "So anything can happen. In both cases, there will be no delete and no delete because there is no delete. It has not happened before, we are still connecting with it. And if we also become, then there will be no delete even now. So very good. Keep this. Your no delete is set. What happened to you? No delete is set. Your no delete is set. This work of no delete is done. Now let's come to one delete. Look at one delete. See, in no delete, array of i was there. Array of i was there. Either it was joined with it or it was made by itself. This was there. Okay. What will happen in one delete? What will happen in one delete? That"
+  },
+  {
+   "start": 782.74,
+   "end": 810.51,
+   "text": "What does one delete mean? Array of i. Means the one which ends on i. Whichever sub-array has the best answer. In which one deletion has happened. One deletion has happened. So can array of i only come in this? It can't come. Why? We are talking nonsense again. In this we are saying. In the one delete of i. Can array of i itself come? Like it came here. It can't come. One delete means. In all the answers ending on i. Best. In which one deletion has happened."
+  },
+  {
+   "start": 810.51,
+   "end": 840.05,
+   "text": "If you take only the array of i, then where is the deletion in it? This is also starting from array of i and ending at array of i. So there is one element in it. There should not have been an element in it. So this can't happen. So we understood one thing that this option is not possible in 1-delete. You can't just take this and give it in 1-delete. No. So what can you do? So now there are three types of options. The first one is 1-delete. The first one is 1-delete. Means, the first one is 1-delete means i-1 in which there is a deletion."
+  },
+  {
+   "start": 840.05,
+   "end": 867.47,
+   "text": "Go and find it. There can be only one option. There is a deletion in this too. Very good. Or else, if you want to delete array of i, which we saw in this option, if you want to delete array of i, then you can't delete array of i with one delete. You can't delete array of i with one delete. What do you have to do? No delete. No delete. Just no delete. Just no delete. See, this is the main point of this question."
+  },
+  {
+   "start": 867.47,
+   "end": 889.86,
+   "text": "What did no delete signify? Not the new one, the previous one. Till i-1, nothing was deleted, that's the best answer. Nothing was deleted, that's the best answer. Now you think that we want to delete array of i. So do one thing, this no delete, you come here and make it 1 delete. Where? On i. So the same thing will happen."
+  },
+  {
+   "start": 889.86,
+   "end": 917.76,
+   "text": "There was no delete till i-1 and there was no delete till i-1. Very good. Now, you want to make an answer till i where there is one delete and we want to delete the array of i. So, pick up that no delete and bring it here. Then it will be the same. You will not count the array of i in that. But you will get a one delete answer till i where the array of i itself is deleted. Did you understand? What do we want to say? Look. First of all, you have one choice. That you do one delete."
+  },
+  {
+   "start": 917.76,
+   "end": 945.39,
+   "text": "You have to make one delete. Why are we doing this? This is why we are doing this. How will a new one delete be made? How will a new one delete be made? Like a new no delete is made here. Every time we make a new best trending. We update it. That's why. How will a new one delete be made? Okay. First of all, there is one choice. Which is already one delete. Which is the previous one delete. Add an array of i in that. Array of i. Very good. Add an array of i. Or else, if you have to delete the array of i only. You have to delete the array of i only."
+  },
+  {
+   "start": 945.39,
+   "end": 975.02,
+   "text": "So, you can't mix it with one delete. One delete signifies that there was a delete till last time. So, how will IREFI delete with it? With this, you can do your old no delete. Now, see. Now, your one delete is looking good. Your one option, its max. What does your one option say? That the previous one delete, let it be. Mix it with AI. Very good. Or else,"
+  },
+  {
+   "start": 975.02,
+   "end": 1004.66,
+   "text": "It is possible that we want to delete this only. So, do one thing. The old no delete, the old no delete, the one with i-1, nothing was deleted till there. Write that only here. So, its effective will be that the array of i is deleted here. And make this one delete. Whose? The one with i. Make this one delete. And see the max in both. Now, do you understand what I am saying? Do you understand what I am saying? That delete the one with i only. Delete the one with i only. Like, if we talk about this array,"
+  },
+  {
+   "start": 1004.66,
+   "end": 1032.77,
+   "text": "So, 1 minus 2, 0, 1. When you have come to i is equal to 1, then what will be your no delete? No delete will be 1 because we have done this. So, you are saying that do one thing, make 1 delete as this 1. Where? On i is equal to 1. What does this mean? That you are standing, i is equal to 1, but your 1 delete is 1. It means that you have taken till here and disappeared this. Now, you have deleted this. Now, this is 1 delete. Now, this will go ahead. So, this is the meaning. Okay."
+  },
+  {
+   "start": 1032.77,
+   "end": 1061.06,
+   "text": "How will we write it in code? First of all, first of all, first of all, let's write the code once again because it has some nuances, some small nuances. For i is equal to 1, i less than n, i plus plus. First of all, we have to remember one thing that the old no delete is working. Where? In one delete. Okay. So, one is previous, previous no delete is equal to no delete. Do this."
+  },
+  {
+   "start": 1061.06,
+   "end": 1091.71,
+   "text": "In this way, you can do this in every best ending. Previous and current one, so it increases the clarity. Okay, let's make this one. It doesn't make any difference. Previous, 1 delete, 1 delete, is equal to 1 delete. Make this one too. Make it, okay. Now, first of all, let's update no delete, because it's a simple thing. No, delete is equal to max of, one will be that, connect array of i with no delete, and keep array of i as our own."
+  },
+  {
+   "start": 1091.71,
+   "end": 1121.17,
+   "text": "Okay. Now, what did we say about one delete? One delete. Look at this. In one delete, we are explaining again and again that there will not be such an option that you can make it one delete only by keeping AI. If AI is left, then there is only one element in it and that is not one delete, it is no delete. That is why it is in no delete. Okay. What was the first option? The one delete till now. The one delete till now means this one. Previous one delete."
+  },
+  {
+   "start": 1121.36,
+   "end": 1146.26,
+   "text": "Previous 1 delete with array of i. So, here 1 is deleted and here is no delete. Very good. Add this. Or else, if you want to make array of i as 1 delete, then previous no delete. Means, the previous no delete, the previous no delete was very good. We will make it as the current 1 delete. Means, we are deleting the current one."
+  },
+  {
+   "start": 1146.38,
+   "end": 1164.24,
+   "text": "We have made this. But there is a mistake in this. In the beginning, how did we define 1 delete? No delete was well defined. Array of 0. Very good. What was 1 delete defined? We said 1 delete is a nonsensical thing. What is this man doing? He is talking nonsensical. Where? Here. He is talking nonsensical. For this,"
+  },
+  {
+   "start": 1164.5,
+   "end": 1195.86,
+   "text": "For this, what you have to do? When this person is talking non-sensical, then how will you improve it? If you do this, then it will be wrong. Because it is int min. It was illogical, so we had to give some value. That's why we gave it. Otherwise, we don't give it. Otherwise, we don't give it. So, when you have to put a check on one delete. Where will you have to put a check? Here. You have to put a check in between this. You have to put a check in between this. What check will you have to put? You have to see. If my. This one. If my."
+  },
+  {
+   "start": 1195.86,
+   "end": 1223.38,
+   "text": "Previous one delete equal equal to int min. This means that there is no value in one delete. There is no value in one delete till now. So what do you do? So, previous one delete is equal to zero. Do zero or do one thing, make it AI only. What do you do to it? Make it AI only."
+  },
+  {
+   "start": 1223.38,
+   "end": 1253.41,
+   "text": "What does this mean? It's not a simple plus. It means that we want to add the area of i with the previous one delete. So, if there is no value in the previous one delete, it is an illogical value till now. So, to add it, bring it to the area of i. Make it the area of i only. If the area of i will add to nothing, then what will it become? It will become the area of i. Make it the area of i. Make it the area of i. And instead of writing this, instead of writing this thing here, instead of writing this thing here, now what to do?"
+  },
+  {
+   "start": 1253.41,
+   "end": 1283.38,
+   "text": "Take a variable which will look like this. You must have understood till here. We will write after this. Take a variable v2. If my previous one delete is equal to int min, then v2 is equal to array of i. And if it is not, then v2 is equal to previous one delete."
+  },
+  {
+   "start": 1283.76,
+   "end": 1314.27,
+   "text": "previous one delete plus array of i plus array of i now now when you write now you can write comfortably one delete is equal to max of v2 which is this one or only array of i if it is nonsensical value otherwise if previous sorry if you want to delete array of i then previous one delete sorry previous no delete previous no delete today I feel that flow is a bit wrong"
+  },
+  {
+   "start": 1314.27,
+   "end": 1348.18,
+   "text": "Previous, no, delete. That's it. Your one delete is also updated. No delete is this. Let it be. Remove this. Half of the code is here and the rest is here. Okay. Now, how did the result get updated? All the best endings were taken by best. Best means maximum. Simple. Result is equal to max of result. And add one more max or take the max of these two too. One delete and no delete. That's it."
+  },
+  {
+   "start": 1348.18,
+   "end": 1380.32,
+   "text": "What will we do after closing the loop? Return result. It's simple now. Now see, I know we are saying again and again that the question was a bit complex, but this one delete, the whole game is on how to change the best ending. That's what you have to think, how is the best ending changing? One delete is there now, what can be the next one delete? So for that, you have to think about the meaning of Hindi news. One delete, when we take it out on an i, then what happens? First of all, subarray, ending at i,"
+  },
+  {
+   "start": 1380.32,
+   "end": 1410.3,
+   "text": "best answer best answer which has exactly exactly one deletion one deletion that's why we update it in such a way that either with the one deletion which has been done till now, join with it yourself join with it yourself what to do with it, join with it yourself or else if you feel that the first deletion should be done now so the no deletion which has been done till now if you make it as the one deletion of now then the one of now will be deleted"
+  },
+  {
+   "start": 1410.3,
+   "end": 1440.45,
+   "text": "Let's hope that you understood. It's a very important concept. It's a very good concept. That's why it seems so difficult. Let's go. The next two questions. The next two questions are fake. What is the next one? Both are fake. What is the next question? Maximum absolute sum. Very fake. Very fake question. I think you will understand after seeing it. What does it say? That there is an area. 2 minus 5."
+  },
+  {
+   "start": 1440.45,
+   "end": 1466.83,
+   "text": "and 1, and minus 4, and 3, minus 2. 0, 1, 2, 3, 4, 5. What does it say? Find a sub-array like this. Find a sub-array like this. Which has some sum. Which has some sum. Minimum sum, maximum sum, any sum. Any sum. Take out the sum of the whole sub-array. What do you do with the whole sum? Absolute it. What do you do? Absolute it. And from that, return max."
+  },
+  {
+   "start": 1468.08,
+   "end": 1497.74,
+   "text": "What does absolute mean? When you write 4 as absolute 4, it will become 4. But when you write minus 4 as absolute 4, it will also become 4. It makes the negative positive and the positive positive. It is called absolute. So, what does it say? Take all of them. Take all of them. What do you get out of it? You get the sum. What do you do to the sum? You make it absolute. And you return it. Whatever is the maximum in it. So, maximum, absolute, sum. It is a very fake question. We will not tell you anything in it. It is a very fake question."
+  },
+  {
+   "start": 1497.74,
+   "end": 1528.27,
+   "text": "If I had given you in this array, 2, minus 5, 1, minus 4, 3, 2. So, what does this tell you? That do one thing, take this one. Take this one. First of all, take out the sum of this. Minus 5, plus 1, plus minus 4. Minus 8, make this absolute. 8, that's it. Return this to the sum. There is no question. You have to take out the maximum sum once."
+  },
+  {
+   "start": 1528.82,
+   "end": 1553.34,
+   "text": "And once, you have to get the minimum sum. Make both of them absolute. And whatever you find maximum, return the maximum of them. Why? What is this 5, 1, minus 4? This array, this array, this array has minimum sums of errors. Minimum sums of errors. That's why it will be absolute. Look."
+  },
+  {
+   "start": 1553.34,
+   "end": 1576.32,
+   "text": "If you get a very big value in the maximum sum, then return it. But if you get a very negative value, then also it is good. If you get an absolute value, then it will become positive. So this is the question. If you get a positive sum, then return it. If you get a very negative sum, then also it is good."
+  },
+  {
+   "start": 1576.32,
+   "end": 1602.98,
+   "text": "The less sum you get, i.e. minus 4, minus 10, minus 14, minus 20, minus 100, the more you absolute, the bigger it will get. This will become 4, this will become 10, this will become 14, this will become 20, this will become 100. So, see, the less the sum, the better it is. So, one option is to find the best sum. The best sum means the maximum sum."
+  },
+  {
+   "start": 1602.98,
+   "end": 1626.46,
+   "text": "One more option is to find the worst sum, which is min. Absolute both of them and return the result. Return whatever you like from it. We don't think we need to write the code for this. We have learnt the minimum and maximum sums. We have made two functions, do both of them and return them. Why? Absolute means"
+  },
+  {
+   "start": 1626.46,
+   "end": 1656.34,
+   "text": "If you get positive, then it's a very good thing. And if you get negative, then find the most negative. Not the maximum in negative. If you find such a number in negative, then it is a very low number. It is a very minimum number. Absolute it and it will become the biggest. And see that if it is bigger than the positive sum, then return it. So we think this question is a very fake question. This is a very fake question by asking in Amazon or in Adobe. This is a question of 2 minutes. If you are studying from the beginning, then it will take 2 minutes to solve this question. You have to write 2 functions. It is a function of 4, 4, 5, 5 lines. Write it and do it."
+  },
+  {
+   "start": 1656.34,
+   "end": 1675.76,
+   "text": "The question is over. That's it. Now, this was it. Circular array, we think that time is up. That's why we will tell it tomorrow. Tomorrow, what will happen? Tomorrow, two things will happen. Tomorrow, revision of cadence will happen. And circular will also happen. And circular will also happen. Let's meet tomorrow. Come tomorrow."
+  }
+ ]
+}

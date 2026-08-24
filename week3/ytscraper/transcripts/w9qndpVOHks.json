@@ -1,0 +1,209 @@
+{
+ "video_id": "w9qndpVOHks",
+ "title": "DP Series Episode 11 LIS: From Recursion to Tabulation",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1077,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 25.01,
+   "text": "Hello kids, so as we saw in the last lecture, what did we see? LIS, LIS means Longest Increasing Subsequence. This is not common, this is increasing. So what did we tell you? This question is going to be a little difficult or different. Why? Because there is a lot to learn in this. Till now, what we were doing was writing recursion, memorizing, reading the recursion, making its tabulation, it is over. But in this, you had to learn recursion, which we have done. If you haven't seen it, then watch the last one."
+  },
+  {
+   "start": 25.01,
+   "end": 53.39,
+   "text": "Memoization was also learned that we will memorize it too. Very good. But in this tabulation and optimized tabulation, its tabulation is a little different. And there will be no talk of tabulation either. In this, you will have to do the binary search approach in the last. Meaning that in the last, you will have to think of the n log n approach in this. And you will have to do that only. Otherwise, the interviewer will not agree. So today we will complete this whole thing. Is it too hard? It is a little hard. I mean, even if it is hard, we will explain it to you well. You will remember it all your life."
+  },
+  {
+   "start": 53.39,
+   "end": 81.17,
+   "text": "So, you have to find the length of the LIS. What do you have to find? You have to find the length of the LIS from the array. Very good. We have seen recursion and memoization. Now, we will talk about how to think about it without recursion and how to do it and then how to do it from binary sets. Let's assume that your array is this. Let's assume that your array is 10, 2, 5."
+  },
+  {
+   "start": 81.17,
+   "end": 111.14,
+   "text": "And what can you assume? Assume 3. And assume 7. And what can you assume? And what can you assume after 7? Assume 6. Okay, this is good. 1. This is good. You have to calculate the length of LIS for this. So if we are able to see this, if we are able to think of its answer, then its answer should be this. Its answer should be 2. 5 can be. 7. One is that we are able to think of 3 lengths. And one is that"
+  },
+  {
+   "start": 111.14,
+   "end": 135.89,
+   "text": "We can think of 2, 3, and after 3, it can be 1 out of 7 or 6. So, we think its answer will be 3. After 3, you can't make an answer of 4. Let's see. Is 4 LIS possible in this? We will take 2. If we take 5, it will be 5, 7. If we take 3, it will be 3, 7. Yes, okay. We can't make it of 4. 3 will be the maximum answer in this. But, how to make it in this? Now, it can be thought like this."
+  },
+  {
+   "start": 135.89,
+   "end": 165.55,
+   "text": "Any LIS, LIS means that any array you make, any answer you make, it will end at some number. Any LIS that will be made, any longest increasing subsequence will be made. For example, if you make 2, 5, 7, 2, 3, 7, or you make a small LIS, suppose you make 3 and 6, this is also a LIS. Okay. At some number, everything is ending, right? This will not change like this. This is ending at 7, this is ending at 7, this is ending at 6. Meaning, at some number,"
+  },
+  {
+   "start": 165.55,
+   "end": 194.11,
+   "text": "Every LIS is ending. Okay. If we try to calculate one thing, suppose this is the number. What is the initial number? 10. LIS ending at 10. There will be some LIS ending at 10. Which is the biggest number among them? What are you saying? Listen again. 10 is one number. There will be some LIS ending at 10. At least this will happen."
+  },
+  {
+   "start": 194.11,
+   "end": 213.92,
+   "text": "At least if we make this of one length, then this is an LIS. If you take every number, then this is an LIS. Okay. It may be that it will end at 10 that 4 LIS are made. It is not being made now, but we are talking about any number. Generally, there can be many LIS that end at any number. 4, 5, 6, anything can happen."
+  },
+  {
+   "start": 213.92,
+   "end": 239.82,
+   "text": "Which is the biggest length among them? If we take this out for every number, suppose you find out that the maximum length of the LIS ending at 10 is 1. Okay. The maximum length of the LIS ending at 2 is 1. The maximum length of the LIS ending at 5 is 2. The maximum length of the LIS ending at 7 is 3. The maximum length of the LIS ending at 6 is 3. And what's left?"
+  },
+  {
+   "start": 239.82,
+   "end": 269.54,
+   "text": "3 on this one. The maximum length of LIS that ends at 3 is 2. If you remove all this, now who will be the largest LIS of the whole array? All these numbers, 1, 1, 2, 3, these ones. The maximum value of these, what is the maximum value? 3. So won't this be your answer? Again, I am telling you, this is a slightly different type of approach. What we are doing is, instead of making LIS, we will look at every number one by one. We will look at every number in the array by doing this."
+  },
+  {
+   "start": 269.54,
+   "end": 296.08,
+   "text": "The LIS that ends at that number. There can be a lot. Now see, for example, if we talk about 6, then it is not like the LIS that ends at 6 will be just 1. If we start writing the LIS that ends at 6, then see what we can write. First of all, 6 is an LIS itself. 2, 6 is also an LIS. 2, 3, 6 is also an LIS. 5, 6 is also an LIS."
+  },
+  {
+   "start": 296.08,
+   "end": 317.7,
+   "text": "2, 5, 6. There are many. It means, it is possible that it will end at 6. 10 are possible. But, out of these 10, which is the biggest length? So, we will know that the biggest length is of 3 lengths. So, in front of 6, we will write 3 in the answer. If we do this for every number in this array, then we will know the entire answer."
+  },
+  {
+   "start": 317.7,
+   "end": 347.42,
+   "text": "From all those answers, the maximum value that will come, we will say that this is the maximum value of the array. Do you understand this or not? Now let's try to understand it a little deeper. So look, to explain this, keep a little patience. This is your array. The same trick that I told you earlier that you have to find the maximum length alias that ends on every number. But how will we find it? We haven't learned anything yet. Look, hold 7. For example, assume that you are trying to find 7."
+  },
+  {
+   "start": 347.42,
+   "end": 377.26,
+   "text": "For a while, assume that the number before 7, the number before 7, left to right, you will see, right? The number before 7, you already know the answer. You already know the answer. Assume for a while. So, what do we do? First of all, 10, right? Tell me one thing, 10 is the first number. So, which will be the maximum that ends at 10? Only 10? There is no one before 10, right? So, that will come. You have to end at 10. 10 is the first number. So, the number that ends at 10,"
+  },
+  {
+   "start": 377.26,
+   "end": 405.46,
+   "text": "This LIS will be 1. Write this. Which LIS will end at 4? Which will be the biggest? Now see, it's 4. So 10 and 4 can't be written. 10 and 4 are not increasing. Okay. You can only write this on 4. You can only write 1. Because 10 and 4 will be wrong. So 4's answer is also B. Just 4. Okay. 2. Same thing. Now you have come to 2. So you can't write this on 2. 10, 4, 2. This is not increasing. 4, 2. This is also not increasing."
+  },
+  {
+   "start": 405.46,
+   "end": 434.29,
+   "text": "So which LIS comes after 2? 2. Only 2. Only 2. Simple 2. Okay. 5. Now see, it will be interesting. What is the biggest LIS after 5? See, there are 2 LIS after 5. You can write 4 and 5. And 2 and 5. You can write this too. Now you can write whatever you want. We just need length. We are writing LIS to explain. The difference is only in length. So for your convenience, write 4 and 5."
+  },
+  {
+   "start": 434.29,
+   "end": 462.83,
+   "text": "You can also write 2 and 5. It's just the length. The length of both is 2. You can write whatever you want. Let's go. 3. Look at 3. What can you write on 3? On 3, as we can understand, you can only do 2 and 3. 2 and 3, you can only do this. Okay? You can't do anything else. You see, 4, 2, 3, no. 10, 2, 3, no. 2, 5, 3, no. Only 2, 3. So, the answer of 3 is 2 and 3. Is it done? Before 7, all these numbers are the answer. Did you get the answer? Very good."
+  },
+  {
+   "start": 462.83,
+   "end": 492.69,
+   "text": "Now let's come to 7. Now we will teach you how to get 7. Now you have 7. This is your number. What you have to do is to get the maximum length LIS from all LIS ending at 7. This is your problem statement. Very good. So see, without doing anything, without thinking anything, 1 LIS ending at 7 is 7. This will definitely happen. This is for every number. Just write the same number. It is increasing. 1 number is increasing. So 7 is an answer. Okay."
+  },
+  {
+   "start": 492.69,
+   "end": 521.6,
+   "text": "Now tell me one thing. We can do one thing, we can do a trick. Out of all these numbers, the numbers that came before 7, before 7, whatever is known here. Out of these, if we see which number is smaller than 7. What are you saying? Listen again. Which number is smaller than 7? Which number is smaller than 7? So which number is smaller than 7? Is 10, 10 smaller than 7? No. 4, is 4 smaller than 7?"
+  },
+  {
+   "start": 521.6,
+   "end": 547.52,
+   "text": "Yes, 4 is smaller than 7. So, 1 is 4. Is 2 smaller than 7? Yes, 2 is smaller than 7. So, 1 is 2. Is 5 smaller than 7? Yes, 5 is smaller than 7. Is 3 smaller than 7? Yes, 3 is smaller than 7. So, you can do a trick. You have to find out the maximum number of LIS that ends at 7. Can we do this?"
+  },
+  {
+   "start": 547.52,
+   "end": 575.22,
+   "text": "In numbers ka jo bhi LIS tha. In numbers ka jo bhi LIS tha. Matlab, ye, ye, ye, ye. Kya aap sab ke aage saath nahi jor sakne hain? Kehne ka matlab, kya aap is 4 ko 4 aur 7 nahi bana sakne hain? Kya ye increasing nahi hoga? Hoga. Kyuki aap sirf 7 se chote wale numbers ko consider kar raha hai bhai. Hoga ye LIS. Kya is 2 ko, aap 2 aur 7 nahi bana sakne hain? Bilkul bana sakne hain. Kya is 4, 5 ko?"
+  },
+  {
+   "start": 575.22,
+   "end": 601.14,
+   "text": "You can't make 4, 5, 7. You can. Can't you make 2, 3, 7? You can. When can you do this? You can't make 10 or 7. It's not increasing. That's why we're looking at numbers smaller than 7. Okay, this work is done. It means, all these LIS, all these LIS which were written,"
+  },
+  {
+   "start": 601.14,
+   "end": 624.43,
+   "text": "If you add a 7 in front of it, then you will get LIS ending at 7. Out of these, which is the largest LIS? These two. What is the length of this? 3. So what will be the answer of 7?"
+  },
+  {
+   "start": 624.43,
+   "end": 654.18,
+   "text": "will be 3. You can't make the LIS ending on 7 more than 3. When did this come? How did we understand this? When we knew all the numbers before 7. We knew the answer and the length of all. We knew the length of 10 is 1. The length of 4 is 1. The length of 2 is 1. The length of 5 is 2. The length of 3 is 2. What did we do for 7? For 7, we just did one thing. From the numbers before 7,"
+  },
+  {
+   "start": 654.18,
+   "end": 677.41,
+   "text": "Look at all the small numbers and in the length of all of them, do plus 1, plus 1, plus 1, plus 1. The maximum that comes from them, which is 3, becomes the answer of 7. With this trick, you will get the maximum length of all the numbers in LIS. What will you do?"
+  },
+  {
+   "start": 677.41,
+   "end": 696.88,
+   "text": "First of all, if you take that number yourself, one thing will definitely happen. After that, we will see all the small people before him."
+  },
+  {
+   "start": 696.88,
+   "end": 726.5,
+   "text": "Their answer, the answer of the small people, we will make it plus 1. After making all the answers of the small people plus 1, the maximum value you will get, that will be your answer. So, I hope you have understood this trick. It is a little out of the box trick, a little difficult trick. But it is an intuitive trick. But it is an intuitive trick. You had to make LIS which ends at 7. You see, the LIS of the small number from me, we already know."
+  },
+  {
+   "start": 726.5,
+   "end": 756.5,
+   "text": "Why don't we do one thing? Add 7 in front of their LIS. That will be 7's LIS. After adding everything, the maximum length that will come, that will be my answer. After doing this, your answer array will be ready. Come, we will dry run this and show you in a small example. Let's go ahead. So see, this is your array. You have to find LIS in it. We use this trick. Let's make an answer array here. What do we make? Answer array. This size. This size. 0, 1, 2, 3, 4. Made it."
+  },
+  {
+   "start": 756.78,
+   "end": 786.02,
+   "text": "The first number, we will do this. What will we do? We will look at the elements one by one. We will look at the elements one by one. Okay. First of all, any number's answer will definitely be 1. Any number's answer will definitely be 1. Write that number in the LIS, then the length will be 1. Done. After that, we have to look at the elements before that. j is equal to 0. j less than i. j plus plus. We will look at the elements before that. Okay. If this first element"
+  },
+  {
+   "start": 786.02,
+   "end": 815.22,
+   "text": "It is smaller than this. You just have to look at the small one. You don't have to look at the big one. Because if you look at 10 in 7, then you can't put 7 in front of LIS which ends at 10. It won't happen. Only to small elements. So what is this? Small elements. After that, what can we do? Result of I is equal to maximum result of I. And whatever is the answer of this J, add one to it. If you do this, then you will get the answer. Come, let's test it."
+  },
+  {
+   "start": 815.54,
+   "end": 845.14,
+   "text": "I is equal to 0. First of all, what did we say? Write 1 here. This answer will be 1. Now, there is no one before I is equal to 0. There is no point in seeing. Don't do anything. I is equal to 1. First of all, write 1 in the answer. This is your result error. After that, see. There is 1. The element before 1 is 3. Do you see any small element before 1? If you don't see, then nothing will happen. Don't do anything. Go ahead. I is equal to 2. 8."
+  },
+  {
+   "start": 845.14,
+   "end": 874.85,
+   "text": "We came to this. First of all, write 1. Now, now, now, look carefully. What are the elements before 8? Both, 3 and 1, both. Now, what will we do? The small elements, what is the answer of 3? The answer of 3 is 1. So, what will be the answer of 8? 1 plus 1, 2. One answer is this. There is one more element before 8, which is smaller than 8. Which one? 1, again. What is the answer of 1? 1. One more of this, 1 plus 1 is equal to 2. What is the maximum of both? 2. So, what will be the final answer of 8?"
+  },
+  {
+   "start": 874.85,
+   "end": 901.33,
+   "text": "The final answer of 8 will be 2. What is the length of this 2? Both of these 3, 8 and 1, 8. If you make both of these, then the answer of 8 will be 2. Done? Go ahead. i is equal to 3. 2. Look at the element before 2. 3, 1, 8. Which element is smaller than 2? Only one element. This element. What is the answer of 1? 1. So what should be the answer of 2? 1 plus 1, 2. If only one element is smaller, then the answer of 2 will be 2."
+  },
+  {
+   "start": 901.33,
+   "end": 927.12,
+   "text": "Which one is LIS? This one. 1 and 2. This one is LIS. Come on. Come to the last number. 5. Yes. How many elements are smaller than 5? There are two elements smaller than 5. One is this one. One is this one. And this one is 2. What is the answer of 1? 1. So, there can be one answer of 5. 1 plus 1 is 2. What is the answer of 2? 2. So, there can be one more answer of 5. 2 plus 1 is 3. Out of these two,"
+  },
+  {
+   "start": 927.12,
+   "end": 956.05,
+   "text": "Which is the maximum of these two? 3. What will be the final answer of 5? 3. Which is this LIS? This LIS. 1, 2, and 5. Now, which number is maximum in this whole array? Which number is maximum in this whole array? Length is equal to 3. So, what will be the answer of your whole array? 3. Which LIS? LIS of 1, 2, and 5. So, in this way, this work will be done. See its code. We have already written its code. Let's write it once more."
+  },
+  {
+   "start": 956.27,
+   "end": 984.24,
+   "text": "So, its code will be LIS. And you will be given an array. Vector int a. After that, what will you do? Int n is equal to a dot size. Very good. After that, what will we do? We will make a vector. Answer or result. We will keep its size n. After that, we will start our game. Do i, j. And start the game. For i is equal to 0, i less than n, i plus plus."
+  },
+  {
+   "start": 984.24,
+   "end": 1007.3,
+   "text": "First of all, the answer will be 1. So, at least do res i is equal to 1. After that, look at the first element. j is equal to 0. j less than i. Not j less than n. Look at the first element before i. After that, check if this is a small element. Array of j less than array of i. Just look at the small one. Don't even look at the smaller equal to. Because, suppose here is 4."
+  },
+  {
+   "start": 1007.3,
+   "end": 1033.52,
+   "text": "And if you are looking at another 4, then suppose the answer to this 4 is 2. 1 and 4. You cannot apply 4 after this. Strictly increasing is required. That's why. If this is the case, then what will we do? Result of i is equal to maximum of the current value. Or add 1 to this j. Then you will know. Stop it. Now your result is ready. The biggest value in the whole result."
+  },
+  {
+   "start": 1033.52,
+   "end": 1059.41,
+   "text": "After this, we will do the biggest value in the whole result. Int answer is equal to 1. There will be only one answer. After that, we will see the whole result. i is equal to 0. i less than n. i plus plus. Answer is equal to maximum of answer and result of i. Means the biggest value in the whole result will come in the answer. What will we do in the last? Return answer. Take this."
+  },
+  {
+   "start": 1059.41,
+   "end": 1076.89,
+   "text": "This is your small tabulation code. What will be the time complexity? Order of n square. Space complexity? Order of n. This is your space. This is your time. I hope you have understood this. Now let's move on to our vector approach. Listen to it a little more carefully. Okay, let's move on."
+  }
+ ]
+}

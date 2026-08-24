@@ -1,0 +1,469 @@
+{
+ "video_id": "5PrzZfhk1OQ",
+ "title": "The BST Validation Problem Everyone Gets Wrong",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2531,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.38,
+   "text": "Today I have very less time, so today we will do only two questions on BST. Both are very good questions, very medium to hard level questions. So the first question will be a little weird, the second question will be related. Let's start quickly. The first question is, you have to validate. Who do you have to validate? You have to validate BST. What is BST? Binary Search Tree. What does validate mean? That you will be given a route, any BST can be given to you. By doing this, any BST will be given."
+  },
+  {
+   "start": 29.38,
+   "end": 59.68,
+   "text": "You just have to tell true or false. True or false. This is the meaning of validate. You have to tell true or false. If, if, if, this BST is correct, what does correct mean? The rule of BST is that its root is left small, right big. Means if this whole rule is followed in the whole tree, then you have to return true. If this rule breaks anywhere, then you have to tell false. As an example, if you are given a BST like this, here is 10, here is 5, here is 15, here is 7, here is 2."
+  },
+  {
+   "start": 59.68,
+   "end": 85.28,
+   "text": "and here is 12 and here is 18. So, look carefully whether it is BST or not. There are many ways to see BST. One way is that, see here is 10. The left of 10 is 5 and this is 15. So, it is working perfectly. Its left, root and right should work in this order. Now, 5 is there. 5's left is 2. So, 2 is smaller than 5 and smaller than 10. Very good. 5's right should be bigger than that. But, it should not be so big in the right that it should be bigger than 10. It should be smaller than 10."
+  },
+  {
+   "start": 85.28,
+   "end": 114.22,
+   "text": "So, 7 is bigger than 5 and smaller than 10. Very good. So, whatever is on the left of 10 is smaller than 10. It was till now. In the same way, 15 is written on the right of 10. So, it's a good thing. It should be bigger on the right. On the left of 15, it should be smaller than 15. But, it should be bigger than 10. Whatever is on the left of 15, now it is 12. So, it should be bigger than 10 on the right of 10. But, it should be smaller than 15 on the left of 15. So, it's fine. This is also fine. 12 is in the middle. 18 is on the right of 15. So, 18 should obviously be the biggest. So, you must be thinking that"
+  },
+  {
+   "start": 114.22,
+   "end": 142.88,
+   "text": "Very good BST, so you will return true in this. Now, there are many ways to do this. I mean, there are many ways. But the way that we like the most and the best way, we will tell you. And we will tell you the other one. We will not code the other one. If you want to code it, then you can code it yourself and see. But the way that we like the most is that we have been telling you for many days that the inorder of BST, what? The inorder of BST, it changes it to a sorted array."
+  },
+  {
+   "start": 142.88,
+   "end": 167.47,
+   "text": "It turns it into a sorted array. If this BST is bad from anywhere, means if there is a bad BST or a wrong BST from anywhere, then you will not get this sorted array. How do we write in order? Let's write it. What is in order? Left, then root, then right. This is how in order is written, right? Very good. So how is in order written? Let's write it like this. First of all, we will come to 10. So 10 will not give a chance to our left. Then we will come to 5."
+  },
+  {
+   "start": 167.47,
+   "end": 194.06,
+   "text": "5 will first give a chance to its left, then it will come to 2. If there is no one on the left of 2, then 2 will be printed by itself. Okay? Now, if we go back to 5, then 5 has given a chance to its left, so it will be printed by itself. After that, 5 will give a chance to its right, 7. Now, if there is no left of 7, then 7 will be printed by itself. If there is no right of 7, then nothing will happen. Back to 5, 5's work is done. Back to 10, now 10 has given a chance to its left, so 10 will be printed by itself. After that, 10 will give a chance to its right."
+  },
+  {
+   "start": 194.06,
+   "end": 217.94,
+   "text": "15. Now, 15 will not be printed by itself. First, we have to give the left child a chance. So, first it will come on 12. There is no left or right for 12. So, 12 will be printed by itself. After 12, it will come on 15. Now, 15 will be printed. After 15 is printed by itself, it will give the right child a chance. So, it will become 18. So, look carefully. Is this a sorted array? 2, 5, 7, 10, 12, 15, 18. Yes, this is a sorted array. If this BST was bad from anywhere, from anywhere, let's assume that, let's do one thing, this 15, we,"
+  },
+  {
+   "start": 217.94,
+   "end": 244.51,
+   "text": "What do we make? We make this 15 as 9. We make this 15 as 9. Now see, when we print in order in this order, where there is 15, there will be 9. So where there is 15, write 9 there. Now see, is this a sorted array? No, it is not a sorted array. Why not? Because BST was bad. If BST was bad, then obviously this sorted array will not be made. It will never be made. So the easiest way is to take one vector. Take one vector int. Okay? Run in order."
+  },
+  {
+   "start": 244.51,
+   "end": 272.78,
+   "text": "Run the inorder program on this root. What do you have to do? Nothing. First of all, what does inorder say? Give me a chance on the left. Okay. After that, we will push this. res.pushback. Or whatever your array list is. To whom? To the root data. This is what inorder is. Inorder is that first call the same function on the left. And call the same function on the right. Below. In the middle. In the middle. This part of the middle is the root part. So you can do whatever work you want to do here."
+  },
+  {
+   "start": 272.78,
+   "end": 302.1,
+   "text": "When we do this, then what will happen? It will convert the whole BST into this vector. And what will this vector hold? In order. Because we are doing it in this way. We are doing it in this way. After that, you can check on this vector. After that, you can check on this vector. How can you check? Now, if any array is sorted or not, how do you know? You will get any vector. Suppose you get such a vector. 2, 5. And here 4. And then here 10 and 12. So, you can see that this is not a sorted array. This is not a sorted array. So, how will we check it? It is very simple. 4."
+  },
+  {
+   "start": 302.1,
+   "end": 328.54,
+   "text": "I is equal to 0. I less than res dot size minus 1. I plus plus. Why minus 1? Let's tell you. So how will we check this? Look. What is the identification of sorted array? That every element is smaller than the previous one. Every element is smaller than the previous one. Only smaller than the previous one. So we will do if res I. If any element is bigger than the previous element."
+  },
+  {
+   "start": 328.54,
+   "end": 353.92,
+   "text": "If it is bigger than 5-4, then it is not a sorted array. If it is bigger, and it is said strictly, then even if it is equal, then it is not a sorted array. Here it is strict, it means that the values do not repeat. It should be bigger. So if it is bigger than your previous one, then you can immediately do return false here. You can do return false, let it run. And if nothing like this happens, then it means that the entire array is sorted."
+  },
+  {
+   "start": 353.92,
+   "end": 381.33,
+   "text": "Is this array sorted or not? We think everyone knows this. We might have studied this in recursion and you should know this by now. This is a very basic thing. You can do one thing that you put the whole tree in the result first. After that, you check in the result whether it is sorted or not. But this approach will not work in the interview. This approach may work in the interview. If we are the interviewer, then it won't work. Why won't it work? Because you are using this extra thing. The vector int res, you are using this extra."
+  },
+  {
+   "start": 381.33,
+   "end": 410.03,
+   "text": "You have already given a tree, so why are you using it extra? What will we do to do this? Let's think. Now you don't have to write the whole tree in a vector. Doing it in order is right, but don't write the whole tree. Look, what were we doing earlier? Earlier we did a lot of work. Earlier we made the whole tree in a vector or an array. For this, we ran in order. After that, we checked in this array that if any person is bigger than their predecessor,"
+  },
+  {
+   "start": 410.03,
+   "end": 440.14,
+   "text": "So, so, so, what did we say? False. In total, we have made the tree a vector or an array. We checked in the array that if there is something wrong, if it is not looking sorted, then we returned false. You can do the same thing without making a vector. You can do the same thing without making a vector. How can we do it? Let's see. Let's say, let's say, what are we saying? Whenever you don't understand anything in the tree, the smallest tree is made of 3 nodes. Let's see, we make a tree. We write here 2, 1, and"
+  },
+  {
+   "start": 440.14,
+   "end": 467.46,
+   "text": "What should I write? 2. I can't understand this. 3 and 2. Okay? Is this a tree? Is this a BST? No, this is not a BST. Why not? Look. Root is 3. Root can be anything. 3 is smaller than 3 on the left of 3. Very good. But 3 is not bigger than 3 on the right of 3. So this is not a BST. If you make an array of this, what will it be? 1, 3, 2. Is this a sorted array? This is not a sorted array. So this is not a tree. So the same thing you are doing,"
+  },
+  {
+   "start": 467.46,
+   "end": 497.68,
+   "text": "what you were doing here, you can also do it during the inorder. How? Let me tell you. What is happening here? In a way, what is happening here is that we are checking two elements every time. We are checking i with i plus 1. Instead of doing this, we could do one more thing in this array. We could do one more thing in this array. We could do one more thing in this array. We could do one more thing in this array. We could do one more thing in this array. We could do one more thing in this array. We could do one more thing in this array."
+  },
+  {
+   "start": 497.68,
+   "end": 521.7,
+   "text": "If the i of the rest is smaller than i-1, then we can make the return false. What does this mean? See, it comes to 2. It won't come to 2, since i starts from 1, so it comes to 5. Is 5 smaller than the previous one? No. So, it's very good. It comes to 4. Is 4 smaller than the previous 5? Yes, it is. This shouldn't happen in the sorted array. In the sorted array,"
+  },
+  {
+   "start": 521.7,
+   "end": 551.04,
+   "text": "Every element should be bigger than the first one. If there is a sorted array in which 4 is coming and before 4, 6 is written, then this is not a sorted array. So you can do this trick. Exactly, exactly the same thing you can do in order too. Without making an array. How? At any time, at any time in order, you know the root. You know the data of the root. You know the root in order. Okay. What you have to check is that if, if this,"
+  },
+  {
+   "start": 551.04,
+   "end": 574.61,
+   "text": "Chota hai. Ye chota hai. Kisse? Apne previous wale se. Apne previous wale se. Apne previous wale node se. Previous ka kya matlab hai? Ki in order me. In order me. In order me. In order me. Is root ke. Pahle kaunsa root visit hua tha? Agar ye usse chota ya equal to b hai. Equal to b hai. To aap directly ek answer me false kar sakte hai. Phir sir batara hai."
+  },
+  {
+   "start": 574.61,
+   "end": 603.38,
+   "text": "In order, if you come to a certain route, before that circle, there must have been a circle visited, right? You store that in the array. What do you store in the array? You store route by route in the array. So, suppose you are in a certain circle now, suppose you are on 2. Before this, which circle must have come in order on which we must have worked? If the data of the route becomes smaller than that, smaller than the previous one, then it will be false. So, we will do the same trick. We will use the same trick. How? See."
+  },
+  {
+   "start": 603.47,
+   "end": 630.06,
+   "text": "In the beginning, the inorder will start from the root. So what will be the previous in the beginning? Nothing will happen in the previous. Previous means that in the inorder, when you are doing the inorder, then what was the node before this root? So when the inorder hasn't started yet, then what will be the previous? It will be null. So see what we will do. First of all, where will the inorder call? From the root. Obviously, it starts from the root. See what we will do. See. And see how the prev changes and how we get to know. So first of all,"
+  },
+  {
+   "start": 630.06,
+   "end": 657.04,
+   "text": "Root is equal to 3 will be called. Inorder is called. So what does inorder do? First of all, it gives a chance to its left child. Who will it give a chance to? Root is equal to 1. After that, it will process itself. What will it process? We will see later. And after that, it will also give a chance to its right child. Is it a good thing? Okay. Let's do this. Now root is equal to 1 will come. Root is equal to 1 will come. Fun. Root is equal to 1 will come. Is it null? No, it is not null."
+  },
+  {
+   "start": 657.04,
+   "end": 686.35,
+   "text": "So, first of all, who will get a chance? 1. Now, you have come to 1. Who? Your left child. So, if you give a chance to your left child, then this will become root is equal to null. Because its left child is not there. Now, nothing happens in null. There is only return in null. So, okay. Something happened. Now, it will do its own processing. Now, let's see what processing it will do. Now, now. Look. If here you get to know that previous is null. If you get to know that previous is null, then what does it mean? That this circle, this circle of 1, is the first node. This is the first node in order."
+  },
+  {
+   "start": 686.35,
+   "end": 712.77,
+   "text": "The first node is in order, which means this person, i is equal to 0, i is equal to 0. Before this, there is no one, then only the previous can be null. The previous cannot be null like this. So the first thing is that if the previous is null, then this is the first node. Now what we have thought is that we will compare the root with our previous and find out. Now the first node, first node does not have any previous. So here you will not do anything, here you will not do anything. But, but, we can do one thing, if previous."
+  },
+  {
+   "start": 712.77,
+   "end": 742.32,
+   "text": "Equal equal to null. Means this is the first node. What will you do in this? Now, while going, make the previous root. Make the previous root. What will happen? We will tell you. What will happen? Watch. So when you do this, previous root. What is the root now? 1, 1, 1. What is previous? Previous is a global variable. We will write it above. So what happened to previous from null? Previous became 1. Previous became 1. Okay? Previous is null, so you cannot do any comparison. Okay. After that, now this is done. Process is done. Now,"
+  },
+  {
+   "start": 742.32,
+   "end": 770.13,
+   "text": "It will give a chance to its right child. So, this is also null. It has 2, 1. And there is no right child. So, it will become null. So, null will not work. This whole function is over. Now, where are you? Now, you have come here. Now, you have come here. Now, look carefully. This root is equal to 3. You went from here to 1. 1 is over. Now, what is previous? Previous holds exactly the same value as it has been processed before. Before this, it was 1. Before this, it was 1. Now, previous holds it. Okay?"
+  },
+  {
+   "start": 770.13,
+   "end": 790.62,
+   "text": "Now, when you check here that if previous is null, previous is not null because 3 is not the first node, 3 is the second node. Before this, a circle process has been done. Now you can check, what can you check? If, if the data of root, if now see 3 is coming after previous, then first previous node would have come, after that root would have come."
+  },
+  {
+   "start": 790.62,
+   "end": 820.37,
+   "text": "So what does sorted data mean? If the root is bigger than this, then it is fine. But if the root is smaller than previous or equal to it, then it is not BST. If it is smaller or equal to Prev's data, then what will we do? Answer is equal to false. And after that, whatever work we did here on previous is equal to root, we have to do this work in this too. Whether previous is null or not, previous is equal to root, we have to do it."
+  },
+  {
+   "start": 820.37,
+   "end": 848.93,
+   "text": "Previous is equal to root. So, we have to do it. So, after doing this, see. Now, what is previous? 1. Here, what was it? Now, the code is not complete. You must be thinking, what did I write? I am just explaining to you. In Hindi, I am explaining to you what I want to say. Now, what was previous? 1. Now, you were in 3. So, is 3 smaller than 1? No, 3 is not smaller than 1. So, till now, nothing. And till now, you can see that it is fine. This part was fine, so it is still fine. After that, what happened? Previous is equal to root. So, what became after changing previous? 3."
+  },
+  {
+   "start": 848.93,
+   "end": 870.9,
+   "text": "What is the previous variable? 3. Because 1's work is done. Now, what will be the call? fun root 2. Now see what will happen. When you come here, root is equal to 2. So 2. 2 will give a chance to your left child, but if left child is not there, then it will be null. Now, what will it check? If my root's data, which is 2,"
+  },
+  {
+   "start": 870.9,
+   "end": 889.92,
+   "text": "It is smaller than or equal to previous data. And now what does previous hold? The circle which was executed before this. What was executed before this? Root is equal to 3. So what does previous hold? 3. So is 2 smaller than 3? Yes, 2 is smaller than 3. There is a mistake here. And if there is a mistake here,"
+  },
+  {
+   "start": 889.92,
+   "end": 918.18,
+   "text": "So, the answer is equal to false. Here, there is a mistake because 2 is on the right side of 3. And if it is on the right side of 3, then it should have been bigger than 3. 2 is smaller than the previous one. So, the game is over here. The answer is equal to false. If you do the same thing by making an array, then how would its array be made? Its array would be made like this. First, 1 would come. Then, 3 would come. Then, 2 would come. You do the same thing in the array. 0, 1, 2. You start from here. You see, is it bigger than the last one? Yes, it is bigger than the last one."
+  },
+  {
+   "start": 918.18,
+   "end": 947.74,
+   "text": "Then here, is it bigger than the last one? No, it is not bigger than the last one, but it should have been. So you say here, false. So the same thing that you do in array, we are doing here with the help of a previous. Its code is very simple. Come, let's see its code. So you will need two things. In the beginning, what will you need? One, previous is equal to null. In the beginning, when in order has not started, then previous will be null. And you will need an answer. So in the beginning, we will assume that it is valid. If there is a mistake, then we will make it false. If not, then we will not make it. So it is fine."
+  },
+  {
+   "start": 947.74,
+   "end": 976.3,
+   "text": "Now, let's start our in-order. What will be passed in the in-order? Nothing, just the root. You have written the previous above, right? Sorry, I didn't want to give this. Yes. First of all, it's simple. If the root is null, then there is no need to do anything. You can't do anything. Now, the in-order is starting. In-order means, first of all, give a chance to your left child. Give a chance to the left of the root. You gave a chance. Now, let's play our game. First of all, if..."
+  },
+  {
+   "start": 976.72,
+   "end": 1006.27,
+   "text": "If prev is equal to null, then what do we have to do? What do we have to do? Prev equal to null means this is the first circle. So, we don't have to do much. Just put prev in root. Prev is equal to root so that we can use it next time. Else, if this is not the case, then you have to compare. So, what will we write in compare? If the data of root is smaller than the previous one or is equal to it? Is it smaller or is it equal to it? So, what does this mean? Answer is equal to false."
+  },
+  {
+   "start": 1006.27,
+   "end": 1036.53,
+   "text": "Okay? If it's big, then it's okay. If it's big, then it's okay. The answer was true. If it's big, then it's a good thing. If it's small, then the answer is equal to false. And in this case too, you should do prev is equal to root. Because next time it's less. Prev is equal to root, so you have to do it. Otherwise, you won't be able to maintain the previous. That will have to be done every time. Turn it off. I think it's done. So you had given the left a chance. Now give the right a chance. Now give the right a chance. Okay? And turn it off. Okay? Main... Oh man."
+  },
+  {
+   "start": 1037.23,
+   "end": 1065.39,
+   "text": "What is happening? No problem. If you want to give a chance to the main, then give a chance to the main. How will we do it in the main? Fun, or whatever your function is, inorder function name, and return answer. That's it. Look at this small program. So, what is this? This is your processing unit. This is your processing. First of all, you give a chance to the left. Then, in the last, you give a chance to the right. And in the middle, from here to here,"
+  },
+  {
+   "start": 1065.39,
+   "end": 1094.46,
+   "text": "or root processing. So this way you will know if it is valid or not. So this is its best approach. If you understand the array approach, you can do it, but this is better. And you have to understand this because it will be useful in the next question too. It will be useful in the next question too. What is the next question? Let's explain it. The next question is, recover binary search tree. The first one was validate. Now recover. So what does recover mean? That something has gone wrong. You have to correct that wrong. So see, let's move a little different from BST. Okay."
+  },
+  {
+   "start": 1094.46,
+   "end": 1119.49,
+   "text": "Let's assume that you have given a binary search tree. By doing this, anything can happen. Let's make a BST of 10, 15, 5, 2, 7, and 20. This is a valid BST. You can see that everything is going well. Now what has been told to you? This was valid. In this, any two nodes,"
+  },
+  {
+   "start": 1119.49,
+   "end": 1147.62,
+   "text": "Someone has swapped it. A thief has swapped it. A thief has swapped it. What has a thief done? Suppose we swap them. This one and this one. So, bring 15 here and bring 5 here. Okay. Now, is this BST? No, it is not BST. How will you know? Try using Validate. You will know in this order. Now, what is your work? And it is said that only two notes have been swapped. It is not that many... Two notes have been swapped by mistake. So, what has happened to 5 and 15?"
+  },
+  {
+   "start": 1147.62,
+   "end": 1173.52,
+   "text": "you have to find both of them and then you have to fix the BST by swapping their data again means if you had found both of them by chance if someone had told you then you would have swapped their data again so what would have happened if you had swapped them again? this would have been 5 again and this would have been 15 again now this BST would have been fixed because you have swapped both of them"
+  },
+  {
+   "start": 1173.52,
+   "end": 1203.3,
+   "text": "then it will end and BST will be correct. This is the statement of the question. It is a little difficult to think of it as BST. It is very difficult. It is difficult to explain it as BST. What should we say? BST and Sorted Array are the same. We call BST's inorder as Sorted Array. We can make Sorted Array as BST. So, instead of thinking of BST, let's think of Sorted Array. Now, if we write its inorder, then what will come? If we write its inorder, then it will come 2, 5, 7, 10, 15, and 20."
+  },
+  {
+   "start": 1203.3,
+   "end": 1231.87,
+   "text": "This is the array, right? Let's think in this array. Suppose someone tells you that there is no BST. Suppose there is an array. There is a simple array. Do one thing. In this array, we have swapped two indexes here and there. So earlier it was a sorted array. If you swap it, it becomes unsorted. Find them and correct them. Find them and correct them. So let's think in this array. We will think in the array. The work that has to be done in the array, we will do it in the tree. We did the same in Validate. We did the same in Validate. We thought in the array that what will we do by making an array. When we found out in that, it was done in the tree. We will follow the same here. Come."
+  },
+  {
+   "start": 1231.87,
+   "end": 1257.01,
+   "text": "So we have to write this array down. So suppose you have an array. Instead of doing this, we do this. Suppose there is a tree like this. 1, 2, 3, 4, 5, 6, and 7. This is a good tree. It is a sorted tree. Very good. Now in this array, I have told you that any two notes will be swapped. Any two notes will be swapped. So to understand this, we will"
+  },
+  {
+   "start": 1257.01,
+   "end": 1285.81,
+   "text": "Let's swap 3 and 6. Let's swap 3 and 6. See what happens. Look carefully. Open your eyes and open your mind. 1, 2, 6, 4, 5, 3 and 7. This is your sorted array which has been swapped. We have swapped any 2. Now, in the upper array, how did you check the sorted array? How did you check the sorted array? For i is equal to 0,"
+  },
+  {
+   "start": 1285.81,
+   "end": 1307.1,
+   "text": "i less than, whatever is the size of your array, and i plus plus, and if array of i, array of i, make it minus 1. If array of i is bigger, bigger than your array i plus 1, then we used to say that it is not sorted. Not sorted. It means it is wrong. It means that if a person is bigger than his previous one,"
+  },
+  {
+   "start": 1307.1,
+   "end": 1336.85,
+   "text": "then the wire wouldn't be sorted, it would be wrong. So let's see, in this array, which is not swapped, which is not swapped, it is sorted, it is perfect sorted, there is no error in it. If someone tells you that there is a wrong point in it, then obviously the wrong point in it is 0. There is no wrong point in it. If you pick up any element, then you will get a smaller one than the previous one. If you pick up anyone, then you will get a smaller one than the previous one. That is why the array is sorted, that there is no wrong work in it. Pick up anyone, if the previous one is smaller, then it will work."
+  },
+  {
+   "start": 1336.88,
+   "end": 1366.59,
+   "text": "If someone asks you in this, in which we have swapped 2, how wrong is it? Let's see how wrong it is. Let's start from here. Is 1 smaller than its predecessor? Yes, it is smaller than its predecessor. Is 2 smaller than its predecessor? Yes, it is smaller than its predecessor. But, is 6 smaller than its predecessor? No, no, no. We got one wrong here. What was wrong there? 6 should have been smaller than its predecessor, but 6 is bigger than its predecessor. So, we can say one wrong is"
+  },
+  {
+   "start": 1366.59,
+   "end": 1393.02,
+   "text": "One is wrong. One is wrong. Okay? But, but, but, let's see more. We might get more. 4. Is 4 smaller than our previous one? Yes, it is smaller. Absolutely correct. 5. Is 5 smaller than our previous one? No, 5 is bigger than our previous one. So, actually, there is not one wrong point. Two wrong points have been created. If you swap two, then it is not like the array is just ruined from one place. Two different points have been ruined. After that,"
+  },
+  {
+   "start": 1393.02,
+   "end": 1418.83,
+   "text": "Three. Three is smaller than its own. So here, wrong one. Where did you get one wrong? You got one wrong here. It increased from six to four. And the second wrong. Where did you get wrong two? You got it here. When five also increased from three. So you got two wrongs. Let's see how you always get two wrongs."
+  },
+  {
+   "start": 1418.83,
+   "end": 1446.21,
+   "text": "Once you get to know this, then suppose you have got two wrongs. Now how are the two wrongs? This element is bigger than the previous one. So if we write these four circles as the first of the wrong ones. What is the first of the wrong ones? Six. What is the second of the wrong ones? The first second of the wrong ones means where did we get it and what was the first second in it?"
+  },
+  {
+   "start": 1446.21,
+   "end": 1476.42,
+   "text": "You must have done this to find the error. Array of i should be greater than array of i plus 1. In this, this one has become first. Meaning, on the left side, you can write left and right, or first and second. If you want, you can write left and right, or first and second. And this has become second. We are saying this, that the wrong one has happened. The wrong one has happened. Look, I am sweating. It has become very hot. The first of the wrong one is 6. What is the second of the wrong one? 4. Okay. And what is the first of the wrong two?"
+  },
+  {
+   "start": 1476.42,
+   "end": 1505.82,
+   "text": "Galat 2 ka first hai 5. Aur galat 2 ka second kya hai? Second hai 3. Ye aaya. Acha. Ab isme kaunsa 2 node swap hua tha shuru me? Kya hua tha? 6 aur 3. 6 aur 3 matlab galat 1 first aur galat 2 second. Toh agar aap in dono ko swap kar dete toh aapko array sahi ho jata. Isme is example me kamse kam. Kamse kam is example me o array sahi ho jata. Ek aur example dekh lete hain. Ek aur example dekh lete hain. Ki kya hamesha aisa hi hota hai kya?"
+  },
+  {
+   "start": 1505.82,
+   "end": 1535.87,
+   "text": "Let's see another example. Let's make a big array. 1, 2, 3, 4, 5, 6, 7, 8. Okay? This is a good array. What do we do in this? We swap 1 and 8. Who? Who? We swap 1 and 8. What will be the array in this? First comes 8, then 2, 3, 4, 5, 6, 7, and 1. Done? Both of these are swapped. Someone may ask you in this, how much is wrong?"
+  },
+  {
+   "start": 1535.87,
+   "end": 1564.85,
+   "text": "How many wrongs will you get? You will get 1 wrong. 8 is bigger than your previous one. It is wrong. 7 is bigger than your previous one. So here also you got 2 wrongs. Here also you got 2 wrongs. Come here and write. Wrong 1 and wrong 1's first is 8. What is wrong 1's second? 2. Very good. What is wrong 2's first? 7. And what is wrong 2's second?"
+  },
+  {
+   "start": 1564.85,
+   "end": 1594.32,
+   "text": "1. Okay. Which 2 was swapped? 1 and 8. Meaning, wrong first and wrong 1's first and wrong 2's second. If you swap these two, you will get the answer. Was it the same above? Yes, it was the same above. So, now we know what to do. If you both found the wrong one, wrong 1 and wrong 2, wrong 1's first and wrong 2's second, how will you write it? You will do nothing. What will happen to wrong 1's first? As soon as you get a wrong one, you get a less wrong one. If array of i,"
+  },
+  {
+   "start": 1594.32,
+   "end": 1616.06,
+   "text": "is greater than the array of i plus 1. So this is what happened. This is first, this is second. So what is the first of the wrong one? Array of i. And what is the second of the wrong one? Array of... We will discuss this later. We will do it like this. We are not writing this on our own. But we can see a pattern. Which two people will always get the answer by swapping?"
+  },
+  {
+   "start": 1616.06,
+   "end": 1645.5,
+   "text": "The first of the wrong one and the second of the wrong two. Here also, the first of the wrong one and the second of the wrong two. But, there is a small twist here. Did you understand till here? It's a very good thing. It was difficult. It's a small twist. Till now, the swapping we were doing, we were doing it of the far away elements. See, far away elements. We were doing it intentionally. We were doing it of the far away elements. If we swap two adjacent elements, then see what will happen. See what will happen. Adjacent means the ones that were together. Swapping them means, now anyone can swap, right? Swap does not mean that the adjacent will not happen. It can happen."
+  },
+  {
+   "start": 1645.5,
+   "end": 1674.37,
+   "text": "Come. 1, 2, 3, 4, 5, 6. What do we do in this? We swap 3 and 4. 3 and 4 can also be done. Obviously, it can be done. Come. Swap it. 1, 2, 4, 3, 5, 6. See what is wrong in this. 1. What is wrong in 1? No. 1 is smaller than its predecessor. 2. 2 is also smaller than its predecessor. But 4 is bigger than its predecessor. So 4, 3. So what did you get in this? Wrong."
+  },
+  {
+   "start": 1674.37,
+   "end": 1702.56,
+   "text": "What did you get from 1? You got 4. What did you get from the wrong 1? You got 3. Very good. Now let's move ahead to find the wrong 2. 3. Have you increased from the previous one? No. 5. Have you increased from the previous one? No. There is no previous one of 6. So, see, a very important thing happened. Here, you got the wrong 2's first and the wrong 2's second. You didn't get this."
+  },
+  {
+   "start": 1702.56,
+   "end": 1730.74,
+   "text": "Why didn't you get it? Because when you swap adjacent elements, you get only two wrong ones. You get the first and second of the wrong one. You get the wrong one. If you swap, something will be wrong. But here you didn't get two wrong ones. On the top, you used to get two points where the array used to break. In that, you get the first and second. So you used to get four things. You used to get two pairs. Here you are getting only one wrong point, which is of these two. You are not getting the wrong two."
+  },
+  {
+   "start": 1730.77,
+   "end": 1754.16,
+   "text": "So if in any case you didn't get the wrong 2 first and wrong 2 second, then what will you do? Simple. Swap these two. 4 and 3. 4 and 3 was the swap. Swap these two. Swap these two. How will you know? You will take a counter. Wrong counter. Wrong is equal to 0. Wrong is equal to 0. As soon as you get a wrong, if the wrong is already 0,"
+  },
+  {
+   "start": 1754.16,
+   "end": 1784.13,
+   "text": "So update the wrong one first and the wrong one second. And make the wrong one plus plus. If you get and there is a wrong one in it. You get one more wrong point. Means this is the second. Update these two. And make the wrong one plus plus and make it two. Now come out and check. That if you have got only one wrong. You will get one. It is not possible that you will not get wrong. So you are doing sorted here and there. You will get it. If you are getting wrong one. Who to swap? These two. Because it means that there is no other wrong. Adjacent element was swapped. If."
+  },
+  {
+   "start": 1784.13,
+   "end": 1809.84,
+   "text": "If we are getting wrong is equal to 2, then what do we have to do? We have to do the first of the wrong one and the second of the wrong two. If we have written this, now we hope that you have understood what to do. This whole thing happened on array. When you have array, then you do this work. Let's write the code first and see what happens in the code, what will happen in the code. So the first thing we will do is our BST."
+  },
+  {
+   "start": 1809.84,
+   "end": 1839.31,
+   "text": "We will make a vector of the sorted array. How? Do you know how to make it? Yes, I have told you a lot of times. I have told you immediately. We have made its vector. Suppose you have a vector. What will you do? Let's see. You have a vector. First of all, what will you do? Int. Now, obviously, if two circles have been swapped in BST, then it is the same in this array. It is the same in the sorted array."
+  },
+  {
+   "start": 1839.31,
+   "end": 1868.85,
+   "text": "Two swaps have been done. It is possible that adjacent swaps have been done in which only one is wrong. It is possible that distant swaps have been done in which only two are wrong. You will not get three wrong. Try different permutation combinations. You will not get three wrong. Okay? Wrong is equal to zero. Now, how many things do you want? You take four things. You take four things. Int. We write this as G1's first. Means, wrong one's first. In the beginning, don't give any value. And, what do we do in this? You want four things, right? So, G1's first is done."
+  },
+  {
+   "start": 1868.85,
+   "end": 1897.84,
+   "text": "G1 is the second. Now, the first is the wrong 2. You can name it as you like. You can left-write it. And the second is the wrong 2. Very good. Now, let's do the loop. What do you want to check? If the array of i is bigger than your previous one, then what happens? This is wrong. In this, what happens? This is its first and this is its second. So, run the loop according to that. i is equal to 0. i less than. Let's assume that our array's name is a."
+  },
+  {
+   "start": 1897.84,
+   "end": 1926.54,
+   "text": "A dot size. Where is A made of? It is made of BST. Minus 1. Don't go till the last because here you are doing I plus 1. You will crash there. Last index. So stop first. Because there is no one beyond the last index. So what will we check? I plus plus. Now, now, now see. If area of I gets bigger than the previous one. So it means it is wrong. It clearly means it is wrong. But which is wrong? Let's see it inside. If"
+  },
+  {
+   "start": 1926.64,
+   "end": 1951.94,
+   "text": "If the error is equal to 0, if the error is still 0, which was 0, which means this is the first error, this is the first error, then what will we do? g1 first is equal to array of i. Okay. g1 second is equal to array of i plus 1. And, wrong plus plus. Now, it is wrong. Now, it should be wrong 1. Okay?"
+  },
+  {
+   "start": 1951.94,
+   "end": 1979.7,
+   "text": "Else. Else. Else. This can only mean one thing. If the error is not 0, then the error is 1. It means you have got the second error. So, you have got the second error. So, G2 first. This means the first error has been made. Its pair has been made. Update the second error. Update the second error. And G2 second is equal to array of I plus 1. Okay. You can do the wrong plus plus. No. Yes, do it. Yes, do it. Because we will check the last one. Wrong plus plus. This is done. And."
+  },
+  {
+   "start": 1979.7,
+   "end": 2008.51,
+   "text": "This is done and this for loop is closed. After this, after this, now check, what did we say? There will be at least one mistake. If, if, wrong, if, wrong, 1, sorry, wrong, wrong means how many times has it been wrong? Is equal equal to 1, means there is only one mistake. There is only one mistake, we had to swap this. Obviously, in one mistake, there will be no wrong 2, there will be only wrong 1. We had to swap these two. We had to swap these two. So what will we do in this?"
+  },
+  {
+   "start": 2008.51,
+   "end": 2037.63,
+   "text": "In this, we can do something like G1 first and G1's second. Okay? Swap is done. Else, if this is not the case, there are two mistakes. In which of the two mistakes did you fill the pattern? Yes. G1's first and G2's second. So swap them. Swap them. G1's first and G2's second. Yes. G2's second. Very good. And return it."
+  },
+  {
+   "start": 2037.63,
+   "end": 2067.58,
+   "text": "So, this is solved for array. This is a very simple code. Let's hope that there will be no doubt in this. Why did you do this? It will be done with a very simple explanation. Now, the thing is that you can do this. You can do this. You can make a tree of BST. You can do this. But, the same problem will come in this. The interviewer will say that the array that you are making. The array that you are making. Don't make it. Do it somewhere else. Means, do it in BST only. The problem that came in validate. The problem that came in validate. Don't make an array. Whatever you are doing in array."
+  },
+  {
+   "start": 2067.58,
+   "end": 2095.55,
+   "text": "Do it in BST. Do it with PREV or anything else. Do it in BST. Do it during in-order. Come, let's do it during in-order. Come. Now, to do it during in-order, here we will apply the same formula. So, what will we do? Let's see what we will do. Let's write the code. We will dry run it. Similar, similar. We will do it during in-order in the area we are doing. First of all, now let's know what we want. We want previous. What do we want? We want previous. Why?"
+  },
+  {
+   "start": 2095.55,
+   "end": 2125.04,
+   "text": "Because you will look at root and previous. In this, you were looking at i and i plus 1. In that, you will look at root and previous. So, you need one previous. Node, star, previous is equal to null. Now, you need four things. You had taken four things above. G1, G2, here and there. Now, here you had taken integer. Because R is integer. But binary search tree is not integer. It has big circle. It is node. So, what to do? Take those four things. Node, star, G1 first."
+  },
+  {
+   "start": 2125.3,
+   "end": 2155.41,
+   "text": "is equal to null. Let it be null in the beginning. Node star, G1's second is equal to null. Let's hope that you are getting the naming convention. I like doing this. If you want, you can give something else. G2's first means it was wrong. One more null. And G2's second null. The same work that was there. Take it up. Very good. Take it. Let's start the inorder and see what we can do."
+  },
+  {
+   "start": 2155.47,
+   "end": 2186.93,
+   "text": "In order, start void. Give it a name. Fun. Fun of void. And node star root. Okay. First of all, if root is null, then you don't have to do anything. Return. Okay. The first thing to do in order is to give the left one a chance. Give the left one a chance. Give. Give the left of root. Left is done. Now come. Now let's do our processing."
+  },
+  {
+   "start": 2186.93,
+   "end": 2215.65,
+   "text": "First of all, the same thing that we did in the validate, if the previous is null, if the previous is null, now see, what will we check in this? What will we check in this? In the sorted order, what were we checking? In the upper array, we were checking i with i plus 1, in this we will do the opposite, in this we will do the opposite, like this, assume this is your 0, 1, if i is like this, then when will this be wrong? When in the sorted array, i should have been greater than i minus 1."
+  },
+  {
+   "start": 2215.65,
+   "end": 2243.6,
+   "text": "But if an element is smaller than the last one, then it will be wrong. So what will happen? It will be wrong. That means, if the root is smaller than the previous data, then it will be counted as a mistake. So what will happen? It will be counted as a mistake. So if the previous is null, then there is no use. Then what should you do? Make previous equal to root."
+  },
+  {
+   "start": 2243.89,
+   "end": 2274.27,
+   "text": "You can't do anything, right? Because there was no one behind it. It's the first node. Same. Validate. Else. Else. Else. Okay. Now, there is something or the other. Come, let's identify the mistake. If root's data, root's data is previous and root, root is before previous. So, root should have been bigger than this for sorted. But, if it is smaller than this, if it is smaller than this, very good. What do we call this? Mistake. Mistake. This mistake has happened."
+  },
+  {
+   "start": 2274.27,
+   "end": 2300.7,
+   "text": "Now, do the same thing. Take the int above as a false. To make it simple. Very simple. False is equal to 0. Do the same thing. If false is equal to 0. Meaning, what should be the update? G1 first and G1 second. Meaning, your first mistake. Your first mistake. Now, look very carefully. Root is here. Meaning, root has come in order later."
+  },
+  {
+   "start": 2300.7,
+   "end": 2330.54,
+   "text": "And previous is the previous node. So, previous is first. And what is root? Second. What is root? Second. The mistake is that root should have been bigger than previous. But root became smaller than previous. So, what is this mistake? What is this mistake? First and second. What is this mistake? Previous is your first. And root is your second. Same mistake. See, this is the mistake. This is the mistake. This is your root. And this is your second."
+  },
+  {
+   "start": 2330.54,
+   "end": 2358.22,
+   "text": "Previous. Okay? This is your root here. And this is your previous. So the root is smaller than the previous. There is a mistake here. Who will be first? Previous. Who will be second? Root. If the wrong is equal to 0, it means your first mistake is going to happen. So G1 first is equal to prev. And G1 second is equal to root. And what will we do? Wrong plus plus. Now the mistake is done. Wrong plus plus."
+  },
+  {
+   "start": 2358.22,
+   "end": 2386.54,
+   "text": "Very good. Now, below this, below this, should I write it here? Let's write it below this. Else, else, the only meaning of else is that this is your second mistake. Same thing, you have to do the same thing. But now, you have to do it for G2. G2 first is equal to prev, and G2 second is equal to root, and wrong plus plus. Now, this is your second mistake. You have stopped your second mistake, else. Now, you have to stop the mistake part."
+  },
+  {
+   "start": 2386.7,
+   "end": 2417.01,
+   "text": "And close one more else. This is the else. Look at the bracket. We will make the code smaller and show you. Done. The whole processing is done. The whole processing is not done yet. The whole processing is not done yet. Before doing this work, before going to the next, you should do previous is equal to root one more time here. Now it is closed. Because why are you doing it? You did it in validate. Previous is equal to root. Do it in the last. Next time it will be useful. Now the whole processing is over. Now give your right child a chance. Now give your right child. The code is a little lengthy."
+  },
+  {
+   "start": 2417.1,
+   "end": 2443.14,
+   "text": "It's not hard, right? We are doing what was above. We will make the whole code small and show you how. And we will also do dry run. And close this. Now, how will you call it from the main function? What will you call it from the main function? We will call our fun and root. Now, same thing, same thing. If, now when this will run completely, then it will be wrong update, everything will be updated. If you come to know that there is only one mistake, there is only one mistake, then whom do we swap?"
+  },
+  {
+   "start": 2443.14,
+   "end": 2469.39,
+   "text": "G1 first and G2 second, because G2 will not be there, because there is only one mistake. In this, we don't have to swap this, we have to swap the data of the node. Keep in mind that both are node pointers, all four are node pointers. So let me tell you what the data of G1 first means, and the data of G1 second should be swapped. Swap, this means that the number of both the circles is written,"
+  },
+  {
+   "start": 2469.39,
+   "end": 2499.47,
+   "text": "I'll erase it and write it here and there. Swap is done. Else. Else. Else. This else means that two mistakes have been made. Who will you have to swap? The data of G1 first. And the data of G2 second. G2, as we have seen above, that is what has to be done. After this, you can return. Make this code small and see. It looks like this. It's not too big. I mean, it should be this big. See, this is your code. See. This is your code. You will get its code in the comments. Both of them. Validator of both of them."
+  },
+  {
+   "start": 2499.89,
+   "end": 2526.9,
+   "text": "So this is your program. Try it once. We don't think there is any need to try it. It is similar. If you want to do it with an array, then you can do it. But don't learn it. It won't work in an interview. You will have to do it like this in an interview. And it is not that hard. I don't think it is. So these were two questions. This is a very good question of BST. There are not many questions after this in BST. Tomorrow is the last lecture of TREE. According to me, we will teach you construction in it. How to learn construction."
+  },
+  {
+   "start": 2526.9,
+   "end": 2530.7,
+   "text": "And after that we can move on to graph or dp."
+  }
+ ]
+}

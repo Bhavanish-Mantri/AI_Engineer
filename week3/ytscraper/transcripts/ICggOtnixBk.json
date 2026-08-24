@@ -1,0 +1,689 @@
+{
+ "video_id": "ICggOtnixBk",
+ "title": "4 Questions to Master HASHMAPS in C++ JAVA Python | DSA Patterns Course 2026",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 3962,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.79,
+   "text": "In the previous lecture, we did the introduction of HashMap. In this lecture, we will do 4 questions of HashMap and your HashMap will be completely finished. The point to note is that if you are coming here for the first time, then you should see at least 42 questions. If possible, then you should see from the beginning. You will get everything in the description. But, there is a very special thing in these 4 questions. If you see these 4 questions in the lead code, then it is the question of 4 easy questions. Whose questions are easy? But, if you see their companies, then they are asked in all these companies."
+  },
+  {
+   "start": 27.79,
+   "end": 53.12,
+   "text": "Now, in all these companies, easy questions are not asked. All these companies, such as TCS Infosys, in which easy questions will be asked. So, although you will find it easy on its lead code, but this question is not easy. If you start making it, it took us about 45 minutes to make 4 questions. Whereas we know hash map, we know string, we know everything. Even then, it took us 45 minutes to make 4 questions. So, it will take you more than that. So, listen very carefully."
+  },
+  {
+   "start": 53.12,
+   "end": 80.3,
+   "text": "four questions and these four questions are string questions because when you put a hash map in an integer type question or an array it is a little easy but putting a hash map in a string is a separate thing that what happens in it, how it is thought, what is the letter and what are the things so till the end of this lecture you will understand more than understanding all the four questions that why hash map means why is it written that if you want to use hash map then why did you use it"
+  },
+  {
+   "start": 80.3,
+   "end": 108.94,
+   "text": "how to use hash map, particularly in string, how to use hash map in string question and after this, my hope is that if you get any string question in which you will need hash map, then you will be successful in making it. So the fourth question will be like this, the first question will be the easiest, the second and third will be fine, the fourth question will be hard. Watch till the end. Again the same thing, if you want to watch till the end, then watch till the end, otherwise stop here. Half and 25% and 75% you will not get much benefit from all this. Let's go."
+  },
+  {
+   "start": 109.39,
+   "end": 139.66,
+   "text": "So, the first question is, that is, lead code 387. Okay. It says, first, you have to find a unique character in a string. First, unique character in a string. What does this mean? Look. This means that you will be given any string. Okay. You will be given any string. A, B, C and A. Assume like this. Okay. What does first unique character mean?"
+  },
+  {
+   "start": 139.86,
+   "end": 166.69,
+   "text": "The first character which is unique in the whole string. If you see, what is the first character of the string? What is the first character of the string? It is A. Okay. Is A unique in the string? No, A is not unique in the string because A came one more time. It means A is repeated. So, it is okay. Next, is B unique? Yes, B is unique. So, your answer should be B, not B. B's index, which is 1."
+  },
+  {
+   "start": 166.69,
+   "end": 195.84,
+   "text": "If you don't get any letter that is unique, means all the letters are duplicated somewhere, then your answer should be minus 1. So this is a question, a very easy type of question, and this is really a little easy, not that hard. Okay. So what to do in this? Means, what do you have to do? See. What did you say in the question? Whenever you get a question, then read the question. Then try to think of it in Hindi in your mind, that what do you really have to do? Means, what does the question want from you? What is your main problem? So you have given a string, okay."
+  },
+  {
+   "start": 195.84,
+   "end": 226.1,
+   "text": "You have to find the first unique character. If this is your string and there will be a lot of letters in it. So, if you were told to find the first character of a string, then it is very easy. S of 0 is the first character. Now you are told that it should be first but it should also be unique. So, your answer would have been S of 0 if you were told to find the first character. But you were told that it should also be unique."
+  },
+  {
+   "start": 226.1,
+   "end": 251.58,
+   "text": "So if someone tells you, if you come to S0 and ask this question, ask this question by shouting somewhere, that is S unique? Is S unique? If someone tells you the answer, if someone tells you that yes, S is unique, then what will you do? Will you return S? Will you return 0? Very good, your problem is solved. But if someone tells you that no, no, no, S is not unique, like here,"
+  },
+  {
+   "start": 251.58,
+   "end": 280.86,
+   "text": "You come here and ask, is A unique? If someone tells you that A is not unique, because we know that A has been repeated somewhere, we don't know where it happened, it must have happened. Okay? So what do you do? So what do you do? So S of 0 cannot be your answer, because it is repeated. So you read S of 1. You read S of 1. You ask the same question again, that tell me one thing, S of 1, is this letter unique? If someone tells you that yes, it is unique, then your answer becomes 1. If someone tells you that no, it is not unique, then what do you do?"
+  },
+  {
+   "start": 280.86,
+   "end": 310.62,
+   "text": "Let's move forward. What else will you do? You don't have any choice. See, you have first. You have to repeat the first unique character. So, when you had to give the first character, then you used to give S of 0. But, there is a condition also. That the letter you want to give, the index you want to give, it should be unique. So, you will go to every letter. You will ask questions. If the answer to the question is yes, then that is your answer. Because it is first. If you get yes on S of 0, then your answer should be S of 0 or 0. If you get no here, then you will go to S of 1. Because,"
+  },
+  {
+   "start": 310.62,
+   "end": 340.02,
+   "text": "The next first is the same. Okay. If you get yes on S of 1, then very good. Why did you come on S of 1? The first thing is, why did you come on S of 1? Because you might have got false on S of 0. Okay, no problem. You came on S of 1. If someone tells you that this letter is unique, then very good. There is no need to look ahead because this letter is unique. Answer. If he says that this letter is not unique, then you will not have any other option. You will have to go on S of 2. Here also the same question. Is this letter unique? If it is unique, then very good. Answer is 2. But if it is not unique, then you will have to go ahead. Okay."
+  },
+  {
+   "start": 340.02,
+   "end": 368.29,
+   "text": "If the whole string ends like this and you never get a yes, then you do minus 1. So this is your question. Now you have to do this. So that's it. Now you know all the things in this question. You know how to put a loop on S , then S , then S . You know everything. But what is the main thing? What we think, the story of this in our mind, this question, this question, you were asking a question, remember. Every..."
+  },
+  {
+   "start": 368.29,
+   "end": 398.21,
+   "text": "What were you asking after going to every letter? Is this unique? If you got the answer of yes, you would have returned it. Which one? That index. I would have returned it. If you got the answer of no, you would have moved on. You would have moved on. That's it. In this whole thing, you know everything except this question. Is this unique? Who will tell you this? We told you that if someone would have told you, you would have solved it very easily."
+  },
+  {
+   "start": 398.21,
+   "end": 426.96,
+   "text": "If the lead code tells you that we are making a function for you, you can ask, then you can solve this question like this. But where is it in this question? This question, all this, what is this unique, what is this unique? You can solve this kind of question in HashMap. This kind of question, especially in string, in string, last time we talked about HashMap, there was no talk of string, there we talked that you will ask from it that what is the key?"
+  },
+  {
+   "start": 426.96,
+   "end": 454.59,
+   "text": "So, it will tell you. You will ask it what is the value of any key. So, it will tell you. But, here also, in the string question, whenever a hash map will be used, then it will be used in the same way. When, in some way, that question will be of frequency. Whose? Frequency. Whose frequency? Letter's frequency. Letter's frequency. Because, what happens in string? Number doesn't happen in string. Letter happens in string. Letter. Letter's frequency, whenever you feel that in string,"
+  },
+  {
+   "start": 454.59,
+   "end": 484.56,
+   "text": "there is some work of frequency, means how many times the letter is coming, how many times it is not coming, is it coming or not, things like this. So, your hash map will be such that it will store the frequency of the letter. Okay, tell me one thing. Now, for example, this is your string. A, B, C, A, B. This is your string. Now, what do you know by looking at it? Which letters are repeated and which are unique? So, look. The A one is repeated because A, you can see repeat. B is also repeated."
+  },
+  {
+   "start": 484.56,
+   "end": 512.67,
+   "text": "But your C is unique. How do you know this? How do you know this? You saw it and said that A seems to be repeated. But how did you know? How many times is A coming in the total string? Two times. Okay. How many times is B coming? Two times. How many times is C coming? One time. Which is unique? C. This is unique. Brother, what does unique mean? If you say that a letter is unique in a string, then how many times will it come? It will come only once, right? It will repeat more than once."
+  },
+  {
+   "start": 512.67,
+   "end": 541.73,
+   "text": "it will be repeated more than once so you have got the answer to your question if you had a hash map in which instead of key we would have kept the letter and instead of value we would have kept its frequency so you ask this question whether this letter is unique or not you would have known immediately, how would you have known? suppose SI is equal to A what question did you want to ask? is this letter unique?"
+  },
+  {
+   "start": 541.73,
+   "end": 567.52,
+   "text": "If you would have known that the value of A in the hash map is 1, then you would have said yes. But if you would have known that the value of A is more than 1, then you would have said no. If you would have known that the value of A is 5, then you would have said no. You would have got the correct answer immediately. So that's it. For this, you will have to make this hash map. Once you make this hash map, the frequency of each letter,"
+  },
+  {
+   "start": 567.52,
+   "end": 598.93,
+   "text": "How much will be the frequency of any unique letter? Definitely 1. Because the meaning of unique is 1. So, we don't have to do anything in this. What do we have to do in this? For example, if you get a string like this. See. It will be very clear. Let's see in dry run. L O V E L E E T C O E 0 1 2 3 4 5 6 7 8 Okay."
+  },
+  {
+   "start": 598.93,
+   "end": 625.95,
+   "text": "This is your string. See, in the question of HashMap, Letter frequency is this pattern, but this makes the question hard because you have to think like this. So see, this is your HashMap. First of all, you have to make your HashMap because you want to ask for the hard letter. So until you see the whole string, your HashMap will know which letter is unique and which is duplicate. So see, we came here."
+  },
+  {
+   "start": 625.95,
+   "end": 655.1,
+   "text": "L, now there is no L, what we will do is increase the frequency of each letter, so what we said, if it is not on the hash map, if it is not a key, then it is inserted with 1, so what will be your L? 1, no problem. O, not yet, O is 1, V, V is 1, E, E is 1, maybe your hash map will end, so we will increase it, okay. L, L, L came again, L came again, so what to do? Do not insert L again, increase the frequency of L, we are counting the frequency of each letter."
+  },
+  {
+   "start": 655.1,
+   "end": 684.82,
+   "text": "Make it 2. E. E. It has come. It has come. So increase its frequency. Increase it. It has come again. Increase it again. Increase its frequency again. Okay. T. It is not there yet. So insert T with 1. C. C is also not visible yet. Insert it with 1. O. O is there. O is there. Increase O's frequency. Increase O's frequency. D. D is not there yet. Insert it with 1. E. E is there. Increase E's frequency."
+  },
+  {
+   "start": 684.82,
+   "end": 712.42,
+   "text": "Let's increase the frequency of A. Your hash map is ready. That means, whatever question you wanted to ask, your question and answer system is ready. You can ask it immediately. Now, come. Now, come to the first index because you have to find the first unique. We will stop where we find the first. L. Is L's frequency 1? Is L's frequency 1? No, no, no. L's frequency is 2. That means, this is not unique. And you can see that L is definitely not unique. See. L is twice. Very good. O."
+  },
+  {
+   "start": 712.42,
+   "end": 740.13,
+   "text": "Is the frequency of O 1? No, no, no. It is 2. This is also not unique. It must have come somewhere. I don't know where it came from, but it is definitely not unique. Very good. V. Is the frequency of V 1? Yes, brother, the frequency of V is 1. So, you got it. Which will be your first unique character? V. Because there is no L answer, there is no O answer. V is unique. You need first. You don't need second, third, fourth. What will you return immediately? 2. In which index did you get it? 2. Your game is over."
+  },
+  {
+   "start": 740.13,
+   "end": 769.76,
+   "text": "If your entire string ends up like this, then you would have returned minus 1, then this would have happened. Come, its code is just a simple program. What is its code? In this, you will be given an int, fun, you will be given a string. String will be given. What do we have to do in this? First of all, remove its length. As your java length comes out, remove it. After that, make a hash map. What will java make? Map integer integer is equal to new map by doing this."
+  },
+  {
+   "start": 769.76,
+   "end": 796.42,
+   "text": "unordered, look at the spelling, we forgot the spelling. How will you always be in the string? Mostly, the character and integer, because we are doing the frequency of the letter. What is the letter? Character. What is the frequency? Integer. So, do it like this. After that, first of all, let's make our hash mark. How will we make it? For i is equal to 0, i less than n, i plus plus. And what will we do? f of s of i"
+  },
+  {
+   "start": 796.42,
+   "end": 826.91,
+   "text": "plus plus means increase the frequency of this letter if it is not there then it will insert with 1 it will increase its frequency now come let's work on our main thing this is done this is to make the hash map this is to make the hash map means you have to prepare for your question answer I have prepared it very good now let's move towards our answer let's start from first we will go to the whole string what question you have to ask in every character if f of"
+  },
+  {
+   "start": 826.91,
+   "end": 855.46,
+   "text": "s of i equal equal to 1. What does this mean? This is unique, this should be the answer. Return. Please note that you don't have to return the character, you have to return its index, return i. If you don't get the answer even after this loop, it means that no letter in the string will be unique. So, I have told you that if there is no unique, then you can simply return minus 1 and close this. This is a small program made in hash map. This is a very easy question. I mean, it is a very stupid question. We can call it that."
+  },
+  {
+   "start": 855.46,
+   "end": 883.71,
+   "text": "So, your first question is over. Quote it. Let's move on to the next question. Next question will be a little hard. It's not too hard. I promise. It's not too hard. Hardness will increase little by little. So, this question is 583. The name of this question is very interesting. Its name is Ransom Note. What? Ransom Note. This has been asked in Google and Apple. So, you can understand the seriousness of this question. Okay. Do you understand the meaning of Ransom? Ransom means, for the ransom,"
+  },
+  {
+   "start": 883.71,
+   "end": 913.58,
+   "text": "The letter written for ransom is called ransom. Ransom means ransom. Kidnapping means ransom. That's not important. We have to tell the story. What is the main question? Those who have seen the sliding window will find this question easy. They will solve it quickly. You will remember the sliding window as soon as you see it. You are given two strings. One string is called ransom."
+  },
+  {
+   "start": 913.71,
+   "end": 943.38,
+   "text": "One more string's name is magazine. What are the two given to you? Strings are given to you. Okay. One is ransom and one is magazine. Okay. What do you have to find out? You have to return true. If, if, what is the condition? If your ransom can be generated, generated by, by using letters from magazine, from magazine."
+  },
+  {
+   "start": 943.98,
+   "end": 971.38,
+   "text": "What does this mean in Hindi? Those who are watching the sliding window, remember what was there too. If your, let's say your ransom is like this. How is your ransom? AA. This is your ransom. And your magazine looks like this. How does your magazine look like? AAB. You have to find out whether you have to use the letter of the magazine and not use any extra letter."
+  },
+  {
+   "start": 971.38,
+   "end": 1000.02,
+   "text": "Can you make this Ransom or not? Let's see if you can make it or not. Look, you need 1 A for the first time. So here 2 A is already there, so let's use 1 A and make it. Very good. You need 1 more A. So here 1 A is still left, so you can use it and make it. So you can make it here. True. But, if your Ransom is AAC, then you need 1 more C, but there is no C here. There is no C here, you just have 2 A and 1 B."
+  },
+  {
+   "start": 1000.02,
+   "end": 1029.89,
+   "text": "So, one way is that, what is a magazine? A magazine is letters, meaning letters are given to you. When children used to play, when we used to play in childhood, toys used to come. What toys used to come? There used to be a lot of letters in it. Those who have played will remember, there used to be a lot of letters in it. A, B, B, Z, C, T, C, D. There used to be a box of a lot of letters. Someone used to say to you, you need to make a word. You need to make a word. And you can use one of these letters."
+  },
+  {
+   "start": 1029.89,
+   "end": 1060.14,
+   "text": "If you can't use the letter from your mind, then what would you do? You would pick one letter from the box and put a Z on it. If you want the next letter, you would see if it is in your set or not. If it is not in your set, then you can't make it. If it is in your set, then you can make it. So this is the only question. All the letters given in the magazine, that is your kit. You have to use it to make a ransom. If you can make it, then make it true. If not, then make it false. Now, those people who are coming while seeing the question of sliding window, they must have already understood what to do. See. When will you be able to make it? When will you be able to make it?"
+  },
+  {
+   "start": 1060.14,
+   "end": 1089.71,
+   "text": "When should you return true? Assume that there is a letter A in Ransom. Okay? There is only one letter A. Okay. Assume that there is only one letter A in Ransom. There are many letters in your magazine. There are many letters in your magazine. There is a lot of things in your magazine. If, if, you want one letter A. If there is one letter A in your magazine, then you can make it. If there is no letter A in your magazine. Assume that there is no letter A. There is zero letter A. Then you will not be able to make it. Then you will not be able to make it."
+  },
+  {
+   "start": 1089.71,
+   "end": 1118.9,
+   "text": "Okay? If your Ransom is written AA, you need 2 A's. If in your magazine, for example, there is one A. In your magazine, there is only one A available. Meaning, there is only one A box. There is a brick. So, you cannot make a Ransom. Why? Because you need two A's for Ransom. How many do you have? One A. How many do you have? One A. How many do you need? Two. So, you cannot make it. Okay? Assume that your Ransom is written AAB. Like this. Sorry."
+  },
+  {
+   "start": 1118.93,
+   "end": 1147.17,
+   "text": "Your Ransom looks like this. AABBB. Okay. Suppose you have two A available and two B available. It means your magazine looks like this. You have two A available and two B available. Now will you be able to make it or not? See. In Ransom, you don't have to worry about the order. How many times do you need each letter? You can see that A needs two bricks. You need two A toys."
+  },
+  {
+   "start": 1147.17,
+   "end": 1175.41,
+   "text": "But you need three B's. How many do you have? You have two A's. Very good. So A will be made. But you don't have three B's. You have two B's. So it won't be made. Because you wanted three B's. So it can't be that you make a complete answer and one letter is left and you say that only one is left. Do a little. No, it doesn't happen. You have to make it complete. So you want two A's and three B's. You had two A's. But you had two B's. How many B's did you need? Three."
+  },
+  {
+   "start": 1175.54,
+   "end": 1203.73,
+   "text": "So that's it. This is the thought process. This is how children are made. How many letters can there be in Ransom? Only 26, right? Because the whole letter is 26. A to Z. Okay. Assume that Ransom gives you a demand. What does Ransom tell you? It gives you a demand. What is Ransom? It is a demand, right? It is a demand. It tells us that A is required once, B is required twice, C is required once. This is how it gives you a demand."
+  },
+  {
+   "start": 1204.18,
+   "end": 1232.62,
+   "text": "Your available means you have, let's say I have A 5 times, B 5 times, that's it. A 5 times and B 5 times, okay. Let's see, you wanted A once, you have 5, it doesn't matter, I mean you have 1, very good. You wanted B twice, you have 5, okay, you have more than 2, so it's okay, but you have C 1, you don't even have 1."
+  },
+  {
+   "start": 1232.62,
+   "end": 1261.68,
+   "text": "C1 is needed, C1 is needed, there is not even one. So will it be made in this or not? It will not be made. You can't say that you wanted 2A, we gave you 5A, then you came here. No, it doesn't happen like that. It is like that. Let's take out a job posting. Let's take out a job posting that we want a guy for our YouTube. Whose 12 has 80% marks and Btech has 70% marks, minimum. You come."
+  },
+  {
+   "start": 1262.06,
+   "end": 1289.28,
+   "text": "You come and say, sir, I had 95% marks in 10. Okay. I had 99% marks in 12. Okay. And we have done M.Tech too, sir. We have done M.Tech too. I had 95% marks in M.Tech. Okay. You said, okay, B.Tech. You said, what happened in B.Tech? I had a little wrong habit in B.Tech. I had failed in B.Tech. So, keep us. So, this is my job requirement. You made your resume in such a way that you said, sir,"
+  },
+  {
+   "start": 1289.28,
+   "end": 1315.1,
+   "text": "You will not get a better guy than me. You wanted 80% in 12, right? It was 95%. 99% in 12, 95% in 10. We did Mtech, 95% in Mtech. But we failed in Btech. Will we take you or not? We won't take you. Because we want 70% in Btech. You have failed in Btech. Now what else have you done? We don't care. Look, we wanted 80% in 12. You brought 99% in 12. So fine, bring more than 80%. We just wanted more than 80%."
+  },
+  {
+   "start": 1315.1,
+   "end": 1343.14,
+   "text": "We wanted more than 70% in BTEC. You are saying that if we fail in BTEC, we will reject you. We don't want M.Tech. You are saying that I have 95% in M.Tech. M.Tech is not in my job. We don't want M.Tech guy. You must have done Ph.D. You must have done anything. You must have opened a company after that. No. You failed in BTEC. We want 70% in BTEC. We will reject you. So, this is it. Ransom says that we want every letter, means whatever letter I have, we want X, Y, Z times."
+  },
+  {
+   "start": 1343.14,
+   "end": 1372.98,
+   "text": "that we need this, this is my requirement, this is my requirement, you say that I have A something, let's say X plus 10, and B I have Y plus 5, but C is not there, C is not there at all, so if you don't have C, then you will be rejected there, meaning, meaning, meaning, whatever letter you want in ransom, whatever letter you want, in your magazine, whatever is available to you, at least that frequency should be there, at least, at least, meaning,"
+  },
+  {
+   "start": 1372.98,
+   "end": 1399.81,
+   "text": "If you convert your ransom into a hash map, again see whose is this? This is about the frequency of the letter. If you convert your ransom into a hash map whose name is need, it says I have A1, we have B2, we have C3, and we have D1. We need this many letters total. If you convert your magazine into a hash map whose name is have,"
+  },
+  {
+   "start": 1399.81,
+   "end": 1424.56,
+   "text": "you have to make sure that every letter every letter every letter's frequency should not be less than or more than what is written here means a should be greater than or equal to 1 b should be greater than or equal to 2 c should be greater than or equal to 3 and d should be greater than or equal to 1 and after this you don't have any difference"
+  },
+  {
+   "start": 1424.56,
+   "end": 1453.54,
+   "text": "After this, you will have E, F, G, H, Z. You will have many things. We don't have to take anything. We just have to take these four letters. Why? Because we want this. In my job description, we wanted 12 and B.Tech. We will just check that. After that, you can add 10 and M.Tech and Ph.D. to anyone's result. We don't care. Okay. The frequency of these four letters, in half, should be at least this much. If ever it is less than this four, in these four, in these four, we will immediately reject it. We will immediately return false."
+  },
+  {
+   "start": 1453.54,
+   "end": 1482.48,
+   "text": "The rest doesn't matter. Yes, if the frequency of these four is this much, then you can make a ransom. Rest, we don't have to worry about what you have and what you don't have. So, what is in this question? How will you decide the letter and frequency? What is the frequency of each letter in the ransom? What is the frequency of each letter in the magazine? And we will check by combining both. So, see. Now, how will we write this? Let's see. Come. Let's write the pseudocode and dry run. First of all, do you have two strings?"
+  },
+  {
+   "start": 1483.31,
+   "end": 1514.53,
+   "text": "You have two strings. Ransom and string magazine. You have two strings available. Okay. But what will you do in this? What will you do? We will make two hash maps. Two hash maps. We made it in sliding window. Unordered map. How is it? It is character frequency. Car and int. We are saying that in 95% of string questions, hash map will not make money. Letter frequency. Because nothing else happens in string. Have. Have means?"
+  },
+  {
+   "start": 1514.53,
+   "end": 1547.09,
+   "text": "The magazine one, have. How much is it now? Unordered. Map. Care. Ind. Need. Need means ransom. How much do you want? How much do you want? In the job description, you want minimum this much. And you have how much have? So make both. For i is equal to 0. i less than. Ransom dot size. So first let's make need. i plus plus. How will we make? Need. Ransom."
+  },
+  {
+   "start": 1547.41,
+   "end": 1576.16,
+   "text": "I++ means increase the frequency of the letter of ransom. In the same way, in the same way, what will we make? Our magazine's I is equal to 0. I less than magazine dot size. Yes. I++. What will we do? Have. Whatever letter is in the magazine, whatever letter is in the magazine, what will you do with its frequency? Increase it. Increase it. Both are ready. Now,"
+  },
+  {
+   "start": 1576.16,
+   "end": 1610.08,
+   "text": "You just have to check whether it is minimum or not. We will write a function for that. We will tell you what function we will write. Fun. Pass both and check. Ok. Now we will write fun. What to write in fun? What do you have to do in fun? What did you have to do? What do you have to do with the letters in need? There were a lot of letters in have. Maybe you have everything from have to have. No. We just have to do with the need letter. Need letter means ok."
+  },
+  {
+   "start": 1610.08,
+   "end": 1639.34,
+   "text": "so we have to take letter by letter, what we have to check is that its frequency in need is 1, it should be less than or equal to 1, this is what we have to check, so you have to do loop, on need, because you have to check need letter, not half, you don't have to check whole a to z or whole world, what we have said, we wanted 12 and btech, we will check 12 and btech only, we don't have to check other than mtech and phd, so come, how to do loop on hash map, I told you, suppose you have fun,"
+  },
+  {
+   "start": 1639.76,
+   "end": 1674.83,
+   "text": "Bull fun. What does it take? It takes both of your hash maps. It takes both of your hash maps. What? Have or? Look, those who say that you don't code, we are writing code. We didn't need to write so much. We are telling you by writing code. But we won't give you code. We don't support copy-pasting. We don't like that at all. What are you doing by asking for code? Are you making a project for it? Where will you print code? Come on. What do you have to do? For?"
+  },
+  {
+   "start": 1675.15,
+   "end": 1707.54,
+   "text": "Let's do a loop like this. Remember. Need. Yes. For auto I need. Take out the letter. Car C is equal to. Key. Letter key is there. I dot. First. Int. F need. Means. Its need frequency. Will be given by I dot second. What is the frequency of that letter in need? And. Int. F have. Means. What is the frequency of have in that? Means. What is the frequency of that letter in have? So. Have of. C."
+  },
+  {
+   "start": 1708.18,
+   "end": 1740.4,
+   "text": "If it is not, then it will return 0. Suppose you are on A now. Now your cat C is equal to A. So if A is in have, then it will get its value. If it is not, then it will get 0. What did you have to check? If f have is less than f need, it is a red flag, then what should you do? If it is not, then check the rest of the letters. After checking all the letters, if you know that the return is not false, then what can you do? Return."
+  },
+  {
+   "start": 1742.42,
+   "end": 1774.64,
+   "text": "After checking all the letters, what do you do? Okay, now let's do return true. Okay? Let's see it with a dry run. This is your code. Pause it and see. Let's show its dry run. Assume your ransom note looks like this. A and A. 0, 1. Your magazine looks like this. A and B. Let's make a hash map of both of them. This is your need. What is it? A is twice. There are no other letters in it. This is your have. Have."
+  },
+  {
+   "start": 1774.64,
+   "end": 1795.71,
+   "text": "What? A is one time and B is one time. Okay. Let's see. What did we say? Loop. First. First. Loop on the first letter. What is F need? Means 2. We need 2 for A. We need 2 at least. What is F have? One. One. One."
+  },
+  {
+   "start": 1795.71,
+   "end": 1823.82,
+   "text": "Is it less than 1 and 2? Yes. It means you failed here and we rejected you here. You had B. We don't care if you have B, C or Z. What does that have to do with it? You don't have A, right? You have a less than A, right? False. False. Immediately false. If it would have been A, let's say A would have been like this. Your magazine would have looked like this. Let's say your magazine would have looked like this. A. Then your A frequency would have been 2. So what would we do? We would ask if A is equal to 2. So if F is equal to 2, then it is still 2. If F is equal to 2, then it would have been 2. So is it 2?"
+  },
+  {
+   "start": 1823.82,
+   "end": 1848.66,
+   "text": "At least 2? Yes, okay. You wanted 2, I have 2. Is there any other letter left? True. Again, you had B, it doesn't matter. You are keeping it. What do we want? We want 2A. Do you have 2A? Yes. This is the deal between both. So, this question is also done. Right? Let's see the next two questions immediately. So, this question, Max Balloons, the third question is..."
+  },
+  {
+   "start": 1848.66,
+   "end": 1877.2,
+   "text": "You can say that there is an advanced version of Ransom and magazine. What does it do? It is a very interesting question. You have to find max balloons. Now what do you have to find? You are told that you will get a string. You will get a string. Okay? Its name will remain the same. You have to make a balloon from the string. B-A-L-L-O-O-N Those who don't know the spelling of balloon, see it. You have to make a balloon. And how many times can you remove the balloon from it? Meaning, to make means to remove from it."
+  },
+  {
+   "start": 1877.2,
+   "end": 1907.82,
+   "text": "And how many times can you remove the balloon? What does it mean? Suppose it is a very big string. Suppose it is a very big string. It is a very big string. There can be any letter in it. There can be many letters. You have to remove one balloon from it. What does it mean to remove the balloon? You have to remove it from the letters of the balloon. What does the balloon mean? B has come once in the balloon. See, B has come once. A has come once. L has come twice. O has come twice. N has come once. So, what is the total? 1, 1, 2."
+  },
+  {
+   "start": 1907.82,
+   "end": 1939.58,
+   "text": "4, 6, 7. So there are total 7 letters out of which we need A once, we need B once, we need L twice, we need O twice, and we need N once. Sorry, I didn't wear a mic, so the sound might have been a little cut off. Yes. So you have to take out such a balloon from it. So what does it mean to take it out? To take it out means to take it out. Okay. How many times can you take it out? How many times can you take it out? You have to do this. So in the previous question, and see there is a similarity in this, in the previous one, you were given ransom instead of balloon."
+  },
+  {
+   "start": 1939.58,
+   "end": 1969.65,
+   "text": "Instead of balloon, Ransom. Whose string is this? This magazine that you got. You have so many letters. You have so many letters. Yes, you have. Okay. How many times can you make Ransom? This is the question. How many times can you make Ransom? Last time it was, can you make it or not? This is, how many times can you make it? For example, if balloon is a very big example. Leave it. If it tells you that you have some letters. You have a lot of letters. Out of that, how many times can you make AB? You have to make AB. What does it mean?"
+  },
+  {
+   "start": 1969.65,
+   "end": 1999.36,
+   "text": "A once and B once. We have to subtract. Suppose someone tells you that you have 3 A's, you have 4 B's, and you have 10 C's, and you have a lot of D's too. Okay. First of all, it doesn't mean that we don't need C and D. What do we need? We need 1 A and 1 B so that we can make that word once. So see, can you subtract once or not? You need 1 A and 1 B. You still have 3 and 4. You can subtract now. So what do you do? You subtract 1 and make it 2. Make it 3."
+  },
+  {
+   "start": 1999.36,
+   "end": 2020.54,
+   "text": "It became 1AB. Very good. See, can we make it again or not? What do you want? To make it every time, you just need 1A and 1B. You still have 2 and 3. Yes? Take it out. Take it out and reduce it. Make another AB. Can you make it again? Can you make it again? Yes, you can make it because there are still 1 and 2 left. Take out one more A, one more B. One more AB is made."
+  },
+  {
+   "start": 2020.54,
+   "end": 2049.46,
+   "text": "Can you make it now? No, you can't make it now. Why? Because you need 1A and 1B to make it. Now you have 0A left. You have finished all A. You have 1B left. See, you have 1B left. So, you can make half of it, but not half. How many times can you make it in total? You can make it in total 3 times. This is the question. This is the question. Okay. So, now this is the question. So, there is similarity in the question. What does it mean? Whatever balloon you have, whatever balloon you have,"
+  },
+  {
+   "start": 2049.46,
+   "end": 2075.1,
+   "text": "What is that in one way? Need. Need. You need so many letters. Means you need B's 1, A's 1, L's 2, O's 2 and N's 1. You need so many letters. How many? To make it once. You need this much to make it once. You need this much to make it once. I will tell you how many times you can make it. How many times? It can be 10 times, 20 times. How many times can you make it? I will tell you that. What will be your have? Have whatever string you have."
+  },
+  {
+   "start": 2075.1,
+   "end": 2104.91,
+   "text": "characters are available, whatever letters are available you will have to make from that so in this, a, b, c, d, e, f, z will have some frequency you have to check how much you can make so one approach of this is that means what we have done in a, b is that what you have to do is that make a function make a function like last time we made a function to see if it can be made or not so in that what you have to do is that you should always have a need array"
+  },
+  {
+   "start": 2105.04,
+   "end": 2132.37,
+   "text": "There should be a need array. And you will also have a have array, which means there will be a have hash in which all the letters will be written. So now what to do? Suppose you want b once. Here b is something, it is four times. So you do loop on each letter one by one. You see that what we want, is it that much or not? It is that much. So you reduce it to one. First of all, you will have to check in this whether it can be complete or not. If it can be half incomplete, then there is no point in it. Whether it can be complete or not, you do that."
+  },
+  {
+   "start": 2132.46,
+   "end": 2159.57,
+   "text": "If you want 1, then you can reduce 1 to 3. If you want A, then you can reduce 2 to 1. If you want L, then you can reduce 2 to 8. If you want O, then you can reduce 5 to 3. If you want N, then you can reduce 4 to 3. If there is no failure, then you can reduce 1 to 3."
+  },
+  {
+   "start": 2159.57,
+   "end": 2188.93,
+   "text": "You will repeat this process again and again until you get a failure. What does it mean to get a failure? Suppose you want L twice, here L is once, this is a failure. You want it twice, it is left once, now you can't make it. Rest of the letters can't be made. You wanted B once, B is here zero times, so you can't make it. So one thing is that you keep calling it again and again and keep reducing it."
+  },
+  {
+   "start": 2188.93,
+   "end": 2219.89,
+   "text": "But this is not a good way. There is a way, you can do it if you want. But try to understand it with an example. Think a little with me. Suppose you work in a factory. You work in a factory. Okay. You have to make 2-3 things in that. In that, someone tells you that you have to make a pen. You have to make a pencil. And you have to make a toy car. Okay. You have to make a pen, a pencil and a toy car. Okay."
+  },
+  {
+   "start": 2221.07,
+   "end": 2250.02,
+   "text": "There is a requirement for everything. So, you say that there is a requirement to make a pen and there is a specific requirement to make a pencil or a car. Suppose, you have to put pen, pencil and car in the same box and ship them. Suppose, in some time, you have 10 pens ready."
+  },
+  {
+   "start": 2250.02,
+   "end": 2278.02,
+   "text": "8 pencils were made and 100 cars were made. 100 cars were made, 8 pencils were made and 10 pens were made. You have to combine all these and make a gift box and gift it to someone. Everything should be there, all should be there in the gift. How many boxes will you be able to make in total? You will be able to make 8 boxes in total. Because after 8 boxes, you can put a pen, a pencil and a car in all 8 boxes."
+  },
+  {
+   "start": 2278.02,
+   "end": 2306.26,
+   "text": "When you will go till 9, then your pencil will not be saved. Pencil is 8, so you put 8 in 8 box, it will not be saved in 9. After that you will not be able to make this box. No matter that you have car and pen, car and pen will be saved. When you will make 8 boxes, you will have 2 pen and 92 car will be saved. So much car is saved, but now you will not be able to make box. Why? Because pencil will be finished. Here we get to know that whenever, what is this? These are requirements, right? Many items have their own requirements."
+  },
+  {
+   "start": 2306.26,
+   "end": 2335.49,
+   "text": "So, whatever is in the minimum number, whatever item is in the minimum number, it decides how much work you are doing. It decides how much work you can do. It is always said that a factory, there is a saying, a factory is only as fast as the slowest worker there. Slowest worker there. Means,"
+  },
+  {
+   "start": 2335.49,
+   "end": 2363.65,
+   "text": "If there is a factory and thousands of people are working in it, then who will determine the speed of the factory? The one who is running the fastest will not determine it. The one who is working the slowest will determine it. For example, if we are a teacher, understand this very carefully because the whole question is based on this. We are a teacher. We are teaching the children in the batch. Suppose we are teaching you. Okay, we are teaching you live in the batch. And my rule is that until everyone understands, we do not move forward. So suppose this child is the fastest."
+  },
+  {
+   "start": 2363.65,
+   "end": 2392.18,
+   "text": "This is T1, it is the fastest, it understands everything instantly. But my speed will not decide this. If there is a kid, who takes a lot of time to understand, who takes a lot of time, means his mind is slow, whatever it is, his concept is clear, whatever it is, my speed will decide this kid, that how fast does the batch move. The fastest one can understand anything in a minute. The slowest one takes an hour. So my speed is determined by the slowest kid. Not the fastest one, the fastest one is done. Because,"
+  },
+  {
+   "start": 2392.18,
+   "end": 2422.16,
+   "text": "Until everyone understands, we will not move forward. So, the slowest man decides how things will move forward. So, here is the same game. Look. Suppose you want this. You want B once. You want A once. You want L twice. You want L twice. You want O twice. You want N once. Okay. Now, suppose in some time, you have something in half."
+  },
+  {
+   "start": 2422.16,
+   "end": 2450.26,
+   "text": "Leave the rest of the letters, let's focus on these letters only. Assume that you have B twice. You have A three times. Listen very carefully. L is six times. O is five times. N is ten times. N is too much. N is ten times. Okay. What does it mean to make it once? You want to take out every letter so many times. You have this collection. You have this collection. You want to take out every letter so many times."
+  },
+  {
+   "start": 2450.26,
+   "end": 2479.39,
+   "text": "See, how many times do you have to take out B? Once. How many times do you have available? Twice. So, how many times can you satisfy the requirement of B? What does this mean? You have B total twice. You need one B to make a balloon every time. So, let's talk about B. If we talk only about B, how many times can you do it? Two times. Two times. How did you get two times? How did you get two times? Two by one. Two by one. How? You have it."
+  },
+  {
+   "start": 2479.39,
+   "end": 2506.58,
+   "text": "How much do you need? 2 times. And how much do you need? 1 time. So how many times can you take out? 2 times. You have, for example, 10,000. You say that we will give a person a salary of 2000 every month. For how many months will you be able to pay the salary? For 5 months. How did you know? 10,000 by 2000. So, by salary. By need."
+  },
+  {
+   "start": 2506.58,
+   "end": 2535.86,
+   "text": "Then only you will know how many times. You can do B or 2 times. Let's see how many times you can do A. How many times is A? 3. How many times is 1? 3 times. 3 times. Means you can take out A 3 times. L. How many times is it? 6 times. How many times do you need? 2 times. How many times can you take out L? 3 times. Means you have 6000. How many times do you need every month? 2000. How long will it take? 3 months."
+  },
+  {
+   "start": 2535.92,
+   "end": 2562.83,
+   "text": "Listen very carefully. How many times do you need? 5 times or 2 times? Okay. Assume that 5 is O. Do this and 5 is O. You need 2 times every time. Take out 1 or 2 times. One time. Take out the second time. One time. Will you be able to take out the third time? No. Because the second time you need 2 is 1. So what happened in one way? 5 by 2. 2 times. 2 times. What do you get in division? You get floor. 2 times. Yes. 2 times."
+  },
+  {
+   "start": 2563.79,
+   "end": 2592.72,
+   "text": "N, how much is it? 10. How much do you want? 1. So, this is 10 times. 10 times. Now, you have taken out all the times. You have taken out all the times. How many times will you be able to take out the total balloon? See. Which minimum do you see out of all these? 2. 2 times. So, you will be able to take out the total balloon 2 times. Why? L was saying 3 times. N was saying 10 times. But, why are you saying the total? You will be able to take out only 2 times. Why?"
+  },
+  {
+   "start": 2593.1,
+   "end": 2620.06,
+   "text": "When you take out the balloon twice, your B will become zero. And O will become 1. Whatever it is, first of all, who will become zero? B. This is the same problem. You had pen, pencil, and car. This was 10, this was 8, this was 100. You started filling it in one box. First of all, who will be finished? Pencil. Because pencil is the least. Car will be saved, pen will be saved. Pencil is finished."
+  },
+  {
+   "start": 2620.06,
+   "end": 2649.76,
+   "text": "So here your B will be finished. B will be finished. Once B is finished, then no matter how much treasure you have, you will not be able to do anything. Because you needed one B to make a balloon. B is finished. You needed two O to make a balloon. Only one O will be left. You will not be able to do anything. You will have to stay there. So what is here? The one who is the least, the one who can make the least bar or the slowest person, he will decide how much balloon you will be able to make. Not maximum. That's why, that's why, what will we do? We will not do anything."
+  },
+  {
+   "start": 2649.76,
+   "end": 2680.06,
+   "text": "We will make two arrays. One will be need. One will be have. We will loop on need. We will loop on need. Every person. Every letter. Every letter. What will we get? How many times can you get that? How many times can you get that? Okay. Assume there is no letter. Assume. You want B1. Here B is not there. B is 0. How many times can you get? 0 by 1 is equal to 0 times. You can get 0 times. You can't get it at all. Isn't it? It is obvious. You have 0 rupees."
+  },
+  {
+   "start": 2680.06,
+   "end": 2709.26,
+   "text": "Every month you are saying that you need 1000 rupees. How many months will it work? Not even one month, zero month. Because it will end in the first month itself. So this also works, 0 by 1 works. You have to find the times of the letter. How? Whatever is in that, have of C, by need of C. Means that character, how much is there in have, how much is there in by need? Suppose something X comes. Like this, something X will come for every letter. Something X will come for B, something will come for A, L, O, N, will come for everything."
+  },
+  {
+   "start": 2709.26,
+   "end": 2744.85,
+   "text": "What do you want for sub? Minimum. What do you want for sub? Minimum. That will be the answer because we have seen that the minimum, the thing which you can remove minimum times, that is going to end first. That is going to end first. Like the pencil ended first. So, it is the same logic. Everything is connected to each other. Right? So, what will we do in this? We will do nothing. First of all, you will have to make a have array. You are given a string. String s. You will have to make a have. care of have."
+  },
+  {
+   "start": 2744.85,
+   "end": 2776.88,
+   "text": "Sorry, have. Yes, let's make it have. So, for i is equal to 0, i less than n, i plus plus. n is equal to s dot size, right? Or, have s of i plus plus. Let's go. Now, you have to make need. How did you make need last time? Ransom. This time, not ransom. A word is given, balloons. Balloons. Means, it's okay. So, make it with your mind. You know the spelling of balloons, right? Unordered map. Care."
+  },
+  {
+   "start": 2776.88,
+   "end": 2809.34,
+   "text": "Int. Need. Make balloons by yourself. How will you make? Like this. Need of. B is equal to 1. Need of. A. Is equal to 1. Need of. L. Is equal to 2. Need of. O. Is equal to 2. Need of. N. Is equal to 1. Made by itself. Means. Made manually. We don't know. If there is no ransom. Then what? Balloon is given. Made balloon. That's it."
+  },
+  {
+   "start": 2809.34,
+   "end": 2843.15,
+   "text": "Now you have to check it. How will we check it? We won't do anything. See. First of all, to make an answer int res is equal to int max because you need minimum. Remember the number of times. You need minimum things. Loop it. On what? Loop it on need. It just means balloon. Whatever else is there, world. We don't need all that. Auto I need. First of all, which letter is running? Sorry, this letter is running i.first. Means, suppose B is running, A is running, L is running, O is running, N is running, anything is running."
+  },
+  {
+   "start": 2843.15,
+   "end": 2875.89,
+   "text": "I dot first wala ye letter chal raha hai. Very good. Int f need. Matlab need mei kitni frequency hai? I dot second. Int f have. Have mei kitni frequency hai bhai? To have of c. Int times. Times. Ketane baar banega? F have by f need. Ketane times wo letter aap nikaal sakte hai? Or, res is equal to min of res and time."
+  },
+  {
+   "start": 2877.01,
+   "end": 2907.15,
+   "text": "After taking out every letter, return of less. The work is finished. So this question was just an advanced version of the previous question. So your work is finished according to me. Let's go. Let's hope that you understood this question. We needed a concept in this, that of factory worker. So our next question and the one that we think is the toughest question out of these four, or you can say the toughest. Although it is also given in easy. That is longest."
+  },
+  {
+   "start": 2907.79,
+   "end": 2937.92,
+   "text": "Palindrome. This is hard because you have to think a little out of the box. According to me, this is a very interesting question. So, what does it say? You are given a string. You are given a string S. Okay. There will be some letters in it. Obviously, there will be some letters in it. What you have to do is length of length of longest length of longest palindrome palindrome"
+  },
+  {
+   "start": 2937.92,
+   "end": 2970.83,
+   "text": "which can be built by those letters which can be built by those letters means you will be given some letters in string for example in string anything A, B, B, B, C, C, C using those letters which can be the longest palindromic string you have to tell that for this you have to now this question is basic see this question is basic but for this you have to think a little out of the box thinking so you can think a little by yourself"
+  },
+  {
+   "start": 2971.06,
+   "end": 3001.15,
+   "text": "by pausing. You can think a little by yourself, if you don't think then it's okay. Assume that your string is like this, A, B, C, C, C, C, D, D. To make this string, to make this equation, you need to understand some properties of palindrome, that what is palindrome. See, what is palindrome? It's the opposite of one thing. If you reverse it, then it will be the same. It will be the same, okay? So,"
+  },
+  {
+   "start": 3001.15,
+   "end": 3029.5,
+   "text": "Palindrome has a very special property that palindrome can be of even length or odd length. Palindrome can be of even length or odd length. Those who don't know palindrome, listen carefully. So palindrome string can be of even length or odd length. What is the meaning of being even? Suppose you make an even length palindrome. Suppose of 6 length. So 1, 2, 3, 4, 5, 6. 1, 2, 3, 4, 5, 6. Okay."
+  },
+  {
+   "start": 3029.5,
+   "end": 3059.62,
+   "text": "What does this mean? 1, here X should be there, here also X should be there. 2 more should be there. Here Y should be there, here Y should be there. 2 and 5 should be there. And here Z should be there, here Z should be there. So what happened? Even length palindrome. Even length palindrome means, 1 and 6 should have X, 2 and 5 should match, and 3 and 4 should also match. This is even length palindrome. Okay. What is odd length palindrome? What is odd length palindrome? See."
+  },
+  {
+   "start": 3059.62,
+   "end": 3095.07,
+   "text": "What is odd length palindrome? Think of even length palindrome. 1, 2, 3. 1, 2, 3. What did we say? Here X should be here. Here X should be here. Y should be here. Y should be here. Z and Z. Okay. This middle portion. This middle portion. Here any one letter. Any one letter. Odd number of times can be entered. Odd number of times can be entered. What does this mean?"
+  },
+  {
+   "start": 3095.07,
+   "end": 3124.93,
+   "text": "Any one letter in this yellow portion can contain the odd number of times. For example, if we write Z here. Sorry, Z is done. If we write P here. See, this string is still in palindrome. See, XYZPZYX. If you reverse it, it will be the same. If you reverse it, it will be the same. So, this is the odd length. Its length is 7. If we write 3P here, then also it is in palindrome. Why? Because if you reverse it, it will be the same. Why? See. This portion."
+  },
+  {
+   "start": 3124.93,
+   "end": 3150.54,
+   "text": "and this portion is already palindrome because of event already this portion is stuck in the middle now this ppppp means if you will write the same letter again and again obviously if you will reverse it then it will be same that's why it happens that in the middle any one letter can enter any odd number of time in which? after making the event letter you make the event letter if you enter 1p then it will be palindrome if you enter 3p then it will be palindrome"
+  },
+  {
+   "start": 3150.54,
+   "end": 3180.29,
+   "text": "Even if it is 5P, it is a palindrome. Even if it is 7P, it is a palindrome. Even if it is 9P, it is a palindrome. Okay. So, this was a little discussion about palindromes. But how will we solve this question? How will we solve this question? So, see. What do you need for an even length palindrome? The first thing is that whatever you have given, whatever letters you have given, you have to make a palindrome from them. You have to make a palindrome using them. So, let's say you have given this. A, B. C, C, C. C, B. Means you have 1A, 1B."
+  },
+  {
+   "start": 3180.29,
+   "end": 3210.78,
+   "text": "C is 4 times, D is 2 times. You have to use these to make palindrome and longest. So see, now there will be a partition in these. Some things are even number of times. Some letters are available in even. Some things are available in odd. Some things are available in odd. So, the letters available in even, you can make palindrome very easily by using them. You can make palindrome very easily by using them. And you can use all of them. That means,"
+  },
+  {
+   "start": 3210.78,
+   "end": 3240.59,
+   "text": "Suppose we think to remove the odd one. Now remove the odd one completely. Focus on C and D. How many times is C? It is 4 times. It is 4 times. There is nothing in this. You don't have to think much. What did we say? How is a palindrome of even length made? X in the beginning and X in the end. Okay. Y in the beginning and Y in the end. You can think like this. If someone tells you that we will give you 2 letters. You are getting 2 same letters. If someone tells you that you are getting 2 same letters. That means we will give letters in pairs. Keep making palindromes."
+  },
+  {
+   "start": 3240.59,
+   "end": 3268.24,
+   "text": "So, first of all, you got 2x. It tells you to start making palindrome. What can you do in this? Write both x side by side. Write side by side. Then you get 2y. See. One y in front of it and one y behind it. y, x, x, y. This is a palindrome. It tells you to take 2z and make a palindrome. One z in front and one z at the end. It is a palindrome. It tells you to take aaa and make a palindrome. One z in front and one z at the end."
+  },
+  {
+   "start": 3268.24,
+   "end": 3299.01,
+   "text": "If someone asks you to take two Qs, make a palindrome. One Q in front and one Q in back. This is still palindrome, see. If we reverse it, what are we doing? It was empty in the beginning, so what did we do? X, X. If we get the next two letters, Y, Y, still palindrome. If we get the next two letters, Z, Z, still palindrome. Because, what does palindrome say? This one should be the same as this one. So we make it the same. Because what is made is already a palindrome. It is already a palindrome, right?"
+  },
+  {
+   "start": 3299.01,
+   "end": 3327.58,
+   "text": "If you make a letter in the front and a letter in the back, then both are the same. And the other one was already reversed, so it will be the same. This tells us that if we get even letters, if we get even frequency letters, then we can use all of them to make a balindrome. First of all, suppose someone gives you 2D. 2D gives you to make a balindrome. Make it. D, D. Is it a balindrome? Yes. If someone tells you that they are giving 4C, they are giving 4C, then let's see it in pairs. What does 4C mean? 2 of 2 is 2."
+  },
+  {
+   "start": 3327.58,
+   "end": 3357.52,
+   "text": "So, you have to do this. CC, CC. Come, let's make this. CC. Is it palindrome? Yes, it is. Very good. Use it. Make this. CC. It is still palindrome. See, CCD, DCC. Same. Exactly same. So, those whose frequency is even, those whose letters' frequency is even, you can use them completely. How many lengths of palindrome is this? 6 lengths. 4 plus 2, 6. So, one thing is understood that if there is an even frequency letter, then it is very good. You don't have to do anything. You can make it in that. But,"
+  },
+  {
+   "start": 3358.0,
+   "end": 3385.74,
+   "text": "What should we do about the odd ones? What should we do about the odd ones? What should we do about the odd ones? Look, I'll tell you what to do. Even is understood. Okay. Even first, let's assume that we will make it a hash map. What is the frequency of how many letters? By running a loop in even, the value of which is even, we have to calculate by doing plus plus. Because if C is 4 bar and D is 2 bar, then C, C, D, D, C, C means 6 length palindrome can be made. It is very easy. So we will calculate this first. Now let's talk about odd."
+  },
+  {
+   "start": 3386.35,
+   "end": 3418.35,
+   "text": "The example in the leetcode wants to stop you from thinking about this, that's why we don't have such an example. Suppose you had A3, B3, C5, D2, E2. You got a string like this. You have this letter, make a palindrome. So what did we say first? You can easily make a palindrome like this with even. How? Come on, make it with D. D, D. Did you make a palindrome? Yes. Make it with E. From the beginning to the end."
+  },
+  {
+   "start": 3418.35,
+   "end": 3446.02,
+   "text": "The first row is done. The char length is done. Now what to do with the odd one? What to do with the odd one? What to do with the odd one? See, what does odd mean? A is three times. Okay? So if you start breaking A into pairs, then what will it mean? You will have one A in the pair. One A will be left alone. This is what it means, right? A is three times. B is three times. It means, you will get one pair of B and B. One B will be left."
+  },
+  {
+   "start": 3446.02,
+   "end": 3475.25,
+   "text": "Okay. C is 5 times. It means 2 pairs of C and C. And 1 C will be saved. You know how to do the pair thing, right? We have understood in pair. There is no problem in pair. You send pair. You connect pair back and forth and make palindrome. So, there is no problem with pair. There is no problem with pair. So, see. A is 3. In 3, use 2. Leave 1. Leave 1 for now. Use 2. Write A back and forth. Is it palindrome? Yes. Yes, it is palindrome."
+  },
+  {
+   "start": 3475.25,
+   "end": 3504.83,
+   "text": "B is 3. Use 2 in 3. Leave 1. Let's see what we will do with it. Use 2. B, B. In C, leave 1. Use the remaining 4. C, C, C, C. This is the first drone, right? This is the least, right? We have to make it the longest. Leave 1 for now. Leave 1 for now. Leave 1 for now. Okay. Now this is done. What did you do in this? You used all the even ones."
+  },
+  {
+   "start": 3504.83,
+   "end": 3534.16,
+   "text": "we have used all the pairs of odd numbers. It means that there were 5 Cs, so we have used C, C, and C, and there is still 1 C. Look, you still have 3 types of letters. A, B, and C, all are left. Now, what did we say? Look at the length of this palindrome. Is its length even or odd? Let's count. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12. It is even. What did we say?"
+  },
+  {
+   "start": 3534.45,
+   "end": 3561.12,
+   "text": "what you can do to make odd of any even length palindrome remove the 6 letters of the beginning here remove the 6 letters of the beginning CC BAED DEABCC in between this you can put any one letter any one letter odd number of times"
+  },
+  {
+   "start": 3561.12,
+   "end": 3591.36,
+   "text": "How many letters do you have left? A, B, C. You can't put all three. You can't put A, B, C here. It will be wrong. No. Now A, B, C. All three are left once. Now any one. A, B, C. Odd number of times. Because now all of them are left once. Because we have used all of them. Odd number of pairs. We have used all of them. One is left. You can put any one here. Now put A here. It will be palindrome. Now put B here instead of A. It will be palindrome. Now put C here."
+  },
+  {
+   "start": 3591.36,
+   "end": 3620.9,
+   "text": "That will also remain palindrome. That will also remain palindrome. That's it. Your game is over. What have we done? What have we done? So, it means, it means, you will have an array of needs. You will have an array of needs. A, B, C, D. Suppose A is 3 times, B is 1 time, C is 4 times, D is 2 times. First of all, you have to do your work for even. You don't have to think anything in even. 4 plus 2, 6. Okay."
+  },
+  {
+   "start": 3620.9,
+   "end": 3650.22,
+   "text": "In odd, if there is no odd letter, then your program ends. If there is no odd letter, then your program ends. But if the frequency of any letter is odd, then what do you have to do? First of all, use pairs from 3. What do you use? How many pairs will there be in 3? It means this. a, a, a. Leave the last a, take the rest. It means a-1, 3-1, 2."
+  },
+  {
+   "start": 3650.22,
+   "end": 3679.01,
+   "text": "Use it. In 1. In 1. Leave the last one. Take all the rest. There is nothing left. 1 minus 1 is 0. Plus 0. So nothing happened. All this is in plus. Now. Now. Now. If it was odd. So see. A will also be left one time. B will also be left one time. Now it is your choice. You can take any one letter. So it doesn't matter. You have to do plus 1 in the last. Because you have length. You don't have to return the string of calender. You have to return length. Now take any one letter in the last. Take any one letter."
+  },
+  {
+   "start": 3679.01,
+   "end": 3707.86,
+   "text": "So, you can take A, B, anything. What will be its answer? 4 plus 2, what is 6? Okay. And plus 2, 8, plus 1, 9. Its answer will be this. If we look at it from the example of the lead code, A is 1 time, B is 1 time, C is 4 times, D is 2 times. First of all, the even one, 4 plus 2. The odd one, if it is not odd, then it is over. If it is odd, then it is okay, we will have to see. Okay."
+  },
+  {
+   "start": 3707.86,
+   "end": 3736.69,
+   "text": "From 1, leave 1 and take the rest. If you take the rest, then what will be left? 0. Nothing will be left. Leave 1 from B and take the rest. 0. Now, all the odd, all the odd will be left once. Take any one and add 1 to it. 7. Take any one odd and add it because we have to make it maximum. So, we have taken all the even from the odd because you know how to make a palindrome from a pair. If someone is giving 2 letters, do you know how to make a palindrome immediately? You have to add it in front and back."
+  },
+  {
+   "start": 3736.78,
+   "end": 3770.0,
+   "text": "Let's see the code of this. In the code, if else is more, the rest is the same. First of all, you will get a string s. What you have to do is, first of all, the frequency of the letter, the frequency of the letter, that's why the question is of hash map. That's why the question is of hash map. char int f for i is equal to 0, i less than n, i plus plus, f of s of i. Yes, the frequency of the letter has come."
+  },
+  {
+   "start": 3770.0,
+   "end": 3801.62,
+   "text": "Okay. First of all, we will do the even work by running the loop. And we will also check if there is any odd. For this, we will make a variable that bool odd is equal to false. What is its work? We will check it. If we get any odd, we will make it true. So that we know whether we have to process the odd or not. Come. For, we will take the result for the answer. Int, rest is equal to 0. Come. For, auto i less than f."
+  },
+  {
+   "start": 3802.7,
+   "end": 3834.53,
+   "text": "First of all, int val is equal to i.second. If val modulus 2 is equal to 0, means if it is even, then you don't have to do anything, res plus is equal to val. There is nothing in even, even will be immediately added to your palindrome. But if this else is odd, don't do anything now, just make your odd true now. We will process the odd, we will do it further. Because there are some complications in odd, we will do it further. There is no difference in running two loops, so you do odd early."
+  },
+  {
+   "start": 3834.53,
+   "end": 3863.42,
+   "text": "Now, you are here. Now, you have processed even. All the work of even is over. If you come to know that if odd equal to false, means there is nothing odd. There is no letter odd times. Very good. Return rest. Return rest. All the even was there. All the process was done. But if not, then you have to process odd. What did you do? You have to loop. Whatever frequency is there on odd, add it by doing minus 1. And at last, do plus 1. Means, if a is 3 times,"
+  },
+  {
+   "start": 3863.42,
+   "end": 3893.17,
+   "text": "b is 5 times. So, leave 1 in 3. How much is left? 2. Leave 1 in 5. How much is left? 4. And in the last, you will have a and b both one time. So, a and b, you will have to add one to anyone. So, plus 1. You have to do this. So, let's go. For, auto, i less than f, means, in f, int, values. You can do it in one loop also, but if it will be more, then we are doing it in two loops to explain you easily. You can code it however you want. Val is equal to i dot,"
+  },
+  {
+   "start": 3893.2,
+   "end": 3921.89,
+   "text": "Second, we just have to process the odd one. Well, modulus 2 equal to 1. So, what to do? Result plus is equal to well minus 1. Minus 1. Means if a is 3 times, then don't add 3. Add 2. Leave 1. If 5 is there, then add 4. If a is 1 times, then don't add anything. 1 minus 1 is 0. So, leave 1. Now, what to do? Return res plus 1. Why? Because"
+  },
+  {
+   "start": 3921.89,
+   "end": 3950.59,
+   "text": "If it is odd, then it is obvious that many odd letters will be left with frequency 1. You have to add any one of them, you have to leave the rest, so that's why it is plus 1. And this is done. So after this, this question is asked. This question is easy, but it is not easy. You need a lot of brain, you need a lot of knowledge about string, about palindrome. You will have to know a lot of things. So this question, the better we know it, the better we have understood it."
+  },
+  {
+   "start": 3950.59,
+   "end": 3961.46,
+   "text": "If you didn't understand any of the four questions, or any partner didn't understand, then please comment. We will try to go into more detail. These four are very important questions of HashMap. So, let's meet tomorrow."
+  }
+ ]
+}
