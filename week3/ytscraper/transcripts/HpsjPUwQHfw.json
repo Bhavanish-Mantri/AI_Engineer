@@ -1,0 +1,369 @@
+{
+ "video_id": "HpsjPUwQHfw",
+ "title": "Word Ladder Explained Like a Pro! DSA Patterns Graph Series",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1899,
+ "segments": [
+  {
+   "start": 0.02,
+   "end": 24.38,
+   "text": "Word Ladder. See, there is a hard problem with the leetcode. Let me tell you one more thing that the hard is just written, nothing like that. It is a very useless question. It is a stupid question. If you are being asked in this interview, then there is a very high chance that your selection will be done. If someone asks you this question and you make it 99% your selection is certain. Because it is a very famous question. And it is asked from the one who has a very high expectation."
+  },
+  {
+   "start": 24.38,
+   "end": 52.19,
+   "text": "The guy has studied, he knows it, he is asked by him. He doesn't ask everything from a useless person, okay? So he won't waste time in asking. Because the useless student, his air will fly away like this, he doesn't need all this. If you are asked this, then you have very good luck. If you make this, then the selection is almost guaranteed. Listen very carefully. It's not that hard, it's a very easy question, okay? Let's go. What does word ladder mean? What did I tell you? I have given you a lot of things. First of all,"
+  },
+  {
+   "start": 52.19,
+   "end": 82.32,
+   "text": "You have been given an array of words. What have you been given? You have been given an array of words. Meaning, you have been given these things. Let's assume. Hot. Okay. Dog. Okay. And. Dot. Okay. And. Lot. Okay. And. Log. And. Cog. Let's assume you have been given an array of words. Now, it is not possible that the words will be of the same letter or anything. The words will be in lowercase letters. Meaning, it will be in small English. It will be in small ABCD words. Okay. And. And. And."
+  },
+  {
+   "start": 82.32,
+   "end": 111.22,
+   "text": "Suppose we mark indexing as 0, 1, 2, 3, 4, and 5. This will be given as an array. What else will be given? You will be given two more words. You will be given a begin word. What will be given? Begin word. As we can see in this example, what is its begin word? Hit. What is its begin word? Hit. And you will be given an end word. End word in this example is cog. End word is cog. Done? These three things are given. What is your work?"
+  },
+  {
+   "start": 111.22,
+   "end": 137.17,
+   "text": "What is your work? Hit. First of all, hit is not in this array. There is no hit in this array. There is no problem. There is no problem. Is there a cog in this array? Yes, there is a cog in this array. Why am I telling you this? You will understand. What is your work? You have to start with hit. With whom do you have to start? You have to start with hit. You have to start with hit. What do you have to do after starting?"
+  },
+  {
+   "start": 137.17,
+   "end": 166.5,
+   "text": "In Hit, you can change one letter as per your wish. You can change any letter of Hit as per your wish and you can convert it to any other lowercase letter. For example, if you want, you can make HIT as LIT. You can make LIT. You can make HIT as BIT. You can change any letter as per your wish. But, your goal is to change one letter in Hit"
+  },
+  {
+   "start": 166.5,
+   "end": 195.5,
+   "text": "and by following the same rule that you will be given a word, you change that word and reach another word. By doing this, you have to reach this final word. What does it mean to say? Now see, if you change one letter in hit and reach LIT. Do you see LIT in this array? No, we do not see LIT in this array. It means that there is no benefit in changing to LIT."
+  },
+  {
+   "start": 195.63,
+   "end": 223.2,
+   "text": "You change HIT to HIS. Again, do you see HIS in this array? No, you don't see HIS in this array. There is no point in that either. But, but, but, you change this I to O. Meaning, you make HIT to HOT. What do you do with HIT? You make it HOT. HOT, HOT, HOT, yes. Do you see HOT in this array? Yes, you do. Meaning, this is a great transformation."
+  },
+  {
+   "start": 223.2,
+   "end": 252.53,
+   "text": "This is a good transformation. Now, on this hot, you make this edge as D. You can do a lot of things on this hot. You can make any letter out of these three letters. But whatever you make, it should be in your array. You should not do anything with your mind. It should be in your array. This is called a ladder. You climb the ladder one by one and reach your final. Again, what do you do on the hot?"
+  },
+  {
+   "start": 252.62,
+   "end": 280.78,
+   "text": "What have you made the HOT? Make the HOT as D. That means make the HOT as DOT. Is DOT in your area? Yes, it is in your area. So, this is a good transformation. Now, what do you do? In DOT, change D to L. That means you make DOT as LOT. Is LOT in your area? Yes, sir. LOT is also in my area. Very good. Keep on doing it. Now, what have you done?"
+  },
+  {
+   "start": 280.78,
+   "end": 310.58,
+   "text": "L-O-T instead of L-O-T? This is a very confusing question. Yes, sorry. You didn't have to make the dot a lot. What did you have to make the dot? Instead of D-O-T, you made the T a G and made the dot a dog. What did you make? You made it a dog. Is the dog in your array? Yes, sir. The dog is in your array. Confirm the dog as well. Do something to the dog as well. Do something to the dog as well. In D-O-G, you changed D to C and made it a cog. Here you are. You have come to the cog. Is the cog in your array?"
+  },
+  {
+   "start": 310.58,
+   "end": 330.14,
+   "text": "And, was Kogi your final destination? Yes, sir. How many steps did you take to make it? 1 step, 2 step, 3 step, 4 step, 5 step. What do you have to return? 5. What can you make in minimum number of words? You have to return that."
+  },
+  {
+   "start": 330.14,
+   "end": 350.59,
+   "text": "If you are not able to do this, let's say your end word is not COG, it is AOG, and you find out that AOG is not possible, then you return 0."
+  },
+  {
+   "start": 350.59,
+   "end": 374.67,
+   "text": "This is what you have to do. What to do? I am telling you again. You have to start with the beginning word. In the beginning word, you can make anything you want. You can convert any letter in it. But the word you will make should be in your array. If it is in your array, then move forward in it. Convert the next word. Move forward in it. While doing this,"
+  },
+  {
+   "start": 374.67,
+   "end": 403.71,
+   "text": "You have to reach the final word and you have to tell what is the shortest step from which we have reached the final word. Suppose if your end word is LIT and there is LIT in your array as well, then you only need two steps. Which two steps? The first word is your hit, which means this is the begin word, so one step is counted here. You make H as L and bring LIT and LIT is also in your array, so how many steps? The answer to this is two steps."
+  },
+  {
+   "start": 403.71,
+   "end": 430.72,
+   "text": "This is what you have to do. What you have to do is, this is called a ladder. Word ladder means, from one word to another, from second to third, from third to fourth. By doing this, it becomes an end word. Keep one thing in mind. Your beginning word, if it is not in your array, it works. If it is not in your array, it works because it is a beginning word. But, if your end word is not in your array, if you come to know that the end word given to us is not in my array,"
+  },
+  {
+   "start": 430.72,
+   "end": 458.18,
+   "text": "This means that no matter what you do, you will not reach the end word. Why? Because whatever you are doing is based on the words of the array, right? If your end word is not in your array, you can do anything in the world, you will not be able to make it. So in that, immediately check first and return zero that this is not possible. This is your question. Now it seems very dangerous to listen to the question. It is a question that is going to turn your head that this is not done yet."
+  },
+  {
+   "start": 458.18,
+   "end": 484.42,
+   "text": "I am not able to understand who's question is it and why is it a question and why is it being taught in a graph series? If it is not like a graph, then it seems like a string question. Now let me tell you everything slowly. I have explained the question to you. You have to do these things. Now I will explain to you why it is a question and how it is and we will open it. It is very easy. We will do it in a very short time. Let's start from the beginning. Now see, this question seems very hard to you, right? Because it had a big big word. What does big big word mean? It had a word of 3 letters."
+  },
+  {
+   "start": 484.42,
+   "end": 511.49,
+   "text": "It has one letter words. You can also get one letter words. You may get such an array. Your begin is A and your end is Y. Always remember one thing. The length of begin, end and every word will always be same. Means it will always be equal. If begin is of one letter, then end will also be of one letter. And the whole word of array will also be of one letter. It won't happen that the word of array is of three letter. It won't happen like that. So what you have to do for one letter? You have to start with A."
+  },
+  {
+   "start": 511.49,
+   "end": 531.34,
+   "text": "Is A in your array? No, but it is okay. If it is not the beginning, then it is okay. Is the end in your array? Yes, the end is in your array, so you can try it. Now, if you don't know anything about this, if you don't know anything about graphs, then what would you do? You would do this, right? You would try the brute force approach and see that, okay, now A is there."
+  },
+  {
+   "start": 531.34,
+   "end": 561.52,
+   "text": "How many letters can you change in A? One letter. How many letters are there in A? One letter. Now, how many options do you have to change this? If you want to change A, if you want to change one letter, then there is only one letter. How many options are there? 26 options are there. Because you have to change it in lower English ABCD and not in any other. If you knew brute force, if you didn't have any other idea, then what would you have done? You would have changed it and seen. You have to do the exact same thing in it. Change it and see. When you change A,"
+  },
+  {
+   "start": 561.52,
+   "end": 588.86,
+   "text": "How much is it possible? It is 26,000. It will not change. How much will it be? You can do A as B. You can do A as C. You can do A as D. You can do A as E. So, that and so on. Now, from this, which transformation is valid? Which transformation is such that you are making A as such which is in your array? So, one transformation is done. C. C is in your array. Again,"
+  },
+  {
+   "start": 588.86,
+   "end": 618.48,
+   "text": "When you started A, what was your value? 1. When you start from the beginning, you stay at 1. When you come to C, what will be the value of C? More than the value of A, what will be the value of C? It will be 2. Very good. Keep changing like this. What will you get? You got E. It also has a value of 2. You will change more and more. Somewhere along the line, Q will be made. Then S will be made. Then Y will be made. And at last, Z will be made. What did you get?"
+  },
+  {
+   "start": 618.48,
+   "end": 647.84,
+   "text": "Its value is also 2. Its value is also 2. Its value is also 2. Its value is also 2. Okay? When you converted A, although you had 26 possibilities, but what was in your array out of those 26? There were 6 things in your array. So you converted A and made this. Now, start the next cycle. For example, now you can convert C, but look, if you convert C, then C will also become A, B, D, E, F, but that's already done."
+  },
+  {
+   "start": 647.84,
+   "end": 676.05,
+   "text": "All that is already done. While doing it, where will you reach? On y. But, you will know on y that my y is equal to end. So, what will you return? Value is equal to 2. Meaning, in two steps, you can make your a in your y. Meaning, you can make your begin in your that. So, this was of one letter. This is looking very easy. See in two letters also. See what happens in two letters. Assume, your array is this. Your array is this. a, b."
+  },
+  {
+   "start": 676.18,
+   "end": 700.91,
+   "text": "and this is your dc and this is your bc ok your begin word is given to you as ab very good your end word is given to you as dc do you understand? first of all look at both of them is ab in your array? yes it is if it wasn't then it would have been fine is dc in your array? yes dc is also in your array start changing start changing see ab"
+  },
+  {
+   "start": 701.07,
+   "end": 729.07,
+   "text": "There are two letters in AB. You can convert both letters in 26-26 ways. First of all, you can convert the first letter in 26 ways. After that, you can keep the first letter the same and convert the second letter in 26 ways. If you start doing its permutation and combination. First of all, what will it become? It will become BB, CB, DB, EB, FB."
+  },
+  {
+   "start": 729.14,
+   "end": 758.94,
+   "text": "change the second letter to the same and change the first letter to the whole meaning leave the a and the remaining 25 letters are here after that leave the first letter to the same and start changing the second letter like this if it has b then it can be a, c, d, e, f by doing this you will get a lot of permutation combinations now from these permutation combinations you will see that only this one b, c is in your array"
+  },
+  {
+   "start": 758.94,
+   "end": 775.55,
+   "text": "You cannot convert AB into DC. Why not? Because A is changed into D and B is changed into C. You cannot change two letters at once. You can change one letter at a time."
+  },
+  {
+   "start": 775.55,
+   "end": 804.11,
+   "text": "Whatever choice you take, there will be only one letter change in it. If it is AB, then what can be AB? Okay, AB can't be BC according to that. BC can't be made either. Let's change this. What do we write by changing this? Let's write AB as AC. So, can AB be AC? Absolutely, it can be. Why? A is your same. B is your C. So, when you do this, you will feel that AB has changed and AC has been made. With which value? You started with value 1."
+  },
+  {
+   "start": 804.11,
+   "end": 833.25,
+   "text": "What value is AC made with? With value 2. Now, you will do the same thing on AC. I mean, try to change AC here and there. Now, you will know that what can be made by changing AC? DC can be made. Why? C and C will remain the same. A will change at some point and go to D. So, you will get DC. With what value? With value is equal to 3. When you come to DC, you will know that this was my end. This was my end. So, what will you return? Value is equal to 3."
+  },
+  {
+   "start": 833.25,
+   "end": 844.66,
+   "text": "You have to do the same thing. This brute force approach is not a brute force approach. This is a BFS approach. What kind of approach is this? This is a BFS approach."
+  },
+  {
+   "start": 844.91,
+   "end": 873.04,
+   "text": "What do you do? You start with the word BEGIN. You say its value is 1. You change BEGIN in as many ways as possible. Meaning, you pick up every letter of BEGIN. For every letter, you have 25 possibilities. Not 26, but 25. Because if A is also there, then if you pick up A and change it to A, then A will not change to A, right? A can be made into the remaining 25 alphabets. So,"
+  },
+  {
+   "start": 873.04,
+   "end": 896.3,
+   "text": "For every letter of begin, you will have 25 possibilities. 25 possibilities. 25 possibilities. How many? 25 possibilities. Out of all these possibilities, whatever is in your array, whatever is in your array and they are not visited till now, means we could not make them till now. What will you do to them? You will push them back in your queue."
+  },
+  {
+   "start": 896.3,
+   "end": 921.92,
+   "text": "And because the value of begin was 1, then all these 25, 25, 25, whatever it is, what will be the value of all these? It will be 2. What will be the value of all these? It will be 2. Because if you change only one thing from the begin word, then you have the possibility to get all these. Now once you get that, let's change the begin, let's assume that we will not get these 25, 25, everything else. We got these 5 words which are also in my array."
+  },
+  {
+   "start": 921.92,
+   "end": 937.86,
+   "text": "Same work will be done in that word as well. Meaning, all these 25 will be spread here and there. While doing this, what will you get? You will get your end word. As soon as you get your end word, what will you do? You will do return value. Meaning,"
+  },
+  {
+   "start": 937.86,
+   "end": 961.62,
+   "text": "After this value, we will get our end word. So what is this? What is this? This is BFS. This is DFS. Why is it BFS? Because you started with one source. You started with one source. With what? With the word BEGIN. You can go anywhere with the word BEGIN. You can see all the possibilities. We can go here, here, here, everywhere."
+  },
+  {
+   "start": 961.62,
+   "end": 990.8,
+   "text": "What are the valid words out of that? The words that are already in your array. So your value on the source was 1, which means your distance was 1. From that source, the valid words that you went to, what was the value of all of them? Value plus 1, which means value 2 became 1. Repeat the same thing with all of these. How long? Until you get the end word. As soon as you get the end word, what will you do? You will return the value."
+  },
+  {
+   "start": 990.8,
+   "end": 1011.86,
+   "text": "If you don't get the word at the end, then it's fine. Let's say you tried your best, but you didn't get the word at the end. In this example, in this ABCD example, let's say your word at the end would be something else. It would be something else. It would be EF. And this EF would be something else. You can't reach EF by doing anything. What will you return? You will return 0."
+  },
+  {
+   "start": 1011.86,
+   "end": 1035.46,
+   "text": "So this graph question is not a string question. This brute force that you are seeing, how can we do this? We can do it. When you have one word and the length of each word is very small, maybe 10. The length of each word is 10. So what will we do? For each word, we will see as many combinations as possible. Which one is in the array? Take that and push it in the queue. BFS runs from queue. Push it in the queue. With what value?"
+  },
+  {
+   "start": 1035.46,
+   "end": 1065.2,
+   "text": "with value plus 1. By doing this, you will reach the end. So, we hope that you understood this thing. As hard as this question looks, it is not that hard. It is not at all hard. Now, we will explain its algorithm. Come, let's explain its algorithm and we will write its code too. Let's move ahead. So, see, its pseudocode or whatever its algorithm is, what will happen? First of all, you will be given an array. What will the array give? What happens? You will be given a vector of string. You will be given a vector of string in the array."
+  },
+  {
+   "start": 1065.42,
+   "end": 1093.31,
+   "text": "This will be your words array. You will be given two more words. One will be your string begin. Yes. And one will be your string end. Okay. First of all, remember one thing that whenever there is a string question and you have to find out again and again whether this thing is in the array or not, the best thing is to make a hash map of it. Why are we saying this? Our whole thing is based on the word you have reached, the word combination you have reached, whether it is in your array or not."
+  },
+  {
+   "start": 1093.31,
+   "end": 1122.06,
+   "text": "Now it is difficult to search in array. If you will search in array again and again, then it will become order of n. First of all, make a hash map. What hash map will you make? Unordered map. Will you make an unordered map? Now we are not writing code, we are just telling you what we will do in it. What kind of unordered map? String and int type. First of all, put all the words of array in it. After that, check a very important thing. If begin is not there. If begin is not there."
+  },
+  {
+   "start": 1122.86,
+   "end": 1150.06,
+   "text": "If you don't have begin, then put it in here. If you don't have begin, then put it in here. Because I am telling you that if you don't have begin, then it's okay. You can start from begin. I have put it in the hash map. If end is not found, if you don't get end in this hash map, then what do you have to do? You have to do return 0. If you don't get end, then return 0. It's done. It's become hash map. Very good. Now, start your BFS. To start BFS,"
+  },
+  {
+   "start": 1150.42,
+   "end": 1178.59,
+   "text": "We will make a queue. How will we make a queue? Pair of string, pair of string and int. Why should we make this pair? What will you store in it? In string, your word will be stored. Meaning, who are you starting with? With begin. Begin will be stored. This int is for your value. With which value does begin start? With 1. So, what will you put in it first? Begin and 1. Begin and 1. Pay attention, don't put it from 0. Put it from 1 because it is written in the question."
+  },
+  {
+   "start": 1178.59,
+   "end": 1205.68,
+   "text": "With this, erase the begin. Why are we doing this? We will use this unordered map, this hash map as visited. How will we use it? We will use it as visited. Why? Assume that you made AC from AB. You made AC from AB. You could have also made something else from AB. You made AC here, which means its value was 1. Its value will be..."
+  },
+  {
+   "start": 1205.68,
+   "end": 1226.16,
+   "text": "Two. Okay. You make one more thing from AB. What can you make from AB? What can you make that goes back and becomes AC? So you keep C here same. Okay, this will become AC. What else can be made from AB?"
+  },
+  {
+   "start": 1226.61,
+   "end": 1253.94,
+   "text": "We are not able to think of an example, but what does visited array tell you? When one word is already done, you have already reached one word, you have already put it in the queue, don't put it again and again. That's why when we put the begin, we blew the begin from the hash map. Now start BFS. How? Until your queue is not empty. Until your queue is not empty. Okay, that's a good thing. Remove one pair."
+  },
+  {
+   "start": 1253.94,
+   "end": 1282.03,
+   "text": "We will remove a pair from the queue and we will pop it from the queue. Now comes the important part. Now comes the important part. There are two things in your pair. First of all, your string s is equal to p dot first. Means the word you have taken out. Suppose you have taken out the begin. Okay. And your int val is equal to p dot second. What is its value? First of all, you should check that if my s is equal to end. Means you have reached the end."
+  },
+  {
+   "start": 1282.03,
+   "end": 1309.92,
+   "text": "Don't do anything, just return your val. If you have reached the end, then return your val. If this is not the case, then what do you have to do? Now, in this S, the word you have taken out, every letter of it, every letter of it, you have to change the whole A to Z. You have to change the whole A to Z and see every combination. Meaning, suppose your S is this. Your S is A and B."
+  },
+  {
+   "start": 1309.92,
+   "end": 1336.66,
+   "text": "Okay? It is a word of two letters. You have to convert every letter of it into the alphabet. So, what will we do for this? We will write a simple loop. What loop will we write? See. For i is equal to 0, i less than s dot size, i less than s dot size, i plus plus. Okay? Do you understand now? You know what i is, right? Okay. After that, char c is equal to, char c is equal to s of i."
+  },
+  {
+   "start": 1336.66,
+   "end": 1364.78,
+   "text": "S of I. Okay? What happened with this? Now, what is your I? Zero. What is your C? A. C became A. You have kept C. Now, this letter. Now, this letter. Change the whole. Change the whole. A, B, C, D, E, F, G, H, I, J, K, L. Whatever happens, change everything. What will we do for this? For J is equal to zero. Sorry, not J is equal to zero. You have to change it in lower case. J is equal to 97."
+  },
+  {
+   "start": 1364.78,
+   "end": 1395.14,
+   "text": "j less than equal to 122 j plus plus. What does this tell you? This is the S of the whole smaller abcd. From 97 to 122. Now, now, first of all, first of all, if c equal equal to j, means the letter which was your, which was a, your j is still on a, so changing a to a is of no use, right? If you change a to a, then what change happened? Don't do anything. If this is the case, then continue. But, for the remaining 25 letters, you will have to change it. So, what will you do?"
+  },
+  {
+   "start": 1395.14,
+   "end": 1424.62,
+   "text": "SI is equal to J SI is equal to J means if your SI was A then what has become of your S? if you take A and make it B then your S has become BB so see one letter has changed and it became BB now check if this is a valid transformation if in your HashMap there is S if there is S in your HashMap then note that this S has now changed"
+  },
+  {
+   "start": 1424.62,
+   "end": 1450.03,
+   "text": "If you have S in your hash map, that means if you have BB in your hash map, then what should you do? Push it in the queue. Push it in the queue. With S. And with whom? With value plus 1. With plus 1. And now erase it from the hash map. Now erase it from the hash map. It's done. Now close your J loop. What did you do now? What did you do now?"
+  },
+  {
+   "start": 1450.03,
+   "end": 1474.62,
+   "text": "Now, your i is equal to 0 means you have to catch the first letter and do everything on it. Means you have to make a, b and c first. Means you have to make b, b, c, b, b, b, e, b, f, b. Everything. When you will come out of here, when you will come out of here, when you will come out of this j-loop, this is of j-loop. When you will come out of here, what will be your s? z, b. What will be your s? z, b."
+  },
+  {
+   "start": 1474.62,
+   "end": 1500.1,
+   "text": "Now, the work is done. Z has also gone inside. No, it didn't happen. But, now you have to make S as before. Meaning, what do you have to do? SI is equal to C. The C that was yours, the original letter, you have to make it back. Meaning, you have to make S back AB. Why? Because next time, we have to focus on this, the second letter."
+  },
+  {
+   "start": 1500.1,
+   "end": 1529.28,
+   "text": "If you had left it on ZB, then you would have started with ZB. Then you would have started with ZA, ZB, and ZCA. S was not in the original. The original was SAB. Now concentrate on A. Change A in all the ways. See, the whole permutation combination is done. When this is done, when the work of the first letter is done, then revert it back. Meaning, make S back AB here. So that it can focus on the next letter properly. Now what will happen?"
+  },
+  {
+   "start": 1529.28,
+   "end": 1545.5,
+   "text": "The next letter means AB. Now you will take the position of B, the second letter. What will you make it? AA, AC, AD, AE, AF, Z. You will make it like this. So what does this thing do?"
+  },
+  {
+   "start": 1545.5,
+   "end": 1566.48,
+   "text": "It picks up all the letters and puts 26 or 25 possibilities on each letter. It checks all the possibilities to see if you are in the HashMap or not. If you are in the HashMap, then you are valid. It will push you in the queue and erase you from the HashMap. There is not much rocket science, but it can be a little confusing. That's why I am giving so much on this."
+  },
+  {
+   "start": 1566.48,
+   "end": 1597.22,
+   "text": "If your queue gets empty after doing a lot of things, it means that you didn't get the end. If you didn't get the end, then what will you do? Go to the end and return 0. If you didn't get the end, then you can't go to the end. So return 0. It's simple. It's not that hard. This will be the code. Write this code. I have a little cough. I have a little difficulty in shouting. Write this code."
+  },
+  {
+   "start": 1597.22,
+   "end": 1626.45,
+   "text": "What will be int? First of all, n is equal to words dot size. Pay attention, you will get n words, begin and end. Okay? n is equal to words dot size. Int i. Make a hash map for yourself. Unordered map. How? String and int can be made. String and boolean can be made. Whatever you want. First of all, i is equal to 0. i less than n."
+  },
+  {
+   "start": 1626.45,
+   "end": 1653.87,
+   "text": "I plus plus. Put all of them in this. Put them in HashMap. Words. I is equal to 1. 1 means it is. It is. First of all, see if f.find f.find begin begin equal equal to f.end Where did this syntax come from? Remember the syntax in the HashMap video. This is the search syntax. If begin is not there, equal equal to f of end means"
+  },
+  {
+   "start": 1653.87,
+   "end": 1683.86,
+   "text": "If you can't find it, then put it in the begin array. But, if f.find end is equal to f.end, which means you didn't find the end in your hashmap, then immediately return 0 without wasting time. Now, start. Make a queue. How? Pair of string and int."
+  },
+  {
+   "start": 1683.86,
+   "end": 1714.78,
+   "text": "Who to start with? In this, push begin. Push begin and 0. F dot erase begin. Remove begin from F. Remove begin from F. Begin is done. It went to Q. Start your BFS. While Q dot not empty. Same BFS. It will be the same as BFS. There is only one trick in this. What you used to do with adjacent in graph, what you used to do with neighbor in graph, you are searching your neighbor again and again."
+  },
+  {
+   "start": 1714.78,
+   "end": 1745.22,
+   "text": "When you change one letter and make another word, then it is your neighbor in a way. The only thing in this is whether that neighbor is in your array or not. If it is in your array, then push it. Okay? Come on. First of all, remove that pair. First of all, remove the pair. P is equal to Q dot front. Okay? And don't forget to pop with Q. Otherwise, it will go in the infinite loop. Okay? Come on. Remove your string S. S is equal to P dot first. And,"
+  },
+  {
+   "start": 1745.22,
+   "end": 1773.82,
+   "text": "int val is equal to p dot second. Okay? Very good. First of all, check one thing that if, if, s equal equal to end, immediately return val, you got it. Return, val, you got it. If not, then you will have to wait a little. What will you have to wait? What we have done, you will have to change everything. Okay? Come, change it. For i is equal to zero, i less than s dot size, means, we will go on every letter once."
+  },
+  {
+   "start": 1773.82,
+   "end": 1803.2,
+   "text": "I++. First of all, we will keep the original character at one place. So that it will be easy to revert later. Now, we will go to every alphabet. INT J is equal to 97. J less than equal to 122. J++. We will go to every alphabet. First of all, see that if C is equal to J, continue. We don't have to change it. What is the use of changing it? If we make it the same, it won't happen. If it is not like this, change it. SI is equal to"
+  },
+  {
+   "start": 1803.2,
+   "end": 1829.7,
+   "text": "check if f.find is not equal to f.end means it is in the array so what to do? q.push we will push it with value plus 1 we will close it with f we will erase it with if.j after j is closed si is equal to"
+  },
+  {
+   "start": 1829.7,
+   "end": 1844.51,
+   "text": "See, we have reverted it again. We have made it the same as before so that it doesn't get messed up in the next letter. I is closed and your Q is closed. If you don't get any luck even after doing this, then you can return 0. So see, this is its small and cute..."
+  },
+  {
+   "start": 1844.51,
+   "end": 1869.3,
+   "text": "The code is not as hard as it seems. The code can be long, but it is not hard. There is nothing hard in it that you have not heard before. No new technology has been introduced in it. So this is the word letter. Now the leetcode is hard, so obviously it will be a little tricky here and there. But definitely do this and understand it. And now I think your graph..."
+  },
+  {
+   "start": 1869.3,
+   "end": 1898.7,
+   "text": "We know that there are some other topics like Kruskal but we will see that later. Kruskal and Kosa Raju are some other topics. Now we are going to start DP from the next day. Now be ready for DP. Your 90% graph is finished. More than this graph is not asked. All that is very far. All that is not asked. So do it. Code it. And if you have any doubts then ask. See you in the next video."
+  }
+ ]
+}

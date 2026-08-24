@@ -1,0 +1,224 @@
+{
+ "video_id": "qH2VQY48mg4",
+ "title": "The Best Way To Learn DSA in 2025 | DSA Patterns by IITian",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1157,
+ "segments": [
+  {
+   "start": 0.66,
+   "end": 27.95,
+   "text": "Hello, so I know that many of you must have come from Instagram, so you must know me, but those who don't know, I will tell you that my name is Pratyush. I work in Akamai, which is the world's largest CDN or networking company. Why am I telling you all this? Because I don't want to show off. I am telling you all this because you listen to me carefully. So I am not an undue person who is in a lafunder company and he has bought a camera today and he thought that he has to make YouTube today. No."
+  },
+  {
+   "start": 27.95,
+   "end": 55.73,
+   "text": "and I have completed my studies with IIT Dhanbad I know a lot of DSA I have been doing DSA for 3-4 years so I have a good understanding of this thing that's why it is more important that you listen to me so the first doubt of people is that is doing DSA still necessary or it becomes useful through development so whoever is telling you that doing DSA is not necessary is lying to you if you don't believe then do a lot of development and make a long resume and"
+  },
+  {
+   "start": 55.73,
+   "end": 82.38,
+   "text": "Give the first round of any company interview and you will be asked about DSA and you will be out. So yes, it is absolutely necessary to study DSA and it will be necessary for the next 10 years. But why is the problem? Why have I made this channel? Why are we suddenly talking about DSA patterns today? Why should you waste your time in this thing? I will tell you that. So I have given this logic in the Instagram reel too. So how did we learn English? We had learned English that we had learned the alphabet first, A to Z, right?"
+  },
+  {
+   "start": 82.38,
+   "end": 109.33,
+   "text": "After that, we made small words like cat, tom, apple, pat, tree. After that, we made small sentences like I am a boy, I am a good boy. After that, we made more complex sentences like me and Pratyush are very good friends. I have recently started a YouTube channel. This is how we learned English. It is possible that when you are doing this, you don't remember some of the alphabets. For example, you don't remember what comes after Q."
+  },
+  {
+   "start": 109.33,
+   "end": 136.69,
+   "text": "You may not remember what comes before G, but it doesn't matter. If you are making small words, if you are writing cat, then you only need 3 alphabets. If you are writing apple, then you only need 4 alphabets. Similarly, you know all the words of English, this is also not possible. If you start adding all the words of English, then it will become lakhs and crores. So, it is not that I know all the words of English and you must know them. Still, we know how to speak proper English, I can speak English, I can understand English, I can read English."
+  },
+  {
+   "start": 137.04,
+   "end": 165.1,
+   "text": "So now imagine that instead of this method, you learn English in a different way. Someone tells you to first learn all the alphabets of English. You say, okay, that's good, I should also learn. After that, you learn all the words of English. No matter how many lakhs or crores of words there are, it doesn't matter. Remember everyone's spelling, remember everyone's meaning, write everyone in a copy, remember. After that, you read all the sentences. Read all the possible sentences in English. Remember everyone. After that, you will be able to make the sentence of boy in IIM."
+  },
+  {
+   "start": 165.1,
+   "end": 192.83,
+   "text": "If you had learned this way, you would have been learning for 10-20 years and you wouldn't have known anything. Now, why are we not applying the same logic in DSA? In the past 5 years, what has happened is that a sheet of every creator, every YouTuber has come. I too had read from that when I was preparing. Now, there is a topic-wise question in that sheet. Their main funda is that we will read DSA topic-wise. We will first read the arrays, we will do the mastery in the array, and then we will come to the linked list."
+  },
+  {
+   "start": 192.83,
+   "end": 221.95,
+   "text": "When the linked list is mastered, we will come to the strings This method is the same which will remember all the words in English No person can question the entire array in his lifetime If any of you think that I know the entire array, then schedule a one-to-one with me I will ask you a question of only the array There will be no advanced concept in it, you will understand where you are and where you are standing So it is not that if you read topic-wise, you will read the arrays, then you will not be able to move forward until you master the arrays"
+  },
+  {
+   "start": 221.95,
+   "end": 251.3,
+   "text": "Because array is a data structure. If you look at the questions of array on the lead code, then there are thousands of questions of array, simple array questions. This is the problem in doing DSA topic-wise. That's why many of you will relate to me that you have started to study DSA many times. I too started to study DSA at least 5-6 times in my college time. When you start, how do you start? With array. Everyone starts with array. You keep doing array questions. After 6 months, you feel that the array is not ending. How will the rest end? There is still so much syllabus left."
+  },
+  {
+   "start": 251.3,
+   "end": 280.03,
+   "text": "Right now I am not able to do the topic of array, then you leave it. This is the mistake in this. That's why DSA's patterns come. Patterns, what are they? Patterns, in any question, there has to be an algorithm. Either you have to understand that what is this question asking? Because the question is in English. What to do in that question? Which algorithm will solve that question? Which data structure will solve it? They decide the patterns of that question. There are some examples of patterns, two pointer pattern, backtracking,"
+  },
+  {
+   "start": 280.03,
+   "end": 299.82,
+   "text": "or slow and fast pointer pattern, there are 28 patterns like this in DSA. Now, the questions of DSA are infinite, if you start doing questions one by one, then it will never be possible, then you will never reach the interview. Patterns are finite, how many patterns are there? Just 28, 28, 28, 28. If you take any question of DSA, then it will come in this one pattern only."
+  },
+  {
+   "start": 299.82,
+   "end": 328.35,
+   "text": "In that pattern, if you master it, you will understand which algorithm and data structure you have to apply. After this, you can at least go a little further. At least you can tell the interviewer that this is coming to my mind. That is why it is important to study the DSA pattern. Why? Because it takes less time, there are finite things. You can understand more by asking less questions. You don't need to ask 500, 600, 1000, 2000 questions. You don't have as much time as I understand your situation. So,"
+  },
+  {
+   "start": 328.35,
+   "end": 357.33,
+   "text": "On this channel, we will shift phase-wise. Some people might already know what I am going to teach for the next 10 days. Some people might not know. Never mind, when you have done so much weight, I am talking for those who know that when you have done so much weight, then wait for 10 more days. Even if you think that you know what I am going to teach for 10 days, still I will recommend you to watch the classes. You will definitely get something that you might not know or you might have forgotten. You will get something helpful. Okay, so we will start this phase-wise."
+  },
+  {
+   "start": 357.33,
+   "end": 382.1,
+   "text": "The first one is Phase 1. What is my goal in Phase 1? My hope is to explain you the basic data structure. In English, like there are alphabets A to Z, just like that, before starting anything, it is very important to learn its basics or its syntax. So, I think, according to my intellect, that in 10 to 12 days, I will teach you a good basic DSA."
+  },
+  {
+   "start": 382.1,
+   "end": 406.1,
+   "text": "It won't be so good that you can crack an interview with just these 10 days of study. But this is more than enough that we are going to cover in the future. There will never be any difficulty in understanding things in the future. This is my promise. So I will try in 10 to 12 days that there will be an hour class. And in this I will teach you some topics that we will talk about later. I will give you some questions related to those topics."
+  },
+  {
+   "start": 406.1,
+   "end": 430.43,
+   "text": "And I will teach you some questions in the class and in some questions I will ask you to do it on GeeksforGeeks. If you have done that basic question, then you will be caught in DSA. Okay? We will start the second phase with patterns. Those who have not got the pattern sheet yet, there is an Instagram link in the description. Go there and comment anything. It will come in your DM. It comes automatically. I personally do not send it to you. One more thing has been cleared. Okay? We will come to phase 2 on patterns."
+  },
+  {
+   "start": 430.43,
+   "end": 460.45,
+   "text": "Phase 2 is another thing, first let's decide on phase 1, what will happen, in which language, and in which way, so let's see that once. Now in phase 2, what are we going to do in phase 1? We are going to do basics. Now what is the basics? If you want to learn any language, if you feel that you want to learn a new language, JavaScript, Rust, Go, Python, anything, then you have to do these things. What are these things? First of all, you should know its input and output."
+  },
+  {
+   "start": 460.45,
+   "end": 489.02,
+   "text": "Input and output means how to take input and how to print it. You need this in any language. The second thing you need is variables or data types. What are variables and data types? If you want to store a number or a name, how will you store it? How will you declare it? How will you write it? If I ask you to make an array, how will you make an array? How will you write an array? You should know this."
+  },
+  {
+   "start": 489.02,
+   "end": 518.53,
+   "text": "The third thing is loops. Loops means to repeat the same thing over and over again. So if there is a program that says print hello world, then you will write it in one line, print hello world, very nice. If there is a program that says print hello world 10 times, then will you write print hello world 10 times? No. We will do this thing with loops. So loop is a very basic, very integral part of any language. You should know loops. You should know syntax, you should understand what will happen by writing loops, what is infinite loop, what is finite loop, etc."
+  },
+  {
+   "start": 518.53,
+   "end": 547.15,
+   "text": "The next thing is functions. Why are functions very important? Because whatever DSM people do, either on Leetcode or on GFG, there you don't have to write the entire program. There you don't have to take input or output. There you just have to write the function. You are given a function and you just have to write the logic of the function. That's why writing the function and understanding the function is very important. I don't think functions will ever leave you. Whatever language you learn, you should know how to write functions."
+  },
+  {
+   "start": 547.15,
+   "end": 576.21,
+   "text": "The next thing is related to the function, if you have learnt to write a function, then you should also know recursion. What is recursion? Recursion is the same function that calls itself. Whoever knows the function, the small meaning of the function is that there is one thing, in which you pass an input and it gives you an output. That is function. Function means a box. Input will come in the box and output will go out of the box. What is recursion? Recursion is the same function, for example, there is a fun function,"
+  },
+  {
+   "start": 576.21,
+   "end": 606.58,
+   "text": "it is calling itself, it is not calling any other function, it is calling itself again and again, this is called recursion in small, now these 5 topics are done, apart from this, we saw data types here, this data type means basic data type, like integer, character, string, next one we will learn is advanced data type, means arrays, or vectors, pairs,"
+  },
+  {
+   "start": 607.44,
+   "end": 637.46,
+   "text": "Apart from this, HashMaps. Yes. HashMaps too, whether you believe it or not, is a data structure. It's a bit of an advanced data structure. HashMaps, and yes. So, 6 topics. 6 topics, 10-12 days. Giving each topic 2 days, I don't think it will take more than that. If you read all the things with time, with discipline, with consistency, then it won't be a game of more than 10 days. It will prepare you for the next journey. Now, in which language will it be? I keep getting very important DMs, that this is my language, that is that."
+  },
+  {
+   "start": 637.46,
+   "end": 666.06,
+   "text": "So, honestly, my language is C. I just know C. Believe it or not, I have been working for 2-3 years. And because I am working in networking, it is very important to write fast things in networking. So, we write in C. But for your convenience, I know that no one wants to learn C these days. So, for your convenience, my one main language will be C++. C++ is still one of the best languages if you do competitive programming, learn DSA, do anything like this."
+  },
+  {
+   "start": 666.06,
+   "end": 690.74,
+   "text": "It runs very fast. It is not very easy to understand, but relatively easy to understand. Now I know that many people are not interested in C++, so no problem. Java, I have studied Java in class 9 or class 10, but I remember that Java and C++ are almost the same. If you look at the syntax of at least basic, then 70-80% syntax is the same."
+  },
+  {
+   "start": 690.74,
+   "end": 718.37,
+   "text": "There is a slight difference in letters here and there. If you write int A in C++, then you write int A in Java as well. So, it is almost the same. So, it will be easy for me to teach and it will be easy for you to read. The next language is Python. I have done a little bit of Python in college. By the way, I don't recommend that if you are starting, yes, we will talk about that later. So, C++, Java, Python. Python also has a lot of knowledge. Python is a little small in writing."
+  },
+  {
+   "start": 718.37,
+   "end": 743.94,
+   "text": "And that's why people like Python, and those who want to go into AI, ML, etc., and do data science, Python is fine for them as well. C++, Java, and Python. These two are a little similar. Python is a little different. Python has a lot of things different from these two. Now, what is my recommendation? If you don't know anything from both, then I will tell you to start with C++. Why should you start? One of the benefits is that C++ is a very versatile language."
+  },
+  {
+   "start": 743.94,
+   "end": 766.13,
+   "text": "If you tell someone that I know C or C++, then it shows that you can learn anything because these languages have been around for a long time. So if you don't know anything, if you are blank, start with C++. If you know one of the three languages, then stay on your language. I will definitely teach the basics in all three, I promise. The next patterns, when we shift the next patterns, then"
+  },
+  {
+   "start": 766.32,
+   "end": 792.61,
+   "text": "Look, the main thing to teach in patterns is that I will teach you logic, how to think. I am not taking a computer language class. So whatever I will teach in patterns, I will teach in general. How to write, for example, if there is a graph, if there is a tree, then how to write that I will teach in C++ only. If possible, I will teach in Java. If possible, I will not be able to teach in Python. I don't know this, I will think about it in the future, how such a response comes, how children come."
+  },
+  {
+   "start": 792.61,
+   "end": 821.87,
+   "text": "My personal recommendation is that if you don't know anything, then start with C++. Even if you know, even if you are ready to switch, then also start with C++ because my strongest language is C++. So if you face any problem in C++, if it is not compiling, even if it is not compiling, then also I can help you completely. So I know C++ very well, that's why. You will also know what I know very well. Now, there is one more question that you must have seen in phase 1 that I have seen trees, graphs,"
+  },
+  {
+   "start": 822.45,
+   "end": 846.94,
+   "text": "Or DP, dynamic programming. I didn't include this. Yes, sorry. There is one thing left in phase 1. Yes. When we come here, link list. Yes, there is no work without link list, friends. You will have to learn link list. It is a very scary thing. People think, but there is no work without link list. Okay, so a link list has been added. Now you must be seeing that tree, graph, DP, stack, all this is not there."
+  },
+  {
+   "start": 846.94,
+   "end": 873.97,
+   "text": "This is not because I want to avoid topic-wise DSA. If I include everyone in this, then this basic course will become a topic-wise course. It will take 2-3 months. I don't want that. So, all these are very advanced data structures. In C++ or Java, there is a data structure called stack. But internally stacks use array or linked list. Internally, in any language, you won't get trees, graphs, or stack. You won't get such different data structures."
+  },
+  {
+   "start": 873.97,
+   "end": 904.32,
+   "text": "in the hood means from the bottom it is written in arrays or in linked lists it is packaged and made that you are a stack, you can use it, you can insert it, you can pop it, whatever you want to do inside the hood array is running so all these, as their patterns will come, their related patterns will come, I will teach you a little now I don't think there is a need to lose your mind in it, as much as it is now, it is sufficient ok, so this was it, this was a small introduction video so yes, what will I need from you in this session the first thing I will need from you is consistency"
+  },
+  {
+   "start": 904.32,
+   "end": 932.58,
+   "text": "I don't like it at all that if 10,000 people watch day 1 and then 5,000 people watch day 2, then 5 people are left on day 30. I don't like that at all. If this happens, then neither will I enjoy teaching nor will you benefit from it. So if you think that way, if you think that I will study a little and leave it, then I request you not to start at all. Don't waste time. Neither yours nor mine. You unsubscribe and go."
+  },
+  {
+   "start": 932.58,
+   "end": 957.78,
+   "text": "If you are joining, then make sure that you are consistent. I will be consistent, I promise you this. And if you take one step, then I will take nine steps and meet you. But you will have to take one step. I will not teach you sitting at home in my lap. Because I am not your tuition teacher. If I am taking nine steps for you, then you take one more step for me. So we will meet. Okay, so one thing I want from you is to be consistent."
+  },
+  {
+   "start": 957.78,
+   "end": 984.51,
+   "text": "If anyone thinks that I am not able to understand, please comment that you have read this lecture, it is completely useless. There is no hesitation or hesitation in it. You comment that it was a very useless lecture, I did not understand anything. Read it again, I will read it again. I will put 10 more videos. It does not cost money to put a video. I do not edit, this is a raw video. So I put this. It does not cost me any money, I have 30 minutes, I have a lot of time. You comment that I am not able to understand, read it again."
+  },
+  {
+   "start": 984.51,
+   "end": 1012.64,
+   "text": "I will teach you again, but you have to be consistent. If you don't watch it for 5 days in between, then obviously you will have some difficulties on the 6th day. So the second thing is that it will be recorded. I asked on the story whether I want it to be recorded or live, but many people were not available in the live, I was not available, so that's why it will be recorded. I will try to upload a video every day. What will be the length of the video every day? Around one hour. One hour, one topic, few questions."
+  },
+  {
+   "start": 1012.64,
+   "end": 1034.83,
+   "text": "When will the video come? I think between 8 to 9 pm. It's not a hard coded time. But I will try to make the video come between 8 to 9 pm. What will happen in the video? In the video, we will talk about three languages. First, I will explain the topic to you. Once you understand the topic, then C++, Java, Python."
+  },
+  {
+   "start": 1035.15,
+   "end": 1060.7,
+   "text": "Because this is a basic class, I will recommend you to choose one language and watch only that part. Don't waste time. For example, if the video is one hour long, then some parts will be of C++ and some parts will be of Java. So, there are playable cards in the video. When you do this in the video, a player comes where the time is written. There you will see one section which will be of C++, the next section will be of Java."
+  },
+  {
+   "start": 1060.7,
+   "end": 1088.27,
+   "text": "then you can go to your section and see it. It is important to see the topic, don't miss the topic, then you won't understand further. And one more thing I want from you is that you don't just have to see this, first of all you should have a copy. I know that everything is online, it is a bit old-fashioned, but bro, learn DSA, learn math, learn anything that requires hard work, learn any skill, you will have to sit with a copy and a pen. One should have a copy, one should have a pen."
+  },
+  {
+   "start": 1088.27,
+   "end": 1113.84,
+   "text": "You should also have a laptop, it doesn't matter how dirty it is. You should have a laptop in which you can open GFG, create an account on GFG, create an account on Leetcode, and where will you run the code? The code I will tell you to run, don't leave it in the copy. If you have VS Code to run the code, then it's a very good thing, otherwise you can take any online compiler."
+  },
+  {
+   "start": 1113.84,
+   "end": 1141.65,
+   "text": "So when I teach you the code, I will also do it in the online compiler. I don't want to use any fancy software that you think is using paid software, that's why it is fast. So you will need all these things. I will try to come to the next video right now or tomorrow. Meanwhile, subscribe to the channel if you are already there. Those who are not yet there, their attention span is very less. You need all these things and let's hope that your phase 1 will be completed in 10 days."
+  },
+  {
+   "start": 1141.65,
+   "end": 1151.73,
+   "text": "so that you get a deep knowledge of patterns in the new year. This was today's video. If you liked it, then like it, comment for your brother and keep subscribing. Thank you."
+  }
+ ]
+}

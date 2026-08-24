@@ -1,0 +1,149 @@
+{
+ "video_id": "oZnLzJCOdPA",
+ "title": "DSA Patterns Lecture 30 | Master Prefix Sum Pattern in 10 Minutes",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 756,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.65,
+   "text": "Hello, how are you all? So today is episode 30 of prefix sum revision. Those who are coming to the channel for the first time, see in the description, you will get to know what are DSA patterns, what are they, and why are they there. You will get all the sheets from there. If you are coming to this video for the first time, then episode 26, 27, 28, 29. In all these, you will get a complete idea of this whole DSA pattern, which is called prefix sum. All the questions, how to make it, what are the fixed templates, you will get to know everything."
+  },
+  {
+   "start": 27.65,
+   "end": 56.5,
+   "text": "Anyway, if you just want to see this then also it is fine. We will try to summarize as soon as possible what is happening and you will get to know quickly. Let's go. First of all, we had read that when does prefix sum apply? In which type of question? So, one thing came that whenever there will be questions of subarray. Array plus subarray questions will be there then it can be applied. Okay. So, see in subarray questions basically three types of patterns are applied. One is sliding window which we have already read. One more is KDM which we have already read."
+  },
+  {
+   "start": 56.5,
+   "end": 88.94,
+   "text": "The third and most important pattern is the prefix sum, which is also the hardest to understand. So, first of all, let's talk about the sub-array question. If you can put all three, then how will you know that you have to put the prefix sum? First of all, let's talk about the prefix sum and the cadence. What? And the cadence. So, there will be a difference in both the questions. In one, it may be possible that you will be asked to find a sub-array, a maximum sub-array, in which there is a condition."
+  },
+  {
+   "start": 88.94,
+   "end": 115.28,
+   "text": "In which there is a condition. Some less than k or some greater than k. There will be a condition like this. Okay. You will have to find its shortest or longest. Shortest or longest. You will have to find it by doing something like this. Or you will have to find it by counting. Okay. Cadence is also similar. It is almost similar. But its condition is not different. Its condition will never be like some greater than k. Or some equal to k. Or some less than k. It will not be like this."
+  },
+  {
+   "start": 115.28,
+   "end": 141.33,
+   "text": "The sum of the sub-array that you have to find in this is either maximum or minimum of all sub-arrays, or its product is minimum or maximum. So the number of sub-arrays can be taken out in both, the maximum length can also be taken out in both, but the condition of the sub-array used to be maximum or minimum in the sub-array."
+  },
+  {
+   "start": 141.33,
+   "end": 171.7,
+   "text": "In this, there is no maximum or minimum, it is in prefix sum. Prefix sum tells you to find something in which there is any condition, like sum of modulus k is equal to 0, sum equals to k, number of 1 is equal to number of 0, so there will be a very specific condition. Cadence, generally, 90% of the time, is found in things like this, that when its sum becomes maximum, when its sum becomes minimum, when its product becomes maximum, in this way. Okay. And now this is about prefix sum and cadence, when to apply it. Prefix sum and"
+  },
+  {
+   "start": 171.7,
+   "end": 201.66,
+   "text": "Sliding window. Prefix sum and sliding window. Sliding window. Both solve the same question. Both solve exactly the same question. You can apply prefix sum in a question and also sliding window. But when to apply from both? Whenever there is a negative in an array. In that case, sliding will not be applied. Sliding will not be applied. Questions of sliding window."
+  },
+  {
+   "start": 201.66,
+   "end": 224.13,
+   "text": "Especially such questions in which sum or something like that has to be taken out, they only work in positive. In negative, sliding window fails. So first of all, you have to see what kind of question it is. If a very specific condition has been given, then either that question will be made by prefix sum or it will be made by sliding window. If some longest maximum sum, minimum sum has been talked about, then it will be made by cadence. There is no doubt in this."
+  },
+  {
+   "start": 224.13,
+   "end": 251.06,
+   "text": "If you get to know that it will not be made of cadences, then will it be made of prefixes or sliding? If there is a negative in it, then who will it be made of? It will be made of prefixes only, it cannot be made of sliding. After this, we came to the template. What did we come to the template? Prefix sum is a concept. What is it? It is a concept. Prefix sum is nothing but a concept. To store the prefix sum, the data structure can be different."
+  },
+  {
+   "start": 251.09,
+   "end": 280.11,
+   "text": "data structure can be different to store this information either it can be a single variable or it can be a simple array or it can be a hash map or it can be a dq or it can be a fenwick tree or anything else data structure can be different to store so this is the general rule to solve any prefix sum question if you watch the other 4 videos then you will get more idea but this is the general template"
+  },
+  {
+   "start": 280.11,
+   "end": 301.49,
+   "text": "Every index i, every index i ending, ending, ending all the arrays, all the arrays, we have to get the answer for this every time. We have to get the answer for this. Meaning, you have to run a loop of i from 0 to n. You have to get the answer for all the subarrays ending on i."
+  },
+  {
+   "start": 301.49,
+   "end": 330.24,
+   "text": "so when you will do this, when you will cross the whole array, then you will get the best answer automatically because every sub-array will end at some index you have got the best answer of all sub-arrays ending at every index means its best answer if it says count, then you have got the count if it says maximum, then you have got the maximum if it says shortest length, then you have got the shortest length when you will do this for every i, then you will get the answer but how do we do this? how do we do this? first of all, suppose you are on i"
+  },
+  {
+   "start": 330.24,
+   "end": 360.22,
+   "text": "Assume this is a question of sum. Its sum is equal to some sum. Whose sum? From 0 to i. Some sum must have come. Okay. Choose a green part according to you. Choose a green part. What is this? Green part. What does green part tell you? This is your good morning. Good morning. What does good morning mean? The condition said in the question. The condition told in the question. That will satisfy it. Satisfy it."
+  },
+  {
+   "start": 360.22,
+   "end": 390.37,
+   "text": "For example, if it says in the question to find the number of sub-arrays. Find the number of sub-arrays where the sum of each sub-array is equal to k. Exactly equal to k. You assume that the sum of my green part is green. Green sum. Green sum. Which is from here to here. It goes from somewhere to i till last. Its sum is exactly k. That's why it will be good. According to the question, it will be good. After this, whatever is left in the sub-array, we will call it red part. What will we call it? This. Red part."
+  },
+  {
+   "start": 390.37,
+   "end": 420.38,
+   "text": "Now you have to find out one thing that if there is some sum of green and the sum of the whole array i.e. the sum of the whole array from 0 to i, what will be the sum of red? What will be the red sum? You will get to know by looking that if the sum of the whole thing from here to here is sum and the sum from here to here is k because this is the green part, then automatically the sum from here to here will be sum minus k. So it is clear. You get that the sum of red will be sum minus k. Now, now, now,"
+  },
+  {
+   "start": 420.38,
+   "end": 449.3,
+   "text": "You have to ask the same question on every i. What question do you have to ask? What question do you have to ask on every i? Before today, means before i, if this is a question of count, then how many subarrays or how many red parts are there? How many red parts are there? Whose sum is equal to sum minus k."
+  },
+  {
+   "start": 449.62,
+   "end": 476.43,
+   "text": "You have to ask this question and you have to find the answer to this question. How many will we ask? When it was a question of count, then how many would we ask? When it was a question of longest, then we would ask that which was the first index when its IASM came, then we will ask according to that. When you ask this, for example, if you are here, if your I is here, if you ask this question that how many red parts came before you, whose sum was sum minus k. For example, someone tells you that three red parts came like this."
+  },
+  {
+   "start": 476.43,
+   "end": 496.46,
+   "text": "One red part was this. Its name was R1. Its sum was also sum minus k. One red part was this. Its name was R2. Its sum was also sum minus k. One more red part came. Its name was R3. Now you will notice. For every red part, a green part will be made. For every red part, a green part will be made. For R1, this green part will be made."
+  },
+  {
+   "start": 496.46,
+   "end": 518.7,
+   "text": "One answer is this. What will be its sum? Exactly K. Because we are going backwards. We have assumed the green part that its sum will be K. According to that, the calculation of red part came that what to find in red part? What to search? What to ask? For R1, a green part will definitely be made. We have added one in our answer. For R2, a green part will also be made. We have added this one in our answer. For R3, a green part will also be made. We have added this one in our answer."
+  },
+  {
+   "start": 518.7,
+   "end": 548.86,
+   "text": "So, if someone tells you that before today, sum minus k, how many times did it come? How many red parts are there? So, if someone tells you that red parts, number of red parts is equal to 3, it obviously means that number of green will also be 3. You would add plus 3 to your answer. Now, you understood to ask. Now, what we ask, you will store it. Where will you store it? Will you store it in hash map or in DQ or in variable? Anywhere, store it anywhere, store information anywhere. For example, you stored key."
+  },
+  {
+   "start": 548.86,
+   "end": 578.88,
+   "text": "Suppose at some point, the value of sum minus k was 5. You have stored it on the hash map every time that 5 came 3 times. You ask how many times 5 came, then you got the answer 3. So, before going ahead, what did we do before going ahead? Where did we store this sum in the hash map? Because it may be useful in the future. You were coming while storing at the back, then it was useful. We will store it now so that it is useful in the future. This is the general format. What does it mean to say? What do we ask? First of all, we make a hash map."
+  },
+  {
+   "start": 578.88,
+   "end": 599.63,
+   "text": "First of all, let's make a hash map. In the beginning, it was empty. We used to run a loop. From where to where? From 0 to i, from 0 to n. Yes. First of all, if there is a question of sum, the question is of different types. We are saying it again and again. We will see the remaining 4 videos. You will understand it completely. Sum plus is equal to ai. Means, this is the sum till now. What was the red sum?"
+  },
+  {
+   "start": 599.63,
+   "end": 628.7,
+   "text": "Red sum, what was the green sum? The condition that satisfies the green sum, according to that, the red sum used to come out, which is left. So, if the green sum satisfies the condition, for example, it asks that take out a sub-array whose sum is exactly K. So, what will be the sum of the green sum? What will be the sum of the red sum? Sum minus K. We will say this, that in the result, what should we add? Before today, all the red sums that came, before today, all the sub-arrays, let's assume that 2 was also a sum, 0 to 4 was also a sum, 0 to 6,"
+  },
+  {
+   "start": 628.7,
+   "end": 652.22,
+   "text": "The sum of all was equal to the red sum. So, all the green parts will be given to you for this i. Add all of them. Before going ahead, you will have to add this sum as well. Now, this sum D has become a sum which has come. Add this sum to your hash map as well. Add it to your hash map and in the last, return the result."
+  },
+  {
+   "start": 652.22,
+   "end": 680.51,
+   "text": "Template was used in all 4 or 5 questions. All of them used the same template. There is one question left which is the question of DQ. We will read that later that for that you need to know DQ. So, when the pattern of DQ starts, we will read that. But, this is the template. You will have to develop this thought process. You can make an array like this at any time. Consider the i. According to the question, its sum or product, whoever is asking you the question, if they are asking you the difference. In zero-run, the difference was tracked, not the sum. The difference was tracked. Consider its sum as sum."
+  },
+  {
+   "start": 680.51,
+   "end": 705.84,
+   "text": "Make a green part according to yourself, make the green part satisfy the condition, see what will happen to the red part if the green part is like this. As soon as you know what will happen to the red part, you will store it in the hash map or any other data structure that you are using. You will ask this."
+  },
+  {
+   "start": 706.48,
+   "end": 735.82,
+   "text": "So, this was a general template of prefix sum. Any question of prefix sum is solved with this formula and there is no other template for it. Simple to simple questions, complex to complex questions, everything is solved with this. So, this was a small revision. Those who have seen the first lecture must have liked it very much. Those who are a little confused, then again see 26, 27, 28, 29. Your prefix sum will be completed. And now let us know that your NTSM exam is going on, so you will break a little consistency. No problem. Those who are in my live batch, they are also breaking."
+  },
+  {
+   "start": 735.82,
+   "end": 752.82,
+   "text": "So don't worry, as long as your end-sum is running, that is also important. I mean, we also think that due to end-sum, your focus shifts, it is not easy to study. But it's okay, if the end-sum is over, then come and see. So today's prefix and revision is over. Let's meet tomorrow."
+  }
+ ]
+}

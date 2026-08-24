@@ -1,0 +1,269 @@
+{
+ "video_id": "CDo0V5Jbb2o",
+ "title": "Introduction to Binary Search Tree! Don't Miss",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1412,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.76,
+   "text": "Today's lecture is very important. We are sweating a lot. We are sitting at home, so the background is a bit difficult. We will start studying BST, which is Binary Search Tree. Binary Search Tree, you will think that you have studied Binary Tree, so it is special. It is very important to study it because there will be a lot of questions from it in the future. This does not mean that Binary Tree is over. Don't think that. We know that there are a lot of questions. Let's study Binary Search Tree and then we will tackle it. Because it is necessary to study it. At least it is necessary to come."
+  },
+  {
+   "start": 27.86,
+   "end": 51.01,
+   "text": "Secondly, the LCA video that we were uploading yesterday, we hope you will like it. We made a reel on Instagram, it got 1 lakh views. Some people were saying that it uses controversy. There was no controversy in it. The small thing was that we did not find the explanation of their video intuitive. Now there is no controversy in it. We will say that it was not good, then what will we say that it was very good."
+  },
+  {
+   "start": 51.01,
+   "end": 79.63,
+   "text": "they are good and mine is bad, then we will close the channel. That was not a controversy, it was a review. I didn't like it. If you want to go and see, then go and see. There is a solution that you don't understand. Now some people were giving us knowledge that you don't know. Okay, we don't know. What we studied is simpler. What is that? It is simpler. Okay, we don't have that much brain. We don't even know that much. What we teach, what we understand and what we teach, those are simpler approaches. We don't know so much hi-fi. Neither we will be able to know. Now I am old too."
+  },
+  {
+   "start": 79.63,
+   "end": 100.22,
+   "text": "So watch this video till the end because there is BST in the video. Why should you read BST? What is the relation between BST and sorted array? Why is it used to search? And what is BST? What is the property of BST in order? These 4-5 things will be covered. So watch the video till the end. This is in the last, so don't leave it. If you don't want to see the whole thing, then go and watch it."
+  },
+  {
+   "start": 100.22,
+   "end": 130.54,
+   "text": "If you don't see this, then you will have a problem in the future. If you go ahead and ask a doubt that you didn't tell this, you told it, you didn't see it, you saw it for 5 minutes, you told it for 6 minutes, right? So let's start the video quickly. So let's start. First of all, let's see what is BST? BST means Binary Search Tree. What were we seeing till now? Binary Tree. Now what is attached to it? Binary Search Tree. So see, what was a simple binary tree? One was its node and binary means that it had two beta."
+  },
+  {
+   "start": 130.54,
+   "end": 160.1,
+   "text": "This was the binary tree. Now binary is also here. So this will also be the same. This will also be the same. That there will be a node. And it will have two children. At max there will be two children. Okay. But what is written here? Search. What does this mean? In any binary search tree. The value of any parent. Let's assume that the value of this parent is 10. Let's assume that this parent node. Any parent node can be. It is not necessary that it is root. Any node whose children are called parent node. So if the value of any parent node is 10."
+  },
+  {
+   "start": 160.1,
+   "end": 188.54,
+   "text": "In binary search tree, the value of its left child will be less than 10. Less than 10 means it can be 8, it can be 2, it can be 5. Whatever it is, less than or equal to. Some people write less than or equal to in the question. But generally, it should be less than 10. And the value of the right child will always be greater than 10. It can be 12, it can be 15. So, every binary search tree follows this simple rule."
+  },
+  {
+   "start": 188.54,
+   "end": 217.26,
+   "text": "The value of any parent node can be anything, be it 10 or anything. The value of the left child of that parent will be less than 10. The value of the right child of that parent will be more than 10. It is not necessary that it is of only 3 nodes. It can be a very big tree. Look, it can be a very big tree. We make a tree like this. This is a binary search tree. What is a binary search tree? So we are just explaining the binary search tree to you. It is not very complex. We are explaining. Look, it is like this. Let's assume we write 10 here."
+  },
+  {
+   "start": 217.42,
+   "end": 246.7,
+   "text": "Now, we have to fill this. Now, here, can we fill 12 here? No, we can't. Because binary search tree says that any left child's value is less than its parent. So, let's assume that we fill 5 here. Can we fill 5? Yes, we can. Now, can we fill 7 here? No. Because this is also a small tree. This is also a parent. This is also a left beta. Whose value of this left beta will be less than this? It won't be less than 10."
+  },
+  {
+   "start": 246.7,
+   "end": 276.22,
+   "text": "will be less than their parent. Any left child's value will be less than their parent. Means, it should be less than 5. So, let's write 2 here. Very good. Now, now, now. Now, one more important thing. Here, what should we fill here? Now, you will say, yes, can we fill anything more than 5 here? Can we fill anything more than 5? No. If, let's say, we fill 15 here. If we fill 15 here, then will it be correct or not? What are we saying?"
+  },
+  {
+   "start": 276.22,
+   "end": 298.22,
+   "text": "What did we just tell you? That any parent's right child's value is more than the parent's. Some people will say, yes, okay, then it is more, then fill 15. No, 15 cannot be filled. Why can't it be filled? Because this 10, this 10, see this. This 10, this 10, what is this? This is a kind of super parent. What is this? This is a kind of"
+  },
+  {
+   "start": 298.22,
+   "end": 322.21,
+   "text": "super parent. What is a super parent? You can't fill 15 here. What do you have to fill in this node? You have to fill greater than 5 in this node. Sorry, what is the symbol of greater than? Greater than 5 or less than 10. Less than 10. Because this node says that whatever is on my left side will be smaller than me. On my left side,"
+  },
+  {
+   "start": 322.21,
+   "end": 351.41,
+   "text": "Whatever is there, it will be smaller than me. And whatever is there on my right side, it will be bigger than me. So here you cannot fill 15. Why? Because its parent is 5. So it has to be more than 5. But it has to be less than 10. It has to be less than 10. It has to be less than 10. So here you can fill 7. For example, you can fill 7. Similarly, now what to fill in this? More than 10. Suppose you have filled more than 10. Here 15. You can fill it. You can fill it. Now,"
+  },
+  {
+   "start": 351.41,
+   "end": 376.5,
+   "text": "What do you have to fill here? Some less than 15, some less than 15. But can you fill 2 here? No, you can't. Why can't you fill it? This is a parent, a super parent. Any value on its right should be greater than 10. So on this node, what can you fill? It should be smaller than 15. Smaller than 15 and greater than 10. Because 10 is here. So smaller than 15 and greater than 10. Let's assume that we have filled 12."
+  },
+  {
+   "start": 376.5,
+   "end": 405.57,
+   "text": "Now here you can fill anything. What does it say? That we have to be bigger than 15. And we have to be bigger than 10. So if it is bigger than 15, then it will be bigger than 10. So here you can fill 20, 25, 100, anything. So here we fill 20. So see, what has become of this whole thing? This has become our binary search tree. This has become our binary search tree. Remember this thing that only"
+  },
+  {
+   "start": 405.57,
+   "end": 434.51,
+   "text": "We don't have to do left and right. It doesn't mean that we don't have to fill 17 here. We have to look at the upper one as well. What does binary search tree say? Any root says this. Whatever is on my left side is less than me. Whatever is on my right side is more than me. This is the rule of binary search tree. Now see, is this binary search tree? Yes, it is. Because it is 10. Smaller than 10 is here. Bigger than 10 is here. Now 5 is here. Smaller than 5 is here. Bigger than 5 is here. 15 is here. Smaller than 15 is here. And this is bigger than 10. Bigger than 15 is here. So this is binary search tree."
+  },
+  {
+   "start": 434.58,
+   "end": 463.6,
+   "text": "So now you have understood the difference between binary search tree and binary tree. There was no such rule in binary tree. You can put anything anywhere. Whenever binary search tree will be given to you, it will follow the rule like this. Now the question arises, why do we have to read this? Why do we have to read binary search tree? We were reading binary tree. Why do we have to read binary search tree? So binary search tree is to be read like you used to read array before. Everyone has read array. We have read array vector. And after that we had read sorted array."
+  },
+  {
+   "start": 464.02,
+   "end": 493.42,
+   "text": "Why did we read Sorted Array? In Array, it was difficult to search. Remember, in Array, you have to search linearly one by one. What happens in Sorted Array? You used to search binary. Remember, you used to search binary. In Sorted Array, we used to search binary. Its time complexity was order of n. Its time complexity was order of log n. For the exact same reason, what do you have to read? You have read Binary Tree. Why do you have to read BST? Exactly, BST is a sort of Sorted Tree."
+  },
+  {
+   "start": 493.42,
+   "end": 518.1,
+   "text": "You might not find this sorted by looking at it. You might think that it is here and there. But this is a sorted tree. We will tell you how it is sorted. For this reason, like you read sorted array in array because you had to save some time in search. In binary tree, you read BST because you have to save some time in search. Okay. I will tell you how to save time. Let's take the example of search. Let's take the example of search. Suppose you have given a normal tree. What have you given? Normal tree. So, we will make a normal tree here."
+  },
+  {
+   "start": 518.1,
+   "end": 540.53,
+   "text": "In a normal tree, you can do anything. You can give the value whatever you want. We will make a normal tree. So, let's give the value 10, 12, 2, 5, 7, 9 and 6. It is a normal tree. There is no rule in it. Okay. Suppose someone tells you that in this search, is there 9 here or not? In this tree, is there 9 or not? Search it. How will we search?"
+  },
+  {
+   "start": 540.53,
+   "end": 566.8,
+   "text": "Now to search, you have to see every node once. So you can do any kind of traversal. What is traversal? People get scared of hearing traversal. Traversal means to see every node one by one. Nothing else. You can either pre-order, in-order or post-order. How can we do it? We can write a function. We can do a root pass in it. And what can we write in it? If root is equal to null."
+  },
+  {
+   "start": 566.8,
+   "end": 591.25,
+   "text": "So we don't have to do anything in null, so return it. If we get it, what does it mean to get it? If the data of the root is equal to 9, then we will take an answer above, like we took an answer in LCA yesterday. So what will we do? We will do answer is equal to root. And return it because we have got it now. If this doesn't happen, then you will have to search in both. Suppose you come here and search. This is the root, so you come here and search."
+  },
+  {
+   "start": 591.25,
+   "end": 616.53,
+   "text": "that what is this 9? This is not 9. Now what will we do? We will have to find the rest as well. So do one thing, find its left child as well as its right child. So what will we do? We will call the same function for both. We will call for the left of the root as well. So it will go there. And we will call the same function for the right of the root as well. Is it a good thing? We can do it. We will tell you how this normal function will work. First of all, you will come to f10."
+  },
+  {
+   "start": 616.53,
+   "end": 644.22,
+   "text": "If you don't get 9 on F10, then what do you do? You call both for left and right child to search down there. So what will it call? F12 and F7. Run F12. You won't get it in F12 either. What will it do? It will call both for left and right. So what will it do? For F2 and F5, you won't get it here either. You won't get it here either. Both will run and get over. So this is over. Now come to F7. If F7 calls, it will say that this is 9 and not 9. So what will it do? It will call both of its children."
+  },
+  {
+   "start": 644.22,
+   "end": 673.73,
+   "text": "It will call both of its children. Now when you will come to F9, you will get the answer. Very good, good, yes. So what will be stored in the answer? This will be your answer. You can return it like this. Very good. So this is a normal program. We think that everyone knows how to write. Search in a binary tree. Now, now, now. Let's do the same thing. Search in a binary search tree. Search in a binary search tree. Which is our question too. Which is our question too. Lead code 700."
+  },
+  {
+   "start": 673.73,
+   "end": 698.19,
+   "text": "Let's make a binary search tree. Now see how we will make a trick. Just keep watching. Open your eyes and keep watching. Let's make a binary search tree. 10, 5, 15, and 2, 7, 12, and 20. Is this a binary search tree? Absolutely yes. Binary search tree. The whole rule is applicable. What do we tell you? Search 12. See that search..."
+  },
+  {
+   "start": 698.19,
+   "end": 721.9,
+   "text": "12. Is it 12 or not? If you apply the above approach, then you can do the same thing. Search on the root and check left and right. Everyone knows that. But let's do a small trick. First of all, where do we start searching from? From the root. What do you have to search? Search 12. Okay. So the first step is that the root is null. The root is not null. The root is not null. Go ahead. So is its value 12? Is its value 12? Its value is not 12. Okay."
+  },
+  {
+   "start": 721.9,
+   "end": 751.66,
+   "text": "now its value is not 12 so what we used to do in the upper one we used to look at left and right but but but remember what was binary search its value is 10 is it smaller than 10-12 or bigger than 10-12 it is smaller than 10-12 it is smaller than 10-12 ok now tell me one thing when it is smaller than 10-12 the one you are trying to find is it smaller than 10 yes it is smaller than 10 so is there any benefit in looking at this whole left subtree no because what does binary search tree say"
+  },
+  {
+   "start": 751.66,
+   "end": 781.55,
+   "text": "The whole left subtree of this root will be smaller than this. It will definitely be smaller. You will not get a bigger value than 10 on the left side. You will not get it. You will not get it at all. So do you need to see any left subtree? No. There is no need to see any left subtree. It means that this call of yours, there is no need to call it. What do you need to call? 10. 10 is smaller than 12. It means you need a bigger value than 10. 12 is a bigger value."
+  },
+  {
+   "start": 781.55,
+   "end": 805.2,
+   "text": "Where will you get the big value? You will get it on the right side. Come to the right child. Repeat the same thing. Is it equal to 1512? No, it is not equal to 1512. If it is not equal to 1512, then is it smaller than 1512? No, it is bigger than 1512."
+  },
+  {
+   "start": 805.2,
+   "end": 834.46,
+   "text": "If 15 is greater than 12, then will you ever get 12 in the right subtree? You won't get it because the entire right subtree is greater than 15. 15 is greater than 12. Why do you have to find it in the entire right subtree? Where do you have to find it? 15 is greater than 12. You need a smaller value than 15. Where will you get it? In the left subtree. Come to the left. Come to the left. Exactly. Is 12 equal to 12 here? Yes. This is 12 equal to 12. So what will be your answer?"
+  },
+  {
+   "start": 834.46,
+   "end": 864.11,
+   "text": "So, see what they are doing here. Every time, every time, in the above example, if it was not found on the root, then left would also go, right would also go. Good thing. Here, every time, either left is going or right is going. Both are not going. Both are not going. Remember. Both are not going. Every time, either left is getting eliminated or right is getting eliminated. Who does it match with? What do you remember? This is what binary search is. This is what binary search was. What did they check there?"
+  },
+  {
+   "start": 864.11,
+   "end": 887.98,
+   "text": "If you could find mid, then what would you do? You would either eliminate left or right. Here exactly the same thing is happening. This root is acting like your mid. Every time either left is being eliminated or right is being eliminated. Either left is being eliminated or right is being eliminated. That is why binary search tree is so powerful."
+  },
+  {
+   "start": 887.98,
+   "end": 915.62,
+   "text": "What was the time complexity of the above search? In the worst case, you would have to search for every node. You would have to search for every node. Because, let's say it doesn't exist. Let's say you want to search for 20. 20 is not there. So, until you see every node, how will you know whether it is 20 or not? That's why, what is its time complexity? Order of n time complexity. But, here, what are you doing? Look, at every level, at every level,"
+  },
+  {
+   "start": 915.62,
+   "end": 938.08,
+   "text": "At every level, you are seeing one note. At every level. First of all, you see 10 at level 0. After that, you see 15 at level 1. Then you see 12 at level 2. So you are not seeing every note in this. You are seeing number of levels. Number of levels. Number of levels. And in any binary tree, what is number of levels?"
+  },
+  {
+   "start": 938.08,
+   "end": 967.57,
+   "text": "log n log n log n log n log n log n"
+  },
+  {
+   "start": 967.57,
+   "end": 994.83,
+   "text": "Nodes. That's why it is important to read BST. This is the power of BST. This is the power of BST. If we have to write a code for this, it will be a very simple code. First of all, we want to take a global variable above. First of all, we want to take a global variable. And what will we write? The same function that we wrote above. In the same one, we will take a node in it. And whatever you want to find, what do you want to find?"
+  },
+  {
+   "start": 994.83,
+   "end": 1017.66,
+   "text": "So, first of all, check that if node is equal to null. Very good. So, if there is no work, then you won't get it here. Okay. After that, check that node's data is equal to k. If it is, then what will we do? Answer is equal to node. And there is no need to do anything further. So, return. There is no need to do anything further. Return. Now, the main work comes."
+  },
+  {
+   "start": 1017.66,
+   "end": 1046.48,
+   "text": "Now, if the data of node is not k, then only two things can happen, either it will be bigger than k or it will be smaller than k. Let's see, if the data of node is greater than k, that means you are standing on 10. You wanted to find out what was your target? Your target was 5. Now, see 5, you will get 5 on the left side or on the right side? You will get it on the left side or on the right side? What is 5? It is smaller than 10. Where will you get it? On the left side. Where will you get it? On the left side. Same as binary search."
+  },
+  {
+   "start": 1046.48,
+   "end": 1076.43,
+   "text": "Is there a probability of finding it in the left or in the right? Or in other words, where will we not find it? We will not find it in the right at all. So where do we have to go? Fun of, go to the left side of the node. What does this mean? 10 is your node and your target is 5. See where you will find 5. 5 is smaller than 10, where will you find it? You will find it in the left side. Go to the left of the node and become K. No, no, if it is not like that, where will you find it? In the right, in the right, in the right. In the right, in the right, yes, in the right."
+  },
+  {
+   "start": 1076.85,
+   "end": 1106.0,
+   "text": "Node right and K. Yes. And return. Khatam. Khatam. Khatam. Yeh program. Dekhiye. Isme kabhi bhi ham log dono me nahi ja rahe hain. Upar wale code me kaha jaate the. Dono me. Left right dono me. Yeh linear search tha. Yeh to aisa tha ki unsorted array me search kar rahe hain. To kya karoge. Pura array search karo bhai. Aur kya kar sakte. Lekin. Yeh ek sorted array ki tarah behave karta hai. Ek iske tarah behave karta hai. Ek sorted array ki tarah. Batahin ki kaise behave karta hai. To isme ham log kya karene. Har baar. Ya to left ya to right. Ya to left ya to right. Order of."
+  },
+  {
+   "start": 1106.0,
+   "end": 1135.84,
+   "text": "Log n, time complexity. What is this? Search in BST. Search in BST. What is this? Search in BST. Yes. Now, after this, those who are watching till here, it is a very good thing. Now, you should watch the whole video because we don't dance so much. You will miss a very important thing if you are not watching till here. Now, we said that, we were saying one thing again and again that this BST behaves like a sorted array. But you will say, where is sorted? I mean, it is not visible. It will be visible. Come, let's show. We will show it now."
+  },
+  {
+   "start": 1135.84,
+   "end": 1160.91,
+   "text": "Let's make a small BST. It was 5. Here it was 15. Here it was 12. Here it was 20. Now we will show you the sorted array. We want to show you. Okay, this BST is made. How many types of things do you know to write? Traversal. Did you teach three types? On the first day. Did you teach pre-order? Did you teach in-order? Did you teach post-order? Did you teach? Okay. What used to happen to all three?"
+  },
+  {
+   "start": 1160.91,
+   "end": 1191.89,
+   "text": "First of all, when root comes, it becomes pre-order and always left comes before right. After that, when left comes, root comes in the middle and then right comes. Next, when root comes in the last, left and right comes first. So, what was this? This was pre-order, this was in-order, this was post-order. How did we know? If root is in the middle, then pre, if root is in the middle, then in, if root is in the last, then post. Very good. Let's write all three. So, what does pre mean?"
+  },
+  {
+   "start": 1191.89,
+   "end": 1222.08,
+   "text": "First root, then left child, then right child. So we are not writing the code. We have read the pre-order once. Go and see. We have read it very well. We just want to write its pre-order. If we write the pre-order, then first we will write 10. After that we will write 5. Then if it comes here, then we will write 2. After that we will write 7 in the right child of 5. Done. Done. This is also done. After that we will write 15. After 15, we will write 12. Then we will write 20. Okay. We have written the pre-order. Let's write the in-order. What does in-order say? First left."
+  },
+  {
+   "start": 1222.08,
+   "end": 1251.18,
+   "text": "After that root, then right. So when it comes to 10, then 10 will not print itself. 10 will go to 5. Okay. 5 will not print itself. 5 will first give a chance to its left child. Now 2 doesn't have a left child, so 2 will print itself. 2. After that, when it comes back to 5, then 5 will print itself. 5. After that, it will give a chance to its right child. 7. Okay. Now it went back to 10. 10 will give it to itself. It came to 15. It won't take 15 now. 15 will first give a chance to 12. 12. After that, 15 will take it itself. After that, 20 will take it. See this. This is not rocket science. This is inorderlicantry."
+  },
+  {
+   "start": 1251.57,
+   "end": 1275.73,
+   "text": "Post-order. Post-order means, first he will give to the left, then to the right, and in the end, he will print himself. So, let's come to 10. He will come to 5. 5 will first give a chance to his left child, 2. After that, he will give a chance to his right child, 7. Then, he will print himself, 5. Now, 10 will not happen. 10 will give a chance to the left child, he will give a chance to the right child, 15. 15 will first give a chance to the left child, then to the right child, then to himself, and in the end, it will be 10."
+  },
+  {
+   "start": 1276.24,
+   "end": 1305.55,
+   "text": "We have written this traversal. Now see, this is very important. Out of these three, what is this method? We have made an array of the tree. Which array seems to be sorted? See, the array of inorder is sorted. 2, 5, 7, 10, 12, 15, 20. The array of inorder is sorted. The array of inorder is sorted. The other two are not sorted. The other two are not sorted. The array of inorder is sorted. But why did this happen? Did we deliberately take such an example that the array of inorder is sorted? No. What does inorder mean? Left."
+  },
+  {
+   "start": 1305.81,
+   "end": 1333.76,
+   "text": "Root. Right. In order means. First left child. Then right child. BST says exactly this. Left child will be smaller than root. And root will be smaller than right. This is what BST says. Root. And left child is smaller than root. Right child is bigger. This is what BST says. And in order. Exactly this is what BST does. That's why in order. Any BST."
+  },
+  {
+   "start": 1333.76,
+   "end": 1361.41,
+   "text": "In any binary search tree, if you print or store an inorder, how will it be? It will become a sorted array. Because this is the work of an inorder. Left first, root later, right last. So, left will be smaller than root, so it will come first. Root will come in the middle, right will come later. Any BST's inorder gives a sorted array and this is going to be very useful in the next question. This is a very important concept. So, this is a small..."
+  },
+  {
+   "start": 1361.41,
+   "end": 1390.9,
+   "text": "Pre-order and post-order are not sorted. But in-order is sorted and it will be very useful in the future. When you will construct a tree, you will get two things from these three. It will tell you to make a whole tree out of it. It will also tell you, but it was necessary to know in the future. If you write in-order of any BST, then how does it happen? It is a sorted array. It is a sorted array. So see, this is also a small question. And you have learned BST. Like you have learned time complexity of BST."
+  },
+  {
+   "start": 1390.9,
+   "end": 1411.12,
+   "text": "That's it. BST is enough for the introduction. So make a question about BST. And BST itself... Yeah, that's it. We will teach as much as we can. And now we have come home, so we are teaching slowly. I don't have that much internet to upload. I mean, I can't upload very big videos. I don't have that much internet. That's why it's happening. So let's meet tomorrow."
+  }
+ ]
+}

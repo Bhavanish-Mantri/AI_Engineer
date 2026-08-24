@@ -1,0 +1,244 @@
+{
+ "video_id": "QopDohCvJVA",
+ "title": "LCA in Binary Search Tree – Don't Miss This Trick! | Trees Ep 08 | DSA Series",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1271,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.78,
+   "text": "Hello guys, how are you all? So we just came from Patna by flight. So we just sat down to make a video. This video will come today evening. We had said that it will come on Sunday. There is a gap of two days because we had gone out somewhere. And we are going home from tomorrow. So from tomorrow, I mean we are going to Bangalore. So from tomorrow, the videos will be regular and long. Now I know that the video is coming a little short. Because I don't have that much internet. When you make a video of 30 minutes, it becomes 5-6 GB. I don't have that much internet. The dongle I have is also of 4 GB."
+  },
+  {
+   "start": 27.78,
+   "end": 51.68,
+   "text": "I don't have that much internet to upload and I don't have that much speed. If we upload, it will take us 2 hours to upload. That's why it wasn't coming. By the way, it shouldn't happen that the video is long, that's why it's good. No, small videos are very good. If we sit for an hour and do it, it doesn't mean anything. So today we are going to see LCA in BST. Watch very carefully. If you have seen LCA in BST,"
+  },
+  {
+   "start": 51.68,
+   "end": 80.08,
+   "text": "It is very important to see this too, because that approach will not work here. Let me tell you first, those who have seen LCA in binary tree, it is important to see this, because that approach will not work here. When we were studying, we also left BST after seeing binary tree, that what is it, we will put that only in it. No, there are different questions for some reason, if we put that only, then why does it make the same question, it is not crazy. So see, and those who have not seen LCA in binary tree, we will congratulate them a lot, but first see that, then see this. Come on, let's start quickly."
+  },
+  {
+   "start": 80.43,
+   "end": 109.42,
+   "text": "So look at the question, the question is the same as LCA, that you have to take out LCA in BST, not binary tree, BST, we have learned binary tree, that video which is not seen, which people jumped here for the first time, see that video, that is one of my best videos, see that once, so see, if you want, then you can put LCA of binary tree here too, because see, what is BST, BST is binary tree, binary tree with a search is like, less in left and more in right, whatever it is, it is binary tree, so that too can be put here, but in interview,"
+  },
+  {
+   "start": 109.42,
+   "end": 135.02,
+   "text": "that one will not be accepted. If you put the LCA one here, then it will not be accepted. Because it will say, if you want to ask LCA in binary search tree, then tell me about this. That is fine, that is a good thing, but tell me about this one, then it will not be accepted. Now look at this. Before doing anything in this, let's think what does LCA mean? LCA means, when we make a drawing and see it in the tree, we have made BST, by the way. This binary tree is not normal, BST, you can see that every parent,"
+  },
+  {
+   "start": 135.02,
+   "end": 163.25,
+   "text": "Every parent's left child will be less than that and parent's right child will be more than that. So this is a BST. Okay. Now you have to find its LCA. You have to find P and Q. Two types of notes are given. And you have to find its lowest common ancestor. Okay. So lowest common ancestor. Let's make a drawing and see what happens. For example, if we say we have to find 4 and 8. So if you want to find lowest common ancestor in drawing. We are talking about drawing. If you want to find out which one is in the tree's drawing. So what do you do? From 4."
+  },
+  {
+   "start": 163.25,
+   "end": 189.07,
+   "text": "Make a path from 4 to the root of 8. Let's make a path from 4 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8. Make a path from 8 to the root of 8."
+  },
+  {
+   "start": 189.07,
+   "end": 216.86,
+   "text": "Check if there is 5 LCA. Yes, there is only 5 LCA. Because it is coming in the left of 5 and in the right of 5. So the lowest common ancestor is only 5. There is nothing other than 5. There can't be 3, there can't be 7. Why? Because you are looking at 4 and 8. So to identify in the drawing, the simplest trick is to make it from 4 to here and from 8 to here. Where both are found, it becomes LCA. Because LCA is missing. LCA means lowest common ancestor. Means the ancestor of P."
+  },
+  {
+   "start": 216.86,
+   "end": 245.94,
+   "text": "Ancestor of Q and it should be the lowest common. So look, if we take any tree, there will be a point where this tree will split and here P will be somewhere and here Q will be somewhere. And what is this node called? LCA. Whose here is a P and here is a Q. You can do this work on any node. We have to take out the LCA of 3 and 18, then we have to do the same work. Make a path from 3 to the root. Make a path from 18 to the root. Where did it intersect for the first time? 10."
+  },
+  {
+   "start": 245.94,
+   "end": 275.39,
+   "text": "What is the LCA of 3 and 18? 10. Because look at 10. 10 is also of 3 and 18. If you go below 10, then no ancestor is possible below 10. No ancestor is possible below 10. So, what do you understand from drawing? What is the LCA of 8 and 17? Make it from 8 to root. Make it from 8 to root. 10 is done. Make it from 17 to root. What is done? 10. So, 10. Where did you get it first? On 10. So, what is done? LCA. One more example. Make it of 12 and 16. Come."
+  },
+  {
+   "start": 275.39,
+   "end": 301.14,
+   "text": "The path from 12 to the root is this. The path from 16 to the root is this. Where did it intersect for the first time? 15. So what is 15? LCA. LCA. So if we intersect, then where both intersect for the first time, what is that? LCA. And you can see that LCA is happening anywhere. So if LCA of 15 is 12 and LCA of 18 is 15, then on the left side of 15, you got 12 somewhere."
+  },
+  {
+   "start": 301.14,
+   "end": 324.21,
+   "text": "If you get 18 on the right side of 15, then what happened to 15? 15 became a split point, where it split, where what happened? It split for the first time. If we give an example of a small tree, then how are we always getting LCA? We are getting one LCA here, whichever node it is, and what are we getting on the left side of it? P. It's not like direct."
+  },
+  {
+   "start": 324.21,
+   "end": 354.19,
+   "text": "somewhere somewhere somewhere on the left side and somewhere somewhere on the right side what will you get? Q any such node any such node what do we call it? LCA LCA whose on the left side doing something something something somewhere you are getting P on the right side doing something something something what are you getting? Q that's when it will happen that's when it will happen that when you will make a root from P then it will come till here when you will make a root from Q then it will come till here and what will happen here? you will get it so we will say that this is split point or LCA in any LCA you have to see that"
+  },
+  {
+   "start": 354.19,
+   "end": 383.94,
+   "text": "We are telling this by drawing, there is no math in this. By drawing, we can know that there is one node on the left side of the LCA and there is another node on the right side of the LCA. This is LCA. So that's it. Let's use the same thing in BST. Let's use the same thing in BST. Let's tell you how to use it. Let's assume that you have to find the LCA of two nodes. P and Q. You are on one circle of the tree."
+  },
+  {
+   "start": 383.94,
+   "end": 411.82,
+   "text": "We are looking at the root. Now, for simplicity, let's assume that the data of p is less than the data of q. We will make it like this, we will call it like this, that the p is the smaller value and q is the bigger value. Meaning, for example, if you want to find the LCA of 5 and 10, then we will say that 5 is p and 10 is q. We have p and q as names, we can say anything to anyone. Very good. Let's do this. Now you have come to the root."
+  },
+  {
+   "start": 411.82,
+   "end": 441.02,
+   "text": "Now, there can be 3-4 things on it. What can happen on it? There can be 3-4 types of things. Okay. And, this is also given. One more thing. This is also given in this question. That both P and Q will exist. Will exist. Yes, this is a very important part. Will exist. Means, it will definitely happen in the tree. It can never happen that it doesn't happen in the tree. No, it is not possible at all. It will definitely happen. Absolutely. Come on. We are in the route now. You have to find P and Q. Now, there can be 3-4 things here."
+  },
+  {
+   "start": 441.02,
+   "end": 461.26,
+   "text": "Look, the first thing is that the data of the root should be equal to p and q. Whose data should be equal to p and q? It means either the data of the root should be equal to p or the data of the root should be equal to q. This is possible, absolutely possible. So what will be the LC in this? The root will be the LC in this."
+  },
+  {
+   "start": 461.26,
+   "end": 488.91,
+   "text": "We have also studied this in LCA that if P and Q are there, let's say there is a node P and Q somewhere, then what happens in LCA? P, because every person is their own boss, every person is their own boss, every person is their own ancestor, so P is their own ancestor and P is also the ancestor of Q, so the lowest common is P itself. If it happens that Q is there and P is here, then what happens in LCA? Q is there because Q is its own ancestor, it will also be of P, so the lowest common is Q. So if"
+  },
+  {
+   "start": 488.91,
+   "end": 517.07,
+   "text": "If the root is equal to p, then your answer will be equal to root. This is a very easy condition, there is no math in it yet. Now comes the important part. If the second case is like this, we are just talking about one circle, and we are looking at p and q, what things are possible. So the first thing is that the root is equal to p and q, then it is a very good thing. The second thing that is possible is that the data of the root, the number written in the root is less than the data of p."
+  },
+  {
+   "start": 517.07,
+   "end": 545.89,
+   "text": "is less than the data of p and the data of p is less than the data of q which means that the value of the root is the smallest. The value of the root is the smallest in p and q. So, it seems that root, then p, then q. So, for example, let's assume that if we are at 10, then if you have to subtract the LCA of 13 and 17, then 10 is smaller than both, 10 is smaller than 13 and 10 is smaller than 17. Now, if 10 is smaller than both,"
+  },
+  {
+   "start": 545.89,
+   "end": 571.12,
+   "text": "So can 10 be LCA? No, it can't be LCA. Why can't it be? Because 13 and 17, now you are saying 10 is smaller than both. So put some pressure on your mind and say, can 10 ever be LCA? No, it can't be. Because what did we see? Who was LCA? LCA was a box that split, split. One side P and one side Q. One side P, one side Q."
+  },
+  {
+   "start": 571.12,
+   "end": 591.3,
+   "text": "But, here you are saying that the root of the circle is smaller than p and q. Now, if it is smaller than both, then will it be able to split in BST? Will it be able to split 10 in BST? No. Because what should happen to split? p less than equal to LCA."
+  },
+  {
+   "start": 591.3,
+   "end": 618.64,
+   "text": "Less than equal to Q. This should happen. But if you say that my 10 is smaller than both, then 10 will never be able to split. It will never happen that you get 13 on the left side of 10 and 17 on the right side. No. You will get both on the right side because 10 is smaller than both. So it can never happen that 10 LCA happens. It can never happen that 10 LCA happens. If 10 LCA cannot happen, then can anything LCA happen on the left side of 10?"
+  },
+  {
+   "start": 618.64,
+   "end": 644.13,
+   "text": "No, because if 13, 17, 10 is greater than 10, then it is the largest. So how will all these be LCA? If 13 and 17 are greater than 10, then whatever is on the left of 10 is the largest of these two. So if 10 LCA cannot be done, then all these cannot be LCA. Because what did we see in the drawing? LCA used to split. One side P, one side Q. One side P, one side Q. So 10 LCA cannot be done."
+  },
+  {
+   "start": 644.13,
+   "end": 671.68,
+   "text": "There can't be any LCA in 10 to the left. So, all this is gone. What can be a LCA? There can be a LCA in 10 to the right. There can be a LCA in 10 to the right. Yes, there can be a LCA in 10 to the right. So, if you get such a case, if you get such a case, that the root is smaller than both P and Q, then where will you go? There can't be a root in LCA because LCA has to be split. There can't be anything in the left of the root either. Straight, in the root,"
+  },
+  {
+   "start": 671.68,
+   "end": 699.12,
+   "text": "Similarly, if the data of the root is greater than the data of q and q is in order, then the data of the root is greater than the data of q and q. Now, let's explain this example again. Meaning, you are at 10 now. You have to find the LCA of 3 and 7."
+  },
+  {
+   "start": 699.12,
+   "end": 719.62,
+   "text": "10 is bigger than 3 and 7. So, is it possible that 10 will split these two? No. 3 and 7 will both come to the left of 10. It will never happen that 3 will come to the left and 7 will come to the right. So, 10 is also not fitting in the split drawing. So, what did he find out? 10 can also not be LCA. More, more, more."
+  },
+  {
+   "start": 719.62,
+   "end": 743.95,
+   "text": "If 10 is greater than 3 and 7, then all 10s on the right must be greater than 10. So 10 can't be greater than 10. This can't be either. This can't be either. This can't be either. 10 on the right and 10 on the left. What can be LCA? There can be some LCA on the left of 10. There can be some LCA on the left of 10. It's a reverse logic. Because what's the use of LCA? Split it. Split it normally."
+  },
+  {
+   "start": 743.95,
+   "end": 772.83,
+   "text": "One side P and one side Q. Now in 10, 10 is P and Q. It is bigger than both. So 10 will never be able to split P and Q. It is not possible. The one on the right of 10 will also not be able to split. Because there are bigger people on the right of 10. Everything is over. Where can we get LCM? On the left side. It can be found on the left side. Completely opposite. Completely opposite. It can be found on the left side. Where? On the left side. On the left side of the root. On the left side. Yes. Okay. There are three cases. Which ones? First one."
+  },
+  {
+   "start": 772.83,
+   "end": 797.15,
+   "text": "If the root is equal to p and q, then it is the same LCA, then there is no debate. If the root is smaller than p and q, then it is not possible, you have to go to the right of the root. If the root is larger than p and q, then you have to go to the left of the root. Now, what is the fourth case? The fourth case is the data of the root greater than p and"
+  },
+  {
+   "start": 797.15,
+   "end": 822.9,
+   "text": "Root ka data less than Q ka data. Less than Q ka data. Yes, less than Q ka data. Matlab, root P and Q ka beach mein hai. Root Q and P and Q ka beach mein hai. Exactly, yehi hum log khojna hai. Exactly. Matlab ki, for example, agar aap 15 pe aate hai, aap LCA dhund rahe hain kiska? 12 aur 18 ka. To 12 less than equal to 15. Less than 18."
+  },
+  {
+   "start": 823.18,
+   "end": 848.88,
+   "text": "Are you looking for this? If 15 is between 12 and 18, then does 15 have the strength to split 12 and 18? Yes, 15 can split 12 and 18. You will get 12 somewhere on the left side of 15, and you will get 18 somewhere on the right side of 15. This will be LCA. Why? Because if it splits,"
+  },
+  {
+   "start": 848.88,
+   "end": 877.28,
+   "text": "If you split it here and there, then exactly the same thing will happen. When you make a drawing from 12 to root, then 15 will come somewhere. If you make a drawing from 12 to root, then 15 will come somewhere. If you make a drawing from 18, then 15 will come somewhere. And because 15 is the person who splits 12 and 18. So this is the split and what will become? LCA. What will become? LCA. This is just like that. This is just like that. I will tell you. This can mean to you."
+  },
+  {
+   "start": 877.28,
+   "end": 906.69,
+   "text": "I will tell you why we are saying that split point is LCA Imagine you have ordered a parcel from USA to your home Imagine you have ordered a parcel from USA to your home For example, suppose you are ordering food from USA to your home There are two houses, house 1 and house 2 Why are we saying this? First of all, the parcel is from USA"
+  },
+  {
+   "start": 906.69,
+   "end": 923.76,
+   "text": "After that, the parcel will come to India. From India, it will go to Delhi. From Delhi, it will go to your neighborhood. And there will be a point when from your neighborhood, it may be that house 1 is somewhere else in some other street and house 2 is somewhere else. House 2 is somewhere else. Okay?"
+  },
+  {
+   "start": 923.76,
+   "end": 953.3,
+   "text": "So see, till now everything was going straight straight straight. There was a situation where it reached to house 1 and then to house 2. Now if someone asks, who is the lowest common ancestor of house 1 and house 2? Means lowest common point. What is the common point? So see, USA is also a common point. But lowest, closest common point is the situation. Why? Situation was the point that split it. So now if you make a path from house 1 to USA, then you will make it like this."
+  },
+  {
+   "start": 953.3,
+   "end": 981.76,
+   "text": "Ghar 2 se bhi USA tak paad banayenge, toh aise hi banayenge. Kaha pe dono mil raha hai? Mohalla mein mil raha hai, toh mohalla kya hua? LCA. Yehi kaam hum log tree mein kar rahe hain. Yehi kaam hum log tree mein kar rahe hain. Agar aapko choute case pe, aisa pata chalta hai ki jo 15 hai na, 12 usse chota hai, 18 usse bada hai. Toh pakka pakka, jab aap 12 se root tak, yaad kiye ghar 1 se USA tak ghar banaye the, aisa lagega. 18 se banayenge toh, aisa lagega. Kaha milega? 15 pe, toh 15 kya hoga? LCA, LCA."
+  },
+  {
+   "start": 981.76,
+   "end": 1004.48,
+   "text": "So, this is the only case left. If this happens, then what will we do? Answer is equal to root or return. This is the code of four cases. First case, when root is equal to p or q, then root is the answer. Very good. If root is the smallest, what does root mean? That this is your root."
+  },
+  {
+   "start": 1004.48,
+   "end": 1033.07,
+   "text": "and both p and q are on the right side this means if p and q are bigger than both then they will be on the right side so if the left side is also empty then you can go to the right side if it is bigger than both then this will be your root and both p and q will be somewhere here so it is not able to split now where will it have to go? it will have to go to the left just like search just like search but if it is in between p and q then your root is here your p will be somewhere it is not that it will be in the left side immediately it will be somewhere that is why the question says that it is there"
+  },
+  {
+   "start": 1033.07,
+   "end": 1062.1,
+   "text": "P and Q are there. P and Q are definitely there. So, P will be somewhere on the left. Q will be somewhere on the right. So, what will this person become? LCA. Because when you make a route from P and Q, when you make a route from P and Q, then it will pass through here. It will pass through here. So, this will become LCA. So, just remember this small drawing. You will remember all this yourself. There is no need to do all this. Remember the drawing. If you had made a drawing of LCA, then what would you have known that it was happening like this. Somewhere, from somewhere, you would have found one. That would have been LCA."
+  },
+  {
+   "start": 1062.1,
+   "end": 1092.62,
+   "text": "Let's write its code. To write its code, let's make a global variable. Let's make a global variable. And let's write a void fun. What will pass in node? Root and both things. Node star, p and q. Right? Node star, q. Good. First of all, if root is null, then the game is over. What will we do? Return."
+  },
+  {
+   "start": 1093.74,
+   "end": 1125.01,
+   "text": "If it is equal to root p or q, what will happen? Answer is equal to root and return. Very good. Now let's write another case. If the data of root is less than the data of p, then what will we do?"
+  },
+  {
+   "start": 1125.23,
+   "end": 1158.74,
+   "text": "root dot write p or q. Else, else, else if we have to write, else if, root's data, root's data is greater than q's data, means p or q is greater than both, because we assume that p is greater than q. When we call, we will call like this, we will tell. Now what we assume is that p is smaller than q, sorry, p is smaller than q. So what will be called here? Fun, in the left of root, and p or q as it is. Now, if else has come here, else,"
+  },
+  {
+   "start": 1159.09,
+   "end": 1191.06,
+   "text": "Else means, you have come to the fourth case. Where is the fourth case? This was your fourth case. That means, root is in the middle. When root is in the middle, then this will be else. Because this will tear them apart from the middle. If this is the case, answer is equal to root and return. There is no need to do anything else. This is over. Now when we call it, see the code is done. When we call it with the main function, then we will see that if p.data is less than q.data, then"
+  },
+  {
+   "start": 1191.06,
+   "end": 1221.76,
+   "text": "fun, root, p, q. Okay? Normal. Else, if p is big, we will just call it upside down. See, these are all names. It doesn't make any difference. These are all local names. We will call it qp. It doesn't make any difference. Here, you have passed qp. It will understand that it is p and q. q will understand p. q will understand. So, it is just a name. After everything happens, return answer. So, see this small code here. We don't think there is any problem in this. What is this? Case 1. What is this? Case 1."
+  },
+  {
+   "start": 1221.76,
+   "end": 1251.1,
+   "text": "This is case 1. This is null. What is this? This is case 2. What is this? This is case 3. What is this? This is case 4. Case 3, case 4? Yes. In this, we are seeing that just like search, what we are doing in search is that what is the relation between p, q and root? What all can happen? Root can be bigger than both. It can be bigger than 1. Or it can be smaller than both. Anything can happen. Based on that, we have seen what LCA can be. How did LCA find out that it splits two people by drawing?"
+  },
+  {
+   "start": 1251.1,
+   "end": 1270.64,
+   "text": "When you make a drawing from any two nodes, when you make a drawing up to the root, there will be one where these two will meet for the first time and this will split the two. This will split the two and this will become the LCA of both. So this was the question. We are going home from tomorrow. The videos will be long from tomorrow. It's a very good thing. So let's do it well and meet in the next video."
+  }
+ ]
+}

@@ -1,0 +1,199 @@
+{
+ "video_id": "6ZtNHvGeEu4",
+ "title": "Easiest Graphs question Surrounded Regions | DSA Patterns 2026",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1044,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 28.62,
+   "text": "Hello kids, you are watching Pado with Pratyush. My name is Pratyush and today I didn't want to make a video but this question was shown somewhere in the comments that I don't understand the surrounding region, please make it. So it is a very easy question, we will tell it immediately. It is not possible that if you have come while reading this graph series, then you will not be able to make it, you will not be able to understand it, it is absolutely not possible. We have already done a very hard question from it, the question is a piece of cake, we will do it at an easy level, provided that you are coming while reading it."
+  },
+  {
+   "start": 28.62,
+   "end": 57.62,
+   "text": "Let's quickly explain the question to you. What is the Surrounded Region? The question will be a little hard for you because the question that has been explained in the leetcode is very bad. The leetcode does not know how to explain the question. I don't know what they do, but it's okay. There is also a problem with English, so it's okay. You have been given a matrix. If it is a question of graph, then there will be only two things. Either you will be given a graph, meaning either you will be given edges or you will be given a matrix. We have built both the methods. In this condition, you have been given a matrix."
+  },
+  {
+   "start": 57.65,
+   "end": 85.79,
+   "text": "Matrix means a 2D array. Matrix means a simple 2D array. We treat it as a graph. 0, 1, 2, 3. 0, 1, 2, 3. Now, what is there in this matrix? There are two types of characters in this matrix. Note that this is a character matrix, not an integer matrix. One character is x. One character is x. And one character is o. One character is o. It is not 0, it is o."
+  },
+  {
+   "start": 85.79,
+   "end": 113.17,
+   "text": "We will write x and o. We will quickly make x and 0 in this. So this is x, x, x, x, x, o, o, x. I am telling you again that it is not 0, it is o. x, x, o, x, x, o, x, x. This is your matrix. You have to find the surrounded regions in this. What is to be found? We have to do something in it. Let me tell you what it means. Surrounded regions of o. See."
+  },
+  {
+   "start": 113.17,
+   "end": 140.27,
+   "text": "In Hindi, we tell you a question that what does a question want to ask you? In this, you must be seeing a lot of O's. One is visible, one is visible, one is visible, and one is visible. Okay? Okay. Look, what does Surrounded Region mean? This X, you understand this X as a monster, that X will slowly eat this zero. You understand X as anything, understand it as water, it as an animal, understand it as anything. What will happen slowly?"
+  },
+  {
+   "start": 140.27,
+   "end": 168.56,
+   "text": "X will eat this. Who will it eat? It will eat the zero. If X wraps the zero somewhere, then it will eat the zero. Which zero will be saved in this? After the whole process, which zero will be saved? The zero which is on the edge. The zero which is on the edge will be saved. It will be saved or it will run away. It will get help from somewhere. Whichever zero is on the edge. What does edge mean?"
+  },
+  {
+   "start": 168.56,
+   "end": 197.71,
+   "text": "This is the edge. This is the edge. This is the edge. And this is the edge. It means, either the first row is done, or the first column is done, or the last column, or the last row, or the last column. The edge means, on the boundary, on the boundary of the matrix, the zero will be saved. It will not be able to eat the X because it will be helped from somewhere. It will be helped from outside. But, whatever O or whatever zero is, the one who will be surrounded by X inside, it will be eaten and it will also become X. What will it become? It will become X. You just have to do this."
+  },
+  {
+   "start": 197.71,
+   "end": 226.88,
+   "text": "that the zeroes that are going to be saved, the zeroes that are going to be saved, one second. So what we have to tell you is that the zero that is on the edge, we have changed the diagram a little bit to make it easier to understand, it will be saved, it will not be able to eat the X. And the zero that is on the edge, it will not be saved alone, it will move in its four directions. And the zero that is connected to it, the zero that is connected to it, means that you can go anywhere from an edge zero, as much as you can spread in the four directions,"
+  },
+  {
+   "start": 226.88,
+   "end": 256.5,
+   "text": "all the zeros will be saved in the end. What does this mean? In this matrix, in the beginning, we have given you this zero. How many zeros are there? One, two, and three. Which zero do you see on the edge? Which zero do you see on the edge? What does edge mean? I am telling you again. First row means this one. Last row, first column and last column. This is called edge or boundary zero. So here you will say that we see this zero. This zero is visible which is still unvisited. In the beginning, everything is unvisited."
+  },
+  {
+   "start": 256.5,
+   "end": 278.75,
+   "text": "Now what we will do is we will make it something else. We will make it something else. Let's make it a hash. We will make it a hash. We will make it a hash. Now you don't have to stop here. You don't have to stop here. Can you move somewhere else from this hash? In four directions. Up, down, right, left. So see."
+  },
+  {
+   "start": 278.75,
+   "end": 288.0,
+   "text": "We can't move below this because the world ends below this. Very good. We can't move beyond this because we don't want to save X. X is a monster. Okay."
+  },
+  {
+   "start": 288.0,
+   "end": 315.33,
+   "text": "We can't move it to the right because x is in the right, so we don't have to save x. But above this, what have you got? Above this, you have got a zero. So that zero will also be saved. Why will that zero be saved? Because it was connected to a zero which was on the boundary. So if help reaches this zero, then it will also save all its connections. So what will we do? We will go above this and go to the next zero."
+  },
+  {
+   "start": 315.33,
+   "end": 336.34,
+   "text": "Go to the next zero and make a hash here as well. Why are we making a hash? To make a visited mark and to show that it is saved. You can do something else instead of a hash. Any character other than x and zero, any character other than x and o, write it here. Now you have come to this hash. Can you go somewhere else and save another zero from this hash? Let's see."
+  },
+  {
+   "start": 336.34,
+   "end": 359.55,
+   "text": "Can you go up? No, there is an X above. Can you go left? No, there is an X on the left. Can you go right? No, there is an X on the right. Can you go down? No, the one below is already a hash, so it is visited. You could have just gone towards 0 or 0. So after this, you are not saving anyone, so you will stop. Now you will stop. Now do you see any other 0 or any other O which is left on the edge?"
+  },
+  {
+   "start": 359.55,
+   "end": 389.17,
+   "text": "No, one was this one. We have done its work that if help reaches it, then it will be safe from its own monster and will save all its friends. Those who are connected to it, those who are connected to it, in which direction? In four directions, up, down, right, left, it will also save them from this monster. Now your game is over. Now see, this one which was zero, it is not connected to any boundary zero. It is not connected to any boundary zero. Now you will say that it is not connected like this."
+  },
+  {
+   "start": 389.17,
+   "end": 414.34,
+   "text": "Diagonal connection is not allowed. You just have to make a connection up and down. So you see this is in a way surrounded by all four sides. Surrounded by what? Surrounded by X. So this X will be eaten. After this is completed, which zeros will be saved? This zero, which you have made a hash, will be saved. Because you are doing this. You are starting DFS from the boundary zero."
+  },
+  {
+   "start": 414.34,
+   "end": 441.46,
+   "text": "And it saves itself. It saves all its connected zeros. One will be saved. One will be saved. So what do you have to do in the end? What do you have to do in the end? Where there is a hash. Where there is a hash. You have to remove it and make it zero. Make it zero. And the rest of them. This zero. Now your x will be eaten. And it will make it x. It will make it x. The rest of them have to make x. The rest of them."
+  },
+  {
+   "start": 441.46,
+   "end": 464.34,
+   "text": "Make it x. What else? Make it x. Your final matrix will look like this. See. This zero is eaten so it becomes x. These two zeros are saved. Why are these zeros saved? Because where was this zero? On the edge. And it also saved this zero. If by chance there was a zero here, then this would have been saved too. So this would have been saved too. Why? Because you would have gone from here to here. You would have gone up from here."
+  },
+  {
+   "start": 464.34,
+   "end": 491.78,
+   "text": "So any zero of any boundary has the power to save all the zeros around it because it will help it from here. The zeros that are unable to save, the zeros that are unable to save till the end, like this zero is unable to save till the end, this will become x, the surrounding x will be covered and eaten. That is why the name of this question is surrounded region. This zero was surrounded by x, so it was eaten by x. So it is a very simple question."
+  },
+  {
+   "start": 491.78,
+   "end": 520.5,
+   "text": "You just had to understand the hard part of the question. Now there is no hard part. Now you must have understood what to do. You have to start DFS from the boundary O."
+  },
+  {
+   "start": 520.59,
+   "end": 548.43,
+   "text": "Normally, when we were studying the number of islands, we would maintain a visited array that we have seen this. Instead of that, what you should do is, make every zero a character of your choice. Hash, dollar, rupeeya, whatever you want. Whatever looks different, so that you know that it is saved. In the end, we have to save it and convert it back to zero. Do this. You have to do this with every boundary zero."
+  },
+  {
+   "start": 548.43,
+   "end": 576.18,
+   "text": "Because it is possible that every boundary zero has the power to save multiple people. If any boundary zero is already a hash, then don't do it. If you are getting zero on the boundary, then what do you have to do from there? You have to start the DFA. In which direction? In four directions. You already know all this because of the number of islands. After all this happens, in the whole matrix, wherever there is a hash, convert it back to zero or O because they will be saved in the end. And the rest of them,"
+  },
+  {
+   "start": 576.18,
+   "end": 606.18,
+   "text": "The rest of them, what will you make? Make them x. Because the x is x. The zeros that will be saved, the zeros that will not be able to be hashed at the end, what is that zero? That zero is surrounded by monsters. So, x will eat them and make them x. This is the only small thing in this. Its code is just like number of islands. So, what were we doing to write number of islands? First of all, we were writing a Boolean valid function. First of all, a valid function. Why? So that we don't get ahead of the board."
+  },
+  {
+   "start": 606.18,
+   "end": 635.26,
+   "text": "Those who are watching the video from the beginning will remember all this. We believe that you must have remembered all these things. There should be no doubt in this. If i is negative and i is n and j is negative and j is greater than or equal to m, then return is false. This is not valid. Valid means that you don't have to go there. It can happen in DFS that you are trying to get out of the board. You won't go. If this is not the case, then return true."
+  },
+  {
+   "start": 635.26,
+   "end": 664.58,
+   "text": "Return. True. Let's make an array of x and y. Why? For direction. Remember the number of islands we told. So, the trick of Stryver Bhaiya. His trick was very good. The same trick. That you don't have to work hard to go in all four directions. Don't have to work hard. What is this? x coordinate of all four directions. And y coordinate of all four directions. Very good. Come, let's write our DFS. It will be a very simple DFS. Void."
+  },
+  {
+   "start": 664.58,
+   "end": 695.01,
+   "text": "DFS. What will be passed in DFS? Your matrix. What kind of graph is given to you? Care type graph is given to you. int n, int m, int i, int j. This will happen. i, j means you are here. What was the first thing you said? Make this hash. Make this i, j hash. So that it gets visited. If it gets visited, then make it like this. Now what to do?"
+  },
+  {
+   "start": 695.01,
+   "end": 724.1,
+   "text": "Look at its neighbors. How? Look at the neighbors of all four directions. k is equal to 0. k less than 4. k plus plus. How do we look at the neighbors of all four directions? int row is equal to i plus i plus x of k. So this will be your row. int column is equal to j plus y of k. So you will get this column. Check it. If this is valid. If this row and column is valid. If this"
+  },
+  {
+   "start": 724.1,
+   "end": 753.89,
+   "text": "row and column is valid and and if it is 0 if it is 0 we don't have to go towards hash we don't have to go towards hash and we don't have to go towards x so array of row column row column equal equal to O O write O here again and again we made a mistake we also started writing 0 remember to write O it is confusing but remember to write capital O ok if it is like this then do DFS on it array of n m row n column so it will just become DFS it is nothing"
+  },
+  {
+   "start": 753.89,
+   "end": 783.84,
+   "text": "After starting everything, your for is closed. Return it here. So this is your DFS. How did you write the main program? You don't have to write anything in the main program. In the main program, you have to solve a void. You have to give a character array. You have to do this and give an array. Take out its size. Size means number of rows. Take out a.size."
+  },
+  {
+   "start": 783.84,
+   "end": 813.71,
+   "text": "Take out the size of the column. We will also take out the size of the column. What did we say? From whom do you have to start DFS? From the boundary zero. From which? From the boundary zero. Boundary zero means first row, first column, last row and last column. Let's do it one by one and see all of them. What does it mean to see all of them? First of all, we will see the first row zero. First row O. We will see O. So see. Int i, j. What will we do? For j is equal to zero."
+  },
+  {
+   "start": 813.71,
+   "end": 843.87,
+   "text": "j less than m, j plus plus. Whose is this? What is this? First row. What is this? First row. First row. First row means when i is equal to 0, it will take the first row. When i is equal to 0, it will take the first row. So if array of 0, j equal equal to 0. What do you have to do? DFS array n, m, 0, j. What is this? First row. Last row."
+  },
+  {
+   "start": 843.87,
+   "end": 873.7,
+   "text": "Last row. Last row means, everything will remain exactly the same. Is equal to 0, j less than m, j plus plus. In the last row, array of 0, no, array of n minus 1, j. Equal equal to O. Then call DFS. DFS, array, n, m, n minus 1 and j. So this is the last row zero's take care. First column. First column. First column."
+  },
+  {
+   "start": 873.7,
+   "end": 904.48,
+   "text": "Just do the opposite. Now increase the i. Take the i from 0 to n. We hope that you are able to understand. What does it mean to take the first row? i is equal to 0 and j is everything. So you will take the first row. What does it mean to take the last row? Fix the i on n-1 and take the j completely. What does it mean to take the first column? Fix the j on 0 and take the i completely. So that's what we are doing. If array of i 0 is the first column. Equal equal to o. DFS. What? Array n."
+  },
+  {
+   "start": 904.48,
+   "end": 934.03,
+   "text": "M I 0. This is done. Last column. Last column. Just do the same thing. For I is equal to 0. I less than N. I plus plus. If array of I. M minus 1. M minus 1. Last column. Equal equal to O. DFS. Array. N. M. I. M minus 1. Very good. You have done the entire boundary. What will happen by doing the entire boundary?"
+  },
+  {
+   "start": 934.03,
+   "end": 964.62,
+   "text": "All the boundary zeros will be hashed. All their friends will be hashed. Meaning, all the connections, where, where, where. Meaning, if any O is connected to the edge, then it will be hashed. After this, those who will be saved, they will be eaten by X. After this, those who are hashed, you have to make them zero. So, what will we do in the last step? We will loop the entire array. I is equal to zero. I less than N. I plus plus. For. J is equal to zero."
+  },
+  {
+   "start": 964.62,
+   "end": 989.57,
+   "text": "j less than n, j plus plus. Now, the people who have made hash, if array of i, j equal equal to hash, what do they have to make? Zero. They will be left. They will be left. They will be left. Oh, oh, else, array of i, j is equal to cross. The rest of them, cross will remain cross."
+  },
+  {
+   "start": 989.57,
+   "end": 1019.52,
+   "text": "If there is a zero, which is saved, it means that this X is going to eat it. After doing this, return it. So look at this. The code is a bit long. We believe that the code is a bit long. But it is long because you are writing four loops here, so it has become long. By the way, all this is boilerplate code. Boilerplate means that it is a very normal DFS code. So see this code from here. See this code. This is DFS. This is void solve. See this. There are four types of loops."
+  },
+  {
+   "start": 1019.52,
+   "end": 1043.63,
+   "text": "And this is what you do in the last. Time complexity order of m into n. There is not much space used in space complexity. Space must have been used in DFS. Yes, space will be used in DFS for stack. So that will happen in m into n worst case. So this was the surrounded region. Very easy, very fake question. But very famous question. Very good question. So go and do this. And see you tomorrow."
+  }
+ ]
+}

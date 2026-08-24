@@ -1,0 +1,529 @@
+{
+ "video_id": "aH5aeejuJU8",
+ "title": "DSA Patterns L31 | Master Merge Interval DSA Patterns | MERGE INTERVALS LEETCODE",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2889,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.92,
+   "text": "Welcome to episode 31. Today's pattern which is going to start is Merge Interval. It is a very good pattern. It is a very innocent pattern. It is a very small pattern. There are 4-5 types of questions in it. If you learn 4-5 types of questions, it will be complete. There is no need to use any extra brain in it. There is no need to ask any extra hard questions. All the questions are easy to medium in it. If you understand the core idea, if you do 3-4 questions, you will understand the whole pattern. It is a very small pattern. We will finish it quickly."
+  },
+  {
+   "start": 27.92,
+   "end": 57.2,
+   "text": "We will try to finish it in 2-3 classes. Let's go. First of all, let's see the flowchart of merge interval. What is to be used? What happens? So see. Till now, whatever pattern we were reading, you were generally reading that either you were given an array, or you were given a link list, or you were given a number. But this pattern is a little different. How is this a little different? In this, you will be given an array, but it will be given a 2D array. What does 2D array mean? Basically."
+  },
+  {
+   "start": 57.2,
+   "end": 82.5,
+   "text": "Whenever you are given ranges in any question, what are you given? Ranges. Or, ranges are also called intervals. What are intervals? What does range mean? Range means start and end. This pair is called range. What does range mean in Hindi? When you go to buy clothes,"
+  },
+  {
+   "start": 82.5,
+   "end": 108.98,
+   "text": "Show us clothes in this range. Show us shirts above 1000 and below 10,000. So that is a range. The shopkeeper tells you that this is its price range. Its price range is 20,000 to 30,000. Its price range is 1 lakh to 2 lakh. The price range of the car is 1 crore to 1.5 crore. So that is a range. So whenever you are given ranges or intervals in the question, you can also call it intervals. Range is given in the array. It will be given in the array only."
+  },
+  {
+   "start": 108.98,
+   "end": 138.83,
+   "text": "You will always be given the range in the array. We will tell you how it will be given in the array. But if you are given the range at any time, then the first thing that happened is that the range is important. There is no problem with the merge interval without the range. Okay. After that, after that, after seeing this, what did I ask you? There are some keywords. What keywords are there? Overlap. Overlap. Conflict. Conflict. Merge. Merge with ranges. Not just merge. Merge the ranges. Free time. Free time. Yes."
+  },
+  {
+   "start": 138.83,
+   "end": 168.67,
+   "text": "Free time. Simultaneous usage. Simultaneous usage. These are all keywords. Remember these keywords. These keywords will be given in the lead code question. Or, rooms. Either load. Either CPU. Either meetings. By doing this. What are all these? These are all keywords. What are your keywords? They will be in the question. If they are in the question, then open your eyes and see. Don't forget. There are only two things. First key."
+  },
+  {
+   "start": 168.67,
+   "end": 195.87,
+   "text": "The input will be given in the form of range or interval. There will be a lot of start and stop. There will be a lot of start and stop. And some keyword will match from all these. So this question will become whose question? Merge interval. If there is not even one of these two, then the question will not be of merge interval at all. That's why we said that there is a very small deterministic pattern. There is no need to put any extra mind in it. Remember the keyword and the range is given. You have to put the merge interval. Okay. Come. Now,"
+  },
+  {
+   "start": 195.87,
+   "end": 224.91,
+   "text": "In today's lecture, let's see its basic core idea that what is the pattern and how to see every question on it. All these keywords will be questions one by one. The way of question-wise will change little by little. Like in prefix-sum, the technique was changing little by little. Earlier we were doing it with variable, then we were doing it with HashMap, then we were doing it with something else. So in this also, the way will change a little. But the core idea remains the same. So today understand the core idea. If you understand the core idea, then you will not have any problem. So see."
+  },
+  {
+   "start": 225.14,
+   "end": 252.08,
+   "text": "First of all, you will be given ranges. What will you be given? You will be given ranges. For example, start and end. You will be given a lot of start and end. For example, if you are given something like 1 and 4, 2 and 5. Yes, one more thing. Start will always be smaller than the end. It is obvious that the starting range of the cloth is 10,000 and the ending range is 20,00,000. So, 10,000 is obviously smaller than 20,00,000. No one else says that"
+  },
+  {
+   "start": 252.08,
+   "end": 279.7,
+   "text": "tell the starting price as 1000 and the ending raise as 200. This is useless. Always, start will be either smaller or equal to the end. And many will be giving you ranges like this. They can give you ranges like this. Assume that these are your ranges. This will be given to you like this. Okay. The first thing that you should always remember in any such question, in any such question, in the question of merge interval, you have to sort it from start."
+  },
+  {
+   "start": 279.82,
+   "end": 309.89,
+   "text": "You have to sort this from the start. You have to sort it. Why are we saying to sort from the start? Because the most basic question of this is merge. What is the name of the pattern? Merge intervals. Merge intervals means to merge many intervals. What does merge mean? We will tell you. We will tell you. What does merge interval mean? And why are we saying that you have to sort it from the start? Why? See. For example, you run a clothes shop."
+  },
+  {
+   "start": 309.89,
+   "end": 338.27,
+   "text": "Watch the whole video in the middle. You run a shop. You have a lot of shirts. You sell a lot of shirts. You have a type of shirt that starts from 10 rupees and goes up to 15 rupees. You have some of these shirts. You have a shirt that starts from 12 rupees and goes up to 16 rupees. This can also be a type of shirt. You have a shirt that starts from 20 rupees and goes up to 30 rupees."
+  },
+  {
+   "start": 338.27,
+   "end": 366.85,
+   "text": "You have 3 types of shirts. This is category 1. This is category 2. This is category 3. Okay. So, see. You must be seeing something strange in this. What strange thing? Suppose, the shirt of category 1, what does it say? It says that my start can be from 10 and we can go till 15. So, in which rupees can this shirt come? This shirt can come in 10, 11, 12, 13, 14, and 15. This is the shirt of category 1 in this range."
+  },
+  {
+   "start": 366.85,
+   "end": 395.5,
+   "text": "Where will the shirt of category 2 come in? The shirt of category 2 says that we start from Rs. 12 and sell it for Rs. 16. So it will start from Rs. 12. It can also be of Rs. 13, Rs. 14, Rs. 15 and Rs. 16. What does category 3 say? We start from Rs. 20 and to make the example smaller, make it Rs. 25. And we go up to Rs. 25. So what can this be? Rs. 20, Rs. 21, Rs. 22, Rs. 23, Rs. 24 and Rs. 25. These three types of categories can be made in your shirt shop. But look."
+  },
+  {
+   "start": 395.6,
+   "end": 425.58,
+   "text": "Just notice one thing carefully. 12, 13, 14, 15. And 12, 13, 14, 15. This is common. What is this? Common. This green area looks common in both. Meaning, when you will run a shop, for example, you have a new shirt. You have a new shirt factory. And you have to think in which category we will put it. In which shelf we will arrange it so that it is easy to show to the customer. You have, let's say, a shirt which is of 13 rupees. Which is of 13 rupees. 13 rupees."
+  },
+  {
+   "start": 425.58,
+   "end": 454.02,
+   "text": "In which category and which shelf will you put it? You will have a shelf, right? If you make a big shop, you will have a shelf of 3 types. If a customer comes, you will tell him that sir, the shirt of category 1 is there, the shirt of category 2 is there, the shirt of category 3 is there. You have 3 shelves. But, if a shirt of Rs. 13 comes, in which shelf will you like to put it? Because, the shirt of category 1 can also be Rs. 13, because category 1 says so. The shirt of category 2 can also be Rs. 13."
+  },
+  {
+   "start": 454.02,
+   "end": 482.91,
+   "text": "Category 3 can't be. Category 3 says that we start from Rs. 20 and end up to Rs. 25. So, this is a premium quality. But, a Rs. 13 shirt can go in both categories. So, this is a problem. The shirt is the same. In which category will we keep it? We can't keep it in both. It's the same shirt. We have to keep it in one category. Where will we keep it? So, you got stuck here. You got stuck here. Why did you get stuck? Why did you get stuck being an intelligent shopkeeper? Because you have set your ranges. You have set your ranges."
+  },
+  {
+   "start": 482.91,
+   "end": 511.34,
+   "text": "what is overlapping? how is it being overlapped? you are saying that I have one category which is of Rs. 10-15 so let's keep this and when you make the next category then you should have made the next category of Rs. 16 the next category you should have said that I have a different category of Rs. 16-20 if you have made it till Rs. 20 then you should have said that the next category is of Rs. 21-30 but you are saying that there is a category of Rs. 10-15 and in between that you have said that there is a different category of Rs. 12-16"
+  },
+  {
+   "start": 511.34,
+   "end": 540.78,
+   "text": "12 rupees is covered in this only. What does 10 to 15 mean? 12 is covered. 13 is covered. 14, 15 is also covered. You should have made that category from 16. Now you are stuck because you have 3 shelves. One shirt came. You don't even know where the 13 rupees shirt will go. Where to put it? What to do? I don't understand. That's why. What will you have to do? You will have to do some renovation in your shop. What will you have to do? You will have to merge your ranges. So that they look how? Non-overlapping. Meaning."
+  },
+  {
+   "start": 540.78,
+   "end": 565.1,
+   "text": "The number in one range should be in the same range. That number should not be a part of any other range. What will you do for this? Now, you have to merge the three categories. You have to merge them in such a way that all the categories become different. Non-overlapping. Not overlapping. They are overlapping each other. See, this part and this part are overlapping. Category 3 is fine."
+  },
+  {
+   "start": 565.1,
+   "end": 591.71,
+   "text": "The third category is fine, it is not overlapping, but some parts of the second category are overlapping. You don't want this in the shop because how will you keep the shirt? To keep the shirt, you should have decision making, the whole power is over, come. Let's fix your shop, let's fix your shop, okay. What did you say about one category? You said that one category is 10 to 15, that means there are 10, 11, 12, 13, 14 and 15."
+  },
+  {
+   "start": 591.71,
+   "end": 621.5,
+   "text": "You might have made the next category by mistake, but you had made 12 to 16. So you make the next category like this, 12, 13, 14, 15, 16. One obvious thing is that if there is an overlap in any of the two categories, then you will have to merge them, you will have to make them into one category. But how will you make one category? The one category that you will make, you will also have to decide the range of it. If you want us to merge two categories, you will also have to decide the range of it. The customer will ask what the range is. For that, you also need a start."
+  },
+  {
+   "start": 621.5,
+   "end": 647.74,
+   "text": "So, what will be the start and end? Look, add all the price points of both the categories. Logically, what is the minimum price? By adding both the categories, you can see that the minimum price is 10. What is the maximum price? You can see that the maximum price is 16."
+  },
+  {
+   "start": 647.74,
+   "end": 674.1,
+   "text": "both the categories have a maximum of 16 so why not if we keep only one category whose range is 10 to 16 10 to 16 so all the shirts will be covered in this now see how it will be 10, 11, 12, 13, 14, 15 and 16 this will be your one category this will be your one category this will be your one range this will be your one range this will be your one interval now see"
+  },
+  {
+   "start": 674.1,
+   "end": 702.66,
+   "text": "All the numbers in this category are covered here. 10, 11, 12, 13, 14, 15. It is already covered here. 12, 13, 14, 15 was already covered. What was left in the second category? 16. 16 was also covered here. So, you covered it. The next category, which was 20 to 30. Leave that as it is. It is a different category. It is a range of 20 to 30. Now, you see. Now, you have a decision making. When you will get Rs. 13 set,"
+  },
+  {
+   "start": 702.66,
+   "end": 722.08,
+   "text": "You will put it in this category. You will not put it in the 20-30 category. If you have a Rs. 22 shirt, you will not put it in this category, you will put it in the 20-30 category. So, this is the power of merging the intervals, so that it becomes non-overlapping, so that it becomes easy for you as a shopkeeper."
+  },
+  {
+   "start": 722.08,
+   "end": 751.92,
+   "text": "So this was the core idea, so where did this question come from? Where did this pattern come from? The pattern came to solve this problem. That if you make such ranges by mistake, which will overlap, then you will not be able to decide which item should go in which range. It can go in any of them. Okay. So we got to know one thing that why do we merge? Now how do we merge? So logically, you can see that if we combine two categories, take the minimum value from all the values, take the maximum value from all the values and make its range. For example, your two categories could also look like this."
+  },
+  {
+   "start": 751.92,
+   "end": 781.36,
+   "text": "Let's say you make a range of 10 to 15 rupees. The next range is of 12 to 14 rupees. Can you make it? Did you make it by mistake? Did you make an intent? Now let's merge these two. Because there is still an overlap. If you get a shirt of 13 rupees, then where will you send it? You can send it here, you can send it here. So the decision will not be made. Let's try to solve this too. 10 to 15 means? 10, 11, 12, 13, 14, 15. 12 to 14 means? 12."
+  },
+  {
+   "start": 781.36,
+   "end": 809.97,
+   "text": "13, 14, 2. Last time, what did we do? Minimum price. What do you see in the minimum price? In total, you see 10 rupees. So, we will write 10 rupees. What do you see in the maximum price? What do you see in the maximum price? What do you see in the maximum price? 15. Yes, 15. Not 14. 14 is not the maximum. 15. Now, you can make a range of this which will be 10 to 15. Now, see what you have done? You have completely disappeared this. Why? Because this part was the middle part."
+  },
+  {
+   "start": 809.97,
+   "end": 836.18,
+   "text": "here was the middle part so it was an unnecessary part means when there is a range of 10 to 15 already then why 12 to 14 and 12 to 13 and 11 why to do all that it is useless work so we will not do all that we will make a new range in which 10 to 15 will be there means in that 10, 11, 12, 13, 14 and 15 rupees shirts will come now all the values ​​that were in this circle have come in this now your category is ready now when the shirt of 13 rupees will come then you can put it here without any mistake"
+  },
+  {
+   "start": 836.59,
+   "end": 866.59,
+   "text": "So, we are seeing a very interesting thing that we are merging maximum and minimum like this. Now, let's come to the code. We have learned a lot of business examples, now let's come to how to do programming. For example, you have to merge two types of ranges. Suppose this is 10 and this is 15. The next range you have to merge is from 12 to 16. So, what will you do?"
+  },
+  {
+   "start": 866.59,
+   "end": 887.07,
+   "text": "First of all, first of all, first of all, how will we know whether to merge or not? You have two types of problems. First, how will we know whether to merge or not? Why do we have to merge? We have to merge because it is overlapping. When we were 10 to 15,"
+  },
+  {
+   "start": 887.07,
+   "end": 915.84,
+   "text": "and if your next range is 20-30, then why do you have to merge it? If you merge it, then your category will be useless, right? This is a different category. This is different from 10-15, 20-30 is different. If you look at it logically, then you will feel that you don't have to merge it. Okay, you don't have to merge it, then don't do it. But when you are looking at the upper category, then you logically feel that yes, 10-15 is already there and 12-16 is also there, then it will be a little overlapping. Where will we put a shirt of 13 rupees? So let's merge it. So first of all, how do you know where to merge? That's the thing."
+  },
+  {
+   "start": 915.84,
+   "end": 947.07,
+   "text": "Then comes how to merge. Merge? How to do it? How to do it? How to do it? There are two problems. Whether to merge or not? And if you have to do it, then how to do it? Okay. So, let's first tackle this problem. How will we know whether to merge two intervals or not? Is it necessary or not? Okay. See. That's why we said that remember the sorting thing. Don't forget that you have to start from time. Start. Whatever your start is. Start can be price. Time can be. Whatever you have to sort from start. But."
+  },
+  {
+   "start": 947.07,
+   "end": 976.9,
+   "text": "We will write a lot of ranges for you. 1 to 3. Now let's assume that it is sorted from start. It is sorted from start. So write 1 to 3. And we will make another range which will be 2 to 5. We will make another range which will be 3 to 6. We will make another range which will be 5 to... Sorry, don't do 5. We will make this which will be 9 to 12. And we will make another range which will be..."
+  },
+  {
+   "start": 976.9,
+   "end": 1006.34,
+   "text": "from 11 to 15. You run a shop, you have so many ranges given to you by an intern. You have so many ranges. Now you have to fix your shop. The whole idea of the merge interval is that you have to fix your shop. You have to fix your shop. Because there is a problem now. You are not able to see from above, so we have a very simple example. Rs. 2. Rs. 3. If you get a shirt of Rs. 3, in which category will you put it? See."
+  },
+  {
+   "start": 1006.34,
+   "end": 1033.68,
+   "text": "Shirt of 3, it says 1 to 3, you can put it here on the first shelf. It says 2 to 5, means 2, 3, 4, 5, you can put it here also. It says 3, 4, 5, 6, you can put it here also. So now you have 3 choices for 1 shirt, this should not happen. Whenever you feel that there is only 1 choice for 1 shirt, then it is absolutely right. If there are different choices for any shirt, then something is wrong in your shop. We will see what is wrong, but there is something wrong."
+  },
+  {
+   "start": 1033.68,
+   "end": 1063.66,
+   "text": "It's useless, your shop is not looking good, it's very confusing for the customer. So come, let's do it one by one, let's see the ranges and merge. What is your first range? Your first range says that we are 1, 2, and 3. Your next range, your next range, see the first range is fine, the first range is the first range, so leave it. Come to the next range, it says that it is 2 to 5, it is 2 to 5. Means 2, 3, 4, 5. Overlapping you must be seeing, whose overlapping is visible, it is visible. Of 2 and 3."
+  },
+  {
+   "start": 1063.66,
+   "end": 1089.74,
+   "text": "Overlapping is visible. If we merge only these two, what would be the result? What is the minimum value of this? 1. What is the maximum price? 5. If we merge only these two, then my answer would be 1.5. 1.5 is okay. Okay. Assume that you have merged these two. 1.5. Now we are not telling you any algorithm. We are not telling you anything. But assume that you have done it. Let's go. 1.5. What is the next? 3 and 6."
+  },
+  {
+   "start": 1089.74,
+   "end": 1119.46,
+   "text": "Let's see whether it is in this or not. You have made one category out of two categories. But there are more categories in the shop. Everyone will have to see. Come. 1, 2, 3, 4, 5. This is the price range. What does this say? 3, 4, 5, 6. This is what it says. Merge these two. What is the minimum value? 1. What is the maximum price you are seeing? 6. So if you merge these two, that is, the one that was done earlier and merge the new one, then you get 1, 6. 1, 6. Okay."
+  },
+  {
+   "start": 1119.46,
+   "end": 1144.24,
+   "text": "What is the next? 9, 12. 9 and 12. You will get to know that there is no overlapping between these two. This is 1 to 6 and that is 9 to 12. It is more than 6. It has come in the next tri-segment. These two do not need to be merged. Now, if these two do not need to be merged, then you have more ranges. You have one more range left. 11 to 15."
+  },
+  {
+   "start": 1144.43,
+   "end": 1173.22,
+   "text": "See, if you don't need to do 1 to 6 with this, then you don't need to do 1 to 6 with this either. You can see that. If you don't understand the code, then no problem. We are not telling you the code. We are just telling you how to think logically. You don't need to merge with this. Very good. You don't need to merge 1 to 6 with this either. But look at these two. 9 to 12 or 11 to 15? 9 to 12, 11 to 15. See, 9, 10, 11, 12."
+  },
+  {
+   "start": 1173.22,
+   "end": 1202.91,
+   "text": "11, 12, 13, 14, 15. See, it's overlapping. Where will we put the Rs.11 shirt? I don't know. So, let's merge these two. What will be the minimum value? 9. What will be the maximum value? 15. So, these two are combined. 9 to 15. And you don't have the category. So, we know that if you do the shop properly, then you get this one range, 1, 6. Which came from merging these three. If you merge these three, then you get 1, 6. So, you can make one category of 1, 6."
+  },
+  {
+   "start": 1202.91,
+   "end": 1232.91,
+   "text": "Next time, when you merge these two, what did you get below? 9 and 15. So you can make one category of 9 and 15. Look at this. These two categories will cover all the ranges. Earlier you were making 5 ranges for that. Now any shut will come. It is very non-deterministic. There is no overlapping. And all the ranges have been covered. All the ranges have been covered. No price point has been left which was there before and now it is not. You can see it by mixing. You can see it. So it will be that you will do SSI like this. Okay. But how do we write this?"
+  },
+  {
+   "start": 1232.94,
+   "end": 1262.82,
+   "text": "So see, let's come to the first point that how will we know whether to merge or not? How will we know whether to merge or not by looking at any two intervals? The simplest thing is that if there are two intervals, then someone's start will be 1, end will be 1. This will be your first interval. If the second interval is like this, start 2, end 2. This is your interval. How will we know whether to merge or not? A very simple, till now you were thinking in your mind, you were applying logic in your mind, right?"
+  },
+  {
+   "start": 1262.82,
+   "end": 1292.61,
+   "text": "We will do a little mathematics and you will get it. If this end 1, if the previous one, end 1, is smaller than start 2. From whom? From start 2. See, one thing I have told you, start will always be smaller than end. This start 1 will always be smaller than end 1. Start 2 will also be smaller than end 2. If end 1 is less than start 2, means if this value is less than this value, then both will not overlap. It is a simple thing, right? Suppose one is 1 to 6 and one range is 10 to 20."
+  },
+  {
+   "start": 1292.61,
+   "end": 1319.66,
+   "text": "Now see, both are not overlapping. Why are they not overlapping? Because this 6, 6 is smaller than this. Its start value is 10. Meaning, where one price range ends, the next one starts somewhere after that. So, there is no overlap. It is absolutely correct. But, but, but, if someone says 1, 6 and makes the next price point 5 and 7, will they overlap? Why will they overlap? Because this 1 to 6 comes, this 5, 6 overlaps. Why did this happen? Because this 6,"
+  },
+  {
+   "start": 1319.66,
+   "end": 1348.93,
+   "text": "This is greater than or equal to 5. This means that where 6 ends, the next range starts a little earlier than that. So it will look like this. It will go from 1 to 6 like this. 1 to 6. And the next range from here to here is 5 to 7. This part is the overlapping part. Why is it an overlapping part? Because the end of the previous one is bigger than the start of the next one. So you got to know that there are two overlapped ranges. Now you know how to do it. If the end of the previous one is"
+  },
+  {
+   "start": 1348.93,
+   "end": 1377.94,
+   "text": "less than the start of the next one, then both are non-overlap. Non, non, non, non-overlap. But it's not like that. Else, end 1, if end 1 is equal, then it will overlap. If end 1 is equal, then it will overlap. See, 1 and 5, 5 and 7. So, what does this do? 1, 2, 3, 4, 5. What does this do? 5, 6, 7. See. If 5 rupees shirt comes, then where will we put it? We won't know. Why did this happen? Because its end, 5 is greater than or equal to the start of the next one."
+  },
+  {
+   "start": 1377.94,
+   "end": 1406.98,
+   "text": "So it overlaps, otherwise it doesn't. Okay. Now this thing, we got to know very well that when to merge and when not to merge. When to merge and when not to merge. When not to merge. Okay. But now we will know whether to merge or not to merge. What to do? The final result, means when you merge these two, what will be the answer? You don't have this facility that you were just making a box to see what is minimum and what is maximum. No. Okay. The work we..."
+  },
+  {
+   "start": 1406.98,
+   "end": 1427.7,
+   "text": "They used to make a circle and see what is the minimum and what is the maximum. Do some maths and think about the same thing. One thing is that whenever you will get the question of merge, that means whenever you will open the shop, it will be good for you that whatever is the start, whatever is the start, according to that, the sorted adder is there. Sort your ranges according to that. Sort according to that."
+  },
+  {
+   "start": 1428.08,
+   "end": 1452.75,
+   "text": "because usually in the shop if all the ranges are sorted then it will be easier for you 1 to 5 will be before then after that it will be sorted at the start time not at the end time at the start time means for example if it is 5 from 1 and the next one is also 2 to 3 then it is sorted at the start time it is sorted at the start time not at the end time there is no difference at the end time it is sorted at the start time only then you will be able to do this"
+  },
+  {
+   "start": 1452.75,
+   "end": 1481.17,
+   "text": "whatever you were looking at whether my end is bigger than its start or not why are you able to see this? why are you able to find out that I have an overlapping interval here? because this 5 is bigger than your 2 but if it is not sorted, if it is not sorted suppose this 2, 3 is somewhere else there are many ranges written in between and 1, 5 is somewhere else so how do you know? you can always remember you can always compare only 2 ranges once you can compare only 2 ranges what can you do? compare"
+  },
+  {
+   "start": 1481.17,
+   "end": 1510.82,
+   "text": "You can do it. You will do only two, right? Suppose you have 100 categories in one time, but you reduce category by category, right? You see that these two categories are one category, then add this. Look at the result of the next category, add this too. Okay, don't add this, leave this. How many people can you see in one time? You can see two ranges in one time. It is important to see that it is sorted. Because if it is not sorted, then you will not know how to know 2 and 3, 1 and 5. I mean, when you go to 1 and 5, how will you remember that there was a 2 and 3? You will remember this only when"
+  },
+  {
+   "start": 1510.82,
+   "end": 1537.34,
+   "text": "immediately after 1, 5, the next 2, 3 will be written. Only then you will be able to do this work, whether to merge or not. That is why it is said that it has to be sorted from start. Okay. But if it is also sorted from start, then it will be known whether to merge or not. But what to do? What to merge and make it? See, suppose there are 1 and 5. And another 2 and 7. Can this happen? Absolutely it can happen. Someone must have made it and gone. So it is also sorted at start time. It is also sorted at start time. Okay."
+  },
+  {
+   "start": 1537.34,
+   "end": 1565.87,
+   "text": "Now these two, you got to know that they have to merge. Why merge? This end is greater than or equal to this 2. Greater than or equal to means we have to merge. It means that where it is ending, it is starting from somewhere in the middle. So we have to merge. We have to merge. Okay. Let's think about minimum value and maximum value. We were doing this, that we were taking out its minimum and maximum. Pay attention. What we have told you, look at this. Write all four values."
+  },
+  {
+   "start": 1565.87,
+   "end": 1593.84,
+   "text": "Write down all the values for your understanding. There will come a time when you will not have to do all this. You will be able to do it automatically. What is start 1? 1. What is end 1? 5. Okay. What is start 2? Start 2 is 2. What is end 2? 7. Okay. Assume that you don't know the value. Now write down all the values. Okay. What is the specialty of range? That every start will be smaller than its end. Start also means start and end means end. So start will not be bigger than the end."
+  },
+  {
+   "start": 1593.84,
+   "end": 1624.45,
+   "text": "What you have to do is, you have to find the minimum and maximum value, right? These whole brackets, the whole Mahabharata, which was 10 to 15 and the next was 12 to 14, what did you do? You wrote the circle, wrote the number, you were looking for minimum and maximum, the new range would be made there only. So, you have to find the maximum and minimum from these four. So, look, one thing is certain, one thing is certain. Start 1 is smaller than end 1. Is this clear? Okay. Start 2, start 2 is smaller than end 2. Okay. One side by side of this means,"
+  },
+  {
+   "start": 1624.45,
+   "end": 1652.38,
+   "text": "End 1 and End 2 can't be minimum. Why not? Because there has to be a minimum in all four. End 1 can't be bigger than anyone. It will be bigger than start 1. End 2 can't be bigger than anyone. It will be bigger than start 2. So, both of them are out. Now, it comes to start 1 and start 2. One of these two can be minimum. But, we are doing the whole game on this. We are sorting according to start. We are sorting from start. That's why we are playing the whole game of Merge Pattern. What does it mean?"
+  },
+  {
+   "start": 1652.38,
+   "end": 1682.45,
+   "text": "If it is being sorted, then definitely, start 1 will be less than or equal to start 2. It will be, right? If we sort, then we are sorting from start only. So, what do you know? See, start 1 is smaller than end 1. Start 2 is smaller than end 2. And start 1 is smaller than start 2. Its obvious meaning is that it will be smaller than end 2. See this. Start 2 is smaller than end 2. Start 1 is smaller than start 2. Means, it is like this."
+  },
+  {
+   "start": 1682.45,
+   "end": 1711.47,
+   "text": "That B is less than C. And A is less than B. Obviously A is also less than C. What is the minimum out of these four? Minimum will always be start 1. Start 1. Minimum is known. Minimum is known. But. But. But. What is maximum? Maximum also uses the same logic. Maximum also uses the same logic. We write our equation here. That. We know one thing. That start 1 is less than end 1. Whatever you know. Write everything. Okay. Start 2."
+  },
+  {
+   "start": 1711.66,
+   "end": 1739.86,
+   "text": "Start 2 is less than end 2. And because we have sorted, we also know that start 1 is less than start 2. You have to find the maximum. It is obvious that start 1 cannot be the maximum because it is smaller than the end 1, not the maximum. Start 2 also cannot be the maximum because it is smaller than the end 2. But, but, but, but, who is bigger than end 1 and end 2?"
+  },
+  {
+   "start": 1740.5,
+   "end": 1770.0,
+   "text": "You don't know which one is bigger than these two. If someone gives you these three equations in front of you, you don't know which one is bigger than end 1 and end 2. Why don't you know? You know one thing that start 1 and start 2 are in order. So suppose start 1 is 1 and start 2 is 2. You know that end 1 is bigger than 1. Okay? That's good. Let it be. End 2 is bigger than 2. But which one is bigger than these two? Any one can be bigger. Suppose this is 10, then also it would be good."
+  },
+  {
+   "start": 1770.0,
+   "end": 1796.43,
+   "text": "This would be 15, which is still the equation. But, if this was 10, and if this was 8, then also, it is still correct. 10 is greater than 1, 8 is greater than 2. Which one is greater between the two? We don't know. That's why, maximum value, n1 and n2, any one of them, can be max of n1 and n2. Yes. Why? Because you don't know. There is no relation between n1 and n2. n1 is greater than start1. That's a good thing. n2 is greater than start0. Very good."
+  },
+  {
+   "start": 1796.43,
+   "end": 1826.48,
+   "text": "start 1 is smaller than start 2, very good but there is no relation between end 1 and end 2 so maximum of end 1 and end 2 will be your max that's why that's why if you ever face such situation that one is start 1 and one is end 1 this is one range the next range is start 2 and end 2 are sorted according to start so the combined range of these will be this first of all we have seen the minimum value that start 1 will have to be minimum it is smaller than all three and"
+  },
+  {
+   "start": 1826.48,
+   "end": 1853.66,
+   "text": "Whatever is the maximum between end 1 and end 2? This is your next range. For example, if the first range was 1 to 5, the next range would be 2 to 7. Logically, what will be the combined range of these two? 1 and 7. Why did this happen? We brought start 1 here. What is the maximum between end 1 and end 2? 7. We brought 7. But if the range would be 1 to 5,"
+  },
+  {
+   "start": 1853.66,
+   "end": 1880.91,
+   "text": "And 3 to 4. Now, what is its range? See, 1 to 5, 3 to 4, it will cover everything. Its combined range is 1 to 5. See, 1, 2, 3, 4, 5 is in this, 3, 4 is in that, so 3, 4 will enter in this, in the middle. Okay. Why did this happen? Because start 1 is minimum, so it is a very good thing. But, who is the maximum from end 1 and end 2? End 1 is maximum, so it is 1 to 5. So, see, both types of answers can be given. In end 1 and end 2, you will not be able to tell which is maximum. That is why you have to do this work. Okay."
+  },
+  {
+   "start": 1881.46,
+   "end": 1911.73,
+   "text": "You understood so much of the story. Now let's come to the question. So now you will understand completely. Just don't remember the question. Don't do anything like this. So the first question is that you have been given a shop. You have to fix the shop. You have been given a shop like this. 1, 3. This is the range of your first shirt. 2, 6. 8, 10. 15 and 18."
+  },
+  {
+   "start": 1911.73,
+   "end": 1940.19,
+   "text": "The first thing we will do is, we will sort according to the start. We will sort according to the start because only then we will be able to do it from our shop. You will not be able to do your shop by looking at the category in a random order. You are looking at 2 and 5 now, 1 and 10 sometime later, then 3 and 7 sometime later, then you will not be able to do anything. You will have to follow an order. That is why we have to sort according to the start time. We will also write the code, we will show the code, but now let's see the dry run. So, this which is given to you is already sorted, but we will sort it. We will tell you how to do it. So see."
+  },
+  {
+   "start": 1940.19,
+   "end": 1958.67,
+   "text": "1, 2, 8, and 15 are already sorted. What is your task? The same task that you had in your shop. This is an array. This is a 2D array. This is a vector of vector of int. 2D array. This is a vector of vectors in which every vector has a size 2. This is given to you like this."
+  },
+  {
+   "start": 1958.67,
+   "end": 1988.29,
+   "text": "leave it for the code, for now assume that you want to make a bigger box like this in which you have to fill the ranges again and it should be non-overlapping means merge all the overlapping and make it non-overlapping, okay? for this, what should we do? do the same thing that we were doing in the shop till now, see how we will do it first range is 1, 3 second range is 2, 6 third range is 8 and 10 next range is 15 and 18 okay"
+  },
+  {
+   "start": 1988.29,
+   "end": 2018.22,
+   "text": "Now what will we do in this? First of all, the first range is fine. The first range is fine. So what will we do first? We will make one start. We will make one start. You can qualify two ranges at any time. You can qualify two different ranges. One is start is equal to 1 and end is equal to 3. We have assumed this range as our first range. Now we will move forward. Now we will move forward and now we will move forward and see these three ranges line by line."
+  },
+  {
+   "start": 2018.22,
+   "end": 2044.61,
+   "text": "When we look at every range, then we will compare it with start and end. If it is merged, then we will merge it. If it is not merged, if it is non-overlapping, then it is a good range, then we will put it in our result. Let's see how we will do it. First of all, you come here. You put your view in this category. You have stored it in start and end. We will take start and end. Every question will be like this. Come."
+  },
+  {
+   "start": 2044.61,
+   "end": 2074.4,
+   "text": "To understand these two, you say start 1 and end 1. Start 1 and end 1. We will always maintain start 1 and end 1. That this is our first range. We will see whatever we see in the next range. Come on. To 6. Start 2 is equal to 2. End 2 is equal to 6. First of all, will there be merge or not? Will there be merge or not? What was its? If end 1 is greater than equal to start 2."
+  },
+  {
+   "start": 2074.4,
+   "end": 2101.79,
+   "text": "He used to say that merge will happen. Merge. Merge. Merge. See. End 1 is 3. Start 2 is 3. Is 3 greater than or equal to 2? Yes. Yes. Yes. If it is so, then there is no need to make a different category now. We will store it later when we will be completely satisfied that this category cannot be found in any other category. Then we will put it in the result. Now just merge. How did we merge? Will a new merge be made? Will a new merge be made?"
+  },
+  {
+   "start": 2101.79,
+   "end": 2124.21,
+   "text": "What was the minimum value? Start 1. And what was the maximum value? Maximum of end 1 and end 2 which is 6. Now see, what happened in a way? You were here before. Now see this. You merged both of these and made this. So effectively what happened is that both these categories together made a new category here."
+  },
+  {
+   "start": 2124.21,
+   "end": 2153.62,
+   "text": "Now, you have to see this with the next category. That's why, you have to see this new interval with the next ranges. So, we will update our start and end. Because, now you see, you have made this range by combining these two. Now, you will see this range from the next range and will do it. Now, you will not see only this or this. No, you have merged these two categories in one way and made a big category. Now, you will see that there is no merge in the future. That is also important to see. Okay. What will we do for this?"
+  },
+  {
+   "start": 2153.65,
+   "end": 2180.85,
+   "text": "We will update start1 and end1. When? When we will merge, then we will update. Okay, do it. Do 1. Do end1 is equal to 6. Okay. Come to the next category. Come to the next category, which is 8 and 10. Come, let's write this. What will start2 become? 8. What will end2 become? 10. First of all, will merge or not? Is my end1 greater than or equal to start2? No, no, no, no, no."
+  },
+  {
+   "start": 2180.85,
+   "end": 2209.78,
+   "text": "No Merge. You will understand after seeing it. 1, 6, 8, 10. No Merge. If there is no Merge, then what does it mean? First, you made a category by combining these two categories. This category will not merge with this. It means that whatever category was running with these two, should have an answer. It should be in your answer that it is an independent category. It is an independent category. Meaning, this 1, 6. This one."
+  },
+  {
+   "start": 2209.78,
+   "end": 2235.78,
+   "text": "This should be in your answer. So you will write it in your answer. How will you write it? We will tell you how to write it in the code. Don't worry. Now, now, after writing, after writing, what to do? Now see, you have written this category in your answer. This big category, 1, 6, you have written it in your answer. You were in this category just now. I was here just now. The loop was going on. You were here. You came to know that this is an independent category. This is an independent category. There is no merge with the ones at the back. This is a new category. Meaning,"
+  },
+  {
+   "start": 2235.78,
+   "end": 2265.31,
+   "text": "this is our independent category so now we have to compare this with the next one both of them are done now what do you have? now you have A10 in your eyes now we have to see this as an independent category as we started we said that this is the first category when we put this in the answer now this is the next category which is the first category you have to start from here and see the rest of the shops that's why when we won't merge first of all"
+  },
+  {
+   "start": 2265.31,
+   "end": 2295.2,
+   "text": "Put start and end in the answer and update start 1 and end 1. With whom do you update? The category you just saw in which you knew that it will not merge. Now it is more independent. Now the independent will start from here. Do 8 and 10. Do 8 and 10. Okay. Come to the next. Now this will be compared. Now start and end has been updated. Now that start and end will be compared from the front. Come here. 15 and 18. Take start 2. And take end 2. We will write the code. It will be completely clear. Okay."
+  },
+  {
+   "start": 2295.2,
+   "end": 2315.26,
+   "text": "15, 18. Okay? Will this merge? No, it won't. Why? And 1 is not greater than or equal to start 2. You have to do the same thing. Meaning, till now, whatever start and end you were bringing, it won't go further. It won't merge with anything further. Write 8, 10 in your answer. Write 8, 10 in your answer. And, and, what did you know?"
+  },
+  {
+   "start": 2315.26,
+   "end": 2344.22,
+   "text": "The category you just checked, it will not merge with anyone else, it will make something independent. So now we will take this forward, we will check this. So update your start and end. Update your start 1. From which? The start that was 15. Update the end 1 also, the one that came now, 18. And move forward. But if you move forward, then your loop will be over, there is no range ahead. There is no range ahead, your shop is over. If the shop is over, then very good, you did the whole work, but"
+  },
+  {
+   "start": 2344.22,
+   "end": 2373.81,
+   "text": "You still have a start 1 and end 1, which may be the last category. It may be that after merging for a long time, you reached the last, then you do not have the category left. If the category is not left, then put it in the answer that has come so far. It means that you have done a lot, sometimes mixed, sometimes broken, sometimes mixed, sometimes broken. By doing it, by taking a start and end, you reached the last, there is no other category in the shop. So whatever the start and end is, then put it in your answer. So put 1518 in the answer."
+  },
+  {
+   "start": 2373.97,
+   "end": 2403.2,
+   "text": "We will put 15 and 18 in the answer. So see, this is your answer. What is missing? This part is missing. 2, 6 is completely missing. 2, 6 and 1, 3. What is made by merging? 1, 6. 8, 10 was already independent. So 8, 10 as it is came. 15, 18 was already independent. So 15, 18 came like this. So this is your merge interval. You have to return this. Now we will see how to code it and how to write it. Same logic. How to code? So first of all,"
+  },
+  {
+   "start": 2403.2,
+   "end": 2430.64,
+   "text": "What will be given to you? You will be given a vector of vector of int. This is the method of giving range. Meaning, you will be given a vector of, we will give its code, don't worry. Vector of this. What does this mean? This is a vector of vectors. Vector of vectors. Meaning, this vector will look like this. So, when you will do this, this vector will look like this. This is a very big vector."
+  },
+  {
+   "start": 2430.93,
+   "end": 2460.11,
+   "text": "It is a very big vector and it has small small vectors. What is the size of small small vectors? 2. Because they represent a range. Every vector represents a range. So what is in this? Small small vectors are here. Your first range is 1 and 3. This. What does your next range depict? 2 and 6. Small small vectors. Yes. What is in the next range? 8 and 10. What does the next one depict? 15 and 18. 0, 1, 2, 3. This is your whole vector A."
+  },
+  {
+   "start": 2460.11,
+   "end": 2491.12,
+   "text": "There are small vectors on every index of the vector. There are two vectors of different sizes which represent the range. So, it will look like this. So, first of all, to give the result, make your own vector. Just like this. Vector of, vector of, int, like this, result. We will put it in this. What did we say? To start, int, start1 is equal to, what should start1 be? The first category of the shop. We will store the first category in that. So, a of 0,"
+  },
+  {
+   "start": 2491.12,
+   "end": 2519.18,
+   "text": "You have reached this vector from A0. This also gives you 0. This gives you start. A0 means you have reached here. But this also has an index. There are vectors of two sizes inside. 0, 1. 0, 1. 0, 1. 0, 1. What does A00 give you? 1. This value. Int end 1. End 1 is equal to A0. A0. First category. First category's ending price. Ending price means 1. What will this give you? 3."
+  },
+  {
+   "start": 2519.31,
+   "end": 2549.07,
+   "text": "Start 1 and end 1. Now, what did we say? 1 is done. We have taken the first category. We will start from the next category. Where we will need to merge, we will merge. Where we will not merge, we will store it in the answer and update the start and end. That's all we will do. Let's do this. For i is equal to 1. Not 0, 1. Because you have handled 0. N. What is N? N number is its size. N is equal to 4. Meaning, all the categories."
+  },
+  {
+   "start": 2549.07,
+   "end": 2579.79,
+   "text": "First of all, take out start2 and end2 from which you will compare. You need 4 things, right? Start1 and end1 are already there. Take out start2 and end2 from which you are now. Come, let's take it out. Start2 is equal to same. Array of i will give you that category. Its 0th index will give you its start value. Okay. End2 is equal to same. Array of i will take you to that category. 1, 1 will give you that end. Okay. First of all, check if merge will happen or not. Come. If."
+  },
+  {
+   "start": 2580.21,
+   "end": 2609.1,
+   "text": "End 1 is greater than equal to start 2. What does this mean? Merge. Merge will happen. How did you merge? One more thing. When you merge, what is start 1 and end 1? According to what you have seen till now, what is start 1 and end 1? You represent that in one. So whatever new range you made, new interval you made, what did you do?"
+  },
+  {
+   "start": 2609.1,
+   "end": 2633.52,
+   "text": "Start 1 and max of end 1 and end 2. So start 1 will be updated like this. Start 1 is equal to start 1. Why? Start 1 and end 1 will be taken ahead. We will compare ahead with the next one. So start 1 and end 1 are always updated. And end 1 will be equal to max of end 1 and end 2."
+  },
+  {
+   "start": 2633.52,
+   "end": 2659.82,
+   "text": "What is happening here is that we are making a new range. In this new range, we said that the minimum value will always be start 1 and the maximum value will be maximum of end 1 and end 2. But you will have to store the new range in your start 1 and end 1. Because you used to take this forward and it was made that this is the range till now and compare it with end 2 and start 2. So we did this. This much work is done. Now there is no need to do anything. Now there is no need to put this in the answer. Why?"
+  },
+  {
+   "start": 2659.82,
+   "end": 2689.2,
+   "text": "It can happen in the future if someone else merges with it. So, we will merge all together as much as possible. After that, we will put it in the answer. Continue it. We will not do anything. When was this? When merge is to happen. But when merge is not to happen, when merge is not to happen, then what will we do? First of all, we will put start 1 and end 1 in the answer. So, rest.pushback. Yes. Now, what will be the pushback in rest? What is rest? Rest is also a vector of vectors. So, let's do it like this. Put a curly bracket."
+  },
+  {
+   "start": 2689.23,
+   "end": 2718.61,
+   "text": "one you can write start1 and one you can write end1 like this and put it put it now now now you have to update start1 and end1 you have to update start2 and end2 which didn't merge why did you come till here because it didn't merge so start2 and end2 are independent so put it in start1 and end1 like this start2 is equal to sorry start1 is equal to start2 that's it"
+  },
+  {
+   "start": 2719.02,
+   "end": 2744.05,
+   "text": "End 1 is equal to end 2. And close it. Now, this will be compared. Now, the value of start 1 and end 1 has changed. The merge that didn't happen, the 8-10 merge that didn't happen, that would have been made. From that, the next will be seen. What was to happen in the back, has happened. We have put that in the result. That's it. After doing everything, after doing everything, this loop will end here. Which? The loop of i. After doing everything, when will you stop? When your category will end. When your entire category will end."
+  },
+  {
+   "start": 2744.05,
+   "end": 2770.64,
+   "text": "At this time also, you will have a start 1 and end 1. At this time also, remember in the example, there were 15 and 18, there were 15 and 18. One more time, rest.pushback, rest.pushback, whatever we did there, same. Start 1, end 1, curly bracket 1, bracket 1, and return rest. That's it. This is its program. This is the program of merge interval."
+  },
+  {
+   "start": 2770.64,
+   "end": 2799.6,
+   "text": "You will get the code link. It may be a little difficult to understand the code. Tell me in the comments. In the next lecture, we will explain it better. If there is any problem, then. Okay. It should not happen. Whatever you are listening to till here. Whatever you are listening to from the beginning. That much problem should not happen. But if it happens, then tell me. There is nothing to be ashamed of. So this was its small code. So what did we do? What did we do? First of all, we took start 1 and 1. Which was the first one. This was the first one."
+  },
+  {
+   "start": 2799.6,
+   "end": 2812.34,
+   "text": "Every time when we used to run I, we used to remove start 2 and end 2. We used to check that the existing range which is start 1 and end 1, can it be merged with this new range or not? If it can be merged, then merge it."
+  },
+  {
+   "start": 2812.34,
+   "end": 2840.98,
+   "text": "Update start1 and end1. The new merged range, which is minimum of start1. Maximum of end1 and end2. Go ahead. But if it doesn't merge, it means that the range you were taking till now is done. It will not merge with anyone. Store it in the answer. And the new one, this one. This should be your range to compare. Now you will start from here. Update it again. After everything is done,"
+  },
+  {
+   "start": 2840.98,
+   "end": 2869.31,
+   "text": "In the rest, put the start 1 and 1 again because the whole category is over. Whatever range you have left till now, if there is nothing left to compare, then put it in the result and return the result. So, this is its small program. You will get the program link and you will see many questions in the future. But the core logic will remain the same. The core logic will remain the same. We will do the next question like this. If you write this function, then the next function will be done by using it."
+  },
+  {
+   "start": 2869.31,
+   "end": 2887.98,
+   "text": "This means that this will be a function MergeInterval, which will give you a copy-carry function which will merge and give it to you. In the next question, you don't have to do anything. In the next question, you have to write 3-4 lines of your own and call this function. It will be done immediately. With that, you will see how much it is related and what pattern is related. That's all for today. Mine is also done."
+  }
+ ]
+}

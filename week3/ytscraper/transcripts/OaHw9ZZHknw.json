@@ -1,0 +1,704 @@
+{
+ "video_id": "OaHw9ZZHknw",
+ "title": "Greedy Algorithms: From Zero to Interview-Ready",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 3599,
+ "segments": [
+  {
+   "start": 0.66,
+   "end": 28.91,
+   "text": "When a tea vendor used to get on the train, we used to go with our kids, we don't know how old you are, but you must have gone. When a tea vendor used to get on the train, try to remember what he used to take with him. He used to take money, right? Have you ever seen a tea vendor that he used to take a 500-500 car? No. What did you see near the tea vendor? Khudra paesa, change, chiller, chiller, which is called khudra paesa here, he used to take that."
+  },
+  {
+   "start": 28.91,
+   "end": 58.69,
+   "text": "What used to happen in that? There used to be a coin worth 5 rupees, a note worth 10 rupees, a note worth 20 rupees, a note worth 50 rupees, a note worth 100 rupees. Till today we have not seen a tea vendor who used to sell tea for 500 rupees or 2000 rupees. Why did the tea vendor do this? The tea vendor was selling tea worth 10 rupees. Now when UPI did not come, then when he was selling tea worth 10 rupees, then how much money would a person give to buy tea worth 10 rupees?"
+  },
+  {
+   "start": 58.69,
+   "end": 85.23,
+   "text": "If he gives 10 rupees, then it is a good thing that he will not have to return anything to the tea vendor. If he gives 20 rupees, then he will have to return 10 rupees in that case. If he gives 50 rupees, then he will give 100 rupees. If he gives 200 rupees, then he will give 200 rupees. Now, for 10 rupees tea, no one will give 2 lakh rupees. Because the biggest note is of 500 or 2000 rupees. It will not happen that a person will give 2 lakh rupees for tea and 10 rupees for tea. There is no possibility of this happening. So, the tea vendor used to take change or chiller. Now, what was the most important chiller in chiller?"
+  },
+  {
+   "start": 85.23,
+   "end": 104.91,
+   "text": "5 rupee ka sikka, 10 rupee ka gaddi, 20 rupee ka gaddi, 50 rupee ka, 100 rupee ka gaddi. Ab ek cheez imagine kijiye, jab aapko yaad maal lijiye ki wo chai becha 10 rupee ka, chai katne ka becha 10 rupee ka. Koi admi usko kitna rupee diya udar se? 100 ka note pakda diya, 100 ka note pakda diya. Ab usko wapas kitna paisa karna hai? 90 rupee wapas karna hai, 90 rupee wapas karna hai."
+  },
+  {
+   "start": 105.07,
+   "end": 126.42,
+   "text": "There are many ways to return Rs.90. One way is to withdraw Rs.9-10 note. Another way to return Rs.90 is to withdraw Rs.4-20 note and Rs.1-10 note."
+  },
+  {
+   "start": 126.42,
+   "end": 155.97,
+   "text": "But remember what the tea vendor used to try to do. The tea vendor used to try as much as possible to give you a note of Rs. 50 and a note of Rs. 20. So that this becomes Rs. 50 and this becomes Rs. 90. As long as possible, he didn't touch his Rs. 10 cart or his Rs. 5 bag. Why did he do this? He didn't study, he didn't go to college."
+  },
+  {
+   "start": 155.97,
+   "end": 182.18,
+   "text": "It would have been uneducated probably. It would have been educated for 5-6 classes. It would not have been educated beyond that. But why did he do this? Look at it closely. When any shopkeeper returns you a change, then he tries to take out a big note in the change first and then use a small note. If let's say a shopkeeper is giving you a change of 60 rupees, then he will not give you a 60 coin of 1 rupee. He will have that coin. But he will not do this. He will try."
+  },
+  {
+   "start": 182.18,
+   "end": 201.92,
+   "text": "that he can give you a big note of 50 rupees and a note of 10 rupees, then it will be 60. Why did he do this? Because for that person, the person who is a tea vendor, who is roaming around with a chiller, for him, the 10 rupees car is more valuable than some 50 rupees. Why are we saying this? Because"
+  },
+  {
+   "start": 201.92,
+   "end": 227.86,
+   "text": "Let's say he didn't do this. Let's say he thought that he has to return only Rs. 90. So he gave a note of Rs. 10. Let's say his Rs. 10 note is over. And Rs. 5 note is also over. Everything is over. He has Rs. 20 note left. And Rs. 50 and Rs. 100 note are left. Now imagine he went to sell tea again. He gets Rs. 10 tea. Someone gave him Rs. 20. How much does he have to return? Rs. 10."
+  },
+  {
+   "start": 227.86,
+   "end": 252.29,
+   "text": "Now tell me one thing, how will that person return 10 rupees when he doesn't have 10 rupees or 5 coins? He has a note of 20 and a note of 50-100. How will he return it? He won't be able to sell tea. This common sense, this human instinct is called the greedy algorithm. That's why the tea vendor wasn't doing it because he was a very educated person, he was very PhD in maths, even if he knew some computer science. No, it's a simple instinct."
+  },
+  {
+   "start": 252.29,
+   "end": 259.18,
+   "text": "When we want to return the chiller, and I have notes of every denomination, 5, 10, 20, 50, 100."
+  },
+  {
+   "start": 259.18,
+   "end": 285.55,
+   "text": "So, with simple common sense, he thinks that if we want to return Rs. 90, then let's do one thing. Let's empty Rs. 50 first and save Rs. 10. Because there will come a time in the future when this Rs. 50 note will not be of any use to me. We will need Rs. 10 and Rs. 5 coins. If we don't do this, if we finish our Rs. 5 and Rs. 10 note earlier, and I have Rs. 50 and Rs. 100 left,"
+  },
+  {
+   "start": 285.55,
+   "end": 315.55,
+   "text": "One such time will come when we will not be able to sell tea because suppose if someone has to return change of Rs. 30, you have a note of Rs. 50, how will you return change of Rs. 30? To return change of Rs. 30, you need Rs. 10, right? You need Rs. 5, only then you will be able to return change of Rs. 30. If you have a note of Rs. 500, then how will you return change of Rs. 30 to someone? This is the reason that he did not take Rs. 500 with him. And his attempt was that brother, take out big notes quickly, save small notes, save small change, it will be useful in future."
+  },
+  {
+   "start": 315.55,
+   "end": 340.88,
+   "text": "This is called Greedy Algorithm. What is Greedy Algorithm? You must have seen a lot of videos on Greedy Algorithm. It has a lot of formulas, maths, etc. But after today, you won't need to watch any more videos because Greedy Algorithm, when it comes to base track, Greedy Algorithm is called Simple Common Sense. Greedy Algorithm says,"
+  },
+  {
+   "start": 340.88,
+   "end": 361.02,
+   "text": "Do the best choice right now and everything will be fine in the end."
+  },
+  {
+   "start": 361.02,
+   "end": 388.99,
+   "text": "If you want to give Rs. 90, then you have a choice. Give 10 for 9 notes, 20 for 4 notes and so on. What choice are you taking? Which is best for that time and everything gets fixed in the end. This is what is expected. This is exactly what the greedy algorithm says. Listen, you have choices. You will have different choices. You don't have to think too much. Right now, in the present, do the choice that is best for you."
+  },
+  {
+   "start": 388.99,
+   "end": 412.82,
+   "text": "And everything should be fine in the end. And everything should be fine in the end. But if greedy is the name of cooking, that do what you feel is best, then does it mean that you should put greedy in everything? Not at all. Not at all. Look at the question. According to your question, you will have to think. Use your brain. Suppose you are put in a buffet. In which you are put in a buffet. And there are various things put there. Various things are put there."
+  },
+  {
+   "start": 412.82,
+   "end": 429.62,
+   "text": "Variety of items. Every item has its own price. Let's say there is a stall for every item. Every stall has some random items. The organizer tells you that you can eat one item from it for free."
+  },
+  {
+   "start": 429.62,
+   "end": 457.87,
+   "text": "And when you go to the buffet, what is your wish? That we should eat the most expensive thing and get all the money. So the manager told you that you can eat anything from one stall. Okay, very good. Which one should we eat? So the manager says, eat whatever you want. But there is one food. We will take you to every stall from time to time. Wherever you want to eat this food, tell us. Eat that one and that's it. Your work will be done. Now imagine to put greedy in this."
+  },
+  {
+   "start": 457.87,
+   "end": 485.02,
+   "text": "Suppose you reached the first stall and there was pulao. You smelled it and thought that you can eat pulao as it is an expensive item. You said that you want to eat only this and you left after eating pulao. Later your friend said that he ate pulao and there was mutton biryani in the front. Now you regret that if you don't eat pulao then you should have eaten mutton biryani. This regret, this possibility that your greedy choice, what did you do here? You became greedy."
+  },
+  {
+   "start": 485.02,
+   "end": 510.67,
+   "text": "You stopped after seeing the pulao. Suppose there was soup there, you wouldn't have stopped. As soon as you saw the pulao, you got a little greedy that yes, the pulao is smelling good, maybe it will be expensive too. Let's eat. You got greedy, so you took a decision out of greed, right? But after going home, you came to know that the mutton biryani was kept in the next stall. If you had stopped your greed for a while, then you would have gone ahead and eaten your mutton biryani. Did your feeling come or not? Wait a minute."
+  },
+  {
+   "start": 511.79,
+   "end": 537.95,
+   "text": "This feeling of regret that we shouldn't have done this is the enemy of the greedy algorithm. In any question, in any scenario, if it comes to your mind that the choice we are taking now, it may happen in the future that we have to regret. If it can happen, it can happen in any possibility. In that case, you don't have to apply the greedy algorithm. You don't have to apply it by mistake. If your choice, your greedy choice,"
+  },
+  {
+   "start": 537.95,
+   "end": 565.6,
+   "text": "It can be proved wrong in the future. If you think of an example in your mind that it is possible, then you don't have to apply greedy. If you are not able to think of any such scenario, you think that no, what we are doing right now will be absolutely right. It can't happen that we will have a problem with it in the future. Means it can't happen that we will have a problem with this choice in the future. Then apply the greedy algorithm in it. For example, let's make a small twist in this question. What was it now?"
+  },
+  {
+   "start": 565.6,
+   "end": 576.77,
+   "text": "That you were being taken to the stall one by one. So you can't put it here because you don't know the future of the stall. When we were reading the DP, this was the whole game. If you don't know the future, then how will you make a decision now?"
+  },
+  {
+   "start": 576.77,
+   "end": 606.4,
+   "text": "But if someone makes a small twist in this, the manager tells you to do one thing, don't choose now. Go and visit the entire buffet once and tell the last man which food is there. Then the work is done. You go and visit. You think that if there is mutton biryani here, then this is the most expensive item. You come and tell him that yes, we will eat this only. It is solved. This is a greedy approach. How will you solve it in an array? Sort the array and eat the last item. The work is done. So there is no such thing."
+  },
+  {
+   "start": 606.4,
+   "end": 631.73,
+   "text": "There is no rule that you have to apply here and not here. No. If your current choice, you are thinking that there can be a problem in the future, then don't apply the greedy algorithm. If you are not thinking of any such example that no, there can never be a problem in the future by taking this choice, then apply the greedy algorithm. For example, when your father plans to go somewhere, then what does he do? He fixes the things, right? What happens when you fix the things?"
+  },
+  {
+   "start": 631.73,
+   "end": 660.21,
+   "text": "First of all, the biggest bag of the house is found. Suppose someone is going on a big vacation. The biggest bag of the house is found. As much as the luggage can be stuffed in it, it is put in. After that, a little smaller bag is found than this. In that, the luggage is stuffed. So why is your father doing this? Your father can also do this that instead of these two bags, take 50 small small small small bags, take that bag and take 50 things. Why? Because it is more difficult. Who goes to take 50 things? Nobody goes to take 50 bags."
+  },
+  {
+   "start": 660.21,
+   "end": 681.97,
+   "text": "What is this? This is the Greedy Algorithm. This is the Greedy Algorithm. That listen, the stuff has to come in the right place. Find the biggest bag, stuff as much as you can in the biggest bag, then find a smaller bag from that. Now think about it, this is also a choice. You can take the biggest bag, the plastic one with a small plastic bag. If you take the biggest bag,"
+  },
+  {
+   "start": 681.97,
+   "end": 709.74,
+   "text": "Do you have any harm in buying the biggest bag? So in the end, you know that you shouldn't have bought it. No, it's common sense. Why would it happen? We need the least number of things, right? So what's the harm in buying the biggest bag? There is no harm. That's why there is a problem of greed. But if there was a case in this that if you buy the biggest bag now, then you can't buy the next one. Not the next bag. In the future, will there be any condition in this or not?"
+  },
+  {
+   "start": 709.74,
+   "end": 738.11,
+   "text": "If you take this bag, you can't go ahead and do anything else, then you don't get greedy. If there is a problem in front of you with your current choice, then you don't have to get greedy. There is no difference in front of your current greedy choice. It can't happen that this choice is wrong. You have to get greedy. Do you understand? This exact thing is called the greedy algorithm. Do what you like the most now. Look at the example of the tea vendor again. What did we tell you? You have to give him 90 rupees."
+  },
+  {
+   "start": 738.11,
+   "end": 760.21,
+   "text": "According to greedy algorithm, we will give 1 note of Rs. 50 and 2 notes of Rs. 20. And if I have Rs. 10, then 5 notes of Rs. 10 are still left. Now tell me, can there be any problem in the future with this choice? No. Why not? Let's assume that someone has to return Rs. 50 in the future."
+  },
+  {
+   "start": 760.21,
+   "end": 787.79,
+   "text": "then can't you return 50 from 5-10 rupee note? Yes, you can. If you want to return 40 from someone, then can't you return 40 from 5-10 rupee note? Yes, you can. But if you had not done this, if you had thought that if we take this choice, then something will happen to us, then you would not have put greedy bull in it."
+  },
+  {
+   "start": 787.79,
+   "end": 805.76,
+   "text": "For example, in every DP's problem, there is a DP. In choice, there are only two things. In choice, there is either a greedy or a DP. When do you get a DP? When you can't think of anything right now. There is a problem with the greedy choice of the present. What happened in House Robber? The same thing happened in House Robber. If you looted this house,"
+  },
+  {
+   "start": 805.76,
+   "end": 834.51,
+   "text": "If you looted this house, then you can't loot the next house. So what was this? If you looted this house after paying Rs.100, then what do you know? In the next house, it might be Rs.1000. Then you will regret that you looted that useless Rs.100 house. You should have looted this house. You didn't feel greedy. But if there was no such condition, then you would have felt greedy. So this is exactly the core difference. In which? Greedy and Deity. Now we will explain you 3-4 questions and the whole concept will go inside. Let's move ahead."
+  },
+  {
+   "start": 835.02,
+   "end": 851.7,
+   "text": "The first question is exactly the same as the tea vendor's question. We will take the tea vendor's example from here. Lemonade change. What does this question say? You are selling a lemon water. Lemonade means lemon water. How much is the price of each lemon water glass? Rs. 5. How much is the price? Rs. 5."
+  },
+  {
+   "start": 852.02,
+   "end": 871.95,
+   "text": "Customers will come one by one and will give you money. They will give you money in cash and will take lemon juice from you. Customers will come one by one. Now, customers can give you three types of notes. Suppose, there are three types of notes available in that country. Either your customer will give you a note of 5 rupees. 5 rupees lemon juice and 5 rupees note. You don't have to do anything. You just have to give lemon juice. Very good."
+  },
+  {
+   "start": 872.08,
+   "end": 900.11,
+   "text": "Either your customer will give you Rs.10, in this case you have to return Rs.5. Or your customer will give you Rs.20, in this case you have to return Rs.15. In the beginning, you don't have any chiller, like the chai chiller, you don't have chiller, you have brought empty hand, empty lemon water. Customer will give you a note, so that will be saved. Suppose you have sold 2 lemon water and got a note of Rs.5, so keep that with you. In the beginning, you don't have any change."
+  },
+  {
+   "start": 900.11,
+   "end": 929.92,
+   "text": "The first customer will not be able to give you the change of Rs. 15. Now what you have to do is, suppose you have 5 customers. Suppose you have 5 customers. One person gave 5, then 5, then 5, then 10, then 20. 5 people came and you got money in this order. You have to tell them that till the last customer,"
+  },
+  {
+   "start": 929.92,
+   "end": 957.38,
+   "text": "Will you be able to give change to everyone or not? If you are able to give change to everyone, in that case, you have to return true. If there is a chance that the customer gave you money, but you don't have change to give to him, then you will not be able to sell your lemon water to him, then you have to return false immediately. For example, the first customer gave you 5 rupees, then your work is done. Suppose the first customer came and gave 20 rupees,"
+  },
+  {
+   "start": 957.38,
+   "end": 978.88,
+   "text": "You will not be able to sell it. You don't even have a chiller to give. You have to return it immediately. Exactly that is the problem of the tea vendor. Exactly that is the problem of the tea vendor. So see, let's understand it slowly. You don't have any chiller in the beginning. You don't have any change in the beginning. Very good. What money can the customer give you? The customer can either give you 5 rupees, 10 rupees."
+  },
+  {
+   "start": 978.88,
+   "end": 1006.69,
+   "text": "20 rupees. Customer will give you 3 types of notes. Now below this, we write that if you get any note, then how much will you have to pay back? If any customer gives you 5 rupees, then you don't have to pay back even 1 rupee. You are doing it right. You will just take that 5 rupees note and keep it in your pocket. No problem, 5 rupees for lemon juice, 5 rupees note, you don't have to do anything. Take 5 rupees note and keep it in your pocket and move ahead. Very good. If any customer gives you 10 rupees note,"
+  },
+  {
+   "start": 1006.69,
+   "end": 1034.24,
+   "text": "So, you have to keep that Rs.10 note in your pocket. You have to keep that Rs.10 note in your pocket but you have to return that Rs.5. You have to return that Rs.5. If you don't return it, then you can't sell lemon juice. Okay? If a customer gives you Rs.20, then he will keep that Rs.20 note in his pocket but you have to"
+  },
+  {
+   "start": 1034.24,
+   "end": 1057.31,
+   "text": "you have to return 15 rupees. If you can't return exactly 15 rupees, then you can't sell lemon juice. Is this clear? Okay. Now, tell me one thing. In case 5, you don't have to return anything. That's a good thing. In case 10, you have to return 5 rupees. You have to return 5 rupees. Tell me one thing. You have to return 5 rupees."
+  },
+  {
+   "start": 1057.31,
+   "end": 1080.46,
+   "text": "If someone gave you Rs.10 and you don't have even a single note of Rs.5 in your pocket, then is it possible? Let me tell you again. If someone gave you Rs.10 for lemon juice and you want to return Rs.5,"
+  },
+  {
+   "start": 1080.5,
+   "end": 1109.5,
+   "text": "At that time, at that point of time, if you don't have 5 rupees in your pocket, if you don't have even a single note of 5 rupees, then no matter how much 10 rupees you have and how much 20 rupees you have saved, can you save that 5 rupees? No, you can't. So what does it mean to say? If someone gives you 10 rupees, then first of all, what should be your check? That brother, do I have a note of 5 rupees or not? If you don't have a note of 5 rupees, it can't happen. If you have a note of 5 rupees,"
+  },
+  {
+   "start": 1109.5,
+   "end": 1137.86,
+   "text": "So you can give it to him. So what will happen in that? One note of 5 rupees will be reduced from your pocket. Assume that we give him a note of 5 rupees. And this 10 rupees note will increase. 10 rupees note will increase. Do you understand? Okay. Now 20 rupees note is more interesting. 20 rupees note is more interesting. If someone gives you 20 rupees. You have to return him 15 rupees. You have to return him 15 rupees. Now think about one thing. You have to return him 15 rupees."
+  },
+  {
+   "start": 1137.86,
+   "end": 1161.68,
+   "text": "No matter how many notes you have in your pocket, do you have any benefit of 20 rupees? No. If someone wants to return 15 rupees, then what is the benefit of 20 rupees? If you give 20 rupees, then he will have to give it again. There is no benefit. So forget about 20 rupees. If someone gives you 20 rupees, don't do anything, tear it and throw it away. You have no work of 20 rupees. 15. Whose work will you have? 10 and 5. Now again."
+  },
+  {
+   "start": 1161.68,
+   "end": 1177.98,
+   "text": "There are two ways to pay Rs. 15. When you have either Rs. 5 or Rs. 10 in your pocket. You can give one note of Rs. 10 and one note of Rs. 5. This is one way. Or you can give Rs. 5."
+  },
+  {
+   "start": 1177.98,
+   "end": 1203.9,
+   "text": "You can make 3 notes out of 5 and make 15. There is no other way to make 15 from 10 and 5. There is no other way to make 15 from 10 and 5. Forget about 20. Now, remember the tea vendor's wisdom. From both the choices, which choice should you try first? C1 or C2? C1. Why? Because take out the 10 rupee note first. It is a big note of 10 rupees."
+  },
+  {
+   "start": 1203.9,
+   "end": 1233.28,
+   "text": "What is the most valuable note for you at this time? 5 rupees note. Because 5 rupees is the smallest note. Why are we saying this? Assume that at any point of time, you have 1 note of 10 rupees left and 3 notes of 5 rupees left. This is your pocket that you have. Some customer came and gave you 20 rupees."
+  },
+  {
+   "start": 1233.28,
+   "end": 1259.9,
+   "text": "What are the two choices you have? Either you give 1 for 10 and 1 for 5. Okay, that's good. Or what is the other choice? You give him 3 notes of 5. Now imagine that you are not smart, you are not greedy, you have not used the greediness of the tea vendor. You give him 3 notes of 5. So what happened? You gave him 15. But now what has become of 5 effectively? It has become 0. It is still fine."
+  },
+  {
+   "start": 1259.9,
+   "end": 1282.93,
+   "text": "Suppose the next person comes to you and gives you 10 rupees. Now what will you do? If he gives you 10 rupees, you have to return him 5 rupees, right? How will you get 5 rupees back? You won't be able to do it. But if you had used the tea vendor's wisdom, if you had taken out the big note first and saved the small note, then what could you have done here? How much did you have? One note of 10."
+  },
+  {
+   "start": 1282.93,
+   "end": 1307.41,
+   "text": "If you would have used the tea vendor's knowledge, then you would have given him one note of 10 and it would have been zero. And you would have given him one note of 5 and it would have been 2 notes. In both the cases, you have 10 rupees left. Here, one note of 10 was left of 10 rupees total. Here, two notes of 5 are left of 10 rupees total. Now, the next person came and gave you 10 rupees. Now, can you give him 5 rupees? Yes, you can."
+  },
+  {
+   "start": 1307.41,
+   "end": 1330.99,
+   "text": "So this is the advantage. That is why we are saying that take out the big note first, the small note will take more work. The bigger the note, the sooner you can finish it, the better it is. The smaller the note, the more you can save it. But this is the greediness here. So from these two choices, which choice should you try first? You should try C1 first, that we will give a note of 10 rupees."
+  },
+  {
+   "start": 1330.99,
+   "end": 1357.97,
+   "text": "If you come to know that there is no note of 10, then you have to move towards C2. If you come to know that the note of 5 is less than 3, then you have to return false. So what do you have to do in total?"
+  },
+  {
+   "start": 1357.97,
+   "end": 1387.63,
+   "text": "You have to track two things. How many 5 rupees notes you have and how many 10 rupees notes you have. From where? From the customer. If the customer gives a note of 20 rupees, then what to do? Nothing to do. 20 rupees is of no use to you. 20 rupees is the work of keeping in the cupboard. Which chiller do you have to carry in the pocket? 5 and 10 that the person will give. So first of all, what do you have to do? By doing this, bull and by doing this, a function is created. Bull lemonade. After that, it tells you that this is the customer's array. What is this? This is the customer's array."
+  },
+  {
+   "start": 1387.63,
+   "end": 1413.87,
+   "text": "These are the bills that means how much money every customer is giving you. So first of all, we take out the length of this. We took out the length of this. Very good. After that, we made an int i. Now after that, you make a pocket here. You have to track two things in the pocket. How much is 5 rupees? How much is 10 rupees? So what we do is that we make a variable. So we will track two things. Int 5."
+  },
+  {
+   "start": 1413.87,
+   "end": 1443.44,
+   "text": "In the beginning, you were told that you have not taken any chiller in the train. So in the beginning, 5 is also 0 and 10 is also 0. Is it necessary to track 20? Absolutely not necessary because it is of no use to you. Okay. Now, let's go to the customers one by one. I is equal to 0, I less than N, I plus plus. Now, how many types of bills can the customer give you? Three types. 5 rupees, 10 rupees, 20 rupees. If, first of all, take out this money. How much money have you given? So, I must have given money."
+  },
+  {
+   "start": 1443.44,
+   "end": 1473.62,
+   "text": "If a customer gives you 5 rupees, then do you need to do anything? No. If you give 5 rupees, then you don't have to do anything. But you have to do one thing. You have to increase your 5. If you get a 5 rupee note in your pocket, then it has increased. You don't have to do anything again. But at least increase 5. Very good. The simplest case is over. But, but, but, but, else if, else if, should I write it here? Let's write it here."
+  },
+  {
+   "start": 1473.62,
+   "end": 1494.94,
+   "text": "Else if money equal equal to 10. If someone gives you a note of 10 rupees. Now tell me one thing. How much do you have to do again? 5 rupees. If at this time you do not have a single note of 5 rupees. Then will you be able to sell it? No. So first of all check here. If 5 equal equal to 0."
+  },
+  {
+   "start": 1494.94,
+   "end": 1523.02,
+   "text": "return false. It can't be. No matter how much note you have. It can be 10 notes of 10 rupees. What will you do? You have to give him 5 rupees. There is no note of 5. Your game is over. It is false. If it is not so, then what will you do? First of all, you will take it out of your pocket and give him a note of 5. Then it will be less in your pocket. And this person has given you 10 rupees. Then a note of 10 will increase in your pocket. It is over. Is it right? Very good. But if"
+  },
+  {
+   "start": 1523.02,
+   "end": 1542.1,
+   "text": "Final case. Else. Else. Else if. Write else if or else. We are writing it to explain. You gave 20 rupees. Now you have to return 15 rupees. You have two choices. Which two choices? 10 for 1 note. 5 for 1 note. And second choice is 5 for 3 note. So first check that if."
+  },
+  {
+   "start": 1542.42,
+   "end": 1570.99,
+   "text": "10 greater than 0. If there is a note of 10, then try to do this. What should you try to do? First of all, do 10 minus minus. Give him a note of 10. Now how much more do you have to give? You have to give 5 more. But if there is no note of 5, then return false. It means you had to give 15. You had to give 15. If there is no note of 5,"
+  },
+  {
+   "start": 1570.99,
+   "end": 1600.1,
+   "text": "false return. If there is no note of 5, then false return. If there is 10, then give it. Who will give the remaining 5? From where will you give the remaining 5? No. If there is, then fine. One out of 5 will be minus minus. It will be minus minus. That's it. Stop this. Is this 20 need to be increased? No. 20 is not doing anything. This was choice 1. This was choice 1. Answer 10 and 5. If, assume it didn't work. If there is no 10, then you are forced to go to 5."
+  },
+  {
+   "start": 1600.1,
+   "end": 1629.92,
+   "text": "Else. Now, how much do you need for 5 to give 15? You need 3 notes. If, if 5 is less than 3, return false. If, let's say, you don't have 5's 3 notes, you have only 2 notes, then you won't be able to sell. It's a simple thing. Now, if you have 5's note, then fine, give 5's 3 notes. 5 is equal to 5 minus 3. Stop this. Stop else. Stop this else. Stop this for loop. If you reach the last sub, then return true. Return."
+  },
+  {
+   "start": 1629.92,
+   "end": 1658.45,
+   "text": "So, did you understand this question or not? This question is very easy but we have given so much time to it because we have lost our mind. What is happening? Why are we doing this? Look at this question. In this question, no fancy data structure was used. No DP, heap, binary search, stack, queue, nothing was used. This is a question of common sense. What do you do? What does a person do in general life? This is what he does. So, this is the lemonade stand. Okay. Come to the next question."
+  },
+  {
+   "start": 1658.45,
+   "end": 1689.33,
+   "text": "What is the next question? The next question is, assign cookies. Assign cookies. This is also a good question. This is also an exactly greedy question. Assign cookies. Look, to understand this question, you will have to understand one more thing. Assume that you have to do a number of tasks in your day. Task means the normal work of the day. Sorry. Has anyone told you that you have to do as many tasks as possible?"
+  },
+  {
+   "start": 1689.33,
+   "end": 1705.25,
+   "text": "You have to do more tasks. You should have more number of tasks. What are you doing? Are you doing a small task or a big task? Are you doing a very big task or a very small task? It doesn't matter. You have to do more number of tasks. Okay? So, with human intelligence,"
+  },
+  {
+   "start": 1705.25,
+   "end": 1730.26,
+   "text": "What work do you prefer to do? Work means work of the day. According to me, as a human being, what will we do? Because we have to do more number of work. And you can do limited number of work in a day. Because time is limited, power is limited. So we will do more small work. What? We will focus on doing more small work. Means, we took bath, one work is done. We ate, second work is done. We took a bath, third work is done."
+  },
+  {
+   "start": 1730.26,
+   "end": 1760.06,
+   "text": "Now what will an old man do? Someone who is very smart will do the same thing that he will wake up in the morning and say that no, first of all, we will go to the gym for 1.5 hours. So what will be the benefit of that? We did the gym for 1.5 hours and it turned out that after that he fainted. So how many number of tasks did you count? You counted only one. Gym is one thing, right? And there is a man who took a bath, ate and slept. So he won three things again. So what does general common sense say? Keep doing small things. Do big things later. What is this? Greedy."
+  },
+  {
+   "start": 1760.06,
+   "end": 1785.81,
+   "text": "What? Now you should also think that will it ever backfire on us? You should definitely think about it. Okay? Suppose you did three things. You took a bath, ate, and exercised. Three things happened. When you reached the gym, you came to know that your strength is over and you won't be able to go to the gym. So will you regret now? That you shouldn't have exercised, you should have gone to the gym. No. What will be the benefit? Why should you go to the gym? If he exercised, he didn't do it for nothing. He counted it. Come."
+  },
+  {
+   "start": 1785.81,
+   "end": 1812.83,
+   "text": "If you do the gym, then you will never regret that you should have done it or not. Because there is no difference between the two. Both are the same work. Either you do it or you do this. So there is no regret. But if you do the gym for 2.5 hours and get drunk, then you will regret later that you did the gym for 2.5 hours and you could have done 10 jobs there. So what should happen here? You should take a completely greedy approach that no, we will do the smallest work first because number of tasks is more important."
+  },
+  {
+   "start": 1812.83,
+   "end": 1842.82,
+   "text": "Is the task valuable or not? It doesn't matter. You should do more number of tasks. So, that's why I gave an example because this question is exactly the same. This question asks you that you have cookies. What do you have? Cookies. It is called biscuit. Okay. Every cookie has some size. Every cookie has some size. Assume that the size means it is of 1 kg, 2 kg, 3 kg. Understand that it is size. Okay. There are some children in your house. Okay. There are some cookies and some children in your house. Okay."
+  },
+  {
+   "start": 1842.82,
+   "end": 1864.98,
+   "text": "Every child has a greed level. Now what does greed level mean? Suppose a child has a greed level of 4. This means that if you give him a less than 4 kg cookie, he will not be happy and will not eat it."
+  },
+  {
+   "start": 1864.98,
+   "end": 1894.35,
+   "text": "Means, suppose you have 4 cookies. 1 kg, 2 kg, 3 kg, 4 kg cookie, 4 kg biscuit is kept. If a kid's greed is 4, then until you don't give him the 4 kg one, he won't eat. Nothing will happen, he won't eat the 3 kg one, he won't eat the 2 kg one. He will eat 4, 5, 10. Greed means minimum he has to eat that much. If a kid's greed is level 1, then he can eat any one of these 4 which is left. Okay? And, 1 cookie, 1 cookie,"
+  },
+  {
+   "start": 1894.35,
+   "end": 1923.36,
+   "text": "One child will get it. You will give one cookie to one child. If you have a 10 kg cookie, then you can give it to that child. If the grade level of that child is 5, then you can give it to that child. He will eat the whole cookie. He will not eat less than 5. He will eat more than 5. He will eat more than 5. Okay. What is your job? You have to make more and more children happy. What?"
+  },
+  {
+   "start": 1923.36,
+   "end": 1953.12,
+   "text": "You have to make as many children happy as possible. Now, it doesn't mean that the one who has the greatest greed level is the most happy. As many children as possible should be happy in your house. Everyone should get their cookie. Again, this is a greedy problem. Come, let me tell you why this is a greedy problem. Now, there is a greed level of children. Suppose there are three children. How many children are there? Three. One is this. One is this."
+  },
+  {
+   "start": 1953.12,
+   "end": 1979.33,
+   "text": "And one is this. His name is A. His name is B. His name is C. This child's greed level is 1. This child's greed level is 3. And his is 5. What does it mean to say? This child named C will not eat a biscuit less than 5 kg. This B will not eat a biscuit less than 3 kg. And this A is a good child. He will not eat less than 1 kg biscuit. So this biscuit will be of 1 kg. Okay. Now assume you have"
+  },
+  {
+   "start": 1979.33,
+   "end": 2007.82,
+   "text": "There are only two cookies. Children are three, but there are two cookies. The first cookie. How much is the first cookie? The first is a 4 kg cookie. And how much is the second cookie? The second is a 2 kg cookie. Okay? Is it a good thing? Very good. Is it a good thing? Okay. One minute. So, see. Now, here also, you should know the same way of thinking. What are you thinking? Tell me one thing. The grade of the child is written here."
+  },
+  {
+   "start": 2007.92,
+   "end": 2036.88,
+   "text": "Tell me one thing, the child who has less greed, is it easier to make him happy or the child who has more greed, is it easier to make him happy? For the child who has less greed, it is exactly a matter of task, right? This task is taking one hour, this task will take five hours. So what is easy to do? It is easy to do an hour task, right? So why will we make him happy for five hours? So first, in which order will we start making the child happy? By their..."
+  },
+  {
+   "start": 2036.88,
+   "end": 2066.74,
+   "text": "Ascending order greedily. Why? Because why do you want to make the 5th child happy first? It won't make any difference. If you make the 1st child happy. See. Who is easy to make happy? It will be easy. It is possible that both of them won't be happy. It is possible that both of them won't be happy. That is a different thing. But. Practically. For whom will it be easy? Some child is saying. Someone is saying to you. Give me 1 rupee. Someone is saying. Give me 100 rupee. So who is easy to make happy for you? For the 1 rupee one. Give him 1 rupee."
+  },
+  {
+   "start": 2066.74,
+   "end": 2096.1,
+   "text": "After that you check the Rs.100 one whether there is anything left for you. So in which order will you make the children happy? In the order of making the small children happy. Means in the order of making the less greedy children happy. So assume that you want to make this child happy. You have come here. You have come to this child. Now in the beginning you have two types of cookies. 4 kg and 2 kg. Now this child's greed level is 1. So technically speaking he can eat both the cookies. If he is 1 then he will eat 2 and 4 too. Now which cookie should you feed him?"
+  },
+  {
+   "start": 2096.1,
+   "end": 2128.32,
+   "text": "You should feed it a 2 kg cookie. Why? Because if you feed it a 4 kg cookie. You can feed it. Feed it a 4 kg cookie. If you feed it a 4 kg cookie. Then assume that this is done. Oh, what is my pen? I have troubled it. What happens? Okay. Now assume that you feed it a 4 kg cookie. It will be eaten."
+  },
+  {
+   "start": 2128.32,
+   "end": 2142.05,
+   "text": "Now you will come to the third child. Where will you feed the third one? The third one will not eat two. He wanted to eat four. Who did you feed four to? To the first one. Did the first one need to feed four kilos of kaku? No. What does greedy choice say?"
+  },
+  {
+   "start": 2142.05,
+   "end": 2171.17,
+   "text": "This man is asking you to give him more than 1 or more than 1. Then why are you not giving him 2? Why are you giving him 4? Means if a man comes and asks you to give him 10 rupees, then you give him 1 lakh. After that your entire money is over there. Now if another man comes and asks you to give him 10,000 rupees, then you shout at him that I don't have that much money. Then you tell him to give 1 lakh to the person who gave you 1 rupee. You should have given 1 rupee technically. So this is greedy. Will you ever regret this? No. If a man is asking for 1 rupee, you give him 1 rupee."
+  },
+  {
+   "start": 2171.17,
+   "end": 2200.32,
+   "text": "Then how will you regret? You won't think that you shouldn't have given him 1 rupee. Nothing will happen. So what you have to do in this question? Sort both the arrays. Sort the array with cookie in ascending order. Sort the array with children. Sort the array with children in ascending order. Now on the array with children. Assume that these are your children. Assume these are your children. 1, 2, 3. 0, 1, 2."
+  },
+  {
+   "start": 2200.32,
+   "end": 2228.9,
+   "text": "We will put our i here. Your cookie array is this. 1 and 1. 0 and 1. We will put our j here. Okay. Look at every child. Look at every child. Now you have to satisfy this child whose grade level is 1. Now look at this j. Now you are standing on this cookie. Now what? This cookie, this cookie j, if it is greater than or equal to this child's i,"
+  },
+  {
+   "start": 2228.9,
+   "end": 2248.1,
+   "text": "So the child is satisfied. So what will you do? You will do Result++. You will do J++ because the cookie is finished. And you will do I++ because the child is also satisfied. We will move on to the next child. If this does not happen. If this does not happen. Suppose this child has a grade level 2."
+  },
+  {
+   "start": 2248.1,
+   "end": 2275.74,
+   "text": "It is not satisfied. Now tell me one thing. If you are not able to satisfy two grade level children with this cookie, then will the children in the future be satisfied with you? It means that you have not been able to handle a two year old child. So will you be able to handle a five year old child? No. So don't increase the I in that. Stay on that child. Increase the cookie. Now you will need a bigger cookie. So simply do J++. What does it mean to say?"
+  },
+  {
+   "start": 2275.74,
+   "end": 2305.55,
+   "text": "Let's say someone asked you for Rs. 100 and you have Rs. 50 at that time. So, if a person with Rs. 100 didn't handle, will a person with Rs. 200 handle? No. A person with Rs. 500? No. What will you have to do? You will have to increase your money. You will have to do Rs. 50,000. That's why a person will handle. So, we will do the same thing. What will we do? We will sort both the arrays."
+  },
+  {
+   "start": 2305.55,
+   "end": 2334.72,
+   "text": "We will sort both the arrays. We will keep i at 0 and j at 0. i means child and j means cookie. After that what will we run? While i less than child.size i less than child.size yes and j less than cookie.size j less than cookie.size very good. After that what will we see? If cookie of j greater than equal to"
+  },
+  {
+   "start": 2334.72,
+   "end": 2359.55,
+   "text": "Child I means when can we satisfy this child? What will we do? Result plus plus. What is this result? How many children are happy? One child is happy, we increased it. After that, this child is happy. This cookie is also finished. Short and simple. Otherwise, simply J plus plus. What will we return in the end? Result. It is over. This was the question. This is the greedy approach. Come to the next."
+  },
+  {
+   "start": 2359.55,
+   "end": 2387.15,
+   "text": "Jump game. Now we will explain you two questions in which you will feel that it is a DP problem but it is a greedy problem. Why? We will tell you that too. There is a problem whose name is jump game. The way to understand this is a little different. First we will tell you the question given to you on the lead code. What have you been told? You have got an array. You have got a simple array. There are some numbers written in the array. 2, 3, 1, 1 and 4. Okay, good."
+  },
+  {
+   "start": 2387.6,
+   "end": 2416.99,
+   "text": "It tells you to start from index 0. The number written here is 2. What is written in the array of 0? It is written as 2. This means that you can jump from 0 to 2 steps maximum. It means that you start from 0 and someone will leave you at 0. Now the number written here is 2. This means that you can jump from 0 to 1."
+  },
+  {
+   "start": 2416.99,
+   "end": 2439.2,
+   "text": "Or you can go from 0 to 2. It's up to you. You can't go beyond this. You can't go from 0 to 3. Now suppose you have chosen that we will go from 0 to 2. You have directly come to index number 2. What is written here? 1 is written. This means that you can go from 2 index to 3 index maximum. There is only one choice."
+  },
+  {
+   "start": 2439.2,
+   "end": 2464.66,
+   "text": "If 0 was written here, then you would have got stuck here. You would not have been able to go anywhere. Suppose you came to index number 3. What is written here? 1 is written here. So you can go one more step from 3 to 4. Once you come to index 4, if you are able to reach the last index, you have to return true."
+  },
+  {
+   "start": 2464.66,
+   "end": 2492.03,
+   "text": "What you have to do is return true. So you will think that it will reach forever. No, it will not reach forever. See. 0, 1, 2, 3. 1, 0, 3, 4. See here. You started from 0. How far can you go from 0? One step. Because 1 is written. You came to 1. What is written on 1? 0 is written. Can you go further from 1? No, you can't. You are stuck. What is this? This is dead end."
+  },
+  {
+   "start": 2492.03,
+   "end": 2521.1,
+   "text": "If you are stuck at the dead end, you have to return false. This is the question. Now, after reading this question, you will understand that this is a question of DPI because this is a choice question. Here, it was written 2. So, we can go from 0 to 1 and 2 too. So, I will do one thing. We will go to 1 and see if we can reach from there or not. Then, we will go to 2 and see if we can reach from there or not. Okay, you can do this. But now, we will explain this question to you in a different type. Then, you will say that this is a question of DPI or not."
+  },
+  {
+   "start": 2521.94,
+   "end": 2547.7,
+   "text": "Imagine that these numbers are people. Suppose this is town 0, town 1, town 2, town 3, and town 4. This is the city you want to know. What is written here? 2, 3, 1, 1, 4."
+  },
+  {
+   "start": 2547.76,
+   "end": 2569.23,
+   "text": "Someone brought you here and made you stand. Now what does this 2 mean? Let me tell you. This is a city. Town 0 to Town 4. Where do you want to go? You want to go to Town 4. Now suppose this 2 is written here. This means that there is a person in this city who knows the way to the next two cities. Means knows the way to the next two cities."
+  },
+  {
+   "start": 2569.23,
+   "end": 2591.17,
+   "text": "Meaning, if 2 is written here, then if you come to town 0, then you will know the way to go to town 1 or town 2. You don't know the way to go to town 3. You will know the way to go to town 2. This is what it means. If you come to town 1, here 3 is written, this means that you will know the way to go to town 2 from town 1."
+  },
+  {
+   "start": 2591.17,
+   "end": 2617.02,
+   "text": "you will know the way to 3 and 4. You will ask this person and he will tell you. Every person in the town will tell you the way to the next town. Now why are you doing this? Why are you considering it as a choice? Suppose you come to town 0, you will know that it is written 2 here. That means we will know the way to town 1 and we will know the way to town 2."
+  },
+  {
+   "start": 2617.02,
+   "end": 2646.9,
+   "text": "So why are you considering it as a choice? That we will either go to town 1 or town 2. No. You are not knowing the way to town 1 or town 2. You are knowing the way to town 2. You are knowing the way to town 2. Understand this again. It is an important distinction. When you came to town 0, you came to your mind that okay, this person can tell us the maximum distance to town 2. So you were thinking that okay,"
+  },
+  {
+   "start": 2646.9,
+   "end": 2674.51,
+   "text": "Will it tell you the way to Town 1 or Town 2? No. It will take you to Town 2. If you reach Town 0 once, then it is a guarantee that you can reach Town 2. Why? Because the person is ready to tell you the way. He has already told you the way. So why don't you do this? Keep going city by city. Don't skip anyone. Go to every city. Stop there. Stop there. Okay?"
+  },
+  {
+   "start": 2674.8,
+   "end": 2701.04,
+   "text": "Ask that person how far you can take us to the maximum. Assume that you went to town zero. We will explain this again. This is very important. That is why we are taking more time to explain this to you. Assume that you came to town zero. Now how far do you know the way?"
+  },
+  {
+   "start": 2701.04,
+   "end": 2729.82,
+   "text": "till zero. In the beginning, we don't know anything. We will call it reach. My knowledge is till zero. Someone left it till zero. You ask a question to that person at town zero. Brother, tell me one thing. How far can you tell us the maximum? So, the person tells you that we will take you to town two. We will give you a map till town two. Okay. So, you get to know that where was my knowledge till now? Till zero. How far will this person take you? What is your goal?"
+  },
+  {
+   "start": 2729.82,
+   "end": 2759.55,
+   "text": "Last tak jaana na. Door tak jaana. Ek dam door jaana. Yeh admi bola ki hum aapko second town tak pahuncha denge bhaiya. To ek baat bataiye ki 2 jo hai aapke 0 se bada hai ki chota hai. Bada hai. To aap apne reach me 2 likh lijiye. Aap duniya me kuch bhi ho jaye. Aap 2 tak pahunch ke hi rahenge. Chahe aage 0 likha hua ho. Koi fath nahi padta hai. Duniya me kuch bhi ho jaye. Aapke paas town 2 tak jaane ki knowledge aa chuki hai. Lekin directly town 2 tak mat jaiye."
+  },
+  {
+   "start": 2759.55,
+   "end": 2788.02,
+   "text": "After Town 0, come to Town 1. Come to Town 1. You could have gone to Town 2. Don't go. Come to Town 1. Nothing will happen to you. Come to Town 1. You already know Town 2. You are relaxed. Come to Town 1. Ask the same question to this person. How far can you take us to the maximum? What will this person say to you? We are in Town 1 now. I have knowledge of 3 towns. So, I have the power to take you to 1 plus 3, 4."
+  },
+  {
+   "start": 2788.02,
+   "end": 2810.85,
+   "text": "Now tell me, what was your first knowledge? To reach 2. What is this man telling you? We can make you reach 4. Make your reach 4. No matter what happens in the world, you will reach 4. No matter what happens in the world, you will reach 4. Keep doing this."
+  },
+  {
+   "start": 2810.85,
+   "end": 2841.23,
+   "text": "As soon as you get to know that my reach is greater than or equal to n-1, make it true. What do you do? Make it true. But how will you get trapped? How will you catch the false one? You are saying that you cannot go to every town. See what it means. Now assume that this is town 0. The person here can give you 1. Very good. This is town 1. The person here is very good. He can give you 0."
+  },
+  {
+   "start": 2841.23,
+   "end": 2867.89,
+   "text": "This is town 2, and let's say the person here can take you to town 2, for some reason. How much knowledge did you have in the beginning? Zero knowledge. You came to town 0. You ask this person, tell me one thing, how far can you take us? So he said, I have 1, I will take you to 0 plus 1, 1. You made your reach to 1. Now no matter what happens in the world, you will reach town 1. So you reached town 1."
+  },
+  {
+   "start": 2868.43,
+   "end": 2897.95,
+   "text": "You ask the same question to the person from town 1, that brother, you tell me, how far can you reach? So he says, brother, my knowledge is completely zero, so we cannot reach you anywhere. So your knowledge did not change, your knowledge remained one, unfortunately. If something was written here, then your knowledge would have grown, but your knowledge remained one. Now, if you come to town 2, if your I, the for loop is running, comes to town 2, but you come to know that my reach,"
+  },
+  {
+   "start": 2897.95,
+   "end": 2911.22,
+   "text": "is less than i. Return false immediately. What is this? Assume, when you leave town 1, with what knowledge did you leave?"
+  },
+  {
+   "start": 2911.22,
+   "end": 2935.86,
+   "text": "One, unfortunately, because this person didn't say anything. You reached town 2, but how did you reach town 2? Your knowledge was up to 1. So this means that you are wrong. This means that you shouldn't have been in town 2. What do you do immediately? You do return false. What do you do immediately? You do return false. This means that after reaching any town, you will have to check that my knowledge"
+  },
+  {
+   "start": 2935.86,
+   "end": 2953.6,
+   "text": "whether he was going to come to this town or not. If he wasn't, then how would we have come here? And if he didn't come here, then how would we go ahead? We won't be able to go. If we can go, then it's very good. Before leaving the town, ask the man there, tell me, how far can you take us?"
+  },
+  {
+   "start": 2953.6,
+   "end": 2981.81,
+   "text": "He will tell you that we can take you to a certain town. If your knowledge is more than that already, means suppose your knowledge was up to 5th town. He is saying that we will take you to the 3rd town. You will say okay fine, we already know the 5th town. Don't do anything. But if your knowledge was to reach the 3rd town. If you get someone who is saying that we can take you to the 10th town. Immediately take your knowledge to the 10th town. Because no matter what happens in the world, you will definitely reach the 10th town. So this is the question."
+  },
+  {
+   "start": 2981.81,
+   "end": 3012.16,
+   "text": "its code is very easy, its code is nothing int reach is equal to zero in the beginning you have knowledge up to zero someone will bring you to zero and leave you ok start i is equal to zero i less than n i plus plus first of all what you have to check if my reach if my knowledge is less than i return false finished now update your knowledge reach is equal to max of reach and"
+  },
+  {
+   "start": 3012.16,
+   "end": 3035.63,
+   "text": "Where can this person take us? If, as soon as your reach is equal to n-1 or greater than equal to, return true. Close it. Outside the loop, write return true. It won't happen, but still write it. That's it. So what was this? This was not a DP, this was a greedy problem because"
+  },
+  {
+   "start": 3035.98,
+   "end": 3063.09,
+   "text": "It's not like you are losing weight by asking questions to everyone. You will lose some weight if they ask you. Why do you have to do this that if the town is in zero, then we will go to one or two. No, go from one to two. Ask the one who is in one. So that's it. So this town is not like one is here, one is there. No, all the towns are in line. Go by line. Ask every town member that how far can you leave us. He will tell you. And if he will tell you, then write your knowledge."
+  },
+  {
+   "start": 3063.09,
+   "end": 3089.84,
+   "text": "Go to every town and check if you had the sense to come to this town or not. If you didn't, then turn it to false. You won't be able to move forward. You have come to the wrong town. Let's move on to the last question. Fractional knapsack. There was a knapsack in DP as well. What did it mean? Zero-one knapsack. It means fractional knapsack. This is the distinction due to which zero-one knapsack is taught in DP and this is taught in greedy. Let me tell you."
+  },
+  {
+   "start": 3090.26,
+   "end": 3120.32,
+   "text": "If you remember DT, then we will repeat the question once again. What is a knapsack? You have items. Each item has a weight of 10 kg. From each item, you get a value of 60 rupees. You have a capacity. Knapsack means a bag. A bag means a knapsack. A knapsack has a capacity of 1 kg. You cannot put more than 50 kg of things in your knapsack. If you want, then what is the total weight of all three? 60 kg."
+  },
+  {
+   "start": 3120.32,
+   "end": 3144.66,
+   "text": "You can't keep all three items, it will break. You had to keep an item of up to 50 kg and you had to take maximum value. In DP, we had done this that you couldn't take a decision at once that we will take this item. Because we had told you two types of algorithm that you can do. If someone thinks that there is capacity, then"
+  },
+  {
+   "start": 3144.66,
+   "end": 3174.59,
+   "text": "We will take things with less weight. We will increase things with less weight. But it didn't work in DP. Because now we will take things with less weight. It is possible that its value is also very low. It is possible that its value is very low. It is possible that there is one item. Whose weight is a little more. But its value is enormous. If you would have taken only that item. Then it would have made more profit. So we saw that no it will be wrong. This algorithm will not work. That we cannot take less weight. The second natural tendency was. That we have to increase the value."
+  },
+  {
+   "start": 3174.59,
+   "end": 3203.55,
+   "text": "let's take the one with maximum value. Again, we saw in DP that this also won't work in the future. Why? Because it is possible that you take one with maximum value, and it is possible that it has a lot of weight, and after that there is no choice to take anything else. But instead, if you had taken 5 small items, then it would have been more profitable. So we saw in DP that both of these don't work. Our natural instinct says that if we want to do this, then what is the best option for less weight and more value?"
+  },
+  {
+   "start": 3203.55,
+   "end": 3230.61,
+   "text": "More value, less weight. More value, less weight. But both the algorithms didn't work in DP. Now, the name of this question is Fractional Knapsack. This is what changes everything. Now, you don't have to take items 0 or 1. You can take any fraction of it. What does fraction mean? You take that item."
+  },
+  {
+   "start": 3230.61,
+   "end": 3254.26,
+   "text": "You can break it. If you break it, then its weight will also break and its value will also break. For example, if there is an item of 10 kilos and you get 100 rupees from it. One item is this. What did DP say? What did DP say? If you want to take it, then take it completely. Take 10 kilos and take 100 rupees. What does fractional say?"
+  },
+  {
+   "start": 3254.26,
+   "end": 3282.9,
+   "text": "Assume that you have only 5 kilos of space left. So DP used to say no. He used to say 0-1. You can't take it. 5 kilos of space. We won't let you take 10 kilos. What does greedy say? Do one thing. Break it in half. If you are getting 100 rupees in 10 kilos. Then do one thing. Take only 5 kilos and take 50 rupees. And put it. That's it. Now your instinct. You can apply this. Which item do you have interest in?"
+  },
+  {
+   "start": 3282.9,
+   "end": 3312.83,
+   "text": "whose weight is as low as possible and whose value is as high as possible. So let's do one thing. How many items do you have? 10, 20, 30. So let's make a table here. Value and weight. 1, 2, 3. What is the value? 60, 100, 120. What is the weight of all three? 10 kg."
+  },
+  {
+   "start": 3312.83,
+   "end": 3342.78,
+   "text": "20 kg, 30 kg. Your capacity is 50 kg. Okay? What do you want to take? The minimum weight and maximum value. Maximum value. So why not make a ratio here? Value by weight. This will tell you how valuable a product is. Suppose if a product gives you 100 rupees in 1 kg. And there is another product which gives you 1000 rupees in 1 kg."
+  },
+  {
+   "start": 3342.78,
+   "end": 3371.84,
+   "text": "Which one is more valuable? This one. A gram of saffron costs Rs. 1000. And a gram of iron costs Rs. 10. What is more valuable? Saffron. Because it has more value in its weight. Do you understand this? Why is gold valuable? 10 grams of gold is worth Rs. 1 lakh. 10 grams of silver is a little less. You are understanding this, right? This is it. Take out the ratio. Whose? Value by weight. What is it?"
+  },
+  {
+   "start": 3371.84,
+   "end": 3400.54,
+   "text": "6, 100 by 20, 5, 120 by 30, 4. Who is the most valuable item? This one. The most valuable item is this one. Now, start taking them one by one in order of their valuability. The most valuable is 6 kg. How much is its weight? 10 kg. Take this whole. Take this whole as long as possible. So, what will be your 50 kg? It will be 40 kg."
+  },
+  {
+   "start": 3400.54,
+   "end": 3430.43,
+   "text": "And what is added to your value? 60 is added. Very good. Which is the next valuable item? 5. How much is its value? 20. Can we buy it completely? Yes, we can buy it completely. Buy it completely. 40 kg is reduced to 20 kg. And the value you got from this is 100 rupees. Come to the next item. It has 4 valuabilities. How much is its weight? 30. Can you buy it completely? You can't buy it completely because it is 20 kg. So, DP gives it a discount that you can't buy it."
+  },
+  {
+   "start": 3430.43,
+   "end": 3459.28,
+   "text": "It says fractional. Take as much as is left. Now, how will you know how much you have to take? Simple math. In 30 kilos, you are getting 120 value. How much value will you get in 20 kilos? 120 by 30 into 20. You had studied in unitary method, right? So, how much is this? This is 80 rupees. You will get 80 rupees from this. And your entire knapsack will be over. What is the answer? 160 and 80. 240 is your answer."
+  },
+  {
+   "start": 3459.28,
+   "end": 3485.65,
+   "text": "Solve it with this simple math, there is no need to explain anything. What do you have to do? You have to make a ratio and sort it in descending order. Keep taking it till it is possible. If it is not possible, then do one thing, take the remaining capacity and adjust its profit according to that and return your answer. That is why it is called fractional. It is allowed to take it in fractions."
+  },
+  {
+   "start": 3485.65,
+   "end": 3511.31,
+   "text": "And that is why this greedy works. The greedy that we had thought of and could not apply in DP, the same greedy, the combination of these two is applied here. If you want less weight, then you need more value. How will you know? You will know by the ratio. What does the ratio tell you? What is the price of this item of 1 kg? The item of which 1 kg is more valuable, the overall item is more valuable, you should buy that item completely."
+  },
+  {
+   "start": 3511.31,
+   "end": 3538.58,
+   "text": "The item whose 1 kg is less valuable, you can take it later if you want to take its fraction. That's why the question of the greedy algorithm is fractional and the question of the zero-one is DP. Because in DP, there was zero-one. In DP, you couldn't break it. In DP, fractional was not allowed. So there was no chance of making a ratio in DP. And both don't work separately. You can't work by focusing on one thing that if you use less weight, it won't work. If you use more value, it won't work."
+  },
+  {
+   "start": 3538.58,
+   "end": 3557.76,
+   "text": "Combine both of them. Then it will work. And the only way to combine is to make it fractional. So this is fractional lapse. Go and do it. We are not coding it. It is a very stupid code. It is a stupid type of code. So that is why we are not coding it. And this is the greedy algorithm. So we have told 4 questions. If you want to ask more questions, you can do it."
+  },
+  {
+   "start": 3557.76,
+   "end": 3586.77,
+   "text": "we will add more questions in the sheet so go and make it and the most important thing is to think about all these things that why did you apply greedy when you apply greedy then try to contradict yourself that if we apply this greedy then there will be no problem in the future if you think that there will be a problem then that is not a greedy question if you don't think that there will be a problem then that is a greedy question how to think that a greedy question is simple the first thing that comes to your mind as soon as you see the question is yes let's do this that is greedy greed means greed"
+  },
+  {
+   "start": 3586.77,
+   "end": 3598.72,
+   "text": "So the first thought that comes to your mind is that if it is like this, then we will do this. That is greedy. There is not much rocket science in it. So let's meet in the next lecture. It has been a very long lecture."
+  }
+ ]
+}

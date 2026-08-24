@@ -1,0 +1,319 @@
+{
+ "video_id": "zzu-k85RLGs",
+ "title": "The Best Video To Learn HEAP Data Structure | DSA Patterns 2026 CPP JAVA Python",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1593,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 28.78,
+   "text": "So, watch the video very carefully. It is possible that the video did not come today. Today is Friday night. So, it took us 2 hours to shoot this video. Why? It took us 2 hours. It was not that we did not know. But we did not want to remind you that when this happens, then that happens. No. So, we thought many times that how to explain it. Did you understand that? So, first we tried something else. Then we tried something else. Then it did not work. Then we deleted it. So, in total, it took us 2-2.5 hours. So, it is possible that this video will not be uploaded today. When we are doing this. Watch it on Friday 23rd January."
+  },
+  {
+   "start": 28.78,
+   "end": 42.64,
+   "text": "So, it may happen tomorrow. But, do watch this video. It is very well made. Watch it completely. And, we are going to read the heap phrase-wise. So, those who have missed the previous video, do watch it. And..."
+  },
+  {
+   "start": 42.64,
+   "end": 68.05,
+   "text": "Don't look at it if you know the syntax. But you should know these 5 phases. Just like in binary search, we went phase by phase. That first this happens, then this happens, then that happens. Similarly, there is a phase in heap too. Top k, k closest, heap as pointer, greedy plus heap to heaps. So these are all small patterns in themselves. When you will do 2-3 questions in all of them, peculiar questions. Then you will understand that yes, now this happens. So this is very..."
+  },
+  {
+   "start": 68.05,
+   "end": 92.22,
+   "text": "Return on investment is very good to read. So, watch it and give it a like. We never say it, but today we are watching it. Give it a like. Let's go. Let's start phase 1. So, in phase 1, whenever you... This phase is very easy. Same like binary search. So, whenever you see that top K is written there. Some Kth, smallest Kth, largest Kth, sometimes best Kth or worst Kth."
+  },
+  {
+   "start": 92.22,
+   "end": 118.74,
+   "text": "either you have to find the kth thing which is either the smallest or the greatest or you have to find the total k things which is the best in the whole class or in the whole set which is the best we call this phase 1 and this 99.9% tells you that it will take heap but the distinction is that when we were studying we were reminded that if kth is the smallest then we have to use this heap and do this if kth is the largest then we have to use that heap and do that, don't do that"
+  },
+  {
+   "start": 118.74,
+   "end": 143.57,
+   "text": "So remember one thing that whenever you see this in the question, then you should at least think about the heap. But why does it happen? What is the reason that the heap gets stuck in it? So see, we have always explained to you that try to think that if you are learning any pattern or any data structure, then what is the heap? It is a data structure. What power does the heap give you? What did we tell you in the last lecture? The heap is of min or max type."
+  },
+  {
+   "start": 143.7,
+   "end": 171.1,
+   "text": "What can the heap tell you? What is the power of the heap to tell you? So, the heap can tell you the smallest or the greatest, whatever is in it. Whatever data you insert in the heap, its smallest or its greatest, depending on whether it is max or min, it will tell you. Apart from this, it doesn't know anything. You can't do second smallest or third smallest. So, this is absolutely counter-intuitive because the question we are doing today is that find kth smallest in array."
+  },
+  {
+   "start": 171.1,
+   "end": 200.91,
+   "text": "kth smallest in array. So, you will say that you said that either you will get smallest or you will get greatest. First, second, third, you will get smallest. No. How will you get kth smallest? So, it should not have heap at all. Yes. After looking at the top, you will feel that it should not have heap at all. But let's see the question a little. And stay a little. As you move ahead of the question, you will start to open some things. So, today's question is that you have given a simple array. And you have given an array which looks like this. So, quickly we have made an array. 10, 5."
+  },
+  {
+   "start": 200.91,
+   "end": 228.37,
+   "text": "4, 3, 48, 6, 2, 33, 53, and 10. So this is your array. You can see that it is an unsorted array because there is nothing of a sorted array. So what is a very bad solution for this? You have given k is equal to 4 and you have to find its 4th smallest element. What does 4th smallest mean? 1st smallest means the smallest."
+  },
+  {
+   "start": 228.37,
+   "end": 257.74,
+   "text": "2nd will be slightly bigger than that, 3rd will be slightly bigger than that, 4th will be slightly bigger than that. Okay, so you have to find that, which means, if you write this array in sorted, if you sort this array, if you sort this array, which will look something like this, which will look something like this, first 2, 3, 4, 5, 6, after 6 comes 10, 10, then comes 33, and then 48, and then 53. And we think it's done, 0, 1, 2."
+  },
+  {
+   "start": 257.74,
+   "end": 281.63,
+   "text": "3, 4, 5, 6, 7, 8, 9. So, what is this array? It is sorted. If you see this sorted array, then its fourth element, its fourth element, from left to fourth element, what will happen to it? kth smallest or fourth smallest. So, one solution is that you sort the array and after sorting the array, array of, if k is equal to 4, then which index did we take? Third index, because it starts from 0. So, array of k minus 1 will be your answer."
+  },
+  {
+   "start": 281.63,
+   "end": 311.65,
+   "text": "If you sort the array once, then the return array of k-1 will be your answer. So this is a very good solution, very good, but it will not work in the interview. Why? Because you are sorting it, so you must be thinking that it is not such a smart solution. I mean, it is not that you think something very unique, okay. So by doing this, this is your question. Now let's see how to think about it. So don't always remember, think something, think. Come, let's see this array a little bigger. Suppose what is this array? This array is a class, you are a class teacher and these are the marks of the children."
+  },
+  {
+   "start": 311.65,
+   "end": 337.1,
+   "text": "10 kids have got some marks. They have got marks like this. 10, 5, 4, 3, 48, 6, 2, 33, 53, 10. So, you can see that all kinds of kids have got some marks. What is your job? To find the 4th smallest marks as a class teacher. Okay? Okay."
+  },
+  {
+   "start": 337.1,
+   "end": 364.82,
+   "text": "See, what is fourth smallest marks? Fourth smallest marks. If we divide this class into two groups. If we divide this class into two groups. In which, see, how many total children are there? First of all, see, how many total children are there? You have ten total children. What do you have to find? Fourth smallest. If we divide this class into two groups. In which, in one group, the four children, the four children who got the lowest number."
+  },
+  {
+   "start": 364.82,
+   "end": 392.18,
+   "text": "In one group, listen to me carefully, who will be in group 1? The 4 kids who got the lowest number, so that will be one group. And how many are remaining? 6 kids in a different group. So, the 4 kids who got the lowest number are these kids. This man got 2, this man got 3. Now we don't know whether he got from 100 or not, he is in a bad condition. So these are the 4 kids who got the lowest marks. These are the 4 kids, no one else has it. Let's try to make a group of these 4."
+  },
+  {
+   "start": 392.18,
+   "end": 416.46,
+   "text": "We are trying to divide the class into two groups, in which this is in one group. 2 number, 3 number, 4 number, 5 number. Right? 4 kids came here, who else played? The other 6 kids will stay in that group. Obviously, the other 6 kids will stay in group 2. So, these 10 kids, this 48 one, this 6 one, this 33 one, this 53 one, and this 10 one."
+  },
+  {
+   "start": 416.46,
+   "end": 441.79,
+   "text": "So you can see how many groups are divided into two groups. In one group, there are four children who have got the lowest number. In one group, there are six children who have got a little more number. Now what is your answer? Your answer is in this group, whoever has got the highest number, that is your answer. In this group, who has got the highest number? Five. What should be your answer? Five."
+  },
+  {
+   "start": 441.79,
+   "end": 466.38,
+   "text": "See, we haven't done anything magical here. You just sort the array. The first 4 kids, meaning the 4 kids who got the lowest number, did it there. The remaining 6 kids did it here. So what should be your answer? The maximum of group 1. You should have the maximum answer of group 1. Keep one thing in your mind. Okay? So see, now your question has shifted a bit. What has shifted is that as a teacher, as a teacher you..."
+  },
+  {
+   "start": 466.38,
+   "end": 482.86,
+   "text": "you have to find 4 guys who got the lowest score in the class 4 guys who got the lowest score in the class and the maximum of that will be your answer as we have seen that if you divide it in 4-6 in any way 4 got the lowest score out of that you will say that this is my 4th smallest"
+  },
+  {
+   "start": 483.34,
+   "end": 511.07,
+   "text": "So do one thing, as a teacher, you have to look at the whole class. Because you will know who is small and who is big only when you will look at all the marks. And you can't sort, the children are sitting randomly like this. What do you do? How many children do you want? Why are we focusing on group 1? Because if you get the whole group 1, 2, 3, 4, 5. You will say that 5 is the biggest, 5 is the answer. That's why we are focusing on group 1. Leave group 2, the rest that is left is group 2. Look, one thing you will notice that of group 1."
+  },
+  {
+   "start": 511.07,
+   "end": 538.9,
+   "text": "all the kids are younger than group 2 in marks because it is obvious which are the kids in group 1 who got the least marks in the class such 4 kids who got the least marks in the class are in group 1 so it is obvious that they are younger than group 2 kids so group 2 kids must have got more marks okay so you do one thing just for simplicity's sake that you are a teacher how many kids do you want? 4 kids and at the end which are the 4 kids who got the least marks? so you do one thing on the first 4 kids"
+  },
+  {
+   "start": 538.9,
+   "end": 565.62,
+   "text": "Now see, and make the first 4 kids stand in a line. Make the first 4 kids stand in a line because you have to do it. You can't just tell them by looking at them that they belong to group 1 or group 2. Now you must be thinking that yes, 5 belongs to group 1, so we will keep 5. We will keep 4, 3. No. It is not written on every kid's forehead that it belongs to group 1 or 2. When you will see the whole array, then you will know. Either you will have to sort. You will not know from the beginning what it is."
+  },
+  {
+   "start": 565.62,
+   "end": 595.52,
+   "text": "You do one thing. Look at the 4 children of the beginning. Because at the end, how many children do you want? You want 4 children. Okay. Stand the 4 children of the beginning in a line. And if possible, just to understand. Stand them in ascending order. Stand them like this. Look. 2, 4, 5. Sorry, it's not 2. It's 3. What do you do to them? 3, 4, 5 and 10. Okay. And hold this child. Hold this child as a teacher. Hold this child. Because he is your largest. He is your..."
+  },
+  {
+   "start": 595.52,
+   "end": 620.51,
+   "text": "Largest. Okay. If your class was only this much, if there were only 4 kids in your class, then this would have been your answer. If there were only 4 kids in your class and someone asks you which is the 4th smallest, then what is the 4th smallest in 4 kids? Largest. So this would have been your answer, carefully. That is why we have caught this because if the class would have ended here, this would have been your answer. What is this? This is your potential answer."
+  },
+  {
+   "start": 620.51,
+   "end": 650.38,
+   "text": "Unfortunately, the class is not over yet. The class is not over yet. So, keep in mind that this is your answer. Why? Because if you write it in the sorted order, then how will it look? First smallest, second smallest, third order and fourth smallest. So, this is your answer. Now, let's look at the children one by one. And let's see if it is right to keep that child or not. Let's see what happens in a while. Come, let's see this child of 48. Let's see what happens to this child of 48. Now, this child of 48. Sorry, we don't want to do yellow."
+  },
+  {
+   "start": 650.7,
+   "end": 680.43,
+   "text": "try to keep this 48 kid in your lineup, you just need 4, but just try for a while, where this 48 kid can fit, where this 48 kid can fit, so see, this 48 kid is the biggest kid of your lineup, the one who got the biggest number is 10, the one who got the biggest number till now is 10, he is bigger than that, he is bigger than that, so it is obvious that he will be bigger than 3, 4, 5, because you have kept in your lineup that 3, 4, 5 and then 10,"
+  },
+  {
+   "start": 680.43,
+   "end": 706.61,
+   "text": "So, 48 is bigger than 10. So, if you want to keep it, if you have 4 slots, but just for the sake of argument, you want to keep it, then where would you be able to keep it? You would be able to keep it here. You would be able to keep it after 10. Okay. So, can this 48 ever be the answer in this class? Till now, how many children have you seen? 1, 2, 3, 4, 5. After seeing 5 children, you came to know that in only 5 children,"
+  },
+  {
+   "start": 706.61,
+   "end": 723.39,
+   "text": "48 is here. 48 is in 5th position. Means, 48 is at least bigger than these 4. How did we know? Just by looking at this 10. What is this 10? The one which you made a group of 4 kids in the beginning, it is the biggest. So, no matter where 48 comes, 48 is in 5th position right now. Means,"
+  },
+  {
+   "start": 723.39,
+   "end": 745.54,
+   "text": "48 can't be your answer because which element do you want? Which child do you want? Which is the 4th smallest? So, no matter what 48 does, it can't be the 4th smallest. Why? Because 4 kids are already smaller than that. You have already seen in the class. The class is very big. There is a very big class left. Many people are smaller than 48. You have already seen that at least 4 people are smaller than 48. Means, 48..."
+  },
+  {
+   "start": 745.54,
+   "end": 773.82,
+   "text": "Most likely, it can be 5th smallest. It can't be 4th smallest. So, do you need to waste a little energy on 48? No. Why? Because if 48 comes, it will come here. It will become a daughter-in-law. It will progress a lot in life. So, it can be 5th smallest. It can't be 4th smallest. Why? 4 children are already there. So, they are small. Ignore 48. Ignore 48 completely. Okay. Now, come to 6. Now, look here. You will feel that yes. Come to 6."
+  },
+  {
+   "start": 773.82,
+   "end": 793.02,
+   "text": "Now, do the same thing. If you want to place 6, then where would you place it? So, look here. What do you have? This is the largest child in your current bench. If you want to place 6, then where would you place it? Look, 6 is smaller than 10. So, you cannot place 6 here."
+  },
+  {
+   "start": 793.02,
+   "end": 817.3,
+   "text": "You could not place 6 here. If you wanted to keep the line-up of sorting intact, you could not place 6 at the end. Why? Because 6 is smaller than 10. We don't know after that. But one thing is certain. If you had to keep 6 in this line-up, you would have to shift this 10. First of all, you would have to keep 6 here and shift this 10."
+  },
+  {
+   "start": 817.49,
+   "end": 843.81,
+   "text": "10 has to be shifted because 6 doesn't have to be bigger than anyone else. 6 is smaller than 10. 6 is smaller than 10. So earlier when you assumed that my potential answer can be 10, 10 can't be your answer. Why can't 10 be your answer now? Because 10 was already here. So 10 was bigger than 3 people so you thought that yes, the answer that is bigger than 3 can be my answer because it will be 4 smallest. But now you came to know that 10 was bigger than these 3. 10 was also bigger than 6."
+  },
+  {
+   "start": 843.81,
+   "end": 866.9,
+   "text": "10 was greater than 6. So, your answer is not 10. So, the same logic which was with 48, now 10 is greater than how many people? 4 people. So, 10 can't be an answer now. Yes, 6 can be an answer. There is no 6 answer. In this case, you think that yes, 6 can be an answer. When? When you have seen so many classes. Which ones? These ones. When you have seen these classes, what did you know?"
+  },
+  {
+   "start": 866.9,
+   "end": 896.69,
+   "text": "10 can't be the answer. Which was 10? The largest element in your bench. So, what did you do? You removed 10. 10, you can't be the answer. Yes, 6 can be the answer. You put 6. Meaning, you removed 10 and pushed 6. Okay? Okay. You are just like a teacher. Remove it. Now, your 6 is the potential answer. Come to the next element. 2. 2 is actually the element of group 1. See what will happen. Now, see. 2. Again, do the same thing."
+  },
+  {
+   "start": 896.69,
+   "end": 926.24,
+   "text": "Do it with 6. See, we need other things. We have written this in sorted order to make you understand. We don't need it. Why we don't need it, we will tell you. 2 is smaller than 6. Means, 6 was already bigger than 3, 4, 5. Means, in the current case, 6 was sitting on the bench in the 4th position. So, it was already bigger than 3 people. Now, it comes to know that we are also bigger than 2. So, 6 can do anything now. Now, 6 can't be the answer. Why? Because 6 is now bigger than 4 people."
+  },
+  {
+   "start": 926.24,
+   "end": 953.98,
+   "text": "At least 3, 4, 5 is bigger than 2. So same logic. 6 can't be the answer. Why? Because if you want to put 2 here, then you have to shift 6. See, shift 5 also has to be done. They will do it. They will do it. They will do 5 now. But 6 can't be your answer at all. 6 can't be your answer at all. So first of all, you have to remove 6. And put 2. Now your line-up is not maintained here. We know. So now what do you do?"
+  },
+  {
+   "start": 953.98,
+   "end": 983.1,
+   "text": "You put 2 somewhere here. And just for maintaining, which child did you always hold? The largest child. So 5 is your largest child. Now 5 can be your answer. 5 can be your potential answer. Bringing 2 doesn't mean that 2 will be your answer. No. 2 just tells you that 6 can't be your answer. Remove 6. And now who is the biggest child in this bench? 5. So that can be your answer. Why? Because in the current case, 5 is bigger than 3 people. In the current case, 5 is bigger than 3 people. Okay."
+  },
+  {
+   "start": 983.1,
+   "end": 1010.86,
+   "text": "Let's see the next one. 33. Same logic. 33 is bigger than 5. 5 is already bigger than 3 people. 33 is bigger than them. So 33 is bigger than 4 people. So no matter how much 33 tries, it can become 5th smallest. It can't become 4th. No need to do anything. Ignore this. Ignore this. 53. Same logic. 53 is bigger than 5. So if 53 comes anywhere, then 53 will be able to come here and not anywhere else. Ignore 53. 10."
+  },
+  {
+   "start": 1010.86,
+   "end": 1032.93,
+   "text": "5 is more than 5 means 5 was already more than 3 people, 10. In the last, your array is over, your array is over. What is left in your potential answer? 5. Was your answer 5? Yes, your answer was 5. Yes, your answer was 5. So what will you do? My answer is 5. So when you will do this as a teacher, you will get the answer. Now, what do you do in this? 2-3 things come."
+  },
+  {
+   "start": 1032.93,
+   "end": 1052.51,
+   "text": "Do you need to keep the whole K-size bench in a sorted order? No, no, no. In every step, what were you standing on and which child were you looking at to make a decision? Looking at the largest child. Looking at the largest child. Looking at the largest child and making a decision. Look."
+  },
+  {
+   "start": 1052.51,
+   "end": 1078.16,
+   "text": "Is 2, 3, 4 sorted or not? It doesn't matter. Because you always take a decision based on which child. Remember, when we came to 48, we took a decision based on which child? Based on 10 because 10 was the largest. When we came to 6, we took a decision based on which child? Based on 10. Which child did you fly? The largest. You flew 10 and put 6. Now 6 became your largest. We came to 2. We came to 2. Based on which child did you take a decision? Based on 6."
+  },
+  {
+   "start": 1078.16,
+   "end": 1104.0,
+   "text": "6 was removed and 2 was added. And after adding 2, what was the next largest of that bench? 5. After that, who was the decision made? 5 was taken. If someone is bigger than 5, then 5 is the largest. If 5 is the largest among these 4 people, it means that it is bigger than 3 people. If someone is bigger than 5, then your answer will not be possible. So how are you taking the decision? By looking at the largest."
+  },
+  {
+   "start": 1104.0,
+   "end": 1133.42,
+   "text": "Do you always need something of the entire bench? No. You always need the largest in the entire bench. And finally, what is your answer? The largest of this bench is your answer. What we are seeing repeatedly that in a set of data, you need the largest. What is this? This is called Max Heap. Let's see how it will be made with Max Heap."
+  },
+  {
+   "start": 1133.49,
+   "end": 1161.92,
+   "text": "So, your answer was 10, 5, 4, 3, 48, 6, 2, 33, 53, 10. Right? You have made a max heap. What is this? You have made a max heap. What can a max heap give you at any time? Largest. That's it. It can't give you anything else. So, what did we say in the beginning? What is this max heap? This is your max heap. This is your max heap. What did we say in the beginning? Put the 4 people of the beginning. So, if we put the 4 people of the beginning, then 10 will come and"
+  },
+  {
+   "start": 1161.92,
+   "end": 1186.66,
+   "text": "5, 4, 3. 5, 4, 3. It doesn't matter if you are in any order. What will you always get from the top? You will get 10. Okay. Let's do it one by one. 48. 48 is bigger than my 10. It means 10 is bigger than 3 people. Because how big is the size of the bench? How big is the size of the bench? K. K. 4. It's 4 size. It means 10. 10. It's bigger than my 3 people. 48 is bigger than 10. So 48 can't be the answer. 6."
+  },
+  {
+   "start": 1186.66,
+   "end": 1210.38,
+   "text": "6 is smaller than 10, so 6 can be the answer. So what will we do? We will make it pop, pop means largest, and enter 6. Now 6 is largest. 2 is smaller than 10, so 6 can't be the answer. What will we do? We will make 6 pop and enter 2."
+  },
+  {
+   "start": 1210.45,
+   "end": 1233.76,
+   "text": "But after entering 2, see 2 is not the largest, now the largest 2 is not left, now what has become the largest? Now the largest has become 5. So now when you query the top, you will get 5, not 2, you will always get the largest, it will do, we taught how it does it last time. 33 is bigger than 5, nothing, 53 is bigger, 10 is bigger, no. In the last, see in your bench, in your heap,"
+  },
+  {
+   "start": 1233.76,
+   "end": 1262.56,
+   "text": "Which kids have come? They are the same kids who got the lowest number in the class. Those 4 kids who got the lowest number. 2, 3, 4, 5. And those 4 kids who got the lowest number. What should be your answer? 4th smallest. Meaning? 4th smallest means the largest kid of this group. The one who got the highest number in this group. Meaning the kid who topped in group 1. What is its answer? 5. Again, from where will you get it? Largest. That's why this question is of max. That's why this question is of max."
+  },
+  {
+   "start": 1262.56,
+   "end": 1283.74,
+   "text": "is of heap, so people remember that if kth is smallest then it is max heap and if kth is minimum then it is not. It is because of this. Because when you are maintaining a line-up, when you are dividing the children into a group and you are taking the decision according to this child that the next child is useful or the next child is useless. If the next child is talking about kth smallest, if this child"
+  },
+  {
+   "start": 1283.74,
+   "end": 1303.17,
+   "text": "is bigger than this largest, then this can never be the answer. It is obvious that this can never be the answer because this child is bigger than 3. The next child is also bigger than this, so the child will not be the answer. But if this child is small, then what do you get to know? You don't get to know that the incoming child is the answer. You get to know that this can never be the answer."
+  },
+  {
+   "start": 1303.17,
+   "end": 1329.78,
+   "text": "Because it was already bigger than 3, it was already in the limit, in the perfect condition. Another child came who is smaller than this. So this will have to shift a little in the grand scheme of things. So this answer can't be done. Come, see its pseudocode. Come, what to do? So what you have to do? You have to get an int, ket, smallest. If you don't understand this, then tell us."
+  },
+  {
+   "start": 1329.78,
+   "end": 1359.39,
+   "text": "And if you have understood this, then definitely submit KthLargest. KthLargest is just the opposite of this. Think about what you can do in it, then you will know. int n and int k. So, first of all, what do we want to make? We want to make a max heap. So, make a max heap. This is how a max heap is made. Priority, q, int, pq. Java and Python have already told you how it is made in the previous lecture. So, you can see the syntax of that now."
+  },
+  {
+   "start": 1359.39,
+   "end": 1376.67,
+   "text": "Again, there is no size of the heap. We said that the size of the bench is 4. No, there is no size of the heap. There can be only 4 elements in the heap. No. Why are we saying size 4? Because in the beginning, we pushed 4 children and their size became 4. Now see, every child, either we are ignoring it,"
+  },
+  {
+   "start": 1376.67,
+   "end": 1406.56,
+   "text": "Either we are ignoring it, meaning its size is 4, or if you want to push something, you are first removing this child and then pushing it. Effectively, the size of your bench is never more than 4. That is why it is 4. It is not a hard and fast rule that the size is 4. No. You are doing it in such a way that its size is not more than 4. Okay. What you have to do is, you have to give the kth smallest array. So, what did the teacher do first? He used to put 4 children. So, int i. After taking 4 children, i is equal to 0."
+  },
+  {
+   "start": 1406.56,
+   "end": 1432.64,
+   "text": "i less than k, i plus plus. What do you do with this? pq dot push array of i. Put it in the under zone. And which child did you keep your eyes on? On the largest child. Okay. Now, I used to move forward. i is equal to k, means I used to look at the rest of the class. i plus plus. If array of i is bigger than my pq dot top, then this is a useless child. He won't be able to do anything. This child won't be able to do anything. Even if he is equal, he won't be able to do anything."
+  },
+  {
+   "start": 1432.64,
+   "end": 1460.5,
+   "text": "Even if it is equal, it won't be able to do anything. Suppose your 4 kids are in the heap, they are like this. 2, 3, 4, and 5. Suppose you are sitting here. If you know an incoming kid who is 5, then there is no use in pushing him. There will be no use in pushing him. If you would have pushed him, what would you have done? If you would have pushed him, he would have been 5. If you would have pushed him, he would have been 5. If you ignore him, nothing will happen. That's why it doesn't matter. If this is the case, then continue. Ignore this kid."
+  },
+  {
+   "start": 1460.5,
+   "end": 1487.23,
+   "text": "but if this is not the case, then the child sitting at the top, the 10 that was sitting, that can't be the answer at all so first of all, you have to pop the pq. and after that, you have to push this new child you have to push this new child and because of this priority, he will take care of himself that he will arrange maximum and minimum just like the pyramid just like the pyramid, you don't have to do any hard work and close this, what will you do in the last? return"
+  },
+  {
+   "start": 1487.23,
+   "end": 1518.46,
+   "text": "pq.top. Top means you will get its largest. Very good. Its time complexity. What did we say? In heap, push is the order of login. n means the size of heap is n. Pop operation is the order of login. And top operation is the order of 1. Let's see what you can do. This one. How many things are you pushing in this? You are pushing k items in this. So this will be log of k."
+  },
+  {
+   "start": 1518.46,
+   "end": 1548.0,
+   "text": "Right? What are you doing in this? How many times is this total loop running? This loop is running N-k times. Okay. Let's see what you are doing every time. Every time you are doing one pop. You are doing order of log k. Plus you are doing one push also. Order of log k. Why are we writing log k? Because the size of the heap is k. You are not allowing the size of the heap to go above 4. So this is its time complexity. If we consider this as N also, then its time complexity will be N log k."
+  },
+  {
+   "start": 1548.0,
+   "end": 1577.02,
+   "text": "Some of them are equal to this, some of them are equal to this, and lock is done. So, this is your time complexity. Space complexity, space, exactly, heap takes space. Order of K, K size heap is your space complexity. So, this is a beginner friendly, you can understand, heap question or whatever you like. But, this heap is very important. It is important to understand what heap is, what heap offers you. And you don't need to keep the whole data sorted. Anytime, you just need to work with largest here."
+  },
+  {
+   "start": 1577.02,
+   "end": 1592.34,
+   "text": "Either it is in the smallest amount, then the heap will help you. So, there is one more question that it is the largest inner array. It is just the opposite question. You should definitely go and solve it. Okay? So, let's meet. And we will do heap phase by phase. And in heap also, we will try to give you the mastery. So, let's meet tomorrow."
+  }
+ ]
+}

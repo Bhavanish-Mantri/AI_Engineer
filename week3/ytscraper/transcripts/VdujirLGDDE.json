@@ -1,0 +1,254 @@
+{
+ "video_id": "VdujirLGDDE",
+ "title": "Starting TREE Series!",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1236,
+ "segments": [
+  {
+   "start": 0.05,
+   "end": 21.55,
+   "text": "First of all, the people who have come here, we would like to congratulate you. The tree has not started yet, but if you are watching this video, no matter whether you are reading from me or not, if you have reached this video, this video has reached you, then congratulations, you have come to an advanced DSA. This is a very big achievement because 90% of people do not reach here."
+  },
+  {
+   "start": 21.55,
+   "end": 46.96,
+   "text": "90% of people get stuck in an array, they never see a tree, a graph or a DP in their life. You have entered an advanced DSA. I am not talking about medium, one is easy, one is intermediate, one is advanced. So you have entered an advanced DSA. You have entered an advanced DSA just by watching this video, because 90% of kids will not do it. 90% of kids understand tree as a beautiful tree. This is the tree for them. The meaning of the tree is going to change for you."
+  },
+  {
+   "start": 46.96,
+   "end": 74.06,
+   "text": "All the things we have read so far were a build-up for this journey, which is an advanced DSA. Whether it is a tree, a graph, or a DP, the build-up of everything that we have read so far was important. The linked list that we have read, see how heavily it will be used in the tree. And in the graph, the 2D matrix that we have read so far, and a lot of things in the graph, what have we read for DP? Recursion. So whatever we have read, now those things will spread a little more, will become a little more advanced."
+  },
+  {
+   "start": 74.16,
+   "end": 101.81,
+   "text": "If you target any job above 10 lakhs, then there is a probability that you will be asked about tree, graph or DP. Tree is too much because tree is considered to be the easiest topic of advanced DSA. In advanced DSA, graph is harder than tree, DP is harder than that, segment tree is harder than that, then try. But the easiest topic of advanced DSA is considered to be tree. So we will explain you tree in this lecture and this is an intro lecture so you don't have to understand the whole thing, there is no problem. This lecture is not like"
+  },
+  {
+   "start": 101.81,
+   "end": 130.51,
+   "text": "concept building lecture is not going to happen. This lecture is to explain to you in simple language that what is a tree? What is a tree? What happens in the real world? What kind of patterns are there in it? How to identify that it is a tree question? And what is going to be covered in the coming days? So tree is like this. Tree is a tree by which Google, Amazon, Microsoft, all kinds of fruits fall. So make sure that you see the tree series properly. If something is missing, stack is missing, no problem. Hash map is missing, no problem."
+  },
+  {
+   "start": 130.51,
+   "end": 156.21,
+   "text": "Look at this, treat it like an independent series. You will understand everything and let's get started. So let's start. Don't ever be afraid of trees because it is the most natural data structure. You will never get an array of trees in your life. If you go to look for an array in real life, you will not get it. You will get trees everywhere. Trees are based on real life. So let us explain to you with an example what a tree is. Everyone understands politics, right? You also enjoy politics."
+  },
+  {
+   "start": 156.24,
+   "end": 175.98,
+   "text": "So, let's start with politics. Who is the top political position in our country? Let's assume that the Prime Minister is our Mr. Modi. There is no president above the Prime Minister, but we are not talking about him. Generally, the Prime Minister is the head of the country. There is a president in America and a Prime Minister in India. So, Mr. Modi is the head of our country. There is no one above Mr. Modi."
+  },
+  {
+   "start": 176.27,
+   "end": 200.51,
+   "text": "Under Modi, there is also a cabinet minister. Cabinet means, the regular ministers are more powerful. It means, there is a defense ministry, a home ministry. So, let's assume that two people work under Modi. One is our home minister, who is Amit Shah. And one is the finance minister. The most important thing is these two. So, let's consider these two."
+  },
+  {
+   "start": 200.51,
+   "end": 224.21,
+   "text": "Right? Now look, under Modi sir, means these two directly report to Modi sir. That's why they are below these two. Okay. Which one is bigger between these two? It is difficult to tell. Which one is senior between Home Minister and Finance Minister? You cannot tell because both see different things. Means Home Minister, means sees the internal defense of the country. Finance Minister sees the country's finance. Which one is bigger between these two? This is a very stupid question."
+  },
+  {
+   "start": 224.21,
+   "end": 251.94,
+   "text": "No, it's not. It's apples and oranges. I don't know which one is between these two. But both are smaller than PM. That's why both report to PM. So, if PM wants to know something about Home Ministry, then he asks him. He asks about finance from him. That's why both are below. Okay. Now, people work under Home Minister too. It's not like Home Minister works alone. They also work under him. So, under him, let's say, two IAS officers work. This is IAS 1. And this is IAS 2."
+  },
+  {
+   "start": 251.94,
+   "end": 279.98,
+   "text": "Similarly, some people might work under the Finance Minister. Under him, let's say, some economist might work. So, this is economist number 1. And this is economist number 2. Right? This must be happening. Now, see, what is this? What do you think of this? It doesn't look like a Christmas tree. One man at the top. Two men below him. Two more men below this man. Two more men below this man. And it will keep spreading like this. Now, they might also work under IAS 1. Under IAS 1."
+  },
+  {
+   "start": 279.98,
+   "end": 303.09,
+   "text": "IPS means it can spread a lot. This is called a tree. What is it called? Tree. Because it looks like a tree, like a Christmas tree. How is a Christmas tree? It looks exactly like a Christmas tree. That is why it is called a tree. There are 2-3 special things in it. First of all, there is a root of a tree. Root means head."
+  },
+  {
+   "start": 303.09,
+   "end": 331.33,
+   "text": "We call this root. Root means head. Our India as a tree, who is the head of our India? Modi Sahab. So what happened to Modi Sahab of India? Root happened. Okay. Two people are coming out of root. One home minister and one finance minister. These two, what are these two? These two are Modi Sahab's children. These two are Modi Sahab's children. These two are Modi Sahab's children. I mean, children shouldn't be said like that, but it is said in the tree. That if you see any line,"
+  },
+  {
+   "start": 331.33,
+   "end": 359.04,
+   "text": "So, the Home Minister and the Finance Minister are like children to Mr. Modi because they are directly connected. In the same way, who is the parent of the Home Minister? PM. Who is the parent of the Finance Minister? PM. Who is the parent of the PM? No one. No one. No one is the parent of the root. Root means the top, from where it started. The parent of the PM, means who is the parent of the PM? No one is the parent of the PM. The PM does not report to anyone. The PM does what he wants. But,"
+  },
+  {
+   "start": 359.04,
+   "end": 385.06,
+   "text": "Who will the Home Minister report to? The PM. Who will the Finance report to? The PM. Right? Similarly, who is the parent of IAS 1? Home Minister means, if IAS 1 has to report something, then it will not report directly to the PM. No. Because the PM is not its direct parent. IAS 1 will report to the Home Minister. The Home Minister will report to the PM. Similarly, Economist 1 will not directly go to the PM's office and say, we saw this. No. Economist 1"
+  },
+  {
+   "start": 385.06,
+   "end": 412.75,
+   "text": "will report to the finance minister. The finance minister will then report to the PM. So if someone asks you, who is the parent of Economist 1? The finance minister. Who are the children of the finance minister? Who are his direct children? Economist 1 and Economist 2. This is called a tree. This data structure, what is its name? Its name is a tree. See, this is not linear. This is not straight. This is spreading. Root was one. Root gave birth to two children."
+  },
+  {
+   "start": 412.75,
+   "end": 420.0,
+   "text": "These two children gave birth to two more children. So, in total, how many? Four were born in the end. Four were born in the end. We call this tree."
+  },
+  {
+   "start": 420.0,
+   "end": 449.34,
+   "text": "The last ones, every box has a node. PM is a node. Home minister is a node. Finance minister is a node. These four are also nodes. The top node is called root node. And the lowest one, suppose that nothing works under IS-1. Suppose that nothing works under IS-1. IS-1 has to do all the work itself. So IS-1 has no child. You can't see anyone. IS-1 has two children. You can't see."
+  },
+  {
+   "start": 449.34,
+   "end": 467.46,
+   "text": "So, such nodes which have no children, what do we call them? Leaf nodes. What? Leaf nodes. What does leaf mean? Leaves. Means, leaf nodes at the end of the tree. Nothing else is coming out of it."
+  },
+  {
+   "start": 467.46,
+   "end": 494.9,
+   "text": "So, it is important to know these things. First of all, root node means the initial node, which has no parent, which has no parent, it is a root node. And which has no child, which is in the last four tree, all those nodes are called leaf nodes. Leaf nodes means leafy nodes. I hope you have understood that much. Anyone will understand. I mean, those who have never seen DSA before, they must also understand that it looks like this. Now, let's come to the real DSA. Now, what do you have to do in real? See."
+  },
+  {
+   "start": 495.22,
+   "end": 524.56,
+   "text": "First of all, how to identify any tree question? It is a very easy question. It will be written in the question tree. Okay. Till today, the pattern we have learnt, the easiest recognition is this. The question of tree cannot come. I mean, there will be no question in which you will have to think that it is the question of tree. It will be written clearly. Given a tree. Given a tree. Without this, there is no question of tree. Okay. Given a binary tree. Given a tree. We will explain what binary is. But, it will be written clearly in the question tree. If tree is not written, then,"
+  },
+  {
+   "start": 524.56,
+   "end": 551.42,
+   "text": "there is a 99.999% chance that it is not a tree question. Don't go there at all. There is no such magic question where the tree is not written and it is not a tree question. It happens in the graph. If you don't understand it in the graph, it can happen. You can assume 10%. But, in the tree, 99.999% will be written given a tree. So, first of all, this is a tree question. Okay. Now, what you need to read in DSM, you need to read binary tree. What? Binary tree."
+  },
+  {
+   "start": 551.42,
+   "end": 579.73,
+   "text": "See, what does binary tree mean? What does binary mean? Two. Zero, one. Zero and one. What does binary mean? Two. Okay. So, the tree you want to read in DSA, look at the top of that tree. How many children are there at max in every node? There are two children in every node. There are two children or two children in every node. How many children are there in PM? One here, one here. There are not three children in PM, right? No. Okay. In DSA too, there are many types of trees, but in DSA too, to keep things simple, this was decided."
+  },
+  {
+   "start": 579.73,
+   "end": 608.53,
+   "text": "collectively, that we will put our minds on the binary tree. What does the binary tree mean? At most, any node can have two children. At most, it can have two children. It can't have three. Then it comes into the ternary tree. It is a very rare question. No one asks it. Whatever question you have to ask, it will be in the binary tree. That means, any node can have two children at max. One can also happen. It can also happen that a node has only one child. It works. But at max, it can have two children."
+  },
+  {
+   "start": 608.53,
+   "end": 637.63,
+   "text": "You will get very few questions in which there is a node and you are told that it has three children. It doesn't happen. It doesn't happen. It is not asked anywhere because it is senseless. If you want, even 100 children can do it. It is about making it unnecessarily complex. So there is no need to put much thought into it. No. What do you have to read? Binary tree. What do you have to read? Binary tree. So in DSM, if we read any tree, then remember that it is a binary tree. It is a binary tree. Isn't it? Let's go. Similarly, a binary search tree also comes. When we will enter, then"
+  },
+  {
+   "start": 637.63,
+   "end": 660.72,
+   "text": "But you should understand that everything in DSM is binary. That means, there can be two children of node, max. Okay. Now, the thing is, this is fine, this is a good thing. But how do you write this in the computer? How do you write this in the computer? You have made a tree as a drawing. So, drawing is not made in the computer. Drawing is not made in the computer. That's why, that's why, remember, many years ago, you guys read the linked list from us."
+  },
+  {
+   "start": 660.72,
+   "end": 683.07,
+   "text": "Many years ago, what did you read? Linked list, right? What was linked list? What was linked list? That there was a node. Remember, there was a node in that too. Do you remember? Node, node, node. Those who have forgotten, revise it once more. Remember, you will remember. There was a node. What used to happen in that? Here you used to write data. Here you used to write whatever data you wanted to write. And there used to be a next. What did this next do?"
+  },
+  {
+   "start": 683.07,
+   "end": 708.24,
+   "text": "You used to have the address of the next node. You used to have the address of the next node. Same, this node used to be next. And what used to happen here? The address of the next node. By doing this, what used to happen? Linked list, means linked list. Tree is the same of linked list. There is one difference. Here, see, your next node used to have the address of the next node. But here, if we talk about one node, then how many people's address is it necessary to have?"
+  },
+  {
+   "start": 708.24,
+   "end": 735.97,
+   "text": "Two people. If we take the example of PM. So, what is the address of PM? The address is the phone number that you can talk to him anytime. How many phone numbers will PM have to store? Two. Why? One phone number will be of the Home Minister. One phone number will be of the Finance Minister. Similarly, how many phone numbers will the Home Minister have to keep? Two. One phone number will be of IS1. One phone number will be of IS2. So, in any node, now,"
+  },
+  {
+   "start": 735.97,
+   "end": 754.74,
+   "text": "There used to be one next in the link list. Just keep the next as the address of the next one, the phone number of the next one, the address of the next one. There used to be only one need in this because you have to point to the next one, right? Now, but how much will you need in tree? Two. Because you can have two children. They are studying binary tree. Remember, they are studying binary tree. If..."
+  },
+  {
+   "start": 754.74,
+   "end": 772.11,
+   "text": "If you read the ternary tree, then you have to remember three phone numbers. But because we are reading the binary tree, you have to remember two phone numbers. So how does the tree form? Same as the linked list. There is a big node. In the middle of this,"
+  },
+  {
+   "start": 772.11,
+   "end": 795.71,
+   "text": "Data means whatever tree you are storing, whether it is a tree that stores numbers or names, it can store anything. For example, what used to happen in a link list? Data used to be a number in a link list. It can also be a number in a tree. And apart from this, there are two more things. One is left, one is right. Yes, yes, yes. Data means storing actual numbers."
+  },
+  {
+   "start": 795.71,
+   "end": 824.72,
+   "text": "Left means, what is left? Left is an address. Left is a pointer or address. Who will it point to? To its left child. To its left child. How will the left child look? Data will be in the middle. And it will point to its left child. Similarly, who will the right child point to? To its right child. To its right child. This will be left."
+  },
+  {
+   "start": 824.72,
+   "end": 853.73,
+   "text": "This will be right. Same as link list. Same as link list. What was link list? There was a node. There was data in it. There was a next. It used to point to the next one. Similarly, here also you are getting data in the node. There is a left which is the address. Who will it point to? To its left child. Its left node, left child. Meaning, if you understand it as PM, then it is PM. Whose phone number is on the left? Home minister's phone number is on the right."
+  },
+  {
+   "start": 853.73,
+   "end": 883.78,
+   "text": "The finance minister's phone number. And what will each node keep in its left and right? The number of the left child and the number of the right child. Assume that there is a leaf node. Leaf node means that it has neither left child nor right child. It has no child. So how will the leaf node look? Assume that the leaf node will look like this. Leaf node. Look at the leaf node. There will be data in every node. There will be some name. That means there will be some data, some number or something. It will be stored. But now the left child of the leaf node is not there. The right child is not there. What will happen?"
+  },
+  {
+   "start": 883.78,
+   "end": 905.87,
+   "text": "Null. Null. Yes. Null. Now leaf node. Last node of linked list. How did it look? Last node of linked list. There was data. But what was next? Null. What did it tell you? After this, there is nothing else. Linked list is over. Similarly, if there is a leaf node, there is no left child, no right child. What will happen to left and right? Null. Nothing. Null. Null."
+  },
+  {
+   "start": 905.87,
+   "end": 933.9,
+   "text": "So this is a tree and this tree is stored like this. Same like linked list, there is nothing new in it. If you have forgotten linked list, then we highly recommend you to go and see linked list once. At least the intro lecture of linked list in which we talked about pointer etc., you should see it. That is why we are not going to go deep in it because it has become very deep in linked list. Means we have seen the pointer from inside. Same as linked list, tree is stored like this."
+  },
+  {
+   "start": 934.16,
+   "end": 962.7,
+   "text": "What will be given to you in any lead code question? What will be given to you in any lead code question? Tree's root. Tree's root means root node. Root node means what? First node. PM sir, first node. Okay. In this, you will have to do a lot of things. In this, you can do a lot of things. Okay? In this, we will tell you the categories. In the coming days, we will cover all the categories. First is traversal."
+  },
+  {
+   "start": 962.7,
+   "end": 984.19,
+   "text": "The first one is traversal. I will explain one by one. The first one is traversal. Then comes the sub-pattern of mirror or symmetry. The third one is search. There is a search in the tree. The fourth one is validation. What kind of tree is this? Is this a good tree or a bad tree? Then comes the path sum."
+  },
+  {
+   "start": 984.19,
+   "end": 1012.69,
+   "text": "path, sum, and in the last, the hardest part is construction. Construction means, we are giving you 4 numbers, make a tree from 4 numbers. So see, traversal. What does traversal mean? Now see, there is no problem in understanding. We will do tree slowly. This is just an introduction. We want to tell you what will happen next. Okay? You don't understand anything? No problem. We also didn't know. Traversal means, traversal in Hindi means walk. Its walk means, walk on the tree. Traverse everyone, see what happens. See."
+  },
+  {
+   "start": 1012.69,
+   "end": 1034.42,
+   "text": "See, as you write a loop in an array, the traversal is the same. Mirror or symmetry, what is mirror or symmetry? You will be given two trees of a tree, both of them will tell you whether they have a mirror image or not. When they come, you will know. Search means? Search. Search means there is a number that has to be found in the whole tree. How will they find it? We will tell you. Validation."
+  },
+  {
+   "start": 1034.42,
+   "end": 1064.19,
+   "text": "Is this tree correct or not? I mean, anything can be correct. Is this tree a binary tree? It is not that it is a ternary tree. Look at that. Are there two children of every root or every node? Look at that. Are there one child of every node? Look at that. Anything. You have to validate anything. Right? Path sum. Path sum means, you have to decide the journey from root to leaf. You have to decide the journey from root to leaf. And construction means, we will tell you that we are giving you four numbers. Two, three, four, five. In array. Make a tree from this array. And return us its root."
+  },
+  {
+   "start": 1064.19,
+   "end": 1090.1,
+   "text": "So all these things are there in the tree. In any problem, you will be given the root of the tree. After that, it is up to you what you do on it. You will be given the root of the tree. And it is up to you what you do on it. You can do anything on it. You can print the data of this root. It will be printed like this. You can go to the left child of this root. What can you do? Simple. Root.left."
+  },
+  {
+   "start": 1090.1,
+   "end": 1118.99,
+   "text": "Remember in the linked list, how did we go to the next node? By doing slow.next. Remember slow pass pointer. How did we go? Slow is equal to slow.next. What will you do? If you do root is equal to root.left, on which child did you go? On left child. If you do root is equal to root.right, on which child did you go? On right child. If you want to know if this is a leaf node or not, then if root.left is equal to null,"
+  },
+  {
+   "start": 1119.28,
+   "end": 1143.68,
+   "text": "And, and, and, root dot write equal equal to null. It's a leaf. What can we do? Anything. Print it. Whatever you want. Leave. So, like this, as it happened in the linked list, same. What was always given in the linked list? Head. The head of the linked list was given. You used to do something with it. What will you be given in the tree? Root. You will be given root in the tree. And you will have to do something with root. Again."
+  },
+  {
+   "start": 1143.68,
+   "end": 1155.12,
+   "text": "In the linked list, how did we go to the next one? t is equal to t dot next. How will we go here? t is equal to t dot left, t is equal to t dot right. Because there are two things here. You can go left, you can go right, you can do anything."
+  },
+  {
+   "start": 1155.41,
+   "end": 1183.14,
+   "text": "So that's it. And this is very close to the linked list. If you understood the linked list well, then I promise you that you won't have any problem understanding the tree. There is no child in the world who has understood the linked list and has not understood the tree. Because there is nothing in the tree. The tree has just been added to the linked list. The next one was added. Just understand this. We will do the same linked list question in the tree. And because it is spreading like this, we will see how it spreads and how it doesn't spread. We will do everything in the coming days."
+  },
+  {
+   "start": 1183.14,
+   "end": 1212.64,
+   "text": "It will be updated in the pattern sheet soon. Do this. Meanwhile, what you can do, you can see the lecture of the link list. We will put that in the description. We will try. See this lecture of the link list and brush up a little what used to happen. Okay. If possible, make one or two small questions. Then your hand will sit. The syntax of the link list was CPP, Python, Java. Same syntax is there in tree. We will say there is no difference. The next in the link list, this next is divided into two parts. One is left."
+  },
+  {
+   "start": 1212.64,
+   "end": 1235.5,
+   "text": "And one is right. Everything else is the same. How do we get the data? We get it as it is. If the root is null, it means there is no tree. The tree is empty. Everything is the same. Everything is the same. So do this. And the coming days are going to be very interesting. The coming week or whatever day it will take. We will teach you all these six patterns. After this, if you ask any tree question, you will be able to make it. So let's meet soon."
+  }
+ ]
+}

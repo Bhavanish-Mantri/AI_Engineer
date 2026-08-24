@@ -1,0 +1,384 @@
+{
+ "video_id": "OSYgRvaWFSI",
+ "title": "No one has explained Topological sort like This!",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1968,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 15.78,
+   "text": "Today's topic is topological graph or topological sort. This is very important in both ways. If you are new to the channel then check the description."
+  },
+  {
+   "start": 15.78,
+   "end": 38.8,
+   "text": "It is a very famous and favourite topic in interviews. If you are asked the question of fresher and graph, then there are chances that you will be asked about toposhot. And when you will go for a job, it will be useful because it is a very real world problem. If you don't understand all these things, then when you go for a job, there is a dependency. You may not know this. If you go for a job in a big company, then there is a dependency."
+  },
+  {
+   "start": 38.8,
+   "end": 52.98,
+   "text": "Coding language doesn't work. It doesn't work that you have got a folder of one code and the whole company's code is shown in it. No. There is a lot of code in the folder. That means there are a lot of teams. A lot of teams are making different things. Those products are connected to each other. So when"
+  },
+  {
+   "start": 52.98,
+   "end": 80.82,
+   "text": "We say that a product of a company is coming, so there must be a code in it. For example, you say that a new update of Amazon has come. The new update of Amazon does not mean that a person has changed in one code folder, in one file. No, thousands of people are making changes in thousands of folders. So when the new version of the product of Amazon is made by combining everyone, there will be a lot of dependency in it. Now we will tell you, but we are telling you how important it is. Some team updated something else, some team updated this file. Now these two are dependent on each other."
+  },
+  {
+   "start": 80.82,
+   "end": 102.83,
+   "text": "It is possible that the work of team A is dependent on team B. The work of team B is dependent on the work of team D. So how to understand this? If you don't understand topological sort, then you will be told that you didn't study in college. That's why it becomes a very important topic. We will explain it in a very easy way. It has two solutions."
+  },
+  {
+   "start": 102.83,
+   "end": 122.83,
+   "text": "First of all, I will explain you the problem with a real-world example. And it has two solutions. The most asked question in the interview is the solution of BFS, which is called Khan's algorithm. Khan means not Shah Rukh Khan's, but KAHN's. It is a very famous algorithm. You will be expected to know that. And there is also a solution of BFS. The solution of BFS is a bit easy."
+  },
+  {
+   "start": 122.83,
+   "end": 152.45,
+   "text": "BFS solution is also easy but this is an algorithm so you will be expected whether the child knows or not. That's why we will do BFS first in great detail. We will tell you about DFS, you don't have to do much in DFS. You just have to run DFS in DFS and that's it. So we will tell you about DFS, you can do it yourself. And we will explain you about BFS in great detail. First we will explain to you what is topo sort and does it solve real world problems. So look, topological sorting is always"
+  },
+  {
+   "start": 152.45,
+   "end": 175.86,
+   "text": "Dependency is related to the job. We said earlier that you have a dependency in the job. What does dependency mean? If you have some work, you have to do three or four types of work, whatever you have to do. Now, it may be possible that the way you will do these three or four works, some work will be dependent on other works. Meaning, if you feel like, first of all, we will do the task."
+  },
+  {
+   "start": 175.86,
+   "end": 205.42,
+   "text": "Let's do A. It may not be possible because it is also possible that you have to do task B first to do task A. So whenever there is a scenario like this, that there are many tasks, there are many tasks, there are many nodes, there are people, there is a dependency that first this work will happen, then only this work will happen, and first these two will happen, then only this third one will happen. Topological thought is used in such things. Okay? What I mean to say is that there is a dependency. You imagine that you are a beginner coder, you have come to B.Tech in the first year and you"
+  },
+  {
+   "start": 205.42,
+   "end": 231.47,
+   "text": "that you want to do DSA in C++. Everyone starts by doing DSA in C++. Now see, what do you need for this? We will write down all the kit that you need to do DSA. First of all, you need a laptop. The basic thing is that if you want to do DSA, then it will not be in the copy, it will be in the laptop. After that, you need an editor in the laptop which is VSCode. Okay? You also need VSCode."
+  },
+  {
+   "start": 231.76,
+   "end": 259.89,
+   "text": "Suppose you get a VS code and you need an extension of C++ in it. C++ extension or binary whatever is downloaded, engine or compiler whatever it is, you will need that. And to download this, you will also need the internet. Right? How will the VS code be downloaded? It will be downloaded from the internet. Okay? So this is your basic flow that if you need a VS code, C++ compiler for a laptop, you need the internet to download it. You also need other things but all that is not necessary."
+  },
+  {
+   "start": 259.89,
+   "end": 289.81,
+   "text": "Now see here is a very important thing. You have written so much in your copy that we need these four things. But the very important thing is that until you don't have a laptop, until you don't have a laptop, can you install VS Code? And when there is no laptop, then where will the VS Code be installed? In your head? No, where is the VS Code? It will be installed on the laptop, right? So until you don't buy a laptop, until you don't get a laptop, you can't go to VS Code. You can't do this, right? That today we install VS Code, tomorrow we will buy a laptop. No."
+  },
+  {
+   "start": 289.81,
+   "end": 316.27,
+   "text": "You have to install it in the laptop. That's why, make an arrow from laptop to VS Code. What does this mean? What does the arrow mean? First the laptop will be installed, then the VS Code. What does any arrow mean in this graph? In this graph, if an arrow is going from A to B, then it means that you have to do A first, then you can do B. Okay? So, it's obvious that we will buy the laptop first, and then the VS Code. Okay? Now,"
+  },
+  {
+   "start": 317.39,
+   "end": 343.73,
+   "text": "Let's talk about C++ and VS Code. Where will the C++ extension be downloaded? It will be downloaded in VS Code. So until VS Code is not downloaded, you will not download the C++ extension. Where will you download the extension? Do you understand what I am saying? Until you install VS Code and don't open VS Code, the C++ or Java extension will be downloaded in VS Code. So until VS Code is not installed, you can't work on C++. It's the same problem. You can't say that"
+  },
+  {
+   "start": 343.73,
+   "end": 363.73,
+   "text": "Let's first download the C++ extension and then we'll download the VS Code. No, first VS Code, then C++. So, an arrow went from VS Code to C++. What does this mean? First, the VS Code installation should be completed. Then, we'll come to C++. Then, we'll come to C++. Okay. Let's talk about the internet. To download both the things,"
+  },
+  {
+   "start": 363.73,
+   "end": 393.25,
+   "text": "Downloading VS Code and C++ extension. What do you need in both? Internet. Without internet, how will VS Code be downloaded from Chrome? How does C++ extension work? The extension is installed in VS Code. But, until you don't have an internet connection, you can't do these two things. You can't download VS Code today and install internet tomorrow. No, you have to install internet first. Then it will happen. So, you will get two types of IRO from internet. You will get two types of IRO from internet. Where?"
+  },
+  {
+   "start": 393.25,
+   "end": 422.37,
+   "text": "in both C++ and VSCode. Do you understand what I am saying? I am saying a very serious thing. Now see, now you will also say that we should remove the C++ arrow from the laptop too. It should be removed from the laptop, but we are not removing it yet for simplicity. Now let's talk about the laptop and the internet. Where will the internet be? Where will the internet be set up? It will be set up in the laptop, right? If the laptop is not there, then how will the internet be set up? What, what, what? That's why an arrow went from the laptop to the internet."
+  },
+  {
+   "start": 422.37,
+   "end": 448.48,
+   "text": "on the internet. So, let's assume that this is your dependency. This is your dependency graph. Let's do one thing. Let's delete the C++ from the internet. Forget it. Let's not delete it. No problem. Okay? So, this is your graph. In this way, you will have to do things so that your requirement is satisfied. You can't do it with your whim and fancy that, okay, let's do anything. First, C++. No. According to what is told in this, now you have to"
+  },
+  {
+   "start": 448.48,
+   "end": 476.75,
+   "text": "You will have to make a plan. What should we do first? This thing, this thing, this thing, this thing, this thing, this thing, this thing, this thing, this thing, this thing, this thing, this thing, this thing, this thing, this thing, this thing,"
+  },
+  {
+   "start": 476.75,
+   "end": 504.96,
+   "text": "And this graph you are seeing, this graph has a very interesting name, a very specialised name. It is called directed acyclic graph. Directed acyclic graph or DAG. In many places you will see DAG written. Directed acyclic graph. Why directed? Obviously because the edges here are directed, they are arrow edges."
+  },
+  {
+   "start": 504.96,
+   "end": 531.18,
+   "text": "is not an undirected edge, then it is clear that if you want to tell that first laptop and then VS code, then you have to pull an arrow from laptop to VS code. It is clear that it is directed. Acyclic means that there should be no cycle in this graph. In the previous video, we had seen detect cycle in directed graph, detect cycle in undirected graph. In this type of graph, if there are dependencies involved in any graph,"
+  },
+  {
+   "start": 531.18,
+   "end": 558.96,
+   "text": "And you have to make a topological sort plan. There shouldn't be a cycle in that graph. There shouldn't be a cycle in that graph. Why shouldn't there be a cycle? I'll tell you. Why shouldn't there be a cycle? I'll tell you. For example, let's say a scenario happens like this. Let's say there are three types of teams in Amazon. Okay? One is team A. Okay? This is team A. Team A. Okay?"
+  },
+  {
+   "start": 559.02,
+   "end": 588.48,
+   "text": "After that, there is another team, team B. Now, what does this mean? Team B is dependent on, B is dependent on A. Dependent on A. Means, first A will be there, then B will be there. Okay? Is it correct till now? Assume, there is an arrow between team B and team C. Team B and team C, what does this mean? C is dependent on B. C is dependent on B. This is the meaning of this arrow. If C arrow is going from B, then first B will be there, then C will be there. So, what does this mean?"
+  },
+  {
+   "start": 588.48,
+   "end": 617.58,
+   "text": "That C has become dependent on B. That we can't start until B is not there. But, let's say something like this happens. Let's say something like this happens. That this C, this arrow goes. Now what does this mean? C to A arrow means A is dependent on B. C. A is dependent on C. So here there are 3 arrows. What does this arrow mean? First A will be there. After that B will be there. Okay? What does this arrow mean?"
+  },
+  {
+   "start": 617.58,
+   "end": 642.83,
+   "text": "First you have to do B, then C. But what does this arrow mean? That first you have to do C, then A will start. Now tell us, if Amazon tells you to make a feature, which team will start the work first? Which team will start the work first? If you say that A will start the work first. But look at A and C. Until C doesn't start, A can't start. Until..."
+  },
+  {
+   "start": 642.83,
+   "end": 668.8,
+   "text": "A cannot start until C stops. Maybe it needs something from C, right? So, what does this arrow mean? First C has to start, then A will start. So A cannot start. Okay. Someone will say that we will start B first. But, who is B dependent on? It is dependent on A. So, A will not start first. So, you cannot start B without A. B will not be able to start either. Now, you will say that let's start with C. But, who is C dependent on?"
+  },
+  {
+   "start": 668.8,
+   "end": 697.62,
+   "text": "B. So until you finish B, you can't come to C. In this case, who will start working? Every person is dependent on each other. Every person is saying that he will start first, then we will finish. Every person. This is on this, this is on this, this is on this. So this is a problem, right? So no team can start working here. You see, A, B, C, no one can start working because every person is dependent on each other. And this has become a chain. What has become? It has become a chain."
+  },
+  {
+   "start": 697.62,
+   "end": 713.55,
+   "text": "A cycle has been formed. So whenever there is such a dependency in which a cycle is formed, it will never be able to start. Or if it starts, it will never be able to end. Every person is waiting for the other one. Every person is waiting for their next one. Okay?"
+  },
+  {
+   "start": 713.55,
+   "end": 738.11,
+   "text": "B is waiting for this. This is waiting for this. This is waiting for this. So everyone will keep waiting. No one will be able to start the work. That is why it is said that whenever you want to make a topological sort or dependency, what kind of graph should you have? Directed. Obviously, it should be directed. But acyclic graph. If there is a cycle in that graph, you will not be able to do it."
+  },
+  {
+   "start": 738.11,
+   "end": 767.1,
+   "text": "They will not be able to decide who will be the beginning and who will be the end. It is impossible to decide. Why? Because of this problem. What is this called? This is called circular dependency. Circular dependency. It means there is dependency. Every team is dependent on someone or the other. But that dependency has become circular. It means every person is dependent on each other. So there is no work to be done. Everyone is sitting on each other's trust. It has become like this. Like we run a YT channel. You are a student. Okay? You are a student. Now assume."
+  },
+  {
+   "start": 767.1,
+   "end": 791.33,
+   "text": "Suppose we have started a patent course, but we have decided that we will not start the course until we have 1 million subscribers. So who are we dependent on? We are dependent on you. You are dependent that we will not subscribe until this course is completed. The audience is thinking that we will not subscribe until this course is completed. So who are you dependent on?"
+  },
+  {
+   "start": 791.33,
+   "end": 819.41,
+   "text": "You are dependent on me. So we both are dependent on each other. So neither are we teaching, nor are we teaching because I don't have 1 million subscribers. You are not teaching because you think that when he teaches completely, then we will make him do 1 million. So here this YT channel will be useless. But we both got stuck. Circular dependency happened. We are dependent on you. You are dependent on me. So no one is doing anything. Both are sitting comfortably. That's why whenever such a graph comes, whenever you are given a question of topological sort, check it once. Read the question carefully."
+  },
+  {
+   "start": 819.41,
+   "end": 847.17,
+   "text": "whether it is a DAG or not, whether it is a Directed Acyclic Graph or not. Otherwise, it is a useless question and there is no need to do anything about it. Now that you have understood the problem, we will talk about how to solve it. Solving the laptop problem is a very logical and intuitive way. You will feel that what is the algorithm of the Kahn's algorithm. It is a very logical and simple way. Look, you have four things to do. Laptop, VS Code, C++, Internet. You have to make a plan that we will do this and that."
+  },
+  {
+   "start": 847.17,
+   "end": 874.85,
+   "text": "It will be a good work and the whole work will be done. Okay. See. Here, when an arrow comes on anyone. When an arrow comes on anyone. Suppose an arrow is coming on VS Code. An inner arrow is coming. It means that it is dependent on someone else. This means that if an arrow is coming on VS Code. Then it is dependent on one more work. If an arrow is coming on one more work. Then it is dependent on another work. So it means that VS Code is dependent on some work. Okay. This means that you can't start with VS Code."
+  },
+  {
+   "start": 874.85,
+   "end": 902.9,
+   "text": "We can't start on VS code because there are two inner arrows on VS code. Forget how many arrows are coming out of VS code. How many arrows are coming on someone tells you how many things it is dependent on. So you got to know that VS code is dependent on two things. By doing this, we write IN Degree of everyone. What do we write? IN Degree. What does IN Degree mean? How many arrows are coming on this person? How many arrows are entering in this? Okay."
+  },
+  {
+   "start": 902.9,
+   "end": 929.14,
+   "text": "Count everyone's in-degree and write it in the graph. We will write it. See. How many arrows are coming in the laptop? Not a single one is coming. There are outgoing arrows. How many incoming arrows are there? Zero. How much is the in-degree of the laptop? Zero. Very good. How many people are entering the VS Code? Two people. Laptop and internet. But that doesn't mean. Just number means. We just want to see what is happening. Okay. Two is done. Okay. One second."
+  },
+  {
+   "start": 929.39,
+   "end": 955.74,
+   "text": "So what we were saying is that we take out the in-degree of everything and write who is dependent on it. Now, how many people are dependent on VS Code? Two people. So we have written two on it. Okay. Who is dependent on internet? How many arrows are entering on internet? One arrow. Just the laptop one. So what is written on internet? One is written. Okay. How many arrows are entering on C++? Two arrows are entering on C++. So we have written two on C++. Okay. Now see, forget some code, forget BFS, forget all graphs. Logically,"
+  },
+  {
+   "start": 955.74,
+   "end": 985.06,
+   "text": "Which task can you start from this? Can you start VS Code? No. Why can't you start VS Code? Because VS Code is dependent on two people. Can you start Internet? No. Internet is also dependent on one person. No. We are talking about starting. From where can we start? Can C++ be started? No. C++ is dependent on two people. Those two tasks have never happened because they are starting. You can start only laptop from this. Why can you start laptop? Because laptop's in degree"
+  },
+  {
+   "start": 985.06,
+   "end": 1011.5,
+   "text": "zero hai, zero ho chuka hai. Ab laptop kisi pe dependent nahi hai. Laptop ko shuru karne ke liye aapko kuch zaruwat nahi hai karne ki aapko bas ek laptop kharid lena hai. Ab kisko shuru kar sakte hai? Ab laptop ko shuru kar sakte hai. Ab kisko shuru kar sakte hai? Ab laptop ko shuru kar sakte hai. To yaha ham laptop ko one number pe shuru kar diye. Very good. Ab kya kare? Ab laptop to shuru kar diye. Maal liye aap boli laptop kharid liye."
+  },
+  {
+   "start": 1011.66,
+   "end": 1036.24,
+   "text": "Now what will happen? The things that were dependent on the laptop, the things that depended on buying the laptop, should we reduce their in-degree by one? Listen again. After buying the laptop, means the things that were dependent on buying the laptop, they are now free because of the laptop, right? Now they don't have to be dependent on the laptop. So this is just the same."
+  },
+  {
+   "start": 1036.24,
+   "end": 1058.45,
+   "text": "that no matter how many lines are coming out of the laptop, where is the first line coming out? On the VS Code. VS Code was dependent on two people in the beginning, on the laptop and on the internet. Now you have done the laptop here, so should we reduce the end degree of the VS Code by one? Because it was on two, now we will reduce it by one."
+  },
+  {
+   "start": 1058.58,
+   "end": 1088.45,
+   "text": "Because now the laptop is finished. So we should reduce the degree of the things that were blocked because of the laptop. It is just the same that we erase the line that comes out of the laptop. We erase the line that comes out of the laptop. So where was the line coming out of the laptop? Who was the neighbor of the laptop? VS Code and Internet. So both VS Code and Internet. What happened to these degrees? They reduced one by one. VS Code has now become one."
+  },
+  {
+   "start": 1088.45,
+   "end": 1106.03,
+   "text": "The internet has become zero. Because these people are not blocked because of the laptop. They can be blocked because of someone else. Now, do the same thing. Here, now the laptop is finished. Which task can you do next out of these three? Can you do VS Code next? No, its end degree is not zero."
+  },
+  {
+   "start": 1106.03,
+   "end": 1135.94,
+   "text": "Someone is still dependent on someone, someone is still blocked on someone. C++ cannot be done. Why? C++ is also blocked on someone. What can be done on the internet? Yes, it can be done. Because the internet was blocked on the laptop in the beginning. If the laptop is blocked, then the internet is reduced. Now this means zero. Now you can see that no one needs the internet to be complete. So what will we start with two numbers? We will set up the internet. We will set up the internet."
+  },
+  {
+   "start": 1135.94,
+   "end": 1158.67,
+   "text": "Now do the same thing that you did with the laptop with the internet. The person who was blocked by the internet means the neighbors of the internet, the two neighbors of the internet who were blocked by the internet, reduce their n-degree to less than 1. It means no matter what their n-degree is, let it be 10. Now if 10 becomes internet, then 10 becomes 9. If it was 5, then it would be 4."
+  },
+  {
+   "start": 1158.67,
+   "end": 1186.06,
+   "text": "So, both VS Code and C++ were blocked because of the internet, right? Because the internet is going here and there. They are the neighbours of the internet. Reduce the degree of both of them. Reduce the degree of all the neighbours of the internet from 1. So, when we reduce the degree of VS Code from 1 to this, then this will become 0 and this will become 1. And we erase the internet in a way to explain it to you. It's over. It's over. Do the same thing. The internet is over. What is left? VS Code or C++?"
+  },
+  {
+   "start": 1186.06,
+   "end": 1212.29,
+   "text": "Which one can it be? Can it be C++? No. The C++ is not zero. It means that it is dependent on someone else. It is blocked. The VS code is now zero. VS code was blocked in the beginning. On the laptop and on the internet. Both the laptops and the internet have been blocked. So VS code is obviously free. See, its degree is zero. What will we do on three numbers? We will do VS code. Yes, we will do VS code. Do the same thing with VS code."
+  },
+  {
+   "start": 1212.29,
+   "end": 1241.38,
+   "text": "All the neighbors of VS Code, VS Code is sending its line everywhere. Now, they were blocked because of VS Code. So, all the neighbors of VS Code, their kind degree should be less than 1. Because now, VS Code is done. So, it doesn't matter if it is blocked on anyone. One is less blocked. One person has done his work. So, VS Code is connected to whom? C++. What will we do with C++ kind degree? We will make it 0. And effectively, we will erase this line. So, now VS Code is also done. Who is left? C++ is left."
+  },
+  {
+   "start": 1241.38,
+   "end": 1269.41,
+   "text": "What will we do? Can we start with C++? Yes, we can start with it. So, what will happen on 4th number? C++ is done because indegree is zero, so it is free. Now, there is no neighbor of C++, meaning C++ was not blocking anyone. So, we will not do anything, we will leave it. Have you done all the work in order? Laptop, Internet, VS, C++. Was it a logical set of actions? It was absolutely logical. There is nothing illogical in it that first VS code was done and then Internet came. No, it should be done as it should be done."
+  },
+  {
+   "start": 1269.41,
+   "end": 1297.58,
+   "text": "Laptop was bought, Internet was set up, VSCode was downloaded, C++ was installed in VSCode. So logically, this is called, what is it called? Topological sort. And the logical thing that we have just explained to you in Hindi, what is it called? Kahn's algorithm. What is it called? Kahn's algorithm. Kahn's algorithm. Okay? Kahn's algorithm is the name of this thing. Okay? How will we write its code? We will write its code and show you. Let's go. We will write its code and show you."
+  },
+  {
+   "start": 1297.58,
+   "end": 1325.95,
+   "text": "You must have understood. There is no doubt in this. There is no such thing which is not understood. It is a logical, intuitive thing. Now to write its code, what will you get on GFG? You will get number of nodes on GFG. First of all, you have to return a vector of int on GFG which is your topological sorting of this thing. Okay. Assume its name is fun. First of all, you will get int n. Int n means number of nodes. Okay. And you will get edges. What will you get?"
+  },
+  {
+   "start": 1325.95,
+   "end": 1355.39,
+   "text": "edges, we have said that GFG is stupid, it does not give you a graphic graph. What does it give? It gives edges. So, what is the first thing we have said? Edges is given. Make an adjacency list. Make an adjacency list. Make an adjacency list from edges. It will be easy. Both. It will be easy to find neighbors and it will be easy in everything. So, how is it made? One vector of vector of int is made. What is this? Adjacency list. Yes. Yes. Adjacency list. Int i."
+  },
+  {
+   "start": 1355.39,
+   "end": 1385.62,
+   "text": "What is done? All edges are looped. All edges are looped. Edges dot size. Correct. I plus plus. What is taken out? Edge is in which form? Edge has two things. 0, 1. Means edge is going from 0 to 1. So what is taken out? Int source is equal to edges I dot edges I or 0. Int destination is equal to edges"
+  },
+  {
+   "start": 1385.62,
+   "end": 1414.34,
+   "text": "I1. After that, what is done? In array of source, push back destination. If it was undirected, then we would have pushed source in array of destination also. But this is directed graph. It means directed acyclic graph. So, obviously, it is directed. So, we will stop here. And, one more thing happened. In degree of every node was taken out. In degree of every node was taken out. What did in degree mean? How many arrows?"
+  },
+  {
+   "start": 1414.34,
+   "end": 1441.5,
+   "text": "How many arrows are coming on this? So why don't we take out the in-degree here? See, in the beginning, everyone's in-degree will be zero. So we make a vector. Vector in, in-degree. In-degree. How much size? N. And in the beginning, everyone's in-degree will be zero. Okay. Take out the in-degree while making the graph. How? For example, in this graph, this is your graph. What is the first edge you have got? You have got the first edge from the laptop."
+  },
+  {
+   "start": 1441.5,
+   "end": 1467.87,
+   "text": "vscode from laptop to vscode from laptop to vscode what does it mean? should you increase the indegree of vscode? you should definitely increase it because you are getting an edge of vscode from laptop this is the edge so obviously increase the indegree of vscode from one to another suppose you get any other edge from vscode to c++ so should you increase the indegree of c++? absolutely what does it mean?"
+  },
+  {
+   "start": 1467.87,
+   "end": 1496.77,
+   "text": "What is the laptop in this? Source. What is the VS code? Destination. So whenever you are adding edge to your graph, what do you do? In degree of destination. Do plus plus. Means, one is definitely entering in this. Source and destination. Edge is there. Increase the degree of destination. Increase it. Here, your graph is ready. Your in degree is also ready. Very good. Now we will do this work. Now we will do this work. Now see. When you will make this graph."
+  },
+  {
+   "start": 1496.77,
+   "end": 1525.84,
+   "text": "then it is obvious that some node, it can be of 1 or 2, their in-degree will be 0. These are the nodes from which you can start your program. When we made this graph, we saw that the laptop's in-degree is 0. It is possible that more people's in-degree will be 0. But, it is written in the question that order doesn't matter. Meaning, if the in-degree of both laptop and internet is 0, then you can buy the laptop first and you can install the internet first."
+  },
+  {
+   "start": 1525.84,
+   "end": 1554.74,
+   "text": "You can either install the laptop or the internet. You can either install the laptop or do it yourself. The question is that as long as the order is correct, correct means as long as you maintain this dependency, the order doesn't matter. You can take any order from your mind. What will we do? We will do a trick. From where do we have to start the program? The one whose indegree is zero. The one whose indegree is zero. We will make a queue. Because this is an algorithm of BFS. Khan's algorithm is an algorithm of BFS."
+  },
+  {
+   "start": 1554.74,
+   "end": 1583.52,
+   "text": "Where BFS comes, Q comes. Where Q comes, BFS comes. You can think of BFS and Q as a degree. We will make a Q. Q, int, Q. Okay. Now, we will push the n-degree of each node in this Q. Because it is your starting. You can start anything from it. Assume that the n-degree of laptop internet is 0. You can start from laptop internet. What will we do? We will..."
+  },
+  {
+   "start": 1583.52,
+   "end": 1611.22,
+   "text": "We will loop the in-degree one. Okay. We have looped till n. If, if, in-degree of i equal equal to 0, means you can start this. What is there to start this? It is absolutely free. It is absolutely free. We will push i in the queue. We will push i in the queue. In the queue, which nodes have been pushed whose in-degree is 0? Further also, in the queue, those nodes will be pushed whose in-degree will be 0. And we will"
+  },
+  {
+   "start": 1611.22,
+   "end": 1639.44,
+   "text": "will be taken out of the queue one by one and will keep processing it. So, let's assume according to the above example, what has been pushed in your queue? Only laptop because only laptop's end degree was 0. We write above that what is everyone's end degree? Laptop's end degree was also 0 in the beginning. Remember the end degree of VS Code was 2 in the beginning. VS Code was dependent on laptop and internet. C++'s end degree was 2 and internet's end degree was 1 because it was dependent on laptop. So, this was your end degree error in the beginning."
+  },
+  {
+   "start": 1639.63,
+   "end": 1662.32,
+   "text": "In your queue, which one did you push? In degree 0, you pushed the laptop. Now see what we will do. Make something for your result. Make something to see the result. Vector int res. Make something for the result. Until this queue gets empty. Until this queue gets empty. Until this queue gets empty. Okay."
+  },
+  {
+   "start": 1662.32,
+   "end": 1687.39,
+   "text": "In Q, the same things will be pushed which has an integer of 0. Which is completely free to do, which is not dependent on anyone. What is there in Q in the beginning? Laptop. Laptop is not dependent on anyone. That is why it was pushed there. That is why it was pushed there. What to do? int node is equal to q.front We hope that you are watching for so many days. So now you should not have any problem in this that what is written here. My children."
+  },
+  {
+   "start": 1687.39,
+   "end": 1711.63,
+   "text": "There shouldn't be any problem in this syntax. You can write it blindly as we want. What happened? What came in the node? Laptop. And what happened to the laptop? It popped. Laptop popped. First of all, write the laptop in the result. In the result, do pushback. Pushback node. So in your result, the laptop has been pushed. Let's write the result above. Here, you have done the laptop first."
+  },
+  {
+   "start": 1711.63,
+   "end": 1741.52,
+   "text": "Very good. Now, what did we do? The neighbors of the laptop, all the neighbors of the laptop, neighbors means wherever the edges are going from the laptop, reduce the indegree of all of them to 1. Because the laptop is now finished with the graph. In a way, you are eliminating the laptop from the graph. All the neighbors of the laptop, reduce the indegree of all of them to 1. How do we iterate on the neighbor? From the same adjacency list. int j is equal to 0. j less than array of node."
+  },
+  {
+   "start": 1741.52,
+   "end": 1771.23,
+   "text": "Dot size. Yes. J++. How do we get neighbor? Int. Neighbor. Is equal to. Array of. Node. J. Very good. Now this is neighbor. Whose neighbor is this? The neighbor of the laptop. The neighbor of the laptop. In degree. Reduce one. Because. The work of this node is done. Minus minus. What happened after this? What happened after this? Your. In degree of neighbor. Minus minus."
+  },
+  {
+   "start": 1771.23,
+   "end": 1798.8,
+   "text": "So, who was the first neighbor of the laptop? Remember, who was the first neighbor of the laptop? VSCode. So, VSCode got a minus minus 1. There was another neighbor of the laptop. Internet. This also got a minus minus. Now, after doing this minus, if you see that if this neighbor's, if this neighbor's indegree has become 0, if this neighbor's indegree has become 0, what do you have to do? Push it in the queue. In the queue."
+  },
+  {
+   "start": 1798.8,
+   "end": 1827.71,
+   "text": "Push the neighbor. What does it mean to push in queue? Now it is free. You can do the work now. So in the next iteration, you will do this work. Close the for loop. Close this while loop. Return, rest. Return, rest. See, what will happen with this? Let's start from the laptop. The laptop was popped. Two neighbors of the laptop. VS code, internet. VS code, 2 to 1 happened. Internet, 1 to 0 happened. Now, as soon as you know that the internet kind degree is 0, what did you do?"
+  },
+  {
+   "start": 1827.71,
+   "end": 1853.89,
+   "text": "Push the internet. Push the internet. Very good. Now what will we do? The loop will run again. Is your queue empty? No. The queue will be empty when the processing is complete. The queue is not empty. What will come out? The internet will come out. In your result, write internet. Write internet. All the neighbors of the internet. All the neighbors of the internet. There were two neighbors of the internet. VS Code and C++. Reduce the indegree of both."
+  },
+  {
+   "start": 1853.89,
+   "end": 1880.13,
+   "text": "When you reduce VS Code, it will become 0. What will you do? You will push VS Code in Q. If you reduce C++, it will become 1. Will you push this in Q? No, this degree is not 0. In Q, the same push is happening which is free. It is completely free from the world. VS Code is pushed. Come back. Is Q empty? No, Q is not empty. VS Code has popped. Write VS Code in your result."
+  },
+  {
+   "start": 1880.13,
+   "end": 1903.87,
+   "text": "Write it in your result. All the neighbors of VS Code. There was only one neighbor of VS Code. C++. Reduce its end degree. C++'s end degree is 0. Push C++ in your queue. Done. Run the loop again. C++ came out. Write C++ in the result. Was there any neighbor of C++? No, there was no neighbor. Remember from the diagram. So, it's done."
+  },
+  {
+   "start": 1903.87,
+   "end": 1932.42,
+   "text": "Now, is your queue empty? Yes, your queue is empty. Be comfortable and return the result. Is this the right thing? Laptop, Internet, VS Code, C++. Absolutely, this is the right thing. Laptop, Internet, VS Code, C++. Absolutely, this is the right thing. This is called Kahn's Algorithm. What is Kahn's Algorithm? Kahn's Algorithm. So, you have learned Kahn's Algorithm. You have learned a lot. We too, you too. Okay, this is it. Let's see its DFS one later. I don't feel like teaching DFS one."
+  },
+  {
+   "start": 1932.42,
+   "end": 1961.3,
+   "text": "The DFS one is very easy. We will tell you in some other lecture. But if you have been asked about topological sort in any interview, then you will be asked about the Kahn's algorithm. It is expected that you should know the Kahn's algorithm. So do it. We will do some questions about topological sort. We will tell you how to identify its question. It will not always come that you should do topological sort. No. You will be given a story. You will have to find out that it is topological sort. According to me, the best sign of topological sort is that it will be a DAG."
+  },
+  {
+   "start": 1961.3,
+   "end": 1967.94,
+   "text": "Directed acyclic graph. This is it. 80-90% of it is used. Okay? So, code it and see you tomorrow."
+  }
+ ]
+}

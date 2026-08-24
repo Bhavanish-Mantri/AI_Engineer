@@ -1,0 +1,309 @@
+{
+ "video_id": "EYpv5sypVdE",
+ "title": "Lecture 29 | The ABSOLUTE BEST Prefix Sum Pattern Hacks for Amazon Interviews",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1706,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 26.83,
+   "text": "Welcome everyone. Sorry, I couldn't attend class yesterday. I was not feeling well. My name is Pratyush Narayan. I am in Akamai. Here we teach DSA patterns. Those who have come for the first time, you will get something from the description that from where to start. Let's go. Today we will do another question of prefix sum and this question is very hard. This question has been taught everywhere and it has been taught with a template that do one thing, do plus in this, do minus in this. No. That is not the way. You can remember the question from that. You can't make the question."
+  },
+  {
+   "start": 26.83,
+   "end": 55.87,
+   "text": "We will not learn it that way, we will learn it the way we are studying. We used to make the green part, we used to see the red part of it, we used to know what to store and what to ask the question, we used to get the answer from that. In the last two questions, those who have not seen the last video, then congratulations to you, you have not seen it. So keep saving your time like this, don't see all this, keep watching reels etc. Anyway, so this question is very important, very good question, but whatever we read in the discussions,"
+  },
+  {
+   "start": 55.87,
+   "end": 84.69,
+   "text": "It is not like that you will think that we can never think of this, we can only make what we remember. Let's go. Today we will show that the patterns that we are reading are necessary. It is applied in every question in different ways. Let's go. What does the question tell you? First of all, the question says that you have an array. What do you have? An array. In this array, there are only 0 and 1. Will you get only two types of numbers in this array? 0 and 1. So, 1, 2, 3, 4, 5."
+  },
+  {
+   "start": 84.69,
+   "end": 116.56,
+   "text": "1, 2, 3. By doing this, you will get only 0 and 1. Okay, very good. The less number you get, the better it will be for me. Okay. You have to find a maximum length of a contiguous subarray. What do you have to find? Length of... What? Not count. In the last two questions, it was count. This time, length has come. Length of maximum subarray in which... What is the condition? Equal number of 0 and 1. Equal number of 0 and 1."
+  },
+  {
+   "start": 116.91,
+   "end": 145.82,
+   "text": "You have to tell the maximum length of this. So, you see, if you take this sub-array, this one, in which 0 is 1 times and 1 times, then your answer can be 2. But if you take this sub-array, in which 1 is 2 times and 0 is 2 times, then your answer can be 4. But, but, but, if you take this sub-array, in which 1 is 3 times and 0 is 3 times, then your maximum length can be 6. So, your answer should be 6. The biggest sub-array in which 0 and 1"
+  },
+  {
+   "start": 145.82,
+   "end": 174.8,
+   "text": "Once. Okay. Let's go. In this, you will see its description, you will see its tutorial, so it has a very good thing that when 1 comes, you have to add plus to the sum, when 0 comes, you have to add minus to the sum. But why that is done, what comes to mind, that is not told. So we will try to see that today. Let's go. What we have been doing in the last two questions, we will do here too. For example, you have reached some index i. What? You have reached some index i. Okay. Here is your i."
+  },
+  {
+   "start": 174.8,
+   "end": 201.38,
+   "text": "So if we get the good answer of the subarray ending on i, which we used to do in cadence, remember we used to do this in cadence. In cadence, we used to get the best answer of the subarray ending on i, and in the end, we used to return whatever was best. In the previous two questions of prefix sum, we are doing the same thing. Get the good result of the subarray ending on i, meaning, where there was sum, so get the good sum of the subarray ending on i. If you do this for every i, then you will get the answer. So for example, if we are on this i,"
+  },
+  {
+   "start": 201.38,
+   "end": 229.58,
+   "text": "So, we will get the maximum length of the morning that ends on this i. And if we do this for every i, then we will get the answer. Okay. What did we do for this? What did we tell you? Take a green part from your mind. What? Take a green part from your mind. What should you take? Take a green part. And, what did this green part mean? Green part means that it is a good morning. What is it? It is a good morning."
+  },
+  {
+   "start": 229.58,
+   "end": 258.8,
+   "text": "What was the right or the wrong thing? The condition given to you. Meaning, the number of zeros is equal to 1. This is the condition given, right? The number of zeros is equal to 1. No matter how it is, if you have taken 4 lengths, then it can be 0, 1, 0, 1. Something like this. Okay. Just what is left in the sub-array, what do we call it? Red part. Red part. Red part. What did we have to think about this red part? What will this red part have to be?"
+  },
+  {
+   "start": 259.12,
+   "end": 288.05,
+   "text": "What will happen? According to that, we thought that what will we ask the question from the HashMap? What will we ask the question? What will we ask the question? And what will we ask the question? According to that, what will we store? We are saying again and again that the last two questions that we have not seen, then we will award such kids. Now, we will get Bharat Ratnam, right? On 26th January, we will get Bharat Ratnam from you. Those people who see directly in between. This was our logic that one sub-array ends on I, very good."
+  },
+  {
+   "start": 288.05,
+   "end": 309.58,
+   "text": "There is a green part which is good, we assume that this is the best. The rest is the red part. Now what will happen to it? Like when we used to do the question of sum, we used to assume that the sum of green is exactly k. We used to know that the sum of red should be sum minus k. We used to know this. In the question of modulus, we used to assume that the sum of green"
+  },
+  {
+   "start": 310.0,
+   "end": 340.05,
+   "text": "When you will answer it, it will be like this. So, we used to know that the red sum, when you will divide it by k, then it should be the remainder of the total. So, this is the relation. But, what is the relation here? Here, look, the condition is not given in mathematical form. The condition is of some strange form. Okay, let's see what is the strange form. Let's see what the condition wants to say. Suppose, this is your array. This is your array. 0, 1, 2, 3, 4, 5, 6."
+  },
+  {
+   "start": 340.05,
+   "end": 369.52,
+   "text": "Assume that this part is made green. Think that this is the green part. Now when will the green part be green? When 0 is the same and 1 is the same. Number of 0 is equal to number of 1. So if we say that 0 is equal to x and 1 is equal to y. Just for variable. In this green part, how much is 0? It is x bar. How much is 1? It is y bar. So the difference between both will be x minus y is equal to 0."
+  },
+  {
+   "start": 369.81,
+   "end": 398.26,
+   "text": "Brother, this is what happened. 0, 1, 0, 1. 0 is twice and 1 is twice. So, when we do x minus y, 0 minus 1, then the answer should be 0. Yes, this should come. This is your correct condition. The condition of being correct has happened. The condition has happened. Okay. So, what we found out is that we are playing in difference here. In the last two questions, in some questions, we were playing on sum. In some questions, we were playing on sum modulus. We used to store that too. We used to ask that too."
+  },
+  {
+   "start": 398.26,
+   "end": 426.43,
+   "text": "In which we used to ask the sum, then we used to store the sum only and we used to ask the sum from whom? From HashMapsRed. In this, we are playing in difference. Difference should be 0. Difference should be 0. One thing should come to your mind that difference is being seen. Is any array right or wrong? How will this be known? It will not be known just by looking that 0 is 3 times and 1 is 3 times. No. How will it be known mathematically? How will it be known by count? So, if you do 0 minus 1, your answer should be 0."
+  },
+  {
+   "start": 426.43,
+   "end": 452.58,
+   "text": "This tells us that the current array is correct. Okay? Good thing. So, you understand this thing, right? We want to see the difference to be correct. We want to see the difference. Because look, you have to see something or the other. Maybe you have some other thing in your mind that we will not see the difference, we will see something else. We can see. But, is 0 and 1 the same or not? For this, difference is a very good factor. Difference. The difference of both should be 0. Okay?"
+  },
+  {
+   "start": 452.58,
+   "end": 481.78,
+   "text": "If both are not the same, then the difference will never be 0. The difference will either be negative or positive. It won't be 0. Okay? That's it. If you think that 70% is less. We have understood that the difference between green and green, whose difference? The difference between number of 0 and number of 1 should be 0. Now tell me what should be of this? What should be of red? Now the next part was that you have to figure out what should be the difference of red. Okay? Let's take an example of number. Assume"
+  },
+  {
+   "start": 481.78,
+   "end": 511.76,
+   "text": "Assume that in the whole array, 0 is 10 times. Let me tell you one more thing. When you make the whole array i till i, then make it deliberately wrong. Make it deliberately wrong. Assume that 1 is 5 times. What is your difference? It is 5. Is it not right? We will make a green array. You can give anything in the green array. You can give 0 and 1 in the green array. But their difference should be 0."
+  },
+  {
+   "start": 511.76,
+   "end": 539.63,
+   "text": "According to us, we will give zero three times in this. And the one, let's give it twice to both. How many times do we give to both? Twice. Okay. We have given zero twice too. Now, its difference is zero. The remaining red part, how many zeros and ones will be there? Brother, the total was this much. And you have given this much in green. The remaining will be there only. Come. How many zeros will be there in this? The total was 0.10, so there will be 8 in this obviously."
+  },
+  {
+   "start": 540.24,
+   "end": 570.46,
+   "text": "The total was 5, so it will be 3. Take out their difference. 8 minus 3 is equal to 5. See this. The same thing was happening in the modulus. The same thing was happening in the modulus that if you divide the sum by k, then the remainder would come. The sum of the red part should also be the same which you divide by k, then the remainder will come. See here also. Your whole sum, this whole one, sum till i, its difference was also 5, its difference was also 5. That's it. So you got to know about the red part, what you have to see."
+  },
+  {
+   "start": 570.46,
+   "end": 600.37,
+   "text": "There is a difference that is the same. But why is this happening? This is not magic. It is difficult to understand why this happened. We will explain it to you through a football game. A football game is going on. One is team A and one is team B. There are many rounds. At some point, you came to know that team A scored 10 points."
+  },
+  {
+   "start": 600.75,
+   "end": 632.34,
+   "text": "Okay, very good. And team B scored 5 points. They scored 5 points. You got to know this in one round. You got to know this in one round. In the next round, what do you get to know? Yes, so how much is the difference between them? Is there a difference between team A and team B? Okay. In the next round, you get to know that team A scored 30 points. What? They scored 30 points. Team B scored 25 points. Still, the difference between them is 5."
+  },
+  {
+   "start": 632.34,
+   "end": 661.54,
+   "text": "This is also difference 5, this is also difference 5. Okay. In between these two rounds, let's see how many points both teams have made. How many points have both teams made? This person reached from 10 to 30. That means team A has made 20 points. From here to here. From where? From here to here. In between these rounds. He reached 525. That means how many points has he made from here to here? He too has made 20 points. Now see. The points of team A and team B are same. When?"
+  },
+  {
+   "start": 661.54,
+   "end": 688.74,
+   "text": "In between these two. At one time, their difference was 5. Even after moving forward, their difference was 5. In between both, they must have made the same number of points. It's logical. One man was 10 and the other man was 15. Let's assume. Their difference was minus 5. Okay. Take any other two numbers whose difference is also minus 5. Take 25 and 30. Even now, the difference will be minus 5. How many points would they have made from 10 to 25? 15 points."
+  },
+  {
+   "start": 688.74,
+   "end": 716.82,
+   "text": "How many points would it take to make 15 to 30? See, he scored 15 points again. This is his logic. We understand it according to the pattern. But in the real world, suppose the difference between you and your brother is 2 years. How old are you now? You are 10 years old now, your brother is 8 years old, so the difference is 2 years. In the future, if you become 30 years old, then your brother is 2 years younger than you, so it will be 28 years. There is still a difference. How many years will it take you to be 10 to 30 years old?"
+  },
+  {
+   "start": 716.82,
+   "end": 745.7,
+   "text": "20 years. In 8 years to 23 years, how many years will it take for your brother? 20 years. So the difference between these two, you will grow equally in this. Like these two teams made 20 points, then they were able to make the same difference. This is its logic. That, if the difference now, if the difference now is 5, if we see, whether the difference was 5 or not, then we will know that the middle portion will definitely be equal. And we will write that answer. So this happened, this is very well understood. For whom? For count."
+  },
+  {
+   "start": 745.7,
+   "end": 772.98,
+   "text": "You used to make a count that if your difference is 5, then you used to ask that how many things difference is 5 till now? Then someone used to tell you that it is 3 things, then you used to add it in that count. Now you don't need count, now you need longest. What? You need longest. For this, let's assume, let's assume, see. Assume, this is your array. Your i has reached till here. Okay. Now this is your difference, it is anything, it is 3."
+  },
+  {
+   "start": 773.17,
+   "end": 803.49,
+   "text": "It is possible, it is possible that a lot of red parts like this, what do you have to find? What used to happen in the account? How many red parts have come before today whose difference was 3? So, in the hash, it used to tell you that before today, let's assume that 3 has come. Let's assume that you know the red part of these 3 types. This is R1, this is R2, and one more red part, this is R3. You know the red part of 3 types that there was a difference of 3 in this. It is possible that the index on which R1 ended, R1 will now end at index number 1."
+  },
+  {
+   "start": 803.49,
+   "end": 829.09,
+   "text": "R2 would have ended at index number 3. R5 would have ended at index number 5. What does it mean by ending? R3 from here to here. What is R3? From 0 to some index, it would be up to 5. R2 would be up to 3 and R1 would be up to 1. Okay. Assume that you are standing at 10 right now. Now, in count, you would have counted all 3 R1s. Because it was count, right? If it was count, then it was count. In longest, who would you want to count? In longest, if you are standing at 10,"
+  },
+  {
+   "start": 829.09,
+   "end": 858.67,
+   "text": "If someone asks you to make the longest, then would you like to count the smallest R1 or the biggest R1? If you count the biggest, then the middle green part will be of 5 length. If you count R2, then the middle green part will be of 7 length. If you count R1, then it will be of 9 length. This is the longest. You don't have to count all the red parts which have this difference."
+  },
+  {
+   "start": 858.67,
+   "end": 888.38,
+   "text": "The first red part that came with this difference has to be counted. The first red part. Yes, yes, yes. We have come to know. Now, but there is one more edge case in this. If, assume, if there is a sum like this, if there is a sum like this, where the difference becomes 0, where the difference becomes 0, means, means, difference 0 means, number of 0 is equal to number of 1, means number of 0 minus number of 1 is equal to 0. If there is a sum like this, not sum, means we are calling it sum,"
+  },
+  {
+   "start": 888.38,
+   "end": 911.09,
+   "text": "Suppose there is a difference of i is equal to 8. What will you do in this? There is no need to do anything in this. Suppose there is a difference of 0. It will be 0, 0, 0, 0, 1, 1, 1, 1. It will be 4 times 0 and 4 times 1. So this whole array is a sub-array which can be the longest."
+  },
+  {
+   "start": 911.09,
+   "end": 938.83,
+   "text": "If i is equal to 8, i is equal to 7, because it will always be even. Why will it be even? You understand, right? It is a sub-array in which it is equal. So 0 will be 3 times and 1 will be 3 times. So obviously, the length will be even. Okay. If you get i is equal to 7, then you don't have to see any red-green in it. When did we see red-green? We saw it in the count. We saw it in the count too, but there was no need to do anything in it. If the whole sum satisfies that condition, then just increase 1 in your answer."
+  },
+  {
+   "start": 938.83,
+   "end": 966.88,
+   "text": "but when i is equal to 7 is satisfying our condition then we don't need to make any red part its length is 7 plus 1 is equal to 8 this can happen this can happen this should be compared in your result listen again if you see that the whole i is satisfying the condition and you have to find the longest"
+  },
+  {
+   "start": 966.88,
+   "end": 994.86,
+   "text": "In i is equal to 7, the whole is coming. Now if you will consider any red, then this green part will become small. The green part will be maximized when you will take the whole array. From 0 to 7, its length is 8. Means in general, it is i plus 1. So this should come on your result. So this was about the edge case. Now how will we solve this? Hope you have understood the logic. See, we are not remembering anything. You will see its solution. It is a very strange solution."
+  },
+  {
+   "start": 994.86,
+   "end": 1023.87,
+   "text": "take a sum and when 1 comes, then do plus plus in the sum and when 0 comes, then do minus minus in the sum. Why? Because there is a difference. The sum contains its difference. That is the thing. But remember that do plus plus and minus minus. We will remember it now. Then when 0, 1, 2 will come, then you will not understand that do plus plus in 2 and minus minus in 2. Then you will get stuck. Let's go. For this, for this, see what we will do. Let's make an array which is an input array. 0."
+  },
+  {
+   "start": 1023.87,
+   "end": 1053.31,
+   "text": "5 times 1, 5 times 1, and 0, 0, 0. 0, 0, 0. Look carefully. Look carefully. Look carefully. Yes. What do we want to ask the question every time? That whatever current difference will come, when did this difference come for the first time before today? This is our question. Before today, before today, difference, first time, means when did it come first? That will be the longest, right? It is possible that the difference has come even after that, we are not interested in that."
+  },
+  {
+   "start": 1053.31,
+   "end": 1082.94,
+   "text": "Tell me the first index from which we will get the longest. So, HashMap does this work very easily. So, in the beginning, keep your HashMap empty. In the count problem, we used to put F0 is equal to 1 because initially it was 0. There is no need here because there will be only one case of 0 in the longest that the whole array will be done. So, there is no need to put it. We can put it, there is no need. Let's go. What will we maintain? What will we maintain every time? Difference."
+  },
+  {
+   "start": 1082.94,
+   "end": 1113.33,
+   "text": "What do we need for difference? Take a counter of 0. Take a counter of 1. That how much is 0 and how much is 1. You can do whatever difference you want. 0 minus 1 or 1 minus 0. Both can be done. Both will work. But do only one. It is not like you are doing 0 minus 1 or 1 minus 0. Otherwise, it will be positive or negative. Think that we will always consider difference. Number of 0 minus number of 1. Positive or negative, it doesn't matter. Let's go. First of all, what will we do? We will come to i is equal to 0."
+  },
+  {
+   "start": 1113.33,
+   "end": 1142.19,
+   "text": "Okay. What is I is equal to 0? What is the value? It is 0. So, we will increase 0 to 1. So, our 0 is equal to 1. 1 is equal to 0. What is our difference? Difference is equal to 0 minus 1. 1. Okay. In the HashMap, you can see whether there is 1 in the HashMap or not. There is 1 in the HashMap or not. There is no 1 in the HashMap. It means that 1 has never come. It means that it has never come. Don't do anything. But, before going ahead, now you have got a sub-array whose difference is 1. So, along with 1,"
+  },
+  {
+   "start": 1142.19,
+   "end": 1172.0,
+   "text": "On which index did we get it? On which index did we get it? On 0. Let's put 0. I is equal to 1. I is equal to 1. It is 1. So 0 will remain the same. 1's value will increase. Okay. 1's value will increase. What is the difference? 0. Now what did we say on 0? See. The difference of this whole array is 0. So what will be the longest subarray? This subarray. This subarray. I is 1. See. What is its length? Its length is 2."
+  },
+  {
+   "start": 1172.0,
+   "end": 1202.05,
+   "text": "What will you do? As soon as you get the difference 0, then this is a special case. Res is equal to max of res i plus 1. You got the whole array, right? Till i is equal to 1, you got to know that we get the difference till here. So, the whole difference is 0. So, this whole array is good. Okay. So, what is the value of res? 2 is there. 2 is there. Very good. Come to i is equal to 1. It is 1. So, your 0 will not remain 1. The value of 1 will be 2. What will be the difference? 1 minus 2 minus 1."
+  },
+  {
+   "start": 1202.05,
+   "end": 1232.72,
+   "text": "You will see that there is no minus 1 in my hash map. But now that it has come, we will put it. Where is the index? 2. It was found on 2 for the first time. Let's go. I is equal to 2. It is again 1. Z is equal to 1 and 1 is equal to 3. What is the difference? Minus 2. Is minus 2 in the hash map? No, it is not. But let's put it. It will be useful in the future. So, if it will be useful in the future, we will put it. Let's go. In which index have we found it? Here it was. 3. Sorry, this is 3. Let's put it on 3. Let's go."
+  },
+  {
+   "start": 1233.33,
+   "end": 1263.79,
+   "text": "i is equal to 4. i is equal to 4 but there is 1. So 0 will remain 1. And the 1 will become 4. Difference is equal to minus 3. What is minus 3 in hash map? No. I mean I am not getting it. Let's put this too. It will be useful in the future. It will be useful in the future. i is equal to 5. 1. Again 1. Oh my. z is equal to 1. What is 1? 5. Difference is minus 4. What is minus 4 in hash map? No. But let's put it. It will be useful in the future. Let's go. i is equal to 6."
+  },
+  {
+   "start": 1263.79,
+   "end": 1291.04,
+   "text": "i is equal to 6, so 0 is 0. z is equal to 2. 1 is equal to 5. Now see, difference is equal to minus 3. Now we have to see if minus 3 is in the hash map or not. If minus 3 is not there, then it's not a good thing. But if minus 3 is there, then what index was it on? On 4. What does it mean? This whole thing, this 4, this 4 is your red part."
+  },
+  {
+   "start": 1291.04,
+   "end": 1318.91,
+   "text": "What is your green part? On which index are you? I is equal to 6. This one. You are on I is equal to 6. This part is your green part. Now, how will this part come? I is on 6. Last difference was on 4. So, from where will this come? I minus F of difference. If difference is found, then? What will be the answer to this? 6 minus 4 result is equal to 2. See the result. The result is already 2."
+  },
+  {
+   "start": 1318.91,
+   "end": 1345.9,
+   "text": "No problem, we will write the result as 2 only. Now, it is very important. Should we update the index of minus 3 and make it 6? No, no, no. See, now you got to know. Red part was minus 3. Minus 3 had already reached index 4. It had come there for the first time. Now, you have got i is equal to 6 that the difference till here is also minus 3. So, should we update the index of minus 3 and make it from 4 to 6? No. Because we want the longest. If you..."
+  },
+  {
+   "start": 1345.9,
+   "end": 1377.1,
+   "text": "If you make it from 4 to 6, if you need minus 3 in the future, then you will get a 6 answer. The more you increase the red part, the smaller the answer you will get. The less the red part, the bigger the answer you will get. So, we need a bigger answer, right? We will not update anything. Once it comes, it comes. That's it. It's over. Let's go. I is equal to 6. I is equal to 7. It's 0 at 7 too. Very good. Z is equal to 3. 1 is equal to 4. Sorry, 1 is equal to 5. What is the difference?"
+  },
+  {
+   "start": 1377.1,
+   "end": 1407.09,
+   "text": "Minus 2. Has minus 2 come first? Yes, it has come. It has come on 3. So, 7 minus 3, 4. Your answer can also be 4. Update the answer and make it 4. Do we update minus 2 in the hash map? No, no, no. The one that came first is the best. Come on. I is equal to 8. Zero is one more. Very good. Zero became 4. 1 is 5. What is the difference? Minus 1. Has minus 1 come first? Yes, yes, yes. It has come on 2. How much will be the length of every part? 8 minus 2, 6. 6."
+  },
+  {
+   "start": 1407.09,
+   "end": 1438.51,
+   "text": "Should we update the minus 1? No, there is no need to do anything. Your loop is finished. What did you return? 6. Now see. This part, which part? This part. This part is your longest variable. 1 is 3 times and 0 is also 3 times. Let's go. We have seen the dry run. Let's write its code. How will we write its code? It is very easy. First of all, int n is equal to a.size. Right? We will make two variables. Like we used to make variables for sum every time. So this time we need two variables. Because we are doing it like this."
+  },
+  {
+   "start": 1438.51,
+   "end": 1466.83,
+   "text": "Now if you read this online, then it will work with only one variable, sum. So if we get 1, then we have to increase the sum, but it is so intuitive that we don't understand it. So we don't think you will also understand. We understand more than 0 that the difference is coming out every time. And we have made a hash map which will keep the difference and its index. What is the index? The first time, the first time the difference will come, we have to store it. After that, we don't have to mess with it. Now here, there is no need to do f0 is equal to 0 because why not?"
+  },
+  {
+   "start": 1467.02,
+   "end": 1490.86,
+   "text": "There is no need. You can do it. To do it, you can do f0 is equal to minus 1. Now, minus 1 is not an index. But, what does index tell us? Till which index? Till which index is that red part ending? That means, which index did it come for the first time? So, the difference at the beginning is 0. The difference at the beginning is no doubt 0. But, that index did not end at 0. It ended earlier. Ending at 0 means that it will end at 0. No. At 0,"
+  },
+  {
+   "start": 1490.86,
+   "end": 1520.88,
+   "text": "On index is equal to 0, the difference can't be 0. Because on index is equal to 0, it will be either 1 or 0. So the difference can be either minus 1 or 1. It can't be 0. So that's why there is no need to write because we have handled 0. When 0 comes in the longest problem, then you make your answer i plus 1. And write the answer for the result. For, write here. For i is equal to 0. i less than n. i plus plus. Okay."
+  },
+  {
+   "start": 1520.88,
+   "end": 1554.02,
+   "text": "First of all, if ai is equal to 0, 0++, else, 1++. Okay? First of all, what did we get? Difference. Difference is equal to 0-1. We are doing 0-1, you can also do 1-0, whatever you want. But stay on that, I mean, don't change, okay? Let's go. First of all, what case did we handle? If difference is equal to 0, means, the whole array, the whole array till i, the difference became 0 here."
+  },
+  {
+   "start": 1554.02,
+   "end": 1584.34,
+   "text": "Nothing to do. Res is equal to maps of res and i plus 1. i plus 1. i is equal to 3. If the difference is 0, then what will be its length? 0, 1, 2, 3, 4. 3 plus 1, 4. And now nothing to do. Nothing to do. Continue. Continue. That's it. Okay? This is how it is. It came here. Now the rest is written here. You guys hope that you understand. Okay? It's not printed. Yes."
+  },
+  {
+   "start": 1584.34,
+   "end": 1617.04,
+   "text": "Now what we have to check is that if this difference is not there, if this difference is not there, if this difference is not there, if f dot find difference equal equal to f dot end. This line means that it is not there in the hash map, it is not there in the hash map, equal equal to f dot end means it is not there in the hash map. If it is not there, then what will we do? If it is not there, then we will not do anything, we will go ahead, but we will put it before going ahead. We will put it before going ahead. Now what can we do? It is not there. Come on, it may be useful in the future, it may be useful in the future, put it. Else, else, else, is, is, is, what to do?"
+  },
+  {
+   "start": 1617.62,
+   "end": 1646.03,
+   "text": "On which index did you get it? You got it on F difference. Okay, that's good. What will be the length? What will be the length of the green part? We have already seen. I minus index. Look at the dry run. Look at the dry run. If you get it on minus 3, 4, then 6 minus 4 is equal to 2. If you get it on 4, it means that difference was till 4. How much is left? If you are on 6, then 5 and 6 are left. 6 minus 4 is left. Okay. I minus index. We used to update the result."
+  },
+  {
+   "start": 1646.03,
+   "end": 1671.9,
+   "text": "We used to update the result. And, did you update f of difference? No, we didn't update it. Because the first time it came, it was the best. Because we are doing the longest. Okay. Let's go. Close this. Close the for loop. And in the last, return. That's it. The code is over. So, this was a very intuitive way to understand it. What? There are red and green parts. So, red and?"
+  },
+  {
+   "start": 1671.9,
+   "end": 1700.99,
+   "text": "green part. Always do it like this green part then red part, green part then red part, green part then red part. You will know what to do. Thank you very much for watching and the next two questions are problem-challenge questions. They are very hard. I mean, it will not be good to teach that question now. The question of prefix sum in the next one, you will not be able to understand without heap or queue. And the next one is even more hard. So, you will not be able to understand without merge sort or fenwick tree. So, we will do that later."
+  },
+  {
+   "start": 1700.99,
+   "end": 1705.58,
+   "text": "We will do revision from tomorrow and will start the next pattern. Thank you very much for coming."
+  }
+ ]
+}

@@ -1,0 +1,389 @@
+{
+ "video_id": "PqwlS4bcr1Y",
+ "title": "Start Learning Recursion Backtracking With This Question | Best Recursion Explanation",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1977,
+ "segments": [
+  {
+   "start": 0.02,
+   "end": 27.12,
+   "text": "So till now we were doing easy easy recursion means we were doing the first one that we solve all the problems and give the answers. There is no hard question in that unless there is DP in it. Today we are going to make the question of backtracking. Everything has been updated in the sheet. See the link in the sheet. See the question in the recursion backtracking pattern. In this question, we will give you an example of UG degree and PG degree and your father. Which example will be understood completely correctly."
+  },
+  {
+   "start": 27.12,
+   "end": 35.23,
+   "text": "While writing the code, I made a mistake that I wrote the code first and then did the drawing. So don't be impatient that while writing the code you are not able to understand."
+  },
+  {
+   "start": 35.23,
+   "end": 59.84,
+   "text": "see the dry run, it is after the dry run code the dry run that we tell you will be understood and do it in your copy until you will not do the dry run in your copy, you will not understand it well any teacher of the world will teach you recursion so you will not understand it as much as you will understand it in your copy we should not say this because this is my channel, we should say that watch my video, you will become a master of everything no, it is not like that, the reality is what we say"
+  },
+  {
+   "start": 59.84,
+   "end": 88.83,
+   "text": "You won't understand from any video as much as you can understand by yourself. We know all the recursion because we write recursion in copy and do dry run. It's not hard, it's tedious. People don't do it because it's tedious. People think that code is small, we will read it, we will remember it. No, don't do that. So, watch till the end. Be patient and watch. You will understand everything till the end. And if you do it in your copy, then you will understand 110%. Okay? So, let's start quickly. So, this question, first of all, we will explain you the question. The name of the question is Leetko22."
+  },
+  {
+   "start": 88.83,
+   "end": 109.22,
+   "text": "You are given n pairs of parenthesis. What is the meaning of pairs? It is a pair, not a pair. What is the meaning of parenthesis? It is like this and like this. One is open and the other is closed. It is of the same type, of normal type. There is no curly or square. It is very easy. What do you have to do?"
+  },
+  {
+   "start": 109.22,
+   "end": 131.06,
+   "text": "you have n pairs, if you have 2 pairs then it means you have 2 open brackets to use and 2 closed brackets to use it is correct, you have 4 total, you have to use all 4 using all 4, it means 2 open and 2 closed you have to generate all combinations what does it mean?"
+  },
+  {
+   "start": 131.06,
+   "end": 157.74,
+   "text": "First of all, this is your sign that you have to use backtracking here. Whenever in any question, it happens that you have given some things, some items, and you have to combine them and generate all combinations, all subsets, all possible anything, then you should always go towards backtracking. In the future, it becomes DP, which is a different thing. So, generate all combinations. So, first of all, you should understand that this is a question of backtracking. Okay. But there is one more twist in this."
+  },
+  {
+   "start": 157.74,
+   "end": 183.41,
+   "text": "Whatever you will generate, it should be well formed. What is well formed? What does well formed mean? Let's generate it and show you. What do you have? You have 4 total brackets to use. You have to arrange them. Permutation, permutation, put them anywhere. You have 2 open and 2 close. We put them anywhere. We put close here, open here, close here, and open here."
+  },
+  {
+   "start": 183.41,
+   "end": 211.42,
+   "text": "So this is a combination. Why is it a combination? Because if you look carefully, then how many closes are there? One close will be visible here and one close will be visible here. How many open are there? One open will be visible here and one open will be visible here. So we used two open and two close. We made a string of four lengths. Okay, so this is a combination. But is it a well-formed parenthesis? Meaning, is it a valid parenthesis? No, it is not a valid parenthesis. Because if you look carefully, do you find it valid? Let's open one close."
+  },
+  {
+   "start": 211.42,
+   "end": 239.07,
+   "text": "Then you open, then close, and then open. So is this a valid parenthesis? Does it look valid? No, it doesn't. What is a valid parenthesis? If we generate a combination like this, suppose we open like this, close like this, open like this, close like this. This is a valid combination. This is a valid combination. Or we could also do this, like this, we open 2, we open 2 continuously, and close 2. This is also a valid parenthesis. But if you do this, that you close 2,"
+  },
+  {
+   "start": 239.07,
+   "end": 261.52,
+   "text": "and open 2, this is not valid, so it generates those combinations which are valid, non-valid ones don't generate, so this makes this question hard, if there was no well-formed option in this, then we will show you how easy it is, you can do anything, very small code, you can do anything, but, because you are told to generate all combinations, means by adding total, open 2,"
+  },
+  {
+   "start": 261.52,
+   "end": 290.0,
+   "text": "and use 2 close because it is n2 you can use it you have to make a combination but what you will make should be valid it should not be invalid ok come to understand this we will explain you through an example now see according to logic what happens open bracket comes first close bracket comes later this is what happens we understand this that open comes first and close comes later ok we will explain you an example of degree suppose your father tells you that we will"
+  },
+  {
+   "start": 290.0,
+   "end": 319.82,
+   "text": "We will give you money to do the degree. You have done 12. Now, you have one type of degree which is undergraduate. Whichever degree starts from B, Bachelor of, B.Tech comes in it, B.C.A comes in it, B.A comes in it, all this is UG degree which you can do after 12. After UG, you can do PG, post graduation. This means, whichever degree starts from M, like M.Tech, M.C.A, M.A, this is called post graduation degree. So, whichever Bachelor of something happens, it is called undergraduate, you can do it after 12. Assume that you have done post graduation,"
+  },
+  {
+   "start": 319.82,
+   "end": 346.9,
+   "text": "you can only do it after under graduate, you can't do it directly after 12th, so let's say we will do it like this, so let's say open bracket, we will say that it is like UG degree, means first it is UG, then PG, so it is open, close will be like PG, now for this question, your father will tell you that we will give you, let's say N pairs, let's say 2 pairs, we will give you money to do 2 pairs of degree,"
+  },
+  {
+   "start": 346.9,
+   "end": 370.48,
+   "text": "We can give you money of 2 UG and 2 PG. I don't have more money than this. When you ask for money from us, we will give you money of that degree. But, but, you will see what will happen. How will your dad catch valid and invalid in this? What will happen is that you are asking money for chowmein and not for fees. Then how will your dad catch this? See. In the beginning, see in the beginning. In the beginning, how much money has your dad promised? 2 UG."
+  },
+  {
+   "start": 370.48,
+   "end": 398.21,
+   "text": "2 PG. Okay? Your dad must have remembered that you have to give 2 UG and 2 PG. We have to get the boy to do 4 degrees in total. In the beginning, how much UG would you have done? In the beginning, you would have done UG is equal to 0 and PG is equal to 0. When you would have left the duel, then you would have done this only. Okay. Let's see. Now you must be thinking that I have two choices. We can ask for UG's money as well as PG's money. But your dad will run more than you. Let's see what happens. Assume that in the beginning, you ask for UG's money."
+  },
+  {
+   "start": 398.21,
+   "end": 420.53,
+   "text": "that we need a degree to do B.Tech, we need money to do B.Tech. So see, your father will not check much in this because your father had promised you that he will make you do 2 UG. So your father will just see that as much as you have done UG, now when you have done 0 UG, so if 0 is less than 2, then your father will give money that let him do it. Okay, no one will check much in this. It is a natural thing."
+  },
+  {
+   "start": 420.53,
+   "end": 443.31,
+   "text": "After 12. After 12, if your father says that we will give you money of 2 UG, then we will give money of 2 UG. Until you don't do 2, you will keep getting money. So if 0 is less than 2, then your father will give you. Your father will give you money. And when you will go ahead in that, then you will have UG is equal to 1. Means you have done 1. PG will remain 0. You have not done PG. So okay, we will give money in this. Very good. So what you have to check to give money of UG is that"
+  },
+  {
+   "start": 443.31,
+   "end": 472.8,
+   "text": "The number of UG should be less than 2, then your dad will give you money, he won't scold you much. Okay. But, suppose at the same time, when you were in the beginning, there was 0-0 in both, you say, dad, give us the money of PG, give us the money of PG post-graduate degree. Here, your dad will catch you. Why will he catch you? Your dad will say, okay, you are asking for the money of PG. How much UG have you done till now? How much UG do you have till now? So, you will say, till now, my UG is 0. It is 0 degree. You don't have any degree of UG. So, when you are asking for the money of PG,"
+  },
+  {
+   "start": 472.8,
+   "end": 500.77,
+   "text": "So what UG is PG asking for? You haven't done UG yet, right? He said, we haven't done it yet. So when you haven't done UG yet, then why are you asking for PG money? Where will you do it? I mean, you should understand that you haven't done anything after 12th. You are directly asking your father for money to do M.Tech. Your father will say, when did you do B.Tech? If not B.Tech, then it's not matching. You need a degree of UG for every PG. You have a degree of UG of 0. And you are asking for PG money. So we won't be able to give it. So you are doing it. So your father will stop you here."
+  },
+  {
+   "start": 500.77,
+   "end": 513.54,
+   "text": "We will stop here. Why will we stop? Because how much degree of UG do you have till now? It is 0 degree. Okay. You are asking for PG. So when you will ask like this, then it will be like this. Now UG is equal to 0 and PG is equal to 1."
+  },
+  {
+   "start": 513.54,
+   "end": 542.66,
+   "text": "This is not a right state, it is an invalid state. It is just like you have put a closing bracket. The PG that you have done together, for whom is this PG? When did UG happen before this, then it is valid. Yes, the admission officer will ask you to bring the degree of UG. You don't have the degree of UG. So this is invalid. So you can't do this. You can't do this. Dad will stop you. You can't take this choice at this time. Come. Let's move ahead. You will be clear ahead that how we are saying that we can't take. Assume you have come here. One UG is done, one PG is done. PG is still zero."
+  },
+  {
+   "start": 542.66,
+   "end": 564.67,
+   "text": "If you ask for the money of PG here, then your father will say that till now how much UG have you done? You will say that we have done 1-2 UG, any B.Tech, B.C. or any Bachelor. Okay, how much PG have you done? PG is still 0. If your father gives you money in this, then what will happen?"
+  },
+  {
+   "start": 564.67,
+   "end": 591.26,
+   "text": "UG will remain 1 and PG will be 1. So is this valid? Yes, this is absolutely valid. This is absolutely valid. Your father will give you money in this. So you can do PG. When your father will give you money, then you will come to UG is equal to 1 and PG is equal to 1. Now imagine, here again you say that give us the money of one more PG. Then your father will catch you. Why? Why will he catch you? Because how much UG is done? One. One UG is done."
+  },
+  {
+   "start": 591.26,
+   "end": 620.26,
+   "text": "How many PGs have you done? One has already been done. Means, one PG has also been done. So, these two together have ended. You have done one PG for one UG. Now, you are saying, make us do one more PG. Means, you will do one more PG here. Where is this PG's UG, brother? This PG's was found here. Okay, it was found there. Where is this PG's UG? You are asking for the money of this PG. Now, you are saying, make us do MBA. When did the BBA of MBA happen? Yes, you have only one degree. You should have at least two UGs. Means, you should have B.Tech somewhere. Somewhere."
+  },
+  {
+   "start": 620.26,
+   "end": 647.49,
+   "text": "You should have done BBA After that you can do M.Tech and MBA So here your dad will catch you again Why will he catch you? Because There is one UG There is one PG Right now You are saying give us one more PG So by doing this UG will be 1 PG will be 2 Then he will catch you The new PG that you are going to do For which you are asking for fee When did his UG happen? He said his UG never happened Then your dad will catch you At this time if you ask for UG money"
+  },
+  {
+   "start": 647.49,
+   "end": 676.54,
+   "text": "You can get UG's money, you can get UG's money immediately. In that, we are saying that there is only one cheque. What is the only cheque? That okay, we had promised to do 2. Till now, it is 1. 1 is less than 2, we can give. So when you will do this, then UG will be 2 degrees. PG will be 1 degree. Now, if you will ask for UG's money here, will you get UG's money? No, no, no. Because what did papa say? We will do 2 UG's, you have done 2. Not less than 2, you will not get money. No, you will not get. Will you get PG's money?"
+  },
+  {
+   "start": 676.54,
+   "end": 703.3,
+   "text": "Yes, you will get it. Why? Because you have done 2 UG. That means 2 UG is somewhere here. You have done 1 PG also. You have done 1 PG also. That means these two are over. Now if you get the money of PG, then yes, it matches. That means there was a degree of 2 UG, there was a degree of 1 PG, so now you can get the money. Yes, yes, you will get it. Now you will have 2 UG and 2 PG. As soon as you come to this state, as soon as you were promised,"
+  },
+  {
+   "start": 703.3,
+   "end": 733.02,
+   "text": "NUG, NPG. So, you see that this is also N, this is also N. You can print this combination. You can print this combination. So, you understand that at every stage, both choices are not available. It doesn't mean that you can do anything. No, your father won't let you do anything. This is the meaning of well-formed. Well-formed is your father. He won't let you do anything. If you try to do something wrong, that UG degree is not that much and you want to increase the degree of PG, your father won't let you do anything."
+  },
+  {
+   "start": 733.02,
+   "end": 759.92,
+   "text": "Let's trace it and explain it. Let's trace it again. How much is your dad? 2. In the beginning, 0, 0. Okay? This also means that your dad will never let the number of PG degrees increase. Your dad will never let this happen. He will never let the number of PG degrees increase. What does this mean?"
+  },
+  {
+   "start": 759.92,
+   "end": 789.18,
+   "text": "and then MTEC and then MCA. Your father will not let this happen because UG is 1, PG is 2. Where is the UG of MCA? I don't know. Your father will not let this happen. Come. See what you can get every time. Again, you always have two choices. You can definitely pay but will you get it or not? First of all, you say that give us the money of UG. What does your father check in UG? Is it 0 now? Is it 0 less than 2 or not? We have promised 2. We will give you 2 in any way. You will get UG."
+  },
+  {
+   "start": 789.18,
+   "end": 818.48,
+   "text": "So, you come to UG is equal to 1 and PG is equal to 0. Again, you come to this, you ask for UG. You ask for UG in this. So, your father will give you or not? He will give you because UG was promised to do 2, it is 1. You will come to UG is equal to 2 and PG is equal to 0. Now, if you ask for UG, can you ask for UG here? No, you can't ask for it. It was promised to do 2, you did 2, right? No, you can't ask for it. Meaning, if UG is less than N,"
+  },
+  {
+   "start": 818.48,
+   "end": 843.58,
+   "text": "then only you can ask for undergraduate course. Now here you ask for PG. Can you ask for PG here? Look, what your father doesn't want is that the number of PG should never be more than UG. So here if your father gives you money, then where will you come? On UG 2 and PG 1. This works, this works, this works. This is not invalid. This has happened that you did 2 BTEC, BBA."
+  },
+  {
+   "start": 843.58,
+   "end": 872.48,
+   "text": "M.Tech. There is an option to do MBA. It means you haven't done anything wrong. You haven't cheated anyone that UG is 1 and PG is 2. Then your dad will give it to you. What logic is this? Your dad is always counting cases. If PG is less than UG, then your dad will give you money. If PG is less than UG, then your dad will give you money. If PG is equal to UG, then he won't give it. He won't give it. It means, let's say UG is 0 and PG is also 0. You won't get money. Because if you get money, then what will you do?"
+  },
+  {
+   "start": 872.48,
+   "end": 902.1,
+   "text": "UG will remain 0 and PG will be 1, so it will be wrong. We will not let it be wrong. PG should always be less than UG, only then will we get its money. So will we get money here? We will get it. Why? Because UG is 2 and PG is 0. So here you will come to UG is equal to 2 and you will take PG as 1. Again, here if you will ask for UG, will you get it? No, UG is already there. UG has only one check that we will give you 2, we cannot do more than 2. You have done 2, you will not get it. No. Will you get PG? Yes, you will definitely get it. Why?"
+  },
+  {
+   "start": 902.1,
+   "end": 929.28,
+   "text": "PG is less than UG, so if you get your dad to do it, then UG2 will be PG2, it will work perfectly. You come to UG2, PG2, this is yours, now after this you have no choice left, where have you come, you have come to the last, your UG has become equal to N, PG has become equal to N, means in total you have done 4 degrees, in which there are 2 UG and 2 PG, here you print your own, store it, do anything in your vector and finish the game."
+  },
+  {
+   "start": 929.28,
+   "end": 959.38,
+   "text": "Finish the game. What is this? See, first of all, you did UG. First of all, you did UG. So, one is done. UG. After that, you did PG. One is done, PG. After that, what did you do again? Did you leave anything? Okay, you did two UG. Now, you did two UG. Two UG and then two PG. Is this right? Put it in bracket and see. Like this, like this, like this. Is this looking valid? Yes, it is looking absolutely valid. So, this is your one answer. Now, finish it all. Go up. Go up."
+  },
+  {
+   "start": 959.38,
+   "end": 988.66,
+   "text": "Here, come here. Will your father give you the money for PG? Yes, he will because PG is less than UG. So, if your father gives you money, then you have done one UG. One PG will be done. He will definitely give you. So, you come here. UG is equal to 1. PG is equal to 1. Ask again. Ask for the money for UG. Will he give you? Yes, he will. Because you have done one UG. He will give you 2. He will definitely give you. Come here. Will you get the money for UG? No. UG is 2. It's over. His game is over."
+  },
+  {
+   "start": 988.66,
+   "end": 1014.4,
+   "text": "Will you get the money of PG? Yes, you will get it. Because PG is less than UG. Now, UG is equal to 2. PG is equal to 2. Okay? It's done. Both the degrees have been done twice. That's it. Your game is over. Now, nothing happens after this. Print the answer. What will be the answer? First of all, look. First of all, you came here on UG. Then on PG. Then on UG. Then on PG. So, one answer is done. What happened? UG, PG, UG."
+  },
+  {
+   "start": 1014.4,
+   "end": 1042.96,
+   "text": "pg, write it in brackets open, close, open, close is it valid? yes, it is absolutely valid come, let's see if we will get more money or not this is done, this is done, yes, come here consider the money of pg, will you get it? no, you will not get it pg is not less than ug, if your father will give it to you then you will get 1 ug and 2 pg and for whom is the other pg? we don't know no, you will not get it, nothing will happen let's go up, this was already less the whole game is over, how many answers do you have left after adding the last? 2 answers 1 this answer, 1 this answer"
+  },
+  {
+   "start": 1042.96,
+   "end": 1068.75,
+   "text": "So why are we doing UG PG? Because it is just like open and close. When you say valid parenthesis, what is your dad looking at you? What check was your dad putting in UG? That UG should be less than N. Means this open should be less than N. Now you can put open anywhere. What check was he putting in PG? PG should be less than UG. PG should be less than UG. Only then you will get that choice."
+  },
+  {
+   "start": 1068.75,
+   "end": 1098.06,
+   "text": "Closing should always be less than open, only then you will be able to take that choice. If closing is equal to open, then you can't put closing bracket in your choice. How? Let me tell you. Assume that you have done this. It is still going well. Third, can you put closing here? No, you can't. It is invalid. Why? Open is 1. Closing is 2. It is finished. What happened? 1 is btech, 1 is mtech. It was correct till here."
+  },
+  {
+   "start": 1098.06,
+   "end": 1125.63,
+   "text": "What did we do after that? MBA. The whole game got spoiled. Why did we do this? Where is the BBA of MBA? It is not there yet. So, the game is over. Now, let's write the code of this. We will tell you after doing a dry run. What you have to do in this? You have to generate the whole combination and print it or store it in the vector string. So, for this, first of all, write a function. First of all, write a function. void fun. We will pass 2-3 things in this."
+  },
+  {
+   "start": 1125.63,
+   "end": 1154.13,
+   "text": "What will be given to you? N, just N. If you have given N pairs, then in the beginning you have N open place and N close place. So in the beginning, we will take an open that till now how much open we have taken, till now how much UG degree we have done, till now how much PG degree we have done, in the beginning it will be 0. One will be N, which is your limit and one will be yours. Now because this is not a matter of degree, it is a matter of bracket and you have to store the answer of bracket."
+  },
+  {
+   "start": 1154.13,
+   "end": 1181.94,
+   "text": "So, you will store one temporary string. One temporary string and one vector string for your answer. Vector string result. Okay. It is such a big function. First of all, write that case when all your choice is over and you don't need to go ahead. When was there no need to go ahead? When you did 2 UG degree and 2 PG degree. Means, when open also ends. And,"
+  },
+  {
+   "start": 1181.94,
+   "end": 1205.79,
+   "text": "Close will also be N. Now there is no choice after this. This is what we had to do. We had to stop at this. We had to print the combination here. So what to do? res.pushback . This was the temporary string and return it. Return it. The game is over. Now come. Now make your choices. Try to take the choice of open. While taking the choice of open,"
+  },
+  {
+   "start": 1205.79,
+   "end": 1236.05,
+   "text": "What is the condition that your father used to check? That what you have opened till now should be less than n. If it was less than n, your father would have agreed. What used to happen to your father? He would have agreed. Come, make him agree. If open less than n. He will agree. He will give the money. How is the choice? What did we say? Wherever you are taking the choice, first write that choice. What are we taking for this choice? This temporary string. So put it in this. tmp.pushback"
+  },
+  {
+   "start": 1236.27,
+   "end": 1266.51,
+   "text": "this open bracket this open bracket put it put it go ahead go ahead when you go ahead when you go ahead means next go on time then what will be your open open plus 1 it is done open was open now open was 0 when you put it by choosing open in tmp open plus 1 is done rest of the things will be same rest of the things will be same tmp rest when you will come out of this then you have to reverse your choice have to reverse means tmp"
+  },
+  {
+   "start": 1266.51,
+   "end": 1280.78,
+   "text": "dot pop back means what you had pushed this what you had pushed this is reversed here means this is like this why we do this see this is like this suppose you were here UG"
+  },
+  {
+   "start": 1280.78,
+   "end": 1306.48,
+   "text": "You had two paths here. One path was to choose UG. So you went ahead on this path when your UG became 1 and PG became 0. But you will have to go on this path as well. You will have to try this path as well. So when you come back here, you will have to reverse this. You are on this path again. Let's say, we had explained this in the example of 10-12. In 2015, you have two options that whether we have to do 10th or not."
+  },
+  {
+   "start": 1306.48,
+   "end": 1333.39,
+   "text": "So let's assume that you have explored the 10th option, you have seen your entire life. You have one more option that you don't have to do the 10th. For this, you have to reverse it. These are all alternate timelines. Consider it as an alternate universe. At one time, you have seen one universe. When you come back, everything should be reversed. You should be where you were first. So here you should be at Nilbata Sannata again. That's why we reverse it. Going ahead,"
+  },
+  {
+   "start": 1333.39,
+   "end": 1359.12,
+   "text": "Make a choice. There is a choice in your TMP. This means that you have seen all the universes in the future. You have seen everything that could have happened with that choice. With this one choice, it is possible that 50 new universes will open here. You have seen everything. When you come back after seeing everything, you will remove it from TMP. You will reverse it from TMP. That's it. This is the open."
+  },
+  {
+   "start": 1359.12,
+   "end": 1388.4,
+   "text": "Now, start with close. Try to choose close. What did your father see while choosing close? If close is less than open, then only you will get money. Otherwise, you will not get money. If this happens, then you can get money to make a choice. Do the same thing. tmp.push back. Push close. Go ahead. These are both choices. What will happen if you go ahead? Open will remain the same."
+  },
+  {
+   "start": 1388.4,
+   "end": 1415.79,
+   "text": "Close 1 will increase and other things will remain the same. N and rest. Again, you have made this choice. After choosing a close, there are 100 types of universes. After everything is over, reverse this. Reverse this. And close this. And what do you do in the end? Return it. Your function is over. See this. This is your program of backtracking which starts from here. What is this?"
+  },
+  {
+   "start": 1415.79,
+   "end": 1438.61,
+   "text": "when all these are finished like a base case base case or last, you have reached the last, there is nothing left to do after this this is your first choice this is your first choice when you want to take open if you don't take open then nothing will happen, you will not be able to take this choice this is your second choice this is your second, when you want to take close"
+  },
+  {
+   "start": 1438.61,
+   "end": 1448.35,
+   "text": "There will be two paths every time. One open path and one closed path. Open path will do a lot of things and will give you the answer at the end when you come here."
+  },
+  {
+   "start": 1448.35,
+   "end": 1473.79,
+   "text": "then it will come back and every person will reverse their decision then you will go to the closed path and 50 more types of doors will open that will take you here and you will get many answers so if we recommend you then trace this once for n is equal to 3 trace this once for n is equal to 3 you will like it n is equal to 2 will not be fun but copy it trace this for n is equal to 3"
+  },
+  {
+   "start": 1473.79,
+   "end": 1502.56,
+   "text": "and see what happens and where the path is formed then you will understand more and we will teach you how to find the time complexity of this we have to make one more video for time complexity but we hope that you have understood this now we will show you how the popback and pushback works actually so suppose take a function f in which ug is 0 and pg is 0"
+  },
+  {
+   "start": 1502.56,
+   "end": 1531.47,
+   "text": "It is zero. We give its name as F1. It is a TMP diary. It is a TMP diary. This is your TMP. First of all, have you come to the base case of F1? No. What is the base case? That both become two. It has not happened. From here, you get two choices. First of all, you cannot take PG. First of all, you cannot take PG. So, first of all, try to make the choice of UG. Will you give the money of UG? Yes, we will give."
+  },
+  {
+   "start": 1531.47,
+   "end": 1557.14,
+   "text": "If your father will give you money, then what will you do first in UG's choice? What will you do first? Where did it go? First of all, let's push back an open bracket in TMP, which means whatever choice you are making, let's go ahead and then when this function is over, then we will pop back. So see, first of all, push UG, that means write UG here. Did you write UG? Very good. Go ahead. If you go ahead, then you will know that UG has become 1."
+  },
+  {
+   "start": 1557.14,
+   "end": 1587.34,
+   "text": "PG is 0 only, we will name it F2, okay? Now when F2 will end, then this F1 will pop back, remember this. Okay, now make it a copy, you will understand, there is no rocket science in it. Listening to it, you feel what it is saying here, here, here. If you understand, then it will come, okay? Come. F2, again, F2 can do two things, either it can do UG or it can do PG. Here you can do both. Here you, here you can take UG and make F this, where UG becomes 2,"
+  },
+  {
+   "start": 1587.34,
+   "end": 1615.82,
+   "text": "and PG becomes 0. We will name this as F3. We will name this as F3. And one PG is also remaining. Remember, its PG is also possible because PG is less than UG. So its PG is remaining. But let's go on the path of F3. Let's take UG. First of all, push UG and go to F3. When F3 closes, we will remove this UG. So this one has come for whom? This one has come for 3 and this one has come for 2. Remember. When F3 closes, we will remove it. F3."
+  },
+  {
+   "start": 1615.82,
+   "end": 1645.14,
+   "text": "In F3, you can't take UG because UG is not possible. F3 can only take PG. And this F UG is equal to 2 and PG is equal to 1. It can make F4. But before doing this, push one PG. When F4 is closed, we will remove it. F4 again can't take UG because UG is 2. It can take PG. So what will happen by taking PG?"
+  },
+  {
+   "start": 1645.14,
+   "end": 1674.58,
+   "text": "F UG is equal to 2 PG is equal to 2 and this is F5 when F5 will be closed then we will remove this PG so write PG and when F5 will be closed then we will remove this PG see how it will be removed one by one F5 F5 is your base case both are done so you just have to store it in your result UG UG PG PG so your result is this UG UG PG PG whatever was in TMP you used to store it very good done now come now see we will close"
+  },
+  {
+   "start": 1674.58,
+   "end": 1699.54,
+   "text": "f5, after storing the result, what does f5 do? It returns, the ones at the back. So f5 is closed, but what did we say? When f5 is closed, then what will we do? We will pack the pg, remove it. Okay. f4, f4 doesn't have any other choice to do. UG's choice was over, pg's choice is over. f4 will be closed, but if f4 is closed, then what will happen? Pop back it. Come out."
+  },
+  {
+   "start": 1699.6,
+   "end": 1721.58,
+   "text": "F3, F3 has nothing left to do, he couldn't take UG, it's already PG, F3 is also closed, but if F3 is closed, then what is the popback? This, okay, you are seeing how it is popping back one by one, now you have come to F2, don't even close F2, there is one more F2 left, the PG one, remember the path of PG is left, come, remember the path of PG of F2 is left,"
+  },
+  {
+   "start": 1721.58,
+   "end": 1746.67,
+   "text": "Now, what is there in TMP? There is only one UG, rest of them have been popped back. F2 is not yet closed, that's why UG is left, rest of them have been popped back. Now, come from F2 and take a decision of PG and make a FE. Where UG is 1 and PG is 1, we will call this F6. And while doing this, push a PG, which we will pop back while closing 6. When we close 6, we will pop back it."
+  },
+  {
+   "start": 1746.96,
+   "end": 1775.38,
+   "text": "Now see, in F6, you can take PG because PG is not less than UG. You can take only UG. So, take one UG and make this. UG is equal to 2 and PG is equal to 1. Again, we will name this F7 and we will do a UG pushback which will be a popback when 7 is closed. Very good. Come to 7. You can take UG in 7. You can take only PG. And one will be like this. UG will be 2."
+  },
+  {
+   "start": 1775.38,
+   "end": 1803.26,
+   "text": "PG will be 2 and we will name it F8. Push one more PG. When 8 will pop back, we will remove it. Very good. Again, now it has come in base case. Now there is nothing to do with it. You have to write the result. What result did you get? UG. See, this has been popped back. UG, PG, UG, PG. Write it. UG, PG, UG, PG. Have you written it? F8's work is over. F8..."
+  },
+  {
+   "start": 1803.26,
+   "end": 1833.1,
+   "text": "But what did we say? When f8 is over, what will happen? This Pg will pop back. F7. Does f7 have any other choice? No. Can't take UG. Pg is over. F7 is over. But when f7 is over, then UG will pop back. F6. Is there anything left after f6? There is nothing left after f6. Because UG had to be taken. Pg will not let its papa take it. Because Pg is not less than UG. F6 has also done its work. If f6 is over, then this Pg will also fly. Now come back."
+  },
+  {
+   "start": 1833.1,
+   "end": 1859.18,
+   "text": "F2, is there anything left to do with F2? No, we have explored UG, we have made a very big tree, we have explored PG, now we don't have anything else with F2, F2 is also finished, if F2 is finished, then what will happen? This UG will pop back, this UG will pop back, now you have come to F1, we don't have anything to do with F1, F1, we have done both the work, we don't have anything with F1, F1 will return to main, return to main, your recursion will be finished, so see,"
+  },
+  {
+   "start": 1859.18,
+   "end": 1888.18,
+   "text": "You start with a TMP, every time when we call a function, we make a choice. When do we call a function? When we make a choice. When we make a choice, we push back. So, when that function ends, we pop back it. That's why we do this, because from where you started, you didn't have anything. Even when you came to the main, you didn't have anything. The TMP is completely empty. There was a lot of push and pop in the TMP, but at the end, the TMP is empty. So, from where you started,"
+  },
+  {
+   "start": 1888.18,
+   "end": 1913.07,
+   "text": "When you make a choice, you push it. When your choice ends, you pop it. So, from where it starts, it ends. It should be complete silence. It should not happen that you are pushing something and then you are not popping it. Then that choice is propagating further. No. If at a point you have two decisions, then the decision of one universe and the decision of the other universe should not be different from it. Both are different decisions. You take one decision and explore it completely."
+  },
+  {
+   "start": 1913.07,
+   "end": 1938.74,
+   "text": "For the next decision, you have to select it completely cleanly and take the next decision. Okay? So this is the logic of it. See, if we make it smaller, then it will look like this. See, we tried to explain it once more, but we made a mistake. So see, we must have done something. Yes, see, we made some mistakes here too. Make your copy. We will give you a lot of friendly advice. Do this in your copy yourself. Learn push back and pop back yourself. No teacher can understand as much as he can understand. Okay? This..."
+  },
+  {
+   "start": 1938.74,
+   "end": 1961.5,
+   "text": "It sounds complex, but it is not. Take out the copy, make a state like this, and write what code has been run in each function, what code is left to run. Run it and see, as we did in recursion, that f4, f5 are the same. In every function, see what has been run, what is left to run. Do what is written. This is called dry run. Recursion is very important, dry run, because you can't understand it by looking at it. By looking at the code,"
+  },
+  {
+   "start": 1961.5,
+   "end": 1976.11,
+   "text": "It is difficult to understand what you are doing. But when you make this diagram, you will understand the real thing. So please start doing this exercise from now. If you don't get used to it, you will face a lot of problems in future. So please do this dry run exercise in the copy. Let's go."
+  }
+ ]
+}

@@ -1,0 +1,384 @@
+{
+ "video_id": "yoh0p_Ag7Q4",
+ "title": "DSA Patterns L33 | Merge Intervals | Master DSA Patterns in 2025",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2187,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.65,
+   "text": "Welcome to Lecture 33. Today's question is very important. Please watch till the end. Because this question is easy to understand. It is easy to understand by yourself. It is difficult to teach by yourself. That's why we didn't get this question on Stryver's channel. We didn't get this question on other small channels. It is a very important question. It is a little difficult to explain. Once you understand the logic, you will understand it. But it is difficult to explain it. So we will try. We should do what is difficult. We will not give up. It is an important question. Watch till the end. Stay tuned. Let's go."
+  },
+  {
+   "start": 29.65,
+   "end": 57.98,
+   "text": "What does this question tell you? Till now whatever we had studied, we were hoping that you would have seen 31 and 32. If you have seen it, it will be good. Till now what we had seen is that we used to get a range in the merge interval and we were told to merge the range so that there is no non-overlapping in it. For that, we used to check if there is any overlap from end 2 and start 1. We used to merge that. And then there was a question in which we had to insert a range from ourselves and we had to do that too. This is a little different."
+  },
+  {
+   "start": 57.98,
+   "end": 84.91,
+   "text": "In this question, what it says is that you are given two types of arrays. Means, every time you get one array in which there are many ranges. Here you will get two arrays. What? You will get two arrays. Oh my God! You will get two big arrays in which there will be many ranges. Okay. You have to tell the intersection of both. You have to tell the intersection ranges. Oh my God! After seeing the question, the air will start getting tight of people that intersection ranges. Means, what to tell, how to tell."
+  },
+  {
+   "start": 85.33,
+   "end": 116.21,
+   "text": "First of all, what is an intersection? Let's assume that we are free from 1 to 4 in the afternoon. You say that we won't be able to stay that much free. I have my college and my IIM. We are free from 2 to 3. When will we both be free? When will we both be free? You see, we will be free at 1, 2, 3 and 4. You say that we are busy. We will be free at 2 and 3. When will both of us be free?"
+  },
+  {
+   "start": 116.21,
+   "end": 143.98,
+   "text": "Both will be free at 2 o'clock. Very good. Both will be free at 3 o'clock. Very good. If someone says that in 2 to 3, Pratyush and his audience both are free, then there is nothing wrong in it. Both are free in 2 to 3. Pratyush is free from 1 to 4. Audience is free from 2 to 3. But both are free from 2 to 3. This is called intersection. What is this called? Intersection. Intersection means common. We studied in set by doing this. Common element. What was this called? Intersection."
+  },
+  {
+   "start": 143.98,
+   "end": 170.06,
+   "text": "Common element, when you get both, what is the common part of both? You have to do this in this. You have given many ranges in this, but remember, you have given many such ranges in this. There are two arrays. Suppose there is such a range in this and the next array is also like this. The next array also looks something like this. Both the arrays are sorted in themselves. The whole merge interval is based on the concept that it should be sorted from the start time. This is also sorted in itself."
+  },
+  {
+   "start": 170.8,
+   "end": 199.74,
+   "text": "Sorted, sorted. There is no relation between them. It is sorted by itself. It won't happen that there will be a relation between this start and this start. It can happen or not. I don't know. But this is sorted from the start time. This is also sorted from the start time. This is also sorted. Okay. You have to combine both of them in a way and then find their intersection. What is the meaning of intersection? I will tell you with an example. Suppose, you have 0 to 2 in one area. And then,"
+  },
+  {
+   "start": 199.74,
+   "end": 230.13,
+   "text": "5 to 10. Okay. Here, you have given 1 to 3. And, 6 to 9. Like this. Two ranges are given. If we make a drawing of these, it will look better. If we make a drawing and see, on square to square, it will look better. Look. What does the first one say? My first range is 0 to 2. So, make a box of 0 to 2 according to yourself. That this will be 0, this will be 2. Okay. The second one says 1 to 3. So, where will 1 come? 1 will come somewhere in between. A little further, this will remain. 1 to 3. Okay."
+  },
+  {
+   "start": 230.13,
+   "end": 259.66,
+   "text": "Then it says 5 to 10, so 5 will start somewhere here and this will go from 5 to 10. It says 6 to 9, so 6 will start somewhere here and will stop here. 6 will start from 5 and will stop before 10. So somewhere this will happen. 6 to 9. Now you have common. What is common? Wherever both the squares are covered, that is your common point. For example, see this part. This part. And this part."
+  },
+  {
+   "start": 260.85,
+   "end": 293.17,
+   "text": "See this part. This is the common part. What is this? What is its range? 1 and 2. 1 to 2 is the common part. Similarly, see here too. Wherever both the squares are coming, that is the intersection. If you draw a drawing, it is very easy to understand. See this. What will be its range? 6 to 9. 6 to 9. This is also an intersection point. So your answer should be in both. You have to return an array of ranges in which there are two ranges."
+  },
+  {
+   "start": 293.17,
+   "end": 322.27,
+   "text": "1, 2 and 6 times. So this is the meaning of the question. So you understand that the drawing is good. Now what to do? If you make a drawing, then the question is not made. If you make a drawing, then the interviewer will say, okay, you have made the drawing, now what to do? Okay. So look at one thing, because we have been reading the pattern for many days, so whenever such a question comes, then something should shine in your mind, which was read earlier. What was read earlier, it should not be completely forgotten, it should not be done in a clean and quiet manner, remember that. Sometimes this, little by little,"
+  },
+  {
+   "start": 322.27,
+   "end": 351.42,
+   "text": "It's not completely like that but it seems like a question of merge to sorted array. A little bit. It means that there are two things, both are sorted on their own. Both have to merge a little bit and intersect. So it's a little bit like that. It's a question of merge to sorted array. Remember one thing that in BDSM there will be two types of things and both will be said to be sorted. And do something by combining both. Either merge both, find their union, find their intersection."
+  },
+  {
+   "start": 351.42,
+   "end": 379.89,
+   "text": "Take out the complement of both, take out anything. You should always think towards the two-pointer. That two-pointer can be applied. Applying two-pointer means that there is no algorithm for two-pointer. Two-pointer is just that if you have two things like two arrays or two linked lists or anything. One is here and one is here. What does two-pointer mean? That you keep one i here and one j here. Compare both of them. Do something by comparing both of them. Do whatever you are told. After that,"
+  },
+  {
+   "start": 379.89,
+   "end": 402.72,
+   "text": "Either do I++ or J++. Remember the Merge to Sorter Array question. How did we do it? There were two arrays. We used to keep I at 0 and J at 0. We used to compare both. We used to put the smaller one in the result and increase the I. How did we increase it? We used to increase the smaller one. We used to put it and increase it. Here too, if you ever get such a question in the world that there are two things..."
+  },
+  {
+   "start": 402.72,
+   "end": 432.66,
+   "text": "and both are sorted, the most important thing is that both are sorted, it should not happen that both are unsorted, then there is no use, it is sorted and there are two things, then you should think towards i and j, towards two-pointer, because we have studied, that is why we studied two-pointer so deeply that you should definitely think, so you should think, thinking is a good thing, everyone should think, but if they think, what will they do, what we are saying is that suppose there are many such ranges, there are many such ranges, this is your array 1,"
+  },
+  {
+   "start": 432.66,
+   "end": 463.14,
+   "text": "and your lower array will also be 2 by doing this. This is your array 2. So, you said that we will think that we will keep our i here and we will keep our j here. After that, what will we do? Then what did we do? What did we do in the two-pointer? The i element means this and this. We used to compare and see. We used to compare and see whether there is any intersection in this or not. So, let's remove all our focus, all the questions now. Forget that the question looks so scary to see. Express your whole focus."
+  },
+  {
+   "start": 463.14,
+   "end": 490.64,
+   "text": "that if you are on any i or j means you have two ranges one more thing we told in the merge interval that in the whole merge interval pattern you can compare only two ranges of someone at one time you can compare two ranges we are doing it in the previous question means start 1 and 1 start 2 and 2 you can compare only two you can't do more than two in one time in one time we will do two and then we will move ahead ok so let's make it a little wise that there are two ranges there are two ranges ok"
+  },
+  {
+   "start": 490.64,
+   "end": 520.91,
+   "text": "These two are not in the sorted order. These two are not in the sorted order. Our array is sorted. There is no relation between them. Okay, that is also not there. So, let's see whether the intersection is found or not. Now, we will show you three types of case by drawing. So, you will tell whether the intersection is found or not. Okay. Assume that the first one is like this. The first one is 0 to 2. Okay. And the second range is 4 to 5. Do you see any merge? I mean, do you see any intersection? No."
+  },
+  {
+   "start": 520.91,
+   "end": 550.7,
+   "text": "You can't draw any line like this so that both the boxes are covered. It's not visible. Okay. If it is like this. First range. First range is that my... First range is 3 to 5. And my second range is like this. And my second range is like this. 1 to 2. Is there any intersection? No, it's not visible. You can't draw any line like this so that both are covered. No, it's not visible. Okay. Now let's go. It's not visible in this. Meaning?"
+  },
+  {
+   "start": 550.7,
+   "end": 584.42,
+   "text": "It is not shown in this and neither in this. Now see, maybe you can see. Suppose this is like this. This is till 0 to 5. And this is something like this. Till 3 to 6. Is any intersection visible? Yes, yes, it is visible. You can make such a line which will cover both. This is the part. What is the intersection? 3 to 5. Very interesting, 3 to 5 is visible. It is visible from drawing, but it is visible. Let it be something like this. This is your 3 to 6."
+  },
+  {
+   "start": 584.42,
+   "end": 616.3,
+   "text": "And it looks like this. This is 1, 2. Let's say it's 4. 1, 2, 4. Is there any intersection? Yes, it's visible. You can make a line that covers both. Look at this. From where to where is this? 3. Here is 3. And this is 4. Very interesting. This 3, 4 and this 3, 5. We are seeing very quickly here because we are making a drawing. But observe one thing. What is 3? Its start time is 0. Its start time is 3. This is it, right? Okay."
+  },
+  {
+   "start": 616.3,
+   "end": 643.63,
+   "text": "What is 3? 3 is the max of both. Okay. Let's see. What is 5? Its start time is 5. Its start time is 6. This is the min of both. At least in this case, it looks like this. Let's see in this case too. 3. Its start time is 1. Its start time is 3. This is the max of both. Okay."
+  },
+  {
+   "start": 643.63,
+   "end": 676.14,
+   "text": "This means that intersection has 4 and 6. So the answer for intersection is 4. This means that both of them have a min. Yes. You can see a pattern here. You can make any intersection in the world. Let's make one more intersection. Assume that this is very big. And this comes somewhere in between. This is from 0 to 10. And this is from 4 to 6. Where will the intersection be made? It will be made here. See, this one. What will be its answer? From 4 to 6."
+  },
+  {
+   "start": 676.14,
+   "end": 705.38,
+   "text": "What is 4? Max of start time of both 0 to 4. Min of 6, 10. Yes. Min of 6, 10. Yes. You got it, right? You got it. If there is two types of range. If there is intersection, then intersection point will be this. Intersection point will be this. What will happen? If you write that I have two ranges. You were comparing i and j, right? So, obviously, you will have a start 1."
+  },
+  {
+   "start": 705.38,
+   "end": 736.42,
+   "text": "there will be one end 1, one start 2 and one end 2. If that intersection will be there, if that intersection will be there, till now we will see what we will do, but if it will be there, then it will be there. Max start 1, end of start 2. Min, sorry, min of end 1 and end 2. This will be the intersection. Now why will it be there? See, it is a very logical thing. Merge interval is very much connected to real life."
+  },
+  {
+   "start": 736.42,
+   "end": 763.14,
+   "text": "We are free from 1 am to 6 pm. You are free from 2 am to 7 pm. So how long will we be free? We are free from 1 pm. But you are not free from 1 pm. We are free from 2 pm and you are free from 2 pm. So the maximum that was, became the common point. This is the start time. Now we are free from 5 pm to 6 pm. You are also free from 6 pm. You are also free from 7 pm. But we are not from 7 pm."
+  },
+  {
+   "start": 763.14,
+   "end": 793.34,
+   "text": "So, whatever ended earlier will become its ending. This is very real life. We don't know if you can think about it or not. But this is very simple. One person is free from 1 am to 6 pm. One person is free from 2 am to 7 pm. So, both are free. So, the one who will start later, the one who will start being free later, if he starts being free later, then it will have to be done accordingly. You are free from 12 am also, it doesn't matter. But he is free from 2 am. Okay. And,"
+  },
+  {
+   "start": 793.34,
+   "end": 822.4,
+   "text": "The one who gets busy first will have to go according to that. Now he gets busy first. The one from 1 to 6 got busy first. This person is free till 7. He might be free till 10. No problem. But when will both be free? The one who will go first will have to go according to that. Okay. You... Think of it this way. You come to a party at 1 pm. You come to a party at 1 pm. You will go home at 6 pm. Your friend came at 2 pm. And he went home at 8 pm. How long did you stay in both parties? From here to here."
+  },
+  {
+   "start": 822.4,
+   "end": 850.26,
+   "text": "See this. So what happened according to what came later? Start. And according to what went home first, the party ended. You came first, it doesn't matter. But when will both come? Both will come, right? So what will come later will have to be taken according to that. If it is at 2 p.m., then both were at 2 p.m. Okay. Now you went home at 6 p.m. It may be that it has been stopped till 10 p.m. It doesn't matter. But you went at 6 p.m., right? So how long were both the men? The one who will go home first will break it. That no, now both are not there."
+  },
+  {
+   "start": 850.26,
+   "end": 878.85,
+   "text": "That's why. That's why it is said that this is max of start 1, start 2 and min of end 1, end 2. So, we got to know how to get the intersection. Intersection. How to get it? If it happens. If it happens. It won't happen every time. It won't happen every time. It won't happen every time. How to get it? You understood the first part. Okay. There are 3 parts in this question. The first part was that if there is an intersection in I and J, then how to get it? How to get it? Max of start 1, start 2 and min of end 1, end 2. Okay. But if there is no intersection."
+  },
+  {
+   "start": 878.85,
+   "end": 910.9,
+   "text": "First of all, how will we know? How will we know? How will we know if there is an intersection or not? Okay. This will be used in the question we have been doing till now. What used to happen in the merge interval? There were two ranges. Sorry, not like that. There were two ranges, right? I mean, line by line there were two ranges which were sorted from start. How did we know if something would merge or not? This used to be 1, 4 and this used to be 2, 5. How did we know if these two would merge or not?"
+  },
+  {
+   "start": 910.9,
+   "end": 942.1,
+   "text": "which is end 1 is equal to 4, here start 2 is equal to 2. If end 1 is greater than or equal to start 2, then both would merge. This means that there is an intersection. If you make a drawing of these two, then it will be 1 and 4. If you make a drawing of that, then it will be 2 and 5. See, this is the intersection."
+  },
+  {
+   "start": 942.8,
+   "end": 971.97,
+   "text": "If both are overlapping, then only there will be an intersection. How will there be an intersection? 1 square is above, 1 square is a little below, then there will be an intersection here. If both are not overlapping, if both are not overlapping in life, if this is 1 and 4, and this is 7 and 10, then see, these two cannot merge, because 4 is not greater than or equal to 7. So, 1, 4 will be like this, and 7, 10 will be like this. So, there is no intersection now. So, this is what overlap intersection tells us."
+  },
+  {
+   "start": 971.97,
+   "end": 1000.56,
+   "text": "If it is doing overlap, then it will say, yes, there is intersection. There is intersection, yes. If 2 range is doing overlap, we know the rule of overlap, that end 1 is greater than or equal to start 1. So, sorry, end 1 is greater than or equal to start 2. So, it will do overlap, means it will do intersection. And we know the formula of intersection, that by doing min and max, we will get the intersection. So, we will know that, okay, we can find the intersection by the logic of overlap."
+  },
+  {
+   "start": 1000.56,
+   "end": 1030.93,
+   "text": "It's a very good thing. But there is one more problem. What was the logic of the whole overlap? That it should be sorted from start time. It should be sorted from start time. If you reverse it, if you write 7, 10 and 1, 4, then now see, if you apply that logic, then now end 1, 10 has happened. 10 is greater than or equal to start 2, which is 1. Now it will say that yes, they are overlapping. But it doesn't overlap. 7, 10 is ahead. Why did this happen? Because it is not sorted from start time. You have reversed it."
+  },
+  {
+   "start": 1030.93,
+   "end": 1060.88,
+   "text": "So, it was very important to be sorted from the start time to apply this rule. But what do we know? We have one range of this area on which i is and one range of the other area on which j is. These two are not sorted. I mean, there is no guarantee. It may or may not be sorted. So, it may or may not be. Vijay, it may or may not be. It may or may not be. So, what can happen? I will have a start 1. Start 1 will be end 1. It will be, right? It is a range. J will have a start 2."
+  },
+  {
+   "start": 1060.88,
+   "end": 1091.01,
+   "text": "End 2 will be there. We have seen that if it was sorted, means if start 1 is less than equal to start 2, then we will apply our formula and see if it overlaps or not. If it overlaps, then we know the formula of intersection that we have to do that and remove it. Okay. If it is less, then it is very good. But if it is not less, then it will be wrong. But if it is not less, if it is also upside down, then what will happen? What will happen the most? What are we saying? What is our best scenario? That start 1 is less than equal to start 2, then it will work. Then we will do our work."
+  },
+  {
+   "start": 1091.01,
+   "end": 1119.33,
+   "text": "But even if this doesn't happen, then what is your worst case scenario? Your star 2 will be small. Star 2 will be small. This is what can happen, right? What will happen if it is more? You are saying that if my 1 to 5 is here and 4 to 6 is here, then we will do our work. How? That 1 and 4 are both sorted, so we can treat it that these two are 2 ranges of 1 area, then we will do our work. Even if it doesn't happen, then what will happen? Even if it doesn't happen, this will happen in most of your life, even in the worst case."
+  },
+  {
+   "start": 1119.33,
+   "end": 1147.87,
+   "text": "This will be from 4 to 5 and this will be from 1 to 3. This is what will happen. Now this is not sorted. But this is sorted. 1 is less than 4. You don't have to do anything. Whatever work you do, start 1, end 1, start 2, end 2. Just change your understanding of these two. What does it mean to say? That if, suppose you take start 1 and end 1. You take start 2 and end 2. This was yours. Okay. Listen carefully. This used to come from i and this used to come from j."
+  },
+  {
+   "start": 1147.87,
+   "end": 1177.23,
+   "text": "If you used to say that this one and this one are in sorted order, start 1 is less than or equal to start 2, then you used to check end 1 is greater than or equal to the logic of start 2. If that doesn't happen, if start 2 is small, means start 2 is coming first, then reverse the logic. If it happens that start 2 and end 2 are here, and start 1 and end 1, start 2 is small now, then reverse the logic. Write end 2 is greater than or equal to start 1."
+  },
+  {
+   "start": 1177.23,
+   "end": 1201.95,
+   "text": "Check it out. Is it like this? If it is like this, then yes, it is overlapping. It is overlapping. Did you get it? Just reverse it. What do you want? You want it in sorted order, right? It doesn't matter whether i will come first or j will come first. They are different ranges. If it is in sorted order, if it is, if start1 is less than or equal to start2, then put your normal one. Otherwise, otherwise, else, else."
+  },
+  {
+   "start": 1201.95,
+   "end": 1230.08,
+   "text": "If j is small and j is small, then i will be big. So, you put it like this. End 2 is equal to start. Means, check start 1. You will get to know. And the logic of intersection will be the same. What does intersection say? That max of both start and min of both end. This says the same. There will be no difference in this. So, we will do this. So, this is your part 2. That on i and j, now you know very well how to check. You have to see which i, i's start is small or j's start is small."
+  },
+  {
+   "start": 1230.08,
+   "end": 1255.41,
+   "text": "According to that, we have to apply our logic of overlapping and get this intersection. Now, the most important part. Part 3. That's why we are saying that the question is a bit hard to explain. It is a bit complex. In 2-pointer, there was a big rule that you have to increase i or j. You have to increase any one. There is no solution without increasing any one. When the work is done, either increase i or j. Then only the question will be over."
+  },
+  {
+   "start": 1255.41,
+   "end": 1285.58,
+   "text": "Now you have taken out the intersection, suppose you have done the logic of overlap, you know which one is small and which one is big. Now you have done everything, you have written your answer too. Now will you increase i or j? How will you know this? In which direction will you increase? So to understand this, see, the whole game is based on real life. Suppose the part of i looks like this. 1 and 10. Look carefully, you will understand everything. It is from 1 to 10, it is a very big part. Suppose the part of j looks like this."
+  },
+  {
+   "start": 1285.65,
+   "end": 1317.28,
+   "text": "Assume that this part can be seen from 2 to 4. And the next part of j is from here to here. It is a part of 6 to 10. The first j will remain here and the i will remain here. So you will get the first intersection here. You will get it in this part. You will get it in this part. What will be the answer to this? Maximum of start times is 2. Minimum of end times of 4 and 10 is 4. You got the answer. Now whom will you increase? j is here and i is here only. Whom will you increase?"
+  },
+  {
+   "start": 1317.28,
+   "end": 1346.5,
+   "text": "Here you can see very obviously that we will increase J here so that we can check this too. Every time you are checking the area of I and B of J. Every time you can check the range of one side and the other side. You can check only two ranges. So you can see very obviously, naturally by looking at the drawing that this should be increased so that you can get this too. Now what will be the answer of this? Maximum of 1 and 6, 6. Minimum of 10 and 10, which is 10. So its answer will be 6 to 10. So here you can see very naturally that we will increase J and take it to the next and check it. But this,"
+  },
+  {
+   "start": 1346.5,
+   "end": 1373.46,
+   "text": "What is its math? What is its logic? Its logic is very simple. Let's take the example of the same man. We have told our time slot that we are free from 1 to 10. We are free from 1 to 10. You have told different time slots. You have said that we are free from 2 to 3. Then we are free from 4 to 6."
+  },
+  {
+   "start": 1373.81,
+   "end": 1397.5,
+   "text": "So first you will check your 2-3 and my 1-10 then you will know that both are free till 2-3. Very good. After that you will have to check your next time slot. Why? Why you will have to check? Because yours is over. Your end time is less than mine. What is your end time? 3."
+  },
+  {
+   "start": 1397.5,
+   "end": 1422.98,
+   "text": "My end time is 10. So now you need to check your next time slot and tell us. Because we are free. I haven't finished yet. What does it mean to say? We have said that we are free from 1 to 10. Your time slot is over. You said that we are free from 2 to 3. So 2 to 3 is free. When are we free? Will we go ahead or will you go ahead? We may be free from 12 to 4 am. It doesn't matter."
+  },
+  {
+   "start": 1422.98,
+   "end": 1449.58,
+   "text": "Your time slot is over. My time slot is not over. We are still sitting free. We are free till 10. You tell me what is this? You will say that we are free from 4 to 6. Why? Because you are finished before me. Your end time is smaller than mine. So whoever's end time is smaller than I and J, he will have to increase it. Why? Please understand. Please understand."
+  },
+  {
+   "start": 1449.58,
+   "end": 1479.78,
+   "text": "There is no hard maths in this. This is all a game of greater than and less than. But why is there? We say that we are one certain free. You say that we are two to three free. Okay. Let's say we are teaching you coaching. Take the example of coaching. Yes, yes, yes. Take the example of coaching. We are teaching in coaching. From when? From 1 to 10. We will sit and teach. You. So we started teaching at 1 pm. You came. You were roaming around. 2 pm. Okay. Come. No problem. You studied. 3 pm. You left."
+  },
+  {
+   "start": 1479.78,
+   "end": 1505.09,
+   "text": "You left at 3 o'clock and got bored. Okay. We are teaching. Remember, we are teaching. We are teaching till 10 o'clock. We are teaching till 10 o'clock. We will teach till here. We will teach till 10 pm. Now, after that, you will have to come if you want to study. You have to study that day. So, you went out once. Now, you will start studying again at 4 pm. And again, you will study till 6 pm. So, teacher is sitting there. Children are coming separately."
+  },
+  {
+   "start": 1505.09,
+   "end": 1532.74,
+   "text": "You will have to increase. Why? Because your end time was less. We are free. We are saying that we are free till the end. Means, this 0 is over here. It was over here. But this range is not over. This range is till the end. Your range is over. J's range is over. So, J will have to go ahead and see if anything happens. Because I is working. I didn't say that we are over. Why didn't I say that? Its end time. And its end time. See. 10 is bigger than 4. So, it is saying that we are still here. We are still sitting."
+  },
+  {
+   "start": 1532.74,
+   "end": 1561.33,
+   "text": "You check your next range with me. It is possible that you are in this. I have a very big range with you. So we will not go ahead. This will go ahead. If we move i forward, then this whole part will be left. See according to the drawing also. Suppose you are coming while looking at the drawing. You first made this. Then you made this one. Then you made this green part. Why could you make this green part? Because you did not leave i. You left j and went from here. Only then this green part could be made. If you leave i, then this green part cannot be made. If you leave i from here, then it cannot be made. That's why."
+  },
+  {
+   "start": 1561.33,
+   "end": 1592.37,
+   "text": "So this was part 3, that which one will go ahead? In I and J, whoever has less time will go ahead. Now, we have a lot of examples, we know that it has become a little overwhelming, if you don't understand, then please tell us. But we think that it is a little logical, a little based on the real world, that you will understand if you think a little. There is no such heavy algorithm in it, nothing like that happens, it is very simple. We understood 2-3 things. Do you have it? You must have 2 things. Come, let's see its pseudo code and dry run quickly."
+  },
+  {
+   "start": 1592.37,
+   "end": 1626.16,
+   "text": "you will have two things vector of vector of int a and vector vector int b ok so very good so after this what you have to do after this we will do a question what you have to do in two pointer i is equal to zero int j is equal to zero very good to store a result we will make a vector vector vector"
+  },
+  {
+   "start": 1627.95,
+   "end": 1656.94,
+   "text": "int res we will store our result in this what we used to do in 2pointer? till when we will check this? i is checking a and j is checking b till when both are under limit then only we will check suppose if one array is finished then what difference does it make suppose if array is finished suppose we are coaching teacher and my free tabla slot was running"
+  },
+  {
+   "start": 1657.04,
+   "end": 1686.38,
+   "text": "And there were a lot of kids whose slot was running below. Now, when the kids are finished, what will we do after studying? I mean, will there be any intersection in that? If the lower one is finished, then only one box is finished. So, intersection is made up of both. So, it is a very logical thing that while both are in their limits, both are in their limits, they are in their array. This is the same merge to sorted array. I less than J and J less than M. Okay. What was the first work to do? The first work is to check both. So, what is the first work to do? Start 1 is equal to"
+  },
+  {
+   "start": 1686.38,
+   "end": 1715.58,
+   "text": "Array of I is 0. We will call A as start 1 and end 1. End 1 is equal to array of I is 1. Okay? Start 2. Call J as start 2. According to yourself. B of J of 0. B. End 2. End 2 is equal to B of J of. Okay. Do what was decided. What was decided? We know to check overlap. But what is necessary for overlap?"
+  },
+  {
+   "start": 1715.58,
+   "end": 1746.7,
+   "text": "Start 1 is less than or equal to start 2. And we have to handle the opposite case as well. So first of all, check one thing. If start 1 is less than or equal to start 2. Let's go. What to do in this? This is a good case. Start 1 is less than or equal to start 2. This is a good case. Okay. Now you have to check. Now you have to check whether there is an overlap or not. With overlap, you will know whether there is an intersection or not. How did we check the overlap? If end 1 is greater than or equal to start 2. Yes."
+  },
+  {
+   "start": 1747.02,
+   "end": 1777.58,
+   "text": "If it is, then it will be overlap. What will be the value of overlap? Did you know? Max of start 1, start 2. Yes. What will be the end value of overlap region? Sorry. Minimum. Minimum. Minimum of end 1, end 2. What will we do in result? Push back. Push back. What? S or E."
+  },
+  {
+   "start": 1777.58,
+   "end": 1808.82,
+   "text": "This will be its intersection. We will close this. Now we will close this. Else. Else. We will have to write its else. We will have to write its else. Else. What will be the meaning of this? Start 2 is less than or equal to start 1 in some way. We discussed the same thing. Remember the i and j part. The j part has become smaller. So it's okay. We will reverse the whole logic. We will assume that j is 1 and this is 2. We will do nothing. If. Here it is written that end 1 is greater than or equal to start 2. Now because start 2 is small. If."
+  },
+  {
+   "start": 1808.82,
+   "end": 1840.59,
+   "text": "And 2 is greater than equal to start 1. Just upside it down. I mean, upside down the understanding. The range in the left, I did it in the right. The one in the right, I did it in the left. And checked it. It doesn't matter. It's a variable, right? Let's go. If this is the case, then it's being overlapped. So, this will remain the same. This will remain the same. There is no difference in this. Max of start 1 and start 2. What was E? Min. Min. Yes. What will be finished first, will have to be done according to that. And 1 and 2."
+  },
+  {
+   "start": 1840.82,
+   "end": 1864.58,
+   "text": "and res.pushback See, she has the habit of writing the code in the copy. She has the habit of writing the code in the copy. It won't happen by typing on the computer. And she closes it. Everything is done. Everything is done. She checked i and j. She checked i and j to see which one is small. According to that, she took out the overlapping. If there is overlapping, then she pushed it in the result. Now the question is, should we increase i or j? What was the decision?"
+  },
+  {
+   "start": 1864.58,
+   "end": 1894.53,
+   "text": "The one which is finished first will have to be increased. Why? Because it is finished first. The rest is going on. They are saying that we are also free. You said that we are finished. So you will have to move ahead. You will have to do something. What did you do? If and 1 is greater than equal to and 2. And 2. And 1 is greater than. Or write less than. It will look better. The one which is finished first. The one which is finished first. If and 1 is less than equal to and 2."
+  },
+  {
+   "start": 1894.53,
+   "end": 1923.41,
+   "text": "What does this mean? The one with i would have ended earlier, i++. Else, j++. This means j would have ended. And we will close the while loop. In the end, what? Return res. This is its code, look at it. It has the habit of writing code. It is saying again and again, habit of writing code in copy. Habit of writing code in copy. Habit of dry running in copy, understood? This is its small code. We will do this. Come, let's dry run it quickly. Quickly, let's dry run it quickly."
+  },
+  {
+   "start": 1924.46,
+   "end": 1956.37,
+   "text": "Assume SRA is 0 to 2, 5 to 10, and 13 to 23. Keep 3. This is 1 to 2, 5 to 5, 8 to 10. Okay? In the initial period, your I is here and J is here. Okay? Let's dry run. I is there. So, we will write S1 as start 1 and N2 as end 2. What will come? 0, 2."
+  },
+  {
+   "start": 1956.43,
+   "end": 1986.42,
+   "text": "What will be S2? 1. What will be P2? 2. Which one is it? First of all, let's decide which one is small. See, this one is small. S1 is small. So, we will check from the normal one. What? E1 is greater than or equal to S2? Yes. Yes. It is. It is. It is. So, it will merge. It will merge. It will definitely merge. What will be the answer of merge? Start. Maximum of both start. What is the maximum of 0 and 1? 1. Minimum of both ends. Minimum of 2 and 2? 2. So, your one answer is 1, 2. What will be your one answer? 1, 2. This is your"
+  },
+  {
+   "start": 1986.42,
+   "end": 2016.9,
+   "text": "Answer. Okay. Everything is done. Done? Who will we increase? We will increase the one which will end first. We will increase the one which will end first. So, look here. Here both are ending at the same time. So, we have handled ending at the same time. So, increase anyone. Increase anyone. No difference will be there. Increase i. What will you do with i? Increase i. So, increase i from here to here. Cut this. Bring i here. Come on. Next time. We can do this in merge to sorted. If both were equal, then increase anyone. No difference will be there. Come on. Now, write again. S1 is equal to 5."
+  },
+  {
+   "start": 2016.9,
+   "end": 2046.05,
+   "text": "E1 is equal to 10. J is the same. So, J will be the same. S2 is equal to 1. E2 is equal to 2. Now, look. S2 is less than or equal to S1. S2 is less than or equal to S1. So, you will check the overlapping in reverse. Is E2 greater than or equal to my S1? Is E2 greater than or equal to my S1? No. No. No. There will be no overlap. There is no need for any overlap. Now, who has to increase? This will end at 10. This will end at 2. Increase the one which ends first. Increase J. Increase J."
+  },
+  {
+   "start": 2046.05,
+   "end": 2075.14,
+   "text": "Put J here. Next time, come here. What is S1 is equal to, I was same, E1 is equal to 10. S2 is equal to 5, E2 is equal to 5. Both are same, S1 and S2 are same, so assume that S1 is less than or equal to S2 and do it normally. Is my E1 is greater than or equal to S2? Yes, yes, yes. What will come in the answer? In the answer, there will be a merge interval, the merge will be fixed, but will there be an intersection? The maximum of these two is 10."
+  },
+  {
+   "start": 2075.14,
+   "end": 2105.33,
+   "text": "The minimum of these two, sorry, sorry, both are the maximum of start, both are the maximum of start, 5. The minimum of both of these is 5. So, your answer is 5, 5. Write it down. 5, 5. Okay. Now, it's time to increase. Which one is ending first? E2. E2 is ending first. J has to be increased. J has to be increased. Increase J and bring it here. J has come here. See, now this has happened. Come, let's do it again. I was the same. S1 is equal to 5. E1 is equal to 10. J was increased. S2 is equal to 8."
+  },
+  {
+   "start": 2105.33,
+   "end": 2135.82,
+   "text": "E2 is equal to 10. S1 is smaller than S2. So, run it normally. Is my E1 greater than or equal to S2? Yes, it is. What will be the answer? The maximum of these two. The minimum of these two. 8 to 10. You got an answer of 8 to 10. Write it down. Who will we increase? Who will we increase? Which one is ending first? Which one is ending first? This one is ending first. This one is ending first. No problem. Increase I. Increase I. Increase I and bring it here. Increase I and bring it here. Come on. Come again. Do this again."
+  },
+  {
+   "start": 2136.02,
+   "end": 2158.54,
+   "text": "S1, I increased, so it became 13. E1 is equal to 23. If J was not increased, then J will remain the same. 8 and E2 is equal to 10. S2 is less than or equal to S1. So, we will have to reverse it. Is my E2 greater than or equal to 13? No. No. No. No. So, there will be no merge. There will be no merge. No problem. There will be no merge. Who will have to increase? The one who finished earlier. We will increase the one who finished earlier. J++."
+  },
+  {
+   "start": 2158.54,
+   "end": 2170.67,
+   "text": "J++, J here. J array is finished. One whole array is finished in the future. So now there is no benefit. What is your answer? Your answer is this. Now return this. So this was."
+  }
+ ]
+}

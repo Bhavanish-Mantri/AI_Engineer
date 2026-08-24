@@ -1,0 +1,274 @@
+{
+ "video_id": "IR3oL6ltbJ8",
+ "title": "DSA PATTERNS Episode 15 | Sliding Window Pattern Revision (Part 2)",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1451,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 22.22,
+   "text": "Today you will get to know why we are the best teachers on the internet to teach DSL. Yesterday we uploaded a video in which the sliding window was revised. There were a lot of comments that sir, there is a very good explanation, sir, the whole mind has opened, the whole world has changed. But now you only know 50%. A very important thing, I also made a mistake, I also got rid of it, I also got rid of you guys. So 90% is my mistake, 10% is yours."
+  },
+  {
+   "start": 22.22,
+   "end": 51.31,
+   "text": "Okay, so today we were making an Amazon question to teach you how to apply a pattern. So, what are we striking? We didn't tell you. If you try it, you won't be able to do it. Let's go. Till now, we have read the template of sliding window. Yesterday, we had told the template in which the high used to move forward and in which the high used to move forward. Then, till the time it was wrong, we used to shrink it. Then, it was written in the result and we used to return the result. It will work in 50% of the time. Yes, 50%. You don't know half of the thing yet."
+  },
+  {
+   "start": 51.31,
+   "end": 79.63,
+   "text": "Why we don't know, we will tell you. Let's play a game. You have a lot of people standing here. You have a lot of people standing in a line. You have been given a task to find the longest window in this. And the total sum of all the people should be less than 80. Who should it be less than? It should be less than 80. This is your question. So, naturally what you have to do is find the longest window whose sum is less than 80."
+  },
+  {
+   "start": 79.63,
+   "end": 106.94,
+   "text": "So, naturally, what we will do is, first of all, you will lift this person, then his weight will be 30. You will see that 30 is less than 80. So, this will satisfy your condition. But is it the longest? It may be the longest. You got one. So, that's why you write 1 in your result and move ahead. Then you hold this too. So, you get 70. So, 70 is less than 80. So, you think, okay, you got two people, now your window length is 2."
+  },
+  {
+   "start": 106.94,
+   "end": 134.8,
+   "text": "If you still haven't crossed 80, then this is 2, there can be someone else ahead. So you write 2 in your result. But as soon as you include this, then your weight becomes 120. Now 120 is greater than 80. Now your information is wrong. Now what do you do? Okay, 120 is done. Now you have to remove the person in the order in which you had taken him. Now you start crossing each person. Now you say that you leave. As soon as you remove this, your 120 decreases to 90."
+  },
+  {
+   "start": 134.8,
+   "end": 164.8,
+   "text": "If it is still greater than 80, then it is still wrong. So, we still benefit from shrinking the low. Okay. Ask him to exit. As soon as you exit this, the weight becomes 50. Now, again it is more than 80. So, again we write it in the result. How much do we write? We try to write 1, but because here it is 2, we are not able to write. We were doing the basics since then. Okay. Now, see. Now, we will reverse this question. Now, we are going to reverse this question. Now, we are going to reverse this question. Okay."
+  },
+  {
+   "start": 164.8,
+   "end": 194.27,
+   "text": "What are we going to do? Reverse. Write 30, 40, 50, 10 and 50. Now listen carefully. You have to find the shortest window. In these men or women, find the shortest window, not the longest. Now the question has changed. Shortest window whose sum is more than 80. See the condition has also changed."
+  },
+  {
+   "start": 194.27,
+   "end": 221.66,
+   "text": "and the longest became shortest but the condition was reversed. What was the first condition? The sum should be less than 80. Now what is the condition? The sum should be more than 80. Now how will we do it? Now if you were an intelligent person, what would you do? First of all, you pick up the first person. So your weight becomes 30. Is your information correct? No, 30 is less than 80. So your information is wrong."
+  },
+  {
+   "start": 221.66,
+   "end": 251.17,
+   "text": "Now according to what we were doing earlier, what will we do? Will it be beneficial to shrink here? Because your information is wrong. Shrink was told that when the information is wrong, then you have to shrink. Okay. So is it already less than 30-80? It will be less than shrinking. So we will not be able to shrink now. So don't shrink now. Okay. Go ahead. Your weight is 70. 70 is less than 80. But it is still not beneficial to shrink. Because it will be less than shrinking. Don't shrink now. It will be okay."
+  },
+  {
+   "start": 251.17,
+   "end": 277.12,
+   "text": "Pick it up. Now the weight, how much is it? 80 plus 50, 130. This information is correct. This information is correct. It is correct. So in correct, we didn't shrink earlier. In wrong, we used to shrink, so we won't shrink now. And you try to write it in your result. Write it in your result. Okay. So what will you write in your result? You will write length. Write 3 in your result. Okay."
+  },
+  {
+   "start": 277.12,
+   "end": 303.92,
+   "text": "I don't understand. Look carefully. We are explaining it very simply. We are opening it slowly. We are not telling it in one go. Okay. You didn't shrink. You didn't shrink. Increase it again. What is the weight? 130 plus 10 is 140. It is 140, right? Yes. 140 is also greater than 80. Your information is still correct. But when did we learn to shrink? When it was wrong. So it is not wrong. The information is correct. Okay. So write this too. Now your length is 4."
+  },
+  {
+   "start": 303.92,
+   "end": 331.02,
+   "text": "But because you have to find the minimum, you will not be able to write 4. So, your answer is still 3. Very good. Now, find this. What is this? It is 50. So, your weight is now 190. The information is still correct. So, we did not learn to shrink properly. We used to do it in the wrong way. Again, try to write this too. If you try to write 5, you will not be able to write 3. Now, what will happen? Your program will be over. Why? Your high will come out."
+  },
+  {
+   "start": 331.47,
+   "end": 361.3,
+   "text": "Now, what are you returning? Look carefully. Open your mind and see. You are returning 3 answers. Meaning, you are saying that minimum window, minimum 2 people, line by line, whose weight is more than 80, their length is 3. But, look carefully at the question. Is the weight of these 2 people also not 3? Meaning, more than 80. 40 and 50, how much is their weight? 90, right? So, is their weight not more than 90? But, where did you find this? You are saying 3. It should have been 2, right?"
+  },
+  {
+   "start": 361.3,
+   "end": 392.53,
+   "text": "This is wrong. It's not wrong. How did you get it? It's wrong. Why is it wrong? Let me tell you. Why is it wrong? Let me tell you. See. This is the difference between maximum window and minimum window. In minimum window. See, there is a basic difference between both. What does maximum window tell you? What does maximum window tell you in Hindi? Maximum, tell me the length of the window. Maximum window which is"
+  },
+  {
+   "start": 392.78,
+   "end": 422.08,
+   "text": "is correct according to the condition. which is correct according to the condition. So, how do you start? In the beginning, your information will be wrong. Most probably, it will be wrong because if you are told that the sum is less than 80, then in the beginning, it can be that the information is wrong or correct, anything can happen. Suppose you start with invalid."
+  },
+  {
+   "start": 422.08,
+   "end": 452.5,
+   "text": "Invalid or start from the wrong. Let's start from the wrong. It is not that we start, we are just telling you to make you understand. If you keep increasing the high, then assume that it is still wrong. At some point, it becomes right. But when it is right for the first time, then the length of your window is this much. Do you have to stop here? No, you have to increase it as much as possible. You have to make it right. It may be right in the future too. So what do you try to do? Try to make it right more. Make it right more."
+  },
+  {
+   "start": 452.5,
+   "end": 481.28,
+   "text": "and correct and every time we keep writing its answer every time we keep writing its answer so every time your answer increases now as soon as your answer is wrong as soon as your answer is wrong so we shrink in wrong till when we shrink the wrong till it becomes correct so while shrinking the wrong now it shrinks here then it becomes correct then suppose if you have shrunk the wrong then your window would have become like this then you try to get your answer again means means"
+  },
+  {
+   "start": 481.28,
+   "end": 510.06,
+   "text": "If you want to find the longest, then the moment you see that it is right, you do not stop there, you want to do more right, you want to do more right. When it is wrong, when it is wrong, then you shrink. The simple reason for this is that any question of the world's maximum window, any question of the world's maximum window, the condition that will be given in it, the condition that will be given in it, that will be given to you. For example, if the sum is given, it will always be less than or equal to."
+  },
+  {
+   "start": 510.06,
+   "end": 540.74,
+   "text": "will always be equal. Both are opposite. This is max and it is always saying less or equal. Or equal. What is the reason for this? The reason for this is that suppose we ask you about man. Now the example of man. Okay, the example of man. Suppose he is 30, 40, 50 kg, he is 10 kg, he is 50 kg. If we, remember what we asked in the question. Sum less than 80."
+  },
+  {
+   "start": 540.74,
+   "end": 568.59,
+   "text": "less than 80, see, less than 80. If we ask to find the longest sum whose sum is greater than 80, then there is no need to do anything in this. Assume that you take this, you take this, then you have 30. No problem, it is wrong now. You take this, it becomes 70. You take this, it becomes 120. Now this is greater than 80. Now this is greater than 80, so you write this as 3. So, now the weight of the person is not negative. Now, the more you take the person, it will be correct."
+  },
+  {
+   "start": 568.59,
+   "end": 585.14,
+   "text": "If the weight of 3 people is more than 80 kg, then if you add 3 more people or 6 more people or 50 more people, then the weight will be more. So what is the question in this? Where you will get the first time, take the whole array from there. Return the whole array in this."
+  },
+  {
+   "start": 585.14,
+   "end": 611.41,
+   "text": "See if the sum of the whole area is there or not, then return the length of the whole area and return it. So this question did not happen, there was no sense of the question. That's why it is always said with the longest that you are being given such a constraint that it should be less than that. Take the longest window, but that weight should be less than 80 kg. Take as much weight as less than 80 kg. If we take more than 80 kg, then we will take the whole world. There are 4 crore people in the whole world, so everyone's weight will be added. If 80 is more, then we will take it."
+  },
+  {
+   "start": 611.41,
+   "end": 624.27,
+   "text": "No, you can dig such a long window, which is less than anything. No matter how many people you hire, everyone's salary should be less than 1 crore."
+  },
+  {
+   "start": 624.27,
+   "end": 647.9,
+   "text": "This is what the company says, no matter how much HR you hire, but the salary should be less than 1 crore. If the company says that no matter how much HR you hire, the salary should be more than 1 crore, then HR would hire the whole world and distribute 1 crore to everyone. This is not possible, it is not logical. That's why, always remember, always remember, what will happen with the question of the maximum window?"
+  },
+  {
+   "start": 647.9,
+   "end": 676.64,
+   "text": "Constraint will be less than or equal to. This constraint can be anything. Number of unique elements should be less. Number of repeating elements should be less. Anything. Anything will happen. But this thing will definitely happen. Less or equal to. Because the opposite one doesn't make sense. It doesn't make sense. Come back to this. Come back to this example. There is a question of minimum window. If there is a question of minimum window. There is a question of minimum window. In this, you will always have greater than or equal to k."
+  },
+  {
+   "start": 676.64,
+   "end": 699.34,
+   "text": "It will be greater than equal to. See, it is upside down. This is minimum. And this is greater equal to. Greater equal. Greater equal. Why is this? Because, suppose one person's weight is 30. One person's weight is 40. And one person's weight is 50. If you are told that sum should be less than 80, find a minimum window like this."
+  },
+  {
+   "start": 699.34,
+   "end": 728.64,
+   "text": "So this is simple, the weight of this is less than 80, so this is also a window. So quietly return 1, nothing happened in the question. See if there is anyone in the array, we will return it. So this is not a question. There is a minimum window, but the minimum capacity, the sum should be more. Only then this will be a good question, only then you will be able to think of something. What will the company say? No matter how much a person hires. Sorry, the company is saying that I have so much work. I have the work of a particular person."
+  },
+  {
+   "start": 728.64,
+   "end": 758.58,
+   "text": "Hire as few people as possible to do the work. This is what the company says. There is a difference between the two. We are using work in this. Earlier I used salary because it is easy to understand. What does the company say? Hire as few people as possible to do the work together. The company does not say that hire as few people as possible who could not do the work. Then hire only one person who could not do the work. Then nothing happened, right? Okay. But that's why. So in minimum window, you will get this plus. This. This is the minimum question."
+  },
+  {
+   "start": 758.58,
+   "end": 787.18,
+   "text": "Maximum is just the opposite of this question. So this is the understanding. But how will our template change? Let me tell you how it will change. Assume that you are at minimum. In minimum, what did we say? Your sum is greater than 80. Obviously, when you start, your sum will remain zero. It's a simple question. So you are either invalid or wrong. Wrong, right? You don't have to take wrong. So you will start from wrong."
+  },
+  {
+   "start": 787.41,
+   "end": 817.31,
+   "text": "You increase the high so that it is right. Ok, so this will also be wrong. Assume it is wrong. At some point, it was right for the first time. Clicked right for the first time. Now this is right. This is right means your window is so big. Assume your window is of 3. Now it is made of 3. Means? So this is an answer. 3 is an answer. We should write it now. We should write it by law. We should write it. But it is possible. It is possible that this is that example. That you have hired 5 people."
+  },
+  {
+   "start": 817.31,
+   "end": 846.56,
+   "text": "Okay, now you have hired 5 people. Then you came to know that work is going on. Then you came to know that work is going on. But what is the target of the company? Hire a minimum number of people. Then you started firing. Then you started firing. Then you started firing. What was firing? Firing was shrinking. It was shrinking. It was shrinking. So now what do we do? In minimum, we just reverse the maximum. What did we do in maximum? When the information was wrong, we used to shrink. We used to shrink on wrong."
+  },
+  {
+   "start": 846.56,
+   "end": 869.87,
+   "text": "And see, when will the information be wrong? What we have just told, any question of maximum, what will happen? Sum less than equal to k. So what will be the meaning of wrong information? Sum greater than k. Now, in sum greater than k, it also makes sense that you should shrink. Because by shrinking, sum will come down from k, if you increase the low, then something will happen, right? So it makes sense that you should shrink. Okay. But,"
+  },
+  {
+   "start": 869.87,
+   "end": 895.94,
+   "text": "Now, when your answer is correct in minimum, then it makes sense to write this work. And, it is possible that even a smaller answer is possible than our current answer. Now see, this answer will increase by increasing it. Whenever you increase the high, the size of the window increases. You have already got 3 here. So what should we try for? We should try for 2, for 1. How will that happen? That will happen by shrinking. That's why,"
+  },
+  {
+   "start": 895.94,
+   "end": 924.64,
+   "text": "That's why, as soon as we get the minimum right, we start shrinking. So, as soon as the information becomes right, not wrong, the information becomes right. So, first of all, let's write it in the answer. Let's write it in the answer and start shrinking. Let's start shrinking from low. Till when? Till the time the information is wrong again. And let's leave the same. Now, why does it make sense?"
+  },
+  {
+   "start": 924.64,
+   "end": 946.14,
+   "text": "When will your information be correct in the minimum? You are told that the sum should be greater than 80 or equal. When will your information be wrong? In this case, it will be wrong. Now, there is no point in shrinking in this because if you increase the low, it will decrease further. There is no point in that. But here, your sum is greater than 80. For example, your sum is 100."
+  },
+  {
+   "start": 946.14,
+   "end": 967.14,
+   "text": "But your condition is 80, maybe there is some answer of 90, maybe there is some answer of 85, maybe there is some answer of 81. How will this happen? You got an answer of 100 that it is 4 length. Maybe it's length is 3, maybe it's length is 2, maybe it's length is 1 only. How will you know this? You will know this by shrinking and you are trying to come less."
+  },
+  {
+   "start": 967.14,
+   "end": 993.36,
+   "text": "Once the target is achieved, now you are taking out the person that you go and see if the work is done or not. You go and see if your work is done or not. And every time we count it. Four people are working, we have counted it. Four people are working, we have kept four. We have taken out one person, three. Three people are also working, very good. Count three, you also go. Two people are working, very good. You also go. One is not working, come ahead. So, as long as the information is correct, as long as the information is correct,"
+  },
+  {
+   "start": 993.36,
+   "end": 1021.22,
+   "text": "Shrinks till then. And before shrinking here, it is included in the answer. It is included. Did you understand this or not? Please tell us in the comments if you didn't understand. We will explain it again. If you didn't understand this, then you understand that half of your knowledge was incomplete till now. Till today's class, till this 16 minutes, half of your knowledge was incomplete. No matter how much you comment that we understood everything, you understood half of it. You felt that you understood everything. So,"
+  },
+  {
+   "start": 1021.22,
+   "end": 1049.95,
+   "text": "It was my responsibility. If we wanted, we would have ignored it. Yes, if there is a mistake, we will do it later. But, it is a very important thing that we will tell the template now. We will write the template and make the question. So, this is different in your minimum. Why is there a sense of it? Why is there a logical sense of it? Because, what did we just say? You start from the wrong. You start from the wrong. Sometimes, you become right. Sometimes, you become right. So, first of all, you write this. That this is my 3."
+  },
+  {
+   "start": 1049.95,
+   "end": 1079.82,
+   "text": "And now let's shrink it. Until when? Until it is not correct. Until it is not correct. So every time we shrink it, the size is decreasing. So for example, you came to know that we were correct in 4 sizes. If we shrink it, then we are correct in 3 sizes too. Yes, okay, then write 3. Who said no? So there is nothing. We are correct in 2 too. We are correct in 2 too. So write it in the answer. We are not correct in 1. We are not correct in 1. If we are not correct, then what is the meaning of not being correct? The meaning of being correct is sum 80."
+  },
+  {
+   "start": 1079.82,
+   "end": 1108.72,
+   "text": "not being correct means that your sum is less than 80. If it is less than 80, then there is no point in increasing the low. When it is less and you have to reach 80, then you need to increase the high, so we are doing that. Okay? Let's quickly write the pattern of this. One or two lines are here and there. First of all, this will be the same thing. This is the absolute truth of any sliding window. What is this? It is the absolute truth. Come. To include high, this is also the absolute truth."
+  },
+  {
+   "start": 1108.72,
+   "end": 1137.23,
+   "text": "We have to include high. This is also the absolute truth. Okay. Now come. Now what did we say? Now what is your sum? Is there some information? What did we say? While. While. Whatever is your information, condition of being correct. Information is correct. Means, sum is greater than something, frequency is greater than everything. Okay. What did we say? First step. First step. First step. First step."
+  },
+  {
+   "start": 1137.23,
+   "end": 1165.89,
+   "text": "write it in the answer, write it first, if you get one correct, write it somewhere, if you get one correct, it is possible that you will get a good one, but write this, if you don't write this, you will forget, okay, so write this quickly, what is the process of writing in the answer, length is taken out, and answer is equal to max, sorry, min, answer, length, because it is a question of minimum min, this work is done, very good, now, now what you are doing, this you know, means, from sum,"
+  },
+  {
+   "start": 1165.89,
+   "end": 1194.9,
+   "text": "Take out the array of low and increase the low. Did you understand? Now, this is over. When will this end? When the information is correct. Now, you will come here when your information is wrong. Information is wrong. What has happened? It is wrong. So, there is no need to do anything here. The previous ones used to write the result here. Because when did we come here? In the maximum, we used to come here when your information was correct."
+  },
+  {
+   "start": 1194.9,
+   "end": 1224.62,
+   "text": "Now you guys are ruined when your information is wrong. There is no need to write that. Just return the results. Result or answer. Whatever is yours. See this. This is the pattern. You may not be getting much change. But the whole algorithm has changed. The whole algorithm has turned upside down. That is, it has become upside down. Earlier, we used to do it when it was wrong. In Maths, we used to do it when it was wrong. In Min, we are doing it when it is correct. Now we used to write the first answer here."
+  },
+  {
+   "start": 1224.62,
+   "end": 1256.53,
+   "text": "Earlier, we used to write this thing below. Now, why do we write this thing? We don't have to remember. Now, when do we write this thing? When the information is correct, then only you will write it in the answer. So, we are writing the information where it is correct. Earlier, if it was correct here, then we used to write it here. Did you understand this template? Okay. Let's tell a small comparison. Here is the maximum window question and this is the minimum window question. Minimum window question. First of all, what will be the difference in condition?"
+  },
+  {
+   "start": 1256.53,
+   "end": 1284.53,
+   "text": "In condition itself, you will always be told that it should be less than or equal to something. And you will always be told that it should be greater than or equal to something. Because we have already told that it doesn't make sense without asking the opposite. Okay? In both, you have to run the high. In both, you have to run from 0 to n. In both, you have to run from 0 to n. Okay? In both, you have to include the high. You have to include the high."
+  },
+  {
+   "start": 1284.75,
+   "end": 1314.86,
+   "text": "We have to do the same in this too. But the difference that is coming now. Shrink. When? When it is wrong. When to shrink here? When it is correct. And here we have to write the result here. Write the result. We have to do this in one part. And here, now the shrink is done. Now you must have got it right. Outside the loop, outside the while loop. Here you have to write the result."
+  },
+  {
+   "start": 1315.12,
+   "end": 1342.08,
+   "text": "I have to write the result. I have to write. I don't have to do anything here. I don't have to do anything. And I have to come out. So see, this thing has come here. And this is completely upside down. This is it. Why is it upside down? I hope you have understood this. If we wanted to, we wouldn't have told you. Or we would have told you that yes, yes, this is what you have to do. There is a line here and there. One line here and there is another thing."
+  },
+  {
+   "start": 1342.08,
+   "end": 1371.94,
+   "text": "but the whole algorithm is the opposite. This is not a one-way street. You must be thinking, sir, why are you making such a stupid video? Now some people will say, sir, please teach me the linked list. No, this is not a one-way street. The whole algorithm is the opposite. You must not have understood. So, you cannot make this. 50%, now see, there is a general probability, right? 50% question will come of max. 50% question will come of min. You have only learned the max template. So, you make this, this will come. So, your air will become tight."
+  },
+  {
+   "start": 1371.94,
+   "end": 1401.06,
+   "text": "you will be like, I don't know, then there will be a lot of abuse here, you teach useless, I don't know, we are going, we will ask 10,000 questions, you will not come, no, now, now from my understanding, you are complete, you are 100%, if you are watching the video till here, congratulations, you have mastered in sliding window, especially in variable sliding window, so one question of this, we are telling you, do it yourself, we will not do it, do it yourself, okay, one question of this, although we have done it in this sheet, but,"
+  },
+  {
+   "start": 1401.06,
+   "end": 1429.57,
+   "text": "At that time, I think I was at home, so I didn't have it in my mind. The name of the question is Minimum, size, subarray, sum. Do it yourself. Do it with the exact same template. Do it yourself. Minimum, size, subarray, sum. Do it yourself. It's a very good question. Tomorrow, we will do two questions of Amazon. We will do two questions of Amazon with patterns. We will teach you how to apply patterns when there is a question in the interview."
+  },
+  {
+   "start": 1429.57,
+   "end": 1446.54,
+   "text": "Wait for tomorrow's video. We were going to do it today. In the process of doing this question, it struck us. So see this. And if you have seen it till now, it is a very good thing. If you have not seen it till now, it is not a good thing at all. So they won't listen anyway. They are master people. Let's meet tomorrow. Let's go."
+  }
+ ]
+}

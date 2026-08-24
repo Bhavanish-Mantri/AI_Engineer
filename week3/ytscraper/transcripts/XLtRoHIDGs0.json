@@ -1,0 +1,249 @@
+{
+ "video_id": "XLtRoHIDGs0",
+ "title": "DSA Patterns Episode 27 | Master DSA Patterns With Prefix Sum | Leetcode Patterns",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1357,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 23.15,
+   "text": "Those who are new to the channel, please come to episode 27, Prefix Sum DHA Patterns. My name is Pratyush Narayan. I work in Akamai. If you don't have a pattern sheet, you will get it in the description. You will get everything in the description. Playlist, pattern, everything. Okay. What will you learn by the end of this lecture? Yesterday, we talked about flowchart. In which there were 4 categories. How many categories were there? 4 categories. Why were there 4 categories of prefix sum? Different data structures were being used in everything."
+  },
+  {
+   "start": 23.15,
+   "end": 51.6,
+   "text": "One used to use normal variable or normal array, one used to use hash map, one used to use DQ, one used to use merge sort. We have already done the first category in episode 26. Today, you will learn the second category. You will have no doubt in the second category if you watch the video, you will understand what the second category is. So, what is the second category? How to identify the second category? If you are ever asked that the sum of any sub-array"
+  },
+  {
+   "start": 51.98,
+   "end": 81.47,
+   "text": "number of, especially number of, number or count of, number or count of, sub-array, sub-array means any, in any i or j array, there is a very big array, in that any sub-array, whose sum, whose sum, either it is exactly some k, either exactly, very important condition, listen carefully, either it is exactly k, either, if you modulate it with k, then its answer should be 0, what does this mean, if k is equal to 6,"
+  },
+  {
+   "start": 81.47,
+   "end": 111.38,
+   "text": "So you were asked to either tell a number of sub-arrays whose sum is exactly 6, or when we divide that sum by 6, then the remainder is 0. For example, if the sum is 12, then when you do 12 mod 6, then its answer is 0. Why? Because when you divide 12 by 6, the remainder is 0. So this is also a valid answer. 18 by 6 is equal to 3, remainder is 0. This is also a valid answer. 24 mod 6 is also 0. This is also a valid answer. So find all the sub-arrays like this."
+  },
+  {
+   "start": 111.38,
+   "end": 141.25,
+   "text": "There are only two cases. What do you have to use in these two cases? HashMap. What is HashMap? It will not work with simple array. Now we will tell why it will not work and why it will work easily with HashMap. Let's go. So let's come to the first question. Our first question is, All array sums equal to K. What? All array. Very important, very famous interview question. If you give 100 interviews, then out of 30 interviews, this will be asked. Okay, so all array sums equal to K. What does this question say?"
+  },
+  {
+   "start": 141.25,
+   "end": 170.32,
+   "text": "What does this question say? This question is LEAD code 560. Okay. Done. So, what does this question say? That you have given an array. Very good. You have given an array. Is there a positive number or a negative number in the array? There is a positive number and a negative number in the array. Good. What do you have to find? Do you have to find the count of all the arrays? Do you have to find the count of all the arrays? Okay. Good. We will find it. But what is the condition? The one whose sum is equal to k. Exactly k. Now see."
+  },
+  {
+   "start": 170.32,
+   "end": 199.78,
+   "text": "The whole template, the whole flow chart fits. Is this an array question? Yes, sir. Is this a sub-array question? Yes, sir. Do you want to find the number of sub-arrays? Yes, sir. Do you have a condition in which sum equal to k or sum modulus k is equal to 0? Yes, sir. Do you have negative elements in this? Yes, sir. 5 of 5 are available. 100%. Whose question is this? Prefix sum pattern's question. It is not of sliding window. Why? Sliding window fails. In which it fails?"
+  },
+  {
+   "start": 199.78,
+   "end": 229.97,
+   "text": "in negatives. Sliding window fails in negatives. That's why, whose question was it? Prefix sum's question. In prefix sum, which category's question was it? Second category's. Second category. Which was used in second category? Hash map. Hash map. Let's go. Now, we know why to use hash map and how to solve it. What will we do to solve it? Let's go. What will happen in brute force? What is brute force? Look at the whole array. What?"
+  },
+  {
+   "start": 230.19,
+   "end": 256.75,
+   "text": "look at all the subarrays and find the sum of all the subarrays by doing equal equal to k you will get the count this is a very stupid approach, we don't need to explain it how does prefix sum work in this? for example you are saying you are saying, you are denying what does prefix sum do? prefix sum, yes see in yesterday's video many people had doubts many people were complaining that you are telling wrong"
+  },
+  {
+   "start": 256.75,
+   "end": 285.39,
+   "text": "Prefix sum does not have the sum at the back. It also includes the array of i. So you are wrong. Nothing is wrong. Whatever is said in the question, it does the same. In yesterday's pivot question, you were specifically told that the sum at the back of the i and the sum at the front of the i. So if you add the array of i in that, it will be wrong. So don't be like this. Maybe someone else would have taught you that prefix sum means that the sum at the back of the array of i is included. It doesn't happen like this. What does prefix mean? Prefix means at the back. Now someone can say include. Someone can say include."
+  },
+  {
+   "start": 285.39,
+   "end": 314.86,
+   "text": "It will be according to the question you are making. It will not happen that if you remember that it is good, then the array of i will be there. The master told it wrongly. No, nothing like that happens. Let's go. Suppose, suppose this is your array. This is your array. Now, take a variable in the prefix, whose name is prefix. In the beginning, it is 0. What will this prefix keep? It will keep your sum. As you will increase the i, it will keep its sum. So, suppose, your i at some point, your i at some point, is at 4. Where is your i? It is at 4."
+  },
+  {
+   "start": 314.99,
+   "end": 344.11,
+   "text": "What will be your total sum till now? Let's add i to this question because you are talking about all the arrays. So what will be the total sum? When you reach i, i is equal to 4, then what will be the total sum? The total sum will be this. Array of 0 plus array of 1 plus array of 2 plus array of 3 plus array of 4. This will be it. We have included array of i in this because this will be it. The sum of all the arrays which is the sum from the beginning till now. Okay. Assume that this is some sum."
+  },
+  {
+   "start": 344.11,
+   "end": 374.29,
+   "text": "This is a sum. Okay. But what did you have to find? You had to find the number of sub-arrays. What? The number of sub-arrays whose sum is exactly k. So, these two sub-arrays are sub-arrays from 0 to 4. It is possible that this sum is equal to k. It is possible that this sum is equal to k not. Anything is possible. But, but, suppose there is one more sub-array. Take any sub-array of any size. Suppose from here, from 0 to 2 is the sum. This is the sum. We are just teaching you the math equation. What is math?"
+  },
+  {
+   "start": 374.29,
+   "end": 404.34,
+   "text": "Someone tells you, what is the sum of this? The sum of this is exactly sum minus k. The sum of 0, 1, 2 is exactly sum minus k. Now see, what is the sum of this part? The sum of total is sum. Suppose, someone tells you that the sum of 0, 1, 2 is sum minus k. The sum of this part is x. What is x?"
+  },
+  {
+   "start": 404.34,
+   "end": 431.15,
+   "text": "X is, send it there. Sum, which is this sum, minus, send this whole part there, make it minus. Sum minus k. What will this be? Sum minus sum plus k. Sum will be cut, k. See this, X's sum is k. Means, 3 to 4, of this subarray, whose? This subarray's sum is exactly k."
+  },
+  {
+   "start": 431.15,
+   "end": 460.85,
+   "text": "When did this happen? When we assumed that the sum from 0 to 2 is sum minus k. This is what happened. Maths says that its sum is k. So you got one sub-array. You got one sub-array, so you definitely got 3 to 4. Let's go. Stay in this. Stay in this. What was your sum? What was your sum? Array of 0 plus array of 1 plus array of 2 plus array of 3 plus array of 4. What did we assume? That the sum from 0 to 2 is sum minus k."
+  },
+  {
+   "start": 460.85,
+   "end": 488.53,
+   "text": "But it is not necessary that the sum from 0 to 2 is sum minus k. Assume that the sum from 0 to 1 is also sum minus k. It is possible that rf will be 0, so that's why it is done. Let's assume that 0 and 1, what is the sum of this part? Sum minus k. Do the same thing again. Take out the sum of this part, we will call it x. What is x? x is equal to again, sum minus, sum minus k, which is k."
+  },
+  {
+   "start": 489.14,
+   "end": 517.9,
+   "text": "The sum of this part is also exactly k. That means you got another sub-array. You got another sub-array. The sum of 2 to 4 is also k. So this is also a good sub-array. You got 3 to 4 above. This is a good sub-array. Its sum is k. It should be counted. 2 to 4 is also k. Now how is this happening? How is this happening? When we traverse an array, what do we do? When we traverse an array,"
+  },
+  {
+   "start": 517.9,
+   "end": 546.72,
+   "text": "We have a running sum. Running sum means the sum of the array of i from 0 to the array of i. That will always be there. That will always be there. Suppose you have come to i is equal to 3. So you have array of 0 plus array of 1 plus array of 2 plus array of 3. This will always be there. We will say that this is the sum. It is easy to remove. Keep removing. Okay. If someone tells us that, listen, array of 0, just array of 0."
+  },
+  {
+   "start": 546.72,
+   "end": 574.35,
+   "text": "Its sum is also sum minus k. And, array of 0 plus array of 1 plus array of 2. Its sum is also sum minus k. It must have been done. Negative is also positive. It can be done. So, from this, we got to know two things. We were told these two things. From this, we got to know two things. If this is sum minus k, then we had seen that the sum of the rest of the part would automatically be k. We got to know one thing. Array of 1 plus array of 2."
+  },
+  {
+   "start": 574.35,
+   "end": 603.26,
+   "text": "plus area of 3. Its sum is definitely k. We can count it that we got one sub-array and in result we did 1 plus and we also said that the sum of 0, 1, 2 is also sum minus k. Okay. This means that the remaining part area of 3 means that the sum of area of 3 will also be k. This is also a sub-array that starts at 3 and ends at 3. It is a sub-array of 1 length. We can add one more to our result and add 2 to it. At least we can add this much. So see, as soon as someone tells you these two things that"
+  },
+  {
+   "start": 603.26,
+   "end": 632.05,
+   "text": "Starting from 0, how much is the sum of sum minus k? How much? Did anyone tell you that the sum of 0 is also sum minus k? And the sum of 0, 1, 2 this morning is also sum minus k. Automatically, you got to know that there will be two more mornings whose sum will be exactly k. Now, this is the basic logic. Who will tell you these things? From whom will you ask these things? From whom will you ask these things? You will ask this from HashMaps."
+  },
+  {
+   "start": 632.5,
+   "end": 662.54,
+   "text": "Hash maps. How will we ask? I will tell you. This is the beauty of prefix sum. Let's go. Take an array. Make an array. Assume 1, 1 and 1 which is given in the example. Okay. Let's make 1, 2, 3. 1, 2, 3. I don't know why they give such a bad example. I don't understand it at all. I mean they give such a bad example that you couldn't think of it yourself. You gave 1, 2, 3. What is 1, 2 and 1? Let's go. 0, 1, 2. Your k is 3."
+  },
+  {
+   "start": 662.54,
+   "end": 692.66,
+   "text": "You have to find so many numbers of sub-arrays that have length 3. Now we will do this manually. We will manually check whether someone's sum is sum minus k or not. Let's go. Make a variable. Sum is equal to 0. Sum is equal to 0. Okay. i is equal to 0. Add array of i to sum first. Sum is equal to 1. Okay. What did we check? From 0 to i, how many sub-arrays have sum minus k? So what will be sum minus k? Sum minus k. Here,"
+  },
+  {
+   "start": 692.66,
+   "end": 721.9,
+   "text": "What will be the sum of minus? Minus 2. 1 minus 3. Minus 2. What do you see? From 0 to 0. I is 0. You don't have to go ahead of I. You don't know ahead of I. Can you see the sum of minus 2? No, you can't because it's positive. You can see it, right? Okay, don't do anything. Very good. Come. I is equal to 1. I is equal to 1. What will be the sum? It was already 1. We will add 2. It will be 3. What will be the sum of minus? Look very carefully. What will be the sum of minus? 0."
+  },
+  {
+   "start": 721.94,
+   "end": 751.5,
+   "text": "Starting from 0, is there any sub-array whose sum is exactly 0? Yes, it is visible. Don't say that it is not visible. There is also an empty sub-array. There is also an empty sub-array. We will not take any sub-array. Empty sub-array, what will be its sum? 0. If there is an empty sub-array, if someone asks to tell its sum, then its sum will be 0, right? 1 is visible. Let's go. 1 is visible. Add 1 to your answer. What will this mean? What will this mean? See. What was the meaning of sum here? Array of 0 plus array of 1."
+  },
+  {
+   "start": 751.5,
+   "end": 780.19,
+   "text": "You got to know from somewhere that one sub-array which starts from 0, its sum is 0. Whose? Empty sub-array. Empty sub-array. Means there is nothing in it. What is left in it? What is left? This is left. Means, we saw that its sum will be exactly k. It will be. And see, it is also there. Sum is equal to 3. k is equal to 3. Exactly k is there. We can add 1 to our result. Let's go. Now, it will be clearer. In the next example, it will be clearer. So, it was 0. Okay. Come. i is equal to 2. Increase the sum."
+  },
+  {
+   "start": 780.19,
+   "end": 802.91,
+   "text": "The sum was already 3. 3 plus 3 is 6. What is the sum minus? 3. From 0 to 2, is the sum of any subarray 3? Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes. Yes"
+  },
+  {
+   "start": 802.91,
+   "end": 832.64,
+   "text": "plus array of 2, what is its sum? 6, which is the current sum. You can see that array of 0 plus array of 1, this one, what is its sum? Sum minus k, which is 3. Automatically, what will be its sum? k, which is 3. See, array of 2 is also 3. You can add one more to your result. And, when everything is over, you can return 2 in the answer. This is its logic. What is its logic? Now, we will write its logic in array and see what happens."
+  },
+  {
+   "start": 832.64,
+   "end": 860.14,
+   "text": "The sum of any index i will look like this. Array of 0, plus array of 1, plus array of 2, plus array of 3, plus array of 4, plus array of 5, plus array of 6. Suppose you are looking at i is equal to 6. You got to know a lot of things. You got to know that the sum of array of 0 is sum minus k. You got to know one thing. Array of 0, plus array of 1, plus array of 2's sum is also sum minus k. Okay, that's good."
+  },
+  {
+   "start": 860.14,
+   "end": 889.95,
+   "text": "Array of 0, plus array of 1, plus array of 2, plus array of 3, plus array of 4 is also a sum of sum-minus k. Every time you are knowing that the sum from 0 to this part is also a sum of sum-minus k, you are knowing an answer. How? First of all, A0 is a sum-minus k. Automatically, A1 to A6 will also be a sum-minus k. So, your answer will be 1 to 6. Added in the answer. The sum of sum-minus k of 0, 1, 2 means this one. Automatically, this part of 3 to 6."
+  },
+  {
+   "start": 889.95,
+   "end": 918.59,
+   "text": "the sum of 3 to 6 will definitely be k because it is maths, it will have to happen. I have added one more to your answer. The sum of 0, 1, 2, 3, 4 is sum minus k which means the sum of this whole part is sum minus k. Automatically, the sum of this part will have to be k. It will have to happen. The sum of this part is sum minus k. Your total sum is sum. If you find the value of this x, then it will be k. Automatically, the answer of 5 and 6 will be your answer. It will have to happen. So, see what is happening."
+  },
+  {
+   "start": 918.59,
+   "end": 943.55,
+   "text": "You are going to every i. If someone tells you that you are going to every i, then you get a sum. If someone tells you that starting from 0, everything is starting from 0. It's not that you don't have to do anything in between. What we are doing till now is that we have seen a lot of sum minus k."
+  },
+  {
+   "start": 943.55,
+   "end": 971.12,
+   "text": "When we came to i is equal to 6, this is what we are doing, that now we are at i is equal to 6, then 0 will be correct, right? 0, 1, 2, 3, 4, 5, 6. How many times have you seen sum minus k? How many times have you seen? So you will know that once you came to a is equal to 0, then you saw it there. Once you came to 0, 1, 2, then you saw it there. Once you came to 0, 1, 2, 3, then you saw it there. So someone tells you that we have seen sum minus k 3 times. This also means that"
+  },
+  {
+   "start": 971.54,
+   "end": 1000.96,
+   "text": "In your answer, no matter how many times you have seen it, let's say you have seen its frequency many times, in your answer, you will have to do plus plus. Why? Because we have seen it. If you have seen it three times, if you have seen A0, 012, and 01234, surely, in this 0 to 6, there will be three mornings which will have the exact sum. See, 0 will be of this morning, 2 will be of this morning, after 4, it will be of this morning. So, this is a sure thing. Now,"
+  },
+  {
+   "start": 1000.96,
+   "end": 1029.78,
+   "text": "Will this thing tell you how many times we have seen something before? This is the specialty of HashMap. HashMap can remember. What? HashMap can remember how many times we have seen something before. Remember. Come. It will be a very simple code. Now see. What do you have to do first? First of all, suppose you got an array. You got a key. Very good. First of all, make an int sum is equal to 0. Okay. Make a HashMap. Make a HashMap. Unordered map."
+  },
+  {
+   "start": 1030.29,
+   "end": 1054.77,
+   "text": "which is intent, yes, very important thing, very important thing, what we were saying here, see in this example, see in this example, when our sum 3 came, what we were asking from it, that sum minus k, which is 0, have you seen 0 even once or not, now your hash map will be empty in the beginning, so it will tell you that we have not seen 0 even once, but it has seen 0, when has it seen 0, in empty morning, in empty morning,"
+  },
+  {
+   "start": 1054.77,
+   "end": 1083.97,
+   "text": "It started from zero and didn't even reach zero. It got empty. So, it has seen one zero there. So, you have to tell the hash map that even without doing anything, you have seen zero sum. So, you have to tell the hash map. What will you have to tell? F0 is equal to 1. This means that you have seen sum is equal to zero once. Without doing anything. In which? In empty somewhere. That's it. For i is equal to zero, i less than n, i plus plus. First of all,"
+  },
+  {
+   "start": 1083.97,
+   "end": 1113.78,
+   "text": "We have updated the sum and added the rfi to it. What do we have to ask? What did you see first? What do we have to ask? What is our question? The question is, have you ever seen the sum of minus k in your life? Now, int frequency is equal to f of question. f of question. Today, I will tell you how many times we have seen the sum of minus k before you. Just add this to your result. Add this to your result. Close it."
+  },
+  {
+   "start": 1114.26,
+   "end": 1141.74,
+   "text": "Return. This is what happens. Let's try it out. A lot of people say that you don't try it out. Do you write lies? No, we don't write lies. Come on. Do the example. 1. Take a new example. 1, 1 and 1. 0, 1, 2. Your k is 2. In the beginning, our hash map becomes 1. And we tell it that you have seen 0 once. Yes, one thing is left. Now we have done it here."
+  },
+  {
+   "start": 1141.74,
+   "end": 1171.57,
+   "text": "res plus is equal to fun. But, but, but, now that you have come to i, then your sum has been updated, your sum has been updated, then you will have to tell the hash map that you have seen this, then only it will be useful in the future. What does it mean to say? When you came here, when you came to i is equal to 0, then there was nothing on the hash map. Now, when you came to i is equal to 0, then your sum is plus is equal to 0. Now, before going ahead, you will have to tell the hash map that you have seen this sum, this sum just now. That's why what we have to do in the future, that how much you have seen behind, then we will have to tell the hash map, right?"
+  },
+  {
+   "start": 1171.57,
+   "end": 1198.51,
+   "text": "So, we have to tell the hash map that f of sum plus plus, the current sum, you have seen it once. When we will ask further, you will tell them. This was one thing. Come, let's do dry run. In the beginning, our hash map only knows 0. We have seen 0 sum once in empty array. Come, your sum is equal to 0. In the beginning, i is equal to 0. What will be the sum? 0 plus 1, 1. What will be sum minus k?"
+  },
+  {
+   "start": 1198.51,
+   "end": 1223.86,
+   "text": "What will be our question? 1 minus 2 minus 1. Okay. Have you ever seen minus 1 in hash? No, you haven't seen it. There is no benefit. Yes, before moving forward, now our sum is 1, so we will say that you have seen 1 once. From where? Here. You have seen this, right? Let's make 1 1. Very good. I is equal to 1. Sum is equal to 2. What will be your question?"
+  },
+  {
+   "start": 1223.86,
+   "end": 1249.33,
+   "text": "Sum minus k, 2 minus 2, 0. Yes, yes. Now ask HashMap, till today, how many times have you seen 0? He will say, we have seen 1 times. You have added 1 to your result. You have added 1 to your result. And before moving ahead, tell him that you have seen 2 too. You have seen 2 once. You have made 2 1. Come on. I is equal to 2. Sum is equal to how much? 2 plus 1, 3. What will be your question?"
+  },
+  {
+   "start": 1249.33,
+   "end": 1278.64,
+   "text": "that how many times have you seen sum minus k? 3 minus 2, 1, 1, 1, how many times have you seen 1? He will say that he has seen 1 once. Where did he see it? This one, this one. He had already seen it, right? He had seen it, right? Let's go. So, how many times did he see it? He had seen it once. Okay. So, add 1 to the answer. And your answer is 2. Before going, before going, it doesn't matter, but still, tell him that you have seen 3 once. And your loop will end, your array will end. What will you return? 2. Which other array whose sum is exactly 2?"
+  },
+  {
+   "start": 1278.64,
+   "end": 1308.32,
+   "text": "The sum of array of 0 and array of 1 is exactly 2. The sum of array of 1 and array of 2 is also exactly 2. See, in the whole array, only two sub-arrays are possible. Your question is done. So, this was the prefix sum. Why is this prefix sum? Why is this prefix sum? Because, now, what are you doing? You are taking the sum from every i-index. That's a very good thing. Keep taking it. But, what are you asking? Was there something like this in the sum at the back? Was there something like this in the sum at the back? That's why this kind of question is used in hash map. Why?"
+  },
+  {
+   "start": 1308.32,
+   "end": 1335.01,
+   "text": "Because there is a logic that suppose this is the part of this area. The sum of this whole part is sum. And the sum of this red part of the previous part is sum minus k. Automatically the sum of the remaining part will be k. So this should be in our answer. And the more red part there is, the greener the part will be. If you swing the red part, then the green part will increase. Means the more red part there is, the greener the part will be."
+  },
+  {
+   "start": 1335.01,
+   "end": 1356.6,
+   "text": "That's why we use HashMap and that's why it is a question of prefix sum. Using the previous sum, we are getting the answer now. This also fits exactly in the same template. First of all, increase your running sum. Compare the conditions. Add that sum to your prefix, to your HashMap. This works exactly on that. Do submit it. It is a very nice question. It is a very famous question. It is everyone's favorite question. Let's go."
+  }
+ ]
+}

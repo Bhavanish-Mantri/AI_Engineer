@@ -1,0 +1,569 @@
+{
+ "video_id": "93copdtW4ZQ",
+ "title": "No one Has Explained Dijkstra's Algorithm Like This On The Internet!",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 3117,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 24.4,
+   "text": "Welcome to Pratyush with Pratyush. My name is Pratyush Narayan. Today's topic is very controversial. We will learn the Dijkstra algorithm from the beginning to the end. But before teaching, let me tell you a few things very quickly. First, this is a little hard topic in the graph. It is not hard. It is hard because it is a different algorithm. So if you do not know the algorithm, you will not be able to make a question of it. That is true."
+  },
+  {
+   "start": 24.4,
+   "end": 44.29,
+   "text": "It is not that you will think. No, Dixitra was a person, he thought. You will have to learn that. The first thing is that it is a little hard topic. Sorry. The chance of him coming in the interview is 2 by 5. That means, how much? 40% chance. I mean, all the interviews we have given, Dixitra's question has not been asked to us till date. So see, you..."
+  },
+  {
+   "start": 44.29,
+   "end": 73.84,
+   "text": "If you want, you can skip the whole Dixitra, but the problem with this is that there is not only one question in Dixitra or one lecture that you will skip. In the future, we will see three to four graph questions like GPS, route of flight and many other questions. It is a standard question. It uses Dixitra directly. So you should not leave it, but the chance of coming to the interview is 40%. But now you are taking a lot of risk."
+  },
+  {
+   "start": 73.84,
+   "end": 101.92,
+   "text": "If you got it in the interview and you were reading it, then you will make it immediately. There will be no need to think about it. If you got it and you didn't read it by chance, skip it. It will never be made by you in any birth. In any birth, you can't think to yourself that this is Disclosure Algorithm. No, it can't be thought. So you take the risk according to yourself. And before moving forward in this lecture, you should know 2-3 things. Before today, we never said that you should know this. But before reading Dixitra, you should know 2-3 very particular things."
+  },
+  {
+   "start": 101.92,
+   "end": 130.19,
+   "text": "First of all, if you are watching this graph series, then in the first or second lecture, in the second lecture, we talked about how adjacency is made into a list. How adjacency is made into a list. From whom? From some edges. If edges were given an array, then how adjacency is made into a list. But till now, we were making a list on an unweighted graph or on a non-weighted graph. Pay attention, till now, whatever questions we had done, in 9-10 episodes, there were about 12-15 questions, right? In all of them, non-weighted things were going on. In all of them, a non-weighted graph was being made."
+  },
+  {
+   "start": 130.19,
+   "end": 159.34,
+   "text": "Dijkstra algorithm is not for non-weighted. Dijkstra is for weighted graph. Dijkstra's whole application is on weighted graph. So this is on weighted graph. So first of all, you should have seen the episode 2 of graph series. And how does it make you adjacency list? It should be almost almost written in your mind. First thing is this. Second thing, you should have seen the previous lecture of graph series, graph playlist. Shortest path. Shortest path in."
+  },
+  {
+   "start": 159.34,
+   "end": 186.48,
+   "text": "Shortest path in non-weighted graph. Shortest path in non-weighted graph. You will have to watch this lecture. So that you get an intuition. What is shortest distance and what happens. This is the second thing. Third thing. You have priority Q. Priority Q. Or heap. Especially min heap. Min heap. If you are watching this pattern series. You know all this. If you are a new student. You know what is min heap. And what is min heap of pairs."
+  },
+  {
+   "start": 186.48,
+   "end": 210.19,
+   "text": "This should be understood because these three questions will be used in it, these three concepts will be used in it. That is why we are saying that it is a little hard topic. You will get the link of all these three things in the description. You will get the link of all three points. After that, continue this. If you do not know these three things, then it will not be of much use. You will not understand much. Okay, let's move ahead. If you are still here, very good. Drink water in the future. A little long lecture is going to happen. Let's go."
+  },
+  {
+   "start": 210.51,
+   "end": 239.34,
+   "text": "Now let's talk about the Dijkstra algorithm. Dijkstra algorithm is one of the most famous algorithms on this planet. If you are a computer science student, then it is not possible that you don't have to listen to Dijkstra in your college. What is the use of Dijkstra? Imagine you are given a graph. You have got a graph. What kind of graph is it? Graph is weighted. Weighted graph. Not in unweighted. There is no need in unweighted. We can do it. Unweighted means that every edge has a weight of 1. So that is it. We can do it. But specially, weighted graph is"
+  },
+  {
+   "start": 239.79,
+   "end": 269.68,
+   "text": "It can be undirected or it can be directed. There is no problem in that. What does Dijkstra algorithm do? Suppose there are n nodes in the graph. How many nodes are there? N nodes. Means there are n circles. There will be some edge between them. And there will be some weight of every edge. Means your graph will look something like this. 0, 1, 2, 3. Your graph will look something like this. This is your graph. Suppose its weight is 2, 3, 4. This is 3 weight. You will be given one source. Source, node. Source, node. Anything."
+  },
+  {
+   "start": 269.78,
+   "end": 298.99,
+   "text": "It can be anything. 0, 1, 2, 3, it can be anything. From this one source, from this single source, from this one source, all the rest of the nodes, all the nodes, have to find the shortest distance. All the nodes have to find the shortest distance. Meaning, if the source gives you 0, then from 0 to the rest of the nodes, what is the shortest path or shortest distance in which you have to find the shortest distance? That you have to"
+  },
+  {
+   "start": 298.99,
+   "end": 328.96,
+   "text": "from the Dijkstra algorithm. If you have watched the last lecture, then what we did was the same thing. Shortest path in this graph. But it was non-weighted. It was non-weighted. It was the same. That you will get a source. From source to other nodes, the shortest distance has to be taken. But it was non-weighted. It means that the weight of every edge is 1. The weight of every edge is 1. You can apply Dijkstra in that too. It's not that you can't apply it in that. Non-weighted means that the weight of every edge is 1. Simple. But when the weighted graph comes here,"
+  },
+  {
+   "start": 328.96,
+   "end": 358.03,
+   "text": "So whatever we had learnt in the previous lecture about BFS, that if there is zero, then push the neighbor of zero, then do this to the neighbor of that, this BFS will not work in that. This BFS will not work in that. Why will this BFS not work in that? We will tell you later. But Dijkstra mainly does this. If you get a weighted graph, whether it is directed or undirected, it does not matter. And you have to get the shortest distance from a single source to all the other nodes, that means you have to make an array. What do you have to make?"
+  },
+  {
+   "start": 358.03,
+   "end": 382.64,
+   "text": "0, 1, 2, 3 means how much to go from 0 to 0, how much to go from 0 to 1, how much to go from 0 to 2, how much to go from 0 to 3. So what will you have to use? Dijkstra algorithm solves this problem. Single source shortest path in weighted undirected or directed graph. This is the use case of Dijkstra. Let's move ahead and understand it clearly. Let's move ahead. Come."
+  },
+  {
+   "start": 382.64,
+   "end": 403.73,
+   "text": "Now we told you that Dijkstra is the shortest path to every node from a single source. Assume that you are an engineer in Google Maps. You have this map of India. Which five cities of India have you connected to? Ranchi, Patna, Bangalore, Delhi, Kolkata. Now I have also told you about the roads. These edges are direct roads."
+  },
+  {
+   "start": 403.73,
+   "end": 430.72,
+   "text": "From Ranchi to Patna is one road, from Patna to Bangalore is one road, from Delhi to Bangalore is one road, from Delhi to Kolkata is one road, from Kolkata to Bangalore is not one road. So, it is fine. The road will be designed as it is. Very good. I have also told you the distance of these roads. How many kilometers each road is. Now, it is not unweighted that each road is one kilometer. No. Some roads are two kilometers. Some roads are ten kilometers. It is possible. Now, what is given to you as a source? Ranchi. What do you have to do? From Ranchi, from Ranchi,"
+  },
+  {
+   "start": 430.72,
+   "end": 460.05,
+   "text": "find the shortest distance from Rachi to every city. Listen very carefully. This Dixra algorithm tells you the route from Rachi to other cities. If someone asks how to go from Patna to Bangalore, you don't know. How to reach every city from Rachi in the shortest? This comes. How to reach Bangalore from Patna and Kolkata from Bangalore? This is not the work of Dixra."
+  },
+  {
+   "start": 460.05,
+   "end": 489.07,
+   "text": "From the single source to the rest of the notes. Now someone will ask, how do you go from Delhi to Patna? No, for that you have to apply Dixit from Delhi. If you have applied it from Ranchi, then only you will get the answer from Ranchi. It can be Patna from Delhi, you may get the answer or you may not get it. Now see, how will we start this? Now we will have to think about what Dixit must have thought, how he must have started, what his thought process must have been. See, first of all, you have got the source, Ranchi. So, in the beginning, you don't know anything. In the beginning, you are an engineer, you have no idea."
+  },
+  {
+   "start": 489.07,
+   "end": 518.74,
+   "text": "In the beginning, we assume that the distance of each city is infinity. In the beginning, you don't know anything, right? You don't know anything when you are starting. So, how far is each city right now? You don't know. When you don't know and you want to find the minimum, assume that it is infinity. Now, we don't know what infinity means. So, what do we do? On Patna, infinity, infinity, infinity and infinity. Meaning, we don't know about these four. We don't know if we haven't started yet. What is the distance of Ranchi? Is the distance of Ranchi also infinity? No."
+  },
+  {
+   "start": 518.74,
+   "end": 547.98,
+   "text": "When the source is Ranchi, then how far is it from Ranchi to reach the source? Zero. The distance from Ranchi to Ranchi is zero. What will we do? Take this, zero. This is your initial state. So you have written the distance on each city. You know the distance from Ranchi to Ranchi is zero. If you don't know the distance from any other city, then the distance from all other cities is infinity. Very good. Now we will do one thing. We will do one thing. Look. Now we will do a trick which we call relaxation."
+  },
+  {
+   "start": 548.02,
+   "end": 573.95,
+   "text": "Relaxation. Relaxation. What is relaxation? You pick up a city whose current distance is minimum. Whose current distance is minimum. Which city do you pick up? Whose present distance is minimum. Why is it minimum? You will find out later. Assume for 5 minutes that we are"
+  },
+  {
+   "start": 573.95,
+   "end": 603.34,
+   "text": "Out of all the cities, let's pick a city whose distance is minimum. So which city's distance is minimum now? In the beginning, which city's distance is minimum? Obviously, it will be the minimum of Karachi because the rest are all infinity. The rest are all infinity, right? So in the beginning, it is obvious that you will only get the source which is minimum. Look, pick the source. What did you pick? Look, what did you find out in this? What did you find out by looking at this note? You found out one thing that"
+  },
+  {
+   "start": 603.6,
+   "end": 633.84,
+   "text": "The distance from Ranchi to Ranchi is 0. If you know that the distance from Ranchi to Ranchi is 0, then tell me one thing. Patna and Delhi, which are the direct neighbors of Ranchi, can you calculate their distance as well? Yes, you can."
+  },
+  {
+   "start": 633.84,
+   "end": 661.01,
+   "text": "Yes, you can. Why? You got to know that your target is to get the distance from sources to all the cities. Fair enough. You got to know that the distance from Ranchi to Ranchi is zero. Meaning, you can get from Ranchi to Ranchi in zero kilometers. Very good. You also know that because Patna and Delhi are direct neighbors of Ranchi. One road goes to Patna and the other to Delhi. So, can you calculate the distance between Patna and Delhi? Yes, you can."
+  },
+  {
+   "start": 661.01,
+   "end": 691.07,
+   "text": "Can you calculate the distance from Ranchi to Bangalore now? No. Because there is no direct road from Ranchi to Bangalore. There are two roads from Ranchi to Bangalore. One road goes to Patna and the other one goes to Delhi. So can you calculate the distance between Patna and Delhi? Absolutely. We call this thing relaxation. Whenever you catch a city, like we are catching Ranchi right now, we can calculate the distance of its direct neighbors. Because you get this distance. What is this distance? From source,"
+  },
+  {
+   "start": 691.07,
+   "end": 718.78,
+   "text": "distance from Ranchi to this node is zero. So can we calculate the distance of all the immediate neighbors of this node? Yes, we can. So what will we do? The first neighbor of Ranchi is Patna. If the distance from Ranchi to Ranchi is zero, and the road from Ranchi to Patna is 2 km long,"
+  },
+  {
+   "start": 718.78,
+   "end": 748.35,
+   "text": "Patna. So how much time will it take for the source to reach Patna? The distance of Ranchi is 0 plus the distance of the road from Ranchi to Patna which is 2 is equal to 2. Calculated? Very good. Let's do the second one. What is the second one? Delhi. Apply the same technique in Delhi. If it takes 0 to go from Ranchi to Ranchi and the direct road from Ranchi to Delhi is 10 km long, then how much time will it take to go to Delhi? Whatever is 0 plus 10. How much?"
+  },
+  {
+   "start": 748.35,
+   "end": 777.92,
+   "text": "0 plus 10 is equal to 10. Okay? Both are done. There is no other direct route than Ranchi. Very good. I hope you understood this much. It's a very good thing. Let's move on. Now, now, now, look. First, first, when you started, how much distance is written in Patna? Infinity. When you calculated, how much distance did you get? 2 km. How much distance was written in Delhi? Infinity. When you calculated, how much distance did you get in Delhi? 10 km. Now, now,"
+  },
+  {
+   "start": 777.92,
+   "end": 807.1,
+   "text": "Relax, you will do that note with the current answer. The answer that is written now, now infinity is written in both. If you get a better answer than that, if you get a better answer than that, we relax it and update the answer. What does it mean to say? You used to think that it takes an infinity kilometer to go to Patna. Now you have come to know after you relaxed, that there is no infinity in Patna. There are two in Patna, which is"
+  },
+  {
+   "start": 807.1,
+   "end": 836.13,
+   "text": "Less than infinity. So what will you do? You will update the distance of Patna. You will update the distance of Patna. With whom will you update? With 2. Because you have got a new information. You have updated it. Similarly, you used to think that it takes an infinite kilometer to go to Delhi. Now you know that it is not like that. It takes only 10 kilometers to go to Delhi. Which is less than the current answer. So what should you do? You should update Delhi too."
+  },
+  {
+   "start": 836.13,
+   "end": 863.25,
+   "text": "What should you write after updating the distance of Delhi? You should write 10. Very good. You must have understood this much. This is very simple. It is going very simple till now. Take out the distance. Calculate it. And if the distance is less than the current distance, then write it in the answer. Very good. You are understanding till now. Now let's move ahead. Now a little complex part is coming. You are understanding till now. Very good. Very good. You are going very well. 60% is done. Okay. Okay. So till now you understood that whom we had processed?"
+  },
+  {
+   "start": 863.25,
+   "end": 892.54,
+   "text": "Ranshi 0 was processed and updated to Patna and Delhi. Everyone understood till here. Now let's see. This processing should not stop. Processing will continue. The process of picking up each city will continue. So see, how many cities do you have now? Assume that there are only 5 cities. We are not going through any of them. There are 5 cities. Okay. Ranshi has been processed. Now don't do Ranshi again and again. If you pick up Ranshi again and again, then the same thing will happen again. Now you have done Ranshi once. Now don't keep doing Ranshi again and again. It's not stupid."
+  },
+  {
+   "start": 892.54,
+   "end": 921.34,
+   "text": "Separate Ranchi. How many cities are left? These two are infinity. Separate them too. What does infinity mean? It means that there is no information about it. Separate these two too. How many cities are left? The one we just updated. Patna. We know that the answer to go to Patna is 2 km. Delhi. We know the answer to go to Delhi. We know till now that it is 10 km. Okay. Remember that this is not the final answer. Till now. Till now. We have an idea after seeing Ranchi. Very good app. From these two, who should we process first?"
+  },
+  {
+   "start": 921.34,
+   "end": 947.68,
+   "text": "You can do both. You can do both. You can do both. You can do both. You can do both. You can do both. You can do both. You can do both."
+  },
+  {
+   "start": 947.68,
+   "end": 975.86,
+   "text": "If it is less than the current answer, then update the answer. This was the work. This work, same work. You can do it from Patna as well as from Delhi. But why are we saying that the answer of the city is small, the green value written in the city, that is a small value, process it first. Why are we saying this? What is its logic? Look, let's assume that you say that we don't agree with this, we don't agree with this, we will process Delhi first or we will process it in random order."
+  },
+  {
+   "start": 975.86,
+   "end": 1005.42,
+   "text": "Do it. See what will be the problem. You come to Bangalore for some time and concentrate. If you had processed Patna first, whose current distance is 2 km, then you would have done the calculation of Bangalore because there is a direct road between Patna and Bangalore. So how much distance do you get to go to Bangalore? See, Patna says that there are 2 answers. What does this 2 mean? That the distance to go to Ranchi to Patna is 2. And there is a 4 km road between Patna to Bangalore. So how much distance will it take to go to Ranchi to Bangalore?"
+  },
+  {
+   "start": 1005.42,
+   "end": 1032.22,
+   "text": "which is the distance to Patna plus this road to Bangalore. So, the distance to Bangalore is 6 km. If you were to process Patna, if you don't agree and start processing Delhi, then do the same thing. There is a direct road from Delhi to Bangalore which is 5 km long. It will take you 10 km to reach Delhi from Ranchi. There is a road from Delhi to Bangalore which is 5 km long. So, this route will take you 15 km to reach Bangalore from Ranchi."
+  },
+  {
+   "start": 1032.22,
+   "end": 1059.17,
+   "text": "10 plus 5, 15 km. So you write Bangalore 15 km. Is the answer to Bangalore really 15 km? No. The smallest route to Bangalore is this. You first go to Patna from Ranchi, 2 km. Go to Bangalore from Patna and reach 6 km. The smallest route to Bangalore is not this one which you are doing now. That's why the first thing is that you are processing the larger one. You are doing a useless work. See, you will get the answer from that."
+  },
+  {
+   "start": 1059.17,
+   "end": 1088.98,
+   "text": "You first do Bangalore 15, then you do more work, then you process Patna and then see that no, no, 6 is smaller than 15, then again. There is useless processing going on. Second thing, do you have 10 optimal answers to reach Delhi? No. The answer to Delhi is also wrong. You just have an idea. Now look at the graph. If we tell you that what is the shortest route from Ranchi to Delhi? So will you go from this route which takes 10 kilometers? No. What will you do?"
+  },
+  {
+   "start": 1088.98,
+   "end": 1113.86,
+   "text": "If you want to go from Ranchi to Patna, 2 km. If you want to go from Patna to Delhi, 3 km. So, the actual distance of Delhi is not 10 km. The actual distance of Delhi is 5 km. That's why, if you process Delhi now, then first you are processing at the wrong distance. Which you don't know now. When will you know the distance of Delhi? When you process Patna. When you process Patna, then what will happen?"
+  },
+  {
+   "start": 1113.86,
+   "end": 1133.04,
+   "text": "From Patna to Delhi is the road. Patna's distance is 2. So what calculation will Patna make of Delhi? That from Ranchi to Patna it seems like 2. 2 plus 3 is 5 going to Delhi. Is 5 less than the current one? Yes, it is less than the current one. So do one thing. Cut 10 and update 5. So the actual distance of Delhi, if you knew after Patna,"
+  },
+  {
+   "start": 1133.04,
+   "end": 1157.42,
+   "text": "But you didn't listen. You said that we won't process Patna. We will process Delhi first. So there are two mistakes. First of all, you took the wrong answer. You are processing it at 10. And because of this, you took the wrong answer of Bangalore and Kolkata. Wrong answer will come out, right? What will you get? Write 15 for Bangalore and 11 for this. This doesn't have 11. This is all dependent on your correct knowledge of Delhi. But you made a mistake. That's why."
+  },
+  {
+   "start": 1157.46,
+   "end": 1184.26,
+   "text": "You don't have to do it again and again and again. That's why you process the smallest one. Think of it in a logical way. If you are given two choices. If you are given two choices. That look, there are two cities. Patna is 2 km away and Delhi is 10 km away. Now you see by exploring. So logically think that where will a person go first? You are being told that brother, it happened on Ranchi. Patna is 2 km away and Delhi is 10 km away."
+  },
+  {
+   "start": 1184.26,
+   "end": 1212.67,
+   "text": "Do further processing. So no one will say that we will go 10 km away first. No. People walk slowly. They walk step by step. You will go to Patna first. You will do processing from Patna. After that, you will go to the distance from Patna. No one will say that we will do 10 km first. No one does that. That's why it is called greedy algorithm. You are getting greedy. For whom are you getting greedy? The city's distance will be the lowest."
+  },
+  {
+   "start": 1212.67,
+   "end": 1239.42,
+   "text": "We will process it. We will process it. So who should you process? And why will you do it? We have already explained it to you. That two mistakes. It will be asked in the interview. Why are you doing it? It is possible. It will be asked. It is not so deep to ask. But okay. We have told you to tell. Because we don't want you to remember it. There is no use in remembering it. Don't ever remember it. That's why we do it. Because you don't have the right information about Delhi. You are processing Delhi forcibly. Let Delhi's right information come. Do Patna."
+  },
+  {
+   "start": 1239.42,
+   "end": 1268.7,
+   "text": "It is possible that there is no such information about Patna. There can be anything. But if Patna is 2 and Delhi is 10, then what is the probability of Patna being more correct? What will happen if it becomes less than 2? Will it become 1? It has less probability. But the probability of it being 10 to 5 is very high. That is why we will process this. Patna to Delhi. Delhi is in the pipeline. Delhi is sitting in the pipeline. Come. Who did you process? Patna to. What is written on Patna? 2. What does this mean?"
+  },
+  {
+   "start": 1268.7,
+   "end": 1293.76,
+   "text": "ki ki iska ek hi matlab hai ki ranchi se patna jaane me 2 km lagta hai same relaxation kijiye same relaxation kijiye relaxation ka kya matlab hai patna se direct road kahan kahan jaata hai toh dekhiye patna se pehla direct road toh ranchi jaata hai karke dekh lijiye ab dekh lijiye patna se ranchi jaake"
+  },
+  {
+   "start": 1293.76,
+   "end": 1318.19,
+   "text": "If you reach Patna in 2 kms from Patna to Ranchi, then you will have to answer 4 kms from Ranchi to go back to Ranchi. Should you answer from 0 to 4 kms from Ranchi? No. Are we looking for the maximum part? No. The answer from Ranchi is already minimum 0 kms. So, there is no benefit. This is nothing. This relaxation has failed. Next. There is a 4 kms road from Patna to Bangalore."
+  },
+  {
+   "start": 1318.19,
+   "end": 1345.58,
+   "text": "It takes 2 km from Ranchi to Patna. It takes 4 km from Patna to Bangalore. Overall, how long will it take to go from Ranchi to Bangalore? 2 plus 4 which is 6. Is this 6 less than Bangalore? Is it less than infinity? Absolutely less. So what happened to the first relaxation? What happened to the first relaxation? What did you write after updating Bangalore? 6. Why did you write it? It takes 2 km to go to Patna."
+  },
+  {
+   "start": 1345.58,
+   "end": 1375.26,
+   "text": "From Patna to Bangalore, it takes 4. From Ranchi to Bangalore, if we go this route, how many kilometers will it take? 2 plus 4, which is 6 kilometers. Very good. One more relaxation happened. One more, which we talked about in the previous video, Delhi. Delhi is also its friend. Do the same thing. From Ranchi to Patna, it takes 2 kilometers, which is written in its answer, which you are knowing here. From Patna to Delhi, it is a 3-kilometer road. So, if we go this route from Ranchi to Delhi, how many kilometers will it take? 2 and 3. 2 and 3. 5 kilometers. What?"
+  },
+  {
+   "start": 1375.26,
+   "end": 1404.7,
+   "text": "This 5 is less than the current answer of Delhi. Yes, it is less than the current answer. Update Delhi, brother. Update Delhi. Update Delhi. What do you write? 5 kilometers. See, now Delhi is correct. Now Delhi is correct. Earlier Delhi was 10. You are using it forcibly. Now Delhi is correct. Okay? Has Patna work been done? Yes, Patna work has been done. Okay? Patna work has been done. We will not do it again. Okay? Now see. Now see. Come again. Come again. Ranchi. Ranchi does not need to be processed again and again. Ranchi. Ranchi did not relax, right?"
+  },
+  {
+   "start": 1404.7,
+   "end": 1433.78,
+   "text": "Means, when will we process it? The original distance of Ranchi was 0. Now, if Ranchi would have been minus 2, then we would not have done it. Next, which city do you see that you should process? See, Patna 2. We have done it just now. We will not do Patna again and again. Delhi 5, Bangalore 6. This is a poor infinity. We will not do it. Who should be processed? Minimum one. Who should be processed? Minimum one. Why? I have told you. Who is minimum?"
+  },
+  {
+   "start": 1433.78,
+   "end": 1461.95,
+   "text": "Delhi 5. What does Delhi 5 tell you? Delhi 5 tells you that it takes 5 km from Ranchi to Delhi. Now, how does it take 5 km from Ranchi to Delhi? I don't know. It could be that you have come directly from Ranchi. It could be that you have travelled. I don't know. But, the shortest path from Ranchi to Delhi is 5 km. Very good. Now, relax. Come. There are 4 roads from Delhi. Come, let's do it one by one. Try to relax Ranchi."
+  },
+  {
+   "start": 1461.95,
+   "end": 1491.02,
+   "text": "Delhi is saying that it takes 5 to reach me and the road to Ranchi is 10 km. So should we make it 15? No, Ranchi is already 0. If 15 were less, we would have updated. No need to relax. No need to relax. No problem. Don't do it. Delhi to Patna is a road of 3 km. It says that it takes 5 to reach me and it takes 3 to reach Patna. So should we make Patna 5 plus 3, 8? No, no need. Patna is already sitting on 2. Don't increase it more than 2. If you get less value than 2, we will increase it. Not more than 2."
+  },
+  {
+   "start": 1491.02,
+   "end": 1517.57,
+   "text": "This relaxation has also failed. Come to Bangalore. Delhi says that it takes 5 km to reach there. And there is another 5 km road from Delhi to Bangalore. So the total will be 5 plus 5 is 10. Should we update Bangalore? No. 10 is very good. There is no need to update. Relaxation has failed. Don't do it at all. This also failed. Come to Kolkata. Delhi says that it takes 5 km to reach there. There is a direct road of 1 km between Kolkata and me."
+  },
+  {
+   "start": 1517.57,
+   "end": 1546.58,
+   "text": "So how much time will it take to go to Kolkata through me? 5 plus 1, 6. What is 6? It is less than this. It is absolutely less. Who should be updated? Kolkata. Who should be updated? Kolkata. Relax Kolkata. Very good. Is Delhi's work over? Very good. It is over. Then see. What all changes happened? What all changes happened? See. Now change. This also happened. This also happened. This did not happen. This happened last time. Now let's do them one by one. This is also 6. This is also 6. Who will we do? Your wish. Your wish. Whoever you do."
+  },
+  {
+   "start": 1546.58,
+   "end": 1571.44,
+   "text": "Try Bangalore. How many people are connected to Bangalore? Two people. Bangalore says, it takes 6 km to reach me. Patna is a 4 km road between Patna and me. 6 plus 4, 10. Should we update Patna? No. Patna is already 2. It failed. Same thing. 6 plus 5. He will say, should we make Delhi 11? Delhi said, we don't need 11. It also failed. Bangalore is over. Come to Kolkata. Kolkata says, it takes 6 km to reach me."
+  },
+  {
+   "start": 1571.44,
+   "end": 1600.96,
+   "text": "My only direct neighbor is Delhi. So he will say, should we make Delhi 6 plus 1, 7? Delhi says, we don't need it. We are already sitting comfortably on the path. This too, relaxation failed. Now see, everything is over. Now you will repeat it as many times as you want. Now nothing will change. We will tell you in the code and in the future we will tell you what is the use of heap etc. But we are telling you very simply that now do anything. Take someone and relax. Nothing is going to change. See what has come out. How much distance is there from Ranchi to Ranchi?"
+  },
+  {
+   "start": 1600.96,
+   "end": 1630.43,
+   "text": "Zero kilometer. Which should be there. How much is the shortest path from Ranchi to Patna? Two kilometers. Which path is that? This path. Very good. Path from Ranchi to Delhi? Five kilometers. How? Two, three. Ranchi to Patna, Patna to Delhi. Two plus three, five. Looking good. Distance from Ranchi to Bangalore? Six kilometers. Which road to take? Ranchi to Patna, Patna to Bangalore. Very good. Distance from Ranchi to Kolkata? Six kilometers. Which road to take? Ranchi to..."
+  },
+  {
+   "start": 1630.43,
+   "end": 1658.32,
+   "text": "Delhi to Kolkata. The whole distance is set and this is your final answer. This algorithm is called Dijkstra algorithm in Hindi. What is this algorithm called? Dijkstra algorithm. Now let's move ahead. Code and heap and fee, whatever it is, now let's move on to that. If we had told that earlier, then you would have taken a rut, it would not have been useful. Now you have an understanding of what to do. Let's move ahead."
+  },
+  {
+   "start": 1658.38,
+   "end": 1686.88,
+   "text": "So, we have reset everything. It is the same graph. Reset means that we have deleted all the answers. First of all, we have made an array. Now, we are moving towards the code. Slowly, we are moving towards the dry run because we had made a talk above. An interview does not come out by making a talk. We will also show the code. Now, look at the dry run. This is your array. What is the array? Ranchi, Patna, Bangalore, Delhi, Kolkata. Now, we know that because our source is Ranchi, so we have written the distance of Ranchi to Ranchi as 0. We have made the rest as infinity like the last time. Very good. Now,"
+  },
+  {
+   "start": 1686.88,
+   "end": 1714.22,
+   "text": "What we were saying is, which city are we processing every time? Whose current distance, whose updated distance, whatever you call it, the current answer should be the minimum. Okay? So see, whose is the minimum? Ranchi's answer is zero for now, the rest is infinity. What we will do is, we will make a min-heap. That's why we said it is important to read the heap, because it contains heap. We will make a min-heap. How will we make a min-heap?"
+  },
+  {
+   "start": 1714.48,
+   "end": 1743.38,
+   "text": "There will be two things in pair type. What will be the two things in it? First of all, there will be this distance in it. Distance means your answer. The answer that is written in the actual result. See this distance. This distance and the name of the city. The name of the city means the name of your integer. We are doing it to explain you the city. We will push this type of entry. Whenever we will update the distance of any city. Means we will relax it. We will get its good distance. We will get less distance."
+  },
+  {
+   "start": 1743.38,
+   "end": 1763.09,
+   "text": "So we will push it in the heap so that it can be processed at some point. And what does mean heap guarantee? Because you are pushing a pair here. What pair are you pushing? What is the first of it? Distance means what is written now. And city means your node. That node can be anything. Integer, character, array, it doesn't matter."
+  },
+  {
+   "start": 1763.12,
+   "end": 1792.42,
+   "text": "So, what will the min-heap give you at the top? What will it give you at the top? The one whose distance is the lowest now. So, to start, what will you do by pushing the infinity? There is no point in pushing the infinity. Push the ranchi. So, what will we push in our heap? Suppose this is your heap. Let's make a heap here. This is your heap. Okay? What is this? This is your min-heap. What did you push in this? Zero and ranchi. Zero and ranchi because it is the same in the beginning."
+  },
+  {
+   "start": 1792.42,
+   "end": 1819.98,
+   "text": "Very good. Start processing. Until this heap is empty, we will process it. And you will see how you get the final result. See. First of all, you process. So what do you get? Zero and Ranchi. Because there is only one element at the top. So this will come out. Pop it with the heap. Because now its work is done. Okay. Relax this man. What do you do to this man? Relax. What does relax mean? Look at all the neighbors of this. Look at all the neighbors of this. Okay."
+  },
+  {
+   "start": 1819.98,
+   "end": 1849.3,
+   "text": "For every neighbour, what do we have to see? What do we write in this? First of all, we write D is equal to 0. What do we have to see for every neighbour? If D plus weight, weight means the weight of that neighbour, the weight from Ranchi to Patna is 2, right? So if this D, which you have got from the heap, the distance from Ranchi to Ranchi is 0, plus weight, plus this weight is less than whatever is written in your distance array. Distance of neighbour, distance of neighbour means"
+  },
+  {
+   "start": 1849.3,
+   "end": 1877.2,
+   "text": "If we talk about Patna, suppose your current neighbour is Patna. So, if 0 plus the weight of Ranchi to Patna, which is 2, less than the distance of Patna. What is the distance of Patna written? Infinity. This means that you have got a better distance, a short distance. This is called relaxation. You have to do two things in this. What do you have to do in this?"
+  },
+  {
+   "start": 1877.55,
+   "end": 1907.42,
+   "text": "Distance of neighbor is equal to d plus weight. What do we do after removing the answer of patna? 0 plus 2. What do we write here? 0 plus 2. Here we write 2. Update is done. And push this in heap. So that next time in processing, we can pick up patna. Where do we pick up processing? From heap. Push this. What will we push in this? What will we push? We updated the distance of patna in this."
+  },
+  {
+   "start": 1907.42,
+   "end": 1934.91,
+   "text": "D plus weight, which is 2. You and Patna push it. T and Patna, push it in the heat. What did you push? You and Patna. Done? Ranchi is not over yet. Ranchi has another neighbour. Who? Delhi. Same thing will happen in Delhi. First of all, what will happen? If D plus weight, how much is Ranchi and Delhi's weight? 10. 0 plus 10, which is 10. If it is less than Delhi's current distance, what is Delhi's current distance? Infinity."
+  },
+  {
+   "start": 1934.91,
+   "end": 1962.26,
+   "text": "First of all, what should we do? We are doing the same thing. We are doing the same thing that we explained earlier. There is no difference. 10. Push also so that Delhi comes in processing next time. If we do it sometime, then it will come. What did you push? 10 and Delhi. Ranchi's work is over. Ranchi had two neighbors. Look, they processed both the neighbors. If that relaxation is successful, that means if this D plus weight is less than its current answer, then let's do two things. Let's update its answer too."
+  },
+  {
+   "start": 1962.26,
+   "end": 1991.52,
+   "text": "And we insert it in the hip so that it can be processed. Now look, Patna was processed, that's why Patna was processed to other people too. That's why. Ranchi's work is done. Remove it. I mean, let's move ahead. We have removed it. Let's move ahead. Ranchi's work is processed. Look, in the hip, earlier it was one. Now two elements have come. Now, who will we lift? The one with minimum distance. Why? I have explained. Whom will you lift? Lift Patna. Bring Patna out. Patna."
+  },
+  {
+   "start": 1991.52,
+   "end": 2019.86,
+   "text": "Bahaar leke aayiye bhaiya. Ye kya batata hai? D is equal to 2. Matlab, Patna tak paanchne ka distance 2 km hai. Patna ko pop kar dijiye. Patna ko hata dijiye. Ab, jo kaam Ranchi ke saath hua tha, same kaam Patna ke saath kijiye. Patna ke ketne neighbor hai? Patna ke ketne direct neighbor hai? Pahela neighbor to Ranchi hai. Ranchi ko kya relax karenge? Nahi karenge. Kyun? Kyunki relax karne ka logic kya hai? D plus weight should be less than distance of neighbor. Less than distance of neighbor."
+  },
+  {
+   "start": 2020.02,
+   "end": 2049.38,
+   "text": "So, if your neighbour is Ranchi, then the current distance of Ranchi is 0. Now you are saying that D means 2 and plus this weight 2. Is 4 less than 0? No, Ranchi is not relaxed. If Ranchi is not relaxed, then Ranchi will not even go in the heat. Ranchi's work is over. Look at Patna's next neighbour. Delhi. Yes, this will be relaxed. What is its? D. What is the distance to Patna? 2. What is the weight between Patna and Delhi? 3. So what? 2 plus 3."
+  },
+  {
+   "start": 2049.38,
+   "end": 2078.03,
+   "text": "Is less than. Is less than. Delhi's current answer. Distance of Delhi. How much is the distance of Delhi? 10. Yes. Yes. Yes. So what will happen? Two things will happen. Delhi's answer will also be updated. What will happen after Delhi's answer is updated? 5. And. It will be pushed in the heap. What will be pushed in the heap? 5 and Delhi. 5 and Delhi. 5 and Delhi. See. There were already 10 Delhi in the heap. Which happened last time. Patna pushed one more. What did it push?"
+  },
+  {
+   "start": 2078.03,
+   "end": 2102.42,
+   "text": "5 Delhi. 5 Delhi pushed. What will this make sure? When you pick up for processing next time, then you will not be able to pick up 10 Delhi. You will pick up 5 Delhi first. You will move ahead of Delhi's shorter correct answer. You will not do 10 Delhi first process. Because it is a mini heap. That is why we say that we should process the shortest one. See the answer of Delhi. It has fixed itself. It has fixed itself. Okay."
+  },
+  {
+   "start": 2102.42,
+   "end": 2132.8,
+   "text": "Patna's one more neighbour is left. Which neighbour is left? Bangalore is left. How much weight is there? 4. How much was Patna's D? 2. How much is 2 plus 4? 6. What is 6? Is it less than Bangalore's current answer? Yes, it is less. What do we do? First of all, update Bangalore. How many? 6. Push it. In which? In the heap. 6 and Bangalore. Patna's work is done. Patna's three neighbours were there. Everyone's work is done. Delete Patna. Meaning, we are moving from here. We will move towards the next, right?"
+  },
+  {
+   "start": 2132.8,
+   "end": 2163.06,
+   "text": "Let's go. Take it out again. Now, who will get out? Minhip means the one whose distance is the least. Out of these three, whose distance is the least? 5. 5 and Delhi. Take it out by pulling it. Take it out by pulling it. What will come out? 5 and Delhi means, what is the distance to Delhi? 5. Start relaxing Delhi's neighbours. Delhi's first neighbour is Ranchi. Will it be right to relax Ranchi? No, it won't be right. I have already told you. Patna. Will it be right to relax Patna?"
+  },
+  {
+   "start": 2163.06,
+   "end": 2191.6,
+   "text": "5. And its weight is 3. 8. What is the answer for Patna? 2. No benefit. Very good. Bangalore. What is its 5? 5. 5 and 5 is 10. Bangalore's answer is 6. No benefit. Kolkata. Yes. Kolkata. Yes. Kolkata has a benefit. Neighbor is equal to Kolkata. Yes. How much will Kolkata be? Its D is 5. It means it is 5 to Delhi. Its weight is 1. So 5 plus 1. 5 plus 1. To go to Kolkata."
+  },
+  {
+   "start": 2191.6,
+   "end": 2221.76,
+   "text": "Is this less than the current answer of Kolkata, which is infinity? Absolutely less. What two things will we do? We will update the answer of Kolkata and write 6. And we will push this. In which? In heap. 6 and Kolkata. 6 and Kolkata. Very good. The work is over. Delhi's work is over. Nothing else will happen in Delhi. Okay? Remove it. Remove it in Delhi. Let's go. Take out the next. Take out the next. It is not over yet. Then take it out. Whose distance is the least among the three? 6, 6."
+  },
+  {
+   "start": 2221.76,
+   "end": 2251.2,
+   "text": "Two people are less. It's up to you. It doesn't matter according to the logic of the heap. Take out Kolkata. Take out Kolkata. Take out Kolkata. 6 and Kolkata. Remove it from here. Let's see Kolkata. Let's see if Kolkata can relax anyone. Let's see. It has D6. There is only one direct number of Kolkata, Delhi. 6 and plus 1. 7. What is the current answer of Delhi? 5. There is no benefit. Kolkata is useless. Remove it. There is no benefit."
+  },
+  {
+   "start": 2251.2,
+   "end": 2280.91,
+   "text": "Take out the next one. What will come out? What will come out? 6 and Bangalore. Take out the next one. 6 and Bangalore. Take out the next one. What is its D? 6. Try to relax. Nothing will happen. Take out the next one. How many neighbours does Bangalore have? 2. Patna and this. Patna will say 6 and 4. It should take 10 to go to Patna. Patna will say it takes 2 km. We don't need it. He will say mine is 6 and this is 5. It should take 11 to go to Delhi. Delhi will say mine is already 5. We don't need it either. Nothing. Useless. Useless. Useless. Yes. Yes. Yes."
+  },
+  {
+   "start": 2281.2,
+   "end": 2308.72,
+   "text": "Take out the next one. Take out the next one. What will come out? There is only one left, so it will come out. 10 or Delhi. Now look very carefully here. Now look very carefully here. Look very carefully. Now, if you want, you can process it. There will be no benefit. There will be no benefit. Now do it. We are trying to tell you one more important thing here. What is its D? 10. Okay. Is Delhi's current answer 10? No."
+  },
+  {
+   "start": 2308.72,
+   "end": 2335.01,
+   "text": "When did this 10 Delhi come? This 10 Delhi, no, remember when it came. When you processed Ranchi and wrote Delhi, then this was the answer. Delhi has become correct after that. Delhi is now 5. So, should you process this in any birth? Means, should you try to do something? No, because this is the wrong answer. This was the answer of some earlier. We thought this earlier Delhi was 10 km."
+  },
+  {
+   "start": 2335.01,
+   "end": 2363.38,
+   "text": "Now, Delhi is not 10 km. Now, Delhi is 5 km. So, add one more small condition. If D greater than distance of this Delhi node. What does this mean? This is an old value. This is an old value of Delhi. Delhi's current value is 5. So, if 5 came from here, from the heap, then we would have tried once. 10 is coming from here."
+  },
+  {
+   "start": 2363.38,
+   "end": 2391.09,
+   "text": "So it means that there is no logic to process it. Delhi's correct answer is 5, which had changed later. And we would have processed 5 Delhi as well. Why? Because it is a min-heap. 5 Delhi would have left before 10 Delhi left. Now 10 Delhi has come. Do you want to touch 10 Delhi? I mean, do you want to think about it? When you are able to see that this answer is old. How are you knowing that this answer is old? Because distance of Delhi"
+  },
+  {
+   "start": 2391.09,
+   "end": 2417.79,
+   "text": "It is more than 10. Obviously, it is 10 years old. So, shouldn't you process it? Absolutely not. If it is so, if it is so, then continue. There is no need to look at the neighbor of Delhi. There will be no benefit from it. This is an old stale value. Remove it and move ahead. Finish it. There is no harm in it. I hope you have understood. Why are we saying that Delhi's answer is 10 years old? Because Delhi's current answer is 5."
+  },
+  {
+   "start": 2417.79,
+   "end": 2446.8,
+   "text": "I mean, someone must have made Delhi 5. Patna had made Delhi 5. This 10 is very old. This is very old, some rotten value. Are you trying to do something with 10? No. 5 and Delhi has already been processed. Whatever he had to do, he has done. He had to do Kolkata, he has done. Now, even if you process it, it won't make any difference. You do it and see. 10 here and there. What will happen with this? This will waste time. What will happen with this? Time will be wasted. We are doing it again and again. Don't do stale value process. Okay? Let's go."
+  },
+  {
+   "start": 2446.8,
+   "end": 2475.09,
+   "text": "Do this. Your heap is empty. Have you got a correct answer? 0, 2, 6, 5, 6. Yes, sir, you have got a correct answer. This is how Dijkstra works. Now, let's write the code. In the code, we will tell you everything. In the code comment, if possible, we will give it. The first part of the code is how to make an adjacency list for weights. How to make an adjacency list for weights and how to write this Dijkstra. How to write the story that we just told you. Let's print it together."
+  },
+  {
+   "start": 2475.09,
+   "end": 2503.42,
+   "text": "So the first thing that comes to mind is how to make an adjacency list. Till now we were learning non-weighted. How to make it for weighted? There is a little tweak, not much. See, how did you make an adjacency list? Let's assume there is a graph like this. Let's assume there is a graph like this. This was your graph. Suppose this was your graph. This was a non-weighted graph. So what did you do? You used to make a vector of vector of int. There are three types of it. 0, 1, 2."
+  },
+  {
+   "start": 2503.42,
+   "end": 2533.33,
+   "text": "There used to be a vector in everything. What did you write in that? What did you write in the vector of 0? Two neighbors of 0, meaning 1 and 2. Did you write this? Okay. What did you write in the neighbor of 1? One neighbor of 1 would be 2. I am telling you about the directed. It will be the same in the undirected. You didn't write anything in the neighbor of 2. You used to make it like this, right? Okay. Now weight is involved. Now you are saying that its weight is 2, 5 and 3. Now weight is involved. Now, when you are writing 1, 2 here,"
+  },
+  {
+   "start": 2533.33,
+   "end": 2561.49,
+   "text": "Now, writing 1, 2 will not work. Now, there are two neighbors of 0, 1, 2. But, now you have to write pair here. Now, you have to write pair here. Meaning, you have to make an array by doing this. You have to make it like this. It will remain the same. 0, 1, 2. Now, you have to write pair instead of single integer. What is the first pair written? 1. It is going to 1. And what is its weight? 2."
+  },
+  {
+   "start": 2561.58,
+   "end": 2590.83,
+   "text": "And what is the second pair? 2. How much is the weight of 2? 5. This is done. 1 is replaced by a pair. 2 is replaced by a pair. Where 1 was, it is 1. With that, its weight. 2 has to be replaced by a pair. 2 and its weight. Similar thing. What did you write in 1? 2. Okay. 2 has to be replaced by a pair. 2. And what is the weight of 2 from 1? 3. And this will remain empty as it is. We will do the same thing. So,"
+  },
+  {
+   "start": 2590.86,
+   "end": 2618.74,
+   "text": "We will tell you. Let's write the code on GFG. You have to return a vector of int of Dijkstra. What is given to you? Int n means this node and you are given a vector of int edges. And you are given a source. This is given to you."
+  },
+  {
+   "start": 2619.06,
+   "end": 2647.25,
+   "text": "Keep in mind, what edges were given to you till now? 0 to 1 is one edge, 0 to 2 is one edge, 0 to 3 is one edge. Now, because this is a weighted graph, what will be given to you? 0 to 1 is an edge and its weight is 2. 0 to 2 is an edge and its weight is 5. 0 to 3 is an edge and its weight is 6. This will be given. Meaning, every edge, every single edge,"
+  },
+  {
+   "start": 2647.25,
+   "end": 2676.37,
+   "text": "Now, it is of 3 sizes. Previously, every edge was of 2 sizes. In that, what did you say? Its 0 is the source. Its 1 is the destination. Now, its 2 is its weight. It is the weight of this edge. Practice once or twice. Otherwise, you will understand the graph by making it yourself. The harder it seems to you, the harder it is not. It is an extension. You will understand when you write the code. Look. I have given you this. First of all, make your adjacency list. How? Look. Vector of"
+  },
+  {
+   "start": 2676.53,
+   "end": 2706.45,
+   "text": "Vector of. Now, what did we write here? Int. What did we say? Replace every int with pair of int, int. What did we write here? Pair of int, int. Pair of int, int. 1, 2, 3. See this. Same. Here. Here, your int used to be. What did we make this int? Pair. Because every number will become a pair. Every number will become a pair. Earlier, every number used to say that this is the destination. Now, this is the destination. And its weight is also there. So, it became a pair."
+  },
+  {
+   "start": 2706.45,
+   "end": 2735.57,
+   "text": "Now see how the graph will be made. What happened? For int i is equal to 0, i less than edges dot size, edges dot size. They also used to do this. They also used to do this in normal. Now, first of all, find the source. Source is equal to edges i 0. Very good. You know this. Destination is equal to edges i 1. You also know this. Now what did we say?"
+  },
+  {
+   "start": 2735.57,
+   "end": 2765.79,
+   "text": "Now, you will have three values in one edge. Not two values. Source, destination and weight. What will be the weight? int w is equal to edges i2. This is your weight. Source, destination, weight. Now, because you have been told that this is an undirected graph. What is it doing? Array of s dot pushback. Now, what pushback did we do in non-weighted? Only d. Now, d means destination. Only destination will not work."
+  },
+  {
+   "start": 2765.79,
+   "end": 2794.37,
+   "text": "Earlier, what did you push? Only 1, which was the destination. Instead of 1, what do you have to push? A pair in which the first is the destination and the second is the weight. So instead of this, push a pair. What do you push? Destination and weight. Look at this. It is undirected. Push it in reverse. AD dot pushback. What? Earlier, only source was pushed. Source and weight together. Instead of integer, we are pushing pair. Your adjacency is made. Look at this."
+  },
+  {
+   "start": 2794.37,
+   "end": 2823.7,
+   "text": "We will suggest you to go and make it yourself in the copy and see how your graph is looking, then you will have more understanding. Because now we are going to do the majority of the questions on the weighted graph. The era of unweighted is over. The era of unweighted is over. Now we have come to weighted. This is yours. Now what do you have to make? Now we can start like this. So first of all, you make a min heap of pairs. Oh God, the syntax of min heap of pairs is so bad. Come on, make a min heap of pairs."
+  },
+  {
+   "start": 2823.7,
+   "end": 2855.06,
+   "text": "How is it? A pair of int, int. A pair of int, int. Vector of, I don't know why there is such a syntax, but this is the C++ one. We have already taught the Java Python people how to make it, so make it as it is. A pair of, we can't write the code of all three, obviously. This is done, this is done, and we are also looking at the syntax and writing it, but we don't remember its syntax. A pair, what does it do? One, two, three."
+  },
+  {
+   "start": 2855.06,
+   "end": 2885.98,
+   "text": "PQ. What is this? Min heap of pairs. Now we will make a distance array. Distance array means the array with infinity above it. Vector of int distance. What will happen? N and infinity. Infinity means int max. Int max. This is done. Now start your game. What does it mean to start the game? First of all, zero the source distance. How much time does it take to go from source to source? Zero time."
+  },
+  {
+   "start": 2885.98,
+   "end": 2912.24,
+   "text": "It takes 0 km. Done. And push this. In which? In heap. What are we pushing in heap? Distance and node. Means distance and source. Push done. Now start your game. Let's start our game. Go to the next page and start your game. So while pq.notempty. Until it is empty, we will play our game. Do this."
+  },
+  {
+   "start": 2912.24,
+   "end": 2938.98,
+   "text": "Take out a pair. Take out the top one. It will give you the minimum distance. It has a guarantee. PQ.top and PQ.pop. PQ.pop. Okay? Now, what is the first thing in your P? Its distance. So, int d is equal to P.first. Very good. And what is the node? Its second one. Node is equal to P.second. Meaning, what is this?"
+  },
+  {
+   "start": 2938.98,
+   "end": 2966.13,
+   "text": "D is equal to 2. Node means Patna. Okay. First of all, do what we taught you. What did we teach you? Where did it go? Did we delete it? Oh, man. We didn't have to delete it. Yes. This one. If D is greater than distance of node, which means, which is this? Old. If we get 10 Delhi, we won't do that process. We'll go ahead. Processing means we won't even look at its neighbor. We won't do anything. If."
+  },
+  {
+   "start": 2966.32,
+   "end": 2995.84,
+   "text": "D is greater than distance of node. It means, the current answer of node, if D is greater than that, it means it is an old value. What is this? It means, it is an old value. Ignore it. Continue. Ignore means continue. Yes. Now, if it is not like this, then you will have to process. Now, rotate on all its neighbors. How do we rotate on neighbors? For int j is equal to 0, j less than array of node dot size."
+  },
+  {
+   "start": 2995.84,
+   "end": 3026.37,
+   "text": "Yes, and j++, j++. Now, what did we do there? Neighbor, int, neighbor, int, neighbor is equal to array of node j. What is array of node j? It is a pair, a pair, whose first person is that neighbor, second person is its weight. So, first, first, first is its neighbor, and int, weight is equal to array of node j."
+  },
+  {
+   "start": 3026.37,
+   "end": 3056.22,
+   "text": "Second. Did you understand? Did you understand? Okay. Now, look. If D plus weight is less than distance of neighbor, which means, the answer of neighbor right now, is it less than this D plus weight? Meaning, D means it's still on the node, and there's weight to the neighbor from the node, so it reached there. If it's less, then what will we do? Relaxation. How many steps are there in relaxation? Two steps. First of all,"
+  },
+  {
+   "start": 3056.22,
+   "end": 3080.82,
+   "text": "Update the distance of neighbor. Update the distance of neighbor. Is equal to weight plus D. And push in the heap. What is pushed in the heap? Distance means D plus weight. And this neighbor. And this neighbor. This is pushed. See this. Close. Close. Close. In the last, return."
+  },
+  {
+   "start": 3080.85,
+   "end": 3109.68,
+   "text": "Rested. See this is the code. It is a very big code. We know that it is a very big code. We know that. We will try to give it in the comments today. We will definitely try to give it. This is a very big code. So see this. From start to finish code. What does this code say? What did you make so far? Made an adjacency list. We did some of our heap. What is this? Main logic. What is this? Relaxation. It works like this. My condition is down today. I don't know how long it is. But it is fine."
+  },
+  {
+   "start": 3109.68,
+   "end": 3116.82,
+   "text": "So it took a lot of hard work. So do it. Do its code. Do its question. Let's meet in the next video."
+  }
+ ]
+}

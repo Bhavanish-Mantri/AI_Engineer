@@ -1,0 +1,399 @@
+{
+ "video_id": "4L4MYtxGh9s",
+ "title": "Rotten Oranges: Multi-Source BFS | Graph Series",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2160,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.3,
+   "text": "Today we are going to do Rotten Oranges. Initially, I wanted to do two questions but this question has become very heavy. What does heavy mean? It means that we want to understand one question very well so that we can do similar questions in the future. Some people were also writing in the comments that the number of questions is very less. See, never be dependent on the number of questions. It is not that we are hiding something or we are thinking that let's not do this question, it will come in the interview. You guys are not my competition."
+  },
+  {
+   "start": 27.3,
+   "end": 55.63,
+   "text": "We are not doing this to save some knowledge. Because we are not taking money, we are giving it for free. So what is the reason to reduce the number of questions? That every question gets more and more time. 100 questions by doing half incomplete and by making it like this, it is a very good option to do 20 questions. Do that 20 so solid that you can make 80 without that 20. This should be the goal. Whether the number of questions is less or more, leave it to us. You have been watching for so many days, so nothing has gone wrong so far."
+  },
+  {
+   "start": 55.63,
+   "end": 83.12,
+   "text": "So, keep a little bit of trust ahead. Rotten oranges is a very famous question. I mean, it has been asked in every company according to me. So, look carefully. Those who have not seen the island one, then you will not understand anything. You go now, run quickly. Those who have seen it, you will understand why DFS was used in it. And here DFS is not used, something different is used here. Listen very carefully. Listen with your ears, eyes and nose open. Let's start. So, let's see first of all."
+  },
+  {
+   "start": 83.12,
+   "end": 111.14,
+   "text": "What is said in the question? First of all, you have been given a grid of n into m. See, whenever you get a grid of n into m in your life, and it tells you that you can move in 4 directions, 8 directions, 6 directions. It is a question of 100% graph. First of all, understand and prepare yourself that it is a question of graph. Meaning, either BFS or DFS, either breadth first search or depth first search. If you haven't seen both, then watch it."
+  },
+  {
+   "start": 111.14,
+   "end": 137.82,
+   "text": "You have been told that there is no grid in this grid. It means there is a matrix. Very good. There can be three things in this. Like in the previous question, there can be two things in the number of islands. 0 and 1. 0 means water. 1 means land. There can be three things in this. What? 0, 1, 2. There will be only three numbers. There is a matrix of numbers. Either one number will be 0, 1 or 2. There can't be anything else. Very good. Out of this, 0 means empty. Okay. 0 means"
+  },
+  {
+   "start": 137.82,
+   "end": 164.51,
+   "text": "Kali, kuch nahi. Kali ya diwal, kuch bhi hai jaya samajh sakte hai. Acha. One ka kya matlab hai? Fresh orange. Kya? Fresh orange. Yes. Fresh orange. Taza santra. Okay. Do ka matlab? Rotten orange. Do ka matlab? Rotten orange. Matlab? Sada hua santra. Very good. Toh, aapko ek grid diya hua hai. Isko aap ek boxy ki tarah samajh lijiye. Fal ka tokri diya hua hai. Fal mein aisa bahut sara khana hai. Kahin pe khali hai. Matlab, koi tokri khali hai."
+  },
+  {
+   "start": 164.51,
+   "end": 194.48,
+   "text": "Is it a good orange or a rotten one? Every minute is called every minute. What is every minute? A rotten orange. You must have heard the saying that one spoiled apple spoils the lot. If you keep one rotten apple in a box, it will spoil the whole box. Similarly, in this box too. What will happen every minute? Suppose there is a rotten orange somewhere."
+  },
+  {
+   "start": 194.48,
+   "end": 219.86,
+   "text": "In all four directions, up, right, down and left, if there is fresh orange in all four directions, then in every minute, this rotten orange has the power to rot all the fresh oranges. Listen again. In every minute, if there is a rotten orange in any place,"
+  },
+  {
+   "start": 219.86,
+   "end": 247.89,
+   "text": "and if there is a fresh orange in any of its four directions, remember fresh, it should not be in an empty space, fresh orange is kept, then it has the power to rot. The power to rot means that in a minute all four will rot. If it is kept in four, then all four will rot. Okay. What will happen after that? This process will keep repeating. Suppose there was one rotten orange before. Suppose there was one rotten orange before. What did he do? He rot two oranges around him."
+  },
+  {
+   "start": 247.89,
+   "end": 267.18,
+   "text": "After that, what will happen in the next minute? It will happen again. He will start doing it around him. He will start doing it around him. By doing this, the process of rotting will spread in the basket. What will happen in the basket? It will spread. Consider it as a coronavirus. You are standing here, you have got a coronavirus. You are your..."
+  },
+  {
+   "start": 267.18,
+   "end": 295.04,
+   "text": "How many minutes?"
+  },
+  {
+   "start": 295.04,
+   "end": 324.85,
+   "text": "Pura grid sadh jane me. Pura grid sadh jane me. Matlab pura grid me. Jitne bhi fresh oranges hai unko sadh jane me. Unko rotten ho jane me. Rotten ho jane me. Yato sadh jane me. Aur agar koi fresh orange asa hai jo sada nahi hai. Agar koi fresh orange asa hai jo nahi sadh paya. Bawajood aapke ki aap sab karke dekh liye. Nahi sadh paya. To aapko minus one lota na hai. Minus one. Agar sadeh sadh gaye. Kitne minute me sadeh sadh gaye. Kitne minute me sareh santre sadh gaye."
+  },
+  {
+   "start": 324.85,
+   "end": 354.75,
+   "text": "If an orange is saved till the end, how will it be saved? There was a person in isolation due to corona virus. There was no neighbour around him. He was left alone in his surroundings. So, he will be saved. No one will be able to tell him. So, he will be saved like this. So, an orange can be saved like this. If an orange is saved, then you have to return minus one. So, this was the question. Now, let's think and understand what can be done in this. Now, let's visualize this. Before understanding the question or before thinking about the question, see how it will work. How will it be in the real world? See."
+  },
+  {
+   "start": 354.75,
+   "end": 384.34,
+   "text": "This is your grid. You can see 1, 2, 1, and 2 zeros. 2 means that the orange is rotten. 1 means that the orange is good and 0 means that the orange is empty. You can see that the orange is rotten. You can see that the orange is rotten. You can see that the orange is rotten. You can see that the orange is rotten. You can see that the orange is rotten. You can see that the orange is rotten. You can see that the orange is rotten."
+  },
+  {
+   "start": 384.34,
+   "end": 408.3,
+   "text": "T is equal to 1 minute. See what happens. This rotten orange has the ability to rot all around. Very good, right? Now it's the same. See, every minute, every minute, all the rotten oranges will be working together. It's very important. Since there is only one rotten orange here, you must be thinking that it's not the same work. Every minute, every rotten orange will spread all around."
+  },
+  {
+   "start": 408.3,
+   "end": 436.11,
+   "text": "In coronavirus, if 100 people in the city have corona, then these 100 people would be spreading it at the same time. It's not like they spread it one by one. No. Every rotten orange will spread at the same time in every minute. That's why it will expand exponentially. Look. T is equal to 1 minute. There is only one rotten orange. So what will it do? It will look around. Can it do something on top? No. On top, the box ends. On the left, the box ends. On the right,"
+  },
+  {
+   "start": 436.11,
+   "end": 463.66,
+   "text": "Is there a good orange on its right? Yes, there is a good orange. So what will it do? What will it do? It will destroy the orange on its right. It will destroy the orange on its right. See, it destroyed it. Very good. But it is not over yet. Now its bottom. Can it destroy the orange on its bottom? Yes, it can destroy the orange on its bottom. It destroyed the orange on its bottom. It destroyed the orange on its bottom. See. Now its work is over."
+  },
+  {
+   "start": 463.66,
+   "end": 493.79,
+   "text": "Its work is done. And now it can't do anything else. Now every person can only spoil his neighbor. Neighbor will do the work ahead. Its work is done. How many minutes? One minute. Okay. Are all the oranges spoiled? No. They are still left. Okay. Come in the next minute. Now you will know how this problem will spread. See. T is equal to two minutes. T is equal to two minutes. Now how many active spoiled oranges are there? See. Its work is done. Its work is done. How many active spoiled oranges are there? One and two."
+  },
+  {
+   "start": 493.79,
+   "end": 522.61,
+   "text": "Now, both of them will work together in this minute. First, let's look at this one. Can the upper one rot? No. The left one has already rotted. The left one's work is over. The left one has already done what he had to do. Very good. Can he rot the right one? Yes. The right one is a fresh orange. What will he do? He will rot the right one."
+  },
+  {
+   "start": 522.61,
+   "end": 551.09,
+   "text": "He ruined it. He ruined it. Okay. Can he ruin the one below? Yes. The one below is also a fresh orange. He will also ruin the one below. His work is over. His work is over. But what did we say? In the beginning of this minute, how many oranges were there? Two. This was also there. This will also work in parallel in that minute. Now let's see what this will do. Will he ruin his upper one? No. The upper one is already ruined and finished. Will he ruin his right one? No. Why?"
+  },
+  {
+   "start": 551.09,
+   "end": 577.17,
+   "text": "Because the right one was already messed up. The right one was already messed up. So he will not mess it up. He will leave it. Will he be able to mess up the left one? No. The left one is finished. Will he be able to mess up the lower one? No. Because there is empty space below. We cannot do anything on empty space. His work is also finished. He could not do anything to anyone in that minute. Let's go. His work is also finished. How many items are finished? 1, 2, 3. But."
+  },
+  {
+   "start": 577.17,
+   "end": 606.72,
+   "text": "Are all the oranges in the basket rotten? No, all the oranges are not rotten. Let's move on to the next minute. T is equal to 3 minutes. Look, how many active rotten oranges are there? 1, 2. From whom did these two come out? From this. The work of these three is over. How many active rotten oranges are there? 1, 2. These two will work in parallel, together in this minute. Let's first look at this. Will it be able to do anything above us? No, the basket is over."
+  },
+  {
+   "start": 606.72,
+   "end": 633.65,
+   "text": "On the left, the left one is already rotten and finished. We can't do anything. On the right, the basket is finished. On the bottom, there is empty space. This was absolutely useless. We couldn't do anything in that minute. Finish this too. Finish this too. It's finished. Very good. But in that minute, this is also working in parallel. One by one. One by one is not working. All the active rotten oranges in that minute are working together. Look at this."
+  },
+  {
+   "start": 633.65,
+   "end": 660.91,
+   "text": "Will he be able to destroy the upper one? No, the upper one is already destroyed. On the left? No, the left one is already destroyed. On the right? No, there is empty space on the right. He won't be able to do anything. But will he be able to destroy the lower one? Yes, he will destroy the lower one. Why? Because the lower one is fresh. So what did he do to the lower one? He destroyed it. Now, this man's work is also finished. This man's work is also finished. In this T is equal to 3 minutes, there were two people."
+  },
+  {
+   "start": 660.91,
+   "end": 689.58,
+   "text": "Both have finished their work. Are all the oranges rotten? No, all the oranges are not rotten. You will have to go in the next minute. T is equal to 4 minutes. In 4 minutes, which are the active rotten oranges? There is only one active rotten orange. There are a lot of rotten oranges, but all this work is done. How many are active? This one. Let's see what he will do in that. Up? No, it was already rotten up. Left? There is empty space in the left."
+  },
+  {
+   "start": 689.58,
+   "end": 714.42,
+   "text": "Below, the basket is finished. What is fresh on the right? Yes, it is fresh on the right. So what will it do? It will rot this orange on the right. And now its work is finished. Now look, four minutes have passed. Have all the oranges of this basket rotted? Yes, all the oranges of this basket have rotted."
+  },
+  {
+   "start": 714.42,
+   "end": 742.02,
+   "text": "However, if you have an active rotten orange, you will feel like trying it out. Nothing will happen with that. Is there any fresh orange left in the jar? No, there is not. So this is the question I asked. How many minutes will it take for no fresh orange to be left in the jar? How many minutes will it take? How much will you say? 4 minutes. In 4 minutes, every fresh orange of this jar will rot. Every fresh orange will rot. Or else,"
+  },
+  {
+   "start": 742.02,
+   "end": 772.03,
+   "text": "After 4 minutes, there won't be a single fresh orange left in this box. Are you able to understand or not? Let's look at another small example. Let's take a 2 by 2 matrix. Here 2 is 0, 0, 1. In the beginning, how many rotten oranges do you have? One. Let's see what the result will be in 1 minute. There is only one rotten orange."
+  },
+  {
+   "start": 772.03,
+   "end": 800.53,
+   "text": "Can it do anything on the top? No, the basket is finished. On the left, the basket is finished. On the right, it is zero, you won't be able to do anything. On the bottom, it is zero, you won't be able to do anything. So, is this rotten work finished? It has done as much as it had to do. Cut it. Cut it. Okay. Okay. Now, how many active oranges are left? How many active rotten oranges are there? Not even one. This was there. Its work is finished. Okay. But have all the oranges in the basket rotten? No, all the oranges are not rotten. This is left."
+  },
+  {
+   "start": 800.53,
+   "end": 830.48,
+   "text": "Why not? Because it is not allowed to go diagonally. It is allowed to go in all directions. Now this was rotten. It looked here and there. Now nothing can be done. There is no other rotten orange that can rot it. What do you have to do in this case? Minus 1. You will take it till the end of time. Even then this orange will not rot. Why will it not rot? Because it is placed like this. What do you have to do? Minus 1. It is fresh. It is saved. It is saved. If there is no active rotten, then it is saved."
+  },
+  {
+   "start": 830.48,
+   "end": 859.65,
+   "text": "This is how this question is working. That is why we are telling you very important thing again and again. In every minute, all the active rotten oranges, active means those whose work has not been done yet. The orange that has done its work by rotting, the active rotten oranges will do their work together. Then that minute will be complete. It will not happen that if t is equal to one minute, there are two rotten oranges, then one minute will take that the first rotten orange will rot. In the second minute, no. All the rotten oranges,"
+  },
+  {
+   "start": 859.65,
+   "end": 889.09,
+   "text": "We will solve them all at once. Suppose in the beginning, there were 2 rotten oranges. Let's say they solve 6 oranges together. It takes them 1 minute to solve both of them. Now these 6 rotten oranges, let's say they solve 18 oranges. It will take them 1 minute too. It is working in parallel. It is not working alone. Now let's go and explain how to solve it. Let's go. So in this question, doing DFS will not work. Like you did in the island question."
+  },
+  {
+   "start": 889.09,
+   "end": 918.43,
+   "text": "You could have thought from the islander that we will go from the top. We will say, brother, remove one rotten tree. From that rotten tree, we will see how much more we can stand and we will go and see. No, but that is not happening. In this question, you have ever been asked in the question of the graph that it is working simultaneously. It means that all such people, all the defaulted people are working together. Now tell me how much time it will take when it works together. It means that it is working like this. Look, there was one man in the beginning. One man infects three people."
+  },
+  {
+   "start": 918.43,
+   "end": 947.01,
+   "text": "They infect these three and these three. This is a kind of BFS. Breadth first, sir. Slowly, slowly. What is BFS? There is one person. He did this, he did this, he did this, he did this, he did this. After that, what is BFS? One person did three. All three do their three one by one. Look at this. Look at this. Slowly, slowly, it is spreading. Slowly, slowly, it is spreading. This tree is spreading slowly. It is happening in the same way. In the beginning, there was one rotten orange. He will do two."
+  },
+  {
+   "start": 947.01,
+   "end": 976.96,
+   "text": "These two will do to their two. This will do to their two. It is spreading like this. It is not happening like this. One rotten orange did to this. Then this one did to this. Then this one did to this. It is not happening like this. You will get a lot of questions like this. Where it is working simultaneously. So it will not work by doing DFS. You cannot do this. We will catch a rotten one. We will put DFS on that rotten one. No, it is not like this. Because it is working parallelly. That is why there is a technique here. You can give it a name in the graph. Give it a name."
+  },
+  {
+   "start": 976.96,
+   "end": 1005.82,
+   "text": "It is not necessary, but it should be. It is called multi-source BFS. What is it called? Multi-source BFS. Multi-source BFS is an advanced way to solve such problems. Look, it is a very intuitive way. What will we do? Look, we will not do much. Whenever the name of BFS comes to your mind, Q should come in your mind. Whenever the name of BFS comes in front of you, what should come in your mind? Q. Q data structure. Okay. We had taught you BFS in graph. How did we teach you?"
+  },
+  {
+   "start": 1005.82,
+   "end": 1035.06,
+   "text": "Remember the BFS that we did in the graph? What did we do in Q? We put the node, then we put all the neighbors of that node in it, then we put all the neighbors of all those neighbors in Q. We did BFS like this. We will do the same thing here, but what will we do in the beginning? In the beginning, we will, one minute. So see, we will make a Q and what will we put in it? At any given minute, what were we doing at the top? All the active rotten oranges in every minute,"
+  },
+  {
+   "start": 1035.06,
+   "end": 1064.46,
+   "text": "active rotten oranges that have not been able to do their work yet, they will be active and they will do their work. We will make a queue in which we will put what? We will make a queue like this. This is its front and this is its rear. In the queue, at any given minute, how many active rotten oranges can be there? We will store them there. So see, when the time starts, when the time starts, so in the beginning, the time starts at zero. So at zero,"
+  },
+  {
+   "start": 1064.46,
+   "end": 1090.59,
+   "text": "After running a loop, push all the already rotten oranges in the queue. All the already rotten oranges in the queue. This is already a rotten orange. Push it. What do you push? Push their coordinate. Push their i and j. So what do we do here? Push 00. Is there any other rotten orange? No. And whoever you are pushing,"
+  },
+  {
+   "start": 1090.59,
+   "end": 1117.82,
+   "text": "change its value to something like minus 1. Why? Because you have to remember later that this one has been visited. Don't make the visited area separately. What we will do is that we will make this one minus 2. Push the coordinate and make this one minus 2 later. Okay, push is done. Now, don't try to make this one more half. Or don't push this one again. That's why. To remember. Anything. Minus 1, minus 2, minus whatever. Make a value other than 0, 1, 2."
+  },
+  {
+   "start": 1117.82,
+   "end": 1147.81,
+   "text": "If possible, make it zero. Empty space is done. There is no work left. So, t is equal to zero. How many oranges were there already? One orange was there. By running a nested loop, it was pushed. And by running a nested loop, do one more thing. Take out the count of fresh oranges. How many oranges are fresh? So, see. 1, 2, 3, 4, 5, 6. How many are fresh? 6. 6 oranges are fresh. Keep its count. We will tell you later why it is important to take out the count. Done?"
+  },
+  {
+   "start": 1147.81,
+   "end": 1170.66,
+   "text": "In the beginning, we made a loop. Q is made. We have already put all of them. T is equal to 0. Now, loop on this Q. How? While Q not empty. While Q not empty. And, fresh greater than 0. Means, till one fresh orange is left, you have to process it."
+  },
+  {
+   "start": 1170.66,
+   "end": 1200.11,
+   "text": "All the fresh should be finished. All the fresh should be finished. As soon as the number of fresh becomes 6 to 0, stop it. After that, you don't need to do it. Okay. Now, see. Here, we will run minute by minute. What? Minute by minute. Like we did in level order traversal. We will run minute by minute. So, see. What is the first thing to do? Do time++. Do time++. What is your time? 1 is done. Now, in this 1 minute, whatever is in the queue,"
+  },
+  {
+   "start": 1200.11,
+   "end": 1229.36,
+   "text": "they will all work together. After that, the time will increase later. At this time, at this minute, all the oranges in the queue will work together. So what will we do for this? int s is equal to q.size. All the oranges in the queue will work together. You will know in the next diagram. After that, while s minus minus, means whatever it is."
+  },
+  {
+   "start": 1229.36,
+   "end": 1258.66,
+   "text": "After that, what will we do? Take it out one by one, whatever size it is, take it out, pop it, pop it. So what did we get? We got 0, 0 here. What will happen? Now 0, 0 will rot the oranges on all four sides and if they rot, it will push them in the queue. Let's see. Will it be able to rot on top? No. On the left? No. On the right? Yes. On the right? Yes. But what will we do?"
+  },
+  {
+   "start": 1258.66,
+   "end": 1286.75,
+   "text": "Right will push this coordinate. 0, 1. And its value will be something like minus 2 or 0. Nothing more. It's done. Let's push it once. Push and reduce. And fresh's value. Fresh's value. Reduce one. Okay. But the work is not done yet. Not here. Not here. Not here. The lower one. Yes. The lower one also has the power to bend. Do the same work in the lower one. What work do you do?"
+  },
+  {
+   "start": 1286.75,
+   "end": 1314.85,
+   "text": "First of all, push its coordinate. 1, 0. What should we do? 1, 0. The coordinate is pushed. Fresh, because you are sending a fresh orange. The number of fresh is 4. And now change this as well. Do something like minus 1 or minus 2. Do anything other than 1. Do anything other than 1 or 2. Just for marking, it is visited. Now you don't have to work on it. Very good."
+  },
+  {
+   "start": 1314.85,
+   "end": 1339.81,
+   "text": "Okay. This 00 has done its work. Very good. Now, this loop will be closed. Now, we will come back. Is your queue empty? No. Now, there are two rotten oranges in your queue. So, when time will be plus plus, when time will come on two minutes, these two oranges will work together. What will happen? S is equal to queue's size. How much will the value of S be? Two."
+  },
+  {
+   "start": 1339.81,
+   "end": 1369.55,
+   "text": "Now, give both of these oranges a chance to rot. Give both of these oranges a chance to rot one by one. First, which one should we pop? 0, 1. Which one? 0, 1. Let's see what 0, 1 has the power to do. 0, 1. You have come to this. Look around this. Can you do something on the top? No. On the left? No. You can't do it on the left. On the left, we will do it minus 1 or something. We will do it only when there is 1 in our direction. Fresh orange means 1. Like, if we get 1, we will do something. Okay?"
+  },
+  {
+   "start": 1369.55,
+   "end": 1395.73,
+   "text": "Right? Yes, you can do it in the right. So what to do in the right? There are three steps. First of all, take the right one and push the coordinate. What is the coordinate? 0, 2. What is the fresh one? Reduce one. You have erased one fresh orange. Okay. And the value of this right one, do some minus 1 or minus 2. We will write the code later and show you. Do minus 1 or minus 2. Okay. This work is over. Now,"
+  },
+  {
+   "start": 1395.73,
+   "end": 1423.71,
+   "text": "Will it spoil the one below? Yes, it will spoil the one below. So what will you push? First of all, 1. First of all, 1. Push 1. The number of fresh is reduced by one more. The number of fresh is reduced by one more. And 1, 1 also. Do something like minus 1 or minus 2. Very good. Its work is done. Its work is done. But, what is the loop going on here? While s minus minus. There were two things. This was also, this was also."
+  },
+  {
+   "start": 1423.71,
+   "end": 1448.48,
+   "text": "Now 1-0's chance, 1-0 will act in the same minute. 1-0 will also act together. 1-0 will act together. Let's see what 1-0 can do. 1-0 came here. In the upper one, no. In the upper one, the work was already done. In the right, no. In the right, there is 1. But these 1-coms have already pushed this 1. And these 1-coms must have made it minus 1 or minus 2. It won't happen."
+  },
+  {
+   "start": 1448.48,
+   "end": 1477.23,
+   "text": "Below, below is 0. On the left, on the left the circle is finished, the grid is finished. He will not be able to do anything and will just pop. All three have popped, let's go. In this minute, t is equal to 2 minutes, which two people did their work? Both of them, both of them. Now, come back. Is your queue empty? No, your queue is not empty. And, the queue is not empty. Is your fresh still 0, is it big? Yes, there are still two fresh left, means you have to continue this."
+  },
+  {
+   "start": 1477.23,
+   "end": 1506.9,
+   "text": "When the phrase will be zero, we will not do it. Now, how many things are left in the queue? These two oranges are left. 0, 2, 1, 1. Both these oranges will work in this. First of all, time++. Means, time increased to 3 minutes. Take out one by one. First of all, take out 0, 2. Let's see what 0, 2 will do. It came here. Can it do anything on the left? No. Up? No. Right? No. Down? No. It was useless."
+  },
+  {
+   "start": 1506.9,
+   "end": 1536.88,
+   "text": "But there is one more left. He is also acting in this. Take out 1, 1. Who? Take out 1, 1. Take out 1, 1. Let's see what 1, 1 can do. 1, 1 came here. Up? No. It has already happened in the upper part. In the left? It has already happened. In the right? It is 0. In the lower part? Yes. We got the lower part. We got the lower part. What 3 steps do we have to do? First of all, write the coordinate of the lower part here. 2, 1. 2, 1. Write it. What is the number of the fresh?"
+  },
+  {
+   "start": 1536.88,
+   "end": 1566.69,
+   "text": "One is less. And this 2, 1 is minus 1 or minus 2. Whatever you want to make, make it. It's over. This also popped. This also popped. Was T equal to 3 minutes? Was your size 2? Which two were 2? These two. Is the work of these two over? Yes, it's over. Return it. Is your Q empty? No, your Q is not empty. Is your fresh value more than 0? Yes, the value of fresh is more than 0. It means it is still left. Keep trying. Keep trying. 2, 1 came out."
+  },
+  {
+   "start": 1566.69,
+   "end": 1594.46,
+   "text": "2, 1. Let's see what 2, 1 will do. 2, 1. Let's see what 2, 1 will do. 2, 1. It popped. Let's see what 2, 1 will do. 2, 1. It came here. Can it do anything to the one above? No, it's already done to the one above. On the left, it's 0. On the bottom, the grid will end. On the right, yes, yes, yes. We got it. We got it. We got 1. What will we do? First of all, push the coordinate. 2, 2. It's pushed. The value of fresh is reduced. Look, the fresh is 0."
+  },
+  {
+   "start": 1594.46,
+   "end": 1614.18,
+   "text": "You can see that there is no one left. And its value is minus 1 or minus 2. We have done it. Minus 1 or minus 2. We have done it. Okay. It is over. This time is over. This time is over. Okay. We did not increase the time. This time will be 4. We forgot to increase the time. Okay. Time is over. Check again."
+  },
+  {
+   "start": 1614.18,
+   "end": 1641.9,
+   "text": "Is your queue empty? No, your queue is not empty. It is 2-2 in the queue. But is your fresh more than zero? No, the fresh is zero. So do you need to continue? Do you need to increase the time? No, you don't need to do anything. Now you will come out of this. Now you will come out of this. Because what was the whole process? To destroy fresh oranges. Your fresh is not more than zero. You don't need to do anything. Stop. I have asked you."
+  },
+  {
+   "start": 1641.9,
+   "end": 1670.67,
+   "text": "Minimum, how many minutes will it take? So, the amount of minutes that had to take is 4. After that, you come out. A small check. If, even after doing all this, the fresh is greater than 0, this means that no one can reach such a fresh orange at such a place. Like in this example. In this example, if you dry run it, then your queue will end. But your fresh will be greater than 0, i.e. 1 will remain. If you think that the fresh is still greater,"
+  },
+  {
+   "start": 1670.67,
+   "end": 1695.23,
+   "text": "Return minus 1. Return minus 1. Otherwise, return time. Return our time. Return time. So, this is how it is working. Again, let's give a small recap. What is the first step? The first step is to put all the rotten oranges in the queue. Okay? What does it mean to put them in the queue? They were already rotten. So, don't tease the fresh ones in this."
+  },
+  {
+   "start": 1695.23,
+   "end": 1717.65,
+   "text": "Put them in Q and change their value to 0 or minus 1. So that they can't go again and again. Okay. And in this loop, count the number of fresh too. Count the number of fresh too. After that, have we run a loop? Q dot not empty means Q should not be empty. And fresh should be greater than 0. First of all, do time++."
+  },
+  {
+   "start": 1717.65,
+   "end": 1740.48,
+   "text": "Now at this time, whatever is present in that queue, it may be already rotten. When you have already pushed rotten, then three oranges have come. These three will work at the same time. What did we do for this? int size is equal to q.size and while size minus minus. We will execute these three in this. After that, we will increase the time."
+  },
+  {
+   "start": 1740.48,
+   "end": 1767.1,
+   "text": "If the queue gets empty, what does it mean? At that moment, how many active rotten oranges are there? If your queue is empty, it means that no active rotten orange is left. So if there is no rotten orange left, then there will be no rotting anywhere. Stop it. Or if your fresh is zero, if the fresh oranges are zero, there is no need to do anything. Come out. After coming out, if the fresh is still greater than zero,"
+  },
+  {
+   "start": 1767.1,
+   "end": 1797.17,
+   "text": "Means it is at a place where no one can replace it. Minus 1. Otherwise, return time. Return time. Come. Look at its code. Look at its code. Like yesterday, we will have to write two functions. Which people haven't seen yesterday. It is a very good thing. Don't see it now. First of all, for direction. First of all, for direction. In direction. First of all, for direction. To do north, east, south, west. Minus 1. 1. 0. 0."
+  },
+  {
+   "start": 1797.65,
+   "end": 1826.78,
+   "text": "int y4 is equal to 0, 0, minus 1, 1. Very good. One function to get the validity that the direction you are going in, is it valid or not? int ij, int n, int nm. What is nm? It is the size of the grid. If i becomes smaller than 0, i becomes equal to n, j becomes smaller than 0, and j becomes equal to m."
+  },
+  {
+   "start": 1826.78,
+   "end": 1856.77,
+   "text": "immediately return false that it can't go here, it is coming out of the grid. Otherwise, return true for fun. It is valid. Now, let's write our main function. Now, let's write our main function int. This is your lead code function. What is given here? A vector of, vector of int. Yes, yes, yes. First of all, do the size. If we do a.size, the number of rows will come. For the number of columns,"
+  },
+  {
+   "start": 1856.77,
+   "end": 1885.62,
+   "text": "a.k.a. the size of 0. That means how many columns are there. This row column will come out like this. After that, what do we have to do? Make a queue. How? Because you have to insert a coordinate in it, make a pair type queue. Make a pair type queue. int fresh is equal to 0. To remember the number of fresh oranges. int time is equal to 0. To remember the time. int ij to run the loop. What do we have to do?"
+  },
+  {
+   "start": 1885.62,
+   "end": 1914.3,
+   "text": "Do the already rotten oranges. Run a big loop on the grid. For j is equal to 0, j less than m, j plus plus. Very good. If, if, if, aij, aij equal equal to 2, means already rotten, then do two things. First of all, push ij in the cube. Because it will be useful. It is active. Now it is active in the beginning. And,"
+  },
+  {
+   "start": 1914.3,
+   "end": 1943.2,
+   "text": "Change the value of aij to minus 2. We will do minus 2 every time. Whenever we will push in q, we will do minus 2. Close it. But the work is not over yet. But the work is not over yet. If, if the array of ij is equal to 1, if the array of ij is equal to 1, write else if. So, fresh plus plus. Count fresh. Close i, close j, close i. So now in your q,"
+  },
+  {
+   "start": 1943.2,
+   "end": 1974.32,
+   "text": "Already rotten oranges have arrived. Now write your loop. While Q dot not empty. Q should not be empty. I mean, there should be active oranges in it, which are rotten. And, and, sorry, a little, this happened. And, fresh should be greater than zero. This should happen. If fresh is not greater than zero, then what are you doing? First of all, time, sorry, time plus plus. Time plus plus. Very good. Int."
+  },
+  {
+   "start": 1974.32,
+   "end": 2005.94,
+   "text": "S is equal to Q dot size. All of them will work now. Give everyone a chance. How? While doing S minus minus. Okay. First thing, remove that rotten coordinate. Int P is equal to Q dot front or Q dot pop. Very good. Pop is done. What do we do with this? R is equal to P dot first. Which means which row is this? Okay. Just for simplicity."
+  },
+  {
+   "start": 2005.94,
+   "end": 2032.06,
+   "text": "This is not necessary. You like this. c is equal to p dot second. So, which row and which column has come. Okay. Now, what will we do? It will try to go all four sides. The way to go all four sides is the island trick. What will we do? For int k is equal to 0. In how many directions can we go? In four directions. Plus plus. How does it happen? Row is equal to r plus x of k."
+  },
+  {
+   "start": 2032.06,
+   "end": 2061.55,
+   "text": "We have explained this very well in the previous video, so please watch it if you are not able to understand it. If you haven't seen the previous video, then you won't be able to understand anything. That's a good thing. Now, there are two things that we have to check. If this row column is valid, if it is valid, if it is invalid, then there is no need to do anything. Let's move ahead. Valid and if there is a fresh orange here, then we will get rid of it. We will get rid of the fresh one. We will not get rid of the zero. We will not get rid of the one that has become minus 2."
+  },
+  {
+   "start": 2061.55,
+   "end": 2090.9,
+   "text": "We will not do anything. So, it should be fresh orange. It is 1. What will we do? We will do 3 things. First of all, we will push. First of all, push. Here it is. Push is done. By changing its value, do something else. By changing its value, do something else. Do minus 2 only. On the top, minus 2. On the bottom, minus 2. See, what is the purpose of minus 2? Make anything other than 1. Make anything other than 1. And, the number of fresh, because you are spoiling a fresh orange."
+  },
+  {
+   "start": 2090.9,
+   "end": 2119.92,
+   "text": "minus minus kar denge ye aapka if loop bandh hua ye aapka k wala loop bandh hua fir aapka shayad ye size wala loop aur ye aapka main wala loop bandh ho gaya niche aake agar fresh abhi bhi zero se bada hai kuch nahi kar sakte aap return minus 1 nahi to return time ye main loop bandh ho gaya dekh lije code thoda lamba ho gaya shayad dekh lije ye pura code hai"
+  },
+  {
+   "start": 2120.11,
+   "end": 2148.54,
+   "text": "So this is your code. Time complexity n into m. Space complexity n into m. So see this whole code. This is valid above. And this is your rotten. It is section by section. There is nothing like that. Here we are making. Here we are already doing the rotten one. This is your main loop. Your main loop ends here. You have to return here. Go to this. Code this. Understand this. Dry run it. That is why I wanted to ask two questions today. But it is very heavy."
+  },
+  {
+   "start": 2148.54,
+   "end": 2158.83,
+   "text": "And it's a very important question, so let's stop at that. So that you guys don't get overloaded. Reduce the number of questions and do it well. So let's go. See you tomorrow."
+  }
+ ]
+}

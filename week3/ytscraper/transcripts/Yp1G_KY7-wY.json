@@ -1,0 +1,249 @@
+{
+ "video_id": "Yp1G_KY7-wY",
+ "title": "DP In 15 Days Episode 5 : 0/1 Knapsack | Master Dynamic Programming",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1291,
+ "segments": [
+  {
+   "start": 0.11,
+   "end": 24.32,
+   "text": "Welcome kids to Podho with Pratyush in the DP series. If you are coming for the first time, then do check out the description. Today's question is what is it? Zero-one knapsack. You must have heard the name of it. The good thing about the whole question of DP is that you have heard the name of it. You don't know the name, it's a different thing for you, but everyone hears the name somewhere. So today's question is very easy, especially if you watch yesterday's video, that is, watch Monday's video, then you won't take more than 5 minutes to understand this question."
+  },
+  {
+   "start": 24.32,
+   "end": 39.15,
+   "text": "If you haven't watched Monday's video, then please go and watch it. Otherwise, the same thing will be repeated every day. If we do the same thing every day, then that's why I am saying that your time will be saved. See, what does knapsack mean? Knapsack means portaling."
+  },
+  {
+   "start": 39.15,
+   "end": 64.53,
+   "text": "Have you seen a bag? A bag means a knapsack. What does 01 mean? A knapsack is of two types. If you have heard of it or not, then let me tell you that a knapsack is of two types. One is a greedy knapsack. That will come later. It does not have DP. There is a different reason. One is 01 knapsack. What does 01 mean? What is kept in a bag? Things are kept in a bag."
+  },
+  {
+   "start": 64.53,
+   "end": 89.3,
+   "text": "Now, what does this question say? It doesn't say anything. It's a very simple thing. It says that you have N items. How many?"
+  },
+  {
+   "start": 89.3,
+   "end": 115.06,
+   "text": "There are N items. Suppose you have 3 types of items. Each item has some value. Suppose this item has a value of 5. If you take this item, you will get 5 rupees. This item has a value of 2. If you take this item, you will get 2 rupees. There is another item whose value is 4. If you take that item, you will get 4 rupees."
+  },
+  {
+   "start": 115.28,
+   "end": 145.06,
+   "text": "Every item has a weight. Let's assume that the item worth Rs. 5 has a weight of 4 kg. The item worth Rs. 2 has a weight of 5 kg. And the item worth Rs. 4 has a weight of 3 kg. What is its weight? It is 3 kg. Now you have a knapsack. You have a bag. You are a person who has come to collect items. You have a bag."
+  },
+  {
+   "start": 145.06,
+   "end": 159.54,
+   "text": "That bag has a capacity. Let's assume that the bag has a capacity of 8 kgs. What does this 8 kgs mean? If you keep more than 8 kgs in that bag, then the bag will burst."
+  },
+  {
+   "start": 159.54,
+   "end": 186.88,
+   "text": "The bag will not be able to survive. You can keep as many things as you want. There is no restriction on the number of things. If you want to keep three things. But the weight should be less than 8 kgs. Combined weight. If you fill more than 8 kgs, your bag will break. You can either fill up to 8 kgs. Fill 8 kgs. Fill less than 8 kgs. It will work. You can't fill more than 8 kgs. Okay. So this is fine. This whole story is fine. What to do?"
+  },
+  {
+   "start": 186.88,
+   "end": 213.52,
+   "text": "You don't have to do anything. You have to maximize your value. What is value? Value is of 5 rupees, 2 rupees, 4 rupees. You need maximum value. But keeping this capacity in mind, this is your question. Now tell me, how much value item can you pick up so that your bag doesn't burst?"
+  },
+  {
+   "start": 213.52,
+   "end": 242.4,
+   "text": "If this capacity was not given, then it would have been very simple. Pick up three items, then it will be done. We will take as much as there is. But now because the capacity is given, you cannot fill more than 8 kg. Meaning, if you try to keep these three items, then it will be 4, 5, 9, 3, 12 kg. You cannot keep 12 kg. Meaning, you will have to leave some items. Which items will have to be left? Which item will have to be left? Which item will have to be taken? This is your question. That's why, what kind of question is it?"
+  },
+  {
+   "start": 242.4,
+   "end": 267.6,
+   "text": "It is a choice-based question. You have to decide which item to take and which item not to take. This is the twist of this question. If this capacity would not have been given, the question would not have been left. So you have to collect as much value as possible. I am saying number of items again and again. There is no difference in number of items. Collect as much value as possible. And while doing this, while maintaining your capacity,"
+  },
+  {
+   "start": 267.6,
+   "end": 290.83,
+   "text": "How much maximum value can you get? For example, if you take these two items, then 4 and 5, you can't take these two items because it will be 9 kg. If you try to take these two items, then you can take 8 kg. So how much? 2 and 4, how much? 6 kg, your value will be 6. But if you take this and this item, then 4 and 3, 7 kg is less than your capacity and"
+  },
+  {
+   "start": 290.83,
+   "end": 309.25,
+   "text": "If you take this and this item, then 5 and 4 will be 9 rupees. So the answer to this question will be 9 rupees. You will leave it. This is your question. Now let's explain it to you very quickly. We will explain both things. Why? The logical thing that is coming in your mind that we do this, whose value is the most, we fill it."
+  },
+  {
+   "start": 309.25,
+   "end": 329.57,
+   "text": "Some of you might be thinking that we should do something like this. Let's increase the one whose weight is the lowest. Why won't these two work? We will explain that. And like yesterday, we will write recursion. We will convert recursion into DP. We will explain both of them to you quickly. It won't take more than 10 minutes. Stay tuned. Let's move ahead. Come. Now see, logical algorithms should come in your mind. What does logical algorithm mean?"
+  },
+  {
+   "start": 329.57,
+   "end": 357.7,
+   "text": "Without any recursion, without any choice, we already think about what to do and that gives us the right answer. So look, the first thing that should come to your mind is that you have to maximize the value, right? You have to bring the maximum value. So what will we do? The thing that has the maximum value, the thing that has the maximum value in the list, we will start keeping that until my weight is filled. So assume that you have the maximum value of 10 rupees, but its weight is 99 kilos."
+  },
+  {
+   "start": 357.7,
+   "end": 384.56,
+   "text": "So you say that the rest of the item is less than 10 rupees. What did you do? You picked it up and kept it here first. Let's keep the maximum value, then the value will be maximized. Now see, here you have picked up 10 and kept it. But due to keeping this, you have kept 99 kg of stuff. Now how much capacity do you have left? Only 1 kg. It was a 100 kg bag, you have kept 99 kg in it. How much more can be kept? Only 1 kg. Now assume, now assume, you don't have"
+  },
+  {
+   "start": 384.56,
+   "end": 409.95,
+   "text": "There are two more items. One is of value 9 and the other is of value 9. This one is of 2 kg and this one is of 2 kg. These three items are in half. Now, first of all, because of your greed, which we call greedy, you have kept it here. Your capacity is 1 kg. Now, you can neither keep this nor this. What will be your answer?"
+  },
+  {
+   "start": 409.95,
+   "end": 439.89,
+   "text": "10 rupees. But, if you would have ignored this, if you would have ignored this, and would have kept these two, who? These two. If you would have kept these two, then 2 plus 2 is 4. It was very less than 100 kilos. So, how much value would you have got? 9 and 9 would have been worth 18 rupees. Now, how much did you get stuck? 10 rupees. Why? Because of your greed. What are you doing with your greed? That we bring the value by taking the most value. If you do this, then you can get stuck. Greed is bad. That's why it won't work. There is another one."
+  },
+  {
+   "start": 439.89,
+   "end": 462.22,
+   "text": "Another way to get greedy is to start keeping the item whose weight is the lowest. This will increase the value. Suppose you have an item whose weight is 1 kg. Let's assume its value is 1 kg."
+  },
+  {
+   "start": 462.74,
+   "end": 491.46,
+   "text": "Now we were saying that you should do the second type of greed. That is, start keeping the item whose weight is the lowest. Suppose this is the lowest item whose value is 10 rupees and its weight is 10 kg. What is the capacity of your pouch? 15 kg. Let's assume that it is 15 kg. What did you do? You kept it that its weight is the lowest. Suppose the weight of the rest of the items is more than 10 kg. Keep it. Now see, when you keep it, what is your capacity left? It was 15."
+  },
+  {
+   "start": 491.46,
+   "end": 519.73,
+   "text": "Now 5 kg is left, which means 5 kg more items will be kept in it. Suppose there were two more items. Those two items were of this type. Value is equal to 100. Its weight is equal to 12 kg. And there was one more. Value is equal to 300. And its weight was of 14 kg. Now see, do you understand what happened? If you had kept this one, if you had kept this one, then you would have got 300 rupees. And it would have come under your capacity too. But,"
+  },
+  {
+   "start": 519.73,
+   "end": 547.74,
+   "text": "Again, because of your greed, you have kept the minimum weight person. Your bag is full. If it is not full, it means its capacity is very less. Now you can neither keep this nor this. How much did you get? 10 rupees. How much milk did you get? 300 rupees. That's why, any logic like this, that we keep the weight first, keep the value first, all this will not work. Why will it not work? Again, in yesterday's problem, we told you."
+  },
+  {
+   "start": 547.74,
+   "end": 577.3,
+   "text": "You don't know the future. You don't know what is going to happen in the future. So your current decision cannot be so rigid that we will take it or we will not take it. That decision depends on the future that what is coming in the future. If let's say you get a decision that brother, do you want to do the 10th class or not? Leave the 10th class. Do you want to do the CSE degree or not of B.Tech? You say that yes, you have to do it. Let's say you say yes, you have to do it for sure. You have done it."
+  },
+  {
+   "start": 577.3,
+   "end": 605.34,
+   "text": "After 4 years, AI came and you didn't get a job. So you became dependent on the future. On the other hand, if someone asks you if you want to do CAC VTech or not, you say no, no, no, you don't want to do it. Suppose after 4 years, someone got a job in Microsoft for 50 lakhs. Now you are thinking that you should have done it. So both these decisions are very rigid. Whether you want to do it or not. So you can't make a decision that you won't do it or you will do it. Because no one knows what is going to happen in the future. So what will you have to do?"
+  },
+  {
+   "start": 605.34,
+   "end": 633.47,
+   "text": "You will have to explore all the possibilities. That means, you will have to do CSE on one side, and you will have to do CSE on the other side. And the future that is looking good, let's say you got to know that after doing CSE, the job took 3 lakh rupees. And after not doing CSE, the job took 50 lakh rupees. Then you will know which decision was right. In the beginning, you will not know which decision was right. That depends on the future, right?"
+  },
+  {
+   "start": 633.47,
+   "end": 661.71,
+   "text": "So, what will be applied here? Recursion. Why? All choices have to be done. After applying recursion, we will see if something is being repeated or not. If any recursion is being repeated, if there is an overlapping problem, then what will we apply? DP. We have explained this in detail in yesterday's problem also. Now, let's directly write its recursion. Come on. So, now what is your work? Now, your work is to make a choice. Explore every choice, every possibility. How will we do it?"
+  },
+  {
+   "start": 661.71,
+   "end": 688.88,
+   "text": "When you go to every item, you will choose item by item, right? You will go to one item. You will decide whether to take this item or not. Before that, can we take this item or not? What does that mean? For example, suppose you come to i is equal to 0. Means the first item, it will have some value, any value of i. And it will have a particular weight, which will be weight of i. Now,"
+  },
+  {
+   "start": 689.71,
+   "end": 718.59,
+   "text": "You know the starting capacity of your bag at that time. Very good. Now, suppose if its weight is greater than the capacity of this item, it is greater than your current capacity, then you can't do anything about this item. It means that there is an item whose weight is 100 kg, but your bag's capacity is 50 kg."
+  },
+  {
+   "start": 718.59,
+   "end": 744.02,
+   "text": "Whatever you do, you can't buy this item. You don't have any choice here. You will have to go directly to the next item. If your weight is less than this capacity, for example, suppose your weight is 50 kg and the capacity of your butt is 70 kg, then you have a choice. You can buy this item or you can't buy this item. If"
+  },
+  {
+   "start": 744.02,
+   "end": 771.92,
+   "text": "If you take this item, if you take this item by saying yes, then whatever the value of this item is, it will be plus in your answer. Like yesterday, like a house robber, the house in which he used to steal, the money of that house used to be plus in the answer. Very good. You used to go to the next house. In the next house, again, something will happen. Value 1. It will also have some weight. And, and, and, because of taking this, because of taking this I is equal to,"
+  },
+  {
+   "start": 771.92,
+   "end": 801.39,
+   "text": "your capacity will be minus weight of zero. Because you are putting the item of i is equal to zero in your bag, your capacity will be minus. Right? If you are putting an item of 50 kg in your bag, your bag's capacity was 70 kg. Now, what will be your new capacity? 70 minus 50, 20 kg. 20 kg will be left. So, how much do you have left for the future? 20 kg. Not 70 kg, 20 kg. You have put it. If you"
+  },
+  {
+   "start": 801.39,
+   "end": 831.26,
+   "text": "If you choose not to add it, then nothing happens. Simple, you go to i is equal to 1, it will also have some value and some weight, and your capacity remains the same. If you don't add it, the capacity will not decrease. If you add it, then two things will happen. Its value, whatever value you add, its value will be plus in the answer, you will get that much. And your capacity will be reduced by that weight. If you don't add it, then you will not get any difference. You go ahead, your capacity will also remain unchanged."
+  },
+  {
+   "start": 831.26,
+   "end": 860.51,
+   "text": "This is the way of recursion. You always have two choices. Write the recursion of this. We don't think that after watching 4-5 videos till now, anyone has any doubt that how did this happen? What happened? A new thing happened. If you have come for the first time, then what to do? You have to watch 3-4 videos. You don't have to watch more. Write the recursion of this. What will you have to write in recursion? Int fun. You will have two arrays. What? One is your value array. Second is your"
+  },
+  {
+   "start": 860.51,
+   "end": 888.77,
+   "text": "Weight array. Whose? Weight array. Okay. After that, int n means number of items. Int i means which item you are on right now. And int capacity. For now, how much capacity do you have? How much capacity do you have left? Where will everyone start from? i is equal to 0. And capacity, whatever starting capacity you will be given, that is given in the question. Let's go. First of all, base case. If i is equal to n, means the whole item is over."
+  },
+  {
+   "start": 888.77,
+   "end": 918.45,
+   "text": "So how much can you do? You can't do anything. You have to return zero. Why? The whole item is over. So how much value can you make? You can't make anything now. The whole item is over. What had to be made, has been made. You can't make anything. Now, if whatever weight of this item is greater than that capacity, whatever weight of this item is greater than that capacity, then this item can't go for sure. You have to go straight to the next item. Meaning, what do you have to do straight? Fun."
+  },
+  {
+   "start": 918.45,
+   "end": 946.4,
+   "text": "Whatever your val, weight, n, i plus 1 and capacity. i plus 1 is fine and there is nothing in capacity because you didn't take this item. Very good. If this is not the case, then you have two choices. The yes one and the no one. So, suppose this is done. Int yes is equal to. First of all, you take this. So whatever its value is, it will be plus in your answer. Plus, you will go to the next item. Val, weight,"
+  },
+  {
+   "start": 946.4,
+   "end": 974.18,
+   "text": "n i plus 1 and and capacity minus weight of i means whatever is the weight of this item will be minus by your capacity. This is your yes choice. What is your no choice? No choice is nothing. Go ahead, don't do anything. Well, weight n i plus 1 and capacity is over. Now, when you were here, you had two options. Yes or no."
+  },
+  {
+   "start": 974.18,
+   "end": 1003.33,
+   "text": "Which one to return? Whichever will give the maximum result. So return maximum of yes and no. Return maximum of yes and no. It's over. Look at this small recursion. How does recursion change in DP? First of all, look. What is changing? What is changing in this recursion? Two parameters are changing in this recursion. First of all, this int i is changing and this capacity is changing. i and capacity. Only i is not changing."
+  },
+  {
+   "start": 1003.33,
+   "end": 1032.16,
+   "text": "For every I, different capacities are changing. For any I, no capacity, no capacity, so-and-so capacity, so-and-so capacity means both are changing in pairs. What was changing in house robber yesterday? The position of the house means I and your free will. Is there free will or not? What is changing here? The combo of I and capacity is changing. So, yesterday for house robber, DP's 2D IRA was made. Here also, DP's 2D IRA will be made. Which IRA will be made? It will be made like this. Let's show the main function."
+  },
+  {
+   "start": 1032.16,
+   "end": 1058.38,
+   "text": "Look at the main function. Your lead code or GFG function will look like this. Suppose this GFG function has two things. Vector int will give you the value array. Vector int will give you the weight array. And you will be given int capacity, starting capacity. So what will we do first? We will remove n is equal to val dot size."
+  },
+  {
+   "start": 1058.38,
+   "end": 1089.12,
+   "text": "Now, make a 2D array. Why are we making a 2D array? Because you have to write the result in this way. i is equal to 0, i is equal to 1, then this happens, capacity equal to 0, capacity equal to 1, and this will increase. So, whenever we find out the answer of any combo of i and capacity, we will write it in any box. So, what will be the size of 2D array? Vector, vector, int, 1, 2, dp, size n."
+  },
+  {
+   "start": 1089.12,
+   "end": 1118.22,
+   "text": "Now, for int i is equal to 0, i less than n, i plus plus, make a vector, cap size of int, t, its size will be capacity, whatever capacity you have given, and in the beginning, all will be minus 1, and dpi is equal to t. Meaning, make a 2D array of size n into capacity, in which everything is minus 1. Now, call your function, fun, return fun."
+  },
+  {
+   "start": 1118.29,
+   "end": 1148.69,
+   "text": "pass val, pass weight, pass n, pass 0, and pass capacity and dp. This is your main function. Now, we just have to integrate this dp in our fun. We don't need anything to integrate. Here, by removing this, we write vector of int 1, 2, dp. This is done. Now, what did we say? Before doing anything, before doing anything, here, what will we write? If,"
+  },
+  {
+   "start": 1149.07,
+   "end": 1179.3,
+   "text": "dp of i and cap not equal to minus 1 return dp of i and cap. Khatam. Kahan pe? Ye base case aur iske baad. Ab aapko kya karna hai? Ab aapko kya karna hai? Ab aapko jahan bhi aap return kar rahe hain. Agar aapko nahi mila to aapko pura function call karna padega. Lekin jahan jahan bhi aap return kar rahe hain. To just dpi cap equal to fun. Kya tha?"
+  },
+  {
+   "start": 1179.3,
+   "end": 1208.56,
+   "text": "val, weight, n, i plus 1, and cap. One return function is here. Where is the second return function? Here. Do the same thing here as well. What do you do? dp, i, cap, equal to, max of, yes and no. It's over. Recursion into dp. Now, we haven't discussed that, what recursion is solving overlapping subproblems. It's solving them. Try driving and you will know that, same time,"
+  },
+  {
+   "start": 1208.56,
+   "end": 1237.18,
+   "text": "I capacity, I capacity, same, same, same, same, many times it is being solved. It will happen, we will have to take the same example. It will happen, it will happen, there are overlapping problems. In this way, what becomes a question? DP's memoization solution becomes. This and house robber is exactly the same question. That is why we first taught house robber, it was a little easy. This was also easy, there was only one difference in this. In yesterday's house robber, I and free will was there. What is there in today? I and capacity."
+  },
+  {
+   "start": 1237.18,
+   "end": 1265.39,
+   "text": "In yesterday's house robber, there could have been only two values of free. Here, there could be a lot of values of cap. From zero to all the way to cap. Now look at the cap. Let's assume that your initial capacity was 100 kg. This will gradually decrease. Let's assume that it will go from 100 to 90, 90 to 40, 40 to 30, 15. At some point, let's assume that it will become zero. So this can be this much. It doesn't matter. You need 2D array, right? Yesterday, how many size arrays did we make? I and"
+  },
+  {
+   "start": 1265.39,
+   "end": 1290.33,
+   "text": "2. These 2D arrays were made. Today, how many sizes have been made? N and cap size arrays have been made. Rest, everything is the same. So, in DP, it is good that all the questions seem to be the same. There is no new rocket science launch anywhere. What happened? What happened? Nothing like that happens. All the questions seem to be the same. It must be looking the same. House robber is 90% the same. And do this. You have learned the problem of 0-1 knapsack. And meet you tomorrow."
+  }
+ ]
+}

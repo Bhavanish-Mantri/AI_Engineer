@@ -1,0 +1,519 @@
+{
+ "video_id": "-g6h0Ok1Buk",
+ "title": "EP 03: Level Order Traversal In Binary Tree | Intuition and Template",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2730,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 13.82,
+   "text": "Pura pasina pasina ho gaya ji, matlab baap re, bhoot lamba video ho gaya hoga, matlab humko lagta hai ki 30-40 minute ka to ho hi jayega. Is video me hum log jo padhne wale hai na, one of the most important concept hai, bahut saare reasons hai. Sabse pehle to is concept ka naam hai level order."
+  },
+  {
+   "start": 13.82,
+   "end": 38.19,
+   "text": "In the last video, we have taught you some traversals like pre-order, post-order, and in-order. For example, Dadaji first feeds his left child, then he feeds his right child. Now you will have to traverse in a different way which is called level order. We will talk about that later. But this is important because till now you were completely unaware of Q. Q data structure. We didn't know about it because Q data structure"
+  },
+  {
+   "start": 38.38,
+   "end": 61.47,
+   "text": "And the main use is used in tree's level order and graph's BFS. And graph's BFS. Means the stand alone question of Q data structure is asked very less in interviews. It happens, not that it doesn't happen, but it is asked very less in interviews. In interviews, the stand alone question of stack is asked more. The stand alone question of Q is not that important. That's why I haven't taught it yet. So in this video, you will also learn Q."
+  },
+  {
+   "start": 61.47,
+   "end": 88.19,
+   "text": "You will get an introduction of Q. And you will also learn level order. You will learn a fixed template of level order first. That you should know the algorithm of level order. Means that is not a thinking algorithm. You should know that fixed template. Based on the question, you will do small modifications in that template. You will get all three questions of level order. There are small modifications in all three questions. Means the first one is pure level order. After that there is a zigzag. After that there is level order 2."
+  },
+  {
+   "start": 88.19,
+   "end": 116.8,
+   "text": "You can make 3 questions in 2-3 lines of change. For this video, I will give you an advice that keep some patience. Because you are going to learn something new. Why are you going to learn? And you are going to learn level order. Whose algorithm is fairly complex according to me. So when there will be a dry run, don't get impatient in it. That I don't understand, I don't understand. Give it a little time. Give it a little time of 30 seconds, 1 minute, 2 minutes. Because this is such an algorithm. That when we will start in the beginning. So first in 1 minute. Suppose we started dry run. So first in 1 minute."
+  },
+  {
+   "start": 116.8,
+   "end": 139.73,
+   "text": "You will understand 5%. Honestly, I am telling you. I am not saying that I am a master god teacher. No. You will understand 5% in 1 minute. In the next 2 minutes, you will start understanding 50%. In the next 3 minutes, you will start understanding 99%. So, as you will see, there will be a lot of exponential growth. But in the first 1 minute, you will feel that you are not understanding anything. What is happening? What is going on? What is coming out? But look with patience."
+  },
+  {
+   "start": 139.73,
+   "end": 167.76,
+   "text": "I am requesting you to watch it with patience. You will understand it very well. This is my promise. For level order, you will get the most detailed video on the internet. We have seen how much we have studied for the rest of the people. In 6-7 minutes, we have done it and it is over. This is going to be the most detailed video for level order and queue. Be patient and watch it. Let's start quickly. So the first question, the base question is level order traversal. So you will get the leadcode 102. Why is this question a base question? Because"
+  },
+  {
+   "start": 167.76,
+   "end": 195.84,
+   "text": "Again, if you understand this question, it will take some time. We will understand it very slowly. The other two questions are just small variations. It won't take much time. You have to give as much effort or time as you have to give in this. What does level order say? You get a tree. For example, your tree looks like this. Its child is 20, its child is 9, and 20's child is 4, and its child is 5, and 9's child is 10. This is your tree."
+  },
+  {
+   "start": 195.84,
+   "end": 224.62,
+   "text": "Till now, we have studied three types of things. Pre-order, in-order, post-order. In the last video, we had discussed what is pre-order and what is in-order. In that, what used to happen? That root, its left child, right child, or left child, root, and so on, something used to happen. What does level order say? If you see this tree, if you look at this tree very carefully, if you make horizontal lines in it, what does horizontal lines mean? Straight lines. If we make straight lines in it, then see how it will be made. The first level, which is the first level? Of root. So, see this line."
+  },
+  {
+   "start": 224.75,
+   "end": 252.78,
+   "text": "This is one level. If you look at this company, the highest level is the CEO. The two people under the CEO, CFO and COO, you can make another level for them. For them, you can make another level. Suppose this is level 0 and this is level 1. So how many people are there in level 0? One person, 3 people. How many people are there in level 1? Two people. 20 people are also in level 1 and 9 people are also in level 1."
+  },
+  {
+   "start": 252.78,
+   "end": 283.06,
+   "text": "You can make another line. You can also make another line. Which will cross these three. What is this? This is your level 2. How many nodes are there in level 2? There are three nodes. This, this and this. Now this is called level order traversal. When you make horizontal horizontal lines in a tree. Whichever nodes or whichever circle comes in one line. We call that one level man. For example, if we explain this with another example. So what is at the top? Grandfather. Grandfather has two sons. Papa and?"
+  },
+  {
+   "start": 283.06,
+   "end": 308.19,
+   "text": "Chacha. Okay? Papa has two sons. Let's say Pratyush and Pranjal. Okay? Chacha has one son which is Mohit. Okay? Okay. If we make a level in this, then only Dadaji will come in the top level. Only Dadaji will come, right? What will happen? Let's say Gen Boomer. Gen Boomer or whatever it is. In the next level, Papa and Chacha will come. They will get something else."
+  },
+  {
+   "start": 308.19,
+   "end": 338.19,
+   "text": "Tell me, okay. In the last level, Pratyush, Pranjal and Mohit will come. What will they be? Gen Z. So if you make a horizontal line, then whoever is on one level, we call them on one level, that they are on one level. What is the level order traversal? That you don't have to do like this, that you have to take root, its left side, you don't have to do like this. You have to go level by level. So if someone tells you to write its level order traversal, then you can write like this, that suppose you will write first, that first there is a man A3. Okay."
+  },
+  {
+   "start": 338.19,
+   "end": 367.28,
+   "text": "After that, one person is 20 and 9. After that, on the next level, there are 4, 5, and 10. This is its level order traversal. Why is this level order traversal? Because look, first of all, whatever we wrote in level 0, again, in every level, you have to write left to right, or right to left, or question by question, it depends. But, for example, if someone tells you that write this tree in its level order traversal, or level order, in every level, write left to right. What to write in every level? Left to right. So, because there is only one node in level 0, then you will be able to write only one thing, 3."
+  },
+  {
+   "start": 367.41,
+   "end": 392.48,
+   "text": "There are two people in level 1. Now left to right means first 20 and then 9. So this is level 1. There are three nodes in level 2. They also have to write left to right. Like this. 4, 5, 10. And a big vector will be made of this. So what has happened to you? This thing, what is this? This is level order traversal. What is it? Level order traversal. Level order traversal. Level by level we are going. What will happen here? Grandfather, father, then uncle."
+  },
+  {
+   "start": 392.48,
+   "end": 422.48,
+   "text": "And in the next one, Pratyush Pranjal and Mohit. So, what is this? Level order traversal. So, see, any question of level order, any complex question of any kind, that in level order, you can say anything, do left to right, right to left, half left, half right, do anything. The thing that is used in this, if you use recursion in this, then it won't be fun and it won't be possible. Recursion, what you did in the previous one, in order, pre-order, that first we take root, give a chance to the left of root, give a chance to the right of root, it won't be possible. It won't be possible. Why it won't be possible, we will tell you."
+  },
+  {
+   "start": 422.74,
+   "end": 442.86,
+   "text": "If there is any level order question, you have to use Q. Q. We know that we have not studied Q yet. Q because there is nothing special to study in Q. You can study Q in this. In this, you can also tell Q. What is Q? You have studied stack. We told you stack. We told you stack. What is stack? First in, last out. First in."
+  },
+  {
+   "start": 442.86,
+   "end": 468.91,
+   "text": "Last out means what was the stack? The stack was a structure like this. Suppose you insert 3 things in it. First you insert 1, 2, 3. So when you insert 1, 1 comes here. When you do 2, 2 comes up here. When you do 3, 3 comes up here. When you take it out, how did it come out? First 3 came out, then 2 came out, and at the end 1 came out. So 1 came in first and came out at the end."
+  },
+  {
+   "start": 468.91,
+   "end": 493.01,
+   "text": "2 entered second, 2 came out, 3 entered last but came out first. So this was the stack. Q is just opposite. What does Q mean? First in, first out. First in, first out. What does Q mean in the cinema hall? Q means line. What happens in the cinema hall? The person who is first in the queue gets the ticket first."
+  },
+  {
+   "start": 493.01,
+   "end": 520.3,
+   "text": "The person who stands in the queue first in a ride gets the ticket first. It doesn't happen that the person who is in the queue first gets the ticket last. No, it doesn't happen like this. So, Q means first in, first out. What is Q? You understand Q like this. This is Q. Now, there are two openings or two holes in it. We call this front. And we call this back. What do we call this? Back. Okay. Same happens. Now, in Q, if you..."
+  },
+  {
+   "start": 520.3,
+   "end": 546.59,
+   "text": "If you want to push in the queue, similarly you can push like a stack. You can say, in the queue, push 1. Push one more in the queue. Push one more in the queue, 2. And push one more thing, 3. Okay? So what will happen in this? The push, suppose you will push from the back. Meaning, first of all 1 will be pushed here, so 1 will come here. 2 will be pushed, so 2 will come here and 3 will come here."
+  },
+  {
+   "start": 546.59,
+   "end": 575.14,
+   "text": "This is done after pushing. So this is what Q looks like. Now if you want to take it out one by one, then from where will you take it out? In the stack, from where did you take it out? From top. Because only one was open, top. There are two open on this, front and back. Now we will take it out from front. Now from where will we take it out? From front. What will Q.front give you? The first element in front, what do you see? One. So what will you get? One. What will you get? One. After this you will do Q.pop. After this you will do Q.pop. So from where did it enter?"
+  },
+  {
+   "start": 575.14,
+   "end": 605.3,
+   "text": "Push. Where did the push come from? From the back. Where will the pop come from? From the front. From the front. The front one will pop. Do it again. Q dot front. Q dot front. What will you get? What is there in the front? Two. Two. You got two. Again. If we do Q dot pop, then Q dot pop. Where will it pop from? From the front. From the front. Whatever is there in the front, it will pop. Do it again. Do it again. Q dot front. Where will you get it? Whatever is there in the front. Three. Three. You got three."
+  },
+  {
+   "start": 605.3,
+   "end": 633.07,
+   "text": "Do it again. Q dot pop. Where will it pop? From the front. So whatever is in the front will pop. So see, Q is this. Nothing else. If you do Q dot push, then where does push come from? From the back. Where does push come from? From the back. So when you pushed 1, 2, 3, then 1 came, 2 came, 3 came. When you remove Q dot front, then the person seen from the front is accessed first. So what happened in this? The order to push was also 1."
+  },
+  {
+   "start": 633.07,
+   "end": 661.5,
+   "text": "2 and 3. There is an order to exit. Because you are taking out from the front. The order to exit is also 1, 2, 3. The order to exit is also 1, 2, 3. And when you pop, where does it pop from? From the front. Whatever element you see in the front, it will blow the queue. So that's why the order is maintained in the queue. In the stack, the order was reversed. 1, 2, 3 would enter and 3, 2, 1 would exit. If 1, 2, 3 enters in the queue, then 1, 2, 3 will only exit. 3, 2, 1 will not exit. That's why queue means straight. Queue means straight."
+  },
+  {
+   "start": 661.5,
+   "end": 687.86,
+   "text": "The one who enters first will come out first. First in, first out. So, we hope that you understand this. So, this was a small introduction of Q. There is not much in Q. SPAC is a very complex topic. Q, according to me, is not a very complex topic. All the complex questions of Q are in the sub-tree. It is in the sub-tree. There are very few such questions that Q is very complex. There is not much in Q to make it complex. This is Q. Okay. Now, let's come to the main topic."
+  },
+  {
+   "start": 688.02,
+   "end": 712.03,
+   "text": "Now, when you know the introduction of Q, I am not saying that you have mastered Q, but you know what is the introduction, where is the push from? From the back. When you take out the front, the front one comes. When you do pop, where does it come from? From the front. So, it means first in, first out. Now, look at this tree. Look at the tree of Dadaji. You have to make a level order traversal of this. Meaning, how many levels do you see in this? You will see three levels in this. What does three levels mean? This is one."
+  },
+  {
+   "start": 712.03,
+   "end": 739.5,
+   "text": "Then 2nd and 3rd. So level order traversal means that you have to make different types of arrays. You have to make one array in which the upper level is there. Upper level means in which this is there. In which Dadaji is there. This is 1. Level 1 is over. How many people are there in level 2? 2 people. Papa and Chacha. So you have to make a separate array in which Papa and Chacha are there. Very good. Level 3. What is level 3? In which there are 3 people. Pratyush, Mohit and Suman. So you have to return left to right. Left to right. Remember to return left to right."
+  },
+  {
+   "start": 739.5,
+   "end": 756.4,
+   "text": "This is a simple level order. Pratyush and Mohit and Suman. Okay? Now what is this? Three arrays. Three arrays means three levels are represented. Left to right means. This one. For whom is this one? Say level 0. For whom is this one? For level 1. And for whom is this one?"
+  },
+  {
+   "start": 756.4,
+   "end": 782.27,
+   "text": "For level 2. You have to put all of these in a big array and return it. Meaning, if you are in C++, then you have to return vector of, vector of int. If you are in Java, then you have to make a list of list, whatever is there, 2D array, whatever it is. So, you have to make different arrays. For every level, you have to make an array, combine all of them in the last and return it. So, this is the question. Now, see how Q will be used in this. And we will tell you earlier that this is a very non-obvious algorithm. Meaning, this algorithm is not like,"
+  },
+  {
+   "start": 782.27,
+   "end": 809.81,
+   "text": "If you don't know anything about level order, then you can think about it. No, this is a base algorithm. You have to know this. You should know this. According to this, on the basis of this, you can solve the questions of the other level order. So the basic one, look very carefully. We will show you the dry run. It is possible that in the beginning, for 30 seconds or 1 minute, you will feel that what is he doing? Look slowly. It will start making full sense. When we will reach the last level, it will start making sense that okay, how is it happening? What is happening? Why is it happening? Everything will be understood."
+  },
+  {
+   "start": 810.03,
+   "end": 838.26,
+   "text": "So first of all, whatever is the traversal of the level order, make a Q. What will you make? Q. In which one way it will be front and from here it will be back. Okay? Make a level Q. Okay? This Q will contain people of any level at any time. How will it do? I will tell you. Okay. So first of all, what will we do? Assume that you will get root. Root means this. Dadajiwala is called root. This root will remain. I have told you to tell me the level order. Okay. If the root is null."
+  },
+  {
+   "start": 838.26,
+   "end": 855.82,
+   "text": "Root null means there is nothing in the tree. So you don't have to do anything. Return vector is empty. Return it. Root null means there is nothing in the family. The whole family is empty. If the whole family is empty, then what will happen? You have to return empty. Very good. If root null is not there, then you will start. So what will you start? You will start doing your work. First of all,"
+  },
+  {
+   "start": 855.98,
+   "end": 876.78,
+   "text": "What kind of queue is this? What does this queue store? There is a stack of everything, right? What kind of stack is this? There is an integer stack, there is a character stack, there is a string stack. In the same way, what kind of queue is this? Is it an integer queue? Is it a character queue? Is it a queue of something else? So this whole circle, what is called a node?"
+  },
+  {
+   "start": 876.78,
+   "end": 906.38,
+   "text": "which is called a node. We will make a queue of a complete circle. Means while pushing in this queue, we will push the entire circle. We will push only one node. There will be data in the node. Data means the number. And there will be a left and a right in the node. So this queue is a node type queue. Whose type is it? The type of node is Q. Node star. If there are C++, then star. If there are Java, then node. And we will name it Q. We will name it Q. So this type of node means we will put the entire circle in it. Okay."
+  },
+  {
+   "start": 906.38,
+   "end": 930.14,
+   "text": "To start, what will we do? To Dada ji, which is your root, enter the root in this. Enter the root in this because where will the level order start? From the starting level. How many people are there in the starting level? There is only one person, the root. So enter Dada ji in this. Where will Dada ji enter? He will enter from the back. When you write push, then he pushes in the back. So what will Dada ji do? Here."
+  },
+  {
+   "start": 930.14,
+   "end": 960.56,
+   "text": "It will push. Now your grandpa has come here. Okay? He has come. Very good. Now start looking at this Q. Now start your algorithm. So what will we write? That, what will we write? While, while Q not empty. Means, till this Q is not empty, till then we will do something. You don't understand, right? Go and see the whole thing. Try and see. You don't understand, right? There is no harm in seeing. At last, you will understand everything. While Q dot not empty. Okay. Now we will start looking. Now you see, what is in your Q at this time?"
+  },
+  {
+   "start": 960.56,
+   "end": 989.47,
+   "text": "Only Dada Ji. Only Dada Ji means only this level. Only this level. Only this level which is level 0. All the people of level 0 are in this. How many people should be in level 0? One person. There is one person in this. There is one person in this. So at any time, at any time, the size of this queue, the size of this queue, it will tell you that how many people are in that particular level. So first of all, because there should be only one person in level 0 and the size of the queue is also one. How many people should be in that level? There should be one person. So what will we do?"
+  },
+  {
+   "start": 989.47,
+   "end": 1019.02,
+   "text": "We will find the int level size here. That at this particular level, the one we want to see, how many people are there in it? So you will know what is the size of q now. What is the size of q now? How much? 1. Okay. If there is one person in this level, then how much will be the size of its array? The final array that we will make here, how much will be its size? It will be 1. The number of people in the level, the size of the array will be the same to store. We will make a small temporary array here."
+  },
+  {
+   "start": 1019.47,
+   "end": 1049.07,
+   "text": "vector, int, tmp, and what size will it be? Whatever the level size is. So, you have made an empty vector. Now, let's start the level order traversal. How many people are there in this level? One person. Whatever the level size is. Now, there are only one person. Now, the level size is one. What will we do? We will run the loop so many times. We will run the loop so many times. Means, we will do while. One more while in this."
+  },
+  {
+   "start": 1049.23,
+   "end": 1072.21,
+   "text": "Level size minus minus means, what does this mean? This loop will run level size times. Level size is 1 now, so it will run only once. Okay. Now what do you do? Start popping. So first of all, we will do a pop. Node star t is equal to q dot pop. Sorry, not q dot pop. First of all, we will see its front. We will see its front. Front."
+  },
+  {
+   "start": 1072.56,
+   "end": 1101.89,
+   "text": "After looking at the front, we will do q.pop. Now what will happen with this? When you look at the front, then in front, which is in front? Grandpa. So what came in your t? Grandpa. What came in your t? Grandpa. q.pop. Where does q.pop come from? Whatever you get in front, it will pop it. Whatever you get in front, it will pop it. Now what happened? Your grandpa has left this q. Your grandpa has left this q. He has left for now. And what has come in your t? The same grandpa has come. Your grandpa has come in your t."
+  },
+  {
+   "start": 1101.89,
+   "end": 1131.38,
+   "text": "t is equal to dada ji. Very good. t is equal to dada ji has come. Now, what will we do? Because you have to insert left to right, so what will you do? The array that you have made, tmp, so what will we do? tmp dot push back whatever dada ji's data, whatever dada ji's data, so whatever t's data. Means whatever data will be there, whatever number will be there, here dada ji is for example, normally number is there, so t dot data. So in your tmp, in your tmp,"
+  },
+  {
+   "start": 1131.63,
+   "end": 1161.17,
+   "text": "What has come now? Suppose Dadaji has come. It has been stored in TMP. Very good. Is it over? No, it is not over. Now Dadaji, you have done the process. But Dadaji's children will also be there. Dadaji's children will also be there. So now see how the next level will be made. See how the next level will be made. Now we will play one more game. If t.left, means if t.left not equal to null, means this t, this node, this node of Dadaji in t, if its left child is there, if its left child is there,"
+  },
+  {
+   "start": 1161.17,
+   "end": 1186.83,
+   "text": "then push it in the queue. Similarly, if the right of t is not equal to null, which means that it has a right child too, your grandfather or whatever node you have, it has a right child, then push it in the queue. And close this line loop. Now see what happened. Look carefully, the whole game has changed."
+  },
+  {
+   "start": 1186.9,
+   "end": 1215.78,
+   "text": "Let's start. When we came first, Dadaji was in our queue. Our level size was 1. We made a vector of one size in TMP. We have to run this while level size is minus minus only once. How many people are there in this level? One person. So we have to run this once. According to the run, what we did is that we took the front of Q in a node T and popped Q. So Dadaji popped and Dadaji came in T. We pushed Dadaji in the TMP that you made. So your array is ready."
+  },
+  {
+   "start": 1215.78,
+   "end": 1245.54,
+   "text": "Now we will see that if grandpa's left child is there, that means if grandpa's left child is papa, then push him in the queue. Push him in the queue. Where will the push happen? In the back. So what was pushed in your queue first? Papa was pushed. Now we will see that if grandpa's right child is there, that means if grandpa's right child is there, then also push him in the queue. What else was pushed in the queue? Your uncle was pushed. Nothing else was pushed. It was over. Grandpa's was the only one. It was over. Now you have come out of this. Now you have come out of this while. From which while? From this while."
+  },
+  {
+   "start": 1245.54,
+   "end": 1274.27,
+   "text": "came out of this vial. Now, in your tmp, all the people of this level must have been stored. See, in your tmp, grandpa had been stored. Which level is going on now? Level 0 was going on. Grandpa of level 0 has been stored in tmp. Now what to do? In your big array, in your vector of vector array, what do you have to do? In that, what do you have to do? res.pushback tmp. res.pushback tmp. That's it. And this"
+  },
+  {
+   "start": 1274.27,
+   "end": 1291.12,
+   "text": "while loop, which is this while loop? This one, while loop, while q.not empty, we have to close this, we have to close this, now what has come in your rest? In your rest, dadaji has come, so we make a big vector here, your dadaji has come, your dadaji one has come, now see, again,"
+  },
+  {
+   "start": 1291.12,
+   "end": 1314.22,
+   "text": "Now we will come to this while loop. Is your queue empty? No, your queue is not empty. There are two people in your queue. Earlier there was one in your queue. Now there are two people in your queue. Papa and Chacha. Papa and Chacha. Coincidentally, see what is this Papa and Chacha? There are people of this level. There are people of this level. So we had said that when you remove this level size, then all the people should be in that level. This queue keeps everyone. So see."
+  },
+  {
+   "start": 1314.22,
+   "end": 1342.59,
+   "text": "The work of level 0 is done. But how many people should have been in level 1? 2 people, dad and uncle. Is there dad and uncle in your queue? Yes, there is dad and uncle in your queue. Why does this queue work like this? Look at another cycle, it will be more clear. Now, when you make level size, then what will come here? 2, not 1. Now there are dad and uncle, so what will be the level size? 2. Now, because there should have been 2 people in this level, then how many size temporary arrays will you make? 2 size. So what will be your TMP? 2 size of 1."
+  },
+  {
+   "start": 1342.59,
+   "end": 1366.45,
+   "text": "Your TMP is an array of two sizes. And your TMP is an array of two sizes. Now, how many times will we iterate? Level size minus minus. Level size minus minus means 2 minus minus. Means we will do this twice. How many times will this while loop work? Now it will work twice. Because there are two people in this level. Papa and Chacha. Now, what will happen?"
+  },
+  {
+   "start": 1366.45,
+   "end": 1395.78,
+   "text": "Node T is equal to, now run it, let's run it twice, come. First of all, node T is equal to Q.front. Q.front means, who is sitting in front? Papa. Papa is sitting in front. So come, by updating T, what should we write here? Hey, by updating T, what should we write? Papa. By updating T, we wrote papa. Very good. Q.pop. Q.pop means, from where will it pop? It will pop from front. Who is in front? Yes, this papa. Remove this. Remove this. Okay. Very good, removed."
+  },
+  {
+   "start": 1395.78,
+   "end": 1424.46,
+   "text": "Now, now, now. What will we do? tmp.pushback, t's data. Means, whatever data papa has, he has to push back in tmp. So, just for understanding, you have pushed back papa in tmp. Very good. Now, same thing. If papa's left child is not equal to null, if papa's left child is not equal to null, then why should I push him? But, do you see papa's left child? No, no, no. No, no, no. No problem, no problem. Do you see papa's right child? Yes, papa's right child is visible. What is visible? Pratyush."
+  },
+  {
+   "start": 1424.46,
+   "end": 1453.07,
+   "text": "What do we have to do? Q dot push Pratyush means Q dot push. Where will the push come from? From the back. So Pratyush got pushed. Pratyush got pushed. Look at this. What happened to Pratyush? It got pushed. Okay? It got pushed. Very good. Now, how many times has it run? How many times has this while loop run? Once. It ran for papa. It has to run twice. Because how many times does it run? Level size. It will run for all the people in that level. Run it one more time. Do the same thing. T is equal to Q dot front. Who is in front?"
+  },
+  {
+   "start": 1453.07,
+   "end": 1480.26,
+   "text": "Very good. Very good. TMP.pushback, tika data. Very good. TMP.pushback, tika data."
+  },
+  {
+   "start": 1480.26,
+   "end": 1510.16,
+   "text": "Is Chacha's left child not equal to Nal? Yes, Chacha's left child is not equal to Nal. Is Chacha's left child? Is Chacha's left side? Push him in the queue. Push him in the queue. Who? Where do you push Mohit? In the back. Where do you push Mohit? In the back. In the back. Yes. Is Chacha's right child? Yes, Chacha's right child is also there. Suman, where do you push him? Push him in the back. Where do you push Suman? Push him in the back. Now see, your queue is looking like this."
+  },
+  {
+   "start": 1510.16,
+   "end": 1539.54,
+   "text": "The work is done. The uncle has also moved. Done. Has this level size loop worked twice? Yes, it has worked twice. It worked for papa. It worked for uncle. Very good. What has been stored in your TMP? See. Papa and uncle. On that level. On this level. We were playing on this level. Papa and uncle. Both have been stored in this. From where? Left to right. What will we do? Rest.pushback. TMP. So what else has come in rest? Papa and uncle have also come. Papa and uncle's array has come. Similarly. Finished."
+  },
+  {
+   "start": 1539.54,
+   "end": 1567.44,
+   "text": "Now, whose loop is this? Q is empty. Is Q empty? No, Q is not empty. There are three more people in Q. And, coincidentally, who are the three people in this Q? All the people of the next level will be found in this Q. All the people of the next level will be found in this Q. That's why, that's why, this level size, how many people are there in that level to process? How many people are there in that level to process? This tells you. Do the same thing again. Do the same thing again."
+  },
+  {
+   "start": 1567.54,
+   "end": 1596.59,
+   "text": "Take out the level size. How much is the size of Q? 3. 3. Means in this level, the level at which we are now, how many people are there to process? 3 people. 3 people. Who? Pratyush, Mohit, Suman. All are in Q. Very good. Vector in TMP. If there are 3 people in this level, then how many size arrays will be made? 3 size arrays will be made. So TMP is made. How many size? 3 size. Do the same thing. Level size minus minus means how many? 3 times this loop will run. 3 times this loop will run."
+  },
+  {
+   "start": 1596.59,
+   "end": 1618.06,
+   "text": "Come on, run it. Run it for the first time. t is equal to q dot front. Who is the man at the front? Pratyush is at the front. Very good. What did t become? Pratyush. What did t become? Pratyush. And q dot pop. Pop means whatever is at the front. Remove it. Whatever is at the front, remove it. Who is at the front? Pratyush."
+  },
+  {
+   "start": 1618.06,
+   "end": 1632.72,
+   "text": "very good now what we have to do tmp.pushback tika data tmp.pushback tika data"
+  },
+  {
+   "start": 1632.72,
+   "end": 1660.27,
+   "text": "Now, do you see any left child of Pratyush? No. Do you see any right child of Pratyush? No. So, Pratyush was deleted, but no push was made because there is no child of Pratyush in the next level. So, no push was made. How many times did level 5 run? Once. It has to run 3 times. What will happen to T? Front of Q. Who is in front of Q now?"
+  },
+  {
+   "start": 1660.27,
+   "end": 1689.94,
+   "text": "mohit mohit mohit mohit mohit mohit mohit mohit mohit mohit"
+  },
+  {
+   "start": 1689.94,
+   "end": 1715.79,
+   "text": "Don't push it. Can you see Mohit's right child? No, you can't see it. So don't push it. Nothing happened. Mohit got deleted. Nothing happened. No problem. What was the level size? 3. How many times have you run it? 2 times. Run it for the third time. Run it for the third time. The more people are in that level, the more this level size loop runs. Run it for the third time. Do the same thing. t is equal to q.front. Who is in front? Suman. Suman is in front. So what did t become? t became Suman."
+  },
+  {
+   "start": 1715.89,
+   "end": 1740.8,
+   "text": "Alright. Q.pop. Pop from the front. What do you see in the front? Pop, pop, pop. Your Q is empty. Now, what do we have to do? tmp.pushback. Suman. tmp.pushback. Suman. So, Suman is pushed. Very good. Do you see Suman's left child? No, no. So, we won't push. Do you see Suman's right child? No, no. So, we won't push. Now, Suman is also popped. No push."
+  },
+  {
+   "start": 1740.8,
+   "end": 1763.09,
+   "text": "Now it is done. Has this been done three times? Yes, it has been done three times. Remember, how many times? It has been done for Pratyush, for Mohit, and for Suman. Your TMP is ready. It is over. Rest.pushback, TMP. What is there in TMP? These three. So in your rest, another array has come in which Pratyush is there, Mohit is there, and Suman is also there. And Suman. Another array has been pushed."
+  },
+  {
+   "start": 1763.09,
+   "end": 1792.82,
+   "text": "Now, we come back to this. Is your queue empty? Yes, your queue is empty. See, there is nothing in the queue. When there is nothing in the queue, what does it mean? That all the levels of the family are over. How many levels were there in the family? Three. First, grandpa's generation. Then, papa and chacha's generation. Then, Pratyush, Mohit and Suman's generation. So, did we cover all three? Yes, we covered all three. Now, there is no generation left. So, the work is over. What will we do in the last? Here, return. Return."
+  },
+  {
+   "start": 1792.88,
+   "end": 1818.32,
+   "text": "Let's see what's in res. First of all, Dadaji's generation, L0. Then Papa and Chacha, L1. At last, Pratyush Mohit Suman's, L2. So you can see what's happening. How did it happen? It was very important to explain this by dry-running because you won't be able to think of this algorithm. This algorithm is the base algorithm. Any problem of level order follows this. So first of all, we will summarize you again. First of all, what did we do? We made a queue. What did we push in it?"
+  },
+  {
+   "start": 1818.32,
+   "end": 1847.36,
+   "text": "Dadaji means root. After that, how long did we loop? Until this queue is empty. After that, how many people are there at that level? That tells us the size of the queue or the level size. The more people there are, the more times you have to run this while level size minus minus and make a TMP in which you have to make an array of that level size. Every time, every time when this level size runs, you will see the front of the queue, you will pop the queue. After that,"
+  },
+  {
+   "start": 1847.36,
+   "end": 1876.86,
+   "text": "He will push whatever has come in his array. Now, if Dadaji has a left son, then push him in the queue. If there is a right son, then push him. Otherwise, let it be. When this whole thing is done, then you can add that TMP to your rest. You can add that TMP to your rest. So, what happens with this? First of all, you see Dadaji. Dadaji pushes two people. Who? Papa and Chacha. Now, you see Papa and Chacha together. You see both of them. So, when you see Papa, then what does Papa push in the queue?"
+  },
+  {
+   "start": 1876.86,
+   "end": 1906.34,
+   "text": "Pratyush. And if we look at Chacha, then what does Chacha push? Mohit and Suman. Papa and Chacha look at both. Next time, because there are three kids, there are three kids in generation 3, so let's look at all three of them together. Now Pratyush pushes who? Nobody. Who does Mohit push? Nobody. Who does Suman push? Nobody. After that, your queue gets empty. If, let's say, Mohit had a child, if Mohit had a child, then Mohit would also push someone. Mohit, let's say,"
+  },
+  {
+   "start": 1906.34,
+   "end": 1931.98,
+   "text": "Arun would have been pushed here. So you would have run it one more time. Now how many children would have been there in the last level? Only Arun. Only Arun. Because Mohit had one child. So how many times would this generation have run? Once. So where would Arun have run? Arun would have come in your area. But who would Arun have pushed? No one. So then your queue would have been empty. So when your queue gets empty, you understand that the whole generation is over. The whole family tree is over. So this level order is done like this. Level order will remain the same."
+  },
+  {
+   "start": 1931.98,
+   "end": 1961.44,
+   "text": "Where will the question change? The question will change like this. Now here you are told to do level order traversal. And in every level, in every level, do left to right. Do left to right in every level. What does left to right mean? In the first level, if there is only one, then do it. In the second level, there are two people. Papa and uncle. Write them left to right. Papa first, uncle later. In the third level, there are three people. So write them left to right. Pratyush Mohit Suman. So this is the question. What can you say to this? Write right to left in every level."
+  },
+  {
+   "start": 1961.44,
+   "end": 1989.5,
+   "text": "Write right to left in every level. Level 1 will be the same, Dadaji. In level 2, write Chacha and Papa. Write right to left. In level 3, write Suman Mohit Pratyush. Write right to left. This is one way. One more question can be asked. Zigzag. What does zigzag mean? Zigzag means, in level 0, write normal left to right. In level 0, Dadaji is alone. So, it doesn't mean left to right. Level 1 will say, write right to left. In level, write Chacha and Papa. Chacha and..."
+  },
+  {
+   "start": 1989.5,
+   "end": 2018.5,
+   "text": "Write Papa. Write this. In level 2, do it again. Come to left to right. Now write Pratyush, Mohit and Suman. In level 0, Dadaji. Left to right. In level 1, do it again. Right to left. Meaning Chacha and Papa. So this is right to left. In level 2, do it again. Come to left to right. Pratyush, Mohit, Suman. So this is a question. I am not making it up. This is a question of zigzag order. So we are giving you the question of zigzag order in the homework. You will have to do very few code changes. Give it in zigzag homework or make it up."
+  },
+  {
+   "start": 2018.5,
+   "end": 2054.08,
+   "text": "Let's make it. We hope that you have understood the level order. So here is the level order code. And this is how the level order is. Everything remains the same. Now we will tell you about zigzag. What is the meaning of zigzag? What is the meaning of zigzag? We will tell you. The meaning of zigzag is that, now assume that it is like this. Grandfather, father, uncle. One right child of father is Pratyush. One right side of uncle is also Mohit. Okay?"
+  },
+  {
+   "start": 2054.08,
+   "end": 2080.83,
+   "text": "Ratyush's left is Suman. Means she is Ratyush's daughter. And Mohit's son is Rohan. This is your family tree. What you have been told is to order at zigzag level. Make its array like this. In the first level, it is Dadaji. So there is no debate in that. Dadaji is alone. So Dadaji will remain. In the second level, write it right to left. Means in the second level, right to left. Means uncle and papa should be there. Uncle and papa should be there."
+  },
+  {
+   "start": 2080.83,
+   "end": 2110.35,
+   "text": "In the third level, again come to the left to right. Alternate again. It means there should be Pratyusha and Mohit. Pratyusha and Mohit. In the next level, come back to the right to left. Alternate again. Left to right, right to left. Left to right, right to left. In the next level, because you have to write right to left, then do Rohan and Suman. Rohan and Suman. Okay, so what happened? Whose is this? L0. Whose is this? L1. But upside down. Right to left. Whose is this? L2. Left to right. Whose is this? L3. Means right to left. Okay, do this."
+  },
+  {
+   "start": 2110.35,
+   "end": 2137.22,
+   "text": "We have to do the same thing. One thing will change. What will change? We will take a variable. Everything will be the same. The entire code will be the same. Each and every line will be the same. But, we will take one. How do you have to start? What do you have to do in the first level? In the first level, it is said that starting from left to right. Meaning, in the first level, you do left to right. After that, you keep alternating. We will do one thing. That boolean, we will do a left to right."
+  },
+  {
+   "start": 2137.22,
+   "end": 2164.72,
+   "text": "Left to right is equal to 1. Left to right means we have to do left to right in this level. We have to do that in the first level. Okay. Same. Q dot push, root. Q dot push, root. Okay. Let's make a Q and show. Make a Q. Make a Q and show. This became Q. So what was pushed in the beginning? Grandpa. What was pushed in the beginning? Grandpa. This is your front. And this is your back. Okay."
+  },
+  {
+   "start": 2164.75,
+   "end": 2195.04,
+   "text": "Let's run it. So, is Q empty now? No, it is not empty. Come. So, what is the first level size? Q's size. So, the level size is 1. Okay. Let's make a TMP too. TMP's array is made, whose size is 1. In this level, only Dadaji is there, right? Okay. Now, what will we do? We will take two indexes. What will we take? We will take index. Int. First index is equal to 0. Now, for whom is this index? Where to start filling TMP? See, you will know. You will know. Int. We will take one last index, which will be level size."
+  },
+  {
+   "start": 2195.04,
+   "end": 2222.48,
+   "text": "Minus 1. Level size minus 1. Okay. We will do the same thing. But this line where we have tmp.pushback. This green line. Now what did it do? It automatically did left to right. Left to right. Means when you do this, left to right will work. Everything will work left to right. Okay. So what will we see in this? Going inside, in level size. If left to right is there. If left to right is there."
+  },
+  {
+   "start": 2222.48,
+   "end": 2248.94,
+   "text": "equal equal to 1 hai, agar left to right hai, tab to simple chalega, tmp dot pushback, jo bhi, t ka data, matlab ye to normal chalega, ye normal chalega, lekin else, else, else, agar right to left karna hai, right to left karna hai, to hum log kya karege, tmp last, iska last index is equal to t dot data, t dot data, and, and, and, last,"
+  },
+  {
+   "start": 2248.94,
+   "end": 2277.7,
+   "text": "Minus minus and last minus minus. We also take this on first. We don't push back. If left to right is 1, then what will we do? That tmp first is equal to t.data and first plus plus. See what happened. See what happened. You will think, oh my god, what have they written? They haven't written anything. They haven't written anything. Let me tell you. Let's hope that in code, there are changes in code. Let me tell you how to derive it."
+  },
+  {
+   "start": 2277.7,
+   "end": 2307.2,
+   "text": "In the very beginning, let's make our Q, okay? Let's make our Q in which Dadaji will be there. Dadaji will be there, okay? First of all, what will be the level size? 1 will be there. How many size of array will TMP be made? 1 size of array will be made. First, first index means, what is the first index of TMP? It is 0. Last index, where will be the last index of this TMP? Level size minus 1, because no matter how many size of this vector it is, then 1 smaller than that, so its last will also be 0. Okay."
+  },
+  {
+   "start": 2307.2,
+   "end": 2335.9,
+   "text": "Now, when we fill in this, what will happen? What will be your level size? Once, your T will become Dadaji. Your T will become Dadaji and your Dadaji will fly away from here. Dadaji has flown away from here. Now, what is left to right? Now, in the beginning, in the first level, left to right is true. Left to right is true or 1? It is 1, right? It is 1. So, if it is 1, then it is straight. 1 means to fill in normally. So, what will we do? TMP first."
+  },
+  {
+   "start": 2335.9,
+   "end": 2361.6,
+   "text": "tmp first is equal to dada ji. tmp first is equal to dada ji and first plus plus. First plus plus. So, what is first? Zero. So, what will be tmp? dada ji. tmp zero is equal to dada ji and first is done. So, one is done in this. So, in your rest, the first array is stored, dada ji. It is not so clear in this because it is only one. See in the next. But, but, in the next level, in the next level, what do you have to do? Alternate. Now, it was left to right one. Means, left to right had to be done."
+  },
+  {
+   "start": 2361.6,
+   "end": 2391.92,
+   "text": "In the next level, you have to make left to right equal to 0. So, when this level size loop ends here, after this, what will we do? Left to right is equal to 1 minus left to right. 1 minus left to right. This will swap left to right. How does this work? This is a small trick. If this left to right is 1, which it is, then when we write this, left to right is equal to 1 minus left to right, then what will be left to right?"
+  },
+  {
+   "start": 2391.92,
+   "end": 2420.94,
+   "text": "What will be left to right? 1 minus 1, 0. See, it's swapped. If this left to right was 0 from the beginning, if this left to right was 0 from the beginning, and we say that left to right is equal to 1 minus left to right, then what would be your left to right new one? 1. Because what is 1 minus 0? 1. So, this is how it is swapped. You can swap any binary thing like this. If you write left to right is equal to 1 minus left to right, then if it was 1 before, now it will be 0. If it was 0 before, now it will be 1. So, this is swapped."
+  },
+  {
+   "start": 2421.01,
+   "end": 2450.74,
+   "text": "So next time, when we come to the next level of Dada Ji, what will happen in the queue? What will be stored in the queue first? Papa and Chacha. Because we will do it. Because we will do it. I am just showing you how it will work. Now come, we have to do the same thing. What will be your level size? 2. What will be your level size? 2. What will be your TMP size array? 2 size. Because there are 2 people. 2 size. 0 and 1. Okay. First is 0. Last is equal to level size minus 1. What is 2 minus 1? 1."
+  },
+  {
+   "start": 2450.74,
+   "end": 2477.15,
+   "text": "What is 2 minus 1? 1. Okay? Come. First of all, now it has to run the level size twice. So first of all, what will be stored in t? Papa. What will be stored in t? Papa. And pop papa. Now, now we will see that if left to right is 1, if left to right is 1, then now left to right is not 1, now left to right is 0 because we alternate every time. We used to do this on left to right 1. But if left to right is 0, then what will we do? tmp"
+  },
+  {
+   "start": 2477.15,
+   "end": 2502.21,
+   "text": "We will start filling it with the last index. Last index is equal to t.data. Meaning, what is last? 1. Meaning, we will put papa in tmp's 1. And we will make the last minus minus. We will make the last minus minus. Now, what has become last? Last has become 0. Now, if this level size was 2, then it will work twice. Now, what will become t? Chacha. What will become t? Chacha. What has become t? Chacha. And chacha flew away from here."
+  },
+  {
+   "start": 2502.21,
+   "end": 2528.83,
+   "text": "Again, we will see if left to right is 1, which is not, now it has become 0. Left to right 0 means you have to fill right to left. We will do the same thing. We will fill t data at the end of tmp. We will fill t data at the end of tmp. What has become last? 0. So we have filled its data at the end of tmp. And last is minus minus, so now last has become minus 1. And your level size was 2, so this is over. See what array has been made here. Uncle and papa. Not papa and uncle, uncle and papa. Because we are filling the array from last."
+  },
+  {
+   "start": 2528.83,
+   "end": 2548.13,
+   "text": "The only way to fill the array is to decide left to right or right to left. In Q, it was the same. In Q, first there was papa and then there was chacha. Now if you fill TMP from the beginning, then obviously papa and chacha will come. If you start filling TMP from the end, then chacha and papa will come. So this is just a trick. This is just a trick that how did you fill TMP? That is the trick."
+  },
+  {
+   "start": 2548.13,
+   "end": 2576.7,
+   "text": "If you want, then you can also make a normal TMP. And if that level is not left to right, but right to left, then reverse the TMP. Meaning, you make normal, like you made in the previous one, then you make it of papa and chacha only. And if you get to know that it is right to left, which you will get to know from this boolean, then you reverse it. Then it will become chacha and papa, but it will take a little more time. It is not that good. You can do better than that, that fill the TMP. If left to right is equal to true, then fill it first."
+  },
+  {
+   "start": 2576.7,
+   "end": 2592.86,
+   "text": "If left to right is equal to false, then fill it with last. There is no rocket science in this. It is a small trick. So this is the problem of level order. Same program will be there, same structure. There are few things. How are you filling it? How are you filling TMP? There will be some changes in that."
+  },
+  {
+   "start": 2592.86,
+   "end": 2618.67,
+   "text": "So, please go and do these two questions. Level order is the most important concept in trees. And in the future, it also works in graphs and BFS. So, please understand this well. If you don't understand, then see. But we don't think that someone has not understood. According to me, I am sweating a lot. After seeing the dry run, you must be able to understand that yes, this happens at every level. How do you fill TMP? That depends on question to question. Left to right, do it like this."
+  },
+  {
+   "start": 2618.86,
+   "end": 2648.21,
+   "text": "Suppose the question is that you have to do right to left in every level. So this last one, you do this. You don't need to check anything. You have to fill right to left in every level. So fill it like this every time. You have to fill left to right in every level. Fill it like this in every level. You have to fill alternate. So see what is the rule in that level. Fill it according to that. So you get to know from this. So the video has become a little long. But it was necessary. It was necessary to explain this much. If we had explained it like this, then it would not have been understood. It would have been understood by dry run. So please, this is your code."
+  },
+  {
+   "start": 2648.27,
+   "end": 2678.75,
+   "text": "This is your normal level order code. What will be the change in this? Instead of this line, instead of this line, what will you write? If left to right, if you want to fill left to right, then how will you fill it? Put it in the first of TMP. Put the data of T in the first. And make the first plus plus. If this is not the case, if this is not the case, then put it in the last of TMP. If you want to fill right to left, sorry, you put it in the last of it. Put the data of T."
+  },
+  {
+   "start": 2678.75,
+   "end": 2708.29,
+   "text": "And minus the last one. Meaning? Start from the back. If you fill from the back, then automatically it will be right to left. In Q, the store is left to right only. In Q, how are all the children of every level storing? Left to right. Meaning? In Q, we are storing normally. In Q, we first stored Dada. After that, we stored Papa and Chacha. Meaning, we stored left to right only. After that, we stored Pratyush, Mohit and Suman. So, in Q, it is normally stored. How are you filling in TMP? He will decide whether you will fill left to right or right to left. Did you understand? Get into your mind."
+  },
+  {
+   "start": 2708.29,
+   "end": 2728.3,
+   "text": "Solve both the questions. We say solve level order 2 as well. There are three questions. One is level order, one is exact level order, and one is level order 2. We say solve all three questions and show us how much material you have. We will meet tomorrow. Let's see. It is the season of Holi. We will meet tomorrow or day after tomorrow. Let's go."
+  }
+ ]
+}

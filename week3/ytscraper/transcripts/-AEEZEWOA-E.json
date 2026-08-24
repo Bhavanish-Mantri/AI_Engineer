@@ -1,0 +1,379 @@
+{
+ "video_id": "-AEEZEWOA-E",
+ "title": "Master Bellman-Ford: Cheapest Flights Within K Stops",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1954,
+ "segments": [
+  {
+   "start": 0.08,
+   "end": 14.8,
+   "text": "Hello kids, welcome. Today my voice is a bit hoarse. I am feeling a bit sick. Look, we have read a lot of things in the graph. A lot of things means we have read a lot of algorithms and various things."
+  },
+  {
+   "start": 14.8,
+   "end": 34.8,
+   "text": "Today's question is a very famous question. We have been asked this question in many interviews and many of my friends have also been asked this question. One of the most famous question in graph is Cheapest flight within K-Stops. There are many ways to solve this question but today we are going to solve it in the most intuitive way."
+  },
+  {
+   "start": 34.8,
+   "end": 62.82,
+   "text": "you will understand why we are doing this and why we are doing this and it will be very connected whatever we have studied is the same there is no such out of the world question whatever you have studied is the same here nothing is very different ok see what you have to do cheapest flighting case stops what does this mean let me tell you first of all what will be given to you you have a lot of flight station what does flight station mean suppose 0 is your station or airport 1 is your airport"
+  },
+  {
+   "start": 62.82,
+   "end": 89.26,
+   "text": "1 airport is 2 and 1 airport is 3. There are 4 types of airports. You will also be given edges. Basically, you will be given edges only. Suppose, one edge goes from 0 to 1. And you will be given a directed weighted graph. Obviously, if you want to find the distance, there will be weight in it. And you will be given a directed graph. Meaning, if there is an edge from 0 to 1, then it is 0 to 1. It is not 1 to 0. Is it good? Okay."
+  },
+  {
+   "start": 89.26,
+   "end": 118.02,
+   "text": "Let's assume that you have one more edge from 0 to 2 and one edge from 0 to 3. And there is one edge from 3 to 1 and one edge from 2 to 1. This is your airport. Let's assume for a while that the weight of 0 to 1 is 100, which means 0 to 1 is 100 km away. 0 to 2 is 20 km away. 0 to 3 is 20 km away. 3 to 1 is 50 km away."
+  },
+  {
+   "start": 118.02,
+   "end": 148.05,
+   "text": "2 to 1, how far is it? Let's assume it is 30 km away. This is your graph. You will be given two more things. First of all, you will be given a source. What is the source airport? Let's assume that you have been given source airport 0. Which means, where will you start from? From the 0 airport. You will also be given a destination airport. Destination means where you have to reach. Let's assume that you have been given destination 1. That you have to reach to 1. And, one additional thing which we have not seen till now. These k stops,"
+  },
+  {
+   "start": 148.05,
+   "end": 175.5,
+   "text": "the value of K will be given. Let's assume that the value of K is given as 1. What is the value of K? It is 1. Now let's understand the meaning of these things. What is the meaning of K? The meaning of K stops is the same as when you travel by plane. If you want to go from Delhi to Ranchi, then many times you go via Jaipur. There is a stop in Jaipur."
+  },
+  {
+   "start": 175.5,
+   "end": 202.08,
+   "text": "If you go from Jaipur to Ranchi, what do we call it? It's a one-stop flight. That's what they say. Whenever you travel by plane, let's say you have to go to Ranchi from Delhi. It will be like this. Let's say you go directly from Delhi to Ranchi. Delhi to Ranchi is a direct flight. What is it called? It is called non-stop. It is called non-stop flight. It means you are going directly. There is no stop in between. There is no stop in between. But, let's say you first go to Bombay from Delhi."
+  },
+  {
+   "start": 202.08,
+   "end": 230.34,
+   "text": "In Bombay, you halt your plane and then you go back to Ranchi from Bombay. What do we call this? One stop plane. Why? Because you have taken a stop in Bombay. Suppose you go to Bangalore before Delhi. You come back to Bombay from Bangalore. You go to Ranchi from Bombay. What do we call this? We call this a two stop plane. It means you had to go to Ranchi from Delhi. You stopped at two places in between. You stopped in Bangalore and also in Bombay."
+  },
+  {
+   "start": 230.34,
+   "end": 257.01,
+   "text": "This is called 2-stop plane. You are given the same stop here. You are given the value of k here. What does k mean? If your k is given as 1, for example, you can take 1 stop in your journey at max. At max, it is not necessary to take 1 stop. But if you want, you can take 1 stop. What does 1 stop mean? Suppose you have to go from 0 to 1."
+  },
+  {
+   "start": 257.01,
+   "end": 280.11,
+   "text": "If you want to go from 0 to 1 directly, you can go directly. No problem. What is this? This is a non-stop route. k is equal to 0. But if this is 1, you can do this if you want. You can go from 0 to 2, 2 to 1. Or you can go from 0 to 3, 3 to 1. Both the routes are one-stop routes. Now using all these things, if you want, you can go directly to 0 stop."
+  },
+  {
+   "start": 280.11,
+   "end": 293.6,
+   "text": "You can go from 2 to 1 or 3 or whatever you want within K. You have to tell the shortest distance of 0 to 1. What will be the shortest distance possible? On the condition that you are at max."
+  },
+  {
+   "start": 293.6,
+   "end": 319.34,
+   "text": "You can take k stops. At max, how many stops can you take? You can take k stops. Meaning, suppose if you were given k is equal to 0. What would you have given? 0. What does 0 mean? Non-stop. Meaning, you have to go directly. You cannot stop anywhere else. So, your answer would obviously be 100. Why? Because when you cannot take any stop, then you will have to go directly from 0 to 1. Meaning, it is not good that you cannot explore anywhere else. You have to go from 0 to 1. Okay?"
+  },
+  {
+   "start": 319.34,
+   "end": 347.39,
+   "text": "If K is equal to 1, then what would be your answer? 0 to 1 is a possibility. It is not written that you have to take it. No. At max, you can take it according to your convenience. If you wanted, you could have taken 0 to 1, which would have taken 100 km. There is one more route, 0 to 2 and then 2 to 1. In this, 20 plus 30 is 50 km. There is one more route, 0 to 3, 3 to 1. In this, 70 km. So, what would be your answer?"
+  },
+  {
+   "start": 347.39,
+   "end": 374.5,
+   "text": "50 km. Why? Because you can take this route and decide your distance in 50 km. When? When your k is equal to 1. Now k2, k3, k4 can also be done but nothing will happen. Even if k2 is done, your answer will remain the same. Even if k3 is done, your answer will remain the same. So this is your question. You are given source and destination. A graph is present in front of you. You have to find the shortest path from source to destination. Means you have to find the shortest distance. But"
+  },
+  {
+   "start": 374.5,
+   "end": 402.98,
+   "text": "You have one more thing that you have given K means at max you can take K stops. How many stops can you take at max? You can take K stops. Notice one more thing here. If we start understanding it, then we will open it slowly. But from above, a big question tells you that at max you can take K stops. Now tell me what is the shortest distance? Now let's start explaining this question to you and tell you how this question is made from what we have read."
+  },
+  {
+   "start": 402.98,
+   "end": 422.58,
+   "text": "Remember this diagram. You have already seen this diagram in this graph series. In which lecture? In Bellman-Ford's lecture. In Bellman-Ford's lecture, to explain to you why Bellman-Ford is used and how Bellman-Ford works, we used this exact root. Assume that you have this exact root in this question."
+  },
+  {
+   "start": 422.58,
+   "end": 442.94,
+   "text": "So how did we start explaining Bellman fort to you? We told you that what did you see in Bellman fort? That in this graph, this whole graph, suppose this is also the route of your airport. Which is the most complex city? What was the meaning of complex city? Which city has the most roads to reach? Which city has the most options to reach? We came to know that Delhi"
+  },
+  {
+   "start": 442.94,
+   "end": 472.72,
+   "text": "If you want to go from Bangalore to Delhi, then you have a lot of options. What are the options? First, you can go directly from Bangalore to Delhi. We have written it here. You can go from Bangalore to Ranchi and from Ranchi to Delhi. We have written it here. You can go from Bangalore to Ranchi, from Ranchi to Kolkata and from Kolkata to Delhi. We have written it here. You had one more option. You can go from Bangalore to Ranchi, from Ranchi to Kolkata, from Kolkata to Bombay and from Bombay to Delhi. This was also an option. What was this option?"
+  },
+  {
+   "start": 472.72,
+   "end": 502.4,
+   "text": "This was the option. We also wrote it down. So to come to Delhi, how many maximum things can you have? There can be 4 types of routes. And because we also said that how many total number of fairs are there in this? 1, 2, 3, 4, 5. There are 5 cities, right? So the biggest route that can be possible to come to Delhi, right? Which is the biggest route you can see? This route. How many edges will there be in it? Maximum 4 edges will be there. How many edges will there be? 4 edges. Why? Because see, what can be the maximum route? That you can visit all the cities."
+  },
+  {
+   "start": 502.4,
+   "end": 516.24,
+   "text": "Go to Bangalore, Ranchi, Kolkata, Bombay, Delhi, all of them. If you go to all of them, how many edges will you get? 4 edges. Because if you go to 5 cities, you will get 4 edges."
+  },
+  {
+   "start": 516.4,
+   "end": 539.42,
+   "text": "Can there be a bigger route than this? Absolutely not. Someone said that we will need 6 edges to go to Delhi. No way. 6 edges means that you are repeating some city. You might be repeating that you went from Bangalore to Ranchi, from Ranchi to Kolkata, from Kolkata to back to Ranchi. Then why did you come back from Kolkata to Ranchi? Go properly. The more you go back and forth, the more..."
+  },
+  {
+   "start": 539.42,
+   "end": 565.07,
+   "text": "The distance will increase, the stoppage will increase, so there is no point in that. When you want to know about the distance, you can't come to Delhi with more than 4 edges. When the number of cities is 5, then the maximum route can be 4 edges. There can't be a bigger route than this. You can't do anything. After this, what did we start doing? There are 4 routes. After that,"
+  },
+  {
+   "start": 565.07,
+   "end": 592.86,
+   "text": "We started doing relaxation. What did we start doing? We started doing relaxation. And how many times did we start doing relaxation? 4 times. Why 4 times? Because n was 5. So we relaxed edges 5 times. And we saw that when you do relaxation 4 times, you will get the answer for this too. First you will get this, then this, then this, and in the end you will get this too."
+  },
+  {
+   "start": 592.86,
+   "end": 618.21,
+   "text": "Now, connect this with this question. If you go directly from Bangalore to Delhi, then how many stops do you have to take? K is equal to zero. This means that there is zero stop. This means that when your Delhi is only one edge away from your source, then you are taking zero stops. You are taking a non-stop flight. Coming directly from Bangalore to Delhi means that you are taking a non-stop flight. Your K is zero."
+  },
+  {
+   "start": 618.21,
+   "end": 645.5,
+   "text": "If you are going from Bangalore to Ranchi and from Ranchi to Delhi, then how many stops are you taking? K is equal to one stop. Two edge means one stop. Bangalore, Ranchi, Kolkata, Delhi, how many stops will it take? K is equal to two stops. Bangalore, Ranchi, Kolkata, Bombay, Delhi, how many stops will it take? K is equal to three stops. Now K is equal to four stops, it will remain the same, there will be no change. What do you understand?"
+  },
+  {
+   "start": 645.5,
+   "end": 671.1,
+   "text": "In Bellman Ford, when you did one relaxation, who gave you the answer? This man. In two relaxation, who gave you the answer? This man. In three relaxation, who gave you the answer? This man. In four relaxation, who gave you the answer? This man. What does it mean?"
+  },
+  {
+   "start": 671.1,
+   "end": 696.56,
+   "text": "Suppose in this question, you are given k is equal to zero. So what does that mean? If you are given k is equal to zero, then you should not be concerned about the weight of all these roots. k is equal to zero means non-stop flight, means you need maximum one edge. How will you get the answer to that? As soon as you do relaxation once, you will get the answer."
+  },
+  {
+   "start": 696.56,
+   "end": 724.56,
+   "text": "In Bombay to Delhi, in K is equal to zero stop, you will get its answer by doing relaxation for the first time. So how many times should you do relaxation? Do one relaxation and your work is done. What is your work? It is done. If you are given K is equal to one, that means you can take one stop. How many stops can you take? One stop. So you also need its answer. How many times you will relax, you will get its answer. If you relax twice, you will get its answer."
+  },
+  {
+   "start": 724.56,
+   "end": 750.06,
+   "text": "If you have given k is equal to 2, you need this, you also need this answer. How many times did you get the answer to relax? If you relax 3 times, you will get the answer to k is equal to 2. If you have given k is equal to 3, how many times did you get the answer to relaxation? If you relax 4 times, you will get the answer to k is equal to 3. Did you see any pattern or not? Whatever k is given, whatever k is given,"
+  },
+  {
+   "start": 750.06,
+   "end": 776.3,
+   "text": "K plus 1 times K plus 1 times Relaxation in Bellman Ford K plus 1 times Relaxation in Bellman Ford You will get the answer Usually Usually in Bellman Ford Again I am saying that if you have not watched Bellman Ford's video You will not understand anything Please go and watch Bellman Ford once If you have forgotten then revise it Usually How many times did Bellman Ford relax? N minus"
+  },
+  {
+   "start": 776.3,
+   "end": 806.21,
+   "text": "One times. And he used to do it once to check. In the end, one more thing about which? Negative cycle. That's a different thing. But usually, how many times did Bellman-Ford relax? N minus one times. Because he needed the answer of these four. Because it could be so complex. How many times do you have to relax? K plus one times. You have to relax K plus one times. Why? Because if you have K is equal to one, then you just have to use these two. You don't have to use the lower one. There will be a short distance."
+  },
+  {
+   "start": 806.21,
+   "end": 827.76,
+   "text": "It is not allowed. If K1 is given, then these two people are not allowed. No matter how much distance it takes, you can't go. K1 means you have to go in one stop. Either you go directly or you go in one stop. You don't have to take more than one. If you run Bellman Ford, how many times? How many times that relaxation? K plus one times. Will you get the answer? Yes, you will get the answer. You will definitely get the answer."
+  },
+  {
+   "start": 827.76,
+   "end": 853.07,
+   "text": "Are you able to understand this or not? When you were studying Bellman-Ford, Bellman-Ford used to do exactly the same thing. In one relaxation, you used to get the direct answer, which means when Delhi is one edge away from you, when you want to use one edge to go from source to destination and you want to get its shortest, then you used to get that work in one relaxation. When you want to go from Bangalore to Delhi in two edges and you want to get its shortest, you used to get that work in two relaxations."
+  },
+  {
+   "start": 853.07,
+   "end": 877.1,
+   "text": "We haven't done the same thing. We have connected this one to our k. How much is k in this one? It has k1. That means to get k1, you have to do 2 relaxations. So whatever k you are given, if you relax k plus 1 times, you will get the answer of your destination. Return that answer. It is simple. There is one more small twist. This is very good. I hope you are understanding this."
+  },
+  {
+   "start": 877.1,
+   "end": 898.51,
+   "text": "There is a small twist, which I will tell you now. So, the small twist that we are talking about, look at this example. Suppose you have this airport. Your source is 0, destination is 1, and your k is 1. Means, you have to reach from 0 to 1, and how many stops can you use? One stop means, how much edge can be there on the way of 0 and 1? At max, 2 edge, k plus 1. Remember,"
+  },
+  {
+   "start": 898.54,
+   "end": 927.66,
+   "text": "k stops means k plus 1 edge stop will be 1 but edge will be 2 so you should have 2 edge how many times you should relax in that case you should relax 2 times because you have to relax k plus 1 times ok ok to explain this we make k 0 we make k 0 you have to reach 0 stop now you know that you have to reach 0 stop means you have to go from 0 to 1 directly so 100 will be its answer lets run bellman ford"
+  },
+  {
+   "start": 927.66,
+   "end": 957.01,
+   "text": "Is the 100 answer really coming or not? K is equal to 0 means how much relaxation do you have to do? One relaxation. You have to relax 0 plus 1 times. So see, this is your edges. So what was the meaning of relax? When we were learning Bellman-Ford, what was the meaning of relax? This was your result. So in the beginning, 0 means 0. So if you want to reach 0 from 0, then it is 0. And the rest was all infinity. What was the logic of relax? If"
+  },
+  {
+   "start": 957.01,
+   "end": 975.86,
+   "text": "Result of D is greater than result of S plus weight. So, result of D is equal to result of S plus weight."
+  },
+  {
+   "start": 975.86,
+   "end": 1005.55,
+   "text": "weight means if source is an edge and you get to know that the result of the destination is greater than the result of the source and its weight then we call this as relax let's see if we relax just once then do we get the answer or not so first of all relax this edge we call it as 1 1 2 3 relax this edge so what will it say if"
+  },
+  {
+   "start": 1005.55,
+   "end": 1031.49,
+   "text": "Result of 1 is greater than result of 0 plus 100. What is result of 1 now? It is infinity. So, it is big. So, what will we call this? Result of 0 is 0. 0 plus 100. So, we will change this to 100. We will change this to 100. Relaxed? Look at the next. From 0 to 2, we will change this to 50. We will change this to 50 from the same logic. Now, now, now."
+  },
+  {
+   "start": 1031.49,
+   "end": 1060.61,
+   "text": "2 to 1, 2 to 1, see very carefully, this is what we want to tell you, this is what we want to tell you, see very carefully. Two edges are relaxed, but we have to relax the entire edge, right? 2 to 1 is an edge whose weight is 20, so what will it say? In this case, S is equal to 2, D is equal to 1, and weight is equal to 20. What will it see? If result of 1 is greater than result of 2 plus 20, then what is result of 2 now?"
+  },
+  {
+   "start": 1060.61,
+   "end": 1088.91,
+   "text": "50 is done. Originally, it was infinity, but you had made it 50 just now. So, it will say 50 plus 20 and result of 1. What is written in 1? 100. Whatever has happened now. 100 is greater than 50 plus 20. Yes, 100 is greater than 70. So, what will it do? It will write 70 by removing result 1. It will write 70 by removing result 1. See this. And your relaxation will end because you have relaxed all three. Now, see."
+  },
+  {
+   "start": 1088.91,
+   "end": 1118.26,
+   "text": "Now, when you return the answer, what will you return in the answer? Result of destination, which is 1. In your answer, 70 is being returned. What is being returned in your answer? 70 is being returned. But, your question was k is equal to 0 stop. What does k is equal to 0 stop mean? Non-stop. If you see the answer non-stop, you will feel that there should be 100 in the answer. But, which answer are you returning? You are returning this answer, 50 plus 20. This is not allowed. Then, how are you returning this? Does this mean that Bellman-Ford will not work?"
+  },
+  {
+   "start": 1118.26,
+   "end": 1148.13,
+   "text": "It will work. There is no bug in Bellman Ford. It has a behavior. See, when you do relaxation once, then what happened? First of all, you relaxed from 0 to 100, which was a good relaxation. After that, you relaxed from 0 to 2. So, 2 became 50 because of this. After that, you relaxed from 2 to 1, then your 1 became 70. What did your 1 become? It became 70."
+  },
+  {
+   "start": 1148.13,
+   "end": 1175.62,
+   "text": "But this is a little wrong in this question. When you do this, you get the value of 0 to 1 in one relaxation, which was 100. And you get the value of 2 over 1 in one relaxation, which is wrong. What was your logic about? That when we relax once, we will get its value. We will relax once again, then we will get its right value. But here,"
+  },
+  {
+   "start": 1175.62,
+   "end": 1205.74,
+   "text": "In the first relaxation itself, you have taken out the value of both of them and you are returning the value of both of them. Why did this happen? Because it is a kind of chain reaction. What is a kind of chain reaction? Why is it a chain reaction? First, you take out the correct value of 2 from the edge of 0 to 2. In the same time, you use the one from 2 to 1 and take out the correct value of 1. This is a chain reaction. Why? First of all, you use this to give the correct value of 2. Similarly,"
+  },
+  {
+   "start": 1205.74,
+   "end": 1232.4,
+   "text": "by using 2 and 1, if you give the real value to 1, then it is wrong, it will not work like this. You have to make sure in one relaxation that only this value should come out, its value should not come out in that relaxation. The value of this person should come out in the next relaxation, then only this thing will work. To solve this, we will use a temporary array. What will we use? Temporary array. How will we use it? I will explain it to you now."
+  },
+  {
+   "start": 1232.4,
+   "end": 1260.9,
+   "text": "To solve this problem, when we do relaxation once, there shouldn't be a chain reaction. It shouldn't happen that you get both the answers at the same time. That's wrong for this question. What you do is, every time before relaxing, suppose your initial configuration is this. So, we haven't relaxed anything yet. Both are infinity and 0 is 0. What we will do is, we will make a copy of this rest. We will make a copy of this rest. What will we make a copy of? Simple, copy. We will make a copy of this in a temporary array 0, 1, 2."
+  },
+  {
+   "start": 1260.9,
+   "end": 1290.98,
+   "text": "Copy is done. Before relaxing, now start relaxing. Now start relaxing. While relaxing, see, first relax this edge, 0 to 1. What will be your S? 0, D, 1. Weight is equal to 100. Now, in the logic of compare, we will write this. If, if, what will we write? If T of D, T of D, what is this? TMP. This one, TMP is coming. T of D is greater than."
+  },
+  {
+   "start": 1290.98,
+   "end": 1316.82,
+   "text": "rest of S plus weight then T of D is equal to rest of S plus weight. What is happening here, understand it very carefully. In this relaxation, the first relaxation that we are doing, whatever changes you will make in this, whatever changes you will make in this, when you will change any vertex and relax it, we will change it in temporary array."
+  },
+  {
+   "start": 1316.82,
+   "end": 1346.34,
+   "text": "But the comparison that will happen with this person, result of source plus weight, will happen with the old array. What does this mean? You will understand it only when these three edges are relaxed. First of all, we are relaxing this edge. What does this look like? T of D. T of D means T of 1. What is T of 1? Infinity. Okay, that's good. It's greater than result of source plus weight, which means result of 0, which is 0."
+  },
+  {
+   "start": 1346.34,
+   "end": 1375.74,
+   "text": "Plus weight, plus 100. Yes, if it is big, then it should be relaxed. But the real relaxation that you are doing, do it in T of D. Don't touch the result. What will happen with this? T of D. What has become? 100 has become. T of, result of 1 is same. Result of 1 is not changing. Result of 1 is still infinity. T of 1 has become 100. You will not understand the benefit of this. You will think, why did I do this? You will understand. You will understand. See. This edge is done. Let's go to the next edge. Let's go to the next edge."
+  },
+  {
+   "start": 1375.74,
+   "end": 1403.5,
+   "text": "Next edge is 0 to 2. So, what will be its S? S is equal to 0, D is equal to 2, weight is equal to 50. Do the same thing. T of D means T of 2, infinity, is greater than result of source, result of source, which is 0, plus weight, plus weight, which is 50. So, 50, 0, infinity. Yes, it is big, we should relax. But, where to relax?"
+  },
+  {
+   "start": 1403.5,
+   "end": 1433.23,
+   "text": "T of D, not result of D. So, T of D means, what do you do with T of 2? You do 50. T of 2, 50. T of 2, 50. Very good. Now, come to the third edge. We got a bug in the third edge. We got a bug in the third edge. We got a bug in the third edge. Now, see, we won't get that bug. Why won't we get it? Let's tell you. Come to the third edge. 2 to 1. S is equal to 2. D is equal to 1. Weight is equal to 20. See. If,"
+  },
+  {
+   "start": 1433.23,
+   "end": 1460.74,
+   "text": "T of D T of D which is 100 T of D which is 100 T of 1 which is 100 is greater than Result of source plus weight Result of source plus weight means Result of 2 plus weight And result of 2 is still infinity Result of 2 is still infinity In this case, no relaxation will be done Last time when we did not use this temporary So where was the problem? Because"
+  },
+  {
+   "start": 1460.74,
+   "end": 1490.7,
+   "text": "The result of 2 became 50 because of this edge. When you come to the third edge, you think that the result of 2 is 50. 50 plus 20 is 70. It is less than me, so let's relax. But in this case, nothing has changed in the result of 2. The result array has not changed in the entire array. Whatever change has happened, it has happened in the temporary array. In which? In the temporary array."
+  },
+  {
+   "start": 1490.7,
+   "end": 1520.29,
+   "text": "1, when you come to relax this, then it sees the previous value of 2. It doesn't see the new value of 2. The new value is 50, sorry. It sees the previous value of 2, which was infinity. It doesn't see the current value of 2, which has changed immediately. It doesn't want to use it. After one relaxation, when this whole relaxation is over, what value do you have in TMP? Which has come because of this relaxation. This relaxation."
+  },
+  {
+   "start": 1520.29,
+   "end": 1549.17,
+   "text": "There is no chain reaction that because of 0 to 2, 2 changed. Because of 2 to 1, 1 changed. They were doing the work of two relaxations in one. Because of this, the work of one relaxation has been done in one. Now, when this is done, these three things are done, this is done. What to do in the last? Result is equal to TMP. Write the value of TMP in the result. Write the value of TMP in the result. What to write in the result? 100 and 50. What to write in the result? 100 and 50."
+  },
+  {
+   "start": 1549.17,
+   "end": 1577.46,
+   "text": "Now, when you return, because your case was 0, you did one relaxation. After one relaxation, your result is this. What will you return? Result of destination, which is 100. Is 100 the right answer? It is absolutely the right answer. Because your case is 0. You just had to return the answer of this root. See, the answer of this root has not been computed yet. Why? Because we have used a temporary array. This is the whole meaning of using a temporary array."
+  },
+  {
+   "start": 1577.55,
+   "end": 1607.22,
+   "text": "that whatever you want to change, do it in a new array whatever you are reading, whatever you are reading about the source read that from the results don't remove this and make it T , then it will be the same problem that you have just edited T then you are reading that the whole meaning of this is that whatever you are reading about the source, whatever you are reading about the value of the source plus weight whatever you are doing, read that last relaxation that last relaxation, i.e. read the result"
+  },
+  {
+   "start": 1607.22,
+   "end": 1631.28,
+   "text": "Whatever you are writing, whatever you are relaxing and writing new values, don't write that on the result. Write that in temporary. When the whole relaxation is done, then the result is equal to. If you make it temporary, then it will be done. This is the purpose of this. Okay? We hope that this is a very crucial part for you. If you don't understand this, then your whole question will be wrong. Okay? So, look at it once or twice. You will understand that it is not that hard. Just that,"
+  },
+  {
+   "start": 1631.28,
+   "end": 1658.83,
+   "text": "there should be no chain reaction. 0 to 2 is a good thing, but in the same relaxation if you change 2 to 2, 2 to 1 to 1, 1 to 3 to 3, then the logic of the whole relaxation will be spoiled. This logic is important in this question. Normally, this wasn't important in Bellman Ford as well. Because in Bellman Ford, your goal was to get the distance by hook and crook. But because this is a case-tops, this is important. Now let's show you the code of this. It's a very simple code."
+  },
+  {
+   "start": 1658.83,
+   "end": 1689.39,
+   "text": "It is the same code of Bellman Ford. Let's go. If you want to write its code, then its code will be copied from same to same Bellman Ford. There is not much change in it. What will be given to you? It will be given to you on int fun or on the lead code. First of all, you will be given int n which is the number of airports. After that, you will be given vector of vector of int. Yes, okay. What will be given in this? Edges. After that, you will be given three more things. Source,"
+  },
+  {
+   "start": 1689.87,
+   "end": 1718.13,
+   "text": "destination and int k. Alright? Let's go. First of all, what is the work? Make a result array. Vector, int, result. In this, what will we do? N size and 1E8. 1E8 means, we have already explained 10 to the power 8. Alright? After that, result of source is equal to 0. Because source is 0 in reaching source. Alright? After that, what will we do? Int i. Now,"
+  },
+  {
+   "start": 1718.13,
+   "end": 1743.1,
+   "text": "Whatever k is given, how many times you have to relax? k plus 1 times. So, for i is equal to 0, i less than equal to k, i plus plus. Okay? What happened to this? k plus 1 times, relax. Okay? First of all, before starting relax, make a temporary vector. Vector int tmp is equal to res."
+  },
+  {
+   "start": 1743.1,
+   "end": 1773.5,
+   "text": "Okay? Make it the same as res because you have to write it. Now you have to relax all the edges. So how do we relax all the edges? For int j is equal to 0, j less than edges.size and j++. Okay? Take out the things one by one. s is equal to edges j 0. Where will your destination be? Edges j 1."
+  },
+  {
+   "start": 1773.5,
+   "end": 1803.7,
+   "text": "How will the weight come? It will come from 2. Weight is equal to hs j2. Okay? Relax. Relax. So, first of all, look at this. If result of s not equal to 1e8. Meaning, why are we saying this? Why are we saying this? Because, if the result is 1e8, it means infinity. So, if your source is at infinity, then what will relax someone? Meaning, you are saying that h is going from 1 to here."
+  },
+  {
+   "start": 1803.7,
+   "end": 1830.64,
+   "text": "Now if 1 itself is at infinity, then what to relax from infinity? Nothing to do, leave it. If this is not infinity, then something can happen. And, and, what to do? t of d is greater than result of s plus weight, plus weight. t of d is greater than result of s plus weight. Now you will ask, what is the meaning of making t if result of d is greater than result of s plus weight? You can relax t, destination again and again. Assume, this means,"
+  },
+  {
+   "start": 1830.93,
+   "end": 1855.79,
+   "text": "Assume that if something goes from 0 to 1 and something goes from 2 to 1. Assume that the current value of 0 is 50 and its value is 20. The current value of 2 is 10 and its value is 10. What does this mean? Assume that you got one edge from 0 to 1 and its value is 50. And you got one edge from 2 to 1 and its value is 10. Why am I saying this? Assume that when you relax this edge, what will be the value of 1? 70."
+  },
+  {
+   "start": 1855.79,
+   "end": 1884.48,
+   "text": "When you relax this edge, then the value of 1 will be 10 plus 10, 20. You have to compare 70 to 20. That's why we have written it here. If this is the case, then T of D is equal to result of S plus weight. You can understand why T is being used here and result is being used here. When you are updating, then you can update B in the same relaxation again and again. Now there is a lot of way to reach 1 where one edge is used."
+  },
+  {
+   "start": 1884.48,
+   "end": 1910.82,
+   "text": "In the above example, there are two ways to reach 1, where one edge is applied. So you can update the good answer in 1 by looking at both. But it is important to write the result of S because the value of the source is taken according to the previous relaxation. Not with this relaxation. It should not happen that the source has been updated immediately and we are using it. No, it will be updated in the next relaxation. Is it okay? Is it done? There is nothing more to do here. Everything is over."
+  },
+  {
+   "start": 1910.82,
+   "end": 1940.82,
+   "text": "Now, being comfortable here, first of all, see that if the result of destination is equal to 1E8, which means that it did not get anything, then it is said to return minus 1. It means that you cannot go to K stops here. You cannot reach up to K stops. If you have got something, then you must have got it. Return result of destination. See, this is the code of your entire Bellman-Ford. In this, Bellman-Ford was there. The most important thing was this part. Why did you have to use temporary array?"
+  },
+  {
+   "start": 1940.82,
+   "end": 1952.59,
+   "text": "according to me, we have explained it very well if you don't understand, then ask in the comment if possible, we will tell you again in the comment is it right? make it and it is a very important question make it definitely see you in the next lecture bye bye"
+  }
+ ]
+}

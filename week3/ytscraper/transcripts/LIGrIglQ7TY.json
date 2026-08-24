@@ -1,0 +1,274 @@
+{
+ "video_id": "LIGrIglQ7TY",
+ "title": "The Graph Algorithm Used In Amazon! Bipartite graph/ Graph Coloring| CPP JAVA Python",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1419,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 28.03,
+   "text": "Hi guys, so we are meeting after a long time in the graph series. So today's topic is Bipartite Graph. As you might have seen in the title. Bipartite graph is directly used in Amazon if I give you an example. No one will tell you how it is used, what it is, etc. etc. Along with this, you will also learn graph coloring today. Graph coloring is a different type of thing. But to solve bipartite, you should also know graph coloring. So you will learn both things from this."
+  },
+  {
+   "start": 28.03,
+   "end": 57.25,
+   "text": "What will be the question? Before the question, we will see what is bipartite? Bipartite. See, by always means 2. If it is written by, then what is the meaning of by? It is 2. Okay. And partite means partition. Bipartite means 2 partitions, 2 types of groups. What does it mean? You will be asked that if a graph is given, if a graph means that there are many circles and many lines and edges in between, can you divide that graph into 2 parts? Can you divide it into 2 parts so that"
+  },
+  {
+   "start": 57.25,
+   "end": 85.81,
+   "text": "Your graph will look something like this. The first one will be this part, and the second one will be this. Those who have studied Maths, will know that this is also used in BTEC. Let's assume that there is one here and its name is zero. And there is one more node here. There are two nodes in the second part as well. How many nodes are there in the second part? There are two nodes. So, zero, one, two, and three. So, this is your graph. What does it mean to divide into two parts?"
+  },
+  {
+   "start": 85.87,
+   "end": 113.34,
+   "text": "all the nodes of one part, means if we say that this is part A and this is part B, two parts, it is distinctly visible, right? All the nodes of one part should not be connected to each other. All the nodes of one part should not have any edge between them. Meaning, there should not be any edge between 0 and 1. No. There should not be any edge between 2 and 3. No. It can happen in the nodes of the other part. Meaning, there can be edges between A part and B part. There is no problem in that. For example,"
+  },
+  {
+   "start": 113.34,
+   "end": 135.6,
+   "text": "There can be such edges that 0 is connected to 2 and 0 is connected to 3. Similarly, 1 is also connected to 3. This can be your graph. What are the edges in this? There is an edge from 0 to 2. Is this correct? Yes, because 0 is in part A and 2 is in part B. This works. There is an edge between 0 and 3. This also works. Why? Because 0 is of this part and 3 is of that part."
+  },
+  {
+   "start": 135.89,
+   "end": 159.5,
+   "text": "There shouldn't be any edge between 0 and 1. No matter how many notes are there in one part, it's not necessary that there are only two. There can be a lot of notes, but there shouldn't be any edge between the notes of one part. That's why it's called bipartite. If you break it in two partitions, the notes of the same group are not connected at all. The notes of the same group are not connected at all. 2 and 3 are connected."
+  },
+  {
+   "start": 159.5,
+   "end": 187.9,
+   "text": "So this bipartite graph will not remain. Why? Because 2 and 3 are in the same part. So someone will give you a graph like this and will ask you if it is bipartite. If you will not be given exactly this drawing, the drawing will be given like this. See, 0 will be here. There is an edge between 0 and 2. There is an edge between 0 and 3. Okay, and there is an edge between 1 and 3. There is an edge between 1 and 3. This will be your graph. See, there are 4 edges in it. He will ask you, is this graph bipartite? Is this graph?"
+  },
+  {
+   "start": 187.9,
+   "end": 215.57,
+   "text": "Is it bipartite or not? Yes, this graph is bipartite. Why? Because you can break it into parts. You do one thing, take 0 as part A and take 1 as part A. So, both 0 and 1 are different. Take 3 as part B and take 2 as part B. So, there is no edge between 3 and 2. So, what do we call this? Bipartite graph. Let's move ahead. But the question arises that we said that this is also used in Amazon. You can say that this is a very basic data structure. How is it used? See, why is it used in Amazon? Let me tell you."
+  },
+  {
+   "start": 215.63,
+   "end": 245.6,
+   "text": "There are two types of things in Amazon. Primarily, when you open a shopping app, you are a customer. You are a customer. Every person is a customer. And things are sold on Amazon. There will be products too. There are products on Amazon. So, who does the customer buy? He buys the product. Okay? Look. You consider the customer as part A. Part A means that Amazon keeps all the customers in part A. And keeps all the products in part B. Why? Because in Amazon, you as a customer, means if we are here,"
+  },
+  {
+   "start": 245.6,
+   "end": 273.78,
+   "text": "So, Pratyush can see any product. Pratyush should see all the products. Pratyush should see all the products like fan, AC, TV. So, Pratyush can see all the products. But, if there is another person, Sumit. So, does it ever happen on Amazon that you can send a friend request to someone? No. Amazon is not a social media platform. That if both of us are shopping, then we send them a friend request or my number. No. There should be no connection between Pratyush and Sumit. Pratyush and..."
+  },
+  {
+   "start": 273.78,
+   "end": 303.55,
+   "text": "Even Sumit can see a fan. It can happen to Sumit too. But no customer can create a relationship with each other. Friend request, follower request. Amazon is not a social media platform. Now look, the same thing comes in the product. If the fan is selling and the AC is selling, then the fan and the AC have no relation. It doesn't happen that there is no relation between the fan and the AC. There is no relation. The fan will have a relation with the customer. The fan, AC, TV have no relation with each other."
+  },
+  {
+   "start": 303.55,
+   "end": 332.64,
+   "text": "That's why in Amazon, both customer and product are divided into two parts. No one can make a connection with the people of their part. What is this? It is a bipartite graph. We are telling this because it doesn't have anything to do with the elite codes. People think that DSA is useless. I don't know why it is taught like this. That's why it is taught. If you go to a good company, whatever you have studied,"
+  },
+  {
+   "start": 332.64,
+   "end": 362.27,
+   "text": "Everything will be used. Link list will be heavily used. Graph will be heavily used. On the condition that you go to a good company. If you go to TCS Infosys and say that the DSF is not working. There nothing works. There you have to do the same thing. If you go to a good company, then it will work. If you go to a bad company, then it will not work at all. There computer science also does not work. So this is a bipartite graph. What will be your question? You will be given a graph like this. You will ask whether it is bipartite or not."
+  },
+  {
+   "start": 362.27,
+   "end": 385.41,
+   "text": "Yes or no, we will have to tell. Now how do we solve this? Let's make a graph. Suppose there is a graph like this. Zero, one, two, and three. It is a very simple graph."
+  },
+  {
+   "start": 385.41,
+   "end": 412.3,
+   "text": "Is it a bipartite or not? Meaning, can you divide this graph into two parts so that no same part is connected to each other? Please note that it is not necessary that you divide it equally. It is not necessary that part A has two and part B has none. Part A can have one and part B can have three. But the division will be in such a way that people of one division should not be connected to each other. How do we solve this?"
+  },
+  {
+   "start": 412.3,
+   "end": 438.1,
+   "text": "How many parts do you have to divide first? You have to divide it into two parts. Bipartite means two parts. You have to divide it into two parts, okay? Coloring is used for this. What is used for this? Coloring is used. We assume that whatever division we do, it will look like this. This will be part A and this will be part B. It is assumed that let's do one thing. Let's give color to both the parts. What do we give to both the parts? We give color."
+  },
+  {
+   "start": 438.1,
+   "end": 462.18,
+   "text": "Let's assume that we want to give red colour to part A and green colour to part B. Is it logical? You are going to do a division. Do one thing. Any note that can go to part A and any note that can go to part B, we will give red colour to part A and green colour to part B. What will happen is that whatever goes to part A,"
+  },
+  {
+   "start": 462.18,
+   "end": 483.52,
+   "text": "you will see such red people. And those who will go to part B, you will see them green. So, very good. The division will be done. So, very good. What do we do? Start with any note. Start with any note. And suppose we start with zero and we want to start it with any red or green of our choice. What do we do? We give it red color. We give it red color."
+  },
+  {
+   "start": 483.52,
+   "end": 512.02,
+   "text": "This is red. It means that we have decided that we have to start from somewhere. So we want to put zero in part A. This is my choice. You can put it in green too. You can do anything. It is not necessary that you start from zero. You can start from anywhere. Okay? But as soon as you paint zero with red color, as soon as you paint zero with red color, it means that your zero is here. Your zero is in red. Very good. Now, what does bipartite graph say? Zero, whoever it is connected to, zero,"
+  },
+  {
+   "start": 512.02,
+   "end": 540.14,
+   "text": "Jisse, jisse bhi connected hai. Wo dono. Abhi zero kitse connected hai? One se aur two se. Dhyan dhije ka ki aapko ek undirected graph diya hai. Directed me bhi wahi hoga. Lekin yaha pe aapko undirected graph bola gaya hai. To zero jo do logo se connected hai. Kya ye do log red colour ke ho sakte hai? Phir se suniye meri baat. Agar aap zero ko red colour se rag diye hai. Zero ko aap aisa karke red kar diye. To kya? Zero jin do logo se connected hai. Ya zero jisse bhi connected hai. Zero ke jo neighbours hai."
+  },
+  {
+   "start": 540.14,
+   "end": 569.81,
+   "text": "Can they be of red colour? No, they can't be. Why? Because if you say that we will make 1 red, then 1 will come here. But there is an edge between 0 and 1. This is not allowed. No two people of red colour can be connected to each other. If there is a connection of red, then it will be green. For this, what will you do? You will look at all the neighbours of 0. If that neighbour is uncoloured, if that neighbour is uncoloured, means you haven't coloured it yet,"
+  },
+  {
+   "start": 569.81,
+   "end": 599.36,
+   "text": "you will have to do it with green colour. Because this is what bipartite says, red people can't connect to each other, green people can't connect to each other. Red and green, there can be a connection between red and green. So all the un-coloured neighbours of 0, you will have to colour them with green colour. What will they use for this? They will use DFS. Suppose in 0, first you see 1, and what colour will you use for 1?"
+  },
+  {
+   "start": 599.36,
+   "end": 617.73,
+   "text": "green se, one ko, aap green se kar diye, toh one green ho gaya, same yahi baat, same yahi baat, one ke liye laagu hogi, ab one green ho gaya hai, one green ho gaya hai, one ke kon kon hai neighbor, one ke do neighbor hai, zero aur three, ab zero toh already colored hai, zero toh uncolored nahi hai,"
+  },
+  {
+   "start": 617.73,
+   "end": 645.34,
+   "text": "If the neighbor of 0 was 1, then 1 was uncolored. But now when you come to 1, then the neighbor of 1 is 0. 0 is not uncolored. So you have to check that if my neighbor is not uncolored, then is it in another color than me? Is 0 in red color? If 0 is in red color, then it is fine. If 1 had such an uncolored neighbor which was in green, then this graph could not be bipartite. That will be clearer in the next example. But there are two neighbors of 1."
+  },
+  {
+   "start": 645.34,
+   "end": 674.18,
+   "text": "One neighbor is already colored. In which color? In red color. So is this allowed? Yes, it is absolutely allowed. Because one is already colored in green color. It has a neighbor who is in red color. It's a good thing. Green and red can be. One has an uncolored neighbor. Who? Three. Three will have to be colored in which color? Can you color three in green color? No. Green will have to be colored in red. So in which color will you come? In three. And three will be colored in red color. Very good."
+  },
+  {
+   "start": 674.18,
+   "end": 703.74,
+   "text": "Do the same thing on 3. There are two neighbors of 3. 1 and 2. One neighbor is 1 which is already colored. Is it colored in the opposite color than 3? Yes. If 3 is red, then it is green. Absolutely right. There is an uncolored neighbor of 3. Who? 2. Is 2 uncolored? Yes, 2 is uncolored. So, in 2, what color do you have to do it? Do you have the option to do it in red? Absolutely not. Why? Because 3 is red. From which color do you have to color 2?"
+  },
+  {
+   "start": 703.74,
+   "end": 732.64,
+   "text": "Green color. You have to color 2 with green color. Okay. You came to 2. If you do the same thing in 2, then there are 2 neighbors of 2 which are already colored. But, are they opposite colored from 2? Yes, both are red colored. So, look at this graph. This is a bipartite graph. You didn't get any contradiction anywhere. What does contradiction mean? That I have an already colored neighbor. I have an already colored neighbor. Okay. Already colored neighbor. And,"
+  },
+  {
+   "start": 732.64,
+   "end": 761.65,
+   "text": "It should be of the same color. As soon as it comes, what will happen? Contradiction. This means that your graph is not bipartite. If you do anything to it, you will not be able to divide it. In this graph, you never got this kind of contradiction. How did you not get it? Because this graph is bipartite. How is this graph bipartite? If we divide two parts in it, what can we put in one part? 0 and 3. In one part, we put 0 and 3."
+  },
+  {
+   "start": 761.65,
+   "end": 791.68,
+   "text": "And in the second part, what can we put? 1 and 2. 1 and 2. We will do this with green color. 1 and 2. Where are the edges? There is an edge between 0 and 1. There is an edge between 0 and 1. And there is an edge between 0 and 3. So very good. No, sorry. There is no edge between 0 and 3. There is an edge between 0 and 2. Yes. There is an edge between 0 and 2. Done. And there is an edge between 1 and 0. Done. And whose? Whose? There is an edge between 1 and 3. There is an edge between 1 and 3. And there is an edge between 3 and 2. See this."
+  },
+  {
+   "start": 791.68,
+   "end": 821.38,
+   "text": "All the edges are in red and green. There is no edge between red and red. There is no edge between green and green. So what is this graph? This is a bipartite graph. Now we will show you that if that graph was not bipartite, then how would you have got this contradiction? See. We will show you that too. We will show you that too quickly. We will make a graph. We will make the same graph. 0, 1, 2, 3. We will make a square by doing this. Here is a square. And we will give one more edge. This is an edge. Okay."
+  },
+  {
+   "start": 821.38,
+   "end": 850.4,
+   "text": "Let's do the same thing. Let's do the same thing. Let's do the same thing. Let's do the same thing. Let's do the same thing."
+  },
+  {
+   "start": 850.4,
+   "end": 879.26,
+   "text": "There is a non-colored neighbor of 1. So, go and color it. Go and color it. Okay. So, there is a non-colored neighbor of 1, 3. We will color 3 with red color. We will color 3 with red color. Now, see. Here, there is a mistake. What is the mistake here? Is there any colored neighbor of 3? Yes, there is already a colored neighbor of 3. Who? Zero. What zero? Is it of opposite color of 3? No. Zero is of same color of 3."
+  },
+  {
+   "start": 879.26,
+   "end": 897.97,
+   "text": "What does this mean? Not a bipartite graph. Not a bipartite. Nothing can be done. This graph, whatever you want to do, you will never be able to do it. Why will you not be able to do it? Let me tell you very simply. You will never be able to do it in two parts. Part A."
+  },
+  {
+   "start": 898.0,
+   "end": 926.42,
+   "text": "Part B. Okay? You will never be able to do it. Look. First of all, zero. Zero is connected to all three people. Zero is connected to all three people. So, you will have to do one thing. You will have to put zero here and these three will have to be put here. Because zero is connected to all three. So, the first choice you will have to take is to put zero in part A and rest of the three in part B. This is the minimum requirement. So, assume that zero is connected to this. You are still doing well. You are still doing well. But, now look. There is an edge between 1 and 3."
+  },
+  {
+   "start": 926.42,
+   "end": 955.41,
+   "text": "There is an edge between 1 and 3. There is an edge between 1 and 3. There is an edge between 3 and 2. Take this. Is this graph bipartite? No, it is not. Look at part B. Part B is completely wrong. To correct part B, you have to bring one thing here. As soon as you bring one thing here, it will make an edge from 0. So, this graph is impossible. You cannot partition it by bipartite. So, what is it? Not a bipartite graph. So, whatever we have understood, what is it called? Graph coloring. What? Graph coloring."
+  },
+  {
+   "start": 955.41,
+   "end": 974.32,
+   "text": "With the help of colouring, we identify that okay, colour one and see the other. How will its code be? It will be a simple code. Whatever red and green we have used, instead of red and green, what will we use? Colour is equal to 0. I have one colour 0 and one colour 1. 0 and 1. If you colour a note with 0,"
+  },
+  {
+   "start": 974.32,
+   "end": 1001.23,
+   "text": "then you will have to color all the non-colored neighbors with 1. If you get a neighbor whose color is the same, which is colored and both of you have the same color, then the bipartite graph will not be possible from there. So what will we do in this? The code is very easy. We will do a DFS. One more good thing in this is that the lead code question has the adjacency list of the graph already given to you, so you will not have to do that. So this one."
+  },
+  {
+   "start": 1001.23,
+   "end": 1027.55,
+   "text": "The adjacency has already been given to you. If it had not been given, you would have made it. Int node, which node are you going to color now? Int C, with which color are you going to do it? C will either be 0 or 1. If it is 0, then 0 is opposite to 1. If it is 1, then 1 is opposite to 0. And instead of a visited, we will do a vector int colors. Colors means which node is of which color."
+  },
+  {
+   "start": 1027.55,
+   "end": 1055.57,
+   "text": "In DFS, we usually do a visited array, but in this, we will do a colored one. So, colored is doing the same thing. If a node is non-colored, then only you will go to color it. If it is colored, then you will just check it once and leave it. So, visited will do colors. How will it do? See. In the beginning, what will we do with the color of all nodes? Minus one. Minus one means not colored. Okay. So, when you have come to any node, you have come to this node, what did we say? Who to start with? Zero second. Do it with anything. First of all,"
+  },
+  {
+   "start": 1055.57,
+   "end": 1083.89,
+   "text": "Colors of node is equal to C. Colors of node is equal to C. C can be any color, 0 or 1. Okay. Now, start looking at its neighbors. Now, start looking at its neighbors. How do we look at its neighbors? You should remember the syntax till now. You should remember it immediately. There should be no confusion in this. Int neighbor. Int neighbor is equal to array of node and j. Okay."
+  },
+  {
+   "start": 1083.89,
+   "end": 1117.36,
+   "text": "First of all, look at the contradiction. If colors of neighbor colors of neighbor not equal to minus 1. Means it has already colored. And colors of neighbor equal equal to C. Equal equal to C. Means what was C? What color have you given to this node here? If it is equal equal to C, rest is equal to false. Rest is equal to false. Rest is a global variable. Here boolean."
+  },
+  {
+   "start": 1117.36,
+   "end": 1145.73,
+   "text": "In the beginning, we will assume that you have a bipartite. In the beginning, we will assume that the benefit of doubt is that you have it. If you get it, then what is this? What is this? Contradiction, as we said, contradiction. If there is contradiction, the rest is equal to false. If it is not, if it is not, if it is not, then it means that it will be of the same color. Now see that if colors of neighbor, means if neighbor is non-colored, equal equal to minus one, if it is non-colored,"
+  },
+  {
+   "start": 1145.73,
+   "end": 1172.5,
+   "text": "then you have to colour it. With which colour? With C. If C is 0, then you have to colour it with 1. If C is 1, then you have to colour it with 0. Just the opposite. There is a trick for this. If C is equal to... What is 1? If C is 0, then you want to send 1 there. If C is 1, then you want to send 0 there. You want to do the opposite. You..."
+  },
+  {
+   "start": 1172.5,
+   "end": 1202.5,
+   "text": "1 minus C. What will happen with this? If the C of this node is 0, what will you send there? 1 minus C. 1 minus 0. You will send 1. Is it the other way around? If the C of this node is 1, what will you send there? 1 minus 1 is 0. So, this is already the other way around. This is a trick. It's a small programming trick. If you want, you can do it like this. If C is 0, send 1. If 1 is 1, send 0. But if it is non-colored, you will have to color it. How will you have to color it? By calling DFS. A."
+  },
+  {
+   "start": 1202.5,
+   "end": 1232.56,
+   "text": "Instead of node, you want to color the neighbor with which color? 1 minus C. No need for brackets. 1 minus C. We colored the node with C. Who will color the neighbor with? 1 minus C. And colors. And colors. Done. Close this and return it. Return this. Your DFS is over. This DFS will look at all nodes. If you get a contradiction somewhere, then your result is equal to false. Result is equal to false. How do you call this with the main method?"
+  },
+  {
+   "start": 1232.56,
+   "end": 1262.34,
+   "text": "It's very simple. You need a boolean. This is the function of the leetcode. Bipartite. In this, you have already given that adjacency. Already given that adjacency. Vector. Int. Such and such. A. Okay. First of all, remove the number of nodes. A dot size. You can remove the number of nodes from A dot size. Is my pencil a little bad? You can remove the number of nodes from A dot size. Anyway."
+  },
+  {
+   "start": 1262.34,
+   "end": 1284.0,
+   "text": "After that, make a vector of colors. Make a vector of colors. Of what size? Of n size. And initialize all of them with minus 1. All of them with minus 1. Okay. Now, I have given you that in the graph, maybe, there can be multiple components in the whole graph. Multiple components means that the whole graph may not be connected. It is not possible that if you start from 0, then you will cover the whole graph."
+  },
+  {
+   "start": 1284.0,
+   "end": 1299.41,
+   "text": "It can have multiple components. Those who are watching the previous video will understand what I am saying. Multiple components means that your graph can be like this. You will be given a graph like this. Suppose 0, 1 and 2. This is the graph. 3, 4. This is the whole graph."
+  },
+  {
+   "start": 1299.41,
+   "end": 1327.94,
+   "text": "In this, if you start DFS from 0, you will have to start from 3 also. Why? Because after starting from 0, you have covered all this with DFS. It will be covered, but you will have to check this also. This is also a part of the graph, so it is a multiple component. What we will do is, instead of starting from 0, we will start DFS from any uncolored vertex. This is just the question of DFS on multiple component. If you want to do DFS,"
+  },
+  {
+   "start": 1327.94,
+   "end": 1354.03,
+   "text": "What would you do with the multiple components of the graph? You would call DFS on the visited 0. We will do the same thing. We will run a loop. i is equal to 0. i less than n. i plus plus. Just like there is an uncolored graph. What does uncolored mean? Colors i equal equal to minus 1. It means it is uncolored. Call DFS on this. How? DFS a i"
+  },
+  {
+   "start": 1354.03,
+   "end": 1382.54,
+   "text": "Which colour do you want to colour it with? With your choice. You can also pass 1 or 0 in this. What is 1 and 0? 1 and 0 are red and green. It's your choice. Do you want to start with red or green? It doesn't matter. We will pass 0 here and pass colours. Okay? Close this. In the end, do return rest. Return rest. If there is any contradiction anywhere, then your DFS will catch it. It will quickly catch any contradiction."
+  },
+  {
+   "start": 1382.54,
+   "end": 1412.34,
+   "text": "In this video, this is your code. This is your main code and this is your small DFS code. You have become the master of bipartite graph. There is nothing more than this in bipartite graph. And graph coloring is also the same thing. Graph coloring or bipartite, whatever it is, it is the same thing. So you have learned it. Now, according to me, you have learned all the basic concepts of graph. Now we will start some hard concepts. Maybe distance or dixtra, you will go slowly towards all those things."
+  },
+  {
+   "start": 1412.34,
+   "end": 1418.79,
+   "text": "Generally speaking, we have learned all the basic graph concepts. So, see you in the next lecture. Don't forget to code this."
+  }
+ ]
+}

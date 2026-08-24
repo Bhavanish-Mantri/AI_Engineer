@@ -1,0 +1,534 @@
+{
+ "video_id": "D5jgZ4PnU5o",
+ "title": "DFS Cycle Detection | From Basics to Advanced | DSA Pattern Graph Series",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2978,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.42,
+   "text": "Whenever you solve the problem of graph in your life, you think that if we learn undirected, then we will learn directed as well. Then you will understand that you are making a big fool of yourself. Nothing like that happens. Graph looks good to see. Directed, undirected, you think that what is it? There will be a small change. No. Today we will do two questions. Cycle detection. In undirected and in directed as well. And both are very different from each other. It is not that if you learn undirected, then you will become a master of directed. Or if you learn directed, then you will not be undirected. Without seeing both, there is no benefit."
+  },
+  {
+   "start": 29.42,
+   "end": 58.26,
+   "text": "If you want to learn something, you can do this in this type of video that learn the undirected art, learn the directed story or you can do the opposite, first go and watch the directed, whatever you want to do, but never make the mistake that you watch the undirected and make a story in your mind that yes, if the directed comes, then we will write it, we will not be able to write it, it will be completely wrong. So come on, it may be that the video will be a little long, let's start quickly. So come on, let's start with the undirected first because it is very easy, undirected will always be easier for you to watch than directed."
+  },
+  {
+   "start": 58.26,
+   "end": 86.53,
+   "text": "So in the question, you are given an undirected graph. What does undirected mean? If there is an edge from A to B, then there is an edge from B to A. Just like Facebook. What happens in Facebook? If you are someone's friend, then he is also your friend. Now it must be there. Let's take it normally that there is no one who follows on Facebook. If you are his friend, then he is also your friend. He is undirected. And when you open the link of the question in GFG, then you will find a very interesting line. Is this a multiple component graph?"
+  },
+  {
+   "start": 86.53,
+   "end": 113.15,
+   "text": "It is a multiple component graph. In all the questions we have done so far, this line was not there. That it can be a multiple component. What does this mean? See, there is nothing to be afraid of. It is a very easy thing that your graph is broken in multiple parts. For example, your graph can look like this. Here, suppose there are three nodes separately. 0, 1, 2. This is a component. But there are not only three nodes in this graph. There is one more. 3, 4, 5."
+  },
+  {
+   "start": 113.15,
+   "end": 141.97,
+   "text": "This graph has a total of 6 nodes. But you can see that you can break this graph into two parts. These two parts are not connected to each other. Meaning, if you start from 0, you do anything from 0, BFS or DFS, you will never reach 3. You can start BFS or DFS from 3, you will never reach 0, 1, 2. If you start from 3, you will end up here. If you start from 0, you will end up here. So, never."
+  },
+  {
+   "start": 141.97,
+   "end": 169.6,
+   "text": "In the multiple component graph, you can do anything. In any question, you can either do BFS or DFS. By running a loop, you have to start DFS from all the unvisited nodes. For example, if you start DFS from 0, then you will cover 0, 1 and 2. But you have to check if 3 is unvisited. Even after starting from 0, if 3 is unvisited, it means 3 is in a different component."
+  },
+  {
+   "start": 169.6,
+   "end": 192.16,
+   "text": "There is no difference between 0 and 3. So, you have to start DFS from 3. After that, you can cover 3, 4, and 5. So, whenever, in any question, if you are told that there are multiple components, there is no need to do much in this. From every node, from every unvisited node, if you want to do DFS, whatever you want to do, then you can start DFS. The more nodes you have to visit, the more it will be done."
+  },
+  {
+   "start": 192.16,
+   "end": 220.61,
+   "text": "If someone is unvisited, then you can start again from there. He will do as much as he has to cover. There may be more nodes. Here 6 and 7 are also there. So you will see that 6 is also unvisited. Means this graph is broken into 3 parts. Start from 6 also. 7 also. So all these are normal things. When you will code, then automatically you will understand. So never be afraid of multiple components. Nothing much happens in it. You can just treat it that you have given a lot of small small graphs. You have to do all that. Let's go."
+  },
+  {
+   "start": 220.61,
+   "end": 246.26,
+   "text": "Now, let's come to the main topic that you have to detect the cycle. What to do in this? Cycle. What does cycle mean? That whenever, suppose, three circles are like this, this is closed. So, what is this? It is a cycle. You are closed. You started from one place and came back to the same place. So, it is called a cycle or a loop. Now, there is an open thing. This is it. Now, there is no cycle here. See, it is open. This is not a cycle. But, if it was like this."
+  },
+  {
+   "start": 246.26,
+   "end": 275.94,
+   "text": "This is the cycle. You understand what cycle means, right? Any closed box where you will get stuck. Once you go in that box, you will get stuck. Like in the link list. There was a cycle in the link list. There is a cycle in the graph also. You get stuck there. So you have to detect it. Okay. So see. Let's understand from the example. Suppose you are running Facebook. You first come to my profile. You first come to my profile. Facebook is an undirected graph. If I have a friend, then we are also friends. Okay. From my profile, you see my friends."
+  },
+  {
+   "start": 275.94,
+   "end": 305.68,
+   "text": "And where did you go from my friend? Suppose you reached Amit. You came to Amit's profile. Okay. On Amit's profile. Another girl's name was Seema. So you came to Seema's profile. Okay. Now you can see that Pratyush is written in Seema's friend. What is written in Seema's friend? Pratyush means Seema was my friend and we were Seema's friends. Here you will get the cycle. Why? Because you came to Seema's profile. Where did you start? From Pratyush. You flew from Pratyush to Amit. You flew from Amit to Seema. Now,"
+  },
+  {
+   "start": 305.68,
+   "end": 334.34,
+   "text": "You can see that in the profile of Seema, it is written Vapas Pratyush, which is already visited. You remember, whenever we do DFS or BFS in the graph, it is remembered that we have seen him. It is remembered from visited that we have seen this person. So, as soon as you will get such a neighbor on Seema, who is already visited, what will it mean? That Seema is my friend. Does it seem like a cycle to you? It seems exactly like a cycle."
+  },
+  {
+   "start": 334.34,
+   "end": 362.3,
+   "text": "So an easy approach should come to your mind that we will start doing DFS, whatever we get unvisited, we will start doing DFS from the main function. We will keep doing DFS, but if you have done DFS of any node, suppose you come to any node, now what do we get out of the node? How do we get the neighbor out? We get it out from the adjacency list that from whom it is connected. If that neighbor is already visited, that means you have already seen that node,"
+  },
+  {
+   "start": 362.3,
+   "end": 391.71,
+   "text": "Now, there is the same node in its neighbor. You are going back there. Meaning, what are you making by rotating? You are making a cycle. You will never be able to get out of it. So, you can say that yes, there is a cycle in the graph. But, there is a very important flaw in this. There is a very important bug. In this, you must have understood that you are getting a cycle. Why? Pratyush amid Seema. Seema is back to Pratyush. Pratyush is already visited. So, cycle. Okay. But, suppose there is a graph of two nodes. Sometimes, there is a graph of two nodes. See this. There are only two nodes."
+  },
+  {
+   "start": 391.71,
+   "end": 421.78,
+   "text": "0 and 1 and these two are connected to each other. This is the graph of two nodes. One edge is 0 to 1. You see what we do. Here we make a visited array. This is your visited. 0, 1. In the beginning, both are false. There is nothing in the beginning. What did you see first? That 0 is not unvisited. So what did you start from 0? DFS. So you reached DFS of 0. Very good. What is the first step in DFS? Mark this node as visited. Mark this node that we have seen it."
+  },
+  {
+   "start": 421.78,
+   "end": 450.77,
+   "text": "So, what will you do? You will make it a true mark. Okay? It is still correct. Okay. Now, what will you get in the neighbor of 0? What will you get in the neighbor of 0? 1. Why? Because 0 to 1 is the edge. So, 0 is the neighbor of 1. And 1 is also the neighbor of 0. So, what will you get in the neighbor of 0? 1. Okay. You got 1. Okay. Now, what do you see? If this neighbor is visited, it means that there is a cycle. But 1 is not visited yet. So, everything is fine till now. Everything is fine till now. Okay. If it is not visited, then what do we do?"
+  },
+  {
+   "start": 450.77,
+   "end": 480.02,
+   "text": "DFS is on 1. DFS is on 1. DFS is on 1. Everything is fine till now. But, after coming to 1, what is the first thing to do? What do we write after updating 1's visited? True. Okay. Now it is on 1. Now it is on 1. Now, because it is an undirected graph, if 0's neighbor is 1, 1's neighbor will also be 0. Because it is undirected, if 0 and 1 are given an edge, then 0's neighbor is 1 and 1's neighbor is 0. This is when we"
+  },
+  {
+   "start": 480.02,
+   "end": 509.89,
+   "text": "What do we do? Adjacency of source, pushback destination. And adjacency of destination, pushback source. 0 is also a neighbor of 1. 1 is also a neighbor of 0. Both are neighbors of each other. Now look here, there is a mistake here. 1's neighbor is 0. So what do you say? Neighbor is equal to 0. Now look here, you are stuck. Here you have got a neighbor who is true. Whose visited is true. You will think, okay, 1's neighbor is 0. This means 0 is visited."
+  },
+  {
+   "start": 509.89,
+   "end": 537.68,
+   "text": "This means that there will be a cycle in this graph. But look at this graph carefully, this drawing. Do you see a cycle here? There is no cycle here, right? Where will you see a cycle? So it is open, right? To make a cycle, if you take an undirected graph, then at least three people are required to make a cycle, right? How can two people make a cycle? How can two people surround someone? It is not possible, right? Two people together, thinking that we should make a wire and surround someone. We cannot surround. To surround, three people are required to make a wire and surround. So there is no cycle here."
+  },
+  {
+   "start": 537.68,
+   "end": 567.52,
+   "text": "But with your current logic, you have got a neighbor whose visited is true. So you will think that yes, it is a cycle. You will say that yes, it is true. Very good. You don't have to do this. This is a mistake. What is this? It is a fatal flaw. It is a fatal flaw. This is a mistake, right? You will say that it is a cycle. It is not a cycle. Why did this happen? Why did this happen? Look, this happened because in undirected, it is obvious that suppose you come to 0. Come to 0 to 1. Now the neighbor of 0 is 1. The neighbor of 0 is 1. Okay."
+  },
+  {
+   "start": 567.52,
+   "end": 596.53,
+   "text": "1's neighbor is 0. So, you have come to 0. You have made 0 true. And you have reached 1. Now, you have reached 1. Very good. Now, 1's neighbor is 0 again. But 0's visitor is true. In this case, you have to ignore it. Why do you have to ignore it? Because 1's parent is 0. 1's parent is 0. You have to ignore your parent in cycle detection."
+  },
+  {
+   "start": 596.53,
+   "end": 625.38,
+   "text": "You have to ignore the parent. Why? Because in undirected, you can't make a cycle by combining two nodes. You can never make a cycle by combining two nodes. So, when you check whether you have found a visited neighbor, you have to check one more time that the neighbor we are looking at, is he my parent? If he is your parent, ignore him. Don't consider him. If he is your parent,"
+  },
+  {
+   "start": 625.38,
+   "end": 654.75,
+   "text": "Do not consider it at all. Otherwise, you will get stuck in this error. You will say that yes, there is a cycle in two nodes. There is no cycle in two nodes. This has happened because there is a parent. You have reached the child from the parent. Now the child is also coming back to the parent. But there is no cycle. There is only one stick. There is no cycle in one stick. There is no cycle in one stick. So in this case, this is completely correct. A neighbor whose visitor is true is very good. But in that, you ignore your parent. Who? Parent."
+  },
+  {
+   "start": 654.75,
+   "end": 683.86,
+   "text": "We will show this in a bigger example. We will show this in an example of three. Take three. One is Pratyush. The other one is Amit. And the other one is Seema. This is how the graph is made. This graph has a cycle. You can see a regular cycle in this graph. Now we will write its neighbor on every node. Who are Pratyush's neighbors? Amit and Seema. Pratyush has two friends."
+  },
+  {
+   "start": 683.86,
+   "end": 711.78,
+   "text": "How many friends does Amit have? Two friends. Pratyush and Seema. Pratyush and Seema. Okay? How many friends does Seema have? Again, two friends. Pratyush and Amit. Now, if it's undirected, then everyone is a friend of each other. No problem. Okay? Very good. Make a visited array. Make a visited array. This is Pratyush's visited array. This is Amit's. And this is Seema's. We are telling by name because it's easier to understand by name. False."
+  },
+  {
+   "start": 711.78,
+   "end": 741.44,
+   "text": "False? False. Everything is false in the beginning. Okay. You come to the main function. You see which one is unvisited. Suppose you start with Pratyusha. So what did you do? DFS of Pratyusha reached. DFS of Pratyusha reached. Very good. The first thing to do is to make Pratyusha's visited true. Make Pratyusha's visited true. Okay. One more thing. When you reach Pratyusha in DFS, then track who is Pratyusha's parent. In this case, who is Pratyusha's parent? Pratyusha has been called from the main function."
+  },
+  {
+   "start": 741.44,
+   "end": 769.23,
+   "text": "If you open your mobile and reach Pratyush, then assume that Pratyush doesn't have any parent. So in the beginning, we will make it minus 1 that Pratyush's brother doesn't have any parent. Now for the first time, DFA is starting with Pratyush. He doesn't have any parent. Very good. Now come. Pratyush's visited mark is done. Start seeing Pratyush's neighbor one by one. Who is Pratyush's first neighbor? First neighbor is Amit. Okay. Is Amit visited? No, Amit is not visited. If he is not visited, no problem. Do DFS."
+  },
+  {
+   "start": 769.23,
+   "end": 792.1,
+   "text": "It's not DFS. If it's not visited, then do DFS. Do DFS. What did you do? You did DFS. Come back. DFS of Amit has come. Okay? And who is Amit's parent? Whoever you are doing DFS with, how did you reach Amit? Through Pratyush. So, in Amit's parent, we will pass Pratyush so that Amit can ignore his parent with cycle detection. Why?"
+  },
+  {
+   "start": 792.1,
+   "end": 821.33,
+   "text": "Because if Amit will start considering his parent, Obviously, if you have reached Amit from Pratyush, then Pratyush is visited. Now Amit will say that my neighbor is Pratyush, he is visited, he is a cycle. No, you don't have to do this. There are two people, right? There is no cycle in two people. So who is Amit's parent? Amit's parent is Pratyush. Amit's parent is Pratyush. When we call DFS, then here we will pass the node instead of a neighbor and a parent. Okay? We came to Amit. The first thing to do is to true Amit's visited. Very good."
+  },
+  {
+   "start": 821.33,
+   "end": 844.26,
+   "text": "Let's look at Amit's neighbours. Who is Amit's first neighbour? Pratyush. Amit's first neighbour is Pratyush. Obviously, it is Pratyush. Now, Pratyush is visited here. Pratyush's visitor is true. You should have said that it is a cycle. But, is Pratyush his parent? Yes, Pratyush is his parent. If a neighbour is your parent, ignore him. He has no benefit."
+  },
+  {
+   "start": 844.26,
+   "end": 870.66,
+   "text": "Ignore. Ignore. We will not do DFS on non-present. Due to non-present, we will not do our cycle detection. We will ignore it. Very good. Very good. Let's see the next number. SEMA. Who is the next number of Amit? SEMA. Is SEMA visited? No. Is SEMA parent? No. If it is not visited, then the game is over. If it is not visited, then what to do? We have to do DFS. We have to do DFS. Come. Do DFS. On SEMA. Now."
+  },
+  {
+   "start": 870.66,
+   "end": 897.02,
+   "text": "Who is the parent of Seema? How did you reach Seema? Through Amit. So who is the parent of Seema? Amit. Okay? The first thing to do is to prove Seema's visited. Now, let's start looking at Seema's neighbours. Let's assume that Seema has two neighbours. Look at Amit first. Look at Amit first just for understanding. Is this Amit visited? Yes, Amit is visited. But..."
+  },
+  {
+   "start": 897.02,
+   "end": 922.42,
+   "text": "Amit is not Seema's parent. Yes, Amit is Seema's parent. Ignore it. Because this cycle is not parent-child. Ignore it completely. Amit is Seema's parent. We will not do anything on him. We will not do DFS on him. DFS is not like this because visitor is true. So, we will not use it for cycle detection. Ignore it. Why? Amit is his parent. But who is Seema's next neighbor?"
+  },
+  {
+   "start": 922.42,
+   "end": 951.06,
+   "text": "Pratyush. See here, the game will change. Who is the next neighbor of Seema? Pratyush. Yes, yes, yes. Now, is Pratyush's visitor true? Yes, Pratyush's visitor is true. You have seen Pratyush. You have seen him at least once. But, is Pratyush Seema's parent? No, Pratyush is not Seema's parent. What does this mean? It can mean only one thing in the world. That you start somewhere with Pratyush."
+  },
+  {
+   "start": 951.06,
+   "end": 980.45,
+   "text": "Now, Pratyush is not his parent. You have reached the limit. Now, you want to go back to Pratyush. It means that there are at least three nodes. At least there are three nodes in between. And this tells you that yes, cycle detection has been done. Pratyush is not his parent. It cannot happen that you have reached the limit from Pratyush. No. You went somewhere else from Pratyush. After that, you reached the limit. Now, you want to go back to your Pratyush. So, what does it mean?"
+  },
+  {
+   "start": 980.45,
+   "end": 1007.6,
+   "text": "There is a cycle in the graph. What will we do here? We will do cycle is equal to true. And we will not do DFS on the return. The DFS of the limit is over. Come back to Amit. The last neighbor of Amit is also over. Amit's DFS is over. Now come to the return. The only neighbor of the return was explored. Amit. The cycle detection of the return is already done. Let's do it. Is there anything wrong in it? What is its second neighbor?"
+  },
+  {
+   "start": 1007.82,
+   "end": 1035.25,
+   "text": "What is its second number? The limit. Now there will be no difference. Let's see if the limit is already visited. Yes, the limit is already visited. Is the limit Pratyush's parent? No, Pratyush's parent is none. Pratyush's parent is minus 1. There is no parent. So what will it do here? It will make the cycle equal to true, which we have already done. So there will be no difference. It will be true. This will also end. Now we will come back. What did you find out? That there is a cycle in the graph. In the graph,"
+  },
+  {
+   "start": 1035.25,
+   "end": 1065.23,
+   "text": "There is a cycle. Yes, there is a cycle in the graph. So, in this way, you had to take care of one thing. Parent. Don't consider your parent as a visited neighbor. Because obviously, when you are undirected, your parent will be already visited. That's why you are born with it. Right? So, this is called a cycle. What is this called? Cycle. Cycle needs at least three people. The purpose of parent is to remove this system of two people. Remove the two people who are connected to each other. Remove them. Look at this. Remove them."
+  },
+  {
+   "start": 1065.23,
+   "end": 1095.71,
+   "text": "That's all you have to do. Do you want to change a small thing in DFS? You have to pass parent. Write its code. Write its code from beginning to end. You have given edges. You have to make a list from edges. You have to pass the list in DFS. So, let's write its end-to-end code. Today, if someone says that you have not given the code, then we will beat you a lot. What do we write? Let's write its code. You have given a function. Whose name is isCycle. It is a Boolean type function. IsCycle. What have you given in this? First of all, you have given number of."
+  },
+  {
+   "start": 1095.71,
+   "end": 1125.25,
+   "text": "Vertex means how many nodes are there in the graph. And you are given a 2D vector named edges. We have told all this when we were reading the syntax of the graph. What will be given in edges? Between which vertex? Source, destination. Because this is an unweighted graph. It will be said that there is an edge between source and destination. There is an edge between 0 to 1. There is an edge between 0 to 2. First of all, let's make our adjacency list. How is it made?"
+  },
+  {
+   "start": 1125.25,
+   "end": 1155.54,
+   "text": "Make a 2D vector. Make a 2D vector. What size? N size. What will it say? There will be a vector in every vertex and that vector will contain its neighbors. It will say that the neighbor of 0 is 1, 2, 3, etc. The neighbor of 1 is 0, 4, 5, etc. It will say this. Okay. What will we do? We will loop on edges. How will we loop on edges? Through for loop. i is equal to 0. i less than edges dot size. Very good."
+  },
+  {
+   "start": 1155.54,
+   "end": 1186.45,
+   "text": "and I++. Yes, yes, yes. Come on, what is its source and destination in edges? I and T. Source is equal to edges I. Edges I is a vector of two sizes. It has two things, a source and a destination. If you want to find the source, its zero index. And you need destination. What is the destination of edge? Edge is always between two people. It is between 0 and 1. Source is 0, 1 is destination. Edges I."
+  },
+  {
+   "start": 1186.45,
+   "end": 1217.44,
+   "text": "1. Now because it is undirected, so array of source may push back destination. Meaning source's neighbor is destination. And destination's neighbor is also source. If it is between 0 and 1, 0's neighbor is 1. Pushed. 1's neighbor is also 0. So you have array of destination.pushback pushback source. Very good. You have made your undirected graph. That's all you have to do."
+  },
+  {
+   "start": 1217.44,
+   "end": 1245.92,
+   "text": "Now, we have to make a visited array. Vector, bool, viz. What size? N size. In the beginning, everything is false. Now, because these are connected components, you should run a loop. Run a loop from 0 to N. Why is this loop? DFS on whatever is unvisited. Because there are different components. You can also say that we will always do DFS from 0 once. No."
+  },
+  {
+   "start": 1245.92,
+   "end": 1276.27,
+   "text": "As I told you, we will do DFS from 0. It is possible that you will not be able to see the 3 component. That is why, do DFS from all the unvisited. If you do it from 0, then all the connected components in 0 will be covered. After that, assume that 5 is left. Cut it from 5 and see how much will be covered in 5. If, if, if, array of, sorry, visited of, visited of i, visited of i, equal, equal to 0. What to do? Nothing to do. DFS of,"
+  },
+  {
+   "start": 1276.27,
+   "end": 1304.19,
+   "text": "What is DFS? A. A is your list. After that, number of vertices. You should do it. You don't need it. Node. What is passed in node? I. What is passed in node? I. On which node? And what else do you have to pass in this? I has parent call. So here, because we are starting DFS with this, there is no parent. And one visited array. That's it. Close this loop. In the last, return. Return."
+  },
+  {
+   "start": 1304.19,
+   "end": 1332.86,
+   "text": "Cycle. What is Cycle? We have not defined Cycle yet. We will make Cycle a global variable. Cycle will be made a global variable. And DFS will update it directly. Now let's write our DFS. Come. First of all, make a global variable. Bull. Cycle. Keep it false in the beginning. In the beginning, assume that there is no cycle. Whatever you want to detect, give benefit or doubt that there is no cycle. If you make it true in the beginning, then every graph will have a cycle. Now write your DFS. Void."
+  },
+  {
+   "start": 1332.86,
+   "end": 1360.4,
+   "text": "DFS. What does DFS take? First of all, it takes your 2D vector which is your adjacency list. What is adjacency? List. Okay. INT N. Number of vertices. INT node. On which node have you reached DFS? It will take one more extra thing which is parent. Yes. And your visited array. Bull. Viz. It is over. What is the first step of DFS?"
+  },
+  {
+   "start": 1360.5,
+   "end": 1390.75,
+   "text": "viz of node is 1. This is a visit. This is a visit. Very good. After that, group all the neighbors. How is it grouped? j is equal to 0. j less than. Array of node is a vector which will contain all the neighbors one by one. And j plus plus. Okay. How will we remove neighbors? Array of node. Array of node is a vector of neighbors. And one by one,"
+  },
+  {
+   "start": 1390.75,
+   "end": 1421.62,
+   "text": "As soon as the neighbour leaves. Now, what do you have to check? If visited of neighbour equal equal to 1. Okay. And, and, neighbour not equal to parent. Neighbour not equal to parent. Means, if this neighbour is visited. And this neighbour is not even a parent. This means that there is a cycle. Yes, cycle is equal to true. Which cycle? We have made this cycle true. We have made this one true. It is over."
+  },
+  {
+   "start": 1421.62,
+   "end": 1452.13,
+   "text": "Now, check one more time. If visited of neighbor is equal to zero. If it is zero, then don't do anything. Call DFS. Array of n. We have called DFS on neighbor. And who is the parent of this neighbor? From where are you reaching the neighbor? From node, you are reaching the neighbor. And visited. Close this. And return your simply. What is this? This is the code of DFS. Small change. What small change? Parent."
+  },
+  {
+   "start": 1452.13,
+   "end": 1481.33,
+   "text": "parent is passing. When we call DFS from the main function, then what do we do? Minus 1. Now, if you are starting DFS from 0, then who is 0? Parent. No one is there. You have called. Minus 1. Brother, there is no parent for this. After that, whenever it happens, then neighbor. Who is the parent of neighbor? From where did neighbor reach? From this node. So, node called. So, this will tell you in which? Cycle in undirected. Cycle in undirected. Code this. Pause and code as you want. And move towards directed. Directed."
+  },
+  {
+   "start": 1481.33,
+   "end": 1509.97,
+   "text": "It can be a little hard, but what will be harder? Nothing is that hard. Let's move on to directed. Let's close this. Yes, so come to directed. And we have already told you that whenever you are solving a graph question, you have solved it for undirected. It was very fun. If your heart is telling you that you will do the same for directed, then you explain to it that you have become stupid. It will never happen in undirected or directed that you will make it using the same logic. There is a basic difference."
+  },
+  {
+   "start": 1509.97,
+   "end": 1539.07,
+   "text": "We will come to this graph later. We have made this graph after a lot of thinking to explain another point. First, we will tell you that what we have done now, why won't that happen? Why won't that happen? It is important to tell, isn't it? We will just tell the solution, then you will remember. But why won't what we have done now happen? Why not? It is a graph, isn't it? We will tell you that. Let's go. What have we done now? We will tell you. We were running DFS. Very good. We were running DFS from a node. On any node. Good."
+  },
+  {
+   "start": 1539.07,
+   "end": 1565.82,
+   "text": "We used to pass it to the parent. Okay. If we get a neighbor who is already visited. Okay. And parent is not there. Parent is not there. So, what did we say? Cycle. This is what we were doing. This was the whole crux. Now, put it here and see. Come on. We first fail this logic. We first fail this logic. In undirected, we were told that"
+  },
+  {
+   "start": 1565.82,
+   "end": 1595.66,
+   "text": "You can't make it by combining two people. You can't surround someone by combining two people. That's why you have to do the parent one. Obviously, how will you make a cycle by combining two people? Triangle is the first shape that falls. For that, you need three edges. Two people make a line together. But when you talk about directed, you can do a lot by combining two people. There are two nodes. Suppose you have a directed graph. If you have one edge called 0, 1, then you just have to make an edge from 0 to 1 by giving an arrow. Not from 1 to 0, you have to assume it."
+  },
+  {
+   "start": 1595.66,
+   "end": 1625.47,
+   "text": "Suppose you are given an edge from 0 to 1. Very good. Very good. But you are given another edge from 1 to 0. And the graph, JFG can give anything. There is an edge from 1 to 0. Look at this. There is an edge from 1 to 0. Does this look like a cycle? Yes, it looks like a cycle. Two people made a cycle together. In directed and in undirected, two people were not able to make a cycle together. Because two people will pull a line. What will happen in that? But because there is an arrow in directed,"
+  },
+  {
+   "start": 1625.47,
+   "end": 1654.32,
+   "text": "This is also a cycle. This is also a cycle. You can't say that there are only two people in this. No, there is a cycle. How? From zero to one. From one to zero. This is called a cycle. We got stuck, right? We were not able to get stuck in the upper one. You can say that we got stuck there too. But we want to show you from a drawing perspective. We could not make a cycle of two people in the upper one. It did not look like a cycle. It looks like a cycle. This is also a cycle. This is also a cycle."
+  },
+  {
+   "start": 1654.32,
+   "end": 1683.7,
+   "text": "Now, if you do that in this. Now see, we write its neighbor. 0's neighbor is 1. 1's neighbor is 0. First of all, what will you do? Many people must have understood what will happen. DFS 0. Take visited. It is visited. In the beginning, false. DFS 0. First of all, what will you do? You will make it true. Very good. Take its neighbor. Neighbor 1. Is 1 visited? No, it is not yet. Very good. If it is not visited, then you don't have to think anything. You have to come to DFS. You have come to 1. First of all,"
+  },
+  {
+   "start": 1683.7,
+   "end": 1710.48,
+   "text": "Mark it as true. Take out the neighbor of 1. What did you get? 0. Is 0 visited? Yes, 0 is visited. But according to your original logic, 0 is its parent. It's parent is 0, right? 0 is its parent. So will you consider 0? No, you will ignore 0. Ignore it. And no neighbor of 0 is left. This is over. No neighbor of 0 is left. This is over. With which thought did you come forward? There is no cycle."
+  },
+  {
+   "start": 1710.48,
+   "end": 1739.54,
+   "text": "But is there a cycle here? Yes, there is a cycle here. So here, the parent thing failed. If your graph is like this, let's say your graph is not like this, your graph is not like this, it's just this. This is not a cycle, this is open. But if you are given such a graph, then this is a cycle. So here, at least, at least, don't do the parent thing. Don't do the parent thing. Now, a lot of kids will be happy that if we don't do the parent thing, then it will be simpler. We were together as parents. What will we do?"
+  },
+  {
+   "start": 1739.54,
+   "end": 1769.09,
+   "text": "We will do simple DFS. We will do simple DFS. And we will remove this parent condition. We will remove it completely. On top of that, in undirected, we had already thought that we will do DFS. If we get a neighbor who is visited, then we will say that there is a cycle. Now to solve it in undirected, we have added parent. Here we are getting to know that parent will not work in this. So it is a good thing that we will remove parent. And we will write the same code. Come, let's write it. Let's write it and show you if it works or not. Assume."
+  },
+  {
+   "start": 1769.09,
+   "end": 1798.75,
+   "text": "This is 0. This is 1. This is 2. And this is 0. This is your graph. Is there a cycle here? Yes, brother. Look at this. This, this, this. Is there a cycle or not? Make a drawing and see if there is a cycle or not. Now, many children will say that it will be fun here. Which is the neighbor of 0? Remember. The neighbor of 0, where does it go from 0? So, it goes from 0 to 1. Not to 2. Not to 2. It is not undirected. It is going from 2 to 0. Means, it will be 0 in 2. It is not 2 in 0. Okay."
+  },
+  {
+   "start": 1798.75,
+   "end": 1828.3,
+   "text": "The neighbor of 1. Where is the edge going from 1? Only on 2. Only on 2. The neighbor of 1 will not have 0. It is not directed. It is not undirected. Who is in the neighbor of 2? 0. In the neighbor of 2, 0. Okay. Now, this will work. 0, 1, 2. This is your visited. In the beginning, everything is false. So, where did you come? First of all, you reached DFS of 0. You made 0 true. Very good. The neighbor of 0, 1. Is 1 visited? No. Come to DFS of 1."
+  },
+  {
+   "start": 1828.3,
+   "end": 1855.55,
+   "text": "Come to DFS of 1. Make this true. 1's neighbor? 1's neighbor? 2. Okay. Is 2 visited? No. Very good. Come to DFS 2. Make 2 1. 2's neighbor? 0. Is 0 visited? Yes, 0 is visited. And here we have removed the parent's loop. So what will you say? Yes, 0 is visited. There is a cycle. And there is a cycle here too. So is this the right solution? Absolutely not the right solution."
+  },
+  {
+   "start": 1855.55,
+   "end": 1880.51,
+   "text": "That's why we made the graph above. Now let's tell you that this solution is a good solution. But you will have to add one more small thing in it. We will explain to you why you have to add it. Let's go. Come. Now whatever logic you had, we will do DFS, is it never visited or not, we will run it here and see. First of all, see the drawing. Is there a cycle here? See, 0 to 1 can go, 1 to 3, 3 to 2, but"
+  },
+  {
+   "start": 1880.51,
+   "end": 1909.84,
+   "text": "This arrow is on this side, so this is not a cycle. If it would have been from 2 to here, then it would have been a cycle. You are understanding the cycle, right? Can you come back to that place while rotating? You can see. Start rotating from 0. Have you come back to 0? No. There is no way to go from 2 to 0. Understand this very carefully and finely. People don't understand this. People think that yes, there is an edge. There is no edge. It is from 0 to 2. It is not from 2 to 0. See something else. You can go from 1 to 3. You can go from 3 to 2."
+  },
+  {
+   "start": 1909.84,
+   "end": 1939.79,
+   "text": "You can't go anywhere from 2. What is 2? It is a dead end. There is no cycle here. Call it no cycle. Look at this drawing. No. Can you start from any node and reach that node by doing DFS? Look at it. Check it according to yourself. By looking at the entire permutation combination, you will know that no, there is no cycle in it. But our algorithm till now. First of all, let's write neighbor. Where is the edge going from 0? 1 and 2. From 1 to 3."
+  },
+  {
+   "start": 1939.79,
+   "end": 1969.82,
+   "text": "From 3 to 2. There is no neighbour of 2. There is no neighbour of 2. There is no edge of 2. There is no neighbour of 2. Okay? Make it visited. 1, 2, 3, 4, 0, 1, 2, 3. Okay? In the beginning, all false, all empty. Start your DFS. Start your DFS from 0. Okay? First of all, it got visited in 0. Now, just for your understanding, just for your understanding,"
+  },
+  {
+   "start": 1969.82,
+   "end": 1999.94,
+   "text": "Hold the first neighbor 2. It depends on the graph. 2 comes first, 1 comes first. What difference does it make? Hold 2. Neighbor 2. Is 2 visited? No. Very good. Okay. Come to 2. After coming to 2, mark it. Is there a neighbor of 2? No. 2 is dead end. You can't go anywhere from 2. 2's neighbor is empty. Talk on Instagram. 2 doesn't follow anyone. 2 people follow 2. 2's following list is empty. You can't do anything about that profile. You have to go back."
+  },
+  {
+   "start": 1999.94,
+   "end": 2025.92,
+   "text": "You will have to go back to your DFS 0, where 2 is running. There is one more neighbor of 0, 1. Now run 1. If we had run 1 first, then you wouldn't have understood. Now run 1. Is 1 visited? No. Very good. If it is not visited, then you don't have to think about anything. Come to 1 in DFS. First of all, mark 1 as visited. What is the neighbor of 1? It is 3."
+  },
+  {
+   "start": 2025.92,
+   "end": 2053.52,
+   "text": "Is 3 visited? No. Very good. Very good. It's a good thing if it's not visited. DFS of 3. Mark 3 as visited. Now open your mind and see. Open your mind and see. Who is the neighbor of 3? 2. Is 2 visited? Yes. 2 is visited. So what will you say? It's a cycle. Here. Cycle is equal to 2. According to your logic. According to the logic we thought till now. But is there a cycle in this graph?"
+  },
+  {
+   "start": 2053.52,
+   "end": 2082.56,
+   "text": "No, there is no cycle in this graph. There is no cycle in this graph. There is no cycle in this graph. But when you came to 3, you got 2 in your neighbor. And 2 was already visited. What does this mean? You are saying that there is a cycle. This means that our approach is a little wrong. It is definitely wrong. Otherwise, it would have worked. This is a good graph, right? It should have worked. It is wrong. Now I will tell you why it is wrong. See. Now see. Come back. Where? On Instagram. Now stay on Facebook. We are on Instagram."
+  },
+  {
+   "start": 2082.56,
+   "end": 2112.02,
+   "text": "If you follow on Instagram, then there is an edge between you. It depends on you whether it follows you or not. Now let's see the cycle. It is the same graph above, we have just changed the name. You start scrolling from Pratyush. We write something here that what are you doing? Where are you now? What color is this? Where are you now? Start on Pratyush. We are just seeing your behavior that what are you doing?"
+  },
+  {
+   "start": 2112.02,
+   "end": 2141.23,
+   "text": "He came to Pratyush. He visited Pratyush. Suppose you went to Sachin from Pratyush. Where did you go from Pratyush? You went to Sachin. Sachin also visited. Very good. Till now, this is your path. This is your session. Think of it as a session. What are you doing? You clicked on Sachin's profile from Pratyush. Imagine you clicked here. There is no one from Sachin. That means Sachin doesn't follow anyone. You can see there is no one from Sachin. You can't go anywhere from Sachin. Sachin doesn't follow anyone."
+  },
+  {
+   "start": 2141.23,
+   "end": 2170.21,
+   "text": "What did you do in this case? Where did you come back from Sachin to Pratyusha by pressing the back button? You came back from Sachin to Pratyusha by pressing the back button. Now the session of your mind, which is called session, has become Pratyusha again. Sachin is not in your mind at all. You have come back from Sachin by pressing the back button to Pratyusha. Now to Pratyusha. Pratyusha follows other people and follows Amit."
+  },
+  {
+   "start": 2170.21,
+   "end": 2197.18,
+   "text": "Now you went from Pratyush to Amit. In your session or in your scrolling path, who all are there now? One is Pratyush and one is Amit. Sachin is not in your path. You went to Sachin and came back. He is not in your path. Okay? Come. Come to Amit. Amit is also visited. Where is Amit's neighbour? Amit's neighbour is Seema. Come to Seema. Come to Seema."
+  },
+  {
+   "start": 2197.18,
+   "end": 2222.61,
+   "text": "When you come to SEMA, what is going on in your mind? Pratyush, Amit, SEMA. Sachin is not in your path. You went to Sachin and came back. It is over. It is a dead end. Sachin's account is a dead end. Okay. SEMA is also visited. Who is the neighbor of SEMA? Sachin. You get to know that Sachin is visited. Normally, what did you say upstairs? Yes, there is a cycle. But..."
+  },
+  {
+   "start": 2222.61,
+   "end": 2249.66,
+   "text": "Is Sachin in your path? Do you remember Sachin? No, you don't remember that Sachin is in your path. Why? Sachin's path is different. That's why we are making it like a tree. Sachin's path is different. Suppose Seema's friend had Pratyusha. Seema's friend would have done this. So this is a cycle. From here to here."
+  },
+  {
+   "start": 2249.66,
+   "end": 2259.46,
+   "text": "From here to here, from here to here. So see how it would have been made. If it would have been in the path of the border, see, this cycle would have been made."
+  },
+  {
+   "start": 2259.46,
+   "end": 2286.78,
+   "text": "If you follow the path to the limit, the current session in your mind, you have reached the limit. You have reached the limit. But if you are reaching Sachin from the limit, Sachin is not in your path. Sachin is not in your path. He is not in this session. Sachin was in another path. Sachin was in a different path. That's why you have to do one more thing. You have to do one more thing."
+  },
+  {
+   "start": 2286.78,
+   "end": 2316.64,
+   "text": "You have to track the path's array. What? You have to track the path's array that if you get a neighbour who is visited, like you got Sachin in SEMA who is visited, but is Sachin somewhere in that current path? Is Sachin somewhere in that current path? I will tell you one more example of this. This is why I am telling you this because it is very important to understand this. Suppose you start from Pratyush. You start from Pratyush. You start from Pratyush."
+  },
+  {
+   "start": 2316.64,
+   "end": 2345.5,
+   "text": "You came to Sachin. From Sachin, you came to Amit. From Amit, it ended. Amit doesn't follow anyone. You came to Sachin. Sachin also ended at Pratyush. Now you came to Pratyush at Seema. When you came to Seema, in your path, Sachin and Amit are not there. Their DFS is over. Amit was dead end. Amit's DFS is over. Sachin's DFS is over. Now, if you are getting Amit in Seema's neighbour, is this a cycle?"
+  },
+  {
+   "start": 2345.5,
+   "end": 2374.4,
+   "text": "No, this is not a cycle. Let's make a graph and show it to you. Is this graph cyclic? No. If you start from Pratyush, you can go to Seema from Pratyush. You can go to Amit from Seema. Is there any way to go from Amit to Pratyush? No, there is not. You will not be able to reach Pratyush from anywhere. This is the concept of the path. The DFS of these two is over. Now if this is coming in someone's visited, you have to ignore them because"
+  },
+  {
+   "start": 2374.4,
+   "end": 2404.13,
+   "text": "If you see in this graph, this is not a cycle. This is not a cycle. On the contrary, on the contrary, those whose DFS is not over, those who are running in it. Suppose you came to the border. From the border, you reached Raju. Okay? From Raju, you reached Mohan. At this time, whose DFS? Their DFS is over. Whose is running? These four. You are going in. You are going in scrolling. Now if from Mohan,"
+  },
+  {
+   "start": 2404.13,
+   "end": 2433.44,
+   "text": "There is an edge up to the border. That means there is a border in Mohan's neighbor. And the border is visited. And the border is in this path. So is this a cycle? Yes, this is a cycle. See, this becomes a cycle. So here in directed, you don't just have to see visited. You got a neighbor who is visited. And its path of that neighbor should also be 1. What will we do with the path? When we will start someone's DFS of node,"
+  },
+  {
+   "start": 2433.44,
+   "end": 2462.06,
+   "text": "When we start the DFS, we will also make the path of node 1. And we will make visited 1. We always make visited 1. Path of node means the DFS of this node has started. When we will end the DFS, before the return, we will return the path of node 0. That its DFS is over. It has moved away from the path. What will happen with this?"
+  },
+  {
+   "start": 2462.06,
+   "end": 2493.44,
+   "text": "If you get a graph like this, it's a small example. It's a bit hard to visualize, but think about it. Pratyush goes to Sachin. There's a limit. The limit goes to Sachin and Pratyush goes to the limit. Is there a cycle in this graph? No. We'll make two arrays. We'll make two visited arrays. Whose? Pratyush's, Sachin's and Seema's."
+  },
+  {
+   "start": 2493.44,
+   "end": 2522.4,
+   "text": "And we will make a path array. In this also, one for Pratyush, one for Sachin, and one for Seema. In the beginning, everything will remain zero. Path means, is his DFS active? That means, have you reached here from that person's account? If you went to that person's account, and it was over, that means there was nothing else, you backed the account. Backed means it is gone. Now you don't have to consider that account in the cycle."
+  },
+  {
+   "start": 2522.4,
+   "end": 2551.04,
+   "text": "He went to Sachin's account. There was no one else in Sachin's account. He had to come back. That means he had to finish the DFS. He had to finish it. That means he went from the path. See how he will do it. First of all, you came to Pratyush. What did you do? You closed Pratyush's visited and closed Pratyush's path. Pratyush has come to the path. Pratyush's DFS has started. Very good. Who is Pratyush's neighbor? Sachin. Is Sachin visited? Sachin is not visited. So what did you do? You came to DFS of Sachin."
+  },
+  {
+   "start": 2551.04,
+   "end": 2580.5,
+   "text": "Pratyush's path is still 1. Sachin's path is also 1. Sachin's visited path is 1 and Sachin's path is also 1. Can you go anywhere else from Sachin? No, Sachin can't go anywhere else from dead accounts. So what do you have to do? You have to go back. But before going back, zero Sachin's path again. To tell that Sachin has left the picture. Now if Sachin is someone's neighbor, whose visited path is 1, that doesn't mean that Sachin's path is 0."
+  },
+  {
+   "start": 2580.5,
+   "end": 2609.74,
+   "text": "Come back to Pratyush. Pratyush has one number left. Where did he go? To the border. If he goes to the border, then when you come to the border, Pratyush's path is 1. Sachin's path is 0. It means, it looks like this. Pratyush's path is 1. It means, you have come to the border of Pratyush. Sachin's game is over. Come to the border. First of all, make the visited of the border 1. Just like DFS, visited 1. Don't tease the visited. And make the path of the border also 1. Make the path of the border also 1."
+  },
+  {
+   "start": 2609.74,
+   "end": 2639.01,
+   "text": "Seema's one neighbor is Sachin. Is Sachin visited? Yes, Sachin is visited. But is Sachin in this path? No, Sachin is not in this path. Sachin's path is zero, so what does he have to do? He has to ignore it. He has to ignore it. Okay. Seema has no other neighbor. Go back. But before going back, Seema's path is also zero. Seema's BDFS is also over. Come back to Pratyush. Is there anything left to do at Pratyush? No. Go back."
+  },
+  {
+   "start": 2639.01,
+   "end": 2668.34,
+   "text": "While going, make the return zero as well. This is the concept of DFS path and session. We have tried to explain. If you have understood or not, then tell us in the comments. But in this way, when Sachin's path is over, then it's okay. Ignore Sachin. Sachin's path is over. Because if you do this, we have shown you here. If you have made this graph. Where did you make this graph? This one. If..."
+  },
+  {
+   "start": 2668.34,
+   "end": 2697.22,
+   "text": "If you make a line, then this is not a cycle. You can't go from Sachin to Pratyush. Sachin's path is over. But if you make a cycle from Seema to Amit, then this is a cycle. Why? Amit is in the path. Sachin is not in the path. Sachin is not in the path. So the whole thing will remain the same. Like undirected. We are not writing the code to make a graph. You make the graph yourself. See what will happen in this. First of all, bull cycle is equal to false. Same, same code."
+  },
+  {
+   "start": 2697.22,
+   "end": 2730.62,
+   "text": "write dfs, void dfs what will be passed? a will be passed a will be passed, okay? int, pass the node, pass the n as well as the node now in the upper one, the parent was passed, we don't need the parent in this, we need two arrays the first array is path bool path or visited or visited bool visited"
+  },
+  {
+   "start": 2730.62,
+   "end": 2760.69,
+   "text": "It is important to keep visited because if we keep a path, let's say Pratyush is in the path. It is important to keep visited because you have to track the component as well. Some people will have a doubt that when you are keeping a path, why do you have to keep visited? You have to keep visited because you have to track multiple components as well. Let's go. The first thing to do is visited of node is equal to 1. And path of node."
+  },
+  {
+   "start": 2760.91,
+   "end": 2794.45,
+   "text": "Is equal to 1. This means you came to this Instagram account. Now you are entering into it. When you press the back button of this account from this Instagram account. Then zero the path. Do the same thing. For int j is equal to 0. j less than array of node dot size. And j plus plus. Take out its neighbor. Int neighbor is equal to array of node j. If. If."
+  },
+  {
+   "start": 2795.31,
+   "end": 2825.97,
+   "text": "Visited of neighbor. Equal equal to one. And. And. And visited of path. Sorry. Path of neighbor. Path of neighbor. Equal equal to one. Means. You got such a neighbor. Which is already visited. And is in this path. And is in this current path. Means. The limit is being made at the intersection. Amidst the intersection. Amidst the border. Back to the intersection. There is a cycle. There is a cycle. Very good. That's it. And. Do one more. If."
+  },
+  {
+   "start": 2826.06,
+   "end": 2855.92,
+   "text": "its visited is false, its visited is false, then you run DFS on it. a, n, run DFS on neighbor, path, visited. That's it. Now, you used to return DFS. Now you used to return DFS, but before returning, path of node is equal to 0. Its DFS is over. You are pressing back button on this account. There is nothing left to do. That's it."
+  },
+  {
+   "start": 2855.92,
+   "end": 2885.84,
+   "text": "See, this is your small code. So, I hope you understood the code. And one more small thing. When we have a path, why do we need visited? We need visited because there is one more thing. Suppose you come to 0. See this graph. There is no cycle in this graph. You come to 0. Suppose you are not keeping visited, you are just marking the path. The path of 0 is green. Okay. You come to 2. Come to 2. The path of 2 is 1. You can't go anywhere from 2."
+  },
+  {
+   "start": 2885.84,
+   "end": 2911.39,
+   "text": "What did we do before going? We made the path of 2 to 0 and came back to 0. Okay? Good. Do you want to go to 1? The path of 1 is 0. Go and come back to 1. Okay? This is one problem. There are many more problems. We came back to 1. Now, who is the neighbor of 1? 2. Now, is the visited of 2 not there? We will check the visited. There is a path. The path of 2 is 0. So, what will we do? We will do DFS on 2 again. DFS had already been done on 2 once. We came from 0 to 2 and did it."
+  },
+  {
+   "start": 2911.39,
+   "end": 2940.53,
+   "text": "But now 2 is over. Now see from 1 to 2 again. So DFS is called again on 2. By doing this, you will call more and more DFS. And you will get TLE. According to me, you will get TLE. There can be many more problems. We will not think so deeply. But this is a small problem that we can see here. That multiple DFS will happen. It came on 2. Now according to which DFS? Visited means that we will not do DFS on it if it is 1. If you are saying visited, we will remove it. So you will have to do it according to path."
+  },
+  {
+   "start": 2940.53,
+   "end": 2969.68,
+   "text": "See, it was on 2. Now when it came to 1, then the path of 2 again became 0. It went back to 2. So this will keep happening. This is not a good thing. That's why we have kept both. So you have also learned the directed cycle. We will suggest you to spend some time on this explanation. Spend some time on code. Spend some time on dry run yourself. Mark in the array and see what can happen and what cannot happen. This is a dry run question. The more you learn from dry run, the more you will not be taught by any master."
+  },
+  {
+   "start": 2969.68,
+   "end": 2976.66,
+   "text": "So now you have learned the cycle very well and covered all the bases. See you in the next lecture."
+  }
+ ]
+}

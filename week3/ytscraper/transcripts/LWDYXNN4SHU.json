@@ -1,0 +1,369 @@
+{
+ "video_id": "LWDYXNN4SHU",
+ "title": "Back After Break! 0-1 Knapsack Tabulation | Best DP Playlist 2026",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1870,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 23.74,
+   "text": "Hello kids, sorry we had a break for a week. We were stuck in a lot of work and suddenly became very hectic. So we just realized that we should not have done this. We tell you that never complain about this in life that there is a lot of work, there is a lot of work. This should never be your complaint or your excuse. Because we are also realizing that a lot of people do not have work. I mean, there are lakhs of people who are yearning that we should"
+  },
+  {
+   "start": 23.74,
+   "end": 50.51,
+   "text": "to get a job like this, YouTube, Instagram. So this is the dream of a lot of people. Complaining at that time that no, no, there is so much work, how will we do it? That's not right. You guys should also never complain about this excuse or this thing that there is a lot of work, there is college, there is placement, this and that. Whatever work there is, it's fine. Sleep for an hour, play for an hour, watch a reel for an hour. Try to manage. So we will also try to manage. So it's fine. When we..."
+  },
+  {
+   "start": 50.51,
+   "end": 77.76,
+   "text": "Last week, we learned tabulation. Tabulation means that we saw what tabulation is. And recursion can also be a problem of DP. But we also saw that in any interview, your final goal, the interviewer wants from you, he wants a tabulation program from you. Why? Because in tabulation, memory is less and practically speaking, tabulation is faster. Even though time complexity is the same. Whose?"
+  },
+  {
+   "start": 77.76,
+   "end": 104.42,
+   "text": "Recursion or Memoization and Tabulation. In this lecture, my goal is to show you how to do a zero-one knapsack problem using Recursion. You must have understood that it was a very simple program. But in this lecture, my goal is to show you how to do a zero-one knapsack problem using Tabulation and how to make Tabulation sit in your mind properly and concretely. How to do it? We will not use any formula. We will do what we did in Fibonacci. What did we do?"
+  },
+  {
+   "start": 104.42,
+   "end": 129.28,
+   "text": "We have seen fibonacci recursion, we will also see 0-1 knapsack recursion, we will revise it, we have already done it. We will see what recursion does, what recursion is actually doing. What does it mean to do? The array of dp, the dp you used, dp will be my 2d vector or 1d vector, whatever your dp is, how does it fill the recursion? The way the recursion fills, we will fill it in the same way by writing a loop. So once we understand how the recursion is filling,"
+  },
+  {
+   "start": 129.28,
+   "end": 146.59,
+   "text": "In which order are you filling? And what are you using to fill? Are you using some formula? If you understand this once, then writing it in a loop becomes a kid's game. So let's go. Tabulation. What was the question of 01NAPSA? The question of 01NAPSA was that you were given N items. How many? N items."
+  },
+  {
+   "start": 146.59,
+   "end": 163.2,
+   "text": "Each item had its own value. But each item had its own weight. Napsaka means a pouch."
+  },
+  {
+   "start": 163.2,
+   "end": 192.54,
+   "text": "there was a capacity of that bag. Capacity means, whatever capacity you have given, you can only fill that much weight in it. You can't fill more weight than the capacity. If the capacity is 10 kg, you can keep up to 10 kg of stuff in it. If you keep 11 kg in it, then the bag will break. So, you don't have to do this. Now, when these three things are given to you, then what did you have to tell? How much maximum value can you do? Maximum value means, which item will you take which will make your value"
+  },
+  {
+   "start": 192.54,
+   "end": 217.3,
+   "text": "maximize. This was the program of 01-Napsack. Those who haven't seen it, please go and check out 01-Napsack. It was explained very deeply. Now our work is to look at the Napsack recursion. Try to analyze how Napsack was filling in DP. Once it is understood, then see how it can be written in a loop. This is the only way to write any tabulation. So let's go."
+  },
+  {
+   "start": 217.39,
+   "end": 235.9,
+   "text": "when we talk about recursion, so what we have done in recursion we have written a recursion in recursion we have written that in fun what all pass in this first of all your value pass was array and weight pass was also array obviously because weight will not pass so how you will see weight"
+  },
+  {
+   "start": 235.9,
+   "end": 260.02,
+   "text": "What else used to pass? Number of items used to pass. Okay. Int i, i means current item. On which item are you taking a decision now? Because in recursion, you take a decision, you take a choice. That brother, do you want to take this item or not? If you want to take it, then take it and go ahead. If you don't want to take it, then leave it and go ahead. So for that, i, i means on which item are you taking a decision? i is equal to 0 means you are taking a decision on the first item. i is equal to 1 means you are taking a decision on the second item. And."
+  },
+  {
+   "start": 260.02,
+   "end": 281.81,
+   "text": "int capacity means when you are making this decision then what is the capacity of your knapsack at that time initially when we call recursion then from whom we used to call? i is equal to zero means you have to take decision on first item and capacity is equal to whatever capacity you were given because originally there is nothing in your bag so whatever the capacity of your bag is given that becomes your capacity"
+  },
+  {
+   "start": 281.81,
+   "end": 304.08,
+   "text": "The first thing we used to do was base case. Base case means if i is equal to n, it means all the items are finished. What does i equal to n mean? If there are n items, then where does i come from? From 0 to n-1. If i is n, it means all your items are finished. If all your items are finished, then how much value can you take? You can't take anything. What did we do? Return."
+  },
+  {
+   "start": 304.08,
+   "end": 316.88,
+   "text": "Zero. Means if i becomes n, then no matter what your capacity is, your whole thing used to become zero. Okay. After that we used to see that if dp of i or"
+  },
+  {
+   "start": 316.88,
+   "end": 344.98,
+   "text": "Cap means the variable is changing in the recursion. In the recursion, we have to see which variable is changing. So in the recursion, two variables will change. First, the i variable will change. Sometimes i will be 0, 1, 2, 3. And the capacity will change. As you keep taking things, your capacity will decrease. So we used to see that if the answer to this combination is in your dp, then we used to return this. We didn't go ahead. Because there is no point in going ahead. Already its answer has been written. So why will we go ahead? Okay."
+  },
+  {
+   "start": 344.98,
+   "end": 361.44,
+   "text": "After that, if this is not the case, then you will have to do something. What will you have to do? First of all, if we used to see that if this capacity, i.e. your Portally's current capacity, is less than the weight of this item, i.e. your capacity is 10 kg, but on this item,"
+  },
+  {
+   "start": 361.44,
+   "end": 391.07,
+   "text": "If you are trying to take a decision and its weight is 20 kg, then it clearly means that you can't take this item. There is no other choice to take this item. If the total is 10 kg and you are standing with an item of 20 kg, then what choice do you have? There is no choice. You can't take it. You can't take it at all. What did we do in this? Don't do anything. Go ahead. Leave this item. Go ahead. How did we go ahead? First of all, this DP, ICAP is equal to, what does it mean to go ahead? Fun of value. Weight."
+  },
+  {
+   "start": 391.07,
+   "end": 416.5,
+   "text": "and I plus 1 and what? I plus 1 and what? It's a good thing. If it's not like that, means if your weight is less in capacity, then you get two choices. Then you get two types of choices. Which two types of choices do you get? First of all, it comes that you take this item. Take this item in your bag. So when you used to take this item in your bag, then first of all, you used to get the value of it."
+  },
+  {
+   "start": 416.5,
+   "end": 437.34,
+   "text": "You will get the value of this when you take an item. Okay. Plus, you will go ahead now. Because you can take one item at a time, so you have to go ahead. Weight and I plus 1. But when you take this item, your capacity used to be minus. Your capacity used to be less than the weight of I. For example,"
+  },
+  {
+   "start": 437.34,
+   "end": 467.31,
+   "text": "If your capacity is 10 kg and you are taking an item of 4 kg, then you will get the value of the item of 4 kg. But now your new capacity, when you go ahead, then what will be the new capacity? 10 minus 4, 6 kg will remain. This was one choice when we want to take. Even if we can't take, it's not necessary that we have to take. What will be the choice of not taking? The choice of not taking will be the same as above. Fun of, don't take, don't do anything. Weight, N, I plus 1 and cap. Cap will remain the same, you will go ahead. In both these choices, what?"
+  },
+  {
+   "start": 467.31,
+   "end": 495.31,
+   "text": "In both of these choices, whatever is a good choice, whatever is a good choice, so first of all, dp, i, cap is equal to whatever is a good choice, we used to do this. We used to return that. So this is your recursion code. If you remember, those who have seen the video, they will remember. This has been revised for you, what recursion is. Now let's see how this recursion works, what works, we will do dry run, how does dp get filled, what is used when dp gets filled, etc."
+  },
+  {
+   "start": 495.31,
+   "end": 514.9,
+   "text": "So let's move ahead. Now I have taken a small example to explain to you. Now you must be thinking that every time it takes so much time. I mean, every time I have to write a recursion and then take 15-20 minutes to analyze it and then do something. No, it doesn't seem like that every time. With time, you don't have to do it for 2-3 minutes. You will be able to think by yourself."
+  },
+  {
+   "start": 514.9,
+   "end": 541.22,
+   "text": "When you are starting, if we just tell you to do it like this, you won't understand. And you should also do it. The exercise activity that we are telling you, you should do it so that later it will be easy. When we started, we used to do it like this. We didn't come from the sky like this by studying. While doing it, a time will come when it will come. For simple problems, you will think that you have to write this only. Okay? Let's go. It is a very small example. You have two items. One item whose value is 10 rupees."
+  },
+  {
+   "start": 541.22,
+   "end": 571.01,
+   "text": "And its weight is 1 kg. The other item whose value is Rs. 20 and its weight is 2 kg. The total weight of the bag given to you is 2 kg. So you must be understanding that we will take this item so that we get Rs. 20. But anyway, let's see. First of all, you have to make your DP array. So the size of DP array made in recursion, here also the size of DP array will be made. The size of DP array made in recursion, here also the size of DP array will be made. Remember the video of recursion. What size DP array was made? We made DP of n plus 1."
+  },
+  {
+   "start": 571.01,
+   "end": 601.01,
+   "text": "And cap plus 1. And what was n? Number of items. In this question, what is your n? 2. And what is your cap? 2. What DP array will be made? You have to make an array of 3 by 3. So make it. Here we will make a beautiful 3 by 3 array. Let's make a small 3 by 3 array. Take this. This is made. Yes. Now the numbering is 0, 1, 2. 0, 1, 2. What is this y-axis? Capacity. And this is your i."
+  },
+  {
+   "start": 601.01,
+   "end": 630.48,
+   "text": "i or n, whatever you want to call it. Okay. After that, what is the work? Look at the base case of recursion. What does the base case of recursion tell you? If i is n, if i is equal to n, what do you have to return? Zero. Is anything being thought about capacity in the base case? Is there such a base case that if i is n, then if the capacity is zero, then you have to do zero, not capacity one. If i is n, no matter what is the capacity, what is your answer? Zero."
+  },
+  {
+   "start": 630.48,
+   "end": 658.93,
+   "text": "What will we write in the DP array? What is the meaning of i, n? This i and cap, this is what you write in the DP array. Your i and cap, this is what the DP array is. You are saying that if my i, n is there, then whatever the capacity is, its answer will always be 0 because it is my base case. So in your DP array, first of all, what is your n? It is 2. So can we write 0 to the whole row of DP 2?"
+  },
+  {
+   "start": 658.93,
+   "end": 684.21,
+   "text": "It can be written, the base case says that if i is n, then the answer is zero. There is no difference in capacity. So can we write that these three things are zero? Why? Because i is n. We have made the whole row zero. Very good. So your DPR is, first of all, it is filled that your base case is filled. i is equal to n row. So we will do this work. This work. The rest of the things are not filled. If the rest of the things are not filled, then we have to see the order in which order they fill the rest of the things. Let's go."
+  },
+  {
+   "start": 684.4,
+   "end": 713.04,
+   "text": "So, first of all, the recursion will start. Where did the recursion start from? It was written somewhere above. Yes. i is equal to 0 and capacity is equal to capacity. The value from which the recursion will start, that value will be your answer in the end. The value from which you start the recursion, that is your answer. Meaning, what is your answer? dp of i. Where did i start from? 0. And where did capacity start from? The capacity which was given originally is equal to"
+  },
+  {
+   "start": 713.04,
+   "end": 739.82,
+   "text": "Capacity. This is your final answer. Remember, because recursion started from here. We will return the recursion that will return. Your answer will be this. dp of 0 and capacity. Very good. Now, let's start the recursion. So, first of all, what will you start? First of all, you will call fun of i is equal to 0 and capacity is equal to 2. Very good. This will be good."
+  },
+  {
+   "start": 739.82,
+   "end": 766.3,
+   "text": "First of all, check if it is a base case. Is it an IN? No, it is not an IN. After that, check if this value is written in your DP. Is it DP of 0,2? No, it is not DP of 0,2. DP of 0,2 is empty. Empty means it is not filled yet. You will have to do some work in it. You will have to call your recursion. Very good. Now, let's move ahead. Now, if we move ahead. One minute, a call is coming."
+  },
+  {
+   "start": 766.3,
+   "end": 787.44,
+   "text": "So, where were we? First of all, I is equal to 0 and capacity is equal to 2. So, this is not a base case. Now, you will have to see your choice. Do you have the power to make a choice? I mean, is your capacity less than the weight of this item? If it is less, then you do not have the power to make a choice. So, look, we have two capacities here."
+  },
+  {
+   "start": 787.44,
+   "end": 817.06,
+   "text": "How much is the weight of the item i is equal to zero? One kilo. So you have a lot of choice. No one is forcing you to take it. After that, what did we do? We took out two choices. So what will be C1? C1 will come out. Whichever item you are on, either take it or take it. Meaning, value of zero plus go to the next item and minus the weight of this item with your capacity. Minus the weight of this item with your capacity. Okay."
+  },
+  {
+   "start": 817.06,
+   "end": 846.53,
+   "text": "This was the first choice. What was C2? We will not take it. We will go ahead. We will not take it. There is no such forceful that we have to take it. We will go ahead and your capacity will remain the same. Your capacity will remain the same. Okay. One by one, go on these two recursions. One by one, go on these two recursions. After a while, you will come to know what is going to happen and what you have to write in the loop. Okay. Come, call this one. Let's call this one. So, we have come here. Fun of I is equal to 1. And capacity, what will happen now? Now you are bringing it. It means there were two capacities."
+  },
+  {
+   "start": 846.53,
+   "end": 875.5,
+   "text": "How much is left in the bag? 1 kg is left. Capacity is equal to 1. Is this a base case? No, this is not a base case. But, the remaining capacity is less than 2 kg. Less than 2 kg means, you can't take this item even if you want to. The remaining capacity in your bag is 1 kg. You can't take a decision on a 2 kg item. You don't have to take it. What does it mean to not take it? What does it mean to return? Fun of, go ahead. Go ahead with the same capacity."
+  },
+  {
+   "start": 875.5,
+   "end": 901.54,
+   "text": "Go ahead. I plus 1 and cap is equal to 1. What does I plus 1 mean? I is equal to 2. I plus 1 means I is equal to 2. Okay. Call this. Fun. I is equal to 2 and cap is equal to 1. Now see. Now you know the answer. Because it is a base case. And it is also written in your DPRM. What is this? I is equal to 2 and cap is equal to 1."
+  },
+  {
+   "start": 901.54,
+   "end": 926.02,
+   "text": "dp of 2, 1. What is dp of 2, 1? Yes, yes, dp of 2, 1 is in your dprm. How to paste it? It is in your dprm. It is the same thing. Let's go. What do you want to return in this? Directly, return 0, which is in the dprm. So, this man's work is done. Now, now, now, his answer has come, 0. His answer has come, 0. Now, now, it is time to return this function."
+  },
+  {
+   "start": 926.02,
+   "end": 943.68,
+   "text": "Before returning, we will fill its dp array. Recursion means that when you are returning, then fill its dp array before returning. It will be useful later. So see, dp of 1. What happened? 1 of I2 and cap 1. Or else,"
+  },
+  {
+   "start": 943.68,
+   "end": 970.48,
+   "text": "DP of 2 and 1. DP of 2 and 1. In which case did this happen? When there was no choice. When there was no choice. Here you did not have any other choice. You could not do anything. If you did not have any other choice, then what was the answer to your DP? DP of 1, 1 or whatever DP of I or capacity equal to DP of 2 and 1. DP of"
+  },
+  {
+   "start": 970.48,
+   "end": 996.64,
+   "text": "2 and 1, dp of 2 and 1. So, what did we fill first? dp of 1, 1 is equal to dp of 2 and 1. When did this come? No choice. No choice. No choice. No choice. One minute. No choice. Okay? We filled it. This man's work is also over. This man's work is also over. This man's work is over."
+  },
+  {
+   "start": 996.64,
+   "end": 1022.69,
+   "text": "Now come back. Now you have got its answer. What is its answer? Zero. Now it is time to make C1. It is time to make C1. Don't make C1. Let's see C2 once. Call this person. What is I1 and cap2? Fun of I is equal to 1 and cap is equal to 2."
+  },
+  {
+   "start": 1022.69,
+   "end": 1052.69,
+   "text": "I is equal to 1 and cap is equal to 2. First of all, you have to see if this is a base case. No, this is not a base case. Do you have a choice here? Yes, you have a choice. Why? Because your capacity is 2. And you are interested in the item of I is equal to 1. For that also, your capacity is 2. So, you have a good choice. So, here also, you have to remove C1 and C2. What is C1? Take the item. To take means, whatever is in its value, whatever is in its value, plus it. Plus, move ahead. I is equal to 2 and"
+  },
+  {
+   "start": 1052.69,
+   "end": 1079.82,
+   "text": "Now, your capacity will be less. Your capacity was 2 kg. You put the item of 2 kg inside. What is your capacity left? 0. Your capacity is left 0. Very good. C2 means? Go straight ahead. We will not take. Fun of? I is equal to 2 and capacity will remain same. Now, these two are in your array because these two are base case. I is equal to 2, cap is equal to 0. Means, DP of 2 and 0 is in your array. What will be today's answer?"
+  },
+  {
+   "start": 1079.82,
+   "end": 1108.66,
+   "text": "Zero. I is equal to 2. Capacity is equal to 2. Is there in your array? What is the answer to this? Zero. Zero. Now, it is time to fill in its answer. Yes, it is time to fill in its answer. What did this person return? Maximum of C1 and C2. Meaning, DP of 1, 2 is equal to maximum of C1 and C2. But how did C1 and C2 come out? C1 and C2 came out like this. What is C1?"
+  },
+  {
+   "start": 1108.66,
+   "end": 1137.54,
+   "text": "Value of 1 plus dp of 2 and 0. This will be it. The value in recursion is the dp coordinate. dp of 2 and 0. Or what is one more? dp of 2 and 2. dp of 2 and 2. Where will the answer of this maximum go? In dp of 1 and 2. So what do we fill in the second? In the second, what do we fill? dp of 1."
+  },
+  {
+   "start": 1137.54,
+   "end": 1168.94,
+   "text": "2, dp of 1 and 2, kya bhare? kya bhare? dp of 1 and 2 bhare ki kya bhare ji? dp of 1 and 2, dp of 1 and 2, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa, aa,"
+  },
+  {
+   "start": 1169.23,
+   "end": 1197.02,
+   "text": "This is the second one. This is also filled. This man's work is also done. This man's work is also done. Now, his answer must have come here. His answer is 20. Now, it is time to fill this man. Which is your final answer. Which is your final answer. One more thing. This which we have filled now. This which we have filled now. In which scenario have we filled this? When there is a choice. With choice. With choice means."
+  },
+  {
+   "start": 1197.02,
+   "end": 1226.64,
+   "text": "You could have taken the choice. The upper one was filled without choice. It was that. This is with choice. Okay? Now, you have time to fill your final answer. The same thing will happen here too. What will be its answer? Max of value of 0 plus dp of 1 and capacity minus weight i. Whatever it is. What is it? It is 2 and dp of 1 and 1. Its next one. dp of 1 and 2."
+  },
+  {
+   "start": 1226.64,
+   "end": 1253.94,
+   "text": "When you fill this, what will be the answer? dp of 0 and 2. In the last, what did you fill? dp of 0 and 2. In the last, what did you fill? dp of 0 and 2. dp of 0 and 2 is equal to max of. First, you take your value. Value 0 plus dp of 1 and 1."
+  },
+  {
+   "start": 1253.94,
+   "end": 1276.48,
+   "text": "Either you go ahead and dp of 1 and 2. Look at this. When you do these three things, your recursion, and from where do you get the final answer? This is your final answer. Recursion is going on in this way. So we saw the dry run of recursion and all. This is of some formula type. And what is this? With choice. What is this? With choice."
+  },
+  {
+   "start": 1276.48,
+   "end": 1305.62,
+   "text": "Now let's analyze this and see what kind of loop is written in it. I hope you have understood this. This is how recursion works with real values. Now let's explain what you should do. If you see how the dp array is being filled, then you will see a pattern. Meaning, any dp of i or cap. If you want to fill this at the end, then you have to fill this. There are two scenarios in this. One is when you have no choice."
+  },
+  {
+   "start": 1305.62,
+   "end": 1333.36,
+   "text": "When does this happen? If your capacity is more than its weight. Meaning, in this case of no choice, dp of i and cap, what happens directly? dp of i plus 1 and cap. Yes, i plus 1 and cap. When there is no choice. You can see. dp of 1 and 1, what happens in no choice? 1 to 2, 1, 1 remains. Meaning, i plus 1 is there, but cap, cap remains."
+  },
+  {
+   "start": 1333.36,
+   "end": 1363.34,
+   "text": "Okay. When it has a choice, when it has a choice, yes choice, means you can take a choice, you have to see two things in it. Which two things? First of all, whatever your i is, its value, means if i is 1, then value of 1 plus, if i is 2, then value of 2 plus, whatever. So, value of i plus. What happens in plus? If i is 1, i will definitely increase. i plus 1 will definitely happen."
+  },
+  {
+   "start": 1363.34,
+   "end": 1393.01,
+   "text": "So, dp of i plus 1. And in this case, if you take this, then your capacity decreases. From whom it decreases? Whatever is the weight of your item i, it decreases. Meaning, dp of, let's write here, capacity minus weight of i. Take this. First choice. Second, same as this. If we don't take, dp of i plus 1."
+  },
+  {
+   "start": 1393.17,
+   "end": 1418.83,
+   "text": "And cap. This is your formula. To fill any i or cap, if there is no choice, how will we know if there is no choice? Cap is less than weight of i. If there is no choice, this will be its formula. If there is choice, two things. Value of i, dpi plus 1, cap minus weight i. First, dpi plus 1 max and its max. These are your things."
+  },
+  {
+   "start": 1418.83,
+   "end": 1447.82,
+   "text": "Now, let's see how to fill it. Look, for dp of i and cap, we need i plus 1. Look, here also we need i plus 1. Here also we need i plus 1. Here also we need i plus 1. That means, to fill any dp of i, you need dp of i plus 1. You will see how to fill recursion. First of all, we filled i is equal to 2 in the base case. After that, we filled i is equal to 1. After that, we filled i is equal to 1."
+  },
+  {
+   "start": 1447.82,
+   "end": 1472.46,
+   "text": "I is equal to 1. Last, I is equal to 0. First of all, I is equal to 0 has been filled. Why? Because to fill I is equal to 0, you need some values of I is equal to 1. Meaning, to fill this row, where did it go? Where did it go? To fill this row, you need some value of the previous row. To fill the row of 1, you need the value of the row of 2. That's why,"
+  },
+  {
+   "start": 1472.46,
+   "end": 1494.46,
+   "text": "When we will start filling this value, then the loop of i should be from n-1 because i is equal to n is filled. i is equal to n is filled in the base case. i is greater than 0 and i is minus minus. This is i. How should we fill the cap? Now let's see what is needed in the cap. To fill the cap,"
+  },
+  {
+   "start": 1494.46,
+   "end": 1519.5,
+   "text": "Either you want the cap of the previous row, or you want cap minus weight of i. Meaning, if your matrix is 0, 1, 2, 0, 1, 2. Let's assume that this row is full. You are trying to fill this."
+  },
+  {
+   "start": 1519.5,
+   "end": 1548.69,
+   "text": "1. Okay? i is equal to 1, cap is equal to 1. The obvious thing is that it will need something from dp of 2. It doesn't need from 1. In any formula, see, there is no i anywhere. dp of i is always dp of i plus 1 here, dp of i plus 1 here, dp of i plus 1 here. It needs the row of i plus 1. What does cap need? In cap, either it needs the same cap, see here, same cap, same cap. Either it needs the same cap, or it needs some small value from cap. From cap,"
+  },
+  {
+   "start": 1548.69,
+   "end": 1576.56,
+   "text": "We need a smaller value. It means, it is possible that either dp1 and 1 need dp of 2 and 1. That's okay. Or it is also possible that it needs dp of 2 and 0. We need a smaller value than 1. To fill 1 and 1, we don't need a bigger value than the cap. It is not possible that to fill 1, you need some other value of the next row. Are you able to understand what we are trying to say?"
+  },
+  {
+   "start": 1576.56,
+   "end": 1599.63,
+   "text": "So, there are two things. To fill the row, you need the front row. You need the front row. That is why we said that we will fill the row from n-1 to 0. We will not fill from 0 to n-1 because to fill row number 0, we need row number 1. To fill row number 1, we need row number 2. So, you will have to fill in reverse. Okay? To fill the cap, you either need the same cap of the front row or you need"
+  },
+  {
+   "start": 1599.63,
+   "end": 1627.58,
+   "text": "So you can fill the cap in any order because when you come to fill i is equal to 1, the automatic thing is that i is equal to 2 will be filled automatically because we are filling the row in reverse order. So if you want, you can also run j like this, j is equal to zero, j is equal to less than equal to cap, j plus plus. You can also fill it like this or you can do this."
+  },
+  {
+   "start": 1627.58,
+   "end": 1648.96,
+   "text": "You can also fill it in reverse. j is equal to cap. j greater than equal to 0. j minus minus. You can fill the cap in that way. Why? Because what does the cap need? Either the capacity of the front row or the capacity of the front row is a little less. But because we are filling the row in reverse order. So when we are i is equal to."
+  },
+  {
+   "start": 1648.96,
+   "end": 1678.8,
+   "text": "Calculate some I row, then the I plus 1 row will already be calculated. The whole row will be calculated. So you can take whatever you want from it. That's why you can choose any of these according to you. Now, if we want to write its code, don't get confused. Do a dry run of it once. Think about it once. If we want to write its code, what will we write? First of all, n is equal to val dot size. Val dot size. After that, we will make a dp. What will we make? Vector of"
+  },
+  {
+   "start": 1679.66,
+   "end": 1704.18,
+   "text": "Vector of? Vector of int. Like this. dp, what size? With rows. Int, i, j. Now, let's make it a 2D array. i is equal to 0. i less than equal to n. i plus plus. After that, make another row. Make another array. Vector of int, t. What size? Kappa plus 1. Okay. dp of i."
+  },
+  {
+   "start": 1704.18,
+   "end": 1732.11,
+   "text": "is equal to t. Your 2D array is ready. After this, write the base case. The base case means j is equal to 0, j less than equal to cap, j plus plus, and dp of n, j is equal to 0, which means the entire value of nth row is 0. That's it. Now, let's start. How will the row be filled? i is equal to n minus 1, because i is equal to n already filled, greater than equal to 0, i minus minus."
+  },
+  {
+   "start": 1732.4,
+   "end": 1762.45,
+   "text": "You can fill this cap in any way. So let's fill it from the beginning. j is equal to 0. j less than equal to cap. j plus plus. Now what you have to do is, you have to take out both the choices first. So see, if my j, now don't write cap, j is representing your cap. If your j is less than, weight of i, then you don't have a choice. So dp of ij is equal to, what will happen? dp of i plus 1 and?"
+  },
+  {
+   "start": 1762.51,
+   "end": 1791.12,
+   "text": "j. Else, else, if you have a choice, then dp of i, j is equal to max of, what will happen? Value of i plus dp of i plus 1, and your j will be reduced. How will j be reduced? Your weight of i will be reduced. This is done. Or else, or else, same. Go ahead without taking dp of i plus 1, j. This is done. Max. Reduce this."
+  },
+  {
+   "start": 1791.12,
+   "end": 1818.72,
+   "text": "What is your final answer? Who called the recursion? Where is my recursion function? i is equal to 0, cap is equal to cap. What should be your final answer? Which you will return to the user. Return dp of 0 and cap. Here you have written the tabulation function. And we hope that you have understood it. It is very important to understand all these things. That is why we have given so much time and energy to it. Because it is very important to understand."
+  },
+  {
+   "start": 1818.72,
+   "end": 1844.54,
+   "text": "You must be thinking that it was fine, it was not necessary to think about the recursion. But this is a very simple problem. The problem that will go ahead will be a bit complex. You should learn and do things like this. You should know what recursion is doing, what is actually happening. The most important thing is how to fill it. If you start filling it with i is equal to 0 to n, it will not be filled. Because to fill i, you need the value of i plus 1. Fill it in the opposite direction. Don't fill it straight."
+  },
+  {
+   "start": 1844.54,
+   "end": 1869.76,
+   "text": "Why? Because if there was such a rule in CAP that you also need the value of this row or that row, then you would have to look at it that way in CAP too. If CAP needs a smaller value than that, then you would have to fill it from 0 to CAP. If any CAP needs a bigger value than that, then you would have to fill it from CAP to 0. So all these things will keep changing question by question. Please make this, please understand this and we will meet in the next lecture. Thank you very much."
+  }
+ ]
+}

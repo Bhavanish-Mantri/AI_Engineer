@@ -1,0 +1,484 @@
+{
+ "video_id": "TIBZsd-Qlrg",
+ "title": "Don't Miss This Binary Search Interview Question | DSA Patterns 2026 Cpp Java Python",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2535,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 28.02,
+   "text": "Hello and welcome to Pado with Pratyush. My name is Pratyush Narayan. Today's question is episode 52. Before that, we strongly recommend that you must have watched at least 51. That means the video that came the day before. Today is Thursday, the video that came on Tuesday. Do watch 51 and then watch this video. Otherwise, you won't understand. And those who are watching, those who have watched 51, we highly encourage you to pause this video right now. And go to this question, go to leetcode33 and try to solve this question."
+  },
+  {
+   "start": 28.02,
+   "end": 46.24,
+   "text": "Once you solve it, then come to this video. Because the technique you will think of solving is not the best way. The best way we are going to teach is that. But if you think of that way too, then well and good. Okay. Let's start. Today's question is the same as we studied binary search, Pratyush Mall was there. There were shops."
+  },
+  {
+   "start": 46.24,
+   "end": 75.5,
+   "text": "You had some money and you were trying to find a shop for that money. That every shop is selling a shirt. You need a shop for that money in which the shirt is being sold. And you used to stand in front of the mall. You used to guess one by one and then you used to see what you have to do. So that is the question. Now what is the difference in this question? What we had seen earlier, the simple binary search. The question we had read that simple binary search. There was a mall in that. The shops that were there were in increasing order of prices. Means first 10, 20, 30, 40, 50, 60, 100."
+  },
+  {
+   "start": 75.5,
+   "end": 101.52,
+   "text": "Now there is a shift in this mall. It is a new type of mall. Why is it a new type of mall? Because here the shops are not exactly sorted. You can see that it is with a rotation. What does it mean? Look at some shops. The shop started from 50 rupees. After that 50, 60, 70, 80, 90, 100 means there is one part of the shop. There is one part of the shop which"
+  },
+  {
+   "start": 101.52,
+   "end": 129.31,
+   "text": "It is sorted. It is sorted in a way. 50, 60, 70. It is sorted like this. And there is one more part. There is one second part. There is one second part. This. 10, 20, 30, 40. This is also sorted in itself. But this whole array is not sorted in itself. If you rotate one sorted array. If you rotate one sorted array. Then you get an array like this. Where there is one first part and one second part. The array of the first part is sorted in itself. 50, 60, 70, 80, 90, 100."
+  },
+  {
+   "start": 129.31,
+   "end": 156.83,
+   "text": "and the other parts are also sorted, 10, 20, 30, 40. But if you combine both, then both are not sorted. This is your mall. And you don't know how this mall looks like. You don't know from the beginning where part 1 ends and where part 2 starts. You understand by looking at the boundary that 50 to 100 will be 1 and 100 to 40 will be 1. But you don't know from the beginning where the boundary is. You just have the wires and"
+  },
+  {
+   "start": 156.83,
+   "end": 186.03,
+   "text": "Suppose you have brought 30 rupees and you are in a hurry that we have to find a shop worth 30 rupees. Means you have to find this shop and you have to find this shop and return its index or anything else. So this is your question. Now those who have seen 51, they will understand it very well. Those who have not seen 51, they will also understand. We will teach in this way that you also do not have any problem. Although we will recommend that you should see that first. Now see, there is a little trick in this question. First of all, if you have seen 51."
+  },
+  {
+   "start": 186.03,
+   "end": 212.16,
+   "text": "So what did 51 say? There was a similar problem in 51 but the requirement of 51 was different. The question of episode 51 was find minimum in rotated sorted array. What was that? Find the minimum of rotated sorted array. Means find this thing, okay. If you know that question, if you know how to do that question, then you can find the minimum here. See, what will happen by finding the minimum? You will only get this boundary. If you find the minimum,"
+  },
+  {
+   "start": 212.16,
+   "end": 240.05,
+   "text": "You will get a boundary in this question. You will solve it. How will you solve it? For example, if you have seen that question. And how is your array? If your array is 50, 60, 70, 80, 90, 100. This was your first part. And the second part starts from 10. 10, 20, 30 and 40. If we write everyone's index, then it is 0, 1, 2, 3, 4, 5, 6, 7."
+  },
+  {
+   "start": 240.05,
+   "end": 269.84,
+   "text": "8, 9. Ok. There are 10 shops. Now you know how to find this. How is this? This is Minimum in Rotated Sorted Array. We have already done this question. We understood it very well that how it happens. We did it by doing part 2 and part 1. And you have to find the first occurrence of part 1. So, you know how to find this. So, as soon as you find this, suppose you came to know that the sixth index is like this. What did you come to know? That there are two parts in this mall. How are there two parts?"
+  },
+  {
+   "start": 269.84,
+   "end": 294.42,
+   "text": "first part which is from 0 to 5 index you can call it part 1 or part 2 whatever you want to call it you can call it big part or small part you can call it big part because 50, 60, 70, 80, 90 is a little expensive shop and 10, 20, 30, 40 is a little cheap shop so this is big part and you get one thing that from 6 to 9 there are small parts in this index"
+  },
+  {
+   "start": 294.48,
+   "end": 322.54,
+   "text": "The array is broken in two parts. And these two parts are sorted by themselves. See. 0 to 5 is sorted by itself. Yes. 50, 60, 70, 80, 90, 100 is sorted by itself. And 6 to 9 is also sorted by itself. 6 to 9 is also sorted by itself. Now what do you have to find? Now what do you have to find? 30. So you check in both. Check in both. Or put binary search in both. Put binary search in both. What does it mean in both arrays? You put binary search once with low is equal to 0."
+  },
+  {
+   "start": 322.54,
+   "end": 346.21,
+   "text": "and high is equal to 5. So, find 30 in this array. You won't find it in this array. You won't find it in this array, but it's okay. Put binary search in this array. Assume you didn't find it here. If you didn't find it, then put it in this too. Low is equal to 6, high is equal to 9. You know how to do simple binary search, right? What did we do in simple binary search? We didn't use our brains. In that, we used to write low is equal to 0."
+  },
+  {
+   "start": 346.21,
+   "end": 368.03,
+   "text": "and we used to write high is equal to n minus 1 we used to guess if you want then we are assuming that you are watching our video so you know simple binary search put it on both so if you put it in this then you will not get any answer in this or you will get minus 1 answer no problem but when you put it in this lower 6 in this binary search then you will get to know that whatever is 30 is on index 8 so you will return 8"
+  },
+  {
+   "start": 368.03,
+   "end": 390.32,
+   "text": "so this is one way and we are very much hoping that those who have watched the previous video must be able to understand this completely and you are able to write this code completely. What do you need to write this code? First of all, you need this thing, what is this? Minimum in rotated sorter array which we have already taken out, which we know to take out. Once you have taken out the minimum, then you can break your array into two parts."
+  },
+  {
+   "start": 390.32,
+   "end": 418.82,
+   "text": "What can we break in two parts? Suppose you take out that index is equal to something at your minimum. Okay. So what you can do is that my low 1 is equal to 0 and my high 1 is equal to index minus 1. See, your minimum was at 6. So what was your low? From 0 to 5. From 0 to 6 minus 1. And where will your second array start? Low 2 is equal to index and high 2 is equal to whatever is last and minus 1. You got two lows."
+  },
+  {
+   "start": 418.82,
+   "end": 440.4,
+   "text": "Do binary search twice on the same area with this low and high and then with this low and high. Return the answer where you get the answer. Suppose you don't get any answer. Suppose you come to find 32. Is 32 in the area or not? Is 32 in the mall or not? Then you return minus 1. There is no problem. By doing this, you can solve this problem. But, this is a very good approach. Very good approach. Very nice. Yes."
+  },
+  {
+   "start": 440.4,
+   "end": 463.34,
+   "text": "I am very happy that if you think like this, then it is a good thing. If you can't think, then it is a good thing. You must have understood. You have hope. Now, those people who didn't understand, that's why I am saying that it is important for you to see that 51. That's why it is very important for you to see that 51. Now, this approach is good, but in some interviews, this approach will not work. This approach will not work. Why will it not work? Because look, here you are working 2-3 times."
+  },
+  {
+   "start": 463.34,
+   "end": 490.11,
+   "text": "First of all, we are doing one thing that to get the index of part 1 or to get the minimum index, we used binary search for that too. How did we use it? We assumed that there are two types of elements in the array, p2, p2, p2, p2, and then p1, p1, p1, p1, and we got the first occurrence of p1. So, we used that algorithm in a way that we will do binary search, if p2 comes,"
+  },
+  {
+   "start": 490.11,
+   "end": 509.62,
+   "text": "So, obviously, we will go to the right. If p1 comes, then we will write it in the answer and go to the left. That means we did a binary search in total. So, here you did a binary search once. After that, after that, when you get this thing, then you are again doing binary search on those two arrays. Again you are doing binary search on those two arrays. Let's not do it on two, I mean, you can think like this, that suppose you get this."
+  },
+  {
+   "start": 509.62,
+   "end": 536.08,
+   "text": "look at its range, its lowest is 50 and its highest is 100 obviously, you can't get between 50 and 100 and its lowest is 10 and its lowest is 40, so you can get between 10 and 40 so don't put it on 1, put it on 1 in any case, you will have to search on 1 area you will have to search on 1 area more so you will have to do one more actual search in total so you are doing binary search twice interviewer will tell you to do it in one shot one shot means"
+  },
+  {
+   "start": 536.08,
+   "end": 559.57,
+   "text": "One pass means search the binary once so that everything can be done. It can be said somewhere, so it is important to learn. So it is not very difficult. You just need to clear the basics very well for this. That's why we were still focusing a lot on the basics. Yesterday someone told us in a comment that you don't teach questions, you talk very useless. So why do we talk useless? So that your basic is clear."
+  },
+  {
+   "start": 559.57,
+   "end": 588.46,
+   "text": "If you want to do binary search, then do it. If you keep remembering low, mid, high, then this question will never be made. The person who has studied binary search remembering low, mid, high, this question will never be made because he doesn't understand the concept of what is there in binary search. He has written that when it is less, then it is right to go here. No, you don't have to do that. That's why he makes a talk, not because we have to increase our minute. We don't do anything like that. Okay? Let's see and solve it very easily. Solve it very easily."
+  },
+  {
+   "start": 588.56,
+   "end": 617.46,
+   "text": "When we used to read basic binary search, when we used to read basic search, when we used to read basic search, when we used to read basic search, when we used to read basic search, when we used to read basic search, when we used to read basic search,"
+  },
+  {
+   "start": 617.46,
+   "end": 646.43,
+   "text": "Suppose you guessed something. Suppose you guessed something. You came here. You came to guess this. You guessed this shop. Now, if its value was equal to your search value, means you were looking for this only, then you would have returned it. Okay. There was no problem in that, you would have returned it. If, if your array of guess, whatever you guessed, was less than target, means, the thing you want to find is bigger than this, means suppose you are at 30, suppose you wanted to find 70. So now see, 30,"
+  },
+  {
+   "start": 646.43,
+   "end": 670.93,
+   "text": "So, here we knew that the left value of 30 would be less. If you want more, if you went to the shop of 30, you found out that you had to find 70, 30 is less. So, you should have searched for a bigger value than 30. Now, where did you get the bigger value of 30? In the right of 30. So, you would have found out that the bigger value of 30 is in the right of 30. In this case, you would have gone to the right. How? Low is equal to? Guess."
+  },
+  {
+   "start": 671.12,
+   "end": 691.57,
+   "text": "In this case, you would have gone from right, low is equal to guess plus 1. And if you would have known that if my array of guess is more than target, means the shop you went to is expensive, suppose you came to this shop at 80 and you were looking for 40, you were trying to find 40, you have come to 80, your guess has come to 80 and stopped."
+  },
+  {
+   "start": 691.57,
+   "end": 719.38,
+   "text": "So, what does this mean? That you should find a value less than 80. Now, if 80 is already more, then what is there to find more than 80? You need a value less than 80. Now, by looking at the drawing, we came to know that where will we get a value less than 80? In the left. In this case, we used to go left. How do we go left? High is equal to guess minus 1 and go left. In total, this was the basics. This was your mind. This was the thought process. This is what you used to do. Come, let's do the same thing in this question. Come, let's put the same thing in our mind."
+  },
+  {
+   "start": 719.38,
+   "end": 747.33,
+   "text": "And look at it with a little patience, till the end you will be completely clear. Please don't remember this solution. We will remember, we will forget till tomorrow. We will understand, we will remember it for the rest of our life. Okay, come. Let's make a mall. Okay, what mall do we make? 50, 60, 70, 80, 90, 100. After that 10, 20, 30, 40. Let's write the index of all. 0, 1, 2, 3, 4, 5, 6."
+  },
+  {
+   "start": 747.33,
+   "end": 777.7,
+   "text": "7, 8, 9. 10 shops. Very good. Assume that you were looking for any element. You were looking for any element. You were looking for a target. You are looking for a target. A target can be anything. I mean, you want to look for any number. Now, see. Now, you will guess. What is binary search? It is a guess game. So, you can guess any of the 10 shops initially. I mean, what is initially? That your low is equal to 0. And high is equal to 9. In the beginning, the whole mall is for you. Guess anything. So, assume that you guess anything. Now, see what will be the problem here. Now, see what will be the problem here."
+  },
+  {
+   "start": 777.7,
+   "end": 804.32,
+   "text": "Your guess, your guess, remember that there are two parts in this array. Now your mall, now you can't see your mall as a single mall, that it is a single mall and the shops are like this and not like this. Now you have to see this mall part wise, like we used to see it part wise in minimum. Now there are two types of parts in your mall. One part is this, one part is this and one part is this. Now your mall is in two parts, this is your part 1, understand."
+  },
+  {
+   "start": 804.32,
+   "end": 830.1,
+   "text": "Part 1, big part, whatever you want, consider it as part 2. We call it part 1, part 2. Now, what you guess can be in part 1 or part 2. It depends on how big part 1 and part 2 is. We mean to say that whatever index you guess, that index can lie in any part. That shop can be in any part. That shop can be in part 1 or part 2."
+  },
+  {
+   "start": 830.19,
+   "end": 857.87,
+   "text": "Let's first see that whatever you guess, whatever index you guess, it falls in part 1. Whatever you guess, it falls in part 1. What was the condition of part 1? Remember, don't forget minimum in rotated. Don't forget minimum in rotated sorted array. This was the meaning of teaching it before this. Which guess index falls in which part? How did we know this? If array of guess"
+  },
+  {
+   "start": 857.94,
+   "end": 886.21,
+   "text": "is greater than array of n minus 1, then it is in part 1. Look carefully. What are you saying? If array of guess is greater than last element, see, 50 is greater than 40, then 50 is in part 1. 60 is greater than 40, then 60 is in part 1. 70 is greater than 40, then 70 is in part 1. 80 is greater than 40, then 80 is in part 1. 90 is greater than 40, then 90 is in part 1. 100 is greater than 40, then 100 is in part 1. But,"
+  },
+  {
+   "start": 886.21,
+   "end": 912.35,
+   "text": "10 is not greater than 40, so 10 is in part 2. 20 is not greater than 40, so 20 is in part 2. 30 is not greater than 40, so 30 is in part 2. And 40 is also not greater than 40. 40 is equal to 40, but 40 is not greater than 40. So 40 is also in part 2. By doing this, we get to know which index is in which part. So let's go. Suppose whatever you guessed, you guessed this one. You guessed this one."
+  },
+  {
+   "start": 912.35,
+   "end": 942.3,
+   "text": "Whatever you guessed, assume that it came in part 1. How will you know? Array of guess is greater than array of n minus 1. So yes, 80 is greater than 40. You came to know that it is in part 1. Okay. Now see, there can be 3 conditions. There can be 3 types of things. If you guess anything, then only 3 scenarios are possible. The first scenario is that your array of guess is equal to target. Equal to target. What to do in this? Nothing. Very good. Yes. Yes. Very good. Clap your hands and return the guess. Return the guess. You got it, right?"
+  },
+  {
+   "start": 942.3,
+   "end": 966.72,
+   "text": "If you get it, then return it. All the elements are unique. In this mall, all the shops sell unique items. So, there is no need to worry. If you get it, then congratulations. Okay. Now, tell me one thing. If your array of guests, if your array gets less, if your array gets less than target, what does it mean?"
+  },
+  {
+   "start": 966.72,
+   "end": 994.43,
+   "text": "The shop where you are now, you have come to 80. You have come to guess at 80. You get to know that we are not looking for 80, we are looking for 90, for example. We are looking for a bigger value than 80. This means that this array of guesses, less than target, we are looking for a bigger value than 80. Now look at the drawing. In binary search, it is very important that you keep a drawing of the question you are solving in your mind. Or keep it in your copy so that you can look at it and think left and right. Thinking left and right is very easy than drawing."
+  },
+  {
+   "start": 994.43,
+   "end": 1022.03,
+   "text": "When compared to your mind. Don't make a story in your mind. Look at the drawing and decide. Okay. Now tell me one thing. Your array of guesses is less than target. So it is obvious that suppose you are at 80. You had to find a bigger value than 80. Suppose you had to find 90, 100, 200. You had to find something bigger than 80. So you should go towards a bigger value than 80. Now you should find a bigger value than 80. Now is the bigger value than 80 visible on the left side of 80 or on the right side of 80? Listen to the question again."
+  },
+  {
+   "start": 1022.03,
+   "end": 1051.47,
+   "text": "In this drawing, the larger value of 80 is seen on the left side of 80 or on the right side of 80? It is seen on the right side of 80. 90 and 100, only two values are greater than 80. And where are they? On the right side. On the left side of 80, no value is greater than 80. On the left side of 80, no value is greater than 80. Yes, its value is greater on the right side. Obviously, you should not go left."
+  },
+  {
+   "start": 1051.47,
+   "end": 1077.73,
+   "text": "If you go to the left, you will never get the target. Why? Because 80 is already less than the target. If you go to the left, all the values are less than 80. So if 80 is less than the target, then 70 is less than the target, 50 is less than the target. You will never get it. In this case, you should simply go to the right. In this case, you should go to the right and search more. How do we go to the right? Low is equal to guess plus 1. Very good. Solved."
+  },
+  {
+   "start": 1077.73,
+   "end": 1102.69,
+   "text": "But now there is a small twist. Now the hardest part of this question has come. Understand this last part. Part 1. Now, very importantly, we are discussing that when your guess lies in part 1, when your guess lies in part 2, a different theory will be created. We will explain that now. Understand this, you will write the next one yourself. We promise that if you understand this, you will write the next one yourself. Okay. Now there could have been three conditions."
+  },
+  {
+   "start": 1102.69,
+   "end": 1133.07,
+   "text": "Array of guess is equal equal to target? Return guess. Nothing to do. Array of guess is less than target. So, you have to find a greater value than 80. So, what do you think after seeing a greater value than 80 in the drawing? That yes, it is found in the right. So, let's go to the right. Low is equal to guess plus 1. But, what will happen if array of guess, if array of guess is greater than target? What? Greater than target. Now, there is a problem. See, now why is there a problem? Some people might feel that why is there a problem? Array of guess is greater than target. Means, on which you are standing, you are standing on 80."
+  },
+  {
+   "start": 1133.07,
+   "end": 1150.48,
+   "text": "You wanted to find a value less than 80, okay? You wanted to find a value less than 80. For example, you wanted to find 70, you wanted to find 50, you wanted to find 40, something less than 80. So now you want a value less than 80. But look carefully at the diagram."
+  },
+  {
+   "start": 1150.58,
+   "end": 1170.86,
+   "text": "If we start asking, is there a lower value than 80 in 80's left or 80's right? Then you will get confused. Why will you get confused? Because even in 80's left, there is a lower value than 80. 50, 60, 70. But even in 80's right, there is a lower value than 80. See, 10, 20, 30, 40. Listen again."
+  },
+  {
+   "start": 1170.86,
+   "end": 1196.67,
+   "text": "When we were asking you here, whether the higher value of 80 is visible in the left or in the right, you were very confident and happy to tell us that all the higher values of 80 are in the right. Very good. But, here we are asking where the lower value of 80 is visible. So, you will say that the lower value of 80 is visible in the left as well as in the right. So, should it go left or right? This is a confusion. This is the main part of this question."
+  },
+  {
+   "start": 1196.67,
+   "end": 1226.1,
+   "text": "The value less than 80 can be seen here and here too. So where will you go? Where will you go? Where will you go? So see, one thing works here. Okay, now answer me according to the drawing. We are asking you a very simple question. Your target is less than 80. Okay, so you want to find a value less than 80. Assume that you are looking for 60. Assume that your target is 60. This is your target that this is 60. So where do you go? So obviously you say that if the target is 60, then we go left."
+  },
+  {
+   "start": 1226.1,
+   "end": 1251.9,
+   "text": "Because you can see in the left that it is 60. Very good. So, in the target 60, what did you say? That we go left. Okay. We should also go. If we say that your target is less than 80. Your target is 20. Your target is 20. So, where do you go? You say that it is 20. According to the drawing, if 20 is here, then according to the drawing, we go right. According to the drawing, we go right. This. We asked you that if the target was 60, then where do you go? You said that we go left because it is visible in the left."
+  },
+  {
+   "start": 1251.9,
+   "end": 1275.82,
+   "text": "If the target was 20, where would you go? You would say that the target is 20, so you go to the right and you can see the right. Now, you can't see it. Now, you can see the drawing here. Binary search doesn't know the drawing. So, what will binary search have to do? Binary search will have to use its brain. Listen carefully. Array of guess greater than target. Now, there is a small value in the left of 80 and there is a small value in the right of 80. See. In the left of 80, in the left of 80,"
+  },
+  {
+   "start": 1275.82,
+   "end": 1302.06,
+   "text": "Can we find the smallest value on the left of 80? How will we find the smallest value on the left of 80? We are saying that 80 is here. 80 is in part 1. How will we find the smallest value on the left of 80? Array of 0. Array of 0. Array of 0 means that the smallest value on the left of 80 is 50. Array of 0. The smallest value is array of 0. So, let's assume that there are two cases in this."
+  },
+  {
+   "start": 1302.06,
+   "end": 1330.56,
+   "text": "Now, there are two cases in this. You want a value smaller than 80. But, but, but, assume, now, if, now, this is inside this. If, array of 0 is bigger than target. Array of 0 is also bigger. Array of gas is also bigger than target. Array of 0 is also bigger than target. Meaning, if you have 50, 50 is also bigger than your target. If you are searching for 20, in this case, will you benefit from going left? No, you won't. Because,"
+  },
+  {
+   "start": 1330.56,
+   "end": 1350.29,
+   "text": "In the left of 80, the smallest value is bigger than the target. 50 is also bigger than the target. Obviously, if 50 is bigger than the target, then 60, 70 will be bigger than the target. In this condition, you should not go left. In this condition, you should go right. In this condition, you should go right. Else,"
+  },
+  {
+   "start": 1350.29,
+   "end": 1375.7,
+   "text": "You should go left. Else means that array of 0 is less than equal to target. Array of 0 is less than equal to target. Means 50 is less than equal to your target. Suppose you are searching for 70. If you are searching for 70, then why will you go right? There is no value greater than 70 on the right. Or there is not even 70. So what are we doing? We are finding out the range. That will it be beneficial to go left or not?"
+  },
+  {
+   "start": 1375.7,
+   "end": 1402.19,
+   "text": "There is a smaller value than 80 on the left. But if the smallest value of 80 on the left is also bigger than my target, then why will we go to the left? How will we get there? How will you get 30 in the range of 50 to 70? This is useless. If we say that the smallest shop on the left is 50, the rest of the shops will be bigger than 50, then it will be 50. So you say that if we have to search for 30, then why will we go to the left? We will go to the right, right? And if you say that, okay,"
+  },
+  {
+   "start": 1402.26,
+   "end": 1429.81,
+   "text": "Array of 0 is less than equal to target. Else, else means, okay, the smallest shop is 50 and we want to search for 70. Obviously, you should go left, you should not go right. So, this was the most important thing to understand this question. So, you have written right, left completely. Look at it carefully, pause it and recap it in your mind again. If you don't understand this thing, then please say in the comment. We never take these things as bad. See, you said that you didn't understand prefix sum. No work is bad."
+  },
+  {
+   "start": 1429.81,
+   "end": 1455.98,
+   "text": "We think that the useless kids who comment that there is this and that, you should say that you didn't understand it. According to me, you must have understood it well. Meaning, we just saw it in part 1, let's recap it again. We will write part 2 in the same way, part 2 will just be the opposite of it. We saw that first of all, whatever guess you do, low plus high by 2, that came in your part 1. So the first condition will be, array of guess equal equal to target, you don't have to do anything in this, you have to return it."
+  },
+  {
+   "start": 1455.98,
+   "end": 1482.85,
+   "text": "Next was that array of guess is less than target. So, you wanted a number greater than 80. Drawing showed that the number greater than 80 is in the right. So, you went to the right. But, when array of guess is greater than target, means that 80 is greater than target, you want a number less than 80. Now, what is the problem in a number less than 80? It is less in the left and less in the right. But, the left one is less. It is less in the left. Look at that. In your left, what will be the lowest value? Array of 0. Because,"
+  },
+  {
+   "start": 1482.85,
+   "end": 1506.37,
+   "text": "Part 1 is also sorted. Remember we said that both the parts are sorted automatically. So, we have seen that your array of 0 will have the lowest value in less than 80 and in the left of 80. So, if 50 is also greater than the target, that means you want to find 30, you want to find 20. Now see, where are 30 and 20? You will get it in the right, you will get the benefit of going left, right? No, we went right."
+  },
+  {
+   "start": 1506.37,
+   "end": 1532.02,
+   "text": "Else, if the array of 0 is less than or equal to the target, which means 50 is less than or equal to the target, then you would want to find 60 or 70. Now you will find 60 and 70 on the left, not on the right. So, you have come to the left. So, by making a drawing, it is understood. It will not be understood by thinking in your mind. Those who think in their mind that I will do this, I will do that, then some people remember it. No, you don't have to remember. Make a drawing and see. So, this is done. When? When your guess falls in which?"
+  },
+  {
+   "start": 1532.02,
+   "end": 1565.02,
+   "text": "Fall in part 1, when your guess falls in part 1 Keep this diagram fresh, we will write the code according to this Let's go, what will happen if your guess falls in part 2? Now see, if you see that, you will understand more If you see that, you will understand more, let's go We don't want to disturb that drawing comp, that's why we are making it here 50, 60, sorry So what is this? 50, 60, 70, 80, 90, 100, 10"
+  },
+  {
+   "start": 1565.02,
+   "end": 1594.54,
+   "text": "20, 30, and 40. As we know that there are two parts in the array. This is one part and this is the second part. Let's do its indexing. 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Now, in the first part, your guess was in part 1. This is your part 1. And this is your part 2. But your guess can also be in part 2. So, for that, you have to be ready. How will it be in part 2? If array of guess is greater than array of n-1, then it is part 1. Else, it is part 2."
+  },
+  {
+   "start": 1594.54,
+   "end": 1625.84,
+   "text": "Now you are solving for part 2. Now you are solving for part 2. Three conditions are also possible here. Now your guess is in part 2. Okay. You assume that your guess is this. Your guess is here. In part 2. Okay. Here also three conditions can be there. Like the one above. If. The first condition is if array of guess equal equal to target. You are not thinking anything in this. You have to clap and return guess. This was your work. This was your work. Return. Very good. This is a useless condition. Yes."
+  },
+  {
+   "start": 1625.97,
+   "end": 1644.06,
+   "text": "Now see. If array of less is greater than target. Array of less is greater than target. Means you came on 20. 20 is greater than your target. Means you wanted to find something less than 20. Look at the drawing."
+  },
+  {
+   "start": 1644.06,
+   "end": 1673.55,
+   "text": "Are less than 20 elements on the right side of 20 or on the left side of 20? You will know that there is only one element less than 20, 10, which is on its left side. See, on the right side of 20, no element is bigger than 20. No element is smaller than 20. On the right side of 20, no element is smaller than 20. If you want something smaller than 20, then you will have to go to the left. So, in this case, what will we do? We will do nothing. We will go to the left. How do we go to the left? High is equal to?"
+  },
+  {
+   "start": 1673.55,
+   "end": 1696.46,
+   "text": "Guess. Minus 1. Look carefully. It's completely upside down. Look. The simple condition in the upper one. We had seen. Array of guess is less than target. And it goes right. Here we are seeing. Array of guess is greater than target. So it went left. So this simple condition happened. But what will be the complex condition here? What will be the complex condition here? Complex condition will happen. When. Array of guess is."
+  },
+  {
+   "start": 1696.46,
+   "end": 1706.06,
+   "text": "Less than target. Array of guesses less than target means you came to 20. You were not looking for 20. You were looking for something bigger than 20. Now."
+  },
+  {
+   "start": 1706.1,
+   "end": 1730.45,
+   "text": "It is exactly the same thing. Is there a bigger element on the left side of 20 or on the right side of 20? Both. There is a bigger element on the left side of 20 and there is a bigger element on the right side of 20. There is a bigger element on the left side of 20 and there is a bigger element on the right side of 20. So you need a bigger element. But will you go left or right? To decide this, we will do the opposite."
+  },
+  {
+   "start": 1730.45,
+   "end": 1759.95,
+   "text": "In part 1, we used the array of 0 to see which is the smallest element on the left. Here, we will use the array of last to see which is the largest element. Yes, yes. You want an element larger than 20. So, if the array of You want a larger element, right? So, if the array of is less than your target, which means"
+  },
+  {
+   "start": 1759.95,
+   "end": 1789.28,
+   "text": "your target is bigger than the area of guess and also bigger than the area of n-1 means your target is bigger than the biggest in the right side suppose if your target is 70 then is 70 bigger than 20? yes, it is bigger than my guess and the biggest element in my right side is also bigger than 70 then where should 70 go? you should go to the left because if you go to the right then the biggest element of right is 40 your target is bigger than 40 so why are you going to the right?"
+  },
+  {
+   "start": 1789.28,
+   "end": 1818.7,
+   "text": "In the right, why don't you go to the right? The biggest element of the right. Someone told you that in the right, the most expensive shop sells a shirt for Rs. 40. You came to find a shirt for Rs. 70. So why are you going to the right? Go to the left. In this case, you go to the left. Else, if the area of n-1 is greater than or equal to the target. If your target is more than the guess. Means your target is more than 20. This is your target. It is more than 20."
+  },
+  {
+   "start": 1818.7,
+   "end": 1848.02,
+   "text": "But it is less than 40. This means this happened. So where should you go? Suppose you are looking for 30. 30 fits in this. For 30, you don't go left. For 30, you have to go right. Why? Because it will lie in the right. Look carefully. All the big elements on the left will be bigger than 30. All the big elements on the left will be bigger than 30. Where do you have to go for 30? You have to go right. Now how are you understanding this? You are understanding this by making a drawing. We have not remembered this at all before today."
+  },
+  {
+   "start": 1848.02,
+   "end": 1876.02,
+   "text": "We don't have any formula for this. We don't have any formula for this. We don't have any formula for this. We don't have any formula for this. We don't have any formula for this. We don't have any formula for this. We don't have any formula for this. We don't have any formula for this. We don't have any formula for this."
+  },
+  {
+   "start": 1876.02,
+   "end": 1896.54,
+   "text": "In the left side, there is no probability of getting 30 in 50 to 100. So where will we go? Right. How do we go left? High is equal to guess minus 1. How do we go right? Low is equal to guess minus 1. Your code is ready."
+  },
+  {
+   "start": 1896.54,
+   "end": 1924.64,
+   "text": "Let's write the code of this. We will see both. Now, your guess can lie in both the parts. There are only two parts. I have written part 1 and part 2. I have written as many conditions as possible in both. Your code will be made from this. Come, let's write the code. So, you can work in one shot. Come, let's show how beautiful the code will be. So, don't worry. First of all, int low is equal to 0. High is equal to. Now, after writing this, if someone has commented that give the code, then we will give two slaps on the face."
+  },
+  {
+   "start": 1924.64,
+   "end": 1955.57,
+   "text": "What code should we give in this? What does it mean to give a code in this? Even after this, what does it mean to give a code? That means you don't watch the video, then you go to ChatGPT, you will get the code. Even after explaining so much, if you are asking for a code, no, still give us the code. So then, you will not be able to study BSA for more than a day, then you let it be. So what do you have to do? You don't have to do anything, you have to start. While low is less than equal to high. First of all, guess, any one. We always guess the middle one."
+  },
+  {
+   "start": 1955.57,
+   "end": 1983.89,
+   "text": "We have explained these things that it is not necessary that you do the middle guess. It is good that you do the middle guess. First of all, check that what? If your array of guess is equal equal to target. If your array of guess is equal equal to target, return guess. You don't have to think much in this. Return guess. So, now see the guess. The guess is in any part. In part 1, in part 2. If it is equal equal to target, then return it. So, look at us. We have also covered this."
+  },
+  {
+   "start": 1983.89,
+   "end": 2014.59,
+   "text": "We have covered this and this as well. We will tick on whatever is covered. Okay. Now, you have to decide whether your guess is in part 1 or part 2. Your guess is in part 1 or part 2. How? With these conditions. With these conditions. Come, let's write this too. So, first of all, you have to decide if my array of guess is greater than array of n-1. That's it. What does this tell you? Part 1."
+  },
+  {
+   "start": 2014.59,
+   "end": 2044.66,
+   "text": "Part 1. Okay. Now we have entered this. Now see what we had written in part 1. We had written in part 1. This was part 2. In part 1. This was handled. Very good. This was left. This was a simple condition. Let's write this. If area of gas is less than target. So where did we have to go? We had to go right. If area of gas is. If. We write this in a different color. This is part 1 color. Okay. Remember. If. Area of. Gas is. Less than target. Where did we have to go?"
+  },
+  {
+   "start": 2044.66,
+   "end": 2071.57,
+   "text": "Where did we have to go? We had to go right. Right means low is equal to gas plus 1. Low is equal to else. Else. Else means what happened? See, we have written this too. Not part 1. This one. This happened. If array of gas is less than target, this happened. This whole condition happened. This whole condition happened. Now you come to this. Else means this. Array of gas is greater than target. Now there was an if in this too. There was our own if in this. What was the if?"
+  },
+  {
+   "start": 2071.57,
+   "end": 2100.4,
+   "text": "If array of 0 is greater than target, go right. We will write its code too. We will show you its code by screenshot. Don't worry. If, there was one more if in this. If array of 0 is greater than target, then right. If array of 0 is, there was one more if in this. If array of 0 is greater than target, then go right. What does right mean? Low is equal to guess plus 1. Else, go left."
+  },
+  {
+   "start": 2100.4,
+   "end": 2125.06,
+   "text": "High is equal to guess minus 1. This else is closed and this if is closed. Whose? Part 1's if is closed. This is just part 1 now. Let's confirm once again. See what we have done. In part 1, first guess that if array of guess is less than target, then we have gone right. What have we gone? Right. Let's check once from the upper one. What we have written is correct or not."
+  },
+  {
+   "start": 2125.06,
+   "end": 2155.2,
+   "text": "So, yes, array of guess is less than target, so you have to go right. After that, we checked in else that array of guess is greater than target. We put one more if in it. If array of zero is greater than target, then you have to go right. So, what is written here? If array of zero is greater than target, then you have to go right. What is this? You have to go right. Okay. So, this is also finished. Else, you have to go left. Else, you have to go left. Else, you have to go left. Part 1 is finished. Part 1 is finished. Now, your part 2 comes."
+  },
+  {
+   "start": 2155.2,
+   "end": 2184.72,
+   "text": "So what did we write? If. After this, make it continue. So you don't have to write more if else. What is it? After this, write continue here. It's done. Part 1's work is done. If's work is done. Now from here, part 2 starts. Now you have reached here. It means you are not in part 1. You are in part 2. It means you are in part 2. You have come to part 2. Okay. Let's see what is left in part 2. This was done. This is left. If array of guesses greater than target. If array of guesses greater than target."
+  },
+  {
+   "start": 2184.72,
+   "end": 2215.47,
+   "text": "So, go left. If array of guess is greater. No. Yes. If array of guess is greater than target, go left. Okay. Come. If array of guess is greater than target. Greater than target. What did you know? Go left. Left means high is equal to guess minus 1. High is equal to guess minus 1. Okay. Yes. This is done. This is done. Else. Else. Else. Yes. Else."
+  },
+  {
+   "start": 2215.47,
+   "end": 2242.98,
+   "text": "You have come to this. Now it had its own if. What was it? If array of n-1 is less than target. If array of n-1. If array of n-1 is less than target. Less than target. It had to go left. High is equal to guess minus 1. High is equal to guess minus 1. Else. Else. This is done. It had to go right."
+  },
+  {
+   "start": 2242.98,
+   "end": 2274.77,
+   "text": "What we had to do to go right? Low is equal to guess plus 1. This else is closed. And your main while loop is closed. In the last, if you didn't get it, then return minus 1. You didn't get anything in the last. So, look carefully. This whole. First of all, you take out the guess. After that, you check if this is part 1. Part 1, this went. This whole. After that, you check part 2. Part 2 went till here. If this is your main while loop."
+  },
+  {
+   "start": 2274.93,
+   "end": 2303.23,
+   "text": "this is your main while loop and in the end you didn't get anything so you did return-1 so this was search in rotated verticare now this is a very complex code to see how many if else if else but we hope that you understood by drawing come let's see its code too it's been a long time so those who have come till here we hope that you haven't come to take the code directly it took a lot of hard work I had a sore throat while telling so come so what is the code that we have written on the iPad we will write it here"
+  },
+  {
+   "start": 2303.23,
+   "end": 2333.07,
+   "text": "low is equal to 0, high is equal to n-1. I will increase the font so that you can see it quickly. A little, not even this much, it is too much. Yes, okay, we think that if this much is not visible, then the eye is bad, okay. So, what we write there, we will write here too. First of all, let's guess. What do we do? Let's guess. Okay. First of all, let's check that if my guess is equal to target, then let's return guess without thinking anything."
+  },
+  {
+   "start": 2333.42,
+   "end": 2363.14,
+   "text": "Okay. Now comes the main work. What is the main work? Now you have to do that in which part has your guess come? In which part has your guess come? If array of guess is greater than array of n minus 1. Okay. So what happens? Now what does this say? That your part has come in 1. Your part has come in 1. Okay. Your part has come in 1. Okay. So what did we do? First of all we used to check a basic condition that if array of guess is"
+  },
+  {
+   "start": 2363.14,
+   "end": 2393.81,
+   "text": "greater than array of n-1, n-2. What was in part 1? Okay, okay, sorry. First of all, let's check a basic condition that if array of less than target, you wanted a big value, you will get a big value, low is equal to guess plus 1. Else, now you had a little, now you were checking that array of 0 is greater than target. So, yes, array of 0 greater than target, you will have to go right. Low is equal to guess plus 1."
+  },
+  {
+   "start": 2393.81,
+   "end": 2422.77,
+   "text": "Else you have to go left. High is equal to guess minus 1. We are not explaining that much here. We are writing fast because we have explained. This is not a matter of remembering the code. We are also saying this by looking at the iPad. Because we also don't remember. How will we remember? It is not possible to remember all this. We are not a machine. We can remember the concept. You can derive it from yourself anytime. You expect that you did it 3 days ago. You don't remember. We also don't remember. We did it yesterday. We will see it."
+  },
+  {
+   "start": 2422.77,
+   "end": 2455.78,
+   "text": "We did it yesterday, day ago. If we don't remember it yet, then if we don't remember it, then you also won't remember it. You don't have to remember it. Just derive it once and write it down. Okay. Else means, where did your guess come from? In part 2. In part 2, what was the first condition checked? A simple condition was checked. If array of guess is less than target, then you... No, it was less, it was greater. Array of guess is... Okay, sorry. Array of guess is greater than target. See. Okay, no problem. So, what did we do?"
+  },
+  {
+   "start": 2455.78,
+   "end": 2483.41,
+   "text": "High is equal to guess minus 1. Else, if array of n minus 1 is less than target. Array of n minus 1 is less than target. So, what we used to do? High is equal to guess minus 1. Okay. Else, low is equal to guess plus 1. Is this correct? This used to happen in part 2. What used to happen in part 2?"
+  },
+  {
+   "start": 2483.63,
+   "end": 2510.8,
+   "text": "Array of guess is greater than target. We used to do that. We have to go left. So, left goes like this. Yes, if array of n minus 1 is less than target, then you will have to go left again. Or else, you will have to go right. So, let's see. Luck is right. Luck is right. Okay. Meanwhile, look here. Return minus 1. Let's do it here. If we don't get anything, then it will be minus 1."
+  },
+  {
+   "start": 2512.11,
+   "end": 2534.1,
+   "text": "It looks good. Yes, it looks good. Very good. Yes. So, you can see this. This is the same code which was written in iPad. We don't do that. We don't do that. We show you something else. We do something else. So, let's go. This was a small binary search. And come tomorrow. Let's go."
+  }
+ ]
+}

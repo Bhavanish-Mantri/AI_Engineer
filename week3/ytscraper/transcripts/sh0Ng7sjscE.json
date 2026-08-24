@@ -1,0 +1,364 @@
+{
+ "video_id": "sh0Ng7sjscE",
+ "title": "DSA Patterns Lecture 28 | Master DSA Patterns With Prefix Sum | Interview Questions FAANG",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1967,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.42,
+   "text": "Welcome to today's video. I hope you are doing very well. Those who have come for the first time, see in the description, you will get a video link, you will get a playlist link. Go there and start. Don't start in the middle. My name is Pratyush Narayan. And before starting, today a very important lecture is going to happen. Today you will master the second category till the end of the lecture. But before that, let me tell you something. See, three types of kids are watching this video. Okay? This playlist or this course. One kid who doesn't watch anything. Okay? Who doesn't watch at all. Very good. One kid who watches completely."
+  },
+  {
+   "start": 29.42,
+   "end": 48.86,
+   "text": "He watches the whole video, okay? There is one child who is a very peculiar child. He watches 2 minutes or 3 minutes or 4 minutes. We want to tell you that if you are this child who doesn't watch anything, very good. If you are this child who watches everything, very good. If you are this middle child, then you are ruining your life. What are you doing? You are ruining your life because..."
+  },
+  {
+   "start": 48.86,
+   "end": 78.4,
+   "text": "See, this is not a web series that if you watch one episode for one minute or two minutes, then you will understand the whole 40 minutes. No, no, you go and read the review on IMDB, read its summary, it will not be possible. If there was such a way that we could teach you the whole DSA in two minutes, then we would have made a course and sold it for one crore. We are not making that course and selling it, which means it is not possible. Because I also have so much brain, that if it could be taught in two minutes, then we would have taught it in two minutes, we would have sold a course of 10 crores, many children would have become buyers. We are not doing this because it is not possible. So,"
+  },
+  {
+   "start": 78.4,
+   "end": 95.39,
+   "text": "When you see 1, 2, 3 minutes in 40 minutes, and the average view duration is 50% of the students are doing this, you are ruining your life. Why? Because you are creating a fake confidence in your mind that we are following the lecture, we are reading the patent, we are studying DSA. In reality, you are not doing anything."
+  },
+  {
+   "start": 95.39,
+   "end": 122.21,
+   "text": "For example, till now, the 1 minute 36 seconds you watched till here. Till here, nothing happened. Till here, the speech is going on. So, you watched till here and stopped. So, better than that is that you don't watch. So, in 1.5 minutes, you would have watched a good reel. It would have become a little comedy. You would have watched girls dancing. There are many things. So, you would have done all that. So, the kid who is not watching anything is better than you. At least, he is not creating the confidence of uselessness in the mind. So, don't do that. If you want to watch, then watch the whole thing. Zero or one."
+  },
+  {
+   "start": 122.21,
+   "end": 141.86,
+   "text": "If you give 100% effort, you will get 80% result. If you give 90% effort, you will get 0% result. It will never happen that if you give 90% effort, you will get 90% result. No, no, no. If you give 100% effort, you will get 80% result. If you give 80% effort, you will get 0% result. So either give 100% effort or don't give any effort from your side. Okay. Let's go."
+  },
+  {
+   "start": 141.86,
+   "end": 170.29,
+   "text": "So, yesterday we talked about categories. There were 4 categories in prefix sum. One category was in which no data structure was used. Simple variable array was used. One category was in which hash map was used. One category was in which DQ was used. And one category was in which merge sorting or segment tree fan victory was used. Today, the second category whose question is already done yesterday. Yesterday it is already done. But today, you will master that type of questions. You will never face any problem in that type of questions. We will tell you the exact steps."
+  },
+  {
+   "start": 170.29,
+   "end": 199.7,
+   "text": "What to think and what to do in this type of question. Let's see. The question of this type will come in this way. You will be given an array and you have to find the number of sub-arrays. For example. Either you have to find the length of longest sub-array. Right? You have to find something like this. Or you have to find the length of any sub-array. You have to find the length of any sub-array. Whose? With some condition. With some condition. Generally, this condition is on the sum. On whom? On the sum. So, with some condition. For example,"
+  },
+  {
+   "start": 199.79,
+   "end": 224.3,
+   "text": "Whatever error you want to remove, its sum should be k. If you divide it by k, the remainder should be 0. Or it can be that you have removed two types of sum and their difference should be something. We will see that later. There will be some condition. In this type of question, remember that you have to do this every time. What do you have to do? Assume that this is your array. What is your array? See."
+  },
+  {
+   "start": 224.3,
+   "end": 253.36,
+   "text": "Look very carefully, we are telling you the intuition. If we want, we can tell you that you have to do this in this question, you have to do this in this question. But from that, you will only know 3 questions. We want that if you are looking at these 3 questions of mine, then you have the power to make 300 questions, similar. See, 0, 1, 2, 4, 5. Suppose this is something, suppose there is some array. Whatever sub-array work you get, there is one very important thing, that you loop the array. The way you loop the array, do the same with the i-index. Now on every i, there are going to be ends."
+  },
+  {
+   "start": 253.36,
+   "end": 283.2,
+   "text": "It is going to end. Look at all the morning. What does it mean to say? If we want to write morning of this morning, if we want to write all possible morning of this morning, then what will happen? One will be 0, 0, 1, 0, 1, 2, 0, 1, 2, 3, 0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 5. This is done. 1, 1, 2, 1, 2, 3, 1, 2, 3, 4."
+  },
+  {
+   "start": 283.2,
+   "end": 313.09,
+   "text": "1, 2, 3, 4, 5. That's it. Similarly, similarly, you can write further also. 2, 2, 3, 2, 3, 4, 2, 3, 4, 5. Okay. Now see, every sub-array, every sub-array, is ending on some or the other, is ending on some index. For example, there is one sub-array which is ending on index 0. It's the same. There are two types of sub-arrays which are ending on 1. What? 0, 1 and 1. There will be three types of sub-arrays which are ending on 2. What? 0, 1, 2. 1, 2 and 2. It's the same."
+  },
+  {
+   "start": 313.09,
+   "end": 343.04,
+   "text": "If you look at all the sub-arrays on every index i, all the sub-arrays that end on this i, all the sub-arrays that end on this i, then in the end, when you loop the i on the entire array, you will get the entire result. What does this mean? Suppose you look at all the sub-arrays that end on i is equal to 2. What will happen? 0, 1, 2. 1, 2 and 2. All three sub-arrays. Now look at them. We are just talking about looking at them. Look at whether the result matches or not. Whether the condition matches or not. And write it in the answer. Very good."
+  },
+  {
+   "start": 343.04,
+   "end": 371.6,
+   "text": "Now you have seen the i is equal to 3, then what will happen? 0, 1, 2, 3, 1, 2, 3, 2, 3, and 3. So you have seen all these four. So by doing this, when you will see all the numbers ending on index 5, i is equal to 5, then you will have seen the whole array, all the sub-arrays with one look. So this concept is always used. In the same way, an idea was used in the same way that we will see the sub-arrays ending on i and we will get the best result out of it. If we do this for every i, then we will get the whole array. So this logic is also used in this."
+  },
+  {
+   "start": 371.6,
+   "end": 397.17,
+   "text": "Now, this logic is used, but the main work that you have to do in this type of question is 0, 1, 2, 3, 4, 5, 6. Now, we said that condition can be anything. Condition can be sum, condition can be difference, condition can be product, anything. If condition is sum, just kick condition is sum. Assume that you are at i is equal to 4."
+  },
+  {
+   "start": 397.17,
+   "end": 426.51,
+   "text": "Your duty is to check all the sub-arrays that end at i is equal to 4. What can be that sub-array? 0, 1, 2, 3, 4. It will end at 4. 1, 2, 3, 4. 2, 3, 4. 3, 4. And that's it. It can be a sub-array of 5 types. If you get all the results from this, suppose you had to count a sub-array whose sum is exactly k, then you see that it seems that this sub-array has k and this sub-array has k, so you will get 2, so you can move ahead. But how will we do this now? For this,"
+  },
+  {
+   "start": 426.51,
+   "end": 456.11,
+   "text": "See, if the question is of sum, because here we are doing the question that suppose it is of sum, then you should have one sum variable. Whatever you want to see, whatever your condition is, if your condition is that sum is equal to k, or difference is equal to k, or product is equal to k, then whatever is there, you should have it till there. It means that you should have a sum, you should have a sum in which array of 0 plus, let's write it like this, you should have a sum in which what happens? a0 plus a1,"
+  },
+  {
+   "start": 456.11,
+   "end": 486.02,
+   "text": "plus a2, plus a3, plus a4. This is your sum. i is equal to 4. So, running sum. What is this called? Running. Means, current. Now, what you have to do is, now, according to yourself, choose any part of the first. The first part means, choose any part of this. Any part that ends with 0. Suppose, you choose this part. Choose 0, 1. Choose 0, 1. See the remaining part like this. What is the remaining part? i is equal to 4. This part is left. This part is left."
+  },
+  {
+   "start": 486.02,
+   "end": 510.9,
+   "text": "Assume that the sum or the product of this area is satisfying your condition. Assume that it is satisfying your condition. Now, if you calculate the value of this red one, what will be its sum?"
+  },
+  {
+   "start": 510.9,
+   "end": 540.69,
+   "text": "What will be the sum of this? We are saying sum because there is a sum in the condition. Suppose the question is about the product. So suppose this is my green condition. This condition is satisfying. So according to that, what will be the product of red? If the question is about sum, then suppose my green condition is satisfying. Means the sum of green is exactly equal to k. So what will be the sum of my red? And whatever this sum will be, you have to store it in the hash map. You have to find it in the hash map. What does it mean to say? If your question is that sum is equal to k."
+  },
+  {
+   "start": 540.69,
+   "end": 565.6,
+   "text": "If you assume that the green part is K, then A2 plus A3 plus A4's value is K. Now you have to find out that the red part which is between 0 and green means that the red part A0 plus A1, sorry I mixed the colors, what will be the value of this? So what will be the value of this? See, the sum of the whole."
+  },
+  {
+   "start": 565.6,
+   "end": 593.02,
+   "text": "what is the value of A2 from here to here? K. We have understood that it is satisfying the condition. What will be the value of this part? What will be the value of this part? Take it there. Sum minus K. This is what you have to search in the HashMap. You have to search in the HashMap that how many times is this? When to search? When it is counting. If it is counting, then how many times has this value come till now? And this is what you have to do when you go there. So this is what you have to do in the HashMap."
+  },
+  {
+   "start": 593.02,
+   "end": 617.46,
+   "text": "You have to store it in the HashMap. This is what you have to store. Why do we do this? We have seen why we do this yesterday. Because, suppose there is such a red part. Suppose there is one red part. What does any one red part mean? If you wear I is equal to 4, then what does the red part say? From 0 to any first index of 4. Suppose from 0 to 1. If the sum of one red part is sum minus k."
+  },
+  {
+   "start": 617.46,
+   "end": 645.78,
+   "text": "Automatically, you will get a green part whose sum will be exactly k. Because the sum of the whole is 0 to 4. You said that there is a red part which is from 0 to 1, its sum is sum minus k. Automatically, you will get a green part which will satisfy your condition. That's why, to think about what to find in the red part, what to search and store in the hash map, for this, you can make any green part according to you and satisfy the condition with it."
+  },
+  {
+   "start": 645.78,
+   "end": 675.86,
+   "text": "And then think about the red part accordingly. If this would have been there in the red part, then my equation would have been better. Let's go. And if there is a count, then what will we see? Now this red part was made according to itself that it is of two lengths. Suppose there were two red parts like this. Suppose there was a sum of 0, 1 and 0, 1, 2. So you would have got two green parts. See, you are distributing the array like this. Basically, what are you doing? You are distributing."
+  },
+  {
+   "start": 675.86,
+   "end": 701.36,
+   "text": "0, 1, 2, 3, 4, 5, 6. Assume that your i is 6. It is very important to understand this. You might think that we are repeating it again and again. But it is very important to understand why this happens. Don't remember that this happens. No, it doesn't happen like that. Assume that you are here. So, this is your whole array. I mean, this is the whole array till now. It is 0 to 6. Assume that you get one red part. From 0 to 1. Whose sum is minus k."
+  },
+  {
+   "start": 701.36,
+   "end": 731.01,
+   "text": "Sum minus k, whose sum. Automatically, you will get a blue part, whose sum will be exactly k. So, you can count it once. Suppose, you get one more red part. It can be minus or zero, so it can be sum, anything can happen. If you know the sum of 0 to 3, which is sum minus k, you will get one more blue part, 4 to 6, whose sum will be exactly k. So, you can add one more in your answer. That's why, what we used to store in HashMap? This."
+  },
+  {
+   "start": 731.01,
+   "end": 760.45,
+   "text": "And we used to check BC that how many times has sum-k come before 8? We used to add that in the answer. And before going, because we are playing in sum, we used to store sum in our hash map. So this was the intuition of yesterday's question, yesterday's question's revision. Let's see the next question. The next question is leetcode 525. Okay? Similar, exact same question. Exact same question, there is a small twist. And in this we will do this exercise that"
+  },
+  {
+   "start": 760.45,
+   "end": 787.9,
+   "text": "Let's see what should happen in the red part. What should happen in the red part that we found in the hash map? We will see. What did you get? Sorry, this question is 724, pardon me. Lead code 974. What did you get? You have been given an error. You have to tell the number of all the arrays whose sum is divisible by k. Whose sum is divisible by k. This is your condition."
+  },
+  {
+   "start": 787.9,
+   "end": 818.21,
+   "text": "You can take any subarray and find its sum. If you divide it by k, then what should be its remainder? It should be 0. This is it. Before doing anything, first of all, we will clear our green and red. Let's assume that this is our array. Assume anything. No need to take any input, we can assume anything. 0, 1, 2, 3, 4, 5, 6, 7. Okay. Assume that we will play till i is equal to 6."
+  },
+  {
+   "start": 818.21,
+   "end": 844.35,
+   "text": "Take out the sum of i is equal to 6. Because it is a question of sum, so obviously we have to take out one sum. Let's assume that k is equal to 5. So, what will be the correct answer? The correct answer means that whatever your sum is, if you divide it by k, then the remainder should be 0. It should be in multiples of 5. Whatever your sum is, it should be in multiples of 5."
+  },
+  {
+   "start": 844.35,
+   "end": 871.71,
+   "text": "Let's assume that the sum of 6 till now is not a multiple of 5. Take it wrong to do that. Let's assume that our sum is 21. This is not a multiple of 5. If we opt for this, then it will not be 0. Very good. Okay. Come. Make a red part. Let's assume that this is my red part. What is it? This is my red part. Obviously, this will be my green part. This will be my green part. Now, what did the green part tell you? The green part used to tell you that the right result in which the condition will be satisfied."
+  },
+  {
+   "start": 871.71,
+   "end": 901.22,
+   "text": "So, what is the condition of the sum? In the previous question, the condition used to be satisfied only when there was exactly k. There is no need of exactly k in this. Even if there is a multiple of k, it will be fine. So, let's assume that the sum of green is 20. What can be the sum of green? The sum of green or the sum of green which is from 2 to 6. Let's assume that the sum of green is 20. What can be the sum of green? What can be the sum of green? What can be the sum of green?"
+  },
+  {
+   "start": 901.22,
+   "end": 931.18,
+   "text": "20, 10, 15, 30. Okay? Now, you know the sum of 0 to 6. You have taken out the green part that this green value is a good value. This satisfies. According to this, if we take out the value of red, then what will be red? The whole sum minus green. So when this is there, then the value of red will come to you. The whole sum was 21. Remember, we had assumed. We had assumed that the whole sum is 21. Okay. Let's do minus."
+  },
+  {
+   "start": 931.18,
+   "end": 959.41,
+   "text": "21 is 20, so the red one is 1. 10 is 11. How much is this? 6. This is 9. No, sorry, this is minus 9. What is this? Minus 9. Sum minus green. Sum minus green, so this is minus 9. Minus 9. Okay, so this is the red value. So, last time you understood that, okay, there is the whole sum, we have to put exactly k in green, so red will always be my sum minus k, so that was easy."
+  },
+  {
+   "start": 959.41,
+   "end": 990.64,
+   "text": "But this is not that easy. In this, you are told that the value of the green region can be anything. According to you, anything can happen. But it should be the multiple of 5. That's it. So, we took the multiple of 5 and 4. According to that, we reached the green value of 4 ways. 1, 11, 6, minus 9. Pay attention to a very important thing. 1, 11, 6, minus 9. Okay. Let's go. Do one thing. Before paying attention to this, look here again. Come. 0, 1, 2, 3, 4."
+  },
+  {
+   "start": 990.64,
+   "end": 1019.92,
+   "text": "5, 6, till 6. Sum is equal to 21. Whose? Whole's. Whole's sum is 21. Okay. You say that my green value should be, suppose this is my green value. So my green should be any multiple of 5. What should be green? My any multiple of 5 should be. So suppose green is 20 or 10, do anything, do 10. Do 10 for simplicity. You will automatically see that what is your red value? 21 minus 10, 11. Pay attention to an important thing."
+  },
+  {
+   "start": 1019.92,
+   "end": 1049.66,
+   "text": "This sum, which was the complete sum, why wasn't it the correct sum? Because when you used to call this sum mod k, then the answer used to be 1. Pay attention to a very important thing. Why is the green one the answer? Because when you call the green one 10 mod 5, then the answer is 0. So this is the answer. But if you are calling the red one mod 5, then the answer is 1. Look at this. It's not a coincidence. We had taken out 4 types of green values. We had taken out 4 types of red values."
+  },
+  {
+   "start": 1049.66,
+   "end": 1078.9,
+   "text": "1, 11, 6, minus 9. All of them with mod 5. 1, 11, 6, minus 9. 1 mod 5, 1. 11 mod 5, 1. 6 mod 5, 1. Minus 9, for those who don't know minus sign. Minus 9 mod 5, for those who don't know. For this, what is done is, first 9 mod 5 is taken out. Which is what? 4. After this, minus sign is applied and 5 is added to it. So, the answer is 1."
+  },
+  {
+   "start": 1078.96,
+   "end": 1107.57,
+   "text": "Let me tell you again. If you are doing anything like minus x mod 5, then first write the answer of x mod 5. So, we have written the answer of 9 mod 5. After that, put the minus sign and add whatever mod you are doing. The answer is 1. Okay? Okay. See, this will also be made. The mod of all the red values, when you do it with k, it becomes 1. The interesting thing is that the mod of our sum also, the mod of sum also, when you did it with 5, it became 1. See this."
+  },
+  {
+   "start": 1107.57,
+   "end": 1132.11,
+   "text": "This is not a magic. This is simple math. Why is it simple math? Assume that your sum was not the correct sum. It will be 5x plus y. That is why it was not correct. What is y? y is your remainder. When? When you do sum mod k, you will get the answer y."
+  },
+  {
+   "start": 1132.46,
+   "end": 1162.13,
+   "text": "We assume that my green part is the correct answer. If my green part is the correct answer, then it can be a multiple of 5 for the correct answer. So, it will be 5 into k. Now, let's take out the red part. Red is equal to 5x plus y minus 5k. Take 5 and 5 as common. 5x minus k plus y. See this. This is also a number. This is also a number. So, we can write it as 5m plus y. Now, see."
+  },
+  {
+   "start": 1162.26,
+   "end": 1183.46,
+   "text": "If you did the sum, then y would have come. We had written 5x plus y for your sum. You can write 5m plus y for the red part too. Meaning, when you do your red with modulus 5, its answer will also be y. So, you have to find this. Now, you know what should be my red part. What should be your red part? What should be your red part? If..."
+  },
+  {
+   "start": 1183.46,
+   "end": 1212.05,
+   "text": "If your sum is equal to 21, which means that 21 mod 5 is equal to 1, then your red part should also be such that if we divide it by 5, it becomes 1. Either it should be 1, or it should be 11, or it should be 16, or it should be 21, or it should be 31, or it should be 36. Something like this should happen that if we divide it by 5, it becomes 1. Because you can see, this will have to happen. Only then your green part will be such that it will be divisible by 5. You can think of it in both ways."
+  },
+  {
+   "start": 1212.18,
+   "end": 1244.21,
+   "text": "So, very good. Now, we know what to find. We know what to find. We know what to find. Whatever your sum is, whatever i is, we have to find this. We have to find this. This. Means, if 21 comes, then we will see that whatever the previous sum was, was it 21 by doing 5? Suppose, if 11 comes earlier, suppose, if 11 came earlier,"
+  },
+  {
+   "start": 1244.21,
+   "end": 1271.26,
+   "text": "and we will store in the hash map that 11 mod 5 which is 1 so we will store in the hash map that the remainder of 1, the sum of 1 has come once so as soon as the sum of 21 will be made we will find 21 mod 5 1, we will find out from the track that yes, there must have been some sum before that on dividing by 5, the remainder of 1 must have come, there is still such a sum that means there must be a green part in between, we will add that to the answer once we are going to do a very good dry run of this, so watch carefully now whoever"
+  },
+  {
+   "start": 1271.26,
+   "end": 1300.34,
+   "text": "We don't know what to insert and what to remove. It will be clear now. Those who understood, very good. You also see once more, it will be clear. Come. We will take this one. Remember negative. Negative modulus has to be handled. We will tell you how to handle negative. 4, 5, 0, minus 2, minus 3 and 1. Let's go. 0, 1, 2, 3, 4, 5. In this case is equal to 5. In this also 5. Make your hash map in the beginning. And what have we said?"
+  },
+  {
+   "start": 1300.34,
+   "end": 1330.19,
+   "text": "In HashMap, in the beginning, what does HashMap keep? Let's keep anything in HashMap. In the beginning, it will keep 0 once. What is the sum of the beginning? 0, when nothing happens in the sub-array, in the beginning, 0. When you do mod 5, 0 will come. It means that the sum of 0 remainder has come once, which is empty sub-array. So, let's keep it once. Come. Let's keep the sum variable, what happened? Yes. Let's keep sum is equal to 0, which is our running sum. Come."
+  },
+  {
+   "start": 1330.19,
+   "end": 1346.06,
+   "text": "i is equal to zero. First of all, add 4 to the sum. Sum becomes 4. How much will be remainder? Remainder will be 4. What will we find? 4 is in your hash map. What is the hash map keeping?"
+  },
+  {
+   "start": 1346.06,
+   "end": 1376.21,
+   "text": "The remainder of the sum that comes every time. So, you have to find out if there was a sum earlier whose remainder was 4. You will see in the hash map that it is not 4. So, if there was any sum which we divide by 5, then the remainder would be 4. So, my hash map would be 4, but it is not 4. So, we will not do anything. Okay, we will not do anything. Leave it. And, and, before going, before going, now because you have a sum which you will divide by 5, then the remainder will be 4. So, it has come. 4 is added to the hash map. Okay, nothing happened. Come on. i is equal to 1."
+  },
+  {
+   "start": 1376.21,
+   "end": 1405.12,
+   "text": "What will be the sum? 9. What will be the remainder? See, your algorithm will be clear here. What is 9 modulus 5? 4. Yes. Has any first sum come whose remainder was 4? Yes. Yes. Yes. It has come. It is in the hash map. Immediately add one to your result. Immediately add one to your result. Add one, right? See, what does this mean? See. What was the sum till here? 9. What was the sum of this red part?"
+  },
+  {
+   "start": 1405.12,
+   "end": 1435.02,
+   "text": "Its sum was 4. Automatically, you got a green part. Automatically, you got a green part, 5. If you do modulus 5, the answer will be 0. You got it, right? Because, the whole sum was coming on remainder 4. One sum was already there, which was coming on remainder 4. So, the middle will be definitely multiple of 5. We have seen this in the equation. So, let's go. Yes. Now, before going, before going, because you got one more sum, whose remainder is 4. So, what will we do by removing the value of 4 from 1? What will we do by removing the value of 4 from 1? 2."
+  },
+  {
+   "start": 1435.12,
+   "end": 1465.87,
+   "text": "So do it. 2. Come on. Next one. i is equal to 2. What will be the sum? 9 plus 0, 9. What will be the remainder? 4. Has there been a sum whose remainder is 4? Yes, there is. How many times has it come? 2 times, 2 times, 2 times. Do plus 2 in the result. More, more. Because you already have a sum whose remainder was 4. What have you done by removing 4? 3. Did you understand? Come on. i is equal to 3."
+  },
+  {
+   "start": 1465.97,
+   "end": 1496.06,
+   "text": "What is the sum? The sum is 7. What is the remainder of this? 2. Has there been a sum before which has a remainder of 2? No, no, no. There is no 2 in the hash map, so nothing happened. Yes, before going, write 2 too. Because now you have a sum which if you do it with 5, then 2 will come. So, if you can't do it further, then write it. Let's write 2 as 1. Let's go. I is equal to 4. What is the sum? 4. 7 minus 3 is 4. Has there been a sum before which has a remainder of 4? Yes, yes, yes. How many times? 3 times, 3 times."
+  },
+  {
+   "start": 1496.06,
+   "end": 1525.71,
+   "text": "plus 3 in the result, and before going, if you get another sum whose remainder is 4, cut it and make it 4. Come to i is equal to 5. What will be the sum? 4 plus 1, 5. What will be its remainder? 0. Is there any sum whose remainder is 0? Yes, it came once, it came once, it came once. Add it to an answer, and before going, if you get another sum whose remainder is 0, then increase it to 0."
+  },
+  {
+   "start": 1525.71,
+   "end": 1555.49,
+   "text": "Now let's count our result, how much is it? 1 plus 2 is 3, 3 plus 6 plus 1 is 7. Return 7. Now you know what is the green part and what is the red part. How to find the red part? If we want, we can tell you directly that do one thing, store the remainder and check the remainder. But then it will be like, check the remainder, then there will be some more questions, then what will we check in that? So this happens. What you always have to do is, now we will write the code, don't get confused, its code also has some edge cases, the negative ones."
+  },
+  {
+   "start": 1555.49,
+   "end": 1585.41,
+   "text": "You have to handle the negative edge cases. I will tell you how to do it. But, what you have to understand, you always see, always take out a sum of subarray or whatever. Make the green part good. Listen to any green part and make it condition satisfied. You see what should happen in my red part. See what should happen in the red part. And find the same part in the hash map and insert it. What are we inserting in this? In this, we are not inserting the sum directly in the hash map. We are inserting the sum modulus."
+  },
+  {
+   "start": 1585.41,
+   "end": 1614.18,
+   "text": "We are inserting the remainder, right? Just insert it and search for it. Because you will be able to search for whatever you insert. If you have inserted the whole sum, let's assume that sum is equal to 9, then you have inserted 9. What are you searching for further? You are searching for a sum whose remainder is 4. So how will you search for it? For that, you will have to see the whole hash map that whose remainder is 4. So why do you have to do that? You have inserted 4 as the remainder. So let's assume that your sum is anything. Your sum is anything whose remainder is 4. Let's assume that your 9 is here."
+  },
+  {
+   "start": 1614.18,
+   "end": 1644.8,
+   "text": "your 14 comes, your 19 comes, everyone's remainder is 4, everyone's remainder is 4. So instead of inserting 3 3 times, we will keep increasing the value of 4. So what do we have to do? How much sum was there whose remainder was 4? The answer is of 3 ways. There are 3 in 4. It's simple. Let's go. Let's write this code quickly. First of all, you have given an array and a k. So first of all, int n is equal to a dot size. When you will explain in this way in the interview, then the interviewer will feel that yes,"
+  },
+  {
+   "start": 1644.8,
+   "end": 1673.26,
+   "text": "He is a quality student. He is not a student who is tired of playing with the air. He didn't come here by mistake. He didn't come here by mistake. In the future, we won't make the same mistake. We will find out the green part and the red part accordingly. Let's go. First of all, let's make an answer for an answer. Okay. Since it is a question of sum, you will have to find out the sum. So, we will write sum is equal to 0. And, we need a hash map. Because we need a hash map. Unordered map. Unordered map. Int. Int. F."
+  },
+  {
+   "start": 1673.58,
+   "end": 1704.27,
+   "text": "In the beginning, what is the sum of the beginning? 0. You divide 0 by 5 and divide 0 by k. What will be the answer? 0. What will be the remainder? 0. That's why in the beginning, we have to do f0 is equal to 1. Don't forget this. Don't forget this in such questions. Don't forget this in some questions. Let's go. For i is equal to 0, i less than n, i plus plus. Come. First of all, sum plus is equal to area of i. First of all, remove its remainder."
+  },
+  {
+   "start": 1704.66,
+   "end": 1734.22,
+   "text": "Remainder is equal to sum modulus k. Remember we said that when you take out the negative remainder, we will tell you that too. When you do 9 modulus 5, then the answer is 4. But when you do minus 9 modulus 5, then the answer is not minus 4. Why not? See, what happens to this? What is 9 modulus 5? When you divide 9, it is not necessary to understand, why will you remember that you have to do this and that. When you divide this, then you,"
+  },
+  {
+   "start": 1734.22,
+   "end": 1763.04,
+   "text": "What do we do? 5 ones are 5 and 4. 4 remainder comes. Whatever smaller value is possible from 9, 5's multiple, we take that and minus it. Let's do this. You are doing 9 minus 5 here. If you were 19, then 19 or whatever smaller element is possible from 19, we subtract that. So see, 19 doesn't come in 5's table. Which smaller number comes in 5's table? 15. If we minus 15, then 4 comes here too. This logic is used in minus 9."
+  },
+  {
+   "start": 1763.04,
+   "end": 1790.7,
+   "text": "Minus 9. Minus 9. Okay. Minus 9 is not divisible by 5. Okay. Which element is smaller than minus 9? Minus 9 is not smaller than minus 5. No, no, no. Minus 5 is bigger than minus 9. Minus 9 is smaller than minus 9. Minus 10 is smaller than minus 9. The negative is smaller. So, minus 10 is not on the table of 5. Minus 10 is there. Now, do the same thing here. We will minus this. So, minus 9."
+  },
+  {
+   "start": 1790.7,
+   "end": 1819.81,
+   "text": "Minus minus becomes plus, that's why it becomes 1. That's why it becomes 1. How do we write this in the program? You remove the remainder. What you do is remove the remainder. If that remainder comes in minus, then add plus k to it. Add plus k. It means that it is minus 9. Treat minus 9 as 9. Remove that. Remove that it is minus 4. And add 5 to it. Then you get 1."
+  },
+  {
+   "start": 1819.81,
+   "end": 1847.18,
+   "text": "This is the trick. Let's go. So what did we see? What did we see? Let's erase this. That's why. This is not magic. This happens. Remainder is equal to sum modulus k. So if, check this once. If my remainder is less than 0, then remainder is equal to remainder plus k. So this will be correct. This will be correct. It's a good thing. Now, we don't have to do anything."
+  },
+  {
+   "start": 1847.47,
+   "end": 1877.3,
+   "text": "Now find this, how much will this remainder be? See, in our rest, plus is equal to f of rem. What does this mean? The remainder of this is rem. How much is the remainder of rem? Add that. And before going, f of rem plus plus. That's it. Minus it. Minus is done. Sorry, plus plus is done."
+  },
+  {
+   "start": 1877.3,
+   "end": 1903.28,
+   "text": "and return rest. That's it. It's such a small program. Look at it. This is its program. I have shown it by dry-running. I have shown it by dry-running. Now, why did it take so much time in this one question? Why did it take half an hour in this one question? Because we had to show the concept. We didn't have to make the question. The code is of 10 lines. It takes 5 minutes to show the concept. But, don't make the question. Don't make the question. Understand. Understand that green and red trick. Only then we will be able to make a new question."
+  },
+  {
+   "start": 1903.28,
+   "end": 1929.65,
+   "text": "How will you make a new question? This question will not come in the interview. It may come, it may not come. It will not come in everyone's interview. If 1000 people are watching the video, then it is not possible that this will come in 1000 interviews. No. It may be the one after this, the one behind this. If you do green and red in it, then the interviewer will also think that there is, I mean, there is authority in the child, he has studied. Isn't it? So come on, that's it for today. And read, read every day. Because see, don't run from the mind, isn't it?"
+  },
+  {
+   "start": 1929.71,
+   "end": 1953.28,
+   "text": "Don't think that if you don't want to study today, you won't study. Even I don't feel like it. I don't feel like doing a job. I don't feel like making a video on YouTube. I don't feel like making an Instagram video. I don't feel like going to the gym. Life won't go according to the mind, right? So if you live life according to the mind, it will be a very difficult life, okay? So the beggars who sit on the road live their lives according to their minds."
+  },
+  {
+   "start": 1953.28,
+   "end": 1963.18,
+   "text": "If you eat roti mila or not, you'll get diabetes. You're doing what you want to do. But you can live the life you want. You won't be able to live a good life if you want to. Let's go."
+  }
+ ]
+}

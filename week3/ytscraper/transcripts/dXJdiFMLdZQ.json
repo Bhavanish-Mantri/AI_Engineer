@@ -1,0 +1,454 @@
+{
+ "video_id": "dXJdiFMLdZQ",
+ "title": "Tree Series Ep-05: Check for Symmetrical Binary Trees | C++ | Java",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2392,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 25.36,
+   "text": "Hello brother, so these three questions, the same tree that happened yesterday and the symmetric tree invert tree that is going to happen today, all three have been asked in all these companies. All three have been asked in all these companies. I am not lying, I have the extension of Leetcode. Look, if you have not seen the same tree, then don't see these two before seeing the same tree. You can see it, but you will not understand, you will not enjoy it. Please go and see the same tree quickly, it must have happened yesterday. So see the same tree immediately."
+  },
+  {
+   "start": 25.36,
+   "end": 54.22,
+   "text": "After that, it will be more fun. And these three questions are very important because these three questions are of easy level, but they are not easy. And they have not been taught properly. We were watching the video of Stryver before teaching this. So, honestly speaking, his video looks very good, but nothing is told in his video. In his video, just that, okay, we get two roots, we will compare the left and the right, right. No, that is not the way to teach, that is the way to be taught. So, we can also give a code like this, here is the code, take this, take this. That is not the way, okay?"
+  },
+  {
+   "start": 54.22,
+   "end": 74.1,
+   "text": "read the same tree, read the symmetric tree, read the invert tree. By reading these three questions, any question related to mirror, any question related to same tree or sub-tree, you will be able to solve. So, I request you to read the same tree. Read the same tree once. Read it fast, but read the same tree once. Because once you will understand this, you will change 10% and it will become symmetric."
+  },
+  {
+   "start": 74.1,
+   "end": 103.1,
+   "text": "In that, 10% change... Invertory is nothing. Invertory is a very fake question. So it's a useless question. I don't know why it was asked in this. But these three are very basic questions. It's a very fundamental question. Let's start quickly and drink some water and sit. Let's go. First of all, if we come to the question, then first of all, we will follow the same route. First of all, we will explain the question to you. We will tell you what you want to say in Hindi. After that, we will think like a person. Meaning, when we think by making a drawing, then we will think as you think. Then we will try to write its code. Then we will try to dry run it and see if it is working or not."
+  },
+  {
+   "start": 103.1,
+   "end": 131.98,
+   "text": "In any tree problem, do the same thing. Understand the question. Make a small tree and see what you have to do in a small tree. Whatever you have to do, write its code. Not a long code. It is a 5-6 line code. And after that, try to dry run that code to see if it is working or not. So that there is no error. Understand? Let's go. So the question is called symmetric tree. Now what is symmetric tree? I will tell you. I have told you that you will be given a tree by doing this. By doing this, you will be given a tree. Okay? Here is 3."
+  },
+  {
+   "start": 131.98,
+   "end": 158.7,
+   "text": "and 4 and 4 and 3. Assume that you have given this as a tree. What is the root of this? This is the root of this. Okay. Now, what have you been told? That if, we made a little mistake in this, we will make it a little better. What have you been told? That if, first we have to, yes. We have been told to draw a line from the middle of the tree. Draw a vertical line from the middle of the tree. What does it mean to draw a line from the middle?"
+  },
+  {
+   "start": 158.7,
+   "end": 189.94,
+   "text": "From here, cut the root in half and draw a line here. See, I drew a line here. I drew a line. I mean, from the middle, very sharply. Cut the root of the tree from the middle and draw a line. Okay. This blue line is your mirror. This is your mirror. Now, you have to tell me, because you cut the tree from the middle, two halves of the tree are formed. Okay. Which two halves are formed? One half is this. What is this?"
+  },
+  {
+   "start": 189.94,
+   "end": 212.9,
+   "text": "Part 1 has been made and another half has been made which is also in the right part. Which is this part. Part 2. So two halves. You have to tell whether these two halves are mirror images of each other or not. What? Are they mirror images or not? Are part 1 and part 2 mirror images of each other or not? This question is asked that whether the tree is symmetric or not. Tree is a mirror of itself."
+  },
+  {
+   "start": 212.9,
+   "end": 241.04,
+   "text": "Means, when you draw a line in the middle, see, the root was the same, you cut the root in half, means, the root is cut here and here, so it is fine. Now, because there will be two parts of the tree, one will be the right part and the other will be the left part, you have to tell whether both of them have a mirror image or not. What is mirror image or not? Now, let me tell you how to draw a mirror image. So, see, what happens in the mirror? Suppose, when you look at the tree in the mirror, a very interesting thing happens. What is the interesting thing? Let me tell you."
+  },
+  {
+   "start": 241.04,
+   "end": 269.14,
+   "text": "Suppose this is a mirror. What happens in a mirror? If you are standing here, suppose you are standing at a distance of 10 meters, then the reflection of your mirror, the reflection of your mirror will also be standing at a distance of 10 meters. It will also be at a distance of 10 meters from the mirror. You must have read this. I hope all of you have studied physics in class 8-9. So if this real reflection is standing at a distance of 10 meters from the mirror, then the reflection of the reflection"
+  },
+  {
+   "start": 269.14,
+   "end": 298.4,
+   "text": "That too will be at a distance of 10 meters. If the reflection was standing at a distance of 2 meters, then its reflection would also be at a distance of 2 meters. It won't happen that you are 2 meters away from the mirror and your shadow is 20 meters away from the mirror. This doesn't happen. This is physics. That's why when you use a mirror on a tree, it's a very interesting thing. Let's tell you what happens. Suppose there is a small tree. There is a small tree. There is a small tree. There is a small tree. Let's keep a mirror in the middle. What do we keep in the middle? A mirror."
+  },
+  {
+   "start": 298.4,
+   "end": 326.86,
+   "text": "Here is a mirror. Now you have to make a reflection of this tree. Now let's do numbering. 1, 2, 3. This is the tree. This is the middle mirror. You have to make a mirror image of it. What is the physics of a mirror? Wherever the reflection will be, the reflection will be at the same distance from the mirror. Let's make it. Let's assume that this 1"
+  },
+  {
+   "start": 327.28,
+   "end": 355.23,
+   "text": "Let's assume that it is standing at a distance of 10 meters. So, the shadow of 1 will also be at a distance of 10 meters. So, let's make it stand at a distance of 10 meters. Let's make it stand at a distance of 10 meters. Very good. Now, let's assume that this 2 is at a distance of a little more than 10 meters. Let's assume that 2 is"
+  },
+  {
+   "start": 355.23,
+   "end": 380.08,
+   "text": "2 is at a distance of 12 meters. The shadow of 2 will also be at a distance of 12 meters. Where will the shadow of 2 be? It will be at a distance of 12 meters from the mirror. So make the shadow of 12 at a distance of 2 meters. Call it 12. And what do we make here? 2. What do we make here? 2. Right? Do the same thing for 3. Let's assume 3 is..."
+  },
+  {
+   "start": 380.08,
+   "end": 409.04,
+   "text": "is at a distance of 5 meters. Let's assume that 3 is at a distance of 5 meters. The shadow of 3 will also be at a distance of 5 meters. The shadow of 3 will also be at a distance of 5 meters. It will be at a distance of 5 meters. What is this? 3. Connect it because it is a tree. Since it is a tree, we will have to connect the sticks. We will have to connect the sticks. That's it. We have made it. We have not done any rocket science in this. In this, we have told that if 1 is 10 meters, then the other 1 will also be 10 meters. If 2 is 12 meters, then the other 2 will also be 12 meters. And if 3 is 5, then the other 3 will also be 5 meters."
+  },
+  {
+   "start": 409.07,
+   "end": 438.02,
+   "text": "Now, look very carefully. 1 was root. 1 is also root. So, no change happened. Very good. But, look at 2. What was 2, 1? 2, 1 had left child. What happened to 2 in mirror? In mirror, right child has become. In mirror, 2 has become right child. 3. 3 had right child in real world."
+  },
+  {
+   "start": 438.02,
+   "end": 468.77,
+   "text": "But in the world of mirrors, 3 has become the left child of 1. Why did this happen? This happened because 3... Oh, what happened? Yes, this happened because 3 was 5 meters, mirror's 3 was 5 meters, and 2 was very far, 12 meters, so mirror's 2 also went very far at 12 meters. And 1 was 10 meters, so 1 was in its original position. So what happened? The position flipped. The root was right, this was here, this was here, but..."
+  },
+  {
+   "start": 468.77,
+   "end": 487.57,
+   "text": "The left child moved to the right. And the right child moved to the left. This happens in the normal world too. If you are looking in the mirror, if you raise your right hand, your mirror person will raise his left hand. If you raise your left hand, your mirror person will raise his right hand. This happens in the real world too."
+  },
+  {
+   "start": 487.63,
+   "end": 513.42,
+   "text": "This is a small explanation of mirror. If you want to know whether two trees are mirror images of each other, then you have to compare the left child with the right child of the mirror image. If you want to know whether two trees are mirror images of each other, then you have to compare the left child with the right child of the mirror image."
+  },
+  {
+   "start": 513.42,
+   "end": 530.38,
+   "text": "First of all, you will compare 1. You will feel that it is correct. After that, you will compare the left child of 1 with the right child of this mirror image. And you will compare the right child of real 1 with the left child of mirror 1. So, do you understand this or not? Let's go."
+  },
+  {
+   "start": 530.51,
+   "end": 561.82,
+   "text": "Now, let's go back to the question. Now, what is given in the question? It was very important to explain this because it was not explained anywhere. In every video of symmetric tree, it is said that yes, this happens in mirror image, do the left from right. No, it is not like that. You have to understand why are you doing this? He will ask you in the interview that why are you doing this? So, you have to explain this in the exam. Now, let's come to the question. Now, what is given to you? A tree is given. This is such a tree. What kind of tree is this? Like this. And here is 3. Here is 4. And here?"
+  },
+  {
+   "start": 561.82,
+   "end": 591.49,
+   "text": "This is a tree given to you. What have you been told? If we cut this tree from the middle and there is a green mirror in the middle, then are these two parts mirror images of each other? Are these two parts symmetric or mirror images? You have to tell true or false. So this is the same question. First of all, you had a tree and this was the root. If you cut it from the middle, then two parts of the tree will be formed. One will have its left one and the root of one part will have its right one."
+  },
+  {
+   "start": 591.49,
+   "end": 617.62,
+   "text": "This is a similar question that you have to see these two trees. Make these two different trees. And you have to check these two trees whether it is a mirror image or not. Is it a mirror image or not? The same question we did above, what did we ask? Brother, this is one tree. This is one tree. Tell me whether these two are mirror images or not. This is also a question that cut one tree in the middle. Cut the main tree in the middle. So the root is cut in the middle. Now two trees have been made. One on the right side, as many as there were."
+  },
+  {
+   "start": 617.62,
+   "end": 646.77,
+   "text": "All the people on the left side became one part. All the people on the right side became one part. I have asked you whether these two are mirror images of each other or not. Whether these two are mirror images of each other or not. This is the question. After boiling down, you have to do this in the question. So let's move ahead. Now let's come to the question. So what do you have to do? First of all, the tree given to you. Its left root. Suppose you are given a root. What will be given to you? Root. You have to make two trees. How?"
+  },
+  {
+   "start": 646.77,
+   "end": 674.03,
+   "text": "The first will be the root left. Meaning, if you have given 1, then you can take 1 root of 2. The whole part of 2 is the root of 2. Because 1 is cut in the middle. What is left? 2 and 2. This 2 and this 2. So, 1 root of left is made. And 1 root of right. So, you have these two roots. So, you can assume this. You can pretend that you have given 2 trees. You have given 2 trees."
+  },
+  {
+   "start": 674.06,
+   "end": 702.05,
+   "text": "Now, if you are given two trees, now we will start thinking that when we make a drawing, what do you do in it? For example, if you are given two trees, one is 2, one is 3, and one is 4. And the other tree is your 2, here is 4, and here is 3. This is your root 1, and this is your root 2. You will be given this, right? Now you have to tell whether both are mirror images of each other or not."
+  },
+  {
+   "start": 702.05,
+   "end": 730.19,
+   "text": "What will you do in this? It is a very small tree. First of all, what will you do? First of all, you will see that if... Now remember, we have read the same tree. We have read the same tree. So first of all, what will you do? If both are null. If both are null. It means that root 1 is also null and root 2 is also null. It means that there is nothing in root 1. And there is nothing in root 2. So it is fine. Both are mirror images. Is the empty thing a mirror image of the other? Yes, absolutely the empty thing is a mirror image. Both are null. Okay. No need to do anything else. What does both null mean?"
+  },
+  {
+   "start": 730.19,
+   "end": 750.38,
+   "text": "Root 1 is null and root 2 is null. So what to do? Nothing to do. Very good. Second, if one of the two is null. If one of the two is null, then? Then absolutely not. Then absolutely not. Then false. Why? Why are we saying this? You have to find out if both the trees are mirror images of each other or not. If someone tells you that root 1 is null and root 2 has a circle."
+  },
+  {
+   "start": 750.38,
+   "end": 773.92,
+   "text": "So there can't be any mirror image of circle. There can't be any circle of mirror image of nothing. So it is very strange that there is nothing in one place and there is something in another place. So you can say that there is no mirror image of both of them. It can't be at all. So both are false. What will you do in the third point? In the third point, you will find out the value of both. Now suppose here root 1 has 2, root 2 has 20. So is the circle of 2..."
+  },
+  {
+   "start": 773.92,
+   "end": 802.88,
+   "text": "Can a 20-year-old have a mirror image? No. Because look at the top. Remember we made the mirror drawing. This 1 used to be this. This was the mirror image. Now suppose here is 1 and here is 10. So can you say that the mirror image of each other will be perfect? No. The value should also be the same. The value should also be the same. If here is 1 and here is 1, when you do this in the mirror, when you take out the mirror image of this tree, then yes, the position can be of the circle here and there. But the value of the circle is not changing."
+  },
+  {
+   "start": 802.88,
+   "end": 830.72,
+   "text": "If this was 1, then this is going to be 1, right? If this was 2, then this is going to be 2. If this was 3, then this is going to be 3. It's not like the value is changing. So, first of all, we will see that the value of both root 1 and root 2 should be the same. So, if the value is not the same, if the value of both root 1 and root 2 is not the same, then?"
+  },
+  {
+   "start": 830.72,
+   "end": 851.9,
+   "text": "False. Mirror image is not possible. You have to check and tell whether these two trees are mirror images or not. In one way, it is being asked that when you see the tree of root 1 in the mirror, will you get this tree? So if the value is different, here is 20, here is 2, then you will not get it at all. Very good. Now, once you check all three, once you check all three on the root,"
+  },
+  {
+   "start": 851.9,
+   "end": 878.16,
+   "text": "Now what will you check? Now what will you have to see? Now look very carefully. The work of this circle is done. You have mixed it here and there and seen that both are not null. Neither one is null. The value is also same. Very good. But their children are also there. Their children are also there. Now remember. Remember in the mirror. That's why we made a mirror. This is correct. Now, the left child in real life of 1, which child is going to be in the mirror world? Right child. Right child."
+  },
+  {
+   "start": 878.16,
+   "end": 900.22,
+   "text": "In the same tree, what did we do? Once everything about the root was done, right? After that, we used to call the same function for the left of root 1 and the left of root 2. Because there was the same tree. It should be the same. Not the same here. There should be a mirror image here. So in real life, this is root 1. In real life, its left child should be equal to the right child in the mirror world."
+  },
+  {
+   "start": 900.22,
+   "end": 922.86,
+   "text": "The right child in real life should be equal to the left child in the mirror world. It should be the other way around. Look at the same here. If we say that the work of root 1 and root 2 is done, these three points are valid. Now, the left child which is 3 should match the right child of root 2. And..."
+  },
+  {
+   "start": 922.86,
+   "end": 952.9,
+   "text": "The right child of root 1 should match the left child of root 2. This is a small twist and this is a small difference between the same tree and the symmetric tree. Again, understand. In the same tree, it used to be the same. In the same tree, it used to be the same. There should not be null, there should not be one, the value should be the same. Very good. But, going forward, what we used to do? We compared the left child of root 1 and the left child of root 2. We compared the right child of root 1 and the right child of root 2. But, in the mirror world,"
+  },
+  {
+   "start": 952.9,
+   "end": 982.48,
+   "text": "The left child of root 1 should match the right child of root 2. And the right child of root 1 should match the left child of root 2. So what will you do? You will have to find two results. So what will we do? We will find one result in which the left child of root 1 should be equal to the right child of root 2. Yes, yes, it should be equal to the right child."
+  },
+  {
+   "start": 982.48,
+   "end": 990.02,
+   "text": "Or R2 is equal to fun. Now root 1 ka right child."
+  },
+  {
+   "start": 990.02,
+   "end": 1018.61,
+   "text": "What should this be equal to? It should be equal to the left of root 2. This is the only small difference. What used to happen in the same tree? In the same tree, the left of root 1, the left of root 2, the right of root 1, and the right of root 2 will just be reversed here. Because we are dealing in the mirror world. In the mirror world, the left child is the right child. Meaning, the left child becomes the right in the mirror image. The right becomes the left. That's why. Now, what will happen to these two? The same thing will happen to these two, which happened here. The same thing will happen to the"
+  },
+  {
+   "start": 1018.61,
+   "end": 1034.83,
+   "text": "So, we will show you how to do it. So, we will show you how to do it. So, we will show you how to do it. So, we will show you how to do it. So, we will show you how to do it. So, we will show you how to do it."
+  },
+  {
+   "start": 1034.83,
+   "end": 1063.6,
+   "text": "Now, because they have children, they will have to check their children too. But while checking the children, we turned a little. We said, check the right of root 1 from the left of root 1. Check the right of root 1 and the left of root 2. What will happen in these? They will also have the same check. They will also have the same type of check. That both the circles should not be null. One of the two circles should not be null. Both are null, very good. And the value of both the circles should also be the same. You can see that the value of the left child of root 1 and the right child of root 2 is the same."
+  },
+  {
+   "start": 1063.6,
+   "end": 1086.77,
+   "text": "If it was 30, would it have happened? No, it wouldn't have happened. You have to check it in such a way that if we take a mirror image of this tree, then will this tree come exactly? Yes, if it comes, then it is correct. If it doesn't come, then it is wrong. So its code is the same as the original question's code. So first we will write the code and then we will dry run it. So what you have to write is a bool fun."
+  },
+  {
+   "start": 1086.8,
+   "end": 1116.62,
+   "text": "You will get two roots. How will we make those roots? Now how will we start root 1 and root 2? The original tree that you got in the original question. You got two trees in the same tree. You got only one in this. But you said that you have to cut it from the middle. Now you have to cut it from the middle. So root 1, the initial root 1 will become the left of your root. The initial root 2 will become the right of your root. So we will tell you that. Now let's write the function. First of all, you will get two nodes. One will be root 1 and one will be"
+  },
+  {
+   "start": 1116.75,
+   "end": 1147.01,
+   "text": "Root 2. Come on. First of all, let's do everything. If both are nulls, then true. If both are nulls, then true. Meaning, if. Those who have seen the same tree, they must be feeling very good. Those who have not seen the same tree, you must not be feeling that good. So, to make you feel good, we will tell you to see the same tree. Meaning, what should you see? It's a good question. Okay? Okay? First point is over. First point is over. If one of the two is null, then false. It can't be. So, how did we tell the trick? Root 1."
+  },
+  {
+   "start": 1147.01,
+   "end": 1179.34,
+   "text": "Equal equal to null. Or. Root 2. Equal equal to. Null. So return. False. Right? Second point is also complete. If the values of both are not the same. Then false. So there is no need to go ahead. There is no need to check anything. If. Root 1. Data. Not equal to. Root 2. Data. If the values are not the same. Then how will my image be? It cannot be. Return. False."
+  },
+  {
+   "start": 1179.98,
+   "end": 1209.58,
+   "text": "Now we have to do the left children and right children. So, bool r1 is equal to fun root. Fun means same fun. See, same function. This is the same function. What does fun do? Fun only takes two circles. Which two circles do you give it? So, in the previous same tree, we used to give two circles to the same left child and left child. In this, we have done hair fair to give a circle. So, that's it. In this, you give its left child. And,"
+  },
+  {
+   "start": 1209.65,
+   "end": 1240.34,
+   "text": "give the right child of this. You can also do the opposite, as you wish. And, since there is one more child, so, fun, now you have given the left child of root 1, so give the right child of root 1, and give the left child of root 2. Very good. If, if R1 and R2 are both true, then you will return true. Now, suppose if this is successful, this gives you true, and this gives false, then is this a mirror image? No, the entire tree should be a mirror image."
+  },
+  {
+   "start": 1240.34,
+   "end": 1269.39,
+   "text": "So, you can do this. Return R1 and R2. Meaning, both will be true. So, if it is true, then we will give over. Now, your main function, which is given in your lead code, bool, is symmetric. Which is given in your lead code. In this, you have given only one node, right? In this, you have given only one node. So, okay. What did we say? You have to cut this from the middle. If you cut from the middle, then two roots will be formed. So, what will we do? Return our function."
+  },
+  {
+   "start": 1269.39,
+   "end": 1299.58,
+   "text": "In this, one part will be the left of the root, which we are denoting from root 1, and one part will be the right of the root. Very good. Just look at this small code. This is a small code. A small code has been created. Order of n, time complexity. Order of n, space complexity. We will teach this once. Time complexity, space complexity. We will teach this once for trees. For now, it's fine. This is the code. Let's see how it works. Now it will be fun. Now the time is going to come. Let's see how it works. So,"
+  },
+  {
+   "start": 1299.58,
+   "end": 1333.36,
+   "text": "Let's make a tree. Let's make a tree. You have got a tree like this. Lead code has given you a tree like this. Okay? This is a lead code tree. First of all, we will cut it from the middle. So, two things will be made. This will be your root 1. And this will be your root 2. So, let's write them too. Let's write them too. So, one tree will be like this. And the other tree will be like this. Okay? So, what is this? Root 1. And what is this?"
+  },
+  {
+   "start": 1333.97,
+   "end": 1362.42,
+   "text": "Root 2. Very good. Come, let's run it. First of all, what will pass in fun? Root 1, root 2. Meaning, these two. 2 and 2. So, first of all, we will pass in fun. Where root 1 is equal to 2. And root 2 is equal to 2. This is also 2. So, first of all, what will be checked? If both are null, then prove it. Do you see both are null? No, both are not null. Neither one of them is null. And both have the same value. We are still in this. We are still in this. Both have the same value. So, very good. 3 points passed."
+  },
+  {
+   "start": 1362.45,
+   "end": 1388.02,
+   "text": "Now what you have to do? Now you have to look at the children of both. So first of all, what did we see? R1 is equal to the left child of root 1. What is the left child of root 1? Alas, there is no left child of root 1. There is no left child of root 1. So null. And what is the right child of root 2? 3. And what will be R2?"
+  },
+  {
+   "start": 1388.02,
+   "end": 1417.82,
+   "text": "R2 will be the right child of root 1, which is 3. But the left child of root 2 is nothing. Now you must be seeing the problem. Come, let's call this. So this will be called. Fun. Now this is called. Root 1 is equal to its null has passed. And in root 2, 3 has passed. Okay. Now see. Are both null? Both are not null. But one of them is null. It is saying that one circle is null and one circle has a circle. So what will it say?"
+  },
+  {
+   "start": 1417.82,
+   "end": 1445.14,
+   "text": "False, false, false. Where will this false go? False will go here. This false will go here. Similarly, this will also give false. Why? Because there is a 3 and a null. False comes in it. Now what you had to do? If both R1 and R2 were correct, then you would have given true. Then both are false. What will you return? False. So what will be the answer of this circle? False. This is not symmetrical. This is not symmetrical. Why is it not? Let me tell you."
+  },
+  {
+   "start": 1445.14,
+   "end": 1475.41,
+   "text": "Come, we will show you the mirror image of 2 and 3. We will show you the mirror image of 2 and 3. So, 2 was here and 3 was here. Let's make a mirror in the middle. Assume that the distance of 2 is 10 meters. Assume that the distance of 3 is 5 meters. So, now what will happen? The distance of mirror 2 will also be 10 meters. And the distance of mirror 2 will also be 5 meters."
+  },
+  {
+   "start": 1475.92,
+   "end": 1492.1,
+   "text": "Now, make a line. See this. See, what kind of mirror image did it make? This. Why? See, 2 is the same. 2 is the same, but 3 was its right child in the real world. In the mirror world, 3 is its left child. But what did you get?"
+  },
+  {
+   "start": 1492.1,
+   "end": 1520.96,
+   "text": "You have been given the same tree. See, you have been given the same tree. You don't have to give the same tree. Is it a symmetric tree or not? If this tree was on the right, then in the mirror world, the tree should have been on the left. So, both these trees are the same. Both these trees are not symmetrical. And in this way, you can write its code. So, we hope that it would have come. If you don't understand this same symmetrical at all, then please tell us. We will teach it again. Because it is a very easy question. It is a very good question. It is also asked in interviews. If you are facing any problem, then please tell us in the comments."
+  },
+  {
+   "start": 1520.96,
+   "end": 1551.09,
+   "text": "We will teach you again. This is your code. And this is your dry run. Try it once in the copy pen. And let's move on to the next question. Congratulations. Your hard part has been completed. Now there is a very fake question. Very fake. Whose name is Invert Tree. You have come in it. It is not going to take more than 5-6 minutes. So bear with me. Very fake question. Means very fake question. What is happening to him? Has he gone crazy? Okay. Let's go. So what does invert tree say? I will tell you. You will get a tree."
+  },
+  {
+   "start": 1551.09,
+   "end": 1575.57,
+   "text": "What will you get? You will get a tree. 4, 5, 6 and 7. What did I tell you? Invert this tree. What does invert mean? There will be two children of any root. At max, left or right. Make the left child the right child and the right child the left child. Do like this. Bring it here."
+  },
+  {
+   "start": 1576.18,
+   "end": 1606.56,
+   "text": "That's it. This is called invert. In any circle, if there are two children in any circle, then reverse that. Make the left children right children and make the right children left. So now see, it will seem that it is very easy, but it is also a bit complex. What will you do in this? See, you can start from anywhere in this. Come, let's start from above. This is the root. This is the root, right? So if you say, okay, we will do one thing, we will swap the children of the root. So if you swap the children of the root, then see what will happen. What was the left child of the root?"
+  },
+  {
+   "start": 1606.56,
+   "end": 1631.76,
+   "text": "2. You are saying that we will send 2 to the right and we will bring the right child which was 3 here. So when you do this, then whatever is with 3, this whole part will come to the left. You cannot do this that you bring 3 here and send 2 here and the rest remains the same. No. When you move 3 here, then whatever is connected to 3, this whole will come to the left. So when you bring 3 to the left, then see what will happen."
+  },
+  {
+   "start": 1632.02,
+   "end": 1661.3,
+   "text": "3 will come, but 3 will also bring them with it. And when you go to the right, you will take all of them with you. You will take all of them there. You will take all of them there. You will take all of them there. You will take all of them there. You will take all of them there. You will take all of them there. You will take all of them there."
+  },
+  {
+   "start": 1661.3,
+   "end": 1684.77,
+   "text": "Engineer 1 directly reports this and Engineer 2 directly reports this. Same, the CFO, the financial officer, he has a CA1 who directly reports this and CA2 directly reports this. Now, if you say to invert this, to invert the company as a CEO, that come on, do this and that. So, what can the CEO do? The CFO is on the right and the COO is on the left."
+  },
+  {
+   "start": 1684.77,
+   "end": 1710.75,
+   "text": "So swap them. But what will happen by swapping them? You will swap them. Swapping is very easy. Swapping is just a game. But these two engineers report the COO. So this will also go with the COO. It won't happen that you bring the CFO here, so these two engineers will report him. No, that can't happen. Engineer will report the COO. And CA will report the CFO."
+  },
+  {
+   "start": 1710.75,
+   "end": 1739.47,
+   "text": "So these two engineers will also come here as it is. And because you took CFO there, so the two CA with it will come here as it is. So see, you were successful in inverting at one level. First, CFO and CO were here and there, it was inverted at one level. But what does invert mean? Invert means, every root, every circle, every circle's two children, they have to be swapped. Now see,"
+  },
+  {
+   "start": 1739.47,
+   "end": 1767.33,
+   "text": "You have swapped the children of COO, COO and CFO here and there. But the children of CFO, CA1 and CA2, you will have to swap them too. Because that's what invert means. Swap the children coming out of every circle. Swap these two too. If you swap these two, then you can do it. Where will you have to do the same thing? You will have to do it here too. So you swap these two and swap CA2 here."
+  },
+  {
+   "start": 1767.33,
+   "end": 1792.29,
+   "text": "and CA1 here. Similarly, you have to swap these engineers too because that is the meaning of invert. You can't leave anyone. When you swap these too, Engineer 2 and Engineer 1. Yes, Engineer 1 and Engineer 2. Now, is there anything left to do? Was there a child of CA2? No. Was there a child of CA1? No. Was there a child of Engineer 2 and Engineer 1? No. So, look at the original picture."
+  },
+  {
+   "start": 1792.29,
+   "end": 1818.1,
+   "text": "And here you can see that the original is above and the duplicate is below. The children of each child have been swapped. First of all, let's see the children of the CEO. There were children? Yes, there were children. Did the children get swapped? Yes, they did. There were children of the CEO? Yes, there were children. Did the children get swapped? Yes, the children got swapped. There were children of the CFO? Yes, there were children of the CFO. Did the children of the CFO swap places? Yes, they did. Was there anyone else's child? No, there was no one else's child. So that's it."
+  },
+  {
+   "start": 1818.22,
+   "end": 1847.47,
+   "text": "You have to return this new route. What? You have to return this new route. So, it's a very simple problem. You must have already understood what we are doing. You must have already understood what we are doing. See, what will happen in this? I will tell you like a human. First of all, CEO came here. Okay. What is there under CEO? There are two people under CEO. CFO, let's say, and COO. Now, let's do one thing. There is one CA1 under CFO and there is one CA2. Okay?"
+  },
+  {
+   "start": 1847.47,
+   "end": 1877.25,
+   "text": "And there are two things in COO. One is engineer one. And there is a director. And there is an engineer in this director too. There is another engineer in this director. So this is a little complex company. This is a little complex company. So let's not do anything. What we have done now, keep coming down from above. Keep coming down from above. First of all, the CEO will tell his children to swap. What will the CEO say? First of all, the CEO will tell his children to swap. What does swap mean?"
+  },
+  {
+   "start": 1877.25,
+   "end": 1896.11,
+   "text": "Swap means, whatever root dot left and root dot right. First of all, what did the CEO say? Swap your children. What happened with this? This changed the whole tree. What happened with this? Now the CEO has come here. He has come here."
+  },
+  {
+   "start": 1896.62,
+   "end": 1926.58,
+   "text": "COO has come here. CFO. But that's not all. COO has brought a whole army with him. He has brought his whole army. Let's make this on the next page. Now after the swap of CEO, COO has come here. And CFO has gone to the right. But COO has brought his whole army. So as it is, he will bring his engineer 1 here. And here he will bring his director. And director will bring his engineer 2 inside."
+  },
+  {
+   "start": 1926.58,
+   "end": 1947.42,
+   "text": "Same. CFO, who has taken the whole return of CA, has taken it in that block. CA1 and CA2. Let's go. It's done. CEO has swapped his children. CEO has swapped his children. But is it enough? No, it's not enough. It's not enough. Because there are still more people left."
+  },
+  {
+   "start": 1947.42,
+   "end": 1971.25,
+   "text": "Now, the CEO will tell his students to do the same work as they did in their department. Now, it is the turn of the COO to swap. Let's do it. The COO will swap his students. As soon as he swaps, both his students will be swapped. So, the director will come here and the engineer 1 will go there."
+  },
+  {
+   "start": 1971.25,
+   "end": 2000.66,
+   "text": "Engineer 1 and Director. But when Director will come, he will bring his child too. He will not leave his child. He will not leave his child. So Director will bring his child. Very good. COO has swapped. Now, because COO will see that my child is also a Director. Now he will say, Brother Director, what we have done with you, you do the same with yourself. You do the same with yourself. Now who has to swap? Director. Come, let's see Director."
+  },
+  {
+   "start": 2000.66,
+   "end": 2030.99,
+   "text": "There is only one child of the director. There is a child on the left and a child on the right. It doesn't matter. Swap it. What will happen by swapping? Engineer 2 was on the left. Where will Engineer 2 go? To the right. Very good. Now, the director can call Engineer 2. But there is no child of Engineer 2. It won't make a difference. He will call. Theoretically, Director 2 will also call Engineer 2. That whatever is in your hand, get it done. So, nothing will happen. Okay. Director is done. Does Engineer 1 need to do anything? No. There are no children of Engineer 1. So, there is no need to do anything. Now, look."
+  },
+  {
+   "start": 2030.99,
+   "end": 2060.78,
+   "text": "Has the CEO's transformation been completed? Yes. All the children of the CEO have been swapped. And now, who will get the control? The CEO will say, we have done it, sir. Now, the CEO will say to the CFO, do the same thing. Now, whose turn is it? It is the turn of the CFO to switch his children. So, when the CFO switches his children, then what will happen? CA2 will come here. CA2 will come here and CA1 will come here. Now, there is no need to do anything to these two."
+  },
+  {
+   "start": 2060.78,
+   "end": 2088.8,
+   "text": "Now see, has the entire company been switched? Yes, the entire company has been switched. See how the company used to look in the beginning. Where did it go in the beginning? Yes, see how the company used to look in the beginning. And see where the company came in the end. Has the child of every circle been switched? Yes, take any circle and see. CFO. How did the child of CFO go there? We made some mistake, but the matter is the same. Focus on the matter. Okay, this was it."
+  },
+  {
+   "start": 2088.8,
+   "end": 2117.7,
+   "text": "We made this in the middle. The real company was like this. The real company was somewhere above. The real company was not like this. In the real company, these two were here and there. So, you are understanding what I am saying. How was the company in the beginning? How is it now? So, what happened? In the beginning, we started with CEO. What does every person do? Swaps their children. After that, he tells his children to do the same work that we have done. You do the same work. You do the same work. So, let's write its code. There is nothing in its code. In its code."
+  },
+  {
+   "start": 2117.7,
+   "end": 2149.04,
+   "text": "nothing is there, so see, node, node is also not needed because see, whenever you swap any company, no matter how complex you swap, CEO is not going to change, CEO is not going to change, because CEO is the one who starts the inversion, who will swap CEO, CEO is not someone's child, so CEO will not do anything, so you can make it void, you can make it void, this is just an exercise that you have to do, see, void, we give it fun, and you get,"
+  },
+  {
+   "start": 2149.04,
+   "end": 2179.97,
+   "text": "In the beginning, root. Root means the initial one, CEO. First of all, what do we have to do? If, let's assume that root is null. If, let's assume that root is null. Just in case, that there is no company. There is no company, then what will we do? Nothing, we will return it. And what can we do? Very good. Now, if root is null, then what will happen? What did CEO do? Did he swap both his children? Did he swap both his children quickly? Root's left and root."
+  },
+  {
+   "start": 2179.97,
+   "end": 2208.02,
+   "text": "Right. When you write swap, you can swap anything. You can swap numbers, you can swap anything. So CEO has swapped both his kids. Now, what does CEO say? He tells his kids to do the same thing. What does it mean to do the same thing? Call the same function. Fun, root, left. What does this mean? Brother, you do the same thing. And fun, root,"
+  },
+  {
+   "start": 2208.02,
+   "end": 2238.66,
+   "text": "Right. What will the right child say? That you do the same exercise and it's done. When both these works are done, then return it. It's a simple code. First of all, what will happen? Is it a null check or not? After that, the CEO will reverse his children. After that, he will tell both the children to do their work as we have done with you. You also do your work and tell us. And in the end, it will be returned. So let's do a dry run too. A dry run too. We said it won't take much time in this. Okay. So first of all, let's do this dry run. One. Two. Three. Four."
+  },
+  {
+   "start": 2238.66,
+   "end": 2269.1,
+   "text": "Five. This is your tree. So, first of all, for whom will fun be called? For one. Okay. So, is one null? No, one is not null. So, first of all, what will it do? It will reverse both of its children. When it will do this, when it will do this, then three will come here, two will come here. But, three will not come alone. Three will bring both of its people. Three will bring both of its people. So, your tree has started looking like this. Your tree has started looking like this. We will make the original tree. We will make the original tree so that it will be easy for you in comparison."
+  },
+  {
+   "start": 2269.68,
+   "end": 2299.87,
+   "text": "This is the original tree. Remember this. What is this? OG. Now it looks like this. Swap is done. Swapped both our kids. Now what will he do? He will ask both his kids to do it. So first of all, his left child. Now his left child has become 3, not 2. Fun 3 and Fun 2. Come, let's run Fun 3. Let's run Fun 3. What will Fun 3 do? First of all, he will swap both the kids. First of all, he will swap both the kids. So what will happen with this? 5 will come here and 4 will come here."
+  },
+  {
+   "start": 2299.87,
+   "end": 2329.82,
+   "text": "So, he swapped. After that, he will tell both the kids to do the same thing. What will he tell both the kids? That you do the same thing. Do the same thing. Come, let's do 4. Fun 4 came. Now, there is no child of fun 4. Sorry, not fun 4. First fun 5, then fun 4. So, first fun 5. 5 came. Now, there is no child of 5. So, what will happen in swap? Nothing will happen in swap. It will be null. So, he will swap. Now, there is no child of 5. There is no child of 5. So, who should I swap? No one. And he will swap both the kids. So, okay."
+  },
+  {
+   "start": 2329.82,
+   "end": 2357.82,
+   "text": "Fun will call null. And fun, because there is no child of 5. Now, nothing happens with null. So, both will go and both will end. So, this man is finished. Similarly, it will happen in 4. There is no child of 4. So, there is no need to do anything. Similarly, 4 is also finished and 3 is also finished. Now, come and run 2. Same thing will happen in 2. When you run fun 2, then there is no child of 2. So, nothing will happen. So, he will also swap. Nothing will happen. He will call fun of null twice. It will end. Very good. Very good."
+  },
+  {
+   "start": 2357.82,
+   "end": 2386.34,
+   "text": "These two are finished. How is your tree looking at the end? It looks like this. Is it completely swapped? See from above. Are the two children of 1 swapped? Yes, 3 and 2 are done. Are the two children of 3 swapped? Yes, the two children of 3 are swapped. So, you will return this. So, it was a very fake question. We know. So, this is its small code. See, it is a very small code. Both the questions were good. Same tree was also good. Invert tree was also good. After doing these three questions, you must have understood the things of invert and mirror. I hope so."
+  },
+  {
+   "start": 2386.34,
+   "end": 2391.31,
+   "text": "And see you tomorrow. Not tomorrow, maybe on Monday. This video will go on Saturday. See you on Monday."
+  }
+ ]
+}

@@ -1,0 +1,174 @@
+{
+ "video_id": "7ztFXqo8nZo",
+ "title": "My 4 Year DSA Learning JOURNEY | Mistakes | Striver Love Babbar Pepcoding Apna College",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 861,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.06,
+   "text": "If someone's way of studying DSA on the whole internet has been full of mistakes, it has been very long, it has been full of many challenges, then it has been mine. It was 2021, in which we had written the first line of code in C++, after that, Mtech, then placement in startup, then Amazon's interview, then it didn't happen there, then 30-40 lakhs in Akamai, so this whole journey has a lot of teachers involved in it, whoever you are, brother, sister, sir, whoever you see, whoever the big people are,"
+  },
+  {
+   "start": 27.06,
+   "end": 56.78,
+   "text": "Everyone is involved in this in phases. We have learnt from everyone. We have learnt from everyone's mistakes. We have learnt from everyone what to do and what not to do. And today when we can teach people, when people tell us that you teach very well, your way of thinking is very good, we are not afraid of taking a live class that if someone asks then what will we do. So this is a very long journey. And today we know a lot of things that we did not know at that time. So let's listen to a story. So everything started as we said in 2021."
+  },
+  {
+   "start": 56.78,
+   "end": 77.06,
+   "text": "In 2021, this video of Lovebubberji, complete DS Algo in 450 questions. So, out of the 12-11 lakh people who watched this, we were one of them. So, at that time, we came to know what is DSA? It is a company like Amazon. The app that we run is really a company. It gets so much money. It gets 50 lakh rupees. Its office is so big. So,"
+  },
+  {
+   "start": 77.06,
+   "end": 101.65,
+   "text": "We have also seen this video. After watching this video, the first thought that comes to mind is that yes, it would have been fun to study DSA. Like nowadays people think that it would have been fun to study AI. At that time, no one knew about DSA. College students did not teach. Seniors did not know. Juniors did not know. So how would anyone know? No one knew. So, although Lovebubber did not teach anything at that time. Lovebubber used to post videos of the same type that Amazon's office is like this, clothes are like this, money is like this, but"
+  },
+  {
+   "start": 101.65,
+   "end": 125.81,
+   "text": "If they wouldn't have uploaded those videos, then a whole generation wouldn't have started DSA. We are talking about a whole generation, not just one or two kids. Because of them, lakhs of kids got inspired to study DSA. Thousands of teachers got inspired like me to get them to study DSA or to do something or the other. So for the push to get them started, we are very thankful to Labbabbar. We got to learn showmanship from this man. What is showmanship?"
+  },
+  {
+   "start": 125.81,
+   "end": 150.9,
+   "text": "How do you show your things? I mean, when Lovebubber came, he was the first YouTuber of his kind who used to talk about this kind of things. Before that, there was no free resource, no one knew, 1-2 courses used to run here and there, local, offline. Apart from that, there was no other information that how is the placement done, is DSA asked or not, what all is asked. For this thing, a whole generation should be thankful for Lovebubber. Anyway,"
+  },
+  {
+   "start": 150.9,
+   "end": 180.86,
+   "text": "Now, we have seen this video, but in this video, as we have told again and again, what is the problem, you see. The first question of this array is reverse array. Okay, someone can make it if syntax comes. The second question is maximum minimum element of an array. Okay. The third question is find kth max. Now, kth max contains priority cube. So, this is not made by anyone. The next question is consist of only 0, 1, 2. Sort the array without any sorting algorithm. This is a question of Dutch National Flag. It is a question of two pointer. This is an obvious thing that will not be made by any child."
+  },
+  {
+   "start": 180.86,
+   "end": 197.73,
+   "text": "So, here the students get demotivated and leave it. We also left it. After that, what did we feel? When my M.Tech started in 2021, we thought that first of all, we should learn DSA. At that time, a course of GFG used to come, a self-paced course. At that time, its price was around 3000 rupees. Today, it must have become very less. Today, it is available for 999 rupees."
+  },
+  {
+   "start": 197.73,
+   "end": 220.19,
+   "text": "At that time, we took this course of 3000. And without understanding anything, the video of the teacher, which Sandeep sir used to teach in the video, he used to ask to make a question. So, you can see 438 of 1419. So, there were 1400 questions in this whole course. But, we kept making, making, making. That year, if we couldn't understand anything, we copied them. If we couldn't understand anything, we took it. Anyway, it was a brute force approach."
+  },
+  {
+   "start": 220.19,
+   "end": 249.47,
+   "text": "that keep making questions, this was the hope that it will come at some point but what happened is that 438 questions were made but if someone would have asked that if you have made 438 then tell me the first question how did you make it so he had no idea, we had to tell him that we have to see the notes, it flew away from his mind so what happened during this what happened during this that at least my syntax got clear Sandeep sir should be given this credit that my syntax got clear completely concept was not coming at all"
+  },
+  {
+   "start": 249.47,
+   "end": 271.47,
+   "text": "Intuition was not built at all. But the fear of writing syntax, how to write the code, how to write the vector, how to write the heap, how to write the string, how to write the function in the string, everything became clear. If someone had told us to write this, this, this, then we were in a state of writing it. So this credit goes to Sandeep sir. We started this course in 2021, the whole 2021 went into it."
+  },
+  {
+   "start": 271.47,
+   "end": 293.73,
+   "text": "After this, in 2022, we understood that there is no point in taking this course forward because it is not possible. We are being questioned but we are not able to understand. After that, we got a sir whose name was Sumit Malik. Sumit Malik used to run PEP coding. In today's date, PEP coding is a part of Scalar Academy but at that time, Sumit sir"
+  },
+  {
+   "start": 293.73,
+   "end": 321.81,
+   "text": "There is a special thing about Sumit sir that he knows DSA very well. He is a very magnetic person. Magnetic means a very charismatic person. When you will say this, you will enjoy listening to it. Even if you don't want to study DSA, you will feel that let's listen to him. He is a very good speaker. His personality is very cheerful and bold. So, Sumit sir was a very magnetic person. At this time, his course used to come out. His course was in three parts. Level 1, Level 2, Level 3."
+  },
+  {
+   "start": 321.81,
+   "end": 346.86,
+   "text": "They used to say that take 1200 questions or make them. 300 in level 1, 600 in level 2 and 300 in level 3. What will happen if you make 1200 questions? Another good thing about Sumit is that he never used to lie. He never used to say that you make 1200 questions so that you can make 1200 one question. No. Their core proposition, selling point was that if you make 1200 questions in any way, then"
+  },
+  {
+   "start": 346.86,
+   "end": 374.54,
+   "text": "The question that will be asked in the interview, if you have already seen the question, its probability will increase a lot. If you make 1200, then there is very little chance that you will get to see a new question, because the question will come from this 1200. Because there are so many questions in it. That year, the whole year of 2022, the year of placement, we followed pep coding, made level 1, made level 2, made level 3. Till that time, even at that time, I was not able to understand anything, that is, the intuition was not built, a new question was not made by itself, but"
+  },
+  {
+   "start": 374.54,
+   "end": 403.12,
+   "text": "What used to happen was that there was a momentum, there was a rush to make a question. That year, you can see my GFG profile. Even now, my rank of IIT Dhanbad is 23. Meaning, 624 problems, 2168 scores. We passed out from IIT Dhanbad, it's been 2-2.5 years. Till now, this is the 23rd rank. At that time, when we were in college, this was the rank 1. In the entire IIT Dhanbad, we were the one who made the most questions. I don't know about the questions, but the questions were made. Why were they made? Because Sumit sir's promise was that"
+  },
+  {
+   "start": 403.12,
+   "end": 429.38,
+   "text": "The questions that we will get asked in our course will be the same. And when the interview happened, when the placement of IIT came, it happened exactly as Sumit sir said. Okay? That's why we are saying that Sumit sir never made such a selling point that if you do 200 of mine, you will do the rest of the questions. No. His selling point was always that you do 1200 of my questions and then you will get the question you saw in the interview. And that happened. We did not make 1200 questions, we could make 624 out of it."
+  },
+  {
+   "start": 429.38,
+   "end": 455.57,
+   "text": "But, but, but, what happened? The two questions that were asked in the interview were the same two questions that we had already asked. By that time, my condition was such that almost, almost, I had 400, 500, 600 questions that I had already asked. Meaning, you will ask a question and I will tell you the answer. We didn't know why that concept was used here, but we will write the whole code and the whole code will be run. So, by doing this, my placement was placed in Sandvine. Sandvine was a start-up company. Very good thing."
+  },
+  {
+   "start": 455.7,
+   "end": 483.23,
+   "text": "Now, we got a placement in Sandvine. Now we started working in Sandvine. It's been a year since we started working. We forgot the entire DSA. Obviously, when you write the question, you will forget the question. If you don't remember the film from 3 months ago, then you will never remember the DSA question from a year ago. Right? After that, we came to Sandvine. Now, we got a problem that we have to switch. To switch, we have to study DSA again. Let's go. Now, I didn't want to do this pep coding level 1 and level 2 again. After that, we met Stryver."
+  },
+  {
+   "start": 483.23,
+   "end": 509.3,
+   "text": "There is no need of any identification of Stryver, at least not from me. At that time, there were a lot of playlists of Stryver. One of them was A to Z DSA course. There was a DP series, a tree series, a lot of series. After that, we wanted to do the same thing again that by looking at the questions, we started solving random questions. We picked up a sheet, we picked up a video of Stryver, we started solving that question randomly. While doing this, 2024 came. Now, what happened in 2024?"
+  },
+  {
+   "start": 509.3,
+   "end": 532.53,
+   "text": "In 2024, my interview with Amazon was scheduled. My interview with Amazon was scheduled in January or February this year. Till then, I had no intuition, no pattern knowledge, no thinking process was developed. Even at that time, my condition was that whatever question is made, remember it. If the same question comes, we will make it. In the meantime, somewhere from Instagram, a reel came."
+  },
+  {
+   "start": 532.53,
+   "end": 554.7,
+   "text": "There was a reel, in reel it was said about patents, I don't know whose reel it was, Indian or foreign, I don't remember. Like you guys scroll the reel, we were also scrolling the reel. It was also written there that comment, you will get the patent sheet, we also commented, I got the patent sheet. After reading that patent sheet, we realized for the first time that the question we are asking, there is no need to ask."
+  },
+  {
+   "start": 554.7,
+   "end": 582.3,
+   "text": "Every question follows a certain pattern. So whatever we understand today, the first time we read in that Github repo. So we read that sheet carefully. We read that sheet carefully for a week or two. After that, after that, a lot of things became clear to me that the 500 questions that are already remembered, there was no need to remember them. If we had read pattern-wise from the beginning, there was no need to remember anything. There was no need to remember 1000-2000 questions. After that, after that, we started this DSA journey again."
+  },
+  {
+   "start": 582.3,
+   "end": 611.87,
+   "text": "Solved that pattern sheet again. Where? On the lead code. Solved that pattern sheet again. Solved almost 300-400 questions again. Okay? After that, after that, when Amazon's interview came very close, very close, when 5 days were left, 6 days were left, at that time, there is a portal of Striverji, there is a portal called Take You Forward, there is a course on it. The name of that course is DSA Quick Revision. So, DSA Quick Revision has 80 problems. We solved 80 problems in 3 days or in 3 or 4 days."
+  },
+  {
+   "start": 611.87,
+   "end": 637.58,
+   "text": "You can see, my Amazon interview was going to happen in March. So from here, we started from March 21, 15, 10, 16, 19, 13, 10, 34, means we solved 30-30 problems in a day. So during this whole week, we solved the problem while applying pattern knowledge. How many? Approximately 100-200 problems, I don't remember how many."
+  },
+  {
+   "start": 637.71,
+   "end": 666.67,
+   "text": "Then Amazon's interview happened. People will say that Amazon's interview didn't happen. So you don't know. It wasn't like that. Amazon's interview happened. The first round went very well. In the first round, 100% success rate. The second round Amazon's schedule happened. But that interview never happened. Now you can see. This is a revised confirmation email. Now it will be 8th April. But first it happened in March. Then it was rescheduled. Then it came in April. And this interview never happened. Till now, till June 10, 2025,"
+  },
+  {
+   "start": 666.67,
+   "end": 693.87,
+   "text": "They have the same message that we have recruited you, they will do something for you. But now it doesn't seem like it will happen. What happened after this? After this, Akamai's interview came. Akamai's interview came in September, August or September. By that time, my pattern knowledge, my thinking process, my intuition had developed so much that there was no problem in Akamai's interview. There were two dsa rounds in Akamai, four questions were asked in both the dsa rounds. Four questions."
+  },
+  {
+   "start": 693.87,
+   "end": 720.26,
+   "text": "We got to know what to do with a 100% success rate on HackerRank. This is how we are sitting today. After that, when we came to Makamai, we felt that what we have learned in 4 years, what took us 4 years to learn, that we are making so many struggles, tears, questions, forgetting, crying, shouting, this thing should not take you 4 years. Because if it took us 4 years, then we want that it should not take any other kid 4 years. So this is the purpose of starting this whole channel."
+  },
+  {
+   "start": 720.26,
+   "end": 746.93,
+   "text": "So it is not that we are talking against or against all these teachers. Whatever we are today is because of the teachers. We have studied something or the other from every teacher. And we have studied very well and very minutely. I have a quality that even if we don't know anything, I have a consistency. We do that work continuously. We don't leave it in the middle. So because we were able to be consistent by the grace of God, we have passed this."
+  },
+  {
+   "start": 746.93,
+   "end": 773.76,
+   "text": "If a normal kid asks 400 questions and then he thinks that we have forgotten everything, then he does not have the courage to start again. That is why this process is a brute force process of learning. Do not study with brute force. Study pattern wise. If you are a new kid and are watching till here, then there is a playlist. In the playlist, there is this playlist of DSA pattern. Follow it completely. In a very short time, you will learn to study DSA in a very optimized way. And after this, you will not need to write any question. Because writing a question..."
+  },
+  {
+   "start": 773.76,
+   "end": 800.51,
+   "text": "Sumit sir used to say that if you want to do it, then do it. If you don't do it, then you will leave Microsoft. But to do 1200 questions, you need a lot of hard work, a lot of time, and a lot of hard work. So, Sumit sir also used to say that if you want, you can do 1200 questions. We also give you a guarantee that if you do 1200-1000 questions, then there will be no question that will not be made by you in the interview. If you do it completely. But,"
+  },
+  {
+   "start": 800.51,
+   "end": 828.96,
+   "text": "Obviously, you don't want to write. If you don't want to write and you don't have much time, then DSA pattern is the only way to go. Follow the DSA pattern. If you watch one or two lectures of Sliding Window, you will understand what we are talking about and how we are teaching. Thank you and today's video will come soon. So, we thought that we should tell you my journey because you should know what is my brother's background, what is his qualification. We are not a candidate master or anything. You can see on the code shape."
+  },
+  {
+   "start": 828.96,
+   "end": 854.38,
+   "text": "I might have participated in 17 contests in M.Tech. The highest rating is 1818. 1818 means 4 stars. So, it's okay. I did the course at that time. I didn't understand it. I left it. But it's okay. So, this was my background. This is my educational qualification, DSA qualification. Whatever you want to call it. So, let's meet in the next video. Thank you very much."
+  }
+ ]
+}

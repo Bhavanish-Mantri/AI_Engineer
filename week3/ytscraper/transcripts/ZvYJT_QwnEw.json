@@ -1,0 +1,304 @@
+{
+ "video_id": "ZvYJT_QwnEw",
+ "title": "Tree Traversals Made Simple! Preorder Inorder Postorder",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1585,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.6,
+   "text": "Hello guys, how are you all? I am sweating a lot because what we do is first we teach you everything and then we shoot the intro. So today's topic is traversal and it is very interesting. Dadaji, Papa, Chacha have made a family tree and explained it. If you read the traversal from here then you will not forget till the end of the video. In order, pre-order, post-order, there will never be any confusion in this. So watch the whole video. This is one thing. The next thing is that there are more than 50,000 on Instagram."
+  },
+  {
+   "start": 27.6,
+   "end": 53.73,
+   "text": "If God wills, it will happen soon on YouTube too. We are telling you this because we are not doing any show-off. We are telling you this because I didn't have any such trajectory that we reached here. We were never a topper in school. We were never in JEE mains. We weren't even qualified. We must have got 3-4 lakh ranks. We did our B.Tech from a private college. After that, we did a bit of M.Tech from IIT. After that..."
+  },
+  {
+   "start": 53.73,
+   "end": 83.31,
+   "text": "I didn't get a job in a big company like Microsoft or Google. I got a job in a small start-up company in Sandvine. We got rejected in many companies like Amazon and Akamai. It's a good company but nobody knows about it. I didn't have a perfect journey."
+  },
+  {
+   "start": 83.44,
+   "end": 99.6,
+   "text": "After 12, it happened in IIT. After IIT, it happened in Google. After that, we opened YouTube. It didn't work. This is happening against all odds. I am telling you this because you might think that nothing is happening to me. We don't know anything. Nobody knows anything. Keep failing."
+  },
+  {
+   "start": 99.6,
+   "end": 128.48,
+   "text": "and keep learning. There is nothing in the world that can't be done by trying. Keep trying. There is nothing in the world that can't be done by you. No matter what your brain level is, what your background is, what you used to do, if you knew how to speak or not. I didn't know anything. I didn't know how to speak English very well. Neither do I have a family background that someone is doing all this to teach us. So keep doing, keep failing, keep falling, keep getting up, keep trying and keep studying. If you keep working hard, then"
+  },
+  {
+   "start": 128.48,
+   "end": 158.7,
+   "text": "It happens, something or the other happens. So let's start and keep this in mind. Who are there in your family? Let's talk about our family. In my family, let's assume that my grandfather is at the top. My grandfather is at the top. Let's assume that my grandfather has two sons. One is my father and one is my uncle. Just for understanding. My father has two children. One is Pratyush."
+  },
+  {
+   "start": 159.92,
+   "end": 186.72,
+   "text": "And one's name is Pranjal. Okay? There are two children of my father. Similarly, my uncle has only one son. Let's assume that his name is Sumit. So this is my family tree, a small one. So why are we showing you my family tree? Because we want to teach you traversal. Let's explain. Suppose there is something to eat at home. There is something to eat."
+  },
+  {
+   "start": 186.72,
+   "end": 212.53,
+   "text": "So now if someone gives food, then let's assume that my family leader is my grandfather, then who will open the gate? If my grandfather opens the gate, then my grandfather will get the food first, right? Now there is a rule in my family, there is an unsaid rule in my family. What is the unsaid rule? That any parent, any parent, when they get something to eat, parent means whose children are there, whose only child is a parent, whose child is not there. If Pratyush does not have any child, then Pratyush is not a parent. Simple thing."
+  },
+  {
+   "start": 212.75,
+   "end": 241.55,
+   "text": "So what is the rule in my house? When any parent gets food, he does one thing, he eats it with a technique. First of all, he feeds his left child. The child on his left, there is no discrimination in this, he feeds the child on his left. Then he eats it himself. Then he eats it himself. In the end, he feeds the child on the right. Feeds the child on the right. Okay? Meaning, let's say a chocolate has come. A chocolate has come, it has a lot of cubes. This is how a chocolate has come."
+  },
+  {
+   "start": 241.81,
+   "end": 268.66,
+   "text": "So when any parent gets a chocolate at that time, there is only one chocolate, when anyone gets a chocolate, then the first thing he will do is he will give the chocolate to his left child. The left child will do whatever he wants, but when that chocolate will come back to this parent, then he will eat it himself, he will eat a bite. After that, he will transfer the chocolate to the right child. Let's assume that this is the rule in my family. So let's see what will happen. First of all, the chocolate has been given to the grandfather. Let's see what will happen to you now. Come, let's see."
+  },
+  {
+   "start": 268.66,
+   "end": 298.51,
+   "text": "So, first of all, who will get the chocolate? Grandfather. First of all, the chocolate has been given to grandfather. Now, grandfather has got the chocolate, right? Okay. Grandfather now has the chocolate. So, we will make the chocolate like this. Okay? This is the chocolate. What is the work? What does any parent do? First of all, is grandfather a parent? Yes, grandfather is a parent. They have two children, father and uncle. What does the first parent do? First of all, he gives the chocolate to his left child. First of all, he gives the chocolate to his left child. So, what will grandfather do first? That chocolate."
+  },
+  {
+   "start": 298.51,
+   "end": 327.07,
+   "text": "We will give it to papa. Now, where has the chocolate come? The chocolate has come to papa. The chocolate has come here. Okay? Again, papa has the chocolate. Papa is not a parent. Papa is someone's son, but papa is also a parent of mine. So, what does every parent do? The chocolate is given to his left child. What will papa do? He will give the chocolate to Pratyush. He gives it to the left child, not to the right. Remember, Pranjal did not get it, Pratyush got it. So, Pratyush got the chocolate. Where did the chocolate come? To Pratyush. Okay."
+  },
+  {
+   "start": 327.07,
+   "end": 355.06,
+   "text": "Is Pratyush a parent? I mean, does Pratyush have a left child? No, Pratyush doesn't have a child. Pratyush is not married. Very good. Now, he doesn't have a left child. After that, what is the rule in the family? After the left child, he has to eat it himself. So, who is the first person who has eaten chocolate at home? That is Pratyush. Chocolate was given to Dadaji, but who ate chocolate first? Pratyush. Why? Because Pratyush doesn't have a left child. So, we will write an order here that Pratyush has eaten a chocolate first."
+  },
+  {
+   "start": 355.28,
+   "end": 380.18,
+   "text": "Eat the chocolate, Pratyush has eaten it. Okay. After eating it, what is the rule? Give the chocolate to the right child. But is Pratyush's right child also there? No. Right child is also not there. So, it is over. It is over. Now, when it is not there, then Pratyush's work is over. So, what will we do? Chocolate, come back to your father. Come back to your father. Pratyush's work is over. Pratyush's work is over. And chocolate has come back to your father. Okay?"
+  },
+  {
+   "start": 380.24,
+   "end": 408.99,
+   "text": "Chocolate has come back here. Now, what did papa say? Papa had given chocolate to his left child. He gave it to Pratyush. Whatever Pratyush had to do, happened. After that, what is papa's job? Eat a bite of chocolate yourself. So remember, who is eating chocolate now? Papa. Who is eating chocolate now? After Pratyush, papa. Okay, papa ate it himself. What did he have to do after eating it himself? He had to give it to his right child. So who is the right child of papa? Pranjal. Now, where did the chocolate go? Now, where did the chocolate go?"
+  },
+  {
+   "start": 408.99,
+   "end": 438.21,
+   "text": "To Pranjal. Now where did the chocolate go? To Pranjal. Very good. Let's see what Pranjal will play. Pranjal. Who should Pranjal give the chocolate? To her left child. But do you see any left child of Pranjal? No, you don't. Okay. There is no left child. If the left child's work is done or not, whatever it is, once her work is done, what do you have to do? You have to eat the chocolate yourself. Now who is going to eat the chocolate after this? Pranjal. Pranjal has eaten the chocolate herself. After this, Pranjal. After this, Pranjal has eaten."
+  },
+  {
+   "start": 438.21,
+   "end": 467.84,
+   "text": "Have you eaten? Okay, very good. After eating yourself, what is there? You have to give it to your right child. So, do you see any right child of Pranjal? No, you don't see. I don't see. You also don't see. So, very good. Pranjal's work is over. Pranjal's work is over. We have come back to papa. But now, papa's work is also over. Papa, see papa. He fed his left child, means Pratyush. He ate himself. He fed Pranjal too. Okay. So, papa's work is also over. So, papa is also over. Now, where did the chocolate go back? Where did the chocolate go back? To grandpa."
+  },
+  {
+   "start": 467.84,
+   "end": 487.63,
+   "text": "Where? To Dada ji. Okay. What has Dada ji done? Dada ji has given his left son. He has given his father. After that, we don't know what his father did to him. But Dada ji has given his father. Now Dada ji's job is to eat it himself. Left's job is done. He will eat it himself. Now which man is going to eat chocolate? Dada ji."
+  },
+  {
+   "start": 487.95,
+   "end": 517.25,
+   "text": "Very good. Very good. Very good. Very good. Very good."
+  },
+  {
+   "start": 517.25,
+   "end": 540.94,
+   "text": "Sumit ko chocolate de denge. Sumit ko chocolate de denge. Chocolate kaha gaya? Sumit ke paas aachuka hai. Very good. Sumit. Sumit ka kaam kya hona chahiye? Apne left wale bete ko de dena. Lekin, kya Sumit ka left beta apko dikh raha hai? Nahi. Sumit ki shaadi nahi hui hai. Sumit ka left beta nahi dikh raha hai. Koi baat nahi. Left beta nahi dikh raha hai. Toh kya kaam hai Sumit ka? Khud khaalo chocolate. Khud khaalo. Toh jo aadmi khud agla chocolate khaaya wo? Sumit hoga. Very good."
+  },
+  {
+   "start": 540.94,
+   "end": 567.2,
+   "text": "Now, what should Sumit's job be? After eating, he should give it to his right son. But unfortunately, Sumit's right son is not there. So, Sumit will not be able to do anything. Sumit is done. He has done all the work Sumit had to do. So, now we have come back to Chacha. What work did Chacha do? Chacha had given it to his left son. He had given it to Sumit. Now, what work does Chacha have? Eat the chocolate yourself. Eat it yourself. So, let's feed Chacha himself. Let's feed Chacha himself. So, who will be the next person to eat the chocolate?"
+  },
+  {
+   "start": 567.2,
+   "end": 590.93,
+   "text": "chacha very good chacha ke ab khud khane ke baad kya kaam hai apne right bete ko dena lekin kya aapko chacha ka right beta dikh raha hai unfortunately chacha ke 2 bachay nahi hai chacha ka ek hi bachay hai which is not a problem at all to chacha ka right beta nahi hai koi kaam nahi aage ho jaiye ho gaya chacha ke kaam wapas aayeya dada ji pe kya dada ji ka bhi pura kaam ho chuka hai dada ji apne left bete apne papa ko de chuke hai"
+  },
+  {
+   "start": 590.93,
+   "end": 619.14,
+   "text": "Dada ji has also eaten. You can see on the top. Dada ji has also given chocolate to chacha. So, everything is over. So, Dada ji, now chocolate is of no use. So, that's it. This is also over. Now, see, what happened with this? This is a very interesting thing. How many members were there in the family? There were a total of 6 members in the family. Dada ji, Papa, Chacha, Pratyush, Pranjal, Sumit. There were 6 members. See, in the process of eating chocolate, there are also 6 people. Pratyush, Papa, Pranjal, Dada ji, Sumit, Chacha. There are all the people in this. But,"
+  },
+  {
+   "start": 619.14,
+   "end": 645.71,
+   "text": "The order in which this has been printed is a bit interesting. This has been printed in this order that first of all, if you see anyone, if you catch any one of them, if you catch any one of them, then his left son will come before him, that man himself will come in between and his right son will come later. Catch any one of them. Catch Dadaji. Who is Dadaji's left son? Papa."
+  },
+  {
+   "start": 645.71,
+   "end": 671.6,
+   "text": "Did papa come before dada ji? Yes, he did. Who is papa's right son? Dada ji's right son is chacha ji. Did chacha come after dada ji? Yes. So this rule will be true for everyone. You catch papa. Papa. Who is papa's left son? Pratyush. So did Pratyush come before papa? Yes, he did. Who is papa's right son? Pranjal. So did Pranjal come after papa? Yes, Pranjal came after papa. You catch Pratyush."
+  },
+  {
+   "start": 671.63,
+   "end": 697.92,
+   "text": "Who is the left son of Pratyush? No one. No one means nothing. Who is the right son? No one. Who is the left son of Chacha? Sumit. Did Sumit come before Chacha? Yes, he did. No one is the right son of Chacha, so it doesn't matter. When you write a tree like this, this is called traversal."
+  },
+  {
+   "start": 697.92,
+   "end": 727.76,
+   "text": "And there are three major systems in traversal. System or rule or whatever it is. We said that there was a strange rule in my family. That first the parent will feed his left son. Then he will eat himself. Then the right son. So this is a rule. This rule is called inorder traversal. This rule is called inorder traversal. What does it mean? I will tell you. In any tree. In any tree. Whichever circle. Suppose you have given such a tree. As we told our family tree. So you have given such a tree. Four. Five."
+  },
+  {
+   "start": 727.82,
+   "end": 755.66,
+   "text": "6. You have been told to print the entire tree. What was there to do with the chocolate? You had to print it. Look at the entire tree and print it. Okay. This type of system has three types of things. If there is a node, then what do we call any circle? Node. We call any circle a node. A node could have a left child and a node could have a right child. This is what a tree is."
+  },
+  {
+   "start": 755.66,
+   "end": 785.36,
+   "text": "Each node will have a left child and a right child. There is no problem. But at max, there are only two left and right. So what happens? If you are using this rule while printing, that the node on which we will come, we will first print that node. Okay. After that, we will go to its left and after that, we will go to its right. This is a system. If your system is such that first we will print some left, then we will print the node and in the last, we will print the right. This is also a system."
+  },
+  {
+   "start": 785.36,
+   "end": 812.59,
+   "text": "If your system is like this, first left, then right, and finally that node. These are three systems. See, node, node, node. This is called pre-order because node is the first in this. This is called in-order. The example we just saw was in-order. In-order was being followed in my house. Parent was in the middle. Look carefully. What will parent do? First he will feed his left, then he will eat himself."
+  },
+  {
+   "start": 812.59,
+   "end": 842.32,
+   "text": "Last is right, so there was an in-order in my house. Why is it called in-order? The note is in the middle. Where the note is in the last, what is it called? Post-order. What does pre-order mean? First, the grandfather will eat the note first. After that, he will give it to his father. Then, he will give it to his uncle at the end. This is called pre-order. In-order means, grandfather will feed his father first. Then, he will eat it himself. Then, he will feed it to his uncle. In-order is in the middle. Post-order, grandfather will feed his father first."
+  },
+  {
+   "start": 842.32,
+   "end": 868.38,
+   "text": "Then the uncle, then himself. Remember, in children, left comes first, right comes later. You are not seeing that right child comes first and left child doesn't. You can make it like that if you want, but it is not standard. Always left child comes first, right child comes later. Just for simplicity. What does it depend on? What is the difference? The position of the parent is changing. What will a parent do? A parent can do three things. Either he eats first,"
+  },
+  {
+   "start": 868.38,
+   "end": 898.06,
+   "text": "Then left, then right. This will be the pre-order. Feed the left first. After that, eat it yourself. Then feed the right. In order. Feed the left first. Feed the right after that. And at last, eat it yourself. Post-order. So there are three types of traversal in the tree. Mainly. Mainly. It's in a level order. But that's for later. These three. What was going on in my family? In-order traversal. So when someone tells you that you have this tree. You have this tree. And print its in-order traversal. So in reality, he is asking for this. He is asking for this order."
+  },
+  {
+   "start": 898.06,
+   "end": 925.73,
+   "text": "He is asking for the order. Now let's see the code of this. Mahabharata said this because understanding and remembering this is very important. This is the base of the trick. If you don't understand this, then it would be very difficult. It is a very basic thing, but it is very important. You can call it fundamental. Now if you are told to write the code of inorder. So let's see what we do. So what will you generally be told? Suppose you get a function. You get a"
+  },
+  {
+   "start": 925.73,
+   "end": 955.86,
+   "text": "Void lead code gives a function. What do we tell you in every tree? What will you be given? Root. What will you be given? Root. Means, node star root. For Python people, node root. For Java people, node root. Whatever you will be given, root. Root will be given. Right? So, we make a function. We will tell you all three questions at once. Pre-order, in-order, and post-order. Three questions. It will be three. You just have to change here and there. Right? Let's say you are given root. What have you been told? Let's say your question is, print in-order."
+  },
+  {
+   "start": 955.86,
+   "end": 987.23,
+   "text": "The one we did in our family, the one that is printed in our family, this is called inorder. But print this. Print this. See what happens. Do you remember recursion? Do you remember recursion? Very good. Come on. So we will call this in a function. We will call this fun root in a function. And that's it. Let's write fun. Come on, let's write fun. What is the function of fun? Printing inorder of anything. Printing inorder. See. Void fun. What will pass? Node star node. Okay."
+  },
+  {
+   "start": 987.23,
+   "end": 1017.04,
+   "text": "Node means a particular circle. Suppose this is your tree. 1, 2, 3, 4. This is your tree. What does node mean? A particular circle. So what did you get in your lead code? Root. In your lead code, you got this. 1. You got this 1. We have passed this root in fun. Now what will fun see? Fun will always see a circle and treat it. What were we doing in the case of chocolate? We told one person that he has chocolate. What will he do with it? What can he do with it?"
+  },
+  {
+   "start": 1017.04,
+   "end": 1041.01,
+   "text": "So, that is the fun part. What was the work above? Chocolate. What is the work here? Printing. Let's go. So, first of all, first of all, first of all, let's do one thing. If node equal equal to null. What does node equal equal to null mean? That there is no circle. There is no circle. Nothing. If there is no circle, then what will we print? Nothing. Return. Return."
+  },
+  {
+   "start": 1041.01,
+   "end": 1065.42,
+   "text": "Null means that the node is a pointer. If there is no null, then you can't do anything. Come out, come out. Now the main work starts. What is the work of every circle? Print yourself. Print yourself means whatever the data is, print this data. This is its work. But if you are told in order, then?"
+  },
+  {
+   "start": 1065.71,
+   "end": 1090.78,
+   "text": "Chocolate khane ko kaam samajhiye. Dadaji ka kaam kya tha? Khana. Khud khana. Khud khana kaam hai. Khud khana kaam tha. Jaisa print karna kaam hai na. Khud khana kya hai? Ek kaam hai. Lekin, in order ka matlab kya hota hai? Pehle hum kisko mauka denge? Pehle hum kisko mauka denge? Apne left child ko. Pehle hum kisko chocolate khane ka mauka denge? Apne left child ko."
+  },
+  {
+   "start": 1090.78,
+   "end": 1117.44,
+   "text": "What will we do? Before doing anything, before doing anything, we will call the same function. For whom? Node.left. Yes. Yes. Yes. Meaning, if you get 1, who will call the same function? 2. Same function. First, who do you have to give the opportunity to do every work? Left child. Whatever work it is, to get the sum, to do anything in order. First, who do you have to give the opportunity? Left child. Once it is done,"
+  },
+  {
+   "start": 1117.44,
+   "end": 1148.83,
+   "text": "Come back. After that, you can do your work. After that, what can you do? See out. Node. Data. Your work is done. Very good. Your work is done. You ate it yourself. What was this? You ate it yourself. You ate it yourself. What was this? You gave it to the left child. You gave it to the left child to eat. You ate it yourself. After that, what is the work? Feed the right child. Fun. Node. Right. Yes. Done? Return."
+  },
+  {
+   "start": 1148.83,
+   "end": 1167.65,
+   "text": "This is the function of inorder. Let me tell you what we are doing again. Consider fun as the circle which has chocolate. Suppose it has chocolate at 1. What does 1 do? It gives chocolate to the child on the left to do whatever it wants to do."
+  },
+  {
+   "start": 1167.65,
+   "end": 1192.05,
+   "text": "Who does it call directly? To the left of the node. After that, it does its work. Whatever its work is, if it prints, then it will print itself. After that, who does it give the chocolate to? To its right son. What do we call it? In order. In order. Let's see what happens with the recursion. Let's trace the recursion and show you. Consider it as your tree. 1, 2, 3, and 4."
+  },
+  {
+   "start": 1192.05,
+   "end": 1220.3,
+   "text": "Okay? See, there is no left child of 2, there is only one child of 2 which is in the right. Okay? Let's try to print this in order. So, first of all, for what will fun be called? For root, which is 1. First of all, fun will be called for node is equal to 1. Okay? So, first of all, see, is node equal to null? No, it is not null. Okay. What is the first thing? Call for your left beta. Call for your left beta. So, is 1's left beta? Yes. So, what will it do? Fun will call for its left beta."
+  },
+  {
+   "start": 1222.16,
+   "end": 1238.59,
+   "text": "1 called for its left son. Okay? Come. As soon as it calls, where will we go? We reached fun2. Fun? We reached node is equal to 2. Very good. So is this node null? No, it's not null. Okay. The first thing to do is to call for its left son. So fun?"
+  },
+  {
+   "start": 1238.59,
+   "end": 1268.56,
+   "text": "But what is 2's left beta? 2's left beta is nothing. It is empty. So when it is empty, then what will be stored in 2's left? Null. Yes. Yes. That's why it is a null check. It will call its left beta. But because its left beta is not there, then what will that call be? Null. Okay. It will call. Let's call. Fun. Null. Node is equal to. Actually, null means empty. What is written? If node is equal to null, what do we have to do? Nothing. Return. There is no need to do anything. What happened?"
+  },
+  {
+   "start": 1268.56,
+   "end": 1291.95,
+   "text": "This is finished. Where is it again? On 2. This is done. What is the work after left beta? Take care of yourself. Print yourself. What is this? Node is equal to 2. So what will be printed? 2. First of all. Your work is done. What is after that? Call right beta. Fun? Fun? 4. Who is right beta of 2? 4. Come. Call this. Fun?"
+  },
+  {
+   "start": 1292.05,
+   "end": 1321.38,
+   "text": "Node is equal to 4. Very good. First of all, what should be the work of 4? Call your left beta. But since there is no left beta of 4, then who will it call? Null. Null. No problem. Nothing will happen on Null. It will work. After that, what is the work of 4? Print yourself. Print yourself. Print yourself. Very good. After that, what is the work of 4? Give your right beta a chance. Fun. Again, do you see the right beta of 4? No, you don't. So, it will call on Null. Nothing will happen on Null. So, this will also end."
+  },
+  {
+   "start": 1321.38,
+   "end": 1347.58,
+   "text": "This will also be finished. 4 is also finished. Now, is there anything left for node is equal to 2? It called its left, printed itself, and also called its right. Nothing is left. It is finished. This is also finished. Now, this is completed. Now, where are we? In node is equal to 1. Node 1 has given to its left son. Whatever left son had to do, has been done. What is the work of 1? Printing itself. Printing itself. So, what will be printed next? 1. Yes."
+  },
+  {
+   "start": 1347.58,
+   "end": 1376.72,
+   "text": "Now, what is the responsibility of 1? Give a chance to your right son. So, let's run the right son. Fun, node is equal to 3. Very good. Node is equal to 3. What should be the first thing of 3? Give a chance to your left son. So, can you see the left son of 3 somewhere? No, it is not visible. What will it do? Fun, it will call null. It will call null. Nothing will happen there. After that, what is the work of 3? Print yourself. Very good."
+  },
+  {
+   "start": 1376.72,
+   "end": 1403.95,
+   "text": "After that, what is the work of 3? Call your right son. But can you see the right son of 3? No, it is not visible. So, what is fun? Null. Nothing will happen. It is done. Is the work of 3 finished? Yes, it is completely finished. Come back. 3 is done. Is its work finished? Note is equal to 1. Did you call 2? Did you print yourself? 3. Means, did you call this first? Did you print yourself? Did you call this? Is its work finished? Yes, its work is also finished. Finish it. This too."
+  },
+  {
+   "start": 1403.95,
+   "end": 1433.63,
+   "text": "Finish it. In the end, now you have finished everything. You went back to the main and you went back. What was printed? 2, 4, 1, 3. Let's check on this. What did we say? Hold any one note. Hold any one note. Hold 2. Is 2's left child before 2? 2's left child is not there. So, it's fine. Is 2's right child after 2? Yes, 2's right child is after 2. Hold 1. Does 1's left child come before 1? Yes, 2 comes before 1. Does 1's right child come after 1? Yes, it comes."
+  },
+  {
+   "start": 1433.63,
+   "end": 1457.33,
+   "text": "So, what do we call this? Inorder. What do we call this? Inorder. Okay, now you will say that I should only tell you inorder. For pre-order and post-order, I will have to make more videos. No, you don't have to make it. You don't have to make it. What did we say? You don't have to make it. What does pre-order mean? Pre, pre. Remember pre. Pre means first. So, node first. After that, left and right."
+  },
+  {
+   "start": 1457.68,
+   "end": 1485.52,
+   "text": "What does post order mean? Post means later Post means we will postpone the plan. We will postpone it later. Node is in the last. After that, left and right. Left and right will come like this. This is it. Change it to simple in fun. What does this mean? Node first, then left, then light. Means what will happen in fun. So in pre-order, first print the data of the node. First print the data of the node. After that, give the left one a chance."
+  },
+  {
+   "start": 1485.81,
+   "end": 1516.21,
+   "text": "After that, give the left one a chance. After that, go and give the right one a chance. Easy peasy lemon squeezy. It's over. That's all you have to do. These three lines, which you have written in order, these three lines, do these three lines. See out here and there. What do you have to do in post order? What does post order say? Left, right, node. First, give the left one a chance. First, give the left one a chance. Then, give the right one a chance. Then, give the right one a chance."
+  },
+  {
+   "start": 1516.21,
+   "end": 1543.79,
+   "text": "In the end, print yourself. Here, lemon squeezy. Easy peasy lemon squeezy. Replace these three lines, it becomes a post order. These three lines, it becomes a pre-order. These three lines, it becomes an in-order. Time complexity, order of n. Because every node will get a chance once. Every node will get a chocolate once and it will get a chance to decide what it wants to take. Space complexity, order of height. We will talk about this later."
+  },
+  {
+   "start": 1543.79,
+   "end": 1562.13,
+   "text": "For now, time complexity is order of n, because every node has to be called once. You can see how many functions have been called in this. This is 1, 2, 3, 4. See, 1, 2, 4, and 3. That means total 4 calls. How many nodes were there in the tree? 4 nodes. That means every node has to be called once. So, order of n is time complexity."
+  },
+  {
+   "start": 1562.13,
+   "end": 1584.4,
+   "text": "To teach its space, we will have to teach its height. We will teach it. But, we hope that you have understood why traversal is important. What happens in traversal? What is this that we write? We could have written these three lines in the beginning but we don't understand it. Always remember this example. Solve all three questions and try to solve all three questions. Let's meet tomorrow and enjoy. Enjoy."
+  }
+ ]
+}

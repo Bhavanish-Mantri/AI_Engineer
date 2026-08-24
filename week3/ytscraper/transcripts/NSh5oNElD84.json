@@ -1,0 +1,374 @@
+{
+ "video_id": "NSh5oNElD84",
+ "title": "DSA PATTERNS Episode 19 | Linked List Basics for Beginners",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2033,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 26.93,
+   "text": "One of the biggest discoveries in computer science and programming is the link list. The special thing about the link list is that if you don't get a good teacher, then you will never understand the link list. You can watch as many tutorials as you want, watch as many hours of films as you want, but you will never understand the link list. This lucky thing happened to me that I had a very good teacher with me. He had explained it once. And if someone explains it to you once, then the link list gets printed in your mind. If you have come here till the end of this tutorial or this video,"
+  },
+  {
+   "start": 26.93,
+   "end": 53.22,
+   "text": "You will be completely scared about the linked list. Give us 20 minutes of your life. The linked list will sit in your mind. You will be able to visualize what actually happens. You will never need to remember that you have to write head or head.next. You will understand it yourself. Just give us 20 minutes. Come. Till now, in the pattern series, the linked list we made was incomplete. We used to make such a linked list and show you."
+  },
+  {
+   "start": 53.22,
+   "end": 78.8,
+   "text": "A link list is like a train. There are bogies in trains. So, a link list is like a train but with a catch. Now, you will say that an array is like a train and an array is like a bogie. Yes, a link list is the same but there is a catch in it. What is the catch? An array is contiguous. What is an array? It is continuous or contiguous, whatever you want to call it. Meaning, the memory in your laptop,"
+  },
+  {
+   "start": 78.8,
+   "end": 103.79,
+   "text": "If you want to take an array of 10 sizes, then you will get 10 memory in one line. It is not like that in the linked list. And that is why the linked list was made because it is possible that you need an array of 10 sizes. But there is no continuous memory available in your laptop. That means your RAM can't have continuously 10 MB. It will be here and there. That means 1 MB will be here, 1 box will be here, 1 here, 1 here. It can be 10 together."
+  },
+  {
+   "start": 103.79,
+   "end": 132.46,
+   "text": "Continuous is not 10. So when there was an array, people could not store it. Because people used to ask us to give continuous. That's why the linked list came. No problem. If you have 10 boxes in the whole laptop, then you can use linked list to store your data. Very good. But now you can store the data. But what should we say, the whole box, what is variable? Variable is a box. So it is scattered in the whole laptop. So how will we get it? How will we know which box belongs to which linked list?"
+  },
+  {
+   "start": 132.46,
+   "end": 159.31,
+   "text": "How will we know which box belongs to which linked list? We will have to find out. That's why, that's why, any linked list, in any language, in C++, in Java, in Python, in JavaScript, what does it mean? Usually, when you make an array, you have a box like this. It has 1, 2, and 3. So, you see here, there is only one value in every box. There is 1 in every box, 2 in this box, and 3 in the next box. A linked list is not like this."
+  },
+  {
+   "start": 159.6,
+   "end": 187.17,
+   "text": "You can understand the link list that the box will remain the same. You divide that box into two parts. When you divide the box into two parts, then you will get two parts in the box. This is one box. This is your one box. This is your box 1. Okay. In the first part, whatever value you want to store, for example, you want to store integers, you want to store characters, whatever value you want to store, you can do that. So, you can do one store here by being comfortable."
+  },
+  {
+   "start": 187.17,
+   "end": 216.5,
+   "text": "In the next part, the second half box, what will happen? In that, in that, the next box will have its address. What will be its address? Because what did we say? What is a linked list? There are 10 memories in the whole laptop, they are scattered anywhere. You are adding them and saying that these 10 boxes are part of a linked list. So, you should know which box is part of which linked list. How will you know? For this, what do we do? For this, what do we do? That every box"
+  },
+  {
+   "start": 216.5,
+   "end": 245.84,
+   "text": "Every box knows that where is the next box. That's it. This is the link list. Every box knows that where is the next box. It doesn't know the address of the next box. It only knows the address of the next box."
+  },
+  {
+   "start": 246.03,
+   "end": 275.23,
+   "text": "For example, in your laptop, there is an address of every variable. You can understand that address in any format. For simplicity, suppose its address is 100. The address of this whole box is 100. Just like the address of your house is 100. Similarly, its house number is 100. Very good. Suppose, the next box in front of it can be anywhere in the laptop. Let's assume that its house number is 200."
+  },
+  {
+   "start": 275.23,
+   "end": 302.53,
+   "text": "What should we say? What should box 1 know? Box 1 should know that where is box 2? Only one thing should be known. So, where is box 2? What is the address of box 2? Is box 2 house number 200? So, you just write 200 here. That's it. Similarly. Similarly. Similarly. In box 2, what can you do? In the first part of box 2, you can store some data. Like you stored 2. Okay. What should box 2 know? Should box 2 know that where is box 1? No, no, no. That was not the rule."
+  },
+  {
+   "start": 302.53,
+   "end": 323.36,
+   "text": "Box 2 should know where box 3 is. It is possible that box 3 is at house number 300. So what will house 2 know? In the second part of house 2, it will know 300."
+  },
+  {
+   "start": 323.36,
+   "end": 353.07,
+   "text": "Let's assume that in box 3, first of all, write a data of 3. Okay, very good. Let's assume that box 3 is our last box. It means that the current size of our linked list is 3 only. There is nothing in front of box 3. So, what did every box know? What is my next box? There is nothing in front of box 3. There is nothing in front of box 3 in this linked list. So, what will box 3 store in its second part? It will store nothing. Null. It will store null. Null means null. There is null in every language. Null means nothing. Now, see what has happened. What has happened?"
+  },
+  {
+   "start": 353.07,
+   "end": 381.17,
+   "text": "If someone tells you that the first box of the link list, the starting box is house number 100. So you will come to house number 100. What will house number 100 tell you? That I have a data of 1, take that. And my next box, where is my next box? That address is at 200. So you are seeing that this box has the power to take you to the second box. Very good. Where did you go by asking this address? At house number 200."
+  },
+  {
+   "start": 381.17,
+   "end": 409.5,
+   "text": "What did house number 200 say to you? That the data I have is 2 and there is a box in front of me, its address is 300, we know only this much. Now see, box 2 has the power to take you to box 3. Very good. You ask it 300 and go to house number 300. Okay. Box 3 says that I have data, it is 3, you take it. But there is nothing in front of me, there is nothing in front of me. That's why my second part, my second part, what is that? It is null. What is that? It is null. So okay, you will feel that this is the last node."
+  },
+  {
+   "start": 409.5,
+   "end": 438.78,
+   "text": "Last node or last box or last house. You will stop here. Is it right? Now one thing is still missing in this whole story. Who will know the address of the starting box? No one knows the address of the starting box. What should we say? Every box knows the address of its successor. But the starting box is the first box, the first house. Who will tell the address of the first house? That is why whenever you ask the question of the lead code, the first box is given to you. What is it called? Head."
+  },
+  {
+   "start": 438.78,
+   "end": 468.82,
+   "text": "See, in any question, I was giving you the head. What is the head? The address of the first box. What is stored in the head? 100. What is stored in the head? 100. Whatever is the address of your first box, it will be stored in the head. Is it okay? This is the link list. You can understand this in many ways, but the easiest way is to understand this. Okay, now come. What did we say just now? Whatever is there in the link list, there are boxes, right? Now, let's understand it in some technical terms. These boxes are called notes."
+  },
+  {
+   "start": 468.82,
+   "end": 497.57,
+   "text": "What do you call it? Node. So this whole, these two parts together make one node. Okay? The first part of yours, what do you call it? Data. Because it has data values, it has values, like it has 1. Okay. And this part, this one, what does it contain? The address of the next box, this is called next. What do you call this? Next. Data and next. You can keep any name according to you, but the standard convention is that the first one is called data and the second one is called next. Assume,"
+  },
+  {
+   "start": 497.57,
+   "end": 527.02,
+   "text": "Its house number is 100 and it stores it. What did we say? Whenever you start the question of the linked list, what will be given to you? You will be given the head. What will happen in the head? The house number of the first box. What is the house number of the first box? 100. 100. Okay. Okay. Now, now, now, you got it. So, every time, every time, in the linked list, every time, every time, you will need the address of some house number. In any variable. Head is a variable. Okay. What kind of variable is head? Head is a pointer variable."
+  },
+  {
+   "start": 527.02,
+   "end": 555.78,
+   "text": "Those who don't understand pointers, there are two types of things. One is in C++, Java or Python, there is a variable like when you write int a is equal to 10. This means that a box will be made whose name will be a, it will have a value of 10 and it will have an address. Its address may be 500 or 400. What is a pointer variable? If we write something like this, pointer variable int star p is equal to address of a."
+  },
+  {
+   "start": 555.78,
+   "end": 585.31,
+   "text": "This one is called address. Do you know what will be stored in P? What will be the value of P? It will be 400. Why? There is no value of A in P. There is a house number of A in P. 400 is the house number of your laptop. Your laptop is a big city. There are many types of houses in it. Every box is a house and every house has a house number. Okay? What did we say? What will you always get in the head? What will you always get in the head? What will you always get in the head? House number."
+  },
+  {
+   "start": 585.31,
+   "end": 616.13,
+   "text": "houseNumber of firstNode of firstNode Now, any such variable which has houseNumber how do we get its data? We get its data in different ways In C++, if you write head.data then this is in C++ If you write head.data then you will get 1 In Java, this arrow will become a dot head.data"
+  },
+  {
+   "start": 616.13,
+   "end": 640.11,
+   "text": "its value will be 1 in python also same like java head.data is equal to 1 this is right yes one more thing we said this data and next what is the name of it first part name is data second part name is next on gfg on gfg their name is data and next so you can use like this but"
+  },
+  {
+   "start": 640.11,
+   "end": 669.89,
+   "text": "on the lead code, this data is not called data, they have named this data as val, val and next in any question. So you can see this, if you see the name, the name will be written somewhere above, where the linked list is made, then it will be given that data and val. So if there is val, then write head dot val, if there is data, then write head dot data. Data is a name, not a variable, you can do anything with it, you can use your name too. But the name of the second part will always be next, this is a very standard convention, don't tease it more. Okay."
+  },
+  {
+   "start": 669.89,
+   "end": 697.73,
+   "text": "Now, here you have taken out the value and the data. How will the house address of the next box be taken out? Similarly, as we took out the data, head dot next. Head dot next. In Java, sorry, yes, in C++, head arrow next. In Java and Python, head dot next. Head dot next. What will this give you? This will give you 200. Why? Next part, next part, what is there in this? 200. Now, come. Now, come. Now, one."
+  },
+  {
+   "start": 697.73,
+   "end": 726.19,
+   "text": "If you understand this much, then your 70% is over. Now let's make a link list and understand. First of all, make a link list of 3 notes, not more than 3 notes. So whenever you make a link list, in your copy or to do rough or to do a dry run, always keep 2 parts in it. Don't make it with data because initially it is necessary to write the address to understand. First of all, make 3 boxes to understand any question. First of all, give them the house address. Give them anything you want. Give them anything you want."
+  },
+  {
+   "start": 726.26,
+   "end": 755.42,
+   "text": "Okay. Enter any data from your mind. 1, 2, 3. After entering the data, what does the next part of the first node contain? The house number of the next node. What is the house number of the next node? 200. What will the next of the second box contain? The house number of the third box. What is the house number of the third box? 300. What will the next of the last box contain? Ideally, it should contain the house number of the next one. But if there is no next box, then it is null. It is correct."
+  },
+  {
+   "start": 755.42,
+   "end": 785.25,
+   "text": "Now you can see that a link has been created here. It will take you to here, second box will take you to third box and third box will not take you anywhere. What did we say? You will always be given a head. What will happen in head? Head means the first starting node. In that you will get the house address of the first one which is 100. You will get the house number of the first one which is 100. Now come. Now we are given a program to traverse this and print all the values in the link list. What to do? Print means what should be the output? 1, 2, 3."
+  },
+  {
+   "start": 785.25,
+   "end": 812.58,
+   "text": "First of all, how does it traverse? Now see, how does a person traverse it? If you want to put a letter in a post, then you are told that the first house is at house number 100. So what will you do? You will go to the first house, you will give a letter at house number 100, you will ask him where is the next house, he will say that the next house is at 200. You will go to 200, you will give a letter there, you will ask him where is the next house, he will say that it is at 300. Now you will go to 300, you will also give a letter to him, you will ask him where is the next house, he will say that the next house is nowhere, then you will stop."
+  },
+  {
+   "start": 812.58,
+   "end": 837.63,
+   "text": "This is what you will do if you want to make a post. Similarly, write this in the code. You have to traverse the link list at any time. So, first of all, make a local variable. If you write this in Java, then just write node t is equal to head. If you write this in Python, then you have to write node star in C++."
+  },
+  {
+   "start": 837.63,
+   "end": 857.41,
+   "text": "The pointer is more advanced. You get direct control on the pointer. Those who read C++ will understand. Java Python people don't need to write a star. Okay. Why did we do this? Why did we do this? Because, see, never, never, don't overdo the head. Because, what are we saying? What do you get in the head? You get the starting address in the head. Okay."
+  },
+  {
+   "start": 857.41,
+   "end": 886.35,
+   "text": "If you forget the starting address, if you forget the address by mistake, that means you postman remembers only one thing in the beginning that which house number is on the first house. So he says that the first house is at 100. If the postman forgets the address of the first house, then you will not be able to do anything further. If you do not get the first house, then you will forget the entire link list. There is no way to go to the first house without going to the second house. What are you saying? Listen carefully. There is no such way in the link list that if you forget the address of the first house, then you can go to the third or fourth house. You can't go."
+  },
+  {
+   "start": 886.35,
+   "end": 915.23,
+   "text": "To go to the third house, you will have to come first, then the second, then the third. That's why never tease the head. Always tell the head that you are 100, remember, we will not touch you at all. Take the value of the head in a local variable. In which? Take it in t. Now, what will happen after this? What was the value in the head? The house number of the first node was 100. So, obviously, there must be 100 in t as well. How do we traverse? What did we say?"
+  },
+  {
+   "start": 915.23,
+   "end": 944.96,
+   "text": "Go house by house. As soon as you find that you don't have any other house, then stop. How do you go? You go by loop. While loop. While loop is always used in English. Okay. Till when do you have to go? Till when do you have to go? Come on, let's leave this. Let's leave this. We will write this later. We will write this later. Let's leave this. First of all, what did we say? You have to print the data. How does data access any house number? By giving its arrow or dot and data. First of all, you see out. Or if you have java, then print system out. If you have python, then print. T."
+  },
+  {
+   "start": 944.96,
+   "end": 972.02,
+   "text": "dot data or t arrow data or t dot data depending on your language. Very good. Now postman has put a letter on 100. Very good. Now what does postman do? He goes to the next house. How will he go to the next house? Next house. What is the next house? Next house is 200. Okay. You are standing here. Your t is here. Your postman is here. There is 100 store in your t. How will you go to the next house? Where will you get the address of the next house? In the next of that node."
+  },
+  {
+   "start": 972.02,
+   "end": 1000.02,
+   "text": "Where will you get the address of the next house? In the next of that node. See, you are getting the address of the next house where you have to go. So, T is equal to T dot next. Simple. Simple. And close the while loop. What happened with this? First of all, T was 100. Okay. You printed the value of 100. 1. Very good. You said T is equal to T's next. Means, 100's next. What is there in the next of 100 house number? There is 200 store. Now, you said T is 200."
+  },
+  {
+   "start": 1000.02,
+   "end": 1029.86,
+   "text": "Now your t has come here and stood above. Now you say print its data. Print its data. Okay. Then what do you say? t is equal to t dot next. Means next of 200. Next of 200. What is stored in the next of 200 box? 300 is stored. Next time t is equal to 300. You printed 3. Then, then, then. What are you saying? Now your t is here. Now you are asking this that where is your next box? Means t is equal to t dot next. It says null in my next box. Now what happened to you?"
+  },
+  {
+   "start": 1029.86,
+   "end": 1059.86,
+   "text": "T is equal to null. It must have happened here. Now, what does T is equal to null mean? That all the houses are finished. Postman has put a letter in all the houses. You have come to the last house too. From that you were asking where is the next one? He said that there is no next one. Okay, then only you must have been null. Is there any need to print anything else here? You see, 1, 2, 3, you have already printed. No. That is why, the condition of while will be that till, till T is not null. Till, till T is not null."
+  },
+  {
+   "start": 1060.21,
+   "end": 1088.72,
+   "text": "Now, we write NULL as capital NULL. We don't write it as small. But if we do type def, then it doesn't matter. Write capital. NULL means nothing. So, till the time T is not null, till the time someone is saying that there is nothing in front of me, till then let's go and print till then. So, see this. Simple traversal loop. Let's do it like this. In the linked list. Did you understand? Very good. Traverse will always be like this. Right? It will always be like this. Now, come. Now, come. There are two more things. There are two small things. Now."
+  },
+  {
+   "start": 1089.1,
+   "end": 1119.15,
+   "text": "2 small things and write 1 here, write 2 here, write 3 here. Give the house number according to you, 100, 200, 300. We are saying again and again, give the house number according to you. You can give 400, 5000, 7000, whatever you want to give. You have to give 3 different values. 100, 200, 300 is understandable, that's why you should give. Come. Here 200, this is yours, this is the next one's, this is null. Now it is linked. Very good. Now, now."
+  },
+  {
+   "start": 1119.63,
+   "end": 1144.61,
+   "text": "If someone asks you to insert, what should you do? Insert. How many nodes do you see in this? 3 nodes. Now someone asks you to insert a node. What is insert a node? The value of which is 4. Value is equal to 4. Whenever someone asks you to insert in a linked list, you will never be told the value of next. What should we say? Every node has two parts. One is its data and the other is its next."
+  },
+  {
+   "start": 1144.61,
+   "end": 1174.64,
+   "text": "Whenever someone asks you to insert in the linked list, you will not be told the next. You will be told to insert value is equal to 4. Okay. And the two things that he will tell, one will say value and where do you do it? Where? In which position? In which house? We said that the whole house is different in the city. Where will a new house be built? And in which position will it come? Will it come in the starting? Will it come in the end? Or will it come somewhere in the middle? There can be three possibilities, right? Okay. See."
+  },
+  {
+   "start": 1175.31,
+   "end": 1203.62,
+   "text": "Let's take it case by case. It will be very easy. Very easy. Someone asks you to make a new house. And what does he give you? What does the linked list always give you? He gives you a head. What is head equal to? The house number of the first house. 100. Very good. Now come. He gives you a head equal to 100. He asks you to insert a new node which has 4 values. Make a new house. Okay. First of all, make a new house."
+  },
+  {
+   "start": 1203.62,
+   "end": 1232.24,
+   "text": "This will happen, we will insert it later, we will make it and keep it. Now there are different ways of this. What do we write in C++? Node star. Give it a node, is equal to new node. And here pass the value, 4. In Python, we write the same. Node without star is equal to new node. And here pass 4. In Python also, we write node is equal to node."
+  },
+  {
+   "start": 1233.3,
+   "end": 1258.83,
+   "text": "And pass 4. This is C++ in Java and Python. Very good. Make a node like this. We are not teaching you syntax, we are teaching you concepts. First of all, make a new node. Make a new fresh node. Make it anywhere. You don't know anything about it. Assume its house number is 400. Its house number is 400. How much value do we give it? 4."
+  },
+  {
+   "start": 1259.06,
+   "end": 1290.13,
+   "text": "Whenever you make a new node, in the next part, by default, it is null. By default, it is null. This is done. And you have made it in a variable. Now you have a variable, node. What is there in the node? The house number of this new one is 400. Now you have a head and a new node. Now if you want to insert it in the starting, what does it tell you? Do it in the very beginning. Do it in such a way that it becomes the first node of the linked list. So see, there are two things."
+  },
+  {
+   "start": 1290.13,
+   "end": 1317.1,
+   "text": "If it, if it, how does your linked list look like now? Now your linked list looks like this. Now your linked list looks like this. What is it? 1, 2, 3. Its house number is 100, 200, 300. Its next null, its next 300, its next 200. Now your linked list looks like this. What you are being told is that this new node, this new node, this new node, where should I put it in the starting?"
+  },
+  {
+   "start": 1317.1,
+   "end": 1343.97,
+   "text": "To understand this, you have to draw this. What is 4 and null? And what is its address? 400. This is what you were told to do in the starting. Now see, what all is wrong in this? You will see something wrong in this drawing. First of all, your head. What is stored in the head now? 100. Because the current one has 100. What is the rule? What should be stored in the head?"
+  },
+  {
+   "start": 1343.97,
+   "end": 1367.09,
+   "text": "The house number of the starting node should be stored. So the house number of the starting node will be 400 now. Because you want to insert it here. So one is wrong here. Okay. Now, what did we say? What does every box tell you? Every box tells you two things. What is the data inside me and what is the box in front of me? So if this box, if this box is the first box, then it is telling you the data. It is telling you the data four times. But,"
+  },
+  {
+   "start": 1367.09,
+   "end": 1397.2,
+   "text": "Is it telling in its next that where is my next box? No, it is not telling. It is saying that there is a null in front of me. It should not do that. What should it tell in its next that where is my next box? So, by law, where null is written, there should be 100 here. Rest is same. Rest is same. Rest is all same. Very good. Now how will we do this? How will we do this? How will we do it programmatically? Okay. Now you have this. Now you have this. Head is 100. Node is 400."
+  },
+  {
+   "start": 1397.62,
+   "end": 1424.75,
+   "text": "Two things are wrong. Head's value is wrong and node's next is wrong. First of all, what we have to do is to improve the node. Improve the next of the node. How will we improve the next of the node? Who should point the next of the node? What value did you want in the next of the node? You wanted 100 value which was the value of the first node. Where is the value of the first node? The value of the first node is given in the head, right? So first of all, if we do that node next or node.next is equal to head."
+  },
+  {
+   "start": 1425.04,
+   "end": 1453.76,
+   "text": "So, your node, means whenever you say node, you stand here. What are you saying? In the next of the node, what do you put? Head. What is stored in the head? 100. So, nothing will happen. In the next of your node, in the next of your node, which is null now, what will be stored there? 100. Now see, now this is looking right. Now this is looking right. Now you can make this one. This link is made. Very good. So, this problem is done. What was the next problem? Who should point the head? Head should always"
+  },
+  {
+   "start": 1453.76,
+   "end": 1483.81,
+   "text": "We should point the house address of the first node. Right now, head is pointing to 100, but 100 is the second node, not the first. What is the first? 400. Where is 400? 400 is in the node, right? Head is equal to node. Meaning? What happened now? Head is equal to what? 400. Head is equal to what? 400. What is this cut? 400. Now, it is satisfying the linked list. See. Now, it is satisfying the linked list. Very good. See."
+  },
+  {
+   "start": 1483.81,
+   "end": 1514.32,
+   "text": "Are you satisfied? That's it. If you have any doubt, draw it and see. See what is wrong in it. Correct all the wrongs. Correct all the wrongs. Okay. Now we will tell you. Do one thing. Do one thing. This is your current linked list. What is this? This is your current linked list. This is 100. This is 200. And this is 300. Okay. What are the values? This is 1. This is 2. This is 3. And here it is written 200. Here it is 300. Here,"
+  },
+  {
+   "start": 1514.32,
+   "end": 1543.76,
+   "text": "Now your linked list will be like this and like this. Very good. You will be given a head. What is the value in the head? 100. Okay. We tell you where to insert. Insert on the second position. What to do? Insert on the second position. Insert on the second position. What to insert? 4. Insert 4 on the second position. Okay. What to say? First of all, what to do? Make a new node and draw a new node. What? Draw and see."
+  },
+  {
+   "start": 1543.76,
+   "end": 1568.35,
+   "text": "Come, let's draw. Let's make a node here, whose house number can be 400, whose value is 4, and null, which is by default. Now, we have made it. Now, your linked list should look like this. This should be 1, this should be 2, this should be 3, and this should be 4. It should be like this. Now, see. Now, recognize the mistake in this. Is the head value wrong?"
+  },
+  {
+   "start": 1568.35,
+   "end": 1594.4,
+   "text": "No, no, no, the head value was wrong in the previous question, it is not wrong in this. Why? Head means the house address of the starting node. Do you still see the 1 in the starting node? Yes, you can see the 1, but the head is absolutely correct. Okay, the first node, what is the first node? The node of 1, this one. What does this promise you? That we will tell you the address of the second node."
+  },
+  {
+   "start": 1594.4,
+   "end": 1615.49,
+   "text": "Now, according to your new diagram, what is the house address of the second node? The house address of the second node is now 400. Is the next of this right? No, it is wrong. So, first write it in the list that the next of the first node is wrong. Very good. Now, come to this node. What is this? Second node."
+  },
+  {
+   "start": 1615.49,
+   "end": 1646.03,
+   "text": "What does the second note promise you? What will we always tell you in the next? The address of the third note. Is it telling you the address of the third note in the next? No, it is not telling you. It is saying that it is null. So, the second note is also wrong. The second note is also wrong. What? The next is wrong. Is everything correct from here? What does the third note promise you? It will tell you the address of the fourth note. Is it telling you the address of the fourth note? Yes, it is telling you. This is the fourth, right? Yes. What does the last note say? It will not tell you anything in the next. It is not telling you anything. It is absolutely correct. Okay? So, fix it."
+  },
+  {
+   "start": 1646.03,
+   "end": 1675.34,
+   "text": "Where will we correct it? See, in which order we will correct it is very important. In which order we will correct it is very important. First of all, we will want to correct this. What was the mistake in the second node that it was not able to tell the address of the third node? What? It was not able to tell the address of the third node. Okay. By law, in the next of the second node, if we want to write this, if we give its name as node, is equal to 400. What should happen in the node.next? By law, what should happen according to this drawing? It should be 200. Okay."
+  },
+  {
+   "start": 1675.34,
+   "end": 1705.62,
+   "text": "How did this 200 come out? If you draw a drawing here, you will know that it will not come out there. What is 200? What was 200 before? Before, means before inserting this, before making this, the first second note, the first second note, has its address. Right? It has its address. It has its address. The first second note has its address. Okay. How can we remove this? You already have a head. Okay. What did we say?"
+  },
+  {
+   "start": 1705.62,
+   "end": 1735.58,
+   "text": "What is the head? The address of the first node. What does the next of the first node tell you? The address of the second node. This is the property of the linked list. See, what does the next of the first node tell you? It is telling you 200. So, head.next means, what is the head? The first node. What does the next of the first node tell you? It tells you the address of the second node. So, write that. Very good. What will we write? What will we write? Node.next, which was wrong, is equal to"
+  },
+  {
+   "start": 1735.58,
+   "end": 1760.4,
+   "text": "head.next, head.next, your head is 100, 100.next, what does 100.next give you? It gives you 200. So, in node.next, 200 is written. Now, where did it start pointing? It started pointing here. So, see, this is correct. You are solving a problem. Solve the problem from the bottom. See, keep a general rule. You will understand it yourself as you do it. See, left to right problem."
+  },
+  {
+   "start": 1760.4,
+   "end": 1790.32,
+   "text": "left to right you see the problem and start solving it from the bottom ok come this is done now what is it? first node next what is the first node? first node is head head head is equal to 100 first node house address head.next head.next now what should have happened? now it should have been 400 that is why it points to this now it is pointing to 200 that is wrong now you have inserted it in the middle so now it should point to this what is it?"
+  },
+  {
+   "start": 1790.32,
+   "end": 1820.02,
+   "text": "400. What should he have pointed? The address of the new node that you have made. Where is the address of the new node that you have made? That is the node, that is the node that you have made. There is 400 in the node. That's it. Write it here. Node. This. What does this mean? Head is pointing to the first node. Go to the next of the first node. Make it a node. Node means the house address of the new node that you have made. That 400. That's it. Come here. Come here. Cut it and write 400. What will happen? This arrow. This arrow."
+  },
+  {
+   "start": 1820.02,
+   "end": 1849.15,
+   "text": "This arrow will be erased, computer will erase it, and what will happen? A new arrow will be created. Now see, your linked list has improved. Where is your head? It is still here. We haven't changed the head. Head is at 100. What is 100 telling? My next node is at 400. Come directly here. What is 400 telling? My next node is at 200. Come directly here. What is 200 telling? My next node is at 300. It has come here. What is 300 telling? There is nothing ahead of me. Your linked list is over."
+  },
+  {
+   "start": 1849.15,
+   "end": 1875.42,
+   "text": "So this was insert. Try to make a diagram on copy. You will have to find out what is wrong from left to right. Start solving it from the bottom. What you have to always remember is that head will always be given to you. Which will be the first node. What is the first node? First node's house address. You will always make a new node. What you have to store in the new node? The new node you make."
+  },
+  {
+   "start": 1875.42,
+   "end": 1901.94,
+   "text": "Naya node means the house of two parts. The house address of the new node will always be in your node. Always in your node. You have to take care of these two that we fix it. Is it right? Now there is one more question in this. We said that do it in second. Insert at any position can be. Insert at any position can be. Any position can be. And insert at insert at last can also be."
+  },
+  {
+   "start": 1901.94,
+   "end": 1928.7,
+   "text": "Why are we not doing these two questions? We want you to think for yourself. Write on copy, think for yourself on copy. Take any random position. You will be given an input. For example, you will be told that this is your linked list. You have a very big linked list. It will tell you after third node. Insert after third node. Or insert after fifth node. After any node. It will give you a variable. After kth node. Insert after kth node."
+  },
+  {
+   "start": 1928.7,
+   "end": 1956.91,
+   "text": "and it will ask you to insert it at the end too. Insert it at the end. Do these two questions by yourself. Write it in the copy. See if it is done or not. If it is not done, then we will tell you. Do comment whether it is done or not. Okay? This is the way to read the linked list. Make it in the copy and see. Find the mistake accordingly. Fix the mistake and your linked list will improve. There is only one rule in the linked list. What is the rule? Sorry, there are two rules. Head. Where should the head always be? Starting. And what should you tell the next of every node?"
+  },
+  {
+   "start": 1956.98,
+   "end": 1986.18,
+   "text": "the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of the next node, the house address of"
+  },
+  {
+   "start": 1986.18,
+   "end": 2016.06,
+   "text": "According to that, change that variable. This is the way to learn linked list. This is how it will be learned. Until you try to make it in copy, you will not understand. Don't think that you will do this or that, you will not understand anything. Okay? Like we are writing, we are not understanding anything. Until we make a diagram, we will also not understand. Make a diagram and read linked list. Okay? So why did we read this? Because before reading the pattern, it is necessary that you know all the basics of linked list. So that you don't have any problem in the pattern. Because then you will remember it. While we did fast not equal to null, then many people would have remembered it."
+  },
+  {
+   "start": 2016.06,
+   "end": 2029.55,
+   "text": "Now you know why do we traverse? We have just shown that while d not equal to null is also written. So this is the reason why it was written. So this was a small session of a linked list. From tomorrow, we will start reading the linked list pattern. Thank you."
+  }
+ ]
+}

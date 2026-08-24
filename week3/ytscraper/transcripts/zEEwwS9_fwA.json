@@ -1,0 +1,604 @@
+{
+ "video_id": "zEEwwS9_fwA",
+ "title": "This is The Best Intro To Binary Search | DSA Patterns 2026",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 3015,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 8.34,
+   "text": "You are scared of binary search, right? Kids say that they read binary search but they don't get questions. So, the question doesn't get asked easily that did you remember low, mid, high?"
+  },
+  {
+   "start": 8.34,
+   "end": 32.13,
+   "text": "After that, open the aggressive cow, then you will be completely aggressive that the question will not be made. Before today, binary search has not been taught like this, by dividing it phase-wise. There are four phases in total. My goal is that by the time these four phases and twenty questions are completed, binary search will become your favorite topic. Do you understand what binary search is? That is, get ahead of searching, sorting, sorted, and understand what binary search is."
+  },
+  {
+   "start": 32.13,
+   "end": 61.33,
+   "text": "The guarantee is that no concept beyond this will be asked in any interview. So let's start, drink water, the video will be a little long. My goal for today is that at least you get mastery in phase 1. What is the first problem in your life? That you have to buy a shirt. What do you have to buy? You have to buy a shirt. Okay. Your friend tells you about a mall called Pratyush Mall. Okay, what is special about that mall? See, there are a lot of shops in the mall. So what is special about that mall? That it has a lot of clothes shops. Okay, it happens in every mall. But what is special?"
+  },
+  {
+   "start": 61.33,
+   "end": 87.22,
+   "text": "The special thing is that the shops are arranged left to right. It is a very big mall and there are many shops arranged left to right. But every mall sells the same type of shirt. The same type means the same price point. This mall sells shirts for 3 rupees, this for 7 rupees, this for 20 rupees and this for 50 rupees. And every shop gets the same type of shirt. And these shops are arranged according to their price."
+  },
+  {
+   "start": 87.22,
+   "end": 110.88,
+   "text": "The shops on the left sell the cheapest shirt and the shops on the right sell the most expensive shirt. There is no mix and match in this that if you are selling a shirt for Rs. 5, then Rs. 7 on the right and Rs. 2 on the right. No. The shops are made in such a way that if you go from left to right, then you will go from cheap to expensive. So this is the specialty of this mall. Now,"
+  },
+  {
+   "start": 110.88,
+   "end": 139.73,
+   "text": "You are standing, you have exactly 30 rupees in your pocket. How much? Exactly 30 rupees, means only 30 rupees. 30 is not 1 rupee less, not 1 rupee more. Now you are thinking that we will buy a shirt of 30 rupees only. We want a shirt of exactly 30 rupees. Okay. So your friend told you that yes, there is a shop of 30 rupees in that mall. Means it is here. Okay. So you said yes, then tell me which shop it is. Means tell me its position, tell me the number, then we will go and see. Assume everyone's shop number is given. Shop number 1, 2, 3 like this."
+  },
+  {
+   "start": 139.86,
+   "end": 169.52,
+   "text": "In this, he says that he doesn't remember the shop number because he has been there before. But it is 30. We saw that the shop is of 30 rupees. He doesn't remember where it is. He doesn't remember in which position it is. And there are many shops. There are 100-200 shops. So, you will have to go and find it. You will have to go and find that shop. You took 30 rupees in your pocket and reached in front of the mall gate. Now, what is your goal? You have to find a shop of 30 rupees. Which your friend said that it is. It is somewhere. Okay. You cannot ask anyone. If there is no customer care, then you will have to do this work yourself."
+  },
+  {
+   "start": 169.52,
+   "end": 195.73,
+   "text": "Ok. This is your problem. You want to solve this problem. Again, what will you start doing in this? Guess. If any person is in your place, what will he start doing? He will start guessing. You say you have to find a shop. There is no one around to ask. There is no GPS. There is no person. So you will start guessing. And what can you do? You don't have any option other than guessing. Now see, a very interesting thing."
+  },
+  {
+   "start": 195.73,
+   "end": 221.73,
+   "text": "The way the shops are arranged, you have to find the one worth Rs. 30. What do you have to find the one worth Rs. 30? Suppose, you can guess any shop. If you have to guess, then there is no logic to guess. So, you can guess any shop. You come here and tell him that you have entered this shop. Guessing means that you have entered that shop and asked how much shirt is available here. Or you were told that brother, you get a shirt worth Rs. 5 here. You get a shirt worth Rs. 5 here. Now,"
+  },
+  {
+   "start": 221.73,
+   "end": 244.85,
+   "text": "You have Rs. 30, you wanted to search for Rs. 30, so now it sells for Rs. 5. You came to know that this is not the shop, this is not the shop of my work. But, but, but, what did you come to know? All the shops on the left of this shop will not be of my work. Why? Because that mall is made in such a way that it is arranged in order, all the prices are arranged in order."
+  },
+  {
+   "start": 244.85,
+   "end": 259.14,
+   "text": "So if this one is less than Rs. 30, then all the shops on the left will be less than Rs. 30. You can see that there are 3 shops on the left and 3 shops are also less than Rs. 30."
+  },
+  {
+   "start": 259.14,
+   "end": 278.42,
+   "text": "What do you get from this? Let's say we have entered shop number 1. So we don't need to enter any shop on the left. We should focus on the front. Where? We should focus on the front, on the right. There is no point in entering the left because you got to know. What do you do? With one guess, you also eliminate this."
+  },
+  {
+   "start": 278.42,
+   "end": 296.32,
+   "text": "Now you understand what is the power of binary search. This is the power of binary search that you guessed one and you eliminated the left. So usually if you start searching shops one by one, that we will see in the first shop, then second, third, fourth, etc. So when you guess one there, you say that you did not find it in this shop, but"
+  },
+  {
+   "start": 296.32,
+   "end": 324.8,
+   "text": "What happened with binary search? You guessed one, so you eliminated two shops. How? You eliminated that shop. You also got to know about all the shops on the left, that yes, this left shop is not of my use. We don't need to go there, now we want to focus on the right. You eliminated these two shops. Eliminate means, you will not go in this. You will not go in any shop on the left. Now you will go in the right. Okay? Now you have come here. For example, suppose there is a Rs. 100 shirt here. What is here?"
+  },
+  {
+   "start": 324.8,
+   "end": 347.63,
+   "text": "100 rupees shirt is also there. Now you will guess 50 rupees. Now you will guess 50 rupees. What do you know? What does the shopkeeper here tell you? Brother, we sell a shirt for 50 rupees. But how much do you have? 30 rupees. You want to buy a shirt for 30 rupees. Now you know that this is a peacock. It is more expensive than my price. So this is not of my use."
+  },
+  {
+   "start": 347.63,
+   "end": 365.42,
+   "text": "I don't know how many shops are there on the right side. I don't know how many shops are there on the right side. I don't know how many shops are there on the right side. I don't know how many shops are there on the right side. I don't know how many shops are there on the right side. I don't know how many shops are there on the right side. I don't know how many shops are there on the right side. I don't know how many shops are there on the right side."
+  },
+  {
+   "start": 365.42,
+   "end": 393.65,
+   "text": "Which side will you get cheaper? Left side. Right side will be more expensive than 50. It will increase by 70, 90, 100, 200 rupees. That's why you got to know that yes. If 50 is more than me, then nothing of the right side is of my use. We should remove the right side also. Again see, you make a guess. Here we are making a random guess. We will tell you what to do. But you make a guess and remove two shops. Now you have these middle shops left."
+  },
+  {
+   "start": 393.65,
+   "end": 413.74,
+   "text": "If you guessed again, then what did you get to know? Assume that you guessed here. Again, what did you get to know? A shirt of Rs. 12. You didn't want a shirt of Rs. 12. You wanted a shirt of Rs. 30. This is also less. This is also cheaper than you. Okay. So now if this is cheap and this is cheap, then all the shops left in its left, all the shops left in the left, will all be cheap, right?"
+  },
+  {
+   "start": 413.74,
+   "end": 440.67,
+   "text": "All of them will be cheap. So should you enter any of the shops on the left or not? Because you will save time. Why will you enter in vain? You entered in 12. Now this is cheap. You need Rs. 30. So if it is Rs. 30, then it will be on the right. It will not be on the left at all. So you remove these two from your guess. Now what do you have left? You have only this left. Rs. 20 and Rs. 30. Now, with the grace of God, you guess here."
+  },
+  {
+   "start": 440.67,
+   "end": 467.41,
+   "text": "and you get to know that you are getting Rs. 30 here, then you are very good, you bought the shirt from here and noted the number of this shop, whatever is your work, you have noted it. This is the problem and the same problem, binary search, what does binary search tell you? There is a sorted array, you have a number, you search for the index of that number. How will you find the index? By guessing, by guessing, okay. Now it comes that why was this mall in this sorted order?"
+  },
+  {
+   "start": 467.41,
+   "end": 497.62,
+   "text": "Why was it in the sorted order? Why wasn't it in the unsorted order? See, if it was in the unsorted order, if it was in the unsorted order, then it could have looked something like this, right? It would have been 3, then 5, then 2, then 10, then 4, then 17, then 1. This order was also possible. Why didn't it happen here? Because, because, and suppose there is 30 somewhere. There would be 30 here. This was not possible because suppose you guessed from the same logic here. You get to know that this is cheap."
+  },
+  {
+   "start": 497.62,
+   "end": 525.28,
+   "text": "Now this is cheap, so this is not of your use. But, you are not sure whether you will get 30 in your left or 30 in your right. You are not sure, this is unsorted. This is arranged in random order, so your 30 rupee shop can be anywhere. Your 30 rupee shop can be anywhere. It is not necessary that it will be arranged in order. So your shop can be here or here. In this case, you will not be able to decide whether you want to go left or right."
+  },
+  {
+   "start": 525.28,
+   "end": 551.6,
+   "text": "You will have to go to every shop until and unless you get a shop for 30 rupees. So it will happen that you check from the line, then why are you guessing? Then you keep looking from the line, reach the shop from the beginning, then you see from the line. That's why it is said that it should be sorted. That's why it is said that it should be sorted. Why? Because your guess, what did we say? Whatever you guess, its answer should be monotonic. What?"
+  },
+  {
+   "start": 551.6,
+   "end": 580.67,
+   "text": "If you haven't watched the previous video, then watch it. It should be monotonic. Now see, if it is arranged in order, then when you will guess, how will you know if it is a binary search question or not? With intuition, assume that all the shops are arranged in order of price point. You are guessing and you are interested in finding 30 shops. So see, how will the shops look? Some shops will be cheap. Some shops will be cheap. Continuously. It can happen. What does cheap mean?"
+  },
+  {
+   "start": 580.67,
+   "end": 608.42,
+   "text": "will be selling t-shirts for less than 30 rupees. So, it is cheap for you. Suddenly, you will get a shop which will be exactly 30 rupees. Exactly 30 rupees. What? Exactly 30 rupees. And after that, all the shops will be expensive. All the shops will be expensive. Means, they will be selling shirts for more than 30 rupees. They will be selling shirts for more than 30 rupees. So, see, how do you see this? See. Continuously cheap, cheap, cheap, cheap."
+  },
+  {
+   "start": 608.42,
+   "end": 621.84,
+   "text": "one turning point is exact and then another turning point is expensive and then continuously expensive, expensive, expensive means that you can think that if you look at it from 30 then it looks like this, what is your guess answer?"
+  },
+  {
+   "start": 621.84,
+   "end": 648.05,
+   "text": "How will you know this? When you will guess, then what did we say? Guess and see and write your answer in a copy and see whether it looks like this or not. It is not a mix and match. It is not that after cheap, it is coming cheap and then again it is coming cheap. Then binary search will not be applied. But this is not happening in this. In this, you can see this pattern. Less, less, less, less. Suddenly sometimes equal. After that continuously more. After that continuously more. Yes."
+  },
+  {
+   "start": 648.05,
+   "end": 677.97,
+   "text": "The only condition is that there are all unique stores in the shop. It means that two shops are not selling shirts worth Rs. 30. All the shops are unique stores. So, it won't look like this. Again, what do you see? Less, less, less, less, less. Turning point. It became equal to less. After that, again, it became equal to more. And after that, more, more, more, more, more. It is not a mix and match that two less came, then one more came, then one less came. Why? Because it is arranged in order. Because it is arranged in sorted order. It is arranged."
+  },
+  {
+   "start": 678.03,
+   "end": 707.94,
+   "text": "It is arranged. Yes, yes, yes. Okay. Now, the question arises that how will you guess? So, you can guess. We had already said that there is no connection to the matrix of binary search. So, you can guess. You can use a random and guess. But, it becomes unpredictable. I mean, random is random, right? That is why it is said that where will you guess? Suppose, in the beginning, you have 10 shops. You have 10 shops. Meaning, if we talk about the index, then what is this? It will be indexed from 0 to 9."
+  },
+  {
+   "start": 707.94,
+   "end": 736.46,
+   "text": "Okay, so what will happen to you? Low is equal to 0 and high is equal to 9. What does this low and high always mean to you in binary search? What is this? Your guess space. In what range can you guess? What are the things you have available to guess? And let's assume that we will always enter the middle shop. We will always enter the middle shop as many choices as we have in the shop. Why? Because look,"
+  },
+  {
+   "start": 736.46,
+   "end": 765.63,
+   "text": "If you enter the middle shop, then either you will get the answer. If you get the answer, then very good. But if you don't get the answer, then either you decide that we will never go left or we will never go right. So always your half, half, half, half search space will be reduced. How? See. What will be the mid of these two? The mid of these two will be low plus high by 2. This is your guess. Means you will enter this shop. If the shop is from 0 to 9, then you will say that you will enter the middle shop of 0 to 9. So what will this be? 0 plus."
+  },
+  {
+   "start": 765.63,
+   "end": 793.98,
+   "text": "9 by 2, 4. So, you will enter the fourth index. If you get the answer, then very good. But, if you get to know, if you don't get the answer, then suppose you get to know that my array of guess, whatever it is, is less than 30. What does it tell? You are in less. Where are you? In less. You are stuck here. You are stuck here somewhere. You are stuck in less. You are stuck here in less. Now, you are stuck in less. What do you want? Equal."
+  },
+  {
+   "start": 793.98,
+   "end": 823.6,
+   "text": "Look carefully, where is less and equal? Where will you get equal? Less in the right or in the left? In the right, means your left part is useless. This left part is useless. How do we make the left part useless? So in the beginning, your search space was this much. You say that my left part is useless now. Means how much is your search space left? This much. How will this happen? Nothing. When you will make your search space next time, then what will you do? Low is equal to, guess,"
+  },
+  {
+   "start": 823.6,
+   "end": 853.38,
+   "text": "plus 1. Now we will try and tell you but you must be able to understand what we are doing. You entered the fourth shop, you entered the fourth shop, you did not get it, you got to know less. What does this mean? That 0, 1, 2, 3, all these shops will be of less. That is why this was less, that is why this was fourth less because this is monotonic. It is not possible that yes, it will be expensive, it will be equal, no. Now whatever you have to get, if you have to get equal, you will get it from 5th and here you will get it till 10th. You will get it here. You will not get it here. So what do you do? By taking your search space,"
+  },
+  {
+   "start": 853.38,
+   "end": 883.23,
+   "text": "guess plus 1 means fourth is gone fourth has already spoiled its work 0, 1, 2, 3 also spoiled so now you go there but but if you get to know that my array of guess is greater than 30 means you have come to the area of more means you have come to the area of more means you have come here somewhere more more more and suppose equal is here somewhere and here is one more and here all are less here all are less"
+  },
+  {
+   "start": 883.23,
+   "end": 913.01,
+   "text": "Suppose you have entered the 7th shop. Suppose this is the 8th, 9th, 10th shop. If you go to the right of this, you will find all the expensive shops. So why are you going to the right? Go to the left. Now you do this. What will be this shop? 6th shop. For this, what do we do? High is equal to guess minus 1. Means every time either the low changes or the high changes."
+  },
+  {
+   "start": 913.01,
+   "end": 942.38,
+   "text": "Let's see it with an example. Now real example. We hope that you have understood this shirt example. You must have understood this shirt example. Let's see it with a real example. How does it work? How does it work in reality? How does it work in reality? Let's see. We have put so much time in this question because we want it to go deep inside. It won't take much time in the next upper bound question. Okay? Minus 1, 0, 3, 5, 9 and 12. So these are shops. Your shops are like this."
+  },
+  {
+   "start": 942.58,
+   "end": 971.25,
+   "text": "What do you have to find? What do you have to find? Means, how much money do you have in your pocket? 9. What do you have to find? 9. So, you will do the same thing, you will guess and this error is said to be sorted. So, all the things are perfectly aligned. So, to guess in the beginning, from where do you have? Means, from where do you guess? You have the whole mall available. In the beginning, you don't know anything, right? So, in the beginning, you have the whole mall. Means, low is equal to 0, high is equal to 5. Means, you can enter any shop from 0 to 5. Your wish, you can enter any shop."
+  },
+  {
+   "start": 971.34,
+   "end": 995.87,
+   "text": "So, where do we guess? We enter the middle shop. Means, 0 plus 5 by 2 is equal to 2. So, we see the middle shop as 3. Now, what came? 3 is less than 9. 3 is less than 9. It is not equal to 9. Means, it is less. If it is less, then all the items on its left will be less. So, you don't need any of them. So, what do we do? Low is equal to guess plus 1. So, what becomes your next low? 3."
+  },
+  {
+   "start": 995.87,
+   "end": 1025.2,
+   "text": "and your high remains the same because we know from the right that it can be in the right but not in the left so we reduced the left what is your next guess? 4 you entered the fourth shop what did you get? 9 yes 9 equal to 9 what did you return immediately? this is the same shop so this is the same shop return guess return guess that's it yes suppose this doesn't happen suppose this element doesn't happen suppose you are looking for 10"
+  },
+  {
+   "start": 1025.2,
+   "end": 1052.75,
+   "text": "Suppose you are looking for 10. If this element is not there, then let's see what we will do if it is not there. If it is not there, then what will happen? Let's see what will happen. So it will remain the same. Now at low 3 and high 5, what did you get as a guess? What did you get as a guess? 4. How did you get a guess? 3 plus 5 by 2. You have to enter between 3 and 5. You have to enter in the middle of the shop. You got a guess, 4. So you see what is 9 in 4? You got to know that 9 is also less than 10. So where are you?"
+  },
+  {
+   "start": 1052.75,
+   "end": 1078.64,
+   "text": "Now you are in the less one. So the less one means that whatever is in the left will be less. Now you should see in the right. So what do you do? You do low as guess plus 1. Means low as 5 and high as 5. Now see carefully that lower 5 is the same. Means you have only one shop left to guess. So it is fine. When you will take out the guessing of this, then what will come? 5 plus 5 by 2 means 5. So only one shop is left. So obviously you can enter only one shop. So you enter in this."
+  },
+  {
+   "start": 1078.64,
+   "end": 1107.46,
+   "text": "If you enter 12, then what do you get to know? 12 is more than 10. Means this more one has come. Now this more one, remember how it used to look. Less, less, less, less, less, equal, more, more, more, more, more, more. You have come to some more or the other. Means this is not your answer. This is not your answer. And whatever things are left in right, that is not your answer. So you have to go left. You have to eliminate the things in right. You have to eliminate. How did you eliminate? High is equal to guess minus 1. Now see what happened. Low is equal to 5."
+  },
+  {
+   "start": 1107.46,
+   "end": 1126.38,
+   "text": "And high is equal to guess minus 1, 4. Now, is this making any sense? You are saying that my guess space, from where does it start? From 5. And from where does it end? From 4. This has no sense. We have seen this in sliding window too, that in low and high, low has to be less than or equal to high, right? Only then it will make sense, right?"
+  },
+  {
+   "start": 1126.38,
+   "end": 1144.45,
+   "text": "What are you saying? Guess the shop. You can start guessing from the 5th shop and you should finish at the 6th shop. It doesn't make any sense. It means if ever your low is greater than or equal to high, it means you didn't get that element."
+  },
+  {
+   "start": 1144.45,
+   "end": 1173.17,
+   "text": "If you don't have 10, then how will you get it? So whenever your low is greater than high, you should stop your binary search. And you should say that such a shop doesn't exist. You can be sure of that. Why? Because if it existed, you would have got it. If it existed, you would have got it. If you are guessing, you would have got it. Every time you either eliminate the left or the right. What kind of decision do you take? Remember your guesser. How did my guess look? How did my guess's answer look?"
+  },
+  {
+   "start": 1173.17,
+   "end": 1198.13,
+   "text": "What was its format? All this depends on the question. Let's assume that the format of your guess would be that there would be more first. This is also possible. The shop will not work according to you. There would be more first. There would be more first. Then it would be equal somewhere in between. And then there would be less. Isn't it possible? Absolutely possible. I mean, we will make our mall such that the highest one. What can this be? Array sorted in descending order. Then it will be like this. Now let's assume that you got less."
+  },
+  {
+   "start": 1198.13,
+   "end": 1219.5,
+   "text": "Now if you get less, then you have to remove right cot. Now if you get less, then you have to do high is equal to guess minus 1. And if you get more, then you have to remove left cot. Now you have to do low is equal to guess plus 1. So don't remember that if we get less, then we will increase low. No, no, no. Try to make it in copy. Think carefully that if we got more,"
+  },
+  {
+   "start": 1219.5,
+   "end": 1253.94,
+   "text": "If we have got more and we want equal, then should we remove left or right? You will get the answer that who should be removed. Decide by looking. Don't remember that yes, we will remove it. No, that's wrong. You can't remember. Come, see its code. This is done. So what do you get? You get a function. What do you get a function? Oh man, my pen gets spoiled. I don't even understand what to do. Yes, okay, done."
+  },
+  {
+   "start": 1253.94,
+   "end": 1281.95,
+   "text": "So, this is the problem of apple, not mine. So, you get a function, you get an integer fun, you also get a vector, vector int, a int and you have to find an x. You have to find an x. So, what do we do? In the beginning, you don't have anything. Low is equal to 0 and high is equal to n minus 1. And what is it? It is the length of the area. So, let's start guessing."
+  },
+  {
+   "start": 1281.95,
+   "end": 1306.18,
+   "text": "How long will you have to play this guess game? Until low is less than or equal to high. So why? Low less than or equal to high. Now this program, some of you might have guessed it. Yes, some of you might have guessed it. But why was it there? It was there because of this. Okay. Now guess. Now guess. After guessing, enter the middle box. See, guessing is up to you. You can guess it randomly too. But why do we do it? Because"
+  },
+  {
+   "start": 1306.18,
+   "end": 1333.94,
+   "text": "If you will do random, then you will not be able to decide what is the time complexity of my algorithm. How much time will my algorithm take? It can take as much time as it wants. Because it is random. So, it is possible that it will behave like a random linear search. Or it will behave very good. Point is, you cannot decide random. You cannot predict random. That is why the middle one is taken. It is not necessary that you take the middle one. You can guess any one in between low and high according to you. By guessing any one, either remove left or right."
+  },
+  {
+   "start": 1334.22,
+   "end": 1364.22,
+   "text": "So for now, we thought that we will enter the middle shop. How do we enter the middle shop? Low by high by 2. If we want to go from 0 to 3, then 1 or 2 will go from 0 to 3. Now, first we check that if my array of guess is equal to x, means you have got a shop of Rs. 30, then you don't have to do anything. Your program is over. Return guess. Why? We have to get the index. That's why we are doing guess too. Think carefully. Who are we doing guess to? The one we have to send, the one we have to return. What do we have to return? Index."
+  },
+  {
+   "start": 1364.22,
+   "end": 1393.6,
+   "text": "of where x is present. So, we are guessing the index only. Okay. Return guess. But if it didn't happen, if you didn't get it by bad luck, now two things can happen. Now, two things can happen that if this is less than x, if this is less, then remember how? Less, less, less, equal, more, more. So, we got less, which means the left part is useless. So, low is equal to guess plus 1. Which means the left part is useless, we don't want left, so we will see this further. Else, if this is not the case,"
+  },
+  {
+   "start": 1393.6,
+   "end": 1423.66,
+   "text": "So, the array of guess will be more. Else means, more condition. So, remember, less, less, less, equal, more, more, more. More means, you don't need to see the rest of the right. You will see here. High is equal to guess minus 1. And close this while loop. If you ever come out of the while loop, means you didn't get it, then return minus 1. Return minus. Means, you didn't get it, you didn't get it. And it is also said that you get return. So, this is your code. Its time complexity is order of log n. Space complexity is order of 1."
+  },
+  {
+   "start": 1423.82,
+   "end": 1437.63,
+   "text": "So, you have learnt this basic binary question. Now, let's move forward to upper and lower bound. Let's move forward and prepare. Come, next question, next problem of your life. And we will encourage you a lot that we are going to teach you 4 problems."
+  },
+  {
+   "start": 1437.63,
+   "end": 1466.26,
+   "text": "As soon as you feel that you have reached here after seeing the previous one, then if you feel that we will solve it ourselves, then please pause the video and think about it yourself. You will get the link from the pattern sheet because what will happen with that, if you do it yourself, you will feel better that we have done this before your teaching. When we get such a comment that we have made four questions before your teaching, then we feel very good, then we come to know that you are really benefiting. You are not just looking at it and saying that you are telling it well, then you listen to it. No, because there is no premonition. If you make four, then it is a very good thing, so try."
+  },
+  {
+   "start": 1466.42,
+   "end": 1493.73,
+   "text": "Now, we will tell you your problem. Same scenario, you have reached Pratyush Mall again with Rs. 30 but you will notice one thing. Now, you have a plus sign on Rs. 30. Earlier, you had exactly Rs. 30 in your pocket. So, what did you want to find earlier? A shop with a shirt worth Rs. 30. So, you said that this shop is my goal which we saw how you can find it. But, now you have a strange type of request. Strange request. Okay. Now, you say that we"
+  },
+  {
+   "start": 1493.73,
+   "end": 1523.98,
+   "text": "We need a shop for 30 rupees. Means, we need to find the first shop of this shop. What does it mean in Hindi? It is called ceiling in English. Or upper bound. What does it mean in Hindi?"
+  },
+  {
+   "start": 1523.98,
+   "end": 1546.4,
+   "text": "We need the smallest shop which is at least 30. At least 30 means greater than or equal to 30. There will be many such shops. 60 is greater than or equal to 30. 70 is equal to 30. 50 is greater than or equal to 30. But the smallest one among these."
+  },
+  {
+   "start": 1546.4,
+   "end": 1570.98,
+   "text": "Remember the example of yesterday's heater. We want one that doesn't have heat and the bill comes from less. So we want one that is greater than or equal to 30. But the smallest one among them. Now see."
+  },
+  {
+   "start": 1570.98,
+   "end": 1598.29,
+   "text": "Now your requirement has changed a little bit. Earlier you used to say that you want 30, exact 30. If it is 31, you won't buy it. If it is 29, you won't buy it. Now your requirement has become a little relaxed. Now you say that okay, we won't buy less than 30. We don't have to buy a shirt less than 30 and we don't have to buy a cheap shirt. But show a shop bigger than 30 and we will buy the smallest shirt from that. Means I have 30, 31, 32, 35, this type of money. So if someone shows you a shop of 100 rupees, then you say that"
+  },
+  {
+   "start": 1598.29,
+   "end": 1626.99,
+   "text": "It is fine, it is more than 30, very good, but What are some other shops? There are some other shops that are more than 30 and a little cheaper than 100. This is your customer approach. Now what will you get in this example? You will still prefer this shop. Why? Because this first thing is greater than or equal to 30. Which of these shops do you see greater than or equal to 30? 30, 40, 50, 60. Who is the smallest among these? This is the smallest among these, so you will prefer the 30 one. If this is not 30,"
+  },
+  {
+   "start": 1626.99,
+   "end": 1648.53,
+   "text": "If it was 31, you would have preferred this. Why? Because this is less than 30. If this is less, then this is useless. This will be less, this will be less, this will be less. You don't need less. You need 30 or above 30. Show the smallest among them. We will buy that shirt. It will be a little more than 1-2 rupees. We are silent. Your requirement becomes this."
+  },
+  {
+   "start": 1648.94,
+   "end": 1676.72,
+   "text": "Now, in this question, you will get to know why you should not remember binary search. If the kids would have remembered the previous question that yes, you have to do it from less, you have to do it from more, you have to do it from equal, then they will not be able to answer this question. Okay? Now, it has become easy for you. Now, it has become easy in a way. Look. Again, what do you have? You have to find the index. Now, we are not wasting much time in this because we hope that you must be getting some hints. You have to find the index. So, what will we guess? Obviously, we will find the index. Okay."
+  },
+  {
+   "start": 1676.85,
+   "end": 1704.77,
+   "text": "What is your requirement? See carefully what is your requirement? Greater or equal to? Or equal to? What? 30. Whoever is giving you X. Whoever is giving you X. This is your requirement. Meaning? So, when you go to every shop, what question will you ask? Is this shop greater than or equal to? What answer will you get? Either this shop is greater than or equal to or this shop is less. So, you are getting only two answers."
+  },
+  {
+   "start": 1704.77,
+   "end": 1733.06,
+   "text": "You used to get equal last time because your requirement was the same last time. Now, how will you get your answer? Either this shop will be less than 30 or this shop will be greater than or equal to 30. It can only be 2, right? So, you will get something like this. Some shops of the beginning will be less. Some shops of the beginning will be less. Obviously, it will be less. There will be one point. There will be one point that it will be greater than or equal to. So, we write it as more. You will understand greater than or equal to as more. Okay? Because you were told this. If you are asked a question or not,"
+  },
+  {
+   "start": 1733.06,
+   "end": 1757.71,
+   "text": "Strictly greater is needed. So you write according to that. In that, if you write less equal to, then the difference is same. Read the question and decide. After that, suddenly a point will come when these will become more. More. More and more. So this is looking very good. How is it looking? Less, less, less, less, less. Turning point. More, more, more, more, more. Very good. It is looking like this in binary search. But."
+  },
+  {
+   "start": 1757.71,
+   "end": 1778.9,
+   "text": "Now, once you get to know that the answer of my guess looks like binary truth, then you just have to decide what you have to do on which answer. What action you have to take on which answer. Do you have to remove left or right? Do you have to return the answer? What action do you have to take? Come, let's decide. You assume that this one is of this guess. You assume that this one is of this guess. So, it's very simple. It's less, right?"
+  },
+  {
+   "start": 1778.9,
+   "end": 1806.74,
+   "text": "We don't need less, we don't need less, we need greater than or equal to, we need the cheapest one. We don't need less at all. First of all, we don't need this, and we don't need these two, we don't need all the left ones. So we are removing the left part, how do we remove the left part? Low is equal to guess plus one, move forward. We don't need left, very easy, easy, lemon squeezy. Guess plus one, that's it. Yes. If you get to know about more, if you get to know about more, how will you get to know? Whatever your array of guess is,"
+  },
+  {
+   "start": 1806.74,
+   "end": 1829.04,
+   "text": "It is greater than or equal to x. It will come in equal BC and more BC. Now, what will you do? Now, what will you do? Now, what do you know? Look carefully. Put the example of heater in your mind. Put the example of fan in your mind. Now, your area of gas is more. This can be your answer. This can be your answer. Why are we saying it can be? Why are we not saying it is? Because look,"
+  },
+  {
+   "start": 1829.04,
+   "end": 1855.82,
+   "text": "Imagine that you are a customer. Try to connect this with a real world example. You enter a shop. You were looking for a shirt for 30 rupees. Which means the one above 30 or above is cheaper than that. Someone tells you that in this shop you get a shirt for 40 rupees. Okay. So this satisfies your requirement. 40 is greater than or equal to 30. But you are a customer. What are you? You are a customer. Now you don't know about the whole market. So what do you call this? Do one thing. You keep it."
+  },
+  {
+   "start": 1855.82,
+   "end": 1869.84,
+   "text": "When you go to the shop, you say, let's go for a walk, we'll come back to you. So this is it. You say it's a starter for 40 rupees. Okay, okay. Do one thing, you keep it. Do one thing, you keep it. We'll go for a little more walk. If we have any..."
+  },
+  {
+   "start": 1869.84,
+   "end": 1893.66,
+   "text": "We will get something cheaper than 40. We will get something cheaper than 30 which is greater than or equal to 30. So, we will take 35. If we don't get anything, we will take you. So, you keep it. We have remembered that you have 40. We will come after roaming. But, when you will go for roaming, where will you go for roaming? Will you go for roaming on the right? No, you will not go because"
+  },
+  {
+   "start": 1893.66,
+   "end": 1920.72,
+   "text": "If this is a Rs. 45 shirt, then the one on the right will sell for Rs. 50. The one on the right will sell for Rs. 60. So why will you go for Rs. 50 and Rs. 60? You remember Rs. 45. You have remembered that there is a Rs. 45 shirt. So where will you go to roam? You will go to roam on the left. You will not go to roam on the right. And you will tell the Rs. 45 person to keep this shirt. We have remembered that it is Rs. 45. If we do not get anything, then we will take this answer. We will buy a shirt from here. But let us roam."
+  },
+  {
+   "start": 1920.72,
+   "end": 1949.76,
+   "text": "Because we don't know that in my left, there can be a shirt of 35 rupees, there can be a shirt of 32 rupees, there can be a shirt of 30 rupees. So we will have to go around in the left. There is no need to go around in the right. Why are you going around in the right? You are getting a shirt of 100 rupees in the right. What do you want? You want a shirt of 30 rupees which is the cheapest. You have already got 45 rupees. Why will you go around in the right where you are getting a shirt of 100 rupees? It is illogical. In this case, you have to do two things. In the result,"
+  },
+  {
+   "start": 1949.76,
+   "end": 1973.87,
+   "text": "You have to keep the guess. What happened? You told the shopkeeper that you remember that you are getting 45. We will go for a walk. Okay. So you told the shopkeeper to remember. It is possible that the answer is correct. It is possible that this is my answer. And where do you want to go for a walk? Left means where do you not want to go for a walk? Right. We do not want to go for a walk in the right. What do we do for this? High is equal to guess."
+  },
+  {
+   "start": 1973.94,
+   "end": 1983.22,
+   "text": "Minus 1. Guess minus 1. Yes. Yes. Yes. High is equal to. Guess minus 1. So both the actions are clear. Let's hope that this thing is clear. This."
+  },
+  {
+   "start": 1983.22,
+   "end": 2008.94,
+   "text": "You can say that this is the foundation of binary search because every question is about what action you take on this answer. Will you not go left or right? What will you do? And will you restore it? Look carefully. You didn't do result is equal to guess in this when low is equal to guess was there. Why didn't you do it? Because you don't want less. We don't want less. We don't want to buy a shirt for 25 rupees. So what will we do with that shopkeeper? We will directly tell him that we are going."
+  },
+  {
+   "start": 2008.94,
+   "end": 2038.22,
+   "text": "But when it comes to Rs. 45, then you tell the shopkeeper that it is a shirt of Rs. 45, we remember it. Let's go around a bit and see if we will get a shirt of Rs. 35 somewhere on the left. Suppose we are not getting a shirt. Suppose we are not getting a shirt somewhere, then what will we do? We will have to come to you, so we will take you. That's why it is being stored. And you tell the one with Rs. 45 that yes, we will come. But we will not go to the right because we will get an expensive shirt on the right. So what is the benefit for us? Why will we look for Rs. 50 when we have got Rs. 45? Same."
+  },
+  {
+   "start": 2038.22,
+   "end": 2061.09,
+   "text": "This is an example of a fan. When you are feeling very cold after running 4 numbers, then why will you try 6 and 7? If you try 3, then it is logical. So this is it. So this is it. Now let's see its code. Let's see its code and dry run. Same as last time, what will you do? int low is equal to 0. Oh my, my throat is dry after shouting. n minus 1."
+  },
+  {
+   "start": 2061.09,
+   "end": 2088.48,
+   "text": "Take a result and make it minus 1. Why do we initialize from minus 1? Because if we don't get it, we will return this. If we don't get it, we will return minus 1. While, same as last time, low is less than equal to high. What is this? This is your guess space. Where do you guess? Between both. So that you can fly one side. First,"
+  },
+  {
+   "start": 2088.48,
+   "end": 2114.02,
+   "text": "If, now there are only two conditions in this. Last time there were three conditions. Last time, remember, there were three types of if. Equal to, greater, more. Now, there is only one in this. Either it will be less or it will be more. We will bring equal to more. So, first of all, it will be less. This is very easy. If it is less than x, you don't have to do anything. Low is equal to guess plus one. We don't need this. We are not interested in this. We are going right. We will not look left. Because everything will be cheap. Yes. Else."
+  },
+  {
+   "start": 2114.02,
+   "end": 2138.78,
+   "text": "What does this mean? You have come to more. If you have come to more, then what do you say to 45? Okay, okay, okay, we are fine. We will remember this shop. Result is equal to guess. And we will not go right now. We will not go right now. We will look at the left now. High is equal to guess minus 1. And we close this. And what do you return in the last? Result. In the last, we return the result. Now what will happen? If you don't get it,"
+  },
+  {
+   "start": 2138.78,
+   "end": 2155.3,
+   "text": "If you don't get anything, then you will return the result. Let's try two examples, you will understand it completely. So what does the first example say? These people are so big, what to do? 1, 2, 8, 10, 11"
+  },
+  {
+   "start": 2155.3,
+   "end": 2179.79,
+   "text": "12. Again, you must be understanding why the array is sorted. If the array is not sorted, then your guess doesn't become less, less, less, less, more, more, more, more. It becomes 2 less, 1 more, then 5 more, then 6 less. It doesn't have any point. Come on. You are told x is 5. It means greater than or equal to 5. It is the smallest of all the elements. So, you see carefully what your answer should be. Your answer should be this one."
+  },
+  {
+   "start": 2179.79,
+   "end": 2202.77,
+   "text": "Index number 2, 8. 8, 10, 11, 12, 19. All are small. All are bigger than 5. But 8 is the smallest among them. If you look at the last one, 2 is smaller than 5. 1 is smaller than 5. So there should be 8 answers. Let's see if we get the answer or not. Low is equal to 0. High is equal to 6. What will be your guess? We will look at the middle one. Guess is equal to 3. What did you find out? 10."
+  },
+  {
+   "start": 2202.77,
+   "end": 2231.71,
+   "text": "10 is greater than or equal to 5. Yes, this is the example of more. So now what do we say? We will remember you, brother. We will remember you. Who? This guess index. Raise is equal to 3. We will remember. And now we want to go around a little more. But we want to go around on the left. We don't want to go around on the right. High is equal to guess minus 1. Low remains the same. But high is equal to what becomes? Guess minus 1. 2. 2 becomes. Again, what will be the next guess? The middle one of both. 0 plus 2 by 2. What will become? 1. Now see 1."
+  },
+  {
+   "start": 2231.71,
+   "end": 2254.75,
+   "text": "2. 2 is less than 5. We don't need this. This is a cheap shop. We don't need it at all. We don't need it at all. No, no, no. We won't take this. We won't take this at all. Low is equal to guess plus 1. Low is equal to guess plus 1. What will it become? 2. High is equal to 2. What will be the guess? 2 plus 2 by 2. Same. 2. There is only one left to guess. 2. What should we see? 8. 8 is greater than or equal to 5. Yes."
+  },
+  {
+   "start": 2254.75,
+   "end": 2282.96,
+   "text": "What we used to do? We will store it. Result is equal to 8. And we want to go around more. We want to go around left. Again, we don't want to go around right. So, low will remain the same. And what will become high? Guess minus 1 is equal to 1. Now, see. What happened? Low becomes greater than high. Low is 2 and high is 1. It has no difference. What do we return? Res is equal to 8. Sorry, not 8. Guess's index, which is 2. Sorry, I made a mistake. Now, let's do 2. Res is equal to 2. See, we got the answer. We got the answer."
+  },
+  {
+   "start": 2282.96,
+   "end": 2307.17,
+   "text": "This is how it works. Now why are you storing the results? First of all, you see who did you store first? First you stored this 10 one, then you stored this 8 one. Why did this happen? See, you were going to find a product worth Rs. 30. You got a shirt worth Rs. 45 at some time, so you remembered Rs. 45. Next time you got a shirt worth Rs. 35, now you forgot Rs. 45. Now Rs. 45 is of no use. Now you remembered Rs. 35."
+  },
+  {
+   "start": 2307.17,
+   "end": 2333.1,
+   "text": "Suppose you get a shirt of 32, you forget 35, you remember 32. Suppose you get a shirt of 30, you forget 32, you remember 30. By doing this, you will automatically reach the shirt of 30 and the cheapest. This is how it works. Please submit this. This question is called upper bound. Now you have learnt this. Let's move on."
+  },
+  {
+   "start": 2333.1,
+   "end": 2360.03,
+   "text": "If you are watching the video till now and understood the last two questions, then this question will be very easy for you. So in this question, we don't want to waste much time, we want to tell you what is said in this question. This question is called first and last position. Okay, come to Pratyush Mall. Now I will tell you what is your problem. What were we dealing till now? We were thinking that every shop will be unique. Means if every shop is selling for 30 rupees, then there will be only one shop for 30 rupees. It will be of 32, then it will be of 35."
+  },
+  {
+   "start": 2360.03,
+   "end": 2385.14,
+   "text": "See here, all these 4 shops are selling shirts worth Rs. 30. So, you are duplicates. All the shops are selling shirts worth Rs. 30. Remember in the first problem, you had exact 30 in your pocket. You were interested in finding the exact 30 shop. So, did we use binary search? We saw that it will be less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less, less"
+  },
+  {
+   "start": 2385.14,
+   "end": 2412.38,
+   "text": "We used to return it from there. Now, there are 4 shops here. All 4 are selling for Rs. 30. Now, which shop do you want to buy from? Now, the question arises here that you have to find out about both the shops. First of all, this first shop, the shop in the first position, which is selling for exactly Rs. 30. There is no upper bound or lower bound in it. You want Rs. 30, exact Rs. 30. And this, this is your last shop. Last means the shop on the right."
+  },
+  {
+   "start": 2412.38,
+   "end": 2438.43,
+   "text": "The last shop which is selling for Rs. 30. You have to find out both of these. What? You have to find out both of these. So, how will we do this? Those who have understood, please try. Those who haven't, come. Let's do it together. So, now what you have to do? Again. Now, in this also, you feel that there will be 3 categories. Meaning, some will be there or less. Some will be there or less than 30. Some will be continuously less than 30."
+  },
+  {
+   "start": 2438.43,
+   "end": 2467.92,
+   "text": "After that, it is possible, it is possible, it is possible that there is no 30, it is possible that there is one shop, it is possible that there are many shops. So just for general purpose, we take that some shops will be equal. Some shops, suppose three shops are equal. Three shops are equal, means equal to 30. All three are selling 30, you have to get the first and last from them. After that, there will be some shops which will be more, more, more. Something like this will happen, nothing else will happen. So there are three categories, less, then equal and more."
+  },
+  {
+   "start": 2467.98,
+   "end": 2494.85,
+   "text": "What do you have to find? You have to find the first and last of the equal one. Okay? Let's see. Again, you will guess. You can guess anything. So, what will be the guess? The guess will either come in less, or in equal, or in more. So, you will have to see the action of all three. If your guess comes in less, what do you have to do? You don't need less. You have to see the first and last of equal. You don't have to see the equal. Let's concentrate on the first. We are solving the first right now."
+  },
+  {
+   "start": 2494.85,
+   "end": 2518.08,
+   "text": "Let's find the first occurrence, we'll do the last too, let's do the first first. We have to do both, we have to return by doing both. First let's do the first, then we'll do the last. Okay. Now we've come to less. Now there's no problem with less, we don't need less. We need equal first, we don't need less at all. What do we have to do? The left ones are useless. Low is equal to guess plus 1. It's over. We've come to more."
+  },
+  {
+   "start": 2518.08,
+   "end": 2541.7,
+   "text": "It's the same. It's on more. We don't need more. We needed it in the previous one. In the previous upper bound, more looked good. We don't need more. In binary search, what did we do on more? High is equal to guess minus 1. In the initial question, high is equal to guess minus 1. And this is also useless. Both are done. Yes. What will we do on equal? What will we do on equal? Look. What does equal mean?"
+  },
+  {
+   "start": 2541.7,
+   "end": 2565.73,
+   "text": "This can be your answer. Why are we saying it can be? We are on first, not last. This can be your answer. When you came to this shop, you got to know that he is selling a shirt for Rs. 30. Now, he is selling a shirt for Rs. 30. But you don't know that this is the first shop that is selling a shirt for Rs. 30."
+  },
+  {
+   "start": 2565.73,
+   "end": 2591.95,
+   "text": "It is possible that this is another shop, as you can see here. This is the second shop that is selling Rs. 30. The first shop was here. This answer is possible. And it is also possible that this is the first shop. You don't know. You don't know about this and that. You can't ask. You can't ask from this and that shop. You shouldn't even ask. Some people say that check it from the back. But it is not beneficial. You don't know that this is the first shop. So what do you call it? Wait. We will remember you. We will remember you."
+  },
+  {
+   "start": 2591.95,
+   "end": 2620.85,
+   "text": "or your answer is possible, then we will remember you. Okay? As you used to say, result is equal to guess. Okay, okay, okay. But, we will have to roam around more. You are not sure that this is the first shop that is selling. But, you are sure of one thing. Now, when you will go to roam, assume that this is the second shop. Assume that I have told you that this is the second shop. Now, in its right, what are you going to get in its right? In its right, you are going to get the third shop, right? You are not interested in that."
+  },
+  {
+   "start": 2620.85,
+   "end": 2648.16,
+   "text": "Let's assume that this is the second shop and not the first shop. On the right side, you will find the third shop and on the right side, you will find more shops. So, should you go to the right or left? You should go to the left because you are seeing the first occurrence. So, what will you say to it? Okay, we will remember you. Let's see the left side. If we find another shop on the left, equal to 30, then we will take it."
+  },
+  {
+   "start": 2648.16,
+   "end": 2676.61,
+   "text": "If we don't get anyone, we will buy from you. But we will not go to the right. What will we do by going to the right? If this is the second, then it will be the third on the right. We don't need it. We need the first occurrence. Where will we get the first occurrence? On the left. On the right, you will go to the last occurrence. On the right, you will go to the last occurrence. What came in equal? If you have equal, you say result is equal to guess. We will remember. But we want to go to the left."
+  },
+  {
+   "start": 2676.61,
+   "end": 2697.81,
+   "text": "High is equal to guess minus 1. It's over. Did you understand this or not? Now you got the equal. Now you don't know if this is the first occurrence or not. This is some kind of an occurrence. This is some kind of an occurrence. First, second, third, fourth, tenth, anything can happen. This is some kind of an occurrence. But is this the first shop that is selling?"
+  },
+  {
+   "start": 2697.81,
+   "end": 2711.26,
+   "text": "How will we know whether it is possible or not? Now where will be the first shop? First shop will be on the left, if it is there. If it is there, it will be on the left. First shop will not be on the right. Means, suppose this is a shop which is selling 30."
+  },
+  {
+   "start": 2711.26,
+   "end": 2737.74,
+   "text": "Now you don't know, suppose there is an X talker, X can be anything, 1, 2, 3, anything. Now if you go to its right, you will get X plus 1, right? So suppose this is not, suppose this is the 10th talker, this is a very bad shop, you didn't want, you wanted first. So in the right, you will get 11th talker, so why do you have to go right? Go left and see, right? If you go left and see, then you will know that there is another shop or not. That's why we will go left, that's why we will go left. So it's a simple thing. We hope you understood because"
+  },
+  {
+   "start": 2737.74,
+   "end": 2768.43,
+   "text": "After seeing the first two questions, you should understand it. If you didn't get it, then please comment. So, when we made a first program, what were we discovering now? First. What did you get? If you didn't get it, then please comment. We will explain it again tomorrow. We will explain it again. Okay? Now, what do we do? Low is equal to 0. High is equal to n minus 1. What do we do with the result? Minus 1. Okay. And what do we do? We start the program. While"
+  },
+  {
+   "start": 2768.56,
+   "end": 2799.02,
+   "text": "Low is less than equal to high. And guess is equal to low plus high by 2. Now, first of all, let's see the less one. If this is less than x, it means less. What was the pattern? Less, less, less, less, less, equal, equal, equal, more, more, more, more. So, less came. It means left is bad. Let's see right. What will we do? Low is equal to guess plus 1."
+  },
+  {
+   "start": 2799.6,
+   "end": 2826.58,
+   "text": "Else if, else if, agar mera ye more ho gaya, agar mera ye more ho gaya, agar ye more ho gaya, to kya karengi hai, kaisa pattern tha, less, less, less, less, less, equal, equal, equal, more, more, more, more, more, more pe aaya hai, matap right ka saara bekaar, left me dekhna padega, high is equal to, guess, minus 1, else, ab apko equal mila, ab apko equal mila, equal me kya, equal me, isko to yaad rak lijiye, isko to yaad rak lijiye, or,"
+  },
+  {
+   "start": 2826.58,
+   "end": 2850.06,
+   "text": "Come once because you are the first occurrence. Turn left a little. Turn left. See if there is any other shop. How do you turn left? High is equal to minus 1. Guess minus 1. Let's turn left like this. While closing the loop. Return rest. This is the first occurrence. This is the first occurrence. Why? If you get equal. So if you get equal here."
+  },
+  {
+   "start": 2850.26,
+   "end": 2878.29,
+   "text": "This is equal. It can be any occurrence. It can be an answer. It can be or not. Now how will you decide the answer? You will have to turn left. Like last time. Remember last time when you got Rs. 45. So this answer was possible or not. So you had to turn left and see if it is Rs. 35 or not. So you have to turn left and see if it is equal or not. If it is equal or not. So you turn left and see. And don't go right. So this is the first. Last. There is nothing of last. You have to change one line. You have to change one line in last. Last."
+  },
+  {
+   "start": 2878.29,
+   "end": 2899.52,
+   "text": "By the way, you have to try the last too. Look at the last. The shop is the same. The shop won't change after deciding the first and last. Equal. Equal. Equal. Equal. More. More. Now what you have to do is to find the last position of equal. Look."
+  },
+  {
+   "start": 2899.52,
+   "end": 2924.59,
+   "text": "Less is here. Guess here. What is it? It is Betuka. Less is same. We will not see. We need equal. Where will we get equal? Right side. More is here. Betuka is right side. Left side will get equal. Both are same. Both are exactly same. But if you get this equal, again, this can be your answer. This can be your answer. If this is the last shop, it can be."
+  },
+  {
+   "start": 2924.59,
+   "end": 2953.62,
+   "text": "remember this and now you need last occurrence now you will not rotate in left now you will rotate in right last occurrence, which is the last shop? rightmost shop which is selling things for Rs. 30 you have got one equal, keep this in answer and you rotate in right, is any other shop selling in right or not equal means you got Rs. 30 you got Rs. 30 road number"
+  },
+  {
+   "start": 2953.62,
+   "end": 2982.75,
+   "text": "If you want to find the last road of Rs. 30, then you will look at the road no. 5, no? And you will look at the road no. 6, no? And you will look at the road no. 7. Why will you look at the road no. 3? No, you want the last, last. If you find the equal on the left side, then what will happen to it? This is not the last. Why is this not the last at all? Because you are standing on one equal, you are standing on one equal. If it happens, then this will be the last or it will be the right one. How will the left one be the last? That will be the second last, that will be the third last."
+  },
+  {
+   "start": 2982.75,
+   "end": 3008.27,
+   "text": "same logic same program copy paste instead of this line what did this line say? you want to go left now you want to go right equally for last occurrence instead of this line how do you go right? guess plus one if you change one line you will get both the answers if you change one line you will get both the answers write two functions of first and last call both and your game will end"
+  },
+  {
+   "start": 3008.27,
+   "end": 3014.37,
+   "text": "We hope that you have understood. If you have not understood, then please comment because we want to tell you again."
+  }
+ ]
+}

@@ -1,0 +1,359 @@
+{
+ "video_id": "IxxlDYwMrZ8",
+ "title": "DSA PATTERNS Episode 17 | Linked List Slow & Fast Pointer Technique: Introduction",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1998,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.42,
+   "text": "Come on, today we are going to start the link list patterns and which pattern? Slow and fast pointers. Now see, it is very important, link list is such a topic about which you will ask 100, 200, 500 questions but you will not understand the whole thing. And you can also do that, whatever we are telling you, if you ask 10 questions, then you will understand the categories of questions of the link list, then you will understand 80%. Okay, the whole link list or the whole array, no one can finish it, that's why"
+  },
+  {
+   "start": 27.42,
+   "end": 55.52,
+   "text": "This is not a topic, this is not a playlist of topics, this is a playlist of patterns of the questions that come in the linked list. Did you understand? Let's go. Look carefully, it is very important. If you understood today's lecture, then 40% of the linked list questions will end here. Okay? Just understand today's lecture. What will happen to 40% of the linked list questions? It will end. Okay. The pattern that we are going to start today, what is its name? Slow and fast pointers. Now see, what is slow and fast pointers?"
+  },
+  {
+   "start": 55.52,
+   "end": 85.34,
+   "text": "Why do we use it? When do we use it? How do we use it? We will talk about all of them. So, like the regular students, first of all, what do we read? Why is it? What is it? And flowchart. Flowchart, okay? Let's go. Till now, what was the first step in flowchart in the pattern that we are reading? What is the question of data structure? Meaning, the question given to you, is it of array? Or is it of string? Or is it of linked list? These are the three data structures. Apart from this, there is no other data structure, right?"
+  },
+  {
+   "start": 85.34,
+   "end": 111.42,
+   "text": "Data structure means simple data structure. Tree is also a kind of linked list. DP's question is also a kind of array. So basically, array, string, linked list, string is also a kind of array. So what we were understanding till now is that if we can find out by looking at the data structure, like if there is a question of sliding window, then there is very less chance that there is no sliding window in the linked list question. It never happens. Why?"
+  },
+  {
+   "start": 111.42,
+   "end": 141.22,
+   "text": "Because it is very difficult to do movement in a linked list. You can go forward, but you can't go backward if it is a single linked list. This thing is easy in array. Similarly, two-pointer. Two-pointer is very less in linked list. Why? Same thing. It is difficult to do movement. It is very difficult to go back and forth. You have to go forward only. If it is single, then you can't go back. That's why. But, but, but. This is such a unique pattern. Such a unique pattern. Now see. What happens normally? People tell that this slow and fast pointer."
+  },
+  {
+   "start": 141.22,
+   "end": 171.01,
+   "text": "I will tell you what this is in a little while, but what people usually tell is that this is the pattern of the linked list. But this is not the pattern of the linked list. We will start reading it from the linked list. What we will do is that we will start it from the linked list. But you will see that this question can also be used in the question of the array. This is not the question of anyone. If it is a question of a single number, that means there is a single n given, you have to get an output from n, it is also used there. We will see how it is used, but"
+  },
+  {
+   "start": 171.01,
+   "end": 197.28,
+   "text": "To understand this, we will start from the linked list. In this flowchart, the first step is that how will we know by looking at the data structure? This step is not applicable in this. What is it? It is not. Why? It can be applied in the array as well. We will show you how it is applied. It can be applied in the string as well. It can be applied in the linked list as well. Moreover, it can be applied in the single variable question as well. So, by looking at the data structure, you cannot decide whose question it is. That's right. Let's move ahead."
+  },
+  {
+   "start": 197.28,
+   "end": 223.62,
+   "text": "Now, when can you decide? When can you decide very strongly? If in the question, you have to find out any kind of cycle or loop or you have to find out if there is any repetitive behaviour or not. Listen carefully. If in the question, you have to find out any kind of cycle or loop or repetitive behaviour"
+  },
+  {
+   "start": 223.62,
+   "end": 251.5,
+   "text": "We don't have to find out. We have to find out. What do we have to do? We have to find out. We have to find out. Is it there or not? Is it there or not? Is there a cycle or not? Is there a loop or not? Is this number working in a repetitive behaviour or not? Okay? For example, the question of decimal in class 9-10 of maths. That recurring decimal. Means, suppose a decimal like this. 3.17171717"
+  },
+  {
+   "start": 251.5,
+   "end": 281.1,
+   "text": "Now see, 3 is fine, after decimal. See, 17 is repeated again and again. Is it repeated? What was it called? Was it called recurring decimal? In this way, if a question arises that find out whether it is happening or not. Find out, what should we find out? Is there a cycle or not? Is there a loop or not? Is it repetitive or not? So, for sure, for sure, what will be used? Slow fast pointer. Slow fast pointer. Apart from this, nothing else can be used in the world. Nothing can be used in the world. So, the first hint is these three."
+  },
+  {
+   "start": 281.1,
+   "end": 309.71,
+   "text": "Okay. Now let's talk about this. Now let's talk about the next flowchart. Let's talk about this. Now we are on cycle. There are more of this. But what do you see? Cycle. Anything related to cycle. Any synonym of cycle. If you see any Hindi word, English word. Then you understand fast and slow pointer. Okay. Now what is this pattern? What is this fast and slow pointer? Understand it like this. You have a ground. Okay. Okay."
+  },
+  {
+   "start": 309.71,
+   "end": 339.34,
+   "text": "You have a field. The field is round. Now, you are here. Your name is A. And your B, your friend, is here. He is standing here. Both of you are running. How are you running? Which way are you running? You are running in the same direction. Suppose, you are running in this direction and your friend is also running in this direction. Now, imagine if you are running at the same speed. How are you running? You are running at the same speed. So, what will happen? If you..."
+  },
+  {
+   "start": 339.34,
+   "end": 368.99,
+   "text": "Suppose you start somewhere. Suppose you start here and your friend starts here. You are running at the same speed. So, you will never be able to catch each other. You will never be able to catch each other. It means, you will always be behind him and he will always be ahead of you. It's simple, isn't it? You are running at the same speed. So, you will always be behind him and he will always be ahead of you. Okay? But, but, but. Suppose you are running at 1 km per hour. And your friend is running at 2 km per hour. It means,"
+  },
+  {
+   "start": 368.99,
+   "end": 397.95,
+   "text": "He is running twice as fast as you. He is running twice as fast as you. He is running twice as fast as you. So, at some point, at some point, at some point, what will happen? That, suppose, you were here earlier. Your friend was here. Consider it as a starting point. What will happen in the next hour? You will move a little forward. You will move a little forward. But, because your friend is running twice as fast as you, he will move a lot forward. He will move twice as fast as you. He is running twice as fast as you. What will happen in the next hour?"
+  },
+  {
+   "start": 397.95,
+   "end": 425.2,
+   "text": "You will move a little further. And your friend is running very fast. So he had started from your front. But he will come behind you. If you are running on the ground, he will come to overtake. What can happen in the next hour? What can happen in the next hour? You will be somewhere. You will be somewhere. And your friend who is running at double speed. Your friend will come just next to you. What will come next to you? Will come next to you."
+  },
+  {
+   "start": 425.2,
+   "end": 453.47,
+   "text": "This is very natural and understandable. You are running slowly. Your friend is running fast. He will overtake you at some point. What is the meaning of overtaking? As soon as he overtakes you, as soon as he overtakes you, you understand that the ground where you are running is a cycle ground. It is a circle ground."
+  },
+  {
+   "start": 453.47,
+   "end": 481.52,
+   "text": "Why is it a circle-like ground? How do you understand that it is a circle-like ground? For example, you don't have a ground, you are running on the road. How do you run? On the road. The road is of infinite length. Look here. Suppose you are here. Your friend is here. You are running 1 km per hour, he is running 2 km per hour. Now what will happen? The distance between you will increase. For example, what will happen next time?"
+  },
+  {
+   "start": 481.52,
+   "end": 511.25,
+   "text": "Next time, what will happen? You will come here. Your friend will come here. This will happen. What will happen next hour? Next hour, you will reach here. And your friend will come much ahead of you. Your friend will come much ahead of you. So, this distance of yours, this distance, what is this? This is distance. This will increase. It will increase. Your friend will never overtake you. Why? Because you are running on a straight road. You are running on a straight road. You are running on a straight road. You are not running on a circle ground."
+  },
+  {
+   "start": 511.25,
+   "end": 540.67,
+   "text": "When will the overtake happen? Overtake is only possible in circle ground. Overtake is not possible on a straight road. If two cars are going, one is very fast and the other is very slow, then the fast car will overtake. Provided that both start from the same place. Start from the same place. When will the overtake happen? Both the cars are in circle. So the fast car will overtake at some point and overtake the one coming from behind. What did we understand from this? That if the ground, if the ground, if there is a circle, if there is a circle,"
+  },
+  {
+   "start": 540.67,
+   "end": 568.13,
+   "text": "There will be overtake if both are running at different speeds. If they are running at the same speed, then it will never happen. But if there is a straight road, then there will never be overtake. There will never be overtake. There will never be overtake. Or what will happen? The road will end. The road will end at some point. The road will end. That person will end his race. But there will never be overtake. There will never be overtake. This is natural."
+  },
+  {
+   "start": 568.13,
+   "end": 597.2,
+   "text": "This is the concept, just a similar concept. Why is it taught in linked list? Because we know that array is in straight line. So array is a road. What is array? It is a straight road. But because linked list looks like this, when you make linked list in copy, it looks like this, we can turn it. See, this is also a straight road. Suppose your linked list is like this, then your linked list can also look like this."
+  },
+  {
+   "start": 597.2,
+   "end": 627.18,
+   "text": "This is also an example of a straight linked list. It starts from here and ends here. But your linked list can also look like this at some point in time. Now this points here, this node points here, this node goes here, and this goes back here. So this linked list you made, this linked list you made, this linked list you made, this. What is this? This is your cycle. This is your cycle or circle."
+  },
+  {
+   "start": 627.28,
+   "end": 656.61,
+   "text": "So, if a person starts walking on this road, then he will reach here first, then here, then here, then here, then here, then here, then here, then here, then here, and then here, and then here. And he will get stuck in this cycle. He will never be able to get out of this cycle. That is why it is very easy to show the cycle in the linked list. It is also done in Array. Array is also not straight. We will tell you how the cycle is made in Array."
+  },
+  {
+   "start": 656.61,
+   "end": 685.07,
+   "text": "It is very easy to explain in the linked list because you know that this linked list shows that there is a cycle in it. That's why we teach slow and fast pointer in it. It should be taught in the linked list, but it is not that it is used only in the linked list, it is used in many places. Have you understood how the cycle is done in the linked list? Those who do not know the basics of the linked list should know a little bit of basics. Learn to write syntax, what is the next pointer, what is the head pointer, we are assuming that you know all this."
+  },
+  {
+   "start": 685.07,
+   "end": 713.52,
+   "text": "Link lists are basically nodes. Nodes means circle. One node points to another node. The node that does not point to anyone points to the null. It means it does nothing. So the link list ends there. This link list is never ending. This link list is never ending. It is stuck in the cycle. It is stuck. So this is the cycle. Now, it is not that the cycle link lists will always be straight and a circle."
+  },
+  {
+   "start": 713.52,
+   "end": 743.15,
+   "text": "it is possible that the entire linked list is a circle. The entire linked list can also be a circle. The entire linked list can also be a circle. This is an example of a linked list. This is an example of a linked list which is a complete circle. There is no straight part in it. There was a straight part in the previous linked list and it looked like this. This one is completely like this. It is possible that it looks like this too. This. And yes, it is possible that this circle is earlier. It is possible that this circle is earlier and then something like this. I mean, somewhere, somewhere, somewhere, there is a circle in the shape."
+  },
+  {
+   "start": 743.15,
+   "end": 772.88,
+   "text": "Means, if you start running this linked list from the beginning, then you will get stuck. What will happen? You will get stuck. What does that mean? Circle. You get stuck in a circle. You have entered a ground, which is a circle. So, no matter how much you run, you will remain in the same circle. You will not come out. There is no way to go out, so you will not be able to come out. Okay. Come on. Now, what will we do in this? What is slow-fast? You must have understood slow-fast. Slow means the one who runs slow."
+  },
+  {
+   "start": 773.04,
+   "end": 802.1,
+   "text": "fast means fast means fast means fast means fast means fast means fast means fast means fast means"
+  },
+  {
+   "start": 802.38,
+   "end": 832.32,
+   "text": "Now see, how does this work? Let's make a linked list. Make this, make this, and make this. Now let's make a circle. This will point to this, this will point to this, and this will point to this. This is a very small circle. This is your circle. Your start will be from here. Your head is here. Head means the start of the linked list. Assume this is 1, 2, 3."
+  },
+  {
+   "start": 832.32,
+   "end": 861.2,
+   "text": "4 is there, 5 is there, okay. So the node 1, we call it head. Okay. Whenever you get a question, let's start with the most basic question that you have given this link list, check if there is a cycle or not. What do you do? Check if there is a cycle or not. Just check, tell true or false, okay. So the first thing you have to do is that you have to keep two people. What two people do we have to keep? Slow and fast. Now, we will start from the same place of both."
+  },
+  {
+   "start": 861.2,
+   "end": 885.34,
+   "text": "It will start from the same place. Where will it start from? From one place. From one place. Means, we will start from one point in the ground. After that, we will run at different speeds. Now, slow will run and fast will run. I understand the name. Now, see how it works. First of all, S is here and F is here. This is what we have said. Now, we will work."
+  },
+  {
+   "start": 885.34,
+   "end": 914.1,
+   "text": "In every step, we will ask the slow to run. How much should he run? He should run one step. Means he should run one note. For fast, you should run fast from slow. Fast means, there can be a lot of things. Fast means, it can be 2 times, 3 times, it can be 10 times. But for simplicity's sake, you should run it 2 times. 2 times is not necessary. If you run it with 3 times speed, then also it will be a question. If you run it with 4 times speed, then also it will be a question. But it is difficult to write. Now I will tell you what is the meaning of running."
+  },
+  {
+   "start": 914.19,
+   "end": 943.25,
+   "text": "Let's assume that we have to run it twice. So, in the beginning, slow and fast are here. Did you understand? In every step, we are saying that run slow in one circle and fast in two circles. Meaning, skip one and do the other. Fast means you will run two nodes and then two nodes in front of it. And slow will run slowly. What will happen first? How much does your slow run? It runs one. Your slow will run and come here. How much does your fast run? It runs two circles."
+  },
+  {
+   "start": 943.25,
+   "end": 971.63,
+   "text": "Your fast will come here. 1 to 3 will come. Slow 1 to 2 will come. It's simple. Come on. Run again. Run again. Where will slow go from 2? Slow will go from 2 to 3. Come on. Write it down. Slow went from 2 to 3. Okay. Where will fast go? Where will fast go? Fast was on 3. Where will fast go from 3 to 5? 5 came here. Come on. Keep running. Keep running. We will tell you. We will tell you. You will see. Now. Run again. Run slow again."
+  },
+  {
+   "start": 971.63,
+   "end": 1001.57,
+   "text": "What to do with slow? Run from 3 to 4. Run fast too. Where is fast? From 5. Not from 5 to 6, 7. Look at 5, where is it going? 5, 3 and then 4. Now look, it's very important. Your fast was here. How many circles does fast run? 2 circles. Fast 1 and then 2. Fast also came here. As fast came here. Now look. On this 4, slow and fast came again. What happened?"
+  },
+  {
+   "start": 1001.57,
+   "end": 1030.14,
+   "text": "again. How did they come again? We have already seen that if there was a straight road, if there was a straight road, slow and fast would have started here at the same time. So if you would have run, then slow would have run here first and fast would have come here because it runs twice. Then slow would have come here and fast would have come here because it runs twice. Then slow would have come here and fast would have come out of the road because it runs twice. So they are never found in a straight road. You can see it by drawing. But how did they meet? How did they meet here?"
+  },
+  {
+   "start": 1030.14,
+   "end": 1059.78,
+   "text": "Mil gaya matlab cycle hai. Mil gaya matlab? Mil gaya matlab? Slow and fast. Ek ho gaya. Ek he note pe aapko dikh raha hai. Kabhi bhi slow is equal to fast ho gaya. To matlab? Uska cycle hai. Ground circular hoga. Tabhi yeh mil sakta hai. Pehle dekh chuke hain. Pehle samajh chuke hain. Ground agar road hota. Ground agar straight road hota na. To kabhi nahi milta. O fast road se bahar nikal jata. Etni baat. Mere khayal se samajh mein aayi hogi. Yehi concept hota hai. Kya concept hota hai?"
+  },
+  {
+   "start": 1059.78,
+   "end": 1088.7,
+   "text": "First of all, slow is equal to head and fast is equal to head. Head means the starting one. Now let's run it. How to run it in a linked list? It is written while and in a linked list, you have to keep in mind that your linked list should not end. How will the linked list end? What are you saying? That we will run slow and fast. For example, if your linked list is straight road,"
+  },
+  {
+   "start": 1088.7,
+   "end": 1118.18,
+   "text": "For example, if it is straight, then there is no cycle. So who will finish first? Who will come out of the first road? Fast will come out of the first road, not slow. Slow is either fast or it will stay behind. It will always stay behind. Slow is running slowly from fast, fast is running very fast. So who will come out of the first road? Fast will come out. So we have to check that fast does not come out of the road. Coming out of the road means that it does not come out of the linked list. That is fast not equal to null. Okay."
+  },
+  {
+   "start": 1118.18,
+   "end": 1147.74,
+   "text": "That's what I understood. Now, now, now. Now, will we check here only? What condition are we trying to check? That slow and fast should not be equal. But you have started by making slow and fast equal. In the beginning, you said that both will have the same starting point. So, if we check here, then it will be equal in the first time. That's why, first run it. What should we do first? Run it. First, run it as much as you want. What does running mean? How much does slow have to run? One step. Running one step means slow is equal to slow."
+  },
+  {
+   "start": 1147.74,
+   "end": 1176.78,
+   "text": "Next. Now, in different languages, it can be written like this in C++. In Python, it can be written as .next. In Java, it can be written as .next. So, it is next. Next means, run one step. Run one step. Very good. Now, how much fast do we have to run? Fast has to run two steps. How will we run two steps? We will run like this. First, we will write this. Fast is equal to fast.next. This is one step run. This was slow also. We have to do one more. Add one more next. Add one more next. See this."
+  },
+  {
+   "start": 1177.17,
+   "end": 1206.18,
+   "text": "Now you must have understood why we were saying that you can run at any speed, 3x, 4x, 5x. But if you run 5 times, then you have to write this next, next, next, next 5 times and you have to check that much too. That's why we run twice, it will work. You have to run fast. If you run 1.5x fast, 2x fast, 3x fast, if you run 2x fast, then it may take more time to overtake the cycle. If you run at 10x speed, then you can overtake immediately. So the point is the same. Okay. Now both of you have run."
+  },
+  {
+   "start": 1206.18,
+   "end": 1235.25,
+   "text": "Now we will check. We have run. Now check. If slow equal to fast. What did you see? This means there is cycle. There is overtake in circular. Fast equal to slow means fast has come near slow by running somewhere. Okay. Return true. Okay. It is over. Close the while loop. Now if you come here. If you come here. Come here."
+  },
+  {
+   "start": 1235.28,
+   "end": 1264.37,
+   "text": "If you break the while loop in any fast slow question, it means that there is no cycle. This means that there is no cycle. Why? Because when is the while loop breaking? When fast is null, then it will break. Fast is not equal to null condition, so fast will be false on null. When will fast be null? We had already seen that when your linked list is of this shape, when your linked list is of this shape, of the cycle shape, then your fast never comes out, it gets stuck in the cycle."
+  },
+  {
+   "start": 1264.37,
+   "end": 1293.74,
+   "text": "When does the fast come out? On the straight road. If your fast comes out on the straight road, it means it's here. If it comes out, it's null. If it's null, then very good. What did you have to do if you didn't cycle? You had to return false. Do this. That's the question. There's a mistake in this. I'm telling you now. Don't get confused. But the format is this. The template is this. Okay, come. Now you see. Now you see. Whenever you run, you have to check the while condition. While."
+  },
+  {
+   "start": 1294.32,
+   "end": 1325.06,
+   "text": "What did we say? Write this. Fast not equal to null. Okay. Whenever you run in the link list, when you want to run one step, you want to run one step slow, then in that case, it is correct. You want to run two steps fast. You want to run two steps fast. So, how did we write it? We wrote it like this. Fast is equal to fast dot next. One run from this and another run. Now, see, there is a mistake in this. If you run fast twice,"
+  },
+  {
+   "start": 1325.06,
+   "end": 1352.24,
+   "text": "Fast.next.next means, suppose it is on 3, 3 is pointing at 4, 4 is pointing at 5. This can happen, your fast is here. What happens with this? You write that fast is equal to, your fast is on 3, so you write 3.next and then its next. So, this is evaluated first. So, next to 3, what is next to 3? It is 4. Very good. So, this becomes 4."
+  },
+  {
+   "start": 1352.24,
+   "end": 1381.94,
+   "text": "And then you have to write 4.next. So, you write 4.next. You do this. Now, this will work. Now, this will work. Now, this will work. So, what is 4.next? 5. So, this will become 5. Now, see. 3 has become 5. This is very good. Very good. But, but, but. If your linked list would be like this. If your linked list would be like this. 3 and 4. And after this, it would end. After this, what happens? It ends. 5 does not remain. It is possible, right? It is not 5. It is your straight road. So, now your fast is here."
+  },
+  {
+   "start": 1382.13,
+   "end": 1407.44,
+   "text": "Again, what statement have you given? Fast is equal to fast.next and also next to this. Next to this also. Okay, let's run it. First, this will run. So, what is this? 3.next. What is 3.next? 4. So, this will become 4. This whole thing will become 4. Now, you have written again. This whole thing has become 4. Now, you are trying to do this."
+  },
+  {
+   "start": 1407.57,
+   "end": 1439.58,
+   "text": "But, but, but, as soon as you try to do the next of this node, which is the end node, this is the end node. So, as soon as you try to do the next of this node, then it becomes null. What does it become? It becomes null. What are we saying? What are we saying? If you didn't understand, see. Understand it with another good example. Assume that there is only one node in your linked list. There is only one node in your linked list. This is its next null."
+  },
+  {
+   "start": 1439.58,
+   "end": 1470.51,
+   "text": "If the end node is your end node. If there is only one node then that is the start and that is the end. So if you do next of any end node. That is null. This. This is allowed. Doing this is allowed. But you can never do null.next. As soon as you do null.next. Your program will give error. Run time error. It will crash. Now see. Assume your fast was 3. You write fast is equal to fast.next."
+  },
+  {
+   "start": 1470.83,
+   "end": 1497.34,
+   "text": "Dot next. Dot next. So, let's run it. First, this will run. So, three dot next. What did we call three dot next? The end node. This is null. So, this has become null. Now, you have put another next in front of it. This. This will get stuck here. As soon as you do this, as soon as you do null dot next, your program crashes. Your program crashes. It crashed. Okay."
+  },
+  {
+   "start": 1497.34,
+   "end": 1525.94,
+   "text": "To escape from this, to escape from this, whenever, whenever you have to run one, whenever you have to, or remember it as a rule, the thing you are taking next, the thing you are taking next, for example, how many statements are you writing? You are writing two statements in your program, in your while loop. One statement you are writing this, okay, and one statement you are writing this, fast.next.next."
+  },
+  {
+   "start": 1525.94,
+   "end": 1555.41,
+   "text": "Yeah, arrow next. There are two statements. Whatever next you are taking out, you are taking out its next. See, what are the things you want to take out next. Firstly, you are taking out slow's next. You are also taking out fast's next. You are also taking out fast's next. And, you are also taking out fast.next's next. It is also taking out its next. No matter what answer you get, it is also taking out its next from here. Include this in your list too. Make a list in your mind. Okay. So,"
+  },
+  {
+   "start": 1555.41,
+   "end": 1586.29,
+   "text": "These three should never be null. What should happen? Null should not happen. Where do you always have to check? You have to check in the while loop. You have to check in the while loop or you have to check first. It will never be next. Null next is not allowed. Null is allowed. Null next is not allowed. So, now you will say that there are three things here. There is one, two, three. You will say that earlier you just checked fast. You said fast not equal to null slow. You did not check. That is why you did not check. Because,"
+  },
+  {
+   "start": 1586.29,
+   "end": 1613.46,
+   "text": "We have seen that slow will be behind fast at any time. Fast will be behind fast. Fast will be null if there is a circle. But if there is a straight road, fast will be null first. Fast will be null first. Slow will be null later. It is not possible that slow will be null and fast will be non-null. It is not possible. Null means"
+  },
+  {
+   "start": 1613.46,
+   "end": 1642.38,
+   "text": "get out of the road first fast and then slow that's why we didn't check slow but you checked this but you left this that's why your program will crash that's why while condition what did we say? write the next of this so write fast not equal to null and and and this should also not happen fast.next"
+  },
+  {
+   "start": 1643.02,
+   "end": 1671.76,
+   "text": "Not equal to null. Now your value is safe. Did you understand? Who all did you check? Beta fast should also not be null. And the next of fast should also not be null. Okay. If you don't understand. If you don't understand. That you think that slow should also be written. Then you write slow not equal to null. There is no problem. Write it. It should be safe. Write slow not equal to null. But interviewer will ask you. Why are you writing it? There is no need for it. Okay. So that's why. Now there is one more in this."
+  },
+  {
+   "start": 1672.37,
+   "end": 1705.97,
+   "text": "Now, what did you write in the condition? While fast not equal to null and fast next not equal to null. This is what you wrote. Can you write it in reverse? One condition is this, one condition is this. Can you write it like this? If you want to. While fast dot next not equal to null and fast not equal to null."
+  },
+  {
+   "start": 1706.45,
+   "end": 1733.3,
+   "text": "Now you will say that it is the same thing. We have written this condition before and later. This is wrong. This program can make you crash. Why can it make you crash? Imagine that at some point in the world, your fast is null. In the previous case, your while loop breaks here. In the previous case, your while loop breaks here. If this is false, then the computer does not read the next one in the end."
+  },
+  {
+   "start": 1733.33,
+   "end": 1761.6,
+   "text": "If the first condition is false in AND, then the computer does not read the next condition. This works. If your fast is not equal to null, it looks like fast is null, so break the while loop. But in the second while loop, what are you saying? First, remove fast.next and then check it. So what will your computer do? It will try to remove null.next. As soon as it tries, it will crash you. Okay? So in the while loop, whatever you have to write,"
+  },
+  {
+   "start": 1761.6,
+   "end": 1789.09,
+   "text": "Fast not equal to null. Fast.next not equal to null. Fast.next.next not equal to null. Write it in order. Don't show it anywhere. First of all, fast. Then, if needed, fast.next. Even after that, if needed, then fast.next.next. Fast.next.next. Because, first check if this is null. If this is not null, then fine. Take out its next and check if this is not null. If this is not null,"
+  },
+  {
+   "start": 1789.09,
+   "end": 1821.63,
+   "text": "So this is safe, now take out its next and check that it is not null. You have to write it like this. Okay. Let's write its pseudocode and do it. Make a small link list. Okay. And this is 4. And this is 5. And this is this. Our simple and small link list. First of all, what did we say? Do two things. Slow is equal to head. And fast is equal to head. Okay."
+  },
+  {
+   "start": 1821.63,
+   "end": 1847.44,
+   "text": "So, what does this mean? Where did your slow come? On 1. Where did your fast come? On 1. After that, what did we check? While, while, fast not equal to null, and, and, fast.next not equal to null, next.not equal to null. Come on, check. Is fast null? No, it is not fast null."
+  },
+  {
+   "start": 1847.44,
+   "end": 1876.34,
+   "text": "Is fast's next null? Means 1's next. Is 2 null? No, 2 is a value. 2 null. There is no empty space. There is no empty space. There is 2 value. Okay. First of all, what we had to do? Slow is equal to slow.next. Run it. Run it. Run it. And fast is equal to fast.next. This is run once. We have to run twice. Run twice. Come. Okay. So, what will happen first? What will happen first? You have written this. Now, your slow is equal to 1."
+  },
+  {
+   "start": 1876.34,
+   "end": 1903.14,
+   "text": "Let's make a table. This is slow and this is fast. What was first? Both were 1. When you executed this, what was your slow? 1's next. What is 1's next? 2. Write it down. Where is fast? 1's next's next, 2's next means 3. This is 3. Are both equal? No, both are not equal. Keep doing this work. Come next."
+  },
+  {
+   "start": 1903.14,
+   "end": 1930.96,
+   "text": "Where will the slow go from 2? It will go from 2 to 3. Write it down. Where will the fast go? The fast is at 3 now. It will go from 3 to 4 first. And then it will come to 5. Write it down. Make it fast 5. Are they equal? No, they are not equal. Do it again. Where will the slow go? It will go from 3 to 4. It will go to next. Write it down. And where will the fast go? The fast is at 5 now. It will go from 5 to 3 again. And then it will come to 4. So the fast came to 4."
+  },
+  {
+   "start": 1930.96,
+   "end": 1957.63,
+   "text": "Now see, are they equal? Yes. Slow is equal to false. Why did it happen? It must have happened only when there was a cycle. It doesn't happen like this. True return is done. True return is done. Did you understand this much? Did everyone understand? Okay, very good. So this is your slow and fast pointer's pseudocode, code, whatever it is. Go and submit it. Which question is it? You will get it in the pattern. In the pattern, we had shown which question it is. So you will get it, right?"
+  },
+  {
+   "start": 1957.63,
+   "end": 1984.94,
+   "text": "So, find the cycle, its question number is 141. Lead code 141. We just have to find whether there is a cycle in the linked list or not. So, this is its concept. Tomorrow, we will do a very good question on it and we will talk about it in detail that how it is done in array and how it is done in number. Same thing, whatever we have read in the linked list, you have to do this thing in array also. And this question is also done in number."
+  },
+  {
+   "start": 1984.94,
+   "end": 1994.38,
+   "text": "So, we will study in detail in tomorrow's lecture. Yes, in tomorrow's lecture. And, let's see this. This was an intro lecture. According to me, it was a detailed lecture. And, we will meet tomorrow."
+  }
+ ]
+}

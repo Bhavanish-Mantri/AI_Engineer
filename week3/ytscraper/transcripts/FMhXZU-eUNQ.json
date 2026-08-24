@@ -1,0 +1,454 @@
+{
+ "video_id": "FMhXZU-eUNQ",
+ "title": "DP in 15 Days Episode 4 House Robber Dynamic Programming",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2432,
+ "segments": [
+  {
+   "start": 0.34,
+   "end": 30.75,
+   "text": "Who are you? You are a thief. A thief who has entered a colony. Now there are a lot of houses in a colony. Every house has some money. Not all houses have the same amount of money. Every house may have 10 rupees, 100 rupees, anything. Now you have to steal like a thief in every house. But, but, but. First of all, you will start stealing from here. You will start stealing from 1 to the last. You don't know from the beginning how much money is in which house. How much money is in which house, you will know after going to the house, after looking at the locker."
+  },
+  {
+   "start": 30.75,
+   "end": 48.13,
+   "text": "But, one more small catch is that if two adjacent houses are stolen, any two adjacent, adjacent means that they are together, means if you steal in two continuous houses, for example, if you H2, means in the other house and"
+  },
+  {
+   "start": 48.13,
+   "end": 76.7,
+   "text": "If you steal in the third house, you will immediately get an alarm. So you have to leave at least one house to steal. At least. Meaning, if you are stealing in the first house, you cannot steal in the second house. You can do it in the third house. It is your choice to do it in the third house. But, if you are stealing in the first house, you cannot steal in the second house. This is the absolute truth. According to that, if you are not stealing in the first house, you are stealing in the second house. Then,"
+  },
+  {
+   "start": 76.7,
+   "end": 105.57,
+   "text": "You can't steal in the third house. This is the absolute truth. The name of this question is House Robber. House Robber is not just to understand DP. It is a very good question to understand a lot of things. What? First of all, it is a good question to understand why DP will have to be applied. Why can't you solve it with common sense? Meaning, why can't you solve it by thinking of any logic from the beginning? We will tell you that too. You must be having logic in your mind that we will do this, we will do that. It will not be solved by anyone. There is a reason for everything. So,"
+  },
+  {
+   "start": 105.57,
+   "end": 135.47,
+   "text": "So to understand variety of things, to understand recursion, to understand DP, to understand greedy, to understand a lot of things, this is a fundamental, solid question, brilliant question. The name of that question is house robber. So let's open house robber and explain to you. There is not one part of this, there are five parts of house robber. So let's do one part, the rest of the parts will also go on this, the rest of the parts will automatically become easy. So very carefully open the copy column and first of all listen to the brain work. Let's start quickly."
+  },
+  {
+   "start": 135.47,
+   "end": 160.75,
+   "text": "Now, let's start. As we said, to solve this question, you should have a logical algorithm in your mind. I mean, without DP, without anything. You should have a logical plan that you have to solve it like this, it will be done. What is one of the plans? Now, suppose there are four houses. You have only one role that you don't have to steal in adjacent houses. So, look, if you don't steal in adjacent houses, then how many houses can you loot? I mean, if there are four houses,"
+  },
+  {
+   "start": 160.75,
+   "end": 188.21,
+   "text": "Continuous house theft means you have to leave one house and keep on stealing. So how many houses can be looted? Maximum you can loot two houses. You can't loot more than two houses. You understand, right? Adjacent means you have to leave one house and keep on stealing. You have to leave one house and keep on stealing. You have to leave one house and keep on stealing. You have to leave one house and keep on stealing. You have to leave one house and keep on stealing. You have to leave one house and keep on stealing. You have to leave one house and keep on stealing. You have to leave one house and keep on stealing. You have to leave one house and keep on stealing. You have to leave one house and keep on stealing. You have to leave one house and keep on stealing. You have to leave one house and keep on stealing. You have to leave one house and keep on stealing."
+  },
+  {
+   "start": 188.21,
+   "end": 216.72,
+   "text": "Two houses have to be stolen. Okay. Now, there is money in the house. Obviously, money will not be negative. I mean, by stealing in any house, it is not like your house will go down. Nothing. If you steal, then it will increase. Your money is not going to decrease by stealing. Your money will increase by stealing. Okay, very good. So, someone says, look, two houses have to be stolen. Make two cases. What does two cases mean? Once, we will see that all the odd numbers are stolen in the house. One or three are stolen. Very good. That's a good thing."
+  },
+  {
+   "start": 216.72,
+   "end": 245.94,
+   "text": "and do one more case by running another loop that all the odd numbers have been stolen in the house, even number has been stolen in the house. We said very good. Now we said that the one who gets more out of these two, means the one who gets more money, we will return him. Very good, this will work. But now there is a flaw in this. You are saying that we will make two cases, in one case we will only steal odd numbers in the house, 1 and 3 is good. In one case we will only steal in the house with even number, 2 and 4 is very good. But you"
+  },
+  {
+   "start": 245.94,
+   "end": 271.63,
+   "text": "1 and 4 can also be stolen. It is possible that if you stole house number 1, after that, house number 2 is obviously to be left. Meaning, you stole in 1. Okay. 2 is obviously to be left. I can't do 2 in 1. No problem. I left it in 2. You could have done it in 3. But, you are helpless that you have to do it. You left it. You left 3 too. 2 and 3 both. You did it in 4. Can you do it in 4? Yes, you can. Meaning, the rule is,"
+  },
+  {
+   "start": 271.63,
+   "end": 301.34,
+   "text": "You don't have to do it in a continuous house. No problem. So you can do it in 1 and 4. This is also a combination. This combination will not be covered in all your odd numbers. Nor will it be covered in all even numbers. Why? Because one house is odd and the other is not even. This case is not covered anywhere. That means, suppose in house number 1, Rs. 1000 is kept. In house number 4, Rs. 5000 is kept. In house number 2, Rs. 10 is kept. And in house number 3, Rs. 20 is kept. In this case,"
+  },
+  {
+   "start": 301.34,
+   "end": 323.42,
+   "text": "You could have looted 2 houses maximum, so the best combination would be to steal in 1 and 4. If you say that you will make a case of 1 and 3, then you will get Rs. 1020. If you say that you will only loot even numbers 2 and 4, then you will get Rs. 5010. But if you loot in 1 and 4, then you will get Rs. 6000."
+  },
+  {
+   "start": 323.42,
+   "end": 352.45,
+   "text": "So if you have more than 6,000 rupees, then you can't do even or odd in this. So if this thought has come in your mind, which should come, which should come, I am not saying it is wrong, that's why we have discussed everything. It came in my mind, it will also come in your mind. This cannot work because of this. Okay? So there should not be any doubt that they could also do it. They cannot do it. So it is clear that they cannot do it, even or odd, even or odd, it cannot be done. Come ahead, we will show you more. And the next method that can come in your mind, this should also come, this should also come. Now you will say that"
+  },
+  {
+   "start": 352.45,
+   "end": 381.26,
+   "text": "Let's do one thing. We have to start with house number 1, which means we have to do it with whatever the index is 0. So we will see that in one time, let's see two houses. Let's say you know, the one you are standing on will know how much money you have. You will be given in the form of an array that there is money in this house. Let's say you know that 1 has 10 rupees. House number 1 has 10 rupees. And house number 2 has 1000 rupees. How much? 1000 rupees. So you will say, look, we will stand on 1."
+  },
+  {
+   "start": 381.26,
+   "end": 410.18,
+   "text": "We will look at 1 and 2. If 1 has more money, then we will take 1. And we will ignore 2 and jump to 3. Very good. If 1 has less money than 2, then we will ignore 1 and jump to 2. And we will try to take 2. We will try to do something like this. There is a flaw in this too. What is the flaw in this? There are not just 2 houses. There are many houses ahead. For example, in this case, if you see, if 1 has less in 1 and 2, then what should we take?"
+  },
+  {
+   "start": 410.18,
+   "end": 438.0,
+   "text": "Let's take 2. What did you do? You took 2. You took 2. Now, when you took 2, it becomes automatic that you cannot take 3. If you stole in 2, then you cannot steal in 3. You will have to jump directly on 4. You will have to jump directly on 4. Imagine, in 4, there is 5 rupees. How much is there in 4? There is 5 rupees. And you did not leave 3. You ignored 3 because of 2. In 3,"
+  },
+  {
+   "start": 438.0,
+   "end": 465.82,
+   "text": "It was 10,000 rupees. How much was it in 3? It was 10,000 rupees. Meaning, now you were on 1. You took a decision by looking at 1 and 2 that you don't want to take 1, you want to take 2. Okay, take 2. Now, because of 2, poor 3 left. 3 had 10,000 rupees. Meaning, if you did anything, you should have taken 3. You should have taken 3. What would be the ideal scenario in this? You would have taken 1 and 3. If you would have taken 1 and 3, then you would have 10,000 rupees."
+  },
+  {
+   "start": 465.82,
+   "end": 491.52,
+   "text": "This is the best combination of this question. That's why we will stand on one house, we will look at the house in front, we will look at the house in the back, we will not even talk about this because there are a lot of houses. And how much will you look ahead? You will say that we will look at 1, we will look at 2, we will look at 3, how much will you look? Now here it is said that you have to leave one house and steal. If this question is modified in the interview, listen, you don't have to leave one house and steal."
+  },
+  {
+   "start": 491.52,
+   "end": 518.53,
+   "text": "You have to leave 10 houses and steal, which means if you steal in house number 1, you cannot steal in the next 10 houses. Then how many houses will you look at? Then you will not say that we will keep looking at 11, 12, 15 houses. So this will not work either. That is why if you have any immediate logic in your mind that we will stand in this house and decide whether to take it or not. The probability is that your decision will go wrong somewhere later."
+  },
+  {
+   "start": 518.53,
+   "end": 548.45,
+   "text": "Meaning, if you take a firm decision on house number 1, whether you will take it or not, then it may happen in the future that the decision is wrong. You will later think that it would have been fine if you had taken 1. Here, for example, in 1 and 4, you will definitely go to 4 and think that you should not have taken 2 and 3. You should have taken 1 and sat down and should have taken 4. So, this is a problem like a stock market. How? It is a problem like a stock market. Meaning,"
+  },
+  {
+   "start": 548.45,
+   "end": 577.3,
+   "text": "Suppose you sold your stock on day 1. Now on day 10, the price of that stock has increased a lot. Suppose you sold your stock for 10 rupees. On day 10, it became 1 lakh. Now you will think that if you don't sell it on day 1, then you should sell it now. But what are you regretting when you will talk about the farm? So even in this, you can't make a sure decision by standing in one house whether you will buy it or not. You don't know what will happen in the future. Your future is unpredictable."
+  },
+  {
+   "start": 577.3,
+   "end": 591.28,
+   "text": "That's why in this question, any immediate decision or any immediate algorithm that make this algorithm, do this and take it. It won't work because you don't know what's going to happen in the future. How much money is there in which house of the future?"
+  },
+  {
+   "start": 591.28,
+   "end": 614.02,
+   "text": "You don't know. When you go to that house, you will know. According to that, you have to take your decision. That is not possible. A person cannot take his decision according to the future. He can take it according to the past. He can take it according to what happened in the past. But who knows what is going to happen in the future? That is why any kind of hard-coded algorithm, any way you put your mind, this question will not work."
+  },
+  {
+   "start": 614.02,
+   "end": 643.6,
+   "text": "The only thing that will work in this question is that you will have to take all possible choices. What? All the possibilities, all the possibilities in the world, if you take one, then what is the possibility? If you leave one, then what is the possibility? If you leave one or two, then what is the possibility? All the possibilities, all the possibilities, you will have to explore all of them and you will have to take the best answer in all of them because you are a"
+  },
+  {
+   "start": 643.6,
+   "end": 668.77,
+   "text": "We can't make a rigid decision that we won't take 1. No, we don't know that you don't have to take 1. Maybe later you will know that you should have taken 1. That's why you have to see the entire possible universe. In this universe, we didn't take 1, we took 2 and 4. In this universe, we took 1, we left 2, 3, 4 and took 5. In this universe, we didn't take 1, we didn't take 2, we took 3, we left 4 and took 5."
+  },
+  {
+   "start": 668.77,
+   "end": 689.79,
+   "text": "In this way, you will have to look at all the possibilities and choose the one with the best answer. And what is the name of this thing? The name of this thing is recursion. In recursion, we have done such a stupid question in which you have to look at all the possibilities. If we wanted, we would have told you this in the beginning that you have to do this. But why do you have to look at all the possibilities?"
+  },
+  {
+   "start": 689.79,
+   "end": 719.01,
+   "text": "We hope that you will understand this well. If you want, you can make more algorithms. If you think that you will do this, then it will not work. It will definitely go wrong somewhere. Now let's see what is the meaning of all possible scenarios. Let's move ahead. But what does all possibility mean? What does it mean to see the whole possibility? How to see? You have to start from house number 1. Or you have to do index 0 in the array."
+  },
+  {
+   "start": 719.01,
+   "end": 747.33,
+   "text": "Now tell me one thing, when you reach house number 1, when you reach house number 1 in the beginning, you don't have even a single rupee, you are starting to steal, okay. Do you at house number 1, look at every house, generally speaking, you have two choices. You have two choices, that you will steal in this house or you will not steal in this house. Apart from this, there is no choice, you will not steal half, you will not steal third or fourth, you will do or not do, you will take all the money of this house or you will leave this house, you will move ahead, okay."
+  },
+  {
+   "start": 747.33,
+   "end": 777.36,
+   "text": "Do you have a free hand available on house number 1 that you can do anything from both? Yes, absolutely. Why? Because your restriction is that you should not steal continuously in two houses. Now house number 1 is the first house. There was nothing before house number 1. So here you have both options. Either you can steal on house number 1 or you can leave house number 1 and move ahead. What does it mean to say? If you want, you can say yes on house number 1."
+  },
+  {
+   "start": 777.36,
+   "end": 806.34,
+   "text": "Means you can steal on house number 1. Or you can leave house number 1 by saying no. And where can you go? You can go to house number 2. Where can you go? You can go to house number 2. In both the cases, if you move ahead, you will come to house number 2. You can go to house number 2. Now see, in this case, when you steal on house number 1, in which universe you steal on house number 1,"
+  },
+  {
+   "start": 806.34,
+   "end": 835.78,
+   "text": "In this, in your bank balance, whatever will be in house number 1, the money will be added. It will be added, right? When you stole in house number 1, then whatever money is kept in house number 1, it should be added to you. So, whatever will be in your house number 1, whatever money will be there, it will be plus in your other things. Okay. When you don't steal in house number 1, when you don't steal in house number 1, then your bank balance will remain the same. Means, you started from zero, it will remain zero. You didn't steal, right? Okay."
+  },
+  {
+   "start": 835.78,
+   "end": 849.6,
+   "text": "Now, in this case, when you come to house no. 2 after stealing in house no. 1, when you stole in house no. 1, you took money from house no. 1, you filled it in the bag, and where did you come?"
+  },
+  {
+   "start": 849.6,
+   "end": 878.51,
+   "text": "House no. 2. Now tell me one thing. Can you steal in house no. 2? Do you have any choice? No, you don't have any choice. Why? Because you have come to this universe by stealing in house no. 1 and coming to house no. 2. Now whatever happens in the world, no matter what happens, you cannot steal in house no. 2. You cannot at all. You can't. You can't. You can't. You can't. You can't. You can't."
+  },
+  {
+   "start": 878.51,
+   "end": 906.64,
+   "text": "You have to go to house number 3. You have to go to house number 3. And when you come to house number 3, again, you will have both the options. Now, there is no restriction on house number 3. Look at this path. You stole on house number 1. Yes, you came to house number 2. Now, you don't have any option on house number 2. You can't do anything. You have to go to the next house. Don't think too much. There can be no theft in this house. Okay. When you went to the next house,"
+  },
+  {
+   "start": 906.64,
+   "end": 935.66,
+   "text": "Again, the next house, means house number 3, you will get a free hand again because in house number 2, there was no theft. Now, you can do whatever you want in house number 3. Because there should not be theft in continuous houses. It happened in this house, but it may or may not happen in this house. After this house, it cannot happen in this house. This is not allowed. Meaning, if you decide that we have to steal in some house, the house in front of it is automatically blocked. You skip it in a way,"
+  },
+  {
+   "start": 935.66,
+   "end": 965.02,
+   "text": "They leave the house. If you take the decision not to steal in house number 1, if you don't steal in house number 1, then you can do anything in house number 2. You have a free hand because there is no restriction in house number 2. When is the restriction? When you steal in house number 1. When you decide yes in house number 1. If you decide no in house number 1, house number 2 has no problem. House number 2 has a free hand."
+  },
+  {
+   "start": 965.02,
+   "end": 985.25,
+   "text": "Now, house 1 can do the same thing. House 1 can either steal. Sorry, in house 2. If you steal in house 2, then you will get all the money in house 2. And you will steal. You can also not steal in house 2. It's your choice. But, if you steal in house 2,"
+  },
+  {
+   "start": 985.25,
+   "end": 1004.77,
+   "text": "House 3 will be automatically blocked. You will have to go to house 4 by saying no. And there is no other way. God can't save you. If you don't steal in house 2, then you have free hand in house 3. There is no restriction. Meaning, in every house, in every house, in every house,"
+  },
+  {
+   "start": 1004.77,
+   "end": 1032.37,
+   "text": "We generally have two choices in every house. When you start from the first house, for example, this is your array. It will be given in the form of an array. The house will tell you that this is your array. And this is 1, 2, 3, 1 is your array. Suppose there is 2 here. When you start from i is equal to 0, i is equal to 0 means you will start from the first house. You have free hand in the beginning. You have"
+  },
+  {
+   "start": 1032.37,
+   "end": 1061.87,
+   "text": "free hand means with which state and mentality do you start? You start with i is equal to 0 and if we take one more variable free is equal to 1. You start with this. Free can be either 1 or 0. What does free 1 mean? In this house, you have a choice. You can take it if you want. If you don't want, you can't take it. If you start with i is equal to 0 free is equal to 1 means you have two choices."
+  },
+  {
+   "start": 1061.87,
+   "end": 1091.57,
+   "text": "If you want, you can do both things. Which two things? If you want, you can steal in i is equal to 0. But when you will steal, then array of 0, means whatever money was kept in i is equal to 0, in this case whatever 1 rupee was kept, you will get that. And you will go ahead. Where will you go? You will go to i is equal to 1. But on i is equal to 1, on this path, which will be free, it will become 0. Why? Because,"
+  },
+  {
+   "start": 1091.57,
+   "end": 1120.21,
+   "text": "You are stealing on i is equal to 0. Now on i is equal to 1, you don't have any way. You are not free. You have to go straight ahead by writing no on i is equal to 2. When you go on i is equal to 2, then this free will be 1 again. But on i is equal to 1, there is no choice. Your free is 0. You don't have free will to choose. You have to go ahead. In comparison,"
+  },
+  {
+   "start": 1120.21,
+   "end": 1146.35,
+   "text": "If you don't want to steal on i is equal to 0, means you want to go on the no path, then you will go ahead. If you don't want to steal at home, then go ahead. So you will come to i is equal to 1. But your free will still be 1. Why will it be 1? Because you didn't steal on i is equal to 0. If you didn't steal, then you didn't get this area of 0 here. No problem. Now, because you didn't steal,"
+  },
+  {
+   "start": 1146.35,
+   "end": 1173.38,
+   "text": "You can come to I is equal to 1 and your free will means your choice power is still 1. You can do any work on I is equal to 1. What kind of work? You can steal by writing yes. You can't steal. By doing this, you will reach a point. When the whole house will be finished in the last, where will you reach? On I is equal to N. I is equal to N means"
+  },
+  {
+   "start": 1173.38,
+   "end": 1202.75,
+   "text": "You have seen all the houses. Now there must have been theft in that house. There must have been theft somewhere. There must have been theft in two houses. Anything can happen. From all the results, whatever the maximum result will be, you will have to return it. What will you have to do? You will have to return it. After seeing all the possibilities, you will have to return it. We will explain this to you again with a small example. Let's go ahead. Let's go ahead with a small example. Look at this example."
+  },
+  {
+   "start": 1202.75,
+   "end": 1232.03,
+   "text": "There are three houses here. We are not taking more houses. We are taking three houses. From where will you start? You will start from i is equal to 0. And your free will is 1 in the beginning. You can do whatever you want in the beginning. Now, here you have two choices. What are the two choices? The first choice you have is to steal in this. Now, if you steal in this, then you get the money in the array of 0. In this, we do 1 plus. 1 plus, whatever answer comes from below. Meaning, after going to the next house, whatever happens,"
+  },
+  {
+   "start": 1232.03,
+   "end": 1260.5,
+   "text": "We will add 1 to it. Okay. You do this and reach I is equal to 1. Now, because you have stolen, your free is 0. What is your free? It is 0. If your free is 0, you don't have to think anything. Go to the next house by writing no here. Where have you come? I is equal to 2. And again, your free becomes 1. Why? Because you have stolen in the previous house. When you will steal, the next house will become 0. When you will not steal, the next house will become 1. Right? Let's go."
+  },
+  {
+   "start": 1260.85,
+   "end": 1286.8,
+   "text": "Now, come here. i is equal to 2, free is equal to 1. Now, free is equal to 1 means you have free will. You can do both things. Either you can steal. If you steal, then whatever money is written in i is equal to 2, which is 4, will be plus in your result. And you will go to i is equal to 3. Now, you have stolen. Now, you will come to free is equal to 0. If you don't steal here, then where is i is equal to 3? And your free will remain 1."
+  },
+  {
+   "start": 1286.8,
+   "end": 1312.05,
+   "text": "Free money, free will, free means you have free will or not. If you don't steal, obviously you have free will because you haven't stolen. There you can do whatever you want. If you have stolen, free will is over in the next house. You have reached here. Now I is equal to 3 means game is over. I is equal to 3 means you have seen all three houses. I is equal to N is over. Game is over. Game of this process is over. Come up again. There is one more part in I is equal to 0."
+  },
+  {
+   "start": 1312.05,
+   "end": 1340.75,
+   "text": "No means we will not steal in this. Okay. Come back. I is equal to 1. Now if you have not stolen, then your free is still 1 in I is equal to 1. Free 1 means two choices. Which two choices? Yes means we will do. Now as soon as you do yes, it means whatever money is written in I is equal to 1, it will be attached to your result. It will be attached to your result. Okay. While doing, you went to I is equal to 2. I is equal to 2. Now you have stolen on I is equal to 1. Automatically, its free will will be zero."
+  },
+  {
+   "start": 1340.75,
+   "end": 1370.1,
+   "text": "Free will 0 means you don't have any choice. You have to go to the next house by saying no. You have come to I is equal to 3. And free is equal to. Now you have not stolen. Now you have said no. Free 1 is done. Free 1 is done. Okay. I is equal to 3 is done. Your game is over. Okay. In I is equal to 1, there can be another choice. That you don't want to steal. You haven't stolen here either. No problem. There is no problem. You have come to I is equal to 2. Now if you don't steal here either, then your free will be 1. There is no doubt in that. Again, there are two options here. What are the two options?"
+  },
+  {
+   "start": 1370.29,
+   "end": 1397.14,
+   "text": "You can steal. If you do, then i is equal to 3 and free is equal to 0. Along with that, whatever money is written in i is equal to 2, you will get it here. After that, if you don't want to steal, then you will come to i is equal to 3 and your free will still be 1. It will remain 1, which means your game is over. i is equal to 3, your game is over. So see, how many endings have we seen? 1 ending, 2 ending, 3 ending, 4 ending, 5 ending."
+  },
+  {
+   "start": 1397.14,
+   "end": 1424.78,
+   "text": "Five types of universe have been created. See which universe is the most. Trace and see. First of all, see in this line. First of all, you get one rupee in this. So one plus. After that, you don't get any money in no. Here you get four rupees. So one plus four is equal to five. So what is the answer to this? The answer to this is five rupees. Okay. Trace this. First of all, you get one rupee. You don't get any rupee in no. And you don't get any rupee in no. So you only got one rupee here. Okay."
+  },
+  {
+   "start": 1424.78,
+   "end": 1453.97,
+   "text": "Trace this. First of all, no means you don't get any rupees. Here you come, you get 3 rupees. Then you come to no means you get 3 rupees in this. Trace this. You come to no, you don't get any rupees. You come to no, you don't get any rupees. You come here, you get 4 rupees. The answer is 4 rupees. Trace this. You come to no, you don't get any rupees. You come to no, you don't get any rupees. You come to no, you don't get any rupees. So you get 0 rupees in this. Which one is best for everyone?"
+  },
+  {
+   "start": 1453.97,
+   "end": 1482.03,
+   "text": "The one with 5 rupees. Why did it come? When you took house number 0 and house number 2. Let's see. If you take 1 and 4, does it follow your rule? Absolutely. How much do you get? You get 5 rupees. This is what I meant when you have to see the whole possibility. This is what I meant. Now let's write its recursion code. Let's hope you understood the recursion. The possibility tree is made exactly like this. It will work like this."
+  },
+  {
+   "start": 1482.03,
+   "end": 1511.01,
+   "text": "We will write the same thing in the code which we have put in the drawing. We will write the same thing in the code. It will be a code of 3-4 lines. Before that, before that, when we had taught the second episode of DP, what did we tell you? When to use DP is a very unique skill. When to use DP? In every hard question, DP is not used. When is DP used? When you are calling the same recursion function again and again. Look at this whole tree."
+  },
+  {
+   "start": 1511.01,
+   "end": 1539.36,
+   "text": "Do you think that the same things are being computed again and again? Now look, what is changing in this recursion? Two things are changing in this recursion. First, the i is changing in this recursion. i is sometimes 0, 1, 2, 3. Equal. And the value of free is changing. Free is either 0 or 1. For every i, free can be 0 or 1. For example,"
+  },
+  {
+   "start": 1539.36,
+   "end": 1569.46,
+   "text": "If you see here, free was 0 in i is equal to 1. If you see here, free is 1 in i is equal to 1. So, free is changing and so is i. Any combination of i and free is repeated anywhere. Let's see. i is equal to 0, free is equal to 1. Can you see this anywhere else? Same combination. i is 0 and free is 1. Can't see it. Okay. i1 free 0. Can you see this anywhere else? No, can't see it. i1 free 0 is only visible in one box."
+  },
+  {
+   "start": 1569.46,
+   "end": 1594.59,
+   "text": "I2 free 1, can you see this combination anywhere else? Yes, yes, you can see it. Look at this. Look at this. The same thing is being computed again and again. If you get any instance in your recursion, when you are computing the same value, same value means the input of the recursion, if you are working again and again for the same input, it means that DP will be applied there. Why?"
+  },
+  {
+   "start": 1594.59,
+   "end": 1620.24,
+   "text": "Here too, you tried to calculate the answer of i is equal to 2, 3 is equal to 1. You went ahead and did something. Here too, you are computing the same answer of i is equal to 2, 3 is equal to 1. Why are you doing it? i is equal to 2, 3 is equal to 1. Remember its answer. Whatever comes in it, what does it mean? What does it mean? You reached the house of i is equal to 2 and you have free will. You have free will."
+  },
+  {
+   "start": 1620.24,
+   "end": 1647.94,
+   "text": "You remember this, right? Why don't you remember this? If you reach I is equal to 2 and you have free will, whatever its answer is, whether it is 10 or 20, it doesn't matter to us. Whatever. When you compute for the first time here, remember this. So that when you come here, you don't need these two. You can return it directly from here. That's where DP happens. Memoization. Memoization. Remember."
+  },
+  {
+   "start": 1647.94,
+   "end": 1677.86,
+   "text": "So, we have caught one, i2 and free1 are being repeated, so it will take dp. And see, is anything else being repeated? i2, free0, here it is repeated. i2, free0, is it somewhere? i2, free0 is not there. Yes, okay, because this array was so small, because it is of 3 arrays, so you will see only one repetition. If you make it of 5 size arrays, then you will see that multiple things are being repeated. See, repeat is also happening. i is equal to 3 and free is equal to 0. See, this is also being repeated. But this,"
+  },
+  {
+   "start": 1677.86,
+   "end": 1701.34,
+   "text": "This is the smallest input, so what do we do now? But this is also repeating. It is definitely repeating. It will just tell you that it is repeating. If you see any repeater, put dp in it, remember it and keep it. Who? This combination. Whose combination? I and free. I and free. Now see, I is equal to 3."
+  },
+  {
+   "start": 1701.34,
+   "end": 1725.87,
+   "text": "And free is equal to 0. And i is equal to 3. And free is equal to 1. These two are different circumstances. These two are not the same. You can't remember this. That i is equal to 3 has one answer. No. There can be two things on i is equal to 3. Free can be 0. And free can be 1. i is equal to 3. And free is equal to 0 has one answer. i is equal to 3. And free is equal to 1 has one answer. Both have two separate answers. That's why you."
+  },
+  {
+   "start": 1725.87,
+   "end": 1748.19,
+   "text": "You have to work in pairs. You have to store the result in a 2D array. You can't do this that the answer of i is equal to 3 is 10. Whose? What is the value of free in that? Tell me that too. How will you have to store? You have to write a 2D array and store it. Means you have to make something of this type. i is equal to 0, i is equal to 1, i is equal to 2. And here free is equal to 0."
+  },
+  {
+   "start": 1748.19,
+   "end": 1774.9,
+   "text": "Free is equal to 1. Now you have to write the answer. If you know that i is 0 and free is 0, the answer is 10. Write 10 here. i is 2 and free is 1, the answer is 20. Write 20 here. So here you have 2D array. Your diary has become 2D array. Why? Because two things are changing in recursion. One thing is not changing in recursion. If in recursion, in the previous question, only one thing was changing. When we did number of stairs, climbing stairs, only the position of the stair was changing. The value of the stair was changing."
+  },
+  {
+   "start": 1774.9,
+   "end": 1804.5,
+   "text": "I have stored it in one thing, I have stored it in the hash map. Here two things are changing. I means the house number is changing. Free choice, is it or not? Is it or not? Is it or not? That too is changing here. So your diary, the answer you write in your diary, from where you see and tell, that should be a 2D array. Now let's go to code. So this much explanation will be enough, according to me. So let's see its code, it will be very simple. First of all, let's write the code of recursion, which you will have to write in recursion. So what will we do in recursion? We will write a function, a small int."
+  },
+  {
+   "start": 1804.5,
+   "end": 1834.05,
+   "text": "1. Okay. Some things will pass here. First of all, the data of houses, the array of houses will pass. Okay. How many houses are there in houses? N means how many houses are there? Int I. I means from which house are you now? Where will it start? From I is equal to 0. And INT free means is it 0 or 1? Is it a free choice or not? Let it be here now. We are not closing the bracket for a reason. First of all, base case means if I is equal to N, what does it mean?"
+  },
+  {
+   "start": 1834.05,
+   "end": 1864.1,
+   "text": "The work is done. What is the meaning of I is equal to N? You have reached the end. Now how much will you get after this? You will not get anything. Return is zero. What is the meaning of this? Look, you have come to this box. Where did you go? You have come to this box. How much money will you get after this? The whole house is finished. You have got what you wanted. When do you get money? By stealing in the house. You have come to I is equal to N. There is no house to steal. Now there is a ground. You cannot do anything. You will get zero rupees. Okay. After this, after this, after this, now first of all you should check that what?"
+  },
+  {
+   "start": 1864.1,
+   "end": 1892.59,
+   "text": "What? Here. Do you even have free will? Suppose you don't have free will. Free is equal to zero. You don't have free will. When you don't have free will, then what do you do? Go to the next house. Don't think too much. Return to the next house. Straight. A, M, I plus 1. More in the next house. Now if you are not stealing, then the free will of the next house will be 1. It will definitely be 1. When?"
+  },
+  {
+   "start": 1892.59,
+   "end": 1921.9,
+   "text": "If the free will of this house was 0, you didn't have much option. You had to go to the next house by saying no. By saying no, the free will of the next house becomes 1. It's over. If your free will is 1, then you have two choices. Which two choices are there? You have one choice that you steal in this house. If you steal in this house, then you will get the money of this house. Plus, you can go to the next house. A, M, I plus 1 and because you are stealing in this house."
+  },
+  {
+   "start": 1921.9,
+   "end": 1951.55,
+   "text": "The free will of the next house will definitely be zero. No one can stop it. This is the first choice. What is the second choice? Don't steal in this house too. Even though you had free will, you are taking the choice that we will not steal here, we will go to the next house. So go, go to the next house. A, N, I plus 1. And because you are taking the choice that you will not steal in this house, you automatically have free will available in the next house. Free will available. Done? Both choices are done? Whichever is the maximum of both,"
+  },
+  {
+   "start": 1951.55,
+   "end": 1976.34,
+   "text": "Return the maximum of both. What does this mean? See, you were here in the beginning. You came here in the beginning. You took this yes choice and added the area of 0 to it. This is what you did, right? Okay. You took a no choice and went straight to the next house. Assume that you made this whole tree. You understood this. But assume that your answer comes from here for Rs. 10. Meaning, when you steal on i is equal to 0."
+  },
+  {
+   "start": 1976.34,
+   "end": 2003.33,
+   "text": "The answer is 10 rupees. When you didn't steal on i is equal to 0, the answer is 20 rupees. Now what will be your final answer? Maximum of 10 and 20. How did this 10 and 20 come? It must have come from somewhere. It must have come from somewhere. It must have come from somewhere. But it has come from somewhere. Now you are sitting on i is equal to 0. You are comfortable. You know that 10 is coming from here. 20 is coming from here. Which one is good? 20 is looking good."
+  },
+  {
+   "start": 2003.33,
+   "end": 2030.69,
+   "text": "Tell me 20. Go up. Do the same thing. This is recursion. Separate one small part. Assume the rest that the rest will be solved. Assume that 10 will come from here. Assume that 20 will be the correct answer from there. What is your work? 10 or 20? 20. When? When we don't steal. If 20 is coming, then 20 will be the answer. We are doing the same thing here. And we will return it. What will we do? We will return it. It is over. Close it here. That's it."
+  },
+  {
+   "start": 2030.69,
+   "end": 2060.66,
+   "text": "Now, what do you have to put in it? DP. This is a recursion. It will work. But time limit will exceed. Why time limit will exceed? Because you will be doing the same thing again and again. You have seen that the same box was being made again and again. If we trace this recursion, then the combination of same I and free will come again and again. We will solve it again and again. What will it take? Time will take. What is the way of this? Make a DP. Make it a diary type. In that, we will write I and free. Like a 2D array. So, the main function will be"
+  },
+  {
+   "start": 2060.66,
+   "end": 2090.77,
+   "text": "Where is my main function? Assume that the main function is the function of the lead code. This is what the lead code will tell you to do. The lead code will tell you that int is the function of the lead code. What will the lead code give you? The lead code will give you an array. That's all it will give you. I have to tell you. First of all, I will remove its size. A dot. I have removed the size. Here it is. A dot size is removed. Now, let's make a 2D array for our diary, for writing. So what do we do? A vector of vector of"
+  },
+  {
+   "start": 2091.12,
+   "end": 2121.74,
+   "text": "int dp of what size? of n size because what do you have to write in it? you have to write the answer of every combination of i and free now where will the i go? it will go to n, you don't have to write the answer of n, it ends in n so which answer do you have to write the maximum? of n-1, its size is n what can be the value of free? 0 or 1 so what will we do? for int i is equal to 0, i less than n, i++ and 1"
+  },
+  {
+   "start": 2121.74,
+   "end": 2148.85,
+   "text": "We will make a vector of size 2, t. Give its size and in the beginning, minus 1 means, and what will we do? dp of i is equal to t. What happened with this is that you have a 2D array ready like this. Like this? Like this. i is equal to 0, i is equal to 1, i is equal to 2, this free is equal to 0, and this free is equal to 1. In the beginning, all of them are minus 1."
+  },
+  {
+   "start": 2148.85,
+   "end": 2177.57,
+   "text": "What does minus 1 mean? It means that the answer is not known till now. In the beginning, you didn't know anyone's answer. You didn't know anyone's answer. Now what will you do? You will call your recursion function. You will call your recursion function. While calling, array n i. From where do you have to start? From 0. What is the value of free will in the beginning? 1. Free will will always remain in the beginning. 1. Also, pass this dp. Pass this dp. Now come up. Now change the signature of the function a little."
+  },
+  {
+   "start": 2177.57,
+   "end": 2205.49,
+   "text": "Change the signature of the function. What will happen here? Vector of Vector of int Bigger and ampersand dp. It's over. Now, what did we say? This is done. Base case. Don't tease the base case. Don't tease the base case. Who to tease? Let's tell. Here, one line. Here, erase this first. Here, erase this. Erase everything. Erase everything. Erase everything."
+  },
+  {
+   "start": 2205.97,
+   "end": 2236.0,
+   "text": "Let's erase everything. We are erasing because we will write again. Let's go. After the base case, first of all, see if its answer is already known. It means dp of i free not equal to minus 1. Not equal to minus 1 means the answer is known. What do we do here? We return it. What? dp of i and free means the answer of this combination of i and free is known. If it is not known, which is not known in the beginning, in the beginning everything is minus 1, then remove the answer. How will we remove it?"
+  },
+  {
+   "start": 2236.0,
+   "end": 2263.66,
+   "text": "Do the same thing that you just did. First of all, if you copy and paste the same code, if free is equal to zero, then what will you do in return? What did you do in return? 1, a, n, i plus 1 and 1. Before returning, this is the answer to this. This is the answer to this. So do this in this. dpi."
+  },
+  {
+   "start": 2264.75,
+   "end": 2291.73,
+   "text": "Free equal to. What does this mean? This line is a shortcut. If your free is 0, then you would return fun to the next house. But this is its answer. You are trying to return its final answer. Write that answer in the DP. For example, you came here. I is equal to 0 and free is equal to 0. It can't be. Say I. Do 1. You can come to 1. I1 free 0."
+  },
+  {
+   "start": 2291.73,
+   "end": 2321.68,
+   "text": "You didn't know the answer. You didn't know the answer. That's why you came ahead. Now you are returning the answer. 1, a, n, n, i minus 1 means going ahead and doing something and returning at last. Before returning, write this answer in the DP array. Meaning, where there is a column of i1 and free 0 in DP, this one. Write the answer here. Here, whatever it is, 10, 20, 30, whatever answer comes, write it. This line does the same. Return and before that, we do this. We do dpi free equal to so and so."
+  },
+  {
+   "start": 2321.71,
+   "end": 2351.71,
+   "text": "Is it done? Now, if it is not done, then you have two choices. Do the same thing. int c1 is equal to array of i plus fun, array n i plus 1. Now, its free will becomes 0. Choice 2 is also there, that no theft should be done here. So, you can do the same thing. Array n i plus 1 and 1. Now, what did we return? Return max of both. Means, max of c1 and c2. Do the same thing here. Before returning,"
+  },
+  {
+   "start": 2351.71,
+   "end": 2381.65,
+   "text": "dp of i free equal to. Khatam. Yeh kya hota hai? Iska koi matlab? Dekhi aap isko aise likhne ka man nahi mat kijiye. Aap isko ek variable mein le lijiye. dpi free equal to that variable. Phir return that variable. Aapki marzi yeh just ek one liner hai ki bhaiya return karne se pehle return aap tab karne hai jab aapko malum chal chuka hai uss i or free ke answer. Agar malum chal chuka hai usko likhlo diary mein. Aagli baar kaam aega. Agar nahi likhoge toh phir diary banane ka purpose kya hua? Yeh dekhiye. Yeh aapka code kya ban gaya?"
+  },
+  {
+   "start": 2381.65,
+   "end": 2409.36,
+   "text": "Your code has become the code of DP Memoization. What was the first method? Recursion. You have seen all the possible methods. Very good. Now whose code is this? Now it is the code of DP. Why? Because now you will not calculate overlapping subproblems again and again. If you think that you know the answer, then you will return from here. All this will work or not? It will never work. So you will return from here. What happened?"
+  },
+  {
+   "start": 2409.36,
+   "end": 2431.5,
+   "text": "This is the solution of DP's memoization. This is the very very important concept of house robber. Very very important problem. Very fundamental problem. Do this. Do this in copy. Do this in copy. Do this in dry run. Understand by yourself. Don't remember that we will do this. No. Understand this. This is a very crucial question of DP series. Okay. So let's meet in next lecture. Thank you."
+  }
+ ]
+}

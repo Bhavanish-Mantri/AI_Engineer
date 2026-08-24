@@ -1,0 +1,274 @@
+{
+ "video_id": "V0wJuik3WSE",
+ "title": "Master STACK in DSA Patterns 2025 | Introduction to Stack | CPP JAVA PYTHON",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1422,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.86,
+   "text": "First of all, thank you very much for the 15,000 subscribers. There are 15,000 subscribers on the channel. I am deeply grateful. Those who have come here for the first time, please check the description. You will get to know what we do here, what my name is. And without wasting much time, let's quickly start the stack. It is a very important pattern. It is not a big topic, but it is a very big pattern. There are a lot of questions in it. If you see the pattern sheet, you will feel that there are a lot of questions in the stack when compared to sliding window or merge interval or prefix or anything. There are a lot of questions in the stack. That's why it is very important to read it."
+  },
+  {
+   "start": 29.86,
+   "end": 59.68,
+   "text": "It is a very simple thing, a very small thing. So what is the meaning of stack? If you want to find the meaning of stack in Hindi, then what will you get? In Hindi, stack means a lot. It means one on top of one, one on top of one, one on top of one. For example, if you are keeping books on the table, you put one book on top of it, one more book on top of it, one more book on top of it, then we call it stack. Stack of pancakes, stack of books, like this. Okay? So what is the specialty of stack? Why are we doing this? We already had an array, we already had a linked list, so why did stack come?"
+  },
+  {
+   "start": 59.68,
+   "end": 88.58,
+   "text": "It is called stack because it is a box. It has only one opening. There is only one way to enter inside. You can do 2-3 things in it. If it is a box, you can store things in it. You can insert things in it. We also call insert as push. Push means to put in the box. You can delete things from here. In the language of stack, it is called pop."
+  },
+  {
+   "start": 88.58,
+   "end": 112.53,
+   "text": "You can see the above one, we will come to that later. Let's assume that you can do two operations for now. But how will you do these two operations? For example, let's assume that your entire box is empty in the beginning. What is your entire box in the beginning? Empty. You want to keep one book in it. You keep your book A1, book 1 here. Its name is book 1. Okay, keep it. You had one more book, but you want to keep one more book."
+  },
+  {
+   "start": 112.53,
+   "end": 142.96,
+   "text": "Now see, the lower part of the box is filled. Don't see that there is space in the left and right. No, there is no space in the left and right. That book is as big as the box. Now if you want to keep another book, then you have to keep it above this book. So you keep it above, no problem. Keep it above like this. What do you keep above? Book 2. If you want to keep another book, then you do book 3. Keep it here. Book 3. Let's go. Now if you want to take out the books, now if you want to take out the books, then remember carefully in which order you had entered the books. You had entered book 1 first."
+  },
+  {
+   "start": 142.96,
+   "end": 168.59,
+   "text": "Then you entered book 2. Then you entered book 3 like this. But because this stack is like a box. Imagine that it is like a box. First you entered book 1 and kept it at the bottom. Above that book 2 and above that book 3. Now if someone tells you to take out all the books one by one. Then what will you do? What will you have to take out first? You will have to take out book 3 first. You can't take out book 1 first. You can't take out book 1 by putting your hand inside."
+  },
+  {
+   "start": 168.59,
+   "end": 198.13,
+   "text": "First of all, you will have to remove the top one. So first of all, you will have to remove book 3. So first of all, what will you remove? You will remove book 3. Okay. Let's assume that book 3 has been removed. Book 3 has been removed. Now what will you remove? Now I have told you to empty the whole box. Now you will have to remove book 2. Book 2. You cannot remove book 1 by putting the hand inside. You will have to remove the top one. Okay. Remove book 2. Remove book 2. Let's assume that you have removed book 2. So the box is a little more empty."
+  },
+  {
+   "start": 198.13,
+   "end": 227.5,
+   "text": "Now you can take out book 1 because book 1 is placed at the top. In one time, you can do only one thing in the stack. You can keep something above the box, you can remove something from above the box. By putting your hand inside, you can't do anything from the side. There is only one opening, only one way in this. To enter or to remove anything is at the top. Pick it up at the top and keep it at the top. Now if you want, you can take out book 1. Now you take out book 1 and see. You took out book 1 and now your stack is empty. Whatever was in your box is empty. So see, look very carefully. You entered in this order."
+  },
+  {
+   "start": 227.5,
+   "end": 257.14,
+   "text": "Book 1 first, book 2 later, and book 3 at the end. But when you start taking out, then book 3 came out first, book 2 came out first, book 1 came out first. Why did this happen? Because book 1 did enter first, but it entered and went down the lowest. If the whole box is empty, then of course, if you put something, it will fall down the lowest. After that, what you will put will be above that. The last thing you put will come up the highest. So the thing that will be at the top will come out first. That's why, that's why, stack is such a data structure, such a data structure which we call last in, first out."
+  },
+  {
+   "start": 257.14,
+   "end": 283.09,
+   "text": "Or first in, last out. What does this mean? The thing that goes first will come out later. The thing that goes last, like book 3 went last, will come out first. This is the specialty of this type. But why do we need this? This is a stupid type of data structure that it will be upside down. Why do we need it upside down? We need it. You need this in a lot of questions and things."
+  },
+  {
+   "start": 283.09,
+   "end": 312.86,
+   "text": "For example, the best question is that if you want to reverse a string, you can see that it has been reversed. First it was 1, then 2, then 3, in the order in which you entered. But when you took it out, first you got 3, then 2, then 1. It is a very basic question. There may be a question in the sheet, but it is a very basic question. If you have a string A, B, C, someone tells you to reverse it. No problem, you make a tag, make a box. And enter all the string letters one by one. First enter A."
+  },
+  {
+   "start": 312.86,
+   "end": 335.78,
+   "text": "A will go down. Enter B, B will come on top of it. Enter C, C will come on top of it. String is finished. Now, take out the letters one by one and start making a new string. First, take out C, C. Then take out B, B. Then take out A, A. See. String is reversed. So, in the start, whenever you enter the whole thing in the start and take it out, the whole thing gets reversed. What happens? Reverse."
+  },
+  {
+   "start": 335.78,
+   "end": 364.9,
+   "text": "If you insert 1, 2, 3, 4 and remove it, it will become 4, 3, 2, 1 and it will not remain 1, 2, 3, 4. It will be completely reversed. Exactly. It will reverse exactly. So, this is the use case. So, this tells us that there is some use case. So, this is called stack. Now, in stack, as I told you, you can do a few things. You can do very limited things. That's why it is very easy to understand and implement it. It is very easy to write. There is stack in C++. There is stack in Java also. You will get stack in every language. It is made. You can do 2-3 things in it."
+  },
+  {
+   "start": 364.9,
+   "end": 390.72,
+   "text": "You can push in it. Push means to keep something above. We will keep it above, we can't keep it anywhere else. You can't tell in push that in the fourth position, no, it doesn't work like that. Suppose whatever your stack is, stack is just like array or linked list, it has its own data type. You will have to tell from the beginning that what kind of data type the stack is storing. Means this whole box can keep only integer or can keep only character or can keep only vector, anything."
+  },
+  {
+   "start": 390.72,
+   "end": 420.24,
+   "text": "Anyone can keep one thing, any one type of thing. Integer and character can't be put together. In the same box, sometimes integer is put, sometimes character is put. This doesn't happen. Either integer is put or character. Assume that you want to make an integer type stack. So you can give some value during push. Any value, any integer value, you can give push 10. So what will happen with this? 10 will come at the top of the stack. At the top. What else was there? We don't know. 10 will come at the top. So this is called push. We call this push. In stack, it is called push. We don't call it insert. We call it push. Okay. Pop."
+  },
+  {
+   "start": 420.82,
+   "end": 448.4,
+   "text": "What does pop mean? Just opposite, the thing on top of the stack will be deleted. You will not get it, it will be deleted. If your stack looked like this, suppose 9, 10 and 4. If you said pop, nothing will happen, this 4 will be deleted. The next thing you can do is top. What does top mean? Top means to see. In Java, it is called peak. Peak means to see. Top means to see."
+  },
+  {
+   "start": 448.4,
+   "end": 476.75,
+   "text": "What does pop mean? Pop means that it has been removed. Top means don't remove it, just check what is there in the top. So, when you do it now, suppose you have popped 4, it doesn't matter. Now, when you say show me the top or the peak, it will show you this 10. It gives you an answer. If you want to see the top of the stack, it gives you an answer. You can print it, you can use it, you can do anything with it. And there are some general things like size."
+  },
+  {
+   "start": 477.36,
+   "end": 504.74,
+   "text": "What does size tell you? How many elements are there in the stack at this time? If there is no element in the stack, then it will tell you 0. If there is an element at this time, then it will tell you 2. How many elements are there in the stack? Size tells you. Same like vector size or array size or someone else's size. And what is empty? Empty. What is empty? Empty gives you a Boolean variable. What? Boolean gives you that whether the stack is empty or not. If it is empty, then it will say true. If it is not empty, then it will say false."
+  },
+  {
+   "start": 504.74,
+   "end": 534.62,
+   "text": "You can also check the size of the empty. If its size is zero, then it is empty. If its size is bigger than zero, then it is not empty. So size or empty, remember one thing, your work will be done. But these three things, these three things are very important. What? Push, pop, top. There are only three. There is not much operation in this. There is not much play, sorting and all this. There is just a very simple, innocent man in this. He says, you push something. If you push something, then keep it on top of me. Pop, remove the top one. If you want to see the top, then see the top one. Write it in your notebook and don't do anything else. This is the stack."
+  },
+  {
+   "start": 534.62,
+   "end": 561.68,
+   "text": "Now, we are reading this in DSA pattern, so we need to know what kind of question it is. So, first of all, let's see the flowchart and template of this. In what kind of question you should start thinking about the stack. So, first of all, some items are given to you."
+  },
+  {
+   "start": 562.93,
+   "end": 588.93,
+   "text": "What is the meaning of items? There are some things. Now, items can also be an array. There can also be items in an array. It will say that there are many items in an array. Very good. It can also be in a string. It is in both. It means that items are in both. There are items in an array and in a string. Okay. If your question involves this thing that you have to see left to right items. Left to right items. It means that suppose you have an array. You have to see it left to right. If the question is like this. Or, or, or."
+  },
+  {
+   "start": 588.93,
+   "end": 619.15,
+   "text": "You are getting an intuition or it is written in the question that you have to work with the most recent element. With which? Remember very carefully that this is the concept of stack. Most recent element. You have to work with the most recent element. In this kind of question, stack is used. What is the meaning of most recent and what is the meaning of stack in most recent? Look very carefully. Most recent means when you are looking left to right, then"
+  },
+  {
+   "start": 619.15,
+   "end": 650.88,
+   "text": "Most recent, whatever element you see, we call it the most recent. And this thing is very good in stack. When we will talk about it further, we will talk about it in more depth. But now you assume that whenever you feel that most recent, means next greater, previous one, previous one, smallest, whatever. If it is like this, then you have to use stack. Okay. If, if, in question, this is one type. If in question, there are things like matching. Matching. Or cancelling. Cancelling. Or."
+  },
+  {
+   "start": 650.88,
+   "end": 676.14,
+   "text": "Cleaning. I have written things like this. Meaning, if someone asks you to match and see if everything is matching or not. Cancel one type of item. If someone asks you to cancel one type of event like this. Clean up. In this type of question, stack is used. In its example, we will look at it very carefully. So, stay tuned. Okay. In the question of reverse, generally it is used."
+  },
+  {
+   "start": 676.14,
+   "end": 705.89,
+   "text": "Involving something in reverse, means in any type of question, stack can be used. One thing you have seen that you can use stack to reverse. It is not necessary to use it, but you can do it if you want to do it. Okay. And stack is also of three types. Stack is also of three types. This is what will be in the question, but stack is also of three types. Now you will say that no, stack is stack. Yes, it is stack, but generally three types of stack are there. Three types of."
+  },
+  {
+   "start": 705.89,
+   "end": 734.86,
+   "text": "Now if you are not able to understand the whole thing, then you will be able to understand everything question by question. This is just an introduction class that what happens. We have seen three types of stack. One is simple. One is simple means, in push and pop, do push, pop, whatever you want to do, do it. So simple, there is no such speciality in this stack. There is a simple stack, a simple box. Do push, pop, top, whatever you want to do. The second is monotonic. What? Monotonic. What does monotonic mean?"
+  },
+  {
+   "start": 734.86,
+   "end": 764.38,
+   "text": "If you keep pushing, your stack will keep on growing. For example, A will come, then B, then C, etc. You have to maintain a monotonicity. What does monotonic mean? What does monotonic mean? Monotonic means increasing or decreasing. Increasing or decreasing. Someone says that my life has become very monotonous. Monotonous means either increasing or decreasing. Not the other way around. In a way, it's a sorted order. When you have to maintain a sorted order in the stack, for example,"
+  },
+  {
+   "start": 764.38,
+   "end": 787.94,
+   "text": "If you are maintaining a stack like this, you can also make a stack like this, you can make it vertically as you feel comfortable. For example, you put 2, you got 4, you got 6, you got 8. Look at its numbers very carefully. 2, 4, 6, 8. What is this? It is monotonically increasing. We call it monotonically increasing. It is increasing. It is not happening that 2 came, 4 came."
+  },
+  {
+   "start": 787.94,
+   "end": 817.76,
+   "text": "Then 5 came and then 3 came. So it broke. 2, 4, 5 and 3. So it became like this. No. Either increasing or decreasing. This is called monotonic stack. This is a type of stack. What is the third type of stack? The third type is greedy. Greedy. Greedy stack. Greedy stack is just like monotonic. But in monotonic, because we are picking numbers that it will be a sorted order. In greedy, it is possible that to decide increasing or decreasing, you should not take the help of numbers. You should take the help of the condition given in the question."
+  },
+  {
+   "start": 817.76,
+   "end": 832.69,
+   "text": "take the help of condition let me tell you what it is in monotonic, if you are pushing a number then you will see whether the number should be increasing or decreasing then you will know whether the number is bigger or smaller than 2,4"
+  },
+  {
+   "start": 832.69,
+   "end": 854.1,
+   "text": "Greedy means just like monotonic, there is a monotonicity maintained in it, but it can't be done according to the number. It can be done according to the condition of the question. In the condition of the question, you might have been told that something is an item. We are saying again and again that this is a game of items. There are many items that you have to process. So, it is possible that in the question, you might have been told that this type of item is superior to that type of item. Right?"
+  },
+  {
+   "start": 854.1,
+   "end": 883.81,
+   "text": "For example, in the question, there are many processes of the operating system, i.e. there are many processes P2 and P3. It is possible that it will say that the priority of P2 is more or the priority of P3 is more or you have to check. According to that, you have maintained monotonicity. So, it is possible that it is not normal sorting, but we can call it greedy stack or greedy monotonic. So, this is the third type of stack. Now, there is a universal template to solve any stack question. What have you learned so far? What kind of questions will be asked? That will be cleared gradually."
+  },
+  {
+   "start": 883.81,
+   "end": 914.05,
+   "text": "How many types of stack are there? This must be clear. What is a universal template? Universal template is for stack, for stack questions. What is a universal template? Okay. What do you have to do in the stack? In the stack, you can't do that all the items are there. First of all, you have to look at the items. First of all, you have to look at the items. Okay. So, you can't do that by pushing all the items, then popping all the items, then all the items will be reversed. You don't have to do that."
+  },
+  {
+   "start": 914.05,
+   "end": 943.41,
+   "text": "You must have given some condition, right? You must have given some condition. So what do you have to do? So if you have given a condition, for example, like this, item 1, item 2, item 3, item 4, like this. Suppose you have to process it from left to right. From left to right. You have to process it from left to right. If you get item 1 or any item for that matter, then you have to take a decision. What decision do you have to take? That when to pop? When to pop?"
+  },
+  {
+   "start": 943.47,
+   "end": 970.45,
+   "text": "when to pop and what to pop and what to pop. What does this mean? If you have any item, then you will already have a stack available. You have a stack available and assume that there will be some items in it, whenever you go ahead. So, you have to take a decision that what will pop by the arrival of this item and when will it happen? Who has to pop by the arrival of this item? Because if it pops, it will be from here. If it pops, it will be from the top."
+  },
+  {
+   "start": 970.45,
+   "end": 996.18,
+   "text": "You have to take a decision that what will pop when this item comes and till when it will pop. You have to take this first decision. This is not something to remember. You will understand this question by question. You will have to take a different decision in every question. The next decision. This pop condition is the most important. If you understand this, then you will understand everything. What is the next decision? When to push."
+  },
+  {
+   "start": 996.91,
+   "end": 1027.31,
+   "text": "Suppose, when i3 comes, then i3 pops some things, then the stack is in a particular condition. Now, do we have to push i3 or not? When do we have to push i3? Do we have to push or not? That is also a decision. And how much do we have to push and when do we have to push? So, this is when to push. After this, what you have to do is to store the result according to the question. You have to store the result. We know that he is not making sense right now."
+  },
+  {
+   "start": 1027.31,
+   "end": 1048.43,
+   "text": "No problem, because we haven't seen any question. Many people have heard of stack for the first time in their life. But these are the three decisions. Why these three decisions? Because there is nothing else in the stack. In the stack, there is pop and push. Top means you just have to see. Remove the top. So in the stack, let's assume that there are only two things. Either you push or you pop. So in these two, you will have to make a decision that any item, by the arrival of any item,"
+  },
+  {
+   "start": 1048.43,
+   "end": 1071.28,
+   "text": "what to pop, what items to pop earlier and how many items to pop means all of them to be popped or a little bit to be popped or one to be popped or not to be popped all of them and to push this new item or not to push why to do it means what will happen after pushing and according to that you have to store some results, right? so you can consider this as a template of any stack question"
+  },
+  {
+   "start": 1071.28,
+   "end": 1102.26,
+   "text": "We will start looking at the question and it will get more clear, so we will look at the question too. So see, the most simple question will be that reverse the string, we think you know it. How will we do it? Let's see, it's okay, let's see it once, it's a very simple question. That you have given a string, what string is given? A, B, C, you have to reverse it. Now you can reverse it with a two-pointer, you can also run the reverse function, because we are reading the stack, so let's see it once. We will make a stack of whose? What type of stack will be made? Of character, because see,"
+  },
+  {
+   "start": 1102.26,
+   "end": 1129.17,
+   "text": "The whole stack is based on items Not on individual things, items, a lot of items So if you look carefully, there are items here A is an item, B is an item, C is an item So all the things are items, okay? So for an item, make a stack like this After doing one by one, what did we say? In the stack, you will put anything completely And then if you take out everything completely, that thing will be reversed Means if you put 1, 2, 3, 4, it will come out 4, 3, 4 Means if you put potatoes, it will come out gold, like this Now put it"
+  },
+  {
+   "start": 1129.17,
+   "end": 1158.74,
+   "text": "First of all, put A. There is nothing in the stack right now. So, as soon as you drop things at the top, imagine that it will fall down. A fell down. Put B. B fell down above A. Put C. C also fell down a little above B. Now start taking out one by one. Start taking out one by one. C became. B became. A became. That's it. How to write its code? Its code is very simple. You will be given a function. For example, string fun."
+  },
+  {
+   "start": 1158.74,
+   "end": 1188.61,
+   "text": "And you are also given a string str. You don't have to do anything, you have to make a stack by doing this. In C++, look at each line of Java and Python to see how your stack is made. Let's make a stack of char. Let's give it a name, st. What does this mean? This is a stack, this is your... This is a keyword, don't keep the name of the stack variable. Stack means a keyword, just like a vector, it is a stack. What does this char tell you? Same, just like we used to make vector int, we used to make vector int a, stack char st, that's it. Take an int i."
+  },
+  {
+   "start": 1188.61,
+   "end": 1204.83,
+   "text": "and run a loop. Usually, you have to process the items from left to right. If you have a string, you have to process the letters. If you have an array, you have to process the array indexes from left to right. And you have to consider everything as an item. Like this. i less than n, i plus plus."
+  },
+  {
+   "start": 1204.83,
+   "end": 1230.42,
+   "text": "and in this we have said that you have to take two decisions, pop and push so in this we don't need to pop anything means in this you need the reverse of the whole string, you don't have to take out anything in between so you don't have to pop anything in this question you just have to push every item without thinking so this is a very basic question of the stack without thinking, st. push what you have to push, you have to push that letter si if you push then that's it now your stack is looking like this"
+  },
+  {
+   "start": 1230.42,
+   "end": 1252.7,
+   "text": "Now your stack looks like this, but how will we remove things from the stack? We did something, how will we remove? So what did we learn to remove? Top, top, it will come out from the top. The whole stack cannot be empty at once, it comes from the top. So whenever you get such a stack and you feel that you need to remove things one by one, then you can write such a while loop. While, this means st.empty, this means stack is not empty."
+  },
+  {
+   "start": 1252.7,
+   "end": 1282.93,
+   "text": "It means that when something happens in the stack, we will remove it. If the stack gets empty, how will we remove it again and again? We can't remove it. It means that while stack is not empty. Not means empty. Okay? And what did we say? You can always see the upper thing. You can't see the middle thing. And what is stored in the stack? The stack is of character type. Take one like this. char c is equal to st.top. With this, you have seen the upper thing. That thing is still there. But once you have seen it, you can pop it. Now you can pop it."
+  },
+  {
+   "start": 1283.18,
+   "end": 1305.54,
+   "text": "Pay attention, you have to do it in the same order, first you see the top, then you pop it, first you pop it, then you see the top, then you see the next one, you will not be able to see it, first you will see it, then you will remove it from there, you have seen it, you have kept it, okay. Now you take another string, res, and what do you do? res dot push back c, and close it, what will it do?"
+  },
+  {
+   "start": 1305.54,
+   "end": 1335.71,
+   "text": "It is slowly emptying your stack. It is slowly emptying your stack. One by one. The one at the top looks at the top and then removes the top. The size of your stack gets reduced. It looks at the top and removes the top. Then its size gets reduced again. By doing this, the stack will empty slowly. Now you don't do anything. Return. Rest. This is one of the most basic questions in the stack. This question is very basic. This question is just for this work. So that you get some confidence in the stack. From tomorrow,"
+  },
+  {
+   "start": 1335.71,
+   "end": 1358.22,
+   "text": "we will start looking at all the questions and we will look at the intuition of the stack. See, the most important thing in the stack is that it is easy. Once you know that it is a stack question, then it becomes easy. Because what is more? There is only push-puff. But we don't know. I mean, we don't know at all that it is a stack question. We still don't know that it is a stack question. And the biggest problem is in this. Because the question of sliding window was immediately known."
+  },
+  {
+   "start": 1358.22,
+   "end": 1388.18,
+   "text": "The question of the cadence was also known, the prefix was also known because it was asked in the morning. By doing something about the two-pointer, we had made a rule. Everything was known in the merge interval. But in the stack, it is not known that it is a stack question. By the time you know, it will be too late. It needs to go deeper and understand that when is the stack applied? When do you have to think about the stack? Because if you don't know that the stack is being applied, then how will you apply the stack? It is easy to apply the stack, it is difficult to know. So please see it completely. At least the stack pattern has a lot of consistency."
+  },
+  {
+   "start": 1388.18,
+   "end": 1417.52,
+   "text": "watch carefully after going home today make this basic question of stack at least you should have an idea of push, pop, top each line of java will change its syntax not much how to declare it will change it may be the syntax of push will change you will use insert the syntax of pop will change you will use delete the syntax of top will change you will use peak the rest of the things will remain the same so do it like this ok and from tomorrow we will also enter into the stack last in first out so we will also"
+  },
+  {
+   "start": 1417.52,
+   "end": 1420.82,
+   "text": "We are going to do deep dive in the stack. So, let's meet tomorrow."
+  }
+ ]
+}

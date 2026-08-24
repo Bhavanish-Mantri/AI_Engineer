@@ -1,0 +1,109 @@
+{
+ "video_id": "n7v0SokbF4I",
+ "title": "DSA PAtterns Episode 9 | Two Pointers Pattern: Complete Revision in One Video",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 574,
+ "segments": [
+  {
+   "start": 0.5,
+   "end": 28.42,
+   "text": "Welcome to the 2 pointer revision. I am very happy that we have read the 2 pointer pattern. This is a very useful lecture for those who were reading from the beginning. For those who are watching this channel for the first time, you can check the playlist on the 2 pointer pattern. We have learned the answer to this question in great detail. By putting 4-5-6 videos, by doing question by question, by understanding. But in this revision video, let's quickly understand the answer to this question. When to use 2 pointer?"
+  },
+  {
+   "start": 28.42,
+   "end": 57.36,
+   "text": "The purpose of this whole series is that you don't remember the question. You don't do that that if I have done 5 questions, then 5 questions will not be 6th from you. The purpose of running this series is that if you do 5 questions, then after that 50 questions should be made by yourself. Which are on the same pattern. Okay. First of all, when to use two pointers. So first of all, let's see that flowchart. Flowchart is very important. That by looking at any question of the lead code, how will you find out whether two pointers will be used or not."
+  },
+  {
+   "start": 57.52,
+   "end": 88.48,
+   "text": "First of all, it should be an array question. It should be an array or a linked list question. Till now, all the questions we have done, have you seen that we have done a graph question, or a tree question, or a stack question? No, we haven't. Why? Because it doesn't fit. The next thing is, either already sorted, or, sorting will make it easier. Sorting will make it easier. It will make it easier. This should happen. Or,"
+  },
+  {
+   "start": 88.48,
+   "end": 119.74,
+   "text": "Question me likha ho, rearrange karo bhai. Question me likha ho, kya likha ho, rearrange karo. Ya, remove, duplicate karo bhai. Remove, duplicate karo. Ya, merge in place karo bhai. Merge in place karo bhai. Ye ya to question me likha ho. Ya fir, ya fir, ya fir. Question me ho, find more than one thing. Find more than one thing. Find."
+  },
+  {
+   "start": 119.74,
+   "end": 152.94,
+   "text": "More than one thing means pairs or triplets or quadruplets. Write this in the question. So, see this. First of all, it should be the question of array or linked list. After that, either it is already sorted or sorting will make the work easier. If there is such a situation. If it is written in the question, rearrange, remove, duplicate, merge in place, till here sub-arrays. Sub-arrays. Sub-arrays. Write this also in the question."
+  },
+  {
+   "start": 153.3,
+   "end": 180.13,
+   "text": "Either you have to find more than one thing in the question, which means you have to find a pair, or you have to find triplets, or you have to find four things, or you have to find five things, like that. I am not talking about finding a vector, if you have to find a vector, then that is a different thing, but more than one means you have to find a pair, brother. Find only two numbers. Find two, find three, find four, like this. So if you have to find more than one thing, then in all of these, somewhere,"
+  },
+  {
+   "start": 180.13,
+   "end": 211.28,
+   "text": "You can think of two-pointer. If there is any question of this type, then there is a 90% chance that it will take two-pointer. Question by question, I will explain to you how it will take. What was the first question? Two-sum. What were the points in two-sum? It was an array question. It was not sorted, but there is a benefit of sorting. Those who have not seen the videos, please watch all the videos after taking time. Only then you will understand what we are telling you here. Now, there is a benefit of sorting, right?"
+  },
+  {
+   "start": 211.28,
+   "end": 244.74,
+   "text": "And we had to find a pair. We had to find a pair. You can see three things in this upper flowchart. That's why it was a two-pointer. Threesome. Why was threesome a two-pointer? First of all, it was an array question. Sorting it would have been easier. Sorting it would have been easier. And we had to find triplets. Yes, yes, triplets. We had to find them. We had to find them. And this was just like twosome. This was loop."
+  },
+  {
+   "start": 244.74,
+   "end": 272.93,
+   "text": "plus 2sum. So, if 2sum was a 2-pointer question, then 3sum was naturally a 3-pointer question. In all 3sum questions, we saw the same algorithm, same logic, same decision tree, right? Then what was it? Square, sorted array, square. Now, if you look from above, you will say that in this, first of all, the question of array is correct. It is sorted. Okay."
+  },
+  {
+   "start": 272.93,
+   "end": 298.22,
+   "text": "But now you will say that there is nothing in this. But, but, but, those who watched this video, watched the whole video, they knew that this question was actually, this question was actually of merge to sorted array. Merge to sorted. It was of sorted array. See, everything is indicating that this is a two-pointer question. It is a two-pointer question. If you have not seen the series, then please see, you are missing a lot, okay?"
+  },
+  {
+   "start": 298.22,
+   "end": 329.55,
+   "text": "Because this is nothing. This is not even 2% of the whole syllabus. 98% work has been done there. What was the next question? Remove duplicates. Remove duplicates. This was simply told to you. It is an array question. Array is also sorted. Array says remove duplicate. The name of the question is remove duplicate. Remember the flowchart. It is simply known that it is a two-pointer question. Is it right?"
+  },
+  {
+   "start": 329.55,
+   "end": 360.08,
+   "text": "What else? What else did we see? Dutch national flag. Yes, this is good. Dutch national flag. Now this was the question of array. It was not sorted. It was not sorted. It has to be sorted but it was not. And it has to be rearranged. Array had to be rearranged. All 0, 1, 2 had to be brought in this format. So it had to be rearranged and it had to be in place. It had to be in place. In place. No space."
+  },
+  {
+   "start": 361.07,
+   "end": 385.17,
+   "text": "No space. These three things together tell you that it was a two-pointer question. Did we do something else? Not yet. We will do it later. Now see, all the questions we have done, it is not that I had in mind that it is a two-pointer question, that is why we will keep them. All these questions, what is common in all of them? Array is common. See, all the array questions are common."
+  },
+  {
+   "start": 385.58,
+   "end": 415.15,
+   "text": "It is beneficial to sort some, it is easy to sort some, some are already sorted, some are already sorted, some have to be sorted. So array, always remember one thing. Array and, what is the name? Sorting. Array and sorting. Array plus sorting. This is a very big indication. This is one of the biggest indication. Array plus sorting in 2.10. Okay? If it is not sorted, then rearrange. Rearrange."
+  },
+  {
+   "start": 415.15,
+   "end": 445.14,
+   "text": "remove merge with these you have to say in place in place means no extra space so this is the second biggest indication this is common to you so these two points these two points these two points this point and this you will get common in every type of question we have more than 5 I think there will be 7-8 questions in total in every question you will get the same thing common so now with my hope you must have understood when two pointer is used ok"
+  },
+  {
+   "start": 445.14,
+   "end": 474.11,
+   "text": "And yes, in all the questions, we have seen all types of movements. What is the meaning of two-pointer? One is left, one is right. So we have seen such questions where low was plus plus, high was minus minus. In which? In two-sum. Yes, two-sum, three-sum. This used to happen in both. We have seen such questions where low was plus plus, high was also plus plus. What are we talking about? Remove duplicates. Yes."
+  },
+  {
+   "start": 474.11,
+   "end": 504.1,
+   "text": "CM and officer used to move forward at the same time. Remove duplicates and merge in sorted areas. Merge in sorted areas. Both of them move forward. Both of them are plus. We have seen such questions where there were three pointers. Low, mid, high. In which? What are we talking about? Dutch. Dutch. Dutch. Dutch national flag. Dutch national flag. Dutch national flag. So, we have seen every type of movement in this playlist."
+  },
+  {
+   "start": 504.1,
+   "end": 532.88,
+   "text": "Now, what do you have to do if your revision is done? What is your work for tomorrow? First of all, do submit all the questions. Okay, it won't just be by watching the video. Do submit them. The sliding window is going to start from tomorrow. Sliding window. Which is a subset. Which is a subset. Subset of... Whose subset is it? Two-pointer's. Two-pointer in sliding window. If I tell you in simple terms, then..."
+  },
+  {
+   "start": 532.88,
+   "end": 559.65,
+   "text": "This case of two pointer is called sliding window. There is a window in it. High is here and low is here. High goes this way and low also goes this way. This is called window shrinking. Sliding means it will keep shrinking. Sometimes it will be such a big window, then it will be so big, then it will be so big. It keeps sliding like this."
+  },
+  {
+   "start": 559.65,
+   "end": 571.82,
+   "text": "Anyway, we will know about this when we will learn about it. But I hope that you have understood this two-pointer very well. One of the most basic and most fundamental patterns you have understood. Congratulations to everyone very well."
+  }
+ ]
+}

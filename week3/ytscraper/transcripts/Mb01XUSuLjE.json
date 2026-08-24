@@ -1,0 +1,479 @@
+{
+ "video_id": "Mb01XUSuLjE",
+ "title": "2 Of The Most Important Questions in Dijkstra's Algorithm | Graph series DSA Patterns 2026",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2594,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 22.7,
+   "text": "Today we are going to do two questions on Dixra and yesterday, I mean yesterday, the last video was on Dixra, it's a very good video, it's a very detailed video, so obviously you will have to watch that before watching this, but we missed one small thing, it's my mistake, it's not a small thing, it's a very important thing, we missed a very important thing of Dixra, we will clear that too, and today we will do two questions."
+  },
+  {
+   "start": 22.7,
+   "end": 48.75,
+   "text": "The first question is super easy, means for those who have seen Dijkstra, it is super easy. For those who have not seen it, it is very hard for them. The second question is also easy, there is a twist here and there, there is a twist at the end of the line, the rest is also easy. Let's go. So the one thing that was left out yesterday, see yesterday's first and then come. Tomorrow we will explain you completely how Dijkstra works, how Dijkstra works, how Dijkstra works, how Dijkstra works, how Dijkstra works, how Dijkstra works, how Dijkstra works, how Dijkstra works, how Dijkstra works, how Dijkstra works, how Dijkstra works, how Dijkstra works, how Dijkstra works, how Dijkstra works,"
+  },
+  {
+   "start": 48.75,
+   "end": 76.69,
+   "text": "Imagine a scenario. Yesterday we talked about the map that you have Ranchi, Bangalore, Delhi, etc. So you have a single source, that is, if you want to extract all the cities from Ranchi, then how will you do it? Imagine this map once. Imagine that there is Ranchi here. You have to extract everyone from Ranchi. One is that a road goes from Ranchi to Bangalore. It's a good thing. It used to go yesterday too, so it's not a bad thing. A road goes from Bangalore to Delhi."
+  },
+  {
+   "start": 76.69,
+   "end": 105.95,
+   "text": "And if a road goes from Delhi to Ranchi, then it is a cycle. You can go from Ranchi to Bangalore, from Bangalore to Delhi, and from Delhi to Ranchi. Now, the kilometer of the road, notice one thing, the kilometer we took yesterday, the whole kilometer was positive. Why? Because distance is not negative, the kilometer is positive. But, the lead code can do anything, the lead code does not accept this. Suppose, hypothetically, you are told that the distance from Ranchi to Bangalore,"
+  },
+  {
+   "start": 105.95,
+   "end": 134.22,
+   "text": "How much is it? Not 5 km, but minus 5 km. Okay, let's assume that anything can happen in a question. The distance from Bangalore to Delhi is 1 km. And the distance from Delhi to Ranchi is also 1 km. Okay, is this possible? Absolutely. Yesterday also we did the same thing. Yesterday there was an exception that it was not minus 5. Okay, it will be 5 or something else. But what we are saying is, imagine such a map by mistake. From Ranchi to Bangalore is minus 5. This is 1 and this is also 1. Okay."
+  },
+  {
+   "start": 134.8,
+   "end": 157.44,
+   "text": "Now, how do we know the distance from Ranchi to Ranchi? We say that whatever happens, the distance from Ranchi to Ranchi will be zero. Obviously, if you are in Ranchi and you have to go to Ranchi, then how much distance will it be? Zero. But, but, but, see what will happen now. For now, we used to consider the distance of Bangalore as infinity and the distance of Delhi as infinity when we used to start. What was the process?"
+  },
+  {
+   "start": 157.44,
+   "end": 180.24,
+   "text": "We used to catch Ranchi because it is the shortest distance and we used to relax it. We used to relax all its neighbours. What did it mean? If there is a road to its neighbour and it has some weight, then we used to join these two and see if it is less than infinity or not. If it is less than infinity, it means that we have got a good distance and we used to relax Bangalore. Let's see what happens."
+  },
+  {
+   "start": 180.24,
+   "end": 205.92,
+   "text": "Pick up Ranchi. Where does the first road of Ranchi go? Bangalore. What is the weight of the road? What is the distance of the road? Minus 5. Do it. 0, which is the distance of Ranchi, is an obvious thing. Minus 5, you will have to go to Bangalore. So, what is the distance of Bangalore? If the distance from Ranchi to Ranchi is 0, and the distance to Bangalore is minus 5, then how much is the distance to Bangalore? 0 minus 5 is equal to minus 5."
+  },
+  {
+   "start": 205.92,
+   "end": 235.62,
+   "text": "Is minus 5 less than the current infinity? Absolutely less. So what will we do? We will relax Bangalore. We did it yesterday too. So we will relax Bangalore. And see the distance of Bangalore is minus 5. Bangalore's distance is minus 5. Because Dixitra does this only. Okay. Relax Delhi from Ranchi. If you do Delhi from Ranchi, then you will find that there is 0 distance from Ranchi to Ranchi. And the weight of going from Ranchi to Delhi is 1. So 0 plus 1 which comes to be 1. Is this 1 less than infinity? Absolutely less. So we will relax Delhi too."
+  },
+  {
+   "start": 235.62,
+   "end": 265.01,
+   "text": "What did we do to Delhi? We wrote 1 after relaxing. The work of Ranchi is done. Now, because you relaxed Bangalore, there was a good weight on Bangalore from infinity to minus 5. Now we will relax Bangalore again. The work that happened with Ranchi, we will do the same work with Bangalore. See what will change in this. See very carefully. Bangalore is minus 5. Bangalore is minus 5. How many roads come out of Bangalore? Two roads. One towards Ranchi and one towards Delhi. See. Look very carefully at the road coming towards Ranchi."
+  },
+  {
+   "start": 265.39,
+   "end": 293.97,
+   "text": "How much is the distance of Bangalore itself? Minus 5. How much is the weight of the road from Bangalore to Ranchi? Minus 5. Combine these two. What will it become? Minus 10. Compare this. Is this minus 10 less than the distance of Ranchi now? Yes. Because where did you start the distance of Ranchi? From 0. When you used to take positive weight, then what will be less than 0? But now because here negative weight has become,"
+  },
+  {
+   "start": 293.97,
+   "end": 319.98,
+   "text": "So, you think that the distance to Bangalore is minus 5. A road from Bangalore to Ranchi goes which is minus 5. So, what is the new distance of Ranchi? Minus 5 plus minus 5 which is minus 10. Now, let's see or Dixra sees that this minus 10 is less than 0. So, should we relax Ranchi? Yes, we should. So, what will he do? He made Ranchi minus 10. Here, he made Ranchi minus 10. This is where the game got spoiled. Let's see how it got spoiled."
+  },
+  {
+   "start": 319.98,
+   "end": 349.58,
+   "text": "Now, one more road from Bangalore to Delhi. So, minus 5 and 1. How much is it? Minus 4. Is this minus 4 less than the current distance of Delhi? Absolutely less. So, relax Delhi too. Relax Delhi too. Minus 4. Bangalore's work is over. But, but, but. Now, Ranchi is 0 to minus 10. You will have to relax Ranchi. Then, you will have to relax Ranchi. How will you do it? Two roads come out of Ranchi. Minus 10 and minus 5. How much is it? Minus 15. What is minus 15?"
+  },
+  {
+   "start": 349.58,
+   "end": 372.85,
+   "text": "Is Bangalore smaller than now? Yes, it is. Minus 15 is smaller than minus 5. See, he relaxed Bangalore again. He relaxed Bangalore again. He will do the same in Delhi. See. Minus 10 and 1. What comes out? Minus 9. Is minus 9 smaller than minus 4? It is absolutely smaller. See. He did minus 9 here. Ranchi relaxed. Now, relax your case."
+  },
+  {
+   "start": 372.85,
+   "end": 396.38,
+   "text": "Relax Bangalore again. Relax Bangalore. This minus 15 and minus 5. Ranchi will relax again. This cycle will never stop. The more you run Dixitra, the more you will get small weight. Why? Because weight has become negative. Distance has become negative. Your Dixitra will never stop. Your Dixitra will keep running. Why?"
+  },
+  {
+   "start": 396.38,
+   "end": 426.27,
+   "text": "Because he will get good distance again and again. Who thinks Dixitra is good? He thinks Chote is good. The more you run it, it will get stuck in the loop. Once Bangalore will relax, Ranchi will reduce. Once Ranchi will relax, Bangalore will reduce. And it will never stop. This Dixitra went in your infinite loop. That's why, that's why, it's very important. Whenever, whenever negative weights are involved, negative weights are involved in your graph,"
+  },
+  {
+   "start": 426.27,
+   "end": 455.34,
+   "text": "negative weights involved, then what do you have to do? Do not use Dijkstra. Do not use Dijkstra. Dijkstra does not work. Dijkstra gets stuck. He does not understand. Why? Because the more he relaxes, the smaller weight he will get. So in the last video, your heap will never be empty. He will go to Bangalore again and again. Then he will come to Ranchi. Then he will come to Bangalore. Then he will come to Ranchi."
+  },
+  {
+   "start": 455.34,
+   "end": 479.92,
+   "text": "Remember, whenever you get a question of graph, the shortest path from single source to all, but it is written there that weights can be negative. Don't use Dijkstra even if you forget. Don't use Dijkstra even if you forget. For that, there are more algorithms. Bellman-Ford, Floyd-Warshall, all that will come forward. But if you see that the weight is negative,"
+  },
+  {
+   "start": 479.92,
+   "end": 507.78,
+   "text": "You don't have to think about Dijkstra at all. Dijkstra will not work. You will get stuck. So this was a very important point that was left. Now I have told you. So this is a very good sign that you have to take Dijkstra or not. If there is a negative weight, you will not take it at all. If there is a positive weight. If all the weight is positive and you know a single source. That you have to go somewhere from a single source. Many times it happens that you don't know. If you are told that every node can't be the distance of every node. If."
+  },
+  {
+   "start": 507.78,
+   "end": 534.75,
+   "text": "It tells you that there is a single source. You have to go somewhere from that. Either you have to go to one note or you have to go to all the notes from that. So, what can you apply? You can apply Dijkstra with great pleasure. Provided that the weight is not negative. Okay? Let's move ahead. You will understand better. Let's go. So, see, as we have told you, the first question is super super easy. I mean, just copy the question from yesterday. Whatever you had read yesterday, whatever code you had written, just pick it up and copy it here. See, but,"
+  },
+  {
+   "start": 534.75,
+   "end": 564.5,
+   "text": "Let me tell you a few things. First of all, what does the question say? You have a network, okay? How many nodes are there in it? N nodes. How many nodes are there? What does nodes mean? How many circles are there? How many vertexes are there? N. Very good. Listen very carefully. This is 1 to N labeled. It means this is 1 to N. Generally, where do we start the vertex of the graph? 0 to N minus 1. What is this? 1 to N. Okay? So, keep this in mind. It will be wrong. I have done it wrong. Okay? 1 to N labeled. Okay. You,"
+  },
+  {
+   "start": 564.5,
+   "end": 592.64,
+   "text": "You are given a times. What is times? What is times? Here, just like you were given edges, what were you given in edges? You were given u, v, weight. What does u, v, weight mean? That u will be a vertex, v will go to an edge and its weight will be w. We are talking about weighted directed graph. What kind of graph is this? Weighted. The first thing is weighted. That's why we are thinking in Dijkstra. It looks like Dijkstra in weighted."
+  },
+  {
+   "start": 592.64,
+   "end": 621.86,
+   "text": "Directed. What does directed mean? If U, V, W is written, then there is an edge from U to V. There is no edge from V to U unless it is written. Whatever is written, you have to consider the edge from U to V. You don't have to make it more than that. If it is from U, then make it from V to U. No. When you make a list from your adjacency, then you have to make it from U to V with weight W. But you don't have to make it from V to U. If there is something from V to U, then we will make it. You don't have to make it from this. Why? Because this is a directed graph."
+  },
+  {
+   "start": 621.86,
+   "end": 650.06,
+   "text": "This is a weighted graph. You just have to do this. You just have to do this. You just have to do this. You just have to do this. You just have to do this. You just have to do this. You just have to do this. You just have to do this."
+  },
+  {
+   "start": 650.06,
+   "end": 678.03,
+   "text": "Minimum time. Minimum time for what? If we start from K, what do we do? Let's say we leave a signal. If we leave a signal and start from K, then minimum time. For what minimum time? How long will it reach all the nodes? How long will it reach all the nodes? How long will it reach?"
+  },
+  {
+   "start": 678.03,
+   "end": 706.69,
+   "text": "you have to return a single value that brother, there is such a graph, we will tell you a source vertex k, okay, and then what you have to do, you have to leave a signal from k, that means you have to start from k, and how much time will it reach all the nodes, that means what time will it be that it reaches all the nodes, so this is the question of boilerplate Dijkstra, whose question is it, it is Dijkstra's question, why Dijkstra's question, I will tell you, first of all, look at weights,"
+  },
+  {
+   "start": 706.69,
+   "end": 735.42,
+   "text": "Are the weights negative? No. When you see its constraint, it will be that no, all the weight is positive. Because what does weight mean here? These times, how much time does it take to go from U to V? So, obviously, time is never negative. So, all the weight is positive. Very good. First one is done. Do you have a single source? Yes, we have a single source. What is given? K is given. Very good. Do you have to reach all the nodes? Do you have to reach all the nodes? Yes, you have to."
+  },
+  {
+   "start": 735.42,
+   "end": 762.93,
+   "text": "and from that we have to tell the time that how much time it will take to reach all the notes. That you have to return. So that's why this question is whose question? Dixitra's question. Same to same, the code you wrote yesterday. Same to same, when you wrote the code yesterday. For example, if I give you such a graph, 2. Okay. From 2, 1 has to go and from 2, 3 also goes. From 3. From 2, 3 goes and from 3, 4 goes. Okay. What is the source given to you?"
+  },
+  {
+   "start": 762.93,
+   "end": 789.31,
+   "text": "You are given the source 2. Means you are starting from 2. What will you do? See. And we will write the weight. It has 1. It has 1. It has 1. See. First of all when you will start from 2. So how much time will it take to go to 1? 1 unit. To go to 3? 1 unit. To go from 3 to 4? 2 unit. 2 unit. When Dijkstra will make you an array. When Dijkstra will make you an array. Then it will look something like this. See."
+  },
+  {
+   "start": 789.31,
+   "end": 819.5,
+   "text": "Yes, one more thing. While making a graph of all the vertices, do minus minus in it. Why? Because we are converting it to zero-based. And in your source vertex, which is k, you should also do k minus minus in it. Why are we saying this? Because here one-based is also there. We don't know why this is done, but we have generally learned that on zero-based, you have to convert everything to zero-based. So, if we convert everything to zero, then something like this will look. This will look something like this."
+  },
+  {
+   "start": 819.5,
+   "end": 847.44,
+   "text": "0, 1, 2, and 3. Now, what was your source given? 2. But what are we saying? Reduce 1. Hold source 1. So, it's the same graph. You just converted 1 base to 0 base. When you make this array, when you add this array, make adjacency list, heap, do anything, you will get this graph. See, 0, 1, 2, and 3. 0, 1, 2, and 3. Okay?"
+  },
+  {
+   "start": 847.44,
+   "end": 874.05,
+   "text": "To go from 1 to 1, 0. To go to 0, 1. To go to this, 1. And to go to this, 2. In this much time, your Dijkstra will make it for you. This is the shortest way possible. Now see, what is the question being asked from you? How much minimum time will it take to reach all the notes? So see, if you take out the maximum of this array, what is the maximum? 2. Meaning, in 2 seconds, it will reach everything. In 1, it will reach only 0 seconds."
+  },
+  {
+   "start": 874.05,
+   "end": 903.26,
+   "text": "0 will reach in 1 second, 2 will reach in 1 second, 3 will reach in 2 seconds, which means maximum time is 2. So, in 2 seconds, will your signal reach everyone? Yes, it will reach everyone. And how are you sure that this 2 is minimum? Because we have put Dijkstra in this. If this 2 was not minimum, then Dijkstra would have given you some other minimum. This means that to reach vertex number 3, minimum amount of time will take 2. So, what will you do? This array's"
+  },
+  {
+   "start": 903.26,
+   "end": 931.33,
+   "text": "Maximum will be removed. What will you know from maximum? How much time will it take to reach all? You will know that it will take 2. What will be the return? Return 2. Return 2 simply. This is the first thing. So, you understood what are the changes in this. First of all, this one-based is given. What does one-based mean? When you make an adjacency list. When you make an adjacency list. So, suppose you did this. Int s is equal to this. Int d is equal to this."
+  },
+  {
+   "start": 931.33,
+   "end": 950.35,
+   "text": "int w is equal to falana. Now, what did we do? Array of s dot push back. What did we push? d and w. This is how it was made. Minus all of them. Push d minus 1 in s minus 1. So, it will be 0 base. Simple 0 base is done."
+  },
+  {
+   "start": 950.35,
+   "end": 975.1,
+   "text": "The rest is the same. You just run it. You will get this final array. Like we got an array yesterday. You had to return the entire array yesterday. You don't have to return the entire array. What do you have to return? What is its maximum time? Its maximum time will tell that in this much time, it will reach everyone. And suppose there is a node where you cannot reach. Suppose there is a node which is not connected to the graph. What will be its distance?"
+  },
+  {
+   "start": 975.1,
+   "end": 1003.66,
+   "text": "will remain int max. Suppose there is a node that is not connected to the graph, you can't reach it by doing something, then it will become int max. If you get any int max, then you have to return minus 1. What does minus 1 mean? It is not possible to reach all. You can reach it, but it is not possible to reach all the nodes. If Dijkstra leaves you on int max, it does not mean that it is not possible to reach there. It is not possible to reach there at all. For example, if you get such a graph, this is 0,"
+  },
+  {
+   "start": 1003.66,
+   "end": 1032.58,
+   "text": "This can go to 1 and this is 2. This is the graph. Note that there is no edge from 0 to 2. Now you will be told that its weight is 2. Your source is equal to 0. So see, you can reach 0 in 0 seconds. You can reach 1 in 2 seconds. But how will you reach 2? There is no way to reach 2 from 0. You can do anything from 0. There is no way to reach 2. So what will remain 2? Int max. Int max means what we marked as infinity in the beginning. This will remain. If you get int max, then you have to return minus 1."
+  },
+  {
+   "start": 1032.58,
+   "end": 1061.17,
+   "text": "It is simple. Its code is same like yesterday's code. We will not write its code again. We will not even change the code we wrote yesterday. The first change you have to do is this. You have to convert it to one base. You have to minus the source. And when your array is made at the end, you have to remove the maximum of this array and return it. But if that maximum int max is coming, then you have to return minus one. That's the question. Pick up tomorrow's code as it is. Copy it."
+  },
+  {
+   "start": 1061.17,
+   "end": 1084.72,
+   "text": "The next question is interesting. Let's move on to the next question. Now let's come to the second question. This question is really interesting. It is really interesting. It is really hard too. So listen to this question very carefully. Listen to it with patience. Listen to it till the end. It is important that you understand. There is a lot of chance for this question to come in the interview. It is a very beautiful question. Let's go."
+  },
+  {
+   "start": 1084.72,
+   "end": 1112.94,
+   "text": "We have given you a simple 2D matrix. You don't have to be afraid of it. We have already asked the question of matrix in the graph. So, we have given you a matrix like this. Let's make a matrix of 3 by 3. Matrix and graph are the same. In many things, matrix is easy. So, don't be afraid of matrix. Be happy that you got the matrix. At least, you don't have to make a list. Everything is given."
+  },
+  {
+   "start": 1112.94,
+   "end": 1141.39,
+   "text": "0, 1, 2 and 0, 1, 2. Let's write the number of this. 1, 2, 2. 3, 8, 2. 5, 3, 5. It's done. You have given this matrix. Okay. What else do we have to do? What else have I told you? Okay. I have told you. You are standing in the top left corner. What does the top left corner mean? 0, 0. 0, 0. You are standing here. You are standing on this 1. Okay."
+  },
+  {
+   "start": 1141.39,
+   "end": 1159.78,
+   "text": "Your goal is to go to the bottom right corner. Bottom right corner means this one. You have to go there diagonally. Where are you standing in the beginning? At 0, 0. Where do you have to go? At 2, 2. Means at the bottom right corner."
+  },
+  {
+   "start": 1159.78,
+   "end": 1186.26,
+   "text": "How can we walk? In the question of graph, you have always seen the rule of movement. What is the rule of movement? In the number of islands, what did we see? That you can walk up, down, here and there. Sometimes, what will it tell you? That you can only walk right or down. So, don't imagine that we can walk or not. Sometimes, it will tell you that you can walk diagonally too. Means, you can walk in 8 directions. Here, it has told you that you can walk in 4 directions. Which 4 directions? You can go up, you can go right, you can go down and you..."
+  },
+  {
+   "start": 1186.26,
+   "end": 1211.92,
+   "text": "you can go to the left. So we have already learned to do all this very well. There is nothing new. You are standing here. You have to go here. You can walk in four directions. You can understand everything up to here. Now see, now I have told you that whatever route you decide, for example, suppose you were standing here. You follow this route. This is also a route. From here you go here, go right, go right, go down, go down, go down, go down, go down, go down, go down, go down, go down, go down, go down."
+  },
+  {
+   "start": 1211.92,
+   "end": 1240.86,
+   "text": "What will be the path of this route? How much distance will you have to determine in this route? How much distance will you have to determine in this route? You will have to determine some distance, right? Meaning, you are going from here to here, from here to here, from here to here, from here to here. You will have to determine some distance. Okay, let's assume that it is D distance. Anything can happen. If you want, you can take any other route. You could have done this. This is also a route. Let's assume that you have to determine some other distance in this. What is the distance? We will have to do something later. Okay."
+  },
+  {
+   "start": 1240.86,
+   "end": 1268.67,
+   "text": "You could have taken another route. You could have done this too. There are a lot of routes. If you have to go back and forth, you could have gone like this. See this. No, not like this. You could have gone here. You could have gone here. You could have gone here. You could have gone here. You could have gone here. You could have gone here. You could have gone here. You could have gone here. You could have gone here. You could have gone here. You could have gone here. You could have gone here. You could have gone here. You could have gone here."
+  },
+  {
+   "start": 1268.67,
+   "end": 1296.66,
+   "text": "Which minimum weight option do you have? After exploring all these routes, which minimum weight option do you have? Which minimum weight option do you have? You have to return this minimum weight. Did you understand the question or not? I have given you a matrix. There is some number written in every matrix. You are in the top left corner. Your goal is to go to the bottom right corner. You can go up, down, right, left. You can take any route. But of all the routes,"
+  },
+  {
+   "start": 1296.66,
+   "end": 1326.08,
+   "text": "You have to return the minimum weight in it. Now, let's understand how this weight is taken out. This is what makes this question very interesting. So, when we say that the weight-taking mechanism is very interesting, what does it mean? Let's explain it to you on one route. Suppose this is the route. First go right, go right, come down, come down. This is the route. We mark it in some way. First we will go here. Then we will go one more right."
+  },
+  {
+   "start": 1326.08,
+   "end": 1354.85,
+   "text": "Then we will go one more right and then we will go one more right. This is the route. In this route, see from where you are going. You go from 1 to 2. Then you go to 2. Then you come to 2. Then you come to 5. Some people will think that the weight of this will be summed. It is not like that. What you do is, on every step, on every step, on every jump, make an absolute difference. What do you do? Make an absolute difference of numbers. What does absolute difference mean?"
+  },
+  {
+   "start": 1354.85,
+   "end": 1381.92,
+   "text": "The distance between them will always be positive. How much distance is there between them? Between these two. How much distance is there between 1 and 2? There is a distance of 1. There is no distance of minus 1. There is a distance of 1. So your distance is 1. Do the same thing. How much distance is there between 2 and 2? 0. 1 becomes 0. How much distance is there between 2 and 2? 0. How much distance is there between 2 and 5? 3. So?"
+  },
+  {
+   "start": 1381.92,
+   "end": 1408.93,
+   "text": "If you go on 5 notes, then you will get 4 distances. Which ones? 1, 2, 3 and 4. Out of all these, what is the maximum? 3 is the maximum. What will be the weight of this entire route? It will be 3. Look carefully, there is no sum difference. You don't have to do any sum. In that route, when you hop in any of them, means you go from one circle to another circle or from one cell to another cell, find the absolute difference of both the numbers and"
+  },
+  {
+   "start": 1408.93,
+   "end": 1436.61,
+   "text": "The maximum absolute difference of the whole root will be the weight of that root. So we came to know that if you follow this root, then how much weight will you get? 3. 3 looks good. But can we reduce it? Let's see by reducing it. Let's consider another root. Let's erase it. This root is done. We made this root to explain to you. Okay, it looks good. But let's see something else. We did this, we did this, we did this, we did this."
+  },
+  {
+   "start": 1436.61,
+   "end": 1461.34,
+   "text": "Let's look at one more route. Look at this route. What is this route? First come down and then go right. So what did you do? Let's make this route from 1. You will come down first. Then come down. Then go here. Then go here. So see what you are doing. You see what you are doing. You go from 1 to 3."
+  },
+  {
+   "start": 1461.34,
+   "end": 1486.43,
+   "text": "then 5, then 3, and finally 5. This is what happened with this route. Let's find the difference. What is the absolute difference between 1 and 3? 2. Between 3 and 5? 2. Between 5 and 3? 2. Between 3 and 5? 2. What is its maximum? 2. So, what is the weight of this route? 2. Is it less than 3? Yes, it is less than 3."
+  },
+  {
+   "start": 1486.43,
+   "end": 1509.55,
+   "text": "You can try more routes, but the answer to this question is 2. You can follow any route, but you can't get a better answer than 2. This is the way to find its weight. This is the way to find its weight. Now, how and why will Dijkstra fit in this? First of all, why will it fit?"
+  },
+  {
+   "start": 1509.55,
+   "end": 1532.56,
+   "text": "I have asked you to find the absolute difference. It means whatever you do here and there, nothing can be negative. I mean, can anything be negative in this array? No, the meaning of absolute difference is always positive. So the first thing is that you don't have to deal with negative things. It's a good thing. Have you been called a source? A single source? Absolutely, the one on the top left."
+  },
+  {
+   "start": 1532.56,
+   "end": 1559.66,
+   "text": "It has been told to start from the top left. It's a good thing. Dijkstra just needs one thing. From where to start? Single source is given, absolutely given. And, have you been told to reach a particular place? Look, either you are told to reach every place, or you are told to reach a particular place. It has been told. You have been told to reach the bottom, where n-1 and m-1. Wherever these three, two, three, four things are, here Dijkstra will look. Here,"
+  },
+  {
+   "start": 1559.66,
+   "end": 1587.15,
+   "text": "Dijkstra will be applied. But how will Dijkstra be applied and what will we do to apply Dijkstra? We will understand that later. Let us show you how Dijkstra will be applied in this. Do the same thing. What you were doing in the graph is just a graph. First of all, where are you starting from? From 0, 0. So 0, 0's distance is marked as 0. 0, 0's distance will be 0. It is obvious. The rest is infinity. Take the rest as infinity. Look at the rest. Let us mark it as infinity."
+  },
+  {
+   "start": 1587.54,
+   "end": 1618.21,
+   "text": "The rest is just a graph. The logic will change a little. Now, when you are going from one to another. First of all, how will you go up and down? By using the xy array. Suppose you are coming here. You are coming from 1 to 3. Now you will have to see how much it will take to go to 3 and what will it take. See. What is the distance of 1 from which you are coming? What is the distance of that? Zero. Now what is written on this 1? Zero is written."
+  },
+  {
+   "start": 1618.21,
+   "end": 1647.9,
+   "text": "For distance, we will make a different matrix. What will be written in it? 0. Very good. Now, this means that, see, you started from 1. Till now, what is the maximum absolute difference? 0. Because you have just started, right? What is our weight? The maximum absolute difference of the entire path, of the entire route. So, what is the maximum absolute difference till now? 0. You understand this in a way that, till now, the maximum absolute difference means 0. Okay."
+  },
+  {
+   "start": 1647.9,
+   "end": 1676.94,
+   "text": "And where are you going from? You are going from 1 to 3. Take out the maximum difference of these two. Take out the absolute difference. How much will it be? 3 and 1. How much is the maximum difference? The difference of 3 and 1 is 2. Now you have to decide how much will it take? Maximum of distance and difference. Maximum of distance and difference. What does this mean? Listen again."
+  },
+  {
+   "start": 1676.98,
+   "end": 1707.02,
+   "text": "You started from 1, 0, 0. So, its distance, you had already written 0. So, when you took it out from the heap, its distance came 0. Meaning, the path you are making, any path, till now, the maximum absolute difference, till now, the maximum absolute difference, how much will it be? 0 came. Okay. You want to go from 1 to 3. How much is the absolute difference of both? How much is the absolute difference of 3 and 1? 2. This became 2. Now, 3's,"
+  },
+  {
+   "start": 1707.02,
+   "end": 1734.86,
+   "text": "What will you write in the distance above 3? The maximum value till now, which was 0, and the absolute difference between these two, which is 2. Which is the maximum of these two? So, you will know that the maximum is 2. What will you check in the distance of 3? Is this 2 less than this infinity? Absolutely less. So, you will write 2 here. You will write 2 here. We will try to explain you in another way."
+  },
+  {
+   "start": 1734.9,
+   "end": 1764.67,
+   "text": "Let's try to explain it in another way. I know it's a bit complex. Stay with me. Let's assume this is the matrix. This is the matrix. Here is 1, here is 2, here is 8. Here is anything, it doesn't matter. We will go in this route. We will go from 1, 2 to 8. Let's see what will happen. Let's see what will happen. First of all, 0, 1, 2. 0, 1, 2. Where will you start? From 0, 0. So, 0 will be written on this. On the rest of them,"
+  },
+  {
+   "start": 1764.67,
+   "end": 1794.74,
+   "text": "So, we are focusing on only three. Let's remove these two. Just focus on three and see what happens. Where did you come first? First, you started from 0, 0. You came out from the source heap. What is its distance? 0. Its distance is 0. Where do you want to go? You want to go from 1 to 2. What is the difference between 1 to 2? Absolute 2 minus 1 is equal to 1. Now,"
+  },
+  {
+   "start": 1794.74,
+   "end": 1823.58,
+   "text": "The distance of 2, what will be the distance of 2? Till now, till now, the distance written above 1, which was written as 0, till now, the maximum absolute difference, and the absolute difference between these two, what is the maximum in both? What is the maximum in both? There is one maximum. Is this one less than the answer of 2? It is absolutely less. What became after updating the answer of 2? It became one. It became one after becoming the answer of 2. Did you understand this? Again, if you didn't understand now, this time you will understand."
+  },
+  {
+   "start": 1823.58,
+   "end": 1848.18,
+   "text": "Imagine you are standing on 2. Now you take out 2 from the heap. Now you take out 0 and 1. Take out 2. How much is the distance of 2 written? The distance of 2 is written as 1. You want to go from 2 to 8. See what will happen. The distance of 2 is 1. It means that till now the maximum absolute difference of this path is 1. It means that till now the maximum was 1."
+  },
+  {
+   "start": 1848.18,
+   "end": 1875.71,
+   "text": "How much is the absolute difference between 2 and 8? 6. How much is the difference between 2 and 8? Absolute of 2 minus 8. How much is it? 6. Which one is bigger? 6 is bigger. Is this 6 smaller than 8's infinity? It is absolutely smaller. What will be the distance? It will be 6. It will work like this. You don't have to make any sum difference here. What you have to do is,"
+  },
+  {
+   "start": 1875.71,
+   "end": 1905.26,
+   "text": "Whatever your distance is, whatever your source is, or the distance from where you want to go, it means that it is the maximum path till now. Okay? Wherever you want to go, there will be a difference between those two. The difference between those two is 6. In both these values, the distance and the difference, what is its maximum? That will be its answer. If this answer is less than whatever it is, then the answer will be updated. And what will you do in heap? Distance or"
+  },
+  {
+   "start": 1905.26,
+   "end": 1926.88,
+   "text": "We will push the maximum of div. We will push the maximum. We don't have to do anything else. This is just a small twist or a small trick. Anything is fine. We hope that you are understanding this. Here was 0. We went from here to here. You saw 0 here. Okay, till now the maximum is 0. What is the absolute between us? It is 1. Okay, my 1 will be 1."
+  },
+  {
+   "start": 1926.88,
+   "end": 1954.1,
+   "text": "Now, there was 1 here. Now, we are going from here to here. So, the maximum is 1 till now. What is the absolute difference between us? It is 6. What will happen? It will be 6. Suppose, you want to go somewhere else below this. Suppose, below this, it would be 5. You are going from 8 to 5. So, see what will happen. You want to go from 8 to 5. 5 is also written as infinity. What is the distance written on 8? The distance of 8 is written as 6. What is the difference between 8 and 5? There is a difference of 3."
+  },
+  {
+   "start": 1954.1,
+   "end": 1981.09,
+   "text": "So what will happen on 5? Will the answer of 5 be 3 or 6? It will be 6 because you have to give the absolute maximum difference of the entire path ahead. If you follow this path and come to 5, then what will be your answer of 5? Your answer of 5 will be 6, not 3. Because you have to update the absolute maximum difference of the entire path. Are you understanding this?"
+  },
+  {
+   "start": 1981.09,
+   "end": 2010.86,
+   "text": "While doing this, while running Dijkstra, you will get its answer. You will get its answer. You have to return that. Because what is your destination? Bottom right corner. Bottom right corner. Let's write its code. It will be a bit complex to write its code. Let's write its code. Let's try. So you will get an int fun or a lead code question. You will just be given a matrix. Matrix means 2D array. 2D or 2D array or 2D."
+  },
+  {
+   "start": 2010.86,
+   "end": 2034.22,
+   "text": "Vector. Is that right? If you don't understand the maximum logic, then please comment. We will try to explain more. But we feel that it might be a little unclear. That's why we are focusing on it. Because don't remember that just remember. It won't help. And we have to make the next question. Don't remember. It only means that you started from 1. You are coming to 2."
+  },
+  {
+   "start": 2034.22,
+   "end": 2063.9,
+   "text": "0 is written above 1, which means the answer from 1 to 1, the maximum absolute sum path from 1 to 1 is 0. You want to go to 2. So if it was written 10 on 1, then the answer to 2 would also be 10, because the maximum is the same. Why? But you got to know that the answer from 1 to 1 is 0. The difference between 1 and 2 is 1. So what is the answer between 1 and 2? What will be the answer to 2? It will be 1. Same thing, when you were coming from 2 to 8, you got to know that,"
+  },
+  {
+   "start": 2063.9,
+   "end": 2093.39,
+   "text": "The answer from source to 2 is 1. The difference between 2 and 8 is 6. So, what will be the answer of 8? Maximum of 6 and 1. So, the answer of 8 is 6. Because when you come from 1 to 8, then you will get the answer of 6. But when you go from 1 to 2, then the answer will be 1. When you go from 1 to 5, then the answer will be 6. If you go further, then the answer will be more. That's why there is no sum here. There is a maximum here. Okay, there is some answer of your pressure. That means, the maximum of your pressure is till now."
+  },
+  {
+   "start": 2093.65,
+   "end": 2124.32,
+   "text": "If you want to reach me, then tell me how much it will be. So, whatever you have reached is already the maximum, right? We both look at each other. If my one is bigger than this, then we will keep our difference. If your one is the biggest, then we will keep your one. Simple. So, it's just that there is something in the maximum till now. If you and I take out the maximum of these two, then it will be the game of taking out the overall maximum. Okay, let's go. So, first of all, take out nm. n is equal to a dot."
+  },
+  {
+   "start": 2124.32,
+   "end": 2156.02,
+   "text": "Size, matrix row, and m is equal to array of 0's size. This is matrix's number of columns. Okay? For Dijkstra, you need an array of results, but array won't work. You have given a matrix, so you have to make a matrix, which we will make for results. So make a 2D matrix. Make a 2D matrix. Come, make a result. Give it n. Now, int i for,"
+  },
+  {
+   "start": 2156.02,
+   "end": 2186.05,
+   "text": "i is equal to 0, i less than n, i plus plus. Make a small matrix which has m columns, matrix T, and the value of sub is int max. Okay? Result, i is equal to, insert all of this. By doing this, you make a 2D matrix which has sub infinity. Okay? Now, we have to make minimum heap. So, already in Dijkstra, we had made a pair heap because what used to enter in it? Distance and"
+  },
+  {
+   "start": 2186.05,
+   "end": 2211.57,
+   "text": "Node. But distance will enter here. Distance has to enter. Node is not a single node. Instead of node, you have to enter coordinates. Row column. So here you have to enter row column. This will be your heap. That means pair of int. That means this distance. And one more pair will be inside it. Pair of int and pairs. See this. This. This one is for whom?"
+  },
+  {
+   "start": 2211.57,
+   "end": 2241.87,
+   "text": "distance ke liye. Yeh pair kiske liye? Row column ke liye. To ush hesaap ka aapko min heap banana padega. Aaye min heap ka syntax dekhne. Min heap ka syntax aap bhool gaya. Koi dikhat hai. Hum bhi bhool jaate hain. Hum bhi dekh dekh ke hi lekhne. Priority Q. Thik hai? Priority Q khol diye. Kya chahiye? Pair of int. Pair of int. int. Ek pair ban, dusra pair ban. Thik hai? Jo bhi yaha pe lekh hai usko vector ke andar lekh do. Vector of"
+  },
+  {
+   "start": 2242.48,
+   "end": 2273.06,
+   "text": "Whatever is written here, pair of int, pair of int, int, 1, 2, 3. Greater is done. Greater, whatever is written above, write it here like this. Okay? Close this here and close pq. Okay? Let's go. So, now see. Okay? Come. Now make x, y, up, down, forward, backward. So that you don't have to do it again and again. So x, 4, all this already. You must have remembered. 1."
+  },
+  {
+   "start": 2273.06,
+   "end": 2303.18,
+   "text": "Minus 1, 0, 0. Int y4 is equal to 0, 0, 1, minus 1. Is it correct? Did you make it? Now, let's start. Before starting, whatever is your result, result of 0, 0 is equal to 0. Means, the initial one is 0. Source vertex is 0. And push it in the heap. What will we push in the heap? What is pushed in the heap? First of all, distance and 0, 0. This."
+  },
+  {
+   "start": 2303.18,
+   "end": 2336.64,
+   "text": "This is the distance and its coordinate. Start your game. What is your game? While pq.notempty. Okay. Sorry. Don't put semicolon by mistake. Okay. Take out pair of int, pair of int, int. This is what we entered in the heap. So, we will take out what we entered. pq.top and pq.pop. Pop is done. Now, take out all the things from it."
+  },
+  {
+   "start": 2336.64,
+   "end": 2364.98,
+   "text": "First of all, what is the distance? P dot first. Distance is written in P dot first. Int, row, whose is it? P dot, first of second. PK, first of second. PK, first of second. And where will the column come out? PK, second of second. These three things came out. Information came in, these three came out. Okay."
+  },
+  {
+   "start": 2365.3,
+   "end": 2394.32,
+   "text": "First of all, if this distance, if this distance, if this distance is greater than your row column, which means, like yesterday, this is a stale value. What is it? It is a stale value. Continue, continue. This means that the old value has no special use. If this is not the case, then move forward. How will we move forward? All the neighbors. How will we go to the neighbors? From x and y. Like we used to go to the number of islands. int k is equal to 0, k less than 4."
+  },
+  {
+   "start": 2394.32,
+   "end": 2425.54,
+   "text": "k++ int r is equal to rho plus x of k int c is equal to column plus y of k. Is it valid or not? Check it. We will write the function of valid above. Valid r, c, n, m. And, and. If it is valid, then only do it. Do one thing. Write here that if not valid, then continue. If not valid, continue."
+  },
+  {
+   "start": 2425.54,
+   "end": 2455.6,
+   "text": "It means if it is valid, then only we will move ahead. Now, what do you have to do? Take out the absolute difference. Int absolute difference is equal to what? Absolute array of from where you are going and till where you are going. So, from where are you going? You are going from this row column. So, array of row column, row column, till where are you going? You are going till R and C provided that it is valid, which we have already checked."
+  },
+  {
+   "start": 2455.6,
+   "end": 2488.11,
+   "text": "This is the difference between these two. New weight. New weight. New weight. What was new weight? Maximum of the absolute difference between these two. And the absolute difference till now. That means the distance till now. Distance. This is new weight. Now do relaxation. If new weight is less than. Which is written in this person."
+  },
+  {
+   "start": 2488.11,
+   "end": 2519.23,
+   "text": "So you can relax it. What does it mean to relax? Result, update RC. With what? With new weight. And PQ.push. What will be pushed? First of all, this new weight will be pushed. Which is its new weight. And this RC will also be pushed. Close this. Like this. Close this. And close this fault loop. And close this while loop. And in the last, what do you do in the last? Return. Rest."
+  },
+  {
+   "start": 2519.23,
+   "end": 2547.6,
+   "text": "n minus 1, m minus 1. It will give you the bottom right corner like this. So, look at its code. One thing is missing. Write Boolean valid. Write Boolean valid quickly. Boolean valid. What is passed in valid? int i, int j, int n, or int m. What is checked? If i less than 0, or i greater than equal to n, or"
+  },
+  {
+   "start": 2547.6,
+   "end": 2575.68,
+   "text": "j less than 0 and j greater than equal to m. If this is the case, then what do you return? You make it false. If this is not the case, then what do you return? You make it true. Take this. This is the whole code. Look at this. This is the whole code. It is a bit of a complex code, I agree. But it is just complex. There is nothing to think about. In this question, the most important thing is this part. What are you doing here? First of all, you are absolutely different. This logic,"
+  },
+  {
+   "start": 2575.68,
+   "end": 2593.71,
+   "text": "This is the logic of this code. Rest of the implementation details are fine. It is learned with time. This is the heart of this code. This is the heart of this code. So go and do this code. Do its dry run in copy. Do the code. Understand the code. Watch the video. And see you in the next lecture."
+  }
+ ]
+}

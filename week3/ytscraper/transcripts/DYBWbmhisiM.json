@@ -1,0 +1,339 @@
+{
+ "video_id": "DYBWbmhisiM",
+ "title": "Google Interview Question On Heap Dsa Pattern Made Simple | IPO Leetcode",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1778,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 18.56,
+   "text": "Today's question was asked to us, I think it was asked in a Samsung interview. The name of the question is IPO. It is a hard question. And the special thing about this question is that it will look very simple to see. If you see it, read it, you will think about it. We will tell you its number. Think about it. Its number is 502. So, when we thought about it, you..."
+  },
+  {
+   "start": 18.56,
+   "end": 46.21,
+   "text": "the first time 90% chance that you will think that it will be wrong. It is not wrong, it will be wrong. That is how you learn, it is a natural way of thinking. So if you think a little and then watch the video, if you think according to that, then you are going right. So you are studying according to the natural way, everyone thinks the same way. We also thought the same way, we also made a mistake 3-4 times and understood that why it will not work. So first think for yourself, then watch the video. If you are making that mistake, it is absolutely right, there is nothing to worry about. You are on the very right track."
+  },
+  {
+   "start": 46.21,
+   "end": 60.5,
+   "text": "If you are not able to think anything, then watch this video. Then we will explain its explanation. We will explain your mistakes first. We will explain why it doesn't work."
+  },
+  {
+   "start": 60.5,
+   "end": 89.23,
+   "text": "we will think of the right algorithm like yesterday we thought with common sense and today we will think with common sense that what should we do? how should we do it? then we will see what is edge case? it is a very important edge case which if it is missed then it will be wrong after that we will see its small code snippet we will see its time complexity so this is going to be the flow and be prepared and let's start quickly come let's understand the question first then we will tell you why we were saying that whatever you think in the beginning it is going to be wrong in 90% of cases so see lead code is a company everyone knows that what is lead code? it is a company"
+  },
+  {
+   "start": 89.23,
+   "end": 116.27,
+   "text": "The lead code has to do some IPO, which is IPO, the IPO of physics, means it goes to the public, it has to do that, okay. Now for this, they need some money, they have to do anything, so and that. Now they have some projects, some projects, by doing this, there are projects, there can be many projects, there can be N types of projects. To do every project, some capital is required, capital means that to do that project, you will need money, it will take manpower, it will take something else, anything will happen, it will take some money for that, okay."
+  },
+  {
+   "start": 116.4,
+   "end": 144.91,
+   "text": "But when you do that project, you will also get some profit from it. Profit means that when you do that project, you will get some money from it in the company. That money will prove to be beneficial for the company. Okay. The company has a reserve capital named W. What is W? Reserve capital. What does reserve capital mean? It means that you have kept so much just for understanding. Assume that its name is reserve capital. Okay. It has a time limit. It has a time limit that it can"
+  },
+  {
+   "start": 144.94,
+   "end": 174.69,
+   "text": "K projects choose kar sakte hai. Bhot saare projects hum bole, n type ke projects chun sakte hai. Har project ka capital requirement hai. Matlab ki, apke paas reserve me iss se jada hona chahiye or itne equal hona chahiye. Wo to ek requirement hai. Project ka benefit kya hai karne ka? Ki usse aapko kuch profit milega. Lead code at max K projects chun sakte hai. Matlab inko K projects chunna hai. Aur inka goal kya hai? Inka goal hai na, ki ye jo W hai, ye jo W hai, ye isko maximize karna chahte hai. Isko ye maximize karna chahte hai. To dekhe, shuru se hum batate hai."
+  },
+  {
+   "start": 174.69,
+   "end": 198.37,
+   "text": "LeadCode has given you a W in the beginning which is your reserve capital. You have a lot of projects in which there is a capital requirement in every project. That means you should have that much reserve capital only then you will be able to take that project. The second thing is that you will get that much profit in it. This profit gain will be good in that project. This will be given in IRM. LeadCode can do this project at max."
+  },
+  {
+   "start": 198.37,
+   "end": 226.61,
+   "text": "Every time you do a project, now there is a weird thing in this, I don't know why it is in the question. Every time you pick up a project, when you see that the capital requirement of a project is less than or equal to your W, then you can pick up that project. What will happen after this? Nothing will be less than your reserve. It will not happen in your reserve that the capital requirement will be minus. No, whatever the profit of that project is, it will be added to your reserve after that. Whenever you do a project, your reserve capital"
+  },
+  {
+   "start": 226.61,
+   "end": 254.19,
+   "text": "It will not go in minus, in your reserve capital, whatever profit was going to come from that project, it will be plus and your reserve capital will increase a little so that you can go ahead and take more projects. How many projects do you do like this? You do K projects and what is your goal? That in the last, at the end of doing K projects, your reserve capital should be maximized, that is, it should be as much as it can be maximized. So let's hope that you have understood the question in Hindi. This is the question. Okay. Now when we were making this, it also came to my mind that"
+  },
+  {
+   "start": 254.19,
+   "end": 280.37,
+   "text": "When we thought, let's start thinking, we will tell you how we thought, then you also think in the same way. We thought, okay, I have a W, understood, this is my reserve capital. I have some tasks, two areas will be given to you, one area will be given to you of capital, one area will be given to you of profit. We will say, okay, let's convert both of them into a vector of pairs. So, I will have a lot of things like, suppose this is the capital and this is my profit."
+  },
+  {
+   "start": 280.46,
+   "end": 307.98,
+   "text": "By doing this, I have a lot of tasks. He said, I understood. How many tasks do you have to choose? So we came to know that we have to choose K tasks or K projects. Okay. So we thought, see, what is my goal? My goal is that profit should be maximized. Profit should be maximized. It's a very good thing. So why don't we do this? Sort this array. Sort this array. According to whom? According to profit. According to profit, in decreasing order."
+  },
+  {
+   "start": 307.98,
+   "end": 333.44,
+   "text": "Decreasing order means that if we take the top profit and do that project, then we can go only that much. Okay, but there is a problem in this. Assume that your W is 10. In the beginning, you have 10 in the reserve capital. When you sort, you get to know that the top task, the task that you should do first, the project that you should take first, its capital requirement is 20 and you will get 20 lakhs in profit."
+  },
+  {
+   "start": 333.44,
+   "end": 361.52,
+   "text": "So 20 lakhs is very good. If you say that you want the most profit, then I will take 20 lakhs. But its reserve capital requirement is 20. How much do you have? 10. So can you do this or not? It is possible that you will not be able to do the next one also. In the next one, it will be like this. You will not be able to do the next one also because you have 10. You will not be able to do 18. So this process is a bit wrong. Okay. After that, let us think one more thing. See, what to do overall? If we think like a person, what to do overall?"
+  },
+  {
+   "start": 361.52,
+   "end": 391.04,
+   "text": "We should take such a project in which minimum capital requirement is there. Minimum capital requirement is there. One thing is that we are thinking naturally. We are thinking with common sense. Which project should we take? In which minimum capital requirement is there and maximum profit gain is there. Maximum profit gain is there. There are two conditions. There are two conditions. Minimum capital requirement is there and maximum profit gain is there."
+  },
+  {
+   "start": 391.04,
+   "end": 414.18,
+   "text": "Business is made in which you get minimum cost and maximum profit. This is how business is made. Okay. We thought that how did we sort above? We sorted above in decreasing order based on profit. We sort all of these in such a way that increasing order based on capital means the task which is at the top, minimum capital is used in that. Okay."
+  },
+  {
+   "start": 414.18,
+   "end": 441.95,
+   "text": "and get maximum profit in it and get maximum profit in it. By doing this, we can sort something like this and if we have to add our project with the above K, then it will be good. But there is a problem in this too. What is the problem in this, we will tell you. Suppose you have to do only one, your K is equal to 1, that means you have to choose one project. You have three tasks. The capital requirement of the first task is 1 and you will get profit of 10 rupees from this."
+  },
+  {
+   "start": 441.95,
+   "end": 465.57,
+   "text": "The capital requirement of the second task is 3. From this, you will get a profit of Rs. 20. The capital requirement of the third task is 8. From this, you will get a profit of Rs. 100. These are the three tasks. You have W is equal to 10 in the beginning. According to me, what you should do is,"
+  },
+  {
+   "start": 465.57,
+   "end": 490.83,
+   "text": "we should sort the array on minimum capital so if we do it on minimum capital then it will be 1, 2, 3 because it has 1, 3 and 8 after that what did we say? we will take the top k of this, top k means top 1 whatever task we have to do we will take it so according to me we will take this can you take this task? yes you can take this task why? because its capital requirement is less than 10 you can take it"
+  },
+  {
+   "start": 490.83,
+   "end": 506.9,
+   "text": "After taking this task, after taking this profit, how much will you get? How much will you get in your wallet? It was already 10. Plus 10. You will get 20 in your wallet. And now, one task is done. You had to do only one. Remember, you can only do limited number of projects. You have done one and it is over."
+  },
+  {
+   "start": 507.22,
+   "end": 532.77,
+   "text": "Your answer will be 20. But look carefully, should you have done this project? If any person thinks, then he will say that no brother, this project should not have been done. Why shouldn't it have been done? Because see, there was 10 rupees in your wallet. Meaning if you wanted, then any of these three tasks could have been done. Because see, everyone's cap is less. Everyone's cap is less than 10. Meaning anyone could have done it. Out of these three, when you say that we made these three choices, what are these three? These are your three choices."
+  },
+  {
+   "start": 532.77,
+   "end": 559.57,
+   "text": "This is your 3 choices. On what basis? You had reserve capital 10. On that basis, you decided that we can do all these 3. Now, which one should you have done out of these 3? The one whose profit is the highest. The one with 100. If you had done the one with 100, then your final reserve would have been 10 plus 100. It would have been 10 plus 100, which would have been 110. So, this was a better answer. So, you should have done the third one. You should not have done the first one."
+  },
+  {
+   "start": 559.79,
+   "end": 582.96,
+   "text": "This means that there will be no work with one type of sorting. If we see that we have sorted the maximum profit, then there is a problem whether you will be able to do that task or not. There was a doubt in this. In this, you have sorted according to the capital that do the minimum capital first. There is a problem in that too because you don't have to do the minimal capital first. According to your one reserve capital, you will have choices. You can have any choice."
+  },
+  {
+   "start": 582.96,
+   "end": 613.02,
+   "text": "a list of 3-5 projects. From that list, the one who will have the most profit, you should do that task first. Because, why am I saying this? Because your reserve capital is never less. Your reserve capital is never less. It keeps on increasing. So if you don't have the tension of being less, you don't have the tension that if we do this project, then we won't be able to do any other project. No, you will be able to do all the projects. What does that mean? If you have 3 types of choices, in which cap is equal to 1,"
+  },
+  {
+   "start": 613.02,
+   "end": 639.3,
+   "text": "cap is equal to 3, and cap is equal to 8. Suppose if you do this, then you don't need to worry that we won't be able to do this and this, we will be able to do this too, because if you can do these three, it means that your W will be more than 8, W will be 10. If you do this, then your W will increase, your W will not decrease, it will not happen that capital will be minus, no, your capital, your W will increase, it will increase."
+  },
+  {
+   "start": 639.3,
+   "end": 665.65,
+   "text": "If it would have been minus, then it would have been a question of DP. But because your W will increase, you can do both of them easily. So if your K is left, then you can do both of them. But first of all, who should you do? Because you have a limited number of projects. Out of your choices, choices means according to your reserve capital, what choices are you getting? What tasks can you do? Which one do you have to do? Out of that, you always have to do the highest profit one."
+  },
+  {
+   "start": 665.65,
+   "end": 692.1,
+   "text": "That's why, there won't be a problem with simple sorting that you have sorted and the answer will be wrong in that. So, we also thought about sorting but then we slowly understood that why we don't have to do sorting. So, we hope that you understood that why there won't be a problem with sorting. It was important to tell you this because we don't want to tell you the answer directly. Think, why there won't be a problem with sorting? Think, right? So, let's move ahead. Now, when there won't be a problem with simple sorting, then how will the work be done? Look, what have we decided till now? What do we have to do? First of all,"
+  },
+  {
+   "start": 692.1,
+   "end": 719.66,
+   "text": "you have to try k times, what does it mean to try k times? you have to get k projects, so you have to try k times, ok, every time, every time, every time, you will have some reserve, you will have some reserve capital, reserve capital will be there, ok, anything will be there, this will be there in the beginning, then it will gradually increase, as you will keep doing projects, it will increase, ok, it will never decrease, ok,"
+  },
+  {
+   "start": 719.66,
+   "end": 746.53,
+   "text": "According to that reserve capital, you will have some choices. It is not that you will be able to do all the projects with that reserve capital. No. You can do the projects that have less capital required. So, you will have some choices. Let's assume that you will have X choices of projects. From that project, assume that you have choices here and there. You have 3 projects in choice."
+  },
+  {
+   "start": 746.53,
+   "end": 776.8,
+   "text": "Out of these three, what should you do that time whose profit is the most? Whose profit is the most? Whose profit is the most? And what do you have to do? You have to keep repeating. What do you have to do? You have to keep repeating. Every time. How many times? K times. When you repeat this thing for K times, you will get the answer. You will get it. For example, for example, we will tell you one thing. Assume your task is like this. Your task is like this, that this is your first task. Your first task is your capital. It has zero. And from this, you get profit one."
+  },
+  {
+   "start": 776.8,
+   "end": 802.66,
+   "text": "The second task is that your capital is 1 and you get this. The third task is that your capital is 1 and you get 3 profits from it. So this is your capital requirement and this is your profit. This is your capital requirement and this is your profit. This is your capital and this is your profit. You have 3 tasks. In the beginning, you have the reserve capital W is equal to 0. You have 0. Okay. What is your K?"
+  },
+  {
+   "start": 802.66,
+   "end": 832.0,
+   "text": "K is equal to 2. Means you have to choose 2 projects out of these 3. Come, think like a human being, what do you do? First of all, we are saying that you have to do this. First of all, you have W0. In W0, these two cannot be done because their minimum requirement is 1. So, this cannot be done. First of all, you have to do this. When you will do this, then this 1 will be added to your reserve. So, how much will your reserve become? It will become 1. Once the reserve becomes 1 and this 1 is finished."
+  },
+  {
+   "start": 832.0,
+   "end": 861.54,
+   "text": "we can do one project at a time now you can do any one of these two because your reserve is 1 capital requirement of both is 1 and you can do any one of these two now we should do this from these two in which we get more profit so this profit will come and join in my reserve so my reserve will become 4 and in the end we will return with 4 now let's see whether this algorithm will work or not let's try k is equal to 1 k is equal to 2 means we are trying to choose the first project"
+  },
+  {
+   "start": 861.54,
+   "end": 889.3,
+   "text": "How much is our W in the beginning? Zero. According to zero, how many choices do you have left? How many choices do you have? You only have this choice. What is it? Zero and one. Okay. If you have only one choice, then what will you choose? If you have only one choice, then you will have to do it. So do it. And you will get this profit in your W. What has become your W? One has become. One project is over. K is equal to two. It means the turn of the second project has come. And the work of this project is done. Now how much is your W? One."
+  },
+  {
+   "start": 889.3,
+   "end": 918.38,
+   "text": "According to this, how many choices are left? In the rest of the projects, which ones can you do? You can do both. You can do both. Without any hesitation, you can do both. Because both are less than this. Less or equal. You will get two choices. What? 1 or 2. And 1 or 3. What did we say? Out of all the choices, which one should you do? We had seen above. The one with the most profit. The one with the maximum profit. The maximum profit is 3. You will do 3. What will your W become? 4. Your two projects are over. What will you return? 4. So, it has a 4 answer. It has a 4 answer."
+  },
+  {
+   "start": 918.38,
+   "end": 946.78,
+   "text": "So, this algorithm works perfectly. Now, we will talk about how to implement this algorithm. Now, there are two parts in this. Again, there are two parts in this. There are two parts in our entire algorithm. First of all, you have to try k times. So, you will try by applying the loop. The first part of this is choices. How will we know which choices are there? So, I am getting an idea in my mind. You can do one thing. You do one thing."
+  },
+  {
+   "start": 946.78,
+   "end": 970.78,
+   "text": "Make a pair of capital and profit and put them in an array. Array of pairs. What does it mean? Make a big array that contains pairs. What will be its first pair? 0, 1. This is its first item. Second? 1, 2. This is its third. And what will be its third item? 1 and 3. So this is 0, 1, 2. This is one."
+  },
+  {
+   "start": 970.78,
+   "end": 999.98,
+   "text": "It became an array of pairs. Sort it. Sort it normally. When we sort an array normally, then it sorts it according to the previous one in increasing order, which you need. It sorts according to the previous one in increasing order. In which it sorts according to the previous one? In increasing order. If the first item is same, then it sorts according to the previous one in increasing order too. It means it sorts in increasing order. If we sort this, then it is already sorted because you can see that first of all, what is it? 0. Okay."
+  },
+  {
+   "start": 999.98,
+   "end": 1025.47,
+   "text": "After that, 1, 1 is equal, but then 2 and 3. So, it is absolutely sorted. It is absolutely sorted. There is no problem. Okay. We will sort this. Okay. Every time when we will run a loop, every time when we will run this while k minus minus loop, means every time when we will try to do a project, then you will have some w. You will have some w. Now, in the beginning, in the beginning, in our choices in the beginning, what should we do? Keep an idx. Keep an idx is equal to 0."
+  },
+  {
+   "start": 1025.47,
+   "end": 1050.69,
+   "text": "which will point here in the beginning after that we will run a loop now see what you have to do w is equal to 0 suppose your w is equal to 0 you have to find out which projects are eligible for this w is equal to 0 means which projects we can do which projects we can do so how will we do it we will run a simple loop while idx less than n idx less than n"
+  },
+  {
+   "start": 1050.69,
+   "end": 1074.37,
+   "text": "if you get to know that this array is sorted according to capital in increasing order if you ever get to know that aidx.first which is its capital is greater than w which means you can't take any project after this because it is sorted according to"
+  },
+  {
+   "start": 1074.37,
+   "end": 1103.74,
+   "text": "According to capital, it is sorted in increasing order. So, if the capital on which IDX is present is greater than this, then you can't do anything. You can't do anything. Okay. So, what do you do? Break. Otherwise, if this is not the case, suppose IDX is 0 now, you know that this 0 is not greater than W. Means, this project can be done. This index project can be done. So, this can be done. Okay. We will store it somewhere. In which we will store it, we don't know yet. We will store it somewhere. And,"
+  },
+  {
+   "start": 1103.74,
+   "end": 1132.53,
+   "text": "we will do idx++ and we will repeat this thing start the value of idx from 1 and leave it here, it will continue to run on its own every time when you try to do a project then its work will be that all the projects which are eligible in that round it will pick them up and store them somewhere so your first problem is solved you can make choices according to any w how many projects you can do it will pick them up and store them somewhere first thing is good"
+  },
+  {
+   "start": 1132.53,
+   "end": 1161.9,
+   "text": "Now, the question arises, where and how to store this? Where and how to store? Okay. Where and how to store? Okay. After storing, what did you have? Suppose, on any one W, you stored 5 choices. You stored 5 choices. After this, what did you do? In these 5 choices, whoever has the max profit, whoever has the max profit,"
+  },
+  {
+   "start": 1162.1,
+   "end": 1190.22,
+   "text": "You had to select the one whose max profit is also there. Right? Okay. What is the data structure for this? What is the data structure in which you will keep adding a lot of things and it can give you max or min every time. What is the name of that data structure? Heap. What is the data structure in which you will keep adding things and it will keep giving you maximum?"
+  },
+  {
+   "start": 1190.22,
+   "end": 1217.07,
+   "text": "So this store, one more thing, what do you have to store in the heap? Do you have to store capital in the heap also? No, capital is not the work. If this index project can be in that W, means this project can be done, what is your work? What is your job? You have that profit. Capital is just to decide whether that project can be done or not. That is decided here. If this project can be done, then what is your work? Profit."
+  },
+  {
+   "start": 1217.07,
+   "end": 1247.92,
+   "text": "On what basis is the selection happening? On the basis of profit. What do you want? Do you want max profit or min profit? You want max profit every time. So what will you do? Nothing. A pq.push a index.second means we will push its profit. a index.second After coming out, when this work is done, when this work of running choices is done, what will you do? int pro is equal to pq.top and"
+  },
+  {
+   "start": 1248.11,
+   "end": 1276.0,
+   "text": "pq.pop and in this we will do w is equal to w plus row and we will go ahead and repeat the same thing we will repeat it one more time as we know it will be a bit complex what are we doing first? we are making an array first we are making an array of pairs in which we keep capital and product so first of all we will make this it will be like this 0,1 and 1,2 and 1 and 3"
+  },
+  {
+   "start": 1276.0,
+   "end": 1301.5,
+   "text": "This is your 0, 1, 2. In the beginning, we have made an IDX equal to 0 and we have made a heap. We have made a heap whose name is MaxHeap. Its work is to store the profits of your eligible projects. So, let's start. So, how many times do you have to do it in the beginning? 2 times. You have 2 projects, K is equal to 2. K is equal to 2. So, let's do it once. Let's do it in K is equal to 1. What is your W in the beginning? Your W is 0 in the beginning."
+  },
+  {
+   "start": 1301.5,
+   "end": 1329.22,
+   "text": "According to this zero, which project is eligible? So we will see from that loop that this project is eligible. This is the only one. Because when you come here, when you come here, you will break. When you come here, you will break. Okay? So only one project is eligible. Where will we hit it? Where will we store it? We will store it in the heap. Where? We will store it in the heap. Meaning? What will we store it in the heap? Its profit. So here is one. There is only one entry in the heap. After that, what did we say? Take it out of the heap."
+  },
+  {
+   "start": 1329.22,
+   "end": 1355.71,
+   "text": "that means after taking out from the heap, pro is equal to 1 and this poor thing is popped out of the heap and we will add it to that so w is equal to 0 plus 1 is equal to 1 one cycle is over, next time you come in the second project, w is equal to 1 according to 1, which project is eligible, then you will know that this is also eligible and this is also eligible where did both the profits get stored? in the heap means where did both the profits get stored? in the heap"
+  },
+  {
+   "start": 1355.71,
+   "end": 1381.6,
+   "text": "Both the profits are stored in the heap. IDX is now 3, which means all the projects are done. All the projects are available according to the current one. Okay. After that, what did we say? Which one to choose? The one whose maximum profit is to be chosen. So, what will we choose? Rho is equal to 3. PQ.top. The maximum of the heap. This will pop. What will we do? W is equal to 1 plus 3 is equal to 4. Both the projects are over. You had to do only 2 projects."
+  },
+  {
+   "start": 1381.6,
+   "end": 1409.17,
+   "text": "what will you do? you will be comfortable and return 4, you will not get more than 4 answers so this is its total yes, there is one more edge case in this, what is the edge case? let's assume it looks like this 1 and 2 2 and 3 and 2 and 4 this is your project you have W is equal to 0 in the beginning let's see what happens"
+  },
+  {
+   "start": 1409.17,
+   "end": 1431.54,
+   "text": "Suppose you want to do two projects, K is equal to 2, this is your max heap. In the beginning, you will try to find out which projects are eligible for W is equal to 0. You will find out that no project is eligible. The project with the lowest capital also has capital requirement 1, which means no one is eligible."
+  },
+  {
+   "start": 1431.54,
+   "end": 1450.83,
+   "text": "So after this, what will you do? Nothing, no project eligible means nothing will be pushed in the heap. After this, when you try to get out that give us profit, then your heap is empty, you have no choices, you have no choices. So if you ever find out in the project's loop that if pq.empt"
+  },
+  {
+   "start": 1451.92,
+   "end": 1479.63,
+   "text": "In this case, you have to break it. Your entire program is over. Return W because you won't be able to move forward. Why won't you be able to move forward? Because your W was 0. It can happen at any point. At any point, your reserve capital is 0. You tried to see which are the projects that we can do. You came to know that you can't do any project. So, your heap is empty in a way. Heap is empty. If your heap is empty, it means that"
+  },
+  {
+   "start": 1479.63,
+   "end": 1508.82,
+   "text": "What is this heap? These are your choices. This heap is your choice. The maximum of the choices you had was not choices. There are no choices at the point of any reserve capital. If there are no choices, then how will you move forward? How will this W increase? This W will not be able to increase. If there is no choice, then W will not be able to increase. If W will not be able to increase, then the same condition will happen next time. So you don't have to do anything. PQ.MT means your choice is over. You can't move forward. Your company has become bankrupt. You don't even break the return."
+  },
+  {
+   "start": 1508.98,
+   "end": 1536.94,
+   "text": "return w return w means your company is over and you can't survive so this is it, let's quickly write the code of this first of all we will tell you what will be given in this code first of all you will be given int k int w you will be given a vector int profit and you will be given a vector int capital"
+  },
+  {
+   "start": 1537.49,
+   "end": 1570.11,
+   "text": "What will be given? Capital will be given. So, first of all, we said that make an array of pairs. So, int n is equal to, first of all, total number of projects, profit resort size or capital of size, whatever you want to do. After that, vector of, sorry, vector of pairs, vector of pair, int, int projects, projects. After that, what did we do? Int i, for i is equal to 0, i less than n,"
+  },
+  {
+   "start": 1570.11,
+   "end": 1609.68,
+   "text": "i++ and a.pushback sorry not a so what is this? projects.pushback projects.pushback in the beginning what we have to push? capital capital capital i and profit i after that sort it sort proj.begin and proj.end"
+  },
+  {
+   "start": 1609.68,
+   "end": 1640.69,
+   "text": "We have sorted it. According to which it will be sorted? According to capital, it will be in increasing order. If capital remains the same, then according to profit, it will be in increasing order. There is no difference in that. Sort is also done. Now what you have to do is make a heap. Priority Q. You have to make a max heap of a single element, of an integer. Because we are just going to store integers in this. So what is this? It is a max heap. Now start your loop. So while k minus minus, because you have to try k times. First of all, according to this w, what are the choices? So do that."
+  },
+  {
+   "start": 1640.69,
+   "end": 1671.73,
+   "text": "Take one of its index, A. Index is equal to 0. So, how did we get the choice? While idx less than n. First of all, we see that if, this is A, not A. If the index of your project and its first, what will its first give you? Its capital. If it is greater than W, break. Means, it is done. You cannot take more choice than this. No, if it is not like this, then it is fine. PQ dot push."
+  },
+  {
+   "start": 1672.18,
+   "end": 1701.17,
+   "text": "pq.push what to do? project idx second push its profit in maxheap and idx++ because you can see the next project finished now if your pq is empty at any time if your pq is empty means you don't have any choices left to do return w because your company is bankrupt if it is not like this then w is equal to w plus pq.top"
+  },
+  {
+   "start": 1701.81,
+   "end": 1733.68,
+   "text": "and pq.pop close the while loop of k and here return w when you return k projects then this is your code see this is your code see that's why we say that you should not print this code as it is how did we write this code with pen and pencil because we have practiced we will write along with practice we will not write like this so this is your code see its time complexity will be k log n k log n around k log n or"
+  },
+  {
+   "start": 1733.68,
+   "end": 1763.41,
+   "text": "klogin or nlogin, ok, every time you are doing the same thing, every time nlogin, nlogin, so you must be sorting, if anything is there, then you must be sorting, your power has gone in sorting, where did it go, this, this sorting, this, this is the only one you have taken nlogin, ok, nlogin is done, so nlogin is your time complexity, hope you have understood the question, the question is hard, it is a very hard question, if you don't understand, then listen again, you will understand, it is a question of common sense, and we want you to,"
+  },
+  {
+   "start": 1763.57,
+   "end": 1777.36,
+   "text": "You can make 1-2 questions by yourself. You can make course scheduler 3 by yourself. We want you to make course scheduler 3 by yourself. This type of question is also there. Okay? Let's meet tomorrow."
+  }
+ ]
+}

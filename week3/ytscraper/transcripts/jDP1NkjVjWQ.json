@@ -1,0 +1,264 @@
+{
+ "video_id": "jDP1NkjVjWQ",
+ "title": "DSA PATTERNS Episode 18 | Linked List Slow–Fast Pointer: Important Questions",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1459,
+ "segments": [
+  {
+   "start": 0.66,
+   "end": 28.9,
+   "text": "In an interview, who is the most scared of? Linkless. Who? Linkless. Yesterday was the first day of slow fast pointer. Today is the second day. Today only this slow fast pointer will be finished. And you can solve the question of 50% of linkless like this. You will remember that you have to solve it like this. It's a good thing. What did we do yesterday? Yesterday we... Yesterday we... What did we learn in flowchart? If you are ever asked a question, what do you say? Find whether there is a cycle or not."
+  },
+  {
+   "start": 28.9,
+   "end": 55.18,
+   "text": "or find out if there is a loop or not or starting point of cycle starting point of cycle find the point of cycle if there is such a question then what will it be? slow and fast pointer this is what we had learnt yesterday ok yesterday we had discussed about this whether there is a cycle or not how will we know whether there is a loop or not how will we know but we had not discussed about this that if there is a loop then what is its starting point what is its starting point but this is very"
+  },
+  {
+   "start": 55.18,
+   "end": 84.59,
+   "text": "It is a very common question and it will not be done only with ratna. You will have to explain it in the interview that if we are doing this then why are we doing this? This is not ratna. Come, let's understand it. What does it mean? What is the meaning of the other one? It tells you that such a linked list has been given to you. Okay? No matter how big the linked list is, how big the cycle or node is, it does not matter. No linked list has been given. Okay? Okay. Come, let's make a cycle linked list. Which looks like this. Straight and a dented one."
+  },
+  {
+   "start": 84.59,
+   "end": 113.79,
+   "text": "Let's make it very beautiful here. Let's go. You can clearly see that one cycle has been made here. You can clearly see that your linked list is starting from here. What did we do? How did we do cycle detection? For the start point, first of all, you have to detect whether the cycle is there or not. For that, what did we do? Slow is equal to and fast is equal to what we used to do? Head. Means, keep both at the starting. How many slow steps do you walk? One step. Fast? Two steps. And?"
+  },
+  {
+   "start": 113.79,
+   "end": 142.13,
+   "text": "What is the thought process? If there is a cycle, then the fast will overtake the slow. What will it do? It will overtake. So as soon as the fast overtakes the slow, means as soon as your slow and fast will become one, then you can say very seriously that there is a cycle. There is a cycle. This is what I discussed yesterday, nothing else was discussed. You understood this, you must have remembered its code. But, but, but, when the question is asked that is the cycle okay? Tell me the starting point of the cycle. What is the starting point in this?"
+  },
+  {
+   "start": 142.13,
+   "end": 166.1,
+   "text": "The starting point is this node. Why? Because it is straight till here. As soon as you enter this node, you enter the cycle. Once you enter this node, it means you have entered that round field. Now there is no way out. So the entry point of the loop of the entry point of the cycle, from where you enter the field, you have to find out and tell. So, okay. Very good. So let's find out and tell. Let's see what to do in this. And don't stop."
+  },
+  {
+   "start": 166.1,
+   "end": 194.75,
+   "text": "We would have asked you to write this line. There are 4 lines of code. But there is no use of writing it. Understand it. Understand it. You will like it more. Okay. Once again, let's make a small link list here. Do a little with me. Be patient. It will be done quickly. You all know that everyone's attention span is very less nowadays. But we will have to keep this much. Okay. Now see. Imagine. Imagine. First of all, slow was also here and fast was also here. First of all, this was the link. Okay."
+  },
+  {
+   "start": 194.75,
+   "end": 224.83,
+   "text": "Let's assume that this is your meeting point. You can assume anything according to which node you want to assume. It will meet at some point in the cycle. It is possible that it will meet there also but it will meet at some meeting point. Let's assume that this is your meeting point. Now divide the entire linked list into three parts. In how many parts? In three parts. This one is from starting node to entry node. Is this your entry node? Okay. Let's call it L1. You can call it anything. X, Y, Z anything. L1 is a variable. Okay."
+  },
+  {
+   "start": 224.83,
+   "end": 254.61,
+   "text": "Now, from the entry node to the meeting point, the distance is called L2. What is called L2? In your cycle, suppose there are C nodes. How many nodes are there? There are C nodes. What is the number of C circles? 1, 2, 3, 4, 5, 6, 7. So, C is 7. Now, what is the length of your cycle? It is C. Now, tell me one thing. The length of the entire cycle is C. And you are saying that this part of mine is L2. It is an obvious thing."
+  },
+  {
+   "start": 254.61,
+   "end": 283.66,
+   "text": "The remaining portion will be C-L2. C-L2. No one has any doubt in this. What did we say? This one is L1. From your starting node to the meeting point is L2. And the remaining one is C-L2. It will be the same. Now see. Both of your slow and fast have come in one world at one time where we met at the meeting point. Now slow is the same. What would you have done slow first? Slow first."
+  },
+  {
+   "start": 283.66,
+   "end": 305.74,
+   "text": "How will your slow run? First of all, the distance will be covered by L1. First of all, it will go from the starting to this node, which is the entry node. And if the slow would have run till here, then your meeting point would have been here. But your meeting point is further ahead, further ahead in the field. Means the slow would have gone further. So the slow would have gone further, means L2 would have gone too. L1 plus L2."
+  },
+  {
+   "start": 305.74,
+   "end": 335.94,
+   "text": "L1 plus L2. That's why slow starts from the first note and reaches your meeting point. How will it reach? First it starts from the first note and goes to the entry. From the entry it goes to your meeting point. So L1 plus L2. Very good. How fast did it go? This is a very important question. How fast did it go? Look, it's not necessary that slow is going one by one. Slow is a very good thing. But fast goes faster than slow. So first of all, one thing is decided that fast will also run L1. L1 will run once. Fast will also reach the meeting point. Okay."
+  },
+  {
+   "start": 335.94,
+   "end": 363.89,
+   "text": "Fast will also run L1. Now, L1 will run. And, it is possible that the slow went from entry to meeting point in one go. Fast runs fast because fast runs fast. It is possible that fast must have run in that circle many times. What are you saying? First of all, your fast came here. After that, it is possible that your fast must have run in that circle many times."
+  },
+  {
+   "start": 363.89,
+   "end": 386.51,
+   "text": "then he would have gone to the alto and the slow would have come here. Means, your slow is coming slowly, your fast is running fast, you are a fast runner and you have a friend who is coming slowly from behind. Now, until he comes slowly, till then, because you are running so fast, you must have done a lot of laps on the ground, then they will sometimes collide. So, let's assume that"
+  },
+  {
+   "start": 386.54,
+   "end": 415.09,
+   "text": "Fast, till the time the slow didn't come, first of all, if fast L1 goes, then it comes to the entry. Now, from the entry, a lot of rounds have been made. Whose round? The whole cycle's round. Fast can't go out. In the fast cycle, only one round will be made. How much? Assume that N times C, because there are C nodes. So, so many rounds have been made. N rounds have been made. Okay. After that, after that, at some point or another, fast must have come to the starting node. And because the meeting point is L2, meaning the distance of the meeting point is L2 from the entry to there, then fast,"
+  },
+  {
+   "start": 415.09,
+   "end": 444.3,
+   "text": "and L2 would have run and L2 would have run means see slow first run L1 then run L2 simple thing but fast first run L1 after that it took a lot of round after that it got L2 at the meeting point this must have happened ok so now see this is slow and this is fast what we know is that fast is 2 times its speed is 2 times it is 2 times speed compared to whom compared to slow compared to slow"
+  },
+  {
+   "start": 444.34,
+   "end": 473.87,
+   "text": "In comparison to slow, fast runs twice as fast. That is why we call it fast because it is running at a double speed. Now tell me one thing. Suppose you are a good man. You are a slow man. You are running at a speed of 4 km per hour. You have a friend who is running at a speed of 8 km per hour."
+  },
+  {
+   "start": 473.87,
+   "end": 503.81,
+   "text": "Okay. If we give you both one hour's time. How many hours? One hour's time. How far can you go in one hour? How far can you go in one hour? Will you be able to go four kilometers? You will be able to go four kilometers, right? You are running four kilometers every hour. We told you to run one hour. So you will be able to go four kilometers in one hour. How many hours can your friend go? How many times will your friend be able to go? Your friend will be able to go eight kilometers. Your friend will be able to go eight kilometers in one hour. Time is the same. Time both have one hour."
+  },
+  {
+   "start": 503.81,
+   "end": 532.1,
+   "text": "But because the speed is more, the speed is its double, then it will run 8 km in an hour and you will be able to run only 4 km. This is understandable that if you give only one time, the speed is 4 km and one is 8 km, then you say how far can you go? So the one who has 8 km will go 8 km far, you have 4 km, you will be able to go only 4 km. What is this? This is your distance. Distance travel is only there. What are we saying here too? These two are also distance. These two are also distance. These two are also distance travel."
+  },
+  {
+   "start": 532.1,
+   "end": 557.12,
+   "text": "These two are also distance travel in some way. This is written in the number of notes, so that's why we are writing L1 and L2. But time is one, isn't it? Assume your program, your program, your program will start at t is equal to 0. Your program will start at t is equal to 0. And t is equal to 10, your slow and fast will meet. Slow and fast will meet. So time is one, time is constant."
+  },
+  {
+   "start": 557.12,
+   "end": 586.8,
+   "text": "Distance fast will run more. How much will it run more? 2 times. Slow's speed is 4 km. Fast's is 8 km. So, fast's distance is double. So, if we want to write it in distance, then how do we write it? 8 is equal to 2 into 4. This is what we write if we want to write it in equation. If 1 is 8, then 8 is equal to 2 into 4. So, write the same here. What is written? Fast's distance first. What is fast's distance? Plus L2 is equal to 2 times L1 plus L2. This will be the equation. Come, let's solve it."
+  },
+  {
+   "start": 586.8,
+   "end": 616.72,
+   "text": "Let's solve this. What will this be? 2L1 plus 2L2. Is it correct? Cut 1L1 and cut 1L2. Okay. NC is equal to L1 plus L2. Is this correct? This is correct, right? Okay. Now, when NC is equal to L1 plus L2, what will we do? No one will get confused till this point. I am telling you again, don't get confused. Don't get confused. Now, L1 is equal to"
+  },
+  {
+   "start": 616.72,
+   "end": 652.59,
+   "text": "nc minus l2 you can write this also in right hand now what happened? what was your c? number of nodes in cycle n was number of times fast ran in cycle l1 was number of nodes between head"
+  },
+  {
+   "start": 652.59,
+   "end": 685.42,
+   "text": "And starting point. This is what we defined. What was L2? Number of nodes between start point and meeting point. This was it. Now let's go. Now see. What are we saying? Suppose N1 is here. So what happens? L1 is equal to C minus L2."
+  },
+  {
+   "start": 686.1,
+   "end": 715.36,
+   "text": "C minus L2 would have come. Okay. Remember C minus L2. Remember C minus L2. Come, see in the diagram. C minus L2 was seen somewhere. See. This. This C minus L2 was written. C minus L2 was written. You take out the equation now. L1 is equal to C minus L2. Okay. If we do one thing. If we do one thing. Fast is already here. Fast is already at the meeting point. Fast is already at the meeting point. When your union happened. If we put the slow back on the head."
+  },
+  {
+   "start": 715.36,
+   "end": 745.22,
+   "text": "If we put the slow back on the head. Now, we tell both of them to start walking one by one. Now, we don't have to run at high speed. Both of them start walking one by one. So, will it be like this? How long will it take for slow to reach the entry from the head? L1 steps. L1 steps. And how long will it take for fast to reach the entry from the meeting point? C-L2 steps. This is the distance. This is the number of nodes. This will take C-L2 steps. And you have already seen that L1 and C-L2 are equal. So, will it be like this?"
+  },
+  {
+   "start": 745.22,
+   "end": 774.35,
+   "text": "that in the same time, the slow will go from the head to the entry, in the same time, the entry will also go from the meeting point. Everyone is knowing from the equations that it will go. This is the math. That is why, how do we solve this question? As soon as you get slow equal to head, as soon as you get slow equal to head, do you get to know? What do you get to know? It is a cycle. Very good. Now come. Now, do you know that it is a cycle?"
+  },
+  {
+   "start": 774.35,
+   "end": 804.85,
+   "text": "The first thing to do is to keep slow equal to head. Now, while, while, slow, not equal to fast. What to do? Not equal to fast. And how many times do we have to run both of them? Once. Slow, next. How many times do we have to run fast? Once. Fast, next. And we have to stop this while loop. When will this while loop break? When?"
+  },
+  {
+   "start": 805.14,
+   "end": 834.93,
+   "text": "slow equal to fast will happen. As soon as slow equal to fast happens, where will we get it? We have seen that we will get it at the entry point because we are giving so much time. After getting comfortable, return slow. Your program is over. You got the entry point. Revise it again. The first thing is that you have to find the cycle. Have you written the code for finding the cycle yesterday? In that while loop, what did we do yesterday? If slow equal to fast happens, then?"
+  },
+  {
+   "start": 834.93,
+   "end": 865.2,
+   "text": "What we used to do? We used to do return true. We used to do return true. Instead of return true, you don't have to tell true or false, you have to tell starting. Now if you want to tell starting, then you have to write this code instead of return true. This code. As soon as you replace your return true with this, you will get what? You will get starting point. You will get what? You will get starting point. You will get it. Now you will have a doubt, I know you will get a comment."
+  },
+  {
+   "start": 865.2,
+   "end": 894.13,
+   "text": "Sir, you had taken n is equal to 1. That's why you could do n is equal to 1. You could do l1 is equal to c minus l2. Otherwise, l1 is equal to n c minus l2. Okay. Suppose if n is 2. If it would have been 2 times, then what would have happened? Then your equation would have been spoiled. See. What is c? c is your number of nodes. What is number of nodes? In the cycle. In cycle. In cycle. And n is your number of times you have gone in the cycle."
+  },
+  {
+   "start": 894.13,
+   "end": 924.51,
+   "text": "Number of times you have looped in the cycle. If you take n as 2, then what does it mean? Fast has rotated 2 times in the cycle. It means it has rotated in 2C. It has rotated 2C times. And L2 has also rotated. Fast will be able to rotate only this much. So your equation will become this."
+  },
+  {
+   "start": 924.51,
+   "end": 950.38,
+   "text": "L1 is equal to 2C minus L2. It won't make any difference. Why? Because, suppose, you can see this in another way. This 2C minus L2, you do one thing, suppose you had 10 nodes in your cycle, even if your cycle is so big, if your cycle is twice as big, then you can write L1 is equal to C minus L2. It doesn't make any difference."
+  },
+  {
+   "start": 950.38,
+   "end": 977.95,
+   "text": "It is a bit confusing. Try to understand it a bit. There is no difference from this n. You are saying the number of nodes. You are saying that if this is my L2, and this is my meeting point, and this is my starting point, then how much is this one? How many things will there be in this? How many things will there be in this? We call this C minus L2. So, we have taken C, right? We have taken C. So, imagine if you could go around in C twice, then what would we do? If we take the length of the cycle,"
+  },
+  {
+   "start": 977.95,
+   "end": 1007.31,
+   "text": "If we increase the area twice, then the fast can rotate only once. If the fast rotates three times in that cycle, then if we increase the area three times, then the fast can rotate only once. That's why there is no difference from n. If you take n as 1, then you will get this. If you take n as 2, then you will get this. The number of nodes does not change. That's why we say that to go from here to here and to come from here to here, you have to take the same number of nodes."
+  },
+  {
+   "start": 1007.31,
+   "end": 1037.07,
+   "text": "This is the same number of nodes. Distance can be a lot. It is possible that if you write n, c, then your distance will increase. Distance will increase, but the number of nodes is constant. It is possible that there are 6 nodes in between. If you write n, c, and you say that it will rotate 3 times, then it may rotate 18 times. But the number of nodes is the same. The number of nodes is the same. That is why we do it. Did you understand how to get the start point when something happens? Did you understand the start point? Okay. Now, one more thing that is missing in the flow chart."
+  },
+  {
+   "start": 1037.36,
+   "end": 1069.54,
+   "text": "By the way, go and submit this question. One more question is left in the flow chart. What flow chart did we teach you? Cycle, loop, start of cycle. Start of cycle. But, but, but, one more thing is missing in this. In one more question, fast and slow can be applied. What? Middle of linked list. Middle of linked list. Middle of linked list. This is a separate category of this flow chart. Now,"
+  },
+  {
+   "start": 1069.54,
+   "end": 1097.41,
+   "text": "Middle of link list will be very easy for you. If we say middle of array, then how do you read it? If we say middle of array, we say 0, 1, 2, 3, 4, 5, 6 length array, then you will say that array of 3 will be its middle. This will be its middle. Now we will say this, it is very simple. Why is this very simple? Because you know the length of array. You know the length of array. You know the length of array, that is why it is very simple."
+  },
+  {
+   "start": 1097.41,
+   "end": 1126.13,
+   "text": "But in the linked list, you don't know the length. For example, this is the linked list. This is 1, 2, 3, 4, 5, 6, 7. In this, you don't know the length of the linked list. You are told to find the middle note. The middle note can be found in one condition, when you know the length. If you tell the length that it is 7, then you will say that this note is the middle. But you don't know the length."
+  },
+  {
+   "start": 1126.13,
+   "end": 1154.78,
+   "text": "And you don't have to find the length. There is another solution to this. You find the length. You traverse the linked list from the beginning to the end and find the length. When you find the length, when you find that it is 7, you start from the head again, go 3 forward and find the middle. This is one. But how many times are you traversing the linked list? Twice. In this, you have to traverse the linked list twice. You don't have to traverse twice, you have to traverse once. Now come and see the question. Come. 0, 1. This is us."
+  },
+  {
+   "start": 1154.78,
+   "end": 1185.33,
+   "text": "Let's make a big link list. Okay. Now see, this is your node 1, 2, 3, 4, 5, 6, 7. How can we use fast and slow in this? We said this is also a question of fast and slow. Fast and slow is a very nice question. Now see, what happens in fast and slow? How many steps does slow move? One step. Fast moves twice as fast. Okay. There is no cycle in this link list."
+  },
+  {
+   "start": 1185.65,
+   "end": 1216.22,
+   "text": "No, it means there is a straight road. There is a straight road. There is a straight road. Okay. Let's play a game. There is a straight road. You are running 4 km per hour. How many km are you running? 4 km. Your friend also starts with you but he is running 8 km per hour. Okay. Now, let's say, let's say, your friend says, your friend who is running 8 km per hour, he says that it will take us 1 hour to finish the entire road."
+  },
+  {
+   "start": 1216.22,
+   "end": 1245.3,
+   "text": "It is a good thing. He will know that the length of the road is 8 km. He will know from somewhere that it will take us an hour to cross the entire road. Very good. So let him do it. So both of you run. What did your friend say? That we will cross the entire road in an hour. Means, how many kilometers will he run? 8 km. Assume the length of the road is 8 km. Your friend will reach here in an hour. Your friend will reach here. In an hour, how much distance do you travel? What is your speed? 4 km per hour. You travel 4 km."
+  },
+  {
+   "start": 1245.33,
+   "end": 1271.63,
+   "text": "You travel 4 km, right? How far will you reach? You will reach here. How far will you reach? 4 km. Your friend will travel 8 km. Whatever distance your friend will travel in an hour, you can cover only half the distance because his speed is double. This happens, right? t is equal to s into t. Distance is equal to speed into time. Now, someone's speed is s and someone's is 2s. So, the distance will also decrease like this. Okay. So, what is the speed of your friend?"
+  },
+  {
+   "start": 1271.63,
+   "end": 1290.93,
+   "text": "4 km per hour. Your friend's speed is 8 km per hour. Your speed is 4 km per hour. You can go 4 km in an hour. This is called middle. Where are you now? You are in the middle of the road."
+  },
+  {
+   "start": 1290.93,
+   "end": 1320.27,
+   "text": "You are in the middle of the road. Why? Because your friend told you that you will be able to cross the road in an hour. What is the distance of the road? 8 km. How far did you cross in an hour? 4 km. Why did this happen? Because you are running at half speed. Where will you reach when you cross the road? You will reach in the middle of the road. You have to go half way. If you are given one more hour, you will reach the road. We will do the same here. It is simple. You must have clicked something. Did you click something or not? First of all, we will add slow is equal to head. And"
+  },
+  {
+   "start": 1320.27,
+   "end": 1348.51,
+   "text": "Fast is equal to head. We will keep it. Now, start running. Start running. Till when? Till when? Fast not equal to null. And fast.next not equal to null. Start running. Run it simply. There is no logic in it. Come on. Slow is equal to slow.next. Fast is equal to. Fast is equal to."
+  },
+  {
+   "start": 1348.51,
+   "end": 1374.78,
+   "text": "How many steps do you have to run? Two steps, not one. Run it at double speed. And turn off the while loop. When will the while loop end? When the link list will cross fast. When the road will cross fast. Will it cross fast first or will it cross slow first? It will cross fast first. Fast is running fast, right? That's it. If you crossed fast, return slow. That's it. The code is over. That's it. It was a four-line code."
+  },
+  {
+   "start": 1374.78,
+   "end": 1402.4,
+   "text": "Do you understand why this is happening? Fast is running with double speed. Fast will cover the entire linked list. If it is straight, it will pass. Till then, where is the slow? It will reach only half of the slow. Because it is running with half the speed of slow. It is a simple thing. So, if there is any middle problem of the linked list, or you have to find the middle of the linked list in any question for some reason, what should you use? Slow fast. What is its benefit? One traversal. How much? One traversal."
+  },
+  {
+   "start": 1402.4,
+   "end": 1431.86,
+   "text": "not two traversals, we take out the length anywhere, no, you have been told that there is a road, brother, tell me what is its middle, then you will say, do one thing, take two people, you run fast, you run at double speed, you run a little straight, so as soon as your fast man will cross the road, your slow man will automatically stay in the middle of the road, nothing else can happen, it is a simple question, understand it, go and submit it, submit it, now this is done, you have learned both things, this is the slow and fast pointer, it is not used in anything else, what will we teach tomorrow,"
+  },
+  {
+   "start": 1431.86,
+   "end": 1455.98,
+   "text": "till now we have learnt in linked list because intuition is good in linked list tomorrow we will teach you how to find slow and fast in array how to find slow and fast in array or even in any number if there is no question of array linked list then also how to find slow and fast tomorrow we will teach you and tomorrow we will learn to think that how to think without linked list that how to find so just go and submit both and see you"
+  }
+ ]
+}

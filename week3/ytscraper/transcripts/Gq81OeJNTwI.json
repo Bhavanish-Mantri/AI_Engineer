@@ -1,0 +1,409 @@
+{
+ "video_id": "Gq81OeJNTwI",
+ "title": "Graph Leetcode Hard Question Explained Like Crazy! Swim in Rising Water Leetcode",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2147,
+ "segments": [
+  {
+   "start": 0.69,
+   "end": 28.05,
+   "text": "Hello children, before starting today's video, I would like to give a message that if anyone watches my channel from Leetcode, then the way you guys frame the question, the way to write the question, the way to explain it is cheap. They are not saying bad, they are saying cheap. Why are they saying cheap? Because first of all, you guys go and read this question. Someone asked this question in the comment that this one is not understandable and we can understand why it is not understandable."
+  },
+  {
+   "start": 28.05,
+   "end": 55.18,
+   "text": "Lead code 778. Hard question. Name of the question is swimming in rising water. Now see, after seeing the hard question, first of all, the children are a little scared that how will they do the hard question. On top of that, the question is written so poorly. I mean, it took me a long time to understand the question that what do you want to say, what do you want to do. Swim in rising water, the framing of the question, the way you have told that what is the question, what to do, is very low standard."
+  },
+  {
+   "start": 55.18,
+   "end": 78.03,
+   "text": "Leadcode is a very good platform, user-friendly, everything is good. But the question that you are asked to frame, either you don't understand it completely, because if you understand something very well, then you can tell it very simply. If you have to talk about it in a complex way, then you don't understand it yourself. So first of all, correct this framing. I mean, this question is weird. If you read it, you will find it very weird."
+  },
+  {
+   "start": 78.03,
+   "end": 85.39,
+   "text": "It is said that there is a time and it will sink in water. Time and water will sink or not, it has no relation."
+  },
+  {
+   "start": 85.39,
+   "end": 114.96,
+   "text": "In this video, we will give you an analogy. What is the meaning of analogy? How will we explain it to you? You will understand. But we want to say from the lead court that understanding the question should not be a challenge. Children come to your platform. It is not that PhD holders come to your platform. No. Children come. College students come. 20-21 years old B.Tech students come. So understanding the question should not be a challenge. Questioning should be a challenge. What to do in the question should be tough. How to do the question should be tough. You make it tough to read the question."
+  },
+  {
+   "start": 114.96,
+   "end": 139.23,
+   "text": "Many students don't know English. That's a different thing. But even after learning English, it becomes very tough to understand and speak. Give an example, explain it, at least in a hard question, which is already a hard question. If you add another layer to it, then no, it is a hard question. You will have to be very smart to understand it. I don't think it's good. So if anyone is watching from Leetcode, please don't."
+  },
+  {
+   "start": 139.23,
+   "end": 163.84,
+   "text": "Take care of yourself. Let's move forward. Forget the leetcode. We will explain you the question. What does it say and what doesn't. You will enjoy the question. It is not that hard. It is an easy question. So look, you are given a matrix in the question. What does matrix mean? It is a 2D array. It has a number. You must be seeing a lot of numbers. It is written. It is a very good thing. What is your work? What is your real goal? You have to start from 0, 0. 0, 0 means top left corner. From this cell."
+  },
+  {
+   "start": 163.84,
+   "end": 193.28,
+   "text": "0 0 means you have to start from this cell. You can move in 4 directions as it normally happens. 4 directions means you can move up and down, right and left. Where is your goal to reach? Where do you want to reach? You want to reach here. N-1 and M-1 means you have to go from top left to bottom right. We have seen a lot of questions like this. There is nothing new in this. You have to reach from here to here. You can do anything. Right, left, up and down. You have to move like this and reach here. It's a good thing."
+  },
+  {
+   "start": 193.28,
+   "end": 219.42,
+   "text": "But, the number written here, as you can see, there is a number written in every cell, right? So, you will go from anywhere, means, if you do anything, then you will have to go through the cells. Suppose, 1 to 3 went, 4 went, 3 went, 1 went. So, you will have to go through the cells, right? Now, consider every cell, every box as a city. What is every box? It is a city. Suppose, it is a city. Delhi, Bangalore, Mumbai, Ranchi, it is a city, right? This number written here, in this city,"
+  },
+  {
+   "start": 219.42,
+   "end": 242.46,
+   "text": "There is a toll in every city. You have to pay a toll tax if you want to cross the city. Okay. You don't have to pay a toll in actual. But you should have that much money. You have to show that you have that much money. You don't have to pay anywhere. But if you want to cross this city, you want to come to this city from anywhere."
+  },
+  {
+   "start": 242.46,
+   "end": 271.6,
+   "text": "So, the number written in this city is 4. You should have 4 rupees. You should have at least 4 rupees in your pocket. If you have less than 4 rupees in your pocket, let's say you take 2 rupees in your pocket, you will not be able to visit this city and you will not be able to go anywhere through this city. Meaning, you will not be able to enter this box from anywhere. If you have less than 4 rupees, then, okay? What do you have to tell? Minimum. You have minimum money."
+  },
+  {
+   "start": 271.6,
+   "end": 295.38,
+   "text": "It has time written in the question, but minimum money required so that you can reach the last corner by doing anything from zero to zero. What does this mean? Look, the minimum money that you should have, for what? That you can start from here and reach here."
+  },
+  {
+   "start": 295.38,
+   "end": 325.12,
+   "text": "To go to every city, the number written in that box requires that much money. If you have less money than that, then you will not be able to go to that city. For example, someone says, okay, let's assume from our mind, we need minimum money, we need only one money. You say that we will start with 0 rupees. We will start with nothing. If you start with nothing, you will not even be able to start. Why? Because who is your starting city? This is the starting city."
+  },
+  {
+   "start": 325.12,
+   "end": 350.85,
+   "text": "How much do you need to enter this city? One rupee. How much do you have? Zero rupee. It is not possible. It is not possible at all. Okay, you will say, okay, we will not keep zero rupee, we will keep one rupee. Do it. Due to one rupee, you will reach here. You can start here, you are standing in this city. But, now where can you go from this city? Right, left, up, down. You can't go up, it will end up there. You can't go left, it will end up there."
+  },
+  {
+   "start": 350.85,
+   "end": 380.21,
+   "text": "Now see, can you go right from here? You can't go. Why? Because the entry fee of the city on the right is Rs. 3. How much is there in your pocket? Rs. 1. You can't go right. Can you go down from here? You can't go at all. Why? Because how much is the entry fee here? Rs. 2. How much is there in your pocket? Rs. 1. So you can't do anything. Meaning, you can't do anything with Rs. 1. Spread it more. Spread it more. You say that we will keep Rs. 2. Try it."
+  },
+  {
+   "start": 380.21,
+   "end": 407.34,
+   "text": "You can start here. It has 1 and 2. Just remember that you should have money. You should have enough money to enter that city. You don't have to give. Money will not decrease or increase anywhere. Nothing will happen. See 2. 1. You came to 1. 1 is good. Can you go to 3? You can't go at all because you have 2 rupees. The entry fee of that city is 3 rupees. You can't go. But you can go down. How much is the entry fee of the lower one? 2 rupees. How much is it? 2 rupees. You can go. You came to 2."
+  },
+  {
+   "start": 407.34,
+   "end": 435.62,
+   "text": "means you have bought this and you have come here too. See from 2, can you go down from 2? No, the one below has a fee of 5 rupees, you can't go. You can go right from 2, you can't go at all. How much is the fee to go right? 4 rupees. Again see that you are stuck, means even if you think of 2 rupees, you will go beyond 2 rupees, you can't go beyond. Now assume that we say that take 10 rupees, give 10 rupees. Now you can do anything, see there is 1, okay, 10 rupees is enough."
+  },
+  {
+   "start": 435.62,
+   "end": 464.75,
+   "text": "You can go from 1 to 3, absolutely go. You can go from 3 to 4, absolutely go. You can go from 4 to 3, absolutely go. You can go from 3 to 1, so you can reach. Meaning, there is a route that you can reach in 10 rupees. So, if you take 10 rupees, then it is very good. But, do you have to return 10 rupees? No. You have to return minimum amount of money. How much? Minimum amount of money. Meaning, if you imagine that you have 4 rupees. How much do you have? 4 rupees. See, what will you do? It is on 1, okay?"
+  },
+  {
+   "start": 464.75,
+   "end": 487.98,
+   "text": "You can go from 1 to 3 because you have 4 rupees. You can go from 3 to 4 because you have 4 rupees. You can go from 4 to 3 because you have 4 rupees. And you can go from 3 to 1 because you have 4 rupees. If you take 4 rupees in your pocket, then you can reach. There can be no answer less than 4. You can see. Take 3 and see. You will not be able to go anywhere from 3. We showed from 2. We showed from 1 and 0. Meaning?"
+  },
+  {
+   "start": 487.98,
+   "end": 512.67,
+   "text": "What should be the answer to this question? You will have to pay Rs. 4. If you want to reach from here to here, you can take any route. But you should have a minimum of Rs. 4. You will not be able to go below Rs. 4. So this question is asking you to tell the value of the lowest amount that you can reach. How can you reach even with the lowest amount? This is the meaning of this question."
+  },
+  {
+   "start": 512.67,
+   "end": 533.23,
+   "text": "Let's move forward, how to think about this question, how to look at it, how to understand it, etc. etc. But we hope that you have understood the question that what is this question saying? So see, now start thinking about this, what will we do in this? See, it has two or three solutions. The good solution is its Dijkstra solution, in which we will go after some time. If you have seen the last video,"
+  },
+  {
+   "start": 533.23,
+   "end": 553.62,
+   "text": "In which you have to find the maximum sum or path. That is the same question of Dijkstra. There will be no change in that. But there is one more solution which is very intuitive solution. You don't need to know Dijkstra for this. But it is a little tough to understand Dijkstra. It is a very good solution. You can think of that solution yourself. It is such a solution. See."
+  },
+  {
+   "start": 553.68,
+   "end": 581.79,
+   "text": "See, first of all, where did we start with the minimum amount of money? If you remember, I started explaining to you that if you take 0 rupees, you can take 1 rupee. It was not right to take 0 rupees. Why not? Because what are we saying? You have to start from this city, right? Whatever you do, you have to start from this city. So if you don't have the money of this city, let's say there is 10 rupees written in this city, entry fees. If you take anything less than 10, then there is no benefit. It's not going to happen, right?"
+  },
+  {
+   "start": 581.79,
+   "end": 611.6,
+   "text": "If you have taken 5 rupees and the entry fee of your first city from where you have to start is 10 rupees, then you will not be able to do anything. That means your answer, no matter what happens in the world, it cannot be smaller than this 1. Your answer should be bigger than 1. What is your 1? Array of 0 and 0. Is it right? Okay. What can be the maximum answer? We saw that taking 10 rupees will make the work. Now instead of 10, you will say anything. If we take 1 crore rupees, then the work will be done. It will be done."
+  },
+  {
+   "start": 611.73,
+   "end": 641.68,
+   "text": "The maximum value of this graph or this matrix is 5 rupees. If you take only 5 rupees, then you will definitely reach. Why will you reach? Because you have a Google map. You are seeing that every city has some toll. Highest entry fees means the highest entry fees of any city is possible. You can see that it is 5 rupees. If you keep 5 rupees in your pocket, you will definitely reach. It cannot happen that you will not reach. What does it mean to reach?"
+  },
+  {
+   "start": 641.68,
+   "end": 671.23,
+   "text": "What does it mean to not reach? That you are stopping somewhere, that is, you started from 1 and could not go to 3 or 2, then you got stuck. But if you keep 5 rupees in your pocket, anyone's toll will be less than 5, right? Because 5 is the maximum of this graph. If you keep 5 rupees in your pocket, you will definitely reach there. Are we coming to this? Means, what can be your lowest possible answer? What can be your lowest possible answer?"
+  },
+  {
+   "start": 671.23,
+   "end": 699.52,
+   "text": "Array of 0, 0. Why? Because you have to start from array of 0, 0. If array of 0, 0 has 100 rupees written on it, then you definitely need 100 rupees. It can be more than that, but it won't be less than 100. One definite answer to this, i.e. if someone asks you to find one definite answer, the maximum value of the graph. The maximum value of the graph. Why? Because if you keep the money of the maximum toll, you don't have to give money, you have to show the money everywhere. So we kept 5 rupees in the pocket."
+  },
+  {
+   "start": 699.52,
+   "end": 723.68,
+   "text": "Now, no matter what the entry fee is, it will be less than 5. They will show that they have 5 rupees. They will reach easily. Reach from any route. There is no problem in that. There is no restriction that you have to go from this route. No. Reach with any route. But if you keep 5 rupees in your pocket, it can't happen that you don't reach in the world. Okay. So, it is high. In this case, the maximum value is 5. Now, see."
+  },
+  {
+   "start": 723.68,
+   "end": 753.2,
+   "text": "Remember binary search. What did binary search say? That you should have a low and a high. You have to guess an answer. You have to guess an answer. So look, what we are saying is that if you have a low and a high and you guess a value, that you guessed something in between them. If you come to know that yes, that means that work can be done. Or no, that work cannot be done. After that, what did you do? Did you eliminate it or not? Here the same thing can be done. Why can it be done? In this case,"
+  },
+  {
+   "start": 753.2,
+   "end": 780.26,
+   "text": "What is your low? Your low is 1. Why? Because the array of 0 is 0, 1. So, 1 rupee should definitely be there. 0 can't be used. Do anything and see. Your high, what will happen here? 5. Why? Because 5 has maximum value. So, if they go above 5, there is no much benefit. Even 10 will get an answer. But you have to give minimum answer. So, work will be done in 5. Okay. Guess. Guess who? We used to do the middle one. Guess his. We used to do the middle one. 1 plus 5 by 2. What comes? 3."
+  },
+  {
+   "start": 780.26,
+   "end": 807.89,
+   "text": "Now you have to check that if we take 3 rupees in the pocket, then can we reach the beginning or the end? When will I have 3 rupees? What will you do for this? You will write a function. From here you will start doing BFS. BFS or DFS, whatever you want. We will do BFS because it works well. From here you will start doing BFS. What used to happen in BFS? You will put this in the queue."
+  },
+  {
+   "start": 807.89,
+   "end": 834.66,
+   "text": "We will explore its neighbor. Neighbor means we will explore the person on the left and right. If these three are less than your money, that means you can enter this city, put it in the queue. If you can't enter this city, that means you are stuck, don't put it. While doing this, if you ever reach this person, which person? The last person, you see that we reached this person in the queue. You make a true return that yes, we can reach. So,"
+  },
+  {
+   "start": 834.66,
+   "end": 842.61,
+   "text": "Suppose if you start at ₹3, that we take ₹3 and try, your answer will be No. Means you can't reach ₹3."
+  },
+  {
+   "start": 842.61,
+   "end": 866.37,
+   "text": "If you can't reach in Rs. 3, then will you reach in Rs. 2? Absolutely not. Because why didn't you reach in Rs. 3? Because you did everything in Rs. 3, I mean you explored the entire route, it can't happen. There will be such a city or there will be many such cities who need more than 3 tolls. So when it couldn't happen in 3, it won't happen in 2 at all. 1 can't happen at all. So what will you do in this?"
+  },
+  {
+   "start": 866.37,
+   "end": 896.26,
+   "text": "If you can't do it in three, then you can do it in one. Try the next one. Try it in four. Start BFA from here. Try to go. If you can't go anywhere, don't go there. Go wherever you can."
+  },
+  {
+   "start": 896.26,
+   "end": 912.0,
+   "text": "If you reach this point, what does it mean? If you start with Rs. 4, you can reach it. If the answer is yes, what does it mean?"
+  },
+  {
+   "start": 912.0,
+   "end": 940.46,
+   "text": "Your one answer can be 4. It can be 4. Now, if your answer is 4, then do you need 5? We need minimum value. We don't know if it can be in 5 or not. It will happen. If it happens in 4, then it will happen in 5, 10, everything. After that, what will we do? We will write 4 in the answer. And we will reduce 1 to high. Because 4 is done. So, the work of more than 4 is not done. It will happen, but we don't need it. Your low will also be 4. High will also be 4."
+  },
+  {
+   "start": 940.46,
+   "end": 968.54,
+   "text": "Do the same thing again. Yes, there will be 4 here as well. Try doing it on 4. You will get the answer on 4. Yes, your answer will remain 4. Reduce the high by 1 more. So, your low will be 4. And high will be equal to 3. And your binary search will end. What answer did you get? 4. Was 4 our answer which we had written somewhere here? Yes, 4 was our answer. So, here we can find out by doing binary search. Why can we find out by doing binary search? Because first of all, we are finding out a range."
+  },
+  {
+   "start": 968.54,
+   "end": 997.23,
+   "text": "that brother, low is equal to 1 and high is equal to 5. Now, we are doing a guess in between. If your guess is 3, 3 can have 2 answers. Either yes or no. If the answer of 3 is no, then 2 and 1 will not work. If the answer of 3 is yes, then write 3 in your answer and remove the ones ahead of 3. If 3 is ahead, then 4 and 5 are not required. Check in the less ones. So, binary search is a very good way. Write a code of it and let me explain to you how it works. Let's go."
+  },
+  {
+   "start": 997.62,
+   "end": 1026.4,
+   "text": "So what does it mean to say, children, that if you are given a function, then come and write code. Oh, what happened? Means, what will they do in binary search? First of all, what will be the function given to you? You know something like this, what is its swim water? What do these people keep thinking after thinking of the name? What do these people think of the elite code that it will be good? Okay, by doing this, you will be given a grid. First of all, remove that, remove the lens. Okay. And remove that."
+  },
+  {
+   "start": 1026.4,
+   "end": 1055.89,
+   "text": "I mean, take out the number of columns, by doing array of 0.size. Okay, now what do you need for binary search? You need two things, low and high. So, int low. What we are saying is that, array of 0 will not work in less than 0. I mean, it will not work in less than this. If you do anything, it will not work. So, this is done. What will int high do? High is equal to, for now, make it array of low, low. And we will take out its maximum. What will we take out of it? Maximum. How will we take out maximum? Int."
+  },
+  {
+   "start": 1055.89,
+   "end": 1085.46,
+   "text": "ij for i is equal to 0, i less than n, i++. After that, for j is equal to 0, j less than m, j++. And what will we do here? High is equal to, whatever the maximum is, maximum of high and array of ij, means anything. So what will it do? It will give you the whole matrix, in fact. It will give you the maximum. Lower high is taken out. Start your binary search game."
+  },
+  {
+   "start": 1085.46,
+   "end": 1115.9,
+   "text": "1 int result is equal to 0. You have to write something. Write it. Now what you have to do? While while low less than equal to high. Means till low is below high, you can run. Guess one person. What do we guess? The middle man. Those who have read binary search, again we are saying the same thing again and again. They will be confused. Those who have not read, you guys read and see. Once my binary search, we think it is the best binary search on the internet. We have read it with a lot of love."
+  },
+  {
+   "start": 1115.9,
+   "end": 1137.46,
+   "text": "Guess and see. If BFS, we will write array of n, m and guess. If it becomes true, then what do you have to do? Assume that you get that you can go to 4 rupees. Make the result 4 rupees. Now you can go to 4, there is no need for 5, 6, 7. Reduce the high from guess. High is equal to"
+  },
+  {
+   "start": 1137.46,
+   "end": 1165.57,
+   "text": "Guess minus 1. If this is the case. If this is not the case. Means if you can't go in 3 rupees. Then what to do? If you can't go in 3. Then you can't go in 2. You can't go in 1. Low is equal to. Guess plus 1. If you do this. Then you will get an answer. And what will you do in the last? Return rest. This is the main code. Now we will do this BFS. BFS is very easy. There is nothing much to do in it. BFS code is very easy. BFS will tell you. That you can go or not."
+  },
+  {
+   "start": 1165.57,
+   "end": 1194.86,
+   "text": "What will it take in the input? First of all, it will take its own matrix. If it takes the matrix, then it will do BFS on it, right? Did I teach you how to do BFS? It is the same. It will take its nm, int n, int m, and int money. Int money, which you are sending here as a guess, that tell me, can we go with this much money or not? So that became money here. Come. What do we need to do BFS? We don't need anything. i, j. You need it in four coordinates, so we have taught you the trick of four coordinates. What have we taught? 1, minus 1, 0."
+  },
+  {
+   "start": 1194.86,
+   "end": 1224.69,
+   "text": "0. And we have learnt tricks for y coordinate as well. y4 is equal to 0, 0, 1, minus 1. Is it over? Come, let's start our BFS. What do you need for BFS? You need a Q. What will you store in Q? Coordinate. Meaning, if you ever reach the last one in Q, meaning you can go there. So, to coordinate in Q, we will put a pair. So, put a pair. Do this and make a Q. Now, what do we do? Q dot. Yes, we need one more thing. What do we need in BFS?"
+  },
+  {
+   "start": 1224.69,
+   "end": 1254.82,
+   "text": "Visited array. What do we need? Visited array. Means, we don't have to go on the same again and again. If we go in one, then we just go. We also need a visited array. How to make a visited array? As we have taught, it is made the same way. Vector of, vector of int, visited, n size. Now, do one thing. For i is equal to 0, i less than n, i plus plus. And, what do we do? Make a new array. How much size? M size. And, in the beginning, put 0 to all. Now, visited of,"
+  },
+  {
+   "start": 1254.82,
+   "end": 1284.45,
+   "text": "I is equal to T. Your visited has been made. In the beginning, everyone is non-visited. Now what to do? Start BFS. From where to start? From the first cell. Q dot push. What will we push? 0, 0. You have to start from 0, 0. Okay? Okay? And visited of 0, 0 has become 1. Means you have gone to 0, 0. You don't have to work again and again. Okay? Come on, write BFS. While Q dot not empty. Means if Q is not empty, then what to do?"
+  },
+  {
+   "start": 1284.45,
+   "end": 1316.93,
+   "text": "First of all, remove one person from here. Pair int int p is equal to q dot front. Remove q from front and don't forget to pop q. Don't forget to pop q. Write the coordinate of these two. What is r? Sorry, write row. Row is equal to p dot first. Good thing. Int column is equal to p dot second. Good thing. Now, what to do? First of all,"
+  },
+  {
+   "start": 1316.93,
+   "end": 1345.31,
+   "text": "We will mark visited there only. Leave it. We have taken out row and column. Now search for its neighbor. But before searching for neighbor, think of one thing. If row equal equal to n minus 1 and column equal equal to m minus 1. It means that you have come to the last and stood. Standing at the last means that you can reach here. What do you do immediately? Return true. Don't go anywhere after last. The goal was to reach the last. Return true. Now if this is not the case, then explore its neighbor. How will we explore the neighbor? For"
+  },
+  {
+   "start": 1345.31,
+   "end": 1374.75,
+   "text": "int k is equal to 0, k less than 4, k plus plus, int r is equal to rho plus x of k, and int c is equal to column plus y of k. First of all, check if this is valid. If this is valid, write the function of valid. We are hoping that you have not come to watch the first video of the graph series. Valid must be known to everyone."
+  },
+  {
+   "start": 1374.75,
+   "end": 1404.02,
+   "text": "If it is valid and if it is not visited, and very important thing, you don't have to leave it till here. If you can go to this cell, it means that your money is greater than equal to area of RC. It means that if you don't have money to go to this cell, don't go. If these three things are there, then you can do it. What can you do? Q dot push RC."
+  },
+  {
+   "start": 1404.18,
+   "end": 1430.42,
+   "text": "And mark it as visited. Visited of r, c is equal to 1. And close this if. Close this if, close this for loop, close this q. If this whole BFS gets over, the q gets empty. Look, if you had reached the last, you would have returned true here. The q got over. It means the return didn't reach. What to do in the last? If you can't reach, you can't reach the return. False. The money was less, you couldn't reach."
+  },
+  {
+   "start": 1430.42,
+   "end": 1451.73,
+   "text": "return false. So this is the code of BFS. This is a simple BFS code. There is no rocket science in it. What is the code above? Binary search. Meaning, you are looking at the money one by one. If you can reach it, then it's good. If you can't reach it, then it's fine. You will see more. While doing it, you will get the minimum answer and you will return it. Its time complexity will be n square because it is said that"
+  },
+  {
+   "start": 1451.73,
+   "end": 1480.21,
+   "text": "The numbers are in the range of 0 to n square. So first of all, log n square for binary search into n square for your BFS. Its time complexity. If you want all this in the interview, then it will be accepted. That means if you say in front of me, we will accept it. It is a good solution. But what is its main solution? Dijkstra. Let's go ahead and see. We hope you understand this. Do this too and see the code. It will be done. It will be submitted too. I told you, this is an acceptable solution. I am not telling you such a bad solution. It is a very acceptable, very nice solution. Let's start in Dijkstra now."
+  },
+  {
+   "start": 1480.37,
+   "end": 1509.92,
+   "text": "Now, let's talk about the question of graph. Binary search is fine, but how will Dijkstra look? So, how will Dijkstra look, dear students? If you have watched the episode 12 of the graph series, path with minimum effort, the episode 12 of the graph series, it is the same question. Same. There is no difference in the line. It is the same question. How is it? Let's tell you. Path with minimum effort, what did it say? It was the same in that too. That brother, you have to go from here to here. You can go on any route. You can go on any route by going up and down. Now,"
+  },
+  {
+   "start": 1509.92,
+   "end": 1537.78,
+   "text": "of that path, of that route, suppose you have passed 2-3 cities in that route, 4 cities, it's your choice, but whoever you have passed, the maximum value from them, means if you are coming from 00 to N-1, M-1, from any route, then you must have passed a lot of cities. The city or the boxes that you have passed, their maximum value will be the answer of that route. The answer of that route or the cost of that route. From all such routes,"
+  },
+  {
+   "start": 1537.78,
+   "end": 1566.34,
+   "text": "Minimum cost return from all these routes. For example, if you have done this, then the maximum value in this, which is the maximum value? 4. So the cost of this route will be 4. If you have done this, then which is the maximum value in this route? 5. So the answer to this route will be 5. From all these routes, which is the minimum answer I had to return? In that question. Here too, the same thing is being asked. If you have to go from here to here,"
+  },
+  {
+   "start": 1566.34,
+   "end": 1593.17,
+   "text": "Take any route. Let's take this route. So, which cities have been passed? 1, 3, 4, 3, 1. How much money should you have? Out of the cities you are passing, what is the maximum entry fee? Rs. 4. So, you should have Rs. 4. If you have taken this route, what is the maximum city? 5. So, what will be the answer of this route?"
+  },
+  {
+   "start": 1593.17,
+   "end": 1622.22,
+   "text": "5. There will be a lot of routes. What will be your main answer? Any one route through which you can reach from 0 to 0. And its maximum value should be minimum. That means the answer of the route in the city, which is the entry fee of the largest city of that route, should be minimum. So it's the same question. It's exactly the same question. If you are doing the path with minimum effort,"
+  },
+  {
+   "start": 1622.22,
+   "end": 1648.18,
+   "text": "Write exactly the same code in this and it will work. Now, what was there? It was similar that you are starting from here. What is the maximum? You have to do the same work here. Write the same code, same concept here. It will work. That's why we are not going too deep in this. Because we have explained it very deeply there. In episode 12, we will explain this thing for about 40-50 minutes that how it happened and why it happened. It is the same question and the same solution."
+  },
+  {
+   "start": 1648.18,
+   "end": 1678.03,
+   "text": "Same question and same solution. The code is also the same. The code is also the same. It is the same code. Okay? Even then, we will write the code for you once. We will write the code once. There is no problem in writing the code. It will be a little big, but let's write it. Same code. We are not going too deep in the explanation because it will happen again. Because it has been explained very well there that what will happen. We just want to explain you this thing that why is the same question? In that question, he used to tell you that brother, you have to go in some route. The biggest city in it will be answered."
+  },
+  {
+   "start": 1678.03,
+   "end": 1707.39,
+   "text": "This question also says the same that you have to go in any route. Whatever the biggest city is, you will need that much money, right? So do this and find the entire route. I mean, look at the entire route and find it. The one in which the least money is coming will be answered. Your answer will also be 4 rupees because you can't go less than 4. If you go from this route, you will also take 4 rupees. If you go from this route, you will also take 4 rupees. If you go from this route, you will also take 4 rupees. If you go from this route, you will take 5 rupees. It will not happen. So your answer will be 4."
+  },
+  {
+   "start": 1707.39,
+   "end": 1731.92,
+   "text": "So exactly same code, same question, same code, same concept. That's it. Let's try to write its code. To write its code, you have to write the same Dijkstra code. Make a big min heap and etc. etc. work. Let's write its code on the screen. You have int, which is the function of your lead code. Swim water and vector of."
+  },
+  {
+   "start": 1731.92,
+   "end": 1760.08,
+   "text": "vector of, that is why we say that most of the questions are related, meaning there is no such thing in it. By reading one good question, you can do 3-4 good questions, because there is nothing special to do in the graph. You have to understand once, after that everything is same. So, let's take out n is equal to a dot size, okay, int m is equal to array of 0 dot size. In this question, in this video, my main concept was to explain binary search to you more, because it is a new concept."
+  },
+  {
+   "start": 1760.08,
+   "end": 1787.33,
+   "text": "This is the same, that's why we are not paying much attention to it. Binary search was new, so we wanted you to get into it. Please read both of them. Don't copy this and go. Binary search, please try it. It's a very beautiful solution. Come on. NM is made. After that, make a heap. Heap means min heap. What do you have to put in the heap? What did you put in that question? The same distance and coordinates. What do you have to put here? The same, your money and your"
+  },
+  {
+   "start": 1787.33,
+   "end": 1817.9,
+   "text": "x, y, which is your coordinate. So, what type of heap will it be? Pair of int, which is for money, and one more pair inside it, which is for coordinate, x, y. This will be your priority heap. Write the syntax of priority queue with me. What do we write in this? We are also writing by looking at the syntax. Pair of int, pair of int, int, 1, 2. After that, vector of, same thing, pair of,"
+  },
+  {
+   "start": 1818.03,
+   "end": 1849.52,
+   "text": "Int. Pair of. Int. Int. 1, 2, 3. And. Greater. Because we have to make a min heap. Tq. Done. You need to make a result vector. We will write everyone's result. We have written everyone's result in that too. So, in the last, whose result do you have to return? n minus 1 or m minus 1. What will that result tell you? What is the minimum cost to reach this? Brother, answer. Minimum money or minimum cost. Whatever it is. Vector of. Vector of int."
+  },
+  {
+   "start": 1849.84,
+   "end": 1880.53,
+   "text": "result n int ij for i is equal to 0, i less than n, i plus plus. In the beginning, you have to write the cost of everything as infinity. So, don't write infinity. You can write this, tm 1e8. 1e8 means 10 to the power 8. Almost infinity. Let's go. You have made this result array. Now, what do you have to do? Push in yourself. In which? pq.push."
+  },
+  {
+   "start": 1880.53,
+   "end": 1906.7,
+   "text": "Where are you starting from? What is your source? Your source is 00. How much will it cost to reach there? If you want to reach there, at least the array of 00 will cost that much. Don't write its cost as 0. If you want to enter the 00 share and start from there, the entry fee written in it will cost that much. It doesn't cost 0. What do you have to do? How much money will it cost? Array of 00 and 00."
+  },
+  {
+   "start": 1906.7,
+   "end": 1937.01,
+   "text": "So, you push this in your PQ and also update your result. What should you update? Array of 0 and 0. Is it right? Start your Dijkstra. How do we start Dijkstra? While pq.notempty. We are not writing anything new in the code. You are doing the same thing as you wrote in episode 12. You are writing the same code and thinking the same thing. First of all, remove this which you have entered. Pair of"
+  },
+  {
+   "start": 1937.04,
+   "end": 1967.3,
+   "text": "int int p is equal to pq dot top. Okay? And pq dot top. Extract the things from these. Extract the things that were inserted. See. So, first of all, int money. int money is equal to p dot first. So, its first one will be that how much money has come. How much is the cost to reach this? int row is equal to p dot second. Means your coordinate and its first. So, this is your row."
+  },
+  {
+   "start": 1967.3,
+   "end": 1995.6,
+   "text": "Which is the column? Second of P and second of that too. Right? So, what happened to you? Your cost of reaching there. Now, what happens in Dixitra? Stale entry. If the money that you have earned here is greater than the current result of it. Meaning, suppose there is a city. You are saying that it used to cost 100 rupees to go to Delhi. But your result is written there that to go to Delhi,"
+  },
+  {
+   "start": 1995.6,
+   "end": 2022.96,
+   "text": "It costs 30 rupees. So what does this mean? What is this? Stale entry. We have explained this many times in Dixra. What is this? It is stale entry. You don't have to do anything. Continue. Continue. Continue. If this is not the case, then start. To start means to explore its neighbor. How to explore its neighbor? int k is equal to 0. k less than 4. k plus plus. int r is equal to"
+  },
+  {
+   "start": 2022.96,
+   "end": 2052.37,
+   "text": "Rho plus x of k, x, y is the one that you make an array of. It is not written on the face. Write it. Because now you are advanced children. Now you don't need so much handholding. Now if we leave one or two lines, you don't understand that it is fine. Leave it now, but you have to write. Now you have reached the graph. You have become very senior people in DSM. Now you are not children that we will do so much handholding. First of all, check that if it is non-valid. Means you can't go till here. R, C, N, M. Continue. Continue."
+  },
+  {
+   "start": 2052.37,
+   "end": 2076.96,
+   "text": "Now relax. So int new money. What was written there? New weight in episode 12. What was it? Max of the money that came out and array of RC. Means if Bangalore's own entry fee is Rs. 20 and till now the entry fee of the route is Rs. 100 already. So it will remain Rs. 100 till we go to Bangalore."
+  },
+  {
+   "start": 2076.96,
+   "end": 2106.56,
+   "text": "If the current entry fee was Rs.20, which means you were passing through good cities, and Bangalore's own entry fee is Rs.100, then the cost of coming to Bangalore will be Rs.100. It's a simple thing. Now, relax. If new money is less than, which is written in its answer, then what will you have to do? Relax. What does relax mean? Update its answer. With whom? With new money. And push it in the heap as well."
+  },
+  {
+   "start": 2106.56,
+   "end": 2136.26,
+   "text": "What do you push? First of all, new money and its coordinate, RC. This is done, this is pushed. Close this, close this, close this. When your entire Dijkstra runs, return, result of, whose result? N-1 and M-1. It had to go till here, right? That's it. This is done, your Dijkstra. Take this. Same code as path with minimum sum. Revise path with minimum sum once, otherwise, here also, your Dijkstra is revised. So, this is your Dijkstra code."
+  },
+  {
+   "start": 2136.26,
+   "end": 2146.96,
+   "text": "See you next time."
+  }
+ ]
+}

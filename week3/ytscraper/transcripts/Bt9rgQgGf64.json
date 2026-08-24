@@ -1,0 +1,404 @@
+{
+ "video_id": "Bt9rgQgGf64",
+ "title": "DSA PATTERNS Episode 24 | Kadane’s Algorithm Pattern: Quick Revision",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2294,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.28,
+   "text": "Welcome to the channel. After completing the complete revision of the cadence, what will we do with the cadence pattern today? It's over. Let's go. The sheet beats are in the description. They are all good things. First of all, how to identify? How to identify that whose question is it? It's the question of the cadence. First of all, there will be an array question. It will be of the array, not even of the string because the cadence is basically in the string. Cadence is the sum of all arrays. Sum of all arrays."
+  },
+  {
+   "start": 29.28,
+   "end": 59.89,
+   "text": "or product of sub-array, something like that. In string, it is not possible to find the sum, right? The first thing is that the question will be of array only. It will not be of string or linked list, okay? After that, you have to find some maximum or minimum, okay? What is plus? You may have to find the sum, you may have to find the product. With sum product, yes, okay. You may have to find the sum and product frequency sometimes."
+  },
+  {
+   "start": 59.89,
+   "end": 90.03,
+   "text": "But basically these will be the two. What will be? Sum of product. More, more, more. Plus, some condition will be given to you. What will be given to you? Condition can be given. This is optional. This is optional. Means like, either you have to get maximum sum. And in that condition is added that you can delete one or you can delete two. Either a condition is added that your array is of some circular type. Either a condition is added that you have to get this but you have to get absolute. So any condition like absolute."
+  },
+  {
+   "start": 90.03,
+   "end": 120.24,
+   "text": "delete it, i.e. give you an option, give you a power in your hand, or limit you, give you an option and limit you, that the array is like this, or you have to work like this, or you have to work like this without doing this, a small condition, right? And where are all these things? In subarray, in which? In subarray, not in subsequence, not in subsequence, in subarray, in subarray, okay? Let's go. Whose flowchart is this? Cadence's flowchart, this. In this, cadence will definitely apply, okay?"
+  },
+  {
+   "start": 120.24,
+   "end": 148.18,
+   "text": "Now, let's talk about the steps. You don't have to collect the cadents. How do the cadents work? Whenever you reach an array of an index i, you should have the best result. What should be the best result?"
+  },
+  {
+   "start": 148.34,
+   "end": 178.22,
+   "text": "What does best result mean? It depends on the question. It can be minimum or maximum. It can be both minimum and maximum. If there is a condition, it can be applied. And what else? Sum or product. Whatever your question is asking you. If your question is asking sum, then obviously you will have sum. If your question is asking product, then obviously you will have product. Okay? You should have this. Now, on a big scale, you have two options. On which? On i-index. Either, either,"
+  },
+  {
+   "start": 178.22,
+   "end": 203.68,
+   "text": "Now the old best, i.e. the best up to i-1, connect with it. So this is also going to end at i. Remember that you always have to make the best result that ends at i. That's why the best result of i-1, which we call the old best result, was also going to end at i-1. That means at the end of it, i-1 will come. No matter what comes ahead."
+  },
+  {
+   "start": 203.68,
+   "end": 230.64,
+   "text": "and you have one option that you make only array of i means make only one array in which array of i is there so technically this is also ending on array of i that was also happening so you have these two options you update means again make the one with i and update your result update your result with whatever is your best ending depending on question this is the thick one in this we have seen so many questions"
+  },
+  {
+   "start": 230.64,
+   "end": 261.01,
+   "text": "The first question is standard. What did you see? Max, sum, sub-array. Okay? And, the first thing we do in this is to define our best ending for i is equal to 0. Define your best ending for i is equal to 0. What do we call best ending in Hindi? If we talk about i is equal to 0, then on i is equal to 0, the ending, this is a very important term, the ending, the ending, all sub-arrays, all sub-arrays,"
+  },
+  {
+   "start": 261.01,
+   "end": 291.47,
+   "text": "the best answer of all sub-arrays. Best answer. This is how you have to do it. You should always remember the meaning of best result, that on i, or on i is equal to 0, or whichever i you are going, initially i is equal to 0, that's why we have written, whichever you are on the index, write all the sub-arrays ending on that index, their best result should be stored in your best ending. This is what happens. Now see, if you had such an array, that 1, minus 2, 0 and 3, 0, 1, 2, 3,"
+  },
+  {
+   "start": 291.66,
+   "end": 316.54,
+   "text": "Obviously, how many sub-arrays are possible on i is equal to 0? Only one sub-array is possible, which is an array of 0 itself. Right? Empty sub-array is not allowed. Only one is possible. That's why, you will see that in majority of cases, we do our best ending. And we don't remember. Because only one sub-array is possible, then what will be its sum? It will be an array of 0. Let's write array of 0. Why? Because,"
+  },
+  {
+   "start": 316.54,
+   "end": 344.98,
+   "text": "How many sub-arrays are possible to end at 0? Only one sub-array is possible. What is the sum of this sub-array? Array of 0 only. Because it is only one. We used to write that in best ending. And for now, if your array had only one element, then your result would be the same. Because empty is not allowed. Empty is not allowed. Empty is not allowed. Your array has only one element. So, what will be the maximum sum of sub-arrays? Only one sub-array is possible. Its sum will be maximum. So, we used to write the result like this. Okay? Let's go."
+  },
+  {
+   "start": 345.17,
+   "end": 375.82,
+   "text": "First of all, the best ending is defined. For i is equal to 0, we have written the result accordingly. Now what we used to do is, from i is equal to 1, how far did we run the loop? From i is equal to n. Okay? First of all, what we used to do is, the old best, the old best, the old best, store it somewhere. To understand, even if you don't do it, it's okay, but you should do it. Store it as best ending. So what does this old say to you? What is this old? It was the best ending at i minus 1."
+  },
+  {
+   "start": 375.86,
+   "end": 405.31,
+   "text": "It was the best ending on i-1. Now, let's find the best ending on i. So, best ending is equal to... Yes, one more thing. Now, when the question is of maximum sum, then what should be the meaning of best? Your best sum should contain the maximum. So, what will we do? Maximum. What two choices were told? Whatever is your old best, whatever is your old best, i.e. the best of i-1, either join it and make another subarray. Or it can be this. Because,"
+  },
+  {
+   "start": 405.31,
+   "end": 433.12,
+   "text": "You have to become the best. So you know who is the best in the old age, you will join them. For example, you are a politician who fights indiscriminately. You have a choice of many parties. There is BJP, Congress, Aam Aadmi Party etc. There are many parties. If you want to join any party, then which party will you join? The party which is the strongest till now. Suppose you come to know that BJP is the strongest till now. So you will join BJP. What will you do? BJP and plus us. You will do this."
+  },
+  {
+   "start": 433.12,
+   "end": 459.3,
+   "text": "If you think that no party is good, no party is looking strong, we are the strongest, you may know that BJP gets 50000 votes, it gets 2 votes, it gets 10 votes, and we get 1 lakh votes alone, then why will we meet BJP? So you become yourself. These are the two options. This is the whole logic. If you want to meet in any party, then meet with the strongest party, the old ones. Either you want to fight separately, then fight separately."
+  },
+  {
+   "start": 459.3,
+   "end": 488.14,
+   "text": "You got this from the party. What did you do? What did you do in the old best? You got this from the party. Very good. Either you fight alone. And its max will be your best ending. What does this mean? At i. Ending at i. What was the old best? i-1. The new one is at i. Very good. Now, result is equal to, because we are doing max, so max, whatever is the result till now, and best ending. Best ending. And we closed the loop. When you will do this for every i,"
+  },
+  {
+   "start": 488.14,
+   "end": 518.72,
+   "text": "When you do this for every i, you will get the result. Return. Result. That's it. This is its template. What do you have to change in this? You have to change that how do you define the best ending? How do you think about the best ending? And how do you update here? How do you update this? Rest, it will be the same. Same template, same blueprint. Let's go. What was the minimum sum error? We just reversed it. What did we do? We just reversed it. We just reversed it. Everything was the same. The best ending here was max."
+  },
+  {
+   "start": 518.72,
+   "end": 547.79,
+   "text": "We have cut this and mined it. We have cut the result and mined it. It was a question of minimum sum. Right? Come. What did we do in maximum product? Here you will get to know what is the real meaning of reading this pattern. Because if you will read it from the cadence, then someone will tell you to do one thing, split it from zero and handle the negative separately. There is no need to do anything like this. It's all error. What did we tell you? Whenever someone stays on i, then the one at the back,"
+  },
+  {
+   "start": 547.79,
+   "end": 575.79,
+   "text": "looks for the best for himself like you were in old parties like BJP, Congress and you you were looking for the best for yourself it is possible that for you the best is something else and for me the best is something else what does this mean? it is possible that you think that BJP is good but we think that Aam Aadmi Party is good it can be different for different people it can be different for different people this was the concept of this question why? because if array of i"
+  },
+  {
+   "start": 575.79,
+   "end": 602.69,
+   "text": "If the area of i is positive, for example, this is 4. What number does it need here? It will need a bigger number here. Bigger means max. It will need a bigger number. Only then it will be able to make something bigger in its life. But if the area of i was negative, then what did we see? That minus 4 needs a smaller number. It is best to get negative."
+  },
+  {
+   "start": 602.69,
+   "end": 632.69,
+   "text": "We need the smallest number only then we will be able to do something best in our life. For example, if 4 needs 10, then it will become 40. But if minus 4 gets minus 10, then it will be able to become 40. If you give minus 4 10, then it will become minus 40. It will become even worse. Right? This is how we came to know that the array of i needs the best. It needs the best at the back. But how does it need the best at the back? It depends. It depends on whether it is positive or negative. What did we do in this? We defined our best."
+  },
+  {
+   "start": 632.69,
+   "end": 663.54,
+   "text": "So, we had defined two bests. Best min and best max. And both of them were written as array of 0. What did they mean in Hindi? They were done at i is equal to 0. They were done in the beginning. What does this tell you? That at i is equal to 0, the ending, we are writing this in Hindi again and again because it is important to understand. In the ending sub-array, in sub-array, from sub,"
+  },
+  {
+   "start": 663.7,
+   "end": 693.95,
+   "text": "What is the max product? This tells you. This is the best max and this is the best min. So max tells you this. What does min tell you? Min tells you the minimum product in the morning that ends at i is equal to 0."
+  },
+  {
+   "start": 693.95,
+   "end": 724.11,
+   "text": "In the beginning both, because i is equal to 0, there is only one square minimum and maximum, whatever you do, it will come. Good. After this, what did we do? Simple, we ran the loop. i is equal to 1, i less than n, we did i plus plus, very good. Now, now, first of all, do two things, old best max and one old best min. Take it in this, first of all, our best max,"
+  },
+  {
+   "start": 724.21,
+   "end": 751.79,
+   "text": "and in this we have taken our best mint. Very good, we have taken it. Now what we have to do? Now see, who used to connect Array of I first? Array of I had two options. Either it used to connect with one of the BJP Congress Aam Aadmi Party, which he liked best, or he used to make it himself. Now here there are two bests. One, for you it may be BJP best, for me it may be Congress best. So there are two bests. Now you have to make three values. You have to make int v1 is equal to"
+  },
+  {
+   "start": 752.05,
+   "end": 776.42,
+   "text": "First of all, your old best max. What is it? Old best max. Connect with this. Connect with this. Okay. What is the second option? The old best min. The old best min. Connect with this. It is possible that your best is different. You think that we will connect with the weakest party instead of the strongest party. Because we will become a star in it."
+  },
+  {
+   "start": 776.42,
+   "end": 805.78,
+   "text": "This can also happen, right? Some may think that why should we join BJP? BJP is already such a big party. No one will give us any importance. We will join the parties with them. If the parties are the weakest, then they will join Congress. Join them. And the third option is that you fight alone. Don't join anyone. Now see. Now this is done. V1 is done. V2 is done. V3 is done. Right? Now what do you have to do? Now what do you have to do? Now you have to update both. Right? Both. This too. This too. Do it."
+  },
+  {
+   "start": 806.83,
+   "end": 850.88,
+   "text": "What was the best max? What will be the best max? Maximum of all the choices. So maximum of V1, V2, V3. What will be the best min? Min of all the choices. Min, V1, V2, V3. One minute, one minute. Sorry, sorry, sorry. Forgive me, forgive me, forgive me. We will ask for a lot of forgiveness from all of you. Yes. What was the best min? It was minimum of three. So do minimum. Now, now."
+  },
+  {
+   "start": 850.88,
+   "end": 881.2,
+   "text": "When we are updating the result, what do we need in the result? What did you ask for the answer? Maximum product. So, what was there in the result? In the result and best maximum, here there were two bests. So, maximum of result, whatever your best min is, it can be done, and best max. Anything can be done, I mean anything can be done. By law, the min should not be written, but write it, it doesn't matter. There is no more issue than that. And by closing the loop, return result."
+  },
+  {
+   "start": 881.2,
+   "end": 909.63,
+   "text": "See, by reading the same pattern of the cadence, we understand the product, otherwise we don't understand the product. In the product, because it is negative, it is positive, it is zero, so you have to split it and run different cadences, we don't like that. Okay? Come on. After that, what did we do? After that, we did two, after that, we did a very hard question, right? That, maximum sum, subarray, with, with one deletion, yes, one deletion."
+  },
+  {
+   "start": 909.63,
+   "end": 938.43,
+   "text": "Here it is said that maximum sum will be given to you and some other condition will be given that you have to do 1 deletion or 2 deletion or 5 deletion, do anything. Now see, it is said with 1 deletion, it is a good thing. Now how will we do best here? Now see, because you have power, one thing is decided that there is maximum sum, there is maximum sum, then there is no need of min, there is no need of minimum, because see the sum goes straight, there is another in the product. Assume that there is a positive number or a negative number."
+  },
+  {
+   "start": 938.43,
+   "end": 967.57,
+   "text": "Both of them would need the biggest number to do well in life. Both of them would need the biggest number. The product was upside down so that the negative would need a small number to do well. No. Here it is straight. One thing we are getting to know is that we have to take max only. Means best max is a good thing. But because you have a condition. What condition do you have? That if you have any array. If you have any array 1, minus 2, 0, 3, 0 like this. So first you have to take sub-array. So you have to take all the elements in sub-array. But now you have been told. Now you can make any sub-array from your mind."
+  },
+  {
+   "start": 967.57,
+   "end": 994.51,
+   "text": "And if you feel like doing it, then ignore one element. Ignore the sum. Now its sum will be 1 plus 0 plus 3 is equal to 4. So this can also be the answer. If you don't feel like doing it, then don't ignore it. I mean, don't delete it. If you feel like doing it, then you can delete one in any sub-array. Okay. What did we read in this? For this, if you watch the video, it will be better because it is very deep. What did we read for this? For this, we read that because you have two options,"
+  },
+  {
+   "start": 994.51,
+   "end": 1023.6,
+   "text": "See, best means maximum. But maximum can come in two ways. Either you delete or you don't delete. What did we do? Best, one is no delete. Means, the best result up to here with no deletions. We had told this to become an array of 0. Because, if there is only one element array in the beginning, then only one array is possible in which 1 will be there. Now, by doing no delete in this, you will get 1 sum. Very good. But, we had also said that best 1 delete means,"
+  },
+  {
+   "start": 1024.78,
+   "end": 1052.7,
+   "text": "Good answer, the best answer, but with one deletion. Now, we didn't give any value in this. Why couldn't we give? Because, see, 0, i is equal to 0 and this element is 1. In the beginning, how many sub-arrays are possible which are ending here? Only one sub-array is possible in which this element is present. Now, there is only one element in this, 1. Now, you are saying that delete one from this also. So, what will be left in the sub-array? It will become empty. That's why make it 0. Make it int min, make it anything, make it 0. Let's go. In the result,"
+  },
+  {
+   "start": 1052.7,
+   "end": 1084.8,
+   "text": "Now write, write array of 0 only. What can we do? See, this means not 0, this means nonsensical value. It is not fun to give any value here. We have explained this in detail yesterday. It is nonsensical value. Okay. After this, what did we do? Same. For i is equal to 1, i less than n. Very good. First of all, this old one, old no delete and old one delete. Take the value of these two."
+  },
+  {
+   "start": 1084.8,
+   "end": 1111.38,
+   "text": "is equal to no delete is equal to one delete. First of all, see what is no delete? No delete means the best answer till now without any deletion. This is a normal caden, this is a normal caden. First of all, update this that no delete is equal to max. Either you connect with the old no delete, connect with it, or you make it your own."
+  },
+  {
+   "start": 1111.73,
+   "end": 1140.5,
+   "text": "That's it. Why won't it connect with the old one delete? Because no delete means the answer till now which didn't have any deletion. But the old one delete gives you the answer till the end but there is one delete in it. So we don't have to connect it to the answer. In which? In no delete. Because no delete means the best answer ending on i which didn't have any deletion. Now where is the deletion? So either you take the no delete at the end which didn't have any deletion and connect it to the array of i. Or you take only the array of i which didn't have any deletion. Okay."
+  },
+  {
+   "start": 1140.66,
+   "end": 1164.43,
+   "text": "What did we do in one delete? Now see, one more thing. In one delete, this array of i cannot come. What does array of i mean? What does one delete tell you? That in all the subarrays ending on i, the best answer in which one has been deleted. If you take only array of i, then it means that you have only one subarray in which there is only one element. Now see, nothing has been deleted in this."
+  },
+  {
+   "start": 1164.43,
+   "end": 1191.12,
+   "text": "Where is the delete in this? This is one sub-array, which starts from array of i and ends at array of i. Where is the delete in this sub-array? To delete, you have to delete it. So, it won't come in one delete. That's why it came in no delete and not in one delete. We had explained this yesterday, let's tell it anyhow. Now, where do you have to search for one delete? You have to search for the one delete of i, that whatever happens in i. Okay, that's good. The first thing is that the last one delete that is coming,"
+  },
+  {
+   "start": 1191.12,
+   "end": 1220.42,
+   "text": "you can take that because it has already been deleted and if you add array of i in that then also it will be one delete in the previous one delete some element has been deleted if you add array of i in that then also it will be one delete so first of all the old one delete add array of i in that but you may also feel that the one delete i that we are taking out in that if we delete array of i only this also I may feel that I want to delete array of i for this what you have to do"
+  },
+  {
+   "start": 1220.42,
+   "end": 1249.18,
+   "text": "Your i is here. Here is your array of i. You have two types of previous answers. One is no delete. And one is one delete. This is the best one till the end. If you want to delete array of i. Then can you use this one? You can't use this one. Because here already one number is deleted. Now you can't use this to delete array of i. You can use this."
+  },
+  {
+   "start": 1249.18,
+   "end": 1272.86,
+   "text": "We can use this person. What was the meaning of the old no delete? That the answer till the last has not been deleted. Now, you want one delete on i, where there is only one delete, which is an array of i. So, you have to take this value and write it here as one delete. I am telling you again. The last one, no delete, means that the answer till the last has no deletion. Very good."
+  },
+  {
+   "start": 1272.86,
+   "end": 1305.22,
+   "text": "If you want to make one delete by deleting array of i, then write no delete in one delete i. What will happen? There is no delete till the end. If you don't count array of i, then your one delete will be made. So write it. Old no delete. That's it. And this is how it happened. After that, what did we do? For both max, this became res, this became one delete, this became no delete. And we used to return it."
+  },
+  {
+   "start": 1305.22,
+   "end": 1336.19,
+   "text": "This question is a very hard question. It is a very intuitive question. Watch yesterday's video. Please join my hands and pray. If you are watching till here and don't understand, watch yesterday's video. Yesterday, we explained it in great detail. Today, we explained 5 questions in 30 minutes. Yesterday, we explained only one question in 30 minutes. Watch that video carefully. Let's go. Now, what have you been told? What was the next question? Maximum absolute sum of any sub-array. Any sub-array."
+  },
+  {
+   "start": 1336.19,
+   "end": 1365.68,
+   "text": "Okay. Maximum absolute sum in any sub-array. What did I tell you about this? Look at the cadence. First of all, you will have to understand what I said in the question. And the actual question of cadence, which was the maximum sum sub-array without absolute, what did it say? It used to tell you to make the whole sub-array first. Cadence works the same way. Make the whole sub-array. Sub-array 1 is done. Sub-array 2 is done. Sub-array 3 is done. And sub-array 4 is done. I mean, make a lot like this. Okay. Take out the sum of all. Its S1 is done."
+  },
+  {
+   "start": 1365.68,
+   "end": 1395.62,
+   "text": "its S2 is done, its S3 is done, its S4 is done, it will continue like this. Okay. And in all, whatever is the maximum sum, maximum of S1, S2, S3, S4, return it to us. This was the answer, cadence, normal, which was the maximum sum in the morning. In this question, absolute has come. What does it say? What does it say to you? It is asking you to apply an extra layer. What layer is it asking you to apply? It is asking you to make it the whole morning. Do the same work. Do the same work. Make it."
+  },
+  {
+   "start": 1395.62,
+   "end": 1425.36,
+   "text": "Okay, I have made it. Then? Then it says, you do the same thing. Take out all the sums. Take out S1. Take out S2. Take out S3. Take out S4. Now, obviously, when you take out the sum, some sums will be positive and some will be negative. Obviously, right? What does it say? Absolute all the sums. Absolute means, if it is positive, then very good. Let it be positive. If it is negative, then make it positive. Absolute means this. So, what does it say to you?"
+  },
+  {
+   "start": 1425.36,
+   "end": 1454.72,
+   "text": "For example, make this as S1, make this as S2, make this as S3, make this as S4. Now, what is the sum that you have got? It is positive. This is an extra layer. Now, do the same thing. Now, do the same thing. Give maximum. Maximum of S2, S3, S4. Return it. Now, you have to do the same thing. So, this is an extra layer. Now, see, if there is an extra layer, then you don't have to worry. You just have to see what is happening. What does absolute mean?"
+  },
+  {
+   "start": 1454.72,
+   "end": 1482.99,
+   "text": "First of all, consider that you can divide the sum into two groups because it is a question of positive and negative. Positive and negative remains positive and negative also becomes positive. Now you pay attention. Let's take some negative numbers. Minus 4, minus 10 and minus 14. Make all of them positive. 4, 10 and 14. See, when it was negative,"
+  },
+  {
+   "start": 1482.99,
+   "end": 1512.75,
+   "text": "What was the biggest number in this? Minus 4. And what was the smallest number? Minus 14. But when you made it absolute, then who became the smallest number? 4. And who became the biggest number? 14. So see, the smallest negative number became the biggest positive number. This is not the case. When you do minus 10, it becomes 10. When you do minus 4, it becomes 4. So minus 10 is smaller than minus 4, but when it becomes absolute, it becomes bigger. It is behaving the opposite."
+  },
+  {
+   "start": 1513.04,
+   "end": 1539.31,
+   "text": "Now, do one thing to think about it. You will get the sum of all sub-arrays. There will be a lot of sum. Divide it into two groups. In which group? One positive and one negative. Assume S1, S2, S3, S4. These are your positive sub-array sums. If we take them out, then we will get this only. We will take it out from brute force and divide it. And S5, S6, S7, S8. This is my negative one. Now, see."
+  },
+  {
+   "start": 1539.7,
+   "end": 1567.36,
+   "text": "When you will absolute all of them, then all of them will remain same because positive remains same. Suppose you have only this group, this is your positive group and this is your negative group. Suppose you have only this group, then do you know the answer before you do absolute or maximum? Yes, you know. There are many positive numbers. What will be the maximum? The maximum number is known that maximum sum will be its maximum. Suppose here,"
+  },
+  {
+   "start": 1567.36,
+   "end": 1596.16,
+   "text": "This S4 is the maximum. Then you would have known that S4 is my answer. Good thing. Here also, what will you know? Negative. Yes, I just told you. When the smallest negative number is absolute, then it will become the biggest number. Here, suppose the smallest number was S7. You will say that S7 is my answer. Both groups are looking different. Now, combine both groups. What have you done? Your positive group has told you that S4 is your answer. Your negative group has told you that S4 is... What is it?"
+  },
+  {
+   "start": 1596.16,
+   "end": 1625.86,
+   "text": "S7, my answer is S7. Now you don't know who is the big one and who is the small one. Now do the max of both. What do you do? Do the max and give the answer. Let me tell you again. There are two groups. One is of positive sub-array sum and the other is of negative sub-array sum. What will be the answer of the positive one? Which will be its max. What will be the answer of the negative one when we are doing it with absolute? The smallest element of it will be the answer. Now, even though it has become absolute and it was already positive, so it is absolute. Now we will take out the max of both."
+  },
+  {
+   "start": 1625.86,
+   "end": 1656.61,
+   "text": "So what is happening in the question? What group is this? What are we doing? First of all, we are finding a normal sum without absolute. We are looking for the maximum sum. We are calling the maximum sum S1 in that group without absolute. Then we are looking for a minimum sum. We are looking for a minimum sum. We are calling this S2. After that, we are making this S1 and this S2. How? By doing absolute."
+  },
+  {
+   "start": 1656.61,
+   "end": 1686.91,
+   "text": "by absolute. Now, whatever is the max in these two, return that. This is what we are doing. This is what we are doing. I mean, the group of positive and negative was formed because of this. One is the maximum sum. The maximum sum can also be negative. There is no problem. It can be in the maximum sum. If there is any positive, if we take out the minimum sum, then it is possible that some negative will also come. Because there are negative numbers in the array, so it will come. We are absoluting this and taking it out. So, what does the question say? The question says nothing. Take out an a1."
+  },
+  {
+   "start": 1686.91,
+   "end": 1715.57,
+   "text": "What will it do? Cadence max. What will it give you? It will give you maximum sum. Take out A2. Cadence min. What is cadence? Min. It will give you negative sum. Absolute this. Absolute this too. Suppose something will come. You got two answers. Now, the answer will be from these two. Max this. Simple logic."
+  },
+  {
+   "start": 1715.57,
+   "end": 1745.22,
+   "text": "What is an absolute sum? When you look at the array, either a very good positive sum will come and that will be your answer or a very negative sum will come and when we will absolute it, it will be very big. It is possible that somewhere in the array, the sum will be minus 100. If you do minus 100, it will be 100 and it will be big. So either we have to find the best sum or we have to find the worst sum, we have to absolute it and check it. Either we get a very good sum, very good. Even if we get a very bad sum, we still have an option. Why do we have an option?"
+  },
+  {
+   "start": 1745.22,
+   "end": 1779.68,
+   "text": "because it is absolute. You have to do the same. You know both the programs. You know the program of maxsum and the program of minsum. Run both of them and see which is the maximum. Very good. Let's go. One more question is left. What is left? Circular array. What? Circular array. Circular array. In circular array, it is maximum. Maximum. What does this tell you? It is an array. You have to get the maximum. You have to get it as you were getting it. But there is a quality in this array. We said that it will give small conditions in the data. This is 5."
+  },
+  {
+   "start": 1779.68,
+   "end": 1805.26,
+   "text": "minus 1, minus 2, minus 6, and here is 3. 1, 2, 3, 4. You have to find the maximum sum of this. If you will use normal ketone, if you will find the normal maximum sum, then you will get to know that this 5, this is its maximum sum, then you will give 5. Because after 5, to include this 3, you will have to do this negative part, which will reduce your sum. It will not look good. You will see that 5 will come. But I have told you that this array is circular, means,"
+  },
+  {
+   "start": 1805.78,
+   "end": 1835.7,
+   "text": "After this 4, the array does not end. After this 4, the array gets back to 0. This is the array. Now you tell me what will happen. Now you see. Now you can do this. Start from here. And take this too. Take this in your hand. So now your sum of 3 and 5 will be 8. Understand it like this. A circular array. This is the array. It won't be like this, but it will look like this. First of all, 5."
+  },
+  {
+   "start": 1835.73,
+   "end": 1864.94,
+   "text": "then there is minus 2, then there is minus 3, then there is minus 6, and there is one more 3. Now see, I have told you that this is a doughnut. What is it? It is a doughnut. Break a piece from this which is the most sweet, means which is the maximum. The obvious thing is that you will break this piece. You will break this piece. See, this is its maximum. This is what we did here, 5 over 3. If you understand circular, it will look better. Now see, till now we have read caden, we know caden, we also know maximum sum. We don't know circular."
+  },
+  {
+   "start": 1865.49,
+   "end": 1892.24,
+   "text": "It doesn't come circular. Okay, if it doesn't come, then it's okay. Now tell me one thing. Now you understand how this donut looks, right? Okay. Now see, there can be two scenarios in this. Where is the whole problem coming? It is telling you that it is circular, which means your answer turns. What does it mean to turn? That your answer, see, half of your answer came here and half of your answer came here. It means both turned back and forth. Now tell me one thing."
+  },
+  {
+   "start": 1893.65,
+   "end": 1921.39,
+   "text": "One thing that you can see in the doughnut is that the red part is the maximum sum. What is this green part? Why are we not including it in the answer? We want the maximum sum. Then why is your maximum sum only red? What is there in the rest of the doughnut? The rest of the doughnut has your minimum sum."
+  },
+  {
+   "start": 1921.39,
+   "end": 1951.3,
+   "text": "It's a cake and you are told to take the sweetest piece. So you break one piece. You break this piece. Why did you leave the rest? You could have broken that too. If everything was good, you could have broken everything. Why did you leave it? Because it's a rotten piece. This is the minimum. This piece of doughnut is absolutely useless. That's why we are not able to include it in the maximum sum. If none of this is useless, what does it mean? That both the pieces, this and this,"
+  },
+  {
+   "start": 1951.3,
+   "end": 1973.09,
+   "text": "Both are useless. That's why we don't include it. Because if you include it, your result will be wrong. See, if you include minus 2 in your result, your answer will be 6. We don't want it. We want a good one. So why will we include it? Because it is useless. From here, uselessness starts. It is possible that here positive 3 will be there. Here negative 3 will not be there. See, it is still useless. To include this 3, either you... Sorry."
+  },
+  {
+   "start": 1973.09,
+   "end": 2002.34,
+   "text": "Suppose here is 1. To include this 1, either you have to include this, then it will become minus 2. And then if you include this, then minus 1 will remain. Either you have to include minus 6, then you have to take 1, then you will remain in minus 5. That's why this part which is left, what is it? It is useless. Very useless. It is a part of min-sum. It is a part of min-sum. See. Now, there can be two scenarios. If you understand this donut thing, then it will be good."
+  },
+  {
+   "start": 2002.34,
+   "end": 2029.68,
+   "text": "There can be two scenarios. You have to find it in this array. Consider this array. It won't give you an array by making a doughnut. It will give you an array. Now see. There can be two scenarios. Either your maximum sum comes somewhere in the middle. What we have studied. What we have studied is that it comes in the middle. It doesn't rotate. It doesn't rotate round. Okay. So either it comes in the middle. Which is a good thing. We know how to get this. This is the question of maximum. Or you get one like this."
+  },
+  {
+   "start": 2029.68,
+   "end": 2058.05,
+   "text": "or you may have one like this in which your result is round and round means half of the result is this and half of the result is this in this case, this is case 1, this can happen this is case 2, this can also happen in this case, you should understand that the middle part is stuck, this one this is nothing else, this is my minimum sum my minimum sum of the morning see, if your red part is not round"
+  },
+  {
+   "start": 2058.05,
+   "end": 2087.9,
+   "text": "then it is a good thing, you can remove it from the caden. If your red part will rotate, it means your green part will never rotate. It will not happen that both will rotate, then your green part is straight. Why are we telling this? Because the caden that we have studied till now, we know caden in straight array only. We know caden in straight array. So we will have to use our caden in straight array only. But we don't know circular array, we know straight, so use this only. Understand it like this, suppose this is India, suppose this is India, BJP"
+  },
+  {
+   "start": 2087.9,
+   "end": 2117.36,
+   "text": "The entire north, Kashmir, and the entire south of BJP won. What will Congress win? Congress will win in between. Congress will win in between. It is not possible that Congress will turn north and south. No, no, no. If BJP is on both sides of the country, if BJP is here, if BJP is in the north and south, Congress will definitely be in the middle. Congress will definitely be in the middle. And if BJP is in the middle of the country, then it is possible that Congress is there. We don't care. We care about BJP."
+  },
+  {
+   "start": 2117.36,
+   "end": 2147.25,
+   "text": "Did you understand this? If the red part is in the middle, then it is a very good thing. If the red part is in the middle, then the green part will definitely be in the middle. Okay. You have two cases. What was the first case? That your maximum was straight. So, you remove this. A1 is equal to, this is a caden. This is known to everyone. Maximum, sum, sub, array. Straight array. Now, don't even think that it is array circular. Because you are assuming that the answer is correct. The answer is not moving. So, what does array circular mean to us? You removed caden. Okay."
+  },
+  {
+   "start": 2147.44,
+   "end": 2177.95,
+   "text": "The next answer, in this you think that mine is wrong. No problem, you have the green part in the middle. We have proved that it is in the middle. You take out the green part. Now what do you do? Take out the min answer. How? By using caden. Use simple caden. Because the green part is in the middle. Whether it is circular or rectangle, it doesn't matter. Now, you got the green part. But what do you want? You want the red part. You don't want green. So, the whole sum,"
+  },
+  {
+   "start": 2177.95,
+   "end": 2208.14,
+   "text": "Sum of array. Say if you minus this mean answer, which is the green part, then you will get this red part. You will get the red part. You will get it, right? BJP got 10 votes here. Here 20 votes came. There are 50 votes in the whole of India. So how much will Congress get? 50 minus 10 minus 20. So 30. It must have come this much. Or reverse it. There are 50 votes in the whole of India. When will you know that Congress got 30? How much will BJP get? 50 minus 30."
+  },
+  {
+   "start": 2208.14,
+   "end": 2236.37,
+   "text": "20. So, it's a simple math. You have taken out two parts. You have taken out both the red parts. This is also your red part. Which you have taken out from the cadence. A1. And this is also your red part. Which you have taken out from sum minus minimum. Take the maximum of both. Because there are two options. It can come up or down. Take the answer of both. Take the max. Return it. It's simple. Both the cadence have been explained to you. Right? It's simple. So, whenever you see."
+  },
+  {
+   "start": 2236.37,
+   "end": 2266.26,
+   "text": "Don't get scared by looking at the question. Don't get scared by looking at the question of caden. What to do? Don't get scared. Because the question of caden is very easy. It means that the whole question contains caden with a twist. With a twist. We have seen a lot of twist questions. We have seen a product twist in which you had to take two max. You had to take max and you had to take min in the best. We have seen a one delete twist in which you had to take no delete and one delete. We have seen an absolute twist."
+  },
+  {
+   "start": 2266.26,
+   "end": 2291.18,
+   "text": "We have seen the twist of its circular. This is the only twist, not more than this. So, this is the total of six questions. You have solved it on Kedain. According to my understanding, this question is more than enough for you to understand Kedain and to make a new question from you in the interview. So, let's go. Today's review, sorry, revision video is over. See you from tomorrow and keep reading and keep learning."
+  }
+ ]
+}

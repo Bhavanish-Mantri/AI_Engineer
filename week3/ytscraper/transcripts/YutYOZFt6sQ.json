@@ -1,0 +1,389 @@
+{
+ "video_id": "YutYOZFt6sQ",
+ "title": "Most Important STACK Question For FAANG Interviews | Master DSA Patterns",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1976,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 26.56,
+   "text": "Valid parenthesis, you must have studied from many teachers. You must not have studied like this till today. No one teaches. No one teaches these two points. How will they teach? They don't know how to teach themselves. That's why they don't teach. So, come to lecture 38. Those who don't know who we are and what we do, check the description. And, see this question today. It's a very famous question. 80% of you must already know what we do. We push the opening in the stack and the rest we pop. But, why do we do that?"
+  },
+  {
+   "start": 26.56,
+   "end": 54.24,
+   "text": "How is this a stack question? How do we know that this is a stack question? Why isn't this a Q question? Why isn't this a DP question? Why isn't this a merge interval question? Why isn't this a two-pointer question? And how do we use stack? We see these two things very rarely when we tell someone. Everyone tells us that come, this is a very famous question. Let's understand its logic. Take a stack and do this and that in the stack. Hey, stack is fine. After taking the stack, the work becomes easy. What do you have to do after taking the stack? If you have to do push pop, then you can do everything."
+  },
+  {
+   "start": 54.24,
+   "end": 84.53,
+   "text": "There are only two operations. We will give it to a monkey that there are only two operations. If you keep doing it, it will also make it. But this is the main thing. How is the question of the stack? We are interested in teaching you this. We are not interested in asking you questions. That's why never force it on me that how many questions are we doing? How can it be in so few questions? We will do one question so that it can be 100 questions ahead of it. We will not ask 20 questions. Let's go. First of all, we will explain the question to you quickly. First of all, we will explain the question and we will teach it in a very unique style."
+  },
+  {
+   "start": 84.53,
+   "end": 107.9,
+   "text": "We will read it with intuition. Listen carefully. You have been asked to find a valid parenthesis. You don't have to find it. You have to tell us. What do you have to tell us? Let's tell you. You know what a bracket is, right? How many types of brackets are there in your keyboard? One is normal, which is above 9. One is curly braces, which we use in C++ and Java. One is square, which we use in Array. Okay."
+  },
+  {
+   "start": 107.9,
+   "end": 134.91,
+   "text": "You will be given a string. In this string, these will be the letters. These will be the opening or closing letters of the bracket. So, you have to tell whether that string is a valid parenthesis. What is that string? It is a valid parenthesis. That means, whatever order is shown in that string, is it valid or not? Okay, first of all, you may not be able to understand the meaning of valid. If you understand, then we hope that you will understand that it is a simple valid. Why?"
+  },
+  {
+   "start": 134.91,
+   "end": 159.26,
+   "text": "here it is open and here it is closed, this is a valid parenthesis this is a valid parenthesis, why? because here it is open and here it is closed, very good this is a valid parenthesis, why? because here it is open and here it is closed yes, we are hoping that you will come so simple that we will tell you one by one if we ask you that is this a valid parenthesis? then you will say no, why? the opening one was of some other type and the closing one was of some other type so this inter-racial work is not required, ok"
+  },
+  {
+   "start": 159.26,
+   "end": 189.06,
+   "text": "and if we ask you what is valid, you will say that this is also not valid. If you say that this is also not valid, then we hope that you will know that all of these are not valid. All of these are valid. Okay. Is this valid? What did we do in this? We put the closing one first and the opening one first. So this looks very bad. This is also not valid. Okay. We did this. This is also not valid. We did this. This is also not valid. So you must be understanding that these three are also not valid. We are hoping that you must be understanding. But,"
+  },
+  {
+   "start": 189.06,
+   "end": 216.37,
+   "text": "The world is not that easy, the world is not that good that it will just give you this basic question. No. The question that will be given to you will be given in nested form. In what form? In nested form. Till now, when you write the basics, you think that yes, the opening has come. If the closing does not come immediately, then it is invalid. But this does not happen. For example, if you are given something like this. One here, one here. And like this. This whole thing. Is this whole thing valid or invalid? Let's see. What is happening in this?"
+  },
+  {
+   "start": 216.37,
+   "end": 239.68,
+   "text": "First, an opening bracket is opened here. If you see after this, there is no closing. If you see after this, there is no normal closing. After this, there is another opening. After this, there is another opening. Okay. After this opening, there is a closing. Okay. So when this happens, these two are considered to be cut. So what will happen to these two? It will be cut. Okay. Now see."
+  },
+  {
+   "start": 239.68,
+   "end": 256.7,
+   "text": "Now after this, its closing has come. So this is also a valid. You will be given such nested things in the question, which you may not be able to tell in the first sight. Because it will be a very big string."
+  },
+  {
+   "start": 256.7,
+   "end": 280.38,
+   "text": "It is not necessary that after every opening, its closing comes immediately. No, there can be something else in between. There can be some other part in between. If this part is also valid in itself, here is an opening and here is a closing. When we will read recursion, we will read this concept that if suppose there is an opening and there is a closing. If whatever string is left in between it, whatever string is covered in between it, if that is also valid, then this string is valid. From where? From here to here."
+  },
+  {
+   "start": 280.38,
+   "end": 301.38,
+   "text": "For example, why was this string valid? Because here was opening and here was closing. There was nothing in between. So if there is nothing, then it is valid. That's why it was valid. So this concept will come in recursion later. But now the question is, what should we do? What should we solve this question? One thing we have seen, what we tried in the previous question, we will not be able to do i-1 or i-1 with i. Why?"
+  },
+  {
+   "start": 301.38,
+   "end": 328.85,
+   "text": "Because it is not necessary that after every opening there will be a closing immediately. After opening there can be a very big nested string and after that there will be a closing. It is possible that your opening index will come to 0 and the closing index of this opening will come to 100 and there will be a very long story in between. So all of them will not be able to do it with i plus 1 and i plus 2. So what should we do in this? Let's see that this valid parenthesis is a very natural thing that we see in day to day. We see this thing everyday but we don't notice it."
+  },
+  {
+   "start": 328.85,
+   "end": 358.58,
+   "text": "Whenever you write a program of C++ or Java, the Python people won't understand. That's why I am telling you to shift. The Python people won't understand that there is no bracket in Python. Okay. Whenever you write a program of C++ or Java, you use a lot of brackets. On a regular basis, you don't use small brackets. Square brackets in the array. But you use curly brackets regularly on a heavy basis. You write curly brackets again and again. If, for, loop."
+  },
+  {
+   "start": 358.58,
+   "end": 381.63,
+   "text": "writing in function, in almost everything. C++ java also matches your bracket and tells you immediately whether there is a compile error or not. Compile error or not. C++ java tells you immediately. How does it tell you? It must be doing the same thing. When you write a lot of brackets, it must also have a very big string."
+  },
+  {
+   "start": 381.63,
+   "end": 406.48,
+   "text": "open 1 bracket, open 2 bracket, open 3 bracket, close 4th, open 5th means whatever you want to do, you do it by writing Gaspas Gaspas program so it will also come in front of C++ that what to do now, how to match it so much so come let's see how C++ does this thing come let's write a small program write a small program here, see this C++ program, Java program, whichever you want to believe both are the same, let's go"
+  },
+  {
+   "start": 406.48,
+   "end": 436.08,
+   "text": "So, this is your program. So, you can see this is a small function in which you have written an if, then an else and then return 0. As you can see, there are many brackets in it. Open, closed, open, closed, ok. C++ and Java starts reading from here. It comes from the beginning to the end. So, first of all, it looks at this person. Whose? Opening bracket. Whose function's opening bracket? Let's call it OP1. Will you see any error here? No, you will not see any error."
+  },
+  {
+   "start": 436.08,
+   "end": 466.0,
+   "text": "Why won't we get it? Let's see. Let's see. We don't know what it does. Let's see. This line is fine. If. After this, the bracket of if opens. After this, what opens? The bracket of if. Okay. We call this OP2. OP2. You do some work in if. Now, you try to close the if. You try to close the if. We call this CL1. CL1. Okay. Okay. First, we will see what you have done. Yellow means opening. Green means closing."
+  },
+  {
+   "start": 466.0,
+   "end": 492.4,
+   "text": "After this, we try to open the bracket of else, its name is op3, op1, op2, op3. After this, we say the bracket of else, that we are closing the bracket of else. While writing, you think that you are closing the bracket of else. When you write the program in real, then it comes to your mind that, okay, open the bracket of else, now close the bracket of else. Open the bracket of if, now open the bracket of if, okay. We give the name of this, cl2. And after this, we close the whole function, its name is cl3. cl3, okay."
+  },
+  {
+   "start": 492.43,
+   "end": 521.68,
+   "text": "When you write a program, what comes to your mind? First of all, you wrote OP1. Then you wrote OP2. Then you wrote CL1. Then you wrote OP3. Then you wrote CL2. Then you wrote CL3. When you were writing, what were you thinking in Hindi? You were thinking..."
+  },
+  {
+   "start": 521.68,
+   "end": 551.02,
+   "text": "This is the starting of my function. Okay. This is the start of my if. Okay. This is the end of my if. Okay. Look at this carefully. This is the start of my else. When you are writing the program, you must be thinking like this. Okay. This is the end of my else. And this is the end of my function. The end of the function. Okay."
+  },
+  {
+   "start": 551.22,
+   "end": 578.1,
+   "text": "Now see, how will C++ find out if what you have written is right or wrong? So see, one thing you can understand logically, right? For every opening, there should be a closing. There should be a closing. This is the rule. This is the rule of valid parenthesis. If you give an opening, there should be a closing. The thing is, where should it be? Where should it be? The closing of any opening will not happen immediately after that. It will happen later."
+  },
+  {
+   "start": 578.1,
+   "end": 604.46,
+   "text": "we know that the closing of the opening will not happen immediately we can also think that this closing if you get an opening bracket what you have to check is that you have to check that you should get a closing of every opening first you will get an opening in this jado jahat first you will always get an opening if someone will write the correct program then first you will always get an opening bracket first you have always got an opening bracket so you can do one thing that keep the opening bracket"
+  },
+  {
+   "start": 604.66,
+   "end": 632.37,
+   "text": "Keep the opening bracket in your pocket. Slowly, we are coming to the point of why this happens and why we do stack. You have to match the opening bracket with the closing bracket. It should happen, but we don't know when it will happen. We don't even know when it will happen. But for that, you have to keep the opening bracket somewhere that let's store it and keep it. So C++ will also store your OP1. After this, OP2 has come again. OP2 means the start of IF."
+  },
+  {
+   "start": 632.37,
+   "end": 660.96,
+   "text": "So, we have to find a closing bracket for this too. But how will C++ remember this? That it has to find this. It will keep this in its pocket too. It will keep OP2 too. Okay. But, but. As soon as there is a closing, now the game has started here. As soon as there is a closing. Now, here we are not dealing with a lot of brackets. There are a lot of brackets here. Everything is curly. Everything is curly. Okay. Now, a closing has come here. Which one has come here? CL1. But,"
+  },
+  {
+   "start": 660.96,
+   "end": 684.51,
+   "text": "This is CL1. Now see, how many openings have come before this? Before this, two types of openings had come. OP1 and OP2. Both had come, C++. This too had seen, this too had seen. Okay. Now C++ has got one closing. C++ knows that there should be a closing for every opening. But this closing, which opening is this? Which opening is that? So you see carefully, what did you think in your mind? Whose was this?"
+  },
+  {
+   "start": 684.51,
+   "end": 709.33,
+   "text": "This was the end of IF. This was not the end of FUNCTION. This was the end of IF. What was the opening of IF called? OP2. OP2. So, we had seen two openings till now. Please remember. We had seen OP1 and OP2 till now. Means, we had seen FUNCTION as well as IF. When CL1, the first closing came here, then from which opening will we check it? What will we consider as the closing of which opening?"
+  },
+  {
+   "start": 709.33,
+   "end": 735.65,
+   "text": "This should be the end of IF. This should not be the end of FUNCTION, which you can understand by looking at it naturally. When you start IF here, then this should be the end of IF only. This cannot end of FUNCTION. So, what did you get to know? That from both the openings, the most recent opening, the most recent opening, yes, the most recent opening,"
+  },
+  {
+   "start": 735.65,
+   "end": 764.53,
+   "text": "there should be a closing. The most recent opening should have a closing. If there is no closing, then everything is useless. That's why we say that if you have started, then finish the if first. What do we say? Brother, you made the bracket of function first, very good. You made the bracket of if, very good. But when you are closing, then close the bracket of if. Now close the bracket of function. The same work is used in nested loops. The same work is used in nested loops. See."
+  },
+  {
+   "start": 764.53,
+   "end": 794.22,
+   "text": "Watch carefully. We are telling you this much story so that you understand why stack use will happen. Stack use is a good thing. You must have remembered us. But why will it happen? For example, if you write such a program, int fun, like this. Forget this. Ignore this. Focus on curly. You start writing such a loop. For int i is equal to 0, i less than n, i plus plus. Don't go to syntax. Go to concept. Int."
+  },
+  {
+   "start": 794.22,
+   "end": 828.59,
+   "text": "j is equal to 0, j less than n, j plus plus. After this, you open one more, print, hello, close this, close this, and return 0 and close this. Let's see, op1, op2, what? op3, cl1, cl2, cl3. See, what will the compiler get first? What will the compiler get first?"
+  },
+  {
+   "start": 828.59,
+   "end": 858.3,
+   "text": "OP1, which is the starting bracket of function. Then it will get OP2, which is the starting bracket of I loop. Then it will get OP3, which is the starting bracket of J loop. Now it will get CL1. But whose closing is CL1? Whose closing should be in CL1? This should be the closing of J loop. J loop means the most recent opening bracket is J loop. This is the closing of J loop."
+  },
+  {
+   "start": 858.3,
+   "end": 876.0,
+   "text": "Once this opening is done, once you have done the J opening, that the J opening was the most recent opening, this closing matched with that, so this is closed. Now you can ignore this. So when the next CL2 comes, whose closing should this be? The recent one that came after that, now this J has been removed."
+  },
+  {
+   "start": 876.0,
+   "end": 895.52,
+   "text": "This J has been shorted. Why? Because when this was opened, we got its closing. How did we know? This was the most recent opening. So we ruined it. We finished it. Who should have the closing of CL2? After that, the next recent which is left, what is left? I-loop. That's why CL2 is the slave of I-loop. I-loop is finished."
+  },
+  {
+   "start": 895.52,
+   "end": 922.58,
+   "text": "Now I loop is also done. Now you get CL3. CL3 means whose opening should it be? Which is the most recent left now. What is the most recent left? Function. That's why we say that CL2 is the ending of function. This is what you think in your mind while writing the program. When you write the program, it will come to your mind automatically that we first open the loop of I, then open the loop of J. So first we will close the loop of J, then we will close the loop of I. So what are you following? You see. In which order have you been open? First open the loop of I."
+  },
+  {
+   "start": 922.7,
+   "end": 951.09,
+   "text": "Then J is opened. But how did you close it? First you closed J, then I. Opened like this, closed like this. What is this? It's a reverse order. What is this? Last in, first out. J's loop was opened at the very end. J's loop was opened at the very end, but J's loop was closed first. I's loop was opened a little before that, but I's loop was closed a little later. Function's loop was opened first, but function's loop was closed later. This whole thing is shouting the same thing, stack."
+  },
+  {
+   "start": 951.12,
+   "end": 979.87,
+   "text": "This whole thing shouts and shouts at you. Stack, stack, stack. Why? Because now we know what C++ does. What does C++ do? Whenever C++ gets an opening, it needs an opening or closing. So it stores it. It stores it somewhere in the pocket. Whenever it gets a closing, it wants to match it with an opening. If it doesn't have an opening yet, it will tell you an error there."
+  },
+  {
+   "start": 979.87,
+   "end": 1009.34,
+   "text": "If C++ gets such a closing bracket for which no opening has been opened yet. For example, if you write int main int main and write like this. This is a closing bracket. Before this, there was no opening bracket in this program in the world. It will shout and say that there is an error. So this is right. But if there is an opening, suppose it has seen many openings before this. There may be many lines running, it will still have 100 opening brackets. Very good."
+  },
+  {
+   "start": 1009.34,
+   "end": 1018.78,
+   "text": "But who will match this closing? Which opening is this closing? Of the most recent one. Of the most recent scene."
+  },
+  {
+   "start": 1018.78,
+   "end": 1044.67,
+   "text": "of the most recent scene and this is what the stack gives you. What are these opening brackets? These are items. There are many items. What do you always want? The most recent item. If it matches once, then drop that item from your pocket. Drop that item from your pocket so that when the next closing comes, what will you ask for the next closing? The most recent item but"
+  },
+  {
+   "start": 1044.67,
+   "end": 1061.79,
+   "text": "Not this one, one recent is over. For example, when J loop came, when CL1 came, this was the most recent manga, we gave it this. After that, we had to remove this, we had to remove this from here. Why? Because when CL2 will come of I loop, then I loop is of this, not of OP3, it was of OP2."
+  },
+  {
+   "start": 1061.79,
+   "end": 1090.59,
+   "text": "before that which was recent so suppose 100 openings will open obviously 100 closings will come but in which order? in the opposite order the opening which was opened in the last should be closed first the opening which was opened on 99th should be closed on 2 that's why we do this work so this is the whole technique that how this work is done in reality and how you do it and why we do it like this the reason is why we use stack for this work we use stack for this work"
+  },
+  {
+   "start": 1090.59,
+   "end": 1118.91,
+   "text": "Now here we were just talking about curly brackets But there are three types of brackets given in your program So it doesn't have any meaning So what will we do? For example, if this is given to you This string is given to you for this Okay Sorry, this is done Yes, we will show this too This is also a good example 0, 1, 2, 3 Okay So we will work just like C++ First of all, what does the stack tell you? Scan items left to right Scan left to right"
+  },
+  {
+   "start": 1118.91,
+   "end": 1142.9,
+   "text": "Let's scan it with the help of a loop. I is equal to 0. You can see that this is an opening bracket. This is an OP type bracket. What did C++ do in the opening? It did nothing. It used to store it and keep it. That it will be useful in the future. It checks the closing for the opening. So, the obvious thing is that the closing will come only after the opening. Now, if the closing will come before the opening, then you must have done it wrong. You will write the closing of this opening only after this. That is, if you are opening a bracket, then you are opening it to open something. After this, its closing will come. So, we will see later."
+  },
+  {
+   "start": 1142.9,
+   "end": 1166.83,
+   "text": "You can store it. Where will we store it? Because we always want the most recent. If we don't want the most recent, then you can store it anywhere. In hash map, here and there, you can store it anywhere. But what do we want? We want the most recent one from the list of opening brackets. And we have to remove it after that. That's why we will store it in stack. What will we store in stack? We will store the opening bracket. Very good. Now come to i is equal to 1."
+  },
+  {
+   "start": 1166.83,
+   "end": 1195.38,
+   "text": "Here comes another opening, here comes another opening. So fine, it was coming there also, after function, if and j came. So fine, store this also in your stack, very good. Now, now look very carefully, in i is equal to 2, now you have a closing bracket, what? Closing bracket comes. So your first check should be that if any closing bracket has come, and before this, not even one opening bracket has come, not even one opening bracket has come, means that your stack is empty, your stack is empty, means that"
+  },
+  {
+   "start": 1195.38,
+   "end": 1221.84,
+   "text": "Your closing bracket has come But before this, you don't have any opening to match There is no list to match Either that list was there and it got over gradually In this case, you should return straight forward false If you have a closing bracket And your stack is empty It means that this is definitely an error What is definitely an error? It means that you wrote int main And after int main, you put a closing bracket instead of opening So if you put closing, then where did its opening come? It didn't come anywhere There is no list to match"
+  },
+  {
+   "start": 1221.84,
+   "end": 1249.55,
+   "text": "We need a definite error. Okay. But if this is not the case, but if this is not the case, now, this closing that has come, with which opening should it match? You have the opening list. You have seen two openings till now. With which opening should it match? Which was the most recent, which was the most recent. Where do you get the most recent? You always get it at the top. You get it at the top of the stack. Yes. Now, what do you have to check? There was nothing in the curly bracket. In the curly bracket, you mean,"
+  },
+  {
+   "start": 1249.55,
+   "end": 1274.74,
+   "text": "all are curly so it doesn't matter but here there are 3 types of brackets so you have to check typewise that if this closing bracket is of what type? this is of square type this is of what type? this is of square type so one thing is that there will be only opening at the top of the stack because we store only opening not closing ok if its top is of square type if its top is of square type then very good you got it means"
+  },
+  {
+   "start": 1274.74,
+   "end": 1301.65,
+   "text": "For this closing, the most recent opening that was open was square and now a closing has come. So, okay, these two will match and end. If this happens, then you have to pop it. If this happens, then? If this does not happen, then what to do? Meaning, if your closing bracket is square and at some point in the top of your stack, anything other than square, assume that the curly bracket was open and you closed the square bracket. This is a wrong case. What is this? This is a wrong case."
+  },
+  {
+   "start": 1301.65,
+   "end": 1330.0,
+   "text": "So, any language, be it cpp or java, will say it wrong. Why? Because you opened curly, you closed square. Now, who will this closing one look for? It will look for this one, the most recent one. It will look for this one, right? It is possible that you have opened one above. It is possible that you have opened one above. But, who will it look for? It will look for the most recent one. The most recent one is curly. You should have closed curly here. That's why. So, if the top of the stack is anything other than the square bracket, then you have to return error. Okay."
+  },
+  {
+   "start": 1330.0,
+   "end": 1337.06,
+   "text": "And if the top of the stack is a square bracket, then both of them are done. For example,"
+  },
+  {
+   "start": 1337.06,
+   "end": 1364.7,
+   "text": "For example, when we came to CL1, we saw that OP3 was of J loop, so their work was done. After this, what we used to do, from our opening bracket list, you will have to remove this. Why? Because the next closing bracket will look for I loop. Who will it look for? I loop. It will not look for J loop. J loop's work is done. Very good. That much is correct. Means that much part is correct. But the next closing will look for the next recent one. So what is important for that? If you remove it, then the next one will come at the top."
+  },
+  {
+   "start": 1364.7,
+   "end": 1395.76,
+   "text": "like if you have done OP1, OP2, OP3, then OP3 was recent. If we remove OP3, then OP2 will be recent. It is needed to use the next one. So you can do this work regularly. But there is one more problem in this. Everyone must have understood the work. We will summarize it. But there is one more problem in this. Suppose your input is like this. You do it completely and your entire program should be correct. It should be like this. Then it should be like this. Then it should be like this and then it should be like this."
+  },
+  {
+   "start": 1395.76,
+   "end": 1424.93,
+   "text": "again like this so don't mess this up, this is wrong, I should have added one more, I made it intentionally make a stack, let's go i is equal to 0, good, dry run will also be done i is equal to 0, opening bracket is there, opening bracket is stored by C++ only that we will see later so let's store it, let's go i is equal to 1, this is also an opening bracket, so store it, ok i is equal to 2, yes, this is closing bracket, what type? square type you have to write it with if else, it doesn't have any name"
+  },
+  {
+   "start": 1424.93,
+   "end": 1453.07,
+   "text": "So this is a square bracket. Okay. Is there an opening bracket at the top of the stack? Yes, obviously there is an opening bracket because we push the opening. But, is it also of the square type? Yes, yes, it is also of the square type. So what should we do? Very good, we don't have to do anything. Just pop the stack. Very good. i is equal to 3. This is also a closing bracket. How? Of the normal type. So is there anything in the stack? First of all, we have to check if the stack is empty. No, the stack is not empty. Okay. It means there is some opening. Okay."
+  },
+  {
+   "start": 1453.07,
+   "end": 1480.93,
+   "text": "But, the most recent opening at the top, is it of normal type? Yes, it is of normal type. So, very good. Let's pop this too. Let's pop this too. Very good. But, but, but, your array is not finished yet. What do you get on i is equal to 4? You get one more opening of curly bracket. So, what did C++ do in the opening? It used to store in the stack. It can't do anything. This is your stack. Okay. Now, your program is finished. So, you haven't got any error yet. You haven't got any error yet. But,"
+  },
+  {
+   "start": 1480.93,
+   "end": 1511.15,
+   "text": "Your program is finished, means your loop is finished. You have scanned all the items. That's why it is said that the loop is finished. But, till now your stack is not empty. Stack is not empty. Why is this happening? This should not have happened. Whenever you write a program, whenever you write a program, then the number of opening and number of closing is the same at any time. You look very carefully. You will write any program. For example, look at this program too. This is the program where we wrote our function."
+  },
+  {
+   "start": 1511.15,
+   "end": 1538.51,
+   "text": "How many openings were there in this? There were 3 openings and 3 closings. They were the same. Look at the upper one also. There were 3 openings and 3 closings. Both were the same. Meaning, if your stack is not empty after the entire loop is over, then what is it? What does the stack contain? Opening. What? Opening. Okay. What were we doing? We were pushing the opening in the stack. When we used to get a closing, we used to check if the most recent opening is matching."
+  },
+  {
+   "start": 1538.51,
+   "end": 1566.22,
+   "text": "If there is no matching, then return the error, then the game is over. But if there is matching, then pop it, okay? So what we got to know from this was that if number of opening is equal to number of closing, then your stack should be empty. And everything was written correctly, so it should be empty by law. Why should it be empty? Because if number of opening is 3, then number of closing is 3. So three things will pop in your stack, sorry three things will be pushed. Three things will be pushed, okay?"
+  },
+  {
+   "start": 1566.22,
+   "end": 1593.92,
+   "text": "And if you have 3 closings, then if you write everything correctly, then every time one thing comes and one thing gets popped. So it gets this one done, this one done, this one done. So 3 push, 3 pop, net. Net size should be how much? 0. But if after the loop ends, your stack size is greater than 0, means your stack is not empty, then what does it mean? That your number of openings is greater than number of closings. And this kind of program doesn't work."
+  },
+  {
+   "start": 1593.92,
+   "end": 1622.74,
+   "text": "This program doesn't work. Remember this. If you write this in C++, int fun, very simple. And in some, return 0. Return 0. And do this. And put one more here. Now see, how many brackets are there? This is the first one. So, this is the first one. After that, this is it. OP1. Don't put closing. Let's put opening here. Put opening. Okay. What is this? CL1. Okay. What is this? This is OP2."
+  },
+  {
+   "start": 1622.74,
+   "end": 1638.59,
+   "text": "This program gives an error. It gives an error, right? Sometimes when you type by mistake, it gives an error. It says, what are you doing? Where is its closing? It is not getting the closing of this opening. That's why. Why? Because you have written the whole program correctly. You have a perfect program from here to here. Why? Because number of openings and number of closings are the same. This is also correct."
+  },
+  {
+   "start": 1638.59,
+   "end": 1665.42,
+   "text": "These two are also correct, but you put one more opening. What will happen with this is that when C++ will complete, its work is to store your opening. Where to store? Anywhere, in your stack or anywhere. But when the whole program will end, then it will see that there is still something left in my stack. What? This will be saved in its stack. It will say that it did not get its closing. If it did not get its closing, then it is wrong. What should it give? Compilation error. So yeah, you will have to check one more thing that if it does not happen after the loop, then you will have to give error. Okay."
+  },
+  {
+   "start": 1665.49,
+   "end": 1694.54,
+   "text": "Now, how will we write in this? Yesterday, many people said that we are studying Python, so you tell us language agnostic. So, we will tell you language agnostic. Now, how to make a stack in Python or Java? You will have to see that in ChatGPDA. You will have to see that in ChatGPDA. You will have to see that in ChatGPDA. You will have to see that in ChatGPDA. You will have to see that in ChatGPDA. You will have to see that in ChatGPDA. You will have to see that in ChatGPDA. You will have to see that in ChatGPDA. You will have to see that in ChatGPDA. You will have to see that in ChatGPDA."
+  },
+  {
+   "start": 1694.54,
+   "end": 1727.89,
+   "text": "What do you get? You get a string s. You get a string s. In a function. You have to tell if it is true or false. So, okay. So, first of all, we will take a stack. Whose? Character's. We will take a character's stack. Okay. And we will run a loop. We will run a loop. Python has a loop. I range something something. It is a loop. Okay. First of all, you have to check if there is an opening bracket. Is this an opening bracket or not?"
+  },
+  {
+   "start": 1728.69,
+   "end": 1758.7,
+   "text": "How will we check the opening bracket? SI equal equal to normal opening or SI equal equal to curly opening or SI equal equal to square opening. Whatever it is. Nothing. In opening, what does C++ do? It pushes in your stack. Push in the stack. Push whatever your bracket is and continue. Now. Now you have come till here. Now you have come till here means this is closing. Because if there was opening, you would have pushed and moved forward. What was the first thing to check in closing? If my stack is empty. If my"
+  },
+  {
+   "start": 1758.7,
+   "end": 1788.13,
+   "text": "Stack is empty. Yes. If my stack is empty, it means that some closing has come, but I don't have any opening left to compare. So, who will you compare this closing with? Where do you match this closing? From nowhere. Do simple simple return false. Whatever is the string at the back, it doesn't matter. So, the whole string has become useless here. So, you have made a mistake. Give compilation error. Let's go. If this didn't happen, then let's go. So, there is something. There is some opening and closing too. So, now we have to match. So, how will we match? How will we match? Let's match. Let's see."
+  },
+  {
+   "start": 1788.13,
+   "end": 1816.61,
+   "text": "you have to type math type wise so you have to write something like this if first of all you have to check for normal that if this means this is closing bracket and and st.top means stack's top stack's top equal equal to its opening like this this if is more means this means that if my closing bracket is normal then is there any normal opening in my stack's top because see in stack's top always"
+  },
+  {
+   "start": 1816.61,
+   "end": 1833.2,
+   "text": "There will be an opening, there will not be a closing at the top of the stack, because what will we do by keeping the closing? So if there is an opening at the top of the stack, then what type of opening is there? We are checking that. If this is the case, then it is very good, then you can pop it. What do you do with this? Pop or remove or delete, whatever you do in the language of the draft, do it. Why? Because its work is done."
+  },
+  {
+   "start": 1833.2,
+   "end": 1862.9,
+   "text": "this is good, but we have to see the rest, so we will see the rest it was of JLOOK, it was the opening of JLOOK and it was the closing of JLOOK, it was the closing of JLOOK, so we saw that was it the opening of JLOOK? yes, it is the opening, so it is fine, it took its slot and popped it this same work you have to do for curly and also for square, what? the type of closing bracket, the top of the stack should also be of the same type after everything happens, after everything happens, you have to close the loop but after everything happens, when you come out of the loop you have to check one thing that if my stack is not empty"
+  },
+  {
+   "start": 1862.99,
+   "end": 1889.65,
+   "text": "If my stack is not empty, return false. What does this mean? I had explained it to you. You wrote the whole program correctly. You wrote the whole program flawlessly. At last, you added an opening. So, who will compare that opening? It came in its stack. But it didn't add the closing of that opening. So, who will compare it? No one will be able to do it. Return false. If this is not the case, then you can return true without any problem. So, this is its small pseudo code. What is this? It is a pseudo code."
+  },
+  {
+   "start": 1889.65,
+   "end": 1916.18,
+   "text": "There is no code, we want you to write the code in your own language. Write as it is in the stack. This was his intuition as to why it is a stack question. This is why it is a stack question. All brackets are items. First of all, what are all brackets? Items. Okay. We save the opening item because it can get a closing later. So we want to store the opening. What do we want to do with the opening? We want to store it. Okay."
+  },
+  {
+   "start": 1916.18,
+   "end": 1935.97,
+   "text": "We want to check the closing. We don't want to store the closing. We want to check the closing. But which item do we want to check against? The most recent item. Most recent kept. Most recent kept item. Which is the most recent opening among all the openings we have got so far? And which one is left? We didn't get it."
+  },
+  {
+   "start": 1935.97,
+   "end": 1955.23,
+   "text": "Look carefully. You picked up a lot of stones. You threw some stones and forgot some stones. Which is the most recent stone in your pocket? You want that. So this is the work of the stack. This is exactly the work of the stack that it allows you to take a lot of items. And at every point, if you want which is the most recent item till now?"
+  },
+  {
+   "start": 1955.23,
+   "end": 1973.01,
+   "text": "The item that is in your pocket, he gives it back to you. And then you have the freedom to keep that item or throw it away or do anything. So this is the work of stat. That's why stat is used in this question. Did you understand? So make this question and see you in the next one."
+  }
+ ]
+}

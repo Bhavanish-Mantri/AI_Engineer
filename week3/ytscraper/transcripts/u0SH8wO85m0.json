@@ -1,0 +1,464 @@
+{
+ "video_id": "u0SH8wO85m0",
+ "title": "Prim's Algorithm - Minimum Spanning Tree - C++ JAVA DSA Patterns Graph Series 2026",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2493,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 28.27,
+   "text": "Hello kids, so today we will start and finish the minimum spanning tree. This is a very easy topic. Don't be afraid of what is prim and what is cruscull. We will explain it to you in a story mode. After today, you will not forget the prims algorithm for at least 3-4 years. You will put it in your mind. Graph is the only thing that becomes easy with time. The other patterns that we read, sliding window, two pointer, lecture by lecture, it used to become a little hard that you are reading a complex thing."
+  },
+  {
+   "start": 28.27,
+   "end": 55.73,
+   "text": "The hardest lecture of the graph is the first lecture of the graph. Because the whole thing is that there is a graph, it will not be understood, it will not be understood. After that, it gradually becomes easy. It will not be difficult. If you watch today's lecture, you will feel that it is very easy. There was a lot harder than this. There was a lot harder than this. There was a lot harder than this. There was a lot harder than this. There was a lot harder than this. There was a lot harder than this. There was a lot harder than this. There was a lot harder than this."
+  },
+  {
+   "start": 55.73,
+   "end": 84.77,
+   "text": "You can also think that this is what you should have done. Don't ever remember. We have seen a lot of videos on the internet. Everyone focuses on what the algorithm is. What to do. What to do is not important. What to do is told by ChatGPT. Why to do? Why did this happen? What will happen if we don't do this? Why will the answer come by doing this? Focus more on understanding that. Don't focus on remembering the algorithm. That we remember it quickly. No, no, no. So you don't have to remember my focus. My focus is to make you understand. Why?"
+  },
+  {
+   "start": 84.77,
+   "end": 111.7,
+   "text": "If you are doing this, then why are you doing it? Why are you not doing something like this? So let's start. Today we will explain everything to you. It will be a very small lecture. As I am saying, it is a very easy topic. It is a very easy topic. Let's start quickly. So see, first of all, this graph will be given to you in the question. So you will be told that this is a graph. You must be sure that this is a graph. Why? Because there is some vertex, edge and this is a weighted graph. Weighted, undirected graph. This one. You will see that it is weighted. Weight is written on every edge."
+  },
+  {
+   "start": 111.7,
+   "end": 140.75,
+   "text": "It is an undirected graph. It doesn't mean that we have to go from 0 to 1. 0 to 1 means 1 to 0. I am telling you, it is called MST, Minimum Spanning Tree, or it is called MST. Convert it to MST and tell us the sum of weight. But what is MST? What does MST mean? Look, what is MST? Minimum Spanning Tree. When you were reading the tree, the tree and the graph looked a little similar. How did the tree look? When we were reading the tree, the tree looked like this."
+  },
+  {
+   "start": 140.75,
+   "end": 170.29,
+   "text": "It used to look like this. It used to look like a tree. This is what a tree used to look like. Okay. Some of it looks like a graph. I mean, there is a circle in it and a stick in it. It is the same in a graph and in a tree. But, the major difference between a tree and a graph, you will be asked in an interview, what is the difference between a tree and a graph. So, at that time, you will not say that there is a vertex and an edge in both. No. That is not a difference. That is a similarity. What is the difference in a tree? Look at this tree. How many vertexes are there? One, two, three."
+  },
+  {
+   "start": 170.29,
+   "end": 195.18,
+   "text": "4, 5. How many vertexes are there in this? 5. Count the edges. How many poles are there in this? 1 edge, 2 edge, 3 edge, 4 edge. The edge is always 4. Make any tree. Make another tree and see. 1, 2, 3. Take this. Make a complete tree. How many vertexes are there in this? 1, 3, 7. And how many edges are there in this? 1, 2, 3, 4, 5, 6. There are 6 edges. Can you see a pattern?"
+  },
+  {
+   "start": 195.18,
+   "end": 221.78,
+   "text": "No matter how much vertex there is in the tree, the edges are always vertex minus 1. Here it was 7 edge, so here it is 6 edge. Here it was 5 edge, so here it is 4 edge. So what is the difference between tree and graph? There is no cycle in the tree. There is no cycle in the tree. What does cycle mean? Like this, like this, like this, like this. What is this? Cycle. You cannot find cycle in any tree. And"
+  },
+  {
+   "start": 222.0,
+   "end": 251.62,
+   "text": "There will be only one way to reach between two nodes. Meaning, if a person wants to go from 1 to 4, there will be only one way. What will be the way? Go from 1 to 2, come from 2 to 4. There can't be more than one way to go from 1 to 4. In which? In tree. If you want to go from 3 to 5, then you will go from 3 to 2, from 2 to 1, from 1 to 5. There is no other way between 3 and 5. If someone had made such an edge,"
+  },
+  {
+   "start": 251.62,
+   "end": 277.62,
+   "text": "It would have made an edge between 3 and 5. So now this has become a graph. Now this tree is no more. Why? Because look, 1 to 2, 2 to 3, 3 to 5, 5 to 1. Has this become a cycle? Yes, this has become a cycle. So in a tree, always, in any tree, in a binary tree, the number of edges will be less than the number of vertexes. Why? Because a cycle is not allowed in a tree."
+  },
+  {
+   "start": 277.62,
+   "end": 304.88,
+   "text": "There is only one way between any two circles. This is called a tree. There is no limitation in a graph. This is the main difference between a graph and a tree. If you see here, this is a graph. This is a very beautiful graph. But is this a tree? No. Why? Because we can clearly see that this is a cycle. There is no cycle in a tree. Second test. How many ways are there between 0 and 1? There are many ways. Which ones?"
+  },
+  {
+   "start": 304.88,
+   "end": 333.22,
+   "text": "You can go from 0 to 1 directly. You can go from 0 to 2 and go from 2 to 1. You can go from 0 to 2, 2 to 3 and 3 to 1. You can go from 0 to 2, 2 to 3, 3 to 4 and 4 to 7. So, there are multiple ways between 0 and 1. There is no one way between 0 and 1. What is the difference between this? Between graph and tree. A tree is a graph with no cycles and there is only one and only one path between any two vertexes."
+  },
+  {
+   "start": 333.22,
+   "end": 360.32,
+   "text": "Okay, now what is MST? See, MST means that this graph is a good graph, you can see that there are a lot of edges, but how many vertexes are there in this? How many vertexes are there in this? 0, 1, 2, 3, 4. There are 5 vertexes in this. And how many edges are there in this? See, count the edges. 1, 2, 3, 4, 5, 6, 7. There are 7 edges. In tree, what used to happen? If this was a tree, then how many edges should there have been?"
+  },
+  {
+   "start": 360.32,
+   "end": 387.94,
+   "text": "It should have been 4 edges. Because what are we saying again and again? The vertex will be less than 1 edge in any tree. So, it should have been 4 edges. How many are there in this? 7 edges. Meaning, some edges are useless. Some edges are useless. Meaning, those which were not needed. You have to keep the graph connected. You don't have to remove these two and 4 is completely different. No. You have to convert this graph in a tree. In which? In a tree."
+  },
+  {
+   "start": 387.94,
+   "end": 416.51,
+   "text": "How much will you convert in that tree? Out of these 4, which are the useless edges, how much should it be according to the tree? 4. If it was a tree, then it would be 4. How much is it? 7. Meaning, 3 edges are useless edges. You have to remove that useless edge. If you remove those 3 useless edges, and it is still connected, then this graph will become a tree. How will it become a tree? I will show you. For example, you can remove which ones? I will show you."
+  },
+  {
+   "start": 416.51,
+   "end": 438.67,
+   "text": "What will happen by removing 3 edges? Remove this edge. Okay? Is it removed? Very good. We have removed this edge. 1 edge is gone. We have to do 3. 1 edge is gone. And what should we do? Remove this edge too. Remove the edge between 2 and 1. 2 is gone. And what can we do? Remove this edge. Remove the edge between 1 and 4. Now see."
+  },
+  {
+   "start": 438.86,
+   "end": 466.19,
+   "text": "Is this a tree? Yes, it is a tree. Why? Because its number of edges is 1, 2, 3, 4 and its number of vertex is 5. So, is edges equal to n-1? Yes, it is. And the second test. Is there only one way to go to any vertex? Yes, look. 0 to 1 is one way. 0 to 2, 2 to 3, 3 to 1. And no other way exists. 2 to 3 is one way."
+  },
+  {
+   "start": 466.19,
+   "end": 494.54,
+   "text": "There is only one way, 2 to 3, and if you go anywhere else, it will be wrong. Do you see any cycle here? There is no cycle, it is an open graph. And, are all the vertex still connected? That means, all the vertex are reachable, right? If you start from 0, then you can go anywhere, right? It is not that if you start from 0, then you will not get 1, you will get it. If you start from 2, then you will get all. This is a tree. You have converted this graph into a tree. But,"
+  },
+  {
+   "start": 494.54,
+   "end": 525.09,
+   "text": "You can't do this. You can't do this. Like there was an edge here. This edge was removed, right? Now, suppose you say that you have to remove three edges. We remove this. He said, do it. And remove this. Oh, what happened? Yes. And remove this. Wait. Is it a little wrong? Yes. What did you say? What did you say? There was an edge here too. Yes. Okay, no, this was not. Oh, what is it? What happened? Whatever, whatever tree it is. This tree was yours, right? This tree was something. Yes, this was."
+  },
+  {
+   "start": 525.09,
+   "end": 552.93,
+   "text": "If we want to remove 3 edges, we will remove this, this, and this. But still, the number of edges is 4. But is this a tree? No, it is not. Why? First of all, there is a cycle here. The 0, 3, 4 cycle is not removed. And your 0 is disconnected. Your 0 has gone somewhere else. How will you reach from 0 to 1?"
+  },
+  {
+   "start": 552.93,
+   "end": 577.58,
+   "text": "If your graph was disconnected earlier, then you don't have to do this. If the graph was connected, then every vertex should be reachable from every vertex. You have to remove edges while maintaining that property. You don't have to leave one of them separately. This is not a tree. Why is this not a tree? Because the first thing is a cycle. And now you have cut 0. So what we did earlier, we made the graph in a tree. Now you have not made this graph in a tree. You have done something wrong."
+  },
+  {
+   "start": 577.58,
+   "end": 606.53,
+   "text": "So, this is how you make a graph into a tree. But, MST means minimum spanning tree. What does this minimum mean? Let's understand that. Now, see, this is also a graph. Is this a tree? No, it is not. Why? Because, what is the number of vertex in this? 3. What is the number of edge? 3. What should be in the tree? 2. And there is a cycle in this too. So, you must be able to understand that if we remove any one edge, there are 3 sticks in this, right? This, this, this. If we remove any one edge, then this will become a tree."
+  },
+  {
+   "start": 606.53,
+   "end": 635.87,
+   "text": "If we remove this, the cycle will break and it will become a tree. If we remove this, the cycle will break and it will become a tree. If we remove this, it will become a tree. So, we can remove anyone. Now, what does minimum span tree mean? See, you have three options. If you can remove any edge, it will become a tree. We will write all three options. You can do one thing that 0, 1, 2. Okay? This is 2 and this is 4. It means you can remove 0 to 2. You can do one more thing that you can do 0, 2, 1. This can be done. 3 and..."
+  },
+  {
+   "start": 635.87,
+   "end": 654.1,
+   "text": "4 means you can remove 0 and 1. You can do one more thing that 0, now who is left to remove? Remove this, remove this. Yes, 0, 2 and 1. Is it right? Now this and this, means you can remove 1 and 2. So you have these three options. This option is this option and"
+  },
+  {
+   "start": 654.1,
+   "end": 682.67,
+   "text": "This is the option. These are the three trees. These are the three trees. It means that there is no cycle in any of them. The edges are two. So, these are the three trees. But, what is the minimum spanning tree? Take out the sum of weights of each tree. It means that take out the sum of the weight of the edge that is left in that tree. What will be its sum? 2 plus 4, 6. Its 3 plus 4, 7. Its 2 plus 3, 5. Out of these three options, which you have just done, whatever activity you have done, to remove one edge,"
+  },
+  {
+   "start": 682.67,
+   "end": 711.71,
+   "text": "Where did the minimum weight of this person come from? This person has 6, this person has 7, this person has 5. This is your minimum spanning tree. Minimum spanning tree. Why? Because the graph has to be changed in the tree. The whole rule has to be followed that it should be like this. But the edge that you will remove, after that the weight of the graph that is left should be minimum. What is this conversion called? That you have"
+  },
+  {
+   "start": 711.71,
+   "end": 732.08,
+   "text": "The graph is converted into an MST. And what will you be asked? This sum, this final sum will be asked. That brother, convert it into MST and tell its final sum. If you tell the right sum, if you tell 5, very good, it will work. If you tell 6 and 7, it means you made a mistake. You made a mistake in getting the hat. So, yours will not work."
+  },
+  {
+   "start": 732.08,
+   "end": 760.51,
+   "text": "This thing is called converting a graph to MST. Why to convert it to MST? Because we have already told you about the tree, what happens, how it happens. And MST means whatever edge you are removing, one edge has to be removed, many edges have to be removed. After that, the sum that should come, the sum that should be saved, should be minimum. This thing is called graph to MST. Now you have understood MST. Now let us explain you about PRIMS. And now let us give you an example and explain how to do this work. So see."
+  },
+  {
+   "start": 760.51,
+   "end": 787.3,
+   "text": "Now we will explain you how to do it. Now you can see that there is a graph here. There is a lot of edge here. How much edge is there? There is 7 edge. How much should it have been? 4. Means you have to remove some 3 edge. But you cannot remove any 3 edge from your mind. Because if you remove it, it will be wrong. So you have to make a minimum out of it. So you have to remove the one which has more value. Means you have to remove the big edge, the one which has more weight. But now someone will think that we will do one thing."
+  },
+  {
+   "start": 787.3,
+   "end": 816.77,
+   "text": "If we remove the top 3 weight edge then it will become simple. No. Because what will happen? If you remove these two, you don't even have to disconnect. You can't do this that remove the top 3. It is possible that this edge is crucial. If you remove this and this, suppose it is in the top 3. If you remove 0 to 2 and 0 to 1, then 0 will be alone. You don't have to leave anyone alone. It should be connected. So for this, you have to put some other trick. It is not that simple to remove top 3 and top 4."
+  },
+  {
+   "start": 816.77,
+   "end": 843.73,
+   "text": "What is the best way to understand this? Consider this as a village. There are 5 houses in this village. Which ones? 0, 1, 2, 3, 4. The edges in the village are your wires. One house to another house is a wire. And how long is the wire? This tells you. Okay. Your job is to send electricity to the whole village. You have to give electricity connectivity to the whole village. That means that no house should be left out. No house should be left alone. Means there should not be darkness in any house. Is it a good thing?"
+  },
+  {
+   "start": 843.89,
+   "end": 865.14,
+   "text": "What you have to do is, when you connect these wires, like 0 to 1, 1 to 4, whatever you do, then first of all, there should be 4 types of wires, 4 types of wires, 4 types of wires, 4 types of wires, 4 types of wires, 4 types of wires, 4 types of wires, 4 types of wires, 4 types of wires, 4 types of wires, 4 types of wires,"
+  },
+  {
+   "start": 865.14,
+   "end": 891.3,
+   "text": "First of all, pick up your sacks and take hold of any house. That is your starting point. You are an electrician, you have reached the village. You can go and sit in any house of your choice. See what we will do here. We divide this village into two parts. One part which does not have electricity. One part in which electricity has reached. Means in which you have connected. In the beginning, there is no electricity anywhere. In the beginning, the whole village is dark."
+  },
+  {
+   "start": 891.3,
+   "end": 916.98,
+   "text": "If you take a house from your mind, then you can do anything with your mind. See, electricity has come here and there is no electricity here. Which house have you taken? Zero. You have taken zero. Which one is not in which? It is not in the other houses of the village. So 1, 2, 3, 4. There is no electricity in this. It is good that you understood so much that you took two parts. Now,"
+  },
+  {
+   "start": 917.36,
+   "end": 946.26,
+   "text": "Look at the electricity part one by one. What is there in the electricity part? You have zero. You have zero. Where are the wires coming out directly from zero? Where are the wires coming out directly from the house of zero? So you came to know that there is a wire between 0 and 1 which is 5 meters long. And there is a wire between 0 and 2 which is 1 meter long. There are only two coming out of 0. From 0, the house in which you have given electricity earlier,"
+  },
+  {
+   "start": 946.26,
+   "end": 977.98,
+   "text": "Two wires are coming out of it. One towards 1 and one towards 2. Okay. Now tell me one thing. Wait a minute. So see. Two wires are coming out of 0. One towards 1 and one towards 2. Rest are not in the picture. Rest 3-4 are not in the picture. So let's talk about 1 and 2. See. Let's talk about 2. Why? Because its weight is the lowest. You can see the least wire in it. Okay. Now see. You have to connect 0 to 2. Because every house should be connected."
+  },
+  {
+   "start": 977.98,
+   "end": 1006.26,
+   "text": "There should be connectivity in every house. Connect does not mean that you have to connect the wires directly. No. You have to connect 0 and 2 in some way or the other. This is the absolute truth. Okay. It is not possible that 0 and 2 become unreachable from each other. This is not possible. It is a good thing. Now tell me, how many ways can you connect 0 and 2? There are two main ways to connect. What are we saying? There are two main ways to make a connection between 0 and 2. What is the main way? Either you connect 0 and 2"
+  },
+  {
+   "start": 1006.26,
+   "end": 1025.73,
+   "text": "directly connect it with a wire, means connect it with this wire. This is one way. Or you connect a tube via a house. It is not necessary that there should be a wire between 0 and 2. There should be a connection, there should not be a wire. So one way is that you connect this wire between 0 and 2, the direct one."
+  },
+  {
+   "start": 1025.73,
+   "end": 1050.27,
+   "text": "The second way is that you go from 0 to x, from x to y, and via via via something reach to 2. There are only two ways. There is no third way. The third way is that don't connect. This is not possible. Now tell me one thing. The weight of going from 0 to 2, you have come to know that it is 1. That means if you connect a direct wire between 0 to 2, then you will have to take a wire of 1 meter."
+  },
+  {
+   "start": 1050.27,
+   "end": 1075.1,
+   "text": "If you go on the via route, that via via via something we will go, then you tell me one thing that if you go via, what does via mean? That you went from 0 to somewhere else and from somewhere else you came to 2. If you go from 0 to 1, then you will get 5 here only. What you will get to go from 1 to 2 will be different. What does it mean to say? If you choose the via path that we will go from 0 to somewhere else and from there we will come to 2."
+  },
+  {
+   "start": 1075.1,
+   "end": 1100.14,
+   "text": "Brother, you have 5 here. You will not reach less than 1 under any circumstances. You will take 5 meters to go from 0 to 1. You don't know how long it will take to go from 1 to 2. What is the best option for you between 0 and 2? You leave it. Connect this direct wire with this. Why?"
+  },
+  {
+   "start": 1100.14,
+   "end": 1129.63,
+   "text": "Because this is the lowest, from 0 to 2. The wire from 0 to 2 has come out the least. Meaning that the wire that goes from 0 to the rest of the houses will be greater than 1. Okay. Now you have two options between 0 and 2. Either you directly connect 0 and 2, or you go somewhere else from 0 and 2 comes from there. If you go towards the second option, you will definitely get more than this. Why? Because we are looking at the direct wire of 0."
+  },
+  {
+   "start": 1129.63,
+   "end": 1159.28,
+   "text": "Where is the smallest wire of 2? It means that there is only one way to go from 0 to 2. You go directly from 0 to 2. If you go via somebody, then it will take 5 from 0 to 1. I don't know how much more it will take from 1 to 2. What does this mean? In which house did you have electricity now? From 0. If you write all the wires of 0, that means if you look at the electricity houses, you can see where the wires are coming out of them."
+  },
+  {
+   "start": 1159.28,
+   "end": 1186.98,
+   "text": "You got to know that the smallest wire goes from 0 to 2. Is there electricity in 2 now? There is no electricity in 2 now. So what will you do? You will leave the A edge between 0 to 2. That will be a part of your MST. Because 0 and 2 will have to connect. And the smallest way is 0 to 2. If you try to go anywhere from 0 to 2, it will be wrong. It will be a mess."
+  },
+  {
+   "start": 1186.98,
+   "end": 1216.34,
+   "text": "So what will we do? We will include 0 to 2 in our tree. To show this, what do we do? We make the 0 to 2 green mark. The edge green mark means that it is included. And just to explain to you, this is not the real code, just to explain to you the concept of what to do. We have electricity in 2 now. What has come in 2 now? Electricity has come. Good thing. Very good. Do the same thing. Do the same thing. Now,"
+  },
+  {
+   "start": 1216.34,
+   "end": 1244.99,
+   "text": "Again, write the wires of all the electricity houses. Means, the houses which have electricity. The houses which you have connected. You have connected 0 and 2. Now, where can you go? Where can you go from 0 and where can you go from 2? We will take the next question on this basis. So, what will we write? First of all, where is one wire going from 0? Towards 1. This is still there, right? It is 5. Write this. No one is going from 0. It used to go from 0 to 2. It has become 2. Okay. From 2."
+  },
+  {
+   "start": 1244.99,
+   "end": 1271.07,
+   "text": "Look at 2. From 2, one edge is going towards 0, but there is already electricity at 0. Why do we have to connect it where there is electricity? We will connect it where there is darkness. Ignore this. Write the rest. From 2, one wire is going towards 1, which is 2 meters. What else? Write more. From 2, one wire is going towards 3, which is 3 meters long. Okay? From the lights in the houses, you can go out only in 3 ways. Okay?"
+  },
+  {
+   "start": 1271.07,
+   "end": 1300.22,
+   "text": "Which one is the smallest? This one. Talking about weight, which one has the least distance? To go from 2 to 1. How much? To go from 2 to 1. Apply the same concept. The wire to go from 2 to 1 is the smallest. What does it mean? Apply the same thing again. You have to connect 2 and 1. 2 and 1 can't be non-connected. It can't be."
+  },
+  {
+   "start": 1300.22,
+   "end": 1325.79,
+   "text": "Now there are two ways to connect 2 and 1. Either you leave the direct line between 2 and 1, or you go from 2 to X, Y, Z and come back to 1. The same principle will apply. If you go from 2 to somewhere else, via something something, then what will you have to do? You will have to go from 2 to 3, which is 3. Which is what? 3."
+  },
+  {
+   "start": 1325.79,
+   "end": 1349.74,
+   "text": "You have to go from 2 to 3, which is definitely bigger than 2. So it is not possible that you go from 2 to 1. This is not possible. Why? Because you are getting the smallest edge between 2 and 1. So it is more beneficial to go directly from 2 to 1. If you jump from 2 to 1, it will already weigh more than this. I don't know how much it will take after that."
+  },
+  {
+   "start": 1349.74,
+   "end": 1375.97,
+   "text": "So one thing is clear that going from 2 to 1 is the most beneficial in the current date. Another question can also come in this that why are you focusing on 2? You go from 0 to 1, right? Go from 0 to 1. There is the same problem in going from 0 to 1. If you choose 0 to 1, let's say we choose 0 to 1 at your request, but we will keep this one. Again, why are you deliberately choosing the wrong thing to go from 2 to 1?"
+  },
+  {
+   "start": 1375.97,
+   "end": 1399.98,
+   "text": "See, you don't know the whole thing. According to what you know, you will take a good decision. If you connect 0 to 1, then how much distance will be between 2 and 1? You will have to go from 2 here to here. Between 2 and 1, distance will be 6. But if you directly connect 2 to 1, which you know, which you know is the smallest, then you are optimizing between 2 and 1, right?"
+  },
+  {
+   "start": 1400.18,
+   "end": 1428.21,
+   "text": "Don't take the wrong decision intentionally. You will intentionally increase the distance between 2 and 1 if you choose something else. If you say that you want to keep this edge, you are intentionally increasing the distance between 2 and 1 knowingly. You know that according to this time, when I am between 0 and 2, then the best connection between 2 and 1 is the direct line. Nothing can be better than that."
+  },
+  {
+   "start": 1428.21,
+   "end": 1456.21,
+   "text": "Nothing can be better than that. Therefore, optimize on what you know. What will we do? We will pick up the smallest edge and bring the 1 here. Now, there is light in the 1 too. Because of which edge? Because of which edge has there been light in the 1? Because of this edge. Because of this edge. Because of this edge, there has been light in the 1. Pick up the 1 and write here. Remove the 1. Remove this too. Remove this too. Repeat the same thing."
+  },
+  {
+   "start": 1456.21,
+   "end": 1484.02,
+   "text": "In the houses that have electricity, which edge will be most beneficial for now? Let's write it down. See, zero has two edges. Zero has two edges. One and two. One and two both have electricity. There is not much benefit to do. Did you understand? Where does two go? One zero, one one. Zero and one both have light. Yes, two has three left. So, one of you has chosen that we can go from two to three."
+  },
+  {
+   "start": 1484.02,
+   "end": 1514.02,
+   "text": "Okay. 1. Where does 1 go? 1 also goes to many places. See. First of all, 1 goes to 3 by doing 2. Okay. And 1 goes to 4 by doing 3. 1 goes to 4 by doing 3. 1 goes to 4 by doing 3. 1 goes to 4 by doing 3. And 1 goes to 3 by doing 2. This is the edge for now. Now, from the houses where there is electricity, it can go from there to there. It can go from here to here. Which one is the smallest? 1 to 3. Same concept."
+  },
+  {
+   "start": 1514.02,
+   "end": 1543.57,
+   "text": "Which is the best connection to go from 1 to 3? Direct line. If you will go from 1 to 3 via some route, then you are deliberately destroying 1 to 3. You have to minimize, optimize. Never deliberately destroy your things. What will we do? We will include 1 to 3. So, the edge of 1 to 3 will also be included in your MST. What happens? It's a good thing. And, and,"
+  },
+  {
+   "start": 1543.57,
+   "end": 1567.92,
+   "text": "Your 3 has got electricity. It's a good thing. Do the same thing. And this edge's work is finished. You can do the same thing. 2 to 3 edge has no work. The house which has got electricity has no work. It has no work. 1 to 4 edge is left. 1 to 4 edge is left. 1 to 4 edge is left. In what?"
+  },
+  {
+   "start": 1568.08,
+   "end": 1596.5,
+   "text": "How much is 1 to 4? 3. And you can also go from 3 to 4. How much is 3 to 4? 6. Which is the smallest? 1 to 4. Same concept. The best connection to go from 1 to 4 is this connection. If you take 1 and 4 via sum root, then you will deliberately make your answer wrong. What will we choose? We will choose 1 and 4. This edge is also included."
+  },
+  {
+   "start": 1596.5,
+   "end": 1625.76,
+   "text": "That's it, it's over. Now see, electricity has come to all the houses. Now you will remove any edge, there will be no benefit, electricity has come to all. 1, 2, 3, 0, 1, 2, 3, 4. What MST did you make, see. What MST did you make, see. All green edges are included. Means, you go from 0 to 2, 1. Okay. From 2 to 1, you went to 2. From 1 to 3, you went to 2. And from 1 to 4, you went to 3. Is this a tree?"
+  },
+  {
+   "start": 1625.76,
+   "end": 1652.98,
+   "text": "There is no cycle in this tree. Are all the people connected? All the people are absolutely connected. Are there 4 edges and 5 vertexes in this tree? Yes sir, there are 4 edges and 5 vertexes in this tree. Is this a minimum weight? What is the weight? 1, 2, 2, 3, 2, 1, 3, 5, 8. You can do a variety of permutation combination. You will not be able to achieve less than 8 weight in this tree. Why has this happened? Because"
+  },
+  {
+   "start": 1653.01,
+   "end": 1682.02,
+   "text": "You take a starting house to do it. There is electricity in that house. You see where it is going from this house. You get to know that it is going to such and such place. What is the best choice for now? If it is going between 0 to 1 and 2. The one between 0 to 2 is the least. So between 0 and 2, is this the best connection or not? Yes, it is the best connection. Because if you go from 0 to 2 somewhere else, it will be wrong. So don't make this mistake on purpose. Did you understand?"
+  },
+  {
+   "start": 1682.02,
+   "end": 1708.26,
+   "text": "This is the algorithm that you do slowly. And how to find the minimum edge? How to find the minimum edge? How to find the minimum edge? How to find the minimum edge? How to find the minimum edge? How to find the minimum edge? How to find the minimum edge? How to find the minimum edge? How to find the minimum edge?"
+  },
+  {
+   "start": 1708.26,
+   "end": 1732.21,
+   "text": "Take out one edge from the heap, the minimum weight one. Check if there is no electricity in that neighbour. If there is electricity in that neighbour, ignore it. If there is no electricity in that neighbour, then that edge should be in your sum. You will add that weight to your sum. When you will keep doing this, then you will see that your minimum spanning tree is ready. Because at every stage, you are taking the best decision."
+  },
+  {
+   "start": 1732.21,
+   "end": 1762.21,
+   "text": "What is minimum spanning tree? Look, why don't we do this? Because we didn't know what would be the best combination, which 3 to remove. So what you did is, at every point of time, you picked the best edge, that this cannot be anything better than this, according to now. It does such a thing, that if you are in class 10th, you don't know what is going to happen in the future, but you performed best according to class 10th, you brought 90%, good thing. You went to 12th, you don't know what is going to happen next, but you took the best performance according to 12th, here 90 came."
+  },
+  {
+   "start": 1762.21,
+   "end": 1784.86,
+   "text": "While doing this, when you go, because you have taken the best, best, best, best choice in all, overall it will be best. This means that at every point of time, we have to take the best choice. We don't have to make a mistake here. So when you take the best choice, then what will happen? It will become best. What will become? It will become best. Do you understand or not? Now come to this."
+  },
+  {
+   "start": 1784.86,
+   "end": 1813.7,
+   "text": "Code and other things are shown. This is the algorithm. There is nothing more than the algorithm. So what will be given to you? You will be given a list of edges. Edges means source, destination and weight. And you will also be given the number of nodes. And what do you have to return? The sum of the MST that you will make. So the minimum sum is possible. You have to do that. So you get a function like this. Here it is. Int MST is written. You get int n. And you get vector of."
+  },
+  {
+   "start": 1813.7,
+   "end": 1842.62,
+   "text": "What do we get from vector of int? We get edges. So the first thing is that because you are playing with edges, you have to insert and delete edges, let's make an adjacency list. How do we make an adjacency list of weighted undirected draft? I have told you many times, we will do that. Come, int i. What kind of list will be made? Vector of, not vector of int, because you are a weight, vector of pair of int. Instead of int, you will have to keep pair of int."
+  },
+  {
+   "start": 1842.62,
+   "end": 1872.4,
+   "text": "1, 2, 3, a and size n. Come to every edge. i is equal to 0. i less than edges dot size s or i plus plus. Take out everything. What happens in one edge? Source, destination and its weight. So int s is equal to edges i of 0. First one. Destination is equal to edges i of"
+  },
+  {
+   "start": 1872.4,
+   "end": 1902.14,
+   "text": "1. And what is its weight? Wt is equal to edges, i, and 2. Okay? 2 is done. What do we have to do? Push it in adjacency. Array of s dot, push back, push back. What do we have to push back? Not int, do we have to push back a pair? B and weight. Means source, destination, and weight. And since it is an undirected graph, then push it in reverse. Means if source, destination, edge goes,"
+  },
+  {
+   "start": 1902.14,
+   "end": 1932.48,
+   "text": "So, source will go from destination to source. Your adjacency list is ready. Now, what do you want? Now, you want a min heap. Now, you want a min heap. You want a min heap. We will do a dry run of it. Don't worry. You want a min heap. Why do you want it? You will keep two things in min heap. Weight and this node. Weight and this node. What will this tell you? Suppose, you have got a node is equal to 0. Node is equal to 0. Now, two edges go from 0. H goes between 0 and 1. Two weight."
+  },
+  {
+   "start": 1932.48,
+   "end": 1951.39,
+   "text": "And between 0 to 2 goes 5 weight. What will you push in the heap? You will push in the heap, weight is equal to 2 and its node is equal to 1. What will you push in the second? Weight is equal to 5 and node is equal to 2. What will be the benefit of this? Because this is a min heap, first of all,"
+  },
+  {
+   "start": 1951.39,
+   "end": 1980.88,
+   "text": "This one will come out because its weight is the lowest. As soon as this one comes out, then what does it mean? That you have to include this edge. Now, from where to where to include it is not necessary because you just want the sum. You just want the sum. You just have to check that this node, now what does it mean? That edge has come on this from someone. Edge has come on 1 from some x whose weight is 2. If 1 does not have electricity yet, which we can see from visitors that 1 has not been seen yet, then what will we do?"
+  },
+  {
+   "start": 1980.88,
+   "end": 2011.44,
+   "text": "We will look at 1, which means the electricity reached 1. And we will add this weight to the sum. And we will push the weight from 1 to the heap. This is what we are doing, right? We will do this. Come. So what will we do for this? First of all, we will make a min heap. Priority. Min heap of pairs. Priority q. First of all, pair of int. Int. Pair of int, int is done. Yes. Put this thing inside the vector."
+  },
+  {
+   "start": 2011.44,
+   "end": 2042.03,
+   "text": "Pair of int, int, 1, 2, yes. Okay? Pair of int, int, how did this happen? Yes, okay. And greater int. Because we want to make a mean heap. Greater, this, this, this. PQ. It's done. What do we do with 1? Make a visited vector. Make a visited vector. And in the beginning, there is no visited. What does visited mean? In which house has the light reached? In which house has it not reached? So in the beginning, it has not reached anywhere. Okay. Now what do we do? Select any one node."
+  },
+  {
+   "start": 2042.03,
+   "end": 2071.86,
+   "text": "pq.push . What does it mean? We started with 0. Now, you are starting with 0, right? So, we said that its weight is 0. Its weight is 0. It means that it has not come from any edge. It has come like this. And this node number is 0. And, now start your game. What game should you start? While pq.notEmpty. It means, until we finish all the edges. Until we finish all the edges. Remove one edge."
+  },
+  {
+   "start": 2071.86,
+   "end": 2100.34,
+   "text": "Take out one edge. Pair int int p is equal to pq.top. Which one will come out at the top? The edge with the lowest weight. So, obviously, if you insert only one edge, then the weight of 0 will come out as 0. And pq.pop. Separate them. Int w is equal to p.first. And int node. Which node is it? p.second. Is it correct? First of all, check one thing. If"
+  },
+  {
+   "start": 2101.17,
+   "end": 2131.54,
+   "text": "Visited of node is equal to 1. Means there is already electricity in this house. Continue. Nothing to do. Continue. Ignore this edge. Be careful. We have not done visited of 0 is equal to 1 here. We have not done visited of 0 is equal to 1. Means there is no electricity in 0. There is no electricity in 0 now. Now there will be electricity. There will be electricity in 0 now. If it is not like this. Means first of all visited of node is equal to 1. There is electricity in this house."
+  },
+  {
+   "start": 2131.54,
+   "end": 2160.66,
+   "text": "And sum is equal to sum plus weight. Sum plus weight. Sum plus weight. This is your weight. What is sum? Take a sum. You have to return this in the last. Sum is equal to 0. Now, 0 will be added to this. Now, there is electricity in 0 just now. Push all the edges that are connected to 0 in the heap so that you can work next time. How do we do it? For int j is equal to 0, j less than array of node."
+  },
+  {
+   "start": 2161.04,
+   "end": 2190.75,
+   "text": "Dot size. You have already done all this many times. So we hope that you will not have any doubt in this. There is no doubt in this. What is its neighbor? Array of node's j's first. What is this man's weight? W is equal to array of node's j's second. Push this edge in the heap. But, pay attention to one more thing."
+  },
+  {
+   "start": 2190.75,
+   "end": 2219.95,
+   "text": "If there is already electricity in this neighbor, then you can ignore this edge. Suppose this is your current node. The edge goes from 1 to 2 and its weight is equal to 10. But suppose there is already electricity in 2. Then why are you doing 1 to 2? What does it mean that there is already electricity in 2? That you must have already taken 2 from 0. So don't do it. Don't make a cycle again and again. If there is electricity in 2 once, don't pay attention to it again and again. Once there is electricity, it means it has come properly."
+  },
+  {
+   "start": 2219.95,
+   "end": 2243.52,
+   "text": "Now, don't pay attention to that. So, what will we do here? If visited of neighbor is equal to 0, means if there is no electricity in neighbor, then only you push. Otherwise, don't push. If there is no electricity, then what will you push? First, W and neighbor. And neighbor. Close it. Close it. Return sum."
+  },
+  {
+   "start": 2243.52,
+   "end": 2271.79,
+   "text": "Return sum. See this. This is your entire code. This is your entire code. Let's dry run it. It might be a little confusing. There is nothing wrong with that. Let's dry run it on a small example. We won't do it on a big one. On a small example. The example we saw first. 0, 0, 1, 2. Let's dry run it. What is the weight of 0 to 1? 3. And its weight is 2 and its weight is 4. Let's dry run it."
+  },
+  {
+   "start": 2271.79,
+   "end": 2300.91,
+   "text": "First of all, first of all, make a visited array. Okay. Visited, we will mark here itself whether there is electricity or not. Okay. Make a minimum heap. What was pushed in the heap first? First of all, weight is equal to zero, node is equal to zero. This was pushed in the heap. Come, take it out. First of all, when you take it out from the heap, what will you get? Weight is equal to zero and node is equal to zero. Has electricity come to zero previously? It has not come yet. Okay. It has not come yet, so it must have come now. Now it has come to zero."
+  },
+  {
+   "start": 2300.91,
+   "end": 2328.45,
+   "text": "Electricity has come. In sum, what should we add? Whatever weight has come out, if this weight is 0, then sum will be 0 only. Now what should we do? Where can we go from 0? Push the edges of 0 in the heap. Push the edges of 0 in the heap. This has come out. Push the edges of 0 in the heap. Which is the first edge of 0? It goes till 1. Has electricity come till 1? It hasn't come. Push it. W is equal to 3. Node is equal to 1."
+  },
+  {
+   "start": 2328.45,
+   "end": 2356.67,
+   "text": "W is equal to 2. And node is equal to 2. Okay. Pushed. Your first iteration is over. Take out the edge again. Which edge will come out? This one. Its weight is the lowest. Weight is equal to 2. Node is equal to 2. And this guy has come out of the heap. Good thing. First of all, see. Did the electricity come to node 2? No. The electricity did not come to node 2. Okay. Now it has come. Now it has come. Now remember."
+  },
+  {
+   "start": 2356.67,
+   "end": 2385.42,
+   "text": "Now remember, now remember, okay? What is its weight? 2, add 2 to your sum. Add 2 to your sum, means remember, take this one, take this one, take this one, take this one, okay? From 2, wherever you can go, push them in the heat. First of all, you can go from 2 to 0. So there is a need to go to 0, there is already electricity in 0, and there is nothing to do in it, don't do anything. You can go from 2 to 1, in how much weight? In 4 weight, put that, that is important."
+  },
+  {
+   "start": 2385.87,
+   "end": 2413.87,
+   "text": "Weight is equal to 4. Node is equal to 1. Good thing. Its iteration is over. Take it out again. Which one will come out? This one. Its weight is less. W is equal to 3. Node is equal to 1. First of all, check. Has the electricity reached 1? No. Okay. Now it has come. Now it has come. Now we will remember. Now it has come. Sum is equal to. We will have to add 3. We will have to add 3. Take this one. Take this edge. Very good."
+  },
+  {
+   "start": 2414.35,
+   "end": 2443.33,
+   "text": "Now, what we will do is, we will put all the edges in the heap from 1. But, one edge from 1 goes to 0. It is already in the 0. It goes to 2 from 1. It is already in the 2. You don't have to work hard in this. Don't do anything. Don't do anything. It is done. It is done. Okay. And this is out of the heap. One edge is still left in the heap. Remove that. Now, there is only one edge. Obviously, this will come out. W is equal to 2. Node is equal to 1. Is 1 already in the heap? Yes, it is already in the heap. Don't repeat it."
+  },
+  {
+   "start": 2443.33,
+   "end": 2472.51,
+   "text": "It's over. We won't do anything. Absolutely ignore. Absolutely ignore. Neither the sum will change nor anything will change. Your heap is empty. Your heap is empty. Come on. What did you return? What did you return? 5. Was your answer 5? Remember in the beginning. It was absolutely 5. Which two edges did you take? One this edge. One this edge. Is it an MST? It is absolutely an MST. Which one did you ignore? This edge. So obviously, you see that you ignored the maximum one. Why? Because you took the best decision in every step. What was the best decision in the first step?"
+  },
+  {
+   "start": 2472.51,
+   "end": 2492.15,
+   "text": "Take 2. Take it. What was the best in the second? Take 3. Do you understand or not? What is this? Prim's algorithm. There is no easier algorithm than this in computer science. Okay? Code it. Dry run it. Understand it. In the next lecture, we will focus on Kruskal. Or we will see. We will do a few questions of Prim. We have not planned yet. Okay. Let's go."
+  }
+ ]
+}

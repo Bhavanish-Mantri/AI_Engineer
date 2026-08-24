@@ -1,0 +1,349 @@
+{
+ "video_id": "-gC-QEdpvO4",
+ "title": "What If You Could Master Recursion in 3 Easy Questions",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1818,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 11.44,
+   "text": "Today we will do 3 questions in recursion. All 3 questions are very easy. So you will feel that there are very easy questions in recursion. But it is important to do easy questions because you have been doing all these questions in loops till now."
+  },
+  {
+   "start": 11.44,
+   "end": 30.69,
+   "text": "Today we will do all three questions. Sum of digits, remove all occurrence and check of error is sorted. So all three are different types of problems. One is the problem of number, i.e. how to do number recursion. How to do an array recursion and how to do a string recursion. So all three problems we are sure that you will have done or will do. If you get time, then we will do it from loop."
+  },
+  {
+   "start": 30.69,
+   "end": 45.2,
+   "text": "but in loop you will not be able to learn recursion so we want to make this easy problem because the first type of recursion in which you used to take the answer of small problems and then return it there should be no problem in that because when we will go to DP"
+  },
+  {
+   "start": 45.2,
+   "end": 64.94,
+   "text": "or when we go to the tree, then all this will be very useful. If there is confusion in the tree that how to get the small answer and how to return, then nothing will be made in the tree. 50% problems will not be made in the DP also. So listen very carefully. Same with when we will start the problem of backtracking from tomorrow, watch very carefully if you do not understand backtracking."
+  },
+  {
+   "start": 64.98,
+   "end": 89.68,
+   "text": "it can't be written, then what will happen is that the graph will not be understood in the future. The DFS in the graph is the same. In the future, 40% problems will not be understood in front of DP. Because until the recursion comes, all these problems, all these things do not come. That's why people don't know. Because they don't learn recursion. They see the problem, they think that yes, we will run a loop in this, why do we have to do recursion in this? Learn it. The purpose is to teach, the purpose is to teach you."
+  },
+  {
+   "start": 89.68,
+   "end": 119.22,
+   "text": "I am not an expert in loops, I have done a lot in loops, I have seen a lot of loops till now. Recursion is a technique that you should know, you should know how to read recursion, you should know how to dry run. So, let's start quickly. Come, let's start. So, it is a very easy question, we will solve it very quickly. What is the first question? In the first question, you have to find the sum of digits. You have given a number n, and your job is to return the sum of the digits in this n."
+  },
+  {
+   "start": 119.34,
+   "end": 138.37,
+   "text": "We know that you have done this. How have you done this? You used to do y, n greater than 0. How is any number's digit taken out? It is taken out by d is equal to n modulus 10. So when you do n modulus 10, then its last digit is taken out. For example, if n is equal to 5, 6, 7,"
+  },
+  {
+   "start": 138.37,
+   "end": 167.73,
+   "text": "and you will take out its modulus, modulus means that when you divide it by 10, then how much will be left, how much remainder will be left, so when you divide 5, 6, 7 by 10, then how much remainder will be left, remainder will be 7, so this is the last digit of it, okay, now you have taken out this last digit, now how do we separate this last digit from the rest of the numbers, there is a way to separate it, if you take its quotient, quotient means, remember when you were studying division, then there were two types of things, what happens, yes,"
+  },
+  {
+   "start": 167.73,
+   "end": 196.74,
+   "text": "There were two types of things. We used to divide by 10 like this. So first we will do 10, 5, 6, 7. So we will do this. After that, we used to call this remainder. And what we used to call this person? Quotient. Do you remember? There must have been division in 3 and 4. So, there is a simple trick. First of all, if you want to extract any number's digit, the last one, then you do n-modulus 10. You will get the last digit. Now what will we do to separate the last digit from the other number?"
+  },
+  {
+   "start": 196.74,
+   "end": 218.45,
+   "text": "n is equal to n by 10. So, when you do 567 by 10, if you take out the quotient, then it will be 56. So, you see, the last one digit has automatically come out. So, in this way, we solve it in the loop. But, let's solve it with recursion. Okay. Do the same thing. Assume that you have an n, which is 567. Is it correct? Okay."
+  },
+  {
+   "start": 219.02,
+   "end": 246.4,
+   "text": "What we say is that always keep a small part separate. Keep the rest of the part in your mind that it will be solved. Combine both and get the answer. So what will we do? Because we can only get the last digit. It is a little difficult to get the first digit. Or we don't know how to get it. We didn't get it till now. So we can get the last digit of any number at any time. And we can also separate the rest. Means we can separate these two by getting it out at any time. So do the same. What does Dikarjan say?"
+  },
+  {
+   "start": 246.4,
+   "end": 273.54,
+   "text": "Take out a small part of it. Take out 7. Take out 7. The rest of the part's answer, 56. Whatever number is left, 56. Its sum of digits, assume that someone will tell you that its sum of digits is 11. Assume. If you add this 11 and this 7, then can you tell your answer 18? Yes, we can tell 18. So, this condition is fulfilled. You can apply the recursion. Listen again. Take out a small part for yourself. You will know its answer. The rest of the..."
+  },
+  {
+   "start": 273.54,
+   "end": 301.33,
+   "text": "Keep the trust that it will be solved. Keep the rest of the trust that it will be solved. By combining both of them, tell your answer. Write the essay of one page. Think of the rest of the five pages, someone else will write it. If you combine it in total, then you will have a six-page essay that you can submit. And write the base case. What can happen on the smallest input? Meaning, if n is the smallest, then what will happen? Write that base case. So, here it is said that n is a positive integer. n is not negative because then it..."
+  },
+  {
+   "start": 301.33,
+   "end": 327.55,
+   "text": "If there is a minus, it will be a mess. What is n? It is a positive integer. Come, what will we do? First of all, int fun. Okay, it takes int. What is its work? To return the sum of digits of any n. First of all, write the base case. If n is a positive integer, then n, what can be the smallest? n can be 0. Means, here 1 is given, but assume that n can also be 0. Let's assume that if,"
+  },
+  {
+   "start": 327.55,
+   "end": 352.06,
+   "text": "n equal to zero. If you get your number as zero, then what do you return? How many digits are there in zero? One digit. Which one? Zero. What is its sum? Zero. So, everyone knows this. Return zero. Now, come to us. First of all, remove your small part. Int d is equal to n modulus 10. You removed the last small part. Very good. After that, remove the rest. n is equal to"
+  },
+  {
+   "start": 352.06,
+   "end": 382.16,
+   "text": "N by 10. The rest of the part is different. The rest of the part is in N. You have the digit. Take out the answer of the rest of the part using this function. Have faith in God that he will give you the function. Int. Answer is equal to fun N. On whom is this? On trust. You will get it. Now, you had 567. You are trusting the answer of 56 that you will get it. You have already taken out 7. So, what will be the sum of digits? The sum of digits that you have taken out is D. D plus."
+  },
+  {
+   "start": 382.16,
+   "end": 412.08,
+   "text": "Answer, return this. Return this. That's it. The program is over. The program of recursion is very cute. It is a very cute program. So again, what is this? Base case. What is this? The small part you took out. And what is this? Trust. You took out the answer by combining both. Come, let's see its dry run. What is happening? Let's see its dry run. Assume that you are solving at 687. n is equal to 687. So who will be called by the first main function?"
+  },
+  {
+   "start": 412.08,
+   "end": 441.55,
+   "text": "Fun, in which n will be 687. Okay, let's run. Is this a base case? Means, has n become 0? No, n has not become 0. So, okay, we have to move ahead. Remove d. d, what will be the last digit? 687 modulus 10, means 7. What will be the remainder? 7 will come. What will we make n? n is equal to n by 10. Means, what will be the quotient of 687 by 10? 68, so that the last digit comes out of the equation. 68. For whom will we remove the answer? Fun of 68. Let's go."
+  },
+  {
+   "start": 441.55,
+   "end": 470.64,
+   "text": "Now, if this is called, then the compiler will go straight here. For whom is the second fun called? For n is equal to 68. Again, is this base case hitting? Has it become 0? No, it has not become 0. Do the same thing. Now, if we will stamp 68 modules, then what will be the remainder? It will be 8. What will be n? 68 by 10. So, the last digit will be removed. What will be n? 6. And, we will leave the answer of this 6, by the grace of God, that we will get it from here. Again, if we come here, then again, the compiler will come here."
+  },
+  {
+   "start": 470.64,
+   "end": 497.01,
+   "text": "What will be the fun call for? N is equal to 6. Is it hitting the base case? No, it is not hitting the base case at all. So, D will come. What will be 6 modulus 10? If we run 6 from 10, what will be the remainder? 6. And what will happen? When you do 6 by 10, what will be the quotient? 0. 1 will not come. Think about division in your mind. N is equal to 0. For this, take out the answer. Fun of 0. Now, what have you done? The compiler will come here."
+  },
+  {
+   "start": 497.01,
+   "end": 522.37,
+   "text": "Fun of 0. Does this fit the base case? Look carefully at the code. Yes, this fits the base case. If this n becomes 0, then what do we say? What will be its answer? 0. So what will it return from here? It returns 0 from here. It is finished. This one is finished. Where will it go straight? Here. Now what does it do? It has to combine these two to return the answer. What was the answer returning? D plus whatever answer has come from there. So what will we do?"
+  },
+  {
+   "start": 522.37,
+   "end": 549.78,
+   "text": "What was d? 6. What is the answer? 0. So what will it return? 6 plus 0. Return 6. This is over. Where will this 6 come? It will come here. Do the same thing. 8 plus 6. What will it return? 8 plus 6. Return 14. This is over. Where will this 14 come? It will come here. Do the same thing. 7 plus 14. What will it return? 21. Return 21. What will be the answer in your main? 21."
+  },
+  {
+   "start": 549.78,
+   "end": 578.26,
+   "text": "Let's cross-check it. 6, 87. If you add it, the answer will be 21. 6 plus 8, 14, 21. Yes, my answer will be 21. So, this also worked. That's why recursion programs are quite cute generally. So, this was the first question. Let's move on to the next one. The next question is quite fake. Check if an array is sorted. Check if an array is sorted. So, you have given an array. You just have to tell true or false. If the array is sorted, then you have to say that yes, it is sorted. Yes."
+  },
+  {
+   "start": 578.26,
+   "end": 606.51,
+   "text": "If the array is unsorted, then you have to say that it is not sorted as false. It is a very easy question and the difficulty is also easy. But the purpose of doing this is to learn recursion and see what happens and how to solve all the problems. So let's think a little about what we will do. If an array like this is given to you, a very big array like this, 10, 20, 30, and 40, and 50. So looking from above, it seems that the array is sorted. It seems that it is sorted, okay. But looking from here, it seems that it may be a very big array."
+  },
+  {
+   "start": 606.51,
+   "end": 627.3,
+   "text": "So how does a person think? If someone tells you a very big array and asks you if it is sorted or not, then what will you do? We will do this, we will start reading it from here. We will start reading from 10. If we see that 10 is smaller than 20, then we will go ahead. If we already know, suppose 10 is here and 5 is here. If the array starts like this, let's assume that 10 and 5 are ahead."
+  },
+  {
+   "start": 627.3,
+   "end": 649.94,
+   "text": "No matter how big the array is, no matter how beautiful the array is, we know that 10 and 5 should not be in this order, because 10 is bigger than 5. We will not go ahead, we will say that it is not sorted. Any person looks like this, that first look at 10, look at 10 from 20, if 10 is smaller than 20, then it is fine, move ahead. Then pick up 20, look at 20 from 30, if 20 is smaller than 30, then it is fine till now."
+  },
+  {
+   "start": 649.94,
+   "end": 677.18,
+   "text": "pick up 30, look at 40 and say yes 30-40 is a good thing pick up 40, look at 50 and say yes it is a good thing then you come to the end of the array and say yes the whole array is sorted if you had ever come to know in the journey that suppose here is 30 and here is 20 like this now no matter what you have done in the back and what is in front if you have come to know here only that this is 30-20, it should not have been 30-20 30 is bigger than 20 and bigger than the one in front so if any element any element"
+  },
+  {
+   "start": 677.18,
+   "end": 706.34,
+   "text": "If it is bigger than its next element, then it is not virus-sorted. If all such rules are followed, then it is virus-sorted. No one looks at it this way. If you are given a list of 1,000 children, then you will compare it in this way. You are not a scanner that you will look at it and tell. No, you can't tell. If you imagine that you are given a list of 1,000 children, 10,000 children, you will look at it this way with your eyes. Let's make the recursion in the same way. What will we do? Let's take an array."
+  },
+  {
+   "start": 706.34,
+   "end": 733.68,
+   "text": "Let's take a big array of 10, 20, 30, 40, and 35. So, from the top, we know that the array is not sorted. Okay, good. But, what did we say? What does the recursion say? Again, keep a small part. Solve a small part and keep it. Trust the rest. Trust the rest that you will get the answer. Mix both and give your answer. Okay."
+  },
+  {
+   "start": 733.68,
+   "end": 763.22,
+   "text": "So, when you get this array in the beginning, then we say that let's do one thing. Let's keep this with us. Let's keep this with us. And first of all, check whether the length of the array, again, base case. What will be the base case? Base case means what can be the smallest array? What can be the smallest input? So, the smallest input can be that if the length of the array becomes 0, if there is no array, if there is no array, what will happen to it? If the length is 0, then is it sorted? Yes, in a way, we can say that it is sorted."
+  },
+  {
+   "start": 763.22,
+   "end": 789.94,
+   "text": "It can be said in a way that it is sorted. If the length of an array is 1, then is it sorted? Yes, it is absolutely sorted. If an array is 10, then there is no other element in this array, then it is absolutely sorted. Yes, it is absolutely sorted. In the base case, we have written that if the length of an array is 0, it can be said in a way that it is sorted. If the length of an array is 1, then also it is sorted. Okay. Now, here we have come to the conclusion that what to do with the length of an array 5. Okay, the base case is ready. Solve a small problem."
+  },
+  {
+   "start": 790.26,
+   "end": 819.9,
+   "text": "Every time, when you were looking from above with your eyes, what were you doing? Every time, what were you doing with the small things? You were comparing any element with the one in front of it. You were doing this, right? Every time, remember, what were you doing? You were not looking at 10,000 children at once. You were doing small, small, small. This one is smaller than the next one. Yes, we will move on. The next one is smaller than the next one. Yes, we will move on. So, this is the small, small problem. Solve it here once. This problem, the small problem, whether one element is bigger than the other or not, this is very easy. So, assume that you are standing here. Here, on 10."
+  },
+  {
+   "start": 819.9,
+   "end": 846.02,
+   "text": "Solve a small problem. Is 10 smaller than 20? Ask this question. If the answer to the question is no, if it is 5, then there is no need to do anything. You can directly say that it is false. If you get an element which is bigger than the previous one, then whatever the array is, it cannot be sorted. You can do false from here. But,"
+  },
+  {
+   "start": 846.02,
+   "end": 875.44,
+   "text": "Assume that here, what did you find out? That 10 is less than 20. So this is fine. You solved for this. Now, for which array did you solve for? For this whole array. For whom? For this whole array. Assume that someone tells you that this array is sorted. Which array is this? This array. From 20 to 35. Assume that someone tells you that it is sorted. Assume that someone tells you that it is sorted. So you will stand in which position? See. You are saying,"
+  },
+  {
+   "start": 875.44,
+   "end": 905.23,
+   "text": "You are saying that 10 is smaller than your previous one. It is correct till here. Let someone tell you that the whole array is sorted. The whole array is sorted from 20. That means after 20, 30, 40, 50, 60, 70, 80. It is completely sorted. So won't this whole array be sorted? If 10 is smaller than 20, and someone told you that it is completely sorted from here to here, then the whole array is sorted. Are you understanding this now? 10 is smaller than 20. 10 is smaller than 20. Okay?"
+  },
+  {
+   "start": 905.23,
+   "end": 933.71,
+   "text": "and if someone tells you that this whole array is sorted, if someone tells you that 20 to 80 is true, if someone tells you that this whole array is sorted, won't the whole array be sorted again? Yes, it will be sorted. And in the same case, if it is smaller than 10 to 20, but if someone tells you that the next array is false, the next array is false means that 40 has also come somewhere in the front, then the next array is not sorted. So should you return true or false? You should return false because"
+  },
+  {
+   "start": 933.97,
+   "end": 963.01,
+   "text": "10 is smaller than 20, this is known, but the array from 20 to 80 is not sorted, so can the whole array be sorted at any time? It cannot be, why? Because it is not there, if someone tells you that it is not there, then it is not sorted. We hope that you have understood this. We hope that you have understood this. If we explain this by giving one more example, then you are doing this by saying that you have a lot of parts, you have a lot of parts, okay? Or there is a lot of food, there is a lot of food, so you"
+  },
+  {
+   "start": 963.01,
+   "end": 976.13,
+   "text": "Let's check one particular dish. Let's check one particular dish. Like we checked whether 10 is our next choice or not. So you get to know that this is good. But you get to know that the other dishes, one of them is bad or some other is bad."
+  },
+  {
+   "start": 976.13,
+   "end": 1005.52,
+   "text": "So is the whole party good or bad? You will say that it is bad because you have got a bad one in front. And if you check it that it is good and it tells you that the other one is also good, the other 100 dishes are also good. If someone asks you to tell the whole party, then you will say that the whole party is also good because we checked one, the other 99 people are saying that it is correct, then it will be correct. So this is its logic. What will we do? We will see it with a small example. See. 10, 20 and 30. 0, 1, 2. Is it right?"
+  },
+  {
+   "start": 1005.52,
+   "end": 1028.72,
+   "text": "First of all, we will make a function in which we will pass an index. What index are we looking at now? In the beginning, you have to see from 0. You have to tell the whole array whether it is sorted or not. In the beginning, we will call i is equal to 0. What was the base case? If the array you are looking at, what does it mean? i is equal to 0. You are looking from i to the end."
+  },
+  {
+   "start": 1028.72,
+   "end": 1056.1,
+   "text": "From i to the end means you are looking from 0 to the end. So what will be the length of the array? There are many ways to find it out. Either you pass n also. Pass array size is equal to n. You can do this. Pass n. We like to pass n. Personally, we like to pass n. n is equal to 3. Now when will the length of the array be 0? The length of the array will be 0 when i is equal to n. When i is equal to 3, then how many arrays will be left from i is equal to 3 to the end?"
+  },
+  {
+   "start": 1056.1,
+   "end": 1085.36,
+   "text": "Now, how many arrays will be left from here? 0 length array. So, i equal equal to n means 0 length array. And i equal equal to n minus 1 means how many length arrays are you seeing? 1 length means you are just seeing this index till the end. So, in the base case, we can prepare from this only that if i equal equal to n or i equal equal to n minus 1. What did we think in the base case? If array length is 0, then is it sorted or not? Yes, it is sorted. If array length is 1, then is it sorted or not? Yes, it is sorted. Return true."
+  },
+  {
+   "start": 1085.42,
+   "end": 1112.85,
+   "text": "No need to do anything else. Return true. Okay. Now, how will we solve a small part? Mix the array of i with the next one. So, array of i, if array of i is greater than array of i plus 1, means, this 10 you are seeing, suppose it is bigger than the next one, then do you need to do anything else? No, because it is stuck here. This array cannot be sorted. What will we do immediately? Return false."
+  },
+  {
+   "start": 1113.36,
+   "end": 1134.22,
+   "text": "Now, if you know that the array of i is less than i plus 1, i.e. less than 10 to 20, it means that it is still correct. Now, what did we say? Ask the answer of the rest of the array from somewhere. How will we ask? What were you doing in the beginning? Solve i is equal to 0. If someone tells you the answer of i is equal to 1, then return it. Now, everything depends on whom?"
+  },
+  {
+   "start": 1134.22,
+   "end": 1161.58,
+   "text": "Because 10 is less than 20. So this is correct. I is equal to 0 is good. But if the rest of the array is sorted from I is equal to 1, then the whole array is sorted. If the rest of the array is unsorted from 1, then the whole array is unsorted. So now everything depends on the answer of the next one. What are we saying about the answer of the next one? Trust me, this function will give you. What will you return? Return fun of I plus 1 and n. What will this give you?"
+  },
+  {
+   "start": 1161.58,
+   "end": 1189.15,
+   "text": "i plus 1 send the answer. Who did you come to remove? i is equal to 0. Who are you asking? Tell me the answer of i is equal to 1 send the answer. We will return it. So, this is your small programming. What kind of function will it be? Boolean type. So, this is its code. Let's see how it works. See its code. Let's show how it works. Let's assume this is your array. We are taking an array that is not sorted. So, what will be called first? Fun i is equal to 0."
+  },
+  {
+   "start": 1189.15,
+   "end": 1219.41,
+   "text": "Is it fitting the base case? Is it IN or IN-1? No, it is not. So it is not fitting the base case. First of all, what will we check? Array of 0, is it greater than array of 1? Is it greater than 10, 20? No, no. Okay, we are safe. If it was, it would have been false at this time. Okay, we are safe. Now what will we do? Whatever the answer of fun I is equal to 1, we will return it by closing our eyes. Come, let's come to fun I is equal to 1. Okay. Let's see what will happen at fun I is equal to 1."
+  },
+  {
+   "start": 1219.41,
+   "end": 1245.39,
+   "text": "20, is this a base case? No, this is not a base case. Is the array of 1 bigger than the array of 2? Yes, yes, yes. 20 is greater than 5, 20 is greater than 5. What will happen? Is there any need to think further? No, false. And this is over. Where will this false go straight? Here. What will you return? False. So is this array false? Yes, this array is not sorted."
+  },
+  {
+   "start": 1245.39,
+   "end": 1275.97,
+   "text": "If it was 50, what would it return? No. Where will we go? We will go ahead. i is equal to 2. As soon as you reach i is equal to 2, is it hitting the base case? Yes, it is hitting the base case. What is i equal to? It is n minus 1. So if we just look at this one element, is it sorted? Yes, it is sorted. Return true. Where does this true go?"
+  },
+  {
+   "start": 1275.97,
+   "end": 1302.54,
+   "text": "It would come here. Where would this true come? It would come here. Where would this go? In the main answer. I said, is it sorted? Yes, it is sorted. So, this is how the code works. Look at this. So, it becomes very easy. Once you start understanding the recursion, then you will start clicking that yes, it is fine. Means, you have to remember 2-3 things that in the base case, a small problem should be solved and the result of the rest of the problem and this small answer should be combined to make the final answer. So, this is the second question in the clean."
+  },
+  {
+   "start": 1302.61,
+   "end": 1331.78,
+   "text": "The next question is, remove all occurrences of a character in string. This is also a very easy question. What does this question say? You will get a string. Suppose you get an apple word. And you will get a character. Suppose you get p. You have to remove p from this string and return the string. What is p? One is p and the other is a. So what will we return? a, l, p. It is a simple question. There is no doubt in this. How do we solve this? Let's take a string and loop it."
+  },
+  {
+   "start": 1331.78,
+   "end": 1361.01,
+   "text": "If this character doesn't match, then add it to it. If this character matches, then don't add it. It's simple with loop, but do it with recursion also. Learn recursion. Try to make your base in recursion. So simple. You understood the question, right? There is one character. Remove all of it from that string. If it is the whole character, this word, then nothing. Return empty string. Remove all of it from that occurrence. Come, let's see again. First of all, let's think of base case. Let's think of base case. Okay."
+  },
+  {
+   "start": 1361.58,
+   "end": 1390.62,
+   "text": "What can be the smallest string you can get? The smallest string you can get is length is equal to 0. Meaning, you can get an empty string. You can get an empty string. Okay, if it is an empty string, then what should you return? Now, in an empty string, you are told that suppose this is C. You have to remove this. So, there is nothing in an empty string, right? So, what will you remove? Nothing. You have to return this. You have to return this. You have to return this. Very good? Okay. Your base case is ready. Okay? Now, let's come to the rest."
+  },
+  {
+   "start": 1390.62,
+   "end": 1418.7,
+   "text": "Suppose there is a very big string. P and A, T, E, N, B, Z, anything. Very big string. Okay? This is a very big string. The character you have to remove is P. That is P. Okay. What did we say? Start looking from the beginning. As soon as you know from the beginning, start looking. Come. Here they have stood. They have stood on this. Okay? Okay."
+  },
+  {
+   "start": 1419.25,
+   "end": 1449.12,
+   "text": "First of all, what will we do? When we thought of the loop solution, we told you in the beginning how to solve it. Let's do loop. If this character is at P, then we will not add it to the answer, we will move ahead. If this character is not at P, then we will add it to the answer. Okay. So, let's do one thing. Let's do one thing. Make an answer. Make a final answer to return. That my final answer is this. My final answer is this. It will remain empty in the beginning. Okay. Now you concentrate on this. We said separate this. Separate this. Concentrate on this."
+  },
+  {
+   "start": 1449.12,
+   "end": 1479.55,
+   "text": "Should you add it in the answer? No, you should not. Why? Because this P matches your character, so you have to remove it. So you will not add it. Now, the rest of the string, which is a very big string, we don't know how big it is, what it is, how complex it is. If someone tells you the answer of the rest of the string, then its answer is a small answer. Anything can happen, this can happen to anyone. If there is no P in it, the answer means, what is the correct answer in the rest of the string? If there is no P in the rest of the string, then it tells you something."
+  },
+  {
+   "start": 1479.55,
+   "end": 1510.02,
+   "text": "If you do answer plus small answer, then will you get the result? Yes, you will get it. Listen again to what we are saying. Your job is to remove p from any string. Suppose my character is p. If you come to any index, initially you are standing on 0 index. If this index is not p, you can think like this. This is the rest of yours. Trust that you will get it."
+  },
+  {
+   "start": 1510.02,
+   "end": 1539.54,
+   "text": "Suppose you got this from somewhere. You got this in the small answer. Now, if this string on which you are standing, this character, if it is not P, then what should be the answer of the whole string? P plus small answer. This should be it, right? Sorry. Whatever your string is, whatever your SI is. If it is not this, then it should be this. If this SI is the character that you have to remove, then what should be your answer? Only small answer. Only small answer."
+  },
+  {
+   "start": 1539.54,
+   "end": 1565.28,
+   "text": "This is a logical thing, right? Look, we are standing on this. If this is P, we have to remove P, then we don't need this. If someone tells us the rest of the answer, then we will print it and give it. If this is not P, then we need it in our answer. We will add this to the rest of the answer and return our answer. Meaning, you are writing like this, you have to write the answer of 6 pages. You are sitting with one page in front. 5 pages have to come from somewhere else. 5 pages have to come from somewhere else. Now the teacher tells you,"
+  },
+  {
+   "start": 1565.28,
+   "end": 1595.1,
+   "text": "that you don't have to submit this one page, your handwriting is bad in one page, assume that you have got good handwriting in 5 pages, teacher says that your handwriting is bad, your handwriting will not be submitted, then what will you do? you will submit this 5 pages, if teacher says that your handwriting is also good, then what will you do? you will submit 1 plus 5, 6 pages, this is what you have to do, come let's do this, this is what you have to do in every recursion, this is the same funda, this is the same formula, print it in your mind, come let's write a function,"
+  },
+  {
+   "start": 1595.1,
+   "end": 1624.69,
+   "text": "Which gives us a string. Okay. What will it take? First of all, your input string. Okay. The length of input string. An index. Again, it is an array concept. This is the index. We are looking at the last. And your character. Which you have to remove. First of all, write the base case. If i equal to n. Meaning, string is finished. Meaning, there is a string of 0 length left. What do we have to return? Empty string. Empty string. There is no need to use any brain in this. That's it. Now,"
+  },
+  {
+   "start": 1624.69,
+   "end": 1652.58,
+   "text": "Take out the answer of the remaining part. How to take out the answer of the remaining part? Fun, s, n, i plus 1, c. Assume that it will give you the correct answer. In this answer, this c is already removed. This is a very good answer. Now, you have got 5 pages. If your si is equal to c, means the character you wanted to remove, you are on it now."
+  },
+  {
+   "start": 1652.58,
+   "end": 1680.66,
+   "text": "So what will you return? The rest of what you have got, the rest of what you have got, what else will you do? Your handwriting is bad, your one page is useless, the rest of the five pages will be returned, that will happen. Otherwise, what will happen? Add them all. Add these two. Return SI plus answer. Close this. Come, let's dry-nut this. See, this is its code. Again, what is this? Base case. What is this? The rest of the trust answer. What is this?"
+  },
+  {
+   "start": 1680.66,
+   "end": 1710.82,
+   "text": "the small step that we take and mix the answer and return it. This is it. Come, let's do dry learn. Let's assume that what is your string? A, P and E. 0, 1, 2. Whom do you have to remove? P. Come. In the beginning, fun, i is equal to 0. Is this a base case? No, it is not a base case. When will it be a base case? When i is equal to 3, then it will be a base case. Come. First of all, find the answer. Whose? Find the answer from i is equal to 1 till the end."
+  },
+  {
+   "start": 1710.82,
+   "end": 1739.09,
+   "text": "Call this Fun i is equal to 1 Is this a base case? No First of all, what do you do? Fun i is equal to 2 Take out the answer and sit down Come out This will be called i is equal to 2 Is this a base case? No First of all, what do you do? Fun i is equal to 3 Take out the answer and sit down When you go to i is equal to 3, the base case will be done What is in the base case? Empty string So its answer didn't come It came empty string Now you have to see here"
+  },
+  {
+   "start": 1739.09,
+   "end": 1768.45,
+   "text": "Is this e, on which you are, 1, i is equal to 2, is this e equal to your p? No, it is not equal to p. So what will be the answer? e plus answer. So what will this return? This string will return in which e will be. Good thing. Where will this go? It will come here. Now, is this i1 equal to your character, which you wanted to remove? Yes, p and p are equal. So we will not add this. What will we return? Just the answer that came earlier. Return e. Where will this e come?"
+  },
+  {
+   "start": 1768.45,
+   "end": 1792.4,
+   "text": "This will come here. Check i is equal to 0. Did you want to remove a? No, we wanted to remove p. So this is a good string. What will be the return? Return si plus answer means a plus e is equal to ae. This is your final answer. Look carefully. a, p, e. Remove p from this. What will be the answer? ae. So is the right answer coming? Yes, the right answer is coming."
+  },
+  {
+   "start": 1792.4,
+   "end": 1817.46,
+   "text": "So this is its code. So see these 3 problems. In 3 problems, every problem will take 10 minutes. We have explained a lot, so it is there. In writing, see how many lines are there. 1, 2, 3, 4, 5, 6. Okay? 6, 7, 8 lines will be of this recursion. And the purpose of doing easy-easy problem is to teach you so that in backtracking and dynamic programming, there is no confusion that how to do recursion. So let's meet tomorrow."
+  }
+ ]
+}

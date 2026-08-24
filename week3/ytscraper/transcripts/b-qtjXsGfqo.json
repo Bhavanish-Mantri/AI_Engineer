@@ -1,0 +1,54 @@
+{
+ "video_id": "b-qtjXsGfqo",
+ "title": "L34 DSA Patterns 2025 | Merge Overlapping Intervals | Merge Interval DSA Pattern",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 236,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.9,
+   "text": "Come to episode 34 of Merge Interval. Today's question is very easy. It is going to be a very short video. You will get it in 5 minutes. Provided that you have watched 31, 32 and 33. If you have watched it, it is a 5 minute work. If you have not watched it, then please watch it. That is why we are making it in a line. It is not a series of Mirzapur that we watch it in the middle or not. We will not know that if we watch it in the middle. Let's go. It is a very simple question. Its name is Overlapping Intervals. You will get the sheet. You will get a question in the sheet. Overlapping Intervals."
+  },
+  {
+   "start": 31.5,
+   "end": 57.34,
+   "text": "First, we did a question in which we had to merge. We had to see if someone is overlapping. If someone is overlapping, then we merge. In this, we just have to check. Check if it is true or false. If someone is overlapping, then check it. The range is given. What is given? 1, 3, 5, 7, 2, 4, 6, 8. Check if someone is overlapping or not."
+  },
+  {
+   "start": 57.34,
+   "end": 87.49,
+   "text": "Pay attention to one thing, it is not sorted from start. 1, 5, 2, 6. It is not sorted. First of all, sort the array. How? a.begin, a.end. If you sort like this, then automatically it will be sorted from start. After that, there is nothing. After that, you just have to check. You don't have to do anything. You have to take a start 1, which is array of i, array of 0. You have to take end 1, which is array of 0 and 1."
+  },
+  {
+   "start": 87.49,
+   "end": 116.78,
+   "text": "This is 0, okay? For the first one. After that, what did we do? We used to run loops. We didn't do anything. We used to run loops. Remember. Remember. Nothing, nothing, nothing. We don't have to do anything. What did we do? We used to make start 2. What? The start of this i. Okay. We used to make end 2. What? Its start. Its end. We know that it is sorted from start. We used to apply our formula. What is the formula? If end 1 greater than or equal to start 2,"
+  },
+  {
+   "start": 117.3,
+   "end": 147.26,
+   "text": "We used to merge here. Why did we merge? We used to merge even when there was an overlap. What is the need to merge? Now you don't have to do anything. You just have to return whether it is true or not. Return it. Return true and there is no need for a story in this. If this doesn't happen, if there is no overlap, then go ahead and update start 1 and end 1. How? Start 1 will remain the same because there used to be minimum start 1 in all four. In end 1, we used to remove the max that you will have to take the max."
+  },
+  {
+   "start": 147.26,
+   "end": 177.25,
+   "text": "so end 1 and end 2, nothing new, we are doing this with 3 questions, close the loop, if the loop is complete, it means there is no overlap, otherwise it would have been returned, if in the last, return false, in the last return, false, the question is over, this question should have been done first, but okay, first it was important to understand how to merge, how to overlap, it was not good before, because there was a good explanation in it, so this question is a very easy question,"
+  },
+  {
+   "start": 177.25,
+   "end": 203.47,
+   "text": "It is a very fake question, it has come in Amazon etc. But it is a very easy, useless question. So this question will be like this. That's why today's episode is over, see. It becomes very easy to read pattern-wise. If you had read these three questions after the time interval, that today you have read one, after the next two months you have read another, after the next three months you have read something else, then this does not come, you forget this. But you have read the first question, you have read the second, you have read the third."
+  },
+  {
+   "start": 203.47,
+   "end": 229.04,
+   "text": "So, this question is super easy for you. Not even easy, this is super easy. We just have to check whether there is an overlap or not. We know the logic of overlap. It was not sorted from the start time, so it was sorted in one step. Always remember that the core proposition of merge interval is that it should be sorted from the start time. Only then you can do all this work whether there is an overlap or not. Only then you can check all this, otherwise you can't check all this. So, that was today's question."
+  },
+  {
+   "start": 229.04,
+   "end": 235.6,
+   "text": "The next video will probably come one or two days late because we are going to be a little busy. The next video will probably come one or two days late. Let's meet."
+  }
+ ]
+}

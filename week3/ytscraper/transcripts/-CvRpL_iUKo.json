@@ -1,0 +1,369 @@
+{
+ "video_id": "-CvRpL_iUKo",
+ "title": "DP Series Episode-2 : When And How To Use DP",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1867,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 28.06,
+   "text": "Before starting the video, look at the code. How many lines are there? I will count them and tell you. One line, two lines, three lines, four lines. Okay? And five lines. Let's count the brackets. It is a function of five lines. It is a very small function. If you run it on your laptop, run it by looking at it now. Int n, means you will run it by looking at the value of n. If you give the value of n as 5, then it will complete. Means from pressing the run button to the output. It will take 15 nanoseconds. Nanoseconds means second by"
+  },
+  {
+   "start": 28.06,
+   "end": 56.72,
+   "text": "Billion divided by such a small amount of nanosecond, even a human can't even know. If you give n is equal to 20, it will take 22 microseconds. Microsecond means by 10 to the power 6. Very very small amount of time. If you run it on n is equal to 50, it will take you 40 seconds. Means the time that has been till now since the beginning of the video, it has been 40-45 seconds. How much time? 40 seconds. Very less time. If you pass n is equal to 100 in this, now pass it and see. How much time will it take you?"
+  },
+  {
+   "start": 56.72,
+   "end": 79.38,
+   "text": "36,000 years 36,000 years 36,000 years 36,000 years it will take you to run this program if you just increase the value of n to 100, not more, 50 to 100 means to give you an idea, human history means since humans started living on earth, we have been doing this for about 5000 years"
+  },
+  {
+   "start": 79.38,
+   "end": 106.93,
+   "text": "If the world's first person had run this program, it would not have been completed yet. Because it will take 36,000 years to complete. Why will it take? We are telling you this because it is important for you to understand why DP is asked so much in interviews. Why is DP so tough? Why is DP so important? This is why it is important. If you write it like this, it will take you 36,000 years. If you write it with DP, it will take you 5 to 100 years."
+  },
+  {
+   "start": 106.93,
+   "end": 135.92,
+   "text": "Millisecond. Millisecond means 1000th part of a second. So see, 36,000 years, from where to where, means it won't take even a second. That's why it's important to study DP. Now watch the video, you'll get some interest. Let's go. See, before starting DP, you'll have to understand that DP... We hope that you came here yesterday, so you must have watched my lecture of DP day 1 and recursion. If you haven't watched recursion, then see, there are 9 lectures, it won't take more than half an hour. Watch that and come here. See. The biggest thing to learn DP is..."
+  },
+  {
+   "start": 135.92,
+   "end": 160.38,
+   "text": "The negative side is that once a person reaches DP, that is, once we had learned DP, when we were in college, we had learned DP from somewhere. After that, you will feel that if you are getting a hard question of any leetcode, then your mind will go first to put dynamic programming in it. And you will start putting dynamic programming in it. After half an hour or an hour, you will understand that it will not take DP. DP is not a question, it is a question of heap, it is a question of binary search. So the biggest problem is that because it is so..."
+  },
+  {
+   "start": 160.38,
+   "end": 189.58,
+   "text": "is considered a hard topic, then you will think that if we get a DP, then we will try to put a DP in every question and see if it can be made because there is so much benefit. I mean, we said above that it has been reduced from 36,000 years, so you will think that we put it in every question. No. See, to put a DP, first of all, when, means when you have to think that whether we have entered dynamic programming or not. First of all, that question will be solved by recursion. That question will be solved by recursion. But there is a problem in this too."
+  },
+  {
+   "start": 189.58,
+   "end": 205.66,
+   "text": "In computer science, any DSA problem can be solved either by recursion or iteratively. There are only two ways in the world. What we mean to say is that to solve any DSA question, there are two ways to solve it. One way is recursion."
+  },
+  {
+   "start": 205.66,
+   "end": 232.93,
+   "text": "One way is iterative. Iterative means where you write a loop. For loop, while loop, call the loop. Recursion means that you call the same function again and again and use its answer to make your answer. So see, any DSA question can be done in both ways. There is no such question that can't be done with recursion and can be done with loop. There is no such question that can't be done with recursion and can't be done with loop. There is nothing like that. So then you will say that this is very stupid. You are saying that"
+  },
+  {
+   "start": 232.93,
+   "end": 261.2,
+   "text": "To apply DP, check if recursion will be applied or not. If you say recursion will be applied in all, then DP will also be applied in all. No. See. First thing, recursion will be applied in all. It's good that you understand that recursion will be applied in all. Pick any program. Sum of array, product of array, print multiplication table of two. Pick any program, we will apply recursion in it and show you. It's good. If, if, plus, plus, plus, means recursion is applied, okay. Or, if you,"
+  },
+  {
+   "start": 261.2,
+   "end": 285.52,
+   "text": "If you are solving the same thing over and over again, what does this mean? What will be applied there? Dp will be applied. If you have written recursion, what do you pass in recursion? What does recursion mean? It is a function. So, it is a function. And in this,"
+  },
+  {
+   "start": 285.52,
+   "end": 314.7,
+   "text": "value can be passed, number can be passed, array can be passed, array index can be passed, string can be passed, string can be passed, anything can be passed. If your recursion is doing the same thing again and again, means for example, this n is being passed, you can see that my recursion, first we run fun for n is equal to 5, it worked. Then we are seeing that fun n is equal to 5 came ahead. Okay, solve this too. Then we are seeing that fun n is equal to 5, what is happening?"
+  },
+  {
+   "start": 314.7,
+   "end": 343.23,
+   "text": "If you are solving the same recursion value again and again, it means that the question will require dynamic programming. If you are solving new problems every time, i.e. if your function, fun, we know that recursion occurs many times, but if the value of n is different every time, i.e. it is never happening that you are solving n in the same thing, then don't use dynamic programming even if you have forgotten it, it will be of no use."
+  },
+  {
+   "start": 343.23,
+   "end": 372.27,
+   "text": "The interviewer will immediately reject you because if you don't understand whether you are solving again and again or not, then you will be rejected. This process of doing it again and again, some people call it overlapping sub-problems. Why is it called overlapping? Overlapping means doing the same thing again and again. The example of the tea vendor yesterday, what was the tea vendor doing? He did the calculation of two teas at once."
+  },
+  {
+   "start": 372.27,
+   "end": 400.29,
+   "text": "Then someone asked him about two tea and one biscuit. So, he was again calculating two tea and one biscuit. What does this mean? The tea vendor is doing the same thing again and again. That's why the one who was going to write on the board worked there. If the tea vendor solved different problems every time. For example, if he told once for one tea. Okay. Second time for one biscuit. Third time for one fan. After that for one pakora. So, this is a different problem, right? What will you write and do in this?"
+  },
+  {
+   "start": 400.29,
+   "end": 424.9,
+   "text": "The whole purpose of DP is to write the answer to the first problem that you have solved in your diary or board. If you are getting new problems again and again, then why are you writing the previous one? As the previous problem will never be repeated. What is the need to write the answer to that? If you are in a job, for example, if you are in college, your teacher gives you different questions every day. Every day he gives you new questions."
+  },
+  {
+   "start": 424.9,
+   "end": 454.59,
+   "text": "So why would you do the revision? Why would you remember the previous question? Because you know that if you have asked this question today, you will have to solve a new question tomorrow. So what is the use of remembering? But when you had a 10th board, what used to happen in it? Every year, every year, some questions are the same. That means the question that came 5 years ago is getting repeated. The question that came 3 years ago is also getting repeated. What do people do in that? They write down the past year paper that if it comes, they will write the answer immediately."
+  },
+  {
+   "start": 454.59,
+   "end": 483.14,
+   "text": "This is the difference. In which? Where you will apply DP and where you will not. Don't worry, we will understand this from the code also. But it is very important for you to keep in mind that DP should not enter everywhere. As soon as you see a problem of elite code in which you don't understand, then start applying DP. No. First of all, is your recursion, is your recursion solving the same problem again and again? Only then you have to think about DP. And the second question is how? If you think, if you know that dynamic programming will take place,"
+  },
+  {
+   "start": 483.14,
+   "end": 500.34,
+   "text": "How to apply it? What to do to apply it? Now, we will explain it to you in code. So, we hope that you have understood it. Understand it very carefully. If possible, try to repeat it again. Keep this in your mind. That you have to check this before any DP problem. Okay? Let's go."
+  },
+  {
+   "start": 500.66,
+   "end": 530.14,
+   "text": "Now we will explain this concept in real world that how you will know. See this is a very simple question. Means you will be given n and you have to print 2xn. So you will do that print 2xn. But we will solve this with recursion. Why? Because we want to explain you something. Imagine that this is the question of your leetcode DSA. First of all try to write its recursion. What is recursion? We will advise you again. First of all there is a base case in recursion. What does base case mean?"
+  },
+  {
+   "start": 530.14,
+   "end": 555.74,
+   "text": "What will be the answer of the smallest input? If the value of n, suppose the equation is that n will always be greater than 1. It means if it is 1, then it is fine. The smallest can be 1. So, first of all, in the base case, if n is 1, the smallest input can be 1. What will be the answer of that? Do you know? What will be the answer of that? The answer of 2 into 1 is 2. So, in the base case, if you get n is equal to 1, then you..."
+  },
+  {
+   "start": 555.74,
+   "end": 584.16,
+   "text": "Be very confident and comfortable and return 2. The base case is done. After that, what happens? If you get an answer of n minus 1 or any smaller value than n, what does that mean? Suppose n is equal to 5. So, what should your answer be? 2 into 5 should be 10. Suppose you don't know how to do multiplication. You don't know how to do 2 into 5. You don't know how to write 2 into 5. It's okay. If someone tells you the answer of 2 into 4,"
+  },
+  {
+   "start": 584.16,
+   "end": 613.42,
+   "text": "If a man from magic tells you the answer of 2x4, which means 8, can you get 2x5 now? Yes, you can. If 2x4 is 8, then what is done to get 2x5? 2 is added to it. So, if you do 8 plus 2, its answer becomes 10. Meaning, if you are asked 2x5, if a man from magic tells you the answer of 2x4, then what will you do? Whatever answer you have told for n-1, which means for 4, you will add 2 to it and give it. So, this is what you have to do. You have solved this as well."
+  },
+  {
+   "start": 613.78,
+   "end": 636.51,
+   "text": "How to make your own answer from a small answer? How to make your own answer? So, its recursion will be very simple. What will be its recursion? See, int, this is your function. You will write, there will be an npass in it. There will be an npass in it. Means, whatever is your main function or lead code function, suppose it passes you 5 and gives you 5. Now tell me, what is 2 into 5? So, first of all, you have written your base case."
+  },
+  {
+   "start": 636.51,
+   "end": 664.7,
+   "text": "n equal equal to 1. If n is 1, then what do we have to return? We have to return 2. Return 2. Why? Because we have written 2 in the base case. If, if, let's assume, let's assume, with magic, with magic, someone tells you the answer of n minus 1, which means, if n is equal to 5 was passed, you passed n minus 1 on the same function, and let's assume that with magic, this person will tell you 8."
+  },
+  {
+   "start": 664.7,
+   "end": 688.99,
+   "text": "How will it tell you? I don't know, brother. I don't know. It doesn't matter to us. It will tell you with magic. If you get to know this answer, that the value of 2 into 4 is 8, then what do you have to do? Return answer plus 2. The game is over. You will get it. Come, let's go and see it. What is this? This is a recursive code. Why? Let's tell you now. Look. Assume. Assume your beginner."
+  },
+  {
+   "start": 688.99,
+   "end": 717.58,
+   "text": "Means, what you have got is 4. Means, you have to tell n is equal to 4. What is 2 into 4? Now, run this. Run this. What is the first line of this function? Is n 1? No, it is not n 1. Okay. After that, what does it do? Answer is equal to fun of n minus 1. Means, it calls this function. It calls this function for a small value. For whom? For a small value. Very good. Now, as soon as it is called, we go to this. Fun n is equal to 3."
+  },
+  {
+   "start": 717.87,
+   "end": 746.82,
+   "text": "We are going a little fast in this because it is very deep and it has been done in many ways in recursion. So we don't want to waste your time by telling you the same thing again and again. n is equal to 3. It will do the same thing. It will do the same thing. What will it do? Fun. n is equal to 2. It did the same thing. Okay. Run n is equal to 2. Fun. n is equal to 2. It will do the same thing. Answer is equal to fun of n is equal to 1. Okay. Call on n is equal to 1. Fun."
+  },
+  {
+   "start": 746.82,
+   "end": 772.67,
+   "text": "n is equal to 1. Now, 1 has come. What does your function say? If n is 1, then don't call further. Return 2 immediately. So, what will it return? n is equal to 1. What will it return? It will return 2. And this function is finished. Where will its value come? Its value will come in this answer. Meaning, we are in this function. What is the value of your answer here? 2."
+  },
+  {
+   "start": 772.67,
+   "end": 797.46,
+   "text": "Now, what is its function? Whatever answer you have got, add 2 to it and return. What add? Add 2 and return. So, what will it return? Return. Whatever you have got, add 2 to it and return. Meaning, 4 is returned and this function is also complete. This 4, where is the answer? In the answer of n is equal to 3. Meaning, what will be the answer of n is equal to 3? 4. What else is n is equal to 3?"
+  },
+  {
+   "start": 797.46,
+   "end": 820.66,
+   "text": "Whatever the answer is, add 2 to it. That's it. This is also done. This 6, where will it come? n is equal to 4k, which was the main function, which was the first function. Very good. Now, you have got 6. What is the work of n is equal to 4? Brother, whatever the answer is from there,"
+  },
+  {
+   "start": 820.66,
+   "end": 847.1,
+   "text": "In 6, add 2 and return 8. Where will this 8 go? Your domain function or where you are printing. Look once. Should the answer of m is equal to 4 be 8? Is 2 into 4 8? Yes, sir. It is absolutely 8. So, this recursion is working well. So, you have learned to write recursion. You have written recursion. But, but, is this a question of dynamic programming? Look once carefully. Look once. This fun."
+  },
+  {
+   "start": 847.1,
+   "end": 876.67,
+   "text": "This fun has been called many times. The first fun was this. After that, we called this. After that, we called this. After that, we called here. Is the N written in the fun, the value of N is changing every time, right? Do you see anything repeated anywhere? Do you ever see that N is equal to 4 is calculated here? N is equal to 4 is the same in the future? Do you see any instance where you have overlapping subproblems? Meaning, once you have called fun N is equal to 4,"
+  },
+  {
+   "start": 876.67,
+   "end": 902.13,
+   "text": "Then in the future, N is equal to 4 is being called. Can you see anything like this? No, you can't. If we explain to you line by line how the recursion was called, this was the recursion. First of all, N is equal to 4 was called. This person called N is equal to 3. This person called N is equal to 2. This person called N is equal to 1. And N is equal to 1 did not call anyone. He went back."
+  },
+  {
+   "start": 902.13,
+   "end": 931.68,
+   "text": "Do you see any repeated number in this call stack? No. Why not? Because this recursion is unique. Every number, 4, 3, 2, 1, has been called only once. In your copy, you will not see that the function of n is equal to 2 has been called 3-4 times. No. That means, in this question,"
+  },
+  {
+   "start": 931.68,
+   "end": 959.68,
+   "text": "These overlapping sub-problems are solving the same input over and over again. This is not the case. If this is not the case, then should you put DP in it? No, you shouldn't. You shouldn't even forget to put it. You can put it, but it won't be of any use. If you put DP in it, it means rejection. This is what we were explaining to you. Look at it. Write the recursion in the copy. Think about it. You will get to know whether you are solving it over and over again or not. In this question,"
+  },
+  {
+   "start": 959.68,
+   "end": 984.86,
+   "text": "Even if you forget, you should say that we will put DP in this. You should not say at all. Why? Because this question has a recursion. But there are no overlapping sub-problems. We are not calling the same problem again and again. In the same recursion, that input is not being repeated. That input is unique every time. Every time it is different. That means you are solving different questions every day. If you have to solve different questions in every recursion call every day, then what is the purpose of writing?"
+  },
+  {
+   "start": 984.86,
+   "end": 1009.81,
+   "text": "This is a perfect example where dp is not applied in recursion. In the next example, we will show you when dp will be applied and you will know that dp will be applied in this and we will also show you how to apply it in one line. Let's move ahead. Now look at this question. You can also get this question anywhere in the lead code. This is also a question of the lead code. How much is this lead code? This is the lead code number."
+  },
+  {
+   "start": 1009.81,
+   "end": 1039.79,
+   "text": "509. 500. It gets blocked because of the camera. It is 509. Okay. What have I told you in this? I have told you that I will give you an n. You will get an n input. On top also n. Here also n. You have to tell the value of its fibonacci. What is the value of fibonacci? I have also explained that to you. See. If. If I give you n is equal to 0 by mistake. Then return 0 to me. If I give you n is equal to 0. Then return 0 to me. If I give you n is equal to 1 by mistake. Then return 1 to me. Very good. What does this mean? This is your base case."
+  },
+  {
+   "start": 1039.79,
+   "end": 1061.57,
+   "text": "What can be the smallest input? One 0 and one 1. The answer to both of them is straightforward. That brother, the answer to n is equal to 0 is 0. The answer to n is equal to 1 is 1. Very good. If you get n greater than that. Meaning if you get n 2, 3, 4, 5, 10. Then what do you have to do? You have to return Fibonacci of n. How will you find out its value? Whatever."
+  },
+  {
+   "start": 1061.57,
+   "end": 1088.34,
+   "text": "n-1 of Fibonacci. Meaning, if you are given n is equal to 5, then whatever the answer of 4 is, from anywhere, it doesn't matter, whatever the answer of n-1 is, or plus, plus, whatever the answer of n-2 is, let's add them and return them. Meaning, if let's say, you are given n is equal to 5, then look, you have to tell what is the value of n is equal to 5. You don't know, but you are given a formula, that brother, whatever,"
+  },
+  {
+   "start": 1088.34,
+   "end": 1113.97,
+   "text": "n is equal to the value of 4. Take that out of the magic. I don't know from where you will take it out. Take it out. Plus. Plus. Whatever n is equal to. Whatever n is equal to. Take out the value of 3 from somewhere. It doesn't matter to us. Do this and return it to us. So this is. Recursion means. Recursion's brand ambassador question. I mean. I have explained both things in the question. What have I explained? This is your base case."
+  },
+  {
+   "start": 1113.97,
+   "end": 1142.77,
+   "text": "And this is your second point that how to make your answer from a small answer. This means that if the recursion is in the film, then the question is in the film. There is some relation that this question is explained by the recursion and this question is explained by the recursion. So both things have been given to you. So let's quickly write the recursion of this. What will you write in the recursion? See, we will write int fun and you will get an int n obviously. First of all, write your base case that if n is equal to 0 and"
+  },
+  {
+   "start": 1142.77,
+   "end": 1169.1,
+   "text": "n equal equal to 1 hai. Kya return kar dijiye? n hi ko return kar dijiye. Kyun hai saam likh rahe hain? Kyunki dekhiye, jab n 0 hai to answer 0 hai, jab n 1 hai to answer 1 hai, to hum return n kar diye. Toh ho gaya. Aap isko alag bhi likh sakte hain. If n equal to 0, return 0. If n is equal to 1, return 1. Jaise man kare base case likhiye. Uske baad, ab aapko chote chote answer chahiye. Upar ke multiplication mein aapko bhi chota answer chahiye tha, n minus 1 ka. Isme aapko 2 chota answer chahiye. Khansa?"
+  },
+  {
+   "start": 1169.1,
+   "end": 1197.1,
+   "text": "One small answer of n-1 and one small answer of n-2. When you get both the answers from somewhere, from the magic, then you will join them and return them. So see, in this, first of all, int a1 is equal to this function called for n-1. And int a2 is equal to this function called for n-2. Suppose, by the grace of God, you get these two by magic. Your work is very easy. You just"
+  },
+  {
+   "start": 1197.1,
+   "end": 1219.18,
+   "text": "Return these two together. It's over. This is also a code of 5-6 lines. This code was there in the beginning of the video. So, this is the code of Fibonacci. Now, you have written the recursion in this. Now, should we put DP in this or not? What is its litmus test? If you are solving the same problem again and again, you can put DP in it. Let's see. We will call it n is equal to"
+  },
+  {
+   "start": 1219.18,
+   "end": 1243.34,
+   "text": "For 4, let's run it and see what happens for n is equal to 4 and we will get to know on the way whether it is happening or not. You will be able to see it in the copy. Don't think that we have to run it a lot. Nothing. We will run it 3-4 times and you will be able to see everything in the copy. Let's go. Let's start. Whom will we start with? In fun, n is equal to 4 is passed to you and you are given 4 as the lead. What will happen first? a1 will come out. Fun, for n is equal to 3."
+  },
+  {
+   "start": 1243.34,
+   "end": 1271.1,
+   "text": "After that, when this A1 runs completely, when this A1 runs completely, after that, we will call n is equal to 2. We put tick in it. Tick means it is running. Tick not means that line is not running. So, the first line will run on n is equal to 3. You will jump. Come, jump with me. Fun n is equal to 3. Come. Same work will happen. A1 is equal to fun n is equal to 2. A2 is equal to fun n is equal to 1. This will happen."
+  },
+  {
+   "start": 1271.1,
+   "end": 1300.24,
+   "text": "In this too, run the first line. By ticking on the first line. What do you want on that? On n is equal to 2. Fun. Come on n is equal to 2. In this too, a1 is equal to fun of n is equal to 1. Okay. a2 is equal to fun n is equal to 0. Okay. Okay. On this too, tick mark. After tick mark, what do you want? On n is equal to 1. On n is equal to 1. Come on, write. Fun."
+  },
+  {
+   "start": 1300.24,
+   "end": 1328.66,
+   "text": "n is equal to 1. Now, n is equal to 1. You have come to the base case. Because in your function, it is written that n is 0 or 1. So, you have to return n. So, what will it return? Return 1. And this function will end. This function will end. Very good. Where will this 1 come? Here. Its answer has come. Now, run its second line. Tick mark on the second line. Run. What will happen? Fun n is equal to 0. What will it return? 0. Because this is the base case. Return 0. And this function?"
+  },
+  {
+   "start": 1328.66,
+   "end": 1359.25,
+   "text": "It will end. Where will its answer come? It will come to 0. Now, there is nothing left to do in this function. What does it have to do? It has to join both and return. 1 plus 0 is equal to 1. It returned 1. And this person also ended. This person also ended. Where will this 1 come? It will come here. This 1 will come here. Now, look at this. Now, an interesting thing has started. Now, let's save the other n. It has ended. It will work, right? Look. n is equal to 1. Run it again. Come here again. Fun."
+  },
+  {
+   "start": 1359.25,
+   "end": 1385.66,
+   "text": "n is equal to 1. What will he do? Return 1. And this person will be finished. Where will this 1 come? It will come here. What is the work of this function? Return 1 plus 1 is equal to 2. After returning 2, its work will also be finished. Where will this 2 come? It will come here. Now you have come to your original function, but its A2 line is running. Its just this line is running. A2 has to run."
+  },
+  {
+   "start": 1385.66,
+   "end": 1413.97,
+   "text": "Run A2. Run A2. Tick mark it in A2. Run it. Where will it run? Fun. N is equal to 2. What will it do? A1 is equal to fun. N is equal to 1. A2 is equal to fun. N is equal to 0. Run it one by one. Run it. Fun. N is equal to 1. What will it return? Return 1. And this function will end. Where is this 1? Here."
+  },
+  {
+   "start": 1413.97,
+   "end": 1445.01,
+   "text": "n is equal to zero ka chalna baaki hai. To chalao, chalao, jo jo baaki hai sab chalana padega. Fun, n is equal to zero. Chalao usko. Return, zero. Aur karke ye function khatam ho jayega. Yaha pe aage zero. Ab isadmi ka kaam kya hai? Return, one plus zero is equal to one. Ye karke, ye bhi khatam ho jayega. Aur ye kaha pe aajayega? Yaha pe aajayega. Kya return kiya hai ye? Two. Ab n is equal to four ka kaam kya hai? Return, two plus two is equal to?"
+  },
+  {
+   "start": 1445.01,
+   "end": 1474.93,
+   "text": "So, what will be your final answer? 4. Now, repeat the same exercise. Do you see repeated sub-problems? Do you see repeated functions anywhere? Yes, you can see them. How many times do you see n is equal to 2? 2 times. When n is equal to 2 was solved here for the first time, you solved it here again later. Remember. How many times do you see n is equal to 1? 1 time."
+  },
+  {
+   "start": 1474.93,
+   "end": 1497.26,
+   "text": "2 times. 2 times. How many times is n equal to 0? 2 times. It means that you are doing the same thing again and again. You are doing the same thing again and again. What will have to be applied to it? Dp will have to be applied. It is written on its face that Dp will be applied. Why? Because,"
+  },
+  {
+   "start": 1497.26,
+   "end": 1516.19,
+   "text": "n is equal to 2, once it was solved, n is equal to 2's answer was known from here, whatever its 1, 1, 0, whatever it is. When you solved n is equal to 2, you knew that n is equal to 2's answer is 1. Why did you run it again? You ran it, then you had to run n is equal to 1."
+  },
+  {
+   "start": 1516.19,
+   "end": 1544.34,
+   "text": "Then you have to run n is equal to 0. Why are you doing this again and again? If you had written n is equal to 2 here in the diary, then when you would have come here, then you would have just looked at the diary and told it immediately. You would not have to do that much call over. And now we have taken n is equal to 4, so you must be thinking what is the problem in this? So it is repeating only once, right? No, it is not happening in this. If you run it for n is equal to 10, it will be very long. You will see that one thing is repeating 10 times."
+  },
+  {
+   "start": 1544.34,
+   "end": 1571.63,
+   "text": "You are repeating the same thing 20 times. This is why DP is applied in this question because you are doing overlapping subproblems. How to apply DP in this? I will tell you that too. It is a 5 minute work. Now, the main part. How to apply DP? So, DP is not applied anywhere. There is no problem that it has to be applied. See. First of all, write the recursion. We have written the recursion of Fibonacci. It is the upper code. We have just compacted this line to tell you. It doesn't matter. Write the recursion. After that,"
+  },
+  {
+   "start": 1571.79,
+   "end": 1576.66,
+   "text": "Don't touch the base case. Leave the base case as it is."
+  },
+  {
+   "start": 1576.66,
+   "end": 1605.97,
+   "text": "Don't touch the lower part too. After the base case, don't do any calculation. Find a line in the middle, in the base case and in the rest of the part. Whatever is changing in the function, the input in this function, the input that is changing in this function means, what is the input of this function? int n. n was changing again and again. Sometimes it was 4, sometimes it was 3, sometimes it was 2. If there was an array question in recursion, what changes in that? The index changes again and again. Did you read recursion?"
+  },
+  {
+   "start": 1605.97,
+   "end": 1632.46,
+   "text": "i is equal to 0, i is equal to 1, n is equal to 0 whatever thing is changing and whatever input you noticed that this input is getting solved again and again what to do with that? on top of your function on top of your function in global what to do? unordered map means hash map you can take array also but we take unordered map int"
+  },
+  {
+   "start": 1632.46,
+   "end": 1656.16,
+   "text": "I N T. Keep it's name as DP. Keep it's name as DP. Is it over? Yes. What is this? This is your diary. What will we write in this? Whatever input will come, first of all you will have to check it. First of all you will have to check it. See, if DP dot find and not equal to DP dot end."
+  },
+  {
+   "start": 1656.16,
+   "end": 1685.71,
+   "text": "That's why we say watch the HashMap video. There is a video in my playlist. One video to master HashMap. It's a 30-minute video. It will be clear in HashMap. What does this line mean? That in your DP, N is written. Something is written with N. It means that you have already solved this N in your lifetime. After that, don't do anything. Return DP of N. Return DP of N. You do it with an array. Do it with something. What is its purpose?"
+  },
+  {
+   "start": 1685.71,
+   "end": 1715.31,
+   "text": "If you know that this problem is already solved, if it is written in your diary, then don't go ahead in recursion. Directly from here, do return dp of m. If not, then you will have to do it in the last. You will have to do it in the last. But, now you have to write it. Suppose, for the first time, n is equal to 3 came. It was not written in your diary. No problem. But when you are solving the answer of n is equal to 3 here, before the answer,"
+  },
+  {
+   "start": 1715.31,
+   "end": 1742.61,
+   "text": "Before returning the answer, before returning the answer, let's erase this line a little bit. Before returning the answer, first do your work, do your work, if it is not written in your diary, do your work, see. Int, suppose we take out a1, fun of n minus 1, okay, it came out. Int, a2 is equal to fun n minus 2. Make your answer final as well. Int, answer is equal to"
+  },
+  {
+   "start": 1742.61,
+   "end": 1761.92,
+   "text": "a1 plus a2. Now, you had only one thing to do, which was to return this answer. Before returning it, write it in your dp. Here it is. After that, return this answer. Here it is. This is your dp code. What are we doing in this? Look. First of all, you get n."
+  },
+  {
+   "start": 1761.92,
+   "end": 1782.24,
+   "text": "Let's run the base case as it is. You have a hash map named dp above. What does it do? It writes the answer of every n. It remembers the n you solved once. Very good. After the base case, you check if it is already in your dp. If it is already in your dp,"
+  },
+  {
+   "start": 1782.24,
+   "end": 1811.23,
+   "text": "You return its value from there. That means, suppose when you solve n is equal to 2 for the first time, it will not happen. But when you solve n is equal to 2 for the second time, you will know that I have this. Without all this drama, return it. If you don't get it, suppose you are solving that n for the first time. This n is equal to 2 is being solved for the first time. Now the question which is being solved for the first time, where will the answer be from? No problem. Solve it. Keep the as it is recursion below. Before returning the answer,"
+  },
+  {
+   "start": 1811.23,
+   "end": 1835.74,
+   "text": "Write this line. What is this? This tells your DP to remember this. Remember this. If it comes next time, we will look at it and write. Remember this. This is the DP code. We will add 2, 3, 4 lines. Any recursion code will become the DP code. What is this thing called in English? Memoization. Memoization spelling is wrong. Memoization means to remember."
+  },
+  {
+   "start": 1835.74,
+   "end": 1851.52,
+   "text": "If you already know the answer to any question, then look at it in your diary and return it. If you don't know, solve it for that time once and then write it in your diary. It's a simple game. If the tea vendor doesn't know about a tea, it's okay, calculate it."
+  },
+  {
+   "start": 1851.52,
+   "end": 1866.06,
+   "text": "After that, write it on the board. Later, when someone asks for tea, look at the board and tell them. This is the concept. There is no such rocket science. There is nothing like this in DP. This is the concept. So go and submit the Fibonacci number. And run it and see. And meet us in tomorrow's lecture."
+  }
+ ]
+}

@@ -1,0 +1,309 @@
+{
+ "video_id": "AflRvP5LFFc",
+ "title": "Stop Struggling with Recursion: Combination Sum Explained Simply",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1565,
+ "segments": [
+  {
+   "start": 0.05,
+   "end": 16.98,
+   "text": "Today's recursion question is hard. It is asked in Amazon, Meta and many other companies. But there is a little twist in it. For this twist, we want to give you an example of chocolate as an intro. So after listening to this example, the next explanation will sit in your mind. So we are making this later."
+  },
+  {
+   "start": 16.98,
+   "end": 42.11,
+   "text": "explain pehle ki hai humko karte karte strike ki yeh bata dena chahiye tha to yeh bahut dhyan se sun lijiye ga hum yeh bhi asha karte hai ki aap pehle ki recursion videos dekhte hu aara hai aur aap bilkul nahi yaha pe nahi hai kyunki aaj jo 5 step flowchart tha uski baat hone wali hai thik hai to vo dekh lijiye nahi bache vo pehle dekh lijiye shuru se yeh video padhi rahi gaya isa nahi ki hum isko delete kar denge maal lijiye aap kisi chocolate factory me hai thik hai yaha pe bahut saare chocolate dekh sakte hai Cadbury, KitKat, Munch perk sab rakha hua hai"
+  },
+  {
+   "start": 42.11,
+   "end": 71.6,
+   "text": "You have choices. The manager has told you to go from here to here. Go from here to here. Okay? Go in a line. Okay. If you go to every chocolate, you have choices. If you don't want to eat chocolate, then you can go ahead. No problem. No issue. You can go ahead. If you want to eat this Cadbury, then you can't eat it once. You can eat as much Cadbury as you want. I mean, there are a lot of chocolates in Cadbury. You can eat as much as you want. Okay? But, if you do this, that you eat two Cadbury and go ahead,"
+  },
+  {
+   "start": 71.6,
+   "end": 101.15,
+   "text": "After that, you can't come back to Cadbury. After that, you can't say that you have eaten KitKat, you will come back. No, no, no, no, you can't do that. As much as KitKat, if you don't want to eat Cadbury, go ahead. If you don't want to eat KitKat, go ahead. There is no issue. But, if you want to eat, then you can eat as much Cadbury as you want. But, if you go ahead, then you can't eat Cadbury. So, what do you do in this? The next question we are going to explain is its heart, its base."
+  },
+  {
+   "start": 101.15,
+   "end": 130.43,
+   "text": "What will you do? If you don't want to eat Cadbury, you will move forward. If you don't want to eat, then what will you do? You will move forward towards KitKat. But suppose you don't know how much Cadbury you want to eat, then what will you do? What will you do? You will take out one Cadbury and eat it. You will take out one Cadbury and eat it. But you will not move forward by taking out that one Cadbury. Because it is possible that you will want to eat one more. The manager has clearly said that if you move towards KitKat, then you cannot come back to Cadbury. You cannot come back."
+  },
+  {
+   "start": 130.43,
+   "end": 143.82,
+   "text": "You have to move forward. What will you do? You will take out one Cadbury. You will eat it and stay there. You will stay there. You haven't moved forward on Cadbury yet. After one Cadbury, if you feel that it's done, you will move forward."
+  },
+  {
+   "start": 143.82,
+   "end": 170.27,
+   "text": "But if you think that you want more, you will eat one more Cadbury and will stay there and will not go ahead. Because you will go ahead when your heart will be full. You don't know when your heart will be full. You took out one more Cadbury and you are still on this. You are still on Cadbury. You ate one more Cadbury and you are still here. When you will feel that you don't want to eat Cadbury. When you don't want to eat Cadbury."
+  },
+  {
+   "start": 170.27,
+   "end": 197.47,
+   "text": "Then you will go to KitKat. Then you will go to KitKat. You will do the same thing on KitKat. You stand here. You know that you like KitKat. So you eat one KitKat. But if you eat that KitKat, you are not moving forward. You will stop there. You will stop there. If you feel like eating one more KitKat, then eat one more KitKat. But still you don't move forward. You have to stop there. When you feel that you don't want to eat KitKat, then you move forward. Then you move forward. So what are you doing?"
+  },
+  {
+   "start": 197.47,
+   "end": 217.12,
+   "text": "If you are standing on a chocolate, if you think that you don't want to eat it, maybe you are full or you don't like it, you don't like it. If you don't want to eat, if you don't want to eat, you go to the next chocolate very easily. But, but, but, if you want to eat, if you want to eat, then you..."
+  },
+  {
+   "start": 217.12,
+   "end": 240.8,
+   "text": "Eat and don't go to the next one. Eat standing there. Because you don't know how much to eat. You think you have to eat 100. Stand here because the manager will not let you come back. If you want to eat, then you eat standing here. You must be thinking this is very stupid. What is he telling? But we are telling this because it is very relatable. You will do this only. You will not do anything else. You don't know how much you can eat."
+  },
+  {
+   "start": 240.8,
+   "end": 263.9,
+   "text": "You will feel like eating a lot of food. So you will do the same thing. Until you don't feel like it, you will keep eating it and stay on the category. When you feel that you don't want to eat any chocolate, then you move on to the next chocolate. So this is a very relatable and very human example. In the next video, you will understand why we talked about it. It was important to talk about it. You didn't understand it. We felt that we won't understand it. Now move on. Now you should understand. And let's start the video."
+  },
+  {
+   "start": 263.9,
+   "end": 289.36,
+   "text": "So, first of all, let's explain the question. You may think that the question is big, but those who are watching the recursion series will think that yes, it is a very basic question, that we do the same thing again and again. So, you will feel that if you are watching all of them, then if you stumble on this channel for the first time, then you will not feel that. Let's go. You have been told that you have been given an array, which has distinct integers, right? Distinct integers and positive integers are also given."
+  },
+  {
+   "start": 289.36,
+   "end": 316.59,
+   "text": "Distinct positive integers. Means all are different from positive numbers. Okay. You have been given a target. You have been given a target also. Okay. What is your work? You have to find all the unique combinations of array. All the unique combinations you have to find. But which unique combination? Whichever sum. Whichever sum. Equal equal to target. So we have seen such a question earlier. Where you have to find."
+  },
+  {
+   "start": 316.59,
+   "end": 342.58,
+   "text": "You had to find all the permutations. For example, if the array is 1, 2, 3, then you had to do everything. Do an empty array, do a 1, 2, do a 1, 3, do a 1, 2, 3. It means all the subsets. Remember the subset printing. It is the same here, but there is a small problem in it. That you don't know the same subset. What do you understand the combination? You understand the combination of subsets. What does the subset mean? There will be some elements of the array, there will be nothing. It is the same. But whatever subset you are,"
+  },
+  {
+   "start": 342.58,
+   "end": 371.95,
+   "text": "Subset whatever you do, those whose sum is equal to target, you have to include that subset in your answer. So what is this problem? Same problem, generate subset, but the subset's sum is equal to this target, which is given to you in the question, only that subset has to be included in your answer. And one more small thing, one more small thing is different, that what you used to do in subset, for each element, how much choice did you have? Either you used to take it, or you didn't take it. If suppose this is your array,"
+  },
+  {
+   "start": 371.95,
+   "end": 379.04,
+   "text": "We want to say 1, 2, 3. And you make its subset. So suppose you make 1 and 2. So see 1."
+  },
+  {
+   "start": 379.04,
+   "end": 408.34,
+   "text": "It will come only once in this subset. But there is one more unique thing in this. In this particular question, in this combination sum, you can take any element as many times as you want. You can take it as many times as you want. You can take the same element again and again. It doesn't mean that you don't want to take the element. But if you have taken that element, you want to take one more one, you can take it. You want to take one more one, you can take it."
+  },
+  {
+   "start": 408.34,
+   "end": 437.78,
+   "text": "For example, if we take an example of an array. An array is given to you like this."
+  },
+  {
+   "start": 437.78,
+   "end": 457.17,
+   "text": "3, 6, and 7. 0, 1, 2, 3. Okay? Your target is 7. So look, we can do one thing in this. Take 2 in one subset. Take this 2. Okay. Take one more time. One more time. I don't feel like it. Take one more time. Okay? Take it. Take one more time. Now leave 2. Now take 3. Now take 3."
+  },
+  {
+   "start": 457.42,
+   "end": 486.11,
+   "text": "Look at this. What will be its sum? 7. So this is your answer. What else can you do? Only 7. This is also your answer. Is there any other answer possible besides this? No, there is no other answer possible. Now see, you can take all the permutations and combinations you want to do. There is no other answer possible whose sum is 7. Only these two answers are possible. So these two subsets should be in your answer. These two should be in your vector of, vector of integer. Come, let's solve this with our flowchart."
+  },
+  {
+   "start": 486.11,
+   "end": 513.23,
+   "text": "In the previous recursion video, we made a stepwise plan. It was a five-step plan. The first step was to identify the stages. We are doing this revision. After that, you can see how to go one by one stages. What are the choices? What are the choices in every stage? What can you do? Either do whatever you want or if there is a condition. After that, that choice. Make one choice. During that make one choice, you had to write that choice in your diary."
+  },
+  {
+   "start": 513.23,
+   "end": 542.56,
+   "text": "You had to go to the next stage and then come back and reverse it from the diary. And when you finish all the choices, then look at your diary. Whatever will be in your diary, that will be your answer. This was a five-step plan. Let's see the five-step plan. Come on, let's see what we do. See, with this five-step plan, we said that any question can be made. Till now, any question can be made. Come on. First of all, what are the stages? Meaning, how many chances do you have to make a decision? So see, stages."
+  },
+  {
+   "start": 542.56,
+   "end": 569.28,
+   "text": "How many chances do you have? You have an array. Every element of the array is a chance for you. You have to make a decision whether to take it or not. Every element is a stage for you. Every element means every index is a stage for you. Every index is a stage for you. It's simple. In any array or string question, what will be the stages? The index or the element of that will be the stages. How to go to different stages? With the help of index."
+  },
+  {
+   "start": 569.28,
+   "end": 599.18,
+   "text": "With the help of index, we will start from index 0. And when my IDX will be equal to n, it means that all the stages are over, then we will stop. What is choice? The most important question. What is choice? What is choice at every stage? What is choice at every stage? See. Every stage means that when you are standing on any one index, suppose you are coming here, 2, 2, 3, 0, 1, 2. You are standing here. What choice do you have at this stage? What choice do you have at this stage? See."
+  },
+  {
+   "start": 599.41,
+   "end": 627.95,
+   "text": "The first choice is a very simple choice that you don't have to take. You don't have to take. See, in this question, you feel the same complex, right? That you can take one element again and again. But taking it again and again doesn't mean that you have to take it. The best choice is that you don't have to take it. Absolutely ignore it and don't take it. This is the easiest choice. You don't have to do anything in this. You have to go straight to the next index. In this, you have to go straight to the next index. Okay. You have one more choice. You can take it. You can take it."
+  },
+  {
+   "start": 627.95,
+   "end": 652.62,
+   "text": "You can include this index in your answer. But what is the catch here? When we used to do generate subset or any other problem where you could take it or not, you used to go to the next stage. What do you mean by this? Suppose you were standing at door 1. You had two choices. One, you could go to the left."
+  },
+  {
+   "start": 652.62,
+   "end": 678.21,
+   "text": "And you could go to the right. So no matter whether you choose left or right, in both cases, you would reach door 2. In both cases, you would reach door 2. If you open left on door 1, then also you would reach door 2. If you open light on door 1, then also you would reach door 2. But it is not like that here. Here, let's assume that you can open door 1 repeatedly. You can open door 1 repeatedly. What?"
+  },
+  {
+   "start": 678.21,
+   "end": 705.71,
+   "text": "we can open it again and again. Meaning, it is also possible that you come to door 1, you have decided that we have to take left, but after taking left, you come back to door 1. You come back to door 1. Sorry, after taking left, you come back to door 1. Where did you come? You came back to door 1. You can also do this. After taking right, you come back to door 1. You come back to door 1. Okay. So, meaning, we came to know that"
+  },
+  {
+   "start": 705.78,
+   "end": 728.22,
+   "text": "On any one index, suppose you are standing on idx is equal to 0. The best choice can be that you don't have to take it. This is useless, you don't have to take it. This is absolutely right, you don't have to take it, so you go to the next stage. What will you do on idx is equal to 0? You come directly to idx is equal to 1, you will take a decision on it. But if you have to take it,"
+  },
+  {
+   "start": 728.22,
+   "end": 747.6,
+   "text": "So, you have to take it no matter how many times you take it. Now, take it once. Now, once IDX is equal to 0. Assume that it was 2. So, write it in your diary once. But you can take it again and again. You can take it twice. You can take it three times. You can take it four times. If you take it, then don't go to IDX is equal to 1 now. Because if you go to IDX is equal to 1,"
+  },
+  {
+   "start": 747.6,
+   "end": 772.78,
+   "text": "So how will we get a choice to take it again? We need a choice to take it again. We need something on which we keep coming again and again. When you take it, don't increase the index. Come back to IDX is equal to 0. Come back to IDX is equal to 0. But, but, but, now someone will say, sir, how will this end? This will never end. Why won't it end? Because suppose IDX is equal to"
+  },
+  {
+   "start": 772.78,
+   "end": 801.89,
+   "text": "You are standing at zero. Your element is 2. Your diary is empty in the beginning. Your diary is empty in the beginning. So what did we say? If you don't want to take it, then go to idx is equal to 1. If you want to take it, then you keep coming back to idx is equal to 0. So you will say, okay. So let's assume that we have taken it. And what have we written in our diary? That we have taken 2. Okay. And you are saying that take it and come back to idx is equal to 0. Again idx is equal to 0 will work. You will say, take it. Write it in your diary. And come back to it. Then that will work. Come back to it."
+  },
+  {
+   "start": 801.89,
+   "end": 831.14,
+   "text": "Then the same thing will happen. When will this end? Will it go to the infinite loop? No, it won't go. Why won't it go? Look, what does the question tell you to make it easy for you? The whole number is positive. The whole number is positive. The whole number is positive. Whose sum should be equal to? Equal to the target. Your sum should be equal to the target. Okay. Suppose at some stage, at some stage, you have come to some idx is equal to 2. Okay, suppose you have reached somewhere. Your current sum,"
+  },
+  {
+   "start": 831.14,
+   "end": 860.22,
+   "text": "Assume the current sum is 10. Your current sum is 10. Your target is 13. Your target is 12. Your target is 12. Okay. Now what will we do? Assume the array of IDX, the element you are trying to take or not to take, that is 5. That is 5. Okay. Should you think of taking IDX is equal to 2 even once? No. Why not? Because if you take it, if you take it,"
+  },
+  {
+   "start": 860.22,
+   "end": 881.01,
+   "text": "If you include this 5, then you will have to include it in your sum. Your sum will become 15. Now whatever happens in the future, all the positive integers are in the future."
+  },
+  {
+   "start": 881.01,
+   "end": 904.37,
+   "text": "Can the target be equal at any time? No, it can't be. You can do anything in this. Don't take anything in the next one. Take the next one 100 times. Do anything. All are positive numbers. 15, 12 cannot be made without negative numbers. So, we got a funda here, right? If you come to any IDX and if you come to know that the sum here, what is the sum? Sum is your"
+  },
+  {
+   "start": 904.37,
+   "end": 933.65,
+   "text": "diary. Sum is like your diary. Whenever you take an element, when you decide to take it, then what will you do? Sum plus is equal to array of idx. And when that work is done, then how will you reverse? Just the opposite. Sum minus is equal to array of idx. But if you get to know on any index, if you get to know that sum plus array of idx greater than target will be done. It will be greater than target."
+  },
+  {
+   "start": 933.65,
+   "end": 962.29,
+   "text": "In this case, how many choices do you have left? Only one choice is left, that you don't want to take. What? You don't want to take, brother. You don't want to take. Absolutely don't want to take. Absolutely don't want to take. There is no benefit of taking. And if this doesn't happen, and if this doesn't happen, then you have two choices. So you have two choices. You are standing at IDX is equal to zero. The first choice you have, the choice of not taking is always there. The choice of not taking is always there. Go to IDX is equal to one. And if you want to take, and if you want to take, then take it."
+  },
+  {
+   "start": 962.29,
+   "end": 993.36,
+   "text": "But because you can take it again and again and again in this. Revisit IDS is equal to 0. Revisit IDS is equal to 0. Give yourself one more chance. Brother, take as much as you want to take. After that, stop. After that, stop a little. Okay. After that, what to do? Stop a little. Let's go. So, we hope that you have understood this thing. That what we have to do in choices. Look, in choices, you have understood the choice on the stage. That you have to take or not to take. Okay. But what stage do you have to go without taking? Do you have to go to the next door without taking?"
+  },
+  {
+   "start": 993.36,
+   "end": 1018.42,
+   "text": "But if you have taken it, then because you have the opportunity to take it again and again, then you revisit it again and again at the same door. When does this thing end? When you come to know that if we take this index, then my sum will be greater than the target and then it will never be equal to the target, which is not my aim. So you will stop there, you will say that there is no question of taking it, we will not take it. Come on, now write it in code. First of all, what will you need for the stage?"
+  },
+  {
+   "start": 1018.42,
+   "end": 1045.25,
+   "text": "You will need an index. So we will write what all we will pass in the function. First of all we will pass the array. We will pass the array's n. We will also pass the index. And what else will we pass? Your diary. The most important thing. When you take a choice, you write in your diary. So here you are getting a subset return. So one obvious thing is that one will be your diary. One will be your diary in which you will write choices."
+  },
+  {
+   "start": 1045.25,
+   "end": 1074.58,
+   "text": "The obvious thing is that you need all the diaries. You need all the good diaries. What will be written in the diaries? Whatever choice you have made, whatever subset you have made. You will need a vector of, vector of int. The collection of all diaries. This will be your result. And let's do one thing. Let's take an int sum variable. What will this sum tell us? Sum is also a type of diary. Whenever we take an element, we will do two things. Whenever we take an element, we will do two things. First of all, we will push it back in the diary."
+  },
+  {
+   "start": 1074.58,
+   "end": 1101.63,
+   "text": "First of all, we will push it back in the diary. If we take it, and what we will do is, sum plus is equal to array of i. This is done. When its work is done, then we will reverse both. First of all, reverse this. Sum minus is equal to array of i. And then reverse this. What is the reverse of push back? Pop back. So instead of one diary, we will take two diaries. Because we are working on the sum again and again, so we want to keep the sum easy. That's why you can do it at once if you want. You can take out the sum of the diary again and again."
+  },
+  {
+   "start": 1101.63,
+   "end": 1129.04,
+   "text": "There is no problem. So what does the diary contain? The diary contains what you have chosen till now. And it contains the sum. What is the sum of whatever is in your diary? 2 to 7. So these two things are your diary. Okay? So we will do these things. Come, let's see its algorithm or code. So what will we do? First of all, we will void. Come. Void fun. In this, first of all, my array will pass. Vector int a."
+  },
+  {
+   "start": 1129.17,
+   "end": 1157.5,
+   "text": "int n, an int idx, which is my current one. You have to take a decision on this current index. After that, we will pass a vector int diary. Vector int diary. And then we will also take an int sum. And where is the answer of all the diaries? What do you need in the final answer? All the subsets. So vector of vector of int. Whatever your diary is, its vector. Vector of vector of int. This will be your final answer. Okay, come."
+  },
+  {
+   "start": 1157.5,
+   "end": 1186.51,
+   "text": "First of all, when did you stop? When did you stop the recursion? When did you have no choice left? When did all the stages end? When did all the stages end? If idx is equal to n. Everything is over. Now what did you have to do? Generally, you used to write what is in the diary. Generally, you used to write what is in the diary. But, which subset do you want here? Whose sum is exactly equal to the target. Yes, see, you have to take a target too. You have to take a target too. Int."
+  },
+  {
+   "start": 1186.93,
+   "end": 1215.66,
+   "text": "target. If idx is equal to 1, it means the game is over, you don't have to do anything. But, if your sum is equal to target, if your sum is equal to target, then what do you do? rest dot push back diary. Push back diary. So, it means that diary is correct. Whatever is in that diary is exactly. And what do you do? Return it. Now, your whole is over. So, what happened to you? Over. All stages are over."
+  },
+  {
+   "start": 1215.66,
+   "end": 1236.59,
+   "text": "Now let's decide on choices. So what we thought was that if the sum of the index is smaller than the target, then you can take it. If it is bigger than the target, then you can't take it. But there is a choice of not taking it. In both cases, you always have a choice of not taking it. So make the choice of not taking it earlier."
+  },
+  {
+   "start": 1236.59,
+   "end": 1266.02,
+   "text": "We will not take this stage, we will ignore it. If you are not taking anything, then there is no point in writing in the diary. What do you write in the diary that you take? If you have done 10, then you have written 10 in the diary. If you have done 12, then you have not done beta, then why are you writing it? There is no point in that. Go straight ahead. A, N, IDX plus 1. If you don't want to take, go straight ahead. If you don't want to take, then why will you come again and again? You don't want to take, right? After that, your diary, nothing changed in it."
+  },
+  {
+   "start": 1266.02,
+   "end": 1289.41,
+   "text": "Your sum, your result, and your target. Nothing has changed. What is this? Don't take. Don't take. Choice 1. Now, choice 2 is that you have to take. Choice 2 is that you have to take. But there is a check for that. If taking this will increase the sum from the target, then why will we take it? So, check this. If array of index plus sum."
+  },
+  {
+   "start": 1289.41,
+   "end": 1319.02,
+   "text": "If it is less than or equal to the target, that means if the sum is less than or equal to the target, then there is some hope. You can take some hope. But if it is not like that, then you cannot take it. So if it is like that, then you can take it. You can take it. You have a choice. You can take it. Try it and see. There is nothing in it. What did I say? Before making any choice, if you are including someone, first of all, diary.pushback. Write in the diary that we are taking it. We are taking it to remember. Array of IDX."
+  },
+  {
+   "start": 1319.09,
+   "end": 1349.23,
+   "text": "Along with diary, update sum too. Sum is equal to sum plus array of idx. Very good. Now take this. Now take this and move forward. Where do you move forward? Not on the next index. Come on the same. Because it may be that you want to take it again next time. If you want to take 2 twice, then we will take it next time. We will take it next time. Let's take it once now. We will take it once later. So what to do? a, n, idx. Not idx plus 1, idx. Diary, sum, result, target."
+  },
+  {
+   "start": 1349.23,
+   "end": 1377.22,
+   "text": "Done? Now, we have come back. Reverse these two things. Whatever you did earlier, reverse it. Diary, dot, popback, reverse of pushback, popback. Sum is equal to sum plus array of index. Means, if you join sum, what will be its reverse? Reduce array of index, it will be reversed. Sum is equal to sum minus array of index. Close this. Now, have you done both choices? Means, have you done choice 1?"
+  },
+  {
+   "start": 1377.22,
+   "end": 1407.52,
+   "text": "Choice 2. Is there any other choice other than this? We can take it. Or we can not take it and we can take it many times. There is no other choice other than this. So it's over. There is no other choice other than this. Return. This is your function. See what step it follows. Identify the stages. Identify the choice. Identify in which condition you can take the choice. This was its complex part that we are going the same way. Because you can take the same element again and again. Again and again."
+  },
+  {
+   "start": 1407.52,
+   "end": 1439.15,
+   "text": "We can open the same element. How will we run this? We don't have to do anything. First of all, what should we make from the main? Int n is equal to a dot size. Is it done? Int sum is equal to 0. In the beginning, the sum will remain 0. Make an empty diary. Vector int. Make an empty diary. Make an empty answer. Vector of. Vector of int. Make an empty answer. And call this. From where? From the beginning."
+  },
+  {
+   "start": 1439.15,
+   "end": 1469.95,
+   "text": "n, call from 0, take this from 0, int idx is equal to 0, take it, no problem, come, so take it, and array of n, idx, diary, sum, result and target, when you will complete this, when a person will complete this work, then whatever you have to fill in the result, will be filled, return, result, this will happen in your main function, this is your recursion,"
+  },
+  {
+   "start": 1469.95,
+   "end": 1498.34,
+   "text": "I hope you are able to understand, especially this part. If you are not able to understand this part, then please comment. I am ready to explain it again. You should be able to understand this part of what you are doing repeatedly. That is why I am asking this question because the question is a little different. So this part is important. The rest is the same. The rest is a generate subset. There is nothing in it. Everything is the same. Why are you coming to the same element repeatedly? And how will it stop? If you don't put this, then it never stops."
+  },
+  {
+   "start": 1498.34,
+   "end": 1528.18,
+   "text": "Now you are stuck like this. You have come to door 1. And you have written like this. To take right, come back to door 1. So he will come back to door 1 with right. Then come back. Take right and come back here. Okay, then come back. Take right. He will get stuck. This is an infinite loop. It is very important to write this to finish it. When can you take this choice? That's why think very consciously. Which choice can you take when? It is very important. There is a choice. But every time that choice is not there. Every time. It is not that you can open left and right. No. Open with your mind."
+  },
+  {
+   "start": 1528.18,
+   "end": 1553.78,
+   "text": "Can we take this choice or not? Are we taking it wrong? There is a choice of not taking it. There is always a choice of not taking it. Suppose the question tells you that you have to take all the elements at least once. You can't say that you don't have to take it. Then you have to change it. So you don't have this choice. There is no choice of not taking it. So you have to write some other code. It depends on the question. But at every stage, what are the choices?"
+  },
+  {
+   "start": 1553.78,
+   "end": 1565.01,
+   "text": "What are your choices? This is the main game of recursion. You have to understand this. So do ask this question. It's a very good question. It's a fan-favorite, company-favorite question. We'll meet later."
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+ "video_id": "JLdrJE7udZo",
+ "title": "DP in 15 Days Episode 3: Climbing Stairs | Learn 1D Dynamic Programming",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1167,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 25.87,
+   "text": "Hello guys, welcome to your DP series in day 3 of Zero to Hero. If you are coming here for the first time on the channel, then you should watch lecture 1 and 2 of this DP playlist. You will find the playlist somewhere. You know where to find the playlist, right? Today is day 3, so nothing much happened in day 1. In day 2, we told you how to find out that there is DP. And if you find out, then how to apply DP there. Today in day 3, we will solve a real question. We will follow the same principle. First of all,"
+  },
+  {
+   "start": 25.87,
+   "end": 52.9,
+   "text": "We will see if there is a question of DP or not. If there is, then how to apply DP. It is a very short and sweet question. It is a very easy type of question. Today's question is called Nth stair. It is also called climbing stair. The name of GFGP is raised to reach the Nth stair. Some people are saying in the comments that you have not studied tabulation. We know that you have heard the term tabulation from somewhere. But study in the structure in which you are studying. Slowly everything will be done."
+  },
+  {
+   "start": 52.9,
+   "end": 81.02,
+   "text": "Treat it like a recursion. Focus on understanding today's lecture. Don't worry about this or that. Everything will be done gradually. Have some faith. You have been teaching for so long. You should at least do this much. Look, what is today's question? You are told that you are standing on a platform, i.e. base platform. Suppose you are standing on ground level. Now, in this building, there are n levels. How many n? I have given you an n, i.e. there is n floor."
+  },
+  {
+   "start": 81.02,
+   "end": 110.34,
+   "text": "So let's say 1 floor is 1, 1 floor is 2, 1 floor is 3. Let's say n is equal to 3. That means you will be given a building like this. Where are you initially standing? On the ground floor, that means on 0. Your work is to go from 0 to where? To the nth floor. How much? To the third floor. Okay, so will we go? No. There is a small twist. On every ladder, let's say if you are on 0, you can either climb one ladder, that means if you are on 0,"
+  },
+  {
+   "start": 110.34,
+   "end": 140.1,
+   "text": "You can go from 0 to 1. You can do one thing. Or if you are on 0, you can go from 0 to 2. You can't jump more than 2. You can't go directly from 0 to 3. No, it is not allowed. What can you do? You can either go from 0 to 1 or from 0 to 2. This is it. Now you have choices. There are two choices. Either you jump one or two stairs. You have to tell how much total ways."
+  },
+  {
+   "start": 140.1,
+   "end": 167.54,
+   "text": "Total ways or total method to reach nth stair. What does to reach nth stair mean in Hindi? Suppose you go from 0 to 1, 1 to 2, 2 to 3. What happened? One method became this. You can also go from 0 to 2, 2 to 3, reached. This became method 2. You can also go from 0 to 1, 1 to directly 3. What happened? Method number?"
+  },
+  {
+   "start": 167.54,
+   "end": 192.3,
+   "text": "3. Is there any other way? From 0 to 1, 2 is done. After 0 to 1, 2 is also done. After 0 to 2, 3 is done. Yes, that's it. There are only 3 ways. You do it. Apply permutation combination. There is no other way. There is no other way. It means there are 3 ways. So, what do you have to return? You have to return 3. Why? Because number of ways, you can reach from 0 to n, from 0 to 3rd floor in how many ways?"
+  },
+  {
+   "start": 192.3,
+   "end": 221.82,
+   "text": "Let's say you get two choices every time. You jump one or two stairs. You have to return the number of unique ways. How many are there? Let's open this question now. It must be looking very hard. It's not hard at all. It's the simplest and most useless question. Let's open it in a way and understand it in 10 minutes. So look, this is the same question. Suppose you have four cities. All the cities are lined up like this. Ranchi, Delhi, Kolkata. There may be some other city above Kolkata. In the end, your target destination is to go to Bangalore."
+  },
+  {
+   "start": 221.82,
+   "end": 251.6,
+   "text": "Where do you want to start? From Ranchi. So same question. Where do you want to start? From the ground floor to the end floor. How many floors are there in between? I don't know. Let's go. What is your work? How many ways are there from Ranchi to go to Bangalore? Provided that you can either jump from one city and go to Delhi from Ranchi. Or you can jump two steps from Ranchi to go to Kolkata. Same from Delhi. You can jump one step from Delhi or two steps from Delhi. So how many ways are there to reach Bangalore? This is the question."
+  },
+  {
+   "start": 251.6,
+   "end": 278.61,
+   "text": "First of all, what did we tell you? What is this question? Whenever you get the question of choices, what is this? You have choices and all possible combinations. All possible combinations. We have done a lot of such questions in recursion. What? You get choices that you can do this or you can do that. You have to do something about all possible combinations. Suppose all possible combinations have to be counted, as in this case. In all possible combinations,"
+  },
+  {
+   "start": 278.61,
+   "end": 306.59,
+   "text": "Which is the best way? We have to do that. That is also not in this case. Okay. So, in recursion, we have seen such questions 12 times. What did we do first? Base case was written. What? Base case means the smallest form of the question. If you are given the smallest way of this question, the smallest input is given, then what will be your answer? You should know that. So, see. What can be the smallest input? Suppose you are standing on Bangalore. You have come and stood where you have to go."
+  },
+  {
+   "start": 306.59,
+   "end": 333.23,
+   "text": "Now tell me, how many ways to go from Bangalore to Bangalore? Now look, the question is that you are standing on Ranchi, you have to tell about Bangalore from Ranchi, you don't know that, no problem. If we tell you that you are standing in Bangalore and you have to go to Bangalore, you are standing in Bangalore and you have to go to Bangalore, how many ways will there be? One way. There is only one way, right? How many ways are there to go from Bangalore to Bangalore? One. You are standing there, very good. If, if, by mistake, if by mistake,"
+  },
+  {
+   "start": 333.23,
+   "end": 361.81,
+   "text": "Suppose there is a city in front of Bangalore. Suppose there is a city in front of Bangalore. Suppose there is a city in front of Bangalore. Now tell me, suppose you stood on Patna in some way. Someone told you that you stood on Patna and you have to go to Bangalore. Now you can't go back. You can go ahead of Patna. You can go one city ahead of Patna or two cities ahead of Patna. Bangalore is behind Patna. So tell me one thing, if someone tells you that you are on Patna and how far is the way to Bangalore?"
+  },
+  {
+   "start": 361.81,
+   "end": 386.78,
+   "text": "How many ways are there? There is no way because you can't move back in this question. You have to go ahead. You have to jump ahead. So you can see two base cases here. You had to go to Bangalore. You are standing on Bangalore right now. How many ways are there? One way. You had to go to Bangalore and you went ahead of Bangalore. You went ahead of Bangalore and went to Patna. You will go somewhere else. How many ways are there? There is not a single way. These two are yours."
+  },
+  {
+   "start": 386.78,
+   "end": 413.23,
+   "text": "This is the base case. If this happens, we will give our answer. Very good. After that, what did Rickerjohn say? Focus on Ranchi. Your starting city will be Ranchi in the beginning. Okay. Where can you go from Ranchi? You can either go to Delhi, which is one step away, or you can go to Kolkata, which is two steps away."
+  },
+  {
+   "start": 413.23,
+   "end": 440.0,
+   "text": "There are only two ways to Ranchi. There is no third way to Ranchi. You can't stop at Ranchi. You have to either jump from Ranchi and go there or jump twice and go there. Okay. If someone tells you, if someone magically tells you that there are two ways to go from Delhi to Bangalore. There are two ways to go from Delhi to Bangalore. Which way is it? I don't know. It doesn't matter. But there are two. It is possible that you go directly from Delhi to Bangalore."
+  },
+  {
+   "start": 440.0,
+   "end": 466.77,
+   "text": "No matter what we do, we don't care. Let's say there are two ways. Let's say there are three ways to go from Kolkata to Bangalore. Which three ways? Don't know, don't care. We don't care. But there are three ways to go from Kolkata to Bangalore. Now they can go directly from Kolkata to Bangalore. They can go by jumping from Kolkata to Bangalore. They can go by jumping from Kolkata to Bangalore. They can go by jumping from Kolkata to Bangalore. They can go by jumping from Kolkata to Bangalore. They can go by jumping from Kolkata to Bangalore."
+  },
+  {
+   "start": 466.77,
+   "end": 493.74,
+   "text": "Where did you get to know these two things? When you were in Ranchi. Now tell me, if you got to know these two things, then what will be the final ways of Ranchi to Bangalore? Exactly, it will be 2 plus 3. 2 plus 3 is equal to 5. Why? Look, assume that there are two ways of Delhi. There are two ways of Delhi. Delhi to Bangalore, you have to go directly. And Delhi to..."
+  },
+  {
+   "start": 493.74,
+   "end": 518.9,
+   "text": "Kolkata to Bangalore. This is the two ways of Delhi. This is the two ways of Delhi. Assume that I have told you this way. Kolkata has three ways. It is possible that you have to go from Kolkata to Patna and then go back to Bangalore. It is possible that you have to go from Kolkata to Guwahati and then go back to Bangalore. It is possible that you have to go from Kolkata to Mysore."
+  },
+  {
+   "start": 518.9,
+   "end": 547.15,
+   "text": "And you have to go to Bangalore from here. I am telling you this to make you understand. Assume that these are the three routes from Kolkata. Now you know that two routes from Delhi and three routes from Kolkata. Now you have to find out Ranchi to Bangalore. You could have done only two things from Ranchi. Either you could have gone to Delhi or you could have gone to Kolkata. So see, what do you do now? Now your route is like this. One, two, three, four."
+  },
+  {
+   "start": 547.47,
+   "end": 569.79,
+   "text": "5. How many ways to go from Ranchi to Bangalore? 5. Is there a sixth way to go from Ranchi to Bangalore? No. Why? Because you could do only two things from Ranchi. Either Delhi or Kolkata. Okay. There are two options to go from Delhi to Bangalore. Count them. There are three combinations to go from Kolkata to Bangalore. Count them. If you add two plus three, how many ways to go from Ranchi to Bangalore?"
+  },
+  {
+   "start": 569.79,
+   "end": 598.02,
+   "text": "5. Your game is over. Your recursion is over. Those who have seen the recursion must be bored to listen to it because you know it very well. So what does it mean? What do we have to do? How will our recursion look? First of all, we will write a recursion function in which we will do this. int i. i means where are you standing now? Are you standing in Ranchi, Delhi, Kolkata, Bangalore? Where are you standing? First thing is this. And int n."
+  },
+  {
+   "start": 598.02,
+   "end": 627.81,
+   "text": "Where do you have to go? What is your N? This is floor wise, right? I will always start from 0 and you have to reach N. So, this is done. First of all, what happens? Write down the base case. What base case did you think of? We thought of two base cases. The first base case was that if you are standing on Bangalore and you have to go to Bangalore, then what will be the way? One way. Meaning, if your I is equal to N, how much will you return? One. Meaning,"
+  },
+  {
+   "start": 627.81,
+   "end": 657.28,
+   "text": "You have to go to Bangalore. There is one way. What was the second base case? If you have gone ahead of Bangalore. It is possible that you have gone ahead. You are jumping two times. It is possible that you are on the 5th floor. You had to go to the 6th. It is possible that you jumped to the 7th. You have gone ahead. If you have gone ahead of Bangalore. There was no way. Not possible to come to Bangalore. Meaning. If."
+  },
+  {
+   "start": 657.28,
+   "end": 669.66,
+   "text": "Your i is greater than n. How many ways can there be now? Return zero. The base case work is over. Now what is your work? Where could you have gone from Ranchi? Delhi and Kolkata."
+  },
+  {
+   "start": 669.66,
+   "end": 696.56,
+   "text": "Where can we go from I? I plus 1 and I plus 2. So what did we say? Someone tell us the answer of I plus 1. That means someone tell us the answer of Delhi. Someone tell us the answer of I plus 2. That means someone tell us the answer of Kolkata. To find the answer of I, to find the answer of Ranchi, what will we do? We will join them and return them. So, someone tell us the answer of I plus 1N. He will tell us. Someone tell us"
+  },
+  {
+   "start": 696.56,
+   "end": 725.15,
+   "text": "Tell me the answer of i plus 2. It will tell you. What to return, brother? Return. Return. a1 plus a2. It is over. Here is your recursion. It is over. The work of recursion is over. This is its answer. But. But. But. But. This playlist is of dp. This playlist is of dp. So, write recursion. What did we understand yesterday? Is it necessary to put dp in this recursion? Is it necessary or not? How do we know?"
+  },
+  {
+   "start": 725.15,
+   "end": 749.94,
+   "text": "If your recursion starts to solve the same problem again and again, if your recursion starts to solve the same problem again and again, if your recursion starts to solve the same problem again and again,"
+  },
+  {
+   "start": 749.94,
+   "end": 779.55,
+   "text": "i will change. Means you will start from i is equal to 0. Jump and go to i is equal to 1. Jump and i is equal to i is changing. If in dry run we see that i, for same i recursion function is calling again and again. Then what will we have to do? Dynamic programming. How will we have to do? We will see that later. First let's see if it is working or not. Let's do a small dry run and see. Let's do a dry run for n is equal to 3 and see if the same problem is happening or not. So see."
+  },
+  {
+   "start": 779.55,
+   "end": 808.05,
+   "text": "You have to go to n is equal to 3. Where will we start? From i is equal to 0. Now, what will we do? Fun, i is equal to 0, n is equal to 3. Okay. First of all, check. Someone asked us how to do dry run recursion. We do it like this. See. i is equal to 0. First of all, is this a base case? Means, is i n? Or is it bigger than n? Absolutely not. So, first of all, a1 is equal to fun of i is equal to 1, n is equal to 3."
+  },
+  {
+   "start": 808.05,
+   "end": 833.58,
+   "text": "a2 is equal to i is equal to 2, n is equal to 3. Two are done. Start running them one by one. Run this first. So, the first one will be fun. i is equal to 1, n is equal to 3. This is also not a base case. So, what will you do? a1 is equal to fun. i is equal to 2, n is equal to 3. And a2 is equal to fun. i is equal to 3, n is equal to 3."
+  },
+  {
+   "start": 834.03,
+   "end": 860.29,
+   "text": "Just by doing this much, you should be able to understand that there is a problem with dp. We are not even moving forward. But just by writing this, you should be able to understand that there is a problem with dp. Why? Look, what is it doing? It is calling i is equal to 2 and n is equal to 3. Can you see this written somewhere else? Yes, you can see it. Look at this. Look at this. That means, if you run it now and finish it completely,"
+  },
+  {
+   "start": 860.29,
+   "end": 883.17,
+   "text": "This person will run again, this person will run again. If you see even one such instance that the same input is being called again and again, if it is being called again and again, then it will run again and again. The call that happens, even God cannot stop it from running. Meaning, there is no need to do a full dry run. Like yesterday we went to the end in Fibonacci."
+  },
+  {
+   "start": 883.17,
+   "end": 908.94,
+   "text": "No need to go to the end. If you can see that it is calling again and again. What happened? See, we started from here. A1, A2. Okay, that's good. Come here. A1 is calling again. If you can see that the same thing is calling again and again. It is definitely a question of who? Of DP. How do you connect DP? The input that is changing again and again. Remember that. Before running, it means."
+  },
+  {
+   "start": 908.94,
+   "end": 937.23,
+   "text": "Leave the base case. Later, before doing anything, open your diary and read if the answer to this input is written here. If the answer is written, return the answer. There is no need to use your brain. Which input is changing here? Is N changing? No, N will not change. N is the target. What is changing? The value of I is changing. So, if we, if we, if we, if we change the value of I,"
+  },
+  {
+   "start": 937.23,
+   "end": 966.32,
+   "text": "The value of i, meaning the answer of i. See, i is equal to 1 and n is equal to 3. There will be some answer to this, right? 2, 3, 4, 5, 10, there will be some answer to this. If we write the answer of this in one place in the diary, and every time, before doing anything, before doing anything, open it in your diary and read it, then will the work become easy? Yes, your work will become absolutely easy. So do this thing, do this thing. What did we say? Come back to this recursion. First of all, remove this. Remove this. Remove this. We will write in some time."
+  },
+  {
+   "start": 966.42,
+   "end": 997.9,
+   "text": "Erase this. Erase this. Erase this. Erase this and come back. Leave the base case. Leave the base case as it is. Don't leave it. What you have to do is, if dp.find i not equal to dp.end return dp of i. That's it. What you have to declare above? unordered map"
+  },
+  {
+   "start": 998.45,
+   "end": 1026.18,
+   "text": "int, int, dp. That's it. What is dp? Hash map. Whose? To store the answer of every i. That's why int, int. See. It's not necessary to use hash map. Here you can also use a vector. A vector of int of dp whose size is n. Use anything. Use vector, hash map, anything. Making a diary means making a diary. The space complexity of both is order of n. Okay."
+  },
+  {
+   "start": 1026.18,
+   "end": 1056.27,
+   "text": "And if we see, the time complexity of both of them is the order of 1 in the vector as well as the order of 1 in this. So, there is no problem in this. We have written it. Now, if we don't get it, we will continue. Int a1 is equal to fun i plus 1 n. Int, we are writing the same thing which we had written just now. Fun i plus 2 n. That's it. Take out the answer. Take out the answer, son. Take out the answer. What will be the answer? a1 plus a2. Now, before returning,"
+  },
+  {
+   "start": 1056.27,
+   "end": 1073.23,
+   "text": "Return answer. But before that, write this in your diary so that you can use it further. DP of I is equal to answer. That's it. Here, DP is made. Here, DP is made. Its time complexity, order of n."
+  },
+  {
+   "start": 1073.23,
+   "end": 1102.61,
+   "text": "Its space complexity, space is used in DP. We are saying it again and again. DP saves your time but takes space from you. Why? Because the diary you are maintaining has space in it. Where will the diary be maintained? The hash map that you are maintaining will have space in it. How much space will it take? It will take order of n space. Because you will write all the level of answer in it. I is equal to 0's answer, 1's answer, 2's answer, 3's answer, 4's answer, till I is equal to n. We will write all the answers in it. How much space will it take? Order of n."
+  },
+  {
+   "start": 1102.61,
+   "end": 1127.87,
+   "text": "What will be the time complexity? Order of n. Because every recursion function will run maximum once. How many times will it run? Once. If it calls again, then it will not run. It will come back in the middle because of dp. So it will not take much time. It will call, but it will not take time. What will not take time? It will not take time. It will not take time at all."
+  },
+  {
+   "start": 1127.87,
+   "end": 1155.97,
+   "text": "So what did we convert this? From recursion to DP. Why did we find out that it is a DP question? The same call is happening again and again. The same call is happening again and again. That is why it is a DP question. If the same call is happening, then whatever input is changing, whatever input is changing, we are not writing DP of N in this. N is not changing. N is the same. Remember the input that is changing. Check it before running it. Brother, it is written. Give it if it is written. Otherwise, don't give it. So you have solved this question."
+  },
+  {
+   "start": 1155.97,
+   "end": 1166.0,
+   "text": "Go and submit it. It's a very basic but very fundamental question of DP. I also have a sore throat while saying it. Okay, solve it and come tomorrow."
+  }
+ ]
+}

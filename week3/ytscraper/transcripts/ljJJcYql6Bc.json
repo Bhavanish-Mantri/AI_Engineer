@@ -1,0 +1,434 @@
+{
+ "video_id": "ljJJcYql6Bc",
+ "title": "DSA PATTERNS Episode 8 | Two Pointers Pattern: Most Important Questions",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2476,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 36.24,
+   "text": "Okay, so today is day 5 of 2 pointer pattern and today is the last day of this pattern. Why am I saying last day? Because if you open the sheet, there are two more questions left. One is triplets, smaller sum, one is Dutch national flag. There are more questions left. One is subarray and product question. And three problem challenges are left. If you look at the sheet carefully, there are three problem challenges written at the end."
+  },
+  {
+   "start": 37.07,
+   "end": 62.48,
+   "text": "Now see, I don't want to do this right now. Why? Because this is a question of a sliding window pattern more than two pointers. This is a question of a sliding window pattern more than two pointers. It doesn't mean that both are the same. And we are keeping all the problem challenges for last. Because when we will read a lot of patterns, when you will come, how will we do the revision? How will you understand whether you still remember what you had learned or not?"
+  },
+  {
+   "start": 62.48,
+   "end": 88.78,
+   "text": "We will do this problem-challenge question of every pattern at the end. Now why is this a sliding window? Because you can think of a two-pointer as a superset of a pattern. A sliding window is a type of two-pointer with some conditions. So every sliding window is a two-pointer but not every two-pointer is a sliding window."
+  },
+  {
+   "start": 88.78,
+   "end": 119.38,
+   "text": "That's why this question, after this, we will go straight to the sliding window, then we will do this question. So, in this pattern, there are two questions left, which we will cover in this lecture. And tomorrow, we will do a complete revision of two patterns. What will we do in revision? We will pick up question by question. We will understand what the question was. And we will understand why two patterns, two pointers. Why two pointers? This is the most important. Why two pointers? Types of two pointers."
+  },
+  {
+   "start": 119.98,
+   "end": 149.23,
+   "text": "We will see that two pointers can be different, low-high can be different, what is the low-high movement and how to recognize. Once again we will go by looking at the flowchart. So tomorrow there will be revision, so do watch the lecture tomorrow. Today we will do these two questions. Okay, which two questions will we do today? The first will be triplets, smaller sum and Dutch national flag. Both are very important questions. Both are very important questions for you."
+  },
+  {
+   "start": 149.33,
+   "end": 177.44,
+   "text": "First, we will do the explanation of this, then there is a link of its code, you can go and see. Then we will do the explanation of this, you can go and see the link of the code. One more thing, the sound of this thak thak, this sound that comes, it will keep coming for a few days because what is it now, now you are seeing that my video is not there. Now you must be seeing just a board, right? The video that used to come here is not there. That is not because we have just come home, there is a little problem with the internet, so when we make this side video,"
+  },
+  {
+   "start": 177.44,
+   "end": 206.54,
+   "text": "1 hour video becomes around 10GB. So, to upload and edit that 10GB video, you have to upload it on YouTube. It takes a lot of internet. So, it takes a lot of time. So, I don't have that much internet. So, now we are directly recording it on the iPad. That's why you get this little by little. Bear with it a little. It doesn't come that much, but we will try not to come. It doesn't come that much, but it will come a little. Now if you write like this, now even the blackboard of this will come. So, it will come a little. We will try not to come. So, bear with it a little."
+  },
+  {
+   "start": 206.74,
+   "end": 237.31,
+   "text": "Okay. Triplets smaller. Triplets smaller. Now, those who have not seen yesterday's lecture, those who have not seen yesterday's threesome lecture, they will not understand this. We have already given a warning. Those who have seen the lecture, they will understand this in 5 minutes. It's a good thing. Okay. What does the question say? What does the question say? You have triplets. You have an array. Okay. What array do you have? Minus 1, 0, 1, and?"
+  },
+  {
+   "start": 237.31,
+   "end": 264.21,
+   "text": "You are given a sum which is 2. What you have to tell is number of i, j, k means number of triplets, their sum should be less than given sum. Their sum should be less than given sum means a i plus a j plus a k should be less than sum."
+  },
+  {
+   "start": 264.21,
+   "end": 293.23,
+   "text": "How many triplets are there? If there are three, then you have to answer three. How many different triplets are there? These are the indices of i, j. And you have been told that all the elements are distinct in the array. So no duplicates. So there is no duplicate. Those who have seen yesterday's lecture must be understanding why duplicates are so important and why they are saying no duplicates. Again I am saying that if you have not seen yesterday's lecture about the threesome,"
+  },
+  {
+   "start": 293.23,
+   "end": 323.54,
+   "text": "This one, first look at it, then look at this, otherwise you won't understand this, it will be useless. Don't waste time in this. Pause now and look at it. Okay? Now, those who have seen yesterday's threesome, the exact same question is that there is a slight twist. What did we do yesterday? Yesterday, we did that find triplets. Find triplets whose sum is equal to zero. And find triplets whose sum is equal to a given target."
+  },
+  {
+   "start": 323.82,
+   "end": 354.5,
+   "text": "equal to the given target. These were the two questions we did yesterday. Right? What else did we do? Sum close to target. Close to target. Close to target. So we saw these three types of questions yesterday. What is this question saying? Smaller sum. Number of triplets. Number with sum smaller than target. Smaller than target. One thing is fixed that it is the same type of question."
+  },
+  {
+   "start": 354.5,
+   "end": 385.31,
+   "text": "One thing is fixed that it will take two pointers. No one should have any doubt in this. After watching yesterday's lecture. It will take the concept of two sums. As we were doing in triplet. What we were doing in triplet? We were fixing the i. For every i, we were doing left right. Based on the sum, we were increasing left or right. Left or right. Either we were increasing or decreasing. This is what we have been doing since yesterday. This is what we have been doing since yesterday."
+  },
+  {
+   "start": 385.31,
+   "end": 416.1,
+   "text": "So, now you see. What was the first step in yesterday's question and today's question? Sort the array. If we sort it, then what will be the array? The array is sorted from the beginning, but still. 0, 1, 3. Okay. What is your sum? 2. From where did i go? i went from 0 to n-2. It went, right? What was left for every i? i plus 1."
+  },
+  {
+   "start": 416.1,
+   "end": 449.86,
+   "text": "What was right? Last. N minus 1. We have been doing this since yesterday. Okay. After that, what did we do? After that, we took out the sum. What was the sum? AI plus A left plus A right. Okay. After that, we took three types of decisions. How did we take decisions? Sum equal equal to target. Sum less than target. There were only three conditions every time."
+  },
+  {
+   "start": 449.86,
+   "end": 476.75,
+   "text": "and sum greater than target every time there were 3 conditions every time we used to do something or the other generally we used to do different things according to different questions but generally here left was plus plus and here right was minus minus to say generally to handle sum equal equal to target duplicate we used to increase both first we used to do left plus plus"
+  },
+  {
+   "start": 476.75,
+   "end": 507.06,
+   "text": "We used to write minus minus and keep increasing till the time there is no duplicate. Right? We used to do this. Now, according to every question, you will have to change in these three conditions. The condition is the same. The condition will be the same. Either the target can be equal or it can be less or it can be more. In 99% of cases, these two will be the same. You will have to change this here and there. You can't change 10% of things. Now see. What is your goal? Till here, everything is the same. What is your goal?"
+  },
+  {
+   "start": 507.12,
+   "end": 535.36,
+   "text": "Your goal is to find out this. Target. Your goal is this. Smaller sum. And you don't have to print any triplet. You just have to find the number. You have to find the number. You have to find the number. So, whose work do you have in this? You have the work of this one. You have the work of this one. Do you have the work of this one? No. Do you have the work of this one? No. So, can we do this? Take only two conditions."
+  },
+  {
+   "start": 535.36,
+   "end": 562.53,
+   "text": "One condition in which we got this sum less than target. Combine the next condition with these two. Because if the sum is bigger than the target, then it is the same thing. Because what are you looking for? You are looking for the sum smaller than the target. If the sum is equal to the target, then also it is bigger. Whenever someone gets bigger, what do you do? You reduce the right. You do this, right? Listen again. You want the sum smaller than the target. If you get the sum equal to the target, it means"
+  },
+  {
+   "start": 562.53,
+   "end": 592.4,
+   "text": "It is big, you don't want it. If you don't want a big thing, then what do you do? You do right minus minus. If it is small, then you do left plus plus. So, this is our condition. This is our perfect condition. This is useless condition. We will increase in this. So, can we do this? That we take out sum. Sum is equal to AI plus A left plus A right. Now, if"
+  },
+  {
+   "start": 593.46,
+   "end": 624.54,
+   "text": "Sum greater than or equal to target. What is this? These are both the conditions. This one is also a condition and this one is also a condition. What does this mean? That your sum is either equal or greater than the target. So we don't want that. We want smaller. So for smaller, write minus minus. Simple thing. If there is no duplicate, then you don't have to handle duplicate. Very good. But, but, but, else. What does this mean? That your sum is less than the target. This is what we want."
+  },
+  {
+   "start": 624.54,
+   "end": 649.97,
+   "text": "Now the answer, see here, this is what we need. What does it mean? Understand it with an example. Now here you have to calculate the answer. How will you calculate the answer? Your i is here. Your left is here. And your right is here. Okay? See, i is here, so minus 2 plus 0 plus 3. What is it? 1."
+  },
+  {
+   "start": 650.03,
+   "end": 680.0,
+   "text": "It's 1, right? 1 is smaller than sum, right? Yes, it is. 1 is smaller than 2, right? Yes. Now how will we get the answer? Now see, can you do this? Your left is here, right is here, and i is here. So your 1 triplet is done. Minus 2, 0 and 3. 1 triplet is done, right? So you can add 1 to the answer. You can add 1 to the answer. You can add 1 to the answer. You can add 1 to the answer. You can add 1 to the answer. You can add 1 to the answer."
+  },
+  {
+   "start": 680.0,
+   "end": 707.82,
+   "text": "My left is this and my 3 is this. The whole array is sorted. You are saying that my minus 2 plus 0 plus 3 is less than my sum. That's why you are taking it as a triplet. Is that right? Listen to this carefully. If left is this and right is this, whenever sum was less than target, then what did we do? We used to do left plus plus."
+  },
+  {
+   "start": 708.34,
+   "end": 736.82,
+   "text": "Okay. We used to do left plus plus. We used to do this. See. We used to do left plus plus. Why did we do it? Remember why did we do it. That's why we did it. If we do right minus minus in that, then 0 plus 3, if it is less than my target, then 0 plus 1 will definitely be less than my target. Listen again. Whenever our sum was less, then why didn't we do right here? That's why we didn't do it. Because whenever my left and right sum is less than my target, then"
+  },
+  {
+   "start": 736.82,
+   "end": 764.56,
+   "text": "Whatever is in the right and left, if you do the sum of everything from 0, then it will be less. Here is the most basic part of the question. Here is the most basic part of the question. You, when your i was here, this was here, this was here, then you said, okay, minus 1, 0, 3. I have one answer. Good. Will minus 2, 0, and 1, and 1, and 1, also be less? Yes, it will be less. Why? Minus 2 plus 0,"
+  },
+  {
+   "start": 764.56,
+   "end": 795.44,
+   "text": "plus 3 is less, then minus 2 plus 0 plus anything left of 3 will also be less, because it is sorted. 1 will be less than 3. Are you getting it? So when minus 2 plus 0 plus 3 is less than my target, then minus 2, 0, 1 will also be less than the target. So this should also be in the answer. Isn't it? What are you saying? Let me tell you again. What are you trying to say? What is it? Take a big array. Then you will understand. Look."
+  },
+  {
+   "start": 796.46,
+   "end": 828.66,
+   "text": "0, 1, 2, 3, 4, 5, 6, 7, 8. Okay? Now write this. 1, 2, 3, 4, 5, 6, 7, 8, 9. Your i is equal to 0. So where is your i? Your i is here. Your left is here. Your right is here. Is it right? Is it right? Okay. Now if you subtract the sum. So 1 plus 2 plus 9. This is your 12."
+  },
+  {
+   "start": 828.66,
+   "end": 854.96,
+   "text": "Assume your target is 15. Assume target is equal to 15. 12 is less than 15. So you add 1 to the answer that my 1, 2 and 9. I have one answer. Good. But if your 1 and 2 and 9's sum is less than your target, then will your 1, 2 and 8's sum also be less? Yes, it will be less because 8 is less than 9. This means that your 1, 2, 8 will also be less."
+  },
+  {
+   "start": 854.96,
+   "end": 884.94,
+   "text": "If your 1 to 8 is less, now see, we have fixed i and left. We are trying to do right here and there. If my sum of 1, 2 and 8 is less, then will the sum of 1 to 7 be less or more? It will be less, it will be less, this will also come in the answer. 1 to 7. Similarly, if you get any such left right, where the sum of i left and right is less, then whatever element is between left and right, the sum of all will be less. Listen again. Now left is here, right is here, but"
+  },
+  {
+   "start": 884.94,
+   "end": 909.82,
+   "text": "If you put the right here on any of them, then the sum will be less. If you put the right on 8, then it will be less. 7, 6, 5, 4, 3, 2. So, 0 and 1. This is your i and left. 0 and 1. This is your i and left. With this, if you put any right from 2 to 8, then the sum will be less. That's why, whenever we put the sum..."
+  },
+  {
+   "start": 909.82,
+   "end": 936.46,
+   "text": "less than target mile, jabhi bhi sum less than target mile, toh bas answer is equal to, answer plus 1 nahi karna hai, iske bich mein kitna element aa sakta hai, dekhiye, aapka left hai 1, ye hai, kitna aap right ko yahan se yahan tak, yahan se yahan tak, matlab, left plus 1 se jo right mila hai us tak, kitna element aega, gil lijiye, 1, 2, 3, 4, 5, 6, 7,"
+  },
+  {
+   "start": 936.46,
+   "end": 965.87,
+   "text": "Why 7? 8-1. 8-1 is equal to 7. How many numbers are there between two numbers? High number minus low number. So 1. And how many numbers are there between 8? 1, 2, 3, 4, 5, 6, 7 numbers. 8-1. That's why you don't have to do this. Answer is equal to answer plus right minus left. Yes."
+  },
+  {
+   "start": 965.87,
+   "end": 991.73,
+   "text": "light minus left. Did you understand why we are doing this? Now, once it's done, now see, now if you do this, then this left work is done. This left can make a pair with anyone. It has been made. Okay? Now you have to increase the left, which we used to do. Which we used to increase the left if the sum was less than the target. But before increasing the left, we have to find the answer that this left can make a pair with anyone."
+  },
+  {
+   "start": 991.73,
+   "end": 1019.31,
+   "text": "If any right can be made with this, this, this, this, this, any right can be made with this, then we have counted it in our answer. Now, we will increase the left here. And we will do a similar work for this. Did you understand why we are doing this? Why we have added this in the answer? After this, we will make the left plus plus. Because we used to do this. So, see if the condition is same or not. Your condition has only two conditions. Sum less than target and sum greater than equal to target."
+  },
+  {
+   "start": 1019.31,
+   "end": 1048.13,
+   "text": "So you have the same three conditions, you are doing the same thing, but before doing the work, you are doing your answer, whatever you have to do. Okay? Did you understand? If you didn't understand, then comment, we will explain it again tomorrow. Understanding is very important. Okay? So this is its pseudo code, you must have understood the pseudo code, yesterday's code and simple here. You will get the link of the code, go and see it. Time complexity, again, order of n and order of 1 space. This is done, time. Okay?"
+  },
+  {
+   "start": 1048.13,
+   "end": 1080.91,
+   "text": "No, sorry, order of N square. Watch yesterday's lecture, you will understand why N square. N square time, order of one space. This question is done. Come to the next question. Dutch national flag. Okay. Now this is a different type of question. The three-term we are doing is a different type of question. According to me, all the questions we have done in the sheet so far, this is the most different question. Okay. So, what has it told you in this? It says that you have been given an array. Okay. It has given an array. Okay."
+  },
+  {
+   "start": 1080.91,
+   "end": 1111.38,
+   "text": "It says that there are only three types of elements in array. 0, 1, 2. Okay. This is not sorted. So, in any order, it can be 1, 0, 0, 2, 0, 1. Like this. Okay. It has told you to rearrange the array. Rearrange the array. Inplace it. So that all 0s come together. All 1s come together. After that, all 2s come together. The array becomes like this."
+  },
+  {
+   "start": 1111.7,
+   "end": 1142.83,
+   "text": "Do like this Rearrange it In place it And do without sorting Do without sorting Do without sorting This has been told you in the question That you have to do this First of all Which pattern will be used in this? How to identify that? Is it an error question? Yes Is it sorted? No Okay, it is not sorted Can we sort it? Sort"
+  },
+  {
+   "start": 1142.9,
+   "end": 1171.89,
+   "text": "Can we do it? No. I said in the question that we don't have to do the sort. What is the question about rearrange? Have you taken rearrange in the question or you have to do it? I can understand. Yes. Yes. It is a rearrange question. Do we have to do in place? Means, no extra space. No extra space. Yes. So, you can see that the condition of two pointer is satisfied. There is also an array question. The sort one was not satisfied. But rearrange is written. And we have to do in place. So,"
+  },
+  {
+   "start": 1171.89,
+   "end": 1201.63,
+   "text": "According to me, there is a 90% chance that this is a two-pointer question. This is a two-pointer question. I have given it directly to you in the question. Now look, there are three ways to solve this question. First of all, brute force. First of all, brute force. Okay? Brute force. Now you have understood the question, right? You have to bring all zeros to one side. One and two. You have to make an array like this. First of all, brute force. What do you do? Brute force."
+  },
+  {
+   "start": 1201.63,
+   "end": 1232.5,
+   "text": "According to me, many of you must have understood what to do. You make three arrays. Now make three separate arrays. Make three separate arrays. This is the array of zero. This is the array of one. This is the array of two. So your main array, which is your main array, your main array, from that, put the whole zero here. So this is zero, zero, zero, zero. Put the whole one here. So this will be one, one, one. Put the whole two here. So this will be two, two. After that,"
+  },
+  {
+   "start": 1232.5,
+   "end": 1261.02,
+   "text": "Now come, write your main array as much as 0 is in it. Write your main array as much as 1 is in it. Write your main array as much as 2 is in it. So this is done. What is the time complexity of this? a, n. And the space complexity is order of n. Because we are making different arrays. So this is its brute force. Everyone must have understood this. Optimized. Optimize. Optimize. This is, in this,"
+  },
+  {
+   "start": 1261.02,
+   "end": 1289.47,
+   "text": "Now in optimized, what we are doing in brute force, we do it a little faster. What were you doing? You were making an array and writing 0 in it. But why is it necessary to write 0? You guys work, take 3 variables. 0 is equal to 0. 1 is equal to 0. 2 is equal to 0. And traverse the entire array once. Traverse the entire array once. And count it. So you understand that I have 0 is 4. 1 is 3. And 2 is 2. Now,"
+  },
+  {
+   "start": 1289.47,
+   "end": 1317.12,
+   "text": "According to this variable, write it in the array. You got to know that there are 4 zeros in my array, 3 ones, 2 twos. So just write 0, 0, 0, 0, 3 ones in the array. Look, the total size of the array will be 4 plus 3, 7 plus 2, 9. So it's a sure thing because the variable is made by counting from this array. So just write it like this, overwrite the array. This is your final array. This is your final array. Right? How much time complexity did it take?"
+  },
+  {
+   "start": 1317.12,
+   "end": 1342.18,
+   "text": "Order of n. How much space is there in this? Order of 1. There is no space. Where is any space? There is space of 3 variables. 3 variables are constant. So, this is one of the best approaches. This is one of the best approaches. If you tell this in any interview, the interview will not be able to argue with you. Because, the two-pointer approach that we are learning, that is also the same approach. That is also the same time complexity, same space complexity approach. If you write this in the interview,"
+  },
+  {
+   "start": 1342.18,
+   "end": 1370.11,
+   "text": "So no one will be able to argue with you, but if by chance he does it, he says, come on, tell me the two-pointer and the thing for which we are learning it, then this is the best approach. This is the best approach. Why is this the best approach? Let me tell you. In this, how many passes are you doing? What does passes mean? How many times are you going on the whole array? First of all, traverse the whole array once to make it 0 and 1 and 2."
+  },
+  {
+   "start": 1370.11,
+   "end": 1400.16,
+   "text": "This will be done only when we rotate the whole array once. So 1 is done. And you passed an array again to overwrite it. Since 0 is 4 times, we wrote it in 4 at the beginning. Then we wrote it in 3 at the beginning. Then we wrote it in 2. So you had to do 2 passes. Means you had to do the whole array like this twice. Okay? It doesn't matter, but you had to do it. Okay. In the best approach, you will only pass 1. Means you will go from the beginning to the end of the array and the array will be completely sorted. So this is the one pass approach. That's why this is the best approach."
+  },
+  {
+   "start": 1400.16,
+   "end": 1431.01,
+   "text": "so interviewer can tell you to do single pass single pass single pass approach this is single pass approach ok single pass approach till now what we have understood we have to sort harry right and we have to do single pass don't use space two pointer will be used two pointer will be used ok so we will open this question once so that we don't have any problem"
+  },
+  {
+   "start": 1431.01,
+   "end": 1470.06,
+   "text": "We will get that. We will get an example. We need a good example, right? Okay. We have this example. We have an example. 2, 0, 2, 1, 1, 0. Very good. Okay. Now how will we use two pointers in this? So, see, how will your final array come? When your final array is made, it will look like this. 0, 1, 2, 3, 4, 5."
+  },
+  {
+   "start": 1470.45,
+   "end": 1500.86,
+   "text": "How will your final array look like? It will be 2 times 0, 2 times 1, and 2 times 2. It will look like this, right? Now, pay attention to this. This is the region of 0. This is the region of 0. This is the region of 2. This is the region of 1. Right? So, this is 0, this is 1, and this one is 2. So, if you make any array, your final array is divided into 3 parts. You can see, one is the region of 0,"
+  },
+  {
+   "start": 1500.86,
+   "end": 1535.44,
+   "text": "there is a region of 1 and a region of 2 which means one array will start and one will come to 0 till the last of 0 then 1 will begin 1 will end 2 will begin 2 will end now see, this is how your array will look array will start from somewhere which will be from 0 but it's ok so array will start from somewhere array will go till here till 0 then 1 will start"
+  },
+  {
+   "start": 1535.44,
+   "end": 1564.19,
+   "text": "1 will also end, then after that 2 will start and 2 will end. So this was your 0 area, this is 1, this is 2, this is what is happening. In this case, what is your start? At your start, the index is 0. At which index did 0 last? At 1. At which did 1 begin? At 2. At which did 1 last? At 3. At which did 2 begin? At 4. And at which did 2 end? At 5. Okay?"
+  },
+  {
+   "start": 1564.19,
+   "end": 1595.5,
+   "text": "Did everyone understand or not? Okay? Now let's do the next part of it. The video will be connected to it immediately. See. Everyone understood that your array is divided. Your array is divided. It is divided in chunks. In 0, 1, 2. In everything. Now, just assume that the array given to you, which is your input array, your input array given to you is 2, 0, 2, 1, 1, 0."
+  },
+  {
+   "start": 1595.5,
+   "end": 1623.97,
+   "text": "0, 1, 2, 5. Assume that this region of yours is already given to you somewhere. Also, this region of yours is also given to you. What are we trying to say? That, assume that this region of yours is... Sorry, my recording went off. Okay, so what we were saying is that your regions are in the array. So, if we take 3 pointers like this,"
+  },
+  {
+   "start": 1623.97,
+   "end": 1653.3,
+   "text": "And let's assume, assume, see, now you have to rearrange this whole array. Let's assume that there is some part on the left of this array and there is some part on the right of this array. Okay. What do we say? Wherever the start of the array has taken place, suppose it is a very large infinite array, you just have to worry about this. But this array is infinite, I am just telling you to explain. So, suppose that from the start,"
+  },
+  {
+   "start": 1653.3,
+   "end": 1683.06,
+   "text": "till minus 1, everything is 0. Assume that everything is 0 here. This is in its correct form. Good. Assume that from high plus 1 till the end, everything is 2. So this is also sorted. This is also in its correct form. So from here, everything is 2. Good. You have to sort the middle part. You have to sort the middle part. You have to sort the middle part. So by law, by law,"
+  },
+  {
+   "start": 1683.06,
+   "end": 1713.12,
+   "text": "What should have been the rule? That there should have been a 1 in the middle part. This should have been the rule, right? If we are saying that the array is stuck somewhere in the middle, here everything is 0, here everything is 2, then there should have been a 1 here. Okay? So see, your problem is limited. Your problem is getting smaller and smaller. See, you are a teacher. Here the topper child is standing. Here the failure child is standing. You have been given that there should be an average child in the middle. If only there was an average here, then it would have been fine."
+  },
+  {
+   "start": 1713.12,
+   "end": 1741.7,
+   "text": "Here, if it was just average, everything would have been fine. But just think about a human, think about a teacher. Think carefully. The topper is here. The topper is here. The failure is here. You are a teacher, you have to arrange. If you see a failure here, what will you say? You go and stand at the end. Is it right? If you see a topper, what will you say? You go and stand at the beginning. What will you say to the failure? Go and stand at the end."
+  },
+  {
+   "start": 1741.7,
+   "end": 1771.78,
+   "text": "Yes, this is the average, 1 is the average. 1 should have been here. Leave the 1, leave the average. Then tell him, what are you doing here? Stand with the topper in the start. We are going to do this, we are going to do this. Okay, we are going to do this. Did you understand? Now see, what did he say? Low is equal to 0. Mid is equal to 0. High is equal to n minus 1. What did we say?"
+  },
+  {
+   "start": 1771.78,
+   "end": 1800.21,
+   "text": "What is the range of 0? From start to low, it is all 0 till minus 1. What is the range of 2? High, plus 1, not at high, from plus 1 to end, whatever will be the end, infinite end, no problem. Here it is 2. What will be the range of 1 then? What will be the range of 1? From low to mid, minus 1."
+  },
+  {
+   "start": 1801.14,
+   "end": 1828.48,
+   "text": "It will be the middle range. Now one range is left. Look at this. If you look at three pointers, then one range is left. We covered low minus 1 from start, so we covered this one. We covered end from high plus 1, so we covered this one too. We covered this one too from low to mid minus 1, but this range is left. This range is left. We have to sort this range. We have to sort this range. We have to sort this range. We have to sort from mid to high."
+  },
+  {
+   "start": 1828.48,
+   "end": 1857.84,
+   "text": "This is our problem. This is problematic. This is our problematic area. Again, understand in the example. What are we saying? See in the example. Is low minus 1 from start? Start from minus 1. Assume this is minus 1. Is everything till here 0? Yes, we have already accepted that everything is 0. Very good. End from high plus 1. Is everything 2 here? Yes, we have already accepted that everything is 2. Low to mid minus 1. So, 0 to minus 1. There is nothing wrong with that now."
+  },
+  {
+   "start": 1857.84,
+   "end": 1887.15,
+   "text": "there is sub 1 from 0 to minus 1, there is no reason for that, so we don't know. Mid to high. Mid to high means 0 to 5. Is everything unsorted? Is it problematic? Yes, it is problematic. You can see that it is jumbled. It is not in order, so this has to be sorted. This has to be sorted, okay? Now, the teacher's work that we told you, that if you look at the topper, then you try to send it at the start, if you look at the failure, then you try to send it at the end. We will do the same work now. So, what is our problematic?"
+  },
+  {
+   "start": 1887.15,
+   "end": 1915.6,
+   "text": "Mid is equal to 0. High is equal to n-1. Now, we have to sort this. So, why don't we move mid from 0 to end? Teacher will do this only. Teacher will do this only. Teacher will move the whole class. Teacher will look at every child one by one. Will look at every child one by one. Till when will he look? From mid to high. Why? Because we have accepted that high plus 1 is sorted. High plus 1 is sorted. And it will always be sorted. We will make sure. See."
+  },
+  {
+   "start": 1915.6,
+   "end": 1945.97,
+   "text": "You must be thinking that how and why did we accept this? This is an algorithm. The name of this algorithm is Dutch National Flag. So, this algorithm has been thought up. You will have to do this. We have not just accepted this region. We will make sure that it is true. It should be true every time. In every case, in every iteration, these four things should be true. Now, we will see you. What are we doing? We are moving from mid to end. So, we will move from mid to high."
+  },
+  {
+   "start": 1946.03,
+   "end": 1972.5,
+   "text": "Okay. Now, it will go till mid-high. Now see, there can be three cases of array of mid. What can you get in array of mid? First of all, you can get 0. Then you can get 1. And you can get 2. You can get only three things, right? There are only three elements in the array. Okay. Let's do it one by one and see what happens in all. First of all, what did we say? Teacher got a topper. So, what will the teacher tell the topper? You go and stand with the topper. So,"
+  },
+  {
+   "start": 1972.5,
+   "end": 1998.54,
+   "text": "The teacher will say that where the topper is standing, you stand after this. What will happen to the boy over there? What will the boys over there do? They will swap the boys over there. So see. So see. See again. See again. If we are teachers, what will we say? That if you are zero, then you go to A of low. See again. Where is zero?"
+  },
+  {
+   "start": 1998.54,
+   "end": 2028.11,
+   "text": "0 is till low minus 1, so what is the next space of 0 empty? In low minus 1, we are assuming that it is full. The next space which is empty is low. Okay? We will say A low and A mid, which we are now. Swap it. What happened with this? The mid one which was 0, it first went to low. Okay? It first went to low. The mid one which was 0, it first went to low. Okay? It's a good thing. More, more, more."
+  },
+  {
+   "start": 2028.66,
+   "end": 2055.58,
+   "text": "What will come from low? What will come from low? What can come from low? Can 0 come from low? No. Why? Because where was 0? 0 was till low minus 1. 0 was till low minus 1. 0 can't come from low. Can 2 come from there? No, no, no, no, no. High plus 1 to end is 2. What can come from low? Only 1 can come from low. Only 1 can come from low. Only 1 can come from low. And if 1 is coming, then 1 is coming. It's a very good thing because we have to keep 1 in between."
+  },
+  {
+   "start": 2055.58,
+   "end": 2084.3,
+   "text": "So, nothing like this can come from the low, so that there is a problem. Only 1 can come from the low. We are sending 0, 1 is coming, so very good. Do this. Increase the low, because now the range of 0 has increased. Increase the mid as well. The mid work is done, here 1 has come, 1 was needed. If 1 is found in A mid, then this is the best case. Only 1 was needed, only 1 is needed, right? Already there is 0, here is 2, if 1 is found in all, then it is a very good thing. Good. Keep getting 1 in all."
+  },
+  {
+   "start": 2084.3,
+   "end": 2106.02,
+   "text": "Increase mid, there is no need to do anything. Look at this one, this is a special case. You got 2. So, where can we send 2? Where should we send 2? Should we send it at the last? Where is 2 standing? Is 2's family standing? Where is 2's family standing? 2's family is standing at high plus 1 and at the end. Okay? So, if high is here, and here is high plus 1,"
+  },
+  {
+   "start": 2106.02,
+   "end": 2136.5,
+   "text": "So from here 2 is filled, there is a lot of 2. So where do we put 2? We will bring 2 before this and make it stand. So bring 2 here and make it stand, bring it here and make it stand, bring it here and make it stand. Is it right or not? Bring 2 here and make it stand. So see, my internet is going on again and again, okay. Do a little patience, sorry. Yes, now where are we sending this 2? Are we sending it at the end? Okay. So you must have understood one thing that A mid"
+  },
+  {
+   "start": 2136.94,
+   "end": 2161.71,
+   "text": "and A high. Swap it. Okay. Once you swap it, then what did you do in the previous one? You were swapping in the previous one too. Very good. And you were increasing both. Okay. Will we do the same thing in this? Will we say increase mid? And will the high increase or not? High will be less. High is coming from opposite. Okay. We can't do this. Why can't we do this? Understand this very carefully."
+  },
+  {
+   "start": 2162.48,
+   "end": 2191.62,
+   "text": "What was the expectation of coming from the array of low? From the array of low, we have proved that only 1 could have come. Why? Because 0 was till low minus 1. From low to mid was 1, so from here 1 would have come. Okay? What can come from high? What can come from high? Again look at the flowchart. What is there in high? Look. Mid to high. Is this the high area? This is the problematic area. This is problematic. There is no deterministic in this. What did we say?"
+  },
+  {
+   "start": 2191.62,
+   "end": 2220.46,
+   "text": "From start to low minus 1 is 0. From high plus 1 to end is 2. From low to mid minus 1 is 1. But this area is problematic. So anything can come from high. From high, 0, 1, 2. Anything can come. Anything can come. Anything can come. So anything can come from high. So you have to reduce high. Because what have we ever put in high? We have put 2 in high. So this has become a family of 2. Now we will bring high here."
+  },
+  {
+   "start": 2220.46,
+   "end": 2246.98,
+   "text": "And this will be high plus 1. That is a very good thing. High should be minus minus. But we will not do anything about mid. Why will we not do anything about mid? Because if 0 has come from here, then you will have to do this work again. If 1 has come here, then you will have to do this work again. If 2 has come from here, then you will have to do this work again. So because it is a problematic area, because we do not know what has come from high, then we will not do anything about mid. And we will close it."
+  },
+  {
+   "start": 2246.98,
+   "end": 2278.03,
+   "text": "And how long will this whole story go on? What is the problematic area? From mid to high. So, as soon as mid becomes greater than high, we will stop doing this. We will stop this. We will stop this. We will do dry run. You will understand completely. It is a little hard algorithm. We believe it is very hard. But we will have to do a little. Okay. 2, 0, 2."
+  },
+  {
+   "start": 2278.22,
+   "end": 2308.98,
+   "text": "1, 1, 0. 0, 1, 2, 3, 4, 5. What did we say? Increase the low. Low is equal to 0. Mid is equal to 0. High is equal to n minus 1, 5. How long do we have to run the mid? Until it crosses the high. Very good. Let's run it. Mid is equal to 0. What is mid is equal to 0? It's 2. What did we do in 2? We swapped mid and high. Mid and?"
+  },
+  {
+   "start": 2308.98,
+   "end": 2340.72,
+   "text": "we used to swap high. We used to do this. We used to swap mid and high. We'll swap them now. So, first of all, what was here? Here was 2. And here was 0. Swap mid and high. So, here we wrote 2. Here we wrote 0. And we reduced the high. We reduced the high. We reduced the high. But do we have to increase the mid? No, we don't have to increase the mid. Because we don't know what came from there. Anything can come."
+  },
+  {
+   "start": 2340.72,
+   "end": 2370.53,
+   "text": "That's why we will go to the next iteration. Mid is equal to 0 again. Mid is not increased. Now see, now 0 has come. What we had to do? We had to swap mid and low. Here look, mid is also 0 and low is also 0. So there is no need. So if you swap, it will remain the same. And we have to increase both. And we have to increase both. Very good. Increase both. Make it 1. Mid is equal to 1. Mid is equal to 1. Again 0 has come. What we have to do? We have to swap both. If both are same, then there will be no difference. We have to increase both. Good."
+  },
+  {
+   "start": 2370.53,
+   "end": 2397.79,
+   "text": "Increase both. Make it 2. Make it 2. Mid is equal to 2. Now 2 is in mid is equal to 2. Now what do we do when 2 comes? We swap it with high. So we will swap it with high is equal to 4. When we swap it with 4, this will happen. And we will put 2 on 4. And we will reduce the high. We will reduce the high but not increase the mid. Very good. So mid is equal to 2."
+  },
+  {
+   "start": 2397.79,
+   "end": 2426.82,
+   "text": "What is 1 in mid is equal to 2? 1. What is 1? Best case. Very good. Just increase the mid. Just increase the mid. Good. Now, mid is equal to 3. Look carefully. Has it crossed the high? No, it is equal. We can do it. There is 1 in mid is equal to high. Very good. Increase the mid. Now look, mid is equal to 4. What is mid? Has it increased from 3?"
+  },
+  {
+   "start": 2426.82,
+   "end": 2454.75,
+   "text": "Yes, it increased. This means that we have solved the problematic area of mid to high. Exit the program. Now see, has your array been sorted? Has your array been sorted? Has your 0 come here? Has your 1 come here? Has your 2 come here? Yes, it has come. Return it. So, this is the complete explanation of this. I think we have written the pseudocode. You have seen the pseudocode. The code link will be found in the description."
+  },
+  {
+   "start": 2454.75,
+   "end": 2475.84,
+   "text": "So these are the two questions. Very important, very important question. I am saying it again and again, very important question. Watch it again, watch it again, understand it, submit it. And yes, do submit it. You can take some reference from the code link. Whichever CPP, Java, Python, you can take reference from it. But do submit it, do submit it. Now, see you tomorrow."
+  }
+ ]
+}

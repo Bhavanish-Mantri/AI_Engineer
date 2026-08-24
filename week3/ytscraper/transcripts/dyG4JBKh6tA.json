@@ -1,0 +1,279 @@
+{
+ "video_id": "dyG4JBKh6tA",
+ "title": "DP Full Revision and Next Steps | DP Series Episode 16",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1320,
+ "segments": [
+  {
+   "start": 0.75,
+   "end": 20.83,
+   "text": "Hello students, welcome to the D.P's revision lecture. It won't take you much time to learn D.P. Revision means that you will be able to reconcise what you have learned in English. And we will also talk about the next steps that what is going to happen next. Many of you were watching my AI course."
+  },
+  {
+   "start": 20.83,
+   "end": 33.33,
+   "text": "There are 7-8 lectures left in DSA and that too will be done in parallel. So first we will do the revision of DP and then we will talk about what is going to happen next."
+  },
+  {
+   "start": 33.33,
+   "end": 55.46,
+   "text": "So, when we started learning dynamic programming, we told you that you should know recursion. You should watch my full playlist on recursion. Without recursion, dynamic programming is not possible. So, we told you that you should know recursion. You learned recursion, we learned recursion. What used to happen in recursion? If there is a problem,"
+  },
+  {
+   "start": 55.46,
+   "end": 74.34,
+   "text": "Assume that n is a big problem. Assume that the size of a problem is n. So what did we say? Do one thing. If someone solves n-1 and gives it to us. Assume that you have to find the sum of 10 numbers. You have to find the sum of 1 to 10 for example. So here n is 10. So what did we say? Do one thing."
+  },
+  {
+   "start": 74.34,
+   "end": 103.34,
+   "text": "If someone gives us the sum of 1 to 9, i.e. 1 plus 2 plus 3 plus 9, then we will add 10 to the answer and return our answer. The whole recursion is based on this concept that we should have faith in God. And we should have faith in God that we will get the answer of 1 to 9. Don't worry about where you will get it from. You will get it. Now how will you make the answer? Now you will have to think that the answer that you have got,"
+  },
+  {
+   "start": 103.34,
+   "end": 132.51,
+   "text": "In that, what should we do so that we get the complete answer? So in that, you used to say that okay, we will add 10 to it and give our answer. The whole recursion was based on this. Now, why did dynamic programming come? Why did dynamic programming need? Because it was seen that in recursion, recursion is a very good concept, but it was seen that there were some overlapping problems. What used to happen? Overlapping. When we were reading episode 1 or 2 of DP, we told you that overlapping sub-problems. What used to happen in overlapping sub-problems? That suppose someone is a tea vendor, someone is selling tea."
+  },
+  {
+   "start": 132.51,
+   "end": 161.78,
+   "text": "A person came to him and asked him to tell the price of a cup of tea. The man looked at the menu and said that the price of a cup of tea is 10 rupees. The second man came and said that we need a tea plus a biscuit. Tell me the price of this. The poor man opened his menu again. He came to know that the price of a tea is 10 rupees and the price of a biscuit is 5 rupees. So he said that the total price of this will be 15 rupees. This is also right. Now another man came."
+  },
+  {
+   "start": 161.78,
+   "end": 188.59,
+   "text": "He used to say that we need one tea, one biscuit, and one fan. You know fans are eaten. So again that poor man used to say that one tea costs Rs. 10, one biscuit costs Rs. 5, and one fan costs Rs. 15. So what did he say? Total you have Rs. 30. You can understand this as a little recursion. Now what was the mistake of the tea in this? He had already taken out the price of one tea."
+  },
+  {
+   "start": 188.59,
+   "end": 218.02,
+   "text": "Already 1 tea plus 1 biscuit is also fine. Now when the third person came, he used to ask 1 tea, 1 biscuit, 1 fan. So he used to do the whole calculation again. He used to open the menu, read it, and add it. It took time. If the tea man did a trick, he would have made a board. He would have made a Delhi board. In the beginning, a board would remain empty. Suppose the first person asked him, what is the price of 1 tea? So in the beginning, he would not remember. So he saw the price of 1 tea and told him 10 rupees. But on his board,"
+  },
+  {
+   "start": 218.02,
+   "end": 230.11,
+   "text": "One tea costs 10 rupees. He remembered that. He wrote it on his board. The second person came. He said, tell me the price of one tea plus one biscuit. Now what did he do? He didn't open the menu book for the price of one tea."
+  },
+  {
+   "start": 230.11,
+   "end": 254.42,
+   "text": "He looked at his board and said, is the price of tea written on my board? So he said, yes, it is written on my tea, Rs. 10. So what did he do? He took Rs. 10, looked at the price of a biscuit from the menu book, he found out that the price of biscuit is Rs. 5. So what did he do? He directly told him Rs. 15 for Rs. 10 plus Rs. 5. And he also wrote on his board that the price of a tea plus a biscuit is Rs. 15. When the third person came, he did the same thing again. What did he do?"
+  },
+  {
+   "start": 254.42,
+   "end": 275.65,
+   "text": "He asked, one tea, one biscuit, one fan. Now, that man knows that one tea and one biscuit, its price is already written on the board. How much is written? Its price is already written as Rs. 15. So, what did he do? He saw the price of just one fan and Rs. 15. And he added it and told him. And this combination too, where did he write it? He wrote it on his board."
+  },
+  {
+   "start": 275.65,
+   "end": 297.54,
+   "text": "Problem ko, chai wala jo isme dimaag lagaya na, isi cheez ko technical terms mein memoization bolte hain. Memoization ka kya matlab hota hai? Memory ka kya matlab hota hai? Yad rakhna cheez ho ko. Toh overlapping sab problems hota hai na, ki aap baar baar ek hi cheez solve kar rahe hain. Baar baar ek hi, ek hi, ek hi, ek hi kaam baar baar karte the. Toh baar baar kyo kar rahe ho kaam? Ek baar agar koi kaam kar liye ho, uska answer yad rakh lo na kahin pe."
+  },
+  {
+   "start": 297.54,
+   "end": 326.59,
+   "text": "If you need it later, if you need the answer to that problem later, then don't solve it again. Look at your board, look at your board. This is what is called memoization in dynamic programming. If you are writing a recursion and in recursion you get to know that you are solving the same problem again and again. For example, if you have written a recursion function like this, int fun, int n. What does this mean? You will pass a number n and your fun will give you an integer answer."
+  },
+  {
+   "start": 326.59,
+   "end": 351.04,
+   "text": "If you get to know that the answer to fun of 5 is 100. Anything can happen in the program. But if you get to know that when you calculate fun of 5, the answer will be 100. So do one thing. Write down the answer of fun of 5 as 100 in your diary or on your board. If someone asks you to write down fun of 5 again, what will you do?"
+  },
+  {
+   "start": 351.04,
+   "end": 377.6,
+   "text": "We will not run the calculation of fun of 5 again and again. We will go straight and see our diary or our board. So what was this thing called? Memoization was called. In which example did we see this thing in the best example? In Fibonacci number. What used to happen in Fibonacci number? Fn is equal to Fn plus 1 plus Fn plus 2. So Fibonacci used to solve this exact problem. Once if any answer has come out, write its answer somewhere."
+  },
+  {
+   "start": 377.6,
+   "end": 404.58,
+   "text": "So this was Memoization. What was done in Memoization? First of all, recursion was written. After that, it was checked if there were any overlapping problems. Overlapping means, are you getting the same answer of the same variable again and again? If this is the case, then what we used to do? We used to make a DP array and remember the answers in it. After that,"
+  },
+  {
+   "start": 404.58,
+   "end": 434.5,
+   "text": "After adding one line, we would just check that if you want to solve this fun of x, is x already solved? Have you already written the answer of x? If this was the case, then we would have returned it directly from the DP array. If this was not the case, then we would have solved it completely and before returning it, we would have written it in the DP array. We would have written it in the DP array so that it would be useful in the future."
+  },
+  {
+   "start": 434.5,
+   "end": 461.52,
+   "text": "This was the whole thing, Memoization, in which we spent 3, 4, 5 lectures. It's true, I understood. Let's move on. One more thing we saw, we told you a very important thing, that you don't have to put DP in every question. I mean, what is the tendency of people, right? Because DP is taught like this, that it is a very hard topic, it is a hard topic. So people open such a Leetcode or GFG, read the question, think for 2-3 minutes, they don't understand anything, so they think the question is very hard."
+  },
+  {
+   "start": 461.52,
+   "end": 485.46,
+   "text": "So they think that what can be applied in a hard question? In a hard question, let's apply DP. No, you don't have to apply DP like a madman in every question. When do you have to apply DP? Whenever you get a choice-based question, what do you get? You get a choice-based question. For example, climbing stairs. You can climb one stair at a time or you can climb two stairs at a time. So what happened? You are given a choice."
+  },
+  {
+   "start": 485.46,
+   "end": 508.74,
+   "text": "House robber, what was house robber? House robber, you had to take a choice. That brother, you will loot this house or you will leave this house. So, first of all, it should be choice based. And the question should be that you cannot make any definite algorithm for it. You cannot make any definite algorithm for it. What does it mean to say that in house robber, you could not do this that let's go."
+  },
+  {
+   "start": 508.74,
+   "end": 517.92,
+   "text": "We will leave Zero House. Or we will rob Zero House. It was not possible. You saw that if you both are definite."
+  },
+  {
+   "start": 517.92,
+   "end": 545.73,
+   "text": "It will be rigid that we will do the same thing in this type of house. So your answer is the probability of being wrong. So that's why you had to take all the choices. For example, someone is telling you that you are in 10th. You have two choices. You can pass or you can fail. Now you have seen that you cannot be rigid in this. That we will fail in 10th or we will pass in 10th. You have to keep both the options open. You have to pass 10 and see. You have to fail 10 and see."
+  },
+  {
+   "start": 545.73,
+   "end": 572.24,
+   "text": "You will have to take the answer which will give you a good answer, which will make you successful in life. So in such questions where choice is involved, option is involved, you have been given various ways that you can do this, you can do this, you can do this, and you don't know what to do right from the beginning. Overall, you have to optimize your future or your result, but you don't know what to do now to get the benefit. So what did you have to do?"
+  },
+  {
+   "start": 572.24,
+   "end": 595.02,
+   "text": "Try everything, try all the options that are available. Return the result that is better than that. This type of question requires dynamic programming and no other question requires dynamic programming. Only if you find the question hard, it doesn't mean that it will require DP. No. So remember this. Memoization is done. When does DP take place? After that, what did we read?"
+  },
+  {
+   "start": 595.02,
+   "end": 622.74,
+   "text": "Tabulation. What did you read? Tabulation. Because we told you that even though if you write recursion DP, but you have an expectation that you write it in tabulation form. Tabulation is nothing. We told you one more thing that any code or any DSA problem in the world can be solved by recursion and iteration. Recursion means the recursion function that we write can be solved by that. Iteration means where you write a loop can be solved by that."
+  },
+  {
+   "start": 622.74,
+   "end": 647.25,
+   "text": "This is applicable to the simplest of programs as well as the most complex NASA-level programs. The simplest means sum of n numbers. You can write sum of n numbers with recursion or with a loop. You can solve any question in both ways. There is no question in the world that only requires recursion or only requires a loop. This is not possible."
+  },
+  {
+   "start": 647.25,
+   "end": 673.39,
+   "text": "Memoization used to be solved with recursion. The obvious thing is that it will be solved with recursion. The tabulation that came, tabulation was nothing. Tabulation means whatever logic you have written in recursion, write it in the loop form. For this, what tricks have we learned? Look, analyze recursion, look at recursion, understand recursion. This is your DP array."
+  },
+  {
+   "start": 673.39,
+   "end": 700.11,
+   "text": "How is it filling? How is it filling or filling? How is it filling or filling? What do we do in tabulation? We will not go into much detail because we have already discussed everything. Just to remind you what used to happen. In tabulation, first of all, we used to see the base case of the recursion and fill the DP array ourselves. For example, if this was the base case in Fibonacci,"
+  },
+  {
+   "start": 700.11,
+   "end": 730.06,
+   "text": "of Fibonacci. As far as we remember, n is equal to 0 and n is equal to 1. So what did we say? Return n. We used to fill this base case in DPRA. What did we write? That the answer of DP0 will be 0 and the answer of DP1 will be 1. So first of all, we filled the recursion by looking at the base case. After that, you have to see what is the formula of filling DPRA or recursion. So what was the formula in Fibonacci? That the answer of fun n, what was the answer of fun n? Fun of"
+  },
+  {
+   "start": 730.06,
+   "end": 755.18,
+   "text": "n-1 plus fun of n-2. Write the same thing in the loop. Write the same thing that dp of i is equal to dp of i-1 plus dp of i-2. This is the formula. How will the loop work? The way the DPRA is filling, it will work in the same way. If you pay attention to this, then what are the two things that dpi needs?"
+  },
+  {
+   "start": 755.44,
+   "end": 776.64,
+   "text": "dp i minus 1 ka need hai aur dp i minus 2 ka need hai. To apko loop kis tarike se chalana padega? Apko loop aise chalana padega ki for i is equal to 2, i less than equal to n, i plus plus aur apko simply ye kya kar dena padega? dp of i is equal to dp of i minus 1 plus dp of i minus 2."
+  },
+  {
+   "start": 776.64,
+   "end": 800.54,
+   "text": "How will we run this loop? How will we understand? How is the dp array filling? Who needs dp of i? Now dp of i needs i-1 and i-2. Meaning, if you want to get dp of 4, then it will need dp of 3 and dp of 2. This means that i is equal to 2 and i is equal to 3."
+  },
+  {
+   "start": 800.54,
+   "end": 829.17,
+   "text": "First, we need to solve i is equal to 4. This means if you solve i is equal to 4 first, then where will the value of i is equal to 2 and i is equal to 3 come from? It won't come from anywhere. That's why the loop runs straight. If a DP relation was such that DP of i is required in the future. DP of i plus 1 plus DP of i plus 2. This is what is required. So how do you run it? Then you have to run the loop backwards. i is equal to n. i greater than equal to 2."
+  },
+  {
+   "start": 829.17,
+   "end": 857.78,
+   "text": "And I minus minus. Why? Because this DP needs the ones ahead. Meaning, DP of 4 needs DP of 5. And DP of 6 needs. This means, I is equal to 6 and I is equal to 5. I is equal to 4. It should be solved first. When you solve it in reverse, it will be solved first. The whole concept is based on this. There is no rocket science. There is no such great concept. Simple observation. Simple math. Simple common sense."
+  },
+  {
+   "start": 857.78,
+   "end": 884.75,
+   "text": "Computer science means common sense. This is tabulation. After that, we used to see that you can optimize space in tabulation. What can you optimize? You can optimize space. What does this mean? This means that you used to see your recursion or your loop. You used to know, let's say, in Fibonacci. You used to know that dp of i needs two things. dp of i minus 1 and dp of i minus 2."
+  },
+  {
+   "start": 884.75,
+   "end": 913.73,
+   "text": "That means, no matter how big your DPRA is, let's say your DPRA is 0, 1, 2, 3, 4, 5, 6. Imagine you are solving for this, for 5. That means if you are solving for DP of 5, you will need two things. Which two things will you need? You will need DP of 4 plus DP of 3. To solve DP of 5, you neither need DP of 2, nor DP of 1, nor DP of 0."
+  },
+  {
+   "start": 913.73,
+   "end": 930.34,
+   "text": "You don't need anything. You only need these two things. So what we used to do in this is that we will maintain the whole DP array. We maintain two variables. Now if your current is DP of 5, then your DP of 4 will be the previous value which was previously computed. DP of 3 will be"
+  },
+  {
+   "start": 930.34,
+   "end": 954.32,
+   "text": "If we maintain only two variables and keep updating them, then my work will be done and there will be no need for full DPRA. This is what was called space optimization. That is why tabulation is considered as a superior way of memoization because there are many ways to do it. First of all, you do not have the stack type. You know that this is OS type knowledge, but we will tell you."
+  },
+  {
+   "start": 954.54,
+   "end": 974.38,
+   "text": "We might have told you, but let me tell you again. Whenever any recursion is running, what happens in the computer? Suppose your fun of 5 runs, then the computer will make a memory for fun of 5. Where? In the stack. Stack means not only the stack data structure, but also in the OS. What should I explain to you?"
+  },
+  {
+   "start": 974.38,
+   "end": 994.86,
+   "text": "Consider a computer. A computer that runs inside your laptop has a space called a stack space. It is called a heap space. There are two types of spaces. So whenever fun of 5 is executed, some memory is allocated for fun of 5 in the stack space. Let's say 10 MB of memory is allocated. Now, let's say you call fun of 5 and fun of 4."
+  },
+  {
+   "start": 994.86,
+   "end": 1008.86,
+   "text": "What will happen? One more memory will be allocated in the stack, which will be for fun of 4. This too will take 10MB of memory. Assume fun of 4 calls fun of 3. One more memory will be allocated in the stack, which will also be for fun of 10MB."
+  },
+  {
+   "start": 1008.86,
+   "end": 1030.8,
+   "text": "So when you write a recursion, your computer's memory keeps growing. That's why when you write a recursion which is not ending and doesn't have a base case, then your segmentation error or out of memory, your computer gets spoiled. It keeps allocating memory and slowly the RAM gets destroyed."
+  },
+  {
+   "start": 1030.86,
+   "end": 1058.94,
+   "text": "So whenever you write recursion, you need some extra space in it. We are not talking about DP array. This extra space takes space in your internal laptop. When you write tabulation, it doesn't happen like this. Because in tabulation, you are writing loop. You are writing loop. There is no space allocated separately for loop. But to run the function of recursion, there is a separate space. When this fun of 3 will end, then this fun of 3 space will be free."
+  },
+  {
+   "start": 1058.94,
+   "end": 1087.47,
+   "text": "Until the fun of 3 is over, this space will remain in your memory. That's why in recursion, we say that a space is more required in tabulation. Because in loop, in tabulation, there is no space in the loop. That's why it has been called superior. Or you have been told that you should do tabulation in the interview. So that's it. Overall, that was it. Now, obviously, it was not so small. There are a lot of lectures, a lot of questions. So we hope that you will be watching this after watching it. You will not be watching it for the first time, okay? Those who have not watched it,"
+  },
+  {
+   "start": 1087.47,
+   "end": 1117.12,
+   "text": "There are 15 episodes, which are very short. Go and watch them immediately. After that, you don't need to watch all this. So, this is the end of the DP revision. And your DP, more than this DP is not asked. I mean, in my experience, it is not asked. Now, if you are talking about a company like Code Nation, then obviously, it will be asked there. Generally, it is not asked. In 99% of companies, more than this DP, no one knows and no one asks. Okay. So, now, the DP revision is over. Next steps. Next steps, for which you must have stopped. In the next step,"
+  },
+  {
+   "start": 1117.12,
+   "end": 1143.78,
+   "text": "There are 3-4 types of topics. The first topic is Bit Manipulation, which we will teach. There is no need to learn much in this. A little bit manipulation because people don't know bit, they don't understand what bit is. In this, in 2-3 questions, you will learn it. You will learn it like a job. Bit manipulation is also a very rare topic. It means it is asked very rarely. Okay. In this, there are Zor questions. Generally, bit manipulation is very important for those who do competitive programming because it is very important there."
+  },
+  {
+   "start": 1143.78,
+   "end": 1171.07,
+   "text": "In an interview, bit manipulation is not a very famous topic. So generally, we are asked a question like Zor, find the missing number, etc. So we are saying that in 2-3 or 2-4 questions, bit manipulation will happen. Second thing, DQ. DQ is left out. What is DQ structure? We have read two structures, stack and queue. What was stack? Stack was last in, first out. The one who goes last will come out first. What was queue? First in, first out. Queue means queue, line."
+  },
+  {
+   "start": 1171.07,
+   "end": 1197.6,
+   "text": "The person who goes first will get the ticket first. DQ is the plus of these two. People think that half of the problems are solved by stats, half of the problems are solved by Q. If you combine these two in some way, then what happens in the process of combining? DQ becomes. We will do one question of DQ, you will understand the whole DQ. You will understand DQ in one question of sliding window. It is a hard question, but we will explain DQ. After DQ comes greedy."
+  },
+  {
+   "start": 1197.6,
+   "end": 1226.03,
+   "text": "You will have to do 2-3 questions because you will get an idea when to use greedy. Greedy is a very confusing topic. It is very difficult to judge greedy. Greedy means greed algorithm. What does greed mean? That you are solving a program. What was the problem in DP? That you don't understand which choice to take. This used to happen. Greedy is also choice based. But in that, the choice that you are feeling the best right now. For now. The choice that you are feeling the best right now. Take that and call it greedy. For example."
+  },
+  {
+   "start": 1226.03,
+   "end": 1254.29,
+   "text": "Today you have two choices, whether you want to study or watch a reel. So in DT, you can do everything. You can go ahead and watch a reel and you will know that you have become an idiot by watching a reel. So you don't watch a reel. You will know that studying will get you a job. Later you will know that studying is the right choice. What does Greedy say? What do you like now? What do you like at this time? At this time, watching a reel is good. Greedy says, watch a reel, don't study."
+  },
+  {
+   "start": 1254.29,
+   "end": 1274.27,
+   "text": "Now do you understand what I am saying? There are two choices. Either you have to eat a lot of food and go to sleep or you have to go to the gym. What does DP say? Do both and see. You will come to know that by eating you have gained 100 kg and by going to the gym you have gained 6-pack abs. So later DP will come to know that it is good to make 6-pack abs. What does Greedy say?"
+  },
+  {
+   "start": 1274.27,
+   "end": 1299.86,
+   "text": "If you feel good now, then do it. What is good now? If you feel good to eat, then you will eat and sleep. This concept is called greedy algorithm. I am telling you in simple language. Okay. So, bit manipulation, DQ, greedy and two more things are left. What? What else is left? Yes, okay. That's it. Try. If we get time, then we will see try. Let's see a question of try. Try is also a very advanced concept. But try."
+  },
+  {
+   "start": 1299.86,
+   "end": 1319.5,
+   "text": "It takes less time to learn. Try is not as hard as it seems. We are not talking about TRI. Try. T-R-I-E. Okay? So, these are the next steps. In the next 7-8 days, it will be over. Till then, we will suggest you to keep on revising what you have done before. Don't forget them. Okay? So, let's meet in the next lecture. See you."
+  }
+ ]
+}

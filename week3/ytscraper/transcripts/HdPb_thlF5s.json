@@ -1,0 +1,289 @@
+{
+ "video_id": "HdPb_thlF5s",
+ "title": "Intro To Recursion DSA Pattern | Beginner To Advanced | Best Recursion Series",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1533,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 28.72,
+   "text": "Valentine's Day is coming and where is Pratyush ji? He is going to enquire in the hotel. You must be thinking that we came to study your Garjan, what is he teaching? So wait a little, be patient, give us 2 minutes. Where is Pratyush ji? In the hotel. There are floors in the hotel, it is a very big hotel. So what does Pratyush have to enquire? That what is the total number of floors in the hotel? So you must be seeing that there are 4 floors. 1, 2, 3, 4. So it is very easy that he will climb the entire floor and count. But we don't want to climb the entire floor, we don't know how big the hotel is, we are feeling a little lazy."
+  },
+  {
+   "start": 28.72,
+   "end": 56.38,
+   "text": "And see, there is a guard on every floor. See, there is a guard on every floor in the hotel. So, what do we think? What will we climb? The guard is sitting, right? We will go and ask this guard. How much floor is there? So, the guard will tell us. Simple. So, let's do that. So, we go and ask this guard that how much floor is there in the hotel? Now, the guard says that we are from the village. We know so much that how much floor is there and how much square feet is there. So, we are sitting in some other office. So, we are guarding. The floor on which we are sitting, there is one floor. We don't know the rest."
+  },
+  {
+   "start": 56.38,
+   "end": 85.52,
+   "text": "We ask them to tell us the number of floors. So what does the guard say? We know that we have one floor. The guard on the upper floor is very sharp. He must know that he was the sharpest in the village. We ask him how many floors are there on the upper floor. He will tell us the number of floors by adding 1. This means that this is guard 1."
+  },
+  {
+   "start": 85.52,
+   "end": 114.62,
+   "text": "Who is this man? This is guard 1. This is guard 2. This is guard 3. And this is guard 4. So guard 1 tells you that we don't know much. But guard 2 is very fast. We ask him that how much floor is above him. And whatever he tells us, 100, 200, we will tell you one by one. Very simple. So you think that yes, it is correct. You say, ask me. So guard 1 asks guard 2, listen, look at the sound, how much floor do you have? I mean, how many floors are there on you and above you? Guard 2 has the same problem."
+  },
+  {
+   "start": 114.62,
+   "end": 141.57,
+   "text": "Guard 2 also thinks that we don't know this much, we just know one floor, this one. We do one thing, we think that guard 3 will be very fast, he was the fastest in the village too. We ask guard 3 that how much floor is there above you, and whatever will come, we will add one in it and tell the one below. He also thinks that it is very good. Guard 2 does the same thing, calls guard 3 and asks how much floor is there above you. So guard 3 also has the same problem, guard 3 only knows his floor. So he thinks that what should we tell, let's do one thing."
+  },
+  {
+   "start": 141.57,
+   "end": 171.23,
+   "text": "Let's ask guard 4, no matter how much he will tell, we will add 1 to it and tell guard 2. Very good, everything is going well till now. You are standing here and seeing what is happening, no one knows what kind of hotel is this. Keep watching. Guard 4, guard 3 asks guard 4, how much floor do you have? Guard 4 knows one thing, guard 4 was really fast. Guard 4 knows that we are sitting on the top floor. Where are we sitting? This is the top floor. Because there is no ladder on it, he can see that there is no ladder to go ahead. So guard 4 thinks that when we are sitting on the top floor,"
+  },
+  {
+   "start": 171.23,
+   "end": 200.5,
+   "text": "So guard 4 says that there is only one floor in the hotel. According to guard 4, how many floors are there above and below me? One floor. What does guard 4 say? One. What does guard 3 find out? Okay, how many floors are there above and below guard 4? One. What do we have to tell our lower ones? One plus one. My floor, we know my floor. The answer came from above, one. Let's tell the lower one, one plus one is two. What does guard 3 say? Two. Guard 2 does the same thing. Guard 2 thought, okay, what is guard 3 saying? That there are two floors above."
+  },
+  {
+   "start": 200.5,
+   "end": 225.63,
+   "text": "So, there are two floors above, and I have one floor, so there will be three floors. What do we tell the one below? We tell him three. What did he tell? Three. Now see, what answer did guard one get from above? Three. Who told guard one the answer? Guard two said, shouting, that there are three floors. What does guard one understand? Okay, there are three floors above, and one is my floor too. What do we tell Pratyush? Three plus one, four. So, what does guard one tell you? Four. So, see."
+  },
+  {
+   "start": 225.63,
+   "end": 254.19,
+   "text": "Was there really 4 floors in the hotel? Yes, there were 4 floors. But a strange thing happened here. You will notice that it is very strange. How many total number of floors are there in the hotel? No guard knows this. No guard knows how many floors are there in the hotel. 1, 2, 3, 4. No guard knew 4. How did they know? Every guard knew one floor. That we are on one floor, so one floor will be there. Guard 4 knew that there is no floor above me, so he told 1 directly."
+  },
+  {
+   "start": 254.19,
+   "end": 282.56,
+   "text": "Even though no guard knew the answer, you got the correct answer. How? Everyone worked one by one. Meaning, everyone solved a small part of the problem together. Guard 2 solved some problem. Guard 1 solved his problem with the answer of guard 2. This concept is called recursion in computer science. Which is later used in DP, tree, and graph."
+  },
+  {
+   "start": 282.56,
+   "end": 307.01,
+   "text": "We will discuss it openly. So in the last question, in the last example, in the hotel, what did you find out? We had a problem statement. We had a big problem. How many floors are there in the hotel? It was a big problem. No guard knew the solution to the whole problem. No guard knew. Remember, no guard was so fast that he knew the whole hotel. No. Every guard knew two things. First of all, every guard..."
+  },
+  {
+   "start": 307.01,
+   "end": 333.57,
+   "text": "he used to solve a small problem of this problem, he used to solve a small part of this problem. Means, the floor on which we are sitting, there is 1, that is 1, he knew this much. Completely, he was not a fool at all. He knew that the floor on which we are sitting, there is 1. So, he used to solve a small part of the problem. One thing. And, he used to tell one more thing, that if we tell the answer of any other problem, suppose we have such a big problem, that guard used to know only this much."
+  },
+  {
+   "start": 333.57,
+   "end": 360.48,
+   "text": "That guard only knew this much to solve, that we know x to solve. If someone tells us the rest of the answer, then we could have combined it and told the complete answer. Again, we are dead. Every guard knew how to solve a small problem, that this floor is 1. But he knew one more skill, that if we get the answer from above, that there are two floors above me, then we can combine one of those two and tell three. Meaning, we solved one part, if someone tells us the answer of the second part, then we can tell the final answer by combining it."
+  },
+  {
+   "start": 360.48,
+   "end": 390.1,
+   "text": "So these two things used to come to the guard. This is recursion. In recursion, here we have written iterative versus recursion. We will talk about these technical things later. First, I want to explain to you what this is. In recursion, you have to solve a problem. Just like you solve a problem in DSA, you have to solve a problem. Okay. But you don't know how to solve the whole problem. You don't know how to write a code. You don't know how to solve the whole problem. Okay. But you know one or two things. First of all, you know a small part of it."
+  },
+  {
+   "start": 390.1,
+   "end": 417.14,
+   "text": "Solving a small part is very easy for you. Solving a small part is very easy. Okay. And if someone tells you the rest of the answer, if someone tells you the rest of the answer with magic, suppose someone tells you the rest of the answer with mercy, then you can tell the final answer by doing this small part plus. You can tell the final answer. It is the same that you have been asked to write an essay in the exam of 300 words. You know how to write a paragraph of 50 words."
+  },
+  {
+   "start": 417.14,
+   "end": 445.66,
+   "text": "comes to write a paragraph of 50 words. But there won't be 300 words from 50 words. In total, you have to fill 6 paragraphs. If someone tells you the remaining 5 paragraphs, that here are the 5 paragraphs, you have so much brain that you can add a small conclusion to it and submit the whole essay. This is recursion. Let's understand this with an example. Let's take a very easy problem. There is a function which will take an n. What is your problem statement? 1, 2, n."
+  },
+  {
+   "start": 445.66,
+   "end": 474.16,
+   "text": "We have to return the sum of this. We have to return the sum of this. Now, this is a very easy problem. You will say, what recursion are you teaching? The best example is to teach recursion. So, you know one thing. What do you know? For i is equal to 1, i less than equal to n, i plus plus. And in a sum variable, sum is equal to sum plus i. And in the last, return sum. So, this is what everyone knows. What is this? Iterative. Iterative means loop. Iteration means loop. Iteration in English means loop."
+  },
+  {
+   "start": 474.16,
+   "end": 503.04,
+   "text": "You can solve iterations, but let's assume that some kid, some poor kid, who hasn't done mirror DSA basics class or patterns class, he doesn't know this. Now he doesn't even know what is for loop. So what will he do? He will get stuck. What will he use? He will use recursion. Let's see with common sense that how we can do in this. What is passing in your function? You must have written a function, some fun. In this, int n is passing. Okay. What is the work of this function?"
+  },
+  {
+   "start": 503.04,
+   "end": 531.63,
+   "text": "The main work of this function, the main problem statement is to return the sum of 1 to n. This is the work of this function. You don't know how to do that. You don't know how to do that. You didn't do the class. You kept playing. You don't know. No problem. There are other methods to solve this. Come. You have to give the sum of 1 to n. Let's assume that n is equal to what? 4. What will be the sum of 1 to n? 1 plus 2 plus 3 plus 4. Which is 10. So you have to return 10. But you don't know. No problem."
+  },
+  {
+   "start": 531.95,
+   "end": 556.3,
+   "text": "What is the answer for the smallest n? For the smallest n. Now see, if the sum is 1 to n, then what can be the smallest n? 1. So when n is equal to 1, do you know the answer for this? So you will say that yes, we know the answer from common sense. So we can write that if n is equal to 1, return 1. So the answer for this will be 1. Because what is the sum from 1 to 1? 1. So this is the smallest problem."
+  },
+  {
+   "start": 556.3,
+   "end": 585.09,
+   "text": "This is the smallest problem that you can solve. This is the smallest problem that you can solve instantly. You don't need help from anyone. You don't need chat GPT. You can solve it instantly. This is your smallest problem. Now, imagine that you have to find the sum of this much. Someone was asked to compute this for n is equal to 4. He was told that he knows everything. If someone tells us the sum of 1 plus 2 plus 3, which is 6. We don't know. Someone tell us."
+  },
+  {
+   "start": 585.09,
+   "end": 613.49,
+   "text": "Someone come and help me. Can you make an answer with this? Yes, you can make an answer with this. Suppose someone tells you that you have to subtract till 4. Take this. The sum of 1, 2, 3 is 6. Tell me. Now subtract. What will you do? Whatever it is, you will add 4 and return 10. This is the same example. You are a guard. You want the sum of 4 but you don't know. You just know that you have 4."
+  },
+  {
+   "start": 613.49,
+   "end": 643.15,
+   "text": "Do one thing, someone tell us the answer of 1 plus 2 plus 3 from somewhere. Someone come to the black box and tell us, we don't know how it happens. Somehow tell us, we have added it today, tell us. Now someone comes and tells us 6. You make it 10 by doing 6 plus 4. So what did you do? You knew a very small thing, you just knew that if someone will tell us, if someone will tell us the rest of the answer, then we will add n to it and tell the rest of the answer. You just knew this much. But how will this happen? How will this happen? Let's see. Let's see."
+  },
+  {
+   "start": 643.41,
+   "end": 669.33,
+   "text": "Let's write the function, int fun int n. This is your function which you will call from somewhere. Its work is to give the sum from 1 to n. First of all, write the answer of the smallest n. Its answer is simple. What can be the smallest n? It can be 1. What will be the sum from 1 to 1? It will be 1. First of all, write this. Equal equal to 1. What will we do? Return 1. The program is over."
+  },
+  {
+   "start": 669.33,
+   "end": 696.96,
+   "text": "By chance, if you are given 1, then you can return 1 and there is no need to do anything. But, if you don't have this, now, what do you want? Suppose, you got n is equal to 4. Now, what do you hope? If someone could tell us the answer of 1 plus 2 plus 3 in any way, if someone could tell us in any way, then we would add ourselves to this and tell. Now, what is 1 plus 2 plus 3? When you got n is equal to 4, then you had to do 1 plus 2 plus 3 plus 4. Now, which answer are you asking?"
+  },
+  {
+   "start": 696.96,
+   "end": 716.13,
+   "text": "1 plus 2 plus 3. If we write its answer, if we write its answer believing that we will get its answer, int answer, if we call on n minus 1, fun, see, same function is calling itself, same function is calling itself, same is, a guard,"
+  },
+  {
+   "start": 716.13,
+   "end": 745.63,
+   "text": "He is calling his upper guard. He is sure that the upper guard will also be stupid. But he believes that we don't know about N. We must have known about N-1. Believe it. Take a leap of faith. We are leaving something else for N. We don't know anything to write. It must have come for N-1. It must have come for N-1. Like the guard on the lower floor used to say to the upper guard that he is very fast. But does it come out in reality? That guard was also stupid. But the lower guard had full faith that he is very fast. We have written the answer."
+  },
+  {
+   "start": 745.63,
+   "end": 775.07,
+   "text": "Write the fun of n-1 on trust. Trust that you will get it somewhere. Now, if someone tells you the sum of n-1, i.e. 1 plus 2 plus 3, this comes in the answer magically. So, do you know how to make your own answer from this? Yes, you know. What do you know? Return answer plus n. Because what will happen in the answer? The sum of 1 plus 2 plus 3, you have added your n in it, which is, suppose you got 4 in the beginning, by adding 4,"
+  },
+  {
+   "start": 775.07,
+   "end": 803.87,
+   "text": "10. This is done. What is this program called? Recursion. Look carefully. In this program, you feel that nothing is happening. No for loop is written, nothing else is written. First of all, write this fake thing that n is small. If n is 1, then do 1. Okay. After that, you don't know about n. You have believed in n-1 that n-1 will be found. n-1 will be found with this function. It will be found with some magic. And when you get it, then you return this in it. So in this,"
+  },
+  {
+   "start": 803.87,
+   "end": 833.41,
+   "text": "you will think that where is the computation happening in this? What is the logic of this program? Let's see what will be the logic. Let's see how this will work from the beginning. See how it will work. First of all, we are getting into technicality slowly. Let me show you this program. Recursion program always seems very small and very magical to see. You think that how did this happen? Who is working in this? No one is working in this. Means every guard is asking his superior to tell us. So who gets the answer?"
+  },
+  {
+   "start": 833.41,
+   "end": 862.91,
+   "text": "Even in the hotel, no guard knew the answer. It was very strange. No guard knew the answer. How did he get the answer? The function is empty. There are 3 lines in the function and nothing is working. Let's see how he gets the answer. Suppose you want the answer for 4 from your main. For what? For n is equal to 4. You call this person. Who? First of all, fun with 4. Okay? Let's run this function. Let's see what happens. Is n equal to 1?"
+  },
+  {
+   "start": 862.91,
+   "end": 890.32,
+   "text": "What does it mean? The n is equal to 4 passed, we write n in it. Is its n equal to 1? Its n is not equal to 1. So, this if will not work. After that, what does it do? Answer is equal to fun n minus 1. So, this person calls himself. So, what will this person do? Answer is equal to fun n is equal to 3. Now, as soon as a function is called, as soon as another function is called in a function, the rest of the functions will stop."
+  },
+  {
+   "start": 890.32,
+   "end": 919.09,
+   "text": "There is one more line in this function. Return answer plus n. But it will stop. Why? Because you have called one more function. The computer will directly reach this function. Directly it will reach n is equal to 3. The rest of the line will run after that. What is the next call? n is equal to 3 is called. Function. We are saying that in any function, if a function is all called, then where does the computer go directly? It sits on that function. When we were reading basics, we told you. Fun n is equal to 3 came."
+  },
+  {
+   "start": 919.09,
+   "end": 948.1,
+   "text": "Now, fun is not the same. There is only one line written in fun. So, this will also run the same line. Is n 1? Is your n 1? No, n 1 is not there. So, it will not work. What does this also do? Answer is equal to fun of n minus 1. Means, this also tries to get the answer. With fun, n is equal to 2. Again, another function has been called here. The lines below this will stop. Pause it. It is not stopped. Stop. Stop. Go ahead. Where? Fun n is equal to 2. n is equal to 2."
+  },
+  {
+   "start": 948.1,
+   "end": 978.08,
+   "text": "It's the same in this too. It's the same line, right? There are only three lines in the function. Is it n1? No, it's not n1. Do the same thing. Answer is equal to fun, n is equal to 1. Okay? The rest of the lines, stop. The rest of the lines, stop. There is one more line, stop. Stop. Come on. Where will we stop? Fun n minus 1. Fun n. n is equal to 1. Yes. Now see. Is n1 in this function? Yes, n1 is. What happens on n1?"
+  },
+  {
+   "start": 978.08,
+   "end": 1004.48,
+   "text": "Return 1. Return 1. So, what will this function do? Will this function call any other function? Will this function call any n is equal to 0? No, because it is written in return statement n is equal to 1. What will you do? Return 1. Return 1. This is over. This is over. Now, where will the answer of this 1 n is equal to 1 go? The answer will come here. What is its answer? 1. Means, your answer has become 1."
+  },
+  {
+   "start": 1004.48,
+   "end": 1032.16,
+   "text": "Now, in reverse order, we will finish all of them. In reverse order. Pay attention. First of all, we were here. Okay? From here, we came here. From here, we came here. From here, we went to fun is equal to 1. Now, fun is equal to 1 is over. Now, in reverse order, go by running everyone. Because in every function, there is one line left. In every function, there is one line left to return. Go by running in reverse order. Remember the example of hotel. What happened?"
+  },
+  {
+   "start": 1032.16,
+   "end": 1061.31,
+   "text": "Guard 1, guard 2, guard 2, guard 3, guard 3, guard 4. Guard 4 did not ask anything. After that, where did the information come? In reverse. Guard 4, guard 3, guard 3, guard 2, guard 2, guard 1. It will come in reverse. Fun is equal to 2. This line is done. Answer is equal to is done. Fun is equal to n is equal to 1. It is over. 1 came in answer. What is the next line of function? Return answer plus n. Return answer plus n. So, what will it return? Return answer 1 plus."
+  },
+  {
+   "start": 1061.31,
+   "end": 1091.49,
+   "text": "This function knows this n. This function was called with n is equal to 2. 1 plus 2. What will it return? 3. Where will this 3 come? This 3 will come here. This function is also complete. Again, what is the answer in n is equal to 3? 3. One line is left. We will remove it. We will not leave it. What will it return? 3 plus 3. Answer plus n. 3 plus 3. What does this function know?"
+  },
+  {
+   "start": 1091.49,
+   "end": 1121.04,
+   "text": "3 is known. So what will it return? 6. Where will this 6 come? It came here. This function also disappeared. This was your original function which was called from the main. Remember. This worked. What is this function? There is one line left. Return it. Return. Answer plus n. What was the answer? 6 plus 4. 10. Where will this 10 go? In your main function. What answer did you get in your main function? 10. Is 10 the correct answer? 1 plus 2 plus 3 plus 4. Yes, 10 is the correct answer."
+  },
+  {
+   "start": 1121.04,
+   "end": 1147.14,
+   "text": "This is how work is done. You will feel that there is no work happening somewhere. But work is happening. Very small, small, small work is happening. Your big problem statement that 1 plus 2 plus 3 plus 4 is happening in 4 parts. Meaning, one person gave 1, next person added 2 and made it 3. Next person added 3 and made it 6. And one more person added 4 and made it 10. Same as the hotel example. Every guard..."
+  },
+  {
+   "start": 1147.14,
+   "end": 1169.09,
+   "text": "He was doing small small small small work. Means every guard was taking his upper answer and adding 1 to it. And the one who was the highest guard, who thought that the stairs are not going up, which guard was he? He was this man. If n is equal to 1 means that there is nothing to do above me. Means there can't be any smaller problem than this. The guard above, what did the guard above know? We are talking about this guard."
+  },
+  {
+   "start": 1169.09,
+   "end": 1193.26,
+   "text": "What did this guard know? That there is no stairs to go up. And there is only one floor, so we tell only one. And there is no one to ask. That's why there was no one to ask below n is equal to 1. So this is the fourth guard. What is this step? The guard who used to ask from above that how much floor is there? So what does n ask? He believes that we don't know fun n. We don't even know this."
+  },
+  {
+   "start": 1193.26,
+   "end": 1222.96,
+   "text": "For n-1, let's assume that we will get the answer from somewhere. If we get the answer, what is this step? The guard listened from above, added one floor and gave it down. Added one floor and gave it down means, if n is equal to 3, he called, he heard the answer of n is equal to 2, that 1 plus 2 is 3. In this 3, he added himself and told that my answer is 6. Same work, what did he do? n is equal to 4. So, you see, it seems like there is no work done anywhere, but the work is actually happening. It is happening in a small part, you don't see it."
+  },
+  {
+   "start": 1222.96,
+   "end": 1247.22,
+   "text": "You won't be able to see all these things. You won't be able to see all these things. All these things are happening from within. You will only be able to see this code which is a very innocent code. It is a 3 line code. But this is what is called as Recursion. Recursion means when a function keeps calling itself for small problems. When a function calls itself for small problems. To solve small problems."
+  },
+  {
+   "start": 1247.22,
+   "end": 1276.37,
+   "text": "Why are we saying small problem? For n is equal to 4, n is equal to 4 was a big problem. No one knew how to solve this problem. But, n is equal to 3 is a small problem. So, what will n is equal to 4 do? It will try to find the answer to its small problem. If you can combine that answer and tell, then you can apply recursion. So, this is the difference between running a simple for loop and writing this recursion. Recursion, again, is very easy to write. Understanding is very difficult. Iteration,"
+  },
+  {
+   "start": 1276.37,
+   "end": 1305.55,
+   "text": "Sometimes it is difficult to write, but it is comparatively easy to understand. You can't understand it by looking at the recursion. You won't understand what will happen if you don't copy it. Don't ever think that you won't understand it by looking at the recursion. This was a very simple program. Many people might not have understood it. So, again, look at this run. This is what happens. Basically, this is what happens. Now, there is a template for every recursion. There is a template for every recursion. Okay?"
+  },
+  {
+   "start": 1305.55,
+   "end": 1335.44,
+   "text": "First of all, whatever your function is, you will give an input to it. This input can be anything. We are taking an integer input. First of all, you have to write base case. Base case means what is the answer to the smallest input of this DSA question. Means what will be the answer to the smallest possible input. In 99% case, you will know this. Means sum of 1 to n. Okay, if we give n to 1, then what will happen? 1 will come. Write base case. Base case is this."
+  },
+  {
+   "start": 1335.92,
+   "end": 1356.91,
+   "text": "This is the base case. What will be the answer of the smallest input? Write that. Okay. After that, now you don't know the answer of the whole. You don't know the answer of n. No problem. A small answer will come from n. In this case, n-1 was there. It can also be n-2. Any small problem answer with which you can add something and return the final answer."
+  },
+  {
+   "start": 1356.91,
+   "end": 1385.1,
+   "text": "Then listen, any answer of such a small sub-problem with which you can do something and tell the final answer, you have to decide that. If you see the question, then you will know what the meaning of a small sub-problem is. In any fun, any less input, less input, means there was input in the original function, we said that a smaller input than this, a smaller input than this, it may be half, one third, whatever it is, a small input, trust its answer. What is this? Trust."
+  },
+  {
+   "start": 1385.1,
+   "end": 1410.3,
+   "text": "Trust that you will get it. Trust that you will get it. And now, in this answer, don't remember this, in this answer, the answer you got, of a small problem, in that, reduce some part and tell the final answer. If you know it. If you know to do these three things, then you can write recursion. This is the three steps in recursion. Base case, means the answer of the smallest input."
+  },
+  {
+   "start": 1410.3,
+   "end": 1440.13,
+   "text": "My problem is the answer to a small problem. If we want to write a 6-page essay, we will take a tip from a 5-page essay. Trust that we will get 5 pages. In 5 pages, we will add one page and submit it with a 6-page essay. That is recursion. Okay? Any problem in the world that you can solve with a loop, you can solve with recursion. There is no such problem in the world that you can solve with a loop and not with a recursion. Either you can solve it with a recursion or not with a loop. But in the coming lectures, you will know that"
+  },
+  {
+   "start": 1440.13,
+   "end": 1466.06,
+   "text": "Why haven't we studied recursion yet? We will tell you that the 90% of problems that we have studied so far, you could have applied recursion in that. Why didn't you apply it? If you could have applied it, then why didn't you apply it? There is no need to study so much. We will discuss all that further. But we hope that you have understood this. A basic is clear that what is recursion and how it is done. In the coming days, we will study recursion. We will study backtracking which is a form of recursion which is choice based."
+  },
+  {
+   "start": 1466.06,
+   "end": 1493.12,
+   "text": "This was the recursion sub-problem, which means solving a small problem and finding the answer to a big problem. What is backtracking? It is choice-based. You must have seen a lot of choice-based questions till now. In IPO, for example, that choose some K-tasks which have maximum profit. In binary search, we saw that what to choose, so that there is some fun in it. We had put a lot of thought into it, but you could have put a recursion there too. At the end, it is a question of choice. You have to choose."
+  },
+  {
+   "start": 1493.12,
+   "end": 1519.98,
+   "text": "You have to choose 3 items out of 10 items to make something happen. Backtracking can be applied to all of them. But why not apply it? We will give the answer to that in the upcoming lectures. So, stay regular in this playlist. If you don't know anything before you come here, you just know the array. That means you have just studied DSA basics and reached here. That's enough. For this, you don't have to study heap, binary search, merge sorting, you don't have to study anything. Recursion is the most basic concept but it is a very powerful concept."
+  },
+  {
+   "start": 1519.98,
+   "end": 1531.63,
+   "text": "If you don't get this, if you don't study recursion, in the coming days, you won't understand DP, you won't understand Tray, you won't understand graph. So, if you have any doubt, please ask and see you tomorrow."
+  }
+ ]
+}

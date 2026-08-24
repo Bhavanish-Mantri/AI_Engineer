@@ -1,0 +1,444 @@
+{
+ "video_id": "5IV8CgWnf04",
+ "title": "Rotate A Linked List | Master DSA in 2026 With DSA Patterns",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2374,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 25.2,
+   "text": "Although this question is quite hard because it is asked in Microsoft, Bloomberg etc. Easy questions are not asked there. But because you are reading from me, you will feel that this question is easy of the easy. Means, it is more easy than easy. So, those who are coming for the first time, watch the playlist from the beginning, don't watch it in the middle. You will get the code etc. in the comments. And today's question is Rotate a link list. Along with it, this last video of the link list reversal that was going on for many days is going to happen. Let's move ahead."
+  },
+  {
+   "start": 25.42,
+   "end": 55.23,
+   "text": "Yes, now there are two approaches to this. One approach is in which you use reverse in actual. We will see that too later because it is necessary to see that too. And there is one approach which is very simple. We were making it just now, then it came to our mind that we can also make it like this. Because we were going to reverse it first and teach you. Reversal is used in this, but we thought it would be very complicated. Means there are a lot of edge cases. If you want to see that approach, then see it till the end. We will discuss that too. But the right approach to make it is very easy. Means it is very easy, very intuitive, very easy to understand."
+  },
+  {
+   "start": 55.23,
+   "end": 83.23,
+   "text": "Let's go. So, what does the question tell you? The question doesn't tell you anything. The question tells you that you have a linked list. Okay? It's an obvious thing that if there is a reverse linked list, then you will have to have a linked list. Your question says that this is it. Make one more. Let's go. Along with this linked list, you are given a k is equal to 2. What does this k mean? You have to rotate this linked list to the right. How? You have to rotate it. What does rotating mean?"
+  },
+  {
+   "start": 83.23,
+   "end": 111.86,
+   "text": "Rotate to the right. Rotate to the right. What does this mean? I will tell you. K is equal to 2 is given, right? Yes, K is equal to 2 is given. You have to rotate in two places. First of all, every node, by taking every node, rotate in one right. For example, this one node will come in second place. Which place was this? This was the first place. Now it has come in second place. Why? Because you rotated in right. So when you rotate every child in right, then the child who will stand in first place will come in second place. Similarly,"
+  },
+  {
+   "start": 111.89,
+   "end": 141.07,
+   "text": "The kid who stands on 2nd place will be 3rd. The kid who stands on 3rd place will be 4th. The kid who stands on 4th place will be 5th. And the kid who stands on 5th place will be 6th. But, but, but, the kid who stands on 6th place, where will he go? You can't make the kid on 7th place because there are 6 kids. Why would you make the kid on 7th place for 6 kids? So, the kid who stands on last place, where will he go? On 1st place. The kid who stands on last place, where will he go? On 1st place."
+  },
+  {
+   "start": 141.07,
+   "end": 165.65,
+   "text": "How many times did you rotate this? Once, once. Do this thing again because you have to rotate it twice. Do this thing again. The child who is in the first place, who is now 6, will come in the second place. The second one will come in the third place. The third one will come in the fourth place. The fourth one will come in the fifth place. The fifth one will come in the sixth place. And, and, and, and, sorry, there was 5 here. There was 5 here."
+  },
+  {
+   "start": 165.71,
+   "end": 193.31,
+   "text": "5 came from there. Yes. Now, see, where will this child go in the 6th place? He will go to the 1st place. Because see, the 1st place is empty. So, where will the 5th child go? Here. That's it. Once this link list is made, attach the arrow. Attach the arrow. And, and, the new head of this, the new head, which you think is 5 right now, return it. So, this is the question. Rotate the link list. Okay."
+  },
+  {
+   "start": 193.31,
+   "end": 221.07,
+   "text": "Similar question is also used in array. Similar question is also used in rotating array. Rotate an array to the right by k. But this question is a little hard. But when you are told to rotate a linked list, this question is very easy. This question is very easy for linked list. Why? Because it is the property of linked list. The property of linked list is that you can break it from anywhere and connect that part anywhere. What is the property of linked list? For example, if you talk about array. If you talk about array, there is an array or vector or anything."
+  },
+  {
+   "start": 221.07,
+   "end": 247.42,
+   "text": "so you can't do it like this that you break it from here means you break one part and bring this part in the beginning and join it this is difficult to do in array this is not difficult it is impossible but but in linked list it is very easy to do this for example by doing this you get a linked list by doing this you get a linked list you want to break the last two nodes break the last two nodes separately so you can break it just null it it is broken after that"
+  },
+  {
+   "start": 247.42,
+   "end": 259.73,
+   "text": "If you want to make these two notes stand in the beginning, then you can do it. You can do it. What can you do? Point the next note on this and put it on the head."
+  },
+  {
+   "start": 259.73,
+   "end": 280.66,
+   "text": "What you can do is, you break the last part of the linked list and put it back. This is very easy to do. In linked list, it is not easy to do it in array, it is impossible. In array, you can't break these two blocks and put them in the last, it is not possible. But because in linked list, every block is of chain type, so you can do it easily. For example,"
+  },
+  {
+   "start": 280.66,
+   "end": 309.58,
+   "text": "If you have seen the train, if you travel by train, then sometimes you will hear that the train is getting delayed because the engine is changing, the engine is going from there to there. So what does the train do? See, in the beginning, the engine stays here. Suppose in the beginning the engine is here and all its bogies are connected like this. All its bogies are connected. Now the train was going home, but suppose the train has to go there now. So what do these people do? These people break the engine. They break the engine from here. This one removes the chain, the train is also connected to the chain and"
+  },
+  {
+   "start": 309.78,
+   "end": 337.28,
+   "text": "By lifting the engine, where does he put it? First, he lifts the engine and puts it here. And by doing this, he adds something. Now the train starts moving. So it is very easy to do it in the train. Why is it easy to do it in the train? Because what is the train? It is a linked list. The train is connected to everyone. So the linked list is now. Come, now let's see what to solve this question. So what is happening in this question? What do you understand by K-Rotate? We saw that when our linked list looked like this. 1, 2, 3, 4, 5."
+  },
+  {
+   "start": 337.28,
+   "end": 367.3,
+   "text": "6. This was your original linked list. So whenever you will ask any linked list question, then the main thing in linked list question is connections. Connections means the wire which is connected, you have to modify to connect this wire, you have to change this wire, you have to do whatever you want to do. Let's see that when you will rotate it 2 times, k is equal to 2, means if you will rotate it 2 times, then what will happen? What happened above? What happened above? 5 and 6 came in front and 1, 2, 3, 4 remained as it is. So let's write its answer."
+  },
+  {
+   "start": 367.3,
+   "end": 397.09,
+   "text": "Assume 5, 6, 1, 2, 3, 4. Add an arrow. Now see, if you are solving any linked list question, then you have to see the linked list and the linked list that we want in the answer. What is the difference between them? What is the difference between them? What is the connection and which connection do we need to make? So, let's see. What? What is this connection?"
+  },
+  {
+   "start": 397.09,
+   "end": 421.7,
+   "text": "Is this arrow, arrow 1, which is from 5 to 6, which is your answer, this is your final answer, and this is your input. So has the arrow from 5 to 6 changed? No, the arrow from 5 to 6 has not changed, you can see, 5 to 6 was there in the original as well as in your answer, so there is no need to do anything in this. But, has the one from 6 to 1 changed? Yes, because in the original, 6 had no arrow, 6 used to point to the null, but"
+  },
+  {
+   "start": 421.7,
+   "end": 451.38,
+   "text": "In the change, 6 started pointing to 1. So we will see this. We will see this. We know that we have to change. Has the arrow from 1 to 2 changed? No, no, no. The arrow from 1 to 2 has not changed. Because it is in the answer too. It was here too. So very good. Has the arrow from 2 to 3 changed? No, no, no. The arrow from 2 to 3 has not changed. The arrow from 2 to 3 was there and here too. Has the arrow from 3 to 4 changed? No, no, no. The arrow from 3 to 4 has not changed. It is in the answer too. It was in the input too. But,"
+  },
+  {
+   "start": 451.38,
+   "end": 481.5,
+   "text": "Has the arrow of 4 changed? Yes. The arrow of 4 points to 5 in the input. But in the answer, the arrow of 4 points to NULL. So how many arrows did you get to know? How many connections do you need to change? One connection you need to change is 6 to 1. You will have to make this. You will have to make this. Because look carefully. In the answer, it is 6 to 1. It was not in the input. It was not in the input. More, more, more."
+  },
+  {
+   "start": 481.5,
+   "end": 502.35,
+   "text": "You will have to remove the connection of 4 from anyone. You will have to remove it. You will have to remove it. Because in the input, 4 was pointing to someone. It was pointing to 5. But in the answer, 4 does not point to anyone. In the answer, 4 does not point to anyone. If you do these two things, then all your connections will be correct. All your connections will be correct."
+  },
+  {
+   "start": 502.45,
+   "end": 527.6,
+   "text": "All the connections will be correct, right? What was the difference between your answer and your input? There was a difference of only two arrows, right? Now if both the arrows are correct, then your answer and your input will match. Yes, the question arises, what will be the head? What will be the head? What will be the head? So let's see what will be the head, let's go ahead and see. Come on. So much has been understood, now come. Now what do you have to do? See what you have to do. If you had such a link list, now we will start talking about the number. Now we will start talking."
+  },
+  {
+   "start": 527.6,
+   "end": 555.95,
+   "text": "On K. K can be anything. K is not always 2. K can be anything. Okay. You got to know that K is 2. What did you do in T2? What did you do in K2? What will be your answer? What will be your answer? Your answer will be this. 5, 6, 1, 2, 3, 4. This is your answer. This is your answer. Okay. Now let's see how this answer is made. Now how is it dependent on K? How is it dependent on K? See."
+  },
+  {
+   "start": 556.24,
+   "end": 579.98,
+   "text": "What did you do in this linked list? If you look carefully at what you did, you broke the last two notes, broke the last two note part and added it in the beginning. Added it in the beginning. Okay? Have you done this? Have you done this? Okay. And what did you do? The four notes of the beginning, the four notes of the beginning, picked it up and did it in the second."
+  },
+  {
+   "start": 581.71,
+   "end": 606.16,
+   "text": "first part is done in second and second part is done in first how did you know that we have to bring 4 at the beginning and 2 at the end? by K if we would have taken 7 notes in this then see what would have happened 1,2,3,4,5,6,7 and K is equal to 2"
+  },
+  {
+   "start": 606.16,
+   "end": 634.96,
+   "text": "we are taking 2 because 2 is easy to understand so if you rotate it 2 times then what will be your answer? your answer will be 7 6 1 2 3 4 5 see what happened see what happened carefully see what happened carefully pick up the last 2 nodes and do it in the beginning and pick up the 5 nodes in the beginning and do it in the second so what is happening? we have to pick up the last k nodes"
+  },
+  {
+   "start": 634.96,
+   "end": 662.72,
+   "text": "k nodes, we have to do our work on this and in the beginning, n-k nodes this is your first part which you want to send in the second part so we got to know that k means that you have to do some work on the last k nodes now your question will get clear slowly now what we saw that which connection we have to make and which we don't have to make let's see which connections you make let's go"
+  },
+  {
+   "start": 662.72,
+   "end": 695.66,
+   "text": "Make a big linked list so that there is no confusion. We don't want any doubt. We have made a linked list of 8 sizes. Okay? Okay? k is equal to 2. Let's see what you have to do. First of all, you have to take the last two notes and put them in the beginning. 7 and 8. And then you have to do the first 6 notes later. Okay? Okay?"
+  },
+  {
+   "start": 696.21,
+   "end": 727.57,
+   "text": "Let's see what we need and what we have to make. The first thing which is different in your input and answer is 8.next is equal to 1. You have to do this because this arrow is in your answer and that arrow is not in your input. One more thing is that you have to do 6.next is equal to null. Why?"
+  },
+  {
+   "start": 727.57,
+   "end": 757.68,
+   "text": "6 has something in the input, but 6 has nothing in the answer. So, you have to null 6.next. What should be your new head? What should be your new head? Your new head should be 7. 7. What does 7 mean? 7 is the first node of the last two parts. So, what is 7 here? 7th node. Your 7th node should be your head."
+  },
+  {
+   "start": 757.68,
+   "end": 786.96,
+   "text": "So, see what happened with Gouar. What was your number of nodes? 8. Your k is equal to 2. Let's write it in n and k. We have just seen that we have to do this for the 8th node, this for the 6th node, and this for the 7th node. But, if we don't see it and make it, then let's try to write it in a formula. Let's see what happens every time. We will take more examples. We will take n and k separately and see if it matches or not. So, see. Your number of nodes is 8."
+  },
+  {
+   "start": 786.96,
+   "end": 815.94,
+   "text": "Your k is 2. First of all, let's say 8.next is equal to 1. 8.next is equal to null. Sorry, 1. 8.next is equal to 1. So, see, what is 8? 8 is its last node. And what is 1? 1 is its first node. So, can we say that the first thing you have to do is last.next is equal to head."
+  },
+  {
+   "start": 815.94,
+   "end": 844.06,
+   "text": "Last dot next is equal to head. Look carefully. When there were 6 nodes, sorry, when there were 7 nodes, then what was it? When there were 6 nodes, then what was it? 6 dot next is equal to 1. Look here too, the number of nodes was 6, which means last node, which is 6, dot next is equal to 1, dot next is equal to 1, head. One thing is clear that last dot next is always happening on head. The first thing is done. The first connection is connected. And,"
+  },
+  {
+   "start": 844.06,
+   "end": 873.15,
+   "text": "See, 6.next is equal to null. Now, 6 is the 6th node here. How do we know this today? 6.next is equal to null. Why did this 6.next is equal to null happen? What was this 6? See, this 6 was the last node of this part. How many nodes were there in this part? n-k nodes. Its last node, its last node. Means, which number node will it be? n-k node.next."
+  },
+  {
+   "start": 873.15,
+   "end": 900.21,
+   "text": "is equal to null. 8 minus 2. 6th node next is equal to null. Your work is also done. What is the third work left? Making the head of 7th node. How did 7th come? See. Whichever node, its last. Now who will make the head? The first one of last k nodes. So can we call it like this? N minus k plus 1 node."
+  },
+  {
+   "start": 900.27,
+   "end": 929.5,
+   "text": "What will happen to you? Your head will be like this. According to me, these are the three formulas. Come, let's test it more. Let's take another example and see if it works or not. Come, make a link list of 7. 1, 2, 3, 4, 5, 6, 7. Okay? This is your input link list. We are just seeing that what we thought, the formula we thought, is it correct or not? And this is the only way. No one remembers. We don't remember that we have to do this or that."
+  },
+  {
+   "start": 929.5,
+   "end": 958.67,
+   "text": "Think about it. If you want to make an arrow like this, then what will you make for it? Let's think about it. Okay, this is it. Your number of nodes is 7. Assume that k is equal to 3. Let's not take 2, let's take 3. We are taking 3 randomly. This was also not planned from the beginning. Let's go. First of all, we say to head the next of last. So, what is the last node of this? 7th node. It says to head the next of this. Let's make the next of this a head. Let's see if we get the answer or not."
+  },
+  {
+   "start": 958.93,
+   "end": 987.2,
+   "text": "N-kth node dot next is equal to null. N-kth node dot next is equal to null. N-kth node dot next is equal to null. N-kth node dot next is equal to null. N-kth node dot next is equal to null. N-kth node dot next is equal to null."
+  },
+  {
+   "start": 987.2,
+   "end": 1011.31,
+   "text": "Which means, make the 5th node your new head. So what is the 5th node? This is your new head. And return this. Let's see if it works or not. Let's see how this linked list will look like. First comes 5, then 6, then 7, after 7 directly 1, then 2, then 3."
+  },
+  {
+   "start": 1011.31,
+   "end": 1039.73,
+   "text": "Then 4, isn't this done? Isn't this rotate by 3 places? 3 notes of last came first, 4 notes of beginning came later, so it's done, rotate by 3 places. Rotate by 3 places. Yes, yes, rotate by 3 places, means everything is correct. Means, what you have to do, you have to do 3 steps, first of all, you have to do last.next is equal to head. You have to do this first step, after that,"
+  },
+  {
+   "start": 1039.73,
+   "end": 1055.98,
+   "text": "you need n-kth node so that you can null its next and you also need n-kth node because you have to make its head"
+  },
+  {
+   "start": 1055.98,
+   "end": 1083.66,
+   "text": "You have to make it a head, that's why. And what do you need to do all this? You need n. What is the number of nodes? You will know the number of nodes. That's why you will subtract n minus k, then you will subtract n minus k plus 1. So you need the number of nodes as well. You also need last. Last means last node. Last means which node? Last node, last node, last node. So you will have to subtract all this. Once you have subtracted all this, then you can do your answer in a three-step process. But there is one more doubt in this. There is a doubt or you can say there is a trick in this."
+  },
+  {
+   "start": 1084.05,
+   "end": 1109.14,
+   "text": "Suppose I have 3 nodes. So you are assuming that my k is less than n. This is not true. Your k can be anything. Suppose your k says that k is equal to 4. Now what do you do? Now k is equal to 4. So what did we say earlier that if there is any linked list then in the beginning there are n minus k parts and in the end there are k parts. We have to do this and that in this."
+  },
+  {
+   "start": 1109.36,
+   "end": 1139.84,
+   "text": "Now, if you see, your n is equal to 3 and k is equal to 4. So, what will be the n minus k part of the beginning? 3 minus 4 minus 1 part. Minus 1 part doesn't make sense. In this, that formula will be useless. Come, let's see what we will do in this. Come, let's solve it manually. k is equal to 4, right? You know to rotate by yourself, right? Guess every node on the right. Write the last node on the first. Come, let's do it once. If we rotate it once, it will look like this. This is done once. Okay? We have to do it four times, right? Let's do it. Do it one more time. So, this will become 3."
+  },
+  {
+   "start": 1139.84,
+   "end": 1168.35,
+   "text": "This will be 1, this will be 2. Okay, 2 times are done. Do it 2 more times. Bring 2 here, bring 3 here, bring 1 here. How did you do it? Like this. And 1 there, okay? 3 times are done. Do it one more time. 1, 2, 3. How did this happen? Here, here, 3 there. Yes, so this is your answer. This is your answer. How many times? Rotate 4 times. Rotate 4 times. So how to rotate 4 times? Look, think carefully, open your mind."
+  },
+  {
+   "start": 1168.35,
+   "end": 1198.02,
+   "text": "This was your original. This was your original. This one, had to rotate once. This one, had to rotate twice. And this one, see, 1, 2, 3, it became its original again. It became its original again. Rotating three times, it became its original again. It became its original again. And after this, 3, 1, 2. See, 3."
+  },
+  {
+   "start": 1198.02,
+   "end": 1226.06,
+   "text": "1, 2, 3, 1, 2. It became the same again. It became the same again. What does it mean? What does it mean? If you have a linked list. If you have a linked list. 1, 2, 3. This is k is equal to 0. This is original. This is original. When you did it on k is equal to 1, then it became 3, 1, 2. Is it good? When you did it on k is equal to 2, then what became? 3, 1."
+  },
+  {
+   "start": 1226.06,
+   "end": 1241.34,
+   "text": "2. Okay. But as soon as you reached k is equal to 3, this list became original again. 1, 2, 3 became. It got reset again. And when you do k is equal to 4, then what will happen? Again 3, 1, 2."
+  },
+  {
+   "start": 1241.34,
+   "end": 1267.18,
+   "text": "Again, 3, 1, 2. Meaning, K is equal to 4 times rotating. It is same as K is equal to 1 times rotating. Why? Because on K is equal to 3, it was reset. What do you understand from this? K is equal to 0 times. Meaning, rotating 0 times. And K is equal to 3 times rotating. Same thing."
+  },
+  {
+   "start": 1267.18,
+   "end": 1292.82,
+   "text": "K is equal to 1 time rotate and K is equal to 4 time rotate is also same. K is equal to 2 time rotate and K is equal to 5 time rotate is also same. Means, if you have any K, then you can do K is equal to K modulus N. What will happen with this? Suppose, you have K is equal to 4 and N is equal to 3. What will you make K?"
+  },
+  {
+   "start": 1292.82,
+   "end": 1320.21,
+   "text": "4 modulus 3 is equal to 1. So, you rotate k is equal to 1 time. Because it will be less than 3. You know how to do this. You don't know how to rotate 4 times. Because our entire logic is based on this. On n minus k and k. So, if k will be greater than n, then how will we do it? So, we can use this trick. That k is equal to 4 times rotating. It's same as k is equal to 1 time rotating. Why? Because when you do k is equal to k modulus n, then it gets smaller. And we have seen, see,"
+  },
+  {
+   "start": 1320.21,
+   "end": 1349.47,
+   "text": "k is equal to 0 times is same as k is equal to 3. k is equal to 4 is same as k is equal to 1. And k is equal to 5 is same as k is equal to 2. So, you can do this. So, as soon as we take out n, what will we do? k is equal to k modulus n. To handle whom? When k is greater than n. Because it is possible. Let's go. So, you want these things. Now, let's see how these things will come out. So, let's make a linked list. Let's make a linked list."
+  },
+  {
+   "start": 1349.47,
+   "end": 1380.51,
+   "text": "Now we will make the real one, not just the one-two one. So let's make a 5 size link list. This is done. 100, 200, 300, 400, and 500. So this is done. 1, 2, 3, 4, 5. You have given such a link list. So let's write the address in it too. Okay. Let's see. Now all the things are calculations. What are all the things? It is a simple calculation. That from where to start t, from where to stop t."
+  },
+  {
+   "start": 1380.51,
+   "end": 1408.3,
+   "text": "The whole concept is done, so we will try to do the same. Okay? What did we see? Which three things did we need? Where did it go? Did you forget? Yes, these three things were needed. First of all, what did you need? N. And first of all, you needed last. Last note is also needed, N is also needed. So, there is a very good way to remove it. You can remove both at once. See, you can do that first reverse once and remove N. Then reverse once and remove the last note. But there is a very good way to do both. Okay."
+  },
+  {
+   "start": 1408.98,
+   "end": 1434.26,
+   "text": "First of all, we will see that if head is equal to null, then return head. What is there in that? There is nothing to do in that. Okay. If head is equal to null, then return null. So, there is one in head. There is one node in head. So, what will we do? We will take n is equal to 1. There is one node, right? Head is not null, so there is one node at least. And for the start, we will take last is equal to head."
+  },
+  {
+   "start": 1434.26,
+   "end": 1463.31,
+   "text": "For the start, what is last? Last is our first node. Let's assume there is one node. So when there is one node, then there is our last head. After that, if we do this, while, while, last not equal to null. See, you need last node. When you used to do traverse, what did you do in traverse? While t not equal to null. In that, you wanted t to be null, then we will stop. But here, as soon as your last is 500, then you have to stop. And what is the property of last node? What is the property of last node? Last dot next."
+  },
+  {
+   "start": 1463.54,
+   "end": 1488.94,
+   "text": "It is always null. That is why it is the last node. If it is not null, then why is it the last? It is the second last. What is the property of the last node? It is null. We will write while last.next not equal to null. It means till it is not null, it is the last node. And what will we do? n++ and last is equal to last.next."
+  },
+  {
+   "start": 1490.1,
+   "end": 1518.53,
+   "text": "Will this work or not? The simplest way is to write it in a copy. No one remembers this. No one in the world remembers this. Every time a person thinks about it, we also think about it. We also don't remember. It may be wrong. Let's go and see. In the beginning, n is equal to 1, last is equal to n. Meaning, n is equal to 1 and last is equal to 100. Let's run it. Is last's next null? Is 100's next null? No, no, no. It will go inside. What will it do to n? 2."
+  },
+  {
+   "start": 1518.53,
+   "end": 1545.1,
+   "text": "What will you do to the last? Last connects 200. Very good. Check again. Is the last connect null? Is the 200 connect null? No, it is not. What will you do to the end? You will increase it. What will you do to the 200? 300. Yes. Check again. Is the last connect null? Is the 300 connect null? No. Increase the end. Increase the last. Check again. Is the last connect null? Is the 400 connect null? No, it is not 400. It is 500. Increase the end."
+  },
+  {
+   "start": 1545.1,
+   "end": 1574.62,
+   "text": "Increase it. Now, what is the next null of last? Yes, yes, yes. The next null of 500. Stop. The while loop is broken. See, what did you get? n is equal to 5 and last is equal to 500. Did you get it? Both things were found at the same time. Both things were found at the same time. If you want, you can do it differently. But if both things were found at the same time, then do it at the same time. Come on. Last was found. n was found. What did you get? Last was found and n was found. Now, what do you want? Now, what do you want?"
+  },
+  {
+   "start": 1574.62,
+   "end": 1604.21,
+   "text": "Now, what do you want? n minus kth node and n minus k plus 1th node. Yes, you want these two. How will you get these two? See, n minus kth means, what do you want? You know that n is equal to 5. 5 minus 2. k is equal to 2. k is equal to 2. So, you want 3rd node. And n minus k plus 1 means 5 minus 2 plus 1. 4th node. Tell me one thing."
+  },
+  {
+   "start": 1604.21,
+   "end": 1632.62,
+   "text": "when we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and if we take out the third node and"
+  },
+  {
+   "start": 1632.62,
+   "end": 1656.24,
+   "text": "Our k is equal to 0. It is possible that if k was 5, then k would have become 0. 5 modulus 5. So what will we do? Nothing. It will not make any difference. If you are rotating something 0 times, then what will happen? Nothing will happen. Return head. So there is no need to do this. There is no need to do this. But if this is not the case, then you will have to take out n minus k. Come, let's see how n minus k comes out. Come."
+  },
+  {
+   "start": 1656.24,
+   "end": 1686.66,
+   "text": "Now let's see how n- comes out. Make a link-place again. There is no such thing in making a link-place that it is good again and again. Make it. We will copy and see what we have to do. This is 100, 200, 300, 400, 500. 1, 2, 3, 4, 5. This is 200, this is 300, this is 400, this is 500 and this is null. Remember what we have taken out."
+  },
+  {
+   "start": 1686.66,
+   "end": 1716.03,
+   "text": "N's value is 5. Last's value is 500. And K's value is 2. So 2 mod 5, 2 will remain. What do we want? What do we want? Int C is equal to what? N minus K. N minus K. N minus K. Okay. Okay. N minus K means third node. Third node. How do we remove this? Note star. T is equal to head. We will write the whole code. We are just writing this so that you know. Okay."
+  },
+  {
+   "start": 1716.03,
+   "end": 1742.43,
+   "text": "int count is equal to 1 means head and count is equal to 1 ok come while t means while t not equal to null if if count equal equal to c means count equal equal to n minus k break it immediately so for example if you want first node then you break head also if you want first node"
+  },
+  {
+   "start": 1742.43,
+   "end": 1762.58,
+   "text": "Now let's break on head. But what node do you want? You want n-k which means third node. It hasn't happened yet. No problem. Count plus plus and t is equal to t dot next. Like this you can remove any nth node. Let's see. Try this too. In the beginning, what will be the count? 1."
+  },
+  {
+   "start": 1762.58,
+   "end": 1792.54,
+   "text": "In the beginning, T will be 100. Check it. Count is equal to C. C means C is equal to 3. You need third node. You can give some other name. It doesn't matter. So, is C 3? No, C is not 3. Third node is not there. Increase the count. Make T 200. Is 2 equal to 3? No, no, no. Make it 3. Make it 300. Is 3 equal to 3? Yes, yes, yes. Break, break, break. See what you got. T is equal to 300. Your T is here. T is equal to 300. T is equal to"
+  },
+  {
+   "start": 1792.54,
+   "end": 1821.25,
+   "text": "300. Which node did you get? We got n-kth node. What is its value? 300. What else did you need? n-k plus 1. Why? To make a head. To make a head. To make a head. Now, we need to make a head, right? So, what can we do? Node result is equal to t dot next. t dot next. t dot next was the node, n-k plus 1. Why did we need that? To make a head. So, we made it. What value is stored in rest?"
+  },
+  {
+   "start": 1821.25,
+   "end": 1848.22,
+   "text": "400. 400. Okay. Now, let's do our work. One work is done. Two more works are left. What two works are left? Last.next is equal to head. What is last? 500. 500.next is equal to 100. Come. Connect the wire. Connect the wire. Connected. Connected. Very good. And what did we have to do with n-kth? What did we have to make n-kth? Null. Null. Null. Means, whatever node it is,"
+  },
+  {
+   "start": 1848.22,
+   "end": 1878.61,
+   "text": "So you can name it whatever you want, but 300.next is equal to null. Let's make 300.next null, then it will break. Null. And what is the rest? The rest is 400. So which head did you make? 400. And return rest. Now see, what will happen? If you return, then what increase did you make? First 4, then 5, then 1, then 2, then 3. Did it rotate 2 times? Yes, it did. The last 2 came here, the first 3 came here."
+  },
+  {
+   "start": 1878.61,
+   "end": 1911.15,
+   "text": "So, it's a simple program. Come, let's do the program. Come, let's do the program. Come, let's write the program. So, let's start. What will you be given? Note star. Any function will be given. And you will be given a head. And you will be given an int k. We will give the code. If you don't agree, you say, no, copy and paste, then it's fine. This is also a complete code, by the way. We will not write anything in it that you will not be able to run in reality. First of all, if."
+  },
+  {
+   "start": 1911.5,
+   "end": 1941.22,
+   "text": "head equal equal to null return null if there is nothing then what will you rotate? there is no use in rotating but now first of all what we have to do? last is equal to head we have to remove last and int n is equal to 1 because there is one node because head is null then there is one node while what was the condition of last? next of last is always null so till it is not null till it is not null"
+  },
+  {
+   "start": 1941.22,
+   "end": 1971.23,
+   "text": "till then what we have to do is n++ and last is equal to last dot sorry last dot next last dot next see why we are working so hard here you don't have to write such code on ipad right we want you to get used to it it is very important to write code on copy or somewhere else before typing this habit is very important to us it doesn't mean that we write that ok remove last no till this habit is not applied till it remains that no the code is written there"
+  },
+  {
+   "start": 1971.23,
+   "end": 1990.93,
+   "text": "If someone gives you, then you will copy from there. No, it is a wrong habit. My register is full of copies, in which we have written the code by hand. Until you get the habit of writing by hand, you will not be able to learn. What will happen if you copy my code? I mean, if you copy my code, what will be the benefit? I don't understand. You always give code."
+  },
+  {
+   "start": 1990.93,
+   "end": 2019.38,
+   "text": "there is a problem in the code, if we give it, then it will be the same code that will be submitted, if it will not be submitted, then you will say that no, you have written it wrong here, the submit did not happen, you have to submit the same code, so get the habit of writing by hand, by yourself, now you have got the last one, ok, now what do you want, now what do you want, now you want n minus kth, so first of all, int, count is equal to 1, did you take count is equal to 1 or did you take 0 above, you started with 1,"
+  },
+  {
+   "start": 2019.57,
+   "end": 2049.58,
+   "text": "and if you want n-k then do that note star t is equal to head this t will tell you whether you have got n-k or not write while t not equal to null if what yes one thing is left now you have got n now you have got n now you have got n yes what you have to do k is equal to k modulus n see one thing is left"
+  },
+  {
+   "start": 2049.58,
+   "end": 2078.19,
+   "text": "What will you have to do? k is equal to and k modulus n. k modulus n. After this, if k is equal to 0, if k comes, then what? There is no need to do anything. Return head. Return head. There is no need to do anything special. There is no need to do anything special. So, some people will say that k is equal to 0. Why didn't you check above? Because, because, this can happen. n is equal to 5. And k is equal to 5. So, here k is not 0. But, when you will do 5 modulus 5, it will become 0. So, it is not 0."
+  },
+  {
+   "start": 2078.19,
+   "end": 2109.65,
+   "text": "It became zero. That means effectively it is zero. That is why it is important to do it in the last. Now it is done. Return head up. Now come. Note star. T is equal to head. For whom? To get the note of n minus k. Count is equal to 1. While t not equal to null. What do you have to check? If count equal equal to n minus k. Break. Break. Only then you will get n minus k. Otherwise."
+  },
+  {
+   "start": 2109.65,
+   "end": 2138.21,
+   "text": "No problem. Count plus plus. t is equal to t dot next. That's it. Now you have got all two things. Now you are ready. You have to do three steps. What three steps? Come, let's do it. You have to do three steps. First of all, last dot next is equal to head. First step is over. Note star result is equal to t dot next. Why t dot next?"
+  },
+  {
+   "start": 2138.21,
+   "end": 2164.99,
+   "text": "t represents n-k and the head represents n-k plus 1 and the fourth one is the rest and after that, what did you have to do for n-k? you had to make the next null t.next is equal to null and return rest that's it, this is a small program this is a small program, this program will be submitted"
+  },
+  {
+   "start": 2164.99,
+   "end": 2195.2,
+   "text": "We will give it in the comments. We don't know what you will do with it, but we will give it. No problem, we will give it. This will be submitted. So, you have learnt this for the rotator inklis. This is the easiest way. You have learnt this for the rotator inklis. Yes, we had said that we will also tell you about the reverse one. So, what is there in the reverse one? See. The reverse one works like this, but it has a lot of edge case. Honestly, it has a lot of edge case. But what was to be done in it? See. 1, 2, 3, 4, 5."
+  },
+  {
+   "start": 2195.2,
+   "end": 2218.86,
+   "text": "what we did to it, how we thought about it, we thought like this, that suppose, in this also you have to take out n, n is equal to 5, and you have to do k is equal to k more or less, but after that what you do, you once reverse the entire linked list, reverse the entire linked list, so it will look like this, 5, 4, 3, 2, 1, now if you say then there is no answer, no there is no answer, reverse it, after that, there is a trick,"
+  },
+  {
+   "start": 2219.34,
+   "end": 2245.38,
+   "text": "Keep the curve on the head and reverse it by K times. How will it look like? It will look like this. 5, 4. It will look like this. We are not telling you to reverse this 4 for the first time. We are giving you homework. You have to do it yourself. Store your head. This is your new head. Now, what do you have to do?"
+  },
+  {
+   "start": 2245.38,
+   "end": 2275.06,
+   "text": "Reverse the next 3 notes as well. Reverse the next 3 notes as well. Reverse the next 3 notes as well. And the first note that you got, you have to store it as well. Add it here. Add it here. And return it. So, effectively, it becomes 4, 5, 1, 2, 3. But this is a bit complex. Obviously, the thing is... Sorry, don't add it here. Don't add 5 to 3. Add 5 to the prev of the 2nd reversed note. Add it to that. Add it here."
+  },
+  {
+   "start": 2275.06,
+   "end": 2301.01,
+   "text": "If you do this effectively, then first comes 4, 5, 1, 2, 3. You have to reverse it 2-3 times, but it will be done like this. It is a bit complex. Let's assume that it is a bit complex. But where does it come from? It comes from array. When we were solving it in array, we did this. Assume that your array was like this. Assume that your array looks like this. 1, 2. This works very well in array. 0, 1, 2, 3, 4."
+  },
+  {
+   "start": 2301.01,
+   "end": 2332.02,
+   "text": "n is equal to 5 and k is equal to 2 so what we used to do is we used to reverse the whole array first 5 4 3 2 1 first step after that we used to reverse the two elements of the beginning k elements of the beginning 4 5 the rest used to remain the same after that we used to reverse the last k and minus k means we used to reverse the last 3 we used to reverse the last 3 4 5 1 2 so after reversing 3 times we get the answer"
+  },
+  {
+   "start": 2332.02,
+   "end": 2345.09,
+   "text": "1st Reverse is Full 2nd Reverse is K at the beginning 3rd Reverse is K at the end"
+  },
+  {
+   "start": 2345.09,
+   "end": 2373.87,
+   "text": "these three will be reversed and you will get the answer, you have to do the same thing here but this approach was easy in array, it was hard in linked list, why? because you had to add that link thing, so this approach was a little hard in linked list, the upper approach was very good in linked list, the upper approach will be very hard in array that how will you join, you can't add the last, the upper approach was very good in linked list, the lower approach, the reverse one works very well in array, but you can do it in linked list, we have done it, you also try, it is a little edge case, put a little mind, you can do it like this, let's meet tomorrow, right?"
+  }
+ ]
+}

@@ -1,0 +1,324 @@
+{
+ "video_id": "RNpZBhZBtJc",
+ "title": "DSA PATTERNS Episode 20 | Linked List Slow–Fast Pointer: Important Questions",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1774,
+ "segments": [
+  {
+   "start": 0.08,
+   "end": 25.86,
+   "text": "I have reached 10,000 subscribers. Very nice. This is the power of consistency. It's been a month since I started the channel. I have reached 10,000 subscribers. I have monetized the channel. Why? Because I get videos every day with consistency. You might think that I get only 1,000 views every day. But I get 1,000 views every day. So it's 30,000 per month if I get 1,000 views."
+  },
+  {
+   "start": 25.86,
+   "end": 54.29,
+   "text": "That's why we say, be consistent. You guys also be consistent. The 1000 people who are watching the video daily, with consistency, you guys have already moved forward. At least, there are 10,000 subscribers on the channel, the average view on the daily view is 1000, so you 1000 people, have automatically moved ahead of the other 90% people. So write this daily. If you feel like, then write daily in the comments, that today 90% kids have left behind. Because the whole game, the whole interview game, job game, success game in general, that..."
+  },
+  {
+   "start": 54.29,
+   "end": 82.67,
+   "text": "You don't have to be good, you don't have to be good, you have to be better than others. If there are three people in the interview, then you have to be better than the other two. It doesn't matter how good you are, how bad you are. If the other person is working harder than you, then he will be selected. No matter how good you are, the day you meet him in the battlefield, the one who has practiced more will win, the one who has practiced less will not survive. Okay? Today is the last lecture of Slow and Fast Pointer. Today this whole topic will end. Okay?"
+  },
+  {
+   "start": 82.67,
+   "end": 112.46,
+   "text": "In the beginning, when we studied slow and fast pointer, what did we tell you in the beginning lecture? That it is a very interesting pattern. Why? Because it can be studied from the linked list. Is it? It can be studied from the linked list. But you can also use it in an array. Or you can also use it on a number. Remember these two things we said. Never think that if there is no linked list, then slow fast pointer will not work. It can work. When does it work? Generally, when does it work? It works in only two cases. When you either have to find a cycle,"
+  },
+  {
+   "start": 112.46,
+   "end": 141.26,
+   "text": "Either you have to find the start point of the cycle, or you have to find the middle of something. It is applied in only three cases. It can be applied in any case. There are three types of serrarios. If you have to do this in the question of array, then it will be applied in that. If you have to do it in number, then it will be applied in that. If you have to do it in linked list, then it will be applied in that. Let's go. We will do a very interesting question today. What will we do? The name of this question is late code 287. Find the duplicate number. Now, why is this question interesting? What does the question say? What do you have? Array. Okay."
+  },
+  {
+   "start": 141.26,
+   "end": 168.64,
+   "text": "Let's assume that your array is of 5 sizes. 0, 1, 2, 3, 4. Now, by law, if every number was repeated only once, then by law, there should be 1 to 5 numbers here. But, but, but, what does the question tell you? In this, how many numbers are there? In this, there are only numbers from 1 to 4. In this array, the question tells you that there are all numbers from 1 to 4. Now, think of an obvious thing. Think of an obvious thing. How many boxes are there in the array? 5."
+  },
+  {
+   "start": 168.64,
+   "end": 190.91,
+   "text": "You are told that all the numbers are present from 1 to 4. So, if every box contains 1, 2, 3, 4. Even now, one box is left. One box is left because there are 5 boxes and 4 elements. So, if you put one in every box, then one will be left. So, what will happen here? From 1 to 4, any number will be repeated. It will be repeated."
+  },
+  {
+   "start": 190.91,
+   "end": 220.06,
+   "text": "It will be an obvious thing because we don't have to keep 5. We have to keep numbers from 1 to 4. We have to keep all of them at least once. So if there is one more box, then it is obvious that one number will be repeated. So any number can be repeated. It can be 3 or 4 or 2 or anything. You have to find this repeated number 3. How many times is 3 in this array? It is 2 times. You have to find this. What do you have to do? You have to find this. Okay. This question is of medium level. Now why is this question of medium level? This question is not that hard. What is the question? It is not that hard but"
+  },
+  {
+   "start": 220.06,
+   "end": 247.36,
+   "text": "It is very difficult for you to think of the logic of the question. It will seem like a slow and fast pointer, but you will never be able to think of it. That is why the question is either medium or hard. Okay, now come. Before applying any algorithm, think of a simple thing with me. You have 5 boxes, right? And how many numbers do you have? 4. You have 1, 2, 3, 4. One obvious thing is,"
+  },
+  {
+   "start": 247.36,
+   "end": 275.47,
+   "text": "that in any two boxes, there will be the same number. There will be the same number? Yes. This is a sure thing. It is a sure thing. Five boxes, four numbers, so in any two boxes, there will be the same number. One number will be repeated. There are five houses and four people. So, there will be the same number of people in two houses. Okay. Now, think about one thing. Now, let's think about index and number. According to which? See, zero, one, two, three, four."
+  },
+  {
+   "start": 275.57,
+   "end": 305.42,
+   "text": "On every index, there will be a number in the array. This is an obvious thing. Array means there will be a number on every index. If you are saying number, then very good. How many indexes do you have? You have 5 indexes. How many numbers do you have? You have 4 numbers. So, it is possible that on i1 index, there will be any n1 number. Any number from 1 to 4. On i2 index, there will be n2 number. On i3 index, there will be n3 number. On i4 index, there will be n4 number."
+  },
+  {
+   "start": 305.55,
+   "end": 335.14,
+   "text": "But what will happen on i5 index? Any one of N1, N2, N3 and N4. You should not have any doubt in this that your array will look like this. It will look like this. Right? It is possible that if it is not repeated on i5, it will go somewhere else. But the general thing is that on any one index, there will be a repeated number. Means on any two indexes, on any i1 and any i2, there will be the same number. What will happen?"
+  },
+  {
+   "start": 335.14,
+   "end": 365.57,
+   "text": "Same number. Very good. Same number. Very nice. So, let's see. This is an array. So, you won't understand what to do if it is an array. So, what to do? Let's make it. What do we want to make? Let's assume that your array is something like this. 0, 1, 2, 3, 4. What do we make? We will say that make an index as your node. What do we make? Make a node. So, let's assume that we start from 0. 0 is your index."
+  },
+  {
+   "start": 365.57,
+   "end": 393.52,
+   "text": "1 is your one index, 2 is your one index, 3 is your one index, 4 is your one index. Every index, every index, the number that you point, the number that you point, what should you do? Point. From that, make an arrow. What should you make? Make an arrow. Arrow. Meaning, if you think that there is 3 on 0, if you think that there is 3 on 0, then make an arrow from 0 to 3."
+  },
+  {
+   "start": 393.65,
+   "end": 424.67,
+   "text": "If you feel that now you are on 3 and if there is 1 on 3, then make an arrow from 3 to 1. If you feel that there is 2 on 1, then make an arrow from 1 to 2. Do this and keep making arrows. What will happen with this? What will happen? What should I tell you now? What should I tell you now? How many numbers do you have? How many numbers do you have? 4. Indexes. How many indexes do you have? That is 5. Right? Meaning, 2 indexes will point to one same number. 2 indexes."
+  },
+  {
+   "start": 424.67,
+   "end": 454.62,
+   "text": "one number one number means two index, two index means the arrow will come out the arrow will come out on the same number what does it mean? suppose your array looks like this one three four two two zero one two three four now let's make our graph, make it in copy take zero index, where does zero index point? on one so make one from zero to one where does one point?"
+  },
+  {
+   "start": 454.62,
+   "end": 483.02,
+   "text": "3. Okay. 3 points to 2. 2 points to 4. And, and, and, 4 points to 2 again. If you make this in copy, it will be your graph. What happened in this? See, 0 is not being pointed. No point is being made. No point is being made. There is no error on 0. Okay."
+  },
+  {
+   "start": 483.02,
+   "end": 512.61,
+   "text": "How many arrows are coming on 1? How many incoming arrows are coming? 1. Very good. 1 should come. How many incoming arrows are coming on 3? 1. How many incoming arrows are coming on 4? 1. But, but, but, how many incoming arrows are coming on 2? How many incoming arrows are coming? 1 is coming and 1 is coming. 2 incoming arrows are coming. See in the array, which number is repeated? 2 is repeated. Why is 2 repeated? Because,"
+  },
+  {
+   "start": 512.61,
+   "end": 542.88,
+   "text": "2 is there, 2 arrows are coming on it. 2 arrows are entering it. Because it is obvious, we are telling you that any 2 index will point at 1 number only because it is repeated. Suppose index number 3 is 4 and index number 2 is also 4. So 3 will also point at 2 and 4 will also point at 2. It will be like this. Now, to understand this, let's make something random. Suppose 0, suppose it will point at 3. Suppose, you have index 0."
+  },
+  {
+   "start": 542.88,
+   "end": 572.19,
+   "text": "1, 2, 3, 4. And you have numbers 1, 2, 3, 4. Remember. Make anything you want. Let's assume that 0 is pointing at 3. Assume that 3 is pointing at 1. Assume that 1 is pointing at 4. It is pointing at 4. Now, how many indexes are there? 0, 3, 1, 4. 2 is left. What is your rule? Now see."
+  },
+  {
+   "start": 572.19,
+   "end": 601.78,
+   "text": "This 4, which is 4, which is 4 now, on which can it point? 4 can point on which? 4 can't point on 1. Why? Because 1 is already 1. 4 can't point on 3 because 3 is already there. Let's assume that 0 is not repeated. 0 doesn't make any point on 0. So if it doesn't make any point on 0, then 4 can't make any point on 0 either."
+  },
+  {
+   "start": 601.78,
+   "end": 632.72,
+   "text": "So, 4 has only one way to do it. Point at 2. Assume that 4 can point at 2. Now, at which point can 2 point? Assume that we don't point at 0 because 0 is not a number. So, 2 can't point at 0. Now, look at 2. What options does 2 have? 3, 1, 4. Where? To send an arrow. Now, if you send an arrow anywhere, for example, if you send an arrow at 3,"
+  },
+  {
+   "start": 632.72,
+   "end": 662.38,
+   "text": "Just for example, see here a cycle has been made. What? 3 to 1, 1 to 4, 4 to 2, 2 to 3. If 2 will send an arrow at 1, then also a cycle has been made. What? 1, 4, 2. If 2 will send an arrow at 4, then also a cycle has been made. What? 4 and 2 have their own cycle. This has become their own cycle. So, now no matter how you make an arrow, no matter what kind of arrow you take, no matter what kind of arrow you take, no matter what kind of permutation or combination you take, we are getting to know that here we will definitely get a cycle. Cycle."
+  },
+  {
+   "start": 662.51,
+   "end": 690.29,
+   "text": "You will definitely get it. Why will you get a cycle? Because see, one person is zero. On which no one is making a point. No one can make a point on zero because no number can be zero in this. Have I told you? It will be from 1 to 4 only. So remove the zero. Zero is coming from outside. Okay. Now let's assume that zero was making a point on 1. Now here there are 3 ways, 1, 2, 3 and 4 more. Now see, you can make a point on 1 anywhere. Make a point on 1 anywhere. Make a point on 1 on 2."
+  },
+  {
+   "start": 690.29,
+   "end": 720.14,
+   "text": "Point 2 on 3 and 3 on 4. If you do anything on the last one, if you point anywhere from 4, 4 can't go to 0. Why can't 4 go to 0? Because there is no 0 number. 4 can either go to 1, 2 or 3. And 4 can also come on itself. This is the thing. If 4 comes on itself, then it will become a cycle here. If you send 4 on 1, then it will become a cycle. If you send 4 on 2, then it will become a cycle."
+  },
+  {
+   "start": 720.14,
+   "end": 745.2,
+   "text": "If you put 4 on 3, then a cycle will be formed. So, you are understanding that if you do any permutation or combination, in this case, the cycle will definitely be formed. What will be the cycle? It will definitely be formed. There is no solution to it that you can make such an arrow without a cycle. No. If you make any array in it, then it will look like this. What will be the difference? The number inside the circle of 1, 2, 3, 4 can be changed."
+  },
+  {
+   "start": 745.2,
+   "end": 771.07,
+   "text": "Now instead of 1, write 2, here write 1, here write 4, here write 3, write anything. But cycle will definitely be made. And why is this cycle being made? Who is responsible for making the cycle? This node is responsible for making the cycle. Whatever, on which 2 arrows are going. Suppose it is going on this, then this is responsible for making the cycle because 2 nodes are coming on it. 2 nodes or 2 arrows are coming."
+  },
+  {
+   "start": 771.07,
+   "end": 799.65,
+   "text": "That's why whoever gets two arrows on the person, is the person due to whom the cycle is formed. The same cycle starts, you get stuck there. For example, what we are saying is that if, remove 0, 1, 2, 3, and 4. Assume that 4 starts pointing at 1. Who is responsible for this cycle? The one responsible for this cycle is 1. Why? Look at 1, two things are coming, two arrows are coming. If you come to 1, then you will get stuck in the cycle."
+  },
+  {
+   "start": 799.65,
+   "end": 828.86,
+   "text": "So, you can't see anything like this. The whole diagram that we have made, the whole array, can't you see anything like this? Did you read something like this yesterday? Did you read something like this yesterday? You must have done something like this with me yesterday. This. In this, we used to see if there is a cycle or not. And who was responsible for the cycle? The person responsible for the cycle was this person. Why? Because he used to get two arrows on this. See, he used to get two arrows on this too. He used to get two arrows on this too. One from here and one from here. He used to call this the starting point. He used to call this the starting point."
+  },
+  {
+   "start": 828.86,
+   "end": 858.96,
+   "text": "Why did we call it starting point? Before this, everything was straight. Before this, the entire link list was straight. As soon as you came on it, you would get stuck in the cycle. That's why we called it starting point. In the same way, wherever 2 arrows go, suppose 4 doesn't point here, if 4 starts pointing here, then see, it is straight till here, but as soon as you come on 2, you will start rotating. You will start rotating round and round. Then you will never be able to get out of it. Then you will never be able to get out of it. In one way, it can be said that 2 is its starting point."
+  },
+  {
+   "start": 858.99,
+   "end": 888.3,
+   "text": "And 2 will be repeated. Why 2 will be repeated? 2 arrows. 2 incoming arrows means that 2 is pointing to index 2. 2 is written on 2 indexes. That's why I asked what is duplicate element which is written twice. So, it must have shined till now. First of all, what do you have to do? What do you have to do in this question? You have to find cycle. What do you have to do? You have to find cycle. And more than find, you have to find starting point of cycle. You have to find starting point of cycle."
+  },
+  {
+   "start": 888.3,
+   "end": 914.96,
+   "text": "This is your question. As soon as you find this, what will you get? You will get your duplicate element. What will we do for this? There is an array. Take an array. Array is given to you. Array is given to you. 1, 3, 4, 2, 2. 1, 3, 4, 2, 2, 0, 1, 2, 3, 4. Now, how will we make its link list? The graph we made, the arrow we made, we made a kind of link list. But how did we make it? We made this."
+  },
+  {
+   "start": 914.96,
+   "end": 944.37,
+   "text": "If you are on any i-index, then what should be your next step? In English, you know the address of the next node. But if you don't know the address, then how will you go to the next node? If you go from i to ai, then you will go to the next node. That means, if you are on 0, where do you have to go from 0? The number which is on 0, means on 1. Where do you have to go from 1? The number which is on 3. Where do you have to go from 3? The number which is here, on 2. Where do you have to go from 2? The number which is on index 2, on 4."
+  },
+  {
+   "start": 944.37,
+   "end": 973.1,
+   "text": "Where do you have to go from 4? The number is here. And as soon as you come here, you will get stuck. You got stuck in the cycle. You got to know how to move forward. If you are on I, then what is your next step? AI. Meaning? Meaning? Meaning? Slow and fast. Slow and fast pointers. Where did it start from? Starting. What is starting? Index 0 is starting. So, slow is equal to 0 and fast is equal to 0. How did we write this? While. While."
+  },
+  {
+   "start": 973.39,
+   "end": 997.42,
+   "text": "Now, there it was written that fast not equal to null. Let's leave it here. See, one thing you know that there is a cycle in it. There is a cycle. Means, I have told you that duplicate element. You don't have to do cycle true or false. There is a cycle. So, why did we do fast not equal to null and fast.next not equal to null? So that if there is no cycle, then your fast will go ahead at some point. It will go beyond the road. But,"
+  },
+  {
+   "start": 997.42,
+   "end": 1026.4,
+   "text": "When there is no cycle here, then fast will never go ahead. Fast will get stuck in that cycle at some point. What will happen? It will get stuck in that cycle at some point. So, you don't need to write anything here. You write simple true here. I mean keep going, keep going. We will know at some point. Very good. Now, what was the next step? We have to increase one step of slow. How to increase one step? Slow. On what is slow? Zero. What is zero? Index. How do we go from index to next? We go to the number. Array of slow. Array of slow."
+  },
+  {
+   "start": 1026.4,
+   "end": 1056.13,
+   "text": "Now increase the slow. How many times does fast increase? Twice. Increase the fast. Where will the fast go? First of all, it will go to the area of fast. Now increase it once. Increase it again. Now again. Again fast is equal to area of fast. Again. Now fast increased by 2 steps. How did we know the cycle? If ever in the world, if slow equals to fast, then we would have known that there is a cycle. There is a cycle. Now where are these two?"
+  },
+  {
+   "start": 1056.13,
+   "end": 1076.59,
+   "text": "Meeting point, meeting point, anyone can be a meeting point. Now what we have to find is starting point. What we used to do for that? First of all, we used to bring slow to start. What is start? Zero, yes. And what loop we used to run? We used to leave fast there. Now while slow not equal to fast. While slow."
+  },
+  {
+   "start": 1076.59,
+   "end": 1101.92,
+   "text": "Now, how many steps were we doing? We were doing one step at a time. Now, we were not doing fast and fast at the same time. Because, the more time people will take to go from start to start of the circle, the more time fast will take to go from the meeting point to the starting point of the circle. Look at yesterday's Maths. If you don't understand, this is the thing that you don't understand. Yesterday, I have explained it very well. Look at it. So, if start also increases by one step now, start also increases by one step, and our fast also increases by one step, what will happen?"
+  },
+  {
+   "start": 1101.92,
+   "end": 1131.47,
+   "text": "and also fast, then at some point, these two will meet. Where will these two meet? These two will definitely meet at the starting point. Definitely. Now, when will this while loop break? When will this while loop break here? When slow is equal to fast. When will slow is equal to fast happen? In yesterday's lecture, we told that it will happen at the starting point only and it cannot happen at any point. That's it. Here, return slow or return fast. Whatever you want, both are equal. Now, close the big while loop. Now, there is nothing to return here. Now,"
+  },
+  {
+   "start": 1131.47,
+   "end": 1161.04,
+   "text": "In yesterday's question, we used to return false here because if we had come here, we would have known that the fast has come out. In this, we know that nothing is going to happen here, the fast cannot come out here. So whatever you want, return it. There is a need to return, that is, if there is an integer, then it has to be returned. There is no difference between minus 1 and minus 1. There is no difference in returning any number here. Return 0, return 1000, do anything. So see this small, cute code. Very decent code. If you tell this code in the interview, then the interviewer will feel that yes, there is something in the child."
+  },
+  {
+   "start": 1161.04,
+   "end": 1186.56,
+   "text": "It is possible. You can think about it. See. What is the question of array? Slow fast pointer. It became like a link list. Did you understand? There are only two things to think about. If you are on one node, then how will you go to the next node? How will you go to the next node? How were we going here? We used to go ahead by going from i to array of i. If we do array of i again, then we will go ahead by that too. So, it will be 2 steps. So, this was the question. Do submit it."
+  },
+  {
+   "start": 1186.56,
+   "end": 1216.58,
+   "text": "Come. Similarly, the same ditto, another question. We said we can put it in array or in number. There is a number, sorry, there is a question whose name is happy number. What? It asks if the number is happy or not. What is the number? Happy. Which question will the happy number leave? The happy number is 202. Your question is 202. Okay. What does happy number say? It doesn't give you any input at this time. It means it doesn't give you an array or a linked list. It tells you that you have a number n. Okay. Number n is given."
+  },
+  {
+   "start": 1216.58,
+   "end": 1246.69,
+   "text": "It's a good thing. What does it say? What do you have to do in every step? You have to convert n into what? Square of... What do you have to do? Sum of the square. Sorry, sum of the square. From which do you have to replace? Sum of square of digits. Of digits. This. You have to do this every time. What do you have to do? You have to do this every time. In which do you have to convert n? You have to do the sum of the squares of the digits in n. Okay."
+  },
+  {
+   "start": 1246.69,
+   "end": 1275.87,
+   "text": "How long do you have to do this? How will you know? If this n ever becomes 1, what does it become? It becomes 1. It becomes 1. So, it is happy. What is it? It is happy. If it does not become 1, if it keeps on rotating in a cycle, it keeps on rotating, it keeps on rotating, then this is not a happy number. It is not happy. For example, take a number, n is equal to 19. If we convert 19 for the first time, will it become 1 plus 81? It will become 82."
+  },
+  {
+   "start": 1275.87,
+   "end": 1303.65,
+   "text": "If we do 82 again, it will become 64 plus 4. It became 68. If we do 36 plus 64, it will become 100. If we do 100 again, it will become 1 plus 0 plus 0. It became 1. As soon as it becomes 1, the game is over. What is this? Happy number. Very happy. Very happy. You also become happy. This number will also become happy. But if n is equal to 2, then let's run it on 2."
+  },
+  {
+   "start": 1303.65,
+   "end": 1333.34,
+   "text": "What will it be? Since it is one digit, it will be 4. What will 4 be? 16. What will 16 be? 1 plus 36 is equal to 37. What will 37 be? 9 plus 49 is equal to 58. What will 58 be? 25 plus 64 is equal to 5 plus 49 and 89. What will 89 be? 64 plus 81 is equal to 5 and 145. What will 145 be? 1 plus 16 plus 25."
+  },
+  {
+   "start": 1333.34,
+   "end": 1364.51,
+   "text": "What is this? 26, 30, 32. What is 32 going to be? 9 plus 4 is equal to 13. What is 13 going to be? 1 plus 9 is equal to 10. Oh, this is again 1. This is 1, right? Did I do something wrong? 2, 4 is going to be. 4, 16 is going to be. 16, 37 is going to be. 37 is going to be. 9 plus 49. What is going to be? 58, okay. 58 is going to be. 25 plus 64 means 9 and 8, okay."
+  },
+  {
+   "start": 1364.51,
+   "end": 1392.85,
+   "text": "89 becomes 64 plus 81, so 4 plus 1 is 5, 145, 145 becomes 1 plus 16 plus 25, so 17 plus 25, 17 and 5 is, 17 and 25 is 12, 2, 1, 3, 42. See, we did it wrong, right? We did it wrong here. We made a mistake, sorry. 42, 42, 42, come. What can 42 become? 16 plus 4 is equal to 20. What can 20 become?"
+  },
+  {
+   "start": 1392.85,
+   "end": 1421.73,
+   "text": "4 plus 0 is equal to 4. Yes, now see. Now see. You had reached 4 at some point. You had reached 4 at some point, right? Then you reached 4. Now if you start again, right? If you start again, then you will keep repeating in this. What has become of you? You will keep repeating. You will never reach 1. Now go and see. You started from 4. You started from 4 and came back to 4. That means you will come back to 4. This question also seems a little different that in some of it, the mind is shining. Now what are you doing? N."
+  },
+  {
+   "start": 1421.73,
+   "end": 1451.66,
+   "text": "We are making some n1 which is the sum of its digit square. We are making n1 as n2 and n3. If it becomes 1 at some point, why is 1 happy? Because if you convert 1, then it will become 1 only. After that, it will keep rotating on itself. So it will keep rotating on itself. But if it doesn't become, let's say it becomes n4, then it becomes n5. And at some point, let's say n5 becomes n2 again, then you are stuck in this cycle."
+  },
+  {
+   "start": 1451.66,
+   "end": 1480.43,
+   "text": "Now you are stuck in this cycle. Now you will never be able to become 1. You will never be able to become happy. It is the same question. It is the same question of slow fast. It is the same question of slow fast. What have you been told? Take the slow as N. Take the fast as N. While. While. How long do you have to do this cycle detection? Until it becomes 1. If it becomes 1, then you are happy. If it becomes 1, then you are happy. While. Fast. Not equal to 1."
+  },
+  {
+   "start": 1480.43,
+   "end": 1509.14,
+   "text": "why we are not checking fast next? because fast after 1 will be 1 only if fast is 1 then if you will convert it to 1 then it will be 1 if you will convert it again then also it will be 1 so no need to check any chariot, we can do it what used to happen? slow make another function, do one thing here make int fun which will give you the sum of any number's digit square how do we do it? we do it like this"
+  },
+  {
+   "start": 1509.14,
+   "end": 1536.8,
+   "text": "What we are saying is, you make a function. See, what do you want in the linked list? How will the next one go after 1n? How will the next one go? It is said in the question that square all the digits and sum them. For that, make a function like this. You pass int n here. Okay, int sum is equal to 0. Whenever you have to tackle any number of digits, this is what happens for that. For that, a simple while loop is written. n is 0. First of all,"
+  },
+  {
+   "start": 1536.8,
+   "end": 1566.56,
+   "text": "First of all, take out its digit by doing modulus 10. And divide n by 10. What will happen with this? If n is 58, then first of all, your D will have 58, modulus 10, 8. And when you do n 58 by 10, then n will become 5. So what should you do? Keep the last digit here and remove the last digit. 58 becomes 5, 8 is removed. That's why we do it. Okay. Now you have the digit. Do whatever you want with the digit. What we have to do? Sum is equal to sum plus."
+  },
+  {
+   "start": 1566.56,
+   "end": 1592.91,
+   "text": "D into D. You want the sum of square. Close the while loop. In the end, return your sum. So, what is this function doing? If you pass n, then it will square the digit of n and return its sum. It means it gives the next step. It means if we did slow.next, then instead of slow.next, you can use slow to pass n and give the next step. So, use this. How many steps does slow increase? Slow increases one step. What will slow be? Fun n. That's it."
+  },
+  {
+   "start": 1592.91,
+   "end": 1623.25,
+   "text": "How many steps does fast increase? Fast increases by 2 steps. Like we did in the previous question, write the same thing twice. Write twice. Why are you writing twice? Because in the linked list, you used to write this directly. Fast.next.next. Do the same thing. You are doing next twice, so write it twice. Okay? Now, now, now. Okay? If, if, slow equal to fast. Okay? And, and, and."
+  },
+  {
+   "start": 1623.79,
+   "end": 1653.95,
+   "text": "Slow not equal to 1. What does it mean? Slow and fast means cycle. And at what point is it found? It is not found at 1. Suppose it is found at 4. It is found at 4 or 16 or 37. It is found at 1. It is found. It means there is a cycle. But no one has made 1 yet. So if it gets stuck in any cycle other than 1, like we saw up there. Where did we see it? We saw it somewhere, right? If it gets stuck in any cycle other than 1, it means it cannot be a happy number."
+  },
+  {
+   "start": 1653.95,
+   "end": 1682.96,
+   "text": "Just, here, make the return false. Close this, close the while. When will this while break? When will this while break? Now, when your fast has become 1. Fast has become 1 once, it means it has come to 1. 1 will keep happening again and again, 1, 1, 1, 1, 1, 1. And slow will come at some point, at some point. It means that your fast has come out, there was no cycle, it came to 1. Slow will also come at some point. Just, here, make the return true."
+  },
+  {
+   "start": 1683.41,
+   "end": 1710.94,
+   "text": "The game of the happy number is over. See, the happy number is over. I told you, it is also applied in number, array, and linkage. If you want to find the cycle, then it will be applied. See, it is a simple program. What did you do? You did nothing. Slow and fast are the same. Slow is equal to starting point. Fast is equal to starting point. Increase the slow by one step. Increase the fast by two steps. Check in the while loop that the fast never goes out. Okay. After that, as soon as the slow is equal to the fast, you have got the cycle. If you also want the starting point,"
+  },
+  {
+   "start": 1710.94,
+   "end": 1736.13,
+   "text": "So, keep the slow at the starting point and keep the fast at the starting point. Increase both of them one by one, not at double speed. Increase the slow one and increase the fast one. Now, both of them will be at the starting point of your cycle. This is how good it is. What? Slow, fast, pointer. Sorry, pattern. The same template will be used in every question. The same template will be used. Sometimes this can have to be changed or this can have to be changed. Now, why can this have to be changed?"
+  },
+  {
+   "start": 1736.13,
+   "end": 1762.62,
+   "text": "How will we find it? How will we go to the next step? If there is a link list, then we will go to the next one. If there is a question of array, then we will go to the array of i. If there is a question of number, then it will tell you how to go to the new number. How to go to the new number? Is it right? Let's go. This is done. What is the slow and fast pointer today? It is over. Slow and fast pointer today is over. Those of you who are watching till here are very cute kids."
+  },
+  {
+   "start": 1762.62,
+   "end": 1770.93,
+   "text": "Go and submit both the questions. You will get the link of the pattern sheet. So go and submit both the questions. If there is any comment, then do tell. See you."
+  }
+ ]
+}

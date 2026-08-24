@@ -1,0 +1,494 @@
+{
+ "video_id": "jIz4zcFuUU8",
+ "title": "Best Explanation Of Kadane One Deletion On The Internet | DSA Pattern Course CPP JAVA",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2677,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 26.88,
+   "text": "Hello, you are watching Bado with Pratyush. My name is Pratyush Narayan. This video is very special because we are making this video a little out of schedule. Because we got a feedback on episode 23. Where we had done this question, Cadain with one deletion. So in that, the majority of the comments were like, I didn't understand this question and the explanation was not good in this. It became very complex, there was no dry run, etc. So see, thank you very much to those who have given feedback."
+  },
+  {
+   "start": 26.88,
+   "end": 38.43,
+   "text": "When my goal was to start this, my goal was to educate you, my goal was to become a YouTuber, my goal was not to gain subscribers like this. So when that will not happen, when you will not understand, then there is no point of anything that we..."
+  },
+  {
+   "start": 38.43,
+   "end": 67.63,
+   "text": "celebrate 20,000 and then 30,000 or 100,000 but we are not doing what we came to do so today we will look at this question again in a very simple way for this we have thought for 1-1.5 hours how to make you understand and this happened because at that time a lot of comments were coming like this, it still comes that when will the course end, when will the course end, finish it quickly, study for an hour in a day, do 5 questions in a day, 6 questions, so we also got a little scared, that is, every day a comment comes, so the person thinks that yes, let's do it quickly, but now we will not be scared"
+  },
+  {
+   "start": 67.63,
+   "end": 92.06,
+   "text": "Because, yesterday there was a comment that to finish the course, what is a course? If we finish the course, then what benefit will you get from it? If the whole course becomes useless, if we will do one thing that we are teaching 5 questions in a day, then it is obvious that when a person will teach 5 questions in an hour, then how much will every question get? Every question will get 12 minutes. So in every question, while teaching, the last question may be that we will feel that yes, it is fine."
+  },
+  {
+   "start": 92.06,
+   "end": 118.38,
+   "text": "because even I have a limit, so in a day you say that no, you teach 2 hours in a day, 5 questions in a day, 10 questions in a day, you are not going to get any benefit from that, I mean we will teach, but it will be like this, that when we made this video, we had explained 2 or 3 questions in it at once, we should not do that, because caden, prefix, sum is a complex topic, so if we start teaching 5 questions in a day, then it is obvious that one question will be asked here and there, and"
+  },
+  {
+   "start": 118.38,
+   "end": 143.18,
+   "text": "You guys didn't get any benefit from it. No one got any benefit from it. You guys watched the video, you didn't understand, your time was wasted. We made that video, but we have to make it again. And this video will be very long. It is possible that my time is also wasted. So everyone's time is being wasted. So now we are thinking in such comments that when will the course end? When will it end? And such suggestions that you make so many videos in a day. Because there are a variety of people, see."
+  },
+  {
+   "start": 143.18,
+   "end": 173.06,
+   "text": "There are a variety of people and a variety of suggestions. Someone says that you should make 2 hours in a day. Yesterday a comment came saying that you should make one on alternate days. Someone says that you should make it on every 3 days. So okay, everyone's words will be heard. It will not be accepted. Now this is the truth. So we will not do what you want. We will do what we feel is beneficial to you. So whatever your mind may be. Your mind may be to do drugs. It does not matter to us. It will not work according to your mind. We want to do what is good for you. Now come."
+  },
+  {
+   "start": 173.06,
+   "end": 200.99,
+   "text": "Whoever is watching for the first time, we request you to at least watch the introduction of Cadains because you should know about Cadains to understand it. So, let's start the question, open it, do dry run and see everything. So, what does this question tell you? This is a question of normal Cadain. This question is a question of normal Cadain only. What does normal Cadain mean? That it is maximum sub-array sum. Okay, you all know this."
+  },
+  {
+   "start": 200.99,
+   "end": 228.3,
+   "text": "This is the maximum sub-array sum which is contained in this. What used to happen in that? On any index i, what we used to do? Let's do a little revision. On any index i, we used to see that till i-1, till i-1, which sub-array is the best? Which sub-array is the best? Then you used to have two options. What option did you have? Either you join this sub-array, join this sub-array group, and the ending one on i,"
+  },
+  {
+   "start": 228.34,
+   "end": 257.49,
+   "text": "Make a good array. So from the previous one, suppose if it had a sum, you would have said that we will become sum plus ai. Or if you didn't want to join, you would have said that we will make our own, we will not join, we have nothing to do with this. So you can understand this in such a way that suppose four people were standing at the back already. Four people were standing, so this can be the best, there will be four people. You were on E. You have two options, either you join their group, or you make it like this, A, B, C, D, E."
+  },
+  {
+   "start": 257.49,
+   "end": 286.7,
+   "text": "Okay. Or if you think that this group is useless, that means we don't have to join this group, we are good ourselves, then you can also make your own. The best in both of these, the best in both of these, that is the answer of your E. E means ending at index E. Ending at index E. That is the answer of this sub-array. It is not necessary that it is A, B, C, D. It can be B. It means any sub-array which is ending at D. When you are at E, then what was the meaning of your previous?"
+  },
+  {
+   "start": 286.7,
+   "end": 311.63,
+   "text": "that the best sub-array that ends on D, it may be this, B, C, D, it may not be A, it doesn't matter, but it ends on D, right? Even now, you had two choices, either you get it in this, B, C, D, E, and make the E-pending one, or if you don't like it, you think that B, C, D is useless, we are very good, then you can make your own. You used to take the best of these two in that. You used to do this for every index and you used to get the answer, then it became normal, but"
+  },
+  {
+   "start": 311.79,
+   "end": 340.91,
+   "text": "What makes this question hard? What makes this question hard is that you are being given a special power. You are being given a special power. What is that power? You can do one delete. What does this mean? What does one delete say? It says that you have an option. Power means there is an option. It is not necessary to do it. It means it is not necessary for you to do this work. You can do it if you want to. You can do it if you want to. What can you do?"
+  },
+  {
+   "start": 340.91,
+   "end": 368.18,
+   "text": "you can ignore any one element. Yes, delete means you can ignore it means you can accept that it is not there. You can accept that it is not there, move forward. It is not there, move forward. This, this is giving you power. That is why the name of this question is with one deletion. It means ignore any one element and move forward. Okay. If this gives you power, then now the answer is asked from you. This content is not necessary."
+  },
+  {
+   "start": 368.18,
+   "end": 397.95,
+   "text": "It is a power, means we can do it if we want or we can't do it. Okay. So, first of all, let's understand one thing that we didn't cover in the previous question, that, okay, now some people will think that okay, this is also a choice, right? What is this power? This is your choice, that you can ignore it, okay? So, first you had two types of choice, means if we look at the normal cadence, then there was one choice that you should join with the back one. What should you do with the back one? You should join."
+  },
+  {
+   "start": 397.95,
+   "end": 430.08,
+   "text": "This was the first choice. The next choice was to make your own in normal cadence. Start your own. Start your own. Start your own. These were the two choices. There is one more choice in this question. There is a third choice. Ignore this element. Ignore this and move forward. What should you do? Move forward. This is also a choice. This is also a choice. You will ignore this and move forward."
+  },
+  {
+   "start": 430.08,
+   "end": 458.54,
+   "text": "This is also a choice to say. Yes, this is also a choice. So why do we have to be so smart in this? We will incorporate this choice in it somehow. And we will say that this is my answer. So why can't this happen? This should be done with one variable. So let's see what is the problem in this question. The choice given to you, you can use that choice anytime. It is your wish, you can use it anytime. But you can use it only once."
+  },
+  {
+   "start": 458.93,
+   "end": 480.98,
+   "text": "You can only use it once. What does it mean? It means that if you use that choice once, then you will not be able to use that choice in the future. For example, in your school, you are taught the marks of one subject every day. Right?"
+  },
+  {
+   "start": 481.14,
+   "end": 506.38,
+   "text": "One subject's marks are told. You are told one subject every day, Maths, Physics, Chemistry, History, whatever. What you have to do is that you have to make a maximum sub-array, that is, a continuous marks which you like the most. It is possible that you like the subject of 3 days the most, that we got 100 in Maths, 90 in Physics, 95 in Chemistry. So, we want to show our parents by combining those 3 days, that see, in 3 continuous subjects or in any chart, whatever, you are understanding that you got the highest number in a sub-array."
+  },
+  {
+   "start": 506.61,
+   "end": 535.6,
+   "text": "It is possible that on the first day, you get a maths paper and it shows that you have got 100 marks in it. So you say, very good, we need 100, very good, so you keep it, that okay, you have got 100 marks in maths. On the second day, you are shown physics and you get 85 marks in it. So you say, very good, very good, 85 is a good number, so we keep it too. On the third day, on the third day, you are shown chemistry. Chemistry. You get 30 marks in chemistry. You fail. Now, you have two choices, that either you combine this chemistry with maths and physics,"
+  },
+  {
+   "start": 535.6,
+   "end": 564.91,
+   "text": "Last, we have to tell our parents that we got 100, then 85, then 30, etc. Either you have a choice that what to do in normal cadence. Either you forget only chemistry, maths, physics. Or you connect it with maths, physics. Now you have one more option that you can ignore it. You can pretend that you have never seen a chemistry paper. You can throw away a chemistry paper. So assume that we use it. We throw away a chemistry paper."
+  },
+  {
+   "start": 564.91,
+   "end": 588.54,
+   "text": "We will tear the chemistry paper and throw it away. Okay, no problem, throw it away. Come on. Okay, people will think that we can do this, right? We can do this. Moving forward, you were shown the history paper. In history, you were given 80 marks. Okay, these are also good marks, so you can say that it is okay. My current marks are Maths, Physics, Chemistry, Ignore, History. Very good. But,"
+  },
+  {
+   "start": 588.54,
+   "end": 614.9,
+   "text": "The next day you were shown English paper and you got 5 marks in it. Now you are successful. Now you say that this is not possible at all. You can't show this in your house at all. Do one thing, we made a mistake. We don't want to ignore chemistry. We want to ignore English. But that is not possible. Why? You have already ignored chemistry. You had thrown away your chemistry paper."
+  },
+  {
+   "start": 614.9,
+   "end": 644.05,
+   "text": "Now you can't throw away your English paper. Now you have only two choices. Either you connect it with the Maths, Physics, History that was going on. Connect it with English. Which means English will remain. Or start your own English paper. This is worse. Start your own English paper. Or you have to connect it with any good number like 185 or 80. And you have to show it to your parents. There are only two options. Now you have ignored it."
+  },
+  {
+   "start": 644.05,
+   "end": 671.95,
+   "text": "That's why normal variable doesn't work because how will you know that we have to ignore chemistry? It may be that your mind is saying, it may be that you see for the first time that we got a low number in 30, so you feel like ignoring it. But you don't know what's going to happen in the future, you got a lower number in the future. So you are convinced that no, no, no, we made a mistake, so we can't keep it at all, it will spoil me completely, we wanted to ignore it. So you have this choice over here. Why? Because you have used your choice here."
+  },
+  {
+   "start": 672.05,
+   "end": 696.78,
+   "text": "How did you use it? You didn't see the future. You immediately used the choice of English. You didn't know the answer to all the papers. It is possible that in the future, geography will come. If you get a number in geography, then you will feel like ignoring geography. But you won't be able to do it. Why? Because you have already ignored English chemistry. That's why, that's why one variable is not possible. Why? Because it is a game of choice. It is a game of choice. On every subject, on every subject, you..."
+  },
+  {
+   "start": 696.98,
+   "end": 725.92,
+   "text": "You have to consciously choose whether to ignore it or not. And you should have both the data available. How? For example, when you come to English, you should have both the data available. One data, means one list of marks should be such in which you have not ignored anything till now. You have not ignored anything. You have not ignored anything. Means you have not kept your strength, you have kept your strength. So one person should remember this."
+  },
+  {
+   "start": 725.92,
+   "end": 742.05,
+   "text": "and one of the data you have already ignored one of the data you have already ignored now there you have two normal ways either you start it new or you add it to the previous one so it is necessary to have both if you keep only one then consider in chemistry you have ignored"
+  },
+  {
+   "start": 742.05,
+   "end": 770.43,
+   "text": "Now you have data in which one has been ignored. Now you feel that no, no, no, we made a mistake, we have to ignore English. So how will you do it? You had ignored it, now you won't go back and say no, no, reverse it, we made a big mistake. So this is not possible. That's why after coming to any subject, you should always have both the choices open that we have to ignore it or not. And that's why you should have both the past data, that there should be one data in which you have not ignored anything. There should be one data in which you have ignored one."
+  },
+  {
+   "start": 770.43,
+   "end": 799.57,
+   "text": "that's why, that's why it can't be done with one variable, isn't it? so this is the reason for it no one had thought about it, that no, this is not possible, no, you see it's a practical problem that how do you know what's going to happen in the future? you don't know what's going to happen in the future, so how did you ignore chemistry? by ignoring it, you mean to say that yes, it's been ignored, now we won't ignore anything in the future how did you accept this? you don't know what's going to happen in the future in the future, a very worst, worst number is going to come so this is its logic, that why"
+  },
+  {
+   "start": 799.57,
+   "end": 816.93,
+   "text": "we will not be able to solve it in a normal way with a single variable. After creating so many stories, what we came to know is that when you reach any subject, when you reach any subject and try to decide what to do in it, it is necessary that you have data of both types available. What does this data of both types tell us?"
+  },
+  {
+   "start": 816.93,
+   "end": 843.2,
+   "text": "One data will tell you that you haven't used your power yet. What? You haven't used your power yet means this is normal. There will be two choices in every subject that either connect it with the previous one or start a new one. And there should be one data that you have used your power. You have used your power. You have used your power. You have used your power. You have used your power. You have used your power. You have used your power. You have used your power. You have used your power. You have used your power. You have used your power. You have used your power. You have used your power. You have used your power."
+  },
+  {
+   "start": 843.2,
+   "end": 873.31,
+   "text": "You need a choice. You make a conscious choice. Don't be rigid that yes, this subject is good for me. You have to keep your options open. Come on, you have to do both things. In a way, you have to make two universes. Come on, history has come. One universe will be like this in which history will be ignored. One universe will be like this in which history will not be ignored. Because you don't know what is going to happen next. What is going to happen next. So, every subject will make its own different universe, different state. Come on, let's see what it means."
+  },
+  {
+   "start": 873.31,
+   "end": 903.31,
+   "text": "What does this mean? For example, let's say you have reached history at some time. You have reached history. Okay? You have got a number 30 on history. 30 is not such a good number. Your parents will scold you in 30. So, what should we say? You should have both the data available. Suppose you have one data available. Which one? In which you haven't deleted anything yet. There are some subjects. So, suppose there were these subjects in it. That there was physics."
+  },
+  {
+   "start": 903.66,
+   "end": 934.1,
+   "text": "It was chemistry and English. This is the last one. No one must have deleted it. This was the maximum error of the last one. So this was the one in which you didn't use. This was the answer of the last one. There must be another answer of the last one. You have used your power till the last one. It is possible that it is like this. Physics and English."
+  },
+  {
+   "start": 934.1,
+   "end": 964.11,
+   "text": "Look carefully, here you can't see chemistry, why? Because you might have used your power in chemistry. We were talking about this, when we saw this example earlier, when you came in history, you didn't have a choice, because you had already ignored chemistry. But here you can see both things. You have options open, that you didn't ignore this, you ignored this. Now we will take a decision, what we have to do. Now look carefully, here there is no chemistry."
+  },
+  {
+   "start": 964.11,
+   "end": 993.06,
+   "text": "Let's assume that we have ignored chemistry. But there is one option that has physics and chemistry. You still have two options that you can ignore history or you can take history. You can ignore history or you can take history. Let's see what options you have. What is the first option you have? The first option is that you don't want to use power. You don't want to use power."
+  },
+  {
+   "start": 993.06,
+   "end": 1021.86,
+   "text": "We don't have to use power, we have to be normal and we will be normal. The second thing is that you have to use power. You have to use power. And where do you have to do it? You have to do it on history. You have to do it on history, you have to ignore history, you have to use power. One is that you don't have to use power. You don't have to use power. Okay. When you don't have to use power, you don't have to use power, then what options do you have? What options do you have? One option is that when you don't have to use power, you don't have to ignore history."
+  },
+  {
+   "start": 1021.86,
+   "end": 1051.33,
+   "text": "One is that you take only history. Take only history. Make your own history. One is that you connect with the previous one. That means connect with the previous one. Whatever is physics, chemistry, English. Connect with it. Physics. Chemistry. English. Excuse me. The light must have gone off. English. And connect with it. Connected. Connected. Okay. What are the other options? What are the other options?"
+  },
+  {
+   "start": 1051.33,
+   "end": 1085.44,
+   "text": "You can also connect the previous power with the previous choice. Means you had ignored chemistry in the previous choice. What do we know? We don't have to use history now. We don't have to use power in history now. We have to take history. You can also use it with this. You can use it with this. What? Physics, English, and history. And history. We can do these three things. When you don't have to use power, what does it mean? You don't want to ignore history. You think that 30 is fine. We are satisfied with 30."
+  },
+  {
+   "start": 1085.44,
+   "end": 1111.49,
+   "text": "Either you can make a new one, or you can make a new one. Or you can add history to the previous one where you didn't use power. This is also an option. And when you have used power, when you have ignored chemistry, then you say, yes, okay, we don't care about that. We want the current one, so you wrote physics, English, and history. You could have done this too. Now, now, now. It means you have to use power. What does power use mean? You have to ignore history only."
+  },
+  {
+   "start": 1111.49,
+   "end": 1139.7,
+   "text": "We don't want history here. No, we don't want history at all. We don't want history. We don't want history. We don't want history. We don't want history. We don't want history. We don't want history. We don't want history. We don't want history. We don't want history. We don't want history. We don't want history. We don't want history."
+  },
+  {
+   "start": 1140.91,
+   "end": 1169.28,
+   "text": "Actually, these three will not work. You will have to think of something new. By not taking history, what things can happen to you? Okay. There is one option. You can take this person again. If you write physics, chemistry, and English here again, then see what will happen. Physics. Chemistry. We have unlocked a new color today. That's why we are using it more because it looks good. You can write this one. History came."
+  },
+  {
+   "start": 1169.28,
+   "end": 1199.02,
+   "text": "You ask us to do physics, chemistry, and English. And you don't take history. And you don't take history. You don't see history anywhere. You don't take it. Very good. Okay. Can you write physics and English to this person? No. You can't write it. Because if you write it here, then your answer will look like this. Physics, English. When are you writing all these answers? When history has come. Now see. What is the problem in this? First of all, you ignored chemistry."
+  },
+  {
+   "start": 1199.02,
+   "end": 1214.46,
+   "text": "There is no chemistry in this exam. Okay. Then you have also ignored history. You are saying that we will also ignore this. It is not allowed. You cannot ignore two subjects. Chemistry has been ignored. You cannot ignore history with that. No. No. No. Where did you ignore history?"
+  },
+  {
+   "start": 1214.46,
+   "end": 1244.02,
+   "text": "The data of the previous one, in which nothing was ignored, with that you had said that, take physics, take chemistry, take English, don't take history, don't take history. With that you could have said, you cannot ignore history with physics and English, in which chemistry was already ignored. This is not allowed because you are doing two deletions, you are ignoring two. This is not allowed at all. No, no, no, no, no, no. This is not allowed. This is not allowed at all. You could not do this. Okay."
+  },
+  {
+   "start": 1244.08,
+   "end": 1274.14,
+   "text": "and you could have done something else, you could not just take history because you were addicted to using power. So, in total, we can see four things. First of all, we can see this history. What? We can see one history that you want to take history from yourself. Very good, take it. We can see one that you are combining history with the previous physics, chemistry, and English where you did not use data. So, this is also correct."
+  },
+  {
+   "start": 1274.14,
+   "end": 1303.36,
+   "text": "So, physics, chemistry and English. So, where you haven't used data, you are combining history with that. Do it, there is no problem. Okay. When you deleted the data in the previous data use, when you removed the chemistry, you are combining history with that. That is also allowed. Physics, English and history. Okay. You can combine with that. You haven't used power yet. And,"
+  },
+  {
+   "start": 1303.36,
+   "end": 1327.65,
+   "text": "One more thing, when you were addicted to using power, when you were addicted to using power, you were like, no, we will ignore history, we will do history, we will not take history. So, you could not make him meet this man. Physics is already chemistry ignored in English, you are saying we will ignore history too. If you want to ignore history, we will not take history, we will not take history at all, we will not take it at all. So, you have to write this, that let's go."
+  },
+  {
+   "start": 1327.65,
+   "end": 1352.98,
+   "text": "Till the end, we had an answer in which we took physics, chemistry, and English. Now, we will not take history. So, we will write it again. We will write it again that physics, chemistry, English. Apart from these four, do you see any other option for any subject? No, we don't see any other option. We don't see any other option. Yes, now..."
+  },
+  {
+   "start": 1352.98,
+   "end": 1383.66,
+   "text": "It can't be empty, so you have to keep one subject empty. So, we can only see these four options. Whenever you come to a subject, you have to do this. Provided that you have this kind of data. You can see this kind of data. So, one of these four will be your answer. One of these four will be your answer. Okay. So, what should we do now? This will be the answer. This will be the answer. But, but, but, now one more part is left. One more part is left. What did we say? Whenever you come to any subject,"
+  },
+  {
+   "start": 1384.4,
+   "end": 1414.38,
+   "text": "When you come to any subject, you have two types of data available. Which two types of data are available? The first in which power has not been used. So what was that data? That we had taken physics, chemistry, and English. It has not been used. What was the next? In which power has been used."
+  },
+  {
+   "start": 1414.38,
+   "end": 1441.1,
+   "text": "Means, you used to come to any subject and you used to want these two. So, suppose it looks like this. Physics. You have ignored chemistry. So, on which subject did you use power? On chemistry. And your English. What is the subject you have now? History. History. We have seen above that you have, in total, you use power and you don't use power. There are only four choices. You don't have any other choice other than these four. Now, if there are four choices, then the answer will come. But, now,"
+  },
+  {
+   "start": 1441.1,
+   "end": 1467.76,
+   "text": "When you will go ahead, when you will go ahead in the loop, then you will have to update both these data for the history, both the data will have to be updated for the history. So let's see that out of these four, now what are these four, four are your options. So what used to happen in caden, that we keep updating the previous best, right? Because when you go ahead after history, you will have to do the work of history. You will have to do the work of history of this data. You will have to do the same in geography. That's why you will have to update both, the one who uses power and the one who does not use power."
+  },
+  {
+   "start": 1467.76,
+   "end": 1497.3,
+   "text": "Let's see where all these four options can go. What do they signify to you? First of all, the one person is history. The one who was alone. This history. What does this history tell you? We are taking the same subject. We are making the morning of the same subject. The start is also on history and the end is also on history. This is what the morning tells you. What does the morning tell you?"
+  },
+  {
+   "start": 1497.3,
+   "end": 1526.72,
+   "text": "For example, when you used to see this sub-array, what did it tell you? That there was a physics at the start and it was English, so physics, chemistry, English. It was such a sub-array. History tells you that you have to start with history and end with history. So, have you deleted anything here? Have you ignored anything? No, you haven't. Because start was happening with history. When does ignore happen? Start with physics, end with English, and in between, chemistry, ignore. In between, chemistry, goal. Let's assume that your array looks like this. Let's assume that your array looks like this. If you still have doubts, your array was like this."
+  },
+  {
+   "start": 1526.72,
+   "end": 1551.2,
+   "text": "This was physics, this was English, what was after physics? After physics, there was chemistry, after physics, there was chemistry, this was English, then there was a history. So, what is the meaning of ignoring? Suppose you take English from physics, this becomes your sub-array, so here you ignore chemistry, so this is the meaning of ignoring."
+  },
+  {
+   "start": 1551.2,
+   "end": 1583.09,
+   "text": "When you say that I have one choice, my history, I am making a new one. What does it mean? It starts on history and ends on history. So, has anything been deleted here? Nothing has been deleted here. Nothing has been deleted. Nothing has been deleted. That means, power use has not been done. Power use has not been done. It's okay, let it not be done. We are just seeing whether it has been used in every choice or not. What was your second option? You can take physics, chemistry, English or history."
+  },
+  {
+   "start": 1583.09,
+   "end": 1611.79,
+   "text": "Take it. What did you say? Physics, Chemistry, English, History. What does this mean? From Physics to History, all of them. See. From Physics to History, all of them. Did anything get deleted here? Can you see anything getting deleted? No, I can't see anything. I can't see anything at all. Power use hasn't happened. Power use hasn't happened. Yes. It hasn't happened. It hasn't happened, right? Very good. What was your third option?"
+  },
+  {
+   "start": 1611.79,
+   "end": 1643.5,
+   "text": "The third option was physics, English, and history. So, this data, the data of power use, you had combined history with that. So, come, let's write this too and see what it was. Physics, English, and history. Has power been used here? Yes, yes, yes, power has been used here. Why? Because it is going from physics to history. But you can't see chemistry in this. See, physics, no chemistry, English, history. So, has power been used here or not?"
+  },
+  {
+   "start": 1643.5,
+   "end": 1673.01,
+   "text": "Not now. Has power ever been used in this data? Yes. This is the data of power use. You cannot say that this data is of power non-use. No. It has been done. Chemistry has been deleted. Here, power has been used. Here, power has been used. Yes. What was your fourth choice? Your fourth choice was this. Remember. When you got addicted to it, you got completely addicted to it. No. We will believe only after using power. We will not take history at all. So, what did you write? You said that,"
+  },
+  {
+   "start": 1673.01,
+   "end": 1698.06,
+   "text": "you don't want to take history but with this you have written physics, chemistry and english which was the data of the last one where power was not used you said that okay give us the data where power was not used and we will ignore history and make this our data till now so it means that we have used power yes we have rounded history so you couldn't take the data of the last one where chemistry was ignored no because chemistry is already there so you can't ignore history no"
+  },
+  {
+   "start": 1698.06,
+   "end": 1724.4,
+   "text": "You will have to take the data where no subject was ignored. So that was physics, chemistry, and English. Now we will ignore history in this and make it our data. So let's write physics, chemistry, and English. What? Physics, chemistry, English. Now where are you doing all this work? When you have seen up to history. Has anyone been ignored in this? Yes, history has been ignored in this."
+  },
+  {
+   "start": 1724.4,
+   "end": 1753.42,
+   "text": "Physics, Chemistry, English, History, History, History, History, History, History, History, History, History, History, History, History, History, History,"
+  },
+  {
+   "start": 1753.42,
+   "end": 1778.48,
+   "text": "In which category do you come? In which the power has not been used. In which category do the remaining two come? In which the power has been used. You will update your data in this way. What will you update? You will update the data. Let's see how you will update. Let's assume that you are..."
+  },
+  {
+   "start": 1778.7,
+   "end": 1803.15,
+   "text": "Now we will come to coding language. We hope that you have understood the example. If you have not understood it yet, then please comment. Do not hesitate that once you have commented, then make a video again. If you comment again, then how will it look? Nothing will look. I mean, we do not know each other. So nothing, no one will feel anything. We never feel bad about it that you are commenting that I did not understand. So that is the work of comment. Then what is the work of comment?"
+  },
+  {
+   "start": 1803.15,
+   "end": 1831.62,
+   "text": "we will close the comment section if we don't want to hear all this that yes we don't want all this criticism so we will close the comment section comment is the only thing that you can give feedback because we are not live we don't know whether you have come or not so comment is the only way through which you can tell us so if you haven't come yet then tell us that you haven't come with this example tell us something else then we will tell you something else there is no problem in it okay suppose you have two types of data available on any AI"
+  },
+  {
+   "start": 1831.62,
+   "end": 1862.19,
+   "text": "there are two types of data available, one in which power has not been used like it was in history, physics, chemistry, English, etc. one in which power has been used power has been used ok, what will we call this? no power normal, we will call this power power has been used first of all, what were your four options?"
+  },
+  {
+   "start": 1862.19,
+   "end": 1889.52,
+   "text": "V1. What was yours? See. What was written in V1? Only history. Only history. Means only array of I. Only array of I. Only array of I. Very good. V2 is equal to. What was V2? What was in V2? Physics, chemistry, English and history. Means previous data in which power was not used. With that you are adding array of I. With that you are adding array of I. Means no power."
+  },
+  {
+   "start": 1889.58,
+   "end": 1913.15,
+   "text": "No power plus area of I. This becomes V2. V3. What was the third choice you had? What was the third choice? Physics, English, History. Meaning, you are adding history with the power used. Okay? No problem. Add it. So, power plus area of I. Yes. What was V4?"
+  },
+  {
+   "start": 1913.15,
+   "end": 1939.86,
+   "text": "V4, remember, physics, chemistry, English, there was no history in this, there was no history in this, which data was this? Exactly this data, exactly this no power data, because history was ignored in this. So, exactly this is no power, no power. These are your four choices, that's it. Your result will always be, what will be your result? The max of these four, okay? V1, V2."
+  },
+  {
+   "start": 1940.46,
+   "end": 1967.63,
+   "text": "The max of these four. Now, you had to update your no power and power. So, out of these four, which two were of no power category? One or two. History and physics, chemistry, English, history were of no power category. So, what will happen here? No power. No power is equal to max of what? V1 and V2. Because V1 and V2 were of no power category. It has been proved. Because you can see."
+  },
+  {
+   "start": 1967.63,
+   "end": 1997.63,
+   "text": "In V1 also, history is not deleted. It started with history and ended with history. Physics, chemistry, English, history are not deleted. There are 4 subjects. So, this is no power. You have not used power. So, this is your data. Power. What was the data of power? The last two. V3, V4. Why? Look at the last two data carefully. Physics, English, history. What is deleted in this? Chemistry. Because chemistry was already deleted. So, you have used power. You have used it in chemistry. You have not used it in history."
+  },
+  {
+   "start": 1997.63,
+   "end": 2023.52,
+   "text": "What was the next one? Physics, Chemistry, English. Now people will think that nothing has been deleted in this. It has been deleted. History is deleted. Where is the history in this? You are looking at the history, right? Where is the history in this? You have used your power in the history itself. So what is this? Power use. So what is the power use? Max of B3 and B4. You keep on running this loop and in the end, return res. What is return? Res. Did you understand? Come to it."
+  },
+  {
+   "start": 2023.52,
+   "end": 2056.69,
+   "text": "dry run or else people will say that you don't dry run, you just write it. Oh God, my throat is aching. Let's go. 1, 0, 3. Let's go. First of all, first of all, first of all, you have to define your things for i is equal to 0. We had to do our thing for i is equal to 0. So do your no power. No power. That data where you haven't used your power."
+  },
+  {
+   "start": 2056.69,
+   "end": 2085.42,
+   "text": "So, what will be its answer? Its answer will be array of 0 only. 1. Because you took this, you took array of 0, so you didn't use power. But, power, by looking at its value, what does power tell you? That i, i.e. i is equal to 0, one new thing has been deleted. One new thing has been deleted. So, it doesn't make any sense. i is equal to 0 has only one element. You are saying that you have to delete 1, so you have deleted this too. So, there is nothing in this. So, make it 0. Make it 0 for now."
+  },
+  {
+   "start": 2085.46,
+   "end": 2112.02,
+   "text": "Do res is equal to 1 for now. Do res is equal to 1. Do int max or int min. Do whatever you want. Let's go. Let's come to i is equal to 1. Let's come to i is equal to 1. What variable do you have? Minus 2. First of all, make your 4 choices. Make your 4 choices. v1 is equal to? What was it? Only array of i. Only history. Only history. Come. Minus 2. v2 is equal to? What was it?"
+  },
+  {
+   "start": 2112.02,
+   "end": 2141.84,
+   "text": "no power plus ai means all the previous subjects we have taken the history as well so what is the value of no power? 1 plus minus 2 minus 1 v3 is equal to power plus ai means last time it was deleted no problem with that we want to take the history so 0 plus minus 2 minus 2 v4 is equal to no power no power means we want to ignore this minus 2 so no power no power what is it? 1 1"
+  },
+  {
+   "start": 2141.84,
+   "end": 2171.55,
+   "text": "What was your result? The max of these four. What is the max of these four? 1. This is your result. Now, you have to update these two. No power. The value of no power is the max of these two. So, what will become of this no power? Minus 1. Minus 1. The max of these two is minus 1. The value of power is the max of these two. What will become of these two? 1. Yes. 1. 1. Is it right?"
+  },
+  {
+   "start": 2171.55,
+   "end": 2202.85,
+   "text": "You can see that the value of no power is minus 1, which means that you don't have to delete anything, so you have to take both of these values. If you take both of these values, then the answer will be minus 1. If you can delete the value of power, then you can see that if you delete the value of minus 2, then your answer will be 1. So it is a good answer. You can see that it is getting operated well. Remember that your result is 1. Let's move ahead. I is equal to 2. What is yours?"
+  },
+  {
+   "start": 2202.85,
+   "end": 2233.07,
+   "text": "0. Okay. Make V1. V1 is equal to. Only history. Only area of I. 0. V2 is equal to. Power plus AI. Sorry. No power plus AI. No power plus AI. What will be? What is no power? Minus 1 plus AI. Minus 1. V3 is equal to. Power plus AI. Physics. Chemistry was ignored. We want to take history. So take it. There is no problem in this. 1 plus 0. 1. V4. Is equal to. No power. No power. Means. Last time. What was."
+  },
+  {
+   "start": 2233.07,
+   "end": 2259.73,
+   "text": "We want to ignore the history. We want to ignore this man. Give us the data which was not ignored. Minus 1. Minus 1. Result is equal to maximum of all. What? 1. Okay. Update both. V1, V2's max? 0. What will you get after no power update? 0. What did you get? 0. 1 and minus 1's max? 1. What did you get? 1. Let's move ahead."
+  },
+  {
+   "start": 2259.73,
+   "end": 2288.27,
+   "text": "I is equal to 3. Last I came. V1 is equal to. Only history is to be taken. Only 3. V2 is equal to. No power plus AI. Means last time also nothing was ignored. We have to add history to it. So add it. No power was 0. 0 plus 3. 3. V3 is equal to. Power plus history. Means last time someone ignored it. No problem. Add history to it. Add history to it. 1 plus 3. 4. 4. 4. V4 is equal to."
+  },
+  {
+   "start": 2288.27,
+   "end": 2317.55,
+   "text": "Last time's no power means we don't have to keep history in physics, chemistry, and English. We have to make it our own. We have to ignore history. So last time's no power is 0. What is your result? 4 for max. Because there are 4 choices. And what is no power? 3 for max. 3. What is power? 4 for max. 4. Your loop ends. What do you get in the answer? 4. How did you get this answer? You got this answer like this. Take 1."
+  },
+  {
+   "start": 2317.55,
+   "end": 2342.77,
+   "text": "Ignore minus 2. Take 0 and 3. 1 plus 0 plus 3 is equal to 4. So this is a dry run. So make choices like this and think that if history comes, then what is your choice? First of all, look at your choice that what can you do? What can you do in the world? What can you do according to your power? So you understood that we can do four things. We can do these four things. Okay."
+  },
+  {
+   "start": 2342.77,
+   "end": 2372.78,
+   "text": "No problem, then your answer will definitely be from these four. Whatever you can do, that will be the answer, right? Now, from these four, which choice denotes that power has been used and which choice denotes that power has not been used? Then you will come to know that all these things are used and all these things are not used. If you make your own according to that, then you will come to know. Come, let's write its code too. Let's write its code too. We are writing the code here, you must be thinking that you are not typing, why not? No, this is its code, I mean, it doesn't have any such code. Come."
+  },
+  {
+   "start": 2373.26,
+   "end": 2406.91,
+   "text": "int fun vector int a. Okay? Those who say that you don't give code, we have stopped giving code because we have not come to teach you coding. We have not come to teach you to write syntax. We have come to teach you how to write code. Ask for code in ChatGPT. ChatGPT cannot teach. So that is my strength. We can teach. What is code? Go and see the solution of lead code. You will not get it there. n is equal to a dot size."
+  },
+  {
+   "start": 2406.91,
+   "end": 2441.63,
+   "text": "Right? After that what do you need? You need one i. And you need two things. Int power. Earlier we saw that i is equal to 0. Power has no meaning. So 0. Int. No power. No power means. Power has not been used till now. So what was its? Array of 0. One for result. Do this for array of 0. Because i is equal to 0. So this will happen. Come. Write loop. For. i is equal to 1. i less than n."
+  },
+  {
+   "start": 2441.63,
+   "end": 2473.01,
+   "text": "i++ first of all make your 4 choices int v1 is equal to array of i only history v2 is equal to previous good physics chemistry english and history so no power plus ai very good v3 last time in which you had left chemistry physics and english was there take history with that no problem so power power plus ai ok and v sorry this is v3"
+  },
+  {
+   "start": 2473.01,
+   "end": 2501.65,
+   "text": "v4 is equal to last time's good or history node means physics chemistry will remain english and history will not remain so what? no power no power when we explained this thing last time then maybe you didn't understand that what are they writing no delete one delete this and that this was the logic this was the logic what will be your result? max of first max of these two means max of four there is no rocket science in this and max of these two"
+  },
+  {
+   "start": 2502.45,
+   "end": 2530.58,
+   "text": "Now you have to update no power and power. What did you see? Power. First do no power. What? V1 and V2 had no power. Did you see how it was? Max of V1 and V2. Power is equal to max of what? V3. Close the loop. Return. After it finishes. So this was the whole question. Now see."
+  },
+  {
+   "start": 2530.67,
+   "end": 2558.38,
+   "text": "This question was very hard. So, don't think that if you don't understand, then there is something wrong in my mind. No, this question was very hard. We had to think for an hour to teach this question. How to teach it? How can we teach it in simple language? So, the question was hard. The question is not easy. But, the motive of my saying is that look, this kind of question... It is not possible that we can ask three questions in one session. If we start asking three questions in one session, then..."
+  },
+  {
+   "start": 2558.38,
+   "end": 2586.54,
+   "text": "the attention gets divided. You can understand that we are also human beings. So, even my attention gets divided. So, we think that suppose we are teaching this. And today's my target would be that we have to do three. Even after this, there are two such complex questions left. So, we don't tell it so openly. We don't tell so much in Maths, History, Physics. We would have told that yes, there is a no delete, there is a one delete, there is a power, there is no power, we have to do this and that. Because what will be sitting in my mind that we have to teach further also. So, how big a video will we make? More than an hour big video is not uploaded on YouTube, okay?"
+  },
+  {
+   "start": 2586.54,
+   "end": 2613.66,
+   "text": "So you must be thinking that he is lazy, he doesn't do it. Some people say that we tell you, you don't do it yourself. So when a video is made bigger than an hour, then it is over 10GB. So I don't have such a fast internet that we can upload it and it doesn't happen. We have to sit for 2 hours to upload it. That's why. So when in my mind it will be that we have to do 4 questions in an hour, then it is obvious that every question will get 15 minutes. This question was not of 15 minutes. This question is not of 15 minutes."
+  },
+  {
+   "start": 2613.66,
+   "end": 2643.71,
+   "text": "In 15 minutes, we can show you by writing this code. But why did this code come like this? It was necessary to explain that you should listen to this story and understand it like this. So, don't compromise with quality. I mean, do it quickly, do it quickly. No, teach everything today. It won't happen like this. See, teach everything quickly. This is a requirement. And teach everything well. Teach everything well. Teach well and teach fast. There are two different requirements. So, you guys choose. You have to read fast or read well."
+  },
+  {
+   "start": 2643.71,
+   "end": 2672.7,
+   "text": "both will not be done at the same time both will not be done at the same time if we will study it easily then we will also enjoy it and you will also enjoy it quickly finish the course you said finish the course finish the course why are you not finishing it why are you not putting 2 hours video in a day make 9 questions in a day make 15 questions we will read all of it then there is no use of it what will we do anyway so you guys think about it a little bit go and code it and this question"
+  },
+  {
+   "start": 2672.7,
+   "end": 2676.58,
+   "text": "Let's meet tomorrow. Merry Christmas to everyone."
+  }
+ ]
+}

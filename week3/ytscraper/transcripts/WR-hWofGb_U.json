@@ -1,0 +1,474 @@
+{
+ "video_id": "WR-hWofGb_U",
+ "title": "Graph Representation: Adjacency Matrix vs Adjacency List – Which is Better?",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2388,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.04,
+   "text": "Before starting the video, there is a very important announcement. We made a small mistake because when we made the video earlier, we did not make it thinking like this. We have said in the video that the one who will come ahead will think that C++, Java, Python are different and everyone has to see their own differently. We do not have to do that. We are shooting this in the last. The whole video has been made. We are shooting this now because there is no other way. Otherwise, we will have to make the whole thing again. See, in this lecture, we are going to tell you the syntax of graph. Syntax means"
+  },
+  {
+   "start": 27.04,
+   "end": 53.6,
+   "text": "When we saw in lecture 1 that what is graph? It uses Instagram, Facebook, Google Maps. Today we will tell you with all those examples that why different syntaxes are necessary and why in any language you will not get a graph data structure. It is not like that in C++ there is a graph library that you can make a graph. It is like an array that if it is in an array then you have to make a graph yourself. And this is a very hard thing. Leetcode will never let you make a graph. Like you used to get tree by tree."
+  },
+  {
+   "start": 53.6,
+   "end": 73.42,
+   "text": "stack by stack. Here you have to make the graph yourself. Leetcode will give you very limited information that there are four people. Pratyush is connected to Aman. Aman is connected to Sujitha. He is connected to him. Just make your own graph and see. Make it as it is but make it from your own mind. This is a very hard part. Listen to it carefully."
+  },
+  {
+   "start": 73.42,
+   "end": 95.34,
+   "text": "Implementation is the same in all three languages. The difference is that in C++, the vector we call, in Java it is called array, in Python it is called list. Or in Java it is called array list and in Python it is called list. Everything else will be in array. You don't need to read any specific advanced thing that we have a lot of rocket science. No. If there is an array, then there is a small array."
+  },
+  {
+   "start": 95.34,
+   "end": 120.69,
+   "text": "We have already taught Array in the basic playlist. You just have to make a graph using Array. You will see how easily you can make a graph using Array. You can make a whole graph using vector or ArrayList. So ignore the rest of the things in C++, Java, Python. They will think to leave it. There will be no timestamp. Watch the whole video. First understand the basics. After that, whatever you are doing today evening, as soon as you finish this video,"
+  },
+  {
+   "start": 120.72,
+   "end": 141.87,
+   "text": "As a big brother, I am giving you the advice that today in the evening, open the copy, open the VS code, open anything online, do it yourself and write it in the copy. If you don't do this, you won't understand. No man in the world can tell you just by showing you this video that come on, make this. No, it will go out of your mind. If you don't make it yourself, it won't happen. It took us a lot of months."
+  },
+  {
+   "start": 141.87,
+   "end": 169.1,
+   "text": "When we used to study in the beginning, we used to forget how to make a graph in today's date. We still had to see how to do it. Watch the video, watch it 2-3 times, but make it by yourself. Today, make the graph by yourself. See how the graph looks. Print it. It's fun when you do it. You will get satisfaction. Print it. Make a graph. I have a graph. Do something in it. But this was an important announcement."
+  },
+  {
+   "start": 169.1,
+   "end": 197.22,
+   "text": "In the future, ignore C++, Java, Python. Everyone should watch it. We will try to put the code in the comments. We keep forgetting. Today, we will try to put it. Let's watch. Hello, guys. Those who haven't watched the first video, watch the one before this. That was the introduction of the graph. If you don't watch it, it will be a little difficult. The second thing is that this video is going to be syntax-based. It is going to be syntax-based because once you understand the syntax of the graph, then it will be easier. Because if you don't know how to write a graph, if you..."
+  },
+  {
+   "start": 197.22,
+   "end": 215.47,
+   "text": "Because what happens is that in any question of lead code, whatever you were doing till now, whatever you were reading till now, you were given a proper thing in it. If there is a vector, then you were given a vector. If there is a tree, then you were given a tree. But in the question of graph, you will not be given a complete graph because graph is not a data structure. In any language, you can search and see."
+  },
+  {
+   "start": 215.47,
+   "end": 244.29,
+   "text": "There is no such thing as a graph data structure. Because it is so complex and people do it in different ways. For this, not one data structure can be made. For example, an array is a data structure. Because an array has only one function. But a graph is a little complex. You have to make the graph yourself. And you have to make it yourself in every question. That is why it is very important that you watch this lecture completely. There are four parts in this. The first part is the basic. What does basic mean? In this, we will explain to you what to do."
+  },
+  {
+   "start": 244.29,
+   "end": 258.5,
+   "text": "We recommend that you read this basic section in any language. You must be getting the timestamp on the screen that from where is the basic, then C++, Java, Python. Once your basic is over, that means the basic part is over, as much as 5-6 minutes, after that"
+  },
+  {
+   "start": 258.5,
+   "end": 285.66,
+   "text": "If you are from C++, then stay tuned. If you are from Java, then you can go to the Java timestamp. If you are from Python, then you can go to the Python timestamp. But you have to see this basic one for everyone. By the end of the lecture, you will understand that if you have any graph, then you will know what you have to tell, that is, what you have to tell, that this is the graph to be made. And you will be able to make the graph, you will be able to print it, you will be able to see that yes, it looks like this in the code. Drawing is fine, you can make a drawing, but how it looks in the code, then you will know all that."
+  },
+  {
+   "start": 285.66,
+   "end": 308.4,
+   "text": "In the previous lecture, we talked about what is a graph? A graph is a set of items. What do we call them? Nodes. Items can be anything. Items can be people. For example, on Google Maps, there is an item called Jagah. On Instagram, there is an item called Log. It can be anything. And between these items, there are some connections. What are they? Some connections."
+  },
+  {
+   "start": 308.4,
+   "end": 327.62,
+   "text": "an item is connected to a particular item. It can be connected in any way. If there is a place, then that place can be connected to each other. It means there is a train route from here to there. If we talk about Instagram, then people can be connected to each other. It means whether they have followed it or not. Things like that happen. Now, these connections are called edges."
+  },
+  {
+   "start": 327.62,
+   "end": 353.26,
+   "text": "And we call these nodes as Vertices. You must have read about Triangles, right? How many Vertices are there in a triangle? There are 3 Vertices. And edge means any 2 Vertices. Suppose if we show them like this from a circle, then how does a triangle look like? It looks like this, right? So if we talk about Vertices of a triangle, that how many corners are there in a triangle, then you will say that there are 3. 1, 2, 3. Now we will say that how much is the edge in a triangle? Then you will say that in a triangle,"
+  },
+  {
+   "start": 353.26,
+   "end": 379.09,
+   "text": "Hb is 3. So if you want to show a connection to any two vertices, if we say that this is A, this is B, this is C. If we want to say that A is connected to B in some way, that means you have to make an edge between A and B. We are just talking about drawing. We call it similar in the graph that whatever nodes or whatever items are there to establish a connection between them, they are called vertices or nodes."
+  },
+  {
+   "start": 379.09,
+   "end": 402.64,
+   "text": "If two vertices are connected in any way, for example, if Pratyush follows Aman on Instagram, then if we make a drawing, then there will be a line between Pratyush and Aman. What do we call this line? We call it edge, okay? So these are some technical terms that you should know. Okay? So see, any graph will look like this. Any graph will have some vertices and there will be some line between those vertices. What will that line be? That line will be edge."
+  },
+  {
+   "start": 402.64,
+   "end": 429.38,
+   "text": "It is connected to a certain vertex. This is called a graph. If we make a normal graph. Let's make a graph of four vertices. So one is your zero. You can start it from zero or one. One, two and three. So in this graph we will say that there are four nodes or four people. Zero, one, two, three. Now let's make an edge in it. So let's assume that this whole is made like this. It is made like this and this is also made like this."
+  },
+  {
+   "start": 429.38,
+   "end": 455.14,
+   "text": "Okay? So this is a graph. If we ask how many vertices are there in this? So you will say that there are 4 vertices. Which ones? 0, 1, 2, and 3. Okay? Now in this, edges. Edges means what is the line between the vertices? So you can see a lot of edges in this. First of all, you will say that there is an edge between 0 and 1. Okay. There is an edge between 0 and 2 as well. 1 and..."
+  },
+  {
+   "start": 455.14,
+   "end": 482.85,
+   "text": "Now look, there is an edge between 0 and 1, so you can say that there is an edge between 1 and 0, but we are not writing that, because we will come to that later, but for now we are not writing, because if we write 0 and 1, then the line between 1 and 0 is not the same. Okay, there is an edge between 1 and 2, there is an edge between 1 and 3, okay. Let's talk about 2, so there is an edge between 2 and 0, now 2 and 0 are also connected, but 0 and 2 are already written, right? 2 and 1 are also there, but 1 and 2 are written, right? So we are not writing, just 2 and 3 can be written, very good. 2 and 3, that's it, 3."
+  },
+  {
+   "start": 482.85,
+   "end": 508.59,
+   "text": "Now see, 3 has 2 edges, from 2 to 1, but we have written 1, 3 and 2, 3, so it is not necessary to write that much. We can say that from top to bottom, we can see these vertices and edges. In any graph's drawing or any graph's data structure, information is stored in this way, information will be stored in this exact way. First of all, how many vertices are there? There are 4 vertices, assume 0, 1, 2, 3."
+  },
+  {
+   "start": 508.59,
+   "end": 531.18,
+   "text": "Edge means the line between which vertex. So if it says between 0 and 1, 0, 2, 1, 2, 1, 3, 2, 3. This is how its information is stored. But as simple as it seems to you, it is very simple. You are thinking that it is fine, it is very fun, we will write like this. But there is no such simple graph. This is the simplest kind of graph. Why is it simple? I will tell you. Let's assume that this graph is made of Instagram."
+  },
+  {
+   "start": 531.18,
+   "end": 555.07,
+   "text": "First of all, consider Facebook. This is a graph of Facebook. So what happens in Facebook is that people send friend requests and become friends with each other. I mean, the new kids must not have run Facebook. We used to run it. So what used to happen in Facebook is that people used to become friends. Generally, they used to become friends. Let's become friends with each other. This will work in this. If, let's say, what happened to my laptop? Something has happened."
+  },
+  {
+   "start": 555.07,
+   "end": 582.48,
+   "text": "Assume that there is a line between 0 and 1 on Facebook. It is just a simple line. It means that 0 and 1 are friends. It will work. But suppose this is the line of Instagram. What is it? It is the graph of Instagram. Now see, you can see a yellow line between 0 and 1. But there can be two things on Instagram. Now if 0 and 1 are connected, then there can be two things on Instagram. Which? Either 0 follows 1."
+  },
+  {
+   "start": 582.64,
+   "end": 612.42,
+   "text": "There is a follow on Instagram, right? That you will follow us and we will follow you. It doesn't happen that if you follow someone, then automatically he also doesn't follow. Like if you follow Padhavit Pratyuj, it is not necessary that Padhavit Pratyuj's account follows you, right? If we follow Shah Rukh Khan, then it is not necessary that Shah Rukh Khan follows him. So there can be two things. If there is a line between 0 and 1, then 0 follows 1 or 1 follows 0. It can be both. It means, it can be that both are true. It can be that only one is true. So this is not known here."
+  },
+  {
+   "start": 612.42,
+   "end": 638.98,
+   "text": "You said that there is a line between 0 and 1. But if you want to know if 0 follows 1, 1 follows 0, or both follow each other, then it is difficult to tell. If there is no edge between 0 and 3, then it is good that neither 0 follows 3 nor 3 follows 0. Very good. But if there is a line between 2 and 1, then how will you know if 1 follows 2 or 2 follows 1?"
+  },
+  {
+   "start": 638.98,
+   "end": 667.15,
+   "text": "To solve this thing, this line will not work. To solve this thing, this kind of line was seen. This kind of. What do we call this? Directed edge. What do we call this? Directed. There is an arrow in one direction. What do we call this? Directed edge. And this kind of line which has no edge, which is made now. What do we call this? Undirected edge. What do we call this? Undirected edge. Undirected edge. Now. Now."
+  },
+  {
+   "start": 667.15,
+   "end": 695.76,
+   "text": "If we make this graph again. So let's assume that the data available to you is this. That 0 follows 1. There is one thing. 0 follows 2. Very good. 2 follows 1. Okay. 3 follows 2. Okay. And? Which size is left? 1 follows."
+  },
+  {
+   "start": 695.76,
+   "end": 715.41,
+   "text": "3. This is your data. This is the data. Apart from this, you don't have to show any information. Now the graph that will be made will be a little different from this graph. We will show you what will be made. First of all, first of all, come. First of all, you have to do the same thing that make a graph, that is, make vertices. 0, 1, 2, 3."
+  },
+  {
+   "start": 715.41,
+   "end": 744.27,
+   "text": "Let's go. What is the first one? It follows 0, 1. What will we do? We will make a directed edge from 0 to 1. This is not a similar line. If you look at the top, there was a line without an arrow. So, 0 is also 1 and 1 is also 0. It was a Facebook type condition. But now it follows 0, 1. There is no line from 1 to 0. There is no line which is like this from 1 to 0. No, there is no line like this. There is 0 to 1 because it follows 0, 1. 1 does not follow 0 again."
+  },
+  {
+   "start": 744.46,
+   "end": 774.18,
+   "text": "What is the next line? 0 follows 2. So, from 0 to 2, a directed edge will be formed. Very good. After that, 2 follows 1. So, from 2 to 1, a directed edge will be formed. Like this. After that, 3 follows 2. From 3 to 2, this will be formed. And 1 follows 3. And 1 follows 3. See this. Now, this graph and the above graph look the same. I mean, in terms of height, height, everything is the same. That there is 4 here and there. Here too. But these two graphs are different."
+  },
+  {
+   "start": 774.18,
+   "end": 803.7,
+   "text": "There are different Qs. This graph is called undirected graph. What is it called? Undirected graph. This will be told to you in the question. This will be clearly told to you in the question. Undirected graph means if two vertices are connected, then the connection is from both sides. You don't have to do anything like one side to one side. This undirected graph will be clearly told to you. But sometimes it will be told to you in the question given a directed graph. Given a"
+  },
+  {
+   "start": 803.7,
+   "end": 831.07,
+   "text": "Directed graph. Yes, directed graph. At that time, the lines will be made with direction. Brother, if the line is going from 0 to 1, then 0 and 1 are edges. In this, you can write that 0 and 1 are one edge. But 1 and 0 are not edges. There is no line going from 1 to 0. There is no line going from 1 to 0. What is this graph called? Directed graph. So, you have seen two types of graphs. One is simple."
+  },
+  {
+   "start": 831.07,
+   "end": 859.89,
+   "text": "That's why we said that everyone should see the basic part. We are just telling you how many types of things can be possible. So that when we go into code implementation, it is clear to you what it is saying. It should not happen that something is said and you don't know what to do. No. Okay. We saw the undirected graph. We saw the directed graph. So does it end here? No, it doesn't end here either. So what we said till now is that it will work in Instagram. It will work perfectly in Instagram. This upper one will work perfectly in Facebook. But,"
+  },
+  {
+   "start": 859.89,
+   "end": 887.57,
+   "text": "Now, let's talk about Google Maps. Let's talk about Google Maps. Okay. Now, let's talk about Google Maps. Let's say there is a city. Let's say there is a city. 0, 1, 2, 3. There are 4 places in the city. Okay. You are told, you are told that there is a road from 0 to 1. There is a road from 0 to 1. It doesn't mean that there is a road from 1 to 0. Let's say there is a one-way road. There is a one-way road from 0 to 1."
+  },
+  {
+   "start": 887.57,
+   "end": 911.79,
+   "text": "Okay, so what will you say? That okay, we will make an arrow from 0 to 1. Very good. But now Google Maps does not just show you that there is a road from Bangalore to Ranchi. No, what is the distance from Bangalore to Ranchi? How many kilometers is it from Bangalore to Ranchi? How many kilometers is it from Ranchi to Delhi? Now you have to store one more thing here. It is telling you that there is a road from 0 to 1. Very good, you have made it. But that is 10 kilometers."
+  },
+  {
+   "start": 911.79,
+   "end": 940.77,
+   "text": "Now, you have to write a 10 on it. What is a 10 on it? I will tell you. Let's write it. You can write it in drawing. I am telling you how to make a drawing. Okay. Then someone tells you that there is a road from 1 to 2. There is a one-way road from 1 to 2. So, you will say that okay. There is a road from 1 to 2. So, we will make a road from 1 to 2. And its distance is 5 kilometers. How much is its distance? 5 kilometers. So, write 5 on it. Very good. After that, what does it say? From 2,"
+  },
+  {
+   "start": 940.77,
+   "end": 970.35,
+   "text": "zero tak, two se zero tak ek road hai, to bolenge ki, thik hai, two se zero tak road hai, to bana denge aise, aur, iska distance kya bola, iska distance, 20 kilometer hai, iska distance katna hai, 20 kilometer, yaha pe kya ho jayega, 20 kilometer, very good, uske baad kya bola, one se, three tak, road hai, okay, to one se three tak road hai, to bana denge, koi dikkat nahi hai, aur, iska distance katna hai, iska distance, 3 kilometer hai, iska distance, 3 kilometer hai, to isme 3 lik bhi hai, ab, last mi bola,"
+  },
+  {
+   "start": 970.35,
+   "end": 991.49,
+   "text": "There is a road from 2 to 3. If there is a road from 2 to 3, then we will draw it like this. What is its distance? Its distance is 6 km. Look at this. Now look. Now you will say that the graph above and this graph look similar. But one more thing was added in this. What was in the graph above?"
+  },
+  {
+   "start": 991.49,
+   "end": 1012.72,
+   "text": "You had an arrow from 0 to 1, okay? But the whole arrow was equal. I mean, the arrow from 0 to 1 was also an arrow. The arrow from 1 to 3 was also an arrow. But now you have, what is written on every arrow? A kind of weight is written. A kind of, a kind of weight is written. A kind of what is written? Weight is written, okay? One minute."
+  },
+  {
+   "start": 1013.07,
+   "end": 1042.21,
+   "text": "What is written in any way? Weight is written. So now here every arrow is not equal. You cannot say that it will take 1 second to go from 0 to 1 and 1 second to go from 1 to 3. No, it is not like that. If you see from 0 to 1, then it is 10 km. It is a 10 km path. And if you see from 1 to 2, then it is a 5 km path. Now it has changed a little more. So now this is directed. This is directed because it is an arrow. It is not that you have been told that there is a road from 0 to 1 and there is a road from 1 to 0. No."
+  },
+  {
+   "start": 1042.21,
+   "end": 1070.93,
+   "text": "There is a one-way road from 0 to 1. If it is 1 to 0, we will tell you later. It is directed. And in this, it is also told that there is a weight of every edge. That is, there is a value associated with every edge. If you are going from 0 to 1, then you will get some value or you will have to give it. Anything can happen. Either you get value or anything. But every edge is different. So this is a weighted graph. It is called a weighted graph. What is it called? It is called a weighted graph. So,"
+  },
+  {
+   "start": 1070.93,
+   "end": 1100.27,
+   "text": "There are two things. The topmost graph was non-weighted. This is non-weighted. Look at this. We had not said this with any age. It is not possible because for whom do we make this graph? For Facebook. Now Pratyush is Aman's friend. So what is the weight in that? What will you say in that? If he is a friend, then he is a friend. Everything is equal. So this was a non-weighted graph. And it was an undirected graph. That we are your friends on Facebook. So you are also my friend. There is no problem in that. Okay. Whose next graph was made? Instagram."
+  },
+  {
+   "start": 1100.27,
+   "end": 1126.29,
+   "text": "Who made the next graph? Instagram. What was said in this? No, it is not that if you follow 0 and 1, then 1 should also follow 0. No, if you follow 0 and 1, then you make one edge. But here too, this was also a non-weighted graph. Now, what weight will be given in Instagram? I mean, if you are following Barovik Pratyush, then what will happen in it? Just follow it, there is nothing like that. So, this was a non-weighted but directed graph. Now, let's come to Google Maps. Now, let's come to which?"
+  },
+  {
+   "start": 1126.29,
+   "end": 1150.75,
+   "text": "On Google Maps. Now this is a directed graph. Directed graph. Absolutely. 0 to 1. There is a road from Ranchi to Bangalore. It doesn't mean that there is a road from Bangalore to Ranchi. Very good. But. You will need some distance to go from Ranchi to Bangalore. You will have to store that distance somewhere. Without distance. What will you do on Google Maps? Google Maps will not show you the blue line. That do this and go. No. Distance will be known. If someone knows the distance. Then only Google Maps will be able to tell you something. That."
+  },
+  {
+   "start": 1150.75,
+   "end": 1178.3,
+   "text": "What is the best route from Bangalore to America? How will you tell this? If you don't know the distance, then what is this? Directed and weighted graph. Directed and weighted graph. So, these types of graphs are there. It is not that simple. What is its application? I will tell you. See. How do we tell you its application? See. Suppose I ask you about Google Maps. You tell me about Google Maps. Tell me one thing. I have to go from 0 to 3. From where? My source is 0 and destination is 3."
+  },
+  {
+   "start": 1178.3,
+   "end": 1205.68,
+   "text": "So see, one path to go from 0 to 3 is this. You first go from 0 to 1, go from 1 to 2, go from 2 to 3. Isn't it? See, 0 to 1, 1 to 2, 2 to... How much time did it take? See, 10 to go from 0 to 1, 5 to go from 1 to 2, and 3 to go from 2. So it means 21. You had to walk 21 kilometers. But, but, but, you could also do this. You went from 0 to 1 and came from 1 to 3."
+  },
+  {
+   "start": 1205.68,
+   "end": 1226.45,
+   "text": "What is the need to go from 1 to 2? We came directly from 1. How much time will it take? 10 plus 3, 13 km. Which path is small? 0 to 1 and again 1 to 3 means this path. This path is small. So which path does Google tell you? 13 km. 21 km does not tell you. How do you know this in Google? Because it is a weighted directed graph."
+  },
+  {
+   "start": 1226.45,
+   "end": 1237.65,
+   "text": "What kind of graph is it? It is a weighted directed graph. Suppose there is no way from 0 to 3. There is no way from 0 to 3. It means you cannot do anything. Then it would say that you cannot go."
+  },
+  {
+   "start": 1237.65,
+   "end": 1262.77,
+   "text": "He will say that we have selected a car and we have to go from Patna to America. Then he will say that have you gone mad? You can't go from Patna to America by car. Because you are not angry. Where will you go? You will have to go to Gujarat and stop. Where will you go to America? Then he will say that you can't go. When you select an airplane, then the airplane may have a different graph. Then he will say that yes, to go from Patna to America, go to Delhi from Patna and go to America from Delhi. Then you can go. You can't go by car. You can't go by foot. So he does this by doing this. Now you"
+  },
+  {
+   "start": 1262.77,
+   "end": 1292.72,
+   "text": "It's not complete, but you must have a basic understanding of how a graph looks like, how the edge is made, what the edge is. Now, let's move on to code. Now, those of you who are C++ users, stop. Java users, on your timestamp. Python users, on your timestamp. Let's go. Let's go. So, C++ users, let's start. How will we start? We will start with undirected non-weighted. It is better to start with the simplest one. So, let's assume that this graph is not given in the drawing. We have made a graph for reference, that this graph looks like this."
+  },
+  {
+   "start": 1292.75,
+   "end": 1317.97,
+   "text": "Generally, you will be given a list of edges and number of vertices. We are asking you what the leetcode will provide you. It is not like the leetcode will make a drawing and give it to you. The leetcode will tell you that these are edges and there are 4 vertices in them. So, what will the leetcode say?"
+  },
+  {
+   "start": 1317.97,
+   "end": 1344.58,
+   "text": "n is equal to 4. What does it mean? You have to do it from 0 to 3. You can do that according to yourself. If someone wants to do it from 1 to 4, then you can do it. But because in array, the index starts from 0, we will start from 0 in this. So you should understand that 0, 1, 2, 3, this is how my graph will be made. After that, you will be clearly written what kind of graph it is. It will call you if it is an undirected graph. Undirected or non-weighted. Or non-weighted."
+  },
+  {
+   "start": 1344.58,
+   "end": 1372.3,
+   "text": "You can understand non-weighted by looking at it, because if it is weighted, then it will give weight. If it is not weighted, then it will not give weight. Okay. What kind of edge will be given to you? I will tell you what that will be. What kind of edge? You will be given a vector of, vector of int. Edges. It will be given like this. It will be given like this in almost 90% of the questions. What does this mean? I will tell you. First, what does this mean? Vector of, vector of int."
+  },
+  {
+   "start": 1372.3,
+   "end": 1401.55,
+   "text": "vector, in which every entry is a vector. 2D array. So, it will be a very big vector. Okay? By doing this. What is its name? Edges. What is its name? Edges. 0, 1, 2, 3, 4. It has a different vector in every box. It has a different vector in every box. And there will be two things in it. There will be two things in it. Those two things will tell you that there is an edge from this vertex to that vertex. For example, it will be given like this. See. It will give you 0 to 1. It will give you 0 to 2."
+  },
+  {
+   "start": 1401.84,
+   "end": 1427.36,
+   "text": "1 to 2, 1 to 3, 2 to 3. That's it. The work is done. You will get a vector of int, in which there is a very big vector, edges, in which there are 5 things. The number of edges is 5. And in every entry, you will be given one particular edge. How will that particular edge look? Any source vertex or destination vertex. So you can see that,"
+  },
+  {
+   "start": 1427.36,
+   "end": 1452.98,
+   "text": "According to this graph, you are told that there is an edge between 0 and 1. So, you can see that there is a line between 0 and 1 in the real graph. Now, because it is undirected, then obviously, it will happen between 1 and 0 as well. It will not give you 1 to 0 because we have already told that it is useless. Now, when it is undirected, then obviously, it is 0 to 1 means 1 to 0 as well. So, why do we have to do this useless thing? So, you have given 0 to 2. 0 to 2, obviously, it is 2 to 0 as well. 2 to 0 will not be written in it. So, this is your input."
+  },
+  {
+   "start": 1452.98,
+   "end": 1480.66,
+   "text": "Input hai, ye sab aapka input hai. Aapko isko graph ke form me yato data structure me store karwana hai, yato kuch aur karwana hai. Acha. Ab, data structure me store karwane ke liye, sabse pehla kaam, jo hum pehle lecture me bata chuke hai, aap ek 2D matrix bana sakte hai. Kya bana sakte hai? 2D matrix bana sakte hai. Lekin woh nahi banana hai, bata dete hai. Bata dete hai. Aisa nahi hona chahi ki aata hi nahi hai. Aap ek 2D matrix bana sakte hai. Jaisa ki hum first lecture me kaisa dekhe the, ki jitne user the,"
+  },
+  {
+   "start": 1480.66,
+   "end": 1507.95,
+   "text": "You can make a matrix of 4x4. Make a matrix of 4x4. Make a matrix of 4x4. 0, 1, 2, 3. 0, 1, 2, 3. Very good. Now what do you do? Do that on each edge. Write a loop. How will you write a loop? For i is equal to 0. i less than edges dot."
+  },
+  {
+   "start": 1507.95,
+   "end": 1537.5,
+   "text": "size, means we will see all the edges once. Now, now, now, every entry, every edges i is a different vector. What is it? It is a different vector. Meaning, if we say that vector int, one edge, single edge is equal to edges i. Meaning, when i will be here, i will be here, then you will be looking at this vector. How many things are there in this vector? There are two things. What? A source and a destination. Meaning, it has to go from 0 to 1."
+  },
+  {
+   "start": 1537.5,
+   "end": 1561.68,
+   "text": "So, how can you write int u? Or write source. Don't write u. Write source. Source is equal to edge of 0. Edge of 0 means, what will be stored in edge? 0 and 1. Now, its 0. Its 0 means, what will become 0? Int destination. Means, this edge. Which edge is in between? Source and destination. Edge's 1."
+  },
+  {
+   "start": 1561.68,
+   "end": 1586.35,
+   "text": "edge of 1. What will this be? 1. So, you got to know that in my graph, we have to put an edge between source and destination. So, how did we put it in the matrix? Whatever matrix you have made, matrix, source, and destination, make it 1. Make it 1. Meaning, if you want to make it between 0 and 1, then what matrix will you go in? You will go 0 and 1. Make it 1. What will you do with this? 1. And,"
+  },
+  {
+   "start": 1586.35,
+   "end": 1615.6,
+   "text": "Because this is an undirected graph, so if there is an edge between source and destination, which means there is an edge between 0 and 1, there should be an edge between 1 and 0 as well. So what will you have to do? Matrix of destination and source. Destination and source will be 1, which means the block with 1 and 0, which means row 1 and column 0, this will also be 1. By doing this, you will keep rotating. What will come next? 0 and 2, which means 0 and 2 will be 1. 2, 0 will also be 1. This will also be 1. What will come next?"
+  },
+  {
+   "start": 1615.6,
+   "end": 1645.65,
+   "text": "1 and 2 means 1 and 2 is 1. 2 and 1 is also 1. Here. What is the next? 1 and 3 means 1 and 3 is 1. 3 and 1 is also 1. Here. What is the next? 2 and 3 means 2 and 3 column is 1. 3 and 2 column is also 1. The rest is 0. The rest is 0. Here. Your graph is ready. This graph represents exactly this graph. See. It is not small. All vertices are intact. And this way you can make it very easily. And close it."
+  },
+  {
+   "start": 1645.65,
+   "end": 1673.58,
+   "text": "See, did you understand this or not? What is this matrix? Vector of vector of in. It is a 2D matrix of n into n size. We are assuming that you know it. You should know how to make that matrix. So by doing this, what do you call this? Adjacency matrix. Adjacency matrix. Matrix. Yes, matrix. Whenever you get an edge and you feel like making an adjacency matrix, then you can make it this way. How? You can make it this way. Very good. Now,"
+  },
+  {
+   "start": 1673.58,
+   "end": 1703.26,
+   "text": "Adjacency matrix is a very useless method. Adjacency matrix doesn't work in the interview. Why? I have told you last time, it takes a lot of space. I mean, you just, you just see, you just have 4 vertex and 5 edge. It was such a small graph, for that you are sitting with a matrix of 16 size and doing useless work here and there. Now, what will we do? Now, what will we do? Watch very carefully. See this code. Now, what will we do? Watch. Now, we are going to make something which is called adjacency. Adjacency."
+  },
+  {
+   "start": 1703.26,
+   "end": 1732.32,
+   "text": "List. Adjacency list. See this. What is adjacency? List. Yes. Adjacency list. How does adjacency list look? This too is the same. Vector of vector of int. Vector of vector of int. So this too will look like this. Vector of vector of int. Its name will be adj. And how many size matrix will this be? This will be m size vector. It will be a big vector. Means it will become a big vector."
+  },
+  {
+   "start": 1732.32,
+   "end": 1762.67,
+   "text": "A big vector is formed. Its name is ADJ. How many things are there in this? How many are there in this? 4. 1, 2, 3, 4. 0, 1, 2, 3. What do we call this? Adjacency list. We have just made this much. So, this is the size of n. Now, let's see what we do. A very important thing. This will be the same. Loop on edges. We have taken out source and distinction. What did you find out?"
+  },
+  {
+   "start": 1762.67,
+   "end": 1789.33,
+   "text": "Source or destination. Now here in the first bar, source is equal to 0, destination is equal to 1. It means that there is an edge between 0 and 1. It is said in the input that there is an edge between 0 and 1. What did we do in the matrix? We made the matrix of 0 1 and the matrix of 1 0 1. What will we do in this? Look. What does adjacency say? In this, every thing, every index is a vertex. Every index of this is a vertex. 0, 1, 2, 3."
+  },
+  {
+   "start": 1789.33,
+   "end": 1817.62,
+   "text": "What are the edges in every vertex? We have to push them in that vertex. What will we do in this? Look. Adjacency of source. Adjacency of source. Which is a vector. Adjacency. Look. What is ADJ? Vector of vector of int. ADJ source. ADJ source means ADJ 0. This is a vector in itself. This is exactly like your edge. This is exactly like your..."
+  },
+  {
+   "start": 1817.62,
+   "end": 1843.41,
+   "text": "It is like an edge. See, the edges that you got are exactly like this. Means, it is a very big vector. Every index of this vector is a vector itself. So, this ADJ source is a vector itself. What will we do in this? Push back. Push back destination. Push back destination. Now, suppose your source is equal to 0. Your destination is equal to 1. So, what did we do? We made the ADJ big first."
+  },
+  {
+   "start": 1843.41,
+   "end": 1873.55,
+   "text": "So, ADJ of 0 means ADJ of 0. We have reached here in ADJ of 0. This is a vector in itself. In this, what has been pushed? Destination has been pushed. Meaning, in this, something like this has been done. In this, destination has been pushed. 1 has been pushed. But, since this is an undirected graph, if there is an edge between 0 and 1, then there is an edge between 1 and 0 as well. So, what will we do? Here, first of all, ADJ of 0 has pushed back 1."
+  },
+  {
+   "start": 1874.1,
+   "end": 1900.27,
+   "text": "and adj1.pushback is zero. adj1.pushback is zero, which means adj1.pushback is zero. Let me tell you again. You had to put an edge between 0 and 1. So what did you do? You made an adj whose size was equal to the number of vertices. It was such a big size. It was an old vector."
+  },
+  {
+   "start": 1900.27,
+   "end": 1922.56,
+   "text": "Index is a separate vector. So what does it hold? What does it tell you in the end? If you look at this zero index, then its big index is zero, which is a vertex. Zero is connected to which edge? In this graph, zero is connected to which edge? So if we say that zero is connected to which vertex via S, then you will say that zero is connected to one and connected to two."
+  },
+  {
+   "start": 1922.56,
+   "end": 1941.63,
+   "text": "So you will get to know this by looking at ADJ 0. If someone asks you that from whom is 1 connected, then you will say that 1 is connected to 0, one is also connected to 2 and 3. If you look at its 1, then you will get 2, 3, 0, 3. If someone asks you from whom is 2 connected, then you will say that according to the graph, it is 2."
+  },
+  {
+   "start": 1941.63,
+   "end": 1966.62,
+   "text": "Look, it is connected to 0 and 3. If you start looking at adj2, then you will get all the connected vertices of 2 in that vector. So it means that if you keep doing this, then 0 and 1's work is done. Let's do the work of 0 and 2. So what will we do? Same work. We will go to adj0 and push 2 and we will go to adj2 and push 0. Look at this. Because it is undirected, right? It is both. Done."
+  },
+  {
+   "start": 1966.62,
+   "end": 1994.42,
+   "text": "1,2 means we will push 2 in adj1 and 1 in adj2. 1,2 is done. 1,3 we will push 3 in adj1 and 1 in adj3. 2,3 we will push 3 in adj2 and 2 in adj3. This is done. What is this? Adjacency list."
+  },
+  {
+   "start": 1994.58,
+   "end": 2020.37,
+   "text": "Now, if someone asks you, tell me one thing, this vertex 1, which vertex is it connected to? So, what will you do? You will do this, that vector, we will remove this, vector int tmp is equal to adj1. What is there in adj1? 0, 2, 3. Meaning, from whom is 1 connected? 1 is also connected from 0, 1 is also connected from 2, and 1 is also connected from 3."
+  },
+  {
+   "start": 2020.37,
+   "end": 2051.89,
+   "text": "So it tells you more things in less space. It tells you more things in less space. Imagine that if we talk about Instagram, then suppose there are three people. Pratyush. Pratyush. Suppose there are three people. Pratyush, Aman and Sunita. What does this tell you? Suppose Pratyush follows Aman, then Pratyush will have a vector Aman. Just Aman. If Aman follows Sunita and Pratyush, then Aman will have such a list."
+  },
+  {
+   "start": 2051.89,
+   "end": 2067.87,
+   "text": "If Sunita follows only Pratyusha, then it will have such a list. See, there is no need to make a matrix in this. Pratyusha has only Aman as a vector, which means Pratyusha is only connected to Aman. Only one edge goes from Pratyusha, which will go towards Aman."
+  },
+  {
+   "start": 2067.87,
+   "end": 2095.94,
+   "text": "There will be two edges on Aman's side which will go to Sunita and Pratyusha. There will be one edge on Sunita's side which will go to Pratyusha. The same work is happening here. The same work, the adjacency that has been made, is the same work. Once we will recommend you to open the VS code, write it yourself and print it yourself. Print it yourself and see. We will write the program for this once again. What will you be given? What will you be given? 1, 2, int n, which means the number of what ifs. And you will get 1."
+  },
+  {
+   "start": 2095.94,
+   "end": 2124.13,
+   "text": "Vector of, vector of int, edges will be given. Vector of, vector of int, edges will be given. Okay? In edges, all the edges will be small. What do you have to make? Vector of, vector of, int, adj. And how many sizes? All the vertexes are of the same size. So a very big vector is ready. Now, every index is empty. Means nothing is filled now. What will we do? We will do loop."
+  },
+  {
+   "start": 2124.13,
+   "end": 2154.93,
+   "text": "Int i, on which we will loop? On edges, we will look at all the edges one by one. edges.size, means all the edges, and i++, okay. Take out one edge, so vector, int, edge, is equal to, edges, i. Now this edge, what kind of edge will it be? It will be going towards source and destination. So int, source is equal to, edge, 0, int,"
+  },
+  {
+   "start": 2155.25,
+   "end": 2184.74,
+   "text": "Destination is equal to edge 1. Very good. Okay. Now what we have to do? We have to make an edge between source and destination. So what we used to do? What is ADJ? It means that we have to make a line between source and destination. What we will do? ADJ of source. ADJ of source. Which is a list of sources connected to each other. In that, we will push back destination. And in ADJ of destination, we will push back source. So ADJ of"
+  },
+  {
+   "start": 2184.74,
+   "end": 2211.23,
+   "text": "source.pushback what destination means if you want to make this between 0 and 1 then in the 0 index you push a 1 and in the 1 index you push a 0 and because it is undirected then in the destination you push back source push back source and close it now your adjacency list is ready"
+  },
+  {
+   "start": 2211.23,
+   "end": 2238.53,
+   "text": "Adjacency list, not matrix, it looks like a list. If you visualize it, then it will look something like this. It also looks like this, that if you go to 0, then you are getting 1 and 2, because 0 is connected to 1 and 2. If you go to 1, you are getting 0, 2, 3, 3. If you go to 2, you are getting 0, 1, 3, 3. If you go to 3, you are getting 1 and 2, both. So what is this? Adjacency list. Okay, this was undirected. If it was directed, then?"
+  },
+  {
+   "start": 2238.53,
+   "end": 2260.11,
+   "text": "If the directed graph is spoken, then what we have to do is remove this line. Because why have we added this line here? We had said that if there is an edge between 0 and 1, then 0 is connected to 1 and 1 is also connected to 0. That's why this line was there. But if there is a directed graph, if you are told that there is an edge which is 0 to 1, then it means 0 and 1."
+  },
+  {
+   "start": 2260.11,
+   "end": 2282.22,
+   "text": "So, okay, in the adjacency of 0, there will be one pushback. But, 1 and 0 have no edge. So, we don't have to push 0 in 1. So, just remove this line. In which case? In which case? In the case of directed. In the case of directed, we don't have to do these two things. Similarly, in the matrix part, this line will be removed. It is directed, right? Do the work of 0 and 1 in 0 and 1. Don't worry about 1 and 0."
+  },
+  {
+   "start": 2282.22,
+   "end": 2308.83,
+   "text": "Zero and one means just do zero and one. Leave one and zero. If one and zero comes, we will see. If any edge comes, one and zero, then we will see. It is possible. It is possible that there may be an edge in zero to one. And there may be an edge in one to zero. If there is an edge, then we will see. We will not see it from our mind. But in directed, sorry, in undirected, you will have to see it from your mind. So this happened. What did you learn? Till now, till now, non-weighted. Non-weighted. Till now, it has not finished completely. But non-weighted."
+  },
+  {
+   "start": 2308.83,
+   "end": 2335.18,
+   "text": "We will do it next time. We don't want to give you a whole day's work that you don't understand anything. Write this thing by yourself. It seems a bit complex in the beginning, but it will become easy with time. We will also get used to writing this. That's why we said that this is a bit of a complex topic. Because you have to do everything by yourself, right? You have to do everything by yourself, but you have to do very important things. So in this way, if you get edges,"
+  },
+  {
+   "start": 2335.18,
+   "end": 2350.61,
+   "text": "and number of vertices, then you can make your own adjacency list. Okay, after making this, what can you do? You can do a lot of things. If someone asks you, who is 2 from? Then you go to adjacency of 2 and print it. If someone asks, look, 2 and 3,"
+  },
+  {
+   "start": 2350.61,
+   "end": 2380.53,
+   "text": "whether there is an edge in between or not. So what will you do? You will go to adj of 2 and search for 3. And you will search for 3. If you get 3 in adj of 2, then it means there is an edge between 2 and 3. If you don't get 3, then there is no edge. By doing this, you can do a lot of things. But the first task is to make it by yourself. By sitting in VS Code today, make it by yourself. Make your edges vector. Or tell chat GPT to make an edges vector and give it to us. Take it. And make this adjacency list and adjacency matrix by yourself. If you don't make it by yourself, then you won't understand."
+  },
+  {
+   "start": 2380.53,
+   "end": 2386.67,
+   "text": "Copy, laptop, computer, wherever you want to make it. But make it. Make it positively. Okay? Let's go."
+  }
+ ]
+}

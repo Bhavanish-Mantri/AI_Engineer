@@ -1,0 +1,344 @@
+{
+ "video_id": "PvyEr3CeKzE",
+ "title": "Episode - 4 | Master DSA Patterns with the 2 Pointer Technique",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1811,
+ "segments": [
+  {
+   "start": 0.27,
+   "end": 25.87,
+   "text": "Today is Day 2. Welcome, everyone. Before starting, I have to tell you an important thing. We believe that you are going to watch a 3-3-second reel in today's age. So, a 40-minute video seems very long. You must be wondering how to sit for 40 minutes. But watch the whole video. If you are watching the video, then watch the whole video. Now, there is a reason for this. The reason is not that you have to increase my watch time, you have to monetize my channel, you have to run my household expenses. It's not like that."
+  },
+  {
+   "start": 26.0,
+   "end": 54.3,
+   "text": "When we teach you 40 minutes, if we are teaching you 2 pointer pattern and 1-2 questions, then everything is connected. It is not like we are teaching you the history of Akbar's life, then Humayun's life, then Jahangir's life, then you think that Akbar's life is over, then we already know the rest, so we leave it. It is not like that. Listen to small small small things in the whole video, because with that your coding quality will increase, your thinking quality will increase. When we used to watch earlier, we used to..."
+  },
+  {
+   "start": 54.3,
+   "end": 81.12,
+   "text": "I wasn't born as an expert in DSA, so we used to watch videos of Stryver, Lovebubber, Sumit Malik sir, who used to run pepcoding, we used to watch their videos. Their videos used to be very long, 40 minutes, 1 hour, 1.5 hour. We used to think, what should we watch? We used to understand in 10 minutes. Whatever we understood in 10 minutes, we used to understand and code. So we used to leave it first. But then we saw that even if you watch the entire video of Stryver,"
+  },
+  {
+   "start": 81.12,
+   "end": 110.43,
+   "text": "He will tell you some good things in between. He will write the code so well that you will feel that it was a very good thing and you can never imagine it. That's why it is important to watch all this. And because we have watched so many videos, we also tell the good things of those people. They also tell me some original things. If you watch the whole video, you will get an understanding. That's why it is important to watch the whole video. Rest, to watch 2-4 minutes, don't watch the Instagram reels. Watch the Instagram reels a lot. Scroll in 3-3 seconds. But,"
+  },
+  {
+   "start": 110.43,
+   "end": 136.62,
+   "text": "take out 40 minutes of your day and watch this video for 40 minutes. Not to increase your watch time, but to increase your thinking power. Okay, so you must be motivated. Today is day 2. The question we are going to do today is remove duplicates. You must have got the question on the screen. You have to do that question. You have to do the array question, not the one with the link list. We will teach the link list now. First, let's complete the array in this pattern. So, what is the question? Remove duplicates from sorted array."
+  },
+  {
+   "start": 136.72,
+   "end": 162.86,
+   "text": "Do you remember the day 1 flowchart? If you don't remember, then go to the day 1 flowchart, note it down and study it for 2-3 times. Now see, what do you see in this question? First of all, remove duplicate. Do you remember the flowchart? From sorted array. First of all, sign. Is it an array question or not? Is it an array question or not? Yes sir, it is. Is sorted written in the question or will sorting help? Yes, it is written that it is sorted."
+  },
+  {
+   "start": 162.86,
+   "end": 186.88,
+   "text": "What's the problem? Sorted is also written. What else is written? Remove duplicate. Remove duplicate. In the third step of flowchart, it was matching exactly. Remove duplicates. Rearrange array. Remove duplicates. Merge. See, everything is told in the question. Question means to help you. You just have to understand. You just have to know how to connect. You have got all three things. In this question,"
+  },
+  {
+   "start": 186.88,
+   "end": 214.26,
+   "text": "there is a 80-90% chance that you will get a two-pointer. First, you have to start thinking from this. We think that we can think about a two-pointer. Now, what is this question? We will tell you in a while. The question is that you have an array. The array is sorted, first of all. And in the array, it is possible that there is a duplicate element. Duplicate means repeated element. It is possible that your array is like this. 3 times 1, 2 times 2, and 2 times 3. It is possible."
+  },
+  {
+   "start": 214.58,
+   "end": 232.99,
+   "text": "Now see, this array is sorted. Yes, it is sorted. There is a duplicate in the array. There is also a duplicate. What you have been told is that duplicate is removed from the array. But, but, but, there is one more thing written in the question that inorder is to be done. Inorder means no space, no space. I told you in the previous video, right?"
+  },
+  {
+   "start": 232.99,
+   "end": 261.84,
+   "text": "16 GB RAM is used in 1 billion array, that's why, no space, no space was the last step of flowchart, so you see, all 4 things have matched, array question, sorted array, remove duplicate, in zero space, in this, 2 pointer will be used, no other algorithm will solve this question, now come, if you want to do in space, what do you have to return, what do you have to make, so in one way, you have to do return value, but that's a different thing, what is your main work, you have to do this array like this,"
+  },
+  {
+   "start": 261.84,
+   "end": 291.81,
+   "text": "now see, what are the unique elements in this? 1 is unique, 2 is unique, 3 is unique. there are only 3 unique elements, the rest are repeated. what you have to do is arrange the array in such a way that first 1 comes, then 2 comes, then 3 comes. once you write this, after that, there is no difference in the array, the output is different from this. what? listen again. how many unique elements are there? there are only 3 unique elements. you have to bring those 3 unique elements in the beginning, 1, 2, 3."
+  },
+  {
+   "start": 291.81,
+   "end": 318.22,
+   "text": "After that, you can do anything in array. After that, you can write your name in array. It doesn't make a difference. Output makes a difference from this. It's a good thing. Everyone must have understood. It's a very good thing. Now see. Let's explain this with an example. What does the question want to say? How do you think in the question? How will the two-pointer be used in the question? Suppose the election is going on in Bihar. Okay. It's not about caste, but the election is going on. So it's easy to understand. Suppose you are the Chief Minister."
+  },
+  {
+   "start": 318.61,
+   "end": 348.3,
+   "text": "You are the Chief Minister. You have a house. Right? This is the house of PM Awas Yojana. There are a lot of people from different societies. You have people from Dalit society. You have people from Muslim society. You have people from Yadav society. And you also have people from Brahmin society. There are a lot of people, right? What you have to do, what is your job? Dalit society is not that there is only one person in Bihar. There are a lot of people from Dalit society. So, consider there are three people from Dalit society."
+  },
+  {
+   "start": 348.3,
+   "end": 374.51,
+   "text": "Muslim community has 2 members, Yadav community has 3 members, and Brahmin community has 2 members. Total caste is 4. You have got 4 houses from PM Avaas Yojana. You have been given 4 houses. Your work is that one Dalit person gets a house, one Muslim person gets a house, one Yadav person gets a house, and one Brahmin person gets a house."
+  },
+  {
+   "start": 374.51,
+   "end": 401.6,
+   "text": "So, don't duplicate. There are 4 castes, so you have to give a house to each of them. You have to ignore the rest. This is your job as a Chief Minister. Now, what have I told you? You have an officer as well. You are the Chief Minister. You are the Chief Minister. We are small people. We are officers. What have I told you? It is like this. These people have been living in many houses since the beginning. These people have a lot of houses in Bihar."
+  },
+  {
+   "start": 401.6,
+   "end": 428.53,
+   "text": "0, 1, 2, 3, 4, 5, 6, 7, 8. Now, how do these people live? First year, Dalit lives. All Dalit lives. D3. After that, two people live in Muslim society. Three people live in Yadav society. And two people live in Brahmin society. Okay? It's a good thing. Now, you were told that, sir, the four houses of Suru are of PM Awas Yojana. The four houses of Suru means this one."
+  },
+  {
+   "start": 428.53,
+   "end": 457.89,
+   "text": "this house, see in the four houses of suru, three are from dalit community and one is from muslim community. you were told, the officer was told that sir we should do one thing that in the four houses of suru, one dalit community, one muslim, one yadav and one brahman should be given a house. so this is the question, this is the question I am telling you that you have to remove the duplicate, in the four, in the four slots of suru, keep a unique person, there is no difference from the rest of the houses. in the rest of the houses, no one should live, no one should not live,"
+  },
+  {
+   "start": 457.89,
+   "end": 483.23,
+   "text": "It doesn't matter if someone else comes. It makes a difference from the four houses of the beginning. Why does it matter? Because the number of unique elements is 4. Now see, what did we tell in the previous class? Before writing any rhythm, first of all, understand its brute force. Now what will be your brute force? In brute force, the worst solution can be that all Dalit people stand here in a line."
+  },
+  {
+   "start": 483.23,
+   "end": 512.93,
+   "text": "he will say, ok sir, I have made an array of this. All the people of the Muslim community stand here. All the people of the Yadav community stand in a different line. And all the Brahmins stand separately. Now, you started in that array. What did you do? You started to pick up one by one. You picked up the first person of the Dalit community, you gave him a house here. You picked up the first person of the Muslim community, you gave him a house here. You picked up the house of the Yadav community, you gave him a house here. And you picked up the house of the Brahmin community, you gave him a house here. It doesn't matter if you picked up the rest of the house or not."
+  },
+  {
+   "start": 512.93,
+   "end": 542.8,
+   "text": "So 0, 1, 2, 3, 4 unique elements in all 4 houses. This can be a solution. But what are you doing for this? You are doing a lot of work for this. You are telling the Dalits to stand separately. You are telling the Muslims to stand separately. You are telling the Yadavs to stand separately. You are telling them to stand separately. So you are using a lot of space. Where will these people stand? They will stand in the field. You will have 4 types of fields. After that, it will take more time to choose one by one."
+  },
+  {
+   "start": 542.8,
+   "end": 562.67,
+   "text": "But your life is already easy. What did the question tell you? Question. If the question has told you sorted, then remember that in life, no one does any work for free. No one does anything for free. So, what did you say? Sorted."
+  },
+  {
+   "start": 562.67,
+   "end": 590.32,
+   "text": "Now, why have you been told to use sorted? Because you wanted to sort the elite code? No, no, no. It takes a lot of time to sort. It takes a lot of login time to sort an array. If you have been given a sorted array, then it is for a reason. It is not your uncle's wish to tell you to use sorted. Why have you been given sorted? Sorted because wherever the people of the society are, they will be in the same line. What it means to say is that if there are some people of the Dalit community, then they will all be in the same line."
+  },
+  {
+   "start": 590.32,
+   "end": 616.27,
+   "text": "Muslim people will be together, Yadav people will be together, Brahmins will be together. They will not be different because they are sorted. So, this means that there is D1, D2, D3. After this, if any Muslim starts, if any Muslim people start, then they are just Muslims. Now, Dalits cannot come because they are sorted. They are all standing in one line. Now, see. This array was given to you. So,"
+  },
+  {
+   "start": 616.27,
+   "end": 645.97,
+   "text": "Wherever people are, see, all the Dalit people are in one line? Yes, they are in one line. All the Muslim people are in one line? Yes, they are in one line. All the Yadav people are in one line? Yes, they are in one line. All the Brahmins are in one line. So, this has given you the meaning of sorted. So, the way to do this, why do you use two-pointers? Let's tell you why you have to use two-pointers. How to use it? You must have understood the reason through the flowchart. You can do one thing here. Because you are a Tej Chief Minister, you can do one thing."
+  },
+  {
+   "start": 646.29,
+   "end": 670.56,
+   "text": "You remember that you also have an officer. Now, you have to understand one more thing that in any case, the first house will be unique. The person who is living in the first house, is there any intelligence to leave him there? Why is there intelligence? Because the first person is the first person of the society."
+  },
+  {
+   "start": 670.56,
+   "end": 697.14,
+   "text": "It is granted that this person is unique, right? This person is unique in his own society. After this, there might be 100 more people standing. We don't care, right? This person is unique. So, the first house is wise to be given to someone. That's right. What will you do? Leave the first person standing, the first D1 standing. Leave him as it is. Now, let's make an array once. Only then you will understand what we are trying to say already. Okay?"
+  },
+  {
+   "start": 697.14,
+   "end": 726.58,
+   "text": "Y2 is written here. See, don't say that this is done by the Castverse. We are doing this to make you understand. You can think like this because you won't get that much from Array, Linklist, and 01. If you think that this should not be done, then write that we won't do it next time. Do you have an officer? Yes. You make the officer sit here. This house has been allotted. To whom? To D1. Now, as a Chief Minister,"
+  },
+  {
+   "start": 726.58,
+   "end": 757.74,
+   "text": "You start coming from here. You are here. There are two people. One is an officer, a green officer. This is the officer and this is the CM. Now you start looking from here. How will you know that this D2, now here is D2. See, D2 is not unique. It was D1. There were people from the Dalit community earlier. Another person came. But how will you know? By looking at his face, you won't know if he is unique or repeated. How will you know? See, if any person is repeated in this kind of list,"
+  },
+  {
+   "start": 757.74,
+   "end": 782.88,
+   "text": "See, you have already worked on D1, and D1 has a lot of houses. D1 has nothing to do with it. If D2 is repeated, then will D2 look like D1? Yes, it will. Why? Because it is a sorted array. See, D2 will be equal to D1. Here, D1 and D2 are written, so you think they are different, but in a sorted array, it will be written like this, 1, 1, 1, 2, 2."
+  },
+  {
+   "start": 782.88,
+   "end": 811.74,
+   "text": "So, if D2 is the same as the previous one, then it is not unique. Can you understand? If D3 is the same as the previous one, then it is not unique. M1 is not the same. See, M1 is different from the previous one. Why is it different? Because here D is finished and M has started. M is different. This M is the same. Why? Because it is repeated, it is sorted. This is different. See, Y1 is different from M2 because here Muslim is finished and Yadav has started. So, this is different. Y2 is the same."
+  },
+  {
+   "start": 811.74,
+   "end": 841.17,
+   "text": "y3 is same, b1 is different. Why is b1 different? Because here y is finished and b is started. So, what is the best way to know duplicates? If this element is equal to the element at the back, then it is not unique, it is repeated. If this element is not equal to the element at the back, then it is the first person of our society who is starting it. For example, y1 is not equal to m2k, y and m are different types. That's why y1 is unique. So, you will know that it is unique."
+  },
+  {
+   "start": 841.3,
+   "end": 870.1,
+   "text": "Now you know that it is unique. But what will you do by making it unique? What did we explain to you in the beginning? You have only 4 houses to give. From that, you are saying that we have already allotted this house. What is the next house to allot? The next house is the house where the officer is. What did you do before? Look, you might think that it is going a little fast. But we will tell you again and again, you will understand. Where is your officer standing? You have made the officer stand at zero."
+  },
+  {
+   "start": 870.1,
+   "end": 899.41,
+   "text": "The 0th house has been allotted, so what is the next house to be allotted? Officer plus 1, the house ahead of the officer is left, so 1 is left. If the officer is standing at 0, then 1 is empty. If the officer is standing at 1, then 2 is empty, 1 is filled. The house where the officer will stand is filled, the next house is empty. Now see, as a Chief Minister, if you come to know, assume that M1 is unique. If it is not unique, then there is no work, then the work is done."
+  },
+  {
+   "start": 899.41,
+   "end": 926.51,
+   "text": "This is not unique, this is not unique, no problem. As soon as you get to know that M1, you are unique, then where do you have to give the house to M1? You have to give the house to M1, right? This is the task that every unique person needs a house. You have to give the house to M1, where do you have to give the house? You have to give a house in front of the officer. Then what can you do? The house in front of the officer, pick up M1 and put it here simply. Remove it and write M1 here. It will be done. I am telling you again."
+  },
+  {
+   "start": 926.54,
+   "end": 952.96,
+   "text": "First of all, what did you do? You gave the house of zero to the first person, saying that it will be unique. Now the officer has been allotted to the house. The next house will always be free. Now as a CM, how will you know that the element which is not equal to the element at the back is unique? You have to give him a house. Which house do you have to give him? You have to give him an officer's next house, saying that it is empty. Pick it up."
+  },
+  {
+   "start": 952.96,
+   "end": 977.41,
+   "text": "and put it in front of the officer. You don't have to swap, just put it in the house. Why? Because, as I told you earlier, you only care about these 4 houses. You don't care about the other 5 or 6 houses. That's why we are not swapping. We are just filling that person in that house. And, once it is filled, once you pick up the M1 and put it here, after that, now see, picking up the M1 and putting it here means that this house is also filled, this is also allotted."
+  },
+  {
+   "start": 977.41,
+   "end": 999.86,
+   "text": "In the beginning, we decided that where will the officer be standing? The officer will be standing at the allotted house. So you increase the officer by 1. You bring the officer here. Because the officer is always standing at the allotted house. And as a CM, your work is done. You have given the house to M1. You move ahead. You move ahead. You move here."
+  },
+  {
+   "start": 999.92,
+   "end": 1028.67,
+   "text": "now see, we gave house to m1, we don't want to give house to m2, why we don't want to give house to m2, because we haven't swapped, m1 is still here, so m2 is still equal to m1, so CM will say that you are duplicate son, duplicate will move forward, y1 is not equal to m2, we will do the same thing, we will give house to officer, we will increase officer, we will increase chief minister, we will increase chief minister, so you understood how the whole algorithm is working, now we will do dry run of this, we will do dry run and show you,"
+  },
+  {
+   "start": 1028.67,
+   "end": 1058.59,
+   "text": "One more thing, what you have to return in this program is the number of unique people. The number of unique people will print the output. One thing is that the number of unique people, if there is only one person in the whole array, then it will be 1. Why will it be 1? Because the initial person is definitely unique. After that, the whole person may be of the same society. But the initial one is unique. You can start this by taking the number of variables, but it is 1."
+  },
+  {
+   "start": 1058.59,
+   "end": 1088.0,
+   "text": "and whenever you get a unique element and you are changing this house, then add this rest to it. Do you understand what I am saying? Number of unique is 1 in the beginning, so it is certain that no one has 2 or 3 votes. Whenever you get a unique element, this is found, this is found, this is found, then increase the number of unique to 1 and return it at the end. So what will happen with this? If you came here, then it was unique earlier. If you got m1, then you made it 2. If you got y1, then you made it 3."
+  },
+  {
+   "start": 1088.0,
+   "end": 1117.9,
+   "text": "b1 is 4 and 4 is returned. What is 4? 4 is the number of uniqueness. What did we take in the beginning? There are 4 types of people. See, there were 4 types of people. And you return this 4. The rest of the printing and whatever is there, the lead code will accept it. Now, let's see its pseudocode and dry run once. Now, leaving all this society, we will explain to you with a real example what will actually happen when you do this. So, okay. Now, let's take an example for your"
+  },
+  {
+   "start": 1117.9,
+   "end": 1148.5,
+   "text": "for convenience. We will take a small example, no need to take a big example. 1, 1, 1, 2, 2, 3. Good example. Now see what will happen. Those who have understood till now, see, we are saying this again and again, don't leave it now. We will tell you many more things in this. You have come here. First of all, what work do we have to do? Officer. Where are we making the officer stand? At the first house, at zero. This is allotted, son. It is allotted. So, number of unique."
+  },
+  {
+   "start": 1149.46,
+   "end": 1178.99,
+   "text": "number of unique, how much is it? one will be there, one will be there, one will be there, and our CM sir, where will CM sir be standing? at 1, why will he be standing at 1? because now you have finished the work of this person, you have to check from here, right? CM sir will always check from 1, will check from 1, officer is standing at 0, 0 is filled, there is no work of 0, there is no existence, 0 is filled at home, CM sir will check from here, officer is standing here, now let's check CM sir, now CM sir is at 1,"
+  },
+  {
+   "start": 1179.12,
+   "end": 1207.95,
+   "text": "now see, how does the CM check? what is the logic of checking? is this person equal to the person behind? now see, is this person equal to the person behind? yes, he is equal, so he is not unique, the CM has come here, is this person equal to the person behind? yes, he is equal to the person behind, he will not get a house, the CM has come here, now see, see carefully, see very carefully, is this person equal to the person behind? no, no, no, means he is a unique element, because he is a sorted area, everyone is standing in a line, in a group,"
+  },
+  {
+   "start": 1207.95,
+   "end": 1235.09,
+   "text": "This is the sorted element. What did we learn in this? What did we learn? Where to put this person? Instead of officer plus 1. Not in officer, officer is standing in a full house. So, what is officer plus 1? It is equal to 1. You put this person here. After that, what should we do? Which house is the officer standing in? Which house is full? We have brought the officer here. The officer has come from here. Your officer is standing here."
+  },
+  {
+   "start": 1235.09,
+   "end": 1264.0,
+   "text": "Number of unique, increase one, increase one, increase one, increase one, increase one, increase one, increase one, increase one, increase one, increase one, increase one, increase one, increase one, increase one,"
+  },
+  {
+   "start": 1264.0,
+   "end": 1288.27,
+   "text": "CM sahab har case, because CM sahab has to check only one thing whether it is duplicate or unique. If it is unique, then the family will work. If it is duplicate, then they will move forward. So, I made a small mistake. CM sahab har, now CM sahab will come, sorry, will come on 4. Because CM sahab was increasing every time. I will show you one more time, don't worry. Is this man equal to his back man? Yes, he is equal, means he is duplicate."
+  },
+  {
+   "start": 1288.27,
+   "end": 1315.34,
+   "text": "Increase CM to 5. Is this person equal to the person at the back? No, he is not equal to the person at the back. What should you do? Which house should you put him in? Put him in the next house of the officer. Write him here. Write him here. And increase the officer to 1. And increase the number of unique to 1. And CM will increase in every case. CM will definitely increase. CM doesn't have much time to increase. And increase CM."
+  },
+  {
+   "start": 1315.34,
+   "end": 1344.53,
+   "text": "When will CM sir stop? When the entire house of Bihar will end. The entire house of Bihar will end at 6. So CM sir can go from 0 to 5. So as soon as CM sir comes at 6, the game will end. What do you have to return? 3. You have to return 3. See it again. There must be some confusion. We made a mistake in this. 1, 1, 1, 2, 2, 3."
+  },
+  {
+   "start": 1344.53,
+   "end": 1373.18,
+   "text": "0, 1, 2, 3, 4, 5. How to start? Take officer as 0. Take unique as 1. Make CM start with 1. Is this 1 duplicate or unique? It's duplicate. Why? It's the same as the previous one. Make CM 2. Is this duplicate or unique? It's duplicate. It's the same as the previous one. Make CM 3. Is this unique? Yes, it's unique. So, what does this mean?"
+  },
+  {
+   "start": 1373.18,
+   "end": 1401.31,
+   "text": "Pick this up and put one in front of the officer. Increase one to the officer. Increase one to the unique. And the CM keeps increasing in every case. Is this unique or same? This is not unique. It is same as the previous one. Increase one to the CM. Is this unique? Yes, it is unique. Where will we put this? One in front of the officer. It was on officer 1. Pick this up and put it on 2. Pick this up and put it on 2. After this, increase one to the officer."
+  },
+  {
+   "start": 1401.31,
+   "end": 1430.69,
+   "text": "After this, we will increase it to 1. CM sir increases in every case. As soon as CM sir reaches the length of array n-1, the program is over. What is the return? 3. What is 3? Number of unique people. When you see the original array, the number of unique people was 3. 1, 2, 3. By doing this, you do in place. So, what is this pattern? Pattern 2 pointer. Why 2 pointer? CM sir is not working alone. Officer is not working alone. CM and officer are working together."
+  },
+  {
+   "start": 1430.69,
+   "end": 1460.4,
+   "text": "As soon as the CM gets it, he thinks that it is unique, so he is told to go and take the house in front of the officer. Officer, you go ahead, and the CM also goes ahead. If the CM thinks that it is duplicate, then the CM just goes ahead. Now do you understand how it is being coordinated? The meaning of two pointers is that two pointers work together after coordination. The CM says that you go and take the house in front of the officer, which means coordination is happening. This was the two-pointer. Now we will quickly show you its pseudocode. What will be given to you, brother?"
+  },
+  {
+   "start": 1460.4,
+   "end": 1488.02,
+   "text": "array will be given which will be sorted what you have to return? number of unique elements you have to return this only and you have to rearrange the array also first of all int let's call it officer to understand some people also call it low high but it's ok do it this is our unique element whatever it is we have taken 1 why 1? it is 1 and we have taken a cm also"
+  },
+  {
+   "start": 1488.02,
+   "end": 1515.38,
+   "text": "we have to start from cm1, till when we have to run the program? till cm is less than length, what is n? n is equal to length, array dot length, now, first of all, what do we do with cm? we check duplicate, how do we check duplicate? that the current element is equal to the previous one or not, so, if array of cm equal equals to array of cm minus 1,"
+  },
+  {
+   "start": 1515.38,
+   "end": 1544.82,
+   "text": "If it's duplicate, then what would CM do? CM would increase. CM doesn't stop for anyone. And continue. Continue means don't execute in the future. Increase in the next loop iteration. But, but, but, you have come here. You have come here. It means you have got unique. If it was duplicate, then you would have increased CM and continued. But if you have come here, then you have got duplicate. What is the first thing you do? You give this person a house. Where do you give the house? Officer plus one. Not the officer one. The officer is full, kids."
+  },
+  {
+   "start": 1544.82,
+   "end": 1575.76,
+   "text": "is equal to, which person is being given a house, where the CM is now, got a house, the officer increased, and the number of unique also increased, rest is plus plus, and the CM keeps increasing, the CM does not stop, this loop is over, when will the loop end, when the CM reaches the last, when he leaves Bihar, then the loop will end, and what do you have to return, you have to return this, the rest you were increasing, you have to return the rest, this is the pseudo code, its time complexity,"
+  },
+  {
+   "start": 1575.86,
+   "end": 1598.46,
+   "text": "Now what are you doing in the area? Are you doing something in the area that one person is completely walking and then another person is walking inside him again and again? No, this is not happening. The CM is going from one line to the end. Whenever the CM feels something, he does some work. He sends it to the officer and makes him work. It's all small work. What is the CM doing? The CM is walking from here to here."
+  },
+  {
+   "start": 1598.46,
+   "end": 1626.64,
+   "text": "whenever they feel something is unique, they change the rules of the house, increase the officer, increase the unique, and move forward in their work. That's why, that's why, there's only one pass in RMA. Its time complexity order of n. Are you taking any kind of space? What we said above, that make all the people of the society stand separately, are you doing something like that? Are you saying that go to different fields? We're not doing anything, bro, we're not doing anything. Zero space, bro, zero space. Two-pointer use is only because we want to take zero space, we don't want to take space."
+  },
+  {
+   "start": 1626.64,
+   "end": 1655.14,
+   "text": "So, order of n is its time and order of 1 is its space. We never want to use space. That's why two-pointer is important. In the question, whatever we said, we have done. Right? Now, if anyone has any doubt, please ask in the comments. If anyone thinks that this example is not clear, please ask. And whatever doubts you ask, we will answer in the next class. That's why, a student asked a very good question in the last class."
+  },
+  {
+   "start": 1655.14,
+   "end": 1681.65,
+   "text": "In the previous video, you said that the end login time of the last one comes. How does the end login time come? See, how to find the time complexity? Suppose you are in your house. Your father is there. Your mother is there. You earn Rs. 20,000. Your father earns Rs. 40,000. Your mother earns Rs. 10,000. If you"
+  },
+  {
+   "start": 1681.65,
+   "end": 1710.19,
+   "text": "Now, it doesn't mean that you have to add time complexity. If you want to take out the total income of this house, then according to the rule of time complexity, the maximum in all is 40,000. So, you say that the I of this house or the time complexity of our program is 40,000. That's why it was unlogged. Whenever you do independent work in the program, for example, you have written a very big program. When you are doing small independent work in it, for example, you sort something here."
+  },
+  {
+   "start": 1710.38,
+   "end": 1736.0,
+   "text": "here you run one function, here you run another function, these three functions are independent from each other, time in this is n log n, time in this is order of n, and n square in this, so when you take out the total time complexity, then you don't sum everyone, maximum, what is maximum in this, n square is maximum, so you say my time complexity is n square, that's why it happens, we will do a lecture on time complexity, we will explain to you what n and when means, but,"
+  },
+  {
+   "start": 1736.0,
+   "end": 1744.34,
+   "text": "It was a good question. If you have any doubts, do ask us in the next video. We read every comment. It's not that we don't read."
+  },
+  {
+   "start": 1744.4,
+   "end": 1774.3,
+   "text": "so this is a pseudo code, pause it and submit it, you have to do the array question which is written in the second column, which we saw in the beginning, don't do the linked list, we will tell you the linked list, but there is the same theory in the linked list, what is the difference in the linked list, one says remove the duplicate from the sorted array, the other says remove the duplicate from the sorted linked list, the theory is the same, the same is the CM and the officer's theory, you understood how the coordination happened, how they talked and worked together, this is the power of two pointer, if the CM would have done it alone, it would have taken a lot of time, but"
+  },
+  {
+   "start": 1774.3,
+   "end": 1802.18,
+   "text": "just by using one more person, the time is reduced. So this is the power of two-pointer. And those who are watching till now, thank you very much for watching. Whatever support you are showing till now, it is very good. Keep showing support like this, we will keep teaching you like this. And do 100k by my birthday, we will get you a job by my birthday. This is a give and take situation. So thank you very much. Watch the video daily, be consistent, make notes, submit."
+  },
+  {
+   "start": 1802.18,
+   "end": 1807.66,
+   "text": "If you have any doubts, don't be afraid. Your brother is sitting here. Ask us."
+  }
+ ]
+}

@@ -1,0 +1,299 @@
+{
+ "video_id": "I081UkZCLlc",
+ "title": "Recursion & Backtracking Explained Once and For All | DSA for Beginners",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1584,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 26.29,
+   "text": "You all have seen the Infinity War, in which Dr. Strange did one thing that he saw 1 in 14 million possibilities and told which ones he will win. How did he do that? He did it with recursion. Because Dr. Strange knew recursion and backtracking. He might have done a course on DSA. So see, today we will talk about that backtracking. First, we will explain to you with an example that what is backtracking. So let's tell you from top to bottom to give an intro to what is going to happen. First of all, we will explain to you with an example of 10-12 BTEC."
+  },
+  {
+   "start": 26.29,
+   "end": 53.07,
+   "text": "After that, we will show you a dry run on a real array. After that, we will give you a code template. This template will be used in recursion backtracking, in graph, in DP, in everything. The most beautiful thing about recursion is that the code is very small. There are only two templates of code. The one we saw in the beginning, that make a base case subproblem answer, that is one. There is a backtracking template. The question is very easy. The question is complex at the Google level. Every question is made from this template. Nothing else happens."
+  },
+  {
+   "start": 53.3,
+   "end": 73.22,
+   "text": "So, what I mean by 10-12 BTECH is that what you do is that 10-12 BTECH lines must have been done. But what happens is that you have a time machine. Suppose if you want to do 10 in 2015, you have a time machine that let's go in 2017, let's do 10. If it doesn't work, then we will come back, we will reverse the time and it may be possible that we will not do 10 and move ahead and see what happens."
+  },
+  {
+   "start": 73.22,
+   "end": 101.92,
+   "text": "The same thing is called backtracking. This is what the doctors had changed. This is what the doctors are going to do today. So, watch till the end and watch in the flow. Don't break this. If you don't have 30 minutes now, then don't watch now. Watch later too. But the flow should not be lost. If you watch it 5 minutes now, 10 minutes tomorrow and 20 minutes later, you won't understand anything. Watch it in one flow, only then it will make sense. Let's start quickly. Now see, imagine that we are in Pratyush, obviously. We are standing in 2015. 2015 is going on."
+  },
+  {
+   "start": 101.92,
+   "end": 130.46,
+   "text": "and at this time we have reached the age of class 10 and my age has become 10th to do boards what people normally do is they do 10th then 12th then they do B.Tech as my father says everyone does 10th, 12th and B.Tech now I don't feel like doing 10th, 12th and B.Tech and how long will it take? it will take 2 years 2 years in 12th and 4 years in total it will take 8 years now this is a very big investment that we don't want to see everything at once I feel that we"
+  },
+  {
+   "start": 130.46,
+   "end": 156.96,
+   "text": "Let's explore all the choices. For a while, let's assume that we are in such a world that even if you don't do 10, you can do something else instead of 10 and then you can do 12 later. Or if you have done 10, then you can skip 12 and do something else in 2 years and do direct B.Tech. So there are a lot of choices. It is also possible that you don't do anything for 8 years. It is also possible that you do everything in 8 years or you do some subset or some combination of all three. So I feel that"
+  },
+  {
+   "start": 156.96,
+   "end": 184.58,
+   "text": "Before wasting our life, we want to explore everything. I want to explore every choice and every possibility. What will we do? For example, I have a time travel machine. It allows us to do 10. If you feel that you don't want to do 10, then you can come back in time. So, I have this time travel machine. Now, let's see what we will do. Where are we standing now? In 2015. Okay? Now, I don't have anything. I don't have any degree. Neither 10, nor 12, nor B.Tech."
+  },
+  {
+   "start": 184.58,
+   "end": 212.43,
+   "text": "So, let's try. Now see, in 2015, what is my age? My age is 10th. So, I have only two options. Either we can do 10th, go ahead by doing 10th, or we can go ahead by not doing 10th. Meaning, how many options do I have? Either we go from 2015 to 2017, in which we have done 10. In which we have done 10. This is one option. Okay. One option was also that we jump directly from 2015 to 2017, in which we have not done 10. We will see that later. First, come here."
+  },
+  {
+   "start": 212.43,
+   "end": 242.54,
+   "text": "Assume that we came from our time machine in 2017 and we have done 10th in this. Very good. Now what is my age? To do 12th. Again I have two choices. There are only two options that the 2017 Pratyush can do 12th and can't do 12th. Assume for some time that the 2017 Pratyush jumps in 2019 and he has done 12th also. Now how many degrees does this Pratyush have? 2 degrees. Because this Pratyush had done 10th, he has done 12th also. So now he has degrees of 10th and 12th. What is his age in 2019?"
+  },
+  {
+   "start": 242.54,
+   "end": 272.3,
+   "text": "You have become old enough to do BTEC. Again, you have two choices. Either you can do BTEC or you can't do BTEC. So, we take our first choice and go to 2023. Where I have 3 degrees. And BTEC is also there. There are 3 degrees. Now, after this, it is over. Now, after this, you have explored all 3 degrees. After going to 2023, we came to know that when Pratyush went to 2023, he had done 10, 12, and BTEC as well. So, you must have seen something that it takes this much job. Let's say, it takes a job of 5 lakhs. Okay, we got to know."
+  },
+  {
+   "start": 272.43,
+   "end": 301.92,
+   "text": "But now this trend wants to come back. Now where does it want to come back? Now it wants to come back in 2019. To come back in 2019, the BTEC person will have to reverse it. When you come back in time, the decision you made there will be reversed. So what does this trend do? This trend comes back here. Now BTEC has moved away from its degree, it is back in 2019. Now in 2019, you have two choices, remember. Was it a choice to do BTEC or not to do BTEC?"
+  },
+  {
+   "start": 301.92,
+   "end": 331.5,
+   "text": "You took a choice and went to B.Tech in 2023. You saw that you need 5 lakhs, 7 lakhs, whatever job you need. But now you want to see that if you had not done B.Tech, what would have happened? What would you have done? Now again from your time machine, go to another B.Tech in 2023. Here you have degrees of 10 and 12. It is not of B.Tech. Because from this time machine, you had gone to the time when you had not done B.Tech. Now you have 2 degrees. In this, you would have known that you need a job of 2 lakhs."
+  },
+  {
+   "start": 331.5,
+   "end": 358.05,
+   "text": "Okay, is it done? Is there any other way after this? Come back, come back. Again, this competition has also come back. Has this man in 2019, who had done 10 and 12, explored all his things? He had two options, right? To do B.Tech, it's done. To not do B.Tech, it's done, he saw it. Now what will he do? He will come back, he will come back. The 2019 competition will come back. And when he comes back, he will stand again in 2017, where he has done 10."
+  },
+  {
+   "start": 358.05,
+   "end": 386.98,
+   "text": "Now, how many options were there in 2017? Either you had the option of doing 12, or you saw this, or you saw the jacket, and even after that, you saw everything that was possible. After that, you have to do B.Tech, M.Tech, you saw everything. Now, what options do you have in 2017? One more. There is an option of not doing 12. What is the option of not doing 12? So, what do you do? From the time machine, come to the option of not doing 12. In 2019, where you have only 10 in the degree, because which path is this? When you have not done 12. When you have not done 12. Again,"
+  },
+  {
+   "start": 386.98,
+   "end": 416.0,
+   "text": "The above 2019 had two options, to do BTEC or not. You will also have two options, to do BTEC or not. Exercise both options. Come to 2023 with one option. Which degree will you have? 10 and BTEC. It will not be 12, because you have never done 12 in this path. You have never done 12 in this. How many degrees do you have? 2 degrees. Now see from these two that what happens in this. Come back. From where did you come back? From 2023. Come back to 2019. What other option do you have? There is also an option of not doing BTEC."
+  },
+  {
+   "start": 416.0,
+   "end": 442.59,
+   "text": "There is also an option of not doing B.Tech. You went to another in 2023 in the alternate universe. When you did not do B.Tech, then now there was not even 12 in this path, there was not even B.Tech, then you only have a degree of 10. Now you have seen here that what happens with just 10, you thought that only BCSR job is required. Okay, now everything is over with you, come back in 2023, come back in 2019. Is the 2019 competition, this one, this competition, have you done everything? Yes, I have done everything."
+  },
+  {
+   "start": 442.59,
+   "end": 469.65,
+   "text": "So come back in 2017. Has the 2017 Pratyush also done everything? Yes, because the first decision of the 2017 Pratyush was whether to do 12 or not. After doing 12, he saw that he had to do BTEC or not. After doing 12, he saw that he had to do BTEC or not. So the life of the 2017 Pratyush is also over. Where will the 2017 Pratyush come? In 2015. Where did it come back? In 2015. Now,"
+  },
+  {
+   "start": 469.74,
+   "end": 498.29,
+   "text": "This is one decision of 2015. How many decisions did you have in 2015? Do you want to do 10 or not? This is one decision that yes, you have to do 10. There will be one more decision that you don't want to do 10. So come, repeat the same thing. This is the competition in 2017, who has no degree. He has not done 10. He has not done 10. Repeat the same thing. How many decisions does the competition of 2017 have? There are two decisions. Do you want to do 12 or not? Let's do it. This will come in 2019."
+  },
+  {
+   "start": 498.29,
+   "end": 525.84,
+   "text": "Suppose he has done 12, then he will have only 12 degree because you have not done 10. How many options do you have in 2019? 2 options, you have to do BTEC or not. First option, come in 2023, how many degrees will you have? 12 and BTEC. 12 and BTEC. It is over, come back. You have one more option that you cannot do BTEC. How many degrees will you have? Only 12. All over, the work of 2019 is over, 2019 is over. Now, in 2017, there is an option on which you are doing 12."
+  },
+  {
+   "start": 525.84,
+   "end": 555.66,
+   "text": "You are an alternate universe in which you are not doing 12. You still don't have any degree. Again, how many possibilities do you have in 2019? There are two possibilities. You can do B.Tech. You can't do B.Tech. If you do B.Tech, you will only have a degree of B.Tech. If you don't do B.Tech, you won't have any degree. His work is over. His work is over. He will come back. He will come back. Now see. Why did we explain you such a big graph of the competition? Because this is called exactly backtracking. What is backtracking?"
+  },
+  {
+   "start": 555.86,
+   "end": 584.24,
+   "text": "You start from a starting point. You have nothing. In the beginning, in 2015, he didn't have anything. He didn't have 10, 12, B.Tech, nothing. First of all, in 2015, he makes a choice on class 10. Where does he put his mind in 2015? Does he want to do 10 or not? If he wants to do 10, then he goes to 2017 with a time machine where he has done 10. Now, in his degree, he has got 10. This 10 will always remain in this path. In 2017, he has to make the same decision that does he want to do 12 or not?"
+  },
+  {
+   "start": 584.24,
+   "end": 613.22,
+   "text": "In 2017, he makes two decisions. He has to do 12 and not 12. Again, when he decides to do 12, he goes to 2019, then 10 and 12 are added to his degree. 10 and 12 were added to his degree. In 2019, in every 2019, he has to take only two decisions, whether to do BTEC or not. In 2019, the decision of 10 will not be made, the decision of 10 has already been made. When you have come in 2019, then you take the decision of BTEC. So, in 2019, he takes one decision that he has to do BTEC. So, in his degree, 10 and 12 BTEC are added."
+  },
+  {
+   "start": 613.22,
+   "end": 634.53,
+   "text": "Now, this has come in 2023. 2023 means it is over. Now you have studied as much as you had to. Now when it comes back, then you will have to remove this BTEC from this degree. So that when you take the decision not to do BTEC from 2019, then you will only have 10 or 12. If you bring this BTEC from this time machine, then it will also become 10 or 12 BTEC. You don't have to do that."
+  },
+  {
+   "start": 634.53,
+   "end": 664.42,
+   "text": "When you come back from the time machine, it means that you are reversing your decision. Reverse means that you throw away that degree from your degree. For example, when you came back in 2019, you had 10. When you came back in 2023, you had 10 more BTECs. But when you come back to explore alternate possibilities, you throw away the BTECs because it is done. When you come back, you throw away the BTECs. What do you call this whole thing?"
+  },
+  {
+   "start": 664.42,
+   "end": 687.04,
+   "text": "Backtracking. What? Backtracking. You have some items. Like how many items do I have? 3 items. You have to do 10, 12, B.Tech. For every item, how many choices do you have? 2 choices. You have to take, means you have to do that degree or you don't have to take. Nothing else happens. You have to take or you don't have to take. That's it. You keep doing this choice. You keep doing this choice from the beginning."
+  },
+  {
+   "start": 687.04,
+   "end": 716.35,
+   "text": "When you reach the last, you will get a combination. You will either have all the choices, like there was a choice in which we had done everything. Either it will be 10-12, 10 will be B.Tech, 10 will be 12. You will have all the possibilities. When you reach the last, when you have nothing left to do, then you can print those choices. You can do anything with that choice. Your current state, what did this person do in his life, you can take a decision from that. So this is backtracking."
+  },
+  {
+   "start": 716.35,
+   "end": 745.97,
+   "text": "exactly what we are told. Now let's see what is the template of its code. See, template is very simple in recursion. If you learn the template, any question follows it. As we told you about the first part template, that first part template is used in everything. Write the base case, take the answer of the small part, combine your answer and answer and return the answer. Any question in the world is made from it, nothing else has been made from it till date. Backtracking also has the same template. Whether it is backtracking, whether it is graph, whether it is dynamic programming, it is made from it. Okay, come. Now this is the question."
+  },
+  {
+   "start": 745.97,
+   "end": 774.67,
+   "text": "What is this question? In this question, I tell you that this array is 1, 2, 3. Generate all of its subsets. What is a subset? Let's assume that the subset we did above was 10, 12, btech, 3 degrees. The possibility of all three of these, let's not leave out the kachor and tell what the possibility is, that is called a subset. Suppose in one subset, there will be only 1, this is a subset. In one subset, there will be 1, 2, 3, 3, this is also a subset. In one subset, there will be nothing, this is also a subset. In one subset, there will be 2, 3, this is also a subset. In this way, a lot of subsets are formed."
+  },
+  {
+   "start": 774.74,
+   "end": 802.14,
+   "text": "In this, you will have to understand how this subset is made, how this subset is being made. See, first of all, you have two choices for every element, like we had a choice for every degree, right? For every element, there are two choices. Suppose you are making a subset, then what can that element do? Either you can keep the element in the subset, we are talking about one element, 1. No matter how many subsets you make, you can either keep 1 in that subset or you can not keep that 1. This is what happens, right? Okay. What is for 2?"
+  },
+  {
+   "start": 802.14,
+   "end": 829.44,
+   "text": "2 can be in any subset or 2 can't be in any subset. What is 3? 3 can be in any subset or 3 can't be in any subset. This is the subset. Okay. So, let's do this with backtracking. So, what will we do? Every time we will focus on one element. Like we used to focus on one degree every year. It was 2015, we will focus on 10 and take a decision on 10. It was 2023, we will take a decision on B.Tech only. And what did we keep? We used to keep one degree. Remember."
+  },
+  {
+   "start": 829.44,
+   "end": 859.04,
+   "text": "we used to keep the degree, see this is the degree, in every time travel what degree do you have? so what did you do? when you used to do any choice, then you used to add it to the degree when you used to come back, then you used to tear the degree and throw it away because now that choice is over we will do the same thing here too what did we say? every time we have to take one item now this is an array, how do we take an item in the array? we take it from the index so in the beginning we will make a degree of that temp is equal to some array type, assume we have made it this is our job to keep the degree"
+  },
+  {
+   "start": 859.04,
+   "end": 887.26,
+   "text": "Let's start taking decisions. i is equal to 0. What is it? 1. Take a decision on 1. How many decisions can there be on 1? 2 decisions. Either you don't take 1 or you take 1. Come on, don't take 1. If you don't take 1, then you will reach i is equal to 1. Your attempt will be the same. Your attempt will remain the same. Let's go. We will do the one who takes 1 later. What is this? Don't take 1. Don't take 1. We have come to i is equal to 1. Now it doesn't mean anything. It only means this 2."
+  },
+  {
+   "start": 887.26,
+   "end": 905.01,
+   "text": "Take a decision on 2. Let's take a decision that we won't take 2. We won't take 2. I is equal to 2. We didn't take 2. We didn't have to add anything to the degree. We didn't have to add anything to the degree. Okay. I is equal to 2. Decide on 3 only. Decide on 3 only. What to do? Let's assume that we won't take 3. We won't take it."
+  },
+  {
+   "start": 905.01,
+   "end": 933.26,
+   "text": "Where did you come? On I is equal to 3. When you came on I is equal to 3, then see the array is finished. You don't have any element left. This is the same state. You came in 2023, everything is finished. You came in 2023, then whatever you had to do, you must have done. 8 years have passed, there is no degree ahead, now you have to finish it. On I is equal to 3, what is your temp? The temp array that we made, the degree array, what is it? It is empty, there is nothing in it. Because you didn't take anything. You didn't take anything in this time travel path, in this universe. So what will be printed? Nothing. Empty."
+  },
+  {
+   "start": 933.26,
+   "end": 956.85,
+   "text": "So, an empty print has been printed. Now, what did we say? Go back, go back. Go back means, come back to i is equal to 2. Now, see, from i is equal to 3, you went back to 2. So, is there any need to change? Is there any need to reverse? No. Because we didn't add anything in TMP, so what will we reverse? So, there is no need to reverse anything now. But, i is equal to 2 has come, so now we are on 3."
+  },
+  {
+   "start": 956.85,
+   "end": 986.24,
+   "text": "So now we have to take a decision on 3. So we have taken a decision that we will not take 3, we have done that. Let's take 3 and see, let's take 3 and see. So this is a path in which we have taken 3. As soon as you take, what does it mean to take? Add it to your degree, brother, add it, add it, add it. Now you have come to i is equal to 3 and your TMP is looking like 3. Now i is equal to 3 is over, you can't do anything. So what to do? Whatever is there in TMP, print it. What is there in TMP? Only 3. So only 3 must have been printed."
+  },
+  {
+   "start": 986.24,
+   "end": 1005.36,
+   "text": "Now, you have to go back from i is equal to 3 to i is equal to 2. But, when you come to i is equal to 2, your decision should be reversed. Your decision should be reversed. That means, the 3 you took here, reverse it. Its work is done. Its work is done. The work is done. Very good."
+  },
+  {
+   "start": 1005.42,
+   "end": 1034.48,
+   "text": "Now, there is nothing left to do on i is equal to 2. There is nothing left to do on this man. He had to take only two decisions. That is, whether to take this 3 or not. He did both and saw. He took it and saw. He did not take it and saw. Now what will he do? He will go back. Come back. He came to i is equal to 1. Your element is 2. Have you taken both the decisions for 2? No. You had taken the decision not to take 2. Take the decision to take 2. Take the decision to take 2. We said yes. Now, as soon as you say yes, what is added to your degree? What is added to the degree of i is equal to 1? 2."
+  },
+  {
+   "start": 1034.61,
+   "end": 1064.38,
+   "text": "Okay, i is equal to 3, sorry, i is equal to 2, your degree has 2 added. Same thing, now what happened for this i is equal to 2, it will happen here too. One decision will be of no, one decision will be of yes. On which? On 3. On the no one, when you come to i is equal to 3, then what is your TMP? 2. There is only 2 in it. So you print 2. Go back, there is no need to reverse anything now. But when you come to this yes, i is equal to 3, then a 2 and 3 will also be added in your degree. Because you have done 2 and 3 as well. Print it."
+  },
+  {
+   "start": 1064.38,
+   "end": 1080.88,
+   "text": "2 and 3. Done. When you go back from this, then remove 3. Remove 3. We are assuming that this is very intuitive. Why? Because when you did BTEC, you printed something. Now you are going back in time. So, remove BTEC from your degree and throw it. Remove BTEC from your degree and throw it."
+  },
+  {
+   "start": 1080.88,
+   "end": 1105.26,
+   "text": "because its work is not there, it is already done. If you have not taken anything, then there is no need to do anything. If you have not taken anything, then nothing has been added, so there is no need to remove anything. But if you are adding something, if you are doing something on your degree, then it is necessary to reverse it. Come on, the work of i is equal to 2 is done. When i is equal to 2 goes here, when i is equal to 2 goes here, then you will have to remove this from your degree. You will have to remove this too."
+  },
+  {
+   "start": 1105.46,
+   "end": 1133.9,
+   "text": "Now you have come to I is equal to 1. I is equal to 1 has done both the work. It has taken 2. It has not taken 2. Everything is over. Go back. Now where have you come back? I is equal to 0. Now what is the number here? 1. See your TMP has been emptied completely. Your TMP has been emptied completely. But you have also printed 4 subsets. You have also printed 4 subsets. Now I is equal to 0. You had taken one decision. I is equal to 0. You have taken the decision not to take 1. A very big tree has been made. You can also take the decision to take 1."
+  },
+  {
+   "start": 1133.9,
+   "end": 1161.2,
+   "text": "Decide to take 1 also So when it will take decision to take 1 Then obviously 1 will come in TMP Okay I is equal to 1 Same thing will happen on I is equal to 1 Now it has to be decided for 2 So one is that it doesn't decide for 2 So you come to I is equal to 2 Again on I is equal to 2 There is one option that you don't take So you come to I is equal to 3 On I is equal to 3 What to do? Print the TMP What is it? 1 It is only 1 So 1 will be printed"
+  },
+  {
+   "start": 1161.55,
+   "end": 1189.1,
+   "text": "Now, on i is equal to 2, if you want, you can also take 3. As soon as you take, then 3 will come in it. You print 1, 3 and come here. Now, when you go back from here, you will have to reverse 3. If you add, then you will have to reverse. Come to i is equal to 2. The work of i is equal to 2 is over. Now, you have come to i is equal to 1. Now, take 2 and see. Take 2 and see. Then say yes, we will take."
+  },
+  {
+   "start": 1189.1,
+   "end": 1218.34,
+   "text": "If we take, then we have to add 2. Again, there are two choices here. I is equal to 2 means we have to take a decision on 3. Don't take 3 and see. We will come to I is equal to 3. Print 1, 2. Print 1, 2. And go back. Nothing. Yes, means we will take 3 also and see. So add 3. And print 1, 2, 3. Now go back. Now we will go back. Remove 3. Now its work is done. We will go back. Remove 2."
+  },
+  {
+   "start": 1218.34,
+   "end": 1244.98,
+   "text": "This has also been done. We will exit our program and remove this too. So see, you started from an empty time, you came from an empty time, but in the process you have printed all the things. These are all the subsets. It is empty, it is 3, it is 2, it is 2-3, it is 1, it is 1-3, it is 1-2, it is 2-3, it is everything. So every subset has been printed. Where did the same work happen in the degree? You started in 2015 with an empty hand, you kept on increasing, sorry."
+  },
+  {
+   "start": 1245.3,
+   "end": 1270.06,
+   "text": "You kept on increasing and increasing, you did a lot of things, you saw the whole degree. When you left, you had this empty degree again. There was nothing else. Why? Because when we don't take anything, we don't take anything, we move ahead. But when we take something, we add it to the degree, we take it and see. And when that thing ends, before coming back, we reverse it. We tear it from that degree and throw it away. Come, let's write its code."
+  },
+  {
+   "start": 1270.48,
+   "end": 1300.75,
+   "text": "Let's write its code. Always remember this 10-12 BTEC example. Always remember this 10-12 BTEC example. Okay? So, let's assume you have an array. Which is 1, 2, and 3. So, what did we say? Always start from the beginning. Some people start from the last. We always start from the beginning. Your job is to print all the sets. If you write such a function. First of all, pass an array in it. First of all, an array will pass in it. We are telling you the general of any of them. Okay?"
+  },
+  {
+   "start": 1301.07,
+   "end": 1329.81,
+   "text": "Whatever the area string is, one will pass its length and one will pass its index. Now, which index do you want to take a decision on? In which year are you? Are you in 2015, 2017 or 2019? Means, are you at i is equal to 0 or i is equal to 1 or i is equal to 2? You have to take a decision on the i on which you will be. You don't have to keep any other meaning. Index is done. And one more, vector int tmp. What is this? Degree. Degree. It will remain empty in the beginning. You have chosen nothing in the beginning. Let's go. So,"
+  },
+  {
+   "start": 1329.81,
+   "end": 1358.61,
+   "text": "First of all, write the base case that i is equal to n, means all your choices are over, you have seen everything. You have taken something in it, you have not taken anything, okay. What do you do? Simply print tmp here and return it. Means this function is over, it is over, you have no choice. But now you have come here, so you have two choices. One choice is that you want to take a decision on this array of i. One choice is that you do not take it. One choice is"
+  },
+  {
+   "start": 1358.64,
+   "end": 1388.72,
+   "text": "we will not take it means we will not do class 10 or class 12 if we will not take then what we used to do when we didn't want to do 10 then we used to directly go from 2015 to 2017 we didn't subtract any add from our degree do the same thing directly we will go in the next year fun, to go in the next year means A, N, IDX plus 1 and TMP IDX plus 1 means on the next item, it went on the next year, it went on the next year it ended, it ended"
+  },
+  {
+   "start": 1388.72,
+   "end": 1417.17,
+   "text": "Now when you come back in this year, imagine that this was your year of 2015, you went directly from here in 2017, you must have done something, now you have come back in 2015, now you have one more choice left that you have to take it, now you have to take it. So what did you do to take it? In the degree, they used to add 12 and go ahead. In not taking it, they went directly ahead. In the time of taking, they added 12 in the degree and jumped in 2017. So what to do? Add it to your degree. To whom?"
+  },
+  {
+   "start": 1417.17,
+   "end": 1445.94,
+   "text": "The one you want to take. Who do you want to take? Array of IDX. Take it. It has been added to TMP. One more thing. This TMP will remain the same across functions. Meaning, the change you will make here, the change you will make in 2015, it will reflect in 2017. What you do now affects your tomorrow. The mistake you will make today will affect tomorrow. So, if you have taken something today, it will affect. So, we have taken the degree of 10 and moved ahead. Now go again. A, N."
+  },
+  {
+   "start": 1446.48,
+   "end": 1475.82,
+   "text": "IDX plus 1, TMP. Again, we went in 2017. Again, we went in 2017. But this time, we took that 10. So, again, something will happen, print will happen, whatever will happen. Now, you have come back. Now, you have come back. Now, reverse your decision. Now, reverse your decision. Means, TMP dot, pop back. Pop back. And return. And return. What is happening in this? Again, I will explain to you."
+  },
+  {
+   "start": 1475.82,
+   "end": 1505.74,
+   "text": "Every time you have to take a decision on one index. This was the base case. When you went to the last. You reached the last. It's over. Whatever you had to take, you had to give. Everything is over. Print the results of your life. After that, you have to choose the area of I. You have to choose the area of IDX. There is one option that you don't take. If you don't take, it means go straight ahead. Go directly to IDX plus 1. Don't make any change in TMP. But you have one more choice that you have to take. So this is the work of three steps."
+  },
+  {
+   "start": 1505.74,
+   "end": 1534.05,
+   "text": "This is the work of three steps. First of all, take it. Add class 10 to your degree. Go ahead in 2017. When you go in 2017, class 10 will be added to your degree. All the decisions in the future will be affected by this class 10. Something will happen. When you come back, now you take class 10 out of your degree and go back. Now you take class 10 out of your degree and go back. This is what you have to do. This is called recursion. We could have given a code first. But how does this code work? This code works like this."
+  },
+  {
+   "start": 1534.05,
+   "end": 1561.28,
+   "text": "This code works exactly like this. Write it in your copy. Write this template. Anything can be done with this template. Anything can be done with this template. And now we will start questioning it from tomorrow. Then you will get more clarity. But we highly recommend that you try to dry run it once. Make an array in VS code 1, 2, 3. Every time see which function is being called. Write a print statement here. And see what is being called here at this time in TMP. And what is being printed at the last."
+  },
+  {
+   "start": 1561.28,
+   "end": 1583.06,
+   "text": "The more you will understand from that, the more you will not understand from any other course. So, we have not been taught this 10-12, we have understood this by ourselves. So, the one who will understand this copy in dry run, no teacher can teach you that level. We have given our best. If you don't understand this, then please comment. We will tell you again tomorrow. We will tell you again and again. Till you don't understand this, we will not go ahead. Okay? Let's go."
+  }
+ ]
+}

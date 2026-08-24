@@ -1,0 +1,354 @@
+{
+ "video_id": "ks8rocoXbJk",
+ "title": "5 Step Template To Solve any HEAP Problem | DSA PATTERNS 2026",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1723,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 28.74,
+   "text": "Hello everyone, in today's video, we will give you a template of 7 steps. You will get any question from this template. If you want, you can just remember this step, but we will encourage you to listen to what we are going to explain in 10-15 minutes."
+  },
+  {
+   "start": 28.74,
+   "end": 48.61,
+   "text": "If someone asks why the max heap is put in the bottom k, then you will give a hint that we don't know that. If someone made us remember, then we remembered. Don't remember. It will be remembered by itself while doing it. We haven't seen this from the dictionary, we remembered it from before. So once you understand it, you will remember it for the rest of your life. But if you just remember that you have to push in step 6 and pop."
+  },
+  {
+   "start": 48.61,
+   "end": 64.43,
+   "text": "It will become a question, as long as you have this flowchart, it will become a question. But it is possible that after a month or two months, you will forget that you had to push first or pop, then you will come and watch the video and ask first. No, don't do that. Once you understand, it will be automatically clear. So watch the whole video and..."
+  },
+  {
+   "start": 64.43,
+   "end": 93.28,
+   "text": "if you haven't seen any video of heap before then also it is beneficial for you, then also you will understand well after watching this video, you may have to go and see question by question that yes, it was made from this only so the purpose of teaching that question was so that in the end we can teach you this consolidated template so let's start without any delay first of all, let's come to step 1 step 1 is that you have to know whether this is a heap question or not how will you know, whenever you see such a top k, bottom k"
+  },
+  {
+   "start": 93.28,
+   "end": 113.33,
+   "text": "Either you see something with K greatest or something with K largest or something with most frequent K. It means either very big K people or very small K people. This is what it means in Hindi. You can frame it in any way. You can see K closest or K farthest. You can see anything."
+  },
+  {
+   "start": 113.52,
+   "end": 127.97,
+   "text": "You have to find K items in the array or in the list of items. In many items, you have to find K items. These K items will either be the top K items or you have to find the K item at the back."
+  },
+  {
+   "start": 127.97,
+   "end": 157.87,
+   "text": "it does very little work if you don't want to find all this. So if you want to find a very low k or a very high k, then you can understand that it will be made of a heap. It will be made of a heap. It may not be the best solution of a heap, but it will be made of a heap anyway. So step 1 is that you have to look at these things in question. Okay. What is step 2? What is step 2? In step 2, you have to find out in which thing we have to find top k or bottom k. What does it mean in which thing? Do you have to find the kth largest element of the array?"
+  },
+  {
+   "start": 157.87,
+   "end": 177.84,
+   "text": "Either you have to find out the frequency of the K people, or the distance of the K points, or the K people who are doing some other work. In the array, you will be given the items that these people are there. In which of them do you have to find the K? Do you have to find the K in their age?"
+  },
+  {
+   "start": 177.84,
+   "end": 201.01,
+   "text": "It can be anything. It can be that you have to find element k. It can be that in array you are asked to print k largest element. This can also be done. In array, we have seen the frequency. Do the items whose k is the largest frequency. There is a question of distance. In that, it is said to find the closest distance from the origin. It can be in anything. You have to calculate that thing."
+  },
+  {
+   "start": 201.01,
+   "end": 227.86,
+   "text": "Generally, it is very easy. If there is a frequency, then you can make a hash map. If you are asked about the distance, then you can write a function for which you get the distance. You have to calculate that first. After this, if you learn to calculate this, you will know in which thing we have to do k here and there. After that, you will have to make a heap of pairs. Sometimes, if it is an element question, then you don't have to make it. Why do you have to make a heap of pairs?"
+  },
+  {
+   "start": 227.86,
+   "end": 249.58,
+   "text": "You have to make a heap of pairs because the first thing you will store in the heap will be this thing. You have to take out the top K of any thing like frequency, distance, anything. And what will be your second? Either array elements or its index. Depending on the question, you can do anything. What is your goal?"
+  },
+  {
+   "start": 249.71,
+   "end": 279.73,
+   "text": "Why are you keeping this thing? Because you have to find the top k on this thing. To identify the index of the array, this thing, let's say if this frequency is 3, which element's frequency is 3, for that either you keep the index or you keep the element, it's your choice. If you keep the index, then also it will work. In that, you have to identify by doing array of index. If you keep the element, you will get it directly. Okay. After that, what type of heap do you have to make? Step 4. Step 4. What type of heap? We had told yesterday. If you have to find the big K, what does big K mean?"
+  },
+  {
+   "start": 279.73,
+   "end": 309.5,
+   "text": "Greatest k, longest k, most frequent k, any big thing, you have to find a big k group. You have to make a min-heap. You have to make a min-heap. If you have to find a small k, if you have to find a small k, means closest point to origin, means whose distance is less, of such k people, things with lowest frequency, some of the smallest things, then what do you have to make? You have to make a max-heap. Will you tell me why you have to make it? Those who missed yesterday's lecture, very good. So, you have to make a max-heap. Whose? Of pairs. Now yes,"
+  },
+  {
+   "start": 309.5,
+   "end": 338.98,
+   "text": "In maxheap, you are asking to make heap of pairs and minmax as well. In this, this thing will be given according to the question that the thing will tell you whether it is top or bottom. So, it is very easy that you can easily make its max and min. This second element, whether it has to be max or min, this will be known according to the question. If the question says that you return elements in any order, then you don't have to do anything. Whatever you are making earlier, you can do max and max or you can do min and min. But if the question gives something in reverse that no,"
+  },
+  {
+   "start": 338.98,
+   "end": 366.99,
+   "text": "We will give an example of that. In question, we do the opposite, that look bro, sort according to this thing, but it is possible that this will be equal to two elements. Whatever frequency you are talking about as a thing, then frequency should be same. After that, we have to discuss on that element, that okay, which one will be small or big from this, then according to that question, you have to make it max or min. This is very well explained in the heap on pairs. Step 4 is done, after that, don't remember this, we will tell you everything, just see it from top to top."
+  },
+  {
+   "start": 366.99,
+   "end": 396.34,
+   "text": "We are showing you step 5 because we want to show you how easy it is. Once it is done, close your eyes and push the K items in the question. Close your eyes and push the K items. Is it okay? Step 6. In step 6, close your eyes and push the rest of the items. Close your eyes and push the rest of the items. Close your eyes and push the rest of the items. Close your eyes and push the rest of the items. Close your eyes and push the rest of the items. Close your eyes and push the rest of the items. Close your eyes and push the rest of the items. Close your eyes and push the rest of the items. Close your eyes and push the rest of the items."
+  },
+  {
+   "start": 396.34,
+   "end": 418.86,
+   "text": "One push and one pop. You don't have to make any decision. Everything will happen on its own. I will tell you how it will happen. But in step 6, what you have to do is push and pop. Step 7. When you have seen the whole item, when you have seen the whole array, in your heap, in your heap, K elements will be left. In your heap, K elements will be left and these K elements will be your answer."
+  },
+  {
+   "start": 418.86,
+   "end": 441.62,
+   "text": "and put it in your answer. That's why we stored the element. Put the element in your answer or if you have index, then put it in your index. In 7 steps, any such question can be solved and it can be solved at all. Now we will talk about why does it happen. First of all, when you are told that let's start with bottom case that you have smallest"
+  },
+  {
+   "start": 441.62,
+   "end": 466.32,
+   "text": "find the smallest k, find the smallest k items in any array, in any array, they can be the smallest in any way, either their frequency is the smallest, or it can be anything from the value, the distance is the smallest, anything, let's go, now see, if you have 10 items in the array, so 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10, you are told that k is equal to 4, means,"
+  },
+  {
+   "start": 466.32,
+   "end": 492.0,
+   "text": "Find the 4 smallest elements. Suppose we write these items in the sorted order. We don't have to write it. Suppose we have written it somewhere in the copy. So you can see that these 4 items are the smallest. Sorted order means not the sorted order of the array. Sorted order is according to the thing on which it is. Means the one whose frequency is the lowest is the first. The one whose frequency is the highest is after that. According to this. Okay. So you can see that these 4 items have come here. So this should be your answer. Because you have to find the smallest one."
+  },
+  {
+   "start": 492.0,
+   "end": 510.96,
+   "text": "Now, these four have a very special property. If we ask you a question, how many people is one bigger than others?"
+  },
+  {
+   "start": 510.99,
+   "end": 537.84,
+   "text": "What will you say? 1 is bigger than 0 because 1 is not bigger than anyone. The smallest person is 1. We are repeating it again and again. This is not according to the value. The thing on which you are told to take out the top K is the frequency or something. According to that, it is the smallest. Okay. We are going to ask you the same question. How many people is 2 smaller than? You will say that 2 is smaller than 1. It works. How many people is 2 bigger than? It is bigger than 1."
+  },
+  {
+   "start": 538.1,
+   "end": 558.21,
+   "text": "How many people is 3 bigger than 2? Okay, very good. How many people is 4 bigger than? 4 is bigger than 3 people. What was in your answer? 1, 2, 3, 4. If we ask you a question, how many people is every item bigger than? You will say 0, 1, 2, 3. Okay. But if we ask you a question, how many people is 5 bigger than? You will say it is 4 people."
+  },
+  {
+   "start": 558.21,
+   "end": 588.11,
+   "text": "5 is bigger than 4 people. Is 5 your answer? No, 5 can't be your answer. Why? Because when you talk about bottom K, when you talk about bottom K, then if we write it like this to explain that this is a last child, after that this will be a second last child, your number comes in class, suppose a child got last and it failed, there is a second last child, there is a third last child, and there is a fourth last child. These 4 children should be in your class. There is one more child, suppose this is fifth last."
+  },
+  {
+   "start": 588.11,
+   "end": 615.92,
+   "text": "Fifth last bacha hai. Acha. Aapke answer me ye chaaro hai. Kyuki aapko last ke chaar bacha dhundne the. Again, fifth last bacha aapka answer nahi usakta hai. Kyuki fifth last bacha kavi bhi bottom four me nahi aapayega. Fifth last ka definition hi hai ki wo paanchave position me hai. Fifth position aapko nahi chahiye. Aapko kahan tak chahiye? Fourth position tak aadmi chahiye last se. Matlab ki, agar aapko pata chal jata hai na, kuch bhi pata chale ya na chale,"
+  },
+  {
+   "start": 615.92,
+   "end": 622.3,
+   "text": "If someone tells you that this item is more than 7 people."
+  },
+  {
+   "start": 622.3,
+   "end": 646.29,
+   "text": "It is bigger than 7 people. What does it mean by bigger than 7 people? Before this, 7 people will be guaranteed. What does it mean? This person can go to 8th position. He can go more than 8, but not less than 8. Why? Because 7 people are already smaller than this. So, 7 children in the class will already be at 7th position. You want bottom 4. So, can this be your answer? No, it can't be."
+  },
+  {
+   "start": 646.29,
+   "end": 659.14,
+   "text": "Similarly, with the same logic, 5 can never be your answer because you know that 5 is bigger than 4 people. If 5 is bigger than 4 people, then how will it come in the bottom 4? It will come in the bottom 4."
+  },
+  {
+   "start": 659.14,
+   "end": 686.42,
+   "text": "In bottom 4, 4 came. Why? Because 4 was bigger than 3 people. 4 was not bigger than 4 people. Any person who is bigger than 4 people, can't come in bottom 4. Try to understand this by logic. That's why in bottom question, or in last K question, max heap works this much. How max heap works, I will tell you. For example, we have written this in sorted order. These are in jumbled order. What does jumbled order mean? 7."
+  },
+  {
+   "start": 686.42,
+   "end": 715.15,
+   "text": "1, 2, 3, 4, 5, 6, 7, 8, 9, and 10. The elements are given in this order. Assume that you have to find the largest. The 4 elements at the bottom which are the smallest. The 4 elements at the bottom which are the smallest. It seems that 1, 2, 3 are complete but just for simplicity sake. Now why does maxi work here? Why do we tell you? Now we will go step by step and explain to you what each step means. See how far we have done."
+  },
+  {
+   "start": 715.15,
+   "end": 738.16,
+   "text": "Have you done step 1? Yes, the question is about the heap because you have to do the bottom 4. Step 2, in which thing? Let's assume that in value, just for the value of that item. Okay. Step 3, heap of pairs. There is no need here. Make a heap of pairs. Make it. Keep the same in both just for understanding. In which thing? We have said that it is small in value. So, keep the same thing in both. Both are elements. So, the element is according to its value. Okay."
+  },
+  {
+   "start": 738.48,
+   "end": 766.3,
+   "text": "Step 4. If you want a big K, then min heap. If you want a small K, then max heap. What do you want? We are saying that we want small K elements. Meaning, if we want small 4 values, then we will make max heap here. In both, first and second, we will max it in both. Okay. Step 5. What did step 5 say? K items, start K items, any start K items, push in heap. What is the logic of this? Why is it said to push without blinding? Because, think of it like this."
+  },
+  {
+   "start": 766.3,
+   "end": 792.43,
+   "text": "Now you must have seen that there are 10 elements in total. So you don't know which 4 elements are there in 10. Assume that you have only these 4 elements. These elements don't exist. These elements don't exist at all. So what would be your answer? Assume that there are only 4 items in the class. There are only 4 children. If someone asks you a question that tell me the 4 children who got the lowest score. So what do you say? The whole class. The whole 4 children. There are 4 children in the class. The 4 children who got the lowest score. The whole class will be there. Take the whole class."
+  },
+  {
+   "start": 792.43,
+   "end": 821.09,
+   "text": "So what we do is, if you had only 4 elements in the beginning, then you would have taken the answer. That's why in our heap, we keep the items that have the probability of getting the answer. We never keep the item that can never get the answer. We eliminate it in a way that this child can never get the answer, take it out. So our heap is a space in which we keep such children who can get the answer. So suppose that in the beginning you had access to only 4 children, then there are 4 answers. Obviously, there are 4 answers."
+  },
+  {
+   "start": 821.09,
+   "end": 844.1,
+   "text": "So, what will we do in our max heat? We will put everyone in our max heat. So, what will come in the max heat? 7, 8, 2 and 9. Now, who will come? Look at this, look at this, look at this, look at this. All four kids came in the heat. If the class would have ended here, then all four of you would have answered. But the class is not over here. Okay. Okay. Now, let's come to the next element. Let's look at 3. 3, your..."
+  },
+  {
+   "start": 844.1,
+   "end": 862.83,
+   "text": "This is the current child that you want to see. In your hip, remember that this is the max hip. Remember that this is the max hip and you will understand why this is the max hip. Which child will be at the top? This is 9 because this is the max hip. Now see, 9 is at the top. According to now, what is the size of the hip? 4."
+  },
+  {
+   "start": 862.83,
+   "end": 892.14,
+   "text": "How much is the size of the heap? 4, which is the value of k. We made it like this. If we push k to the kids, then the size of the heap will be k. Very good. Now 9 is at the top of this heap. Max is at the top of the heap. It means that 9 is the biggest of the rest. What does max heap give you? The max element returns you the most. It means that 9 is bigger than the rest of this heap. Okay. How many people will be left in this heap? The size of the heap is 4. You pick up one element, 9. And you are saying that the rest of the elements are bigger than 9. It means that"
+  },
+  {
+   "start": 892.14,
+   "end": 919.31,
+   "text": "That 9 is at least bigger than 3 people. You know this. At least 3 people. 7, 8, 2. 9 will be bigger than other people in the class. But we don't know. Do we know for sure? That 9 is definitely bigger than 3 people. Very good. It is definitely bigger than 3 people. And see what we got in the current element? 3. Is 9 bigger than 3? Is 9 bigger than 3? Yes. Yes. Yes."
+  },
+  {
+   "start": 919.31,
+   "end": 931.89,
+   "text": "meaning, now you got to know a very important thing about 9 9 was already bigger than 3 people who were in the heap so 3 is here and 9 is also bigger than current 3 meaning"
+  },
+  {
+   "start": 931.89,
+   "end": 961.2,
+   "text": "9 is at least bigger than 4 people. 3 for the heap and 1 for the current. So if you want the bottom 4 kids, you have an element 9, which says that we are at least bigger than 4 people, which means we will be at least in the 5th position. So do you ever want 9 in the world? No. 9 can never be your answer. When 9 can never be your answer, then why will you keep it in your heap? Remove 9 and insert 3."
+  },
+  {
+   "start": 961.2,
+   "end": 991.22,
+   "text": "This can also happen, this can also happen, this can also happen, and this can also happen. But this person 9 can never be the answer. Because 9 is definitely bigger than 4 people, it is proven. Because 9 is at the top of the heap. It was max heap that's why it was known. It is not known if it was min heap. So 9 is at the top of the heap. So what will we do? We will remove 9 and put 3 inside. And put 3 inside. What will we do with 3? We will put it inside."
+  },
+  {
+   "start": 991.22,
+   "end": 1016.93,
+   "text": "Are you sure? So see, you have eliminated 9 in one way. You have eliminated 9 in one way. You have eliminated 9. Only 9. No one else knows the answer. You have removed 9. 9 can't be the answer, right? Remove it. Okay. Let's move on. 1 has come. 1 has come. Okay. 1 is your current element. In your heap, who is at the top at this time? 8. In your heap, who is at the top at this time? 8."
+  },
+  {
+   "start": 1016.93,
+   "end": 1042.7,
+   "text": "Again the same thing, is 8 definitely bigger than 3 people? Yes, you can see that it is bigger than 7, 2, 3 because 8 is sitting at the top of the heap. It will definitely be bigger than the rest of the K- element, that's why it is sitting at the top. And 8 is also bigger than this person. And 8 is also bigger than this person who is current. So definitely, how many people is 8 bigger than? From 4 people. So can 8 be your answer in any world? It can't be, brother, it can't be. Take out 8, enter 1."
+  },
+  {
+   "start": 1042.7,
+   "end": 1073.28,
+   "text": "Enter 1. 1 can be the answer. Again, see. Whom did you eliminate? You eliminated 8. So, we are eliminating. Instead of selecting the bottom 4 kids, eliminate 6 kids. There are 10 kids. You want the bottom 4. So, you have to select them. How to do it? Eliminate 6 kids. 6 can't be the answer. Who will be left? If 4 is left, we will take them. Again, enter 1. Let's move ahead. 5. Again, 5. Again, 5. Who is at the top of your heap? Who is at the top of your heap?"
+  },
+  {
+   "start": 1073.28,
+   "end": 1102.72,
+   "text": "7. Is 7 greater than 5? Yes, 7 is greater than 5. It means that 7 was already greater than 3 people. It is also greater than 5. It is at least greater than 4 people. 7 can't be your answer in any other world. Remove 7. And insert 5. Again, what did we eliminate? 7 eliminated. Look carefully at how it is being eliminated. Very good. Let's move forward. 10. 10. 10. Look. 10. Now it will change here. It will change here. Who is at the top of your heap right now? 5. 5."
+  },
+  {
+   "start": 1102.72,
+   "end": 1130.13,
+   "text": "Okay, this is top. 5 is not greater than 10. 5 is not greater than 10. That means you can't use that logic about 5. That 5 is greater than 3. No. 5 is greater than 3. Very good. It is allowed to be greater than 3. What is bottom 4? The 4th person will be greater than 3. Yes. But 5 is not greater than 10. But. Here you got to know one thing about whom? About 10. About 10. Look. 10 is greater than 5. That means 10 is greater than 1 person."
+  },
+  {
+   "start": 1130.13,
+   "end": 1145.46,
+   "text": "5 is bigger than 3 people. So, 10 must be bigger than 4 people. 10 is bigger than the maximum number of people in this max heap. So, the number of elements in this heap must be the biggest. If someone says that there are 100 people in this house,"
+  },
+  {
+   "start": 1145.46,
+   "end": 1169.06,
+   "text": "The oldest man is 90 years old. You get a man who is 92 years old. So this man must be at least 100 years older than all these people. Because he is also older than the maximum age. So he must be 100 years older. According to the same logic, 10 is at least 4 years older than these 4 people who are imprisoned in the heap. We just have to check one thing that if he is older than 5, then he must be older than the entire heap."
+  },
+  {
+   "start": 1169.06,
+   "end": 1196.99,
+   "text": "10 is now bigger than 4. You didn't know anything about 5. But you found out something important about 10. Can 10 be your answer? No, because it is bigger than 4. You eliminated 10. And you ignored it. You didn't do anything. You didn't push or pop. Okay. We will tell you further. We will tell you. Come further. 6. Again, 6 is bigger than 5. 6 is bigger than 5. 6 is guaranteed to be bigger than 4. 6 is guaranteed to be bigger than 4. We won't do anything. We will eliminate it."
+  },
+  {
+   "start": 1196.99,
+   "end": 1217.84,
+   "text": "Eliminate 6. 4 is not greater than 5. It means that the top element of your heap is greater than 4. It means that 5 was already greater than 3. 5 is also greater than 4. So now 5 is greater than 4. What will we do? We will remove 5 and insert 4. We will remove 5 and..."
+  },
+  {
+   "start": 1217.97,
+   "end": 1243.55,
+   "text": "Your program is over, you have eliminated all the people and you have eliminated 5. So look carefully, we have eliminated 7, 8, 9, 5, 10, 6, we have eliminated 6 people. How many people are left? 4 people. Which 4 people are left which are not eliminated? Where are those 4 people? They are in your heap. This becomes your answer. So this is the logic of why we use max heap when we have 4 people in the bottom."
+  },
+  {
+   "start": 1243.55,
+   "end": 1269.89,
+   "text": "reverse the logic, when you have to find the top, then you use min-heap, when you have to find the top, then you use min-heap. Okay, this is the reason why we took the heap. Okay, but what is this step? In step 6, we say that you don't have to do so much, we have done a lot here and there, that if it is smaller, then you have to push, if not, then nothing. In this, we say that push straight, pop straight, don't use your brain. Why don't you use your brain, see."
+  },
+  {
+   "start": 1269.89,
+   "end": 1293.1,
+   "text": "Why do we say this? To make it simple. This was necessary to explain. Let's remember that push and pop is not understood. You should understand why they do this. But once you understand, just for example, suppose at some point 7, 2, 1 and 3 are in your heap. You have a current element which is 4."
+  },
+  {
+   "start": 1293.33,
+   "end": 1321.12,
+   "text": "What we were doing earlier was that we were looking at the current from this top, so you got to know that 7 is bigger than that, so 7 must be bigger than 4, so by popping 7, we were doing something like this to 4. But, but, but, what do we say? Simplify the whole process. Push 4 without thinking anything. Push 4 without thinking anything. 4 sat here. 4 sat here, okay? Now, now, now, pop it without looking. Now see, how many elements are there in this heap? Now there are 5 elements in this heap."
+  },
+  {
+   "start": 1321.12,
+   "end": 1349.97,
+   "text": "How many should be there? 4. But how many are there? 5. Now, in this heap, there are 5 elements. That means, 7 will be at the top. After that, 1, 2, 3 and 4 will be here. The rest. So, this is at the top and this. Now, you have got 5 elements. But how many elements do you need? You need how many? 4 elements. Now, if you pop the top one out of these 5 elements, then this top, now, at this time, how big is the heap? 5. 7, at this time, how many people will it be guaranteed to be bigger than?"
+  },
+  {
+   "start": 1349.97,
+   "end": 1378.53,
+   "text": "from 4 people. Is it allowed to be bigger than 4 people in bottom 4? No, it is not allowed. That's why, now what do you do? Pop it. Whenever you pop, the top one pops. Now you pop it, automatically 7 will pop. Automatically, you got 1, 2, 3, 4. That's why there is a trick. Don't check that much. Push it. If you push it, what will be the size of the heap? 5. After that, the top element will definitely be bigger than 4 people. Pop it. Pop it. Suppose, now there is 1, 2, 3, 4."
+  },
+  {
+   "start": 1378.53,
+   "end": 1404.32,
+   "text": "Suppose next time you get something like this. Next time your current element is 10. 10. Now 10 should not be pushed in a regular way because 10 is bigger than 4 so 10 is already bigger than 4. But do push, it doesn't matter. Do push. Push is done. How many elements are there in the hip? 5 elements. Who is sitting at the top? 10 is automatically sitting because 10 was the biggest. This will become the top. Now what to do? Pop 10. Why? Because 10 is bigger than 4. Pop 10. So see, it doesn't matter."
+  },
+  {
+   "start": 1404.32,
+   "end": 1433.87,
+   "text": "10 push is done, 10 pop is done, there is no difference. Earlier we used to say to ignore it. What to do for simplicity? Push it, pop it. Why do you have to do so much of checking and making? Nothing to do. Push, pop, push, pop. When you do this work completely, how many elements are left in your heap at the end? 4 elements or k elements. Which are those k elements? Those which were not eliminated. That is the answer of your bottom k. Similar logic. And when you will do this, you will get the answer. So we hope that the whole step is done. This step is over."
+  },
+  {
+   "start": 1433.87,
+   "end": 1461.3,
+   "text": "This step is also finished. Similar logic is there in MinHeap. When you want the top 4 elements, then 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. You want the top 4 elements. Which are the top 4 elements? All these. Ask the opposite question. Remember what was the question in the bottom K? That question must be written somewhere. How many people is this bigger than? Ask the opposite question. Ask a question about 10. How many people is this smaller than?"
+  },
+  {
+   "start": 1461.3,
+   "end": 1487.58,
+   "text": "How many people is it smaller than? You will get the answer that it is smaller than 0 people. 10 is not smaller than anyone. Its answer is 0. How many people is 9 smaller than? 1 person. 8 is smaller than 2 people. 7 is smaller than 3 people. But how many people is 6 smaller than? 6 is smaller than 4 people. 6 is smaller than 4 people. Okay. Now you want to find out the top 4 kids who got the highest number. Okay. That means the first kid in the class."
+  },
+  {
+   "start": 1487.58,
+   "end": 1514.88,
+   "text": "2nd child of the class, 3rd child of the class, and 4th child of the class. You came to know about a child, about whom you came to know that he is definitely less than 4 people. Means there is a child here, he says that we have come to a lower number than 4 people. So will this child ever reach the top 3 or top 4? No, he will not be able to reach. If he has come to a lower number than 4 people, then at least 4 people are ahead of him, right? So how will he go to the top 4? Similar logic. That's why what is used here? Min heap."
+  },
+  {
+   "start": 1514.88,
+   "end": 1543.02,
+   "text": "because what question do you ask? how many people are smaller than this and min-heap gives the answer write it in the copy or watch the previous video so this is the logic that why we have min-heap in the top k and max-heap in the bottom k there is no magic or there is no hard and fast rule that we have to do this only, no we don't have to do this this is the logic of it, many people don't teach this many people just remember this step, yes do this only then interviewer asks why did you do this, then people say that no you have to do this only, no if you are asked in the interview then you have to tell that this happens"
+  },
+  {
+   "start": 1543.02,
+   "end": 1570.16,
+   "text": "It is smaller than many people. We do elimination by using heap. You can see this in every question. What did we see in the first question? Kth, largest. What did we use in this? Minheap. Very good. Kth, smallest. What did we use in the smallest element? Maxheap. Again, what did we see? Top K frequent words. Top K frequent. Top K means the most frequent. What did we use? Minheap."
+  },
+  {
+   "start": 1570.51,
+   "end": 1598.77,
+   "text": "Again, we will see the top frequent words. These were the elements. Words are nothing. Just like you make heap of pairs, there is a little difference in that. What will we use? Min heap. There is a question, kth closest point to origin. kth closest point to origin. kth closest point to origin. Now, what is there in this? We will tell you this question. Go and try it yourself. Absolutely. We have given you a lot of points. Point means in the graph. 2D point. Means, suppose 2, 1 is given. 0, minus 2 is given."
+  },
+  {
+   "start": 1598.77,
+   "end": 1627.95,
+   "text": "3, 4 and 5, 0. You have to tell which are the k elements, which are the k points. Every person has a point, which is closest to the origin, which is closest to the origin from 0, 0. Closest means if you find the distance of each point from 0, 0, then the distance of the bottom, closest means the minimum distance. Which are the k points with the minimum distance? You must know how to find the distance from maths."
+  },
+  {
+   "start": 1628.11,
+   "end": 1649.63,
+   "text": "If there are two x1 and y1 and x2 and y2, these are two distances, how do we get the distance? We call this x2-x1 square plus y2-y1 square and its whole under root. If you want to get it from 0, then x2 and y2 will always be 0. So what will we do? We will not do anything."
+  },
+  {
+   "start": 1649.63,
+   "end": 1678.94,
+   "text": "x1 square plus y1 square. So, this will be your distance. So, on what thing? On this distance. So, you have to write a function to calculate this. If everyone's distance is d1, his is d2, his is d3, his is d4. Okay, distance is taken out. What will be the heap? Heap of pairs. First, on what thing? On distance. And, now you had to put an element, but there are two elements in the element. So, how? It will be difficult. There too, one. So, what to do? Put an index."
+  },
+  {
+   "start": 1678.94,
+   "end": 1703.18,
+   "text": "Put the index of every point. This is your heap. What kind of heap is this? What kind of question is this? Closest K means the one whose distance is the least. The least means the opposite. Max heap. Max heap. What to do? Push the K points of the beginning. For the rest of the K and minus K, one push, one pop. How many points will be left in your heap later?"
+  },
+  {
+   "start": 1703.18,
+   "end": 1722.06,
+   "text": "K points. Will these K points be your answer? Yes, these K points will be your answer. So, look at this question. Any question is made from this in 6-7 steps. It's a small code. Once you learn it, you won't say it all your life. From tomorrow, we are going to start a story-based problem of Heap. By making Greedy and Heap. So, look carefully. See you."
+  }
+ ]
+}

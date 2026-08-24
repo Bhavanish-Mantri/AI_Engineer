@@ -1,0 +1,384 @@
+{
+ "video_id": "QqDR0Fo9ayM",
+ "title": "Epiosde 09 of DP in 15 Days | 3 Problems in 30 Minutes",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1953,
+ "segments": [
+  {
+   "start": 0.53,
+   "end": 28.75,
+   "text": "How are you all? In episode 8, we saw the subset sum. Do you remember? It must have happened yesterday or the day before. What was in the subset sum? You were given an array which had a positive integer and you were given a target sum that you have to achieve this target. What was your job? You had to separate any part of that array so that that target sum can be made. If that target sum can be made, then what did you say? Is it true or false? If from any part of the array or from any subset of the array,"
+  },
+  {
+   "start": 28.75,
+   "end": 55.07,
+   "text": "that target sum can't be made, then you would have said that it is false. So, we had seen that its entire explanation, its recursion, its tabulation, everything was over. Today, in episode 9, in the same format, in the same code, in the same function, you can solve 3 questions by changing each word. How many? 3 questions. To solve these 3 questions, you just have to watch episode 8. If you have watched episode 8,"
+  },
+  {
+   "start": 55.07,
+   "end": 83.95,
+   "text": "In 5 to 10 minutes, you will solve these 3 questions by changing one line or one word. All these 4 questions are based on the same question or pattern which is the subset sum. If you understand this, then congratulations. You will understand these 3 in 5 to 10 minutes. And in such questions, it is not asked more than this. It is more complex than this. No company asks this. So let's start quickly. So see, what was the code of yesterday's subset sum? The code of yesterday's subset sum was this."
+  },
+  {
+   "start": 83.95,
+   "end": 112.45,
+   "text": "Do you remember? We wrote this. What did we do? First of all, an array used to pass in this. And a sum used to pass in this. What was this sum? This sum was your target, which you have to make a target. Okay. After that, what did we do? After that, we used to make the same DP array. Of what size? Of n plus 1 size and sum plus 1 size. Okay. After that, what did we do? We used to initialize the base case. Meaning, now see. DPN, meaning, looking at the recurrence base case, we used to say that if"
+  },
+  {
+   "start": 112.45,
+   "end": 140.78,
+   "text": "dpn 0 is equal to 1, meaning, whatever the sum is, if it reaches the last, if the sum becomes 0, the sum gradually decreases, as soon as you take an element in your subset, then your sum becomes a little less. If you cross the whole array and your sum becomes 0, it means that whatever subset you have made, that sum would have come in it, so we used to say that its answer is 1, the rest of the answer is 0. After this, we did tabulation, meaning we ran a loop, and by doing this,"
+  },
+  {
+   "start": 140.78,
+   "end": 153.15,
+   "text": "DPIJ value. What did we get? If AI was bigger than J, means if array of I was bigger than sum, we would not take that. Not taking means that you go ahead and sum will remain same. Otherwise, if you"
+  },
+  {
+   "start": 153.15,
+   "end": 182.48,
+   "text": "If you want to take it, then you have two choices. You can take it. Taking it means going to i plus 1. And if you take any element, then your sum will be less than that. For example, if you want sum is equal to 20, and you try to take 10, then your sum will be less than 20. 20 minus 10 will be 20. So that's what we wrote here. Or if you can't take it, then what does it mean to not take it? That you go ahead and your sum will remain the same. What did we do to these two?"
+  },
+  {
+   "start": 182.48,
+   "end": 207.22,
+   "text": "And what does this mean? If you get an answer from any of the two choices, then I will get an answer. Meaning you just had to return true and false, right? Whether it is possible or not. So it was like this, if passing 10th and failing 10th, if passing gets a job or failing gets a job, if any path gets a job, then you will say, yes, brother, my job will get a job. So what did that mean? That we used to do this more."
+  },
+  {
+   "start": 207.22,
+   "end": 232.42,
+   "text": "In the last, what did we return? dp 0 and sum. So, we hope that you remember this. You must have understood it very well. Now, with this code, with this question, we have to solve three more questions. So, see, what is the first question? The first question is this. The first question is, count subsets. Count subsets with given sum. Count subsets with given sum. What does this mean? What does this question tell you?"
+  },
+  {
+   "start": 232.42,
+   "end": 260.94,
+   "text": "In the previous question, you were telling whether it is possible or not. This is what you were telling, right? Whether it is possible or not. In this, you have to tell that if it is possible, then how many ways can it be possible? What does it mean? Look. Assume that your array is this. 1, 3, 4, and let's say it is 5. Okay? 1, 4, let's make this 2. For your convenience, let's make this 2. Okay? 0, 1, 2, 3. It is an array of 1, 2, 4, 5. Assume that your sum is 6."
+  },
+  {
+   "start": 260.94,
+   "end": 290.72,
+   "text": "Now, in the previous question, I had to tell you that, brother, can it be done with any subset or not? In this, I have to tell you how many ways it can be done. Meaning, if you make one subset like this, 1 and 5, its sum is also 6. It can be done. But, if you make this subset 4 and 2, then also it can be 6. So, the answer to this question, which is the question, count how many possibilities there will be. What will be its answer? Its answer will be 2. Its answer will not be true or false. True or false was that question. What will be its answer? 2."
+  },
+  {
+   "start": 290.72,
+   "end": 320.43,
+   "text": "Meaning, how many combinations can there be? Meaning, to say that... My storage was over. Yes, what were you saying? That question was, can it be or not? This question, how many combinations can there be? Meaning, this question is something like this. Assume that you are 10th. You are in 10th right now. Assume that you are in 10th. Assume that you have 3 choices. Assume that you have 3 choices. 1, 2, 3. There is one choice. You can directly do 12. There is one choice. You can sit in your father's shop."
+  },
+  {
+   "start": 320.43,
+   "end": 350.0,
+   "text": "One choice is that you start your own startup. Let's say there are three choices. Just for explanation, let's say there are three choices. Let's say that you fail in the 12th one in your life. Meaning, there will be no way to do 12th. You pass in the shop one. Or you become successful. Meaning, if you sit in the shop, it will be good. By going somewhere. In the startup one too, let's say that you pass or become successful. If you sit, you will become very rich. Now see, in the last question, the answer to this scenario would be true."
+  },
+  {
+   "start": 350.0,
+   "end": 377.25,
+   "text": "Why? Because is there at least one success out of all three? Yes, there is one success. Actually, there are two successes. But is there at least one? Your answer would be true. In this question, your answer is how successful you can be. In this question, your answer will be two. Because you can be successful in two ways. How many ways? You can be successful in two ways. So, this is the small change you have to do. What change do you have to do in this? See, what you have written here,"
+  },
+  {
+   "start": 377.25,
+   "end": 405.28,
+   "text": "What does OR mean? If this is true or if this is true, then what will be stored in DP and IJ? True will be stored. But you don't want to know true and false. You want to know how many ways it can happen. By removing this OR, what do you do here? You do plus. What do you do? You do plus. Now assume that its value is also true. It can be made from this combination too."
+  },
+  {
+   "start": 405.28,
+   "end": 421.86,
+   "text": "And it can also be done with this combination. In this case, the value stored in your DPIJ will be stored as 2. Last time, when we just wanted to do true and false, we did it again. If even one is true, then give true here. Now you have to get the value counted."
+  },
+  {
+   "start": 421.86,
+   "end": 440.1,
+   "text": "So just remove this or and add plus here. If you add plus, then instead of true and false, that value will start joining. One by one, one by one, one by one, one by one, the value will start joining. Meaning, the example of 10th, suppose you did 12th after 10th."
+  },
+  {
+   "start": 440.1,
+   "end": 463.87,
+   "text": "And one was yours that we will do our startup, not 12th. Suppose after 12th, now there will be more path after 12th, whether to do BTech or MBA after 12th. After 12th, there are two ways of success. And after startup, there are three ways of success. If we add these two, what should we do? If we add these two, then after 10th, how many ways of success?"
+  },
+  {
+   "start": 463.87,
+   "end": 492.14,
+   "text": "There are 5 ways in total. This is your answer. This is what I asked you. How many ways are there? I didn't ask you whether there are ways or not. That was in the previous case. In that case, you say that yes, it is true even after 12th. And it is true even after this. So, it will be true even after 10th. No. Now, there are 2 ways after 12th. There are 3 ways after startup. How many ways will there be after 10th? 5 ways. So, just by changing one thing, your same code, exactly same code, will be converted into what?"
+  },
+  {
+   "start": 492.14,
+   "end": 520.26,
+   "text": "In count subsets. In which? In count subsets. Yes. Yes. In count subsets. So you understood this question. What to do? The last code. Control C. Control V. What to change? By going here. What to change? What to do to the other? Plus. Because we are interested in adding value. We will change one lean. Count subsets. The whole work is done. All. Did you understand? If not. If not. Then please tell. Come. Come ahead."
+  },
+  {
+   "start": 520.26,
+   "end": 550.03,
+   "text": "Come forward. What is the next question? Partition equals sum. What is partition equals sum? We will tell you what this question says. You have been given an array. Okay, very good. You have been given an array. Okay, let's see what happens. Positive integers. Positive integers. It is positive, right? Let's see. Is it positive or what? Yes, it is positive integers. Okay, it is positive integers. Okay. What do you have to tell? You have to tell true or false. Okay, very good. You have to tell true and false. Okay."
+  },
+  {
+   "start": 550.03,
+   "end": 576.78,
+   "text": "What do you have to say? Can you break this array into two parts? In how many parts? Can you break it into two parts? For example, if your array is 1, 2, 3, and 4. Suppose you make one part of 1 and 4, and one part of 2 and 3. Now, find the sum of both of them. What is the sum of both of them? 5. What is the sum of both of them? 5."
+  },
+  {
+   "start": 576.78,
+   "end": 600.59,
+   "text": "That's all you have to say. If you can break this array into two parts and if the sum of both the parts is equal, what do you have to return in this case? You have to return true. That's the question. Understand one more example. Your array is 1, 2, 3. Can you break this array into two parts?"
+  },
+  {
+   "start": 600.59,
+   "end": 625.66,
+   "text": "Can we do this? Take 1 and 2 in one place, take 3 in one place. What is its sum? 3. What is its sum? 3. Are these two equal? Yes, they are equal. What will be its answer? True. Meaning, is it possible to break an array into two parts so that the sum of both parts is equal? If it is possible, then you have to return true. If it is not possible, then you have to return false. For example, if there is no 3 here,"
+  },
+  {
+   "start": 625.66,
+   "end": 652.18,
+   "text": "Here, it would be 10. What would happen here? It would be 10. Now, can you break this array into two parts so that the sum of both is equal? You can't break it. Break it and see. Do any combination. It can't happen. Meaning, you can't distribute this array into two parts so that the sum of both is equal. If you can't do this, then what will be the answer? False. This is the question. Partition equals subset sum. Okay. But how is this question connected to subset sum?"
+  },
+  {
+   "start": 652.18,
+   "end": 673.36,
+   "text": "Let's see how it is connected. What is your job? Break it into two parts. Suppose this is an array. 1, 0, 1, 2, 3, 1, 2, 3, 4. What is your job? Break it into two parts. The sum of both should be the same. Let's assume its sum is S1."
+  },
+  {
+   "start": 673.36,
+   "end": 702.86,
+   "text": "Its sum is S2. What is the number of both? It doesn't matter. It doesn't matter. It doesn't matter. It doesn't matter. It doesn't matter. It doesn't matter. It doesn't matter. It doesn't matter. It doesn't matter. It doesn't matter. It doesn't matter. It doesn't matter."
+  },
+  {
+   "start": 702.86,
+   "end": 728.14,
+   "text": "Means, what will be the value of S1? The value of S1 will also have to be 5. And the value of S2 will also have to be 5. Okay, this is a good thing. Means, can't we do this? First of all, let's take the sum of the whole array. Assume sum is equal to 10. Let's take S1."
+  },
+  {
+   "start": 728.14,
+   "end": 756.67,
+   "text": "Sum by 2. Sum by 2. How much is S1? 5. Okay. After that, the problem of subset sum. What was the problem of subset sum? That you will get an array and a sum. You have to tell true or false. That you can do this or not. If instead of this sum, we pass this S1. What should we pass? S1. That is, the sum by 2 of the array. And remove true or false."
+  },
+  {
+   "start": 756.67,
+   "end": 784.48,
+   "text": "then won't you get to know that it is true and false? What does it mean to say? If you take out the sum of 10, and in the code of the subset sum, instead of this sum, you pass this sum by 2, which means you pass 5. What does this mean? Look and tell if there is any such subset of this array whose sum is 5. If this is possible, it means there is one subset of this array whose sum is 5."
+  },
+  {
+   "start": 784.48,
+   "end": 812.42,
+   "text": "automatically, automatically, automatically, the next part, what will be its sum? What will be its sum? Whatever is the sum and minus 5, because it has 5, its automatically sum will be 5. Its automatically sum will be 5. Do you understand what I mean? If we pass the sum by 2 of this array in subset sum, and subset sum tells us that yes, sum by 2 is possible. If sum by 2 is possible,"
+  },
+  {
+   "start": 812.42,
+   "end": 841.76,
+   "text": "So, the next part will automatically be sum by 2. Because you are breaking this array in two parts. Total array's sum is 10. You got to know that one part's sum is possible to do 5. Suppose 1 and 4 are possible. Automatically, the number which will be left, what will be their sum? Sum minus 5. Meaning, 10 minus 5. Which will be 5. Automatically, this 5 is equal to this 5. And you can do true return. So, that's it. What do you have to do?"
+  },
+  {
+   "start": 841.76,
+   "end": 869.42,
+   "text": "Control C, Control V. What was passed in that code? Array. Array will pass this one. And what was passed? Sum. What do you have to pass instead of that sum? The total sum of this array. What? Total sum. By 2 pass it. If the answer comes true from there, make it true. If the answer comes false from there, make it false. But there is a catch in this. There is a catch in this. Suppose you are given this array. 1, 2."
+  },
+  {
+   "start": 869.42,
+   "end": 893.82,
+   "text": "3 and 6. 0, 1, 2, 3. Take out its sum. 1 plus 2 plus 3 plus 6. What comes? Make it 5. Make it 5 for convenience. What do you do? Make it 5. 5, 5. What will come? 3, 3, 6 and 11. Okay. What is 11 by 2? What is 11 by 2? If we see it in full sense, 11 by 2 is 5.5."
+  },
+  {
+   "start": 893.82,
+   "end": 915.98,
+   "text": "Do you think that you can break any part in this array that has a sum of 5.5? No, you can't. Because there are integers in this array. How can the integer's sum be 5.5? The integer's sum will be like this. If the total is 11, then the sum of one part will be 5 and the sum of the other part will be 6. This can happen."
+  },
+  {
+   "start": 915.98,
+   "end": 937.34,
+   "text": "The sum of one part will be 6 and the sum of one part will be 5. This can be done. It is not possible that the sum of one part becomes 5.5 and the sum of the other part becomes 5.5. This is not possible. This means that if the total sum of the total array is an odd number. What is this number?"
+  },
+  {
+   "start": 937.34,
+   "end": 955.71,
+   "text": "is an odd number, then do you think that you will ever be able to do it by 2 by 2 in your life? Absolutely not. It is not possible that the integer's sum comes in decimal. Absolutely not. If it is an even number, then you should try it. Yes, send it by 2 and try it, but"
+  },
+  {
+   "start": 955.71,
+   "end": 984.03,
+   "text": "If this total sum is odd number, anything you do in the world can't be possible. Why? Because it's odd number. How can you break odd number in two parts? It can't be broken. Something will be saved. Who can you break in two parts? Even number. Odd number can't be broken in two parts by doing anything in the world. So you have to do one more thing. That you take out total sum. If your total sum is odd,"
+  },
+  {
+   "start": 984.03,
+   "end": 1010.7,
+   "text": "What is it? It is an odd number. Close your eyes and without using any subset sum, return false. This is not possible in the world. If this is not the case, then you can do it. So what can you do? You can call your subset sum function. With whom? Array or whatever your total sum by 2 comes. You can try and see. So just do this and your question is also solved. Let's come to the next question."
+  },
+  {
+   "start": 1010.77,
+   "end": 1039.02,
+   "text": "Is this question a little interesting? The name of this question is target sum. It is not interesting. In this, you have to use the math of the 10th class. Let me tell you. This is your array. You have given an array. And you have also given a target. You have given a target. Your target is 3 here. Okay. What do you have to do in this? Do you have to tell that by using something, it will become 3? No, you don't have to do that. It is a very interesting concept of the question. What does the question tell you? Okay. There are 5 elements in this array. You can see 5, 1. Okay. The question tells you."
+  },
+  {
+   "start": 1039.28,
+   "end": 1065.92,
+   "text": "You can put two signs in front of every number. Either positive or negative. You can put two signs in front of every number. Positive or negative. Okay. After doing this, your equation will be like this. For example, let's say you do the first one like this. One, positive is in front of this. Put negative in front of the second one. After this, put positive in front of all three ones. Like this. This."
+  },
+  {
+   "start": 1065.92,
+   "end": 1087.46,
+   "text": "What did we do in this? In front of the first one, positive. Obviously, it's nothing, so it's positive. In front of the second one, negative. In front of the third one, positive. In front of the fourth one, positive. In front of the fifth one, positive. Okay. Compute this. What will be your answer? 1 minus 1 is 0, plus 3. Its answer is 3. Okay. You can do one more thing. In front of the first one, negative."
+  },
+  {
+   "start": 1087.46,
+   "end": 1112.93,
+   "text": "The rest is positive. This is also a combination. You have to put a sign in front of every number. Positive or negative. There will be a lot of combinations. We are showing you some. Okay. The answer to this will also be 3. You can do one more. 1 plus 1 minus 1 plus 1 plus 1. The answer to this will also be 3. By doing this, you can do as much as you want. You can try a variety of combinations."
+  },
+  {
+   "start": 1112.93,
+   "end": 1141.38,
+   "text": "The combination in front of which the answer is 3, you have to count that. You have to count that. Meaning, you make the whole combination, the whole permutation combination, put plus in front of every number, put minus in front of every number, try everything. The answer of any equation that comes equal to your target, the answer of how many equations comes equal to your target, you have to return that number. Not true-false, again we are saying not true-false, that number."
+  },
+  {
+   "start": 1141.38,
+   "end": 1171.15,
+   "text": "How many combinations are possible, which we will compute, then your answer will be equal to this target. This is your question. Now, this question seems very dangerous to look at. It is a very different type of question. But if we go a little deeper, then the same type of thing is happening in it. Let me show you. What is your job? Your job is to put positive or negative in front of every number. So, we can do this. Now, this was your array. This was your array. This was the array, right? 1, 2."
+  },
+  {
+   "start": 1171.15,
+   "end": 1200.16,
+   "text": "3, 4, and 5. Is this what you are saying? Okay. Now, in front of every number, either a positive sign will be placed or a negative sign will be placed in front of every number. Okay. So, why not make two groups? Make one group in which there will be that number in front of which we will place a positive sign. Like this equation. Hold this equation. So, in this equation, 1, 2, 3, 4. There were four numbers in front of which there was a positive sign. So, we will put these four in here. There will be one more group in front of which we will"
+  },
+  {
+   "start": 1200.16,
+   "end": 1221.33,
+   "text": "We will put the sign of negative. What sign will we put after that? We will put the sign of negative. So this will become your positive group. And this will become your negative group. Okay. Making a negative group does not mean that this whole number has become negative. In this, that number is going whose sign you have chosen negative. So in this one, this will remain. 1, 2."
+  },
+  {
+   "start": 1221.33,
+   "end": 1249.3,
+   "text": "3 and 4. We are talking about this equation. We are talking about equation number 2. Which is in the negative one? Only 1. Only 1 number will go in which we will choose negative. Only 1 will go in this. Only 1 will go in this. Is it good? Okay. Very good. Now see. Now what is your work? Whenever we write you an equation, whenever we compute you an equation, what will happen in this equation? What will happen in this equation? If we solve this equation a little bit, then first of all, add all the positive elements."
+  },
+  {
+   "start": 1249.3,
+   "end": 1277.01,
+   "text": "All the positive elements, add them. That means, add 4 and 1. So, 4 will come. 4 will come. Okay. After that, put a minus sign. Put a minus sign. And, the numbers in front of which there is a negative sign, add them. So, here there is only one number in front of which there is a negative sign. We will make it 1. We used to solve this equation when we used to do this in class 2-3, right? If, let's say, you get an equation like this, that 100 minus 200 plus 500 minus 50."
+  },
+  {
+   "start": 1277.01,
+   "end": 1306.62,
+   "text": "How did you solve this equation? All the positive ones, all the positive ones, you would add them together. 100 plus 500. You would make a group of them. You would put a minus sign. And all the negative ones, you would add them together. What would happen? 200 plus 50. So what would this become? This would become 600. Minus sign. And this would become 250. This is how you solve it, right? This is how you solve it. Everyone has studied math till now. This is how it would be solved here too. Meaning,"
+  },
+  {
+   "start": 1306.62,
+   "end": 1336.56,
+   "text": "It will be a sum of the positive group. We will say that positive is equal to 4. It will also be a sum of the negative group. Now, what is your job? Now, your job is to check what should be positive minus negative equal to? It should be your target. Whatever target you have given, which is given here 3. Do you understand? This is what everyone should do. This is what everyone is asking you to tell. Okay. But,"
+  },
+  {
+   "start": 1336.82,
+   "end": 1357.95,
+   "text": "Positive here is 4 and negative here is 1. Now these two parts have come out of the array. Some parts of the array went to positive and some parts went to negative. There is no such element of the array left which did not go to either of the group. Every element of the array will go either to positive or negative. This will happen. How much was the total in the array?"
+  },
+  {
+   "start": 1357.95,
+   "end": 1384.4,
+   "text": "5 was 1. 4 is 1. 1 is 1. It means that every element of an array either went to positive or negative. So, can we say that if we make positive plus negative, its answer will be the total sum of your array. Total sum. Now, see. What will be the total sum of your array? What will be the total sum of its array? 5. If you add it,"
+  },
+  {
+   "start": 1384.4,
+   "end": 1414.43,
+   "text": "If you add 4 and 1. We are not talking about sign. Just add its sum. Will you get 5? Obviously you will get. Because every element of array is either here or there. Add all of them. What will come? Total sum. Did these two equations come? Did you read something in 7th class? To solve two linear equations. Come. Add these two equations. What will become? 2 into pos. This will be cut. Negative negative. Minus negative plus negative cut. Equal to. Target."
+  },
+  {
+   "start": 1414.43,
+   "end": 1436.46,
+   "text": "plus total sum. Did you get this equation? Did you get this equation? Look at POS. POS is equal to target plus total sum by 2. Look at this. Look at this. We have not done any rocket science in this. We have used the math of class 2 to class 7. Listen once again."
+  },
+  {
+   "start": 1436.46,
+   "end": 1460.86,
+   "text": "There are numbers in the array. Let it be. We will put some numbers in the positive group and some numbers in the negative group. The sum of the positive group will be pos. The sum of the negative group will be negative. I have told you that your answer should be the target. How does it come? If we do positive minus negative, then your answer should be the target. We wrote that as equation 1. If we add positive and negative, then the total of the array will be sum. We wrote this as equation 2."
+  },
+  {
+   "start": 1460.86,
+   "end": 1489.76,
+   "text": "We have added both the equations. What happened by adding both the equations? 2 into POS came. POS POS joined. Negative was minus here. Here was plus. Negative was cut. These two also joined. What was the value of POS in the last? Target plus total sum by 2. What? Target plus total sum by 2. Something is clicking. If you take out the total sum of this array. How? By adding all the numbers. You have already given its target. Okay."
+  },
+  {
+   "start": 1489.76,
+   "end": 1517.2,
+   "text": "You make a sum whose value will be totalSum plus target by 2. If you pass this sum to your subsetSum, which subsetSum? Not the true and false one, but the countSubset function, in which we weren't doing anything else, in which we were doing plus. From there, you get an answer that there are four ways in this."
+  },
+  {
+   "start": 1517.2,
+   "end": 1546.22,
+   "text": "Is this not your answer? This is what you are being asked. Break an array into two parts. He is saying to break it into two parts. He is saying to break it into two groups. One positive group, one negative group. You have taken out the value of its positive. Target plus total sum by 2. You have passed that in your subset sum. Did I tell you the subset sum? It will tell you some value. 0, 1, 2, 3, 4. How many ways is it possible? Is that not your answer? Absolutely your answer will be that. Absolutely your answer will be that. This is the same question."
+  },
+  {
+   "start": 1546.22,
+   "end": 1575.01,
+   "text": "In this, you just had to do a little mathematics and find out the value. What is the value of that sum? When we studied count subsets, what did we do in that? We passed the sum that came. What did we do in partition subset? We passed total sum by 2. What do we have to pass here? Our equation tells you that you have to pass total sum plus target by 2. Pass this and the answer will come from there. Your game will be completely over."
+  },
+  {
+   "start": 1575.01,
+   "end": 1593.06,
+   "text": "We have to do one more thing in this. The same thing that we read earlier. If total sum plus target is odd number, then do you think if this is odd number, then this by 2 will also be odd number?"
+  },
+  {
+   "start": 1593.06,
+   "end": 1622.29,
+   "text": "So this is not possible because when you multiply the odd number by 2, your answer will be something like 5.5. Do you think it is possible to divide the integer array in such a way that the sum becomes 5.5? Absolutely not possible. If the odd comes, what do you have to return by closing your eyes? Zero. This is not possible. If the even number comes, then you have to send it in subset sum. Which value? Instead of sum, this value. Whatever value comes from there, return it. The game is over. That's it."
+  },
+  {
+   "start": 1622.86,
+   "end": 1652.34,
+   "text": "There is one more small thing that came out of my mind. Suppose there is an array whose total sum is 5 and its target is 7. Then you will say that it is an odd number, so make it 7. This. First of all, what did you check? Is total sum plus target odd? No, it is not odd, it is 12. So you will run in this. No, you don't have to run. Why don't you run? Let me explain to you. Total sum is 5, means the total sum of the array is 5. Now you have to divide this into two groups. In which? Positive and negative. Positive and negative."
+  },
+  {
+   "start": 1652.34,
+   "end": 1681.7,
+   "text": "If you try any combination, then see what combinations are there in it. Forget what number it is. Suppose the whole number is 1. This is 1. This is your array. So see, either you give 0 in positive or 5 in negative. This can be. 1 and 4 can be. 2 and 3 can be. 3 and 2 can be. 4 and 1 can be. And 5 and 0 can be. This can be. Can't there be any other positive negative combination? No, there can't be. Now take out positive minus negative in it. What will be the answer?"
+  },
+  {
+   "start": 1681.7,
+   "end": 1712.11,
+   "text": "5. Sorry, minus 5. What will it be? Minus 5. Yes. Minus 5. 1 minus 4. What does 1 minus 4 mean? Minus 3. Okay, minus 3. Minus 1. 1. 3. 5. These will be your values. If you compute any equation, these will be your values. Between minus 5 and 5. What is your target? 7. What is your target? 7. Now, pay attention to one thing. My total sum is 5."
+  },
+  {
+   "start": 1712.11,
+   "end": 1738.59,
+   "text": "Total sum is 5. Positive and negative will be less than the sum. Less or equal. It is not possible that your total sum is 5 and your positive is 7 and your negative is 10. This is not possible. Why? Because in any case, positive plus negative group has to be 5. If we do this, it will be 17. This is not possible. Okay. So, what I mean to say is"
+  },
+  {
+   "start": 1738.59,
+   "end": 1758.64,
+   "text": "When you divide the total sum into positive and negative, the range of your values, look at the range of this value very carefully. What came? Minus 5 to plus 5. Minus 5 to plus 5. Minus 5 to plus 5. What is your target? 7. Do you think this target is ever achievable?"
+  },
+  {
+   "start": 1758.64,
+   "end": 1785.82,
+   "text": "It is not achievable. You can see this with any permutation combination. It is not possible that your total sum, if your total sum is 5, then the range of your equation will always come between minus of sum and plus of sum. This will be the range of your equation. If your target sum is beyond this range,"
+  },
+  {
+   "start": 1785.82,
+   "end": 1800.21,
+   "text": "That is impossible. That is impossible to calculate an answer. What does it mean to say? If your absolute of target is greater than your sum,"
+  },
+  {
+   "start": 1800.21,
+   "end": 1829.01,
+   "text": "greater than sum. In this case, you should close your eyes and return 0. Why? Because if it is like this, it means that your sum is something, sum can be anything, sum can be negative, sum can be positive. If sum is positive, suppose your sum is 10, total array sum. Whatever equation you get, you can do whatever you want in positive or negative by sitting in a combination. The range of your equation will come between minus 10 to plus 10."
+  },
+  {
+   "start": 1829.01,
+   "end": 1858.37,
+   "text": "If the absolute value of your target, i.e. if your target is minus 20, this is also out of this. If your target is 20, this is also out of this. If such a case happens, it is impossible to get the answer. In this case, you have to directly return 0. So this is another thing that you have to take care of. So in this question, you have to take care of two things. First of all, this sum, sum plus target should not be odd."
+  },
+  {
+   "start": 1858.37,
+   "end": 1888.24,
+   "text": "Your target means that if the absolute value of your target is increasing with your sum, then your target is not, what is it? It is out of range, son. It is out of range. There is no need to put much mind into it. And it is better to do return true. So, this question is also over. So, we are doing all three questions again. We are doing the revise again. What was its foundation? Subset sum. What came first? Count subset sum. What did we do in this?"
+  },
+  {
+   "start": 1888.24,
+   "end": 1913.42,
+   "text": "plus in the same code. That's it. What was the second one? We had to partition in equal sum. What did we pass in this? We passed sum by 2 in the function of your subset sum. That's it. What was the third one? Target sum. What did we do in target sum? Total sum plus target by 2. We passed that. That gave you the answer. We have to check it little by little. What did we have to check in this?"
+  },
+  {
+   "start": 1913.42,
+   "end": 1942.29,
+   "text": "There is no odd number somewhere. If there is, then return 0. We had to check two in this. Odd number and whether your target is outside the range of your sum. If so, then return 0. After checking both of these, pass it in subset sum. Now the answer will come. So these three questions, same formula. What do you have to do? Ctrl C, Ctrl V. We said one line at a time. We promised one line at a time. We didn't change more than one line. In this, one line was changed. In this, nothing was changed. In this, only the parameter that you are passing was changed."
+  },
+  {
+   "start": 1942.29,
+   "end": 1952.19,
+   "text": "No one has changed more than one line. Please try all three questions. And by doing these three questions, you can assume that you have mastered the array subset type problem in DP. See you."
+  }
+ ]
+}

@@ -1,0 +1,644 @@
+{
+ "video_id": "mMKZmo3iyyM",
+ "title": "Master Stack DSA Pattern With 3 Questions | DSA Patterns Course",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 3447,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.26,
+   "text": "We should also make one like Stryverji. Whenever his video started, he used to say, Hey everyone, I hope you are doing extremely well. So, we should do something like this to get to know as soon as the channel is growing. Today's lecture, those who are coming for the first time, please see the description. And those who are not coming for the first time, we want you to watch 38 and 39. Today's 40 is 38. If you haven't seen 39, then don't watch it. It won't work. Because what are we doing in this? Whatever we have read about stack two lectures earlier,"
+  },
+  {
+   "start": 29.58,
+   "end": 56.59,
+   "text": "We will do 3 such questions which will clear 80% of the concept. These 3 questions, you can say in the stack, means your 3 questions will cover more than 80-90% of the things. That's why all these things have been asked in all the companies. All these companies, you will combine them. In all these companies, a new question has been asked. So, means, if you watch this video, then there is a very high probability that if the question comes from the stack, then you will be successful in making it. So, first of all, if you watch it, then watch it completely."
+  },
+  {
+   "start": 56.59,
+   "end": 86.9,
+   "text": "If you want to see, then see all three questions, if not, then don't see at all. I mean, don't do half of it. If you put 100% effort, then you will get 70% result. If you put 70% effort, then you will get 0 result. Okay? So, think about that math and see. If you don't want to see the whole, then stop it now. If you want to see, then see the whole. Let's go. Yes, then we are saying, what do you have to study? Take out 38 and 39 time and see, because without that, it will be a little difficult. Let's go. So, the first question is, what is the daily temperature? 739 is the daily temperature. This is the easiest question."
+  },
+  {
+   "start": 86.9,
+   "end": 110.26,
+   "text": "This is the easiest question in today's three questions. So what does daily numerator say? We tell you again and again that what did we teach you? We taught you next greater, do you remember? Yesterday we taught you next greater, previous greater, next smaller, previous smaller. We showed you how small the code is and how you can write all the four programs equally by changing less than and greater than."
+  },
+  {
+   "start": 110.58,
+   "end": 139.44,
+   "text": "We told you that the question will not always be like this. It is possible that there is some story in the question. By making some story that there is such a temperature, there is such a train etc. Means a lot of story is made. Variety of story is made. There is a story in this too. What does it tell you? You are given daily temperatures. What is given? You are given many temperatures in an array by doing this. Good thing. This is the temperature of every day. Okay. What do you have to do? Now this is the day. Means what is the index of this? It is the day. 0, 1, 2, 3, 4. There are many days. For every day,"
+  },
+  {
+   "start": 139.44,
+   "end": 167.52,
+   "text": "What do you have to find for every day? Agla, Agla means its Agla or its next. What? Warmer temperature. Warmer temperature. You don't just have to find this warmer temperature. In how many days will it come? In how many days will it come? Don't worry, it's not as heavy a question as it seems. In how many days will it come? We will read this question once, we will think in Hindi, there is nothing in the question. What does it tell you?"
+  },
+  {
+   "start": 167.52,
+   "end": 196.14,
+   "text": "Suppose your temperature is like this, what do you have to do? We will tell you in Hindi. 30, 40, 60. Okay? And this is 50. 0, 1, 2, 3. You are given 4 days, so obviously you have to find the answer for every day, so you should have an array of 4 sizes as an answer. Okay? Now what do you have to do in this? If you look at this, this is 30 degrees. What is this? 30 degrees. After how many days, after how many days, will the temperature be warmer than this, i.e. a day hotter than this, or will the temperature be higher than this?"
+  },
+  {
+   "start": 196.14,
+   "end": 221.9,
+   "text": "So, you can see that 40 degrees will come immediately after one day. So, what do you have to write for this? 1. What does this mean? Day number 0. After how many days of day number 0, will the warmer temperature come? After how many days will the higher temperature come? So, 40 degrees will come immediately after one day. So, you will see one link here. 40. 40 degrees Celsius. After how many days of 40 degrees, will the higher temperature come? So, you can see that immediately after this, it will come. So, 1. Very good."
+  },
+  {
+   "start": 221.9,
+   "end": 245.2,
+   "text": "60 degrees, how many days after 60 degrees will the warmer temperature come? It will never come, because after 60, there is 50 after one day, you don't have the data after that, so after that, your days are over. So, the temperature will not come after 60. So, what you have to write in this, whatever question is asked, either minus 1 or 0, in this case, the question is asked that the day after, you don't feel that the warmer temperature will ever come, like it is not coming after 60, you have to write 0 here, no problem."
+  },
+  {
+   "start": 245.33,
+   "end": 272.46,
+   "text": "50, 50 degree celsius, how many days after warmer will come, so obviously it is 50 because it is the last element, so yesterday also we saw this in next greater that the last element, there is nothing next to it, so it was written minus 1, here you don't have to write minus 1, here you have to write 0, this will be your answer, what? 1100, this is what you have to do, this is what you have to do, now this question you must be thinking that it is a very easy question, what kind of question is it? This is clearly known as the question of next greater, the question of next greater, okay."
+  },
+  {
+   "start": 272.59,
+   "end": 295.28,
+   "text": "It is a small twist. What is a small twist? If you are told that after a few days of temperature, the next warmer temperature will come, then it is the same as the next greater. As soon as you get the next greater, you have to stop. So the question is the same. How? Like the next greater. You should write that program quickly. But there is a small twist in this. What is the twist? You don't have to write the next temperature."
+  },
+  {
+   "start": 295.28,
+   "end": 320.82,
+   "text": "You don't have to tell that after 30, 40 is coming. No. After 30, when is 40 coming? After how many days is it coming? So after 1 day, you have to write 1 answer. If you have to write the answer that write the warmer temperature, then this is exactly as it is. You could have written yesterday's lecture program, but you don't have to write that. You have to tell that after 40, if warmer is coming after 40, then after how many days is it coming? So it is coming after 1 day. So how will you know this? We didn't learn this yesterday. So this is very easy."
+  },
+  {
+   "start": 320.85,
+   "end": 349.86,
+   "text": "It is very easy. If you pause a little bit and use your brain, you will get it. So, you can pause whatever you want. Think about it for a while that you get the next greater. You know how we get the next greater in the stack. We keep popping the top. The top that doesn't pop is your next greater. But how will you know that after how many days or after how many positions in the array? So, pause for a while and think about it. So, those who thought about it, it is very good. Those who couldn't think about it, it is even better. So, what you can do is"
+  },
+  {
+   "start": 349.86,
+   "end": 379.33,
+   "text": "after how many days means what is the position so you guys simply store index in stack first what you guys used to store in stack number you used to store array of i now you guys just store i index what will be the benefit of this suppose you have a lot of index suppose here is index number 3 then index number 5 then index number 7 ok you are currently at index number 9 ok you have to do the same what you used to do in next greater"
+  },
+  {
+   "start": 379.33,
+   "end": 402.88,
+   "text": "There will be an array of i in i is equal to 9. There will be any number. You used to pop all the numbers from the top which were either less or equal. It means that in a way you used to pick up stones. You used to pop all the stones which are useless stones. Who are useless stones? Which is smaller than me or equal to me because do we need it? We need bigger than us. So, you used to do this. Okay. So, you can do this only. So,"
+  },
+  {
+   "start": 402.88,
+   "end": 428.77,
+   "text": "Now, what can we check while checking? First, what did you check? st.top is less than or equal to array of i. But now, st's top is not an element. Now, st's top is an index. So, we have to check it like this with index. st.top less than or equal to array of i. If it is like this, then pop st. Yes. Suppose, it happens that you succeed in popping it. But here, you cannot pop it. The one with 5 index was actually bigger than this."
+  },
+  {
+   "start": 428.77,
+   "end": 458.5,
+   "text": "Now, when we used to give number, then only this would be our answer, the top one would be our answer. But, you don't need number in the answer, you need position in the answer. So, tell me one thing, you were at i is equal to 9. You get next greater, sorry, this is a previous greater, but it is the same example. You get previous greater at index number 5. How far is it in both? See, make an array and see how far it is. Let's make an array in which 9 also comes and 5 also comes. This is a little opposite example, it is a previous example, but the thing is the same."
+  },
+  {
+   "start": 458.5,
+   "end": 484.64,
+   "text": "0, 1, 2, 3, 4, 5, 6, 7, 8, and 9. Okay? You were here. Where did you get the answer? You got the answer on index number 5. Let's see how many days it will take you. 1, 2, 3, 4. How does 4 come? Simple, simple. 9 minus 5 is equal to 4. This is the answer. You have to do the same in the next greater. Yes, let's see what we will do in the next greater. So, now you have understood that you have to store index in the stack."
+  },
+  {
+   "start": 484.64,
+   "end": 511.26,
+   "text": "Whenever we get a position-based question in the stack, like how many days will it take, or how much is ahead, I mean in the next grader, how much is ahead in the next grader, so you always have to store the position or index in your stack, okay? So never store the number, it will be simple that you can store the index, okay? Let's see that in our next grader, this is the example of the previous, what will we do in the next? So we make our own, what do we call it? Array. Your array looks like this, 30."
+  },
+  {
+   "start": 511.26,
+   "end": 540.34,
+   "text": "It will be exactly the same as yesterday, just the index will be stored. 1-2 lines will be here, it will be removed in checking. 30, 40, 60 and 50. Okay. 0, 1, 2, 3. What did we say? First of all, make a stack. Make a stack. Yes. What did we do in the next greater? First of all, we used to write the answer of the last one. First of all, we used to write the answer of the last one which was minus 1. Now, here you don't have to write minus 1, here you have to write 0. So, the default value is 0."
+  },
+  {
+   "start": 540.34,
+   "end": 570.06,
+   "text": "So write the answer for the last one. Let's push the last one in the stack. But don't push the element here. What do you have to push? Index. So push the last index. Push 3. Okay. Now from where to where? Run the loop from here to here. Run the loop from here to here. Keep popping the top. The top which will not pop is your answer. So let's see. i is equal to 2. Okay. What is your ai? 60. Okay. Now what is its work? Remove the useless element at the top of the stack. So what is the check for the useless element? This is the index."
+  },
+  {
+   "start": 570.16,
+   "end": 595.12,
+   "text": "What? What? This index of array, array 3, array 3, which is 50, is it less than my 60? Yes, it is less. So, pop it. Pop it. See, there is no difference in this. You store 50, you are storing index, so you are taking out 50 from there. It is just a small difference. So, this is done. Now, there is nothing left in the stack. When there was nothing left in the stack, then what was the answer? Zero. So, the answer is minus 1. You don't have to write minus 1, you have to write zero. Write zero. And, and."
+  },
+  {
+   "start": 595.12,
+   "end": 624.75,
+   "text": "We used to push this element too. But here we don't have to push 60. What do we have to push? Index. What is index? 2. Okay. It will come. I is equal to 1. What is the area of I? 40. Okay. He will also try to pop this. So he will check whether this index, this index which is at the top. Okay. So this means 60. Is it smaller than 40? No, it is not small. So it will stop popping. And the one you couldn't pop, that was your answer. But here you don't have to write this answer. What answer do you have to write? How many days are left? So you have to do what you did last time."
+  },
+  {
+   "start": 624.91,
+   "end": 655.47,
+   "text": "You were at i is equal to 1. What did you get from the top index? The top index is 2. How long will it take to go from 1 to 2? 2 minus 1 is equal to 1. Just do 1. And also push this. Not the element, but the index. What is the index? 1. You push 1. Okay? Come to i is equal to 0. What is the array of i at i is equal to 0? 30. Okay. What is the index of the top? 1. What is the element at 1? 40. So is 40 smaller than 30? No. Stop. No need. You have got the answer. What have you got the answer?"
+  },
+  {
+   "start": 655.47,
+   "end": 681.73,
+   "text": "You are at i is equal to 0. Where did you get next greater? At i is equal to 1. How many days does it take to go from 0 to 1? How do you get it in a day? 1 minus 0 is equal to 1. Come out after writing your answer. This is your answer. Let's quickly write the code of i. See how much the code is similar to the next greater and how easy the code is. So, those who say that you don't know the whole code, then we have discussed about it yesterday that if we will think the logic, we will write the code, we will give you the code."
+  },
+  {
+   "start": 681.73,
+   "end": 711.86,
+   "text": "So what will you do? You don't have to become a copy paste engineer. First of all, int n is equal to a dot size. You can see the logic from here, you can see the pseudocode from here, but writing code is your job. If we write the code, then it will be very difficult for you. stack int st First of all, what we used to do? We used to make our answer. We used to make the answer array. Those who don't know, this is the array of the answer. First of all, res"
+  },
+  {
+   "start": 711.86,
+   "end": 739.63,
+   "text": "n-1 is equal to, what was it? minus 1, but here it is not minus 1, it is 0, okay. And, in ST, we push the last element, but not element, here index, index, n-1 is index, that is stored, okay. Come, let's run the loop. Come, let's run the loop here. For, i is equal to n-2, i greater than or equal to 0, i minus minus. And, the condition of pop there, do we have to write the same? While, stack is not empty,"
+  },
+  {
+   "start": 739.63,
+   "end": 763.42,
+   "text": "stack is not empty so its size is greater than 0 and what was written there? st.top is less than equal to array of i but st.top is an element not an element but an index so array of st.top yes array of st.top less than equal to array of i in this case if it is there then what to do? st.top ok now if stack is empty"
+  },
+  {
+   "start": 763.42,
+   "end": 792.5,
+   "text": "If the stack is empty, then what would be the answer? Minus 1, because its next generator did not get anything. So here you have to write 0, not minus 1. Very good. Else, else, else. What will be the answer? You were on i and you got it on some index. How many days will it take to go? Whatever index is on st.top, minus i. This is the answer. And after doing everything, we had to push it in the stack. So every time we used to push the array of i, here we will push i. Close it. What will we return?"
+  },
+  {
+   "start": 793.46,
+   "end": 822.37,
+   "text": "So see, it is the same program. What are the changes of next greater element? Here, instead of array of n-1, n-1 is pushed. Here, instead of st.top, array of st.top. Why? Because it is index. Just take index like this. Here, we used to write st.top directly, but because it is index, we need number of days. So you had to write this, how many days will it take to go. And you had to push i instead of array of i. There were only such small changes in this question. So this question was easy. Once you have read next greater, this question is very easy. And this question,"
+  },
+  {
+   "start": 822.37,
+   "end": 850.54,
+   "text": "It has been asked in Facebook, Amazon, Microsoft, C3, IOT, Uber. So, it is a very good and important question. So, I congratulate you a lot. You have already learnt this. Let's move on to the next question. So, what does the next question tell you? That we have to find the next greater element in this array. So, we have already done this question. But, there is a trick in this. We just don't want to find the next greater element. We just want to find the next greater element in this array. But, what is this array? This array is circular. This makes this question a little hard. What does circular mean? We will tell you."
+  },
+  {
+   "start": 850.96,
+   "end": 880.56,
+   "text": "If you want to find the next greater in this array, that there is no circular, normal. What would you write? Would you make an array? Let's see which one is circular. 0, 1, 2, 3, 4. We know that the last index is minus 1. Do you see anything after 4 that is big? No, minus 1. Do you see anything big on the right side of 3? Yes. Who is the first big one? 4. So what will be the answer of this? 4. Do you see anything big on the right side of 2? Yes, 3. Do you see anything big on the right side of 1? Yes, 2."
+  },
+  {
+   "start": 880.56,
+   "end": 909.9,
+   "text": "So, this is the answer. It is very easy. We have already done it. How? By stacking. But when this array has become circular, then what does it mean? I will tell you. Make a ring by turning this array. Look at the question very carefully because this question is very easy. It is very easy to do. It will be coded immediately. But it is very difficult to understand and it is very difficult to understand why we are doing this. Because that intuition does not come. We do not understand why this happened. People remember that this has come, so we will do this. But this is not the right way. Okay? So, what does the circular array mean?"
+  },
+  {
+   "start": 909.9,
+   "end": 941.17,
+   "text": "There is an array, right? Make a ring by turning the array. So, let's make a ring. 1, 2, 3, 4, 3. Make a ring by turning the array. Make a ring like this. See this. What did we make by turning the array? Ring. Make 5 slots in this. 1, 2, 3, 4, 5. This is its 0 index, 1 index, 2 index, 3 index, 4 index. Come, let's put the value in this. What was it? 1, 2, 3, 4, 3. 1, 2, 3, 4, 3."
+  },
+  {
+   "start": 941.17,
+   "end": 971.84,
+   "text": "What does right side mean? Clockwise. Clockwise. What does right side mean? 0, 1, 2, 3. After 1, you used to see 2, 3, 4. So after 1, 2, 3. Now clockwise. Okay. Now let's try to find the answer to this. Now let's try to find the answer to this. 0, 1, 2, 3, 4. Now what question will we ask? Is there any big element in any index clockwise or not? And who is the first one? So let's start with this. See which big element is in 3 clockwise. Let's see. 1, no. 2, no. 3, no. It's equal. It's not big."
+  },
+  {
+   "start": 971.84,
+   "end": 1002.3,
+   "text": "4, yes, 4, 4. If you rotate 3 clockwise, then you get one element, 4, which is bigger. So, what will be its answer? Not minus 1, 4, yes. Next, from here. Rotate it clockwise, see if you get anything or not. 3, no, 1, no, 2, no, 3, no. If you come back to it, then you don't have to come back to it. So, you didn't get anything in the whole array. Minus 1, minus 1, yes. Next, what? Index number 2. Which is index number 2? This one, 3. Come, let's rotate it clockwise, let's see."
+  },
+  {
+   "start": 1002.3,
+   "end": 1033.57,
+   "text": "If you rotate clockwise of 3, you get 4 immediately. So, what is the answer? 4. Index number 1, means this one. Let's rotate clockwise and see. If you rotate clockwise, you get 3 immediately. If you get 3, write the answer. 3. Index number 0, this one, 1. Let's rotate clockwise and see. If you rotate immediately, you get 2 immediately. Write 2 immediately. What is this array? 2, 3, 4, minus 1, 4. What was the normal array above? See what is the similarity between the two. See this. 2, 3 is correct. 2, 3, 4, 2, 3, 4 is correct."
+  },
+  {
+   "start": 1033.57,
+   "end": 1063.02,
+   "text": "Minus 1 is correct. This has changed. Its answer has changed. What? First it was minus 1, now it is 4. Why did this happen? The answer has changed due to being circular. How has its answer changed? Its answer has changed because... Now look carefully. Now look carefully. When the array... Listen very carefully to this. When the array is non-circular, when the array is non-circular, it was looking like this. Array of 0, array of 1, array of 2, array of 3, and array of 4. Okay. At that time,"
+  },
+  {
+   "start": 1063.02,
+   "end": 1092.86,
+   "text": "There was no one on the right of array of 4. Who was on the right of array of 3? Array of 4. That's it. There was no one after that. Array used to end. Next used to end. Okay. Who was on the right of array of 2? There was an array of 3. There was an array of 4. Okay. What was on the right of array of 1? There was an array of 2 on its right. There was an array of 3. There was an array of 4. Similarly, what was on the right of array of 0? There were all."
+  },
+  {
+   "start": 1092.86,
+   "end": 1117.04,
+   "text": "Array of 1, array of 2, array of 3, array of 4. Array of 4. So, what was this? This was your search space. You could have found it only if there is nothing on the right of array of 4. Why did we write the answer of last index as minus 1? Because we used to say that if there is nothing after that, then what will we write as the answer? So, what was this? This was your search space that you have to find only this much."
+  },
+  {
+   "start": 1117.04,
+   "end": 1146.62,
+   "text": "If the array of 3 comes after the array of 4, then you had to find it in the array of 4. Why? Because that was the only thing in the stack. How did we push? We used to push from the last. So every element, suppose when you used to come to 1. When you used to come to 1, then in your stack, which elements could be the maximum? If everything is going well, then which element was the maximum possible? It was possible in 2, 3, 4. Array of 2, array of 3, array of 4. This."
+  },
+  {
+   "start": 1146.62,
+   "end": 1175.06,
+   "text": "When you came to i is equal to 1, then the array of 0 could not be in your stack. Why? Because we were doing push in that order. We used to run the loop last and push every time. So when you used to come to array of 1, then it could not happen that the array of 0 is present in your stack. So you will not get it. That is why I used to do this because I have gone after array of 1, 2, 3, 4. 2, 3, 4 can be in your stack. You have to take the answer from that, otherwise you have to write minus 1. So when you used to come to i is equal to 4, nothing used to happen in your stack. Assume nothing used to happen."
+  },
+  {
+   "start": 1175.63,
+   "end": 1202.61,
+   "text": "You used to come to i is equal to 3, in your stack only array of 4 was there. Array of 2, array of 1, array of 0 was not there. So there is no scope of what was not there. That is why this method worked. Now why this method will not work? Now this method will not work because now you come to the circular array and see what is its clockwise. In this circular array, we will like to see that if we talk about index 4, then what is there in its clockwise? There is everything in its clockwise. There is everything in its clockwise. It is not that this array never ends."
+  },
+  {
+   "start": 1202.61,
+   "end": 1230.4,
+   "text": "This ring, circle, never ends. So, you will go till you reach back to yourself. Now, let's write what all answers are possible in this. So, let's start from last. So, what all will come in the clockwise of array of 4? See, what all will come in the clockwise of array of 4? It started from 0, 1, 2, 3. So, there is 1.25 in this. What all? 0, 1, 2, 3. What all will come in the clockwise of array of 3? See."
+  },
+  {
+   "start": 1230.4,
+   "end": 1257.38,
+   "text": "In the clockwise of array of 3? 4, 0, 1, 2. Yes. What? 4, 0, 1, 2. What will come in the clockwise of array of 2? 3, 4, 0, 1. Yes. What will come in the clockwise of 1? 2, 3, 4, 0. What will come in the clockwise of array of 0? 1, 2, 3, 4, 1."
+  },
+  {
+   "start": 1257.38,
+   "end": 1276.46,
+   "text": "Notice a very important thing. At the top, there was nothing in the array of 0. There was only one element in the array of 3. But here, in the array of 0, there are 4 remaining elements. There are 4 remaining elements in this too. There are 4 elements in this too. There are 4 elements in this too. There are 4 elements in this too. The total size of the array is 5."
+  },
+  {
+   "start": 1276.46,
+   "end": 1305.39,
+   "text": "If we leave one element, then how many remaining are there? 4. All of them are coming in sub. Means, every person should get full chance to find their next greater. It should not happen that array of 3 will not get chance to see in 0,1. No. Because 0,1 comes, 0,1 comes. In array of 3, 0,1 comes from late, but it comes. In array of 1, 0 comes from late, but it comes. Even in array of 4, which was our last element last time, nothing came in it. In that also, 0,1,2,3 comes. In that also, 0,1,2,3 comes. Okay."
+  },
+  {
+   "start": 1305.71,
+   "end": 1333.34,
+   "text": "Now, when they come, you should also get a chance. How did you get a chance last time? For example, last time when you were at the area of 3, you should have got a chance at the area of 4. How did you get this chance? This thing used to be present in your stack. What used to happen in your stack? It used to be present. Okay. When you used to come at 1, you had to get a chance of 2, 3, 4. What? 2, 3, 4. Okay. So, how did you get this chance? Because this thing used to be present in your area. How?"
+  },
+  {
+   "start": 1333.34,
+   "end": 1354.29,
+   "text": "In your array, all these things will be pushed. What will be pushed before 2, 3, 4? First, 4 will be pushed. Why? Because we are moving backwards. So, your stack will look like this. When you come to array of 1, your stack will look like this. First, array of 4 was pushed. Then, array of 3 was pushed. Then, array of 2 was pushed. And this is the top of the stack."
+  },
+  {
+   "start": 1354.29,
+   "end": 1382.06,
+   "text": "That's why you get a chance. And in which order did you get a chance? In exactly this order. In exactly this order. Earlier, 2 used to get a chance to become an answer. If this answer doesn't come, then 3 used to get a chance. If this doesn't come, then 4 used to get a chance. If no one comes, then minus 1. So, who used to give you a chance? Chance used to give you a stack. Okay. So, in this also, in this order, what should every element get? It should get a chance. It should get a chance to get an answer. So, what will we do for this? We won't do anything for this. Look."
+  },
+  {
+   "start": 1382.45,
+   "end": 1409.58,
+   "text": "When you are in area of 4, obviously, we want to start with area of 4 because it is the last element. Earlier, we used to start like this and put area of 4 as minus 1. Why? Because we didn't have to give any chance. If something comes after area of 4, then there is no chance. But now you know that you should get such a chance. You should get such a chance. To give such a chance, what should be in your stack? Your stack should look like this. First 3, then 2."
+  },
+  {
+   "start": 1409.58,
+   "end": 1438.9,
+   "text": "Then 1, then 0. That's why first 0 will get a chance. Because 0 is coming first in its next. Then 1 will get, then 2, then 3. You should get a chance to become an answer. And which should happen. So what will we do for this? We will do nothing. See. What is this? 3, 2, 1, 0. What? 3, 2, 1, 0. Okay. Keep this in mind that you should get a chance. Means it should happen in your stack. Before starting the program. Before starting the program from here, it should happen in your stack. Okay."
+  },
+  {
+   "start": 1438.99,
+   "end": 1465.25,
+   "text": "But see, suppose when you come to array of 3, then 4, 4 should be there and 0, 1, 2 should also be there. So what will we do now? We will not do anything. See, when array of 4 comes, then you have to give a chance to 0, 1, 2, 3. So you know that in your stack, this 3, 2, 1, 0 should be there."
+  },
+  {
+   "start": 1465.25,
+   "end": 1492.98,
+   "text": "Suppose your answer is 0. Suppose your answer is 0. What will you do after that? You will write the answer and normally what we do is we push that element so you push the array of 4. When you come to the array of 3, who should get the chance? 4, 0, 1, 2. See, you will get. First 4 will get the chance, then 0, then 1, then 2. You got it, right? You got it. Suppose you pop 4 in this."
+  },
+  {
+   "start": 1493.07,
+   "end": 1521.26,
+   "text": "In this, you pop 4 and get the answer of 0. Then what will you do? You will push your 3 and move forward. When you come to array of 2, who should get the chance? First of all, 3. So, 3 got the chance. 4 should get the chance but 4 has popped. So, it is the same that he got the chance. He got the chance of 4 but 4 popped. After that, 0 and then 1. So, all the problems are being solved. How? Just this starting. When you used to start from here, your stack used to be empty."
+  },
+  {
+   "start": 1521.42,
+   "end": 1551.28,
+   "text": "Because you didn't want to give a chance. Now, if you are starting, then what is there in your stack? You need to give them a chance. If we do one thing, if we do one thing, that before starting our program, our next greater's loop, we make our stack like this, like this, 0, 1, 2, 3, like this, then? Then my work will be done. You have to give a chance, right? First, why did you keep the stack empty? Because you had to start with array of 4, and you didn't want to give a chance. Okay. Now, you need this chance, you need this chance. How? In which order? First 0, then 1, then 2, then 3."
+  },
+  {
+   "start": 1551.28,
+   "end": 1580.59,
+   "text": "So to give this chance, what should you do? You should not do anything. You should push in your stack. In which order should you push? If you want to give the first chance to 0, then push 0 at the end. Because the one you will push at the end will be the first to get it. He will be at the top. So what do you have to push first? 3, then 2, then 1, and in the last, 0. That's it. After this, you can start your loop as it is. As it is, you can start. And we have seen that after that, everyone"
+  },
+  {
+   "start": 1580.59,
+   "end": 1605.57,
+   "text": "you will get as much chance as you want, why? because you are starting from 0, 1, 2, 3, any answer will be made after this automatically index number 4 will be pushed there so 3 wants 4 first, 4 is pushed, 4 is got, after this it also wants 0, 1, 2 which will be there in the order so this thing is understood that why do we do this? so its intuition is that you push this before starting the program after this run your program normally as you run your loop, that's it"
+  },
+  {
+   "start": 1605.57,
+   "end": 1631.12,
+   "text": "this is the work we had to do in this so why did we do this work? we did this work to give a chance that array of 4 doesn't need anything in non-circular it doesn't have anything in front of it but here it is in front of array of 4 there is an array in front of array of 4 0,1,2,3 everything is there so to give you a chance you have to push in this order so that before starting how your stack looks like 0,1 sorry how your stack looks like first 3 is pushed"
+  },
+  {
+   "start": 1631.12,
+   "end": 1662.03,
+   "text": "Then 2, then 1, then 0. So that he gets a chance. If he gets a full chance, then it shouldn't be minus 1 by mistake. So what do you have to do? Nothing. You have to write the next greater program. You have to do one thing. You have to make your stack int st. Okay. And where are we pushing from? n is equal to 5. So, n is equal to, we are talking about all these chance ones for n minus 1. So, you were pushing from 3. i is equal to n minus 2. i greater than equal to 0. i minus minus. Simple. st dot push."
+  },
+  {
+   "start": 1662.9,
+   "end": 1693.25,
+   "text": "Array of i. After this, start your program as you write it. How will you start? Now you will not do this, that res i is equal to n minus 1. No, sorry, res n minus 1 is equal to minus 1. No, now you don't have to do this. Now you have to do this. Once you have made the stack, once the initial state of the stack is ready, then you can do normal. i is equal to n minus 1 greater than equal to 0, i minus minus. Simple, while st dot not empty."
+  },
+  {
+   "start": 1693.25,
+   "end": 1723.89,
+   "text": "st.notempty and st.top is smaller than or equal to ai. So what will we do to st? If st.empty, what would we do? res i is equal to minus 1. Else, res i is equal to st.top. After everything is done, st.push array of line."
+  },
+  {
+   "start": 1725.07,
+   "end": 1740.46,
+   "text": "And we have to keep moving forward. And what we have to do? We have to keep moving forward. So why did we do all this? This one step has become additional in circular. Which one? This one. That before starting, we pushed in array. Why did we push? Because of this reason. Because you have to give it a chance. What do you have to do?"
+  },
+  {
+   "start": 1740.85,
+   "end": 1761.36,
+   "text": "array of 4 had no chance in the beginning that's why you didn't push anything but now array of 4 you can't do like this that you are sending it with empty stack no it should get chance that it can see 0,1,2,3 so we are treating array as normal but we do that circular what do we do? simulate circular in circular array"
+  },
+  {
+   "start": 1761.39,
+   "end": 1790.14,
+   "text": "Some people teach it in such a way that you don't do anything, just add the same array in front of the array and start from the last. So this is the same thing, but its real intuition is that what is your space, what is your search space, how is your search space changing? The search space that you have will be in your stack, you will get it. So it should be in your stack, this is its intuition. So go and code this, it is a very good question, very good question and you have to explain in the same way in the interview that this is its intuition. It is not that we have remembered that we are pushing first, why do you push first?"
+  },
+  {
+   "start": 1790.14,
+   "end": 1816.22,
+   "text": "Because you have to give a chance, so explain it like this. Okay, let's go. Yes, brother, the third question is that remove duplicates in K. This is heavily dependent on lecture number 38. In which we did remove duplicate in the same question, but we did it in two. We did it pairwise. Here it is said to do it k-wise. So there you can consider k is equal to 2. Before this, the last question was that next letter in circular. There we told you that if you just push here, then it will be enough. Okay."
+  },
+  {
+   "start": 1816.22,
+   "end": 1840.48,
+   "text": "Some people might have this doubt that you have to push like this only. Here, what are you doing? You are pushing 3, 2, 1 and 0 like this in the stack. In this, you are maintaining that before pushing any element, you have to pop all the big elements and so on. So, we are not doing this because look, this is just a pre-loading step. This somehow fills 3, 2, 1, 0 in the stack."
+  },
+  {
+   "start": 1840.48,
+   "end": 1857.79,
+   "text": "In the future, whatever your calculation is, whether any element needs a next greater, then the element pops all the small ones and takes the top one. So see, it just fills the rest of the elements in your stack in some way. So that you don't miss any element in the future."
+  },
+  {
+   "start": 1857.79,
+   "end": 1887.42,
+   "text": "You can also do it like this, that before pushing, pop all the small ones and then push, that is also fine. This is also fine. Why is this fine? Because this is pre-loading. That fill all the elements in the stack. When we will find the answer in our main loop, then there you do anyways, that remove all the useless tops. For example, this is also a missed order. What does missed order mean? This is a useless order that someone is small, someone is big, etc. So there you are also doing like this, that whatever st.top is useless,"
+  },
+  {
+   "start": 1887.42,
+   "end": 1915.66,
+   "text": "what you have to do is pop it and take the same top which is bigger than us and then continue it so it will take care of it there you will do 1-2 dry runs and you will know how it will take care of it ok so try to dry run the same example once and see how it works and how you can push it you just have to push 3,2,1,0 in this order what is its sorted order, which one you will pop, which one is small and big if it is small and big then our whole algorithm is done ok let's go yes"
+  },
+  {
+   "start": 1915.66,
+   "end": 1944.5,
+   "text": "Remove duplicates in K. So, you have done this question. What did we do with this question? We did this question in lecture number 38. There you were given a string. That suppose it was like this. A, B, B, A, C, A. What did we tell you? You become a robot. And there you were given K is equal to 2. Same question. Just K is equal to 2. So, what did we tell you there? Is there any 2 letter which is adjacent and 2 times. Means adjacent and 2 times repeat. Yes. If there is, then remove it. Write the rest of the string like this."
+  },
+  {
+   "start": 1944.82,
+   "end": 1967.62,
+   "text": "Again, can you see two letters that are together and one is also there? Yes, you can see this. Remove this and write the rest of the string as it is. Now, can you see two letters that are together and one is also there? No, you can't see anything. So, what was your answer? Answer. In this, you have to do the same thing. In this, you have to remove the letters that are together in the group."
+  },
+  {
+   "start": 1967.62,
+   "end": 1997.74,
+   "text": "If you see k-1, then you don't have to remove it. As soon as you start seeing k, then you just have to remove k. Not more than k, not less than k. If you saw b, you would have removed 2b only. You would not have removed 3 because 2 was said. So the answer would have been b. Here also, if you see k letters, then you will remove them. You will not remove more than that. Now, how did we make this? We made this from stack. Which is explained very well in it. Why it was a question of stack and why it was made from stack."
+  },
+  {
+   "start": 1997.74,
+   "end": 2020.75,
+   "text": "What we used to do in this, because you had to remove 2, you used to see that it used to come on every item. If the stack was empty, there used to be 3-4 cases in this, if the stack was empty, then no problem, just push it, there is no problem in that. If it is not empty, then also if the top of ST"
+  },
+  {
+   "start": 2020.75,
+   "end": 2049.34,
+   "text": "not equal to SI means these two letters are not matching then also you can easily push it but but but if the letter of top of ST equal to SI then what you used to do? you used to pop why you used to pop? because there is already B in the stack and you also have B this means that whatever answer you are getting there is B in the top of it means your answer was getting from here to here there is B here and you are standing on another B"
+  },
+  {
+   "start": 2049.34,
+   "end": 2071.15,
+   "text": "So you had to remove both of these, you had to remove two, two. So instead of removing these two, we used to do one thing. Firstly, we didn't push this. We didn't push this in the answer. How many removals have you removed? One. And the one above, we used to pop this too. So this is another removal. So in total, two removals were done. So what could you do in one way?"
+  },
+  {
+   "start": 2071.34,
+   "end": 2101.42,
+   "text": "You used to see that if the top element is the same as this element, then first of all, don't push it. If you don't push it in the answer, then one removal would have happened here. Okay. If you pop it, then one more removal would have happened. Total would have been two. Okay. But this trick won't work here. Why won't this trick work here? I will tell you. Because here you don't have to do two removals. Here you have to remove when K happens. For example, your string looks like this. For example, A, A, A. Like this. And here is B. Okay."
+  },
+  {
+   "start": 2102.03,
+   "end": 2122.3,
+   "text": "Let's go. 0, 1, 2, 3. Okay. A, A, A, B. Your K is 4. What is 4? So, first of all, make a stack. Come, I is equal to 0. I is equal to 0, A. So, stack is 20. Push it. Yes, here there is a problem. I is equal to 1, A."
+  },
+  {
+   "start": 2122.3,
+   "end": 2144.94,
+   "text": "Now, this A and the top A are the same. So, what did you do last time? Don't do anything to this. And if you do one more pop, then two will be removed. But here it will be wrong. Why? Because you are told that K is equal to 4. Do you see any 4 letter which is in 7 and is the same? Do you see any 4? No, you see only 3. 4 letter, this is B. If this was also A, then it would have been very good. But you don't have to do any pop from this. Why?"
+  },
+  {
+   "start": 2145.2,
+   "end": 2173.98,
+   "text": "As a robot, if you see from above, then are there any four letters that are together? No, it is not visible. It means A is three times and B is one time, so it is good. So you can't pop here, then this trick will fail here. What? You can't do that if the top of the stick is like this, then we will pop it. No, it will be completely wrong. What will happen? It will be completely wrong. So what will we do? What will we do? And it is also a matter that if we will not pop, then we will have to push it. Now we will have to push it. If we have to push it, then..."
+  },
+  {
+   "start": 2173.98,
+   "end": 2203.18,
+   "text": "Now what will we do? I don't understand what we will do in this. Think a little, pause a little and think. What is your goal? In the previous question, your goal was very easy. In the previous question, why did you pop an element as soon as you saw it? Because you knew that if this element is here, if this element is here in the stack, then it has come once. It has come once. What does it mean that it has come once? You have written it in your answer once. It means that your answer was going on like this."
+  },
+  {
+   "start": 2203.18,
+   "end": 2230.34,
+   "text": "You have given one slot to it. You have one more element which is similar to st.top which means you want to write this person in this slot. How much would these two become together? Two. How much would these two become together? Two. That's why you used to pop it and if you didn't push it, then two would be removed. You can think of it in another way that you had to remove two in total. What did you see? That it has come once in st.top. Yes, once. Very important. It has come once."
+  },
+  {
+   "start": 2230.34,
+   "end": 2259.23,
+   "text": "If we add this letter too, then it will be a total of 2 times. That should not happen. That's why you popped it. Meaning, K minus 1 times. K minus 1 times it has come. Yes. K minus 1 times it has come. If we do this one more time, then it will be K is equal to 2 times. That's why we need to pop it. If, if, if, you come to know, for example, you have this. Assume, and K is equal to,"
+  },
+  {
+   "start": 2259.23,
+   "end": 2281.09,
+   "text": "It is 3, k is equal to 3. 0, 1, 2, 3. Now here you can see that 3 is with 7, so you have to remove it. But how will you know in the stack? Because the question is where is the stack? I am saying it again and again, look at 38. Assume that when you come to i is equal to 0, then the stack is empty, so you push A. Okay, you push A. Now you come to i is equal to 1."
+  },
+  {
+   "start": 2281.09,
+   "end": 2309.95,
+   "text": "Now let's see, it is again A and it is also getting from st.top. If you see, it is not getting from st.top, then there is no problem, then directly do something, then there is no discussion about it. But if it is matching, then only there is a problem. Okay. Suppose someone tells you that this A, this A, how many times is it? How many times is it? Then you will be told that it has come once. Means in one answer, A is written here. You are sitting with another A. If you are sitting with another A, you will put it, then how much will be the total? 2."
+  },
+  {
+   "start": 2309.95,
+   "end": 2333.73,
+   "text": "Is 2 allowed? Yes, 2 is allowed because you have to delete it in k is equal to 3. So, you can push this as well as this. It's okay. We will do it later that who will tell you and who will tell you. But it's okay. Let's come to i is equal to 2. You again get a which is equal to st.top. Okay. If someone tells you that in the answer, a consecutive has come twice. It means that it has come here twice and here a consecutive has come twice."
+  },
+  {
+   "start": 2333.73,
+   "end": 2361.17,
+   "text": "If you take your own, then now this total will be 3. Is 3 allowed? 3 is not allowed. What do you have to do? You don't have to push this. You don't have to push this. And you have to pop these two too. If you are not pushing 1, then 1 will be here. And how many were inside? There were 2 bars inside which someone told you. There were 2 bars inside. So you will delete 3 in total. Next time when B comes, then B will be pushed in stack empty. What will be the answer? B."
+  },
+  {
+   "start": 2361.17,
+   "end": 2389.97,
+   "text": "So you can do this. But who will tell you all these things? Who will tell you all these things? That how many times A has come? And where is your danger? When the inside A is sitting with K-1 times. Means the answer is like this. Suppose your K is equal to 4. Your K is equal to 4. When is your danger? When there is one A, one more A, one more A. And you are sitting with one A. So it will come here and make 4. Now you have to"
+  },
+  {
+   "start": 2389.97,
+   "end": 2409.84,
+   "text": "You don't have to push and you have to pop all three. You have to pop all three. What do you have to do? You have to pop. Okay. What is this? K-1. Yes, yes. When the inside A, when the stack A, when someone tells you that okay, K-1 has come continuously, now if you put it in, it will be messed up. Last time also you were doing the same thing."
+  },
+  {
+   "start": 2409.84,
+   "end": 2437.18,
+   "text": "Last time, k is equal to 2. What was the k of your question? It was 2. So, what did you get to know? If even one a would have come, if even one a would have been at the top, then obviously, it would have come once. k minus 1, k minus 1 is equal to 1 here. k is equal to 2, k minus 1, 1. This is what I was telling you. Brother, the inside a, k minus 1 times a has come. If you put one more a, then it will be k times, so remove it. That's why you used to pop this too. And you didn't push, you used to pop this too. Here also, you have to do the same thing."
+  },
+  {
+   "start": 2437.18,
+   "end": 2466.67,
+   "text": "If someone tells you that if st.top is not equal to your si, then it is very good. But if st.top is equal, then you will have to ask that this st.top, if it is x, how much has it killed? If it tells you that it is repeating from k-1 times, means it is coming from k-1 times, xx, it is coming like this. If you put another x here, then this total will be k times, you will have to bombard the whole, you will have to remove the whole."
+  },
+  {
+   "start": 2466.67,
+   "end": 2494.91,
+   "text": "We don't have to push this and all these three, k-1 or whatever it is, we have to pop all of them. You must have understood this, let's hope for that. But this work is not as easy as it seems to be. Because, first of all, who will tell and how will you pop? You will have to go to k bar again and again and pop k times. So, one way of this is to push the element. For example, we want to say that this is a very bad way."
+  },
+  {
+   "start": 2494.91,
+   "end": 2522.38,
+   "text": "0, which is coming in my mind right now, a, a, a, b. Okay. Let's see how we will do this very bad way. i is equal to 0, so the stack is empty, so you can push it. Okay. i is equal to 1, a came. First of all, check whether it is equal to st.top or not. st.top is equal to st.top or not. Okay. So, st.top is equal to, yes, okay, yes, it is. k is equal to 3. What is our goal? Has the inner a come twice? The inner a."
+  },
+  {
+   "start": 2522.38,
+   "end": 2548.34,
+   "text": "K-1 times has come. So, one thing is that you run the loop and see that K- I mean, it is difficult to run the loop in the stack. To run the loop in the stack, you have to pop the top, then you have to count. So, this is a very difficult time. I mean, I want to say that you go all the way back and count that K-1 has come or not. If it is less than K-1, then pick it up and put it here. Write this too. When you come here, you will have to do the same thing again, that you will have to go back and count again that K-1 is there."
+  },
+  {
+   "start": 2548.34,
+   "end": 2578.34,
+   "text": "When you come here, you will come to know that the inside has come twice. So what will you have to do? You will have to do two continuous pops. How many? What does two continuous pops mean? You have to pop K-1 times. It seems very useless to count like this. It's not that much fun. Now it will be fun. Now it will be fun. What can we do? What were we inserting in the last one? Only letter. Only letter. Because we only needed one time. Means we had to match only one. If it matched, then we would have popped it. If not, we would have pushed it. Here,"
+  },
+  {
+   "start": 2578.34,
+   "end": 2607.3,
+   "text": "You do one thing. Letter and its count. Yes. Letter and its count. Make a pair and insert. Make a pair and insert. What does it mean to say? See. What does it mean to say? You will know now. Son, you will know now. 0, 1, 2, 3. K is equal to 3. First of all, the stack remains empty. I is equal to 0 but the stack remains empty. So what does it push you? A. A how many times? When you are pushing the stack empty, then obviously A has come once."
+  },
+  {
+   "start": 2607.3,
+   "end": 2637.28,
+   "text": "The stack was empty earlier, which means there was nothing. This A is coming, so the obvious thing is that it is coming once. What does once mean? How many times in total? No, not in total. How many times has it come continuously? How many times has it come continuously? We will push here, area of 1. It will be clear, we will move forward. See. Come here. I is equal to 1. Is it getting from st.top? Is it getting from st.top? Yes, it is getting. So, instead of pushing it by making a new entry, what will we do? Increase its value."
+  },
+  {
+   "start": 2637.28,
+   "end": 2653.52,
+   "text": "Increase its value. What does this A2 tell you? What does the stack's A2 tell you? In your answer, there are two continuous A's at the top. This is your top. And here, there are two continuous A's sitting. Two continuous A's sitting. And this is what we will use to check. See. Come to I is equal to 2."
+  },
+  {
+   "start": 2653.74,
+   "end": 2682.02,
+   "text": "Is the top character of ST equal to SI? Yes, it is equal. So, have the characters inside become K-1 times? Yes, they have become. How did you know? From this 2, this 2, the inner A has become K-1 times. So, if you put this A here, then it will become total K. So, now it is necessary to collectively bombard all of them. What is necessary to bombard? So, what is to be done to bombard? First, don't push it."
+  },
+  {
+   "start": 2682.02,
+   "end": 2705.02,
+   "text": "One character is reduced. And just pop this entry. Just pop this entry. So what will it do effectively? It will pop both these a. You don't need to pop them one by one. Just if you pop that pair of a2, both the a's in front will be removed. So you see, it popped two at once. It popped once. Very good. Now you have done total k-division. How? You didn't push one, so one is here. k-1."
+  },
+  {
+   "start": 2705.02,
+   "end": 2732.24,
+   "text": "You have popped K-1. Effectively, effectively, K-1, what is the total? K deletion. This is what you had to do. Your stack is empty. Next, I is equal to 3B. Stack is empty, so what will we do? B and 1. Your program is finished. Now, now, now, there is one more important thing which we will tell you later. First, we will do a dry run of this in a big example and see how it works. So, watch carefully. Let's hope that you understood."
+  },
+  {
+   "start": 2732.53,
+   "end": 2762.34,
+   "text": "So this is its trick that you don't have to do push pop again and again. You have to do something like this. So 1D, 1, 2, 3, D. Then this is BBCCC. BBCCC. We are taking a very big example so that we want you to understand it completely. BDAA. BDAA. So 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12."
+  },
+  {
+   "start": 2762.34,
+   "end": 2793.87,
+   "text": "13. Look very carefully. Look very carefully, please. This has become your stack. Come to i is equal to 0. What is i is equal to 0? D. The stack is empty, so what will you do? D and 1 will be inserted. Come to i is equal to 1, E. Now, it is not matching with the top. If it is not matching with the top, then there is no problem. Then there is no problem. Okay. Now, what will we insert it? Insert it, what will we do? E1. Why? Because what does E and 1 tell you? That constantly E is hit on the top. Okay."
+  },
+  {
+   "start": 2793.97,
+   "end": 2822.86,
+   "text": "When you came to E, you were told that what is D1 at the top of the stack, which means that the answer is written like this. Now you want to insert an E here because it is not matching. So how many times has E come? How many times has it come now? It has come once continuously. If you make it E2, then it will mean that it is written like this at the top of the stack. No, it is not written like this at the top of the stack. D is written at the top of the stack and you want to insert another E. So how many times has E come continuously in itself? Once. So what will you do? Insert. Once. E1. Okay."
+  },
+  {
+   "start": 2822.86,
+   "end": 2843.36,
+   "text": "The second E comes, and this matches with the character at the top of the ST, so you need to take tension. Okay. What is its K? Its K is 3. What is its K? It is 3. What will be K-1? 2. Meaning, when the inner one repeats 2 times and matches, then it is a matter of tension, otherwise it is not a matter of tension. Okay. You came to this E. What is the inner E?"
+  },
+  {
+   "start": 2843.36,
+   "end": 2872.51,
+   "text": "K minus 1 means it has come 2 times. No, it has not come 2 times. It has come once. Okay. So now insert C. There is no problem. What will we do to insert? Because it has matched. So why are we making a new entry? Increase the frequency of the inner one. What to do of the inner one? Increase the frequency to. Now this stack means this. Now this stack means this. That first there is 1D. And on top there is 2E. This is your top. This is your stack. Does your stack look like this effectively? First 1D. Then 2E. This. This is your stack. See."
+  },
+  {
+   "start": 2872.51,
+   "end": 2902.74,
+   "text": "Without pushing and popping again and again, how are you making your stack? Let's go. Come to the next E. Now, tension is needed. Again, it is matching with the top of the ST. But have the inner ones combined K-1 times? Yes, they have. E has come twice. It means that your stack looks like this. D, E, E. If you add another E here, then these three will combine and become K times. You don't want that. Now, pop all of them. It means, don't push this. Pop the inner ones too. What should you do to the inner ones? Pop them. Let's go."
+  },
+  {
+   "start": 2903.18,
+   "end": 2927.9,
+   "text": "What is it? D. Okay. D is matching with top. Now top has become different. Now it is matching with top. But has K-1 times already happened inside? No. It has happened once. It has not happened twice. So you can do it. What is there to push? Increase the count. Increase the count. Let's go. B. Is B matching with your top character? No. It is not matching. What does your stack say now? D2. What does your stack look like? D."
+  },
+  {
+   "start": 2927.9,
+   "end": 2952.94,
+   "text": "And D. You say that you have to enter B. Yes, enter B for sure. It doesn't match. If it doesn't match, then there is no problem. There was no problem in the previous question too. Now, what will we enter? B1. Because B is coming continuously. B came once. First it was D, now B is coming. B came once. Again B. Now it is matching. There should be no problem. Has the inner K-1 times repeated? No, K-1 has not happened. So, we will just increase the count. What will we do? We will increase the count. C."
+  },
+  {
+   "start": 2952.94,
+   "end": 2982.94,
+   "text": "C is not matching. It is not matching. There is no problem. C1. There is no problem. It is not matching. Yes. Now it matched. Now it matched. Now it matched with C. Is the inner one K-1 times? No. The inner one is 1 times. It is not 2 times. Increase the count. Yes. C. Is the inner one K-1 times? Yes. The inner one C is also 2 times. If you bring another C and go to Z, it will get spoiled. So what will we do? We will not push this. And we will also pop this. So we have done total K deletion. Very good. Move ahead. B. B."
+  },
+  {
+   "start": 2982.94,
+   "end": 3012.22,
+   "text": "It is matching with the top. And have the top ones been matched twice? Yes, they have been matched twice. It won't be possible. Don't push it. And also pop this guy. Remove this guy. Come on, remove him. This D came inside. It is matching with the top. And have the D inside been matched twice? Yes, it has been matched twice. That D has been matched. If you put another D, it will break completely. It needs to be popped. I mean, we won't push it. And we will pop it too. The pop is over. See, the game is over."
+  },
+  {
+   "start": 3012.22,
+   "end": 3039.86,
+   "text": "You made a string with hard work, everything is finished. No problem. A, the stack is empty, you can push A1. You can push A1. A, it is matching. There is a need for tension. But, did the ones inside become K-1 times? No, they did not become K-1 times. Increase the count. And your program is finished. Your program is finished. Okay. Now, in the previous program, you had to make your string from the stack. So, what did you do? You used to pop one by one. You used to connect it to your string."
+  },
+  {
+   "start": 3039.86,
+   "end": 3067.5,
+   "text": "And in the end, we used to reverse the string. This is what we used to do. But, when you pop here, you will get this. a and 2. So, should you add a to your result string? No. It is a. But how many times is it a? It is 2 times. What does this represent? That your stack is like this. Your stack is like this. So, effectively, how many a will you have to add to your string? 2 a. Why? Because it is 2 times. So, you will have to add 2 a."
+  },
+  {
+   "start": 3067.5,
+   "end": 3095.95,
+   "text": "and when you will reverse it then it will be the same as AA so you will get this meaning that you will get a pair from the stack that pair will tell you that this letter how many times it is repeated so you will have to add that letter how many times? you will have to add count times then only your string will be made then only your string will be made so this was the whole dry run let's see the code of this, what will we do with its code? it is almost same as the previous one it is a bit different"
+  },
+  {
+   "start": 3096.08,
+   "end": 3126.13,
+   "text": "So, you will be given a string s and a string k. So, first of all, you need to find the size. First of all, you need to find the size. Make a stack. What is a stack? It is a pair of stacks. It will not work only with integer or only with letter. So, stack of pair of char of int. You have to make a stack of java and python which can store a character and an integer together. We call it a pair. You must also say something. It is a pair. Okay, come. Let's run the loop."
+  },
+  {
+   "start": 3126.16,
+   "end": 3158.94,
+   "text": "same as in 38th question n i++ now there can be 2-3 conditions in this first of all see what is this character si first we can write safe condition that in which is safe to push first of all if stack is empty if stack is empty don't do anything do push what to do? st.push c and 1 c and 1 because it came first time stack is empty it must have come first time ok that's it continue"
+  },
+  {
+   "start": 3158.94,
+   "end": 3188.62,
+   "text": "After this, we don't have to do anything. This is a very safe case. Okay. If it is not empty, if it is not empty, then there is another safe case that when your top character and the current character are not matching, then also it is very good. Isn't it? So, this is also one. That ST's top and ST's top is now a pair. Which is the character among that? First one. First one. So, we write it as first. Java people, what will you do? You make a stack in which there is a vector. I mean, we don't know how to make a pair, but it is made, so we know. First, not equal to C."
+  },
+  {
+   "start": 3188.62,
+   "end": 3211.54,
+   "text": "Still, you don't have to do anything. st. push, what? c and 1. Because, first, it might be d, d is coming. Now, b has come. So, b is once. Okay, once. And continue. This is also a very good, happy path. Very, very happy to do this. Yes, now your worry has started. Now, if these two are not there. Now, if these two are not there. So, it means your stack is not empty. And your stack."
+  },
+  {
+   "start": 3211.95,
+   "end": 3242.14,
+   "text": "What is your stack? It is matching your top element. Now what will we do? Now you have to check whether the elements inside have been multiplied by k-1 times or not. If it is not k-1 times then it is good. You have to do if st.top.count is at the second position of the pair, is less than k-1."
+  },
+  {
+   "start": 3242.14,
+   "end": 3270.24,
+   "text": "Then it is fine. Then you just have to increase the count. What do you have to do? Increase the count. To increase the count, what you can do is that you remove it first and increase the count and insert it again. What does it mean? Your stack was looking like this. Suppose D and 1 were looking like this. You have to make this D1 D2. So what we will do is that we will remove this D1 first. Means we will pop it first. We will take it from the top and pop it from the top. After that, we will make it 2 here and insert it again."
+  },
+  {
+   "start": 3270.24,
+   "end": 3300.88,
+   "text": "We will insert it again. So, the thing will be the same. So, what we are doing? See. First of all, we will remove it. Pair of char int. P is equal to st.top. We have removed it. Now, we will pop it. Okay. Now, what will we insert? What will we push? st.push. Letter is same. Letter is same. Okay. So, what will we do? P.first. Means same. Or we can write c too. Because both are equal. Okay. And, P.second plus 1. P.second plus 1."
+  },
+  {
+   "start": 3301.3,
+   "end": 3329.57,
+   "text": "What does this mean? That's what it means. It was d1, we removed d1 and popped it. Then we inserted d2. The same thing happened, d1 became d2. Very good. And continue. Nothing to do. But if you have reached here, then this is the worst condition. This is the worst condition. It means that st is not empty either. The top of st and its character is the same. And it has become k-1 times 4. So what did you have to do? Nothing to do. st.pop. This is a useless element. Let's pop it. And yours?"
+  },
+  {
+   "start": 3329.57,
+   "end": 3360.78,
+   "text": "The loop is finished here. See, this is your loop. What is this? This is your loop. Come, let's make our result. After that, what did we write? String result is equal to this. What was the method of making the result? While my stack is not empty. First of all, remove your pair from the top. What was our pair? Care and int. P is equal to st.top. And don't forget to pop st. Otherwise, it will come in an infinite loop. Okay."
+  },
+  {
+   "start": 3360.78,
+   "end": 3383.3,
+   "text": "Last time we used to do rest.pushback st.top But this time it won't work You have to do this letter pushback But how many times? As many times as your count comes So it was a simple loop, run it more Here, inside this only, inside this only After this here, while You can do it like this that you p.second"
+  },
+  {
+   "start": 3383.3,
+   "end": 3409.49,
+   "text": "Minus minus. Whenever you have to run a particular number of count, suppose x is a variable, you have to do x times something. While writing x minus minus, it will happen. So we have to do p dot second. We have to do this many times. What? Rest dot, push back. What was it? p dot first. You will get that letter in p dot first. You will get that letter in p dot first. Close the while loop. Close the stack while loop. And in the last, return."
+  },
+  {
+   "start": 3409.71,
+   "end": 3430.0,
+   "text": "So look at this program, almost almost same as last program but it has a very good logic in it. So look at this. This is a pseudo code, C++ is a code, consider the rest of the language as a pseudo code. And you can see what 2-3 lines you have to change. Time complexity order of n, space complexity order of n."
+  },
+  {
+   "start": 3430.54,
+   "end": 3446.7,
+   "text": "So, these were today's three questions. Those who are watching till here, congratulations. You are very good kids. So, three questions, three problems. You have learned 80% of the stack. Nothing will happen tomorrow. Tomorrow, we will do the revision of the stack. And we will consolidate everything in one. Let's go. See you tomorrow with a very long video."
+  }
+ ]
+}

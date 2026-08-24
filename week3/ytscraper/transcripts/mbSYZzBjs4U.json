@@ -1,0 +1,429 @@
+{
+ "video_id": "mbSYZzBjs4U",
+ "title": "Most Asked Graphs Question in FAANG Interviews | Number of Islands Leetcode",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2269,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.15,
+   "text": "Before we start, there are two things. As you might have understood from the title, this exact question, this exact question is such a basic question and such a fundamental question. After doing this question, all these questions, Rotten Orange, Blast Radius, Surrounded, we will see further. You can consider this question as your parent question. If you get this, all these will become very easy. If you don't get this, all these will become very hard. This is the first thing. The second thing is, if we talk about graph, then graph is a hard topic. Graph, everyone knows that it is hard. But,"
+  },
+  {
+   "start": 29.15,
+   "end": 58.27,
+   "text": "In graph also, if you are asked to divide less hard, hard, very hard in this, then this type of question is considered easy in the matter of graphs. It is not easy, but now in graph, Dijkstra, MSU, all these come in hard topics. Bellman-Ford, all these are hard topics. Floyd-Warshall comes in very hard. You guys are still kids, you guys will not have experience now, or it will be 1-2 years, only those people will be watching. So when the question will be asked to you, then this type of question is more likely to be asked, if the graph is asked."
+  },
+  {
+   "start": 58.27,
+   "end": 86.3,
+   "text": "For example, in my Amazon interview for Software Engineer 1, this exact question was asked, Rotten Oranges. So, never expect that when a question is asked from a child, it is very rare that a Floyd Watson is asked. That means, if there is a person with a lot of knowledge, he will ask. Otherwise, if it is coming in the graph, then there is a 80% chance that you will be asked all these questions. So, it is very important that you understand this very well. And when we used to study this, we used to watch the video of Stryver to study this."
+  },
+  {
+   "start": 86.3,
+   "end": 109.15,
+   "text": "Now we saw the video of Stryver, in that we did the code but my code was very dirty. We will tell you dirty later, you will understand what dirty code means. So we saw that video completely and in that code, there was such a beautiful code, there was such a beautiful code, there was such a small trick. That trick, if we don't watch that video, then we don't understand. Then till now we would have taught you the same dirty code, you would have understood it too. That day we understood that"
+  },
+  {
+   "start": 109.15,
+   "end": 133.18,
+   "text": "It is very important to see the whole thing. At that time, we also thought that he is saying again and again that watch the whole video. We thought that we are sitting to watch your video and we have more work to do. No, when you watch the whole video, then it codes like an experienced person. We don't know where he learned from. It could be a competitive program. We learned from anywhere. It doesn't matter to us. But when an experienced person writes this code, there is a beauty in his code."
+  },
+  {
+   "start": 133.18,
+   "end": 160.1,
+   "text": "There are small things that you won't be able to learn. You won't be able to learn these things from ChatGPT or Claude. It's very small. A person learns it with time. The code that we are writing is very dirty. Whatever you write, there is nothing wrong in it. But it is very important to watch the video and learn that technique. To learn that technique and master it. You will see how easy and beautiful the code will be when you apply it. Let's start."
+  },
+  {
+   "start": 160.1,
+   "end": 190.03,
+   "text": "Number of island. So what does the question say? Let's quickly understand the question. The question says that you have a M into N. Take M into N or N into M. We like to take N into M. N into M. Grid is given. What is given? Grid. Grid means 2D matrix. 2D matrix. Okay. What is there in this grid? It is of character type. This matrix is of character type. Remember it is not of integer type. It is of character type. There are only two things in this matrix. There are only two types of things."
+  },
+  {
+   "start": 190.03,
+   "end": 216.85,
+   "text": "Either it has 1, not the number 1, but the character 1, okay? Because it is the matrix of the character. It will happen for some reason. Or 0, 0 also, not the number 0, but the character 0. Okay, there are two things. Okay, what do these two mean? Where 1 is written, it means land. It means land or land. And where 0 is written, it means water or water. Okay. What you have to do in this whole matrix, in this whole matrix,"
+  },
+  {
+   "start": 216.85,
+   "end": 245.14,
+   "text": "Number of islands to find. Island means tapu. Island means a piece of land that is surrounded by water. Again, island means a piece of land that is surrounded by water. Like, Andaman Nicobar is an island. Andaman Nicobar is an island. Lakshadweep is an island. Why is it an island? Because there is a land like this. This is Andaman Nicobar. And all around it,"
+  },
+  {
+   "start": 245.14,
+   "end": 264.38,
+   "text": "Water. It is not connected to the land. It is not connected to India. Sri Lanka. Sri Lanka is an island. It is a small island. There is a small island here. And all around it is water. So you have to find the number of islands like this. Now let's go ahead and see what to do and how to do it."
+  },
+  {
+   "start": 264.38,
+   "end": 293.78,
+   "text": "Let's talk about that slowly. Now, let's talk about what an island is. Let's assume that this is the input. How many lands do you see in this? See, there is a yellow land and there is water in it. So, you must be seeing 5 types of lands. If we try to see how many types of lands are visible in this, then you will have to read the question again. According to the question, you can say that there is only one island. The whole island means this. If we make this, someone will say that this is an island. See."
+  },
+  {
+   "start": 293.81,
+   "end": 323.84,
+   "text": "This is an island, so there is one island in it. No, there is not one island. Why not? The question tells you that the meaning of island, the question tells you the meaning of island clearly. How does it tell you clearly? Let me tell you. The question says, how can you make the island? You can add adjacent one. One means land, so you can group the adjacent land. Very good. You can make an island by grouping the land. But how should this grouping be? It should be in only four directions. Only in four directions. Which four directions? Up, down,"
+  },
+  {
+   "start": 323.84,
+   "end": 353.36,
+   "text": "Left and right means north, south, east, west. Diagonal is not allowed. Diagonal connection is not allowed. What is not allowed? Listen again. It is a very confusing concept. Listen carefully. What has the island told you? You can group the nearby lands. Then it will become an island. But this grouping should be in only these four directions. North, south, east, west. Up, down, left, right. Diagonal connection cannot be made. Now see, we will try to group here."
+  },
+  {
+   "start": 353.65,
+   "end": 379.98,
+   "text": "Look at this land. Who can this land be grouped with? Can this land be grouped with this? Yes, it can be grouped with this. Why? Because right is allowed. Can this land be grouped with the one below this? Yes, down is allowed. Can this land be grouped with the one on the left? Yes, it can be grouped with the one on the left. Can this land be grouped with the one on the right? Yes, it can be grouped with the one on the left. Can this land be grouped with the one on the right? Yes, it can be grouped with the one on the right."
+  },
+  {
+   "start": 379.98,
+   "end": 405.12,
+   "text": "Is it connected with this? No, it is not connected with this. Because this direction is a diagonal direction. Diagonal is not given. In the future, it may be said that diagonal is also allowed. But here, diagonal is not allowed. So, there is no connection between this one and this one. There is no connection. Now, look at this island."
+  },
+  {
+   "start": 405.12,
+   "end": 432.91,
+   "text": "Is it completely surrounded by water? Yes, there is water on the right. It has been said to assume that if you go outside the matrix, that is, if you go outside the matrix, assume that there is water outside. So there is water on the left side as well. There is water on the top as well, so obviously there is water. There is water on the right side as well and there is water on the bottom side as well. So did this 4-1 group make an island? Yes, it made an island."
+  },
+  {
+   "start": 432.91,
+   "end": 459.74,
+   "text": "So, your number of islands has become one. Now, let's look at the rest of the land. Basically, the question is that you have to make a part of any island for each land. And by doing this, you have to tell us the count of all the different islands that you will get. Look at this one. Is this one connected to any other one? Let's see. What is allowed for you? Up, down, left, right. Look. There is water in its up."
+  },
+  {
+   "start": 459.74,
+   "end": 489.84,
+   "text": "Iske right mein paani hai? Iske down mein paani hai? Or iske left mein paani hai? Kya ye van? Is van se connect ho sakta hai? Nahi ho sakta hai. Kyo? Diagonal allowed nahi hai. To chari direction allowed hai. Is van ke dekhiye. Charo direction mein kya hai? Paani hai. To kya ye van? Kisi bhi aur land se connected hai? Nahi connected hai. To ye van. Akela. Ye van. Akela ek island hai. Kya hai? Akela ek island hai. To aapke island mein ek aur jor gaya. Baaki ke land mein aayiye. Baaki ke land mein aayiye."
+  },
+  {
+   "start": 489.84,
+   "end": 519.2,
+   "text": "Come to this. Let's see. Can you go above it? Is there land above it? No, there is no land above it. Is there land on its left? No, there is no land on its left. Is there land below it? No. It is said that as soon as you go outside the matrix, there is water there. So, you can understand that there is water here too. But, is there land on its right? Yes, there is land on its right. So, are these two lands connected to each other? Yes, they are connected. Very good. Come to this land."
+  },
+  {
+   "start": 519.2,
+   "end": 548.54,
+   "text": "Is there water above it? Yes, there is water above it. Now, the left one is already connected. Is there water below it? Yes, it has gone out of the matrix, which means there is water. Is there water on the right? Yes, there is water on the right as well. It has gone out of the matrix, which means there is water. So, what happened? Both of these became one island. What? Both of these became one island. One more joined. Now, see. Is there any other land left which we have not seen yet? No, there is no land left. What is your answer?"
+  },
+  {
+   "start": 548.54,
+   "end": 576.72,
+   "text": "Your answer is 3. Your answer is 3. There are 3 islands. Which 3 islands are there? One island is this. One island is this alone. And one is these two. Why did this happen? Because in the land connection, diagonal connection is not allowed. If diagonal connection is allowed, then these two are one connected and these two are one connected. What is your answer? Your answer is 1. This entire island would have been one. But because diagonal is not allowed, you have 3 types of islands."
+  },
+  {
+   "start": 576.72,
+   "end": 598.43,
+   "text": "So, I hope you understood the meaning of this question. Basically, you have to group one or one represents the land. You have to connect with each other and after doing this, you have to count all the different groups and islands. This is the meaning of this question."
+  },
+  {
+   "start": 598.43,
+   "end": 626.54,
+   "text": "Now let me tell you what is the trick to solve any such question and what is the template. There is no need to think much in this. You have to do any such question in the same thing every time. So see, in any such question, what is the best idea to build intuition? What is the best example? Let me tell you. Suppose you are an explorer. What are you? You have come to search with Dora the Explorer. You can see this map from above. Are you sitting in a helicopter?"
+  },
+  {
+   "start": 626.54,
+   "end": 655.14,
+   "text": "From above, you can see the map. From above, you can see the country. There is land somewhere and there is water somewhere. You have to find out the number of islands. Now see. You will start looking from the beginning. You will start looking from this corner from the beginning. As soon as you see a land. What do you see? You see a land. Okay. What will you tell the helicopter? Take us down on this. Take us down on this. Okay. Let's assume that the helicopter took you down here. Very good. Now what will you do? Now you will start walking on this land."
+  },
+  {
+   "start": 655.14,
+   "end": 685.01,
+   "text": "You will start walking. In which direction? The direction you are told. Up, down, left, right. Till the time you can go. Till then you will go. See what you will do. Here. Assume you travel in this order. First where do you go? Up. Then down. Then left. And then right. You will start traversing the graph. See what you will do. You got off the helicopter here. Okay. Till now you know that it is zero island. Till now you know zero island. Okay."
+  },
+  {
+   "start": 685.14,
+   "end": 714.74,
+   "text": "Did the helicopter drop you here? Now what will you do? First you will try to go up. Can you go up from here? No, you can't. Because the graph will be finished. There is water there. You can't go. Very good. Down. Can you go down from here? Yes, you can go down. So where will you go? You will go down. And the islands you have already visited, you will mark them too. To remember. So that you don't go round and round. Remember. DFS, BFS. What did you use?"
+  },
+  {
+   "start": 714.74,
+   "end": 744.24,
+   "text": "Visited array. The island on which you have been visited once. You will keep marking it. How will you mark it? Mark it by doing anything. Mark it. You can't go from here. You have come down. Can you go down? Yes, absolutely. Why? Because down is 1. If down was 0, you couldn't go down. You don't have to go in water. You just have to stay on land. You have come here. Mark this too. Very good. Do the same thing here."
+  },
+  {
+   "start": 744.24,
+   "end": 765.42,
+   "text": "Now you are standing here. Should you go up from here? See, you can go up here. There is a 1 in up. But this 1 is already visited. You have already gone to this 1. So we will not go here. Once you have gone, then why will you go? Same Instagram example. When you have already seen, the whole graph works on it, on the visited area. Brother, you have already seen this, right?"
+  },
+  {
+   "start": 765.42,
+   "end": 793.73,
+   "text": "From here, it is down height. Now, if we go up from down, then we will keep doing this round and round. We will not go. Okay. Can you go down from here? No, you cannot go because there is water in down. What is there in down? There is water. You cannot go in water. Very good. Can you go left from here? No, you cannot go. If you go left, the matrix will end and it is said that where the matrix ends, there is water. So, you cannot go left. Can you go right? No, you cannot go. Go right. If you go right, then what will you do?"
+  },
+  {
+   "start": 793.73,
+   "end": 821.33,
+   "text": "Can you go to the right? Yes, because there is a forest on the right. You can travel on the land. So you reached the right. Again, what did you call this? You marked it as visited. You marked it as visited. This is also green. Very good. Do the same thing here. Can you go up from here? First let's see, can you go to the right from here? No, you can't. Left? You could have gone to the left. But the left one is already done. You won't go to the visited. Down? You can't go down. There is water. You can go up. You went up."
+  },
+  {
+   "start": 821.33,
+   "end": 827.57,
+   "text": "Now if you go, you come here. After coming here, what did you do again? You marked it green. Repeat the same thing."
+  },
+  {
+   "start": 827.57,
+   "end": 856.42,
+   "text": "Can you go up from here? No. If you go up, the matrix will end. You can't go. Can you go down from here? If you see down, you can go. But the down one is visited, so you came down. You won't go. You won't go back to visited. Can you go left from here? If you see, you can technically go. But the left one is also already visited. You started from that island. That means you have seen this island. You won't go. Can you go right? You can't go at all. There is water on the right. You don't have to go in the water. Okay?"
+  },
+  {
+   "start": 856.42,
+   "end": 885.76,
+   "text": "Now see, when you did this, you did this, you did this, you did this, you did this, you did this, you did this,"
+  },
+  {
+   "start": 885.76,
+   "end": 914.45,
+   "text": "What does this mean? That whatever you have covered, you have covered. Now you have come up in the helicopter. Meaning, whatever land has been covered, it is a part of one island. It is a part of one connected group. That is why you have covered it. If it was not connected, then how would you have covered it? Now you have come back in the helicopter. And you have done your counter, your counter or number of islands, what have you done? You have done 1 from 0. Because you saw a land, you jumped on that land."
+  },
+  {
+   "start": 914.45,
+   "end": 942.58,
+   "text": "Go and cover all the connecting lands around you. Go up, down, left, right. And mark them as visited. After that, what did you do? You increased your counter to 1. Very good. Now what did you do? Start looking back. Start looking back at this map. Is there any forest left that is not visited? Is there any land left that is not visited? Yes, there is. Which one? This land is left."
+  },
+  {
+   "start": 942.58,
+   "end": 962.56,
+   "text": "What will you say to the helicopter? Let us land on this land, we will explore this land and we will make an island out of everything in its connecting. What did your helicopter do that you landed on this land? First of all, what do we do? We mark it with green color that its work is done, we have visited it, now we don't have to come back here."
+  },
+  {
+   "start": 962.56,
+   "end": 986.94,
+   "text": "Now do the same thing. If you are an explorer, explore. Can you go up from here? Absolutely not. There is water in the up. Can you go down from here? Absolutely not. There is water. Can you go left from here? No, you can't. Can you go right? No, you can't go right. What will you do? You will do nothing. You will come back. What will you say to the helicopter? Pick us up. Now there is nothing left. You are stuck here. Come back and see."
+  },
+  {
+   "start": 986.94,
+   "end": 1010.38,
+   "text": "On top of that, all four of them got stuck. So here they got stuck in a single island. What does this mean? This is a single island. This is what island means. If you are dropped on an island and you are told that you don't want to go in the water, then you will get stuck on the same island. You don't want to go in the water. This is what happened to this man. This man came here and got stuck. Come back on the helicopter and"
+  },
+  {
+   "start": 1010.38,
+   "end": 1040.02,
+   "text": "Because this is only one island. What do you do to your counter? Increase one more. Now you have two islands counted. Do the same thing. Is there any such forest or such land left on the map that is not visited? There are many forests left. But their work is done. What does work mean? They have gone to some island. Is there any such forest that is not visited? Yes, there is. This one is left. And this one is also left. So we will take one by one."
+  },
+  {
+   "start": 1040.02,
+   "end": 1066.94,
+   "text": "What will they say to the helicopter? Brother, let us jump here. The helicopter jumped here. What will we do first? We will mark it green. Whose work is done? The same work. Try to explore from here. Can you go up from here? Absolutely not. There is water. Can you go down from here? Absolutely not. There is water there too. Can you go left from here? Absolutely not. There is water on the left too."
+  },
+  {
+   "start": 1066.94,
+   "end": 1090.22,
+   "text": "Can we go right from here? Yes, we can go right. Why? Because there is land on the right side as well. What will we do? We will go right and what will we do with this? We will mark it with green colour. Same exercise. Can we go up from here? No. Can we go down? No. Can we go left? Technically, we can go but the left side has been visited. So, there is no need to go again and again. You are an explorer. You like to go to new places."
+  },
+  {
+   "start": 1090.22,
+   "end": 1117.52,
+   "text": "What rides can you go? Absolutely not. What will you do? You are stuck here. You can't go anywhere else. What will you tell the helicopter? Call us back. And, and, because you have explored another island, you will add one to another. Now, look again. Is there any such forest in the map which is unvisited, which is not in green color? No, there is no such land which is not visited."
+  },
+  {
+   "start": 1117.52,
+   "end": 1147.1,
+   "text": "While doing this whole exercise, when you don't see any such land in the map, which is unvisited, how many answers did you get? Three. Which three islands? One, two, three. The connected components of this graph, or whenever you are told that a grid is given, there are so and so things, look and tell me how many people are connected, any similar question, this is the template of everyone. This works with intuition. What we said, that remove us from here, what are they removing?"
+  },
+  {
+   "start": 1147.1,
+   "end": 1176.38,
+   "text": "You are basically running a nested loop on this map or graph. As soon as you get a 1 which is unvisited, you do DFS on it considering it as a starting point. What does DFS mean? You consider it as a starting point and send it to a DFS function that now we have gone from 0 to 0. Why? Because this is land. After that, what does it mean to mark green? You write it in the visited array."
+  },
+  {
+   "start": 1176.38,
+   "end": 1193.44,
+   "text": "That my visited of 001 has been made. Means it has been visited. Very good. Now, what is the meaning of traversing? What does that mean? Now you can go from this 00 to where? Where can you go? You can go in four directions."
+  },
+  {
+   "start": 1193.44,
+   "end": 1220.93,
+   "text": "How will you know if you can go or not? If the matrix is over somewhere, you can't go. If water is coming somewhere, you can't go. If there is a forest somewhere, but that forest is visited, you can't go. When can you go? When there is a forest in that direction which is not visited, whose visited is zero. If this happens, then you go back to DFS. Is it the same?"
+  },
+  {
+   "start": 1220.93,
+   "end": 1248.99,
+   "text": "from Pratyush's profile to Deepika's profile, DFS from one node to another node, or from one box to another box. We are doing the same thing. So this is the complete intuition. We don't think it can be explained in a better way than this. This was a very simple and crucial explanation according to me. Now let's talk about code. Now we will show you the technique we were talking about. This seems very complex, but once you learn the technique or template,"
+  },
+  {
+   "start": 1248.99,
+   "end": 1278.64,
+   "text": "This will be a left handed game. Now let's talk about how to implement this type of code. The most important thing is that you learn this and everything else goes on this. How to go up and down? The most important part is that we have come to a map, we have come to a box. Now what is up, down, left, right? If we write it, it will go up. No, it won't go. Look, in DFS, whenever we were in any block, when your explorer told us to drop us on this block, what did you say?"
+  },
+  {
+   "start": 1278.64,
+   "end": 1303.42,
+   "text": "It will have some i and some j. It will have some x coordinate and some y coordinate. This is how 2D matrix is denoted. Let's assume that you are on the 1-1 block. First you have to check whether you can go in 4 directions or not. It is possible that you can go out of the matrix in 4 directions. If you don't go out of the matrix, then it is also a danger that there is no water there."
+  },
+  {
+   "start": 1303.42,
+   "end": 1332.4,
+   "text": "Now, it will be that, okay, 0 is not written, 1 is written. So, its visited, means you have to check a lot of things, then you have to go on it. So, how will we do this? Look, we will see what we will do. Now, let's go and see, from the 1, 1 block, from this middle block, go up, just above it. So, where will you reach? You will reach this block, means, 0, 1. You will reach 0, 1, okay. Left, not up, is it up? Try to go down, what? Try to go down, means, on this block. What is this block? 2."
+  },
+  {
+   "start": 1332.4,
+   "end": 1362.59,
+   "text": "1. Very good. Now, try to go left. Try to come here. Which block is this? 1, 0. And try to go right. Which block is this? 1 and 2. 1 and 2. See, a very important thing is happening here. What was your original i, j? 1, 1. You write up, down, left, right. You will get this coordinate. See, what is happening here? In this, you are going to i minus 1 and j. See, i becomes 0 from 1."
+  },
+  {
+   "start": 1362.59,
+   "end": 1386.83,
+   "text": "J is the same. In down, you are going to i plus 1 and j. i is 2 from 1 and j is the same. In left, you are going to i and j minus 1. See, i is the same but j is minus 1. Here was 1 and here was 0. In right, you are going to i and j plus 1. So see, either i is changing or j is changing. So this is your chart direction."
+  },
+  {
+   "start": 1386.83,
+   "end": 1416.32,
+   "text": "Now if you want, you can write it manually on any i, j. If you do this, this, this, this, then you will reach up and down. But that beauty comes here. What will we do? We will make an array. An x-axis array, an y-axis array. There will be 4 things in it. See which things will remain. Int x4 is equal to, see what will we write? i, in 4 directions, what all changes did i make? What all things were added in i? So see, instead of going up, you had to do minus 1 in i."
+  },
+  {
+   "start": 1416.32,
+   "end": 1443.14,
+   "text": "So, we will write minus 1 in x. To go down, you have to do plus 1 in i. So, we will write 1 here. To go left, how much do you need to increase in i? Nothing. Zero. So, we will write zero here. To go right, what will change in i? Nothing. Zero. This has become your x-axis. Make y-axis. For whom? For j. Look. To go up, what has changed in j? Nothing. Zero."
+  },
+  {
+   "start": 1443.14,
+   "end": 1473.14,
+   "text": "To go down, what changed in j? Nothing. 0. To go left, what changed in j? Minus 1. Means, minus 1 changed. Minus 1. To go right, what changed in j? Plus 1. So, 1. This is your y-coordinate. Now, whenever you have to find these 4, that, let's say, we are at 1, 1. We want to go in 4 directions. So, you see, run a small loop. Run a small loop. int k is equal to 0."
+  },
+  {
+   "start": 1473.14,
+   "end": 1501.6,
+   "text": "k less than 4, k++. After that, int, row is equal to i plus x of k. And column is equal to j plus y of k. What is happening with this? With this one loop, you will get this sub. See, when k is equal to 0, which element will you take? This one and this one. What will your row become?"
+  },
+  {
+   "start": 1501.6,
+   "end": 1528.56,
+   "text": "i plus x of k means i minus 1. What will be your column? j plus y of k means j plus 0, means j. So, did you get i minus j here? See, i minus 1 and j. If we do k is equal to 1, you will get this. If we do k is equal to 2, you will get this. If we do k is equal to 3, you will get this. So, from this one loop, you will be able to check all four directions. So, whatever work you want to do, do it on row column. It will see all four."
+  },
+  {
+   "start": 1528.56,
+   "end": 1557.66,
+   "text": "Now you must be thinking that why are we doing this much? We will write like this, right? We will write this. No. In some questions, diagonal is also allowed. It has 8 directions. It means north, east, south, west. North, east, north, west. There are many directions. 8 directions means right now you are just taking 4. You are taking this, you are taking this, you are taking this. In diagonal, more 4's are added. This one, this one, this one, this one. So this 4 will become 8. In that, it becomes very cumbersome."
+  },
+  {
+   "start": 1557.66,
+   "end": 1582.22,
+   "text": "In that, we will make it 8. And we will add more here. In that, we will not do anything. We will run it on 8. Do this calculation according to the direction you want to go. Write it in X and Y. What are you writing in X and Y? What change is happening to I? What is changing in I to go up? I is getting minus 1. So write minus 1 first. What is changing in I to go down? It is getting plus 1. So write plus 1."
+  },
+  {
+   "start": 1582.22,
+   "end": 1610.56,
+   "text": "Up, down, left, right. It is not necessary that you write like this. You make left, right, up, down according to that x and y. So this is a technique by which you can go. By which you can go in all four directions. Second thing. Second thing. It is possible that during this time you get out of the matrix. There are many possibilities. Suppose this is your matrix. This is your matrix. This one. Zero, zero. Suppose you have come from here. You have started from here. I is equal to zero. J is equal to zero."
+  },
+  {
+   "start": 1610.56,
+   "end": 1640.56,
+   "text": "Now, if you try to go left or up in this, if we try to go up in this, then what will be our row in up? What was the row in up? i minus 1 and j. What will it become? Minus 1 and 0. Does the array of minus 1 happen? No, it doesn't. What will happen? The program will crash. It can't go in the matrix. For this, write a small valid function. Write a valid function. This will be the work of valid. It will take four things."
+  },
+  {
+   "start": 1640.82,
+   "end": 1666.26,
+   "text": "It will take i, it will take j, it will take int n and int m. What is nm? The size of this matrix. Which i and j is valid and which i and j is non-valid? Let's see how we will tell. If i is less than 0. What is i? i less than 0 means invalid. Or i greater than equal to n. i greater than equal to n. Suppose this is the matrix. How many rows are there in total?"
+  },
+  {
+   "start": 1666.26,
+   "end": 1695.09,
+   "text": "There are 3 rows, so n is equal to 3. But where does your index go? It only goes to 2. Array, simple array, index. So, if i is 3, it is invalid. And, and, j less than 0, if your column is useless, if you go left from here, then you will come to 0 minus 1. It doesn't happen, it can't go. And, j greater than equal to m. If anything like this has happened, then you have left the matrix completely. Return false. Return."
+  },
+  {
+   "start": 1695.09,
+   "end": 1725.01,
+   "text": "If this is not valid, then we will not try to go here. Otherwise, return true. Otherwise, return true. So what is this? This is a valid function. What is this? Boolean valid. Boolean valid. So now when you will remove row and column here, now it is possible that row and column are valid. It is possible that you have gone out of the matrix. Simply check. If valid row column and m. This will tell you immediately. If this is valid, then only we will go ahead. If this is not valid,"
+  },
+  {
+   "start": 1725.01,
+   "end": 1749.78,
+   "text": "So, before doing anything, you should check if it is valid or not. You will have to do all these things in every question. You will have to make a story out of all these questions. It is a one-time thing. There is no rocket science in this. It is a one-time thing. You have to learn. No one has to think about it. No one can think about it."
+  },
+  {
+   "start": 1749.78,
+   "end": 1779.38,
+   "text": "Everyone learns this from somewhere and teaches further. We should also tell you this. Write code like this. Now let's move on to our code. All things will be cleared slowly. First of all, let's write our small functions. First of all, let's write our boolean valid. What did we say valid? It tells you that a particular i, j. Particular i, j means a particular box where you want to go. Is it valid? Is it valid or not? Int i. Int j. Int n."
+  },
+  {
+   "start": 1779.44,
+   "end": 1808.94,
+   "text": "int m. What did we say? If i is less than 0, and i is greater than or equal to n, and j is less than 0, and j is greater than or equal to m, then what do we have to do immediately? Return. False. This is not valid. Otherwise, if this does not happen, then it is valid. Return. Valid is written. Now, let's come to DFS. Let's write DFS function. What is the work of DFS function? DFS function starts from a box, and like Explorer,"
+  },
+  {
+   "start": 1808.94,
+   "end": 1838.53,
+   "text": "It tries to explore all the connecting land. What does connecting land mean? On which box do you explore? That box should not be outside the matrix. That box should not be written as 0. That box should be written as 1. And its visited should be false. That is when we go there. We write a small DFS function. Void DFS. What all will pass in this? First of all, the big matrix in this. The map given to you. The input given to you. This will pass."
+  },
+  {
+   "start": 1838.53,
+   "end": 1863.87,
+   "text": "After that, it has n and m. This is the size of this matrix. After that, int i and int j. Which box are you in right now? Which box have you just been taken down? That will happen. And a 2D Boolean visited array will pass. Visited array will pass. Why visited array? To keep track. Let's go. Come to DFS."
+  },
+  {
+   "start": 1863.87,
+   "end": 1892.32,
+   "text": "The first thing that an explorer used to do is to visit the land on which he is currently on. It is certain that you will come to the land. Make it 1. It is visited. It has been visited. You don't have to come back to it by mistake. Very good. Now what do we have to do? It is done. Now we have to explore. How do we have to explore? How do we have to explore? For. In all four directions, k is equal to 0. k less than 4. k plus plus. Yes. Let's make x and y at the top. Int. x."
+  },
+  {
+   "start": 1892.32,
+   "end": 1917.84,
+   "text": "4 is equal to, what was x? What did we make? What did we make? Minus 1, 1, 0, 0. Minus 1, 1, 0, 0. Let's make y. Let's make y. Let's make y. One minute. y4, what did we make in y4? Look from above. 0, 0, maybe it was minus 1. It came. Minus 1, 1. Yes, minus 1, 1. What does this tell us?"
+  },
+  {
+   "start": 1917.84,
+   "end": 1946.4,
+   "text": "To go in all four directions, in x and y, in i and j, what change is necessary? Simple thing is, run the loop till 4. Now int row is equal to i plus x of k. Simple. Column is equal to j plus y of k. Don't mess this up. The whole program will crash. Just watch it once. What is row column? Row column of all four directions. If you are on i and j, you will get row column of all four directions from this loop. What did we say?"
+  },
+  {
+   "start": 1946.4,
+   "end": 1970.67,
+   "text": "It is possible that it is not valid. Now we will check whether we should go DFS on this row column or not. First of all, is it also valid? Is it not that this row column came out of the matrix? Okay. If it is not valid, it will break here. Don't worry. And, and, and. Array of row column means"
+  },
+  {
+   "start": 1970.83,
+   "end": 2000.43,
+   "text": "Equal equal to 1. Write the character 1. Don't write the number. It will be wrong. Character 1. Is it 1? If it is 0, don't go. If it is 1 and visited of row column. Visited of row column equal equal to 0. It should not be visited. Then only we will go. If it is so, then you can go to DFS. In DFS, now pass row column instead of IJ. Pass row column instead of IJ."
+  },
+  {
+   "start": 2000.43,
+   "end": 2026.94,
+   "text": "n, m, row, column, visited. The row and column will be separated. The row and column will be again visited. After that, the same thing will be repeated from there. The same thing will be repeated. Until when? Until it is completely finished. And after it is completely finished, it will get stuck. After getting stuck, it will come back. Close this loop and return. Close this loop and return. This is your DFS function."
+  },
+  {
+   "start": 2026.94,
+   "end": 2058.45,
+   "text": "Let's come to the main, which is the lead code. What you have to do in that, see. Lead code tells you that num of island. And gives you a 2D matrix as input. Which is, oh sorry, this is a character type matrix. This is a character type matrix. This is a char matrix. Okay, remember. Vector of, vector of char A. Okay. What will we do? First of all, we will remove its size. n is equal to A dot size."
+  },
+  {
+   "start": 2058.86,
+   "end": 2089.6,
+   "text": "And this is the number of rows. Number of columns is equal to array of 0 dot size. Array of 0 dot size. This gives you the number of columns. Let's take one result variable. Result is equal to 0. Let's take two variables, i and j. After that, let's make a visited array. So, let's do one thing. Vector. Vector. Bool. Visited. Let's give its size as n. Now, in every n,"
+  },
+  {
+   "start": 2089.6,
+   "end": 2119.5,
+   "text": "We have to enter the matrix of m size. How do we do it? For i is equal to 0, i less than n, i plus plus. There is another Boolean vector in it. This is a 2D Boolean matrix. Vector of bool, t. What will be its size? m. And this whole will be false. Now what do we do? Visited of i is equal to t. This whole thing makes a 2D matrix. What is this? It makes a 2D matrix. 2D Boolean matrix will make"
+  },
+  {
+   "start": 2119.5,
+   "end": 2148.82,
+   "text": "And everything will be false in this. Everything will be false in this. You can make another syntax. Basically, you have to make this. Now what to do? Now come to your explorer. Explorer will see the whole map. As soon as he gets a block which is 1, which is land, and which is not visited, he jumps on it. And when he comes back, he makes the result plus plus. Because he must have got an island there. So what will the explorer do? He will look around the whole map."
+  },
+  {
+   "start": 2148.82,
+   "end": 2176.22,
+   "text": "will look around the whole map will look at every block from the loop will look at every block if he gets a block like this if array of i j equal equal to 1 land and it should not be visited and it should not be visited visited of i j equal equal to 0 what will he do?"
+  },
+  {
+   "start": 2176.22,
+   "end": 2205.58,
+   "text": "First of all, it will jump on it. A-N-M-I-J visited. It will jump on it. And after coming back, when this call will end, result plus plus. Yes, yes, yes. And in the last, return rest. See this. Quite a big code, quite a complex code. But this is the code and this is what you have to follow. This is the code of your main function. This is your DFS function, which also has valid. And this is your"
+  },
+  {
+   "start": 2205.58,
+   "end": 2231.04,
+   "text": "You can call these two direction arrays. Time complexity, n into m. Space complexity, n into m. Because you are using this visited array anyways. So space complexity, n into m. n means number of rows. m means number of columns. So you have learned these fundamental questions. We hope that this code is a bit complex. No doubt it is complex. You will have to do it yourself. Only then you will understand. But we did as much as we could."
+  },
+  {
+   "start": 2231.04,
+   "end": 2259.76,
+   "text": "We have explained it in simple language. That's why before writing the code, we have explained what we are doing. So that you don't feel that the same thing is happening in the code that we talked about. There will be a problem in the syntax. It will be solved gradually with time. Everyone has this problem in the graph. No one comes from above who doesn't have a problem in the graph. So you can see this. It is a big code. No doubt it is a big code. But now we have come to the graph. You have come to the advanced DSA. So you have to do all this. 10 lines of code will not work. So do this question."
+  },
+  {
+   "start": 2259.76,
+   "end": 2268.43,
+   "text": "If possible, try the number of provinces too. This is the only question. Use your brain a little. Otherwise, we will tell you in the upcoming video. Thank you very much for coming."
+  }
+ ]
+}

@@ -1,0 +1,439 @@
+{
+ "video_id": "stji3QvQ-OU",
+ "title": "Binary Search on 2D Array | Best Video On Binary Search DSA Patterns CPP Java Python",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2096,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 22.86,
+   "text": "So, the time is 1.47 in the morning. Not PM, AM. So, we thought of making a video for you guys. Because we were getting requests to do it quickly. So, you guys think that brother keeps sleeping but he doesn't. So, it's fine. Today, we'll do a 2D matrix question. It's a very important question. And it's important to watch this video completely. Because it might be the first solution that comes to your mind and the second doesn't. And..."
+  },
+  {
+   "start": 22.86,
+   "end": 42.9,
+   "text": "In a 20% interview, the first solution, which is a good solution, even if he tells you, he won't accept it. He will say, no, you don't have to do this, you do that. Why? Because he has remembered that. And a lot of people do what they do, they just increase the best solution. That's not the way to think. Then you can't think from that. Then someone tells you, yes, do this, do that. No. You first..."
+  },
+  {
+   "start": 42.9,
+   "end": 62.13,
+   "text": "You have to think about the bad one and the good one as well. Then you have to think about the good one. It is necessary to know the good one. But it is not necessary to know the good one directly. Then it will be that someone made you drink and made you do this and that. No. It is necessary to know the bad solution because it teaches you to think in such a question."
+  },
+  {
+   "start": 62.13,
+   "end": 84.0,
+   "text": "It is very important to think in this kind of question. Look carefully, the next 3-4 questions will be easy. If you understand this, if you don't understand, it will be very difficult. Fair warning. Listen to this whole question very carefully because this is the first question of matrix type. If you understand this question, then the next 3-4 questions will be very easy for you. If you don't understand this, then there will be a problem in the future that it is not coming, it will be like this."
+  },
+  {
+   "start": 84.0,
+   "end": 95.12,
+   "text": "So, till now we have seen binary search, then we have seen which array can be rotated, then we have seen which story problem can be created."
+  },
+  {
+   "start": 95.25,
+   "end": 118.45,
+   "text": "You have to do simple binary search You are given a matrix, matrix is a 2D array, you must have made it in maths And you have got x is equal to 33 Now you just have to tell whether it is true or false You have to search and tell whether 33 is present in this matrix Here you can see that it is present, so you have to tell true in it If we say that 34 is present, then you have to tell false This is the work"
+  },
+  {
+   "start": 118.67,
+   "end": 144.14,
+   "text": "The binary search we were doing on 1D array, now you have to do it on 2D array. But why is this binary search question? Because apart from this matrix, there is a very important thing about this matrix. If you see this matrix, you will notice that this matrix is sorted. How do you see this matrix? Every row is sorted."
+  },
+  {
+   "start": 144.18,
+   "end": 168.37,
+   "text": "Now, see, come to the first row. 1, 3, 5, 7, 10. See, the whole row is sorted. Second, 11, 13, 15, 20, 21. This is also sorted. 40, 43, 50, 52, 60. Every row is sorted. Means, every row. Very good. And, apart from this, every column is also sorted. Every column is also sorted. See, pick any column. 3, 13, 27, 43. 5, 15, 30, 50."
+  },
+  {
+   "start": 168.37,
+   "end": 192.43,
+   "text": "10, 21, 35, 60, every column is sorted. One more thing, we haven't seen such an easy question before. The last value of every row is smaller than the first value of the next row. What does this mean? If you see 10, then 10 is smaller than 11 of the next row."
+  },
+  {
+   "start": 192.43,
+   "end": 213.79,
+   "text": "If you see 21, then 21 is the first value of the next row, which is smaller than 23. If you see 35, then 35 is smaller than the next 40. It means that the whole matrix is sorted. Every row is sorted, every column is sorted, and the last of every row is smaller than the next row. So this is a perfectly sorted matrix. It is a very easy question. Come, let's see it."
+  },
+  {
+   "start": 213.79,
+   "end": 238.35,
+   "text": "Now what you have to tell, is it in 33 or not? Now you have to tell. Now this is the part to understand the question, as we said, you guys pause the video, try to do it yourself. Pause and try, if it happens, then come back because there can be more solutions to it. Come. Let's hope you guys have seen it by pausing, those who haven't seen it, we won't be able to catch you at home. Anyway, now what can we do?"
+  },
+  {
+   "start": 238.35,
+   "end": 264.46,
+   "text": "One simple solution is to search the entire matrix. What does it mean to search the entire matrix? You can do this, i is equal to 0, i less than n, and i++. And by running another loop, j is equal to 0, j less than m, and j++. And in this, you can do this, if array of i, j is equal to my target, then you can do this return true. Return."
+  },
+  {
+   "start": 264.56,
+   "end": 288.45,
+   "text": "True. This is very simple. Look at all the elements. Just like when you do linear search in an array, you search the whole matrix. 1, 3, 5, 7, 10, 11. Keep looking. Return where you get it. If you don't get it, then return false. What is its time complexity? It will be m into n. Which is m number of columns and its number of rows. So, this is linear search. We are not interested in doing linear search because we don't want to do linear search."
+  },
+  {
+   "start": 288.45,
+   "end": 318.14,
+   "text": "and no one will ask you to do linear search in the matrix in any interview ok, so this is a useless solution if you have this solution in your mind then it is a good thing but it will not be fun you will have to think of something else now see what we had read in binary search till now, let's see that so first of all, let's think that if 33 is in this matrix 33 you can see that it is there but think a little, think with me is there any way to find out in which row 33 will be?"
+  },
+  {
+   "start": 318.14,
+   "end": 334.78,
+   "text": "33, in which row will it be? Is this the way to find out? If it is, then in which row will it be? If not, then in which row will it not be? Is this the way to find out? Now, let's see the first row. Let's see the first row. Let's see the first row. Is 33 in the first row?"
+  },
+  {
+   "start": 334.78,
+   "end": 358.14,
+   "text": "It is possible. It is possible. It is possible means that if 33 is in this matrix, then can it be in the first row or not? So, you are getting to know that 33 is not in the first row. But how are you getting to know this? See, what you are told is that every row is sorted. Every row is sorted. Very good. And the last of every row is smaller than the previous one. Means, all the rows are perfectly sorted. Okay."
+  },
+  {
+   "start": 358.14,
+   "end": 382.18,
+   "text": "Means, in the first row, all the values are small. In the second row, all the values are slightly larger than that. In the third row, all the values are slightly larger than that. In the fourth row, all the values are slightly larger than that. Okay. If we write the range of all the rows. Range means, how much value is there in this row? How much value is there in this row? If we write the range next to it. If we write a range next to it, that in every row,"
+  },
+  {
+   "start": 382.18,
+   "end": 409.49,
+   "text": "How much value can there be? How much value can there be? Without looking at the whole row So what will we be able to write? That in the first row There are values from 1 to 10 Because the first one is 1 and the last one is 10 So you can immediately see and tell that from 1 to 10 In the second row, that is in index 1 There are values from 11 to 21 We can see that because the first value of the row is 11 and the last value is 21 So whatever happens, it will be 11 to 21 Because it is said that the whole row is sorted In the third"
+  },
+  {
+   "start": 409.49,
+   "end": 438.58,
+   "text": "It is between 23 and 35, and in the fourth, it is between 40 and 60. Now, what are you looking for? x is equal to 33. 33, can it be in this row? No, because it doesn't have a range. Its range is 1 to 10. Can it not be between 1 to 10? Absolutely not. Can it be in row number 1? No. Can it not be between 11 to 21? No, it can't be. Can this row number be in this one? In index 2? Yes, it can be, right?"
+  },
+  {
+   "start": 438.58,
+   "end": 462.61,
+   "text": "I don't know if it is there or not. It is possible. This row of 23 to 35, which is this row, it is possible. Maybe. Maybe. Why? Because it goes from 23 to 35. Can it be in this row? 40 to 60? It cannot be. It cannot be at all. Why? Between 40 to 60, 33 does not come. No. Not possible. Not possible."
+  },
+  {
+   "start": 462.61,
+   "end": 488.16,
+   "text": "so see, if 33 has to be there, then it will be in the same row, it can't be in every row, it can't be that 33 is in every row, so if it has to be there, then it will be in the same row, and it will not be in any other row, so if you find out in which row it can be, then you will know that in row is equal to 2, 33 can be there, once you find out this row number 2, then what is this row number 2?"
+  },
+  {
+   "start": 488.16,
+   "end": 517.23,
+   "text": "This is the only row that you will see. So this is a one dimensional array. How is this an array? This is an array. 23, 27, 30, 33, and 35. 0, 1, 2, 3, 4. This is a simple array. And this is a simple sorted array. Once you know this, what can you put in this sorted array? You can put binary search. Binary search means simple binary search. Low is equal to 0. High is equal to..."
+  },
+  {
+   "start": 517.23,
+   "end": 545.04,
+   "text": "by doing this you can apply binary search and you will get to know so this is an approach but how will you find this row? so let's talk about how we will find this row now we said to find this row so here we have written range whenge but how will we find this row in real? how will we find this row in real? so let's discuss how we will find this row? so what you have to do? you have to find the row"
+  },
+  {
+   "start": 545.04,
+   "end": 573.06,
+   "text": "in which there is a possibility of 33. Now see, even if you don't write the full range, if we ask you one question in each row, that in which particular row, how much greater value is there? Which is the smallest value in that row? So in row number 0, which is the smallest value possible? 1, because its first element is 1. In this one, 11."
+  },
+  {
+   "start": 573.06,
+   "end": 600.35,
+   "text": "Because its first element is 11. In this, 23. It has 23. And what is the smallest value of the last row? 40. Okay. Now, look at a pattern very carefully. Try to notice a pattern. What are we looking for? 33. 1 is less than or equal to 33. Yes. Yes. Yes. 11 is less than or equal to 33. Yes. 23 is less than or equal to 33. Yes. Yes."
+  },
+  {
+   "start": 600.35,
+   "end": 623.38,
+   "text": "But what is the answer to 40 is not equal to 33? No. Why? Because columns are also sorted. So 1, 11, 23, 40 are also sorted. That's why if you look at the first column to find the row, then you will know that yes, this row is less than or equal to 33."
+  },
+  {
+   "start": 623.38,
+   "end": 644.37,
+   "text": "11 is also less than or equal to 33. This is also S. 23 is also less than or equal to 33. This is also S. But, 40 is not greater than or equal to 33. Here, it is No. And, the number of columns below this, suppose, below this, there is another row. There are 4 rows in this. It is possible that there are 10 rows. So, you get to see something like this. Suppose, what is there in the next row? 70."
+  },
+  {
+   "start": 644.37,
+   "end": 668.61,
+   "text": "Is 70 smaller than 33? No. Next one is 80. Is 80 smaller than 33? No. So, you see, what pattern did you make? Monotonic pattern. Yes, yes, yes, yes, yes. Suddenly, one turning point, no. And all of them, no. And all of them, no. And in this yes one, in this yes one, what is the answer to your question? Last occurrence. What?"
+  },
+  {
+   "start": 668.61,
+   "end": 680.11,
+   "text": "Last occurrence. What is your answer? Your answer is last occurrence. Why is your answer last occurrence? Because see, what did the first row say? How many values do I have? From 1 to..."
+  },
+  {
+   "start": 680.11,
+   "end": 708.24,
+   "text": "10 values. What did the second row say? I have values of 11 to 21. What did the third row say? I have values of 23 to 35. And the fourth row said, I have values of 40 to 60. So immediately, as soon as you get a row, whose first value is greater than your target value, means 40 is greater than your 33. So if 40 is greater than 33, all the things will be greater than 33. So which row will you have to take?"
+  },
+  {
+   "start": 708.24,
+   "end": 721.26,
+   "text": "This row, just the first row, where the first value is less than or equal to 33. In that row, 33 can be there. Is it or not? It is not guaranteed. If you were searching for 34, then also you would have got this row. But it is not there."
+  },
+  {
+   "start": 721.26,
+   "end": 746.62,
+   "text": "It is possible. It is possible that in this yes row, which is the last occurrence where you are getting the first value less than 33, this 33 can be there. It cannot be in the rows after that. Why? Because if 40 is greater than 33, then all the values of that row will be greater than 33. So can we do binary search to find this row? Yes, we can. Why can we do it? Because it is monotonic. Yes, yes, yes, yes, yes."
+  },
+  {
+   "start": 746.62,
+   "end": 772.05,
+   "text": "Suppose you have a lot of rows. You have a row number index 0, then a row 1, then a row 2, then a row 3, then a row 4, then a row 5. What will happen in this? If you are looking for any target value, then if you see that the first value of this row, is my target value less or equal to it? Then you will get something like this. You will get some yes continuously. You will get some yes continuously. You will get yes here."
+  },
+  {
+   "start": 772.05,
+   "end": 800.03,
+   "text": "Suddenly, a row will appear, whose first value will be greater than your target. For example, 40 was greater here. And after that, you will get all 9. In which row are you interested? You are interested in the last occurrence of this yes. You are interested in the last occurrence of this last. So, can we apply binary search here too? Absolutely, we can apply it. Come, let us show you how we can apply it. Come, let us show you how we can apply it. Let's go."
+  },
+  {
+   "start": 800.03,
+   "end": 817.71,
+   "text": "So what are you interested in finding? First of all, you have to find the row in the matrix in which your 33 can be. We had thought of this as binary search. In binary search, first of all, we have low."
+  },
+  {
+   "start": 817.84,
+   "end": 843.65,
+   "text": "Which can be the smallest row? Which index can be the smallest row of your matrix? Obviously, it can be at 0. Where can be the highest row of your matrix? How many rows are there here? There are 4 rows. So, what will be the index of the last row? It will be 3. If I can't find you, this is called a row. And these are all columns. We assume that you have a matrix in maths. It happens in engineering. So, which is the highest in high?"
+  },
+  {
+   "start": 843.65,
+   "end": 864.54,
+   "text": "Now remember what we have to find. We have to guess whether it is less than or equal to our target. You will either get yes or no. We are looking for the last occurrence of yes. So first of all, what will you guess? 0 plus 3 will be 1."
+  },
+  {
+   "start": 864.54,
+   "end": 893.28,
+   "text": "Now, what are we checking for this row? The smallest value of this row. Where will the smallest value of any row in this matrix come? Array of row and 0. So, what will we guess? What is our array of guess? Because our guess is row and 0. Because its first, is it less than or equal to 33? So, see, 11. Is 11 less than or equal to 33? Yes. What is the answer? Yes. And how did your guess answer look like? Yes, yes, yes, yes. After that, no, no, no, no."
+  },
+  {
+   "start": 893.28,
+   "end": 919.18,
+   "text": "So where are you standing now? You are standing somewhere here. So what did we do for the last occurrence? We used to write this in the answer and go to the right and see. Because if this is yes, then the left one will not answer at all. The right one, it is possible that the answer will be there. So we used to go to the right and see. But we used to write this. What did we do with this? We will write this in our row that row is equal to guess. Now what has become your row? Now your row is 1. And what did we do?"
+  },
+  {
+   "start": 919.18,
+   "end": 937.49,
+   "text": "We will check the right. How did we go to the right? Low is equal to guess plus 1. Low is equal to 1 plus 1 is equal to 2. Now, in the next iteration, low is equal to 2. And the height will remain the same. 3 will come. What will be the guess? Guess is equal to 2 plus 3 by 2. 2. Okay. So, will we do the same thing? What is our array of 2?"
+  },
+  {
+   "start": 937.49,
+   "end": 962.72,
+   "text": "What is 0? It is less than or equal to 33. Yes, 23 is also less than or equal to 33. What will we do? Whatever is our row, row is equal to guess, which is 2. So, what is your row here? From 1 to 2. Okay, and we will go right. And what will we do? We will go right. Low is equal to guess plus 1. Guess what is? 2 plus 1 is 3. And high will remain 3. What will be the next guess?"
+  },
+  {
+   "start": 962.72,
+   "end": 973.42,
+   "text": "3. What is the area of 3 and 0? This one, 40. Is 40 bigger than your 33? No, no, no. 9 came. If 9 came, where would you have gone?"
+  },
+  {
+   "start": 973.42,
+   "end": 994.53,
+   "text": "Go left, if you get no, then you have to find yes, the last doctrine of yes. If you get no, then you will go left. How did you go left? High is equal to guess minus 1. Next time, when you do low is equal to 3, and high is equal to, what will happen? 2 will happen, so now your game is over, because greater than high is over. What is your row? In which row is there hope to get 33? Row number 2. Row number 2 means not second, index 2."
+  },
+  {
+   "start": 994.53,
+   "end": 1013.6,
+   "text": "So now you can see that 33 is in this row only. So with binary search you can find the row. What can you do? You can find the row. Very good. You got the row once. Which row did you get? 2. Yes, one more thing. Suppose you are finding 0."
+  },
+  {
+   "start": 1013.6,
+   "end": 1036.8,
+   "text": "Just for example, you are finding 0. In this, you will see in any row, 0 is not there in this matrix because the first person of every row is greater than 0. 1 is also greater than 0, 11 is also greater than 0, 23 is also greater than 0, 40 is also greater than 0. In this case, you will not get the answer because the entire answer space is no. In this, you will not get the answer. In this, your row is..."
+  },
+  {
+   "start": 1036.8,
+   "end": 1063.95,
+   "text": "That will remain minus 1. If after doing this, your row remains minus 1, it means that it is not in your matrix. It cannot be. It cannot be at all. So, what do you have to return? False. But if you get a row, you get a row, like you have got a row number 2. Now, it is simple. Now, you have to find out that row number 2 will be 33. Now, what do you do? Consider this row as an individual array and put binary search in it. What do you do in this? Put binary search. Come, this row,"
+  },
+  {
+   "start": 1063.95,
+   "end": 1087.68,
+   "text": "Let's make this row bigger. 23, 27, 30, 33, 35. So what is this row? This is my 23, 27, and what else? 30, 33, 35. 30, 33, and 35. Okay? Column. What is the column of this? 0, 1, 2, 3, 4. What have you got? Row is equal to..."
+  },
+  {
+   "start": 1087.68,
+   "end": 1117.07,
+   "text": "Sorry, row is equal to 2. Means this row. We have to put binary search in this. Means consider it as a single array. And put binary search in this. How will we do? Low is equal to 0. High is equal to 4. What will be your guess? Middle one used to come. So guess will be 2. But this is matrix, not array. You are considering it like array. So how did you put binary search earlier? Array of guess is equal or not or less. Now in which row are you checking? You are checking in row of row. What will you do?"
+  },
+  {
+   "start": 1117.07,
+   "end": 1143.06,
+   "text": "If the array of rho and your guess, what is it? Is it equal to x? Return true. If your array of rho, whatever the guess is, is less than x, means you need a big value. Where will you get a big value? You will get it in the right. So what you do is, low is equal to guess plus 1. Else, high is equal to guess minus 1. So what are we doing here?"
+  },
+  {
+   "start": 1143.06,
+   "end": 1162.58,
+   "text": "We are doing a simple binary search. First of all, we are looking for the row. There is no need for a whole matrix. It can be a very big matrix. There is one lakh rows in it. We have to pinpoint which row it is possible to be in. Once that row is pinpointed, then that row box is also an array. It is a simple array. How are we applying binary search there? In this way."
+  },
+  {
+   "start": 1162.58,
+   "end": 1186.34,
+   "text": "like this, so what row are we always considering? row index 2, we are always in this one, in this one, in this one array, we are applying binary search, okay? first of all, we apply complete binary search and find the row, row number 2 comes, after that, considering this as an array, considering it as a sorted array, here we are applying binary search, here we are applying binary search, okay? this is done,"
+  },
+  {
+   "start": 1186.34,
+   "end": 1215.25,
+   "text": "One solution. This is a perfectly acceptable solution in any interview. But it is possible, it is possible that it won't happen anywhere. So let's find out why it won't happen anywhere. Right? So let's quickly make a matrix because... Let's make a small matrix again for you guys. Okay? Let's go. Now what will we do? See, this is a very important trick. 1, 2, 3, 4. 1, 2. Excuse me for drawing. Drawing is not good. 0, 1, 2, 3."
+  },
+  {
+   "start": 1215.25,
+   "end": 1241.62,
+   "text": "0, 1, 2, 3, 4. There are 4 rows and 5 columns. Let's quickly fill the value. 1, 3, 5, 7, 8. 10, 12, 13, 15, 20. 21, 25, 27, 33. And what should we do? 35. We can fill anything. Keep it sorted. Fill anything. 38, 40, 42, 44, and 45. Okay?"
+  },
+  {
+   "start": 1241.62,
+   "end": 1269.86,
+   "text": "You want to find what? You want to find x is equal to 33. So, now we have found the row, then we have put binary search in the row, then it is fine, but we have put binary search twice. In total, how many binary search did we put? Twice. Twice. Why? To find the row once, and to do binary search in the row once. But you might be saying in the interview, do it in one binary search. Do it in one, don't put binary search twice. Okay. If, imagine one thing. See, what is matrix? If you put this matrix,"
+  },
+  {
+   "start": 1269.86,
+   "end": 1299.09,
+   "text": "Start reading this matrix row-wise. What does row-wise mean? First you read row number 0, then you read row number 1. This is called row-wise order. In computer architecture, row-wise and column-wise is there. So row-wise. Computer generally reads row-wise. If we read it row-wise and write all its values flat, then it is a matrix. What do we do? We read it row-wise. Let's read the first row and write its value in lines. 1, 3, 5, 7, 8. Done. Second. 10, 12."
+  },
+  {
+   "start": 1299.09,
+   "end": 1326.77,
+   "text": "13, 15, 20. Okay? 21, 25, 27, 33, 33, and 35. Done. Again, 38. Make it smaller. 38, 40, 42, 44, 45. We have written all of them in a row. We have written all of them in a row in our copy. By writing it flat. Notice very carefully. Is it flat?"
+  },
+  {
+   "start": 1326.77,
+   "end": 1338.22,
+   "text": "Can't you see a sorted array? Can't you see a flat sorted array? Yes, you can see it. That's why you are given things like matrix is row-wise sorted."
+  },
+  {
+   "start": 1338.22,
+   "end": 1367.54,
+   "text": "The first person of every row, the last person of every row is less than the first person. And every column is also sorted. So when you write the matrix completely flat like this, then it will become a sorted array. So this can be a trick that you put the whole matrix in a vector. Put it in such a vector. From where to where will the index be made in this vector? From where to where will the index be made in this vector? It will start from 0 and how many things are there in this matrix? 5 into 4 is equal to 20 elements. Why? Because there are 4 rows and 5 columns."
+  },
+  {
+   "start": 1367.54,
+   "end": 1385.54,
+   "text": "How much is the last index? It will go till 19. And put binary search in this array. If it is 33, then it will be in this array. In this array, you put low is equal to 0 and high is equal to 19. If you put binary search here, then also you will get the answer. Then also you will get the true and false answer."
+  },
+  {
+   "start": 1385.54,
+   "end": 1415.47,
+   "text": "Okay, so this is a good solution, you are applying binary search only once. What are you doing in this? You are reading the whole matrix and putting the matrix in a vector and applying binary search on the sorted array above the vector, then your work will be done. But there are a lot of problems in this. What is the problem in this? First of all, to make this vector, you will have to read the whole matrix. To read means you will have to put a loop on the whole matrix. So m into n happened there. So when m into n happened there, then your work is ruined. Don't go towards binary search. Your work is ruined."
+  },
+  {
+   "start": 1415.47,
+   "end": 1444.66,
+   "text": "And to make a vector, you need another space. Means, already you had a matrix. To make an array, you need another space. So, this work is bad. This work is bad. So, with a trick, with a trick. What trick? We will tell you what trick we will do now. See. Remove this vector. Remove this vector. Okay. Do what you used to do in the vector. What did you do in the vector? What did you do? That you used to take low is equal to 0. And, what did you take high is equal to? 19. How did 19 come?"
+  },
+  {
+   "start": 1444.66,
+   "end": 1472.98,
+   "text": "20 minus 1. Why 20? Because row is 5 and column is like this. Okay. What is your guess? If you had guessed, what would you have guessed? 0 plus 19 by 2 which is 9. Okay. Now 9. This is one index. When you were looking at 1D array, you had one index. But this is a matrix. This is a matrix. Matrix doesn't have one index. Matrix has two indexes. So from this one index, from this 9 index, we have row and column which is in this matrix."
+  },
+  {
+   "start": 1472.98,
+   "end": 1498.42,
+   "text": "What does it mean to say? When we say 9, how does 9 come? 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. 9 means this one. Which one? 1 and 4. So, with the help of this 9, just by looking at this 9, can we get this 1 and 4? Let's see, let's try to get it."
+  },
+  {
+   "start": 1498.54,
+   "end": 1526.02,
+   "text": "So, let's do one thing. We write all the indexes. And we also write the row and column of the corresponding matrix. And we see if there is anything in it or not. So, where will we start? From 0. So, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. And 10, 11, 12, 13, 14, 15, 16."
+  },
+  {
+   "start": 1526.02,
+   "end": 1554.21,
+   "text": "70, 80, 90. This means that there is a base element in the whole matrix. So, in your 1D array, there would be 0 to 19. And after that, we write in the row and column that what does it actually represent? What is there in the matrix row and column? So, what will 0 say? That it is 0 and 0. Okay. It is 4, right? What will 1 say? Keep a little patience. It will be clear. Keep a little patience. It will be clear. It will say 0 and 3."
+  },
+  {
+   "start": 1554.21,
+   "end": 1584.14,
+   "text": "0, 1, 2, 3, and what will this be? 0 and 4, okay? Now the first row is over, the first 0 is over, from the next one, 1 will start. So what will happen in the next one? 1 and 0. This will also be from 0. 1, 1. What will this be? 1, 2. What will this be? 1, 3. What will this be? Last one, 1 and 4. Now row number 1 is also over, now row number 2 will start. So let's start 2. Where will every row start from? It starts from 0 column."
+  },
+  {
+   "start": 1584.14,
+   "end": 1614.03,
+   "text": "So this will be 2, this will be 1, this will be 2, this will be 2, then 13 will be 2 and 3, 14 will be 2 and 4. Now 2 is over, 3 will start. This will be 3 and 0, 16 will be 3 and 1, 17 will be 3 and 2, 18 will be 3 and 3, and this will be 3 and 4."
+  },
+  {
+   "start": 1614.03,
+   "end": 1635.36,
+   "text": "we have written all the indexes what is in row and column our main problem is that we want to find out from 9 what is in row and column so from here you can see what is 9 it is 1 and 4 which is also there 1 and 4 1, 4, 20 it is that now what is the number of rows in this number of rows is 4 and what is the number of columns in this"
+  },
+  {
+   "start": 1635.36,
+   "end": 1666.03,
+   "text": "In this matrix. Now see. What pattern do you see? What pattern do we see? That every row starts. And it goes to 0, 1, 2, 3, 4. So what is this? These are rows equal to 0. Then this comes. And these are rows equal to 1. Then from here to here. These are rows equal to 2. And the last 5. These are rows equal to 3. Meaning."
+  },
+  {
+   "start": 1666.03,
+   "end": 1692.46,
+   "text": "0, 1, 2, 3, 4 means these things. What does 0, 1, 2, 3, 4 give you? It always gives you rho is equal to 0. What does 5 to 9 give you? It always gives you rho 1. What does 10 to 14 give you? It gives rho is equal to 2. And what does 15 to 19 give you? It gives rho 3. What is happening here? If this number, if this number, if this index"
+  },
+  {
+   "start": 1692.56,
+   "end": 1708.48,
+   "text": "If we divide it by the number of columns, then we get rho. Look carefully. Pick any index. Pick 14. Divide 14 by the number of columns. Divide it by 5. What is the answer? 2."
+  },
+  {
+   "start": 1708.48,
+   "end": 1732.93,
+   "text": "14 is in which row? It is in 2. So, do you know the row by dividing? Yes. And how will you know the column? Any index, any index, do modulus of 5, you will know the column. See, 14 modulus 5, what is 4? Is 14 row number 2? Yes. Is 14 column 4? Yes."
+  },
+  {
+   "start": 1732.93,
+   "end": 1762.13,
+   "text": "so we know that if we divide any index by a column then we get to know its row and if we divide any index by a column then we get to know which column it is in so did your problem get solved completely? yes your problem got solved completely now you can use this trick and do such thing that whatever you thought that we will put binary search on 1D array you can put it on this matrix in reality how can we do it? let me show you how can we do it? let me show you"
+  },
+  {
+   "start": 1762.13,
+   "end": 1789.44,
+   "text": "So, now see, in your 1D array, what could be the smallest index? Low is equal to 0. What could be the largest index? High is equal to 19. Guess what came? 19 came, okay? 19. Which row and which column is there in the matrix? How did you know? Sorry, not 19, 9, 9, sorry, not 19, sorry, my bad. 9, okay? 9, which one was there? See, which one is 9?"
+  },
+  {
+   "start": 1789.44,
+   "end": 1793.07,
+   "text": "How will 1 and 4 come? How will we know its row?"
+  },
+  {
+   "start": 1793.07,
+   "end": 1821.47,
+   "text": "9 by 5 is equal to 1. How will we know its column? 9 modulus 5 is equal to 4. So, now instead of array of guess, you can check array of row column. What will be array of row column? 20. Is 20 equal to your 33? Is 20 equal to 33? No. Is 23 less than 23? Yes, it is less. Where did we go in less? Right, low is equal to guess plus 1. Low is equal to guess plus 1. Come, low is equal to 10. What is your low equal to?"
+  },
+  {
+   "start": 1821.47,
+   "end": 1847.6,
+   "text": "10. Now, what is rho equal to? 10. Very good. Come, let's run it once more. What is low equal to? 10. And high was 19. High was 19. Guess what will come? 10 plus 19 by 2, 29 by 2, 14. Guess what you got? 14. How did you know 14? 14 by 5, what will you get? Rho. So, how will you get rho? 14 by 5, 2. How will you get column?"
+  },
+  {
+   "start": 1847.6,
+   "end": 1874.3,
+   "text": "14 modulus 5 is equal to 4. Means, array of 2 and 4. Where is array of 2 and 4? 35. This is 35. Is 35 equal to 33? No. Is 35 less than 33? No. It is more than 35. Where to go? To the left. High is equal to guess minus 1. High is equal to guess minus 1. So, what is your high? What is your high? 13. Very good. Your high is 13. What is your guess? 10 plus 13 by 2."
+  },
+  {
+   "start": 1874.3,
+   "end": 1903.66,
+   "text": "10 plus 13 by 2 means 23 by 2. What does 23 by 2 mean? 11. Guess is equal to 11. How will we know which row it is in? 11 by 5. 2. 11 modulus 5. 1. Array of 2 and 1. Array of 2 and 1. 25. 25 is less than 33. Go to the right. Low is equal to guess plus 1. Low is equal to guess plus 1. 12. Now what will be the guess? 12 plus 13 by 2. 12. How will we know 12? Row and column. Similar logic."
+  },
+  {
+   "start": 1903.66,
+   "end": 1933.15,
+   "text": "12 by 5, 2. 12 modulus 5, 2. Array of 2, 2. Array of 2, 2. 27. This is also less. Go further. Make low to 13. Guess what will become? 13 will become. How will we know which row is in which column? Similar logic. 13 by 5, 2. 13 modulus 5, 3. Array of 2 and 3. Array of 2 and 3. 33, 33. Did you get 33? Yes."
+  },
+  {
+   "start": 1933.15,
+   "end": 1961.5,
+   "text": "return true. So by using this trick, without converting the matrix to 1DRA, we can assume that the matrix is in 1DRA. And by using this simple trick, how can we know the row and column of an index? This is how you can do it. This is how you can do it. Let's see it. Its code is simple. We will give its code in the comments. We will give both the codes in the comments. So you can see that its code is simple. There is nothing in its code."
+  },
+  {
+   "start": 1961.5,
+   "end": 1992.37,
+   "text": "In its code, what you have to do is, first of all, see, int n is equal to a dot size, what is this? Its number of row is m is equal to array of 0 dot size. Okay, and I got it. Int low is equal to 0, high is equal to n into m minus 1. Okay, just start while,"
+  },
+  {
+   "start": 1992.43,
+   "end": 2024.21,
+   "text": "Low less than equal to high. Int guess is equal to low plus high by 2. Now what to do? We have to find out rho. First of all, how to find out rho? Guess by m. Int column is equal to guess modulus m. If array of rho and column."
+  },
+  {
+   "start": 2024.21,
+   "end": 2051.42,
+   "text": "equal equal to, whatever our x is, return true. If array of row, column, less than x, low is equal to, guess, plus 1. Else, high is equal to, guess, minus 1. Close it. If you don't get anything in the last, return."
+  },
+  {
+   "start": 2051.42,
+   "end": 2071.47,
+   "text": "False it. The work is over. What is its time complexity? What is its time complexity? What is the time complexity of binary search? What is its order of n? But when the size of the array was n, what is the size of your index? The size of your index is n into m. So what will happen? Log of log of n into m."
+  },
+  {
+   "start": 2071.47,
+   "end": 2095.02,
+   "text": "This will be done. Why? Because the size of the array is the same. You are going from 0 to 20, from 0 to 19. So how did it come? It came by doing 4 into 5. What was 4? It was n. It was 5. So what did we do by using this small trick? This is the solution in an optimal way. So do code it. Do it in both ways. The row one should also come. That is, take out the row and then take out the column. And this should also come. Okay? See you tomorrow."
+  }
+ ]
+}

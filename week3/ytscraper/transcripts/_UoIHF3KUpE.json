@@ -1,0 +1,339 @@
+{
+ "video_id": "_UoIHF3KUpE",
+ "title": "Better Than STRIVER ! LCA in Binary TREE Explanation with Intuition",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1662,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 26.06,
+   "text": "We don't actually say this in the video that mine is better than them because we think they also teach very well. But this video, whatever else it is, this is a very vague explanation. Why are you saying? Let me tell you. This is the code that they taught. If you ask ChatGPT Claude today, you will get the same code. It looks very simple to see the code, but we give you this code as a challenge. You go and watch their video. Their lecture is 29 of the tree series."
+  },
+  {
+   "start": 26.06,
+   "end": 50.58,
+   "text": "We will forget it by tomorrow. We will forget it by tomorrow. I have done 10 interviews so far. Before every interview, we used to read this. Before every interview, we used to read this. We used to remember this. Today, when we went to study, we forgot this. Because this is not a code to understand. This is not an intuition. So, we don't know how people read this. Why do they read this? But there are a lot of comments in them that this is one of your best videos. Look at the explanation and write the code immediately. Obviously."
+  },
+  {
+   "start": 50.58,
+   "end": 77.84,
+   "text": "If we also start teaching that if it is like this, then do it like this, then do it like this, then do it like this, then do it like this, then do it like this, then do it like this, then do it like this, then do it like this, then do it like this, then do it like this, then do it like this, then do it like this, then do it like this, then do it like this,"
+  },
+  {
+   "start": 77.84,
+   "end": 107.5,
+   "text": "It is easy to explain to someone. And the one who remembers, I mean, who doesn't have to sit and think that this is good, then do this. Look at the code in this, read it, you won't understand anything. This is a ridiculous code. So watch the video, you yourself understand what we are talking about. Now you may think that it is not looking good. But look at this once, look at this once, my one. You yourself will understand what we are saying. Let's start quickly. So first of all, let's explain the meaning of LCA to you. LCA means Lowest Common Ancestor. So as you can see, we take the example of a company. This is a very good example to understand."
+  },
+  {
+   "start": 107.5,
+   "end": 129.47,
+   "text": "Now see, what does LCA mean? See, what is the company like? There is a CEO, there are some people in it. If you are asked that LCA of Director 1 and Engineer 2, tell me the LCA of these two, then LCA means that these two will have some common boss. What will happen to these two? There will be some common boss. Okay. What is the lowest common boss among them? What does this mean? I will tell you."
+  },
+  {
+   "start": 129.47,
+   "end": 157.6,
+   "text": "There must be a common boss between Director 1 and Engineer 2. What does common boss mean? From Director 1, CEO is the root here. So try to go to the root from Director 1. If you go to the root from Director 1, then first you will reach CFO. After going to CFO, then you will reach CEO. Do the same work from Engineer 2. When you go up from Engineer 2, you will go towards CEO. From Engineer 2, you will reach Manager 2."
+  },
+  {
+   "start": 157.6,
+   "end": 167.22,
+   "text": "from manager 2 you will reach to director 2 and from director 2 you will reach to CFO and from CFO you will reach to CEO so pay attention if we tell you that"
+  },
+  {
+   "start": 167.22,
+   "end": 191.71,
+   "text": "What is the lowest common boss in PATH? The lowest common boss is the CFO. Which means, which person in the company is the boss of Director 1 and Engineer 2? The lowest common boss in the company is the CFO, who is the boss of both of them in some way. Now you will say that the CEO is also the boss of both of them. Yes, see the CEO too."
+  },
+  {
+   "start": 191.71,
+   "end": 214.03,
+   "text": "CEO is also the boss of Director 1. And CEO is also the boss of Engineer 2. But is CEO the lowest common boss? No, it is not the lowest. Who is the lowest? CFO. Is there any person of lower level than CFO? No. If you say Director 2, then Director 2 is the boss of Engineer 2. Very good. But Director 2 is not the boss of Director 1. Director 2 is not the boss of Director 1."
+  },
+  {
+   "start": 214.16,
+   "end": 241.57,
+   "text": "So which is the lowest person in the company who is the boss of both? So if you look at that, you will only get CFO. Because if you look at CFO, CFO is also the boss. And in some way or the other, Engineer 2 is also the boss. So who is the lowest person in the company? CFO. If I ask you who is the highest common boss? Obviously CEO. CEO is everyone's boss. So CEO becomes everyone's common. So hopefully you will understand lowest common ancestors. Who is the lowest person in the tree who is the boss of both? Yes."
+  },
+  {
+   "start": 241.57,
+   "end": 263.55,
+   "text": "One more thing is written that every person is their own boss. Means if you catch any person, then it is believed that Director 2 is the boss of Director 2. Means every person is their own boss. So if someone asks you, for example, if someone asks you that who is the LCA of Engineer 2 and Director 2? Not Director 1, Director 2."
+  },
+  {
+   "start": 263.55,
+   "end": 292.05,
+   "text": "And who is the LCA of Engineer 2? So do the same thing. Which is the lowest person in the company who is the boss of Director 2 and Engineer 2? In that case, you will get that what will be their LCA? Director 2 will be the boss. Why? Because look, Director 2 is his own boss. Every person in the company is his own boss. Engineer 2 also has a Director 2 boss. So who is the lowest person who is the boss of both? Director 2."
+  },
+  {
+   "start": 292.05,
+   "end": 321.74,
+   "text": "CFO is also the boss of both, but CFO is not the lowest. CEO is also the boss of both, but CEO is not the lowest person. So who is the lowest person in such a company? Who is the boss of both of them? So what will you get to know? Who is the lowest common boss of Director 2 and Engineer 2? Director 2. So you have to find this and return it. We call this LCA. So what do we call this? LCA. So to solve this question, let's play a game. What game do we play? We will not do all the algorithms like that. You don't have to remember anything. Okay? That you remember all your life."
+  },
+  {
+   "start": 321.74,
+   "end": 350.4,
+   "text": "What we will do is, we will ask every person of the company, how many people's boss are you? What do you have to find out in this? You have to find out the boss of Director 1 and Engineer 2. So any common boss should be the boss of two people. It means that he should be the boss of both. So he will have to be the boss of two people. So what do we do? We ask every person, how many people's boss are you among these two? How many people's boss are you among these two?"
+  },
+  {
+   "start": 350.4,
+   "end": 368.18,
+   "text": "So there can be three answers to this question. Either you are not the boss of these two people or you are the boss of zero people like CMO. If you ask CMO that how many people are the boss of director 1 and engineer 2, he will say that we are not the boss of anyone because these people are not below me. Remember, what does boss mean?"
+  },
+  {
+   "start": 368.18,
+   "end": 394.43,
+   "text": "If a person comes below you, then you are his boss. If he doesn't come below you, then you are not his boss. If he is in another department, then you are not his boss. CMO is not the boss of these two. Why? Because there is no one below CMO. So CMO is not the boss of anyone. So either someone can say that we are the boss of zero people. Okay, okay. So this cannot happen. Or someone can say that we are the boss of one of the two. For example, if someone asks Director 2 that you are..."
+  },
+  {
+   "start": 394.43,
+   "end": 417.58,
+   "text": "director 1 and engineer 2, how many people's boss are there? So, he will say that if one of these two people comes below me, then we are one's boss. So, it is possible that someone says one. It is possible that someone says that we are both's boss. For example, if someone asks CFO, that brother, you are director 1 and engineer 2, how many people's boss are there? So, he will say that both come below me. Below means, they come somewhere, right? So, we"
+  },
+  {
+   "start": 417.58,
+   "end": 438.98,
+   "text": "We are the boss of 2. So, there can be only 3 answers. Apart from this, how many people are the boss of 2? Either the boss of 0, or the boss of 1, or the boss of both. Very good. Come to every person and let's write this. There is no algorithm for this. Let's write by looking at ourselves. There is no harm in looking at ourselves. So, let's start from the bottom. Engineer 2."
+  },
+  {
+   "start": 438.98,
+   "end": 462.64,
+   "text": "How many are the boss of Director 1 and Engineer 2? We said that every person is their own boss. There is no one below Engineer 2. But Engineer 2 is his own boss. So what is the answer of Engineer 2? That we are the boss of one person. Because there is only one. Director 1 is not the boss. So the answer is 1. So can this be your answer? No, this is not your answer."
+  },
+  {
+   "start": 462.67,
+   "end": 491.39,
+   "text": "Engineer 1, Engineer 2 and Director 1, how many of them can be the boss? No one can be the boss because neither Engineer 1 is one of them nor does anyone come below him. So he will say that we are the boss of 0. What will he say? That we are the boss of 0. No problem. Let's go further. On whom should we go? Manager 2. Manager 2, how many of them are the boss? One. Look carefully. Director 1 and Engineer 2. How many of them come below him? One person comes."
+  },
+  {
+   "start": 491.39,
+   "end": 512.46,
+   "text": "So, Manager 2 will say that we are the boss of one person. How many are the boss of Manager 3? Zero. No one is the boss. No one is the boss. No one is the boss. You can see that no one is the boss. No one comes below these two. Very good. How many are the boss of Director 2? One. One. Who is the boss of Director 2? Engineer 2 comes below him. Director 1 does not come below him. So, his boss is this."
+  },
+  {
+   "start": 512.46,
+   "end": 539.5,
+   "text": "No, he is not the boss. No problem. How many bosses does manager 1 have? He is the boss of 0. No one comes under manager 1. Very good. How many bosses does director 1 have? Director 1 is the boss of 1. Why? Director 1 is his own boss. Director 1 is his own boss. But engineer 2 doesn't come under director 1. So, how many bosses does director 1 have? One. Because he is his own boss. Every person is his own boss. So, he can say that we are the bosses of one person. So, he is the boss of one person."
+  },
+  {
+   "start": 539.5,
+   "end": 559.5,
+   "text": "CFO is the boss of two people."
+  },
+  {
+   "start": 559.5,
+   "end": 588.26,
+   "text": "They both come somewhere. Director 1 comes on the left side of CFO. Engineer 2 comes on the right side of CFO. So how many people's boss is CFO? Two people's. Two people's. CFO is the boss of two people. Very good. CMO. How many people's boss is CMO? Zero. They both don't come under CMO. So CMO is the boss of zero people. How many people's boss is CEO? Two people's. Because they both don't come under CEO. Director 1 comes on the left side."
+  },
+  {
+   "start": 588.26,
+   "end": 615.71,
+   "text": "Engineer 2 comes from somewhere on the right side. So, how many people are the boss of CEO? Two people. Two people. Very good. Yeah, you have made it. Okay. Now, what will be your answer? See, what will be your lowest common boss? Which is the boss of two people. Boss means the same. Lowest common means the boss of both. So, the one whose value is not 2, that can't be the answer. The one whose value is not 2, means he is not the boss of two people. So, how can that be the answer? It can't be. So, this."
+  },
+  {
+   "start": 615.71,
+   "end": 634.05,
+   "text": "These are all useless answers. Which two are you seeing? You must be seeing CFO and CEO. Both of them have the value of 2. Both of them have the boss. Who is the lowest among these two? CFO is the lowest. So what should be your answer? CFO."
+  },
+  {
+   "start": 634.05,
+   "end": 661.94,
+   "text": "It means that this works. If you have any such method, then this works. You can find the lowest like this. And there is no need to remember anything in this. It is a natural thing. We have said a natural thing. But now a very dangerous thing comes out. How will we remove this thing? Here you have seen and told that it does to two people. It does to one. It does to zero. So how will we remove it? With recursion. With recursion. See. What have we said? Whenever you are thinking something like this, how will we do it? Take a small tree. Take a small tree. CEO. CFO."
+  },
+  {
+   "start": 662.32,
+   "end": 686.86,
+   "text": "And CMO. This is your tree. Let's assume that you are in CEO. Let's assume that your node is stuck on CEO. Okay. You have to find out that CEO out of these two people, out of these two people, who is the boss? So CEO can do one thing. First of all, what will CEO do? He will ask CFO. First of all, this left is equal to"
+  },
+  {
+   "start": 686.86,
+   "end": 716.35,
+   "text": "He will ask the CFO that you tell me how many people you are the boss of. What will the CFO ask the CEO that you tell me how many people you are the boss of. Let's assume that the CFO will tell him that we both are the boss of one person. We are the boss of one person out of these two directors. Very good. Right. He will ask the CMO. He will ask the CMO that CMO, how many people are you the boss of? So what will the CMO tell him? Let's assume that the CMO will tell him that we are also the boss of one person. We are also the boss of one person. Let's assume that someone will come under the CFO. Someone will come under the CMO. Very good."
+  },
+  {
+   "start": 716.35,
+   "end": 745.66,
+   "text": "Now, look at this. If the CEO himself is the person whom we want to remove, meaning every person is their own boss, then is the CEO himself the person whom we want to remove? So, we can do this that if CEO equal to P equal to Q, which you have to remove two nodes of two people, is the CEO himself theirs or not? If so, then we will see. Total, how many people does the CEO boss? Self plus left plus right."
+  },
+  {
+   "start": 745.66,
+   "end": 771.3,
+   "text": "Again, look at the example. This is not a code, I am just explaining. CFO was asked that how many people can be bossed by Director 1 and Engineer 2. So what did CFO do? CFO first asked his left child that how many people can be bossed by you. What did left child tell him? He will tell him magically that we are the boss of one person. Because Director 1 is his own boss. So what did left child tell him?"
+  },
+  {
+   "start": 771.3,
+   "end": 791.23,
+   "text": "One person's boss. Very good. CFO also asked his right child, Director 2, that how many of these two people's boss are you? Director 2 told him that we are also one person's boss because Director 2 is the boss of Engineer 2. So what did the right child tell him? The right child also told him that we are also one person's boss. Very good. Now CFO will see that are we self, are we..."
+  },
+  {
+   "start": 791.23,
+   "end": 815.36,
+   "text": "Are we one of these two? Are we one of director 1 or engineer 2? Then he will say that we are not one. We are not one. There is no CFO. The CFO does not come in the two people you want to remove. So self means that are we alone? Can we boss ourselves? No, we cannot do that. So what will be the value of its self? Zero. Now, how many of these two can be bossed? Left plus right."
+  },
+  {
+   "start": 815.36,
+   "end": 836.85,
+   "text": "Plus self plus self means how many people can be bossed by the left of CFO? One person. How many are under the right of CFO? One person. If CFO is not one of them, then he is zero. Total, how many people can be bossed by CFO? Left plus self plus right. How much is the total? Two. He does it like this."
+  },
+  {
+   "start": 836.91,
+   "end": 861.86,
+   "text": "If you want to know how many people are below me, then you can just ask the one below that how many people are you bossing? You can just ask the one below that how many people are you bossing? You can just ask the one below that how many people are you bossing? You can just ask the one below that how many people are you bossing? You can just ask the one below that how many people are you bossing? You can just ask the one below that how many people are you bossing? You can just ask the one below that how many people are you bossing? You can just ask the one below that how many people are you bossing?"
+  },
+  {
+   "start": 861.86,
+   "end": 884.85,
+   "text": "As soon as we find on any note that its value is 2, then we will write it in the answer. Because you want the lowest answer. We will tell you what will happen. There is a small code, we will do a small dry run. We will write a small function. What will happen in this? Three things."
+  },
+  {
+   "start": 885.23,
+   "end": 913.98,
+   "text": "First of all, the current node, the node we are looking at now. Okay. I will give you two more things in the question. P and Q. I mean, who do you want to remove? Who are these two people? Like we said that director 1 and engineer 2, so that is P and Q. Which two people do you want LCH? Very good. So first of all, if you assume that node is equal to null. Node is equal to null. If node is null, then how many people can it boss? Zero people. Who will null node boss? It will not be able to boss anyone. Return. Return."
+  },
+  {
+   "start": 913.98,
+   "end": 943.14,
+   "text": "Zero. Who will be bossed by Null? Null will not boss anyone. Return is zero. Very good. Now, the main thing comes. First of all, ask the child on the left how many people you can boss. How will you ask? By calling the same function. Ask the child on the left of the node how many people you can boss. Then it will add you to the left. Ask the child on the right. Ask the child on the right also that how many people you are the boss of. Then it will tell you how many people we are the boss of."
+  },
+  {
+   "start": 943.14,
+   "end": 971.92,
+   "text": "How will it tell you? With recursion. With magic. It will tell you. Assume that it tells you. What is CFO? When you are on CFO, assume that director 1 and director 2 will tell you. Assume. Just assume. It will tell you. Now, self means, are you one of P and Q? Are you one of P and Q? So, you can make yourself the boss. So, you should give one pair. What will we do? That int self is equal to 0. Okay. And if node"
+  },
+  {
+   "start": 971.92,
+   "end": 1001.55,
+   "text": "equal equal to p and node equal equal to q means you are not one of p and q so if this is the case then self is equal to 1 you can boss one suppose you are on director 2 now on director 1 so director 1 is one of these two so self will come in director 1 because director 1 can do it himself okay after these three things total total how many can you boss out of these two int total total is equal to what will happen left"
+  },
+  {
+   "start": 1001.55,
+   "end": 1022.18,
+   "text": "Plus self. Plus right. Yes. Total means how many of you are in a state of bossing P and Q. So, those who are on the left, those who are on the right. And self. And self. So, if you see the example of CFO. So, what happened in CFO? The answer of left came 1. Because director gave 1, 1. The answer of right also came 1."
+  },
+  {
+   "start": 1022.18,
+   "end": 1048.19,
+   "text": "So what will be the total? 1 plus 0 plus 1, 2. So CFO can do 2 people. As soon as you get if, if total equal equal to 2, means this is the right answer, this is the good answer, this can do 2 people. What was it? The answer that can do 2 people is possible, that lowest common boss is there. But lowest common is needed. But what is needed? Lowest common. So when you..."
+  },
+  {
+   "start": 1048.19,
+   "end": 1072.93,
+   "text": "If you meet such a person for the first time, because how does recursion go? Recursion goes from bottom to top. How does recursion go? Recursion starts from here. See, recursion starts from CEO. But how does it go? It goes from bottom to top. So what will we do? We will take a variable here. Node star. Oh, sorry, my that fell down a little."
+  },
+  {
+   "start": 1072.93,
+   "end": 1097.63,
+   "text": "So we will take a variable, node star answer is equal to null. Node star answer is equal to null. It is a global variable. So as soon as you get total 2 and as soon as you get the first node with total 2, that is your answer. First node, first node. Because it is possible that there are a lot of nodes which are the boss of both the people. CFO also has an answer. CEO also has an answer. But what is the answer? Lowest. So if you get the first answer, then and."
+  },
+  {
+   "start": 1097.63,
+   "end": 1126.7,
+   "text": "Answer equal equal to null. Even now if the answer is null. Means for the first time. You have found a person. Who can manage two people. So answer is equal to node. This is your answer. Everything is done. After that what do you do? Return total. Return total for your superior. Return total. And close. And close this. See this code. See this code. We will show it by running. We will show it by running. But see this code once. What is happening in this code. I will tell you again."
+  },
+  {
+   "start": 1126.7,
+   "end": 1156.51,
+   "text": "Our target is to see how many people out of p and q are in the state of bossing. For that, first of all, let's see that if this is null, that is, if there is no man, then how many people will he boss? Then you will boss 0. After that, we ask from the left side that how many people do you boss? Same function, recursion. So here we will get some answer. This answer can be anything, 0, 1, 2, anything. We ask from the right side that how many people are you in the state of bossing? So it says anything, 0, 1, 2, anything."
+  },
+  {
+   "start": 1156.51,
+   "end": 1166.34,
+   "text": "After that, we see that self means that if this node is one of p and q, then you have to make self one because every node is in a state of bossing itself."
+  },
+  {
+   "start": 1166.34,
+   "end": 1187.44,
+   "text": "Let's find out how many out of p and q can be the boss of this node. So what will be the answer of left plus self plus right? Either 0, or it doesn't boss anyone. Either 1, or it bosses one person. Either 2, or it bosses both. If its answer is 2, then it can be your answer, but..."
+  },
+  {
+   "start": 1187.44,
+   "end": 1210.93,
+   "text": "You need lowest common ancestor. That's why we write answer equal equal to null. Answer equal equal to null means you have got such a node for the first time. You have got such a person for the first time. You have got such a person for the first time. You have got such a person for the first time. You have got such a person for the first time. You have got such a person for the first time. You have got such a person for the first time. You have got such a person for the first time."
+  },
+  {
+   "start": 1210.93,
+   "end": 1238.91,
+   "text": "Because then the answer is not null, then something will happen to the answer. So the first time we get the second person, we note the answer as equal to. Very good. After that, return total. For what? For the upper. What is this total? This is the total that when you did this left, when you took out this left, then the answer came from somewhere, right? This is the answer to send it up. This answer. This answer has nothing to do with the real answer. The real answer will come in your answer. What does the total tell? That how many people do we boss? It tells our upper one. So that it is easy."
+  },
+  {
+   "start": 1238.91,
+   "end": 1268.66,
+   "text": "Once we do dry run, everything will be clear. Once we do dry run, everything should be clear. This is my hope. So let's make a small one. 1, 2, 3, 4, 5, 6. Okay? Your LCA, your P is 4 and your Q is 6. Meaning these two. These two. You have to get the lowest common boss of these two. So by looking, we are getting to know that the lowest common boss of both will be 2. Both are bossed by 2. But let's see if it happens or not."
+  },
+  {
+   "start": 1268.66,
+   "end": 1296.29,
+   "text": "Let's see if it works or not. So first of all, write an answer is equal to null above. Please note that this is not written inside the function, but outside the function. Global variable above the function. Global variable. Write answer is equal to null. Now let's call it. Let's call it directly. Where do we start from? Where does the recursion start? It starts from the root. So this is the root. Come, let's call it. So first of all, if we call, then it will be fun. And node is equal to 1. It will be p or q, we are not writing. Node is equal to 1."
+  },
+  {
+   "start": 1296.29,
+   "end": 1326.32,
+   "text": "Okay? Is the node null? No, the node is not null. So, first of all, left and right used to come out. So, its left will be fun. Node is equal to 2. And its right will be fun. Node is equal to 3. Come, let's go to node is equal to 2. Node is equal to 2. Let's go to 2. How to write recursion? Come, let's write here. Fun of 2. Okay? Fun 2. Is 2 null? No, 2 is not null. Very good. So, left is equal to fun of 4."
+  },
+  {
+   "start": 1326.96,
+   "end": 1356.0,
+   "text": "And right is equal to fun of 5. Okay? Let's go to 4. Let's go to 4. Fun of 4 has come. Is 4 null? No, 4 is not null. Now, do left. So now see, what is the left child of 4? The left child of 4 is null. The left child of 4 is null. And the right child of 4 is also null. So left and right both are calling null in a way. Okay? What is the result of calling null? What is the result of calling null? We return 0. Because how many people will the null boss? It will boss 0 people."
+  },
+  {
+   "start": 1356.0,
+   "end": 1382.0,
+   "text": "So, what will be the answer of both? 0 and 0. But, we are on 4 now. Self, remember, self is equal to 0. What is checked on self? Is 4 itself P and Q? Yes, 4 is P. 4 is itself P. So, at least 4 can do itself, right boss? Yes. So, self will not be 0. What will become self? 1. Because 4 will do itself, right boss? Yes. What will be the total of 4?"
+  },
+  {
+   "start": 1382.0,
+   "end": 1410.8,
+   "text": "What is the total of 4? Left plus right plus self. Means 0 plus 0 plus 1. Total is 1. Okay. So are we interested in the total is equal to 1 note? No, we are not interested. Because the total of lowest common boss should be 2. Both should be the boss. So we are not interested. Not interested means we don't want to update the answer. And where will we return its total? To this. So what is its answer? 1. Whose answer is 1? Okay. Same thing. Right is equal to fun 5. So let's call fun 5. Call fun of 5."
+  },
+  {
+   "start": 1410.99,
+   "end": 1440.32,
+   "text": "Okay, so first of all, what will we do? Left is equal to fun of 5's left child, fun of 6. And what will happen to right? 5's right child, which is not there. 5's right child is not there at all. Fun of null, no problem. Fun of 6 is there, so let's run fun of 6. Run fun of 6 here. Run fun of 6. Fun of 6, see, left and right are not there. So what will happen to left? If you call null, then left will get 0. Right will also get 0 because left and right are not there. But what is 6? Self."
+  },
+  {
+   "start": 1440.32,
+   "end": 1470.19,
+   "text": "Is 6 one of P and Q? Yes, 6 is one of P and Q. Why is it 6? Why is it 6? It means that 6 can manage itself. So, what will be its self? 1. What will be its total? 0 plus 0 plus 1 is equal to 1. So, are we interested in total 1? No, total 1 cannot be. Answer should be total 2. Okay, it cannot be. But, it will be return total. So, what is the answer of fun 6? 1. Where will it go? It will go here. The answer of fun 6 is 1."
+  },
+  {
+   "start": 1470.29,
+   "end": 1498.8,
+   "text": "Okay, the right answer in fun 5 will be 0. Okay. Self. Is it 1 out of 5 p and q? If it is not 1 out of 5 p and q, then its self will be 0. No problem. What will be its total? 0. 1 plus 0 plus 0. 1 will come. So, are we interested in this? This answer can be there. No, this answer can't be there. Total 2 should be there. No problem. Where will the answer of fun 5 return? Here, directly. 1. What was the answer of fun 5? 1. So, total. Return total is 1. Now, look. Come to 2. In 2,"
+  },
+  {
+   "start": 1498.8,
+   "end": 1518.62,
+   "text": "What will be self? Is 2 one of p and q? No, it is not one of p and q. So, self will be 0. But, what is the total of 2? Left plus right plus self. 1 plus 1 plus 0. 2. Yes, 2. We are interested in 2. What did we write? If total is equal to true. Very good. The answer can be. And,"
+  },
+  {
+   "start": 1518.62,
+   "end": 1548.61,
+   "text": "Answer equal equal to null. So, is the answer null now? Yes, the answer is null. Meaning, is there a person for the first time in which we got total 2? Yes, for the first time. Till now, no one got total 2. For the first time, total 2 has come in this. So, what will we do? Answer is equal to node. So, what will come in the answer? Whatever is in 2. Whatever. Your answer has become 2. Very good. Answer has become 2. Now, what will 2 do? Return total. So, what will return do? Return 1. So, where will it go? It will go straight here. 2. Return 2. Sorry, return total."
+  },
+  {
+   "start": 1548.61,
+   "end": 1575.94,
+   "text": "Return 2. Total return is 2. Now see, write is equal to fun of node is equal to 3. We have come to node 1. Now we have to call write. So what will be the answer of node 3? We don't want to do that much now. Let's see how many people 3 can boss. 4 or 6. No one. Because nothing comes below 3. It won't boss the inner ones. No one comes directly below 3. So the answer of 3 will be 0. Again, when you take out the total of 1, what will come? 2."
+  },
+  {
+   "start": 1575.94,
+   "end": 1605.06,
+   "text": "Because if we look at it in one way, then 1 can also pass 2 people. Because somewhere it is coming below 1. But because our answer is not null now, we were saying that 2 people can get total 2. If our answer is not null now, then we will not update the answer. 1 is total 2, very good. But 1 is not lowest. We have already got 2. We will not update the answer. And what will happen? Return 2 will go to your main function. Lastly, what you have to do?"
+  },
+  {
+   "start": 1605.06,
+   "end": 1616.46,
+   "text": "Return answer. This is less. Main one. What came in answer? 2. Is lowest common ancestor really 2? Yes, it is really 2. Yes, it is really 2. So, you will see this code."
+  },
+  {
+   "start": 1616.46,
+   "end": 1645.74,
+   "text": "Now you tell me honestly, did you feel that you didn't understand anything in this code? Or you won't remember anything, you will forget it by tomorrow, it will never happen. You will remember it for the rest of your life because it is a very natural thing. If we teach you the code in which we didn't understand the root in so many years, we also correct it before every interview. So that's why we don't want to teach it because if we teach it now, we will forget it tomorrow. We will forget it the day after tomorrow, you will forget it tomorrow. That's why we don't like it. The code that we don't understand completely, we don't teach it because it is not good."
+  },
+  {
+   "start": 1645.74,
+   "end": 1661.85,
+   "text": "So, do this and make it. It may be a little irregular video because we are sitting at home and you can watch it. So, make it and submit it. Watch this video. If possible, like it. Let's meet in the next session."
+  }
+ ]
+}

@@ -1,0 +1,294 @@
+{
+ "video_id": "YkM-xfnZ4DY",
+ "title": "DP in 15 Days Episode 12 : LCS In 20 Minutes",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1424,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 8.74,
+   "text": "Today's question is the longest common sub-sequence."
+  },
+  {
+   "start": 8.74,
+   "end": 36.51,
+   "text": "Common. Now see, the longest common subsequence is a very easy question. If you are still watching the DPC series, then it won't take much time. In 10-15 minutes, everything will be done. From recursion to tabulation, everything. So see, first of all, let's explain the question. What does it mean? NCS means longest common subsequence. What does this mean? That you will be given two strings. Whenever you will talk about common, then common, two or more things will be there. What is common? One thing is not common. So you will be given two strings. For example, one string is A, B, C."
+  },
+  {
+   "start": 36.51,
+   "end": 57.62,
+   "text": "D and E. This is your one string. Okay? 1, 2, 3, 4, 5. 0, 1, 2, 3, 4. The second string that is given is, for example, A, C, E. Okay? A, C, E. 0, 1, 2. Now, what does LCS mean? First of all, sub-sequence. We have explained what sub-sequence is in the previous video. Sub-sequence means that you..."
+  },
+  {
+   "start": 57.68,
+   "end": 85.23,
+   "text": "What is the meaning of a sub-sequence in a string or an array? Let's say your string is hello. This is it. Now, what is a sub-sequence? If you want, you can take h. If you want, you can leave e. If you want, you can take one l. If you want, you can leave the next l. If you want, you can take one o. So, what is hlo? A sub-sequence. What is a sub-sequence? You can also do this. You can leave h, take e, leave both l and take o. What is this? A sub-sequence."
+  },
+  {
+   "start": 85.23,
+   "end": 101.25,
+   "text": "In sub-sequence, order should be maintained. I am saying again and again that order should not be done here and there. Suppose you write O and E. This is not sub-sequence. Order should be maintained. You can take someone or not. That is called sub-sequence."
+  },
+  {
+   "start": 101.25,
+   "end": 126.98,
+   "text": "What does the longest common subsequence mean? That you have two strings, okay? In both, you have to find a common subsequence. For example, suppose you make a subsequence of this and write that its subsequence is ABC. Is ABC a subsequence? Absolutely. ABC is its subsequence. Suppose you write its subsequence as CE. Okay, this is also a subsequence. But, are these two a subsequence? No, they are not a subsequence. Someone wrote,"
+  },
+  {
+   "start": 126.98,
+   "end": 149.97,
+   "text": "A, E. Is this its sub-sequence? Yes, it is. Someone wrote, this is also A, E. Is this its sub-sequence? Yes, it is. You take A in this, take E in this, take E in this, take E in this. Are these two the same? Yes, these two are the same. So, what happened? Common sub-sequence of both the strings. What happened? Common sub-sequence. Now, what is its length? The length of this A, E you made, what is its length? Its length is 2."
+  },
+  {
+   "start": 149.97,
+   "end": 170.08,
+   "text": "Its length is 2. So you can say that 1 can be a common subsequence of 2 lengths. But can it be more than 2? Or is it 2 maximum? No. You can also do this. In this array, you can do this. What did you do? What did you make with A, C and E? Sorry. What did you make with A, C and E? A, C, E. And?"
+  },
+  {
+   "start": 170.08,
+   "end": 192.9,
+   "text": "Take the whole string of this. Take this too. Take this too. Take this too. So, what is it? A, C, E. Here also, it is A. Are these two subsequences the same? Yes. It means that these are common subsequences. And what is its length? Its length is 3. So, when you are asked in these two strings to tell the length of the longest common subsequence, then what do you have to do? You have to return 3."
+  },
+  {
+   "start": 192.9,
+   "end": 219.86,
+   "text": "There are a lot of common sub-sequences. You can also make a from this and make a from this. But what is the length of this? 1. You can also make ac from this and make ac from this. What is the length of this? 2. But what do you have to return? The sum of the longest possible. What is the sum of the longest possible? You have to return 3. How much do you have to return? 3. So this is the question that you have to return the length of the longest sub-sequence. Is it correct? Did you understand? Let's move on."
+  },
+  {
+   "start": 219.89,
+   "end": 248.34,
+   "text": "Now, how to solve this? I understood the question, but how to think of solving it? Where did its thinking come from? Look, suppose these two strings are ACB and ABB. You must be knowing what LCS is in it. In this, LCS will become this. If you... Oh, what is happening? Yes, sorry. If you do this, suppose we take this string, and if we do this thing, that make AB in both. AB can come in both. How can it come? We will take this and this from this, and from this,"
+  },
+  {
+   "start": 248.34,
+   "end": 275.44,
+   "text": "What will we take? This and this. If both of them become A and B, then 2 will be its answer. But how will that 2 come? What will we have to do? Look, in this, you can think that these are two strings. Suppose these two strings are kept separately. Two people, two different people went and stood at the beginning of both the strings. For example, one person stood here. This person's name is I. One person stood here. This person's name is J. Did you understand this much? Okay. Now, what will I and J do?"
+  },
+  {
+   "start": 275.44,
+   "end": 301.71,
+   "text": "i and j will shout out the name of their letter. Here i will shout out that listen, I have A. j will also shout out that listen, I also have A. If you tell me one thing, A and A are common, then this should be included in your answer. What do you want to make? You want to make a common subsequence, right? So if i is also shouting out that from where we are standing, we can see A. j is also shouting out that from where we are standing, we can see A. So shouldn't we include A?"
+  },
+  {
+   "start": 301.71,
+   "end": 313.52,
+   "text": "It should be done. It means that whatever the subsequence will be, there will be a. It means that we will keep a in this as well. And we will keep a in this as well. What will happen with this? What will be the benefit?"
+  },
+  {
+   "start": 313.52,
+   "end": 343.02,
+   "text": "Suppose you keep A here and A here too. Now whatever comes next, you got A, right? You want the same common subsequence, right? So we will keep the same letter one. So you will get the same one. We will see what happens next. Let's keep it for now. So what will I and J do now? Listen, we have to keep A. Means we add 1 to the answer. We add 1 to the answer. Means we keep A. We have to return the length, right? So we add 1. And now I's work is done here. And J's work is also done. So now I and J,"
+  },
+  {
+   "start": 343.02,
+   "end": 369.04,
+   "text": "Both will move forward. What will happen? Both will move forward. So now your i, where will it go? Now your i will come here. And your j will also move forward. It will be here. So when the letter is same, then it is very simple. That okay, by including that letter, by adding one in the answer, i will also move forward. And j will also move forward. It is very simple. But where will the difference come? Where will the problem come? When there will be different letters."
+  },
+  {
+   "start": 369.04,
+   "end": 396.21,
+   "text": "Now see, now I is shouting that I have C and J is shouting that I have B. Now you can do this that you can keep C and B. C and B are not the same, so how will you keep them? You can't keep them. So there is no union of C and B. Now one will have to move forward. At least one will have to move forward. For example, if I moves forward, then B will also be found here. If J moves forward, then something else may happen."
+  },
+  {
+   "start": 396.21,
+   "end": 422.56,
+   "text": "Who will move forward? There will be a fight in this. If I is shouting that I have C and J is shouting that I have B, then one thing is clear that there will not be a fight here. Now I is telling J to move forward. It is possible that you will get C in the future. It is possible that C would have been here. What is J saying? Brother, you move forward. J is also telling I that why should we move forward? You move forward. It can happen in front of you. If B comes, it will happen. Now what will happen? Both will fight. Both will not be able to decide who to move forward."
+  },
+  {
+   "start": 422.56,
+   "end": 427.66,
+   "text": "I have to move forward or J has to move forward? Who has to move forward? So now what will happen?"
+  },
+  {
+   "start": 427.66,
+   "end": 457.36,
+   "text": "Now, because there can't be a decision here, because you can't decide one thing that we will always increase I or we will always increase J. You can't do that. If you do that, the answer will be wrong because you don't know what's going to happen next. That's why it's very difficult to decide whether you should increase I or J. You can't increase both. You can't increase both. Why can't you increase both? I will tell you. Some people will say that if you increase both, then you can solve the problem. No. Why can't you increase both?"
+  },
+  {
+   "start": 457.42,
+   "end": 483.06,
+   "text": "Suppose here is A and here is BA. There are strings of different lengths. What should be the answer to ABA? The answer should be to remove A from both and give it 1. Now the argument is that when there is a fight, we will increase both. See what will happen by increasing both. Your I will stand here and your J will stand here. So there will be a fight here because I will shout that we can see A. J will shout that we can see B. So both fought."
+  },
+  {
+   "start": 483.06,
+   "end": 509.63,
+   "text": "Now what should be in your mind is that both of them have fought. Now I wants J to move forward. J wants I to move forward. So we will make both of them move forward to reverse the fight. So make both of them move forward and see. When you make both of them move forward, then your I will reach here. Means this string will be over. And your J will be here. Now tell me one thing. I will say what is visible to I. I can't see anything now. I will say my string is over. We are going home. J will say we can see A."
+  },
+  {
+   "start": 509.63,
+   "end": 535.63,
+   "text": "So what happened? What happened by increasing both? You should have got the answer. You should have got an A. A is the longest common subsequence. But you did not get the answer. Why? Because you increased both. Increased both. Now, if J would have moved forward, in this case, if I would have stayed in its place, I would have said, no, we will not move forward. You move forward. And J would have moved forward. So now I would have said, yes, we can still see A. J would have said, we can still see A. So both would have made A and added A to the answer."
+  },
+  {
+   "start": 535.63,
+   "end": 562.21,
+   "text": "and after that both will move forward and after that both will move forward so that's why both can't be moved forward both will be moved forward and it is possible that something will be left so now the thing has come that there is a fight between both that who will move forward what will you have to do for this fight for this fight you will have to do recursion for this fight you will have to make multiple universe which multiple universe will you have to make one uni... oh what is happening today yes one universe is that where"
+  },
+  {
+   "start": 562.21,
+   "end": 578.26,
+   "text": "i will move forward where i will move forward and j will remain the same. j will not move forward. And there is another universe where i will remain in its place and j will have to move forward."
+  },
+  {
+   "start": 578.26,
+   "end": 605.15,
+   "text": "When will this happen? When both of them report different letters. And he gets to know that the work is not being done yet. So what is the fight? Which person will go ahead? There is no way to decide which person will go ahead. So you will have to do both. You will have to move I in one universe and you will have to move J in one universe. So are you understanding what we are trying to tell you?"
+  },
+  {
+   "start": 605.15,
+   "end": 621.52,
+   "text": "The point is that you have to write a recursion function. What kind of recursion function will you have to write? First of all, you will get two types of strings in this. String s1 and string s2. We have given such a long language because this thing should be understood that"
+  },
+  {
+   "start": 621.52,
+   "end": 645.73,
+   "text": "Why is this happening? There is no need to remember that this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen, this will happen,"
+  },
+  {
+   "start": 645.73,
+   "end": 672.93,
+   "text": "then you will get the answer. And from both of them, the one who gets the maximum answer will get the answer. So string S1, S2 is done. Assume that the length of S1 is N and the length of S2 is M. And you need two things, I and what do you need? You need J. What is I and J? I and J are two people. Where does I stand? On any letter of S1. Where does J stand? On any letter of S2. So first of all, base case. If"
+  },
+  {
+   "start": 672.93,
+   "end": 699.34,
+   "text": "i equal equal to n or j equal equal to m means either the i string is finished, i was in this example, where did the example go? i was finished in this, so it was finished. If a string is finished, then what is left? Nothing, nothing will come, the game of a string is finished. So if i is finished, means s1 is finished, or j is finished, means s2 is finished, then what do you have to return without thinking? You have to return 0, this is what happened to me."
+  },
+  {
+   "start": 700.82,
+   "end": 724.22,
+   "text": "It means that if both the strings are finished, if even one of them is finished, then return is 0. Correct. Now, if i of s1 is equal to s2 of j, which means i and j, what are you shouting? I also have this and I also have this. When you are shouting like this, then it's okay. Then both of you will be very happy. Simply what return do we have to do? Return 1 plus"
+  },
+  {
+   "start": 724.22,
+   "end": 753.87,
+   "text": "Fun of, and we have to increase both. Meaning, if both are on A, then A's work is done. A came in the answer. Now, the next one will see both. Now, there is no fight that you increase and you increase. There is no fight. Everything is going well. So, what will happen? S1, S2, N, M, I plus 1 and J plus 1. The matter is over. No, no. Now, there will be a fight. Now, what will happen? There will be a fight. What kind of fight? He will say, you increase. He will say, you increase. So, you will have to give both a chance. What chance will you have to give?"
+  },
+  {
+   "start": 754.1,
+   "end": 778.64,
+   "text": "First of all, give a chance to I. What does it mean to give a chance to I? Do one thing, I. You stay where you are. You stay the same. And J will increase. J will increase. Let's listen to you. What will you have to give in the next chance? In the next chance, you will have to give a chance to J. Do one thing, J. You stay where you are. And we will make I work hard for you. I will increase."
+  },
+  {
+   "start": 778.64,
+   "end": 805.2,
+   "text": "Out of these two, the one who gets the max answer will get the answer. Stop this recursion and you have learned its recursion. There is nothing much to do in this recursion. Now it comes that this is the recursion. It is a DP question, so what is done to the recursion? Memoize is done. How is memoized done? What is changing in the recursion? Which variable is changing? So, brother, i and j are changing. Okay."
+  },
+  {
+   "start": 805.2,
+   "end": 834.78,
+   "text": "The value of i can go from 0 to n. The value of j can also go from 0 to m, which is the length of S2. So what do you have to make in the DP array? You have to make the DP array like this. Vector of, vector of, int, like this, DP, n plus 1. And in this, you have to make a 2D array. You have to make a 2D array like this."
+  },
+  {
+   "start": 834.78,
+   "end": 858.58,
+   "text": "n plus 1 cross m plus 1 size ka. Uske baad kya hai? Uske baad toh bohot simple hai. Uske baad agar koi bhi recursive function hota hai, usme answer nikalane se pehle dekh lijiye. Kya dekh lijiye? Ki agar dp of i or j not equal to minus 1, then simply return dp of i or j. Yeh toh 1000 baar bata chuppe, yeh hi karna hota hai."
+  },
+  {
+   "start": 858.58,
+   "end": 887.68,
+   "text": "If it is minus 1, then you will have to remove the recursion. But before returning, here do this. dp of ij equal to. This is another return. So write here also. What do you write? dp of ij equal to max of something. Something is happening in my pen. I don't understand. It has disturbed me. So write here also. What has become of yours? Memoization code has become."
+  },
+  {
+   "start": 887.68,
+   "end": 917.02,
+   "text": "Come to tabulation. What have I told you in tabulation? Look at the recursion code. See what is happening. So in tabulation, first of all, if you feel like writing tabulation, then come and write. In tabulation, assume this is your function. This is the function of your lead code. What will you get here? Here you will get two strings. S1 and string. S2. Very good. First of all, what do you have to do? Take out the length of both. n is equal to S1 dot size. Okay."
+  },
+  {
+   "start": 917.02,
+   "end": 935.28,
+   "text": "int m is equal to s2.size. Very good. After that, int ij. After that, what do we have to do? Make that dp array. Just like we made in recursion, make it here also. How much size did we make in recursion? n plus 1, n plus 1 size. Make it here also. Make it here also."
+  },
+  {
+   "start": 935.6,
+   "end": 965.81,
+   "text": "vector, now that's why we are going so fast in this because you guys have done this a lot of times, this exercise, this activity, that first write recursion, then memorize, then tabulate, this activity has been done a lot of times, that's why we are going so fast. If you ever feel that it is going too fast, then please comment, we will read the comment, okay? We will not reply, we will read the comment and you will know in the next episode that we will slow down. Done, after that for i is equal to 0, i less than equal to n, i plus plus, after that vector int,"
+  },
+  {
+   "start": 965.87,
+   "end": 993.94,
+   "text": "What will it be? T. What size is it? M plus 1. Okay. After that, DPI is equal to T. It's closed. DPRA is ready. Now, what do we have to do? We have to fill the value in DPRA. So, first of all, read the base case of recursion and fill that value first. What does the base case of recursion say? If, if, IN is there, if IN is there, or, or, JM is there, if IN is there and JM is there, then what should be its answer? Zero."
+  },
+  {
+   "start": 993.94,
+   "end": 1020.22,
+   "text": "What does it mean to say? Let's say your n is 3 and m is 2. Then what will be your DPRA? 3 plus 1 is 4 and 2 plus 1 is 3. This will be your DPRA. Then your DPRA will look something like this. 1, 2, 3, 4, 0, 1, 2, 3. 1, 2, 3, 0, 1, 2. What does your base case say? If i is n, it means if this is this, this is this row, this is this row,"
+  },
+  {
+   "start": 1020.22,
+   "end": 1050.14,
+   "text": "So no matter what is in J, what should be the answer of all? 0, 0, 0. Or if J is M, then J is equal to 2. This column should also be 0. 0, 0, 0. This means that if I is equal to 3, then this row, this row, the whole row should be 0. If J is equal to M, then this column, the whole column should be 0. So we have already filled this. Let's fill this. How will we fill this? What will we do in this? For."
+  },
+  {
+   "start": 1050.14,
+   "end": 1079.2,
+   "text": "i is equal to 0, i less than equal to n, i++, and what will we do? dp of i, m is equal to 0, which means we have made the entire mth column zero. Now, what will we do? For j is equal to 0, j less than equal to m, j++, dp, nj, which means we have made the entire mth row, the horizontal, zero. The base case is complete. Now, all you have to do is"
+  },
+  {
+   "start": 1079.2,
+   "end": 1108.14,
+   "text": "We have to see the formula. First of all, the recursion says that there are two conditions in this. First of all, it says that if S1i equals to S2j, then this is a separate condition. In this case, what is dpij? What is dpij? i plus 1 j plus 1 means dpi plus 1 and j plus 1. One condition is clear."
+  },
+  {
+   "start": 1108.14,
+   "end": 1136.83,
+   "text": "Otherwise, what is dpij? Maximum of, oh sorry, there is 1 plus here. Don't forget 1, there is 1 plus here. 1 plus dpi plus 1 j plus 1. Otherwise, whose maximum is this? The maximum of these two. ij plus 1 and i plus 1j means dpi j plus 1 and dpi plus 1."
+  },
+  {
+   "start": 1136.83,
+   "end": 1165.6,
+   "text": "Fun ij plus 1 means dpi ij plus 1 and fun i plus 1 j means dpi i plus 1 j. That's it. This is the max. This is your two formulas. Now, the question is from where will we start filling dpi ij? So, from where will we start filling? You will get a hint from this. What does dpi ij need? It may need dpi i plus 1. It may need dpi i plus 1. It may need dpi i plus 1. It may need dpi i plus 1."
+  },
+  {
+   "start": 1165.6,
+   "end": 1191.87,
+   "text": "We are trying to fill 0. For this, you may need dp of 1 something. It may be dpi, but it may be needed. Whose? The row of i plus 1. Meaning, if you try to fill any row, then the next row may be needed. So, one thing has happened. If you have to fill the row upside down, how will you fill it? You will have to fill it upside down."
+  },
+  {
+   "start": 1191.87,
+   "end": 1221.58,
+   "text": "We have to fill from n-1 to 0. We can't fill from 0 to n-1. Why? Because 0 is for filling the row. We need the value of the first row. So, we can't fill it. How do we have to fill it? From n-1 row to 0 row. Do you understand? Very good. Look at j. You can also need j plus 1 for j. That means, suppose you want to fill 0 and 2. For this, you may need 1 and 3."
+  },
+  {
+   "start": 1221.58,
+   "end": 1246.86,
+   "text": "Why? IB plus 1 and JB plus 1. Meaning, the column you want to fill, you may need the next column. How much? You may need the next column. This can also happen. This can also happen. That you may need this. You may need the next column in the same row. Meaning, if you are filling DP of 0, 2, it is possible that you may need"
+  },
+  {
+   "start": 1246.86,
+   "end": 1271.38,
+   "text": "If you need to fill the next column in the column, then you will have to fill the column in the opposite direction. In the previous question, we used to tell you that you have to fill the row in the opposite direction. Fill the column according to yourself. If you want, then fill it straight. If you want, then fill it in the opposite direction."
+  },
+  {
+   "start": 1271.38,
+   "end": 1300.93,
+   "text": "In this question, if you fill the column directly, i.e. run the loop from 0 to m in j, it will be wrong. Why? Because when j is equal to 0, it is possible that it needs j is equal to 1. You don't know. That's why you have to fill the column in reverse. So how will both the loops work? The loop will run in reverse order. Let's run the loop in reverse order and put the formula in it. First of all, how will the loop of i work? n minus 1 greater than 0, i minus minus. Yes. After that,"
+  },
+  {
+   "start": 1300.93,
+   "end": 1329.09,
+   "text": "The loop of j will also have to be reversed. Meaning, j is equal to m minus 1. j greater than 0. j minus minus. Yes. Now, apply your condition. If, if, s1i equal equal to s2j, then dp of ij is equal to 1 plus dp of the next one. i plus 1, j plus 1. Else, else, if this is not the case, if this is not the case,"
+  },
+  {
+   "start": 1329.09,
+   "end": 1350.34,
+   "text": "So what will happen to dpij? If it is not like this, then what will happen? dp of ij is equal to max of, first of all, increase i, give j a chance. Otherwise, don't increase i, give i a chance and force j to increase. This is over. J's loop is closed, i's loop is closed."
+  },
+  {
+   "start": 1350.34,
+   "end": 1377.38,
+   "text": "What should we return? Look at your recursion. Where did your recursion start from? Your recursion will start from the value of i and j. You will have to return that. So tell me one thing. When we told you that where will i stand? The person i is will stand at the beginning of s1. And where will j stand? It will stand at the beginning of s2. So when you start the recursion, the value of i will also remain 0 and the value of j will also remain 0."
+  },
+  {
+   "start": 1377.38,
+   "end": 1400.64,
+   "text": "It means, what should you return from the DP matrix or DP array? You should return, yes, DP of 0. 0. Take this. This tabulation ends the lesson. So, there is no rocket science in this. Whatever we have studied till now is the same. A little, what a little? There is no change. It means, okay, it was a good question."
+  },
+  {
+   "start": 1400.64,
+   "end": 1424.08,
+   "text": "So go and make it. LCS is done, LIS is done. So these are the two main mainstream patterns. Some complex questions are also made of it. We will see it in the coming days if possible. So in total, this was it. So in total, the pattern of LIS or LCS is the same. You should not come out of this in any interview. Okay, so make it and submit it. Okay, let's go."
+  }
+ ]
+}

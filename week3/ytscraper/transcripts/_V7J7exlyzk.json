@@ -1,0 +1,479 @@
+{
+ "video_id": "_V7J7exlyzk",
+ "title": "Diameter of Binary Tree | Check Complete Binary Tree | Tree DSA Series",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2636,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 25.71,
+   "text": "Is my studies going well or not? Today we will do two questions. Diameter and completeness. And I want to tell you that those who have come in the fourth year, you should study. There is no other option for you. Time is over. Those who are in the third year also, then study. We see a lot of people in the third year. They think that there is a lot of time. Second year thinks that there is a lot of time. There is a lot of time, but a lot of things also have to be done. See in today's date."
+  },
+  {
+   "start": 25.97,
+   "end": 54.03,
+   "text": "DSA is your bread and butter. What is DSA? Bread and butter. Do you understand what bread and butter means? It's a phrase. It means basic. Bread and butter means butter bread. It's a basic breakfast. It's not a complete breakfast. You can't eat bread and butter and stay alive. Basic. It means it's only survival worthy. So DSA has become that nowadays. DSA should come. There should be a lot more. I mean AI should come nowadays. ML. There should be a lot more. Because competition is increasing day by day. Entry level jobs are decreasing."
+  },
+  {
+   "start": 54.03,
+   "end": 82.48,
+   "text": "Entry-level jobs were 80% less than they were in 2021. Entry-level jobs were 80% less than they were in 2021. Entry-level jobs were 80% less than they were in 2021. Entry-level jobs were 80% less than they were in 2021. Entry-level jobs were 80% less than they were in 2021. Entry-level jobs were 80% less than they were in 2021. Entry-level jobs were 80% less than they were in 2021."
+  },
+  {
+   "start": 82.48,
+   "end": 109.07,
+   "text": "If you watch this channel, it means that you come from a middle-class or low-class family. No son or daughter of a millionaire doesn't study DSA. If we were millionaires, we wouldn't have studied DSA. If you study, it means that you come from the same type of family from where we used to come. So you don't have any substitute. If you don't study, what will you do? There is more competition in other places. If you think that if you don't study, then we will go to music and reel. There is more competition in all that. It is the easiest."
+  },
+  {
+   "start": 109.07,
+   "end": 137.52,
+   "text": "and you have only feasible way of studying, then do study. So don't take too much time in DSM, finish it immediately. Come, let's start. Come, let's move on to the first question. What does the first question ask you? You are given a road of a binary tree, as usual, and you have to find its diameter. What is diameter? You must have heard diameter in circle in class, you must have studied in school. You have to find the diameter of a binary tree. So what does it say? What is diameter? What has it said? It has said,"
+  },
+  {
+   "start": 137.52,
+   "end": 167.47,
+   "text": "Take any tree. Let's make any tree according to ourselves. Come on, let's make it white. So, let's make a tree with a bright color. Binary tree, right? Come on. This is not a binary search tree. It's a normal tree, right? It's a normal binary tree. This tree is made. Okay. Let's do numbering. 1, 2, 3, 4, 5, 6, 7, 8. Very good. What have I told you? Take any two circles in this. Take any two circles of your choice in this tree."
+  },
+  {
+   "start": 167.47,
+   "end": 196.88,
+   "text": "Hold it. Come on, hold it. Hold two circles. You hold one four. Hold one three. Hold it. Look at the path between these two. What do you see between these two? Path means if you are holding three circles, if someone tells you to make a drawing and go to circle four, then how will you go? If you are standing here, if someone tells you that you are here, then go here and tell me how will you go? Will you go up first? Okay. Will you go down again? Will you go down again? Or will you do this? There is no other path. We are saying it again and again."
+  },
+  {
+   "start": 196.88,
+   "end": 222.59,
+   "text": "In a tree, there is only one path between two circles and it is a unique path. This thing separates the tree from the graph. So if you are standing on three, you will have to go one step up, one step down and one step down. How many sticks are there in this path? There is no circle in this path. How many sticks are there? One stick is this, this one, one stick is this and one stick is this. So how many paths are there between these two? Three. Okay. So suppose we write it somewhere that there are three."
+  },
+  {
+   "start": 222.59,
+   "end": 251.78,
+   "text": "But it is not necessary that we choose both the circles. We can choose anything. Come, let's choose anything. If you can choose anything, if you have free will, then choose anything. Come. Now let's do one thing. Let's leave 3. Let's choose this. 3 and 6. Last time we chose 3 and 4. But I want to choose 3 and 6. Look at this. Repeat the same exercise in this. How many sticks will you cross to reach both? So see, you will have to go up once in this too. One down."
+  },
+  {
+   "start": 251.78,
+   "end": 280.62,
+   "text": "1 below, 1 below. How many sticks are there in this? 4 sticks. How many sticks were there last time? 3. In this? 4. So it has 4. Okay. Let's try one more. Let's try one more. Let's try one more. Right? Let's do one thing. Let's choose 8. Who? 8. Let 3 remain. Let's choose 8. Okay. Do the same thing. 1 stick here. 1 stick here. 1 stick here. 1 stick here. How many sticks are there? 4. See again. 1, 2, 3, 4. It has 4 now."
+  },
+  {
+   "start": 280.82,
+   "end": 299.49,
+   "text": "In this tree, we don't think that you can choose any 2 circle which takes more than 4 time. We don't think so. It can happen. Let's see. According to me, 4. So what should be the answer to this? What should be the answer to this? 4. Why? Such 2 circle in which maximum distance is there. What? Maximum distance is there."
+  },
+  {
+   "start": 299.49,
+   "end": 326.02,
+   "text": "If you make a path drawing of both the circles, then you need as many sticks as possible. And the highest value, we will call it diameter. This is what you have to return. Okay. Now, in a glance, it seems very hard that how will we choose any circle from our mind. We don't even know how the tree looks. We just have this root. By looking at the drawing, you will not know when you will choose a tree like this. You just have a root."
+  },
+  {
+   "start": 326.02,
+   "end": 354.54,
+   "text": "Now, when the root is given, how can we choose two circles and how can we learn its path? We haven't been able to learn this yet. So, this question seems hard to look at. Let's think about it. In the hard question, nothing is understood. When you are stuck like this, that you have read the question and understood what to do with the question. After that, nothing is coming. It is completely empty. So, at least make a drawing. Do something in it. Give some time. This is how people learn. Let's think about it. And before thinking, let me give you an example and explain it to you. Because from the example,"
+  },
+  {
+   "start": 354.54,
+   "end": 382.16,
+   "text": "It is always easy to understand. Let's take an example of our country. Let's assume that a country has a central route. Let's assume that New Delhi Airport is your route. What? New Delhi Airport, which is India's airport, is your route. There is nothing more than that. Let's assume that from New Delhi, you can go to the airport of two states. For example,"
+  },
+  {
+   "start": 382.16,
+   "end": 411.81,
+   "text": "If we live in Ranchi, then you can go to Ranchi. Okay. And if we live in Bangalore, then you can go to Bangalore Airport. From where? From New Delhi. You can go to both places. Okay. Like the Rajdhani train runs. The best example. The Rajdhani train runs, right? So the work of Rajdhani train is to connect the Rajdhani of Jharkhand to Delhi. And connect the Rajdhani of Karnataka to Delhi. Rajdhani. That's why it is called Rajdhani. Okay. Now, you have come to Ranchi. But assume that my actual house is not in Ranchi. It is somewhere else in Jharkhand."
+  },
+  {
+   "start": 411.81,
+   "end": 441.55,
+   "text": "Where Rajdhani doesn't go, but it is somewhere outskirt. So let's assume that in Ranchi, there might be a place where we want to go to Deoghar. How will we go to Deoghar? We will take a local train from Ranchi to Deoghar and sit there. In Jharkhand, there might be a place where we want to go to Dhanbad. How will we go to Dhanbad? First we will come to Ranchi from Rajdhani, then we will catch a local train from Ranchi and go to Dhanbad. Similarly, you can come to Bangalore from Delhi, but let's assume that you don't want to go to Bangalore. You can go to Mysore from Bangalore."
+  },
+  {
+   "start": 442.06,
+   "end": 468.58,
+   "text": "And you can go anywhere from Bangalore. We don't know the name of the other city of Karnataka. So let's say you can go to some other town. We don't know where to put a hit on it. Let's say you have an Indian travel system. First of all, what is the route? New Delhi Railway Station. From New Delhi Railway Station, you can go to two capital cities. Either you can go to Ranchi or you can go to Bangalore. After coming to Ranchi, you can go to Devgarh and Dhanbad."
+  },
+  {
+   "start": 468.58,
+   "end": 497.62,
+   "text": "After coming to Bangalore, you can go to Mysore and one more place in Karnataka. Now if someone asks you that they have all railway stations. Now if someone asks you that choose any two railway stations. Choose any two railway stations between which the distance is maximum. Between which the distance is maximum or between which the pole is maximum. Between which the pole is maximum or between which the path is maximum."
+  },
+  {
+   "start": 497.62,
+   "end": 527.54,
+   "text": "I have asked you the exact same question, right? The exact same question that we are asking you to choose any two. This is the 9 meter question, right? So now think about it. Because intuitive is more. Okay. Now see. Now work with a little logic. You can choose. Now assume that you say that okay, we choose Ranchi and New Delhi. We choose Ranchi and New Delhi. So why are you choosing Ranchi and New Delhi? There is only one path between Ranchi and New Delhi. There is only one path, right? If you want, you could have done the same for New Delhi. But when you choose only Ranchi and Delhi,"
+  },
+  {
+   "start": 527.54,
+   "end": 557.1,
+   "text": "So you only get one. So you say, okay. What do we do? We choose Ranchi and Bangalore. But why are you choosing Ranchi and Bangalore? If we make a path between Ranchi and Bangalore, what kind of path will it be? One will be this path and one will be this path. So two poles. Between whom? Between Ranchi and Bangalore, two poles are coming. But why are you stopping at two poles? Why are you stopping at two poles? If you want, then see, two poles have been made. You can also go below Ranchi. So you also go below Ranchi. You come below Ranchi and reach home."
+  },
+  {
+   "start": 557.1,
+   "end": 584.5,
+   "text": "You go below Ranchi and reach Deoghar. And why are you staying in Bangalore? There is no other place below Bangalore. You can go somewhere else from Bangalore. So why are you not coming to Mysore below Bangalore? You come to Mysore. You come to Mysore below Bangalore. Once, once, when you reach Deoghar and Mysore, you can't go further down. You can't go further down. Find a path for this. Find a path for this. How much will it take? 1, 2, 3, 4."
+  },
+  {
+   "start": 584.5,
+   "end": 603.41,
+   "text": "1, 2, 3, 4. So this is your correct answer. There is no logic in choosing Ranchi and Bangalore. Because you chose Ranchi and Bangalore. Okay, you say that from Ranchi to New Delhi, from New Delhi to Bangalore. Okay. But you can go further than Ranchi, right? You can go further than Bangalore, right? So go there because you want maximum path. So you can go to any..."
+  },
+  {
+   "start": 603.41,
+   "end": 624.85,
+   "text": "Why do you have to stop at any middle node? The path of the two circles that you have to choose should be maximum. So why are you stopping at the middle nodes? Don't stop at the middle nodes. Go to the end nodes. Try to go to the end nodes as much as possible."
+  },
+  {
+   "start": 624.88,
+   "end": 650.54,
+   "text": "Now let's take the example of Deoghar. Let's assume that Deoghar is not the end station. You can go to another station from Deoghar. Let's assume that there is a place called Jassidi. That is a substation of Deoghar. The same thing will repeat here. Now when you have come, your end point is Mysore. You cannot go anywhere else from Mysore. But now you are saying that why are we stopping at Deoghar? You can go further from Deoghar."
+  },
+  {
+   "start": 650.54,
+   "end": 679.39,
+   "text": "Deogar is not an end point. Deogar is a point in the middle. Don't stop in the middle. Go as far as possible till the end. So, go in the middle. Go here. How much is 5? How much is it? 1, 2, 3, 4, 5. How much? 5. This is the right solution. This is a logical solution. I am repeating it again. Your thinking process is that we choose two circles. But if you say that we choose two circles, suppose we choose Ranchi and Bangalore."
+  },
+  {
+   "start": 679.39,
+   "end": 703.18,
+   "text": "Okay, Ranchi and Bangalore are so far away. But there is no need to stop at Ranchi and Bangalore. Go further from Ranchi. Go further from Ranchi and come to Deoghar. Go further from Deoghar and come to Jassidi. Similarly, come further from Bangalore, Mysore. So, what I mean to say is, if you choose any middle node, any middle node, middle node means, which is a non-leaf node."
+  },
+  {
+   "start": 703.18,
+   "end": 728.82,
+   "text": "which is not an end point, then you will not get the correct answer. You will get the correct answer only when both the circles are leaf nodes. Intuitively think, if there is a very big tree,"
+  },
+  {
+   "start": 728.82,
+   "end": 756.56,
+   "text": "You need the longest path. If you go from one leaf node to another leaf node, you will get the most paths. For example, you start from this leaf node and reach here. From here to here. From here to here. From here to here. From here to here. From here to here. From here to here. This is the longest path. If you had chosen two nodes in the middle, then you would have got two. Why are you doing this? Spread it more. Go to the end point. You understand one thing, right?"
+  },
+  {
+   "start": 756.56,
+   "end": 784.03,
+   "text": "Any diameter, from anywhere, it will connect the leaf nodes. By connecting any two leaf nodes, you can get the maximum distance. By connecting any two middle nodes, you can't get it. No matter how big the tree is, no matter how complex the tree is, if you connect any middle nodes, even one leaf and one non-leaf, you won't get it. Why? Because, suppose you have such a thought process, that we will do one thing. We will do one thing. Suppose you have a leaf node."
+  },
+  {
+   "start": 784.03,
+   "end": 808.75,
+   "text": "We will take this and we will go to the middle node and reach it. So you are saying that my path is maximum. But this is the middle node, it means that it will have some beta. If not, then it would be leaf. Why are you not going to its leaf? If you go, then whatever you are getting, you will get more than one. So why are you not going to the leaf node? So without connecting two leaf nodes, you cannot get longest distance. Similarly,"
+  },
+  {
+   "start": 808.75,
+   "end": 837.38,
+   "text": "without connecting the end points or leaf stations, you can't get it. But now another question arises that there are many leaf nodes. How will we know which two leaf nodes? Let's think about this too. Now the problem arises that which two leaf nodes to connect. As you can see here, there are four leaves. There are four leaves here. Which one? This, this, this, this. We can connect any two leaf nodes. Let's see. If"
+  },
+  {
+   "start": 837.38,
+   "end": 866.38,
+   "text": "If we connect 4 and 5, we hope that you have understood why diameter should only connect 2 leaves and not the middle one because you can spread more. If you connect 4 and 5, then what would be the path? 4, 2 and 5. Will this be the path? How many sticks will be there in this? 1, 2. Remember that the number of this is 3, but how many sticks are there? 2 sticks. So how much will be its answer? 2. Its answer will be 2."
+  },
+  {
+   "start": 866.38,
+   "end": 894.14,
+   "text": "If we connect 4 and 6, then what will we do? We will go from 4 to 2, 2 to 1, 1 to 3, and then we will come to 6. How many sticks will there be in this? 4 sticks. If we connect 4 and 7, then we will go from 4 to 2, 1 to 3, and 7. There will also be 4 sticks in this. If we connect 5 and 6, then we will go from 5 to 2, 1 to 3, and 6."
+  },
+  {
+   "start": 894.14,
+   "end": 922.43,
+   "text": "How many sticks will there be in this? 4. If we go from 5 to 7, then? 5 to 2, then 1, then 3, and then 7. There will be 4 sticks in this too. Okay. If we go from 6 to 7, then? 6, first 3, and then 7. There will be 2 sticks in this. Now, no one is left. We have shown the entire leaf. How many sticks will there be in 4 to 5? There will be 2 sticks. Okay. 4 to 5 means 4, 2, 5. This is done. All these combinations will be made. So, what is your highest answer in this? It is 4. So, your answer will be 4."
+  },
+  {
+   "start": 922.43,
+   "end": 951.14,
+   "text": "Look at it very carefully. We draw a drawing of a path. When you draw a drawing of a path, it will go straight and there will be a point where the path will turn. This means it is on the left and right side."
+  },
+  {
+   "start": 951.14,
+   "end": 978.64,
+   "text": "Assume this will come, this will come, and here. And there will be a point where it will rotate completely. After that, it will come here, it will come here, and it will go here. We will make a path for you and show you. See this path. See this. 4, 2, 1, 3, 7. See what will happen. 4, 2, 1, 3, 7. How is the path looking like? How is the path looking like? See. 4, 2, 1, 3, and 7. How is the path looking like? See. It went straight till here."
+  },
+  {
+   "start": 978.64,
+   "end": 1007.02,
+   "text": "A place came where it went around. A place came where it went around. What is its turning point? 1. Root. But it is not necessary that 1 is always a turning point. No. Look at this. 4 to 5. It went like this and came like this. What is the turning point? 2. What does it mean? What does it mean? If you join any two leaves, it will look like this when you see its path. It will go up like this. You will go up. A turning point will come. It is not necessary that it is a root. This can also be a turning point."
+  },
+  {
+   "start": 1007.02,
+   "end": 1034.62,
+   "text": "See this, 6, 3, 7. This is the turning point. So any circle, any circle can be the turning point. And after that turning point, it will rotate. After that turning point, it will rotate. So, so, so, instead of joining two leaves, if we start thinking about this circle, that if, if, if, focus on this circle now. Focus on this circle completely. You are standing on this circle, on 2. If 2 wants to be the turning point,"
+  },
+  {
+   "start": 1034.62,
+   "end": 1061.76,
+   "text": "If 2 has to be the turning point of any path, then what will be the diameter? Meaning, if you are joining two leaves in which 2 is the turning point, then what is the maximum diameter? Meaning, you are standing on 2. You are being asked, how much lower can you go on 2's left? How much lower can you go? And, how much lower can you go on 2's right? Assume that someone tells you,"
+  },
+  {
+   "start": 1061.76,
+   "end": 1088.83,
+   "text": "How many circles are there on the left side of 2? How deep can they go? I told you that one circle can go deep. How deep can they go on the right side of 2? I told you that one circle can go deep here as well. What will be your answer? For a path whose turning point should be 2. 1 plus 1. Its answer will be 2. What will be its answer? 2. Look carefully."
+  },
+  {
+   "start": 1088.83,
+   "end": 1117.22,
+   "text": "Where there were two turning points, 4 to 5, has it got two answers? Yes, it has got two answers. Let me tell you again. Concentrate your attention on 1. You have to come to 1, you have to find out on 1, which path has one turning point. So what you will ask is, how much lower can we go from 1 to left? How deep can we go? How high can we go? You will find out that we can go 1 and 2."
+  },
+  {
+   "start": 1117.22,
+   "end": 1144.46,
+   "text": "So what will the left tell you? 2. Similarly, you will ask 1, how deep can we go to the right? What will the right tell you? That we can go 2. What will be its answer? 2 plus 2, 2 plus 2, 4. See, in whichever path there is one turning point, how much is its answer? Its answer is 4. Why is this 4 coming? Why is this 5 not coming? Because if we see, you are saying from 1 that you can go 2 to the left, which means there are 2 circles to the left."
+  },
+  {
+   "start": 1144.46,
+   "end": 1174.67,
+   "text": "There are two circles on the left of 1. There are two circles on the right of 1. So, 1 should also be added. Because here, the number of circles is not asked. The number of sticks is asked. The number of sticks is asked. So, when you look at this, then what is the number of sticks? You can go as low as you can on the left. And you can go as low as you can on the right. I want to explain this thing to you with another example. You must have understood. But look. 1, 2, 3. Now, look. 4, 5, 6, 7."
+  },
+  {
+   "start": 1175.22,
+   "end": 1204.53,
+   "text": "8, 9, and 10. This is a circle. Let's look at 1. Let's look at 1. On 1, what is the path whose turning point is 1? So, what will be the path? How much can you go down from 1? How much can you go down in the left? So, look. 1, 2, 3, 4. 4 happened. But can we go to 4? Let's see. 1, 2, 3, 4."
+  },
+  {
+   "start": 1204.53,
+   "end": 1233.71,
+   "text": "5. 5 can go. In 1's left, how much is the height of 1's left? How much can go down? 1, 2, 3, 4, 5 can go. So, what will 1 find out? 5. How much is there in 1's right? How deep can go in 1's right? Only 1. Only 1. So, what should be its answer? Of such path, where there should be 1 turning point, its answer will be 5 plus 1 is equal to 6. Watch it. Watch it. If we make this path 10,"
+  },
+  {
+   "start": 1233.71,
+   "end": 1260.5,
+   "text": "9, 8, 5, 2, 1, 3. See how many sticks will be made. 1, 2, 3, 4, 5, 6. Did you make 6? Yes, you made 6. 1 is done. But what did we say? It is not necessary that 1 will be made. 6 can be one answer. Do similar work for the lower one. Do similar work for the lower one. Come. Come to 2. How much can you go down in the left of 2? So in the left of 2, you can go 1, 2, 3."
+  },
+  {
+   "start": 1260.5,
+   "end": 1289.34,
+   "text": "So it will say 3. How many can go down to the right of 2? 1, 2, 3, 4. So it will say 4. What should be the answer of that path whose turning point is 2? Its answer should be 3 plus 4 is equal to 7. Let's verify and see. If we make this path 7, 6, 4, 2, 5, 8, 9, 10. Let's see how many sticks are there in this. 7 and 10 have to be added. This and this. Let's see how many sticks are there. 1, 2, 3, 4."
+  },
+  {
+   "start": 1289.34,
+   "end": 1318.42,
+   "text": "5, 6, 7. 7 is the answer. So, what was your first answer? 6. Now, you have got 7. What will be your answer in this? This one. If you try to join these two, then you will get this. With this trick. Now, how are we getting this work out? How much can we go to the left of 2? Height of a tree. Height of a tree. Height of a tree. We had studied height of a tree. Depth of a tree. Same question was solved. So, what do you have to do? You don't have to do anything. You have to write the program of height of a tree."
+  },
+  {
+   "start": 1318.42,
+   "end": 1347.6,
+   "text": "How did we write the program of height of a tree? We used to go to any root. First of all, we used to find the height of the left one. After that, we used to find the height of the right subtree. Now, the left and right, add them together. Sum is equal to left plus right. Take a global variable. Result is equal to max of result and sum. Yes. Now, return your height above. What did you do? What was the total height? Left."
+  },
+  {
+   "start": 1347.6,
+   "end": 1377.68,
+   "text": "plus right plus 1. You have to do this work. Come, let's show the code and then we will also show the dry run. What to do? First of all, let's take a global variable. Result is equal to 0. Okay? Height, the height program. Those who have not seen the height video, please watch it and join your hands. Int fun. What did we pass? Nothing, just the root of node. First of all, if the root is null, then what was the height? Nothing, 0. Return."
+  },
+  {
+   "start": 1378.29,
+   "end": 1410.88,
+   "text": "Zero. What used to happen? Two steps. We used to find the height of the left subtree. How did we find it? By passing the same. Assume that we find it. The left of the root. And. Int. Right is equal to. Fun. The right of the root. We found it once. Now. For our program. We have to do the return. What is the total height of the return? Left. Plus. Sorry. What is the return? One. One plus."
+  },
+  {
+   "start": 1410.88,
+   "end": 1440.11,
+   "text": "Maximum of left and right. Maximum of left and right. This is what we used to do in height. But what do we have to do for our program? Int sum is equal to left plus right. We don't have to add plus 1. Why not? Because you don't want number of circles. You want a stick. So stick is always less than 1. So that's why we are doing it. And rest is equal to max of rest and sum. So this is your program. This is your program."
+  },
+  {
+   "start": 1440.21,
+   "end": 1470.96,
+   "text": "Let's do a dry run. To do a dry run, let's take a tree. If we want to find a tree, then let's find this one. Let's take this one. 1, 2, 3, 4, 5. It's a good tree. Let's remove this one too. Let's remove this one and make this one 4. It will be easy. Come, let's run the program. Come, let's run the program. First of all, fun will call for 1. Is this a null? This is not a null."
+  },
+  {
+   "start": 1471.28,
+   "end": 1501.86,
+   "text": "Left is equal to fun2. Right is equal to fun3. Fun2 is called. Is this null? No. Left is equal to fun of null. Is equal to 0. Right is equal to fun of 4. Let's call fun of 4. Fun of 4. Its left and right both will be 0. Because its left and right children are not. Here also the same thing will happen. What will be its sum? 0."
+  },
+  {
+   "start": 1501.86,
+   "end": 1531.44,
+   "text": "What will be the rest? Max of rest and sum. The rest will remain 0. What will it return? 1 plus max of left and right is equal to 1. Where will this 1 go? Now what will be the sum in fun 2? 0 plus 1 is equal to 1. Rest is equal to max of... Now our rest is 0. So 0 is big and 1 is big. So this is 1. What will it return? 1 plus max of left and right. So max of 1 and 0 means 2. Where will this 2 go? It will come here."
+  },
+  {
+   "start": 1531.44,
+   "end": 1561.94,
+   "text": "Call fun3. The left and right will be 0 because it is a leaf node. What will be its sum? 0. No need to update the rest. What will it return? 1 plus max of 0, 0 is equal to 1. Where will this 1 go? Here. What will be its sum in 1? 1 plus 2 is equal to 3. Update the rest. Now, what will it return? No need but it is fine. 1 plus"
+  },
+  {
+   "start": 1561.94,
+   "end": 1592.24,
+   "text": "Max of, what is it? 1 plus max of 0 and 1. What is it? It is 1 and 2. So, 1 plus 2, whatever it is, 3. But what is our rest in the last? 3. Is your answer 3 or your answer is 3? How? If you want to catch these two, 4 and 3, one path, two paths, three paths. 4, 2, 1, 3. Its answer is 3. So, you have learned to program the diameter of a tree. It was an easy question, but it was a little deep to understand."
+  },
+  {
+   "start": 1592.5,
+   "end": 1622.93,
+   "text": "The next question is also interesting. Its name is complete binary tree. What is complete? Complete is a very interesting type of tree. What happens? We will tell you. There is a binary tree. What is the definition of complete? First of all, every level. Yes, there is a prerequisite for this. If you have not seen level, order, traversal. If you have not seen level, order, traversal. Please see. You are joining your hands. See that. Otherwise, you will not understand. Let's give a warning. Okay. My work is over. What does complete tree say?"
+  },
+  {
+   "start": 1622.93,
+   "end": 1652.96,
+   "text": "Every level. Every level. What does level mean? When you make a horizontal line in a tree, it is called level. Level 0, level 1, level 2. Except possibly the last. This is a bit difficult. There is more in English. Except possibly the last is completely filled. Is completely filled. You will understand. Don't pay attention to English. In the last level, if it is not completely filled, then it should be left to right filled. What does this mean? I will tell you."
+  },
+  {
+   "start": 1652.96,
+   "end": 1681.42,
+   "text": "This is a tree. 1, 2, 3, 4, 5, 6. This is a tree. First of all, let's make a level. This is one level. The first level is this. What is its name? Level 0. The second level is of 2 and 3. What is its name? Level 1. The third level is of 4, 5, 6. What is its level? 2. What does it tell you? How many levels does it have? It has 3 levels."
+  },
+  {
+   "start": 1681.87,
+   "end": 1707.01,
+   "text": "Leave the last level for now. I mean leave level 2 for now. Focus on level 0 and level 1. Is level 0 completely filled? Yes, level 0 is completely filled. What does it mean? Let's tell. Leave level 0, it has a root. Level 1. Is level 1 completely filled? Yes, level 1 is completely filled. Why? Because the 1 above it,"
+  },
+  {
+   "start": 1707.01,
+   "end": 1733.34,
+   "text": "Its left and right are both children populated. If there is no 3 here, then it means that level 1 is not fully filled. Level 1 is not fully filled. Now come to the last level. Is level 2 fully filled? No, it is not. Why? You can see that there is nothing in the right of one circle of level 1. It has a right null."
+  },
+  {
+   "start": 1733.34,
+   "end": 1763.07,
+   "text": "Complete binary tree leaves you in the last level. In the last level, it is possible that there is no complete fill. It is possible that there is a null here. Okay. But, but, but, the node that should be there, that should be left to right fill. Left to right fill should be there. For example, if we erase this and we add this 5 here, is it complete? No. Is it complete? No. Why not?"
+  },
+  {
+   "start": 1763.07,
+   "end": 1793.07,
+   "text": "This is null. This is null. The right side of 2 is null. This is not allowed. See. Level 2 is not filled completely. We know that. It takes 4 nodes to fill completely. No problem. No problem. But. How is this filled? This is filled like this. 4. After 4, null came. Then came 6. And then came 5. This is not allowed. This is not allowed. Left to right. Fill should be done. And whatever is null. It should come in one line after that. It could have been like this. 4."
+  },
+  {
+   "start": 1793.07,
+   "end": 1819.36,
+   "text": "5, 6, NULL. This is allowed because where is the NULL? Right. Once NULL comes, there is no NULL after that. Once NULL comes, there is no item after that. But in the above example, once NULL comes, there can't be a node after that. If there is a node after that, then it is not a complete binary tree. Where do we get this left to right? Only in the last level."
+  },
+  {
+   "start": 1819.36,
+   "end": 1844.4,
+   "text": "The entire upper level should be completely filled. For example, if someone makes a tree like this. 1, 2, 3, 4. And that's it. Make this. Is this a complete binary tree? No. Because look, this is level 0. This is level 1. And this is level 2. Leave the last level. Is the second last level."
+  },
+  {
+   "start": 1844.4,
+   "end": 1868.51,
+   "text": "Is it fully filled? No. Second last level is not fully filled. So this is not a complete binary tree. Last level will not come now. Last level will not come. Just second last level is also not fully filled. So this should be the whole level. This is only in the last level. And in the last level too. It should be filled in left to right. Meaning. No matter how many nodes are in the last level."
+  },
+  {
+   "start": 1868.51,
+   "end": 1897.49,
+   "text": "Some notes can be null, but all the nulls should be on the right. It is not possible that 4 comes, then a 5 comes, then a null comes here, then a 6 comes here, then a null comes here, and a 7 comes here. No, this is not a complete binary tree. For completion, both the nulls should be on the right and all the filled notes should be on the left. So this is the definition of a complete binary tree. Once again, you can see that it is a bit complex. Now let's start thinking about what we will do in this."
+  },
+  {
+   "start": 1898.16,
+   "end": 1927.73,
+   "text": "To solve this question, because this question is telling you about level, this question is about levels. It is telling you that level should not be like this, level should not be like this. What do you remember from this? Level order traversal. Level order traversal. Because in this, you will not be able to do like this that you run a DFS and you are going left or right of the route. That will not happen. Because here it is talking about levels. That every level should be like this, last level should be like this. So you will have to run level order. I will show you a very interesting property of this."
+  },
+  {
+   "start": 1927.98,
+   "end": 1958.35,
+   "text": "Let me show you an interesting property. 1, 2, 3, 4, 5, 6. What is this tree? It is the right null of 3. You can see that it is a complete binary tree. If we write its level order traversal. What does level order mean? Left to right, first write the first level. Left to right, write the second level. Left to right, write the third level. So see what will come. First comes 1, then comes 2, 3, then comes 4, 5."
+  },
+  {
+   "start": 1958.35,
+   "end": 1987.98,
+   "text": "6, null. Okay, this is it. In this, in this, in this, where did all the nulls come from? In the last, a null came, so it's okay. Understand with one more big example, it may not be in this. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11. Okay, this is a tree. It's a little big tree. We write its level order too. Level order again."
+  },
+  {
+   "start": 1987.98,
+   "end": 2018.24,
+   "text": "We have to write every level from left to right. How do we write it? With Q. We will show you the code. And we have already shown it in the level order. There is nothing special. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11. And don't leave the null. Write the null too. What is this? This is its null. This is also null. This is also null. This is also null. So write the null too. Null. Null. Null. Null. This is its level order."
+  },
+  {
+   "start": 2018.24,
+   "end": 2045.44,
+   "text": "Let's look at it carefully. We write it in level order or traverse it in level order, like a level order traversal. If there is a null once, if there is a null once, before null, all the good elements were there, all the node type elements were there, which were non-null. If there is a null once, after that, all the null comes. After that, all the null comes. After that, see, not a single element came. If you tease this complete binary tree from anywhere,"
+  },
+  {
+   "start": 2045.44,
+   "end": 2075.38,
+   "text": "If you tease it from anywhere, then see what will happen. Let's assume we tease it from here. See what will happen. We erase this 7 and write null here. Here we write null. See what will happen. Write level order. 1, 2, 3, 4, 5, 6. Null. Null. After that, level order will not end. If there is more, then write more. 8, 9, 10, 11. Null. Null. See what happened here."
+  },
+  {
+   "start": 2075.38,
+   "end": 2103.49,
+   "text": "Here we have a null. It can happen for the first time. But after that null, there are more elements. This is not a complete binary tree. Look at the drawing. Is this a complete binary tree? No. Is there a complete fill in the second last level? No. There is a null in the second last level. It can't be. Everything should be filled till the second last level. So this is not a binary tree. Let's not tease it."
+  },
+  {
+   "start": 2103.49,
+   "end": 2132.51,
+   "text": "And we will tell it by teasing it somewhere. See, we will do it as it was. 7 and here we will give null null 2. And we will tease it somewhere. See what we will do. Delete this. Delete this. And what will you do here? Write null. Order its level. Order its level. What will come? 1, 2, 3, 4, 5, 6, 7, 8. More null. More null. More null. But after that null will not come."
+  },
+  {
+   "start": 2132.51,
+   "end": 2157.18,
+   "text": "10, 11 is here. Is this a complete binary tree? No. Because till the second last level, everything is fully filled. Very good. But in the last level, some things are null. And is that null completely on the right side? No. It is mixed. Node, null, node. This is not possible. All nodes will be on the left side, no matter how many are there. And no matter how many nulls are there."
+  },
+  {
+   "start": 2157.18,
+   "end": 2185.9,
+   "text": "They should all be on the right side. But here a null is sitting in the middle. So this is also not a complete binary tree. What did we learn from this? On this tree, on this tree, do simple level order traversal. Do simple level order traversal. Do simple. The first time when you get a null, the first time you get a null, from a boolean variable, a boolean variable, whose name we will keep null, seen. Null found or null seen."
+  },
+  {
+   "start": 2186.42,
+   "end": 2216.38,
+   "text": "Make it true. Next time if you get a null. If you get a number. Next time if you get a node. If a node. Which is not null. And. This null scene is true. Means. This is a false complete tree. Means. When you will get a null here for the first time. Then you will make this null scene true. You have got it for the first time. You will make it true. Okay. What is the first time? Whenever you get a null, make it true. But. Next time when you will get this 10."
+  },
+  {
+   "start": 2216.38,
+   "end": 2247.1,
+   "text": "So, you will check that this is non-null. Is my null scene true? Means, is there any null before this 10? You will say, if it is, then return false. If it is, then return false. That's all you have to do in this. How to do it? Let me tell you. The code of level order will also be revised. Come. So, you have to write a function, bool isComplete. IsComplete. We will make it a little smaller. What will pass in this? Node."
+  },
+  {
+   "start": 2247.1,
+   "end": 2279.57,
+   "text": "Root. First of all, check the basics. If the root is null, then what should you do? True. Empty node is complete. Empty node is complete. Who is the level order? Q. Q. Yes. Q. Node star. If you don't understand this, then again, look at the level order. Level order is very nicely explained. After seeing that, you will understand it like butter. Q. First of all, push the root in this. That's it. After that,"
+  },
+  {
+   "start": 2279.57,
+   "end": 2309.46,
+   "text": "while q dot empty. Now, now, now, in level order, what did you do? In level order, you used to do traversal, right? In that, you used to take out its size because you had to make a level by level vector and put it somewhere. There is no need for that. In this, you just need this. You just reverse this tree like this. Reverse this, traverse this, traverse this, traverse this. That means, you just don't have to store anything anywhere. You just have to see the node one by one. Level wise. Level wise, you just have to see."
+  },
+  {
+   "start": 2309.46,
+   "end": 2340.19,
+   "text": "There is no need to do anything. Keep watching. What should we do first? Take out the node. Node t is equal to q dot front. Take out the front of q. Pop the front of q. Done. Done. Now, now, now. If, if t equal equal to null, t equal equal to null, then what did we say? Our null found, null found is equal to true. Do it as many times as you get. No problem. If you get one null, it will be done."
+  },
+  {
+   "start": 2340.19,
+   "end": 2370.16,
+   "text": "What will we do at the top? bool null found is equal to false. In the beginning, it will remain false. As soon as you get the first null, make it true. Else, else means you have got a good circle. First of all, if null found is true, null found is true, return false. What does this mean? That null found was found at some point. It means this null had come at some point. After that, you got 10. Immediately false. This cannot happen."
+  },
+  {
+   "start": 2370.16,
+   "end": 2399.09,
+   "text": "This means it is not complete. If this is not the case, now what do you do? You push TKLeft and TKRight as well. Q.push and push TKLeft as well. And push TKRight as well. And push TKRight as well. Close this. And if nothing happens, in the end, return true. This is a very simple level order because"
+  },
+  {
+   "start": 2399.09,
+   "end": 2430.1,
+   "text": "storage, etc. You just have to do it one by one. Sometimes you have to do it one by one and see the node in level order. Let's see it like this. Let's dry run it. Come on, let's dry run it too. Otherwise, we will say what is written. Come on. Let's take a small tree. We will explain to you that if it is not complete, how will it hold? If it is not complete, how will it hold? 4. Okay? This is your tree. Now, what is null in it? This is null. This is null and this is null. Okay? First of all, what do you do? First of all, our null found."
+  },
+  {
+   "start": 2431.38,
+   "end": 2462.0,
+   "text": "Null found is equal to false. Now this is false. What do you push in your Q first? Root. Root means 1. 1 is pushed. Come. Is Q empty? Q is not empty. So what will we do? We will remove 1. From where? This is front. And this is rear or end. T is equal to what? 1. And we popped front. So Q is finished. Okay. First of all, what is T null? T is not null. T is not null. So your null found is still. We will write it here. What is this?"
+  },
+  {
+   "start": 2464.66,
+   "end": 2490.32,
+   "text": "T1 is here. Is T null? No, T is not null. We will keep null found as false. This is also false. T1 is here. What we used to do? If null is here, we used to push T to the left and T to the right immediately. Because this is how level order works. When you push both the children of 1, automatically, automatically, after 1, the number of 2 and 3 will come."
+  },
+  {
+   "start": 2490.32,
+   "end": 2517.81,
+   "text": "First you are pushing the left and then you are pushing the right. Automatically after 1, the number of 2 and 3 will come. What did we do? We pushed 2 and 3. This loop will continue. Q is not empty. What will happen? T. T is now 2. T is now 2. Is this null? It is not null. Null found is still false. So what do we have to do? Push the left child and right child of 2. See, in level order traversal, we did not push the null child. Remember."
+  },
+  {
+   "start": 2517.81,
+   "end": 2545.49,
+   "text": "If the left of t is not null, then we would have pushed it. But here, irrespective, push it. Only then we will know that it is null. If you will not push the null, how will we know that it is null? What is irrespective? Push it. So the left child of 2, null, is pushed. And 4, this is also pushed. And 2 is popped. Run it again. Come to 3. What is t equal to? 3. Is 3 null? 3 is not null. Null found is also false. What do we have to do?"
+  },
+  {
+   "start": 2545.49,
+   "end": 2574.16,
+   "text": "Push the left and right of 3. Null. Null. And pop the 3. See, what happened by this? What happened by this? When you have seen 2 and 3, then the next one is automatically prepared in Q. Null, 4, null, null. Null, 4, null, null. Automatically, when you see like this, then you are seeing in the same way. Level by level, left to right. Let's go. Next T. What will come next? Next T will come null. Because we pushed. T came null. Come here."
+  },
+  {
+   "start": 2574.16,
+   "end": 2603.46,
+   "text": "Is T null? Yes, T is null. Null found true. This is the first null. This is the first null. This is the first null. Meaning, if this tree has to be completed, all the nulls will have to be there. All the nulls will have to be there. But that's not the case. Why not? Because, because, what will be your next T? What will be your next T? 4. It got messed up here. Why did it get messed up? Is T null? T is not null. But, when you come here, when you come here, if null found true,"
+  },
+  {
+   "start": 2603.46,
+   "end": 2632.48,
+   "text": "What is null found true? Yes, null found true. What will it say? Return false. Why return false? Because there was no problem till second last level. It was full. But last level in this way. Is all null on right? No, all null is not on right. Mix match is done. Mix match is not allowed. What will return straight? False. Straight false. Will it work like this? Will it work like this? So these are both very interesting questions. Very basic fundamental questions."
+  },
+  {
+   "start": 2632.48,
+   "end": 2635.38,
+   "text": "Code both and see you in the next lecture."
+  }
+ ]
+}

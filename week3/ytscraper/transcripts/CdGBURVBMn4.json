@@ -1,0 +1,304 @@
+{
+ "video_id": "CdGBURVBMn4",
+ "title": "Episode 10 of DP in 15 Days | Longest Increasing subsequence part 1",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1550,
+ "segments": [
+  {
+   "start": 0.46,
+   "end": 21.92,
+   "text": "Hello students, how was the weekend? Today's lecture will be watched very carefully, very calmly. Again, the students who have come in the middle of the DP series, watch the DP series from the beginning. Now, today we are going to do LIS. LIS is very important because we have done so much DP till now. Who was it on? It was on arrays, it was on integer arrays. This is the first question that is going to happen."
+  },
+  {
+   "start": 21.92,
+   "end": 45.39,
+   "text": "This is also going to be an integer, but this is going to be a different type of question. Till now, we have done Napsack and etc. It is of a different category. This is a different pattern. Like the subset sum was a different pattern. There used to be 3-4 questions from 1 question. This is also a different pattern. Even after doing 1 question, you can do 3-4 different questions. That's why it is of a different category, pattern and importance."
+  },
+  {
+   "start": 45.58,
+   "end": 69.01,
+   "text": "This is why LIS is more important. LIS means Longest Increasing Subsequence. We will talk about this later. But look at this, it is such a big thing. First of all, today we will explain the recursion of LIS and its memoization. Today's lecture is for that because we don't want to rush it. We want to learn it slowly by doing it in two parts. But LIS's recursion and its memoization. Memoization means writing DP."
+  },
+  {
+   "start": 69.01,
+   "end": 96.94,
+   "text": "This is not enough, this is not enough. You should get the tabulation of memoization in any interview, which we have already told you that tabulation is your end goal. But you should get the optimized tabulation of tabulation in this. I mean, save some space in the tabulation too. Optimize the space. Okay. Even after this, it should not stop. The interviewer will not even agree with you. The interviewer needs the most optimal binary search approach. Absolutely binary search. Binary search in DP."
+  },
+  {
+   "start": 96.94,
+   "end": 111.47,
+   "text": "In LIS, there are 1, 2, 3, 4, 5 stages of improvement. We will start by writing recursion as usual, memorization in recursion, but we will not stop there. Today's lecture will cover these two."
+  },
+  {
+   "start": 111.47,
+   "end": 141.49,
+   "text": "After understanding these two, you will have to see part 2 on which we will do the recursion in tabulation, the tabulation is optimized and lastly, we will solve this question with the approach of binary search. So you should know all this approach. In any interview, if you are asked for a different variant of LIS or LIS, then you will have to do this in most of the cases. Meaning, if we take your interview, then we will make you do this, we will not agree with your recursion. So you open your ears and see, remove the copy and let's go. So see,"
+  },
+  {
+   "start": 141.49,
+   "end": 171.39,
+   "text": "LIS means L-I-S L-I-S means L-I-S L-I-S L-I-S"
+  },
+  {
+   "start": 171.39,
+   "end": 196.53,
+   "text": "Subsequence means that you can take any number in an array. You can take any sequence of numbers in an array. For example, if you want, you can take 9 from an array, then you can take 3, then you can take 101. So what does this mean? This is called a subsequence. Subsequence. What does it mean? Subsequence. What is the difference between subsequence and substring?"
+  },
+  {
+   "start": 196.53,
+   "end": 214.21,
+   "text": "What does sub-string mean? When we used to do sliding window, we used to read sub-string. Sub-string means you have to pick up a continuous part. You have to pick up a sliding window, a window, a chunk. But what does sub-sequence mean? You can pick up a number by leaving it. Means you pick up 9, then you leave the previous number, then you pick it up."
+  },
+  {
+   "start": 214.21,
+   "end": 240.51,
+   "text": "Then you can leave the next two numbers, you can do anything. But in this order, the order should be maintained. Meaning to maintain the order means 10 and 9. This is a sub-sequence. But you can't do this that you pick up 9 first. First pick up this 9 and then pick up this 10 and write this. No, this is not a sub-sequence. The order is spoiled. 9 comes after 10. You can pick up whatever you want. Keep maintaining the order. But there is no need to pick it up in one window. What is it called? Sub-sequence."
+  },
+  {
+   "start": 240.51,
+   "end": 268.62,
+   "text": "You should know the difference between sub-sequence and sub-string. So, the sub-sequence is that you can pick any number. If you want, you can pick any number. That is also a sub-sequence. If you want, you can pick any number. That is also a sub-sequence. Very good. But, what is said in that? Longest increasing sub-sequence. Yes, longest increasing sub-sequence. What does this mean? If we pick this sub-sequence, suppose 9 and 2 and 5."
+  },
+  {
+   "start": 268.62,
+   "end": 294.0,
+   "text": "Take this sub-sequence. Okay. Is this an increasing sub-sequence? How will we test this? What is the first number? 9. This is good. What came after 9? 2 came. Means after 9 you went down. You started from here and you went down. This is not an increasing sub-sequence. This is a decreasing sub-sequence. So this is not increasing because"
+  },
+  {
+   "start": 294.0,
+   "end": 318.88,
+   "text": "Increasing means that it keeps increasing continuously. This is not an increasing subsequence. Look at another example. 2, 5, 3. Is this an increasing subsequence? Let's check. 2. Good. The first one is fine. What happened after 2? 5. It means you went up after 2. Very good. After 5, you came to 3. This is a mistake. After 2."
+  },
+  {
+   "start": 318.88,
+   "end": 348.86,
+   "text": "went up and then came to 3. This is also not an increasing subsequence. Increasing means it should always be increasing. It should be increasing as much as it is. This is also not an increasing subsequence. Look at one more. 2, 5, 7, 1, 0, 1. Is this an increasing subsequence? Yes, yes, yes. This is increasing. After 2, 5 came. After 5, 7 came. After 7, 101 came. What is this subsequence called? Increasing subsequence. What?"
+  },
+  {
+   "start": 348.86,
+   "end": 374.18,
+   "text": "Increasing subsequence. Very good. What have you been asked? Now, it is not that this is an increasing subsequence. It is not like that. That this is an increasing subsequence. We can write one more and show you. 7, 1, 0, 1. This is also an increasing subsequence. 10, 18. This is also an increasing subsequence. 9, 1, 0, 1. This is also an increasing subsequence. 2."
+  },
+  {
+   "start": 374.18,
+   "end": 402.67,
+   "text": "3, 7, 18. So, these are all increasing subsequences. But, what do you have to return? You have to return the longest one. What can you make the longest increasing subsequence? In this question, what can be the length of the longest increasing subsequence? Your answer will be, you can make it of 4 lengths. You will not be able to make an increasing subsequence of 5 lengths in this array. You can try that and see. What do you have to return?"
+  },
+  {
+   "start": 402.67,
+   "end": 432.19,
+   "text": "From the increasing subsequence, you have to return the longest increasing subsequence. The longest one. You have to return its length. In this question, you will not be able to return an increasing subsequence greater than 4. And one more thing. When we are telling you increasing, then is it strictly increasing? Strictly increasing means, if your subsequence is like this, 5, 5, 10, then you will feel that this is also increasing. No, this is not increasing because,"
+  },
+  {
+   "start": 432.19,
+   "end": 460.7,
+   "text": "You were at 5. You stayed at 5. And then you went to 10. This is not increasing. Why? Because this part, this is not increasing. It was constant. Same numbers cannot be. Increasing means strictly increasing. If it was 6 after 5, then this increasing would have been subsequent. The number should not be the same. Increasing should keep on increasing. This is called increasing. And what is your job?"
+  },
+  {
+   "start": 460.7,
+   "end": 486.62,
+   "text": "the length of the longest increasing subsequence. So, the question will be clear. Now, let's understand this question. Now, start understanding this question. Suppose, this is your array. In this, you have to find the length of LIS. So, by looking at this, you will know that LIS will be 1, 2, 5. If we make this length, it means 3 lengths. We will not be able to make more than 3. Because the length of the array is 4. It is not possible to take 4. Can we make it of 3 lengths? 1, 2, 5. Okay."
+  },
+  {
+   "start": 486.62,
+   "end": 510.53,
+   "text": "But how to solve it, how to solve it, how to write recursion, we will see. So this question is also a choice question. You should understand this much till now because you cannot make any set algorithm in this. What does this mean? What we are shouting from the beginning, when you come to 4, you will see one by one whether you have to include it in the subsequence or not. You will see one by one. When you come to 4,"
+  },
+  {
+   "start": 510.53,
+   "end": 539.39,
+   "text": "You don't have any set algorithm that we will not take 4 or we will take 4. It can't be like this. No, it can't be like this. Meaning, if you say that 4 will remain in my answer, we will not leave 4 no matter what happens, then your answer is no. Now, suppose you have kept 4 by winning your answer. Now, because of keeping 4, neither you will be able to keep 1 nor you will be able to keep 2. You won't be able to keep it, right? So, after keeping 4, 1 and 2 are not possible. You can keep 5. Your answer will be 2. How many should have come? 3. Similarly,"
+  },
+  {
+   "start": 539.39,
+   "end": 557.66,
+   "text": "You can't say that we won't keep any number. Suppose you don't keep 4. And you came to 1. Now you are adamant that we won't keep 1. No matter what happens, we won't keep 1 in the world. So if you don't keep 1, then you have to take 2 and 5. So 2 and 5. How many answers will come? How many should have come? 3. What does it mean to say?"
+  },
+  {
+   "start": 557.66,
+   "end": 582.83,
+   "text": "You can't take a certain decision whether you will keep it or not. You have to do both. And as soon as this line comes that you have to do both, you have to do all the choice. What should come in your mind? Big big recursion. What should come in your mind big red? Recursion. Good. It means that you have a choice on every index. What is the choice?"
+  },
+  {
+   "start": 582.83,
+   "end": 606.77,
+   "text": "We have to include this in our answer, which means we want to keep this in our sub-sequence. Which means the length of your sub-sequence will increase from 1, or we will leave this and move forward. There can be only two types of choice. Will we keep half? No, we can't keep half. Will we keep it or not? Okay. But, but, but, now tell me one thing. Suppose you are at i is equal to 0."
+  },
+  {
+   "start": 606.77,
+   "end": 632.05,
+   "text": "On i is equal to zero, the element is 4. Now, on the first element, you will have a choice. On the first element, it is not like that. Now, the first element is the first element. There is nothing before that. So, you can keep it or not. Your choice is completely open. I mean, listen to your heart. So, you say, okay, there are two choices. One is the path of yes, that we will keep it in our answer. If you keep it in your answer, then the length of your subsequence will increase by one."
+  },
+  {
+   "start": 632.05,
+   "end": 652.99,
+   "text": "Very good. Okay. And you have one more path that we will not keep it. If you will not keep it in your answer, then your answer length will not increase. Okay. But, when you will take it and come to i is equal to 1 from the yes path, now see, what is there on i is equal to 1? 1. What number is there on i is equal to 1? 1. What have you done here?"
+  },
+  {
+   "start": 652.99,
+   "end": 682.1,
+   "text": "Aap yaha pe iss aadmi ko leke aaye hain. Iss aadmi ko leke aaye hain. Yes wale path mein aap. Yes wale path mein. Matlab aap 4 ko leke aaye hain. Matlab aapka sub-sequence kuch kuch aisa dikhega ki 4 aagaya hai. Kuch bacha hua hai ab lena. Ab ek baat bataiye. Agar aap 4 ko leke a rahe hain. Kisko? 4 ko leke a rahe hain. Kya aap duniya me kuch bhi karke 1 ko le sakte hain kya? Kya aap duniya me kuch bhi karke 1 ko le sakte hain kya? Nahi le sakte hain. Jaise hi aap 1 ko lene ka choice lenge na."
+  },
+  {
+   "start": 682.1,
+   "end": 710.74,
+   "text": "Your longest increasing subsequence will break. If you have taken 4 and come here. As soon as you put 1 after 4. This is not an increasing subsequence. So leave the longest. It is not in increasing subsequence. Meaning. If you have taken 4. And you have come to 1. You will have only one way left in the world. Which way will be left in the world? You can't take it. You can't take it at all. You have to go ahead. Similarly."
+  },
+  {
+   "start": 710.93,
+   "end": 737.14,
+   "text": "i is equal to 2 pe aaye. Abhi bhi last kaunsa element liye the aap? 4. Last kaunsa element liye the? 4. Kya 4 liye ke baad aapko lagta hai ki aap duniya mein kuch bhi karke 2 ko le sakte hai apne answer me? Nahi le sakte hai. That will not be an increasing subsequence. Aapke paas sirf ek rasta bachega. No ka. No karke aap kahan pe aayenge? i is equal to 3 pe. Ab, ab, ab."
+  },
+  {
+   "start": 737.14,
+   "end": 763.79,
+   "text": "On i is equal to 3, which element was taken last? 4. Now what number is here? 5. Now you have a choice. Now you can take a decision if you want. Which element was taken last? 4. After 4, which number came now? 5. So 5 is bigger than 4. 5 is bigger than 4. Now you have a decision. If you want, you can take 5 in the answer. If you want, you can not take 5 in the answer."
+  },
+  {
+   "start": 763.79,
+   "end": 790.18,
+   "text": "Now, how many options will you have? Two options. Yes and no. But, if your previous element, means your previous taken element, which one? Previous taken element. Previous taken element. If this person is greater than or equal to your current element, you have no choice. You have no choice."
+  },
+  {
+   "start": 790.18,
+   "end": 810.78,
+   "text": "Aapko chhod ke aage jaana padega. Chhod ke aage jaana padega. Aur duniya mein koi raasta nahi macha hai aapke pa. Lekin, jo a previous taken element, matlab abhi, issse pehle jo element aap liye the, wo agar less hai issse, tab aapke paas do tarike ke choices bachengi. Aur,"
+  },
+  {
+   "start": 810.78,
+   "end": 837.15,
+   "text": "Why are we saying that you should remember the previous taken element? Suppose you take the first element, 4. Your previous becomes 4. You got 5. You got a new number, 5. So you can take it. You have a choice. You take 5. Now your previous will not remain 4. Now your previous will not be 4. Now your previous will become 5. Why? Because suppose after this 5, there is another 5 in the array."
+  },
+  {
+   "start": 837.15,
+   "end": 865.95,
+   "text": "If you don't change your previous, let your previous be 4, then you think we can take this too. No, we can't. Just now, which is your recent element? 5. On this 5, can you take this 5 more? No, it won't be increasing. You can't take this 5. Suppose the next element is 10. Now you can take this 10. So now you can take this 10 if you want. And what will become of your previous after updating? 10. Whose next decision will be on this?"
+  },
+  {
+   "start": 865.95,
+   "end": 888.74,
+   "text": "It has to be on the basis of 10. So, you don't just want the index. What do you want? Which element are you bringing previous? Which element are you bringing previous? Which element are you bringing previous? Means, when you stay at i is equal to 0, i is equal to 0, then which element is previous? No element. You have not taken anything. So, you also take previous."
+  },
+  {
+   "start": 888.74,
+   "end": 918.42,
+   "text": "We can store it in the index. Which element of the index are we taking? When you stay at i is equal to 0, which element is the previous? What did we take before this? Nothing. We just started. What will we take now? Your previous can be minus 1. What can be your previous? It can be minus 1. Okay. How will you decide whether you have a choice or not? If your previous is minus 1, then you have a choice. Previous minus 1 means that you have not taken anything till now."
+  },
+  {
+   "start": 918.42,
+   "end": 947.66,
+   "text": "then you have a choice. And, and, and, if previous minus 1 is not there, then if this previous is less than your current element, then also you have two types of choices. If these two things are not there, if these two things are not there, you will have only one choice left. You will have a choice to leave it. What? You will have a choice to leave it. You will have a choice to leave it. If that is not the case. So, we hope that you understood this."
+  },
+  {
+   "start": 947.66,
+   "end": 977.63,
+   "text": "Now let's move towards our code. So after such a big speech, what does the poet want to say? That you need two things. You need an index on which you want to take a decision and you need a previous index. What does the previous index tell you? Which one have you brought before this? If you have brought it, then you will have to choose according to that. Meaning, if we write such a function that int fun, okay? And vector int a, okay? n, how many elements are there?"
+  },
+  {
+   "start": 977.63,
+   "end": 1005.39,
+   "text": "After that, two things, i and int, prev means, i means the current index and prev means everything. First, write the base case. If the array is finished, how much more can be made? Nothing can be made, son, nothing is finished. Game over, game over, son. Okay? Okay. Now, you have to check. What will you have to check? If previous equal equal to minus 1. What does this mean? When we start, we sell previous as minus 1."
+  },
+  {
+   "start": 1005.39,
+   "end": 1022.45,
+   "text": "Array of i is greater than array of previous."
+  },
+  {
+   "start": 1022.45,
+   "end": 1051.34,
+   "text": "which you have taken in the previous. Suppose you had taken 4. The current element is 10. Now 4, 10 will work. So you have a choice. You can take 10 or not. Now you have two choices. The first choice is that you take this element in your answer. If you take it in your answer, then your answer will increase from 1. If you take it, then 1 will increase, right? It increased. Plus, you go ahead. Array, n, i plus 1. And what did we say? If you are taking someone, if you are taking an element,"
+  },
+  {
+   "start": 1051.34,
+   "end": 1079.5,
+   "text": "Now, this index will be the previous of the next one. If you take 5, then 5 will be the previous for the next one. So, instead of previous, we will pass i because now this index will work as the previous for the next one. Did you understand? Okay. What is the next choice? You take it. You take it. We will not take it. It is not necessary to take it. We will go ahead. Array n i plus 1. Now, if you don't take it, then what will be the previous for the next one? Which was till now."
+  },
+  {
+   "start": 1079.5,
+   "end": 1109.57,
+   "text": "Let's assume there were 4 previous. This was the array, right? This was the array, right? See. 4, 1, 2. 0, 1, 2. This was the array. Let's assume we took 4. So, my previous became 0. You came to 1. You didn't take 1. You didn't take 1. What didn't you take? You can't take it. If you didn't take it, you moved forward. Now, when you move forward and come to 2, what is previous for 2? For 2 also, 4 is previous. Now, how will 1 become previous for 2? When you didn't take 1, how will it become previous? That's why, as it is, previous is passed."
+  },
+  {
+   "start": 1109.57,
+   "end": 1133.65,
+   "text": "Take this. Very good. Both the choices are done. Now, which of the two choices is bigger? Whichever you think is a good choice. Max of C1 or C2. Meaning, if we take this, we will get some length. If we take this, we will know that it is of 5 lengths. If we don't take it, it is of 10 lengths. So, we will not take it. It is over. Now, if it is not like this. If it is not like this. Meaning, what is it?"
+  },
+  {
+   "start": 1133.65,
+   "end": 1159.94,
+   "text": "You don't have any choice left. So what do you have to return? You can't take anything from it. Return fun array and i plus 1 and prev. Why is this written? Assume if will fail when? If will fail when? If previous is minus 1, then if will work. Previous is not minus 1. Okay. And array of i is not even bigger than array of previous. Meaning, somewhere,"
+  },
+  {
+   "start": 1159.94,
+   "end": 1187.23,
+   "text": "Your array of i is smaller than or equal to your array of previous. When this happens, what do you have to do? Nothing. You have to go ahead. You can't take this element in life. We did this. And here, we closed it. Recursion is over. What do we do to do recursion in DT? What are the things changing? i is changing and prev is changing. How much is i? i maximum."
+  },
+  {
+   "start": 1187.23,
+   "end": 1216.37,
+   "text": "It can go up to n. Previous is also an index. It can also go up to n. So what will we do to memorize? We will make an array. How big is it? n plus 1 and n plus 1 size. After that, what will we do? We will pass that array or that BPK vector here. Here, vector of. We are not telling this now because it is the main function. Because it must have entered your mind again and again. Vector of int."
+  },
+  {
+   "start": 1216.37,
+   "end": 1247.73,
+   "text": "After that, leave the base case. If dp of i or prev not equal to minus 1, then return dp of i of prev. Very good. If this is not the case, then you will have to do it. But before returning, store it in this."
+  },
+  {
+   "start": 1247.86,
+   "end": 1275.58,
+   "text": "prev equal to max of c1, c2. One more place is returned. You will have to store it here as well. You will have to store it here as well. dp of i of prev equal to fun array and i plus fun and prev. This is your memo is. But there is a very big, very big mistake in this. Very big mistake."
+  },
+  {
+   "start": 1275.58,
+   "end": 1305.66,
+   "text": "What is that mistake? Pause the video and think for a minute. Otherwise, we will tell you. Let's tell you. You must have paused and thought. What is the mistake in this? When you start this recursion, when you start this recursion, how will you do it? What did we say? When you call this recursion from the main function, you will call it like this. Return fun array n. Where will i start? From 0. And what did we say? What will be the previous in the beginning? We will start the previous by doing minus 1. There is no previous in the beginning."
+  },
+  {
+   "start": 1305.66,
+   "end": 1333.52,
+   "text": "Now, this means that your previous, which has been passed, what has been passed? Minus 1. Minus 1 means that there is no index. We are using it. But, here you are doing dpi and previous. Suppose, if the value of previous by chance is minus 1, you will pass minus 1 in this array's index. Segmentation fault will crash. What will happen? Crash will happen or unexpected behavior will come."
+  },
+  {
+   "start": 1333.52,
+   "end": 1363.04,
+   "text": "What should we do to solve this? Now, the value of previous, the value of i cannot go to minus, that is known. The value of previous can be minus 1 because you are passing minus 1. What should we do for this? For this, we will assume, we will assume, what will we assume? That i and prev, the i and prev in fun, assume, we will assume that fun i prev. Where will we get its answer? Or where will we write its answer?"
+  },
+  {
+   "start": 1363.04,
+   "end": 1389.07,
+   "text": "We will write its answer in dpi and prev plus 1. Prev plus 1 means, suppose i is equal to 0 and prev is equal to minus 1. Where will we write its answer? In dp of 0 and 0. Sometimes i is equal to 4 and prev is equal to 2. Where will you get its answer?"
+  },
+  {
+   "start": 1389.07,
+   "end": 1418.32,
+   "text": "You will get the answer in DP of 4 and 3. We will write the answer in PREV plus 1. Why? Because PREV can be minus 1. If you write simple simple I PREV to I PREV, it will crash or it will be wrong. That's why we will assume this. See, what is diary? You have assumed that you will write diary here and see here. It is your choice. Now assume that you are making a diary or a calendar. Now normally what people do? Normally what happens on Monday is"
+  },
+  {
+   "start": 1418.32,
+   "end": 1447.98,
+   "text": "We write on the Monday page. What happens on Monday, we write on the Monday page. We do this normally. You assume, your diary is your choice. You assume that whatever will happen on Monday, we will write on the Tuesday page. It's your choice, it's your diary. Whatever will happen on Tuesday, we will write on the Wednesday page. And whatever will happen on Friday, we will write on the Saturday page. It's your choice, you write. Assume someone asks you, okay tell me, what happened on Tuesday?"
+  },
+  {
+   "start": 1447.98,
+   "end": 1476.14,
+   "text": "So the normal person will see what happened on Tuesday from the Tuesday page. But because you were doing the opposite, you were doing something different. What will you do? You will open the page of Webinar Day and tell him. If someone asks you, tell me one thing, what happened on Saturday? What will you do? You will open the page of Sunday in your diary and read it and tell him. It is your wish. Your rule, your life, your rule. That's why we want to make a change in this. What change do we want to make? Here, if"
+  },
+  {
+   "start": 1476.14,
+   "end": 1504.38,
+   "text": "Prev plus 1. What will you do? Prev plus 1. It's over. You have to do this everywhere. Here you are looking for the answer. But where you are writing the answer, you have to change that too. If you write from your rule, then only you will find it. You write normally and you are looking for another rule. It will be different. So where there is work to write, here and here. See this. You have written a memoization code. What have you written?"
+  },
+  {
+   "start": 1504.38,
+   "end": 1530.11,
+   "text": "Memoization has been done. What has changed? We write according to what? That is your choice. If you want, you can write the previous answer in the previous plus 10. It is totally your choice. Because you are writing, you are searching, so you can do whatever you want. So keep these things in mind. That is why I said that all this is not going to be written. That always the answer is I. No, it is your choice. You can write as you like. So this was a very important thing to understand."
+  },
+  {
+   "start": 1530.11,
+   "end": 1549.42,
+   "text": "So, you have done this memoization which we talked about in the beginning of stages. Where did we talk about? Where did it go? Yes, now you have done this. Where did it go? Done? Done. Tomorrow, we will do these three. So, don't miss tomorrow's lecture. And before watching tomorrow's lecture, understand this completely. Let's meet."
+  }
+ ]
+}

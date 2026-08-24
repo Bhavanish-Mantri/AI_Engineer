@@ -1,0 +1,264 @@
+{
+ "video_id": "55aenUfSIhQ",
+ "title": "Best Explanation Of Merge K Sorted Lists | HEAP DSA Pattern",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1472,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 26.8,
+   "text": "I was not in the mood to make this video today, but the thing is that the world does not work with the mind, neither with my mind nor with your mind. Always do one thing in the day that you do not want to do, okay? Whether it is to study, whether it is to go to the gym or not to run Instagram, whatever it is, whether it is to eat or not to eat, any work. It strengthens the willpower, like the body is made by lifting weight, so doing all these things trains the willpower that okay, there is some resistance."
+  },
+  {
+   "start": 26.8,
+   "end": 54.91,
+   "text": "Otherwise, you will always do what you want to do. We have been sleeping since morning, we haven't done anything. So, I didn't feel like doing anything, we will go and sleep now. But this is one thing that you have to do, do it. Do it in any way, do it by hitting your mind, do it by getting angry, do it by doing something, do it by getting sad, but do it. So, do these little things, this will make your mind stronger gradually. If you do only those things that your mind wants to do, then your mind wants to see everyone's reel. See, the thing is the same thing, it is a simple thing."
+  },
+  {
+   "start": 54.91,
+   "end": 81.7,
+   "text": "So, let's start and see. It's a little problem-easy. It's a problem with syntax too. I mean, how to write that heap, you have a problem with that. So, for that, you will get all the code words in the description, you will get the question link. So, don't worry about the syntax, learn the concept. Let's start. So, those who are following from the beginning, will remember something after seeing this question. Because when we used to do two-pointers many years ago, we had done this. Merge two-pointers, we had done it in a way, but..."
+  },
+  {
+   "start": 81.7,
+   "end": 109.94,
+   "text": "Now, Merge to Sorted Array is not Merge to Sorted Array, it is Merge to Sorted Array. We can call it as Increased Version or Hard Version. Let's start thinking. First of all, let's remember what we used to do in Merge to Sorted Array. So, what used to happen in Merge to Sorted Array is that you used to get two arrays like this. Right? So, 1, 3 and 7 used to be one array. And 2, 6 and 8 used to be one different array. Now, what did we do? And if we write its index here, then what did we do?"
+  },
+  {
+   "start": 109.94,
+   "end": 139.62,
+   "text": "you used to make a big array first because their size is 3 so for the whole array you will need an array of 6 sizes so you used to take an array of 6 sizes here 1,2,3,4,5 1,2,3 and by doing this you used to make an array after that what we used to do in 2 pointer approach what we used to do we used to keep one pointer here whose name used to be i we used to keep one pointer here whose name used to be j now what decision we used to take that brother look we have to fill the whole array"
+  },
+  {
+   "start": 139.62,
+   "end": 163.74,
+   "text": "In some way or the other, you have to fill the whole area. Let's concentrate on filling this space now. Because this space is empty now, so let's concentrate on filling this first one. Now who will come in the first space? The smallest element of both the areas can come. Okay. Now in both the areas, we used to see that there is 1 on 1. Here is 2. So we used to see that which element can't come for sure. So we used to say that 3 and 7, do anything."
+  },
+  {
+   "start": 163.74,
+   "end": 191.12,
+   "text": "It can't come to the first position. Why can't it come? Because if someone from 3 and 7 has to come to the first, then where will 1 go? 1 is small, so the sorted one will not sit. With the same logic, we used to say that 6 and 8, no matter what they do, no matter what they eat, it can't come to the first position. Why? Because 6 and 8, whether it is bigger than anyone or not, it is definitely bigger than 2. We used to decide that for the first position, only 2 claimants are left. Which 2 claimants are left? Either 1 or 2."
+  },
+  {
+   "start": 191.12,
+   "end": 216.29,
+   "text": "Who will come from 1 and 2? So we used to see that who is the smaller one from array of i and b of j? We used to see that the smaller one is this one. We used to lift it up and put it here. What did we do by lifting it up? We used to put it here. And we used to increase i. What did we do by increasing i? We used to increase it. This used to become i. We used to do the same thing. Now we will fill this space. So 1's work is finished. On this space, using the same logic,"
+  },
+  {
+   "start": 216.29,
+   "end": 241.74,
+   "text": "7 can't do anything. 6 and 8 can't do anything. Who can come? Who has a chance to come? 3 can come or 2 can come. Who will come from both? The one who is small will come. We used to see that he is small. So what we used to do? We used to write 2 here. And similarly, whoever we used to write, we used to increase j in it. We used to do it like this. Until both the arrays were finished, you used to get a sorted array here."
+  },
+  {
+   "start": 241.74,
+   "end": 271.25,
+   "text": "Now the problem is that you don't have 2 sorted arrays, you have k sorted arrays. k can be 2, k can be 3, k can be 100. If we take a pointer for each array and compare it, then you will face a lot of problems. For example, let's try this on 3 arrays. Let's try to merge 3 sorted arrays. One is done, and the other is done. 1, 0, 1, 0, 1, 0, 1."
+  },
+  {
+   "start": 271.25,
+   "end": 299.41,
+   "text": "1, 6, 2, 5, and 2 and 8. These are your three sorted arrays. Similarly, you will make a very big array. Similarly, you will make a very big array. Okay. 0, 1, 2, 3, 4, 5. Now, because there are three sorted arrays here, then you will have to take three pointers. Two pointers won't work. It was in two pointers. Now, you will have to do three pointers. So, if you do three pointers, then I will keep it here. J will keep it here. K will keep it here. With similar logic,"
+  },
+  {
+   "start": 299.41,
+   "end": 321.97,
+   "text": "We will try to fill this space. Which element can come in this space? So in this space, with similar logic, either this can come, or this can come, or this can come. Nothing else can come. Now you have to compare between these three. Which one is smaller than these three? Which one is smaller than these three? And suppose you come to know that the i is smaller. So you write the i here. You will increase the i here."
+  },
+  {
+   "start": 321.97,
+   "end": 348.66,
+   "text": "We will increase the i here. Then you will have to do the same thing on all three. So tracking will be very difficult. You must be thinking that we will do it on all three arrays. There is only i, j, k. By doing something, we will increase the minimum i and add it. This is taking 3 paise. Now assume 100 are sorted arrays. How many are sorted arrays? 100. 100 are sorted arrays. Now this 2 pointer approach has become your 100 pointer approach. You might not realize it but it has become."
+  },
+  {
+   "start": 348.66,
+   "end": 378.35,
+   "text": "Earlier i and j were there, now you will need 100 variables together. 100 variables, from a1 to a100, the names of the variables. Every time you will have to track which is the minimum. Every time which is the minimum, you will have to increase the minimum. So this will become a very bulky program. Do you understand? Keeping 100 variables, if something goes wrong somewhere, then we will go and debug that where did it go wrong, who knows what happened there. So this will become very bulky. We will apply the same thing, same logic, everything is the same, but"
+  },
+  {
+   "start": 378.42,
+   "end": 399.71,
+   "text": "Let's see what we are essentially doing here. The logic is the same, everything is the same, that there will be a pointer in every array. So initially what are you doing? Initially what are you doing? Suppose we talk about 4 arrays. 1, 2 and like this. So 0 and 1. This is 0 and 1. 0 and 1."
+  },
+  {
+   "start": 399.71,
+   "end": 426.88,
+   "text": "And this is 0 and 1. Let's talk about 4 arrays. To fill the first place, which are the candidates of each array? The first one of each array. The first one of each array. The first one of each array. Means the one with 0 in each array. This. This. This. Who wants to go from this? Who wants to go in the real one? The smallest one. The smallest one. Okay? After that, what do we do? Whoever you send, whoever you put in the main array, we increase that pointer."
+  },
+  {
+   "start": 426.88,
+   "end": 455.92,
+   "text": "Let's increase that pointer to 1 and let's repeat this until all the arrays are finished. What can we use for this? What you have to do is, on every point, what do you want? On every point, what do you want? The smallest, the smallest, in any set of values. How many values are there here? 4 values. This, this, this and this. There are set of values. On every point, on which are you interested? You are interested in the smallest value."
+  },
+  {
+   "start": 455.92,
+   "end": 486.27,
+   "text": "What does this heap mean? It means heap data structure. If you want the largest or the smallest data structure at every point, then you use heap data structure. Now you will see how easy it is to use heap data structure. I will show you how easy it is to use heap data structure. I will show you how easy it is to use heap data structure. I will show you how easy it is to use heap data structure. I will show you how easy it is to use heap data structure. I will show you how easy it is to use heap data structure. I will show you how easy it is to use heap data structure. I will show you how easy it is to use heap data structure."
+  },
+  {
+   "start": 486.27,
+   "end": 509.18,
+   "text": "Make one more array. 2, 4, 6 and 8. Make one more array. 0, 9 and 10. Okay? 0, 1, 2, 3. 0, 1, 2, 3. 0, 1, 2. Okay? What will we do? First of all, do you want the smallest value in each? Okay."
+  },
+  {
+   "start": 509.18,
+   "end": 533.44,
+   "text": "So, first of all, let's see what type of heap you want. At every point, are you looking for the biggest value or the smallest value? What are you looking for? We are looking for the smallest value. We will make a min heap. Okay. What will we keep in that min heap? What will we keep in that min heap? So, someone can say that, okay, we will keep all the values. We will put 1, 2 and 0 in the heap. We can put. For the first time, you will get it. For the first time, you will get 0."
+  },
+  {
+   "start": 533.44,
+   "end": 560.27,
+   "text": "But after getting 0, what you used to do? If you remember 2 pointer, then suppose what you used to do after getting this, you used to go to next. Means you used to start looking at 9. So what used to happen in the next set of values? 1, 2 and 9, if 0 has gone. Similarly, if you used to get 1, then the next set of values used to happen, sorry, if you used to get 2, then the next set used to happen 3, 4 and 9. So whichever array you used to choose the value, you used to point at the next one. This used to happen in 2 pointer."
+  },
+  {
+   "start": 560.27,
+   "end": 590.03,
+   "text": "So, in your heap, you have to do the same thing. In the beginning, you can take 1, 2, 0 because it is happening from here in the beginning. But when you select someone, select a small one and put it in the main array, then you will have to move to the next one in that array. So, what can we store in our heap? And you should know from which array you have chosen. Which array? There are three arrays here. It is possible that you have 100 sorted arrays. So, it is possible that you have chosen a value from array number 57. So, you have to go to the next one in the 57th array. Do you understand what I am saying?"
+  },
+  {
+   "start": 590.06,
+   "end": 615.44,
+   "text": "Same pointer approach. In 2, it would have been easy to do i and j, but here 100 is sorted array. If you take something from array number 55, then you will have to move to the next index of array number 55. Okay? So, here you will have to track 2-3 things. The first thing is value. Value means the original value on which you will apply minimum heap. The thing on which minimum will be applied. After that, what will you do?"
+  },
+  {
+   "start": 615.66,
+   "end": 646.9,
+   "text": "Array number, if you think of it as a matrix, if you think of it as a matrix, like a 2D matrix, which is also given in the question, then what is this array? What is its row number? This is row 0, this is row 1, and this is row 2. So you can say row number, either array number or row number, you can say anything. One thing you will need is row. Row. Next thing, this pointer, on which index are you pointing? On which index of each row, means on each column, column, column, column."
+  },
+  {
+   "start": 647.15,
+   "end": 676.82,
+   "text": "If we put these three things in our heap and make a rule that according to whom this minimum heap is? This minimum heap is according to my value, according to the real value. So what will we put in the beginning? We will put three things in the beginning. What are the three things? First of all, the value, this one, 1. Which row is this? This row number is 0. Okay. In which column? In the beginning, all of them will remain 0 because in the beginning, remember, in the two-pointer, i and j both were on 0 index. So in the beginning, both were there. Okay. What will we put in the next? This one."
+  },
+  {
+   "start": 676.82,
+   "end": 707.25,
+   "text": "2. Which row is this? It is 1. And which column is this? It is 0 column. Okay. What will we enter next? 0. Value. Which row is this? It is 2 row. And which column is this? It is 0 column. You have entered this in your heap. You have entered this in your heap. Your heap has been made. In the beginning, in the beginning, what did we do in 2 pointer? int i is equal to 0, j is equal to 0. We are doing the same thing. We have entered all those with 0. We have entered all those with 0 in our heap. Is it okay? Okay. How will this heap be made? We will give its code. Don't worry about it."
+  },
+  {
+   "start": 707.31,
+   "end": 736.46,
+   "text": "Now, what did you do in 2-pointer? Once it is done, then you decide which one is smaller. The smaller one will go to your main array. So, what will you have to do in this? Nothing will have to be done. Just pop it. If you pop it, then you will get the smallest value. So, when you pop it, then see which value is the smallest? 0. Because the minheap is made according to the value. This entry will come out. This entry will come out. If this entry comes out, then what will you know? See, 0 to 0 came out. 0 to 0."
+  },
+  {
+   "start": 736.46,
+   "end": 765.15,
+   "text": "What is there in this? The value is 0, so you will keep 0 in your main array. You will keep 0 where your main array is being created. The work of 0 is done. Now, what you have to do is to increase this pointer. But which array's pointer is this? That will be known as your row. Row is equal to 2. Row is equal to 2. Okay. Where was this pointer just now? It will tell you this column. This pointer was just now on this. What you have to do is to make this column plus plus. In this row, in this row, by doing plus plus,"
+  },
+  {
+   "start": 765.15,
+   "end": 791.81,
+   "text": "If you want to push the next value, i.e. this 9 in the heap, then what will you push? You will push the array of which row was it? Row and column plus 1, i.e. array of 2, i.e. array of 2's 1. Array of 2's 1, see 9. What will go in your heap? This has popped in your heap. What has gone in your heap? See, 9, 2, 1."
+  },
+  {
+   "start": 791.81,
+   "end": 819.54,
+   "text": "Automatically, the two-pointer that you had done, is being achieved. Next time when you will pull this, next time when you will see, which one is the smallest? The smallest is 1. Bring out 1, 0, 0. Bring out 1, 0, 0. 1, 0, 0. What is the value in this? 1. Put 1 in your main array, in the result array. Now what do you have to do? Which row's array was this? Which row was it? 0. What was the column? 0. What do you have to do? What do you have to do? Array of row,"
+  },
+  {
+   "start": 820.05,
+   "end": 849.17,
+   "text": "column plus 1 means array of 0 means 1 means this value 3 so what will you do? we have popped this and pushed it value is 3 and row is 0 so you will keep doing this and till when will you keep doing this? suppose what you are doing array of row and column minus 1 if you ever get to know that the existing column suppose the existing column is the end of the array that is the end of the array how will you get to know the end of the array?"
+  },
+  {
+   "start": 849.26,
+   "end": 877.63,
+   "text": "you will have n rows in the array and m columns if you ever get to know that the column is equal to m-1 means you have reached the last of that array you have reached the last of that array, you used to do the loop there too while i less than n and j less than m is the same thing so if the column is equal to m-1 then what will we do? we will not do anything and if there is nothing left then we will not do anything, we will go ahead so when your heap will be completely finished"
+  },
+  {
+   "start": 877.63,
+   "end": 908.37,
+   "text": "when your heap will be empty then all the things will be in your array we will explain this with a small example we will explain this with a small dry run you might have understood it but anyway take one array 1 and 2 0 and 1 make it 3 take one more array 2 and 4 0 and 1 suppose there are two sorted arrays write its row number row is equal to 0 is equal to 1 in the beginning"
+  },
+  {
+   "start": 908.37,
+   "end": 935.04,
+   "text": "What will we push in our heap? Value, row and column. So, what is its value? 1, row number 0 and column is 0. This is pushed. Then, in the next also, for all arrays, initially push the first one of all arrays. Push the first one of all arrays initially because we will start after that. So, its value is 2, row is 1 and 0. Let's start. Let's start and remove. So, what will you remove first? 1, 0, 0. Okay?"
+  },
+  {
+   "start": 935.04,
+   "end": 964.82,
+   "text": "So, in your main array, in your result array, first of all, push the value. After that, see what is its row? Zero. What is its column? Zero. Is it correct? What is your column? Yes, what is your column in this? n is equal to 2, m is equal to 2. There are 2 rows, 2 columns in this whole matrix. Has your column become equal to m minus 1? No, your column has not become equal to m minus 1. So, what will you push? Array of row and column minus, column plus 1. Meaning, array of 0 and 1. Meaning,"
+  },
+  {
+   "start": 964.82,
+   "end": 996.08,
+   "text": "What happened to array of 0 and 1? This one. So what did you push? 3. So remove this. And what did you push? 3, 0, 1. Okay? Let's move forward. Come, let's move forward. Come, let's move forward. Next time when you will pull, what will you pull? 2, 1, 0. 2, 1, 0. So first of all, put this in your array. Where is your array? Put this result array in 2. And what did you push? Array of row, column plus 1. See that the column is not finished. So what will you push? Array of 1."
+  },
+  {
+   "start": 996.08,
+   "end": 1023.68,
+   "text": "1 means 4. Nothing. Remove this. 4 is row 1 and column 1. It's over. Do it again. The heap is not over yet. Till the heap is not over, we will continue because till then the elements will remain. If you do the next pull, you will get 3, 0, 1. 3, 0, 1. First of all, push 3 in the result. And, and, and, is your column, your row is 0. Row will remain 0. Column is equal to 1."
+  },
+  {
+   "start": 1023.68,
+   "end": 1047.98,
+   "text": "Is your column equal to m-1? Yes, because you can see that we have reached the end. Where did it go? Oh, sorry. We have reached the end here. There is nothing left after this. If there is nothing left after this, then don't do anything. Pop it and leave it. Pop it and leave it. You can't do anything, right? After this, you can't increase the pointer in this array, right? The work of this array is over. Do the next pull. 4, 1, 1. First of all, push 4 in your answer."
+  },
+  {
+   "start": 1047.98,
+   "end": 1077.55,
+   "text": "And what is the column of this also? 1. So is this also finished? Yes, this is also finished. So you don't have anything to push before this. Delete this. Your heap is empty, close it. See carefully that your result array has become 1, 2, 3, 4. Yes, my result array has become 1, 2, 3, 4. So it is a similar concept. In the case of the same two-pointer, why are we using the heap column? Every time, it will not be so much fun, right? That you are comparing the first of 100 arrays, then it will be very long. That's why we are just using the heap to make it easy."
+  },
+  {
+   "start": 1077.84,
+   "end": 1110.13,
+   "text": "So let's write a heap. How do we write a heap? We have taught you about pairs, C++, Java, Python. We will show you C++. You will get the code of Java and Python in this doc. There you can see how a heap is made. So make a class in C++. Because you have to store three things. You don't have to store pairs, you have to store three things. So in the class node, we will keep one value, one row, and one call."
+  },
+  {
+   "start": 1110.29,
+   "end": 1147.54,
+   "text": "and by making a constructor of node, int v int r c and even if we don't do this, it will be fine yes, we will do it, no problem after that, value is equal to v, row is equal to r column is equal to c ok, you have made this, this class is made how will you make your comparator? struct compare, struct cmp"
+  },
+  {
+   "start": 1151.38,
+   "end": 1185.76,
+   "text": "operator, all this is explained in the pair method, you will also get this code, so don't worry that you don't understand anything, if you don't understand, then it will come, const nodeA, const, this is just syntax, once it is remembered, then it will happen, return, we will also give it to you for java python, it is the same, java python, in java you will have to use that trick of a-b-b-a, in python you will have to write that lt function by yourself,"
+  },
+  {
+   "start": 1185.76,
+   "end": 1220.78,
+   "text": "close this so you have to write this in the beginning you have to make a heap what does it say? you have to make a heap of 3 sizes and according to the value it should be a min heap ok now let's write the real code so what will be given to you? you will have to return a vector and you will be given a 2D array what does this 2D array say to you? it has a lot of sorted arrays that means its row is sorted every day this is what it says vector int oh sorry it won't be like this vector vector"
+  },
+  {
+   "start": 1221.46,
+   "end": 1252.19,
+   "text": "int, int, a. Okay? So, first of all, what to do? n is equal to a dot size. Means, how many rows are there in this? int, m is equal to a0 dot size. We are assuming that you know 2D matrix. Let's make it. Priority, q. Now, what type of priority q do we have to make? You have to make it in the type of node. This node that we have made, this node. This node says that this node is a data structure. You understand that in which three things can be stored."
+  },
+  {
+   "start": 1252.19,
+   "end": 1284.03,
+   "text": "We can store two things in pair, one thing in int, and many things in array. There are three things in node. What are they? These three things. This is what it means. We have to make a node type and vector node because we want to give a comparator function in it. So, you make cmp pq. For i is equal to zero, i less than n, i plus plus. What did we say? Insert the first one of every sorted array. How will we insert?"
+  },
+  {
+   "start": 1284.03,
+   "end": 1313.74,
+   "text": "pq.push make a curly bracket what do you have to insert? what do you have to insert? of every array of every array means of every row the initial element of every row the initial element means array of i 0 this is the value then you have to insert the row what is the row? i you are going on that row i is going from 0 to n and column number which column is being inserted first? the column of 0 that's it, it is inserted"
+  },
+  {
+   "start": 1314.03,
+   "end": 1346.93,
+   "text": "now make an output array for yourself now make an output array for yourself and let's start the loop so while pq.not empty means until it is empty, until you keep running what you have to do first of all node n is equal to pq.top this is similar like if you make int's pq int p is equal to pq.top this is of pq type and this is of node type so node n is equal to node is a data structure node is just like int or string you have made it ok"
+  },
+  {
+   "start": 1346.93,
+   "end": 1379.18,
+   "text": "pq.pop. Okay. Let's extract all the things. int v is equal to n.value. Let's remove it like this. There are three things in n. There is value, row and column in n. int row is equal to n.row. int column is equal to n.column. What is the first step? The first step is to do rest.pushback. Put it in your result first. After that, if"
+  },
+  {
+   "start": 1379.66,
+   "end": 1410.67,
+   "text": "column is less than m-1. So, pq.push, what do we have to push? First of all, the column of that row, plus 1. And we don't have to push only this. And the row will remain the same. Which column? The one with column plus 1. The next one, the next one. There are three things, don't leave one by pushing one. There will be three things in the heap, and this curly bracket presses those three things in a node. Close this."
+  },
+  {
+   "start": 1411.44,
+   "end": 1441.25,
+   "text": "Return, Rest. That's it. The program is finished. Look at this. Java, Python. You will get the code. Today, we will give the code in the doc. See, there is no problem in giving this type of code because it is a syntax-heavy code. Because we have understood what to do, how to do it, how to do the syntax, how to change the three of the node. We understand that. We will give that to you. So, this was Merge K Sorted Arrays. If you have understood this, then definitely try one thing. There is a question whose name is Merge K Sorted Lists. That is the question of the link list. So,"
+  },
+  {
+   "start": 1441.25,
+   "end": 1471.18,
+   "text": "What is the number of this? LC... LC23 It's a hard question Same question Merge K Sorted Lists Means, Link List Not Array, Link List Tell me Array because it's okay To understand the concept, Array is very good Because a relation is coming from two pointers So this is it So definitely go and code it You will get its link Merge K Sorted Array You will get the link in the sheet So definitely do that Okay, let's go"
+  }
+ ]
+}

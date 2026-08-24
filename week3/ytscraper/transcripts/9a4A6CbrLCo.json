@@ -1,0 +1,364 @@
+{
+ "video_id": "9a4A6CbrLCo",
+ "title": "The Only Video You Need TO Master HASHMAPS | DSA Patterns Course Cpp JAVA Python",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 1878,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 22.86,
+   "text": "Welcome everyone. Before starting, if you have read the HashMap or not, it doesn't matter. If you haven't read it, then it's a good thing. It's God's grace that you have come here. If you have read it, then you haven't read it in this way. This is my guarantee. And let's start. Those who have come to the channel for the first time, you can see it in the description. Read it from the first video. You can also read it from here. You can watch this demo video that how a teacher teaches and then you can go ahead. Let's go."
+  },
+  {
+   "start": 22.86,
+   "end": 45.15,
+   "text": "HashMap is a very small, lovely, and useful topic. You guys have been using HashMap in many questions from the last 40-41 videos. But we haven't studied HashMap yet, so we thought of covering it. It's lovely because most of the questions on HashMap are easy to medium. What does HashMap mean? It means the question that only has HashMap."
+  },
+  {
+   "start": 45.15,
+   "end": 72.43,
+   "text": "There are some questions in which HashMap is applied. That is fine. That question can be hard or anything. But such questions in which only HashMap is applied, means to make that question, you should get only HashMap. The number of such questions is not too much and if it is, then it is easy to medium. Means we have not seen any hard question of HashMap till date. Means there is not much to do in it. That's why, let's assume it is mostly easy. In one to two days, this whole topic will be over. But we understand what HashMap is. So what is HashMap? See."
+  },
+  {
+   "start": 72.98,
+   "end": 97.52,
+   "text": "To understand HatchMap, take the example of a diary. Assume that you are a person and you are living your life. You live your life day-wise. I will tell you what is day-wise, but you live your life day-wise. And you like to write a diary, as many people write it now. We used to write it when we were kids and then we got used to it. What you do is, at the end of every day, suppose on 5th December,"
+  },
+  {
+   "start": 97.52,
+   "end": 123.09,
+   "text": "That day, what was the most memorable thing that happened to you in the whole day? Suppose, on 5th December, you wrote that papa bought us a bike and gave it to us. Something like that. The whole story of buying a bike. On 5th December. Okay. Then on 6th December, you write that today we fell off the bike and my leg broke. Okay. The leg broke. Then on 7th December, you write that today my papa sold that bike. Because my leg broke."
+  },
+  {
+   "start": 123.09,
+   "end": 151.44,
+   "text": "on 8th december you write that today we will eat pizza so this is an example ok now you are writing diary and filling it daily you are writing diary day wise there was one page in diary and you write the most memorable event of that day in future if it is 20th december on 20th december you suddenly think that ok now i have forgotten its been 15 days tell me one thing"
+  },
+  {
+   "start": 151.44,
+   "end": 179.18,
+   "text": "What happened on 7th December? What happened in my life on 7th December? What was the best event in my life on 7th December? So, let's open our diary and see, because if you don't remember, you have forgotten, it's been a long time, your life is very happening, I mean, you understand that your life is very interesting, a lot of things happen. So, let's open 7th December and see. You got to know that my father had sold that bike that day. So, you got to know immediately that he had sold the bike. Did you open the diary? You saw it, okay. This thing is called HashMap. This exact thing is called HashMap. In this,"
+  },
+  {
+   "start": 179.18,
+   "end": 204.13,
+   "text": "Now I will tell you what is next, but all these things, 5, 6, 7, 8, December are your keys and all your events, whatever you wanted to store your data, these are your values. Some of you must have heard that things in HashMap are stored with key values. Exactly key value means what happened with me. Now let's move a little further. If you understand this example, then you have learned HashMap, but"
+  },
+  {
+   "start": 204.13,
+   "end": 228.98,
+   "text": "Okay, if you write a diary, then there is no programming, so it's okay. Let's move forward a little. We will give an example because then it remains in the mind. Okay, look. When is the use of HashMap? HashMap is your diary. HashMap has only one use, it reminds you of things. It helps you to remember things. It helps you to remember things. Not just one thing, it can help you to remember a lot of things. Means, you write your diary."
+  },
+  {
+   "start": 228.98,
+   "end": 258.64,
+   "text": "It is not that you can write only one day's data in your diary. You can make your diary for years. Means diary of 10 years. What happened 10 years ago? Means you can also ask that what happened on December 12, 2014? So if you have started writing your diary till then, then you will get it in your diary. So you can open that page of December 12 and see what happened in my life 10 years ago. Okay? So this can also happen. So he remembers and he can remember a lot of things. He can remember a lot of data. Not one or two. Many. Means he can remember lakhs of things. Okay."
+  },
+  {
+   "start": 258.64,
+   "end": 286.38,
+   "text": "So, what is the work of this? To remember. Okay. But, but, but, whatever data you write in it, it is not random data. It doesn't mean that you have entered anything in the diary. It doesn't mean that you have made a picture. You eat pizza and you can't make a picture of pizza in the diary. No. Then you won't understand. You have to follow a format. Call it format, call it rule, call it system, call it anything. You have to follow one thing. What is that thing? You have to store your data in pair. Pair means pair."
+  },
+  {
+   "start": 286.38,
+   "end": 307.71,
+   "text": "What is that combination? That combination is key and value. Key and value. Okay. Now, what is key and value? See. What is value? To understand it more easily, value. Value means whatever data you want to store, you call it value. Whatever data you want to store, which is your actual data."
+  },
+  {
+   "start": 307.71,
+   "end": 335.28,
+   "text": "Your actual data, like your bike, your broken leg, your pizza, your jogging, etc. But that data is either when it happened or any of its identifiers like when it happened, where it happened, how it happened, by whom it happened, we call these things as key."
+  },
+  {
+   "start": 335.28,
+   "end": 357.9,
+   "text": "Key means the identifier of your data and you decide it. It is not decided from the beginning. You decide the key and you decide the value. Value means your original data means what you want to store in real. Key means you are writing the diary in what way. For example, if we are"
+  },
+  {
+   "start": 357.9,
+   "end": 387.9,
+   "text": "We write diary day wise. Means we write diary once in every day. So my diary will look like this. My diary will look like this. On 5th December something happened. On 6th December something else happened. So my diary will look like this. But it is not necessary that you also write diary like this. It is possible that you write diary according to the week. It is not necessary that everyone has so much time that they write daily at night. No. It is possible that you think that nothing happens with me daily. If something happens in a week then we will write it for a week. So how will your diary look like? Your diary will look like this. In week 1."
+  },
+  {
+   "start": 387.9,
+   "end": 407.55,
+   "text": "something happened to me in week 2 something happened to me in week 2 something happened to me in week 3 something happened to me in week 3 your diary will not be visible day wise your diary will be visible week wise it is possible that there is another person who writes a diary once in a month it is not necessary that he writes once in a week he writes once in a month his diary will look like this this happened to me in January"
+  },
+  {
+   "start": 407.55,
+   "end": 434.29,
+   "text": "this happened with me in February, this happened with me in March, then his diary will look like this. Now look, the data is the same in all, that is, what is written in the data that what happened with me, that is fine. But what are you choosing as its identifier? We are choosing that we write daily, that is, we will write daily diary, then we choose that there will be one event on 5th December, then there will be one event on 6th. You choose the week, you say this happened in the first week of December, this happened in the second week. Someone else chooses the month, he says this happened in January."
+  },
+  {
+   "start": 434.29,
+   "end": 457.94,
+   "text": "It doesn't matter which day of January it is. This event must have happened in January. The bike was bought in January and the bike was sold in February. He doesn't know which day it was because he writes this. These are his keys. These are your keys. These are my keys. So, keys means identifier. It is not necessary to write in the diary according to the day or time. It is not necessary. Look."
+  },
+  {
+   "start": 457.94,
+   "end": 483.22,
+   "text": "Diary means anything. You don't have to write the time. For example, you are a shopkeeper. You can make your diary in such a way that you have to borrow money from someone. You can also do this. You have to take Rs. 10,000 from Ramlal. You have to take Rs. 500 from Shyam. You have to take Rs. 500 from Rahul."
+  },
+  {
+   "start": 483.41,
+   "end": 502.19,
+   "text": "Now, what is your data at this time? Your data is that how much money you have to take back, 10,000, 500,000, but what are your identifiers? Your identifiers are these people, from whom you have to take it back, from whom you have to take it back, then you have to take 1000 from Ramlal, from Shyam, so whatever the key value is,"
+  },
+  {
+   "start": 502.61,
+   "end": 532.38,
+   "text": "Key value. Key value depends on you. You can tweak it program by program, use case by use case. But remember one thing, insert will be like this only. Meaning, if you will store anything in HashMap, then it should be in the form of key and value only. What is key, what is value, it depends on you completely. You can do it in any way. Okay. This was about storage. This was about storage. That how you will store or how you will write. Very good. But,"
+  },
+  {
+   "start": 532.38,
+   "end": 562.08,
+   "text": "What will happen just by writing? I mean you will write but what is its work? Why will we write? We are not interested in writing something useless. Why will we write? We will not write. What is its work? Work, work, work. Okay. We had told you some time ago that you can write your data in the form of key and value. There is no other way to write data. You can write your data in the form of key and value. Okay. What is its work? If you ever have to ask any such question that of any particular key, of any particular key,"
+  },
+  {
+   "start": 562.08,
+   "end": 589.3,
+   "text": "What is the value? What is the value? The answer to this question can be given to you by HashMap. The answer can be given. And only this question can be answered. Only this exact question can be answered. I mean, there are some other small things. But mainly, what is the value of any particular key? What is the value of any particular key? The answer to this question can be given to you by HashMap."
+  },
+  {
+   "start": 589.3,
+   "end": 619.25,
+   "text": "You will know how the key will be decided as you entered. For example, in the above diary, you can ask what happened on 6th December? What happened on 6th December? What happened? This answer will be given to you in the hash. But you can't ask what happened on 6th December in this diary. Why? Because you didn't write it according to the day, you wrote it according to the week. In this, you can ask the question, what happened in week 2? It can tell you. In this, you can't ask the week, you can't ask the day, you can ask in any month."
+  },
+  {
+   "start": 619.25,
+   "end": 646.75,
+   "text": "What happened in June, he can tell you. So, as you write, see, this is a very natural thing, that whatever you write, you will read it. It is not like you write something else, that is, you write a film script and read Mahabharata, it will not be like that. Whatever you write, you will read it. So, as you write, you can ask the same question. So, this is a particular question. This is a particular question that tell us the value of a particular key. So, he will tell you immediately. There are 2-3 more things."
+  },
+  {
+   "start": 646.75,
+   "end": 667.81,
+   "text": "How many entries do you have? What is the meaning of how many entries? What is the number of key value pairs? Pairs are not total. For example, if your hash map is K1, its value is V1. K2, its value is V2. K3, its value is V3."
+  },
+  {
+   "start": 667.81,
+   "end": 696.29,
+   "text": "This is your diary in which you can see money. If you ask it how many entries are there in it, or if you ask in words, what is your size, it will tell you how many pairs are there in it. How many pairs, not how many values, three pairs. So, what will the size tell you? How many entries are there? How many pairs are there? How many key value pairs are there at this time? So, it can tell you. Okay. You can ask one more question. You can ask one more question that any particular"
+  },
+  {
+   "start": 696.29,
+   "end": 722.5,
+   "text": "any particular key means any key you take the name of any key whether it is there or not whether it is there or not means if there is a diary then do you have the date of 30th December or not it will immediately tell whether it is there or not yes or no it will tell yes or no it will tell it is called finding it is called find whether the date of 10th December is there or not so it will tell whether the date of 10th December is there or not"
+  },
+  {
+   "start": 722.5,
+   "end": 751.87,
+   "text": "So this was an overview of what is a hash map, what are the powers of a hash map, what are the major powers of a hash map. What is the value of a key, you will have to tell the name of the key. Tell me the value of December, is it the value of December or not. So he will tell you. How many entries means, how many key value pairs are written, this is a very simple question. And is there any particular data for the key, means did we write anything on 10th December? If we had written, then he will tell you, if not, then he will not tell you. Leaving these three, leaving these three questions,"
+  },
+  {
+   "start": 751.87,
+   "end": 771.98,
+   "text": "You don't have any other power in the HashMap. You can't take any other work from the HashMap. For example, sometimes you will feel like using the HashMap. No, no, no, don't do it. For example,"
+  },
+  {
+   "start": 771.98,
+   "end": 794.98,
+   "text": "Assume that you have a hash map. If we ask a random question, especially in the prefix sum, Assume that you write a diary according to the day. For example, you write like this, 5th December, 6th December, 7th December, like this. If we ask a random question that, do one thing, you tell me what happened before 10th December. 10th December."
+  },
+  {
+   "start": 794.98,
+   "end": 815.82,
+   "text": "What happened before? We don't know what happened. You can ask day by day. What happened on 7th? We will tell you. What happened before 10th December? We don't know. What happened after 10th December? We don't know. You will have to ask the exact question. You will have to ask the exact question. I am not that smart to tell you what happened after 10th December and what happened before and what happened in between."
+  },
+  {
+   "start": 815.82,
+   "end": 845.81,
+   "text": "What happened between 10th and 15th December? We don't know. We also don't know whether it was on 10th or 15th December. So how will we tell you what happened in between? So these are all stupid questions. HashMap can't help you in this. Okay? There are some more questions that you might think are good but they are also stupid questions from HashMap's point of view. What can we say now? What was the last entry?"
+  },
+  {
+   "start": 845.81,
+   "end": 868.82,
+   "text": "you don't know, you don't know the hash map because the hash map that we are reading is not sorted like a diary you must be thinking that if we write a diary then it will open the last page of the diary and see that no no no this is not sorted if you enter an entry once then that entry must have been written on the diary at one place now if you say then it will find it and give it to you immediately but it doesn't know if it is written on the last page or on the first page so you can't ask which entry was last"
+  },
+  {
+   "start": 868.82,
+   "end": 896.06,
+   "text": "What was the first entry? I don't know what was the first entry. I will tell you entry by entry. I mean, I will tell you day by day. What was the first entry? What was the last entry? What was the most entry? What was the least entry? What happened between these two entries? How many entries are there between these two entries? How many entries are there less than 20th December? I don't know. I won't be able to answer all these complex questions. Yes."
+  },
+  {
+   "start": 896.06,
+   "end": 917.04,
+   "text": "Ask them what happened on the 15th. Tell them whether you have the 15th or not. They will tell you whether you have the 15th or not. They will also tell you what happened on the 15th. So, for all these stupid questions, we are saying stupid because we don't know the answer to the HashMap points. So, whenever you feel that the question is complex,"
+  },
+  {
+   "start": 917.04,
+   "end": 946.1,
+   "text": "you are not asking about the particular key, you are asking some weird questions that tell me there are two keys, no, he doesn't know all that, this is just a tool, this is a diary, you can read what is written in it, what is written is not analyzed, means there is no software running in it that will analyze what is written for you, no, you can read what is written, it is a simple thing, you can't do more analysis and more of that, okay, so all these questions don't work in this, let's go, so this is a basic one, now let's come to when to use the hash map, hash map,"
+  },
+  {
+   "start": 946.1,
+   "end": 968.35,
+   "text": "When to use it? It's a simple thing. Whenever you feel that you have to remember old data in some question, then you have to use HashMap."
+  },
+  {
+   "start": 968.35,
+   "end": 996.7,
+   "text": "You have to remember the old data, but to remember it, what kind of data do you have to remember? I mean, there can be a lot of things in the old data. You can try to remember the graph data. You will get the intuition that you have to remember the old data and whatever questions you ask, whatever questions you ask, I mean, why are you remembering everywhere? Will you need it? If you need it, then think about it. You always imagine that we will ask a question. We will ask a question from HashMap to tell us its answer. Whatever question you ask,"
+  },
+  {
+   "start": 996.7,
+   "end": 1022.18,
+   "text": "It should be an exact question that what is the value of a key? What is the value? If that exact question is not that whether a particular key has a value or not or whether there is a particular key or not. So if these two questions are not exact in the same way, if your questions are more complex than this, like we saw in the prefix sum, remember in the prefix sum,"
+  },
+  {
+   "start": 1022.18,
+   "end": 1043.92,
+   "text": "the sum less than or equal to k. You used to ask how many sums have come before you that are greater than k. You don't have any idea about that. If you ask if there is a particular sum or not, it will tell you. Don't ask how many sums are greater, how many sums are greater and what is the sum's root. Don't ask that. If your questions are not one of these two simple questions, then you don't have to use HashMap. If your questions are more complex than this,"
+  },
+  {
+   "start": 1043.92,
+   "end": 1070.93,
+   "text": "then you will have heap or stack, we will see that later but if your question is so simple and you think that you have to remember some things then you will understand how to remember by inserting the value of a particular key and your question is simple enough that yes, tell me the value of a particular key then you can use HashMap with an open mind if the question is complex then don't use HashMap at all so this was a small"
+  },
+  {
+   "start": 1070.93,
+   "end": 1101.6,
+   "text": "Intro. Let's quickly see how to write this for those who don't know. First of all, C++. In C++, the hash map is called unordered map. There is a map too but it is ordered. It is of a different type. It is not that useful. You can use a lot of things better than sorted maps. But what we are interested in is that the real hash map is unordered. That's why we said it is unordered. We will tell you the meaning of unordered. So, let's write it like this. Unordered map."
+  },
+  {
+   "start": 1101.6,
+   "end": 1127.39,
+   "text": "Now we will tell you that you insert things on key and value. So there will be a data type of key, that means what you want to store in key and there will be a data type of value. One more thing, you can't do this that once you decide what the format of my key is and what the format of my value is, then don't go back and forth from it. You can't write one page in the diary that an incident happened with me on 6th December."
+  },
+  {
+   "start": 1127.39,
+   "end": 1155.07,
+   "text": "The next event you write is that this happened to me in January. No, no, no. Either you write day-wise or month-wise. Think about it first. If you have written 6th December, then don't write January-February. Then write that this happened to me in 2014. What does this mean? Then how will you find out? Then how will you find out? What are you trying to do? First you write that this happened on 6th December. Then you write that this happened in January. Then you write that this happened in 2014. Tomorrow you will write that this happened to me at 5 o'clock. It's not like that. There is no such thing."
+  },
+  {
+   "start": 1155.07,
+   "end": 1181.12,
+   "text": "It is not a waste to write anything in it. Then you will make a drawing. So you don't have to do all this. Think about it with an open mind once. What do you want in the key? Do you want a day in the key? Do you want hours? Do you want a year? Do you want a person? Yes. You write one entry that this happened to me on December 6th. Write the next entry that Ramlal took 5000 rupees from us. What is this? So make a different diary. If you write everything in the same diary, then how will you find him?"
+  },
+  {
+   "start": 1181.12,
+   "end": 1207.46,
+   "text": "It's a natural thing to write all the subjects in the same diary and then find out how to do it. So, think from your mind what to write in the diary and what should be in the key and what should be in the value. That's why it is said that the key is our data type. Now, it is not necessary that if you are writing an integer, then there should be an integer in the value as well. No, no, no. Write an integer in the key. Write a string. What does integer mean?"
+  },
+  {
+   "start": 1207.46,
+   "end": 1234.82,
+   "text": "write any number that this happened to me on 10th, write string, I got 5000 from Ramlal, so Ramlal became a string, you put a whole vector in it, a whole vector, a whole array, any data structure, whatever you want, put that data structure in it, you go ahead and put complex complex data structure in it, you can put another hash map in the key in the hash map, that is also allowed, means anything, anything, but it should be uniform, it should be one, it should not be that you"
+  },
+  {
+   "start": 1234.82,
+   "end": 1258.74,
+   "text": "make an integer key and then another string. No, don't mix it. If you keep integer, then keep integer. And it is not necessary that if key is integer, then value is integer. In value also, write anything. In value also, write anything. In value also, write date, integer, string, character, float, complete vector, complete set, and write a new hash map. Anything. Whatever you want. But be consistent."
+  },
+  {
+   "start": 1258.74,
+   "end": 1289.06,
+   "text": "you don't have to do this that on 6th December there was pizza in my house that means write a string like this and then on 7th December make a drawing here so this is a bad thing if you want to write a string then write a string if you want to make a drawing then make a drawing in all of them if you can do this then make a drawing in all of them every December means drawing on 6th December drawing on 7th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing on 8th December drawing"
+  },
+  {
+   "start": 1289.06,
+   "end": 1317.73,
+   "text": "That's why whenever we make a hash map like this, we have to give two data types. The first data type is of key and the second is of value. For example, you want to make it so that both are integers. So you do this. After that, you have to give the name of the hash map. After that, everything becomes simple. If you want to write an entry, then don't do anything. You have to write the value of the key. You will always write the entry according to the key."
+  },
+  {
+   "start": 1317.73,
+   "end": 1341.17,
+   "text": "Suppose you write the value of f1 is going to be 10. You can write your entry like this. If you want to increase the entry of any key, then you simply write f1++. What will happen with this? If the entry of f1 is present, suppose if 10 is already present in 1, then this 10 will increase to 11. If 1 is not present, then 1 will be inserted with 1 value. So by default,"
+  },
+  {
+   "start": 1341.17,
+   "end": 1365.12,
+   "text": "The hash map assumes that the default value of the key is 0. It assumes the default value. If you have done F1++, then suppose 1 becomes 11. In the next line, if you do F2++, then 2 is not written in your diary. No problem, there will be no error in this. It will write 2 and put the value 1. Why? Because it will assume that the previous value was 0. Now if you have done it, then your value will be 1. So this will do your work. So this is what happens."
+  },
+  {
+   "start": 1365.12,
+   "end": 1392.85,
+   "text": "If you want to erase any value, again, you have to tell the key to erase, you have to tell the particular key to erase, that erase this key entry. So, you can say that f.erase . What will happen with this? It will lock the entire entry. It will end. Now, if you do f.size, f.size, then it will say 1. Why? Because one pair is present. One pair is present. This is the hash map. We said that there are very simple functions in this."
+  },
+  {
+   "start": 1392.85,
+   "end": 1419.71,
+   "text": "you don't have to remember much, in C++ you don't have to remember anything at all, in C++ whenever you have to insert a key, then there is no need for any trick, f of, f is your name, whatever your name is, f of any particular key, whatever value you want to give, give it here, if you want to erase someone, then f.erase for key, if you do this, it will be erased, yes, if you want to see if there is any key or not, its syntax is a bit difficult, look at its syntax carefully,"
+  },
+  {
+   "start": 1419.71,
+   "end": 1451.5,
+   "text": "If you want to check if there is any particular key, i.e. if there is any entry of that key, then you have to write this. If f.find is equal to f.end, this means that it is not there. This means that it is not there. Equal to f.end means that it is not there. And if f.find is not equal to f.end, this means that it is there."
+  },
+  {
+   "start": 1451.5,
+   "end": 1480.45,
+   "text": "we know this syntax is a bit difficult but what we can do now this is it, you will remember it while writing while writing everything happens so you can do this so we think this is enough and we have told you that you can do any operation on f key you can do minus minus on f key you can do plus plus on f key if you ever need its value to print then you can do int val is equal to f of any of your key"
+  },
+  {
+   "start": 1480.45,
+   "end": 1510.86,
+   "text": "Yes, you have to pass that key, that which key's value, means there is no random value like this. You have to tell the key that which particular key's value you want, then you will get it. By doing this, you can give this, okay? It's a good thing. So, this is all there is in C++, right? So, we think it's done. Yes, one more thing. It is not required much, but sometimes it is required. So, if you want to loop on the hash map, for example, your hash map sometimes looks like this, that 1 is 10, 3 is 5, 2 is 4."
+  },
+  {
+   "start": 1510.86,
+   "end": 1541.41,
+   "text": "and 4 is 20 again again again this is your hash map but it is not necessary that it is sorted it is not necessary that entry of 1 will come first then of 2 then of 3 then of 4 this can be done in any order you don't know so when you will do loop then you have to write the loop like this for auto i equal to f this is your hash map you can remove key like this int key is equal to i.first i.first int val is equal to"
+  },
+  {
+   "start": 1541.41,
+   "end": 1560.26,
+   "text": "i.second and then you can do anything with the key value so what will happen with this? first of all let me tell you according to this hash map first of all you can get any key value pair but all of them will be available all of them will be available in which order? this is not certain so you will get 1 such 10 which is the key 3 and 5 you will get this"
+  },
+  {
+   "start": 1560.26,
+   "end": 1588.62,
+   "text": "Then you will get 2 and 4, then 4 and 20, you will get this. We have written this in this order because we are assuming that my hash map will be like this. These four can be any order. It is not necessary that whatever you have inserted, it will be the same or whatever you have inserted, it will be the opposite. Anything can happen because what is this? We are saying it again and again. Unordered map, its name is unordered, see. Its name is unordered map. Unordered means it has no order, so its name is unordered map. Let's go. See in java, in java also it is almost almost same, nothing much happens. In java, it is almost almost same."
+  },
+  {
+   "start": 1588.62,
+   "end": 1621.1,
+   "text": "in that you write hashMap hashMap sorry, M is capital so in that you write hashMap same, what do you want? if you want integer integer and integer give its name f equal to new hashMap like this this is syntax, no one can explain you anything in syntax you have to remember"
+  },
+  {
+   "start": 1621.1,
+   "end": 1649.94,
+   "text": "Now if you want to insert a key or update the value of that key then you can do this f.put So what will happen with this? One key will be inserted whose value will be 10 If you want to change it again, then write again 1 and 20, what will happen with this? New thing will not be inserted, this value will be changed to 20 The method of finding is easy with C++, so in this you write if"
+  },
+  {
+   "start": 1650.16,
+   "end": 1678.06,
+   "text": "f.contains key 1 so in this you get true or false if you want to remove something then again you have to tell the key which key you have to remove f.remove there is erase and here is remove so suppose 1 what will happen with this? this entry will be removed this entire entry will be removed"
+  },
+  {
+   "start": 1678.06,
+   "end": 1707.47,
+   "text": "And there are small things like f.size. This is also in C++ and Jaon. What does it give you? Number of pairs. Number of pairs. Remember. Number of pairs means, in one way, total number of unique keys. Yes, one more thing. When you make a hash, then there are keys here. 1, 2, 3, 4. Suppose this is 10 times, this is 20 times, this is 30 times, and this is 40 times. This is how something is made. But, all these keys are unique in this. Keys are unique. Keys are..."
+  },
+  {
+   "start": 1707.47,
+   "end": 1736.18,
+   "text": "Unique. Duplicate entry is not possible. It means that two values of one key are not possible. It is not possible that one is 1 and 10 and another entry is 1 and 20. No, no, no. This is not possible. Why is it not possible? Because when you ask for the value of f , what will you get? Will you get 10 or 20? You don't know because there are two. How will he know what to give? That's why keys are unique. Values can be duplicate. It means that the same value of two keys can be there. The value of 1 can also be 10 and the value of 2 can also be 10. It is absolutely correct. But"
+  },
+  {
+   "start": 1736.18,
+   "end": 1765.33,
+   "text": "Two keys can't be the same. This is not allowed. This is absolutely allowed. That's why keys have to be unique. That's why when you write F1 is equal to 10, then it makes it 1 or 10 if it doesn't happen before. After that, when you write F1 is equal to 20, then 1 doesn't become 20. It doesn't make a new entry. This 10 becomes 20 mid. So now this one has disappeared. You have updated it. So remember that keys will never be duplicate. Keys will always be unique. Keys will always be unique. Unique. Unique. Yes."
+  },
+  {
+   "start": 1765.33,
+   "end": 1794.29,
+   "text": "that's why you can understand f.size in that that what is the number of keys in that number of keys because it tells the number of pairs there is a key in every pair which is unique so it will tell you that what is the number of keys so we think that you must have understood let's see python, python is more simple there is no data structure in python as such so in python you just do f is equal to like this after that you have to put so just f1 is equal to 10 then f2"
+  },
+  {
+   "start": 1794.29,
+   "end": 1822.88,
+   "text": "is equal to 20 then what you have to do is you have to find if 1 in f what does this say? this key, is it in this map or not? if you want to delete then delete f of 1 what will happen with this? it will be removed or erased which we read while going up if you want to tell size then len of f this tells you the size what does this tell you? size so this is python, python is very easy because"
+  },
+  {
+   "start": 1822.88,
+   "end": 1851.5,
+   "text": "Key value data structure is not a concept. In Java and C++, it is important to define the key value data structure. And then work according to that. It is not that it is different. If you define integer integer. If you do f of 1 is equal to 10, then it works. But if you go ahead and do f of a is equal to 20. Then this will be wrong. Because you said that the key will be integer and the key will be character. So this will be wrong. Pay attention to this. You will understand it as it goes on. So this is a complete."
+  },
+  {
+   "start": 1851.5,
+   "end": 1874.99,
+   "text": "The intro of HashMap is over, only the questions are left. From tomorrow, there will be 3-5 questions. By tomorrow or day after tomorrow, it will be over. Those who are still here, tomorrow an important video is going to come. Watch tomorrow's video for sure because we are doing some changes in this whole sheet. We are removing some questions and adding some questions. So watch tomorrow's video for sure. Don't miss it. And let's meet tomorrow, right?"
+  }
+ ]
+}

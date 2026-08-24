@@ -1,0 +1,529 @@
+{
+ "video_id": "IKfIT6uFOcs",
+ "title": "5 Point Template To Crack any Recursion Leetcode Question | DSA Patterns 2026",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 2847,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 28.13,
+   "text": "In this video, we will give you a fixed point by point template of backtracking. Just like we gave in the sliding window, remember that if it is max, then you have to do the same set of steps. We have written it somewhere. There is a template of 5 points. There are 5 points. You have to write the same point by point in the code. Any backtracking question in recursion can be solved by looking at this template. There is a template of 5 points. First of all, you have to understand the recursion and backtracking by looking at the question. How will you understand? All combinations. Whenever you get the question of choices and you have to do all combinations,"
+  },
+  {
+   "start": 28.13,
+   "end": 57.18,
+   "text": "backtracking will be correct, there is no other way. Break the question in 5 points, when you understand every point, according to every point, you have to write in code, code is also systematic, you have to write point by point code, means if you understand point 5, you have to do the same work, there is no deviation in it, there is no great question in it, that it is completely different, nothing happens, it works the same, we made a whole fixed blueprint, because some people were saying that explanation is complex, dryden is complex, code is complex, we have connected everything in it."
+  },
+  {
+   "start": 57.18,
+   "end": 86.3,
+   "text": "We have connected logic, made a point with logic, made a code with point, made a dry run with code. Everything is connected, see. After this, we will also make you do a question later combination. You will see that same point by point, exactly like a blueprint. After this, there will be no need to think about anything else according to me. So, we have put the best of recursion backtracking that we have learned in 4-5 years in this video. So, see and tell us how it was and let's start quickly. So, the first step is to identify your stages."
+  },
+  {
+   "start": 86.3,
+   "end": 111.42,
+   "text": "Identify your stages. When we say stages, what does it mean? You have items in any question. You have given an array, you have a number, you play on the number, whether you take every number or not. Stages means, suppose you have entered a building, there are two doors. How many doors are there? There are two doors. You can go left or right from every door. So how many doors are there?"
+  },
+  {
+   "start": 111.42,
+   "end": 137.52,
+   "text": "means you will get a chance to take a decision twice so these will be your stages means how many stages we have to pass so that we reach the end suppose when you study then you have 3 stages 10th, 12th and B.Tech how many chances will I get to take a decision? one chance will come in 10th, one in 12th and one in B.Tech so what is your number of stages? 3 ok, so we have identified this generally what happens"
+  },
+  {
+   "start": 137.52,
+   "end": 161.82,
+   "text": "You will be given an item list, an array, so every index of the array is an item. The string is given, so every index of the string is an item. You are told that there are n numbers, so every number is an item. Whichever chance you get to take a decision, when we are getting the chance to take a decision so many times, those are your stages. What is the next work? Go one by one on these stages. Go one by one by looping. One by one."
+  },
+  {
+   "start": 161.82,
+   "end": 188.54,
+   "text": "Go to the stages. How do we do this? If there is an array, then you have to go to every index. How will you go? You will go from i. You will go by increasing i. Means, you have to put an i in every function. What will you have to put? You have to put an index. Or if there is a question of number, that you have to put a number, then you have to put a number in every function. Means, every function should know at which stage we are standing. At what stage we are standing at this time, so that we can take our decision. So, as we go ahead, it will be clear. So, go to the stages one by one."
+  },
+  {
+   "start": 188.54,
+   "end": 211.22,
+   "text": "We prefer to go from the beginning to the end. Some people come from the beginning to the end. Both are fine. Go to every stage one by one. First, you are standing at stage 1. Take the example of this door. First, you will stand at door 1. Then, when you will decide on door 1, where will you go next? You will go to door 2. Do this and go to every stage. Now, decide the choices."
+  },
+  {
+   "start": 211.22,
+   "end": 240.83,
+   "text": "What are the choices? What are the choices at every stage? Recursion and backtracking always means that you have to explore choices. What are the possibilities? What can you do? Suppose there is a door that opens left and right. How many choices are there? Two choices. You can go left or right. Identify the number of choices. What can you do at every stage? What can you do? What is in your hand? Now this"
+  },
+  {
+   "start": 240.83,
+   "end": 269.55,
+   "text": "It can vary. Sometimes it can be that you can do whatever you want. If we take the example of the door, you can open the left as well as the right. So one thing is that you can do whatever you want, means all the choices are in your hand. So you can do whatever you want. Sometimes there are some conditions, like what we saw in the last degree question, your father used to let you do UG. There was a condition in UG that if you do more than N, then you can't do it. There was a condition to do PG, that the number of UG should be greater than PG, then you will get PG."
+  },
+  {
+   "start": 269.62,
+   "end": 297.63,
+   "text": "So suppose there is a condition in the door, that sometimes you can only open left, or sometimes you can only open right, or sometimes you can open both, or sometimes you can't open anyone, so this will depend on question by question, that at every stage, how much freedom do you have? Do you have the freedom of all choices? What are those choices? And can you make all the choices, or can you make only one choice, or can you make two choices? So read this question and write it in your copy, and what choices do I have?"
+  },
+  {
+   "start": 297.63,
+   "end": 326.19,
+   "text": "Once you understand this too. The next step is, Make one choice. Make one choice. Means, assume one choice that opening the left door is a choice. This is your decision. Make one decision. Okay, make one choice. Write down the name of that choice in your diary. In diary, we are saying diary. We will understand this with variables. But write down that choice in diary. Write down that choice."
+  },
+  {
+   "start": 326.19,
+   "end": 354.14,
+   "text": "If you enter the door, you are taking a copy. If you want to go left, you can go. But before that, write in your diary that you are going left. If you want to go right, you can go. But before that, write in your diary that you are going right. Write that in your diary. And go ahead. Go ahead. Go to the next stage. Go to the next stage. Means, suppose you are at door 1. Suppose you are standing at door 1."
+  },
+  {
+   "start": 354.14,
+   "end": 380.54,
+   "text": "You feel like you have two choices, we can go left or right, so you go. You go left, but before that, in your diary, write that we went left. To remember. What does it mean to go to the next stage? Function call at the next stage. You reached the next door. You reached the next door. The same work will repeat there, the same work will repeat there, but go to the next stage. But when you come back from this next stage,"
+  },
+  {
+   "start": 380.54,
+   "end": 407.55,
+   "text": "Backtracking. Backtracking. Assume that after going to door 2, a lot of work must have been done. We don't benefit from all that. A lot of work must have been done. When you come back from your diary, the diary you had written here that we are going left. Diary. Reverse the diary. Reverse the diary. What does it mean to reverse the diary? When you were on D1 and you wanted to go left, then you had written in your diary that we are going left. And you had gone to door 2 by going left."
+  },
+  {
+   "start": 407.55,
+   "end": 435.86,
+   "text": "When you come back to D1, then whatever changes you have done here, at this point, whatever changes you have done, reverse it. Whatever changes you have done, reverse it. Whatever changes you have done, what should you do? Reverse it. Just reverse it, not all of it. Whatever changes you have done in this part, you have to reverse it here. This change can be anything. It can be that you have a vector, you are writing left in it. If you do one push in it,"
+  },
+  {
+   "start": 435.86,
+   "end": 457.3,
+   "text": "If you push 1 in it, you have to pop 1. If you push 2 in it, you have to pop 2. If there is a variable, you are doing something, sum plus is equal to array of idx. Means, where we are now, reverse this. So, what does it mean to reverse this? If you add array of idx to something, then that change is done. Reverse that change. Sum minus is equal to array of idx."
+  },
+  {
+   "start": 457.3,
+   "end": 487.36,
+   "text": "Meaning, whatever change will happen before you make a choice, when you come back from the previous state in this function, you have to reverse it here. This whole story is for one choice. This whole story is for one choice. Repeat this for all choices. All choices, meaning whatever choices are possible. It is possible that no choice is possible, so you don't have to do it for that. But all choices or all possible choices, meaning if you want to go left, then you can go. The same thing will apply for left."
+  },
+  {
+   "start": 487.36,
+   "end": 516.18,
+   "text": "Then, when you want to go to the right, the same thing will apply for the right. If you go to the right, you will write right in your diary. You will go to the next stage and when you come back, you will erase the right from the diary. So, for all possible choices, repeat the same. Repeat the same. What is this? The fourth step. This is the most important step. This is the heart of your algorithm. If you make a mistake in this, then you will go to the infinite loop. Okay. Now, the next comes from the infinite loop. Last point. Last point. Not much. We said 5 points."
+  },
+  {
+   "start": 517.55,
+   "end": 543.47,
+   "text": "When all the stages are over Suppose there were only two doors in the building If you have opened two doors, then all the stages are over Suppose you are in an array and your stage is your index"
+  },
+  {
+   "start": 543.47,
+   "end": 559.5,
+   "text": "If the index is equal to n, it means that you have reached the end of the array. You have reached the end of the array by looking at all the things in the array. When you have reached the end, then what you have to do at this time is a very important thing."
+  },
+  {
+   "start": 559.5,
+   "end": 586.58,
+   "text": "Look at the diary, the diary that you used to maintain, the diary that you used to maintain, before every choice, before every choice, you used to write in the diary that we are going left, then when you used to erase it from the diary, then that diary, till now, there must have been something in it, there must have been some combination in it. In that diary, assume that when you open both the doors, then it is possible that you have opened like this, it is possible that you have gone left from D1, okay? You have come to D2 by taking this left, it is possible that you have gone right from D2."
+  },
+  {
+   "start": 586.58,
+   "end": 610.7,
+   "text": "And this is the last step because there are only two doors. The first door was this, from which you went left. So what is written in your diary? Left. After that you came to the second door, from which you went right. So what is written in your diary? Right. Now after opening both the doors, you have come to the end of your stage. What is written in your diary at this time? Left, right. This is your combination. This is your one combination."
+  },
+  {
+   "start": 610.7,
+   "end": 637.81,
+   "text": "This is your combination. This is what is asked. Tell me the combination. All possibility. This is your possibility. That there can be a path that we come left and then right. This path can help you in many ways. It is possible that you see your diary. In the diary, you will see that possibility which you have come at this time. Which you have come at this time and from beginning to end, you will see one path. Now either print it. Whatever it is said. Print it. It is possible that it is said that print all left and right. We will print it."
+  },
+  {
+   "start": 637.81,
+   "end": 666.37,
+   "text": "there may be something else in it, like we have to sum it somewhere, sum of all possibilities, then sum it in some master variable, means a very big vector of int or vector, whatever your final answer is, if your final answer is to print all the paths, then what will happen, vector of string will happen, means mixture of many paths will happen, then in that vector of string, print it or insert it, whatever you want to do, insert it somewhere,"
+  },
+  {
+   "start": 666.37,
+   "end": 693.34,
+   "text": "It may be a game of numbers, in which you have to get all the possible sums and do the maximum of everything. So whatever it is, whatever works for you, do the maximum, do the minimum. What does this diary tell you? This diary tells you that when you have come to the end of a stage, now you have come with some choices. If you have come from door 1 to the end, now door 2 must have come in between, door 3 must have come. Every time you must have come with some choices, every time you must have come with some choices."
+  },
+  {
+   "start": 693.34,
+   "end": 721.92,
+   "text": "Lastly, this diary in which we write our choices and remove them, this diary tells you the choices of your life. What does it tell you? It tells you the choices. For example, suppose in 10th, suppose every time there could be two things, either you pass or you fail. You passed in 10th, you came in 12th. This is one path of life, one way of life. 12th, you failed in 12th, you somehow came in B.Tech."
+  },
+  {
+   "start": 721.92,
+   "end": 752.1,
+   "text": "You have passed in BTEC. Now you have come to your job. Suppose this is the end of your education. What is the story of this person's life at this time? He has passed in 10, failed in 12, and passed in BTEC. This is his story. This must be written in his diary. Now what does he do with this story? Maybe you have a job on the basis of this story. Maybe there is such a question that if a person passes in all three, then he will get a job, then he will not get a job."
+  },
+  {
+   "start": 752.1,
+   "end": 779.47,
+   "text": "If someone fails in one, then he will get a job. Anything can happen, that's a question. But when you come to the last, your diary contains the story of your life. That you have made some choices in life and reached here. In 2015, you took a choice to study, so you passed. In 2017, you took a choice to not study, you failed. In 2021, you took a choice to study, you passed. Now when you are standing in 2025, then in 2025, this whole story tells you what you have done to reach here."
+  },
+  {
+   "start": 779.47,
+   "end": 807.42,
+   "text": "So this is the essence of this diary. That's why we can do anything with this diary. Let's explain this in the language of code with this door example. Suppose you have two doors. You can go either left or right on each door. There are two doors. Left and right will open. You have to print all possible paths."
+  },
+  {
+   "start": 807.42,
+   "end": 830.83,
+   "text": "All possible paths you can take. Means left, left, right, anything. Whatever possible path you can take. Let's break it down. First of all, point number one. How many stages do you have? You have two doors. Means how many chances do you have for decision making? Two chances. Two doors. So this is your stages. Second. What was the second point? Was it choice or what? Let's see."
+  },
+  {
+   "start": 831.44,
+   "end": 861.28,
+   "text": "1 by 1. Second point was that 1 by 1 go to stages. 1 by 1 go to stages. 1 by 1 go to stages. It is possible that these stages are given in that or in the form of an array. It is possible that this stage is given in the form of an array. So it is possible that there is an array. In this, D1 is there and in this, D2 is there. Okay, go one by one. So it is done. We will go by index. We will start from the beginning, from 0. Okay. 3. Think of all your choices. What choice do you have at every door? You have two choices at every door. What choice is there? Left and right."
+  },
+  {
+   "start": 861.28,
+   "end": 884.74,
+   "text": "Now, whenever you come to any stage, make one choice. Make one choice means either choose left or right. Whatever choices you can make, try to do all of them. There is no condition here. You can open left or right as you wish. We will try to do both. But when you are making one choice, first of all write it in your diary."
+  },
+  {
+   "start": 884.74,
+   "end": 912.72,
+   "text": "Now writing that doesn't mean writing his name. What is happening with that choice? It is possible that you are opening left and right here, so you can write left directly. It is possible that you are doing sum, so you add that number to sum. If you are doing product, then in your product diary, you add that number to product. Whatever you have to do, that choice should be written in your diary that this person had done this in life at some point. Write that. Go to the next stage. Next stage means at the next door. This choice is done at the next door."
+  },
+  {
+   "start": 912.72,
+   "end": 942.46,
+   "text": "When you come back, then reverse from your diary. Reverse from your diary. Again, this reverse depends on what? What did you write? If you wrote a name, delete it. If you summed it, subtract it. If you did a product, divide it. Whatever you did, reverse it. If you made a boy's photo in your diary, remove the boy's photo. If you made a girl's photo, remove the girl's photo. It's not like you made a cow's photo and deleted the dog's. No, no, no. Dog's photo, remove the dog's. Whatever you did, you have to reverse it. How long do you have to do this?"
+  },
+  {
+   "start": 942.46,
+   "end": 970.83,
+   "text": "These are all possible choices. All possible choices. Means you have to do it once for left and once for right. What was the fifth point? When you reach the last. When you reach the last. Means there is no stage left. Both the stages are done. There is no decision making left. Now look at your diary. Look at your diary. Now look at your diary. What is written in it. And whatever you have to do. Here we just have to print the diary contents. So we will print our diary. Okay. Come let's show this song."
+  },
+  {
+   "start": 971.41,
+   "end": 1001.38,
+   "text": "Suppose this is your array. This is your array in which door 1 is 1 and this is door 2. This is 0 and this is 1. What is the length of the array? It is n is equal to 2. Let's do dry run first and then we will see the code. First of all, we have to identify the stages. Do each stage from the beginning. So where will you go in the beginning? I is equal to 0. What is this? Door 1. Now what do you have to do? What are your choices? Left, right."
+  },
+  {
+   "start": 1001.38,
+   "end": 1031.92,
+   "text": "These are two choices. And we said maintain one diary. Maintain one diary. Which will pass in every function. That diary will pass through reference. So that if you change in one function. Then the next function will also know. We make a diary here. This is our diary. Okay. Diary is made. What did we say? Make every choice. And write it in diary. Go to the next stage. And come back and reverse from diary. So first of all we make left choice. We go left from here. We go left. But before going. Write in diary."
+  },
+  {
+   "start": 1031.92,
+   "end": 1060.18,
+   "text": "Write left in the diary. Write left. Go ahead. Go to the next stage. I is equal to 1. And door 2. Go ahead to the next stage. Okay. Again, we will do the same thing here. Do every choice but write it in the diary. Now every choice means first do left here. But before doing this, write one more here in the diary. Diary is same. This left was written in door 1. This left is written in door 2. Okay. And go to the next stage. I is equal to 2."
+  },
+  {
+   "start": 1060.18,
+   "end": 1089.98,
+   "text": "Now, when you come to I is equal to 2, then what do you know? Now my array is finished. I is equal to N has come. The stage is finished. So, what did we say? Now read your diary. What is written in your diary? Left, left. This is the story of your life. Meaning, you took left from door 1 and you took left from door 2. It tells you what decisions you have made and reached here. Now, because we have to print it, we will print it generally. So, it is printed as left, left. So, this is a possible path. Now, you took left from door 1 and left from door 2. No problem. Okay."
+  },
+  {
+   "start": 1089.98,
+   "end": 1116.88,
+   "text": "Now, i is equal to 2. Now, you can't do anything at the last stage. Last stage means, this is not even the last stage. This stage is over. It's finished. You can't make any choices here. So, it's okay. Now, go out. It means, this is over. Now, now, now, where did you come back? Like this. It goes back. It doesn't happen like this. It came like this. It came like this. And it went like this. Backtracking. Backtracking. This will happen. Now, you are standing here. Now, whose is over? You went ahead by choosing left."
+  },
+  {
+   "start": 1116.88,
+   "end": 1142.03,
+   "text": "This is over. You have come back. What did we say after coming back? Reverse the diary. When you were here, you had written left in your diary. You had written this left. Reverse it. Remove it from the diary. Remove it from the diary. Remove it. Remove it. Very good. Do the next choice. Do the next choice. Do the next choice. Right. What is the next choice? From door 2, right. From door 2, right."
+  },
+  {
+   "start": 1142.03,
+   "end": 1168.56,
+   "text": "But before that, write in your diary what choice you are going to make. And come to the next stage. On the next stage, again, where do you come? I is equal to 2, which is over. What do you have to do on the last stage? Read the diary. Left, right. Yes, read the diary and write. Now? Because there is nothing to happen in this stage. The stage is over. It is over. Where did you come back? On door 2."
+  },
+  {
+   "start": 1168.56,
+   "end": 1197.54,
+   "text": "In door 2, if you have come back, then what did we say? Whatever you have written, reverse it. Reverse it. Finish it. Now, it is finished. Is there anything left for door 2? No, there is not. Because, explore all these choices. There is no choice other than left and right. All are done. Return. Means, go back to where you came from. So, this man too, his game is also over. Finished. Where did we come back? Straight to door 1. When did this happen?"
+  },
+  {
+   "start": 1197.54,
+   "end": 1225.44,
+   "text": "Now remember, in the beginning of the world, we took the left, that's how it all came to an end. Now we have come back to door 1. So what did we say? What was written on door 1? Left. You have come back from the left. Reverse this left. Remove this left from yourself. See, your diary is empty again. Your diary is empty again. Now, there is one more choice left on door 1. But now it's just left. Now it's just left. There is also a choice of right, Babua. There is also a choice of right. Don't make a choice of right."
+  },
+  {
+   "start": 1225.44,
+   "end": 1254.37,
+   "text": "Right choice. But before taking right, write in your diary. Take right and go. Write right and go. Don't say, don't write. It will be a complete mess. Come back to the next stage. Now what is the next stage of I is equal to 0? I is equal to 1 and door 2. Now see, I have come to door 2 again. You will think that I had done door 2 just now. No. Which was this door 2? When door 1 was taken left, it was this. Now door 1 is taken right, then door 2 has come again. Will we repeat the same thing in door 2?"
+  },
+  {
+   "start": 1254.37,
+   "end": 1284.1,
+   "text": "There are two decisions. Let's go left. But before going left, write left here. Write left here. And move forward. I is equal to 2. Again, the stage is over. What to do? Read the diary, Babu. Read the diary. Right, left. Right, left. Right, left. Right, left. Read the diary. Now, what to do? Its work is over. It has come back. But you have come back to dot 2. What to do? Reverse the decision of the diary. Reverse the decision of the diary."
+  },
+  {
+   "start": 1284.1,
+   "end": 1313.17,
+   "text": "Remove it. Now, is the whole door 2 over? No, you haven't taken the right decision. Take the right decision, brother. Take the right decision. I is equal to 2. But, before taking the decision, write right here. Write right and go ahead. Go ahead. I is equal to 2. Same thing. What to do? The stage is over. Read the diary. Read the diary. Right, right. Right, right. Right? Right. Yes, yes, yes. This is becoming your answer. This is slowly becoming your answer. Remember it."
+  },
+  {
+   "start": 1313.17,
+   "end": 1335.09,
+   "text": "I is equal to 2. The game is over. Come back. Come back. Now we have come to door 2. Come back. Come back. From where? I is equal to 2. Come back to door 2. Reverse the decision you took. Reverse the decision you took. Over. Can we do any other work on door 2 now? No. Left is done. Right is also done. No problem. Go back. Go back. Go back. We have come back."
+  },
+  {
+   "start": 1335.09,
+   "end": 1363.31,
+   "text": "We have come back to door 1. What to do? Reverse whatever was written. You remember that we went down by writing right on door 1. Now we have come back. It will reverse. Reverse is over. Look, the diary is empty again. Now you are standing on door 1. Is there anything left to do on door 1? No. Left is also done. Right is also done. What to do? Back to main function. Recursion is over. Now look, the diary is empty."
+  },
+  {
+   "start": 1363.31,
+   "end": 1392.59,
+   "text": "The diary started empty and came back empty. There must have been a lot of push-pops in between. No problem. They went empty-handed and came back empty-handed. But what has been your update in this process? Your answer. Now see. One path is left-left. Means you took left from both doors. Door 1 from left, door 2 from right. It is possible. Door 1 from right, door 2 from left. It is possible. Both doors from right-right. Does any other combination exist other than this? When there is left-right between two doors? No, it doesn't."
+  },
+  {
+   "start": 1392.59,
+   "end": 1418.32,
+   "text": "So, what is the total? All combination. So, recursion works like this. Now, we will explain the meaning of this in code. Now, we will explain the meaning of this in code language. First of all, write function. Okay, one more thing. Function's return type. If there is something in which you just have to store something or print something, then no return type is required."
+  },
+  {
+   "start": 1418.32,
+   "end": 1446.93,
+   "text": "Suppose there is a function which is returning something, which has to return an integer value. You can do it in that. Generally, you will get to know that void will work. Void fun. First of all, what do you have to do? List of stages. Suppose you have an array. Suppose you have an array in which there will be some doors. So this is an array. The size of the array is the number of stages. This is the number of stages. Means, this is the list of stages. Door 1, door 2 is the list of your stages."
+  },
+  {
+   "start": 1446.93,
+   "end": 1472.58,
+   "text": "How many stages are there in total? 2 stages. This is the size of the array. At what stage are you at? At what stage are you taking the decision? At what stage are you at? IDX. Yes, yes. At what stage are you taking the decision? Now, diary. What is diary? What do you want to do in diary? You want to push left or right. What should that diary be? There should be a lot of words in diary. There should be a lot of words in diary. So, should we make diary as vector of string?"
+  },
+  {
+   "start": 1472.58,
+   "end": 1491.07,
+   "text": "Make a vector of string. Yes, we can make it. Let's give it the name diary from now on. From now on, it will be known as diary. Diary, diary. Now, you don't need anything else in it. If you want to store all the diaries, that means, if you write all the diaries in one place, then vector of vector of string, means vector of diary. Vector of diary means,"
+  },
+  {
+   "start": 1491.07,
+   "end": 1508.22,
+   "text": "Every time you come, there was different content in your diary. Someone says that collect all the contents in the diary one by one. So what do you make? Whatever the diary is, its vector, its array. Vector of vector of string. But for simplicity, you don't need it. You don't need it. Come. Now, when we will start writing the code,"
+  },
+  {
+   "start": 1508.22,
+   "end": 1534.45,
+   "text": "First of all, which code should be written? Step 5. Step 5 means either all the stages are over or you can't do anything further. Suppose there is a question like this. If a snake is sitting in a door, then you can't go further. Then the game is over and you can't go further in life. So first of all, the last one. When all your stages are over or you can't go further. If idx is equal to n, it means the door is over. So what will we do?"
+  },
+  {
+   "start": 1534.45,
+   "end": 1564.38,
+   "text": "Now, what did we do here? Whatever is written in the diary, we will print it. So, whatever will be the print. So, print. Do the diary. And, return. Don't forget to write return. Don't forget to write return. Otherwise, in infinite loop, it will go ahead somewhere. Okay? Finished. This is done. Step 5 finished. Step 5 finished. Now, what is it? Do all choices. Whatever choices are possible, check it. What choices can we do? Depending on question. Do all the choices. So, come. What is the first choice we do? Left."
+  },
+  {
+   "start": 1564.38,
+   "end": 1593.68,
+   "text": "Let's do the first choice of left. What did we say? First of all, diary.pushback. Pushback. Where are you going? You are going left. So, write left in the diary. Write left in the diary. Now, go to the next stage. How will we go to the next stage? Fun A and IDX plus 1. IDX plus 1. If you don't do IDX plus 1 in the next stage, then you will come back to this stage. If you don't do IDX plus 1, then you will come back like this. See, there is door 2."
+  },
+  {
+   "start": 1593.68,
+   "end": 1615.22,
+   "text": "You want to go left, but you have written IDX. You will come back here after taking left. You will come back here after taking left. Then you will do rotoping. Then you will come back here after taking left. Then you will come back here after taking left. You will keep rotating here. This becomes infinite loop. You have to go down. You have to go down or up. IDX plus 1 and diary as it is will pass. You have made changes in diary."
+  },
+  {
+   "start": 1615.22,
+   "end": 1643.39,
+   "text": "Here you have changed to diary and here you have passed the diary. The next person will know what you have done. Now, when this will end, when this will end, then you have come back here, you have come back to this stage, you have come back to this stage. What to do? Reverse whatever you did in the diary. What did you do in the diary? Push back. What is the reverse of push back? Pop back. Diary. Pop back. Pop back. Reverse. Yes, reverse. It is over. This left choice is over."
+  },
+  {
+   "start": 1643.39,
+   "end": 1673.71,
+   "text": "For right, do the same thing. There is no rocket science in right. What to do? This time, what to do in diary? Right, not left. Now, you want to go right. Now, you want to go right. Now, you want to go right. Yes. Go to the next stage. Fun, A, N, IDX, plus 1, diary. Now, when it ends, when it ends, we will come back. Reverse whatever happened in diary. Reverse whatever happened in diary. Push back."
+  },
+  {
+   "start": 1673.71,
+   "end": 1701.81,
+   "text": "Pop back. If you would have summed it, you would have minused it. Pop back. That's it. The game is over. Both the choices are done. At this stage, you can't do anything else. Don't think that every code has so many things. What will you do at one stage? All these steps are for whom? What will you do at any one stage? That's it. If they understood, don't worry about anything in the future. That nothing is happening in the grand scheme of things. What could you do at one stage? At one stage, you could check whether this stage is over. You did it."
+  },
+  {
+   "start": 1701.81,
+   "end": 1732.37,
+   "text": "At one stage, you could have made a choice of left and moved forward. It's done. At one stage, you could have made a choice of right and moved forward. It's done. And do you have the power to do anything else at this door? No. If you don't have it, then go back. It's over. And close it. Look at this. This is the code. This is the code. The code is very small, but the logic behind the code is very big. What is this? What can you do at any one stage? What will you do at any one stage? This tells you that."
+  },
+  {
+   "start": 1732.37,
+   "end": 1763.04,
+   "text": "First of all, we will check whether the stage is over or not. We will do the left choice, right choice and then go back. And then we will not do anything else. So this is the code. So this is a template, whatever it is. Five steps, you will have to write such a code everywhere. Let's do a question and explain. It is a very interesting question. We don't know if you have seen such a phone or not. It was called a landline. So what used to happen in a landline? Forget about 1. Suppose from 2 to 9, it used to be dialed. Like today, mobile numbers are dialed."
+  },
+  {
+   "start": 1763.04,
+   "end": 1790.26,
+   "text": "Now, what used to happen is that when the mobile used to come, the keypad one, then typing in it, in today's date, there is a keyboard, the QWERTY one, so you can press anything, but now how will you put that much letter in the keypad phone? What did they do? Now look, the button of 2, the button of 2, it used to have both A, B, C, it used to have all three. What does this mean? Suppose you have to type something on the keypad, you are messaging WhatsApp, you press 2 once, you press 2 once, what will be printed with this? A. This will type A, suppose."
+  },
+  {
+   "start": 1790.26,
+   "end": 1819.87,
+   "text": "If you press 2 twice, it will type B. If you press 2 three times, it will type C. People used to type like this. Suppose you want to type read. Suppose you want to type read, then what did you do? First of all, you used to find P here. Now, when is P? P is before this, means 7 was pressed once. If you press once, it will type P. A is there, so if you press 2 once, it will type A. D is there."
+  },
+  {
+   "start": 1819.87,
+   "end": 1843.25,
+   "text": "If you press 3 once, then it will be typed. Now H is in 4, but H is on its second number. When you press 4 once, then G gets printed. You will have to press 4 twice as soon as possible. Similarly, there is O. Look, there is O in the third of 6, so you will have to press 6 3 times as soon as possible. So you will have to type so many things just to read and print. So this was done."
+  },
+  {
+   "start": 1843.34,
+   "end": 1872.69,
+   "text": "You have the same problem. You are given this phone number. See this mapping. Pause the mapping and see. And what is your task? You are given a phone number. It means a string of digits of the phone number. Suppose you are given 2 and 3. You are given 2 and 3. Okay. Now someone presses 2 and 3. You have to give all possible. All possible letter combination. All possible letter combination. What does this mean? See."
+  },
+  {
+   "start": 1872.69,
+   "end": 1898.64,
+   "text": "First of all, a person tells 2. What does this mean? From 2, you assume that whatever is written in the phone number in 2, A, B, C is written. From 2, it can be 3. From 2, it can be 3. Meaning, if a person presses 2, if a person presses 2, then you assume that he can press 3 out of A, B, C. So, he can press A, B, and C. Okay, 2 is done. 3."
+  },
+  {
+   "start": 1898.64,
+   "end": 1925.33,
+   "text": "Now, 3 is pressed after 2, but since 3 paths have been made in 2, then 3 can come in 3. There is a possibility of pressing 3 in 3. Meaning, if someone will write A after pressing 2, then he can press 3, then A will be done. If it will be B after 2, then 3 can be pressed after B. If it will be C printed from 2, then 3 will be pressed. Now, what can we do with 3? 3 can do D, E, F, all three. So, again, it will spread more. Again, it will spread more. Meaning, this can make D."
+  },
+  {
+   "start": 1925.33,
+   "end": 1952.45,
+   "text": "E can be, F can be. Similarly, from every 3, D can be, E can be, F can be. From this also, D can be, E can be, F can be. Now, you have to tell all possible combinations. So, see, what will come in this? Press A and make it D. So, one is AD. What happened to one? AE happened. One is AF. Similarly, when we will see in the path of B, then you could have typed BD."
+  },
+  {
+   "start": 1952.45,
+   "end": 1977.73,
+   "text": "You could have done BE, DF. Similarly, you could have done CD, CE, CF. So, you have to make a list of all these things and return them. All possible combinations, all possible letter combinations. This is a standard question. Now, what is the input given to you? The input is a string. Mind the string."
+  },
+  {
+   "start": 1977.73,
+   "end": 2007.28,
+   "text": "which will look like this, there will be only numbers in it, there will be only numbers in it, there will be only numbers in it, but it is in string format, this is not a real number, this is a character, this is a character, you will have to convert it into a number, you will have to convert it, right, so there is no difficulty in it, I will tell you, you have given a string, what is your work, all, as much as possible, you have to return everything, you have to return everything, come, put your template in it, what is the first, stages, identify the stages, identify the stages,"
+  },
+  {
+   "start": 2007.28,
+   "end": 2035.82,
+   "text": "Stages means, when will you get the power of decision making? So, suppose the string is 2, 3. When did you take a decision in this? When did you take a decision? When you came to 2. That we will press A, B, C. Then when you came to 3, you took a decision again. You took a decision again means, every letter in the string is a stage. Every letter is a stage. You have to take a decision on every number. Whether it is from A, B or C. Depending on what is written on the phone number. So, how many stages are there?"
+  },
+  {
+   "start": 2035.82,
+   "end": 2065.36,
+   "text": "All the letters in the string. All the letters in the string. All the letters in the string. Done? How many number of stages are there? The length of the string and the number of letters are the number of stages. Okay? Number of stages. How to go to every stage? You have to go to every stage by index. This is also an array in the string. So, first we will go to this. Then we will go to this. We will go by index. Very good. What are the choices you have? What are the choices? What are the choices on every number? See."
+  },
+  {
+   "start": 2065.36,
+   "end": 2086.93,
+   "text": "Suppose we are standing on 2. What choices do you have on 2? A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C, A, B, C,"
+  },
+  {
+   "start": 2086.93,
+   "end": 2117.18,
+   "text": "P, Q, R, S. Anything can happen. So, what are the choices? In the telephone number, the string which is written, this is given by making a diagram. These are your choices. Any letter from this, if someone presses 7, then he can make any choice from P, Q, R, S. So, these are your choices. Whatever is given to you in the phone number, we will see it in the code, but we know what the choice is. Okay. Make one choice. What to do? What to do? So, we will maintain a diary. We will maintain a diary. Whenever we do something, we will write it in the diary."
+  },
+  {
+   "start": 2117.18,
+   "end": 2145.94,
+   "text": "What will you write? What do you choose by pressing something? This is A. What is this? This is a letter. This is a letter, right? This is a letter. Look at every choice, what is it? Either it is a choice of only one letter. It is not that the word comes in it. No. It is A, B, C, whatever it is. It is P, Q, R, S. What is all this? There are letters. There are letters. So what should be written in your diary? Many letters should be written in your diary. Many letters should be written. Many characters should be written. What are many characters? String. String the diary."
+  },
+  {
+   "start": 2145.94,
+   "end": 2172.4,
+   "text": "Diary means string diary. Whenever we make a choice, if we want to do A, we will write that letter in diary. What will we write? A, B, C, whatever you want to do. We will go to the next stage. Next stage means we will go to the next index. If we come back, what will we do? Diary dot pop back. Diary dot pop back. Finished. Fifth, if we go to the last stage, what will we do? What do you have to do at the last stage?"
+  },
+  {
+   "start": 2172.4,
+   "end": 2202.22,
+   "text": "When you reach the last text, something will be written in your diary. For example, when you reach here, your diary will look like this. There will be an A and a D in your diary. Now AD is a combination. AD is a combination. It means this is a string. It means this is a string. You have to store it somewhere. You are asked not to print it. You store all the contents of the diary and give it to us. We will print it ourselves. So you have to print all the diaries. What is diary? Diary is a string. What do you have to do? You have to collect all the diaries."
+  },
+  {
+   "start": 2202.22,
+   "end": 2232.34,
+   "text": "At the last stage, we will make a vector of string, a final answer. This is our final answer. And in the answer, we will push the diary. It means it is done. What we were printing, push it. And we cannot do anything else. Last stage means it is finished. What to do with string? Nothing. It will return. This is the question. These five points are clear. Now let's go to the code. Let's see what to do. So, first of all, what do we do for simplicity? We make a map. We make a hash map. Why are we making a hash map? I will tell you."
+  },
+  {
+   "start": 2232.34,
+   "end": 2259.82,
+   "text": "Let's make a hash map which will look like this. Let's make this on the top. Or you can make it on the main or anywhere. Unordered map. In this, what we will do is, the photo of the phone number is given to you, right? The photo is given, nothing is shown. So, looking at the photo, it will be very tedious. What we do is, now all the digits are characters. All the digits are characters. Meaning, the string you have added is like this. 2, 3. So, this is a character, not a number. Understand the difference between integer and character. This is a character 2, not a number 2, okay?"
+  },
+  {
+   "start": 2259.82,
+   "end": 2289.14,
+   "text": "So, what we will do is, we will take this character. Means, from 2 to 9, you are told that there is a button in the phone. From 2 to 9, you can press it. For every character, we will take a string. We will take a string. Now, see what we will do in this. We will call it f. We will see what we will do. f of 2 is equal to what? What can be pressed from 2? a, b, c. So, what we will do is, we will store it as a string. Here. See. We will tell you why we are doing it. f of 3 is equal to"
+  },
+  {
+   "start": 2289.14,
+   "end": 2315.57,
+   "text": "D, E, F. Whatever is given, whatever photo is given, we are doing it by looking at the photo. We are not doing it by our mind. F of 4 is equal to G, H, I. By doing this, we will do the whole F of 9 here. In F of 9, W, X, Y, Z. We will make this once and keep it so that we don't have to do it again and again. Okay? So, make this. Make this. What will we do after making this? We will start. We will start. We will start. Come, let's start."
+  },
+  {
+   "start": 2315.82,
+   "end": 2346.4,
+   "text": "So, what do we need to start? Main functions. First, let's write the function. So, one will be void. Fun. Okay. What will we pass? Stages' list. Stages' list is done. How many stages are there? N stages, its length. At which stage are you at? At which number are you at? At IDX. Okay. How is the diary? Diary is of string type. And what is the final answer? Final answer is of vector of string type. Because we want to write all the diaries in this."
+  },
+  {
+   "start": 2346.4,
+   "end": 2376.98,
+   "text": "Don't forget to put ampersand. Let's go. First of all, write the final point. When you reach the final, idx equal to n. The game is over. What to do? Push the diary in the result. Push the diary in the result. The game is over. Return. The easiest part is over. Now what to do? Make every choice easily. Make every choice one by one. Now see. That's why I made the map. See the significance of making the map. Assume you get first 2. Means,"
+  },
+  {
+   "start": 2376.98,
+   "end": 2405.1,
+   "text": "s of 0 is 2. We will get a string from my map. If we take out the string, t is equal to f of s of idx. What is in t? a, b, c. Now, you can choose every letter of a, b, c. You can choose a, b, c. What was there in the first row? Left and right. Now, there are 3 choices in 2. We don't know those 3."
+  },
+  {
+   "start": 2405.1,
+   "end": 2432.37,
+   "text": "Whatever the string in T, you can choose every letter of this string for 2. See, A, B, C. Do you choose A, B, C in 2? Yes. If your letter is 3, what will be the string of 3 from the map? D, E, F. Means, D, E, F. Means, you can choose every letter of D, E, F once. Come, let's do this. What will we do? We will do this. String choice is equal to F of S of index. Means, in S of index,"
+  },
+  {
+   "start": 2432.37,
+   "end": 2461.81,
+   "text": "If there is a phone number, let's say 2. What is there for 2? So, my choice will be A, B, C. Every letter can have a choice. You can choose A, B, or C. So, make a loop. Every choice. Earlier, it was left and right, so we wrote it like this. But, you have to make every choice. And, is there any restriction on making any choice? That you don't have to choose A? No, there is nothing. There is complete freedom. For int j is equal to 0. j less than choice dot size."
+  },
+  {
+   "start": 2462.42,
+   "end": 2489.9,
+   "text": "and J++. Yes, yes, yes. Now what can you choose? You can choose this choice of J. So choose it. But write in your diary. Diary.pushback. String is also a vector. You can pushback in this. What are you choosing at this time? The choice string A, B, C. Its J. Means if J is equal to 0, then you are choosing A. If J is equal to 1, then you are choosing B."
+  },
+  {
+   "start": 2489.9,
+   "end": 2519.62,
+   "text": "J is equal to 2. So, you are choosing C. Choose is done. Write it in the diary. Go to the next stage. Fun S and IDX plus 1. Go to the next stage. We will write the same. We will get stuck in infinite. Diary. Result. Done. When it will end, what to do? Diary dot pushback. Reverse whatever you did. Reverse whatever you did. Diary dot pushback. This is one choice. And this loop. What will this loop do? What will this loop do?"
+  },
+  {
+   "start": 2519.62,
+   "end": 2543.22,
+   "text": "It will do all choices for you. A, B, C, by choosing all three, one by one, one by one, everything will happen. Now, at this stage, all the work is done. Is there any need to do anything else? No, A, B, C is done. That means, whatever you had to do, return it in fun. Right? It is finished. See this function. This is the function. What are we doing again? What is this? If we come to the last, this one, right? This one, last. What is this?"
+  },
+  {
+   "start": 2543.22,
+   "end": 2569.07,
+   "text": "We are not doing anything, we are just using the trick of 2, what can be done with 2? A, B, C can be done, so from here A, B, C will be removed. What is this? You are doing every choice, you are choosing A, then B, then C, what are you doing every time? Writing it in the diary, going ahead, reversing from the diary, every time, every time, okay? What will you have to do in the main function? You will have to do nothing, first of all, make this hash map, this hash map, make it by looking at the diagram, what is this?"
+  },
+  {
+   "start": 2569.07,
+   "end": 2599.07,
+   "text": "Question number is 17. Lead code is 17. You will get it in the pattern sheet. Make it. After that, what do we do? Whatever work you do, what do you need to send a function? Look, in the function, we have to send this s, this is given. We have to send n. So, remove n. What do we do with n? Int n is equal to s dot size. Remove it. Very good. You have to send an idx. So, you send idx from the beginning. So, send it from 0. Okay. So, make it. No problem. Make it. idx is equal to 0. We will start from the beginning. What do we need?"
+  },
+  {
+   "start": 2599.07,
+   "end": 2629.01,
+   "text": "We need diary. Diary should be empty in the beginning. So make a string diary. String. Make a diary. Take this. Diary is made. And what do we need? Vector of string. To write the result. To write the result. Everything will happen in this. Vector of string. Vector of string. This is what you have to return. Now what do we do? Call it once. Once start your recursion from here. Once kickstart your recursion. How? S N IDX"
+  },
+  {
+   "start": 2629.04,
+   "end": 2658.0,
+   "text": "diary and rest finished when this recursion will run completely this recursion will run completely in your rest all diaries will come because you are writing here you are doing push back in rest once this is done return rest here with fun this is the function of leetcode this is our recursion function which is written by him once you kickstart the recursion from here someone will start the recursion"
+  },
+  {
+   "start": 2658.0,
+   "end": 2686.3,
+   "text": "Let's kickstart from here. Once it starts, then it spreads and brings you back and gives you everything. So, this is your helper. This is your helper, isn't it? We don't need to do dry run. Let's do it. It's okay. Let's do it. So, let's assume this is your string. This is your string. What is it? 2 and 3. 0 and 1. This is your string. We make your diary here. This is your diary. Okay? And we will write the result of the diary somewhere."
+  },
+  {
+   "start": 2686.3,
+   "end": 2713.74,
+   "text": "In the beginning, IDX is equal to 0. What is your number? 2. Okay? So, for 2, what will come out of the hash map? ABC. So, make 3 choices. First, make A. Before making A, write A in your diary. After making A, where did you go? IDX is equal to 1, which is 3. What is 3? DEF. Do the same thing. Take a choice of D. But, before making D, write it in your diary."
+  },
+  {
+   "start": 2713.74,
+   "end": 2743.41,
+   "text": "Now, where will you reach while doing this? At the next stage, IDX is equal to 2. At IDX is equal to 2, you will find that it is over. What to do? Write the content of the diary in your result. So, what will be the content of my result? Let's make our result here. AD. Okay? Done. At I is equal to 2, the work is over. Come back. Now, you have come back to IDX 1. So, you went to D, you have come back. Reverse in the diary. You had written D, right? Finish it. Okay? Done. Now, what else is there in 3? E is also there. Do E too."
+  },
+  {
+   "start": 2743.54,
+   "end": 2771.62,
+   "text": "In 3, E is also there. So again, IDX is equal to 2. But, before doing this, what do you have to do? You have to write in the diary. Write. Write. On IDX is equal to 2, same thing. Write whatever is there in your final result in the diary. What is it? AE. Write. Very good. Now, there is no work left. Finish it and come back. Come back to IDX 1. But, E was written, right? Reverse E. Any work on IDX 1 now? No. And there is no work according to me. Finish it. Come back. Come back. You are standing on IDX 0."
+  },
+  {
+   "start": 2771.62,
+   "end": 2799.34,
+   "text": "After writing A, we said, reverse it. Reverse it. Come on. It's done. Look. A, D, A is finished. Now, IDX is equal to 0, you have to stand on 2. How many choices are there on 2? 3 choices. A, B, C. A is finished. B is also left. Oh sorry, it will have one more choice. It will have one more F choice. It will have one more F choice. So, here, A, F will come. Same logic. Now, you are finished. Now, you have come here. Now, its A is finished."
+  },
+  {
+   "start": 2799.34,
+   "end": 2827.55,
+   "text": "For B, it will be repeated again and again. So when you will see the final result, try drawing it. You have BD, BE, BF, CD, CE, CF. The same thing is happening every time. What do we do at every stage? We make all the choices. Write in the diary before making the choice. Make the choice, go to the next stage. When you come back, reverse it from the diary. This is the game of recursion. So we hope that you have understood."
+  },
+  {
+   "start": 2827.55,
+   "end": 2846.1,
+   "text": "This is the best explanation from my side that we could give. Unfortunately, we don't know a better recursion pattern than this. If you don't understand this too, then we will see and do something else. If you don't understand, then please tell us and we will try to simplify it a little more. So let's go. It's a good question. Do try it. And let's meet."
+  }
+ ]
+}

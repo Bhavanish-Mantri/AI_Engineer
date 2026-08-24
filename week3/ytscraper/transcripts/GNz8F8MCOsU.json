@@ -1,0 +1,124 @@
+{
+ "video_id": "GNz8F8MCOsU",
+ "title": "Next Phase Plan For The DSA Pattern Series | Comment Your Thoughts",
+ "language": "en",
+ "model": "large-v3",
+ "duration": 627,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 30.35,
+   "text": "So today's agenda is that Recursion is over. Today is the revision video of recursion. Those who were messaging about it, that it is the study of grid and n-queens, it is not the problem of recursion, it is the problem of graph. So when you get the graph, then it will be more understandable. Now if we teach that chessboard, then it will not be understandable. That chessboard is more understandable because chessboard is this, this is called chessboard. What is this? This is a matrix or graph."
+  },
+  {
+   "start": 30.58,
+   "end": 60.11,
+   "text": "So you will understand more if you read the graph. Today's agenda is that we will do the revision first. What to read next? So we will tell you what is left. Trees are left. Trees means whole trees are left. Trees are left. In that, binary tree will also come. In that, binary search tree will also come. In that, different different algorithms will also come. Means whatever. If you don't have much idea about tree, then tree is a topic which is left. Tree means tree of tree. Tree is data structure. It is like a link list. Graph is left."
+  },
+  {
+   "start": 60.11,
+   "end": 90.64,
+   "text": "Graph is also a good topic. Graph is such a topic which is easy to understand but children don't understand it. Okay. In graph again BFS, DFS, Prim Kruskal, and whatever Dijkstra, Bellman, Vought, whatever you have heard, then graph is a good topic. And dynamic programming is completely left. Okay. And what is left? DQ. DQ is also left. Okay. Segment tree, we don't think that segment tree needs to be studied in today's date."
+  },
+  {
+   "start": 90.64,
+   "end": 119.95,
+   "text": "The reason for this is that segment tree is asked in very few places. I have never had an interview where segment tree has been asked. Try is left. Try should be read. Try is sometimes asked. So trees are left. Graph is left. DP is left. Try is left. And DQ is left. There are 5 topics. So you guys comment and tell us what you want to read first. We will recommend you not to say DP now. You will feel like reading DP first."
+  },
+  {
+   "start": 120.02,
+   "end": 149.5,
+   "text": "You can read it, it's not a bad thing. But if you want, we will start DP. Otherwise, I would say that read one of the tree or graph. As you will say, we are saying this because we take time. The question we give in the pattern sheet, we don't give it in chatGBD. We find it and give it. So, we have to give that question. For that, we also have to do some revision. And whatever we have to do, we have to do. So, comment and tell us what is your plan after this. Now, let's go towards the recursion revision. So, very..."
+  },
+  {
+   "start": 149.5,
+   "end": 179.52,
+   "text": "We hope that whatever you have seen in this series, the recursion would have been very simple. There are two types of things in recursion. One is subproblems and the other is backtracking. How will you understand that there is a problem with recursion? First of all, if there is a normal question, normal means very normal, you have to find the maximum of the array, you have to find the sum of the array, any kind of thing. If you are feeling in that question that"
+  },
+  {
+   "start": 179.52,
+   "end": 203.9,
+   "text": "If we are asked to give an answer to the rest of the question or the rest of the array, and if we add a small thing to it, and we will get this answer. If you think so, for example, if you want to find the sum of array, you say that if the size of the array is 10, you say that till 9, the number of elements in 9, give us the sum of this, which is S1, and in this, the array of 9,"
+  },
+  {
+   "start": 203.9,
+   "end": 234.16,
+   "text": "plus and tell you the answer. Whenever this happens, then this is the first type of question of recursion. This is the first type of question of recursion. This is the question with all the problems, as we had seen. There are many things. You can use this in almost every question. Where you think that the answer of other things and the answer of a small thing can be combined to tell the final answer. So you can use it here. What to do for this? First of all, you have to think of the base case. It has a three-point template. Base case means,"
+  },
+  {
+   "start": 234.16,
+   "end": 263.44,
+   "text": "Answer the smallest possible input. Think about the answer and write it down. The smallest possible input in the question. Whether it is the size of the array, the size of the string, or a small number. Whatever it is, the smallest possible input answer. Second case. Separate one small thing. Separate one small thing. Separate it and keep it. Separate it and keep it. Meaning, assume you are on the index you are on right now. Keep that index somewhere. Keep that index. Okay? Rest of the"
+  },
+  {
+   "start": 263.44,
+   "end": 294.29,
+   "text": "call the same function for the rest of the array or the rest of the string, whatever is given to you, the rest of the problem. Call the same function. Call the same function. Call the same function and show trust. Show trust that you will get the answer. You will get the answer. Fourth step, whatever answer you have got here, whatever answer you have got here, plus whatever you had kept apart, plus does not mean plus, you have to join these two and return them."
+  },
+  {
+   "start": 294.29,
+   "end": 322.54,
+   "text": "For example, if you want sum of array, then you separate an array of idx. And you use the same function for the rest of the array and understand that you will get the answer from this function. You call it answer. And in the last, you can return your answer. This was the first problem. We had done a lot of problems on this. If you want revision, then you can revise the same pattern sheet problem."
+  },
+  {
+   "start": 323.18,
+   "end": 348.08,
+   "text": "The second type of things is backtracking. What is backtracking? How do we identify backtracking? If you want to see all the combinations, or if you want to see all the possibilities, or all the options, or all the subsets, or all the permutations,"
+  },
+  {
+   "start": 348.08,
+   "end": 372.82,
+   "text": "Or look at all the choices, explore all the choices. Whatever it is, explore all the possible things. Wherever there is a question that there is something in this question, you are looking at it in every way. Look at every possibility, tell something from it. If there is such a question, then whose question is this? It is a question of backtracking. Give me the whole subset of the array, give me the whole sequence of the array, give me everything that can happen in T number."
+  },
+  {
+   "start": 372.82,
+   "end": 397.31,
+   "text": "Do you have a degree of 10, 12, or B.Tech? What combinations do you need? You have to explore everything. You have to see all the possibilities. So this is the question of backtracking. For this, there is a 5-step template. First, identify the stages. Stages means how many chances do you have to make a choice? How many chances do you get to make a choice?"
+  },
+  {
+   "start": 397.31,
+   "end": 419.09,
+   "text": "Meaning, if there is an array question, then every index is an opportunity for you. If there is a string question, then every index is an opportunity for you. If you are told to do 10, 12, and BTEC, then how many opportunities are there? There are three opportunities. One opportunity will come at the time of 10, one opportunity will come at the time of 12, and one opportunity will come at the time of BTEC. So how many opportunities will you get? Second, what is the second? How will you go to these stages?"
+  },
+  {
+   "start": 419.09,
+   "end": 440.16,
+   "text": "How will we go to the stages? So this is not a point. It is very simple. How will we go to the stages? How will we go to the array? To the index. So you are standing at the same stage as the index. How will we go to its stage? This is a very fake point. Third, most important. At every stage, how many choices are there? At every stage, this is the heart of this algorithm. At every stage,"
+  },
+  {
+   "start": 440.16,
+   "end": 469.95,
+   "text": "How many choices are there? How many choices are there at every stage? Are all the choices available at any stage? Or is there something conditional on which you have choices available? Meaning if there is a door, then can you open both left and right of every door? Or are there some doors that you can open only left or only right? So you will have to see this at every stage. How many choices are there at this stage? What can we do? Once you know that we can do two choices. You have to make those choices. How will you make that choice? In diary."
+  },
+  {
+   "start": 469.95,
+   "end": 497.7,
+   "text": "Write the choice in the diary. This diary means anything that helps you remember that we have taken this choice. If you are writing left right, then write left in a paper. That means diary. Write the choice. Go to the next stage. Next stage doesn't mean that next stage. In the last question where we talked about chocolate, what happened in that? If you had chosen it, then you would have come to the same stage. So go to the next stage. Go to the next logical state."
+  },
+  {
+   "start": 497.7,
+   "end": 527.3,
+   "text": "When you come back, then reverse whatever was written in the diary. If you had written A in the diary, then erase A. If you had written B, then erase B. If you had added 10 in the diary, then reduce 10. Reverse it. This is the fourth step. And what is the fifth step? When all the stages are over, when all the stages, i.e. if you had 3 doors to open, all the stages are over,"
+  },
+  {
+   "start": 527.3,
+   "end": 555.84,
+   "text": "Your answer will be in the diary. Your answer will be in the diary. Answer does not mean that there will be an answer. The answer means that the diary will tell you what you have done to get to the last. For example, the diary can tell you that you did 10. After that, you did not do 12. And you did beta. So, the diary that will be in this diary. You have come to the last stage. Your life is over. In this, it will be written 10th. Yes. And."
+  },
+  {
+   "start": 555.84,
+   "end": 581.92,
+   "text": "B.Tech means you did 10, not 12, so this is your diary. Now do whatever you want to do with it. Either you have to print it or you have to store it somewhere. Do whatever you want to do. Every backtracking question is made up of 5 templates. Every subproblem is made up of these 3 templates. This is what happens in recursion. There is no other great thing to do. In these 3-5 points, there is a slight twist that brother will change the choice."
+  },
+  {
+   "start": 581.92,
+   "end": 608.21,
+   "text": "Sometimes it will change the condition of the choice, sometimes it will change the stages, it will do anything. There is no such rocket science in this. There is no rocket science in recursion. Recursion is very simple. Dynamic programming is very simple. So we like recursion very much. We don't have to do much in recursion. Especially in the upper one, you don't have to do anything. This works automatically. In backtracking, if you get the idea of all these points, this is the main point. There are so many choices at every stage."
+  },
+  {
+   "start": 608.21,
+   "end": 625.84,
+   "text": "So this is the main point of this recursion. So this is the revision of recursion. The remaining questions in the pattern will be more suitable to do after dynamic programming or after graph. And you guys tell me what to do next. And we will meet tomorrow or the day after tomorrow. Whatever you tell us, it will take us some time to prepare for it. Let's go."
+  }
+ ]
+}
