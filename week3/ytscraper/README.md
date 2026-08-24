@@ -35,7 +35,7 @@ Qdrant Cloud
        ↓
 Semantic Retrieval
        ↓
-LLM
+      LLM
        ↓
 Answer + Video Timestamps
 ```
@@ -77,9 +77,9 @@ The playlist is processed using yt-dlp. Only the audio is required for transcrip
 ```text
 YouTube Playlist
       ↓
-yt-dlp
+    yt-dlp
       ↓
-Audio
+    Audio
 ```
 
 ### 2. Transcription
