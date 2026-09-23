@@ -1,4 +1,4 @@
-# Day 16: RAG Evaluation
+# Day 16 - RAG Evaluation
 
 This repository contains scripts and datasets for comprehensively evaluating a **Retrieval-Augmented Generation (RAG)** system using Large Language Models (LLMs) as judges.
 
@@ -56,18 +56,6 @@ Use the evaluation scores to diagnose and fix your RAG system:
 | **Low Faithfulness** | System Prompt / Hallucination | Improve system prompt instructions to stick to context. |
 | **Low Relevance** | Prompt / Answer Instructions | Tune the prompt to address questions directly. |
 
-## 🚀 Getting Started
-
-1. Ensure you have a `.env` file configured with the following variables:
-   ```env
-   GROQ_API_KEY=your_groq_api_key
-   QDRANT_URL=your_qdrant_url
-   QDRANT_API_KEY=your_qdrant_api_key
-   ```
-2. Run the evaluation script:
-   ```bash
-   python rag_eval.py
-   ```
 
 ## 🧠 Evaluation Architecture
 
