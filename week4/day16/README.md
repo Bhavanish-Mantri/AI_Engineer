@@ -21,7 +21,7 @@ Query Embedding
       ↓
 Relevant Context
       ↓
-LLM
+     LLM
       ↓
 Final Answer
 ```
@@ -584,10 +584,8 @@ A typical implementation can be organized as:
 rag-evaluation/
 │
 ├── knowledge.json
-├── golden_dataset.json
 ├── main.py
-├── evaluation.py
-├── rag.py
+├── rageval.py
 ├── requirements.txt
 └── README.md
 ```
@@ -596,17 +594,9 @@ rag-evaluation/
 
 Contains the knowledge used by the RAG system.
 
-### `golden_dataset.json`
-
-Contains evaluation questions and expected answers.
-
-### `rag.py`
-
-Contains the RAG pipeline.
-
 ### `evaluation.py`
 
-Contains evaluation logic and metrics.
+Contains the RAG pipeline and evaluation logic and metrics.
 
 ### `main.py`
 
@@ -709,7 +699,7 @@ Retrieval?
      ↓
 Context?
      ↓
-LLM?
+    LLM?
 ```
 
 RAG evaluation is not simply checking whether the final answer is correct.
