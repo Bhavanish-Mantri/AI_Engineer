@@ -1,4 +1,4 @@
-# Day 17: AI Agent - Tools and Function Calling
+# Day 17 - AI Agent - Tools and Function Calling
 
 A practical introduction to building an **AI Agent** using an LLM, Python functions, APIs, tool schemas, system prompts, and automatic tool selection.
 
@@ -29,8 +29,6 @@ Tool Execution
     ↓
 Final Answer
 ```
-
-The lecture introduces this concept as the foundation for understanding more advanced agent frameworks such as **LangGraph**. 
 
 ---
 
