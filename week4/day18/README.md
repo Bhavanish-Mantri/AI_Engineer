@@ -194,24 +194,6 @@ The implementation follows these major steps:
 
 ---
 
-## 🔑 Setup and Running
-
-To run this project, you need to install LangGraph.
-
-**Installation:**
-```bash
-pip install langgraph
-# or with uv
-uv add langgraph
-```
-
-**Run the graph script:**
-```bash
-python langgraph_basic.py
-```
-
----
-
 ## 💡 Key Learnings
 
 By completing this project, you will understand:
@@ -226,8 +208,6 @@ By completing this project, you will understand:
 ---
 
 ## ✨ Summary: The Important Concept
-
-The most important idea from this project is the mental model of LangGraph:
 
 **STATE** → Shared Whiteboard  
 **NODE** → Person working on the whiteboard  
