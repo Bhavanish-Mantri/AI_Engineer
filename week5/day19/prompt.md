@@ -1,0 +1,5 @@
+i want to make a multi agent system , first i want to make a single agent system that  will have 1 llm (groq) and it will have 2 tools one is web search using tavily and u will find all the api keys in env file and another will be a python calculator, there will one ask llm function , llm wil decide which tool to use and how many times and there will be a limit of max attempts of 5 then we will convert this into a multiagent ststem without langraph , in multiagent system there will be 3 ask llm fn , first will be manager llm its only job is to decide which helper llm to use , 2nd is ask search llm which has access to only the seach tool and 3rd is ask maths llm which has access to call tool 
+the role of each ask llm can be given by system prompt , manager llm has a  notes file where it will keep track of response by helper llm 
+finally we will have token usage in this also in this end we will compare both systems and see which uses more tokens 
+for test prepare a little complex query which involves seach and calculate (may be more than once)
+if u have any doubts ask me 
