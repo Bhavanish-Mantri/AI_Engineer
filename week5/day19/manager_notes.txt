@@ -1,0 +1,54 @@
+# Manager Agent Notes
+Query: Find the current market cap or valuation of Apple (AAPL) and Microsoft (MSFT) in billions of USD, calculate their combined total valuation, calculate the percentage difference between the two (how much higher the larger company is compared to the smaller one), and calculate what 15% of their combined valuation would be.
+
+## Helper Execution Log
+
+### Attempt 1 - Search LLM
+Subtask: What is the current market capitalization of Apple (AAPL) in billions of USD?
+Response:
+Based on the most recent data available, Apple's (AAPL) current market capitalization is approximately **$4.92–4.98 trillion USD** (i.e., roughly **$4,920–4,980 billion USD**).
+
+Key figures from recent sources:
+- **~$4.92T** (per valuation measures, current)
+- **~$4.98T** (as of Oct 12, 2026, per market cap tracker)
+
+So in billions of USD, Apple's market cap is approximately **$4,900–4,980 billion**.
+
+Note: Market cap fluctuates daily with the stock price, so the exact figure depends on the current trading day.
+
+### Attempt 2 - Search LLM
+Subtask: What is the current market capitalization of Microsoft (MSFT) in billions of USD?
+Response:
+Based on the most recent data (as of mid-October 2026), Microsoft (MSFT) has a market capitalization of approximately **$4.01 trillion**, or about **$4,010 billion USD**.
+
+For reference, recent figures from other sources show:
+- ~$3.88 trillion (Oct 8, 2026)
+- ~$3.68 trillion (Aug 14, 2026)
+
+So the current market cap is roughly **$4,000 billion USD** (≈ $4.0 trillion).
+
+### Attempt 3 - Maths LLM
+Subtask: Given Apple's market cap is 4950 billion USD and Microsoft's market cap is 4010 billion USD, please calculate: 1) The combined total valuation in billions of USD. 2) The percentage difference, specifically how much higher Apple's valuation is compared to Microsoft's (formula: ((Apple - Microsoft) / Microsoft) * 100). 3) 15% of the combined total valuation in billions of USD.
+Response:
+Here are the calculations based on Apple's market cap of **4,950 billion USD** and Microsoft's market cap of **4,010 billion USD**:
+
+### 1) Combined Total Valuation
+**Formula:** Apple + Microsoft
+**Calculation:** 4,950 + 4,010 = **8,960 billion USD**
+
+### 2) Percentage Difference (Apple vs. Microsoft)
+**Formula:** ((Apple − Microsoft) / Microsoft) × 100
+**Calculation:** ((4,950 − 4,010) / 4,010) × 100 = (940 / 4,010) × 100 ≈ **23.44%**
+
+Apple's valuation is approximately **23.44% higher** than Microsoft's.
+
+### 3) 15% of the Combined Total Valuation
+**Formula:** 0.15 × Combined Total
+**Calculation:** 0.15 × 8,960 = **1,344 billion USD**
+
+### Summary
+| Metric | Result |
+|--------|--------|
+| Combined Total Valuation | **8,960 billion USD** |
+| Apple's % Premium over Microsoft | **≈ 23.44%** |
+| 15% of Combined Total | **1,344 billion USD** |
