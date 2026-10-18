@@ -159,29 +159,28 @@ The task requires two types of operations:
 
 Let:
 
-- \(A\) = Apple's market capitalization in billions of USD.
-- \(M\) = Microsoft's market capitalization in billions of USD.
+- **A** = Apple's market capitalization in billions of USD.
+- **M** = Microsoft's market capitalization in billions of USD.
 
-**Combined valuation**
+**1. Combined Valuation**
 
-\[
-\text{Combined Valuation}=A+M
-\]
+The combined valuation is the sum of both companies' market capitalizations.
 
-**Percentage difference relative to the smaller value**
+`Combined Valuation = A + M`
 
-\[
-\text{Percentage Difference}
-=\frac{|A-M|}{\min(A,M)}\times100
-\]
+**2. Percentage Difference Relative to the Smaller Value**
 
-**15% of the combined valuation**
+This formula calculates how much higher the larger company's market capitalization is compared to the smaller company's market capitalization.
 
-\[
-\text{15\% Value}=(A+M)\times0.15
-\]
+`Percentage Difference = (|A - M| / min(A, M)) × 100`
 
-The values retrieved from the web should be passed to the calculator for these operations.
+**3. 15% of the Combined Valuation**
+
+This formula calculates 15% of the total market capitalization of both companies.
+
+`15% Value = (A + M) × 0.15`
+
+**Note:** The market capitalization values retrieved from the web are passed to the calculator tool to perform these mathematical operations.
 
 ## Single-Agent Implementation
 
@@ -285,17 +284,13 @@ These figures belong to the specific successful runs provided with the project.
 
 The Multi-Agent System used:
 
-\[
-17,446-16,567=879
-\]
+`17,446 - 16,567 = 879`
 
 additional tokens.
 
-Percentage increase relative to the Single-Agent System:
+**Percentage Increase Relative to the Single-Agent System**
 
-\[
-\frac{879}{16,567}\times100\approx5.30\%
-\]
+`Percentage Increase = (879 / 16,567) × 100 ≈ 5.30%`
 
 Therefore, the Multi-Agent System used approximately **5.3% more total tokens** in this run.
 
@@ -337,8 +332,6 @@ Start with Single-Agent
            Compare quality, cost,
              latency, reliability
 ```
-
-The lecture mentions approximately 85% accuracy as an illustrative benchmark. It is not a universal threshold; acceptable performance depends on the application's requirements and risk.
 
 Useful evaluation metrics include:
 
