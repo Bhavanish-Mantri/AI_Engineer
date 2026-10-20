@@ -1,0 +1,218 @@
+[
+    {
+        "name": "Successful Refund",
+        "expected": {
+            "outcome": "Refund request submitted successfully.",
+            "tools": [
+                "check_order",
+                "request_refund"
+            ],
+            "arguments": {
+                "order_id": 101,
+                "reason": "cancelled"
+            },
+            "policy": {
+                "order_exists": true,
+                "already_refunded": false,
+                "approval_required": false,
+                "approval_granted": false
+            }
+        },
+        "actual": {
+            "outcome": "Your refund request has been submitted successfully.",
+            "tools": [
+                "check_order",
+                "request_refund"
+            ],
+            "arguments": {
+                "order_id": 101,
+                "reason": "cancelled"
+            },
+            "policy": {
+                "order_exists": true,
+                "already_refunded": false,
+                "approval_required": false,
+                "approval_granted": false
+            }
+        }
+    },
+    {
+        "name": "Incorrect Refund Process",
+        "expected": {
+            "outcome": "Refund request submitted successfully.",
+            "tools": [
+                "check_order",
+                "request_refund"
+            ],
+            "arguments": {
+                "order_id": 102,
+                "reason": "cancelled"
+            },
+            "policy": {
+                "order_exists": true,
+                "already_refunded": false,
+                "approval_required": false,
+                "approval_granted": false
+            }
+        },
+        "actual": {
+            "outcome": "Your refund request could not be processed.",
+            "tools": [
+                "request_refund",
+                "check_order"
+            ],
+            "arguments": {
+                "order_id": 102,
+                "reason": "cancelled"
+            },
+            "policy": {
+                "order_exists": true,
+                "already_refunded": false,
+                "approval_required": false,
+                "approval_granted": false
+            }
+        }
+    },
+    {
+        "name": "Incorrect Order ID",
+        "expected": {
+            "outcome": "Refund request submitted successfully.",
+            "tools": [
+                "check_order",
+                "request_refund"
+            ],
+            "arguments": {
+                "order_id": 103,
+                "reason": "cancelled"
+            },
+            "policy": {
+                "order_exists": true,
+                "already_refunded": false,
+                "approval_required": false,
+                "approval_granted": false
+            }
+        },
+        "actual": {
+            "outcome": "Your refund has been submitted successfully.",
+            "tools": [
+                "check_order",
+                "request_refund"
+            ],
+            "arguments": {
+                "order_id": 999,
+                "reason": "cancelled"
+            },
+            "policy": {
+                "order_exists": false,
+                "already_refunded": false,
+                "approval_required": false,
+                "approval_granted": false
+            }
+        }
+    },
+    {
+        "name": "Invalid Order",
+        "expected": {
+            "outcome": "Inform the customer that the order was not found.",
+            "tools": [
+                "check_order"
+            ],
+            "arguments": {
+                "order_id": 404
+            },
+            "policy": {
+                "order_exists": false,
+                "already_refunded": false,
+                "approval_required": false,
+                "approval_granted": false
+            }
+        },
+        "actual": {
+            "outcome": "We could not find order 404. Please check the order ID.",
+            "tools": [
+                "check_order"
+            ],
+            "arguments": {
+                "order_id": 404
+            },
+            "policy": {
+                "order_exists": false,
+                "already_refunded": false,
+                "approval_required": false,
+                "approval_granted": false
+            }
+        }
+    },
+    {
+        "name": "Already Refunded Order",
+        "expected": {
+            "outcome": "Inform the customer that the order has already been refunded.",
+            "tools": [
+                "check_order",
+                "check_refund_status"
+            ],
+            "arguments": {
+                "order_id": 105
+            },
+            "policy": {
+                "order_exists": true,
+                "already_refunded": true,
+                "approval_required": false,
+                "approval_granted": false
+            }
+        },
+        "actual": {
+            "outcome": "This order has already been refunded. No additional refund was submitted.",
+            "tools": [
+                "check_order",
+                "check_refund_status"
+            ],
+            "arguments": {
+                "order_id": 105
+            },
+            "policy": {
+                "order_exists": true,
+                "already_refunded": true,
+                "approval_required": false,
+                "approval_granted": false
+            }
+        }
+    },
+    {
+        "name": "Refund Requires Approval",
+        "expected": {
+            "outcome": "Request approval before submitting the refund.",
+            "tools": [
+                "check_order",
+                "check_refund_policy",
+                "request_approval"
+            ],
+            "arguments": {
+                "order_id": 106
+            },
+            "policy": {
+                "order_exists": true,
+                "already_refunded": false,
+                "approval_required": true,
+                "approval_granted": false
+            }
+        },
+        "actual": {
+            "outcome": "Approval is required. An approval request has been submitted.",
+            "tools": [
+                "check_order",
+                "check_refund_policy",
+                "request_approval"
+            ],
+            "arguments": {
+                "order_id": 106
+            },
+            "policy": {
+                "order_exists": true,
+                "already_refunded": false,
+                "approval_required": true,
+                "approval_granted": false
+            }
+        }
+    }
+]
