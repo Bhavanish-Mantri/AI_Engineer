@@ -1,0 +1,31 @@
+# Environment & Secrets
+.env
+.env.*
+*.env
+
+# Prompts & Specifications
+prompt.md
+*prompt*.md
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Java build artifacts & classes
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE & OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
