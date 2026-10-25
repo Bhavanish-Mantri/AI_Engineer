@@ -1,12 +1,12 @@
-# 🛠️ Autonomous Java Bug-Fixing Coding Agent
+# 🛠️ Autonomous Coding Agent
 
-An autonomous, lightweight coding agent designed to diagnose, locate, and fix bugs in Java codebases from natural language descriptions—built purely with Python, the **Groq API**, and the **`openai/gpt-oss-120b`** model without heavyweight orchestrators like LangGraph or LangChain.
+An autonomous, lightweight coding agent designed to diagnose, locate, and fix bugs in codebases from natural language descriptions without heavyweight orchestrators like LangGraph or LangChain.
 
 ---
 
 ## 📌 Architecture & Design Philosophy
 
-Rather than using complex agent frameworks, this project demonstrates how to build an agent loop from scratch using standard LLM function calling (tools) and a verification feedback cycle.
+Rather than using complex agent frameworks, this Learning project demonstrates how to build an agent loop from scratch using standard LLM function calling (tools) and a verification feedback cycle.
 
 ```
                     ┌─────────────────────────┐
@@ -21,7 +21,7 @@ Rather than using complex agent frameworks, this project demonstrates how to bui
                      │              │
     ┌────────────────▼───┐    ┌─────▼────────────────┐
     │ 1. search_files    │    │ 2. search_in_file    │
-    │    Locate candidates│    │    Inspect line nos. │
+    │   Locate candidates│    │    Inspect line nos. │
     └────────────────────┘    └──────────────────────┘
                      │
                      ▼
@@ -71,42 +71,6 @@ day21/
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-1. **Python 3.11+**
-2. **Java Development Kit (JDK 17+)**: Ensure `javac` and `java` are available in your system `PATH`:
-   ```bash
-   javac -version
-   java -version
-   ```
-3. **Groq API Key**: Obtain a key from the [Groq Console](https://console.groq.com/).
-
-### Installation
-
-1. Create and activate a virtual environment:
-
-   ```powershell
-   # Windows PowerShell
-   python -m venv .venv
-   .venv\Scripts\Activate.ps1
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   pip install groq python-dotenv
-   ```
-
-3. Set up your environment variables:
-   Create a `.env` file in your workspace root (or in this directory):
-   ```env
-   GROQ_API_KEY=gsk_your_groq_api_key_here
-   ```
-
----
-
 ## 💻 Usage
 
 Run the agent via CLI:
@@ -118,30 +82,12 @@ python main.py
 You will be prompted to enter the bug description in plain English:
 
 ```text
-Describe the bug in simple English: In Calculator.java calculateTotal is subtracting tax instead of adding it. Please fix it.
-```
-
-You can also pass the workspace path as a command-line argument:
-
-```bash
-python main.py java_project
+In Project file Total's calculation is not correct, Please fix it.
 ```
 
 ### Sample Session Output
 
 ```text
-============================================================
-MINI CODING AGENT (JAVA)
-============================================================
-Workspace: D:\AI_Engineer\week5\day21\java_project
-Files    : Calculator.java
-
-Describe the bug in simple English: In Calculator.java calculateTotal is subtracting tax instead of adding it. Please fix it.
-
-============================================================
-ATTEMPT 1 of 3
-============================================================
-
 [step 1] asking the LLM what to do next ...
 [step 1] TOOL CALLED -> search_files
            args: {'keyword': 'Calculator'}
@@ -159,10 +105,9 @@ ATTEMPT 1 of 3
            |    5:         for (double price : prices) {
            |    6:             subtotal += price;
            |    7:         }
-           |    8:         // BUG: subtracting tax instead of adding it
-           |    9:         double total = subtotal - (subtotal * taxRate);
-           |   10:         return Math.round(total * 100.0) / 100.0;
-           |   11:     }
+           |    8:         double total = subtotal - (subtotal * taxRate);
+           |    9:         return Math.round(total * 100.0) / 100.0;
+           |   10:     }
 
 [step 3] asking the LLM what to do next ...
 [step 3] TOOL CALLED -> replace_line
