@@ -5,8 +5,8 @@ public class Calculator {
         for (double price : prices) {
             subtotal += price;
         }
-        // BUG: subtracting tax instead of adding it
-        double total = subtotal + (subtotal * taxRate);
+        // Intentional bug
+        double total = subtotal - (subtotal * taxRate);
         return Math.round(total * 100.0) / 100.0;
     }
 
